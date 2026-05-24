@@ -1,0 +1,2902 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starhaven — Chapter 4: The Gathering Storm</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --bg: #080810;
+  --bg2: #0b0c18;
+  --bg3: #10111e;
+  --gold: #c8983a;
+  --gold2: #e4b84a;
+  --gold3: #f5d070;
+  --text: #ddd6c8;
+  --text2: #b8aa90;
+  --text3: #8a7e6a;
+  --red: #8a2020;
+  --red2: #c03030;
+  --blue: #1a2a5a;
+  --blue2: #3050a0;
+  --silver: #a0a8b8;
+  --void: #1a0a2a;
+  --void2: #3a1a5a;
+  --corruption: #0a1a0a;
+  --divider: #2a2830;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 2.0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+}
+
+.chapter-header {
+  text-align: center;
+  padding: 60px 0 50px;
+  position: relative;
+}
+
+.chapter-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--text3);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.chapter-number {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(13px, 2.2vw, 17px);
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.chapter-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(26px, 5vw, 48px);
+  color: var(--gold3);
+  line-height: 1.25;
+  font-weight: 700;
+  text-shadow: 0 0 60px rgba(200, 152, 58, 0.18);
+  margin-bottom: 30px;
+}
+
+.chapter-ornament {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.toc {
+  background: var(--bg2);
+  border: 1px solid var(--divider);
+  border-top: 3px solid var(--gold);
+  padding: 28px 32px;
+  margin: 0 0 60px;
+  border-radius: 4px;
+}
+
+.toc-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+.toc ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+}
+
+.toc li a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.toc li a::before {
+  content: '◆';
+  font-size: 7px;
+  color: var(--gold);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.toc li a:hover {
+  color: var(--gold2);
+}
+
+p {
+  font-size: 17.5px;
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 28px 0;
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: var(--gold2);
+  letter-spacing: 0.08em;
+  margin: 52px 0 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2::before {
+  content: '✦';
+  color: var(--gold);
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.quote {
+  border-left: 3px solid var(--gold);
+  padding: 6px 0 6px 20px;
+  font-style: italic;
+  color: #c6b79d;
+  margin: 4px 0;
+  line-height: 1.85;
+  background: linear-gradient(90deg, rgba(200,152,58,0.04), transparent 60%);
+}
+
+.void-text {
+  font-style: italic;
+  color: #7a6aaa;
+  letter-spacing: 0.04em;
+  border-left: 3px solid #3a1a5a;
+  padding: 6px 0 6px 20px;
+  margin: 4px 0;
+  background: linear-gradient(90deg, rgba(58,26,90,0.08), transparent 60%);
+  line-height: 1.85;
+}
+
+.timeline {
+  font-style: italic;
+  color: var(--gold2);
+  border-left: 3px solid var(--gold);
+  padding: 12px 18px;
+  margin: 24px 0;
+  background: rgba(232, 194, 112, 0.08);
+  border-radius: 6px;
+}
+
+.chapter-end {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.chapter-end-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+
+.epilogue-header {
+  text-align: center;
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.epilogue-label {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text3);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.epilogue-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  color: var(--gold2);
+}
+
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0;
+  justify-content: center;
+}
+
+.section-break-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--divider), transparent);
+}
+
+.section-break-star {
+  font-size: 13px;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.era {
+  display: block;
+  margin: 44px 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text3);
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .wrapper { padding: 40px 24px 80px; }
+  .toc ul { grid-template-columns: 1fr; }
+  .chapter-title { font-size: clamp(22px, 7vw, 36px); }
+  p { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<header class="chapter-header">
+  <span class="chapter-eyebrow">✦ The Starhaven Chronicles · Sundered Age ✦</span>
+  <span class="chapter-number">Chapter Five</span>
+  <h1 class="chapter-title"> The Birth of Starhold</h1>
+  <div class="chapter-ornament">
+    <div class="ornament-line"></div>
+    <div class="ornament-diamond"></div>
+    <div class="ornament-line"></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <p class="toc-title">Table of Contents</p>
+  <ul>
+    <li><a href="#section-1">I. The Fortress That Cannot Breathe</a></li>
+    <li><a href="#section-2">II. The Walls Are Wrong</a></li>
+    <li><a href="#section-3">III. The Shadow That Watches</a></li>
+    <li><a href="#section-4">IV. Pressure Points</a></li>
+  
+   
+  </ul>
+</nav>
+
+<hr>
+<!--SECTION 1 Starts -->
+<h2 id="section-1">I. The Fortress That Cannot Breathe</h2>
+<p class="era">Sundered Age — Year 1042</p>
+<hr>
+<p>Havenfire survived winter.</p>
+
+<hr>
+
+<p>That should have felt like victory.</p>
+
+<p>Instead, by spring, it had become a problem.</p>
+
+<hr>
+
+<p>The fortress was no longer quiet even at night.</p>
+<hr>
+
+<p class="timeline">
+Approximately five months had passed since the end of the CounterAttack and the formation of Rayden’s first true inner circle.
+</p>
+
+<p>
+Winter had nearly killed them.
+Spring threatened to drown them in survivors instead.
+</p>
+
+<hr>
+
+<p>
+Till now from the end of the CounterAttack, Havenfire had sheltered barely two thousand souls:
+</p>
+
+<ul>
+<li>wounded survivors,</li>
+<li>militia volunteers,</li>
+<li>displaced villagers,</li>
+<li>and the exhausted remnants of settlements already erased from maps.</li>
+</ul>
+
+<hr>
+
+<p>
+Now, less than half a year later, Havenfire’s population had swollen beyond ten thousand.
+</p>
+
+<p>
+Nobody agreed on the exact number anymore.
+</p>
+
+<p>
+Too many people arrived daily.</p>
+<p>Too many bodies arrived nightly.</p>
+
+<hr>
+
+<p>
+Humans slept beside Wood Elves.</p>
+<p>Orc caravan guards shared watchfires with Dwarven masons.</p>
+<p>Beastkin children ran through courtyards carrying bread stolen equally from everyone.</p>
+<p>Former mercenaries trained beside farmers who had never held weapons before winter.</p>
+
+<hr>
+
+<p>
+The professions gathering there no longer resembled a refugee camp.
+</p>
+
+<ul>
+<li>Blacksmiths rebuilt shattered armor beside jewel crafters melting heirlooms into arrowheads.</li>
+<li>Healers worked beside battlefield amputators.</li>
+<li>Hunters became scouts.</li>
+<li>Smugglers became quartermasters.</li>
+<li>Scholars copied maps beside gravediggers.</li>
+<li>Collapsed nobles cleaned blood from infirmary floors because nobody important remained important for long inside Havenfire.</li>
+</ul>
+
+<hr>
+
+<p>
+The fortress was no longer merely surviving.
+</p>
+
+<p>
+It was becoming something larger.
+</p>
+
+<p>
+Something dangerous.
+</p>
+
+<p>
+A place where scattered people stopped acting like refugees and slowly began acting like citizens.
+</p>
+
+<hr>
+
+<p>
+And beyond the walls, the surrounding kingdoms had already started noticing.
+</p>
+
+<p>
+Ten thousand souls behind fortified stone was not a camp anymore.
+</p>
+
+<p>
+It was the beginning of a nation.
+</p>
+
+<hr>
+
+<p>Not truly.</p>
+
+<p>Babies cried beneath stairwells.</p>
+<p>Wounded men groaned behind canvas curtains.</p>
+<p>Blacksmith hammers rang past midnight because there were more hands willing to fight than weapons able to arm them.</p>
+<p>Kitchen fires never died anymore.</p>
+
+<hr>
+
+<p>Smoke rose from Havenfire constantly now.</p>
+
+<p>Cookfires.</p>
+<p>Forge smoke.</p>
+<p>Funeral pyres.</p>
+
+<p>All three smelled different.</p>
+
+<p>Everyone had learned to tell them apart.</p>
+
+<hr>
+
+<p>The lower halls had become sleeping chambers.</p>
+
+<p>The grain stores had become sleeping chambers.</p>
+
+<p>The old eastern stable had become a healer’s ward after Seraphine calmly announced that horses could survive outside better than children with fever.</p>
+
+<p>No one argued.</p>
+
+<hr>
+
+<p>Refugees arrived every week.</p>
+
+<p>Then every day.</p>
+
+<p>Then so often the gate guards stopped asking where people came from first.</p>
+
+<p>They asked whether anyone was bitten.</p>
+
+<hr>
+
+<p>Humans came from burned frontier villages.</p>
+<p>Dwarves came carrying tool chests heavier than children.</p>
+<p>Half-Elves arrived carrying wounded relatives who had survived forests no longer behaving correctly.</p>
+<p>The few true Elves seen near Havenfire never stayed long. They traded herbs, arrows, warnings, and disappeared before sunrise as if remaining too close to humanity for too long carried its own danger.</p>
+<p>Beastkin families came half-starved from abandoned trade roads.</p>
+<p>Orc caravan guards came escorting civilians who were not theirs.</p>
+<p>Halfling merchants came with wagons full of medicine, salt, and lies about how much they expected to be paid.</p>
+<p>Two Drakari apprentices arrived with their robes scorched black and their master’s ashes sealed inside a copper urn.</p>
+
+<hr>
+
+<p>Havenfire took them all.</p>
+
+<p>That was the problem.</p>
+
+<hr>
+
+<p>The fortress had been built to survive siege.</p>
+
+<p>Not hope.</p>
+
+<hr>
+
+<p>Hope needed beds.</p>
+<p>Hope needed bread.</p>
+<p>Hope needed clean water, burial ground, latrines, blankets, midwives, guards, grain ledgers, and enough wall-space that children did not sleep beneath arrow slits during freezing rain.</p>
+
+<p>Havenfire had none of those in sufficient measure.</p>
+
+<hr>
+
+<p>By the third week of spring, people slept in shifts.</p>
+
+<p>Eight hours on straw.</p>
+<p>Eight hours standing duty.</p>
+<p>Eight hours repairing walls, hauling water, or cutting timber.</p>
+
+<p>Nobody complained loudly.</p>
+
+<p>Complaining wasted breath.</p>
+
+<hr>
+
+<p>Kael Varric noticed the collapse before anyone else called it one.</p>
+
+<hr>
+
+<p>He stood atop the southern wall before dawn, GraveTide resting beside him, watching the refugee line stretch along the lower road like a wound that refused to close.</p>
+
+<p>Forty-seven people waited outside the gate.</p>
+
+<p>Three wagons.</p>
+<p>Nine children.</p>
+<p>Two fever cases.</p>
+<p>One body wrapped in carpet because the family refused to leave him in the ditch.</p>
+
+<hr>
+
+<p>Kael counted everything.</p>
+
+<p>Then counted the walls.</p>
+
+<p>Then counted the food stores.</p>
+
+<p>His expression did not change.</p>
+
+<p>That made Daven Holt nervous.</p>
+
+<hr>
+
+<p class="quote">“Bad?”</p>
+
+<p>Kael looked down at the courtyard below.</p>
+
+<p>Children were carrying buckets beside Ashen Guards.</p>
+
+<p>A Half-Moon Elf surgeon stitched a farmer’s scalp while an Orc woman held him still with one hand.</p>
+
+<p>Velkan Drake argued with three exhausted scribes over corrupted soil samples laid out beside breakfast bowls.</p>
+
+<p>Rayden trained militia recruits near the broken fountain, stopping every few minutes to correct grips, stance, and fear.</p>
+
+<hr>
+
+<p>Kael answered quietly.</p>
+
+<p class="quote">“Not bad.”</p>
+
+<p>Daven frowned.</p>
+
+<p class="quote">“Then?”</p>
+
+<p>Kael looked toward the lower road again.</p>
+
+<p class="quote">“Too alive.”</p>
+
+<hr>
+
+<p>Below, Havenfire breathed like a creature growing too quickly for its bones.</p>
+
+<hr>
+
+<p>Near the western gate, Seraphine Mire moved through the healer’s ward with Mercy swinging softly at her side.</p>
+
+<p>She had stopped asking permission to reorganize spaces weeks ago.</p>
+
+<p>If a room could save lives, it became hers.</p>
+
+<p>If a soldier objected, he discovered that holy women could stare with the authority of a guillotine.</p>
+
+<hr>
+
+<p>A young Beastkin boy lay across a table while Lena Crest held his shoulders.</p>
+
+<p>Black veins crawled beneath the skin near his ribs.</p>
+
+<p>Early corruption.</p>
+
+<p>Not deep.</p>
+
+<p>Not yet.</p>
+
+<hr>
+
+<p>The boy screamed when Seraphine pressed silver fire into the wound.</p>
+
+<p>His claws tore bloody lines into the table wood.</p>
+
+<p>His mother sobbed into both hands.</p>
+
+<p>Seraphine did not look away.</p>
+
+<p>She absorbed the pain with him.</p>
+
+<p>Her own fingers trembled afterward.</p>
+
+<hr>
+
+<p>The black veins burned out slowly.</p>
+
+<p>The boy survived.</p>
+
+<hr>
+
+<p>His mother tried to kneel.</p>
+
+<p>Seraphine caught her before she could.</p>
+
+<p class="quote">“No.”</p>
+
+<p>The woman wept harder.</p>
+
+<p>Seraphine’s voice softened.</p>
+
+<p class="quote">“Stand. Your son needs to see you standing.”</p>
+
+<hr>
+
+<p>Across the courtyard, Velkan watched the cleansing from beside a table covered in vials, ash, roots, blood samples, and several books nobody else wanted near food.</p>
+
+<p>His golden eyes narrowed.</p>
+
+<p class="quote">“Interesting.”</p>
+
+<p>Rayden passed behind him carrying two broken shields.</p>
+
+<p class="quote">“That means bad when you say it.”</p>
+
+<p>Velkan smiled faintly.</p>
+
+<p class="quote">“Usually.”</p>
+
+<hr>
+
+<p>He lifted one vial.</p>
+
+<p>Inside it, a black root fragment twitched against glass.</p>
+
+<p class="quote">“The corruption is adapting to purification pressure.”</p>
+
+<p>Rayden stopped walking.</p>
+
+<p>Velkan turned the vial slowly between his claws.</p>
+
+<p class="quote">“It learns slowly in flesh.”</p>
+
+<p class="quote">“Faster in soil.”</p>
+
+<hr>
+
+<p>Rayden looked toward the healer’s ward.</p>
+
+<p>Toward the surviving boy.</p>
+
+<p>Toward the growing refugee line beyond the gate.</p>
+
+<p>His jaw tightened.</p>
+
+<p class="quote">“Then we learn faster.”</p>
+
+<hr>
+
+<p>Velkan’s smile changed slightly.</p>
+
+<p>Less amusement.</p>
+
+<p>More approval.</p>
+
+<hr>
+
+<p>That morning, another refugee caravan arrived from the northern road.</p>
+
+<hr>
+
+<p>Not large.</p>
+
+<p>But strange.</p>
+
+<p>No banners.</p>
+<p>No guards.</p>
+<p>No surviving horses.</p>
+
+<p>Only seven people dragging a wagon by hand through mud, ash, and spring rain.</p>
+
+<p>Four died before reaching the gate.</p>
+
+<hr>
+
+<p>The remaining three were carried inside.</p>
+
+<p>Two were children.</p>
+
+<p>The third was a woman with silver-streaked black hair, cracked spectacles, blood dried across her cheek, and both arms wrapped around a wooden chest full of books as if they were infants.</p>
+
+<hr>
+
+<p>She refused to release the chest even after collapsing.</p>
+
+<hr>
+
+<p>Marcus Ironmane tried lifting it from her hands.</p>
+
+<p>The woman opened one eye and bit him.</p>
+
+<p>Marcus stared at the bite mark on his wrist.</p>
+
+<p>Then at her.</p>
+
+<p class="quote">“Fair.”</p>
+
+<hr>
+
+<p>Seraphine treated her beside the lower infirmary stove.</p>
+
+<p>The woman woke during the stitching.</p>
+
+<p>Not gradually.</p>
+
+<p>All at once.</p>
+
+<p>Her hand shot toward a hidden metal instrument beneath her coat.</p>
+
+<p>Rayden caught her wrist before the blade unfolded fully.</p>
+
+<hr>
+
+<p>For several seconds they stared at each other.</p>
+
+<p>Her eyes were fever-bright.</p>
+
+<p>Sharp.</p>
+
+<p>Terrified.</p>
+
+<p>Intelligent in a way that looked dangerous even half-dead.</p>
+
+<hr>
+
+<p class="quote">“Where is this?”</p>
+
+<p>Rayden released her wrist slowly.</p>
+
+<p class="quote">“Havenfire.”</p>
+
+<p>The woman breathed once.</p>
+
+<p>Then again.</p>
+
+<p class="quote">“Still standing?”</p>
+
+<p class="quote">“For now.”</p>
+
+<hr>
+
+<p>She looked toward the chest immediately.</p>
+
+<p>Seraphine noticed.</p>
+
+<p class="quote">“Your books are safe.”</p>
+
+<p>The woman closed her eyes.</p>
+
+<p>Only then did she allow herself to shake.</p>
+
+<hr>
+
+<p>Her name was Doctor Renzo Fal.</p>
+
+<hr>
+
+<p>She was thirty-one years old.</p>
+
+<p>Almost ten years older than Rayden Cale.</p>
+
+<p>A scientist from regions none of Havenfire’s maps named properly.</p>
+
+<p>She had traveled east for field experiments involving spatial distortion, leyline compression, and “theoretical distance folding,” which Velkan later described as:</p>
+
+<p class="quote">“Either impossible, suicidal, or interesting enough to keep.”</p>
+
+<hr>
+
+<p>Renzo had not come seeking refuge.</p>
+
+<p>She had come seeking data.</p>
+
+<p>The corruption found her first.</p>
+
+<hr>
+
+<p>Her expedition camp was overrun six months earlier.</p>
+
+<p>Assistants dead.</p>
+<p>Equipment lost.</p>
+<p>Family killed when the return route collapsed behind a spreading corruption field.</p>
+
+<p>The books were all she saved.</p>
+
+<p>Books.</p>
+<p>Notes.</p>
+<p>Half-burned diagrams.</p>
+<p>And a brass compass that no longer pointed north, only toward places where space felt thin.</p>
+
+<hr>
+
+<p>Velkan arrived ten minutes after hearing the word “distance folding.”</p>
+
+<p>He stood over her bedside like a carrion bird in scholar robes.</p>
+
+<p class="quote">“You compressed travel distance through fixed anchor resonance?”</p>
+
+<p>Renzo opened one exhausted eye.</p>
+
+<p class="quote">“No.”</p>
+
+<p>Velkan’s expression sharpened.</p>
+
+<p class="quote">“Then what?”</p>
+
+<p class="quote">“I failed to compress it.”</p>
+
+<p>She coughed blood into a cloth.</p>
+
+<p class="quote">“But I made it scream.”</p>
+
+<hr>
+
+<p>Velkan stared at her.</p>
+
+<p>Then smiled slowly.</p>
+
+<p>Rayden had seen that smile before.</p>
+
+<p>It usually meant something was about to explode within a month.</p>
+
+<hr>
+
+<p class="quote">“Rayden.”</p>
+
+<p>Rayden sighed.</p>
+
+<p class="quote">“No.”</p>
+
+<p class="quote">“You don’t even know what I am about to ask.”</p>
+
+<p class="quote">“That’s why the answer is no.”</p>
+
+<hr>
+
+<p>Renzo looked between them weakly.</p>
+
+<p class="quote">“Is he always like this?”</p>
+
+<p>Seraphine tied off the final stitch.</p>
+
+<p class="quote">“Velkan?”</p>
+
+<p class="quote">“Unfortunately.”</p>
+
+<hr>
+
+<p>For the first time since arriving, Renzo Fal almost smiled.</p>
+
+<hr>
+
+<p>By evening, she was moved into the old map room because there were no proper private quarters left.</p>
+
+<p>Three children slept beneath the same table holding her research chest.</p>
+
+<p>Renzo noticed.</p>
+
+<p>She said nothing.</p>
+
+<p>But when one child began coughing in the cold, she removed her own travel cloak and laid it over him.</p>
+
+<hr>
+
+<p>Rayden saw it from the doorway.</p>
+
+<p>He did not comment.</p>
+
+<p>Some people revealed themselves more honestly when they thought nobody important was looking.</p>
+
+<hr>
+
+<p>Outside, rain turned the courtyard into mud.</p>
+
+<p>Inside, Havenfire kept filling.</p>
+
+<hr>
+
+<p>A butcher became a field medic because he knew where organs were supposed to be.</p>
+
+<p>A former smuggler joined the supply office and somehow reduced theft by half within three days.</p>
+
+<p>Two Wood Elf sisters began teaching night archery from the eastern wall.</p>
+
+<p>An Orc mason rebuilt a collapsed tower section so well Kael stared at it for nine full seconds and said:</p>
+
+<p class="quote">“Acceptable.”</p>
+
+<p>The mason wept openly afterward.</p>
+
+<hr>
+
+<p>Havenfire was not becoming an army.</p>
+
+<p>Not exactly.</p>
+
+<p>It was becoming something messier.</p>
+
+<p>A place where every survivor brought the one skill the world had failed to kill.</p>
+
+<hr>
+
+<p>Lyria Valen watched the gates from the upper tower after sunset.</p>
+
+<p>Her bow rested across her knees.</p>
+
+<p>Her pale eyes followed movement beyond the tree line.</p>
+
+<p class="quote">“More tomorrow.”</p>
+
+<p>Rayden stood beside her.</p>
+
+<p class="quote">“Refugees?”</p>
+
+<p class="quote">“Yes.”</p>
+
+<p>A pause.</p>
+
+<p class="quote">“And something following them.”</p>
+
+<hr>
+
+<p>Rayden looked outward.</p>
+
+<p>The horizon was dark.</p>
+
+<p>Not empty.</p>
+
+<p>Dark.</p>
+
+<hr>
+
+<p>Behind them, Havenfire glowed with too many lives and too little space.</p>
+
+<p>Children slept beneath tables.</p>
+<p>Soldiers slept sitting upright against walls.</p>
+<p>Healers washed blood from their hands in buckets already red.</p>
+<p>Velkan and Renzo argued quietly over impossible mathematics beside a dying candle.</p>
+<p>Seraphine prayed over three fresh graves near the western slope.</p>
+<p>Kael stood alone above the gate, counting futures the fortress could not hold.</p>
+
+<hr>
+
+<p>Rayden understood then.</p>
+
+<p>Havenfire had done what they needed it to do.</p>
+
+<p>It had kept people alive.</p>
+
+<p>But survival was becoming too small for what gathered here.</p>
+
+<hr>
+
+<p>Below, another child laughed in her sleep.</p>
+
+<p>A tiny sound.</p>
+
+<p>Almost lost beneath rain and forge smoke.</p>
+
+<p>Rayden heard it anyway.</p>
+
+<hr>
+
+<p>Kael descended from the wall shortly before midnight.</p>
+
+<p>He walked through the courtyard without looking left or right.</p>
+
+<p>People moved aside instinctively.</p>
+
+<p>Not from fear.</p>
+
+<p>Because Kael moved like a decision already made.</p>
+
+<hr>
+
+<p>He stopped before Rayden, Lyria, Velkan, and Seraphine beside the old command table.</p>
+
+<p>Renzo sat nearby wrapped in a blanket, pretending not to listen while absolutely listening.</p>
+
+<hr>
+
+<p>Kael placed a weather-stained scout map on the table.</p>
+
+<p>His finger pressed against a marked region southeast of the central plains.</p>
+
+<p class="quote">“Havenfire cannot become what they need.”</p>
+
+<p>No one spoke.</p>
+
+<p>Rain struck the roof overhead.</p>
+
+<hr>
+
+<p>Kael’s finger did not move.</p>
+
+<p class="quote">“So we find the place that can.”</p>
+
+<hr>
+
+<p>Rayden looked down at the map.</p>
+
+<p>The marked region sat beyond corrupted roads, abandoned watchtowers, dead settlements, and terrain no sane army would cross willingly.</p>
+
+<p>At its center, one scout had drawn a symbol.</p>
+
+<p>A hilltop fortress.</p>
+
+<p>Old.</p>
+
+<p>Occupied.</p>
+
+<p>Blackened around the edges.</p>
+
+<hr>
+<p>There was one final note written beside the fortress in hurried charcoal.</p>
+
+<hr>
+<p class="quote">
+“Corruption behavior abnormal.”<br>
+“Defensive formations observed.”<br>
+“Something is commanding them.”
+</p>
+
+<hr>
+
+<p>
+Nobody spoke for several seconds.
+</p>
+
+<p>
+Outside, thunder rolled beyond Havenfire’s walls.
+</p>
+
+
+<p>Velkan leaned closer.</p>
+
+<p>His expression changed.</p>
+
+<p class="quote">“That site is not supposed to exist.”</p>
+
+<p>Kael looked at him.</p>
+
+<p class="quote">“It does.”</p>
+
+<hr>
+
+<p>Seraphine’s fingers tightened around Mercy’s chain.</p>
+
+<p>Lyria’s eyes narrowed slightly.</p>
+
+<p>Rayden studied the map in silence.</p>
+
+<p>Outside, Havenfire breathed behind overcrowded walls.</p>
+
+<p>Too many people.</p>
+<p>Too little space.</p>
+<p>Too much hope to abandon.</p>
+
+<hr>
+
+<p>Finally Rayden placed one hand on the edge of the map.</p>
+
+<p class="quote">“Then we look.”</p>
+
+<hr>
+
+<p>Kael nodded once.</p>
+
+<p>For him, that was almost emotion.</p>
+
+<hr>
+
+<p>Velkan smiled faintly.</p>
+
+<p>Seraphine closed her eyes as if already hearing the wounded waiting ahead.</p>
+
+<p>Lyria looked toward the dark beyond the walls.</p>
+
+<p>And Renzo Fal, half-dead beneath a refugee blanket, stared at the marked fortress with the haunted expression of someone who recognized that history sometimes entered rooms quietly before becoming impossible to escape.</p>
+
+<hr>
+
+<p>Havenfire did not sleep that night.</p>
+
+<p>Not really.</p>
+
+<p>It endured.</p>
+
+<p>And somewhere beyond the crowded walls, beyond rain, ash, and the roads swallowed by corruption...</p>
+
+<p>a hill waited beneath dead stars.</p>
+
+<hr>
+<!--SECTION 1 ENDS -->
+<!--SECTION 2 STARTS -->
+<h2 id="section-2">II. The Walls Are Wrong</h2>
+<p class="era">Havenfire — Early Spring, Year 1042</p>
+<hr>
+
+<p>Kael Varric spent three days walking Havenfire without speaking more than twenty sentences.</p>
+
+<hr>
+
+<p>He walked the walls before sunrise.</p>
+<p>He walked the kitchens after midnight.</p>
+<p>He walked the overcrowded lower chambers where entire families slept between weapon racks because there was nowhere else left.</p>
+
+<p>And everywhere he looked, he found the same thing.</p>
+
+<p>Pressure.</p>
+
+<hr>
+
+<p>The fortress had survived siege.</p>
+
+<p>It had not been built to survive growth.</p>
+
+<hr>
+
+<p>Kael stopped near the eastern corridor shortly before dawn.</p>
+
+<p>Two supply wagons had become trapped trying to pass each other through the narrow stone lane.</p>
+
+<p>A healer carrying medicine could not get through.</p>
+
+<p>A wounded man died waiting three corridors away.</p>
+
+<hr>
+
+<p>Kael stared at the corridor for several seconds.</p>
+
+<p>Then quietly marked something onto a folded charcoal map.</p>
+
+<hr>
+
+<p>Later that morning, he stood atop the western battlements with Rayden and Velkan while rain drifted across the valley below Havenfire.</p>
+
+<p>Kael spread several maps across an old ammunition crate.</p>
+
+<p>Half of them were already covered in new markings.</p>
+
+<hr>
+
+<p class="quote">“The walls are wrong.”</p>
+
+<hr>
+
+<p>Rayden leaned against the battlement beside him.</p>
+
+<p class="quote">“That sounds expensive.”</p>
+
+<p>Kael ignored the joke completely.</p>
+
+<p class="quote">“No civilian separation sectors.”</p>
+<p class="quote">“No internal fallback lines.”</p>
+<p class="quote">“Storage concentration too centralized.”</p>
+<p class="quote">“Too many blind corners.”</p>
+<p class="quote">“One breached gate kills thousands now.”</p>
+
+<hr>
+
+<p>Velkan studied the sketches quietly.</p>
+
+<p>Rayden looked down into the fortress below.</p>
+
+<p>Children chased each other through muddy courtyards beside armed militia.</p>
+<p>Blacksmith smoke rolled above packed rooftops.</p>
+<p>Too many lives crowded inside stone built for war instead of civilization.</p>
+
+<hr>
+
+<p class="quote">“Can we expand it?”</p>
+
+<p>Kael answered immediately.</p>
+
+<p class="quote">“Not enough.”</p>
+
+<hr>
+
+<p>He flipped another map open.</p>
+
+<p>This one showed rough terrain sketches surrounding Havenfire.</p>
+
+<p>Mountain lines.</p>
+<p>Trade roads.</p>
+<p>River routes.</p>
+<p>Defensive choke points.</p>
+
+<hr>
+
+<p>Velkan’s eyes narrowed slightly.</p>
+
+<p class="quote">“You’ve been redesigning the entire fortress.”</p>
+
+<p class="quote">“No.”</p>
+
+<p>Kael marked several elevated ridges with charcoal.</p>
+
+<p class="quote">“I’ve been redesigning how a city survives war.”</p>
+
+<hr>
+
+<p>Rayden looked more closely now.</p>
+
+<p>The sketches no longer resembled Havenfire.</p>
+
+<p>They showed:</p>
+
+<ul>
+<li>layered walls,</li>
+<li>split defensive sectors,</li>
+<li>civilian evacuation routes,</li>
+<li>mountain choke fortifications,</li>
+<li>elevated artillery placements,</li>
+<li>protected supply arteries,</li>
+<li>fallback gates built behind fallback gates.</li>
+</ul>
+
+<hr>
+
+<p>Not a fortress.</p>
+
+<p>A citadel.</p>
+
+<hr>
+
+<p class="quote">“That isn’t Havenfire anymore.”</p>
+
+<p>Kael finally looked at Rayden directly.</p>
+
+<p class="quote">“No.”</p>
+
+<p class="quote">“It’s what comes after.”</p>
+
+<hr>
+
+<p>For a moment, only rain answered.</p>
+
+<hr>
+
+<p>Velkan’s claw tapped softly against the map.</p>
+
+<p class="quote">“And where exactly do you intend to fit all of this?”</p>
+
+<hr>
+
+<p>Kael unfolded several new charcoal sketches across the crate.</p>
+
+<p>Expanded outer walls.</p>
+<p>Layered defensive sectors.</p>
+<p>Elevated watch platforms.</p>
+<p>Civilian evacuation tunnels.</p>
+<p>Integrated supply roads cutting through the fortress interior.</p>
+
+<hr>
+
+<p>Rayden stared at the designs.</p>
+
+<p>The sketches no longer resembled Havenfire’s current structure.</p>
+
+<p>They looked larger.</p>
+
+<p>Heavier.</p>
+
+<p>Built for a city instead of a refuge.</p>
+
+<hr>
+
+<p class="quote">“You’re trying to turn Havenfire into a citadel.”</p>
+
+<p>Kael did not deny it.</p>
+
+<p class="quote">“The current walls were built to survive siege.”</p>
+
+<p class="quote">“Not population.”</p>
+
+<p class="quote">“Not corruption outbreaks.”</p>
+
+<p class="quote">“Not ten thousand civilians.”</p>
+
+<hr>
+
+<p>Velkan studied the sketches quietly.</p>
+
+<p class="quote">“You would need more stone than this valley can produce.”</p>
+
+<p class="quote">“And more space than this mountain allows,”</p>
+
+<p>Rayden added.</p>
+
+<hr>
+
+<p>Kael finally leaned back slightly.</p>
+
+<p>For the first time, irritation entered his voice.</p>
+
+<p class="quote">“I know.”</p>
+
+<hr>
+
+<p>Rain drifted across the battlements.</p>
+
+<p>Below them, Havenfire groaned beneath overcrowded life.</p>
+
+<hr>
+
+<p>Velkan unfolded the newest scout report beside Kael’s sketches.</p>
+
+<p>The parchment was still damp from rain.</p>
+
+<hr>
+
+<p>Additional reconnaissance from the hilltop fortress region had finally returned.</p>
+
+<p>Not all of the scouts came back.</p>
+
+<hr>
+
+<p>The updated sketches showed:</p>
+
+<ul>
+<li>reinforced outer walls,</li>
+<li>active watchfires,</li>
+<li>organized patrol movement,</li>
+<li>fresh barricade construction,</li>
+<li>and signs of a growing military presence within the fortress itself.</li>
+</ul>
+
+<hr>
+
+<p>Someone was fortifying it.</p>
+
+<p>Actively.</p>
+
+<hr>
+
+<p>Rayden frowned immediately.</p>
+
+<p class="quote">“That many?”</p>
+
+<hr>
+
+<p>Velkan scanned the report again.</p>
+
+<p class="quote">“The scouts estimate several thousand at minimum.”</p>
+
+<p class="quote">“Possibly more hidden within the lower structure.”</p>
+
+<hr>
+
+<p>Kael’s eyes narrowed slightly.</p>
+
+<p class="quote">“An army.”</p>
+
+<hr>
+
+<p>Velkan tapped one section of the parchment.</p>
+
+<p class="quote">“And walls strong enough to hold one.”</p>
+
+<hr>
+
+<p>Rain struck the battlements softly.</p>
+
+<p>Nobody spoke for several seconds.</p>
+
+<hr>
+
+<p>The hilltop was no longer merely a corrupted ruin.</p>
+
+<p>Something there was preparing for war.</p>
+
+<hr>
+
+<p>Below the battlements, Havenfire continued moving.</p>
+
+<hr>
+
+<p>Vera stood in the central courtyard surrounded by six exhausted scribes and approximately three hundred arguments.</p>
+
+<p>She reorganized grain allocations while simultaneously redirecting sleeping quarters and threatening to personally bury anyone caught stealing medical supplies.</p>
+
+<p>Remarkably, this appeared effective.</p>
+
+<hr>
+
+<p>Beside her, Doctor Renzo Fal sat cross-legged atop supply crates with a ledger in one hand and half-burned spatial diagrams in the other.</p>
+
+<p>She had spent the last two days helping Vera restructure storage flow after noticing the western warehouse system wasted nearly eighteen percent of movement efficiency.</p>
+
+<p>Vera distrusted her immediately.</p>
+
+<p>Which, for Vera, was practically affection.</p>
+
+<hr>
+
+<p class="quote">“Why do they follow him?”</p>
+
+<p>Renzo asked quietly while watching Rayden train recruits below.</p>
+
+<p>Vera did not look up from her ledger.</p>
+
+<p class="quote">“Which him?”</p>
+
+<p class="quote">“The swordsman.”</p>
+
+<p class="quote">“Because he walks into places other people run from.”</p>
+
+<hr>
+
+<p>Renzo watched Rayden helping a frightened militia recruit reset his shield stance for the fourth time without irritation.</p>
+
+<p>Her expression shifted slightly.</p>
+
+<hr>
+
+<p class="quote">“And Kael?”</p>
+
+<p>Vera snorted softly.</p>
+
+<p class="quote">“Kael follows numbers.”</p>
+
+<p class="quote">“People survive because his numbers hate dying.”</p>
+
+<hr>
+
+<p>Nearby, Brek and Daven Holt trained volunteers inside the lower yard.</p>
+
+<p>The drills were messy.</p>
+
+<p>Real.</p>
+
+<p>Farmers stood beside caravan guards.</p>
+<p>Hunters trained beside former thieves.</p>
+<p>A Beastkin butcher accidentally shattered three wooden practice shields in a single morning and looked genuinely apologetic afterward.</p>
+
+<hr>
+
+<p>Daven corrected shield formations.</p>
+
+<p>Brek corrected fear.</p>
+
+<p>Their methods differed dramatically.</p>
+
+<hr>
+
+<p>Near the southern platform, Seraphine’s Ashen Guards trained separately.</p>
+
+<hr>
+
+<p>Only five original guards had arrived beside her months earlier.</p>
+
+<p>Now nearly thirty recruits trained under them.</p>
+
+<p>Humans.</p>
+<p>Half-Elves.</p>
+<p>Beastkin.</p>
+<p>Even two former mercenaries who had survived corruption outbreaks and refused to run from them again.</p>
+
+<hr>
+
+<p>The recruits still lacked discipline.</p>
+
+<p>But they learned.</p>
+
+<p>Slowly.</p>
+
+<p>Painfully.</p>
+
+<hr>
+
+<p>One Ashen Guard guided a trembling Half-Elf girl through purification sigils drawn in chalk.</p>
+
+<p>Another taught corruption-burn protocol beside barrels of silver ash.</p>
+
+<p>Seraphine herself moved between them silently correcting posture, mana control, and ritual precision.</p>
+
+<p>Her order was no longer merely surviving beside Havenfire.</p>
+
+<p>It was growing into it.</p>
+
+<hr>
+
+<p>Mixed races trained together now because survival no longer allowed the luxury of separation.</p>
+
+<p>Humans learned forest signs from wandering Wood Elves.</p>
+<p>Orcs taught barricade reinforcement.</p>
+<p>Dwarves rebuilt damaged towers while insulting Human measurements with near-religious consistency.</p>
+<p>Children adapted fastest of all.</p>
+
+<hr>
+
+<p>Havenfire no longer sounded like one kingdom.</p>
+
+<p>It sounded like many trying very hard not to die together.</p>
+
+<hr>
+
+<p>Above them, Kael folded the hilltop fortress map slowly.</p>
+
+<p>His eyes remained distant.</p>
+
+<hr>
+
+<p class="quote">“If we survive another year,”</p>
+
+<p>he said quietly,</p>
+
+<p class="quote">“these walls won’t.”</p>
+
+<hr>
+
+<p>Velkan looked toward the dark forests beyond the valley.</p>
+
+<p class="quote">“Then perhaps we should begin searching for what replaces them.”</p>
+
+<hr>
+
+<p>That was when Lyria arrived.</p>
+
+<p>Rainwater still dripped from her cloak.</p>
+
+<p>She crossed the battlements silently and placed three folded scout reports onto the crate.</p>
+
+<hr>
+
+<p>Rayden noticed the expression on her face immediately.</p>
+
+<p class="quote">“What happened?”</p>
+
+<hr>
+
+<p>Lyria opened the first report.</p>
+
+<p>Dead cult convoy.</p>
+
+<p>No survivors.</p>
+
+<p>The second:</p>
+
+<p>Corruption supply caches destroyed.</p>
+
+<p>The third:</p>
+
+<p>A Void informant found hanging upside down from a city archway with his throat cut so cleanly it looked surgical.</p>
+
+<hr>
+
+<p>Kael’s eyes narrowed.</p>
+
+<p class="quote">“Same pattern?”</p>
+
+<p>Lyria nodded.</p>
+
+<p class="quote">“Precise.”</p>
+
+<p class="quote">“Efficient.”</p>
+
+<p class="quote">“No witnesses.”</p>
+
+<hr>
+
+<p>Velkan’s expression sharpened slightly.</p>
+
+<p class="quote">“Someone else is operating against them.”</p>
+
+<hr>
+
+<p>Lyria looked toward the dark horizon beyond Havenfire.</p>
+
+<p>Then finally said:</p>
+
+<p class="quote">“I think we know who.”</p>
+
+<hr>
+
+<p>Rayden crossed his arms.</p>
+
+<p class="quote">“And?”</p>
+
+<hr>
+
+<p>Lyria’s pale eyes reflected rain and forge smoke together.</p>
+
+<p class="quote">“Looks like we share the same goal.”</p>
+
+<p class="quote">“Let’s try recruiting this person.”</p>
+
+<hr>
+<!--SECTION 2 ENDS -->
+<!--SECTION 3 STARTS -->
+<h2 id="section-3">III. The Shadow That Watches</h2>
+<p class="era">Rookthorn — Southern Agricultural Corridor, Year 1042</p>
+<hr>
+
+<p>Rookthorn smelled wrong.</p>
+
+<hr>
+
+<p>Not corrupted.</p>
+
+<p>Worse.</p>
+
+<p>Afraid.</p>
+
+<hr>
+
+<p>The town still functioned.</p>
+
+<p>That was the unsettling part.</p>
+
+<p>Markets remained open.</p>
+<p>Wagons still crossed muddy roads.</p>
+<p>Grain still moved south toward the coast.</p>
+<p>People still drank in taverns after dark.</p>
+
+<p>But everyone watched the doors while doing it.</p>
+
+<hr>
+
+<p>The rain had not stopped for three days.</p>
+
+<p>Brown water ran through the streets carrying blood, horse shit, rotten grain, and occasionally pieces of things nobody looked at directly anymore.</p>
+
+<hr>
+
+<p>Rayden rode through the southern gate beside Kael and Lyria shortly before dusk.</p>
+
+<p>No banners.</p>
+
+<p>No escort force.</p>
+
+<p>Three riders attracted less attention.</p>
+
+<p>Usually.</p>
+
+<hr>
+
+<p>Not here.</p>
+
+<hr>
+
+<p>The guards at Rookthorn’s gate looked exhausted enough to stab first and apologize later.</p>
+
+<p>One carried a split lip still stitched with fishing wire.</p>
+<p>Another held his spear incorrectly because two fingers were missing from his right hand.</p>
+
+<hr>
+
+<p>The older guard recognized Rayden eventually.</p>
+
+<p>Not from politics.</p>
+
+<p>From rumors.</p>
+
+<hr>
+
+<p class="quote">“Havenfire?”</p>
+
+<p>Rayden nodded once.</p>
+
+<p>The guard looked relieved for exactly half a second.</p>
+
+<p>Then afraid again.</p>
+
+<p class="quote">“You picked a bad week.”</p>
+
+<hr>
+
+<p>The streets beyond the gate were packed with movement and silence.</p>
+
+<p>Farm workers walked quickly with eyes lowered.</p>
+<p>Shops closed before full dark.</p>
+<p>Crossbows rested loaded behind market counters.</p>
+
+<p>Nobody trusted shadows anymore.</p>
+
+<hr>
+
+<p>Lyria noticed the rooftops immediately.</p>
+
+<p>Too many vantage points.</p>
+
+<p>Too many blind transitions between buildings.</p>
+
+<p>Too many places someone intelligent could disappear.</p>
+
+<hr>
+
+<p>Kael noticed something else.</p>
+
+<p>No visible corruption.</p>
+
+<p>No spreading fungal growth.</p>
+<p>No infected mobs.</p>
+<p>No open cult banners.</p>
+
+<p>Yet the town behaved like occupied territory.</p>
+
+<hr>
+
+<p class="quote">“Fear without visible pressure,”</p>
+
+<p>Kael muttered quietly.</p>
+
+<p class="quote">“Interesting.”</p>
+
+<hr>
+
+<p>Near the center square, a corpse hung upside down from an iron grain hook.</p>
+
+<p>The body rotated slowly in rainwater and wind.</p>
+
+<p>Most of the throat was gone.</p>
+
+<p>So were both eyes.</p>
+
+<hr>
+
+<p>Someone had carved a symbol into the dead man’s chest.</p>
+
+<p>Not ritualistic.</p>
+
+<p>Practical.</p>
+
+<p>A corruption mark violently scratched apart by knife cuts.</p>
+
+<hr>
+
+<p>Below the corpse, someone had written a message in black blood.</p>
+
+<p class="quote">
+HEARD YOU.
+</p>
+
+<hr>
+
+<p>The townspeople walked around it without stopping.</p>
+
+<p>Which somehow made it worse.</p>
+
+<hr>
+
+<p>Rayden studied the dead man carefully.</p>
+
+<p>Not random.</p>
+
+<p>The fingers carried ritual burn scars.</p>
+<p>The teeth were stained black from corruption resin.</p>
+<p>The left sleeve concealed a poisoned skinning knife.</p>
+
+<p>Cult operative.</p>
+
+<hr>
+
+<p>Lyria scanned the surrounding rooftops.</p>
+
+<p>Nothing moved.</p>
+
+<p>Yet she felt watched hard enough to itch.</p>
+
+<hr>
+
+<p>Kael crouched beside the body.</p>
+
+<p>His eyes narrowed.</p>
+
+<hr>
+
+<p class="quote">“Clean kill.”</p>
+
+<p class="quote">“Single upward thrust through lower jaw into brainstem.”</p>
+
+<p class="quote">“Minimal struggle.”</p>
+
+<hr>
+
+<p>He looked toward the nearest rooftop angles.</p>
+
+<p class="quote">“Professional.”</p>
+
+<hr>
+
+<p>A local merchant overheard the word.</p>
+
+<p>The man paled instantly.</p>
+
+<p class="quote">“Don’t say that too loud.”</p>
+
+<hr>
+
+<p>Rayden turned toward him.</p>
+
+<p class="quote">“Why?”</p>
+
+<hr>
+
+<p>The merchant swallowed.</p>
+
+<p class="quote">“Because if he hears you…”</p>
+
+<p>The man stopped speaking immediately.</p>
+
+<hr>
+
+<p>Lyria’s eyes sharpened.</p>
+
+<p class="quote">“Who?”</p>
+
+<hr>
+
+<p>The merchant looked around first.</p>
+
+<p>Then answered quietly.</p>
+
+<p class="quote">“The Black Silence.”</p>
+
+<hr>
+
+<p>Another local nearby muttered:</p>
+
+<p class="quote">“Shadow Walker.”</p>
+
+<hr>
+
+<p>A butcher cleaning blood from a chopping block snorted.</p>
+
+<p class="quote">“That thing ain’t human.”</p>
+
+<hr>
+
+<p>Rayden exchanged a glance with Kael.</p>
+
+<p>Three names already.</p>
+
+<p>Same fear.</p>
+
+<hr>
+
+<p>Inside the southern tavern district, they found the second body.</p>
+
+<hr>
+
+<p>This one had been nailed to a wooden wall with his own arms.</p>
+
+<p>The stomach had been cut open surgically.</p>
+
+<p>Black corruption spores spilled from inside the corpse into the rainwater below.</p>
+
+<p>Someone had removed the infection manually.</p>
+
+<hr>
+
+<p>Alive.</p>
+
+<hr>
+
+<p>Kael’s expression darkened slightly for the first time since arriving.</p>
+
+<p class="quote">“He interrogated him.”</p>
+
+<hr>
+
+<p>Lyria crouched beside the corpse.</p>
+
+<p>Her fingers brushed wet stone.</p>
+
+<p>No footprints.</p>
+
+<p>No drag marks.</p>
+
+<p>No blood trail.</p>
+
+<p>The killer had entered and exited without disturbing mud.</p>
+
+<hr>
+
+<p>That bothered her.</p>
+
+<p>A lot.</p>
+
+<hr>
+
+<p>Night settled over Rookthorn slowly.</p>
+
+<p>Rain deepened.</p>
+
+<p>Lanterns vanished one by one.</p>
+
+<p>The town folded inward before darkness fully arrived, like prey trying not to breathe too loudly.</p>
+
+<hr>
+
+<p>Near midnight, a terrified courier finally reached the inn carrying fresh reports.</p>
+
+<hr>
+
+<p>Another corruption convoy destroyed.</p>
+
+<p>Three miles east.</p>
+
+<p>No survivors.</p>
+
+<hr>
+
+<p>Rayden stood immediately.</p>
+
+<p>Kael was already moving.</p>
+
+<p>Lyria silently checked her bowstring.</p>
+
+<hr>
+
+<p>They reached the convoy site beneath cold rain and dead trees.</p>
+
+<hr>
+
+<p>The slaughter had been methodical.</p>
+
+<p>Not battle.</p>
+
+<p>Execution.</p>
+
+<hr>
+
+<p>Eight bodies.</p>
+
+<p>Every throat cut at identical depth.</p>
+<p>Every weapon untouched.</p>
+<p>Every horse killed first to prevent escape.</p>
+
+<hr>
+
+<p>One corpse still twitched weakly in the mud.</p>
+
+<p>A cult courier.</p>
+
+<p>Young.</p>
+
+<p>Terrified beyond language.</p>
+
+<hr>
+
+<p>Rayden knelt beside him.</p>
+
+<p class="quote">“Who did this?”</p>
+
+<hr>
+
+<p>The courier’s eyes rolled upward wildly.</p>
+
+<p>Searching darkness.</p>
+
+<p>Searching rooftops that did not exist.</p>
+
+<hr>
+
+<p class="quote">“It…”</p>
+
+<p>Blood bubbled from his mouth.</p>
+
+<p class="quote">“It was already inside…”</p>
+
+<p>He choked violently.</p>
+
+<p class="quote">“…the room…”</p>
+
+<hr>
+
+<p>Dead.</p>
+
+<hr>
+
+<p>Silence returned with the rain.</p>
+
+<hr>
+
+<p>Kael slowly scanned the surrounding terrain.</p>
+
+<p>Then the wagon positions.</p>
+<p>Then the bodies.</p>
+
+<hr>
+
+<p class="quote">“No panic spread.”</p>
+
+<p class="quote">“Escape paths blocked before engagement.”</p>
+
+<p class="quote">“Kill order prioritized leadership first.”</p>
+
+<hr>
+
+<p>His jaw tightened slightly.</p>
+
+<p class="quote">“This person understands systems.”</p>
+
+<hr>
+
+<p>Lyria’s gaze lifted toward the dark tree line.</p>
+
+<p>For a second—</p>
+
+<p>she thought she saw movement.</p>
+
+<p>Not a body.</p>
+
+<p>An absence.</p>
+
+<p>A section of darkness shifting incorrectly between branches.</p>
+
+<hr>
+
+<p>Then it vanished.</p>
+
+<hr>
+
+<p>Kael reached for GraveTide instantly.</p>
+
+<p>Rayden turned toward the ridge.</p>
+
+<p>Lyria drew and fired in the same motion.</p>
+
+<hr>
+
+<p>The arrow vanished into darkness.</p>
+
+<p>No impact.</p>
+
+<p>No scream.</p>
+
+<p>Nothing.</p>
+
+<hr>
+
+<p>Then something wet landed beside the wagon.</p>
+
+<hr>
+
+<p>A fresh corpse.</p>
+
+<p>Still bleeding.</p>
+
+<p>The head rolled once through mud before stopping near Rayden’s boot.</p>
+
+<hr>
+
+<p>The dead man wore hidden corruption tattoos beneath his collar.</p>
+
+<p>Another cult handler.</p>
+
+<p>Recently alive.</p>
+
+<hr>
+
+<p>Nobody had seen the body thrown.</p>
+
+<hr>
+
+<p>Rain hammered the trees.</p>
+
+<p>Silence pressed inward.</p>
+
+<hr>
+
+<p>Then a voice emerged calmly from somewhere above them.</p>
+
+<p>Not loud.</p>
+
+<p>Not threatening.</p>
+
+<p>Worse.</p>
+
+<p>Certain.</p>
+
+<hr>
+
+<p class="quote">
+“Relax.”
+</p>
+
+<hr>
+
+<p>Kael’s shield shifted upward.</p>
+
+<p>Lyria tracked rooftops and branches simultaneously.</p>
+
+<p>Rayden remained still.</p>
+
+<hr>
+
+<p>The voice continued:</p>
+
+<p class="quote">
+“If I wanted you dead…”
+</p>
+
+<p class="quote">
+“…this conversation would be happening alone.”
+</p>
+
+<hr>
+<!--SECTION 3 ENDS -->
+<!--SECTION 4 STARTS -->
+<h2 id="section-4">IV. Pressure Points</h2>
+<p class="era">Rookthorn — Rain District, Year 1042</p>
+<hr>
+
+<p>Rain hammered the wagon line.</p>
+
+<p>Nobody moved.</p>
+
+<hr>
+
+<p>The unseen voice never repeated itself.</p>
+
+<p>No footsteps followed.</p>
+<p>No shadow revealed itself.</p>
+<p>No branch shifted.</p>
+
+<p>Only the dead cultist’s head resting beside the wheel remained proof the conversation had happened at all.</p>
+
+<hr>
+
+<p>Kael slowly raised GraveTide higher.</p>
+
+<p>Not defensive.</p>
+
+<p>Thinking.</p>
+
+<hr>
+
+<p class="quote">“Sound came from above.”</p>
+
+<p class="quote">“But impact trajectory came from the eastern ridge.”</p>
+
+<p class="quote">“Impossible distance.”</p>
+
+<hr>
+
+<p>Lyria’s bow remained drawn.</p>
+
+<p>Her eyes moved between rooftops, branches, and darkness without stopping.</p>
+
+<p class="quote">“No.”</p>
+
+<p class="quote">“Not impossible.”</p>
+
+<p>A pause.</p>
+
+<p class="quote">“Prepared.”</p>
+
+<hr>
+
+<p>Rayden looked toward the dead convoy.</p>
+
+<p>Then the surrounding woods.</p>
+
+<p>Then the severed head beside his boots.</p>
+
+<hr>
+
+<p class="quote">“He wanted us here.”</p>
+
+<hr>
+
+<p>That realization settled badly.</p>
+
+<p>Because it meant every corpse they had found since entering Rookthorn might have been part of a route.</p>
+
+<p>Not random killings.</p>
+
+<p>Guidance.</p>
+
+<hr>
+
+<p>High above the rainline, unseen eyes continued watching them silently.</p>
+
+<hr>
+
+<p>Then somewhere deeper inside Rookthorn—</p>
+
+<p>a bell began ringing violently.</p>
+
+<hr>
+
+<p>Not alarm.</p>
+
+<p>Panic.</p>
+
+<hr>
+
+<p>Rain struck canvas and dead leaves softly.</p>
+
+<p>The severed head beside the wagon continued bleeding into mud.</p>
+
+<hr>
+
+<p>Kael moved first.</p>
+
+<p>Not toward the corpse.</p>
+
+<p>Toward the surrounding terrain.</p>
+
+<hr>
+
+<p>His eyes tracked:</p>
+
+<ul>
+<li>roof angles,</li>
+<li>tree elevation,</li>
+<li>escape vectors,</li>
+<li>sightline overlap,</li>
+<li>sound distortion through rainfall.</li>
+</ul>
+
+<hr>
+
+<p>Nothing.</p>
+
+<p>No footprints.</p>
+<p>No displaced mud.</p>
+<p>No branch movement.</p>
+
+<hr>
+
+<p>Kael’s jaw tightened slightly.</p>
+
+<p>That alone was alarming.</p>
+
+<hr>
+
+<p>Lyria lowered her bow half an inch.</p>
+
+<p class="quote">“He shifted before the arrow reached the branchline.”</p>
+
+<hr>
+
+<p>Rayden glanced toward her.</p>
+
+<p class="quote">“You saw him?”</p>
+
+<p class="quote">“No.”</p>
+
+<p>A pause.</p>
+
+<p class="quote">“But something changed shape.”</p>
+
+<hr>
+
+<p>Kael looked down at the dead cult courier again.</p>
+
+<p class="quote">“We’re being guided.”</p>
+
+<hr>
+
+<p>Nobody disagreed.</p>
+
+<hr>
+
+<p>By dawn, three more corruption sites had been discovered across Rookthorn.</p>
+
+<p>Not random attacks.</p>
+
+<p>Connected points.</p>
+
+<hr>
+
+<p>Kael marked them onto a stolen trade ledger inside the upper inn room.</p>
+
+<p>Supply cache.</p>
+<p>Messenger route.</p>
+<p>Corruption storage cellar.</p>
+
+<hr>
+
+<p>The marks formed a tightening pattern around the eastern grain district.</p>
+
+<hr>
+
+<p>Lyria stared at the map.</p>
+
+<p class="quote">“He’s forcing them inward.”</p>
+
+<hr>
+
+<p>Kael nodded once.</p>
+
+<p class="quote">“Like herding prey.”</p>
+
+<hr>
+
+<p>Rayden leaned over the table.</p>
+
+<p class="quote">“Toward what?”</p>
+
+<hr>
+
+<p>No one answered immediately.</p>
+
+<hr>
+
+<p>They reached the eastern district shortly before nightfall.</p>
+
+<hr>
+
+<p>The smell hit first.</p>
+
+<p>Wet grain.</p>
+<p>Rot.</p>
+<p>Blood.</p>
+
+<hr>
+
+<p>The district gates had already been barricaded from inside.</p>
+
+<p>Not by guards.</p>
+
+<p>By civilians.</p>
+
+<hr>
+
+<p>A woman screamed somewhere deeper within the streets.</p>
+
+<p>The sound cut off abruptly.</p>
+
+<hr>
+
+<p>Kael studied the district walls carefully.</p>
+
+<p>Smoke drifted from upper windows.</p>
+<p>Movement behind shutters.</p>
+<p>No visible guards.</p>
+
+<p>Too quiet.</p>
+
+<hr>
+
+<p>Then they found the bodies.</p>
+
+<hr>
+
+<p>Three town officials.</p>
+
+<p>Hung from grain hooks beside the central storehouse.</p>
+
+<p>Their stomachs had been opened carefully.</p>
+
+<p>Black fungal growth spilled from inside the ribcages onto the stone below.</p>
+
+<hr>
+
+<p>Lyria crouched near one corpse.</p>
+
+<p>Her fingers touched the black residue.</p>
+
+<p>Immediately she recoiled.</p>
+
+<p class="quote">“Fresh.”</p>
+
+<p class="quote">“Hours at most.”</p>
+
+<hr>
+
+<p>Kael examined the surrounding alleyways.</p>
+
+<p>Then the grain silos.</p>
+
+<p>Then the water routes.</p>
+
+<hr>
+
+<p>His expression hardened.</p>
+
+<p class="quote">“The infection reached the food stores.”</p>
+
+<hr>
+
+<p>Rayden looked toward the crowded district housing beyond the barricades.</p>
+
+<p>Children crying.</p>
+<p>People trapped inside.</p>
+<p>No escape routes.</p>
+
+<hr>
+
+<p>Kael spoke quietly.</p>
+
+<p class="quote">“If it spreads through the grain shipments…”</p>
+
+<p>He did not finish the sentence.</p>
+
+<p>He did not need to.</p>
+
+<hr>
+
+<p>Lyria’s eyes narrowed.</p>
+
+<p class="quote">“How many districts?”</p>
+
+<p class="quote">“Potentially the entire southern corridor.”</p>
+
+<hr>
+
+<p>Rainwater rolled down Kael’s shield edge.</p>
+
+<p class="quote">“Containment now prevents thousands later.”</p>
+
+<hr>
+
+<p>Rayden understood immediately.</p>
+
+<p>Burn the district.</p>
+
+<hr>
+
+<p>No cruelty in the suggestion.</p>
+
+<p>No indifference.</p>
+
+<p>Only mathematics.</p>
+
+<hr>
+
+<p>That somehow made it worse.</p>
+
+<hr>
+
+<p>From somewhere high above the alleyways, unseen eyes watched silently.</p>
+
+<hr>
+
+<p>Rayden stared at the barricaded district.</p>
+
+<p>At the terrified civilians visible through broken shutters.</p>
+
+<p>At the grain smoke rising through rain.</p>
+
+<hr>
+
+<p>Then he drew Dawnpiercer.</p>
+
+<hr>
+
+<p class="quote">“Then we go inside before it spreads further.”</p>
+
+<hr>
+
+<p>Kael looked at him for several seconds.</p>
+
+<p>Evaluating.</p>
+
+<p>Not arguing.</p>
+
+<hr>
+
+<p>Finally:</p>
+
+<p class="quote">“Fine.”</p>
+
+<p class="quote">“But if containment fails—”</p>
+
+<p class="quote">“It won’t.”</p>
+
+<hr>
+
+<p>Rayden slammed Dawnpiercer through the barricade lock.</p>
+
+<p>The district gates burst inward.</p>
+
+<hr>
+
+<p>The smell inside was catastrophic.</p>
+
+<hr>
+
+<p>Rotting grain.</p>
+<p>Corrupted blood.</p>
+<p>Human waste.</p>
+<p>Wet ash.</p>
+
+<hr>
+
+<p>People crowded the streets in terrified silence.</p>
+
+<p>Families.</p>
+<p>Workers.</p>
+<p>Children wrapped in wet blankets.</p>
+
+<p>Some already showed black veins creeping beneath skin.</p>
+
+<hr>
+
+<p>Then the first infected lunged from a rooftop.</p>
+
+<hr>
+
+<p>Its jaw split sideways unnaturally as it fell.</p>
+
+<p>Rayden stepped forward instantly.</p>
+
+<p>Dawnpiercer flashed once.</p>
+
+<p>The creature’s head separated cleanly before it hit the ground.</p>
+
+<hr>
+
+<p>More movement exploded from the alleyways.</p>
+
+<p>Too coordinated.</p>
+
+<p>Cultists.</p>
+
+<p>Not mindless infected.</p>
+
+<hr>
+
+<p class="quote">“Ambush!”</p>
+
+<hr>
+
+<p>Crossbow fire erupted from upper windows.</p>
+
+<p>Lyria moved first.</p>
+
+<hr>
+
+<p>Three arrows left her bow almost invisibly fast.</p>
+
+<p>The first punched through a cult sniper’s throat.</p>
+
+<p>The second pierced lantern oil hanging above a rooftop firing line.</p>
+
+<p>The third screamed blue-black through a corruption barrier forming across the alley entrance.</p>
+
+<hr>
+
+<p>The magical veil shattered instantly.</p>
+
+<p>Umbra.</p>
+
+<hr>
+
+<p>Kael drove GraveTide into the narrow street entrance hard enough to crack stone.</p>
+
+<p>The tower shield sealed the chokepoint completely.</p>
+
+<hr>
+
+<p class="quote">“Move civilians north!”</p>
+
+<p class="quote">“Do not stop moving!”</p>
+
+<hr>
+
+<p>Two infected crashed into the shield.</p>
+
+<p>Kael answered with one brutal hammer swing.</p>
+
+<p>The first creature’s ribcage collapsed inward.</p>
+
+<p>The second lost most of its face.</p>
+
+<hr>
+
+<p>Blood sprayed across rainwater and grain sacks.</p>
+
+<hr>
+
+<p>Further inside the district, screaming erupted.</p>
+
+<p>Then chanting.</p>
+
+<hr>
+
+<p>Cult ritual.</p>
+
+<hr>
+
+<p>Lyria sprinted onto an overturned wagon for elevation.</p>
+
+<p>Her next arrow carried silver-black runic fractures across the shaft.</p>
+
+<p>She fired directly through a second-story window.</p>
+
+<hr>
+
+<p>A pulse of blue light erupted inside the building.</p>
+
+<p>The corruption binding circle collapsed instantly.</p>
+
+<p>Three civilians chained to the floor gasped as black tendrils detached violently from their skin.</p>
+
+<hr>
+
+<p>Voidcutter.</p>
+
+<hr>
+
+<p>Rayden reached the stairwell moments before the cultists did.</p>
+
+<hr>
+
+<p>The first attacker lunged downward from the landing above with a hooked blade aimed for the neck.</p>
+
+<p>Rayden stepped inside the strike instead of away from it.</p>
+
+<p>One hand caught the attacker’s elbow.</p>
+<p>The other drove upward beneath the jaw.</p>
+
+<hr>
+
+<p>Bone cracked.</p>
+
+<p>The cultist stumbled backward choking on broken teeth.</p>
+
+<p>Rayden seized the man’s collar, pivoted hard, and threw him headfirst down the narrow stairwell.</p>
+
+<p>The impact folded the neck sideways against stone.</p>
+
+<hr>
+
+<p>The second cultist came low with a knife aimed beneath the ribs.</p>
+
+<p>Rayden trapped the wrist against his forearm instantly.</p>
+
+<p>Turned.</p>
+
+<p>Dropped weight.</p>
+
+<hr>
+
+<p>The elbow snapped backward with a wet crack.</p>
+
+<p>The knife fell.</p>
+
+<p>Rayden caught the man from behind before he could scream.</p>
+
+<p>One arm locked across the throat.</p>
+<p>Forearm beneath chin.</p>
+<p>Shoulder pressure cutting blood flow.</p>
+
+<hr>
+
+<p>The cultist clawed wildly for several seconds.</p>
+
+<p>Then weakened.</p>
+
+<p>Then stopped moving.</p>
+
+<hr>
+
+<p>Rayden lowered the body quietly.</p>
+
+<p>No wasted motion.</p>
+
+<p>No heroics.</p>
+
+<p>Just survival learned the hard way.</p>
+
+<hr>
+
+<p>No wasted movement.</p>
+
+<hr>
+
+<p>Outside, Kael suddenly stepped backward.</p>
+
+<p>Too late.</p>
+
+<hr>
+
+<p>A corruption sac detonated beside the alley wall.</p>
+
+<p>Black spores burst outward violently.</p>
+
+<hr>
+
+<p>Lyria reacted instantly.</p>
+
+<p>Her arrow struck the opposite wall.</p>
+
+<p>Dark explosive shards erupted across the alley in a wave of black steel fragments.</p>
+
+<p>The incoming infected line shredded apart mid-charge.</p>
+
+<hr>
+
+<p>Duskreaver.</p>
+
+<hr>
+
+<p>The explosion bought exactly four seconds.</p>
+
+<p>Enough.</p>
+
+<hr>
+
+<p>Kael slammed a burning tarp across the spore cloud while dragging two civilians behind GraveTide’s cover.</p>
+
+<p>The tarp ignited immediately.</p>
+
+<p>Black smoke screamed upward.</p>
+
+<hr>
+
+<p>Somewhere beyond the rooftops—</p>
+
+<p>a cult leader suddenly jerked backward mid-command.</p>
+
+<p>Then vanished from the ledge entirely.</p>
+
+<hr>
+
+<p>Nobody saw what pulled him into darkness.</p>
+
+<hr>
+
+<p>Lyria noticed anyway.</p>
+
+<p>Not movement.</p>
+
+<p>Absence.</p>
+
+<p>Again.</p>
+
+<hr>
+
+<p>Elsewhere, another sniper died before firing.</p>
+
+<p>A hidden tunnel entrance collapsed before infected reinforcements emerged.</p>
+
+<p>Two fleeing civilians reached an alley exit moments before a roof collapsed behind them.</p>
+
+<hr>
+
+<p>Someone else was fighting this battle too.</p>
+
+<p>Invisible.</p>
+
+<p>Precise.</p>
+
+<hr>
+
+<p>The deeper they pushed, the more controlled the chaos became.</p>
+
+<p>Not easier.</p>
+
+<p>Directed.</p>
+
+<hr>
+
+<p>Finally they reached the central grain chamber.</p>
+
+<hr>
+
+<p>Hundreds of civilians packed the interior.</p>
+
+<p>Children crying.</p>
+<p>Workers barricading doors.</p>
+<p>Three infected already turning near the eastern wall.</p>
+
+<hr>
+
+<p>Kael’s eyes moved instantly across the room.</p>
+
+<p>Distances.</p>
+<p>Exits.</p>
+<p>Collapse risk.</p>
+<p>Fire spread probability.</p>
+
+<hr>
+
+<p class="quote">“We don’t have enough time.”</p>
+
+<hr>
+
+<p>Rayden looked toward the trapped civilians.</p>
+
+<p>Then toward the infected breaking through the rear entrance.</p>
+
+<hr>
+
+<p>His grip tightened around Dawnpiercer.</p>
+
+<p class="quote">“Then we move faster.”</p>
+
+<hr>
+
+<p>The next ten minutes became slaughter.</p>
+
+<hr>
+
+<p>Tight corridors.</p>
+<p>Close-quarter killing.</p>
+<p>Screaming civilians.</p>
+<p>Rainwater mixing with blood.</p>
+
+<hr>
+
+<p>Kael held collapsing choke points almost alone.</p>
+
+<p>Lyria fired so quickly her fingers bled through the gloves.</p>
+
+<p>Rayden moved between civilians and infected relentlessly, switching from precision strikes to brutal dismemberment depending on distance and risk.</p>
+
+<hr>
+
+<p>And through all of it—</p>
+
+<p>something unseen kept removing corruption leadership from the battlefield one target at a time.</p>
+
+<hr>
+
+<p>By dawn, the district still burned.</p>
+
+<p>People still died.</p>
+
+<p>But the grain routes survived.</p>
+
+<p>The infection failed to spread.</p>
+
+<hr>
+
+<p>Exhausted civilians emerged from smoke and rain carrying children, wounded neighbors, and whatever pieces of their lives remained salvageable.</p>
+
+<hr>
+
+<p>Kael stood silently beside the ruined barricade.</p>
+
+<p>Then slowly looked down the corpse line.</p>
+
+<hr>
+
+<p>Every cult leader was dead.</p>
+
+<p>Every ritual coordinator.</p>
+<p>Every corruption handler.</p>
+<p>Every command structure node.</p>
+
+<hr>
+
+<p>Only them.</p>
+
+<hr>
+
+<p>Lyria wiped rain and blood from her cheek while staring toward the empty rooftops.</p>
+
+<hr>
+
+<p class="quote">“He wasn’t testing whether we could fight.”</p>
+
+<hr>
+
+<p>Her pale eyes narrowed slightly.</p>
+
+<p class="quote">“He was testing what we would protect.”</p>
+
+<hr>
+<!--SECTION 4 ENDS -->
+
+
+<h2>END OF CHAPTER 5</h2>
+</div><!-- /wrapper -->
+
+</body>
+</html>
