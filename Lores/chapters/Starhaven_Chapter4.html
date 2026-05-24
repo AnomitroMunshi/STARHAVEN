@@ -1,0 +1,9748 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starhaven — Chapter 4: The Gathering Storm</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --bg: #080810;
+  --bg2: #0b0c18;
+  --bg3: #10111e;
+  --gold: #c8983a;
+  --gold2: #e4b84a;
+  --gold3: #f5d070;
+  --text: #ddd6c8;
+  --text2: #b8aa90;
+  --text3: #8a7e6a;
+  --red: #8a2020;
+  --red2: #c03030;
+  --blue: #1a2a5a;
+  --blue2: #3050a0;
+  --silver: #a0a8b8;
+  --void: #1a0a2a;
+  --void2: #3a1a5a;
+  --corruption: #0a1a0a;
+  --divider: #2a2830;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 2.0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+}
+
+.chapter-header {
+  text-align: center;
+  padding: 60px 0 50px;
+  position: relative;
+}
+
+.chapter-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--text3);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.chapter-number {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(13px, 2.2vw, 17px);
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.chapter-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(26px, 5vw, 48px);
+  color: var(--gold3);
+  line-height: 1.25;
+  font-weight: 700;
+  text-shadow: 0 0 60px rgba(200, 152, 58, 0.18);
+  margin-bottom: 30px;
+}
+
+.chapter-ornament {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.toc {
+  background: var(--bg2);
+  border: 1px solid var(--divider);
+  border-top: 3px solid var(--gold);
+  padding: 28px 32px;
+  margin: 0 0 60px;
+  border-radius: 4px;
+}
+
+.toc-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+.toc ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+}
+
+.toc li a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.toc li a::before {
+  content: '◆';
+  font-size: 7px;
+  color: var(--gold);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.toc li a:hover {
+  color: var(--gold2);
+}
+
+p {
+  font-size: 17.5px;
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 28px 0;
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: var(--gold2);
+  letter-spacing: 0.08em;
+  margin: 52px 0 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2::before {
+  content: '✦';
+  color: var(--gold);
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.quote {
+  border-left: 3px solid var(--gold);
+  padding: 6px 0 6px 20px;
+  font-style: italic;
+  color: #c6b79d;
+  margin: 4px 0;
+  line-height: 1.85;
+  background: linear-gradient(90deg, rgba(200,152,58,0.04), transparent 60%);
+}
+
+.void-text {
+  font-style: italic;
+  color: #7a6aaa;
+  letter-spacing: 0.04em;
+  border-left: 3px solid #3a1a5a;
+  padding: 6px 0 6px 20px;
+  margin: 4px 0;
+  background: linear-gradient(90deg, rgba(58,26,90,0.08), transparent 60%);
+  line-height: 1.85;
+}
+
+.chapter-end {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.chapter-end-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+
+.epilogue-header {
+  text-align: center;
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.epilogue-label {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text3);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.epilogue-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  color: var(--gold2);
+}
+
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0;
+  justify-content: center;
+}
+
+.section-break-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--divider), transparent);
+}
+
+.section-break-star {
+  font-size: 13px;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.era {
+  display: block;
+  margin: 44px 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text3);
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .wrapper { padding: 40px 24px 80px; }
+  .toc ul { grid-template-columns: 1fr; }
+  .chapter-title { font-size: clamp(22px, 7vw, 36px); }
+  p { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<header class="chapter-header">
+  <span class="chapter-eyebrow">✦ The Starhaven Chronicles · Sundered Age ✦</span>
+  <span class="chapter-number">Chapter Four</span>
+  <h1 class="chapter-title"> The Gathering Storm</h1>
+  <div class="chapter-ornament">
+    <div class="ornament-line"></div>
+    <div class="ornament-diamond"></div>
+    <div class="ornament-line"></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <p class="toc-title">Table of Contents</p>
+  <ul>
+    <li><a href="#section-1">I. Havenfire Rises</a></li>
+    <li><a href="#section-2">II. The Scholar of Vaelmark</a></li>
+    <li><a href="#section-3">III. The City That Watches the End</a></li>
+    <li><a href="#section-4">IV. Silverfire Trial</a></li>
+    <li><a href="#section-5">V. Ash and Silver Fire</a></li>
+    <li><a href="#section-6">VI. The Wall</a></li>
+    <li><a href="#section-7">VII. The Saint Beyond the Ash</a></li>
+    <li><a href="#section-8">VIII. The Wall Still Stands</a></li>
+    <li><a href="#section-9">IX. The Warmth of Havenfire</a></li>
+    <li><a href="#section-10">X. The Cleansing March</a></li>
+   
+  </ul>
+</nav>
+
+<hr>
+<!--SECTION 1 Starts -->
+<h2 id="section-1">I. Havenfire Rises</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<hr>
+
+<p>Summer reached Havenfire slowly.</p>
+
+<hr>
+
+<p>Not as warmth.</p>
+
+<p>As survival.</p>
+
+<hr>
+
+<p>The dead fields beyond the frontier walls no longer looked completely hopeless. Thin green life pushed through damaged soil beside the southern terraces while repaired irrigation trenches carried river water toward newly planted crops under Marcus Ironmane’s relentless supervision.</p>
+
+<hr>
+
+<p>Nothing grew perfectly.</p>
+
+<p>But things grew.</p>
+
+<hr>
+
+<p>That alone felt unnatural after the Hollow Frontier.</p>
+
+<hr>
+
+<p>Havenfire no longer resembled the exhausted refugee encampment that first crawled through the broken fortress gates months earlier.</p>
+
+<hr>
+
+<p>Smoke rose constantly now from active kitchens, furnaces, workshops, and stables. Repaired walls stretched across the ridge line beneath newly built watch platforms while caravans from scattered frontier survivors occasionally appeared along the lower roads seeking shelter after hearing rumors of a defended settlement that accepted anyone willing to work.</p>
+
+<hr>
+
+<p>Some arrivals stayed only one night.</p>
+
+<p>Others never left again.</p>
+
+<hr>
+
+<p>The old fortress breathed now.</p>
+
+<hr>
+
+<p>Messy.</p>
+
+<p>Noisy.</p>
+
+<p>Alive.</p>
+
+<hr>
+
+<p>Children ran through the lower courtyards carrying wooden practice swords while exhausted adults shouted at them to stop climbing unfinished barricades. Chickens wandered almost everywhere despite Helna Ironmane threatening violence against anyone who misplaced them.</p>
+
+<hr>
+
+<p>Nobody tested whether she was joking.</p>
+
+<hr>
+
+<p>The forge district became the loudest part of Havenfire.</p>
+
+<hr>
+
+<p>Dwarven craftsmen from the frontier refugee groups had fully restored the ancient lower furnace halls beneath the western ridge. The rhythmic roar of hammers echoed through the settlement from dawn until deep into the night as tools, armor plates, horseshoes, spearheads, and farming equipment emerged from fire-blackened workshops.</p>
+
+<hr>
+
+<p>Not luxury.</p>
+
+<p>Necessity.</p>
+
+<hr>
+
+<p>That was how Havenfire functioned.</p>
+
+<hr>
+
+<p>No wasted effort.</p>
+
+<p>No ornamental wealth.</p>
+
+<p>Everything built there existed because someone needed it to survive tomorrow.</p>
+
+<hr>
+
+<p>Kael Varric enforced that philosophy harder than anyone.</p>
+
+<hr>
+
+<p>The older warrior transformed the refugee militia into something steadily approaching a real defensive force.</p>
+
+<hr>
+
+<p>Forty-five trained fighters now rotated between wall patrols, gate defense, hunting escorts, and scouting watches beneath his command structure.</p>
+
+<hr>
+
+<p>Not soldiers.</p>
+
+<p>Protectors.</p>
+
+<hr>
+
+<p>Kael corrected anyone who used the wrong word.</p>
+
+<hr>
+
+<p>The morning drills became infamous throughout Havenfire.</p>
+
+<hr>
+
+<p>At sunrise, shield formations filled the central training yard beneath Kael’s brutal supervision while Brek Stonewall anchored the front ranks like an immovable fortress himself.</p>
+
+<hr>
+
+<p>GraveTide had changed Kael.</p>
+
+<hr>
+
+<p>Not emotionally.</p>
+
+<p>Physically.</p>
+
+<hr>
+
+<p>The legendary tower shield looked monstrous beside ordinary equipment, its ancient dwarven runes faintly visible beneath layered steel whenever sunlight struck the surface directly.</p>
+
+<hr>
+
+<p>Most recruits stared at it with open awe.</p>
+
+<p>Kael used it to hit them anyway.</p>
+
+<hr>
+
+<p class="quote">“If your shield falls...”</p>
+
+<p>THUD.</p>
+
+<p class="quote">“People behind you die.”</p>
+
+<p>THUD.</p>
+
+<p class="quote">“Again.”</p>
+
+<hr>
+
+<p>Brek had stopped falling entirely.</p>
+
+<hr>
+
+<p>The giant defender now held formation against impacts that would have flattened ordinary fighters while Daven Holt moved through the lines correcting posture, footwork, and rotation timing before Kael needed to speak.</p>
+
+<hr>
+
+<p>Daven’s authority no longer felt borrowed.</p>
+
+<p>It belonged to him naturally now.</p>
+
+<hr>
+
+<p>The younger recruits followed him instinctively during exercises while even veteran refugees listened when he spoke during patrol assignments.</p>
+
+<hr>
+
+<p>Vera noticed it before Daven did.</p>
+
+<p>Which amused her endlessly.</p>
+
+<hr>
+
+<p>One afternoon, Rayden walked through the upper courtyard just in time to see Vera reorganizing supply inventories while Daven attempted unsuccessfully to help.</p>
+
+<hr>
+
+<p class="quote">“No.”</p>
+
+<p>Vera snatched a ledger from his hands.</p>
+
+<p class="quote">“You organize weapons.”</p>
+
+<p class="quote">“You do not organize food.”</p>
+
+<hr>
+
+<p>Daven frowned.</p>
+
+<p class="quote">“I organized the grain sacks yesterday.”</p>
+
+<hr>
+
+<p>Vera stared at him blankly.</p>
+
+<p class="quote">“You stacked flour beside lamp oil.”</p>
+
+<hr>
+
+<p>Rayden kept walking before Daven died publicly.</p>
+
+<hr>
+
+<p>Even he had learned survival instincts eventually.</p>
+
+<hr>
+
+<p>The southern fields belonged entirely to Marcus Ironmane now.</p>
+
+<hr>
+
+<p>The massive horse breeder rebuilt his life with frightening determination after losing the farm.</p>
+
+<hr>
+
+<p>Stable yards expanded weekly beneath his direction while the surviving Ironmane warhorses produced the first healthy foals Havenfire had seen since its founding.</p>
+
+<hr>
+
+<p>People gathered just to watch them stand.</p>
+
+<hr>
+
+<p>It felt symbolic somehow.</p>
+
+<hr>
+
+<p>Dresh Ironmane practically lived on horseback now.</p>
+
+<hr>
+
+<p>The fifteen-year-old rode patrols, trained recruits, hauled supply wagons, and somehow still found enough energy to challenge older militia fighters to sparring matches he usually lost spectacularly.</p>
+
+<hr>
+
+<p>Marcus approved completely.</p>
+
+<hr>
+
+<p class="quote">“Better bruised now than dead later.”</p>
+
+<hr>
+
+<p>Rayden spent most mornings training smaller combat groups separately from Kael’s defensive formations.</p>
+
+<hr>
+
+<p>Unlike Kael’s harsh endurance drills, Rayden focused on battlefield control.</p>
+
+<hr>
+
+<p>Precision.</p>
+<p>Movement.</p>
+<p>Protecting civilians during chaos.</p>
+
+<hr>
+
+<p>Dawnpiercer flashed constantly through the training grounds as he demonstrated disarming strikes, shield throws, controlled takedowns, and defensive positioning inside crowded engagements.</p>
+
+<hr>
+
+<p>Every movement looked measured.</p>
+
+<p>Intentional.</p>
+
+<hr>
+
+<p>Then occasionally...</p>
+
+<p>he switched weapons.</p>
+
+<hr>
+
+<p>Kingsbane changed the atmosphere instantly every time it appeared.</p>
+
+<hr>
+
+<p>The massive black greatsword moved like battlefield catastrophe given shape. Training dummies exploded apart beneath single swings while entire shield barricades shattered under impacts strong enough to shake the yard itself.</p>
+
+<hr>
+
+<p>The recruits never stopped staring.</p>
+
+<hr>
+
+<p>Rayden eventually planted Kingsbane into the earth beside them one afternoon.</p>
+
+<p class="quote">“Most people think bigger weapons mean bigger strength.”</p>
+
+<hr>
+
+<p>He rested one hand on Dawnpiercer.</p>
+
+<p class="quote">“Wrong.”</p>
+
+<p class="quote">“The important part is knowing when not to use them.”</p>
+
+<hr>
+
+<p>The younger fighters listened carefully after that.</p>
+
+<hr>
+
+<p>Especially when Rayden demonstrated how a precise Dawnpiercer strike could disable an enemy standing inches away from civilians without harming anyone nearby.</p>
+
+<hr>
+
+<p>Then came the shield drills.</p>
+
+<hr>
+
+<p>The children loved those.</p>
+
+<hr>
+
+<p>Rayden regretted teaching them almost immediately.</p>
+
+<hr>
+
+<p>By the end of the week, half the younger boys inside Havenfire were throwing wooden plates at each other while shouting:</p>
+
+<p class="quote">“WATCH THIS.”</p>
+
+<hr>
+
+<p>Helna threatened to poison Rayden personally if one more child broke their nose.</p>
+
+<hr>
+
+<p>Lyria Valen watched all of it with increasing quiet fascination.</p>
+
+<hr>
+
+<p>The Moon Elf rarely remained inside Havenfire during daylight hours. Most mornings she vanished into the surrounding forests alongside rotating scout groups, mapping corruption spread, identifying safe hunting routes, and establishing hidden warning systems beyond the frontier roads.</p>
+
+<hr>
+
+<p>But evenings...</p>
+
+<p>she spent teaching archery.</p>
+
+<hr>
+
+<p>The sessions quickly became legendary for entirely different reasons.</p>
+
+<hr>
+
+<p>Lyria did not understand human limits properly.</p>
+
+<hr>
+
+<p>At least not at first.</p>
+
+<hr>
+
+<p>One exhausted recruit spent nearly twenty minutes attempting to hit a stationary target forty feet away.</p>
+
+<hr>
+
+<p>Lyria watched silently.</p>
+
+<p>Then casually fired three arrows without fully turning toward the range.</p>
+
+<hr>
+
+<p>All three struck separate moving targets directly through the painted eye marks.</p>
+
+<hr>
+
+<p>Silence followed.</p>
+
+<hr>
+
+<p>The recruit lowered his bow slowly.</p>
+
+<p class="quote">“I hate you.”</p>
+
+<hr>
+
+<p>Lyria blinked once.</p>
+
+<p class="quote">“Reasonable.”</p>
+
+<hr>
+
+<p>Even Kael laughed at that.</p>
+
+<p>Very briefly.</p>
+
+<p>Which frightened nearby recruits more than any monster ever had.</p>
+
+<hr>
+
+<p>Over time, however, Lyria changed her teaching methods.</p>
+
+<hr>
+
+<p>Slowly.</p>
+
+<p>Subtly.</p>
+
+<hr>
+
+<p>She corrected stances more patiently.</p>
+<p>Adjusted breathing techniques.</p>
+<p>Showed children how to fire from defensive cover during monster attacks.</p>
+
+<hr>
+
+<p>Without realizing it...</p>
+
+<p>she had started investing in Havenfire too.</p>
+
+<hr>
+
+<p>Rumors spread faster than crops.</p>
+
+<hr>
+
+<p>By midsummer, stories about Havenfire traveled across the surviving frontier roads alongside merchants, refugees, smugglers, hunters, deserters, and wandering scouts.</p>
+
+<hr>
+
+<p>Most stories exaggerated wildly.</p>
+
+<hr>
+
+<p>A black-armored swordsman who killed titans.</p>
+<p>A fortress defended by immortal warriors.</p>
+<p>A Moon Elf ghost who could split arrows in darkness.</p>
+<p>A giant shield blessed by dwarven gods.</p>
+
+<hr>
+
+<p>Rayden hated every version equally.</p>
+
+<hr>
+
+<p>But one rumor interested Lyria immediately.</p>
+
+<hr>
+
+<p>The story came from an older refugee scout who arrived near dusk during heavy rain.</p>
+
+<hr>
+
+<p>The woman looked half-dead from travel.</p>
+
+<p>Missing two fingers.</p>
+<p>Scar crossing one eye.</p>
+<p>Weathered leather gear patched together repeatedly over years of frontier survival.</p>
+
+<hr>
+
+<p>She refused treatment until after eating.</p>
+
+<p>Kael respected that instantly.</p>
+
+<hr>
+
+<p>Later that night, she sat beside the western watchfire speaking quietly with several scouts while rain hammered against Havenfire’s walls.</p>
+
+<hr>
+
+<p>Lyria joined the conversation eventually.</p>
+
+<hr>
+
+<p>The older scout lowered her voice immediately.</p>
+
+<p class="quote">“You ever hear of the shadow routes?”</p>
+
+<hr>
+
+<p>Lyria’s expression sharpened slightly.</p>
+
+<p class="quote">“No.”</p>
+
+<hr>
+
+<p>The woman stared into the fire.</p>
+
+<p class="quote">“Messages moving through kingdoms without couriers.”</p>
+
+<p class="quote">“Bandit chiefs found dead inside locked rooms.”</p>
+
+<p class="quote">“Slave caravans disappearing overnight.”</p>
+
+<p class="quote">“Corruption cults exposed before they spread.”</p>
+
+<hr>
+
+<p>One younger scout frowned.</p>
+
+<p class="quote">“Who’s doing it?”</p>
+
+<hr>
+
+<p>The older woman’s voice dropped lower.</p>
+
+<p class="quote">“Nobody knows.”</p>
+
+<p class="quote">“Some call him the Black Silence.”</p>
+
+<p class="quote">“Others say he’s a ghost.”</p>
+
+<hr>
+
+<p>Lightning flashed beyond Havenfire’s walls.</p>
+
+<hr>
+
+<p>The woman continued quietly:</p>
+
+<p class="quote">“I only know this.”</p>
+
+<p class="quote">“If he wants inside a place...”</p>
+
+<p class="quote">“the guards stop looking the right direction before they even realize why.”</p>
+
+<hr>
+
+<p>Lyria said nothing afterward.</p>
+
+<p>But her pale eyes remained thoughtful long after the conversation ended.</p>
+
+<hr>
+
+<p>Late that same night, Rayden found her standing atop the eastern walls overlooking the valley roads below Havenfire.</p>
+
+<hr>
+
+<p>The settlement glowed warmly behind them beneath torchlight and forge fire.</p>
+
+<hr>
+
+<p>Lyria rested Eclipsing Whisper against the stone battlements.</p>
+
+<p class="quote">“Havenfire can survive now.”</p>
+
+<hr>
+
+<p>Rayden folded his arms.</p>
+
+<p class="quote">“Temporarily.”</p>
+
+<hr>
+
+<p>Lyria nodded once.</p>
+
+<p class="quote">“Which means we finally have time to think beyond tomorrow.”</p>
+
+<hr>
+
+<p>The wind carried distant forge sounds upward from the lower district.</p>
+
+<hr>
+
+<p>Rayden already knew where the conversation was heading.</p>
+
+<hr>
+
+<p>Lyria looked north.</p>
+
+<p>Toward Vaelmark.</p>
+
+<hr>
+
+<p class="quote">“The corruption is evolving faster than frontier kingdoms understand.”</p>
+
+<p class="quote">“And Velkan Drake already noticed us.”</p>
+
+<hr>
+
+<p>Rayden remained quiet.</p>
+
+<hr>
+
+<p>Lyria finally looked toward him directly.</p>
+
+<p class="quote">“You should go.”</p>
+
+<hr>
+
+<p>Below them, Havenfire continued breathing beneath the night.</p>
+
+<p>Children slept safely.</p>
+<p>Watchfires burned steadily.</p>
+<p>People lived.</p>
+
+<hr>
+
+<p>Rayden looked back toward the fortress behind him.</p>
+
+<p>Then toward the distant northern darkness.</p>
+
+<hr>
+
+<p>Kael eventually joined them carrying GraveTide across one shoulder.</p>
+
+<p>The older warrior listened silently while Lyria explained her reasoning.</p>
+
+<hr>
+
+<p>Then finally:</p>
+
+<p class="quote">“I stay here.”</p>
+
+<hr>
+
+<p>No hesitation.</p>
+
+<hr>
+
+<p>Rayden frowned slightly.</p>
+
+<p class="quote">“You trust me alone with Vaelmark?”</p>
+
+<hr>
+
+<p>Kael’s expression remained perfectly serious.</p>
+
+<p class="quote">“No.”</p>
+
+<p class="quote">“I trust Vaelmark less.”</p>
+
+<hr>
+
+<p>Even Lyria almost smiled.</p>
+
+<hr>
+
+<p>Kael looked back toward Havenfire below.</p>
+
+<p class="quote">“The walls aren’t finished.”</p>
+
+<p class="quote">“Militia still needs discipline.”</p>
+
+<p class="quote">“And if something attacks while we’re all gone...”</p>
+
+<hr>
+
+<p>He did not finish the sentence.</p>
+
+<p>He didn’t need to.</p>
+
+<hr>
+
+<p>Rayden nodded once.</p>
+
+<hr>
+
+<p>Lyria looked toward the forests beyond Havenfire afterward.</p>
+
+<p class="quote">“I’ll investigate the shadow-route rumors while you travel.”</p>
+
+<hr>
+
+<p>Rayden glanced sideways toward her.</p>
+
+<p class="quote">“You think this Black Silence exists?”</p>
+
+<hr>
+
+<p>Lyria’s eyes remained on the darkness beyond the walls.</p>
+
+<p class="quote">“Someone is destabilizing corruption networks intelligently.”</p>
+
+<p class="quote">“That interests me.”</p>
+
+<hr>
+
+<p>The answer sounded calm.</p>
+
+<p>But Rayden noticed something else beneath it.</p>
+
+<hr>
+
+<p>Hope.</p>
+
+<hr>
+
+<p>Not for survival.</p>
+
+<p>For allies.</p>
+
+<hr>
+
+<p>Near midnight, Rayden finally prepared for departure.</p>
+
+<hr>
+
+<p>Dawnpiercer rested at his waist.</p>
+<p>Kingsbane secured across his back.</p>
+<p>The round shield beside it.</p>
+<p>Vossfang wrapped silently around his arm beneath dark traveling cloth.</p>
+
+<hr>
+
+<p>Below the walls, Havenfire glowed warm against the endless frontier darkness.</p>
+
+<hr>
+
+<p>Lyria watched him tighten the final straps.</p>
+
+<hr>
+
+<p class="quote">“Vaelmark does not welcome people.”</p>
+
+<hr>
+
+<p>Rayden rested one hand against Dawnpiercer’s hilt.</p>
+
+<hr>
+
+<p class="quote">“Good thing I’m not visiting.”</p>
+
+<hr>
+
+<p>The gates of Havenfire slowly opened beneath the midnight stars.</p>
+
+<hr>
+
+<p>And somewhere far beyond the northern rivers...</p>
+
+<p>the City That Watched the End waited beneath silver fire skies.</p>
+
+<hr>
+
+<p><!-- CHAPTER 4 SECTION I ENDS --> </p>
+
+<!--SECTION 2 STARTS -->
+<h2 id="section-2">II — The Scholar of Vaelmark</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<hr>
+<p>Rayden left Havenfire before sunrise.</p>
+
+<hr>
+
+
+<p>The gates opened quietly beneath torchlight while the settlement still slept behind the walls Kael continued rebuilding stone by stone.</p>
+
+<hr>
+
+<p>Only a few people remained awake.</p>
+
+<hr>
+
+<p>Daven supervised the night watch beside the western tower.</p>
+<p>Vera organized the incoming grain inventory with exhausted irritation.</p>
+<p>Marcus Ironmane inspected stable lanterns personally despite Helna repeatedly telling him normal people eventually required sleep.</p>
+
+<hr>
+
+<p>Rayden noticed all of it while tightening Dawnpiercer’s belt straps near the gate.</p>
+
+<hr>
+
+<p>That was the strange thing about Havenfire now.</p>
+
+<p>Even when quiet...</p>
+
+<p>it felt alive.</p>
+
+<hr>
+
+<p>Kael stood waiting beside the opened gate with GraveTide resting against one shoulder.</p>
+
+<hr>
+
+<p>Neither man spoke immediately.</p>
+
+<hr>
+
+<p>Their friendship no longer needed constant words to exist.</p>
+
+<hr>
+
+<p>Finally:</p>
+
+<p class="quote">“If Vaelmark tries something stupid...”</p>
+
+<hr>
+
+<p>Rayden smirked faintly.</p>
+
+<p class="quote">“You’ll hear the explosion from here?”</p>
+
+<hr>
+
+<p>Kael looked perfectly serious.</p>
+
+<p class="quote">“Probably.”</p>
+
+<hr>
+
+<p>That actually sounded believable.</p>
+
+<hr>
+
+<p>Lyria arrived last.</p>
+
+<hr>
+
+<p>The Moon Elf carried Eclipsing Whisper across her back while several folded scouting maps rested beneath one arm alongside notes documenting corruption spread around the northern roads.</p>
+
+<hr>
+
+<p>She handed the maps to Rayden quietly.</p>
+
+<p class="quote">“Avoid the western valley crossings.”</p>
+
+<p class="quote">“Corruption nests appeared there three weeks ago.”</p>
+
+<hr>
+
+<p>Rayden accepted the maps.</p>
+
+<p>Then noticed additional markings.</p>
+
+<hr>
+
+<p>Shadow symbols.</p>
+
+<p>Small black ink lines hidden between route indicators.</p>
+
+<hr>
+
+<p>Lyria noticed him noticing.</p>
+
+<p class="quote">“Possible shadow-route activity.”</p>
+
+<p class="quote">“If the stories are true...”</p>
+
+<hr>
+
+<p>She paused slightly.</p>
+
+<p class="quote">“someone intelligent is already fighting this war from the dark.”</p>
+
+<hr>
+
+<p>Rayden folded the map carefully.</p>
+
+<hr>
+
+<p>For a brief moment, silence settled between them beneath the cold frontier dawn.</p>
+
+<hr>
+
+<p>Then Kael finally spoke.</p>
+
+<p class="quote">“Come back alive.”</p>
+
+<hr>
+
+<p>Rayden glanced sideways toward him.</p>
+
+<p class="quote">“You too.”</p>
+
+<hr>
+
+<p>Then he left Havenfire behind.</p>
+
+<hr>
+
+<p>The northern roads felt different almost immediately.</p>
+
+<hr>
+
+<p>The farther Rayden traveled northwest...</p>
+
+<p>the less the world resembled the dying frontier.</p>
+
+<hr>
+
+<p>Not safer.</p>
+
+<p>Controlled.</p>
+
+<hr>
+
+<p>Old trade roads slowly transformed into smooth blackstone pathways lined with ancient rune pylons glowing faint blue beneath the overcast skies. Burned corruption zones appeared periodically beside the roads where entire forests had been sterilized completely through arcane fire.</p>
+
+<hr>
+
+<p>No corpses remained.</p>
+
+<p>No scavengers.</p>
+
+<p>No life.</p>
+
+<hr>
+
+<p>Just clean ash.</p>
+
+<hr>
+
+<p>That disturbed Rayden more than ordinary battlefield slaughter ever had.</p>
+
+<hr>
+
+<p>Several abandoned villages stood untouched beside the northern rivers.</p>
+
+<p>No signs of attack.</p>
+<p>No blood.</p>
+<p>No bodies.</p>
+
+<hr>
+
+<p>Only glowing Vaelmark warning sigils burned into the stone entrances:</p>
+
+<hr>
+
+<p class="quote">QUARANTINED.</p>
+
+<hr>
+
+<p>Further north, strange floating crystal constructs drifted silently through the skies above the roads.</p>
+
+<p>Watching.</p>
+
+<hr>
+
+<p>Rayden felt their attention constantly.</p>
+
+<hr>
+
+<p>Vaelmark monitored its territory like a living organism.</p>
+
+<hr>
+
+<p>Three days into the journey, rain began falling heavily across the northern highland roads.</p>
+
+<hr>
+
+<p>Rayden reached the remains of an old checkpoint fortress near dusk.</p>
+
+<p>The structure overlooked a narrow river crossing cutting through elevated blackstone cliffs beneath the northern forests.</p>
+
+<hr>
+
+<p>Something felt wrong immediately.</p>
+
+<hr>
+
+<p>Too quiet.</p>
+
+<hr>
+
+<p>Rayden’s hand rested against Dawnpiercer instinctively.</p>
+
+<hr>
+
+<p>Then he saw the bodies.</p>
+
+<hr>
+
+<p>Six dead merchants near the crossing.</p>
+
+<p>Not recently killed.</p>
+
+<p>Partially corrupted.</p>
+
+<hr>
+
+<p>Black crystal veins spread beneath their skin while several broken supply wagons lay overturned nearby.</p>
+
+<hr>
+
+<p>No valuables remained.</p>
+
+<p>But the corpses had not been looted properly either.</p>
+
+<hr>
+
+<p>Which meant the attackers were interrupted.</p>
+
+<hr>
+
+<p>Rayden crouched beside one of the bodies carefully.</p>
+
+<hr>
+
+<p>The corruption looked strange.</p>
+
+<hr>
+
+<p>Organized.</p>
+
+<p>Not random infection spread.</p>
+
+<hr>
+
+<p>Then movement echoed above the cliffs.</p>
+
+<hr>
+
+<p>Corrupted mercenaries emerged from the ruined checkpoint structures overlooking the crossing.</p>
+
+<hr>
+
+<p>At least twelve.</p>
+
+<hr>
+
+<p>Not ordinary bandits.</p>
+
+<p>Former soldiers.</p>
+
+<p>Their armor carried remnants of frontier military insignias beneath black crystal growths spreading through flesh and steel alike.</p>
+
+<hr>
+
+<p>One of them smiled unnaturally.</p>
+
+<p>His jaw moved slightly wrong beneath the corruption.</p>
+
+<hr>
+
+<p class="quote">“Traveler.”</p>
+
+<p class="quote">“Stay.”</p>
+
+<hr>
+
+<p>Rayden drew Dawnpiercer instantly.</p>
+
+<hr>
+
+<p>The holy blade ignited gold against the rain-dark crossing.</p>
+
+<hr>
+
+<p>More movement followed.</p>
+
+<hr>
+
+<p>Two corrupted beasts climbed from beneath the bridge supports below.</p>
+
+<p>Large.</p>
+
+<p>Wolf-like once.</p>
+
+<p>Not anymore.</p>
+
+<hr>
+
+<p>Crystal growths pierced through their shoulders and jaws while black corruption smoke escaped their mouths with every breath.</p>
+
+<hr>
+
+<p>Rayden’s eyes narrowed slightly.</p>
+
+<hr>
+
+<p>Too coordinated.</p>
+
+<hr>
+
+<p>These things were positioning intelligently.</p>
+
+<hr>
+
+<p>The mercenaries did not charge immediately.</p>
+
+<p>They surrounded.</p>
+
+<hr>
+
+<p>Studying him.</p>
+
+<hr>
+
+<p>Then one corrupted soldier suddenly whispered:</p>
+
+<p class="quote">“He’s here.”</p>
+
+<hr>
+
+<p>Rayden frowned.</p>
+
+<p class="quote">“Who?”</p>
+
+<hr>
+
+<p>No answer came.</p>
+
+<hr>
+
+<p>Instead...</p>
+
+<p>the sky darkened.</p>
+
+<hr>
+
+<p>Not from clouds.</p>
+
+<hr>
+
+<p>Shadow.</p>
+
+<hr>
+
+<p>The sound arrived next.</p>
+
+<hr>
+
+<p>Not a roar.</p>
+
+<p>Pressure.</p>
+
+<hr>
+
+<p>The entire river crossing trembled violently while the corrupted beasts immediately recoiled in visible fear.</p>
+
+<hr>
+
+<p>Then fire descended from the heavens.</p>
+
+<hr>
+
+<p>Volcanic flame exploded across the ruined checkpoint towers above the bridge in a wave of black-orange destruction powerful enough to melt stone instantly.</p>
+
+<p>Rayden looked upward sharply.</p>
+
+<hr>
+<p>And memory struck first.</p>
+
+<hr>
+
+<p>Blackwall Ridge.</p>
+
+<p>Burning siege towers.</p>
+<p>Collapsed walls.</p>
+<p>Thousands screaming beneath winter smoke.</p>
+
+<hr>
+
+<p>And above the battlefield...</p>
+
+<p>a massive black shape crossing through firelit clouds while arcane bombardments turned the night sky blue-white.</p>
+
+<hr>
+<p>Pyrewing.</p>
+
+<hr>
+
+<p>Rayden had only seen the drake once before.</p>
+
+<p>Years ago.</p>
+
+<p>During the Battle of Blackwall Ridge.</p>
+
+<hr>
+
+<p>Back then, the creature had looked distant.</p>
+
+<p>Almost unreal.</p>
+
+<p>A battlefield rumor made flesh high above the war.</p>
+
+<hr>
+
+<p>This time...</p>
+
+<p>it landed directly in front of him.</p>
+
+<p>The corrupted mercenaries never even screamed.</p>
+
+<hr>
+
+<p>The massive volcanic drake descended through the storm clouds like living catastrophe.</p>
+
+<hr>
+
+<p>Its obsidian-black scales reflected molten cracks beneath the rain while ember smoke trailed behind colossal wings large enough to eclipse the river crossing entirely.</p>
+
+<hr>
+
+<p>This was not a normal drake.</p>
+
+<hr>
+
+<p>It was enormous.</p>
+
+<p>Ancient by drake standards.</p>
+
+<p>A battlefield legend.</p>
+
+<hr>
+
+<p>Pyrewing’s molten eyes fixed briefly onto Rayden before the creature landed atop the ruined checkpoint wall with enough force to shake the bridge supports below.</p>
+
+<hr>
+
+<p>The remaining corrupted beasts tried fleeing instantly.</p>
+
+<hr>
+
+<p>Blue-white runes ignited across the ground beneath them.</p>
+
+<hr>
+
+<p>Then gravity itself twisted sideways.</p>
+
+<hr>
+
+<p>The beasts slammed violently into the cliff walls hard enough to rupture bone.</p>
+
+<hr>
+
+<p>And finally...</p>
+
+<p>someone stepped through the rain.</p>
+
+<hr>
+
+<p>Velkan Drake wore long dark arcane robes layered beneath silver-blue runic plating glowing softly through the stormlight. Ember reflections from Pyrewing’s volcanic scales danced across sharp elven features carrying the exhausted composure of a man who had spent too many years studying terrible truths.</p>
+
+<hr>
+
+<p>Most unsettling of all...</p>
+
+<p>he looked completely calm.</p>
+
+<hr>
+
+<p>Even standing beside battlefield ruin.</p>
+
+<hr>
+
+<p>Velkan studied Rayden silently for several long seconds.</p>
+
+<p>Not hostile.</p>
+
+<p>Evaluating.</p>
+
+<hr>
+
+<p>Then finally:</p>
+
+<p class="quote">“Dawnpiercer.”</p>
+
+<hr>
+
+<p>His eyes shifted briefly toward Kingsbane resting across Rayden’s back.</p>
+
+<hr>
+
+<p class="quote">“And Kingsbane.”</p>
+
+<hr>
+
+<p>Another pause.</p>
+
+<hr>
+
+<p class="quote">“Interesting combination.”</p>
+
+<hr>
+
+<p>Rayden did not lower his weapon.</p>
+
+<p class="quote">“You usually drop drakes onto people during introductions?”</p>
+
+<hr>
+
+<p>Pyrewing’s volcanic breath curled through the rain behind Velkan.</p>
+
+<hr>
+
+<p>The scholar almost looked amused.</p>
+
+<p>Almost.</p>
+
+<hr>
+
+<p class="quote">“Only when they survive long enough to become interesting.”</p>
+
+<hr>
+
+<p>Rayden’s eyes narrowed.</p>
+
+<hr>
+
+<p>Then Velkan said quietly:</p>
+
+<p class="quote">“I remember the boy from Blackwall Ridge.”</p>
+
+<hr>
+
+<p>Silence.</p>
+
+<hr>
+
+<p>The rain suddenly felt colder.</p>
+
+<hr>
+
+<p>Rayden stared at him carefully now.</p>
+
+<hr>
+
+<p>Blackwall Ridge.</p>
+
+<p>Years ago.</p>
+
+<p>Before Havenfire.</p>
+<p>Before Kingsbane.</p>
+<p>Before Selene died.</p>
+
+<hr>
+
+<p>Velkan continued calmly.</p>
+
+<p class="quote">“Seventeen years old.”</p>
+
+<p class="quote">“Holding the western breach after the third collapse.”</p>
+
+<hr>
+
+<p>His gaze sharpened slightly.</p>
+
+<p class="quote">“You adapted faster than the battlefield predicted.”</p>
+
+<hr>
+
+<p>Rayden felt something deeply uncomfortable settle in his chest.</p>
+
+<hr>
+
+<p>This man had been watching him for years.</p>
+
+<hr>
+
+<p>Velkan stepped closer slowly.</p>
+
+<p>No visible threat.</p>
+
+<p>Which somehow felt worse.</p>
+
+<hr>
+
+<p class="quote">“Havenfire currently holds approximately two hundred and thirteen civilians.”</p>
+
+<p class="quote">“Forty-five trained defenders.”</p>
+
+<p class="quote">“Kael Varric remained behind to complete fortification work.”</p>
+
+<p class="quote">“Lyria Valen is investigating shadow-route rumors in the southern forests.”</p>
+
+<hr>
+
+<p>Rayden’s grip tightened slightly around Dawnpiercer.</p>
+
+<hr>
+
+<p>Velkan noticed immediately.</p>
+
+<hr>
+
+<p class="quote">“Relax.”</p>
+
+<p class="quote">“If Vaelmark intended harm...”</p>
+
+<hr>
+
+<p>He glanced upward toward Pyrewing.</p>
+
+<hr>
+
+<p class="quote">“you would already know.”</p>
+
+<hr>
+
+<p>The statement carried no arrogance.</p>
+
+<p>Only fact.</p>
+
+<hr>
+
+<p>That somehow made it worse.</p>
+
+<hr>
+
+<p>Velkan’s eyes shifted again toward Dawnpiercer.</p>
+
+<hr>
+
+<p class="quote">“You use that blade carefully.”</p>
+
+<hr>
+
+<p>Then toward Kingsbane.</p>
+
+<p class="quote">“And that one reluctantly.”</p>
+
+<hr>
+
+<p>Rayden remained silent.</p>
+
+<hr>
+
+<p>Velkan looked genuinely thoughtful now.</p>
+
+<p class="quote">“Most men carrying weapons like Kingsbane eventually become addicted to certainty.”</p>
+
+<p class="quote">“Overwhelming force simplifies morality.”</p>
+
+<hr>
+
+<p>His gaze returned to Rayden directly.</p>
+
+<p class="quote">“But you keep choosing precision instead.”</p>
+
+<hr>
+
+<p>Rainwater rolled slowly down Dawnpiercer’s glowing edge.</p>
+
+<hr>
+
+<p>Rayden finally answered:</p>
+
+<p class="quote">“People usually survive that way.”</p>
+
+<hr>
+
+<p>Velkan nodded once.</p>
+
+<p class="quote">“Yes.”</p>
+
+<p class="quote">“For now.”</p>
+
+<hr>
+
+<p>The words settled heavily between them.</p>
+
+<hr>
+
+<p>Then the scholar looked toward the distant northwest horizon where faint silver lights glowed through the storm far beyond the mountains.</p>
+
+<hr>
+
+<p class="quote">“Come.”</p>
+
+<p class="quote">“You should see what’s approaching before deciding how to fight it.”</p>
+
+<hr>
+
+<p>Pyrewing lowered one massive volcanic wing toward the road below.</p>
+
+<hr>
+
+<p>Rayden stared at the drake briefly.</p>
+
+<hr>
+
+<p>Then upward toward the storm-covered northern skies beyond.</p>
+
+<hr>
+
+<p>For the first time in years...</p>
+
+<p>even he felt small.</p>
+
+<hr>
+
+<p>Not weak.</p>
+
+<p>Just aware.</p>
+
+<hr>
+
+<p>The world was much larger than the frontier wars he survived.</p>
+
+<hr>
+
+<p>And somewhere ahead beneath silver stormlight...</p>
+
+<p>Vaelmark waited.</p>
+
+<hr>
+
+<p><!-- SECTION II ENDS --> </p>
+
+<!-- SECTION III STARTS -->
+<h2 id="section-3">III — The City That Watches the End</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<hr>
+<p>The storm broke near dawn.</p>
+
+<hr>
+
+<p>For most of the night, Rayden traveled beneath black clouds beside Pyrewing’s enormous silhouette moving silently through the northern skies overhead while Velkan guided the route without visible effort.</p>
+
+<hr>
+
+<p>The farther northwest they traveled...</p>
+
+<p>the stranger the world became.</p>
+
+<hr>
+
+<p>The roads improved first.</p>
+
+<hr>
+
+<p>Not ordinary repairs.</p>
+
+<p>Precision.</p>
+
+<hr>
+
+<p>Ancient blackstone highways stretched through elevated valleys reinforced by glowing rune lines embedded directly into the earth itself. River crossings no longer relied on wood or rope but floating silver bridge platforms suspended above rushing waters through arcane mechanisms Rayden could not begin understanding.</p>
+
+<hr>
+
+<p>Even the forests looked different.</p>
+
+<hr>
+
+<p>Controlled.</p>
+
+<hr>
+
+<p>Sections of woodland had been cut away deliberately to create clear sightlines toward distant hills where massive rune pylons rotated slowly like silent watchtowers scanning the land itself.</p>
+
+<hr>
+
+<p>Nothing about Vaelmark territory felt accidental.</p>
+
+<hr>
+
+<p>That unsettled Rayden more than ruined kingdoms ever had.</p>
+
+<hr>
+
+<p>Near midday, the clouds finally parted.</p>
+
+<hr>
+
+<p>And Vaelmark appeared.</p>
+
+<hr>
+
+<p>Rayden slowed instinctively.</p>
+
+<hr>
+
+<p>The city rose across an enormous northern valley surrounded by elevated ridges and ancient forests split apart by silver rivers flowing through rune-controlled canals.</p>
+
+<hr>
+
+<p>Massive black-and-silver towers pierced the skies above layered arcane districts connected by floating bridgeways glowing faintly beneath daylight. Rotating observatories crowned the highest structures while enormous crystalline arrays floated above portions of the city like suspended stars.</p>
+
+<hr>
+
+<p>And everywhere...</p>
+
+<p>there were drakes.</p>
+
+<hr>
+
+<p>Winged silhouettes crossed the skies constantly.</p>
+
+<p>Patrol drakes.</p>
+<p>Messenger drakes.</p>
+<p>Heavily armored combat drakes carrying mounted rune artillery crews.</p>
+
+<hr>
+
+<p>None approached Pyrewing.</p>
+
+<hr>
+
+<p>They moved aside instead.</p>
+
+<hr>
+
+<p>That told Rayden everything he needed to know.</p>
+
+<hr>
+
+<p>Even here...</p>
+
+<p>Pyrewing was legendary.</p>
+
+<hr>
+
+<p>The volcanic drake descended toward the western landing platforms overlooking the city while enormous rune anchors illuminated automatically beneath its shadow.</p>
+
+<hr>
+
+<p>The landing impact shook the entire platform.</p>
+
+<hr>
+
+<p>Workers immediately began repositioning massive arcane stabilization chains around the drake with disciplined efficiency while armored battlemages monitored the skies above through floating projection screens displaying distant patrol routes.</p>
+
+<hr>
+
+<p>Nobody panicked.</p>
+
+<p>Nobody stared openly.</p>
+
+<hr>
+
+<p>Vaelmark had seen terrifying things before.</p>
+
+<hr>
+
+<p>Still...</p>
+
+<p>people looked toward Velkan when he walked past.</p>
+
+<p>Not fearfully.</p>
+
+<p>Respectfully.</p>
+
+<hr>
+
+<p>That felt somehow heavier.</p>
+
+<hr>
+
+<p>Rayden followed Velkan through the upper district silently while the city unfolded around him.</p>
+
+<hr>
+
+<p>Markets operated normally beneath glowing arcane lanterns.</p>
+<p>Children crossed elevated bridges carrying books instead of water buckets.</p>
+<p>Smiths forged specialized anti-corruption equipment beside scholars debating magical calculations openly across public plazas.</p>
+
+<hr>
+
+<p>No desperation.</p>
+
+<p>No survival panic.</p>
+
+<hr>
+
+<p>Vaelmark looked like a civilization preparing calmly for disaster instead of pretending disaster did not exist.</p>
+
+<hr>
+
+<p>Rayden realized suddenly:</p>
+
+<hr>
+
+<p>Havenfire survived the world.</p>
+
+<p>Vaelmark studied it.</p>
+
+<hr>
+
+<p>That difference mattered.</p>
+
+<hr>
+
+<p>The upper observatory district overlooked nearly the entire valley.</p>
+
+<hr>
+
+<p>Massive rotating structures lined the elevated cliffs while floating rune arrays projected constantly changing maps across translucent magical screens suspended in midair.</p>
+
+<hr>
+
+<p>One of those screens displayed corruption movement across half the continent.</p>
+
+<hr>
+
+<p>Rayden stopped walking immediately.</p>
+
+<hr>
+
+<p>The spread was enormous.</p>
+
+<hr>
+
+<p>Far larger than frontier rumors ever suggested.</p>
+
+<hr>
+
+<p>Blackened zones stretched through entire regions beyond the eastern territories while smaller corruption fractures pulsed intermittently near isolated kingdoms like infections spreading through veins.</p>
+
+<hr>
+
+<p>And near the center-western frontier...</p>
+
+<p>Havenfire appeared.</p>
+
+<hr>
+
+<p>Tiny.</p>
+
+<hr>
+
+<p>Velkan noticed where Rayden was looking.</p>
+
+<p class="quote">“Your settlement exists directly between three developing convergence paths.”</p>
+
+<hr>
+
+<p>Rayden frowned.</p>
+
+<p class="quote">“Convergence?”</p>
+
+<hr>
+
+<p>Velkan approached the projection calmly.</p>
+
+<p>Silver-blue runes shifted beneath his fingers as multiple corruption patterns expanded across the map.</p>
+
+<hr>
+
+<p class="quote">“The corruption adapts.”</p>
+
+<p class="quote">“Studies resistance.”</p>
+
+<hr>
+
+<p>His hand moved again.</p>
+
+<p>Several destroyed kingdoms illuminated red.</p>
+
+<hr>
+
+<p class="quote">“When populations collapse quickly, it spreads slowly afterward.”</p>
+
+<hr>
+
+<p>Then toward surviving fortified regions.</p>
+
+<hr>
+
+<p class="quote">“When organized resistance appears...”</p>
+
+<hr>
+
+<p>The corruption patterns intensified visibly.</p>
+
+<hr>
+
+<p class="quote">“it learns.”</p>
+
+<hr>
+
+<p>Silence settled heavily across the observatory.</p>
+
+<hr>
+
+<p>Rayden stared at the map carefully.</p>
+
+<hr>
+
+<p>It did not resemble disease spread.</p>
+
+<hr>
+
+<p>It resembled pressure.</p>
+
+<p>Adjustment.</p>
+
+<p>Observation.</p>
+
+<hr>
+
+<p>Velkan’s voice remained calm.</p>
+
+<p class="quote">“The kingdoms still believe this is an invasion.”</p>
+
+<hr>
+
+<p>His eyes shifted toward Rayden.</p>
+
+<p class="quote">“It is not.”</p>
+
+<hr>
+
+<p class="quote">“It is contact.”</p>
+
+<hr>
+
+<p>The words chilled the entire room.</p>
+
+<hr>
+
+<p>Before Rayden could answer, another voice spoke from behind them.</p>
+
+<hr>
+
+<p class="quote">“And this is why nobody likes talking to you before noon.”</p>
+
+<hr>
+
+<p>Rayden turned.</p>
+
+<hr>
+
+<p>The man approaching wore dark blue battlemage armor layered beneath a long silver military coat carrying the insignia of Vaelmark’s aerial divisions across one shoulder.</p>
+
+<p>Younger than Velkan.</p>
+
+<p>Sharply composed.</p>
+
+<p>Practical.</p>
+
+<hr>
+
+<p>Unlike Velkan’s exhausted scholar presence...</p>
+
+<p>this man radiated military precision.</p>
+
+<hr>
+
+<p>Several rune officers immediately straightened when he entered.</p>
+
+<hr>
+
+<p>Velkan sounded entirely unimpressed.</p>
+
+<p class="quote">“Sorin.”</p>
+
+<hr>
+
+<p>Sorin Vael stopped beside the projection platform while studying Rayden openly.</p>
+
+<hr>
+
+<p>Not hostility.</p>
+
+<p>Assessment.</p>
+
+<hr>
+
+<p>His eyes paused briefly on Kingsbane.</p>
+
+<p>Then Dawnpiercer.</p>
+
+<hr>
+
+<p class="quote">“So this is the frontier swordsman.”</p>
+
+<hr>
+
+<p>Rayden folded his arms.</p>
+
+<p class="quote">“Disappointed?”</p>
+
+<hr>
+
+<p>Sorin considered the question honestly.</p>
+
+<hr>
+
+<p class="quote">“Not yet.”</p>
+
+<hr>
+
+<p>That sounded dangerously sincere.</p>
+
+<hr>
+
+<p>Velkan ignored both of them entirely while continuing adjustments across the corruption displays.</p>
+
+<hr>
+
+<p>Sorin watched silently for several moments before speaking again.</p>
+
+<p class="quote">“You built Havenfire quickly.”</p>
+
+<hr>
+
+<p>Rayden’s eyes narrowed slightly.</p>
+
+<hr>
+
+<p>Sorin noticed immediately.</p>
+
+<p class="quote">“Relax.”</p>
+
+<p class="quote">“If Vaelmark intended expansion, we would’ve annexed half the frontier years ago.”</p>
+
+<hr>
+
+<p>Rayden glanced toward the massive city beyond the observatory windows.</p>
+
+<hr>
+
+<p>That also sounded believable.</p>
+
+<hr>
+
+<p>Sorin crossed both arms.</p>
+
+<p class="quote">“The issue is sustainability.”</p>
+
+<p class="quote">“Small settlements survive until larger threats notice them.”</p>
+
+<hr>
+
+<p>Rayden answered immediately.</p>
+
+<p class="quote">“We noticed us first.”</p>
+
+<hr>
+
+<p>For the first time...</p>
+
+<p>Sorin looked genuinely interested.</p>
+
+<hr>
+
+<p>Velkan finally spoke again.</p>
+
+<p class="quote">“That is precisely the problem.”</p>
+
+<hr>
+
+<p>His fingers moved across the projection map once more.</p>
+
+<hr>
+
+<p>A new set of corruption fractures illuminated across the northern territories.</p>
+
+<hr>
+
+<p>Larger.</p>
+
+<p>Deeper.</p>
+
+<p>Organized.</p>
+
+<hr>
+
+<p>One pulse appeared frighteningly close to Havenfire’s surrounding frontier regions.</p>
+
+<hr>
+
+<p>Rayden’s expression hardened immediately.</p>
+
+<hr>
+
+<p>Velkan watched him carefully.</p>
+
+<p class="quote">“You respond emotionally to threat vectors.”</p>
+
+<hr>
+
+<p>Rayden looked toward him sharply.</p>
+
+<p class="quote">“People live there.”</p>
+
+<hr>
+
+<p>Velkan nodded once.</p>
+
+<p class="quote">“Exactly.”</p>
+
+<hr>
+
+<p>The scholar walked slowly toward the observatory windows overlooking Vaelmark below.</p>
+
+<hr>
+
+<p>Silver towers glowed beneath the afternoon light.</p>
+<p>Drake patrols crossed overhead.</p>
+<p>Rune artillery platforms rotated silently atop distant battlements.</p>
+
+<hr>
+
+<p>A civilization preparing for extinction.</p>
+
+<hr>
+
+<p>Velkan spoke quietly.</p>
+
+<p class="quote">“The frontier kingdoms believe walls stop this.”</p>
+
+<hr>
+
+<p>His gaze shifted toward the map again.</p>
+
+<p class="quote">“But the corruption avoids strength now.”</p>
+
+<p class="quote">“It pressures weakness.”</p>
+
+<p class="quote">“Tests adaptation.”</p>
+
+<hr>
+
+<p>Then finally:</p>
+
+<p class="quote">“It is learning civilization.”</p>
+
+<hr>
+
+<p>Silence followed.</p>
+
+<hr>
+
+<p>Far below the observatory, Vaelmark continued functioning normally.</p>
+
+<p>Markets.</p>
+<p>Schools.</p>
+<p>Workshops.</p>
+<p>Families.</p>
+
+<hr>
+
+<p>Life continuing beneath the shadow of something ancient and intelligent.</p>
+
+<hr>
+
+<p>Rayden looked down toward the city.</p>
+
+<p>Then back toward the corruption map.</p>
+
+<hr>
+
+<p>And for the first time since Oaksmane...</p>
+
+<p>he understood something truly terrifying.</p>
+
+<hr>
+
+<p>The world was not dying randomly.</p>
+
+<hr>
+
+<p>Something was studying how civilizations survived.</p>
+
+<hr>
+
+<p>Velkan stood beside the projection table beneath the pale observatory light.</p>
+
+<hr>
+
+<p>Then quietly said:</p>
+
+<p class="quote">“This is not a frontier problem anymore.”</p>
+
+<hr>
+<!-- SECTION III ENDS -->
+ <!-- SECTION IV STARTS -->
+<h2 id="section-4">IV —  Silverfire Trial</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<hr>
+<p>Rayden remained inside Vaelmark for six days.</p>
+
+<hr>
+
+<p>That alone felt strange.</p>
+
+<hr>
+
+<p>For years, his life had become movement.</p>
+
+<p>Roads.</p>
+<p>Battlefields.</p>
+<p>Ruins.</p>
+<p>Temporary fires beneath temporary skies.</p>
+
+<hr>
+
+<p>But Vaelmark did not feel temporary.</p>
+
+<hr>
+
+<p>It felt prepared.</p>
+
+<hr>
+
+<p>Every morning, drake patrols crossed the skies above the silver towers with precise military timing while rune projections shifted constantly across elevated observatories tracking corruption movement throughout the continent.</p>
+
+<hr>
+
+<p>Nothing in Vaelmark existed casually.</p>
+
+<p>Every wall.</p>
+<p>Every tower.</p>
+<p>Every patrol route.</p>
+
+<hr>
+
+<p>Built for survival.</p>
+
+<hr>
+
+<p>Rayden spent most of those days watching.</p>
+
+<hr>
+
+<p>And realizing how much larger the world truly was.</p>
+
+<hr>
+
+<p>The Ninth Sky Corps trained above the western valleys daily.</p>
+
+<hr>
+
+<p>Not a massive army.</p>
+
+<p>An elite one.</p>
+
+<hr>
+
+<p>Volcanic drakes soared through formation patterns while airborne battlemages launched coordinated silverfire bombardments against moving rune targets suspended across the sky itself.</p>
+
+<hr>
+
+<p>Precision.</p>
+
+<p>Every movement measured.</p>
+
+<p>Every strike calculated.</p>
+
+<hr>
+
+<p>Sorin Vael commanded the drills personally from the upper command platform overlooking the western cliffs.</p>
+
+<hr>
+
+<p class="quote">“Altitude six.”</p>
+
+<p class="quote">“Rotate eastern wing.”</p>
+
+<p class="quote">“Silverfire release on mark.”</p>
+
+<hr>
+
+<p>The sky answered instantly.</p>
+
+<hr>
+
+<p>Three drake-mounted battlemages descended simultaneously before unleashing concentrated streams of silver-white flame downward.</p>
+
+<hr>
+
+<p>The impact vaporized the stone targets completely.</p>
+
+<hr>
+
+<p>Not exploded.</p>
+
+<p>Erased.</p>
+
+<hr>
+
+<p>Rayden stared silently.</p>
+
+<hr>
+
+<p>Sorin eventually joined him beside the overlook.</p>
+
+<hr>
+
+<p class="quote">“Most kingdoms think drakes are weapons.”</p>
+
+<hr>
+
+<p>His eyes followed the formations overhead.</p>
+
+<p class="quote">“They’re wrong.”</p>
+
+<hr>
+
+<p>Rayden folded his arms.</p>
+
+<p class="quote">“Then what are they?”</p>
+
+<hr>
+
+<p>Sorin answered calmly.</p>
+
+<p class="quote">“Air superiority.”</p>
+
+<hr>
+
+<p>The statement sounded less like pride and more like battlefield mathematics.</p>
+
+<hr>
+
+<p>Rayden respected that.</p>
+
+<hr>
+
+<p>Much more than Vaelmark’s scholars pretending war could be solved from libraries alone.</p>
+
+<hr>
+
+<p>Unfortunately for him...</p>
+
+<p>Velkan noticed that opinion immediately.</p>
+
+<hr>
+
+<p>On the seventh night, Rayden received the invitation.</p>
+
+<hr>
+
+<p>Not written.</p>
+
+<p>Spoken.</p>
+
+<hr>
+
+<p>A young battlemage approached quietly during evening meal rotations.</p>
+
+<p class="quote">“Scholar Drake requests your presence at the Silver Arena.”</p>
+
+<hr>
+
+<p>Half the dining hall went silent.</p>
+
+<hr>
+
+<p>Rayden looked up slowly.</p>
+
+<p class="quote">“That supposed to sound threatening?”</p>
+
+<hr>
+
+<p>The battlemage looked genuinely uncomfortable.</p>
+
+<p class="quote">“Usually, yes.”</p>
+
+<hr>
+
+<p>The Silver Arena stood beneath Vaelmark’s highest observatory towers.</p>
+
+<hr>
+
+<p>Ancient.</p>
+
+<p>Circular.</p>
+
+<p>Covered in layered runic barriers glowing softly beneath the midnight sky.</p>
+
+<hr>
+
+<p>Hundreds of spectators already lined the elevated viewing platforms above when Rayden entered.</p>
+
+<hr>
+
+<p>Sky Corps officers.</p>
+<p>Rune scholars.</p>
+<p>Drake riders.</p>
+
+<hr>
+
+<p>Sorin stood near the upper barrier platforms watching silently with both arms crossed.</p>
+
+<hr>
+
+<p>And at the center of the arena...</p>
+
+<p>stood Velkan Drake.</p>
+
+<hr>
+
+<p>The Ashen Scholar rested one hand against a long black-and-silver staff embedded into the stone floor beside him.</p>
+
+<hr>
+
+<p>Cinderwake.</p>
+
+<hr>
+
+<p>The weapon radiated unstable heat through the arena air itself.</p>
+
+<p>Volcanic crystal pulsed faintly near the core while silverfire runes crawled slowly across the staff like burning veins beneath obsidian glass.</p>
+
+<hr>
+
+<p>Rayden immediately noticed something else.</p>
+
+<hr>
+
+<p>Velkan’s right hand carried burn scars.</p>
+
+<p>Old ones.</p>
+
+<p>Repeated ones.</p>
+
+<hr>
+
+<p>The staff was hurting him.</p>
+
+<hr>
+
+<p>Velkan noticed Rayden noticing.</p>
+
+<hr>
+
+<p>Neither mentioned it.</p>
+
+<hr>
+
+<p>Silence stretched through the arena.</p>
+
+<hr>
+
+<p>Then Velkan finally spoke.</p>
+
+<p class="quote">“You carry three things that should not exist together.”</p>
+
+<hr>
+
+<p>His eyes shifted calmly between:</p>
+
+<p>Dawnpiercer.</p>
+<p>Kingsbane.</p>
+<p>Vossfang.</p>
+
+<hr>
+
+<p class="quote">“Two legendary weapons.”</p>
+
+<p class="quote">“And temporal instability.”</p>
+
+<hr>
+
+<p>The audience above shifted uncomfortably.</p>
+
+<hr>
+
+<p>Rayden’s expression hardened slightly.</p>
+
+<p class="quote">“You brought me here to talk?”</p>
+
+<hr>
+
+<p>Velkan almost smiled.</p>
+
+<p>Almost.</p>
+
+<hr>
+
+<p class="quote">“No.”</p>
+
+<hr>
+
+<p>The arena barriers ignited instantly.</p>
+
+<hr>
+
+<p>Silver runes erupted across the walls while the entire battlefield transformed beneath their feet into shifting blackstone terrain divided by glowing arcane lines.</p>
+
+<hr>
+
+<p>Velkan removed Cinderwake from the ground slowly.</p>
+
+<hr>
+
+<p class="quote">“I brought you here to measure you.”</p>
+
+<hr>
+
+<p>The duel began without warning.</p>
+
+<hr>
+
+<p>Silverfire exploded across the arena.</p>
+
+<hr>
+
+<p>Velkan moved first.</p>
+
+<p>Not fast.</p>
+
+<p>Precise.</p>
+
+<hr>
+
+<p>Arcane circles erupted beneath Rayden’s feet simultaneously from six separate directions while silverfire spears launched upward through the stone floor itself.</p>
+
+<hr>
+
+<p>Rayden reacted instantly.</p>
+
+<hr>
+
+<p>Vossfang launched outward.</p>
+
+<p>The chain wrapped around a high arena pillar while Rayden ripped himself sideways through the exploding battlefield barely ahead of the rising silverfire eruption behind him.</p>
+
+<hr>
+
+<p>The heat still tore across his shoulder armor.</p>
+
+<hr>
+
+<p>Velkan watched calmly.</p>
+
+<p>Studying.</p>
+
+<hr>
+
+<p>Another spell activated.</p>
+
+<hr>
+
+<p>The battlefield gravity shifted violently sideways.</p>
+
+<hr>
+
+<p>Stone debris and broken weapons lifted into the air before accelerating toward Rayden like artillery.</p>
+
+<hr>
+
+<p>Rayden raised the round shield instantly.</p>
+
+<p>Then threw it.</p>
+
+<hr>
+
+<p>The spinning shield smashed through the debris field hard enough to alter its trajectory while Rayden followed immediately behind it using Vossfang’s momentum to close distance aggressively.</p>
+
+<hr>
+
+<p>Good.</p>
+
+<p>Very good.</p>
+
+<hr>
+
+<p>Velkan’s eyes sharpened.</p>
+
+<hr>
+
+<p>Rayden reached melee range.</p>
+
+<hr>
+
+<p>Dawnpiercer flashed gold through the silverfire storm.</p>
+
+<hr>
+
+<p>Velkan intercepted with Cinderwake.</p>
+
+<hr>
+
+<p>The collision detonated across the arena.</p>
+
+<hr>
+
+<p>Holy light and silverfire exploded outward simultaneously while the impact cracked the stone beneath both men hard enough to split the arena floor apart.</p>
+
+<hr>
+
+<p>Rayden immediately noticed something terrifying.</p>
+
+<hr>
+
+<p>Velkan fought like a battlefield strategist.</p>
+
+<hr>
+
+<p>Every movement positioned him toward future advantages.</p>
+
+<p>Every defensive motion manipulated spacing.</p>
+
+<p>Every spell forced predictive pressure.</p>
+
+<hr>
+
+<p>He wasn’t fighting Rayden.</p>
+
+<p>He was constructing outcomes.</p>
+
+<hr>
+
+<p>Velkan’s voice remained calm even during combat.</p>
+
+<p class="quote">“You lead with instinct.”</p>
+
+<hr>
+
+<p>Silverfire detonated behind Rayden.</p>
+
+<hr>
+
+<p class="quote">“Adaptation.”</p>
+
+<hr>
+
+<p>Another rune circle formed.</p>
+
+<hr>
+
+<p class="quote">“Aggression under pressure.”</p>
+
+<hr>
+
+<p>The arena floor suddenly collapsed beneath Rayden entirely.</p>
+
+<hr>
+
+<p>Rayden reacted before thinking.</p>
+
+<hr>
+
+<p>Vossfang launched upward.</p>
+
+<p>He swung across the collapsing terrain while ripping Dawnpiercer downward mid-motion toward Velkan’s exposed flank.</p>
+
+<hr>
+
+<p>The crowd above gasped.</p>
+
+<hr>
+
+<p>Velkan’s barrier activated half a second too late.</p>
+
+<hr>
+
+<p>Dawnpiercer cut through the outer rune layer and sliced directly across Velkan’s shoulder guard before silverfire blasted Rayden backward violently.</p>
+
+<hr>
+
+<p>The arena shook.</p>
+
+<hr>
+
+<p>Sorin’s eyes narrowed slightly.</p>
+
+<hr>
+
+<p>Interesting.</p>
+
+<hr>
+
+<p>Rayden landed hard against broken stone before immediately rising again.</p>
+
+<p>Blood dripped slowly from one side of his forehead.</p>
+
+<p>He smiled anyway.</p>
+
+<hr>
+
+<p>Velkan touched the cut across his armor thoughtfully.</p>
+
+<hr>
+
+<p class="quote">“You force unpredictability intentionally.”</p>
+
+<hr>
+
+<p>Rayden rolled his shoulder once.</p>
+
+<p class="quote">“Battlefields don’t care about plans.”</p>
+
+<hr>
+
+<p>Velkan answered immediately.</p>
+
+<p class="quote">“That is why most armies die.”</p>
+
+<hr>
+
+<p>The next exchange became brutal.</p>
+
+<hr>
+
+<p>Rayden switched weapons.</p>
+
+<hr>
+
+<p>Kingsbane emerged.</p>
+
+<hr>
+
+<p>The atmosphere of the entire arena changed instantly.</p>
+
+<hr>
+
+<p>The massive black greatsword radiated overwhelming battlefield pressure while even the Sky Corps spectators above visibly shifted uneasily watching Rayden grip the weapon fully.</p>
+
+<hr>
+
+<p>Velkan’s eyes narrowed for the first time.</p>
+
+<hr>
+
+<p>Not fear.</p>
+
+<p>Calculation.</p>
+
+<hr>
+
+<p>Rayden moved.</p>
+
+<hr>
+
+<p>The arena exploded beneath him.</p>
+
+<hr>
+
+<p>Kingsbane crashed against Velkan’s barriers with enough force to rupture entire rune layers apart while shockwaves tore through the battlefield hard enough to send broken stone flying into the upper defensive shields.</p>
+
+<hr>
+
+<p>Velkan immediately retreated backward through layered arcane movement sigils while Cinderwake unleashed concentrated silverfire streams precise enough to melt trenches directly through the arena floor.</p>
+
+<hr>
+
+<p>Rayden charged through them anyway.</p>
+
+<hr>
+
+<p>The duel stopped resembling elegance.</p>
+
+<p>It became survival.</p>
+
+<hr>
+
+<p>Rayden shield-bashed directly through one of Velkan’s rune formations before driving Kingsbane downward hard enough to split an entire defensive platform apart.</p>
+
+<hr>
+
+<p>Velkan countered instantly.</p>
+
+<hr>
+
+<p>Gravity collapsed.</p>
+
+<hr>
+
+<p>Rayden’s body slammed violently into the arena floor hard enough to crack ribs.</p>
+
+<hr>
+
+<p>Silverfire spears formed around him from every direction simultaneously.</p>
+
+<hr>
+
+<p>Kill angles.</p>
+
+<p>Perfect ones.</p>
+
+<hr>
+
+<p>Velkan’s voice echoed calmly through the battlefield.</p>
+
+<p class="quote">“Power without restraint becomes extinction eventually.”</p>
+
+<hr>
+
+<p>Blood ran slowly from Rayden’s mouth.</p>
+
+<hr>
+
+<p>Then...</p>
+
+<p>time stuttered.</p>
+
+<hr>
+
+<p>The arena froze.</p>
+
+<hr>
+
+<p>Not completely.</p>
+
+<p>Wrongly.</p>
+
+<hr>
+
+<p>The silverfire stopped moving.</p>
+<p>Falling debris hung motionless.</p>
+<p>Sound distorted.</p>
+
+<hr>
+
+<p>Blood began running from Rayden’s eyes.</p>
+
+<hr>
+
+<p>Temporal Frenzy.</p>
+
+<hr>
+
+<p>Every spectator in the arena went silent instantly.</p>
+
+<hr>
+
+<p>Even Velkan stopped moving.</p>
+
+<hr>
+
+<p>Not from fear.</p>
+
+<p>Recognition.</p>
+
+<hr>
+
+<p>The distortion spreading across the battlefield felt unnatural even to Vaelmark’s scholars.</p>
+
+<hr>
+
+<p>Rayden’s breathing became unstable.</p>
+
+<p>His body trembled violently beneath the frozen silverfire.</p>
+
+<hr>
+
+<p>Then slowly...</p>
+
+<p>very slowly...</p>
+
+<p>he lowered Kingsbane.</p>
+
+<hr>
+
+<p>The temporal distortion collapsed immediately afterward.</p>
+
+<hr>
+
+<p>Reality snapped back violently.</p>
+
+<p>The silverfire detonated harmlessly into the empty arena floor instead.</p>
+
+<hr>
+
+<p>Silence.</p>
+
+<hr>
+
+<p>Blood dripped steadily from Rayden’s face.</p>
+
+<hr>
+
+<p>Velkan stared at him for several long seconds.</p>
+
+<hr>
+
+<p>Then finally:</p>
+
+<p class="quote">“You restrain yourself more than anyone carrying that much power should be capable of.”</p>
+
+<hr>
+
+<p>Rayden wiped blood from one eye slowly.</p>
+
+<hr>
+
+<p class="quote">“I’ve seen what happens when people don’t.”</p>
+
+<hr>
+
+<p>The words carried far heavier things behind them.</p>
+
+<hr>
+
+<p>Oaksmane.</p>
+
+<p>Selene.</p>
+
+<p>Entire battlefields drowned in uncontrolled destruction.</p>
+
+<hr>
+
+<p>Velkan understood that immediately.</p>
+
+<hr>
+
+<p>For the first time since meeting him...</p>
+
+<p>the Ashen Scholar stopped studying Rayden like a weapon.</p>
+
+<p>And started studying him like a man.</p>
+
+<hr>
+
+<p>The duel ended there.</p>
+
+<hr>
+
+<p>No winner declared.</p>
+
+<p>None needed.</p>
+
+<hr>
+
+<p>Later that night, Velkan invited Rayden to the northern observatory chambers overlooking the corruption maps.</p>
+
+<hr>
+
+<p>The scholar stood beside the massive projections quietly.</p>
+
+<hr>
+
+<p class="quote">“There’s a corruption site north of the Velnathar borders.”</p>
+
+<hr>
+
+<p>His eyes shifted toward Rayden.</p>
+
+<p class="quote">“It stopped behaving like ordinary corruption three days ago.”</p>
+
+<hr>
+
+<p>Another projection illuminated.</p>
+
+<hr>
+
+<p>The images looked wrong.</p>
+
+<hr>
+
+<p>Forests crystallized mid-growth.</p>
+<p>Animals fused into terrain.</p>
+<p>Gravity distortions.</p>
+<p>Temporal anomalies.</p>
+
+<hr>
+
+<p>Rayden’s expression hardened immediately.</p>
+
+<hr>
+
+<p>Velkan noticed.</p>
+
+<p class="quote">“I need battlefield observation.”</p>
+
+<hr>
+
+<p>Then after a pause:</p>
+
+<p class="quote">“And I suspect it may react to you.”</p>
+
+<hr>
+
+<p>Rayden looked toward the projection silently.</p>
+
+<hr>
+
+<p>Then nodded once.</p>
+
+<hr>
+
+<p>Far beyond the observatory windows...</p>
+
+<p>the skies above Vaelmark darkened slowly beneath distant storm clouds.</p>
+
+<hr>
+
+<p>Something was changing.</p>
+
+<hr>
+<hr>
+
+<p>The corruption site lay beyond the northern valleys near the outer Velnathar borderlands.</p>
+
+<hr>
+
+<p>Rayden understood immediately why ordinary patrols stopped approaching it.</p>
+
+<hr>
+
+<p>The land itself looked diseased.</p>
+
+<hr>
+
+<p>Not corrupted.</p>
+
+<p>Wrong.</p>
+
+<hr>
+
+<p>The forest surrounding the valley no longer moved naturally beneath the wind. Entire trees stood partially crystallized in black-purple formations while sections of terrain folded inward at impossible angles like reality itself had begun rotting unevenly.</p>
+
+<hr>
+
+<p>Even Pyrewing refused to land directly near the site.</p>
+
+<hr>
+
+<p>The volcanic drake circled overhead uneasily while ember smoke escaped its jaws in low irritated bursts.</p>
+
+<hr>
+
+<p>Velkan noticed immediately.</p>
+
+<p class="quote">“Interesting.”</p>
+
+<hr>
+
+<p>Rayden looked upward.</p>
+
+<p class="quote">“Your drake senses something?”</p>
+
+<hr>
+
+<p>Velkan’s eyes remained fixed on the valley below.</p>
+
+<p class="quote">“Pyrewing senses many things.”</p>
+
+<hr>
+
+<p>That answer explained absolutely nothing.</p>
+
+<hr>
+
+<p>The two descended carefully through the ruined hillside beneath fading evening light while silver rune lanterns floated silently around Velkan projecting containment barriers against the surrounding corruption mist.</p>
+
+<hr>
+
+<p>The deeper they traveled...</p>
+
+<p>the quieter the world became.</p>
+
+<hr>
+
+<p>No insects.</p>
+<p>No birds.</p>
+<p>No wind.</p>
+
+<hr>
+
+<p>Even their footsteps sounded delayed somehow.</p>
+
+<hr>
+
+<p>Rayden’s hand rested near Dawnpiercer instinctively.</p>
+
+<hr>
+
+<p>Then he saw the bodies.</p>
+
+<hr>
+
+<p>Frozen mid-motion.</p>
+
+<hr>
+
+<p>Not dead normally.</p>
+
+<p>Preserved.</p>
+
+<hr>
+
+<p>A squad of corrupted soldiers remained partially fused into black crystal growths near the valley entrance while expressions of absolute terror still twisted across their faces.</p>
+
+<hr>
+
+<p>One man’s arm stretched outward desperately toward another soldier several feet away.</p>
+
+<hr>
+
+<p>Neither had finished moving.</p>
+
+<hr>
+
+<p>Velkan crouched beside the nearest corpse quietly.</p>
+
+<hr>
+
+<p>Silver runes rotated slowly around his fingers while Cinderwake emitted low volcanic light against the crystallized remains.</p>
+
+<hr>
+
+<p class="quote">“Temporal disruption.”</p>
+
+<hr>
+
+<p>Rayden’s eyes narrowed immediately.</p>
+
+<hr>
+
+<p>Velkan noticed.</p>
+
+<p class="quote">“You feel it too.”</p>
+
+<hr>
+
+<p>Not a question.</p>
+
+<hr>
+
+<p>Rayden stared deeper into the valley.</p>
+
+<hr>
+
+<p>Something inside him felt wrong here.</p>
+
+<p>Restless.</p>
+
+<p>Unstable.</p>
+
+<hr>
+
+<p>Like the corruption recognized him.</p>
+
+<hr>
+
+<p>Further ahead, the valley opened into the remains of an ancient settlement buried beneath black crystal formations erupting from the earth like diseased bones.</p>
+
+<hr>
+
+<p>Entire buildings had merged into the terrain itself.</p>
+
+<p>Stone melted together.</p>
+<p>Roads folded upward unnaturally.</p>
+<p>Frozen shadows stretched across surfaces where no bodies remained anymore.</p>
+
+<hr>
+
+<p>And at the center of it all...</p>
+
+<p>stood a fracture.</p>
+
+<hr>
+
+<p>Not physical.</p>
+
+<hr>
+
+<p>Space itself appeared split open above the ruined plaza.</p>
+
+<hr>
+
+<p>A vertical tear of shifting darkness pulsed slowly in the air while distorted whispers echoed faintly through the valley around it.</p>
+
+<hr>
+
+<p>Rayden felt blood drip suddenly from his nose.</p>
+
+<hr>
+
+<p>Velkan saw it immediately.</p>
+
+<p class="quote">“Do not approach further.”</p>
+
+<hr>
+
+<p>Too late.</p>
+
+<hr>
+
+<p>The fracture reacted.</p>
+
+<hr>
+
+<p>Darkness twisted violently across the valley floor while corrupted growths erupted from beneath the ruins in sudden explosive motion.</p>
+
+<hr>
+
+<p>Creatures emerged.</p>
+
+<hr>
+
+<p>Not fully alive anymore.</p>
+
+<hr>
+
+<p>Former soldiers.</p>
+<p>Former civilians.</p>
+<p>Things fused together through crystal and flesh.</p>
+
+<hr>
+
+<p>One creature dragged itself forward on six broken human arms while half a screaming face remained visible beneath translucent corruption growths spreading through its skull.</p>
+
+<hr>
+
+<p>Another had no lower body at all.</p>
+
+<p>It floated instead.</p>
+
+<hr>
+
+<p>Rayden drew Dawnpiercer instantly.</p>
+
+<hr>
+
+<p>Golden holy light erupted through the darkness.</p>
+
+<hr>
+
+<p>The corruption screamed.</p>
+
+<hr>
+
+<p>Not metaphorically.</p>
+
+<hr>
+
+<p>The entire valley screamed.</p>
+
+<hr>
+
+<p>Velkan’s expression sharpened immediately.</p>
+
+<p class="quote">“It recognizes the blade.”</p>
+
+<hr>
+
+<p>Then the first wave attacked.</p>
+
+<hr>
+
+<p>The creatures moved unnaturally fast.</p>
+
+<hr>
+
+<p>Rayden met them head-on.</p>
+
+<hr>
+
+<p>Dawnpiercer cut through the first corrupted body cleanly while holy light burned directly through black crystal infection spreading beneath its flesh.</p>
+
+<hr>
+
+<p>The second creature lunged toward his throat immediately afterward.</p>
+
+<hr>
+
+<p>Rayden shield-bashed it sideways hard enough to rupture its jaw before driving Dawnpiercer upward through the thing’s skull.</p>
+
+<hr>
+
+<p>Black blood exploded across the ruined stone.</p>
+
+<hr>
+
+<p>More emerged.</p>
+
+<hr>
+
+<p>Too many.</p>
+
+<hr>
+
+<p>Velkan finally moved.</p>
+
+<hr>
+
+<p>Cinderwake ignited.</p>
+
+<hr>
+
+<p>Silverfire erupted across the battlefield in controlled spiraling patterns precise enough to avoid Rayden entirely while vaporizing advancing corruption masses into burning ash.</p>
+
+<hr>
+
+<p>The difference between ordinary flame and silverfire became immediately obvious.</p>
+
+<hr>
+
+<p>Normal fire burned flesh.</p>
+
+<hr>
+
+<p>Silverfire erased corruption.</p>
+
+<hr>
+
+<p>But the fracture above the plaza kept pulsing.</p>
+
+<hr>
+
+<p>And every pulse created more.</p>
+
+<hr>
+
+<p>Velkan’s eyes narrowed.</p>
+
+<p class="quote">“This isn’t natural spread anymore.”</p>
+
+<hr>
+
+<p>The ground suddenly ruptured beneath them.</p>
+
+<hr>
+
+<p>A massive corrupted form erupted from beneath the ruins in an explosion of crystal and broken stone.</p>
+
+<hr>
+
+<p>Once human.</p>
+
+<p>Long ago.</p>
+
+<hr>
+
+<p>Now its body resembled fused battlefield remains stitched together through black crystal armor while multiple screaming faces shifted beneath translucent flesh growths across its torso.</p>
+
+<hr>
+
+<p>Its right arm ended in a gigantic bone-and-crystal blade.</p>
+
+<hr>
+
+<p>Rayden’s expression hardened instantly.</p>
+
+<hr>
+
+<p>The creature moved toward him directly.</p>
+
+<hr>
+
+<p>Not Velkan.</p>
+
+<hr>
+
+<p>Him.</p>
+
+<hr>
+
+<p>Velkan noticed that immediately too.</p>
+
+<p class="quote">“Interesting.”</p>
+
+<hr>
+
+<p>Rayden was getting tired of hearing that word.</p>
+
+<hr>
+
+<p>The monster charged.</p>
+
+<hr>
+
+<p>Rayden switched weapons instantly.</p>
+
+<hr>
+
+<p>Kingsbane emerged.</p>
+
+<hr>
+
+<p>The battlefield pressure changed violently.</p>
+
+<hr>
+
+<p>The corrupted creature screamed louder the moment the black greatsword appeared.</p>
+
+<p>Fear.</p>
+
+<p>Recognition.</p>
+
+<p>Hatred.</p>
+
+<hr>
+
+<p>Then everything exploded together.</p>
+
+<hr>
+
+<p>Rayden collided against the corrupted giant in a catastrophic impact that shattered the plaza apart while Kingsbane carved directly through layers of crystal armor thick enough to stop ordinary siege weapons.</p>
+
+<hr>
+
+<p>The creature retaliated immediately.</p>
+
+<hr>
+
+<p>The crystal blade punched through Rayden’s shoulder armor partially into flesh before throwing him violently across the ruins hard enough to collapse an entire stone structure behind him.</p>
+
+<hr>
+
+<p>Blood sprayed across broken crystal.</p>
+
+<hr>
+
+<p>Rayden rose anyway.</p>
+
+<hr>
+
+<p>Velkan unleashed concentrated silverfire bombardments from above while rotating rune barriers trapped the creature temporarily beneath collapsing gravity fields.</p>
+
+<hr>
+
+<p>Still it kept moving.</p>
+
+<hr>
+
+<p>The fracture pulsed again.</p>
+
+<hr>
+
+<p>And suddenly...</p>
+
+<p>time distorted.</p>
+
+<hr>
+
+<p>Not around Rayden this time.</p>
+
+<p>Around the entire valley.</p>
+
+<hr>
+
+<p>Velkan froze mid-cast briefly.</p>
+<p>Silverfire slowed unnaturally.</p>
+<p>The corruption growths expanded backward.</p>
+
+<hr>
+
+<p>Rayden felt the same horrible pressure from the arena return instantly.</p>
+
+<hr>
+
+<p>The fracture was reacting to him.</p>
+
+<hr>
+
+<p>Velkan realized it too.</p>
+
+<hr>
+
+<p>For the first time since meeting him...</p>
+
+<p>the Ashen Scholar looked genuinely disturbed.</p>
+
+<hr>
+
+<p class="quote">“Rayden...”</p>
+
+<hr>
+
+<p>The fracture opened wider.</p>
+
+<hr>
+
+<p>And something moved inside the darkness.</p>
+
+<hr>
+
+<p>Not clearly.</p>
+
+<p>Not fully.</p>
+
+<hr>
+
+<p>But enough for both men to understand one terrible truth simultaneously.</p>
+
+<hr>
+
+<p>Something on the other side was looking back.</p>
+
+<hr>
+
+<p>Then the emergency runes ignited across the sky.</p>
+
+<hr>
+
+<p>Bright crimson.</p>
+
+<p>Violent.</p>
+
+<p>Urgent.</p>
+
+<hr>
+
+<p>Every Vaelmark signal crystal above the valley activated at once.</p>
+
+<hr>
+
+<p>Sorin Vael’s voice echoed through the projection network:</p>
+
+<p class="quote">“EMERGENCY PRIORITY.”</p>
+
+<p class="quote">“HAVENFIRE UNDER FULL ASSAULT.”</p>
+
+<hr>
+
+<p>Another rune pulse followed immediately afterward.</p>
+
+<hr>
+
+<p>Multiple threat markers illuminated across the sky projection.</p>
+
+<hr>
+
+<p>Siegeborn Titan signatures detected.</p>
+
+<hr>
+
+<p>Mass corruption convergence.</p>
+
+<p>Defensive lines collapsing.</p>
+
+<hr>
+
+<p>Rayden’s blood ran cold instantly.</p>
+
+<hr>
+
+<p>The fracture screamed.</p>
+
+<hr>
+
+<p>As if pleased.</p>
+
+<hr>
+
+<p>Velkan looked toward the burning emergency projections above the valley.</p>
+
+<hr>
+
+<p>Then toward Rayden.</p>
+
+<hr>
+
+<p>Neither man spoke.</p>
+
+<hr>
+
+<p>They moved simultaneously.</p>
+
+<hr>
+
+<p>Above them, Pyrewing descended through the storm clouds like volcanic wrath given wings.</p>
+
+<hr>
+
+<p>And far to the south...</p>
+
+<p>Havenfire burned.</p>
+
+<hr>
+
+<!-- SECTION IV ENDS -->
+<!-- SECTION V STARTS -->
+<h2 id="section-5">V — Ash and Silver Fire</h2>
+<p class="era">Sundered Age — Year 1041</p>
+
+<hr>
+
+<p>Havenfire heard the forest die before it saw the army.</p>
+
+<hr>
+
+<p>It began with the animals.</p>
+
+<p>Goats screaming inside the lower pens.</p>
+<p>Horses stamping hard enough to crack stable planks.</p>
+<p>The chickens scattering beneath carts and barrels as if the earth itself had opened beneath them.</p>
+
+<hr>
+
+<p>Then came the smell.</p>
+
+<p>Wet ash.</p>
+<p>Rotten blood.</p>
+<p>Burning moss.</p>
+
+<hr>
+
+<p>The northern watchman rang the alarm bell until the iron cracked.</p>
+
+<hr>
+
+<p>Kael Varric reached the wall before the third strike faded.</p>
+
+<p>GraveTide rested across one arm.</p>
+<p>His warhammer hung low in his other hand.</p>
+
+<hr>
+
+<p>Beyond the outer fields, the tree line moved.</p>
+
+<hr>
+
+<p>Not with wind.</p>
+
+<p>With bodies.</p>
+
+<hr>
+
+<p>Corrupted goblins poured first from the darkness, crawling over each other through mud and dead grass, their small green bodies split open by black crystal growths that burst through ribs, shoulders, and skulls.</p>
+
+<p>Behind them came infected wolves running with broken spines, corrupted orcs carrying rusted axes, twisted human soldiers whose armor had fused into their flesh, and things that had once been beasts before the Void taught them new shapes.</p>
+
+<hr>
+
+<p>Farther back...</p>
+
+<p>larger silhouettes moved between the trees.</p>
+
+<hr>
+
+<p>Kael stared at them for one long second.</p>
+
+<p>Then his voice struck the wall like a hammer.</p>
+
+<p class="quote">“Wake everyone.”</p>
+
+<p class="quote">“No one dies asleep.”</p>
+
+<hr>
+
+<p>Havenfire erupted.</p>
+
+<hr>
+
+<p>Not into chaos.</p>
+
+<p>Into fear disciplined barely enough to become action.</p>
+
+<hr>
+
+<p>Daven Holt dragged the militia from barracks and yard fires with shield in hand before most had fastened armor properly.</p>
+
+<p>Brek Stonewall moved straight to the main gate carrying three spears under one arm and a tower shield under the other.</p>
+
+<p>Vera began shouting evacuation routes before the second alarm bell started, forcing children, elders, and injured refugees toward the inner stone shelters beneath the old barracks.</p>
+
+<hr>
+
+<p class="quote">“If you can’t fight, carry water!”</p>
+
+<p class="quote">“If you can carry water, carry bolts!”</p>
+
+<p class="quote">“If you can’t carry either, get below ground and keep the children quiet!”</p>
+
+<hr>
+
+<p>Nobody argued with Vera.</p>
+
+<hr>
+
+<p>Dwarves spilled from the forge district with axes, hammers, and heavy crossbows still smelling of oil and fresh iron.</p>
+
+<p>Farmhands climbed wall ladders carrying hunting bows and patched quivers.</p>
+
+<p>Beastkin hunters spread along the western ridge, nocking arrows with silent practiced hands.</p>
+
+<p>Half-trained refugees took positions wherever space remained, trembling behind battlements, gripping spears, slings, kitchen knives, carpentry axes, anything that could pierce, cut, or delay death by one more heartbeat.</p>
+
+<hr>
+
+<p>Lyria Valen reached the eastern tower as the first wave crossed the outer fields.</p>
+
+<p>Moonlight slid across Eclipsing Whisper.</p>
+
+<p>Her face carried no panic.</p>
+
+<p>Only calculation.</p>
+
+<hr>
+
+<p>The first arrow flew.</p>
+
+<hr>
+
+<p>A corrupted goblin two hundred paces from the wall lost half its skull and collapsed beneath the feet of those behind it.</p>
+
+<p>The second arrow split mid-flight into three pale streaks and dropped three infected wolves before they reached the first ditch.</p>
+
+<p>The third curved through smoke, passed between two running farmhands, and buried itself inside the throat of an orc climbing the northern palisade.</p>
+
+<hr>
+
+<p>The siege began properly after that.</p>
+
+<hr>
+
+<p>Arrows fell from Havenfire’s walls like desperate rain.</p>
+
+<p>Some came from trained archers.</p>
+
+<p>Most did not.</p>
+
+<hr>
+
+<p>Old women fired from brace stands.</p>
+<p>Teenagers shot with shaking fingers.</p>
+<p>A dwarven baker used a crossbow larger than her torso and screamed every time it kicked backward into her shoulder.</p>
+<p>Two beastkin boys dropped stones from the wall onto corrupted goblins trying to climb beneath them.</p>
+
+<hr>
+
+<p>Every hand mattered.</p>
+
+<hr>
+
+<p>The first wave slammed against the walls before dawnlight touched the clouds.</p>
+
+<hr>
+
+<p>Corrupted goblins climbed by stabbing bone hooks into cracks between stones. Wolves hurled themselves against barricades until their bodies broke. Orcs hammered gate supports while infected humans dragged ladders made from blackened trees across the mud.</p>
+
+<hr>
+
+<p>Kael stood at the main gate.</p>
+
+<p>Alone at first.</p>
+
+<hr>
+
+<p>GraveTide planted into the stone before him.</p>
+
+<p>Warhammer ready.</p>
+
+<hr>
+
+<p>The first orc through the broken outer gate died so violently that those behind it stumbled.</p>
+
+<p>Kael’s hammer crushed its skull flat into the collarbone, spraying black blood across the gate stones.</p>
+
+<p>The second struck GraveTide and broke its own wrist against the shield edge.</p>
+
+<p>Kael stepped once.</p>
+
+<p>Hammer down.</p>
+
+<p>Chest gone.</p>
+
+<hr>
+
+<p>Then the horde hit him.</p>
+
+<hr>
+
+<p>For three hours, the gate belonged to Kael Varric.</p>
+
+<hr>
+
+<p>Not Havenfire.</p>
+
+<p>Not the corruption.</p>
+
+<p>Kael.</p>
+
+<hr>
+
+<p>He did not retreat.</p>
+
+<p>He did not chase.</p>
+
+<p>He simply stood where the enemy needed to pass and turned that place into a killing floor.</p>
+
+<hr>
+
+<p>Brek reached his side with a spear and shield, planting himself half a step behind Kael’s left shoulder.</p>
+
+<p>Not equal.</p>
+
+<p>Support.</p>
+
+<p>Exactly where Kael needed him.</p>
+
+<hr>
+
+<p class="quote">“Low strikes!”</p>
+
+<p>Kael shouted.</p>
+
+<p class="quote">“Take the knees!”</p>
+
+<hr>
+
+<p>Brek obeyed.</p>
+
+<p>His spear punched through infected thighs, knees, ankles, pinning creatures long enough for Kael’s hammer to finish them.</p>
+
+<hr>
+
+<p>Daven fought twenty paces behind them inside the second line.</p>
+
+<p>Sword and shield.</p>
+
+<p>Not flashy.</p>
+
+<p>Not beautiful.</p>
+
+<p>But clean.</p>
+
+<hr>
+
+<p>When a corrupted goblin slipped under the barricade toward a wounded boy, Daven intercepted it with his shield edge, crushed its jaw against stone, then drove his sword down through its spine.</p>
+
+<p>When two militia fighters froze, he slammed one backward with his shoulder and shouted:</p>
+
+<p class="quote">“You’re not dead yet!”</p>
+
+<p class="quote">“Stand properly!”</p>
+
+<hr>
+
+<p>They did.</p>
+
+<hr>
+
+<p>Above the gate, Vera loaded a newly built dwarven heavy crossbow mounted on a swivel brace.</p>
+
+<p>The weapon required two people to draw properly.</p>
+
+<p>Vera used anger instead.</p>
+
+<hr>
+
+<p>The bolt punched through three corrupted bodies before burying itself in the mud beyond.</p>
+
+<hr>
+
+<p>She stared at the weapon.</p>
+
+<p>Then shouted down to the forge dwarves:</p>
+
+<p class="quote">“BUILD MORE OF THESE!”</p>
+
+<hr>
+
+<p>The dwarves answered by firing their own heavy crossbows from the wall line, each shot tearing limbs off smaller corrupted creatures and punching through orc armor in brutal sprays of black blood.</p>
+
+<hr>
+
+<p>Marcus Ironmane and Dresh rode the southern field.</p>
+
+<hr>
+
+<p>Not charging recklessly.</p>
+
+<p>Rescuing.</p>
+
+<hr>
+
+<p>Their crimson warhorses moved through smoke and panic like living engines of disciplined muscle. Marcus used his lance to knock corrupted beasts away from fleeing farmhands while Dresh carried children two at a time behind the inner fences, face pale but eyes locked forward.</p>
+
+<hr>
+
+<p>Helna guarded the animals.</p>
+
+<hr>
+
+<p>Not because livestock mattered more than people.</p>
+
+<p>Because food meant winter.</p>
+
+<p>Milk meant children.</p>
+
+<p>Horses meant escape.</p>
+
+<p>Chickens meant eggs.</p>
+
+<hr>
+
+<p>She and three farmhands held the lower stables with pitchforks, knives, and one battered shield while corrupted wolves threw themselves against the doors from outside.</p>
+
+<hr>
+
+<p>One wolf broke through.</p>
+
+<p>Helna buried a butcher’s blade into its eye before it reached the goats.</p>
+
+<p>Then screamed at the goats for panicking.</p>
+
+<hr>
+
+<p>The second wave arrived at noon.</p>
+
+<hr>
+
+<p>Corrupted soldiers marched from the northern forest in organized ranks.</p>
+
+<p>Not stumbling.</p>
+
+<p>Marching.</p>
+
+<hr>
+
+<p>Their armor bore old kingdom symbols twisted beneath black crystal infection, and behind them rolled siege beasts dragging crude engines of bone, wood, and fused metal across the field.</p>
+
+<hr>
+
+<p>Then the sky opened.</p>
+
+<hr>
+
+<p>Something flew from the clouds.</p>
+
+<p>Small compared to Pyrewing.</p>
+
+<p>Horrible compared to anything natural.</p>
+
+<hr>
+
+<p>A swollen winged creature with transparent skin stretched over black organs glowing beneath its ribs.</p>
+
+<p>It dove toward the eastern wall.</p>
+
+<hr>
+
+<p>Lyria saw it first.</p>
+
+<p>Her arrow struck the creature mid-flight.</p>
+
+<p>It burst too early.</p>
+
+<hr>
+
+<p>The explosion still threw four defenders from the wall.</p>
+
+<p>Black fire splashed across stone.</p>
+
+<p>A man screamed as corruption burned through his arm and crawled into his neck before a dwarf ended him with an axe.</p>
+
+<hr>
+
+<p>Lyria’s expression did not change.</p>
+
+<p>But her next arrow flew faster.</p>
+
+<hr>
+
+<p>Three more winged corruption-bomb creatures emerged from the storm.</p>
+
+<hr>
+
+<p>Vera saw them.</p>
+
+<p class="quote">“DOWN!”</p>
+
+<hr>
+
+<p>Too late.</p>
+
+<hr>
+
+<p>One struck the lower courtyard.</p>
+
+<hr>
+
+<p>The explosion tore through Havenfire like a black sun blooming inside the walls.</p>
+
+<p>Stone shattered.</p>
+<p>Fire rolled across the ground.</p>
+<p>Seven people died instantly.</p>
+
+<hr>
+
+<p>No time for names.</p>
+
+<p>No time for grief.</p>
+
+<p>Only screams.</p>
+
+<hr>
+
+<p>A second creature descended toward the shelters where children were hidden.</p>
+
+<p>Kael saw it through the gate breach.</p>
+
+<hr>
+
+<p>He lifted GraveTide.</p>
+
+<p class="quote">“MAGNETIDE!”</p>
+
+<hr>
+
+<p>Dwarven runes ignited across the legendary shield.</p>
+
+<p>Loose arrows, bolts, nails, broken spearheads, and pieces of metal ripped violently through the air toward GraveTide.</p>
+
+<hr>
+
+<p>But the creature kept flying.</p>
+
+<hr>
+
+<p>Living flesh.</p>
+
+<p>Magnetide could not pull it.</p>
+
+<hr>
+
+<p>Kael understood the failure instantly.</p>
+
+<p>So he chose something worse.</p>
+
+<hr>
+
+<p>He drove GraveTide into the ground.</p>
+
+<p>The runes changed.</p>
+
+<p>Deepened.</p>
+
+<p>Old dwarven marks flared red beneath the steel.</p>
+
+<hr>
+
+<p>Kael’s voice dropped into something older than command.</p>
+
+<p class="quote">“TITAN’S VOW.”</p>
+
+<hr>
+
+<p>The winged creature detonated above the shelter roof.</p>
+
+<hr>
+
+<p>The blast should have killed everyone below.</p>
+
+<hr>
+
+<p>It did not.</p>
+
+<hr>
+
+<p>The force bent.</p>
+
+<p>Not away.</p>
+
+<p>Toward Kael.</p>
+
+<hr>
+
+<p>The explosion struck him like a falling fortress.</p>
+
+<p>Armor cracked.</p>
+<p>Skin split.</p>
+<p>Blood erupted from beneath his collar and ran down the grooves of GraveTide.</p>
+
+<hr>
+
+<p>Kael remained standing.</p>
+
+<hr>
+
+<p>The children beneath the shelter lived.</p>
+
+<hr>
+
+<p>The scars appeared immediately.</p>
+
+<p>Dark red lines carving across his arms, neck, and chest like wounds drawn by invisible blades.</p>
+
+<hr>
+
+<p>Brek stared in horror.</p>
+
+<p class="quote">“Commander—”</p>
+
+<hr>
+
+<p>Kael spat blood onto the gate stones.</p>
+
+<p class="quote">“Hold.”</p>
+
+<hr>
+
+<p>So Brek held.</p>
+
+<hr>
+
+<p>Lyria abandoned the tower after the third explosion.</p>
+
+<hr>
+
+<p>She dropped from the wall into the courtyard with twin enchanted daggers already drawn, silver hair streaked black with ash.</p>
+
+<p>Her bow had dominated the sky.</p>
+
+<p>But the breach below needed blades.</p>
+
+<hr>
+
+<p>She moved through corrupted goblins like moonlight through broken glass.</p>
+
+<p>One dagger opened a throat.</p>
+<p>The other severed a crystal spine.</p>
+<p>She ducked beneath an orc axe, stepped onto its knee, and drove both blades through its eyes before springing backward to fire a single arrow at another winged bomber overhead.</p>
+
+<hr>
+
+<p>The shot pierced the creature mid-flight.</p>
+
+<p>It burst above the outer fields instead of the shelters.</p>
+
+<hr>
+
+<p>Still too many came.</p>
+
+<hr>
+
+<p>Then the earth shook.</p>
+
+<hr>
+
+<p>The third wave arrived.</p>
+
+<hr>
+
+<p>Siegeborn Titans.</p>
+
+<hr>
+
+<p>They emerged from the forest like walking siege towers.</p>
+
+<p>Twenty-four feet tall.</p>
+<p>Flesh armored in ancient black metal plates.</p>
+<p>Corrupted rune chains wrapped across their shoulders and torsos.</p>
+<p>One carried a stone hammer the size of a wagon.</p>
+
+<hr>
+
+<p>The first Titan struck the outer gate.</p>
+
+<hr>
+
+<p>The wall cracked from foundation to crown.</p>
+
+<hr>
+
+<p>People screamed.</p>
+
+<p>Havenfire shook.</p>
+
+<hr>
+
+<p>Kael stepped forward.</p>
+
+<p>Bleeding.</p>
+
+<p>Burned.</p>
+
+<p>Still standing.</p>
+
+<hr>
+
+<p>The Titan looked down at him.</p>
+
+<p>Kael looked back up.</p>
+
+<hr>
+
+<p>Then the hammer fell.</p>
+
+<hr>
+
+<p>GraveTide caught it.</p>
+
+<hr>
+
+<p>The impact flattened every corpse around Kael into the mud.</p>
+
+<p>Stone exploded outward.</p>
+<p>The gate arch cracked behind him.</p>
+<p>Blood burst from Kael’s nose and mouth at once.</p>
+
+<hr>
+
+<p>He did not move.</p>
+
+<hr>
+
+<p>The Titan struck again.</p>
+
+<p>And again.</p>
+
+<p>And again.</p>
+
+<hr>
+
+<p>Every blow should have killed him.</p>
+
+<p>Every blow instead carved more scars across his body through Titan’s Vow.</p>
+
+<hr>
+
+<p>Havenfire watched a man become a wall.</p>
+
+<hr>
+
+<p>But even walls break.</p>
+
+<hr>
+
+<p>Another corrupted beast entered through the southern breach and tore into the lower stables, destroying fencing, trampling crops, corrupting soil wherever its black blood spilled.</p>
+
+<p>Farmhands screamed and fired arrows from the inner walls while dwarves rushed with axes, hacking at smaller creatures trying to flood through the broken southern yard.</p>
+
+<hr>
+
+<p>Marcus wheeled his horse toward the stables.</p>
+
+<p>Dresh followed.</p>
+
+<hr>
+
+<p class="quote">“No!”</p>
+
+<p>Marcus shouted.</p>
+
+<p class="quote">“Children first!”</p>
+
+<hr>
+
+<p>Dresh obeyed through tears and carried two wounded refugees away while Marcus drove his lance through the beast’s flank from horseback.</p>
+
+<p>The creature barely noticed.</p>
+
+<hr>
+
+<p>Lyria turned toward the stables.</p>
+
+<p>Then toward the gate.</p>
+
+<p>Then toward the children.</p>
+
+<hr>
+
+<p>Too many deaths.</p>
+
+<p>Too many directions.</p>
+
+<hr>
+
+<p>For the first time since arriving in human lands...</p>
+
+<p>Lyria Valen looked afraid.</p>
+
+<hr>
+
+<p>Not for herself.</p>
+
+<hr>
+
+<p>For them.</p>
+
+<hr>
+
+<p>At the gate, Kael’s knees finally buckled.</p>
+
+<hr>
+
+<p>The Titan raised its hammer for the killing blow.</p>
+
+<hr>
+
+<p>Then the sky roared.</p>
+
+<hr>
+
+<p>Not thunder.</p>
+
+<p>Pyrewing.</p>
+
+<hr>
+
+<p>The volcanic drake’s roar split the battlefield so violently that every corrupted creature turned toward the clouds at once.</p>
+
+<p>Some recoiled.</p>
+<p>Some fled.</p>
+<p>Even the Titans hesitated.</p>
+
+<hr>
+
+<p>The storm above Havenfire burned orange.</p>
+
+<hr>
+
+<p>Pyrewing descended through cloud and fire like volcanic judgment.</p>
+
+<hr>
+
+<p>On his back stood Rayden Cale.</p>
+
+<hr>
+
+<p>Kingsbane already drawn.</p>
+
+<hr>
+
+<p>The militia saw him.</p>
+
+<p>The refugees saw him.</p>
+
+<p>Havenfire saw him.</p>
+
+<hr>
+
+<p>Something like hope tore through the exhausted defenders.</p>
+
+<hr>
+
+<p>Rayden jumped.</p>
+
+<hr>
+
+<p>He fell from Pyrewing through smoke, rain, ash, and fire.</p>
+
+<p>Vossfang launched midair, wrapping around the Titan’s rune chain as Rayden swung violently toward its skull.</p>
+
+<hr>
+
+<p>The Titan looked up too late.</p>
+
+<hr>
+
+<p>Kingsbane came down.</p>
+
+<hr>
+
+<p>The impact detonated across the battlefield.</p>
+
+<hr>
+
+<p>The black-and-gold greatsword split through the Titan’s skull, tore down into its neck, and released a shockwave that blasted corrupted flesh, metal, and crystal fragments across the gate road.</p>
+
+<hr>
+
+<p>The Titan collapsed forward like a falling tower.</p>
+
+<hr>
+
+<p>Kael staggered backward as the corpse crashed before him.</p>
+
+<hr>
+
+<p>Rayden landed on the dead Titan’s head, covered in black blood, eyes burning with the edge of Berserker just beneath control.</p>
+
+<hr>
+
+<p>He looked toward Kael.</p>
+
+<p>Kael looked back through blood.</p>
+
+<hr>
+
+<p>No words.</p>
+
+<p>None needed.</p>
+
+<hr>
+
+<p>Then Rayden turned toward the horde.</p>
+
+<hr>
+
+<p>And Kingsbane began its work.</p>
+
+<hr>
+
+<p>This was what the weapon existed for.</p>
+
+<hr>
+
+<p>Not duels.</p>
+<p>Not crowded rooms.</p>
+<p>Not places where innocent people stood too close.</p>
+
+<hr>
+
+<p>War.</p>
+
+<hr>
+
+<p>Rayden hit the corrupted army like a black storm.</p>
+
+<p>Kingsbane cleaved through five goblins at once, shattered an orc in half, then reversed into a horizontal swing that removed the legs from a corrupted beast charging the gate.</p>
+
+<hr>
+
+<p>When enemies came too close to civilians, Dawnpiercer’s shield flashed into his hand.</p>
+
+<p>Shield bash.</p>
+
+<p>Broken jaw.</p>
+
+<p>Shield throw.</p>
+
+<p>Crushed skull.</p>
+
+<p>Vossfang snapped the shield back through the air and smashed another creature from behind.</p>
+
+<hr>
+
+<p>Lyria saw his movement instantly.</p>
+
+<p>And adjusted.</p>
+
+<hr>
+
+<p>Rayden drove enemies upward.</p>
+
+<p>Lyria killed them midair.</p>
+
+<p>Rayden broke shield lines.</p>
+
+<p>Lyria shot exposed commanders.</p>
+
+<p>Rayden used Vossfang to yank a corrupted orc from the wall.</p>
+
+<p>Lyria’s arrow pierced through its skull before it hit the ground.</p>
+
+<hr>
+
+<p>For several terrible minutes...</p>
+
+<p>they fought like they had shared battlefields for decades.</p>
+
+<hr>
+
+<p>Then silver fire fell.</p>
+
+<hr>
+
+<p>Velkan Drake descended behind Pyrewing’s wings, Cinderwake blazing in both hands.</p>
+
+<p>He did not unleash wide destruction.</p>
+
+<p>Not inside Havenfire.</p>
+
+<hr>
+
+<p>Too many civilians.</p>
+
+<p>Too many homes.</p>
+
+<p>Too many people Rayden had clearly built his life around protecting.</p>
+
+<hr>
+
+<p>So Velkan chose precision.</p>
+
+<hr>
+
+<p class="quote">“Aurelion Severance.”</p>
+
+<hr>
+
+<p>Silverfire lines erupted beyond the walls in surgical arcs, cutting through the corrupted horde outside the gate without touching Havenfire’s defenders.</p>
+
+<p>Entire clusters of corrupted creatures were severed from the main assault and burned into ash within containment circles.</p>
+
+<hr>
+
+<p>Sorin arrived next.</p>
+
+<hr>
+
+<p>His Pyrewing-class lesser drake swept low over the southern fields carrying mounted arcane artillery beneath reinforced harness plates.</p>
+
+<hr>
+
+<p>Sorin braced one hand against the rune cannon and fired.</p>
+
+<hr>
+
+<p>The arcane gun discharged with a thunderclap of blue-white light.</p>
+
+<p>A siege beast near the crops exploded into steaming chunks of corrupted flesh across the field.</p>
+
+<hr>
+
+<p>Sorin followed immediately with fireballs from his staff, blasting smaller corrupted beasts away from the farmlands where several horses lay dead and others screamed beneath broken fences.</p>
+
+<hr>
+
+<p>For the first time...</p>
+
+<p>Havenfire witnessed arcane artillery warfare.</p>
+
+<hr>
+
+<p>It was horrifying.</p>
+
+<p>Beautiful.</p>
+
+<p>Impossible.</p>
+
+<hr>
+
+<p>And it turned the field into hell.</p>
+
+<hr>
+
+<p>The defenders rallied.</p>
+
+<hr>
+
+<p>Daven raised his sword.</p>
+
+<p class="quote">“PUSH THEM BACK!”</p>
+
+<hr>
+
+<p>The militia answered.</p>
+
+<hr>
+
+<p>Not perfectly.</p>
+
+<p>Not like trained soldiers.</p>
+
+<p>But like people defending home.</p>
+
+<hr>
+
+<p>Refugees fired arrows from every wall.</p>
+
+<p>Farmhands threw spears from ladders.</p>
+
+<p>Dwarves with axes hacked smaller creatures apart near the breach while others loaded heavy crossbows until their hands bled.</p>
+
+<p>Vera fired the mounted dwarven crossbow again and again, each bolt punching holes through corrupted bodies trying to climb the inner stairs.</p>
+
+<hr>
+
+<p>Marcus and Dresh rode together across the southern yard.</p>
+
+<p>Marcus struck with his lance.</p>
+
+<p>Dresh followed with a shorter cavalry spear, hands shaking but aim true.</p>
+
+<p>Their horses never broke.</p>
+
+<hr>
+
+<p>Kael remained at the gate.</p>
+
+<p>Even now.</p>
+
+<p>Bleeding profusely.</p>
+
+<p>Using GraveTide to block anything reaching the breach and his warhammer to crush whatever Rayden missed.</p>
+
+<hr>
+
+<p>Velkan saw it.</p>
+
+<p>Saw all of it.</p>
+
+<hr>
+
+<p>The Moon Elf protecting children with daggers and impossible arrows.</p>
+
+<p>The fortress commander bleeding himself empty to hold one gate.</p>
+
+<p>The refugees firing from walls despite shaking hands.</p>
+
+<p>The horse breeder charging corrupted beasts to protect crops.</p>
+
+<p>Rayden Cale moving through the battlefield like controlled catastrophe, not for victory...</p>
+
+<p>but for people.</p>
+
+<hr>
+
+<p>Something in Velkan’s expression changed.</p>
+
+<p>Not much.</p>
+
+<p>Enough.</p>
+
+<hr>
+
+<p>The corruption began retreating only after Velkan raised Cinderwake toward the sky.</p>
+
+<hr>
+
+<p>The staff screamed.</p>
+
+<p>Not audibly.</p>
+
+<p>Magically.</p>
+
+<hr>
+
+<p>Silver runes spread from Vaelmark’s scholar across the battlefield like an ancient language waking beneath blood-soaked earth.</p>
+
+<hr>
+
+<p>Velkan’s burned hand split open.</p>
+
+<p>Blood ran down Cinderwake’s shaft and ignited into silver flame.</p>
+
+<hr>
+
+<p class="quote">“Vaelmark Edict.”</p>
+
+<p class="quote">“Ashen Exile.”</p>
+
+<hr>
+
+<p>A ring of silverfire expanded outward from Havenfire’s walls.</p>
+
+<p>It did not kill everything.</p>
+
+<p>It rejected.</p>
+
+<hr>
+
+<p>Corrupted creatures screamed as the spell forced them backward through mud, over corpses, into the burning forest beyond.</p>
+
+<p>Even the remaining Siegeborn Titan staggered away from the walls, smoke rising from its corrupted armor as the ancient spell drove it into retreat.</p>
+
+<hr>
+
+<p>The battlefield slowly emptied.</p>
+
+<hr>
+
+<p>Not peacefully.</p>
+
+<p>Violently.</p>
+
+<p>With shrieks, dragging limbs, burning flesh, and the sound of corrupted things retreating into the dark where they would wait, learn, and return differently.</p>
+
+<hr>
+
+<p>Dawn came through smoke.</p>
+
+<hr>
+
+<p>Havenfire still stood.</p>
+
+<hr>
+
+<p>But barely.</p>
+
+<hr>
+
+<p>The gate was broken.</p>
+<p>The southern fields were half-corrupted.</p>
+<p>Seven people lay dead beneath blankets near the lower courtyard.</p>
+<p>Nineteen more were wounded.</p>
+
+<hr>
+
+<p>The walls bled black rainwater and ash.</p>
+
+<p>The air smelled of burned iron, corruption, and opened bodies.</p>
+
+<hr>
+
+<p>Rayden stood near the gate with Kingsbane planted point-first into the mud.</p>
+
+<p>His armor was covered in gore.</p>
+
+<p>His breathing sounded wrong.</p>
+
+<p>Berserker still trembled beneath his skin, barely contained.</p>
+
+<hr>
+
+<p>Then Kael finally fell.</p>
+
+<hr>
+
+<p>Not dramatically.</p>
+
+<p>Not with a speech.</p>
+
+<hr>
+
+<p>His knees simply gave out.</p>
+
+<hr>
+
+<p>GraveTide slipped forward, its lower edge carving into the blood-soaked ground.</p>
+
+<p>Kael collapsed beside it.</p>
+
+<hr>
+
+<p>Rayden reached him before anyone else.</p>
+
+<hr>
+
+<p>Kael’s armor was split in six places.</p>
+
+<p>His skin carried fresh scars from Titan’s Vow.</p>
+
+<p>Blood soaked everything.</p>
+
+<p>And beneath the wounds...</p>
+
+<p>black corruption veins had begun spreading slowly through his side.</p>
+
+<hr>
+
+<p>Rayden went completely still.</p>
+
+<hr>
+
+<p>Lyria lowered her bow from the ruined wall.</p>
+
+<p>Vera stopped mid-command.</p>
+
+<p>Daven froze with blood dripping from his sword.</p>
+
+<p>Brek looked like someone had struck him through the chest.</p>
+
+<hr>
+
+<p>Velkan Drake stood among smoke, ash, and broken stone.</p>
+
+<p>He looked at Kael.</p>
+
+<p>Then at Rayden.</p>
+
+<p>Then at Havenfire itself.</p>
+
+<hr>
+
+<p>And understood, finally, what no projection map had shown him.</p>
+
+<hr>
+
+<p>This place survived because people here chose to become more than themselves.</p>
+
+<hr>
+
+<p>The battle was over.</p>
+
+<hr>
+
+<p>The cost had only begun.</p>
+
+<hr>
+
+<p><!-- CHAPTER 4 SECTION V ENDS --> </p>
+
+<!-- SECTION V ENDS -->
+
+<!-- SECTION VI STARTS -->
+<h2 id="section-6">VI — The Wall</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<p>Havenfire smelled like wet ash for three straight days.</p>
+
+<hr>
+
+<p>The smoke never fully left.</p>
+
+<hr>
+
+<p>Even after the fires were controlled...</p>
+
+<p>something continued burning beneath the settlement.</p>
+
+<p>Wood.</p>
+<p>Blood.</p>
+<p>Corruption.</p>
+
+<hr>
+
+<p>Dawn arrived gray and cold across broken walls.</p>
+
+<hr>
+
+<p>The dead were laid beneath rain-covered cloth near the western courtyard while dwarves silently dismantled shattered barricades and piled corrupted corpses outside the gates for burning.</p>
+
+<hr>
+
+<p>Nobody spoke loudly anymore.</p>
+
+<hr>
+
+<p>Children watched silently from windows.</p>
+
+<p>Farmhands rebuilt fences with shaking hands.</p>
+
+<p>The wounded cried quietly inside overcrowded shelters where the smell of opened flesh mixed with herbal medicine and blood-soaked cloth.</p>
+
+<hr>
+
+<p>Victory did not live here.</p>
+
+<hr>
+
+<p>Only survival.</p>
+
+<hr>
+
+<p>The crop fields south of Havenfire were ruined.</p>
+
+<hr>
+
+<p>Black corruption veins spread slowly through sections of wheat and grass while dead horses lay partially crystallized near the burned fences where Sorin’s artillery had saved the remaining farmlands from total collapse.</p>
+
+<hr>
+
+<p>Even the walls carried infection.</p>
+
+<hr>
+
+<p>Dark crystal growths crawled through cracks in the stone where corrupted blood had splashed during the siege.</p>
+
+<hr>
+
+<p>Dwarves worked constantly with chisels and fire trying to cut it away before the corruption rooted deeper into the structure itself.</p>
+
+<hr>
+
+<p>Inside the command shelter...</p>
+
+<p>Kael Varric burned alive slowly.</p>
+
+<hr>
+
+<p>The fever started before sunrise.</p>
+
+<hr>
+
+<p>By nightfall, his entire body shook beneath soaked blankets while black veins spread visibly from the wounds across his ribs and shoulder where corrupted blood had entered during the siege.</p>
+
+<hr>
+
+<p>Helna Ironmane did everything she could.</p>
+
+<hr>
+
+<p>And it was not enough.</p>
+
+<hr>
+
+<p>Her table overflowed with crushed herbs, stitched cloth, bloodied water bowls, burned needles, and animal medicines repurposed desperately for human treatment.</p>
+
+<hr>
+
+<p>Kael’s breathing still worsened.</p>
+
+<hr>
+
+<p class="quote">“The infection’s inside his blood now...”</p>
+
+<hr>
+
+<p>Helna’s voice finally broke quietly while replacing another blackened bandage.</p>
+
+<hr>
+
+<p class="quote">“I can treat wounds.”</p>
+
+<p class="quote">“Broken bones. Fever. Poison.”</p>
+
+<hr>
+
+<p>Her trembling hands tightened against the stained cloth.</p>
+
+<hr>
+
+<p class="quote">“Not this.”</p>
+
+<hr>
+
+<p>Rayden sat beside the bed without moving.</p>
+
+<hr>
+
+<p>He had not slept.</p>
+
+<hr>
+
+<p>Dawnpiercer rested across his knees glowing faint gold through the dim shelter light while his eyes remained fixed on Kael’s worsening condition.</p>
+
+<hr>
+
+<p>Lyria stood near the doorway silently.</p>
+
+<hr>
+
+<p>For once...</p>
+
+<p>she had no answer.</p>
+
+<hr>
+
+<p>No strategy.</p>
+<p>No arrow.</p>
+<p>No perfect shot.</p>
+
+<hr>
+
+<p>Eclipsing Whisper leaned quietly against the wall beside her.</p>
+
+<p>The legendary bow that could strike targets beyond sight itself.</p>
+
+<hr>
+
+<p>And still...</p>
+
+<p>it had not been enough.</p>
+
+<hr>
+
+<p>Outside, Havenfire’s central firepit flickered weakly beneath the rain.</p>
+
+<hr>
+
+<p>The great flame refugees gathered around every night since the settlement’s founding looked smaller now.</p>
+
+<hr>
+
+<p>Exhausted.</p>
+
+<hr>
+
+<p>Like Havenfire itself.</p>
+
+<hr>
+
+<p>Rayden finally spoke.</p>
+
+<hr>
+
+<p class="quote">“This is my fault again.”</p>
+
+<hr>
+
+<p>Nobody answered immediately.</p>
+
+<hr>
+
+<p>Because part of Havenfire feared he might be right.</p>
+
+<hr>
+
+<p>Rayden looked down toward his hands.</p>
+
+<p>Still stained black from the siege.</p>
+
+<hr>
+
+<p class="quote">“Everywhere I go...”</p>
+
+<hr>
+
+<p>His voice sounded tired now.</p>
+
+<p>Not angry.</p>
+
+<p>Just worn thin.</p>
+
+<hr>
+
+<p class="quote">“people bleed for it.”</p>
+
+<hr>
+
+<p>Kael opened one eye slowly from the bed.</p>
+
+<p>Even feverish and dying, he somehow still looked annoyed.</p>
+
+<hr>
+
+<p class="quote">“You’re dramatic when tired.”</p>
+
+<hr>
+
+<p>Rayden looked toward him instantly.</p>
+
+<hr>
+
+<p>Kael’s lips twitched slightly.</p>
+
+<p>Not quite a smile.</p>
+
+<hr>
+
+<p class="quote">“If this place dies...”</p>
+
+<p class="quote">“it dies standing.”</p>
+
+<hr>
+
+<p>His breathing hitched painfully.</p>
+
+<p>Still he continued.</p>
+
+<hr>
+
+<p class="quote">“That already makes it more than most kingdoms.”</p>
+
+<hr>
+
+<p>Nobody felt motivated.</p>
+
+<hr>
+
+<p>Not really.</p>
+
+<hr>
+
+<p>The words were strong.</p>
+
+<p>But Kael was dying.</p>
+
+<hr>
+
+<p>And everyone in that shelter understood it.</p>
+
+<hr>
+
+<p>Rayden stood suddenly.</p>
+
+<hr>
+
+<p>Dawnpiercer ignited fully.</p>
+
+<hr>
+
+<p>Golden holy light flooded the room as he pressed the blade carefully against the corruption spreading across Kael’s side.</p>
+
+<hr>
+
+<p>At first...</p>
+
+<p>it worked.</p>
+
+<hr>
+
+<p>The black veins recoiled.</p>
+
+<p>The corruption hissed beneath the holy light.</p>
+
+<p>Some portions of infected flesh purified instantly into clean scar tissue.</p>
+
+<hr>
+
+<p>Then the corruption pushed back.</p>
+
+<hr>
+
+<p>Hard.</p>
+
+<hr>
+
+<p>Black veins pulsed deeper beneath Kael’s skin where the infection had already entered the bloodstream itself.</p>
+
+<hr>
+
+<p>Dawnpiercer could slow it.</p>
+
+<p>Burn parts of it away.</p>
+
+<p>Suppress the spread temporarily.</p>
+
+<hr>
+
+<p>But not fully purge it.</p>
+
+<hr>
+
+<p>Not anymore.</p>
+
+<hr>
+
+<p>Rayden’s hand tightened around the sword hilt desperately.</p>
+
+<hr>
+
+<p>Golden light flared brighter.</p>
+
+<p>Kael groaned through clenched teeth.</p>
+
+<hr>
+
+<p>Lyria stepped forward immediately.</p>
+
+<p class="quote">“Rayden.”</p>
+
+<hr>
+
+<p>He ignored her.</p>
+
+<hr>
+
+<p>More holy light.</p>
+
+<p>More resistance.</p>
+
+<p>More corruption.</p>
+
+<hr>
+
+<p>Then suddenly Dawnpiercer dimmed.</p>
+
+<hr>
+
+<p>Rayden stopped.</p>
+
+<hr>
+
+<p>Silence filled the shelter.</p>
+
+<hr>
+
+<p>The truth stood there with them now.</p>
+
+<hr>
+
+<p>Dawnpiercer alone was not enough.</p>
+
+<hr>
+
+<p>Kael understood immediately.</p>
+
+<p>Of course he did.</p>
+
+<hr>
+
+<p>He closed his eyes again quietly.</p>
+
+<p class="quote">“How many survived?”</p>
+
+<hr>
+
+<p>Rayden looked away.</p>
+
+<hr>
+
+<p>Daven answered instead.</p>
+
+<p class="quote">“Seven dead.”</p>
+
+<p class="quote">“Nineteen injured.”</p>
+
+<hr>
+
+<p>Kael nodded once weakly.</p>
+
+<hr>
+
+<p class="quote">“Good.”</p>
+
+<hr>
+
+<p>That broke something inside the room.</p>
+
+<hr>
+
+<p>Not loudly.</p>
+
+<p>Quietly.</p>
+
+<hr>
+
+<p>Brek looked down at the floor because he could not look at Kael anymore.</p>
+
+<p>Vera turned away pretending to reorganize medical supplies.</p>
+
+<p>Lyria stared toward the shelter entrance, jaw tight enough to hurt.</p>
+
+<hr>
+
+<p>Outside the command shelter, Velkan Drake and Sorin Vael stood beneath the ruined battlements watching dwarves burn corrupted corpses beyond the walls.</p>
+
+<hr>
+
+<p>The smoke rose black against the evening sky.</p>
+
+<hr>
+
+<p>Sorin crossed both arms.</p>
+
+<p class="quote">“The strain evolved during the siege.”</p>
+
+<hr>
+
+<p>Velkan remained silent.</p>
+
+<hr>
+
+<p class="quote">“It adapted specifically to prolonged resistance.”</p>
+
+<p class="quote">“That should not happen this quickly.”</p>
+
+<hr>
+
+<p>Velkan finally answered quietly.</p>
+
+<p class="quote">“And yet it did.”</p>
+
+<hr>
+
+<p>Sorin exhaled slowly.</p>
+
+<hr>
+
+<p class="quote">“There may be one option.”</p>
+
+<hr>
+
+<p>That made Velkan glance sideways immediately.</p>
+
+<hr>
+
+<p class="quote">“The Ashen Guard?”</p>
+
+<hr>
+
+<p>Sorin nodded once.</p>
+
+<hr>
+
+<p class="quote">“If anyone can fully purge advanced corruption...”</p>
+
+<p class="quote">“it’s Seraphine Mire.”</p>
+
+<hr>
+
+<p>Lyria stepped from the shadows nearby.</p>
+
+<hr>
+
+<p>Neither man looked surprised.</p>
+
+<p>Moon Elves were difficult to sneak up on.</p>
+
+<p>Shadekin were worse.</p>
+
+<hr>
+
+<p>But Lyria had listened anyway.</p>
+
+<hr>
+
+<p class="quote">“How long?”</p>
+
+<hr>
+
+<p>Sorin’s expression darkened slightly.</p>
+
+<hr>
+
+<p class="quote">“At full speed?”</p>
+
+<p class="quote">“Four days.”</p>
+
+<hr>
+
+<p>Silence.</p>
+
+<hr>
+
+<p>Then quietly:</p>
+
+<p class="quote">“Can Kael survive that long?”</p>
+
+<hr>
+
+<p class="quote">“Yes.”</p>
+
+<hr>
+
+<p>The answer came from behind them.</p>
+
+<hr>
+
+<p>Rayden stood beneath the broken battlement archway.</p>
+
+<p>Exhausted.</p>
+
+<p>Emotionally hollow.</p>
+
+<p>Still terrifying somehow.</p>
+
+<hr>
+
+<p>His eyes shifted toward the shelter where Kael rested.</p>
+
+<hr>
+
+<p class="quote">“He’s the wall.”</p>
+
+<hr>
+
+<p>No hesitation.</p>
+
+<p>No doubt.</p>
+
+<hr>
+
+<p>Just certainty.</p>
+
+<hr>
+
+<p>Inside the shelter, Kael laughed weakly after overhearing the conversation through the thin canvas walls.</p>
+
+<hr>
+
+<p class="quote">“You idiots are loud.”</p>
+
+<hr>
+
+<p>Sorin looked genuinely uncomfortable.</p>
+
+<hr>
+
+<p>Kael turned his head slightly toward Rayden.</p>
+
+<p>The fever already burned visibly behind his eyes now.</p>
+
+<hr>
+
+<p>Still...</p>
+
+<p>he smiled.</p>
+
+<hr>
+
+<p class="quote">“If I turn corrupted before they arrive...”</p>
+
+<hr>
+
+<p>His breathing hitched painfully.</p>
+
+<hr>
+
+<p class="quote">“cut my head off.”</p>
+
+<hr>
+
+<p>Nobody answered.</p>
+
+<hr>
+
+<p>Not because they disagreed.</p>
+
+<p>Because the possibility suddenly felt real.</p>
+
+<hr>
+
+<p>Velkan studied Rayden carefully then.</p>
+
+<hr>
+
+<p>No denial.</p>
+
+<p>No emotional outburst.</p>
+
+<p>No false promises.</p>
+
+<hr>
+
+<p>Only absolute confidence that Kael would survive.</p>
+
+<hr>
+
+<p>It fascinated him.</p>
+
+<hr>
+
+<p>Somewhere beneath the scholar’s composed exterior...</p>
+
+<p>Velkan realized he was silently hoping the same thing.</p>
+
+<hr>
+
+<p>Then he looked toward Sorin coldly.</p>
+
+<hr>
+
+<p class="quote">“Next time discuss mortality somewhere the dying man cannot hear you.”</p>
+
+<hr>
+
+<p>Sorin looked offended immediately.</p>
+
+<p class="quote">“He was unconscious earlier.”</p>
+
+<hr>
+
+<p>From inside the shelter:</p>
+
+<p class="quote">“I hate all of you.”</p>
+
+<hr>
+
+<p>For the first time since the siege...</p>
+
+<p>someone laughed.</p>
+
+<hr>
+
+<p>Small.</p>
+
+<p>Tired.</p>
+
+<p>Real.</p>
+
+<hr>
+
+<p>Outside Havenfire’s damaged walls, black smoke continued rising into the darkening skies.</p>
+
+<hr>
+
+<p>And somewhere far beyond the frontier...</p>
+
+<p>the Saint of Ash waited.</p>
+
+<hr>
+<!-- SECTION VI ENDS -->
+
+
+
+<!-- SECTION VII STARTS -->
+<h2 id="section-7">VII — The Saint Beyond the Ash</h2>
+<p class="era">Sundered Age — Year 1041</p>
+
+<hr>
+
+<p>Rayden left Havenfire before sunrise on the first day.</p>
+
+<hr>
+
+<p>No rallying words.</p>
+
+<p>The settlement was too tired for ceremony.</p>
+
+<hr>
+
+<p>The gates opened quietly beneath torchlight while exhausted refugees continued rebuilding shattered barricades through the freezing dawn.</p>
+
+<hr>
+
+<p>Kael remained unconscious inside the command shelter.</p>
+
+<hr>
+
+<p>The corruption veins had spread farther during the night.</p>
+
+<hr>
+
+<p>Rayden saw them before leaving.</p>
+
+<p>Black lines crawling slowly beneath Kael’s skin like living roots searching for his heart.</p>
+
+<hr>
+
+<p>He said nothing.</p>
+
+<hr>
+
+<p>Only tightened Dawnpiercer’s straps harder than necessary before mounting his horse.</p>
+
+<hr>
+
+<p>Lyria waited beside him already armed.</p>
+
+<p>Eclipsing Whisper rested across her back while twin daggers hung at both hips beneath her dark cloak.</p>
+
+<hr>
+
+<p>Sorin arrived last.</p>
+
+<hr>
+
+<p>His drake descended onto the outer landing tower in a burst of wind and blue arcane light before folding its wings along the ruined battlements.</p>
+
+<hr>
+
+<p>Unlike Pyrewing...</p>
+
+<p>this drake looked built for speed rather than dominance.</p>
+
+<p>Lean.</p>
+<p>Armored.</p>
+<p>Military.</p>
+
+<hr>
+
+<p>Sorin dismounted smoothly.</p>
+
+<p class="quote">“We split travel speed here.”</p>
+
+<hr>
+
+<p>He unfurled a glowing rune map across the saddle.</p>
+
+<hr>
+
+<p class="quote">“I’ll reach the Ashen Guard ahead of you.”</p>
+
+<p class="quote">“You follow the western fracture roads through the old ruins.”</p>
+
+<hr>
+
+<p>Rayden studied the route silently.</p>
+
+<hr>
+
+<p>Sorin pointed toward several blackened regions across the map.</p>
+
+<hr>
+
+<p class="quote">“Avoid these.”</p>
+
+<p class="quote">“Corruption nests.”</p>
+
+<p class="quote">“If you see silver-white burn marks…”</p>
+
+<hr>
+
+<p>His eyes shifted upward.</p>
+
+<p class="quote">“You’re close.”</p>
+
+<hr>
+
+<p>Then he mounted again.</p>
+
+<hr>
+
+<p class="quote">“Don’t die before reaching them.”</p>
+
+<hr>
+
+<p>The drake launched skyward immediately afterward, disappearing into storm clouds at terrifying speed.</p>
+
+<hr>
+
+<p>Rayden watched him vanish briefly.</p>
+
+<hr>
+
+<p>Then looked back once toward Havenfire.</p>
+
+<hr>
+
+<p>Smoke still rose from the damaged walls.</p>
+
+<p>The central firepit flickered weakly beneath morning rain.</p>
+
+<hr>
+
+<p>And somewhere inside those walls...</p>
+
+<p>Kael waited.</p>
+
+<hr>
+
+<p>Rayden turned his horse southward.</p>
+
+<hr>
+
+<p class="quote">“Ride.”</p>
+
+<hr>
+
+<p>The two vanished into the frontier roads.</p>
+
+<hr>
+
+<hr>
+
+<p>Velkan Drake remained behind.</p>
+
+<hr>
+
+<p>That surprised everyone.</p>
+
+<hr>
+
+<p>Especially Kael.</p>
+
+<hr>
+
+<p>The commander opened one fever-heavy eye as Velkan entered the shelter later that evening carrying several floating rune tablets and a fresh containment seal.</p>
+
+<hr>
+
+<p>Kael’s voice sounded terrible.</p>
+
+<p>Burned raw from fever.</p>
+
+<hr>
+
+<p class="quote">“Thought scholars preferred safe towers.”</p>
+
+<hr>
+
+<p>Velkan ignored the sarcasm calmly while reinforcing anti-corruption sigils around the room.</p>
+
+<hr>
+
+<p class="quote">“Most do.”</p>
+
+<hr>
+
+<p>Kael coughed painfully.</p>
+
+<p>Blood stained the cloth beside his bed.</p>
+
+<hr>
+
+<p>Velkan noticed the corruption spread immediately.</p>
+
+<p>Worse.</p>
+
+<hr>
+
+<p>Kael noticed him noticing.</p>
+
+<hr>
+
+<p class="quote">“Bad?”</p>
+
+<hr>
+
+<p>Velkan answered honestly.</p>
+
+<p class="quote">“Yes.”</p>
+
+<hr>
+
+<p>Kael laughed weakly.</p>
+
+<p class="quote">“Good.”</p>
+
+<p class="quote">“Hate when people lie to dying men.”</p>
+
+<hr>
+
+<p>Silence settled briefly between them.</p>
+
+<hr>
+
+<p>Then unexpectedly:</p>
+
+<p class="quote">“I was skeptical of you.”</p>
+
+<hr>
+
+<p>Velkan glanced sideways.</p>
+
+<hr>
+
+<p>Kael shifted painfully beneath the blankets.</p>
+
+<p class="quote">“Still kind of am.”</p>
+
+<hr>
+
+<p>That almost sounded offensive.</p>
+
+<p>Almost.</p>
+
+<hr>
+
+<p>Kael continued quietly.</p>
+
+<p class="quote">“People talk about you like you’re some cold monster sitting above kingdoms counting who survives.”</p>
+
+<hr>
+
+<p>Velkan’s expression remained unreadable.</p>
+
+<hr>
+
+<p class="quote">“Sometimes they are correct.”</p>
+
+<hr>
+
+<p>Kael stared toward the shelter ceiling.</p>
+
+<hr>
+
+<p class="quote">“No.”</p>
+
+<hr>
+
+<p>Another cough.</p>
+
+<p>More blood.</p>
+
+<hr>
+
+<p class="quote">“Monsters don’t stay behind for people they don’t care about.”</p>
+
+<hr>
+
+<p>Velkan said nothing after that.</p>
+
+<hr>
+
+<p>Because he did not entirely understand why he stayed either.</p>
+
+<hr>
+
+<hr>
+
+<p>Later that night, Velkan stood atop Havenfire’s highest tower alone.</p>
+
+<hr>
+
+<p>The settlement below remained awake despite exhaustion.</p>
+
+<hr>
+
+<p>Children carried water beside wounded adults rebuilding barricades.</p>
+
+<p>Dwarves repaired wall braces under torchlight.</p>
+
+<p>Beastkin hunters reinforced the northern watchposts.</p>
+
+<hr>
+
+<p>No one here waited for salvation.</p>
+
+<p>They simply kept rebuilding.</p>
+
+<hr>
+
+<p>Velkan watched silently.</p>
+
+<hr>
+
+<p>Most kingdoms feared him.</p>
+
+<p>Many called him dangerous.</p>
+
+<p>Some called him evil outright.</p>
+
+<hr>
+
+<p>At least Kael had been honest enough to see humanity in him.</p>
+<hr>
+
+<p>A beastkin woman approached the command shelter quietly carrying a tiny carved wooden charm wrapped in cloth.</p>
+
+<hr>
+
+<p>Velkan watched her kneel outside Kael’s room.</p>
+
+<hr>
+
+<p>She whispered prayers in another language softly toward whatever god her people followed.</p>
+
+<hr>
+
+<p class="quote">“Please let the Wall stand again.”</p>
+
+<hr>
+
+<p>Then she left the charm outside the door and returned to rebuilding work without another word.</p>
+
+<hr>
+
+<p>Velkan looked away slowly.</p>
+
+<hr>
+
+<p>Then two children approached him carefully.</p>
+
+<hr>
+
+<p>One human.</p>
+
+<p>One dwarf.</p>
+
+<hr>
+
+<p>Both carrying repaired arrow shafts.</p>
+
+<hr>
+
+<p>The smaller dwarf boy stared upward nervously.</p>
+
+<p class="quote">“Mister...”</p>
+
+<hr>
+
+<p>Velkan blinked once.</p>
+
+<p>Nobody had called him that in years.</p>
+
+<hr>
+
+<p class="quote">“What?”</p>
+
+<hr>
+
+<p>The human girl pointed upward.</p>
+
+<p class="quote">“What does Havenfire look like from above?”</p>
+
+<hr>
+
+<p>Velkan stared at them.</p>
+
+<hr>
+
+<p>The children immediately looked terrified.</p>
+
+<hr>
+
+<p>Then unexpectedly...</p>
+
+<p>Velkan stepped forward and rested one hand gently on each of their heads.</p>
+
+<hr>
+
+<p class="quote">“Come.”</p>
+
+<hr>
+
+<p>The children blinked in confusion.</p>
+
+<hr>
+
+<p class="quote">“Let’s go see.”</p>
+
+<hr>
+
+<p>Minutes later, Pyrewing rose into the night sky carrying the three of them above Havenfire.</p>
+
+<hr>
+
+<p>The children stared downward in awe.</p>
+
+<hr>
+
+<p>Below them, the damaged settlement glowed softly beneath torchlight and scattered fires while people moved through the streets rebuilding walls even at midnight.</p>
+
+<hr>
+
+<p>Small.</p>
+
+<p>Broken.</p>
+
+<p>Alive.</p>
+
+<hr>
+
+<p>The dwarf child whispered quietly:</p>
+
+<p class="quote">“It looks warm from up here.”</p>
+
+<hr>
+
+<p>Velkan looked down at Havenfire for a long time.</p>
+
+<hr>
+
+<p>Then finally:</p>
+
+<p class="quote">“Yes.”</p>
+
+<hr>
+
+<hr>
+
+<p>Nearly a full day passed on the southern roads.</p>
+
+<hr>
+
+<p>Rayden and Lyria rode without stopping.</p>
+
+<hr>
+
+<p>Their horses foamed with exhaustion while corrupted creatures emerged repeatedly from ruined forests and shattered roads trying to intercept them.</p>
+
+<hr>
+
+<p>Lyria killed while riding.</p>
+
+<hr>
+
+<p>One arrow through the eye of a charging corrupted wolf.</p>
+<p>Another through the throat of an infected rider emerging from fog.</p>
+<p>A third splitting midair into multiple streaks and dropping goblins from ruined stone arches overhead.</p>
+
+<hr>
+
+<p>Rayden fought beside her without slowing pace.</p>
+
+<hr>
+
+<p>Dawnpiercer smashed smaller corrupted creatures aside while Vossfang ripped enemies from horseback directly beneath trampling hooves.</p>
+
+<hr>
+
+<p>Neither wasted movement.</p>
+
+<hr>
+
+<p>Every second mattered now.</p>
+
+<hr>
+
+<p>Near sunset of the second day...</p>
+
+<p>they reached the ruins.</p>
+
+<hr>
+
+<p>An ancient broken structure stood half-buried beneath corruption growths spreading through black stone like disease across bone.</p>
+
+<hr>
+
+<p>And inside that darkness...</p>
+
+<p>light moved.</p>
+
+<hr>
+
+<p>Not torchlight.</p>
+
+<hr>
+
+<p>Something cleaner.</p>
+
+<hr>
+
+<p>Silver-white radiance spread gently through the ruined corridors while corruption visibly vaporized wherever it touched the ground.</p>
+
+<hr>
+
+<p>Rayden slowed instinctively.</p>
+
+<hr>
+
+<p>Then he saw her.</p>
+
+<hr>
+
+<p>Seraphine Mire walked calmly through the ruined structure surrounded by five Ashen Guard members clad in pale silver armor marked with purification sigils burned directly into the steel itself.</p>
+
+<hr>
+
+<p>Corrupted creatures attacked them constantly.</p>
+
+<p>None reached close.</p>
+
+<hr>
+
+<p>Silver-white flames erased infection from the air while Ashen Guard execution blades carved through corrupted flesh with terrifying efficiency.</p>
+
+<hr>
+
+<p>No wasted motion.</p>
+
+<p>No fear.</p>
+
+<p>Only duty.</p>
+
+<hr>
+
+<p>At the center of them all...</p>
+
+<p>walked Seraphine.</p>
+
+<hr>
+
+<p>She looked almost the same age as Rayden.</p>
+
+<p>Perhaps twenty.</p>
+
+<p>Perhaps twenty-one.</p>
+
+<hr>
+
+<p>White-silver robes stained lightly with ash.</p>
+<p>Long pale hair moving softly beneath corrupted wind.</p>
+<p>Tired eyes.</p>
+<p>Calm eyes.</p>
+
+<hr>
+
+<p>Eyes belonging to someone who had seen far too much suffering and learned how to continue anyway.</p>
+
+<hr>
+
+<p>Sorin approached from nearby ruins atop his drake.</p>
+
+<hr>
+
+<p class="quote">“You’re late.”</p>
+
+<hr>
+
+<p>Rayden ignored him completely.</p>
+
+<hr>
+
+<p>Sorin almost looked amused.</p>
+
+<hr>
+
+<p class="quote">“I already explained Kael’s condition.”</p>
+
+<p class="quote">“She agreed to come.”</p>
+
+<hr>
+
+<p>Seraphine finally looked directly toward Rayden.</p>
+
+<hr>
+
+<p>Her gaze paused immediately on Dawnpiercer.</p>
+
+<p>Then Vossfang.</p>
+
+<p>Then the man carrying them.</p>
+
+<hr>
+
+<p>She stepped closer slowly.</p>
+
+<hr>
+
+<p class="quote">“If both sword and shield chose you...”</p>
+
+<hr>
+
+<p>Her voice sounded soft.</p>
+
+<p>Steady.</p>
+
+<hr>
+
+<p class="quote">“then there must be something inside you worth choosing.”</p>
+
+<hr>
+
+<p>Then she noticed Lyria.</p>
+
+<hr>
+
+<p>Seraphine blinked once in genuine fascination.</p>
+
+<hr>
+
+<p class="quote">“A Moon Elf...”</p>
+
+<hr>
+
+<p>Not fear.</p>
+
+<p>Wonder.</p>
+
+<hr>
+
+<p class="quote">“I’ve only read about Elderwood healing traditions.”</p>
+
+<hr>
+
+<p>Lyria looked equally surprised.</p>
+
+<hr>
+
+<p>Most humans stared at Moon Elves like myths.</p>
+
+<p>Seraphine looked at her like a scholar meeting history.</p>
+
+<hr>
+
+<p>Then Seraphine noticed Rayden’s wounds.</p>
+
+<hr>
+
+<p>His exhaustion.</p>
+
+<p>The blood beneath armor seams.</p>
+<p>The tremor beneath controlled breathing.</p>
+
+<hr>
+
+<p>Without asking permission, she lifted one hand gently toward his chest.</p>
+
+<hr>
+
+<p>Silver-white light gathered around her fingers.</p>
+
+<hr>
+
+<p class="quote">“Sanctum Grace.”</p>
+
+<hr>
+
+<p>Warmth flooded through Rayden instantly.</p>
+
+<hr>
+
+<p>The pain vanished.</p>
+
+<p>The exhaustion faded.</p>
+
+<p>The deep ache inside his body from endless battles suddenly loosened for the first time in years.</p>
+
+<hr>
+
+<p>Rayden stared at her.</p>
+
+<hr>
+
+<p>Then unexpectedly...</p>
+
+<p>his knees hit the ground.</p>
+
+<hr>
+
+<p>Lyria’s eyes widened slightly.</p>
+
+<p>Sorin went completely still.</p>
+
+<hr>
+
+<p>Rayden lowered his head.</p>
+
+<hr>
+
+<p class="quote">“Please.”</p>
+
+<hr>
+
+<p>His voice cracked.</p>
+
+<hr>
+
+<p class="quote">“Save him.”</p>
+
+<hr>
+
+<p>Silence.</p>
+
+<hr>
+
+<p>Not one of the Ashen Guard moved.</p>
+
+<hr>
+
+<p>Sorin watched quietly.</p>
+
+<p>Amused.</p>
+
+<p>Surprised.</p>
+
+<p>Something else too.</p>
+
+<hr>
+
+<p>Because in a world tearing itself apart for survival...</p>
+
+<p>this man still begged for someone else’s life before his own.</p>
+
+<hr>
+
+<p>Something shifted behind Seraphine’s eyes then.</p>
+
+<hr>
+
+<p>Old memories.</p>
+
+<p>Old grief.</p>
+
+<p>Old failures.</p>
+
+<hr>
+
+<p>She slowly knelt in front of Rayden.</p>
+
+<hr>
+
+<p class="quote">“I’ll try my best, Rayden.”</p>
+
+<hr>
+
+<p>And for the first time since the siege...</p>
+
+<p>he believed someone might actually save Kael.</p>
+
+<hr>
+
+<hr>
+
+<p>Seraphine and Sorin left immediately afterward atop the drake, racing toward Havenfire at full speed through the night skies.</p>
+
+<hr>
+
+<p>Rayden, Lyria, and the five Ashen Guard followed on horseback through the ruined frontier roads below.</p>
+
+<hr>
+
+<p>By the fourth day...</p>
+
+<p>Seraphine reached Havenfire.</p>
+
+<hr>
+
+<p>Sorin descended first beside the rebuilt courtyard towers.</p>
+
+<hr>
+
+<p>And stopped.</p>
+
+<hr>
+
+<p>Completely confused.</p>
+
+<hr>
+
+<p>Velkan Drake sat cross-legged near the central firepit surrounded by mixed-race children while floating rune symbols hovered gently in the air above his hands.</p>
+
+<hr>
+
+<p class="quote">“Arcane structures require intent.”</p>
+
+<hr>
+
+<p>The children stared upward in fascination.</p>
+
+<hr>
+
+<p class="quote">“Magic is not emotion.”</p>
+
+<p class="quote">“Emotion only fuels instability.”</p>
+
+<hr>
+
+<p>A small dwarf child accidentally ignited a tiny spark explosion.</p>
+
+<hr>
+
+<p>Velkan sighed deeply.</p>
+
+<p class="quote">“That was almost catastrophic.”</p>
+
+<hr>
+
+<p>The children laughed anyway.</p>
+
+<hr>
+
+<p>Sorin stared at his mentor in absolute disbelief.</p>
+
+<hr>
+
+<p>Velkan noticed him immediately.</p>
+
+<hr>
+
+<p>Then casually waved.</p>
+
+<hr>
+
+<p>Sorin decided he no longer understood reality.</p>
+
+<hr>
+
+<p>Seraphine stepped down afterward.</p>
+
+<hr>
+
+<p>She and Velkan greeted each other quietly like old survivors recognizing another person carrying too much responsibility.</p>
+
+<hr>
+
+<p>Then Seraphine saw the walls.</p>
+
+<hr>
+
+<p>The corruption spreading through Havenfire’s stone.</p>
+
+<hr>
+
+<p>Her expression changed instantly.</p>
+
+<hr>
+
+<p>Not fear.</p>
+
+<p>Concern.</p>
+
+<hr>
+
+<p>She lifted one hand.</p>
+
+<hr>
+
+<p class="quote">“Ashen Hymn.”</p>
+
+<hr>
+
+<p>Silver-white light erupted gently across the courtyard.</p>
+
+<hr>
+
+<p>The corruption veins crawling through the walls screamed softly before dissolving into drifting ash beneath the radiance.</p>
+
+<hr>
+
+<p>People froze.</p>
+
+<hr>
+
+<p>Brek stared openly.</p>
+
+<p>Daven looked like he forgot breathing.</p>
+
+<hr>
+
+<p>Hope entered Havenfire physically.</p>
+
+<hr>
+
+<p>The two men rushed toward Seraphine immediately.</p>
+
+<hr>
+
+<p class="quote">“Please...”</p>
+
+<p>Daven’s voice almost broke.</p>
+
+<hr>
+
+<p class="quote">“Save him.”</p>
+
+<hr>
+
+<p>Seraphine looked toward Kael’s shelter.</p>
+
+<hr>
+
+<p>The silver light around her dimmed slowly.</p>
+
+<hr>
+
+<p>Rayden and Lyria still had not returned.</p>
+
+<hr>
+
+<p>But the Saint of Ash had arrived.</p>
+
+<hr>
+
+<p><!--SECTION VII ENDS --> </p>
+
+
+
+<!-- CHAPTER 8 STARTS -->
+<h2 id="section-8">VIII — The Saint Beyond the Ash</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<hr>
+
+<p>Kael Varric looked dead.</p>
+
+<hr>
+
+<p>The room smelled of blood, burned corruption, fever sweat, crushed herbs, and silver ash.</p>
+
+<hr>
+
+<p>Rain tapped softly against the wooden walls outside while Havenfire remained unnaturally quiet beyond the cabin.</p>
+
+<hr>
+
+<p>No laughter.</p>
+
+<p>No hammering.</p>
+
+<p>No rebuilding.</p>
+
+<hr>
+
+<p>The entire settlement waited.</p>
+
+<hr>
+
+<p>Inside the command shelter, Kael lay motionless beneath heavy blankets stained dark from blood and purification residue.</p>
+
+<hr>
+
+<p>GraveTide rested beside the bed.</p>
+
+<p>Even unconscious...</p>
+
+<p>Kael’s left hand still touched the edge of the legendary tower shield.</p>
+
+<hr>
+
+<p>Still guarding the gate.</p>
+
+<hr>
+
+<p>Seraphine noticed it immediately.</p>
+
+<p>So did Velkan.</p>
+
+<hr>
+
+<p>The Drakari scholar stood near the far wall surrounded by floating containment runes rotating slowly through the dim room while Seraphine examined Kael carefully beside the bed.</p>
+
+<hr>
+
+<p>Not like a priest.</p>
+
+<p>Like a battlefield physician.</p>
+
+<hr>
+
+<p>She checked his breathing first.</p>
+
+<p>Then his pulse.</p>
+<p>Then the corruption spread beneath the skin.</p>
+<p>Then his eyes.</p>
+
+<hr>
+
+<p>Black traces still moved beneath the whites.</p>
+
+<hr>
+
+<p>Her fingers hovered carefully over the wounds along Kael’s ribs where the corrupted blood had entered during the siege.</p>
+
+<hr>
+
+<p>Seraphine’s expression slowly darkened.</p>
+
+<hr>
+
+<p class="quote">“It evolved inside him.”</p>
+
+<hr>
+
+<p>Velkan nodded once.</p>
+
+<hr>
+
+<p class="quote">“Rayden used Dawnpiercer.”</p>
+
+<p class="quote">“I reinforced suppression runes afterward.”</p>
+
+<hr>
+
+<p>Several glowing seals rotated faintly around the room’s wooden support beams.</p>
+
+<hr>
+
+<p class="quote">“It slowed the spread.”</p>
+
+<hr>
+
+<p>Velkan’s eyes shifted toward Kael’s chest.</p>
+
+<hr>
+
+<p class="quote">“Barely.”</p>
+
+<hr>
+
+<p>Seraphine rested one glowing hand carefully against Kael’s sternum.</p>
+
+<hr>
+
+<p>Warm silver-white light spread gently across his body.</p>
+
+<hr>
+
+<p>The corruption reacted instantly.</p>
+
+<hr>
+
+<p>Black veins pulsed violently beneath his skin while Kael’s entire body arched from the bed in silent agony despite unconsciousness.</p>
+
+<hr>
+
+<p>Seraphine narrowed her eyes immediately.</p>
+
+<hr>
+
+<p>Then suddenly...</p>
+
+<p>she blinked.</p>
+
+<hr>
+
+<p class="quote">“Well...”</p>
+
+<hr>
+
+<p>Another pulse of healing light.</p>
+
+<p>Another reaction.</p>
+
+<hr>
+
+<p>Then quietly:</p>
+
+<p class="quote">“Well, this explains a lot.”</p>
+
+<hr>
+
+<p>Velkan looked toward her.</p>
+
+<hr>
+
+<p>Seraphine almost sounded surprised.</p>
+
+<hr>
+
+<p class="quote">“This man’s Stoneborn.”</p>
+
+<hr>
+
+<p>The floating runes around the room froze.</p>
+
+<hr>
+
+<p>Velkan stared at Kael properly for the first time since the siege.</p>
+
+<hr>
+
+<p>Then slowly...</p>
+
+<p>he exhaled.</p>
+
+<hr>
+
+<p class="quote">“No wonder he survived.”</p>
+
+<hr>
+
+<p>Seraphine continued channeling purification light through Kael’s body while speaking carefully.</p>
+
+<hr>
+
+<p class="quote">“I’ve only read fragments about them.”</p>
+
+<p class="quote">“Ancient experiments during the Dwarven Cataclysm Wars.”</p>
+
+<hr>
+
+<p>Velkan nodded quietly.</p>
+
+<hr>
+
+<p class="quote">“Over two thousand years ago.”</p>
+
+<p class="quote">“Dwarven war-forges attempted to merge human adaptability with golem endurance.”</p>
+
+<hr>
+
+<p>His eyes shifted toward Kael’s body.</p>
+
+<hr>
+
+<p class="quote">“Most subjects died.”</p>
+
+<p class="quote">“Some became monsters.”</p>
+
+<p class="quote">“A handful survived.”</p>
+
+<hr>
+
+<p>As if responding to the words themselves...</p>
+
+<p>Kael’s forearm suddenly hardened.</p>
+
+<hr>
+
+<p>Stone spread partially across the skin in jagged gray patterns before fading again beneath the healing light.</p>
+
+<hr>
+
+<p>Seraphine’s eyes widened slightly.</p>
+
+<hr>
+
+<p class="quote">“His body is restructuring itself.”</p>
+
+<hr>
+
+<p>Velkan folded his arms slowly.</p>
+
+<hr>
+
+<p class="quote">“Stoneborn physiology activates near terminal conditions.”</p>
+
+<p class="quote">“Extreme pressure.”</p>
+
+<p class="quote">“Near-death survival.”</p>
+
+<hr>
+
+<p>The Drakari scholar’s voice lowered thoughtfully.</p>
+
+<hr>
+
+<p class="quote">“It increases regeneration.”</p>
+
+<p class="quote">“Pressure resistance.”</p>
+
+<p class="quote">“Physical durability.”</p>
+
+<hr>
+
+<p>Then quietly:</p>
+
+<p class="quote">“A last stand race.”</p>
+
+<hr>
+
+<p>Seraphine focused harder immediately.</p>
+
+<hr>
+
+<p>Warm silver light intensified through the room.</p>
+
+<hr>
+
+<p>Kael’s body trembled violently beneath the blankets.</p>
+
+<p>Stone spread.</p>
+<p>Cracked.</p>
+<p>Healed.</p>
+<p>Corrupted.</p>
+<p>Healed again.</p>
+
+<hr>
+
+<p>The corruption and Stoneborn regeneration fought each other directly inside his body.</p>
+
+<hr>
+
+<p>Creation.</p>
+
+<p>Destruction.</p>
+
+<p>Over and over.</p>
+
+<hr>
+
+<p>Seraphine’s expression slowly shifted from concern...</p>
+
+<p>to disbelief.</p>
+
+<hr>
+
+<p class="quote">“Most people would already be dead.”</p>
+
+<hr>
+
+<p>Velkan looked toward Kael’s unconscious face.</p>
+
+<hr>
+
+<p class="quote">“Most people didn’t hold a fortress gate against a Titan for three hours.”</p>
+
+<hr>
+
+<p>For the first time since entering the room...</p>
+
+<p>Velkan smirked slightly.</p>
+
+<hr>
+
+<p class="quote">“If he survives this...”</p>
+
+<hr>
+
+<p>His eyes drifted toward GraveTide beside the bed.</p>
+
+<hr>
+
+<p class="quote">“He really will become The Wall.”</p>
+
+<hr>
+
+<p>Outside the shelter, time crawled.</p>
+
+<hr>
+
+<p>Brek sat near the doorway gripping his spear tightly enough to whiten his knuckles.</p>
+
+<p>Daven paced constantly through the courtyard.</p>
+
+<p>Vera organized medical supplies simply to stay occupied.</p>
+
+<p>Marcus stood silently beneath the rain beside Helna while the surviving refugees waited for news no one could give.</p>
+
+<hr>
+
+
+
+<p>Hours passed.</p>
+
+<hr>
+
+<p>Seraphine continued.</p>
+
+<hr>
+
+<p>Again.</p>
+
+<p>Again.</p>
+
+<p>Again.</p>
+
+<hr>
+
+<p>She stopped only long enough to drink water brought silently by Brek before resuming the purification process immediately afterward.</p>
+
+<hr>
+
+<p>Her hands trembled from mana exhaustion.</p>
+
+<p>Blood slowly dripped from one nostril.</p>
+
+<p>The silver-white light around her flickered weaker each hour.</p>
+
+<hr>
+
+<p>Still she continued.</p>
+
+<hr>
+
+<p>Helna rushed constantly between treatments helping stabilize Kael’s temperature while Velkan reinforced containment seals repeatedly to keep the corruption from spreading into the room itself.</p>
+
+<hr>
+
+<p>Then suddenly...</p>
+
+<p>Seraphine collapsed sideways.</p>
+
+<hr>
+
+<p>Velkan caught her instantly before she struck the floor.</p>
+
+<hr>
+
+<p>For several terrifying seconds...</p>
+
+<p>the purification light vanished entirely.</p>
+
+<hr>
+
+<p>Beneath the blankets, black veins immediately surged across Kael’s neck again.</p>
+
+<p>Seraphine slowly regained consciousness moments later.</p>
+
+<hr>
+
+<p>Exhausted.</p>
+
+<p>Pale.</p>
+
+<p>Breathing hard.</p>
+
+<hr>
+
+<p>Still she looked toward Kael first.</p>
+
+<hr>
+
+<p class="quote">“Again.”</p>
+
+<hr>
+
+<p>Velkan actually looked concerned.</p>
+
+<hr>
+
+<p class="quote">“You need rest.”</p>
+
+<hr>
+
+<p>Seraphine shook her head weakly.</p>
+
+<hr>
+
+<p class="quote">“If I stop now...”</p>
+
+<hr>
+
+<p>She looked toward the corruption spread.</p>
+
+<hr>
+
+<p class="quote">“he dies.”</p>
+
+<hr>
+
+<p>So she continued.</p>
+
+<hr>
+
+<p>By late evening...</p>
+
+<p>hoofbeats finally reached Havenfire.</p>
+
+<hr>
+
+<p>Rayden.</p>
+
+<p>Lyria.</p>
+
+<p>The Ashen Guard.</p>
+
+<hr>
+
+<p>Marcus guided the Ashen Guard immediately toward the corrupted fields where silver-white purification flames began spreading carefully across ruined farmland and infected soil.</p>
+
+<hr>
+
+<p>The corruption screamed beneath the holy fire.</p>
+
+<p>Then dissolved into drifting ash.</p>
+
+<hr>
+<p>Lyria remained near the outer barricades.</p>
+
+<hr>
+
+<p>Not because the walls required guarding.</p>
+
+<p>Because she could not stand still anymore.</p>
+
+<hr>
+
+<p>The Moon Elf sharpened arrows that did not need sharpening.</p>
+
+<p>Checked bowstrings already perfect.</p>
+
+<p>Watched the forests beyond Havenfire’s walls like she expected the corruption itself to return personally for Kael.</p>
+
+<hr>
+
+<p>Every few minutes...</p>
+
+<p>her eyes drifted back toward the shelter.</p>
+
+<hr>
+
+<p>And every time they did...</p>
+
+<p>the frustration returned.</p>
+
+<hr>
+
+<p>She had survived Void incursions.</p>
+<p>Killed monsters older than kingdoms.</p>
+<p>Carried one of the greatest bows in existence.</p>
+
+<hr>
+
+<p>And still...</p>
+
+<p>she could not stop this.</p>
+
+<hr>
+
+<p>Rayden barely noticed.</p>
+
+<hr>
+
+<p>He rushed toward the command shelter immediately.</p>
+
+<hr>
+
+<p>Sorin sat outside the doorway beneath the rain.</p>
+
+<hr>
+
+<p>He looked exhausted too.</p>
+
+<hr>
+
+<p>Rayden opened his mouth.</p>
+
+<hr>
+
+<p>Sorin immediately raised one finger.</p>
+
+<hr>
+
+<p class="quote">“Less noise.”</p>
+
+<hr>
+
+<p>Rayden ignored the comment and moved toward the window instead.</p>
+
+<hr>
+
+<p>Inside the room...</p>
+
+<p>warm silver light illuminated everything softly.</p>
+
+<hr>
+
+<p>Velkan sat silently near the far wall maintaining rune suppression seals.</p>
+
+<p>Seraphine remained beside Kael with one glowing hand pressed against his chest.</p>
+
+<hr>
+
+<p>And the corruption...</p>
+
+<p>was losing.</p>
+
+<hr>
+
+<p>Rayden saw the black veins slowly fading beneath Kael’s skin.</p>
+
+<p>Saw sections of his arm harden briefly into stone before returning normal again.</p>
+
+<p>Saw the fever finally breaking.</p>
+
+<hr>
+
+<p>Rayden closed his eyes.</p>
+
+<hr>
+
+<hr>
+
+<p>Lyria stepped into the room at that exact moment.</p>
+
+<hr>
+
+<p>And froze.</p>
+
+<hr>
+
+<p>Kael’s hand still rested against GraveTide.</p>
+
+<hr>
+
+<p>Even now.</p>
+
+<p>Even dying.</p>
+
+<hr>
+
+<p>Lyria stared at the shield quietly.</p>
+
+<hr>
+
+<p>Then whispered under her breath:</p>
+
+<hr>
+
+<p class="quote">“Still guarding the gate...”</p>
+
+<hr>
+
+
+<p>For the first time in days...</p>
+
+<p>Rayden breathed properly.</p>
+
+<hr>
+
+<p>Lyria noticed immediately beside him.</p>
+
+<hr>
+
+<p>She looked at him quietly.</p>
+
+<p>Then finally:</p>
+
+<hr>
+
+<p class="quote">“You look terrible.”</p>
+
+<hr>
+
+<p>Rayden laughed weakly.</p>
+
+<hr>
+
+<p>Small.</p>
+
+<p>Broken.</p>
+
+<p>Real.</p>
+
+<hr>
+
+<p>Another hour and a half passed.</p>
+
+<hr>
+
+<p>Then the shelter door finally opened.</p>
+
+<hr>
+
+<p>Velkan stepped outside carrying an unconscious Seraphine carefully in both arms.</p>
+
+<hr>
+
+<p>Every person in the courtyard stood instantly.</p>
+
+<hr>
+
+<p>Rain fell softly through complete silence.</p>
+
+<hr>
+
+<p>Velkan looked exhausted himself now.</p>
+
+<hr>
+
+<p class="quote">“Mana exhaustion.”</p>
+
+<p class="quote">“She’ll recover.”</p>
+
+<hr>
+
+<p>Vera rushed forward immediately and carefully carried Seraphine toward a prepared room beside the medical shelter.</p>
+
+<hr>
+
+<p>Then everyone looked toward Velkan.</p>
+
+<hr>
+
+<p>The Drakari scholar glanced once toward the command shelter behind him.</p>
+
+<hr>
+
+<p>And spoke quietly.</p>
+
+<hr>
+
+<p class="quote">“Kael Varric...”</p>
+
+<hr>
+
+<p>A faint smirk appeared.</p>
+
+<hr>
+
+<p class="quote">“...surely is The Wall.”</p>
+
+<hr>
+
+<p>Silence broke instantly.</p>
+
+<hr>
+
+<p>Brek nearly collapsed onto his knees laughing and crying at the same time.</p>
+
+<p>Daven covered his face with one shaking hand.</p>
+
+<p>Marcus exhaled so hard it sounded painful.</p>
+
+<p>Helna began crying openly beside him.</p>
+
+<p>Even some dwarves along the walls shouted loudly enough for the entire settlement to hear.</p>
+
+<hr>
+
+<p>Hope exploded through Havenfire.</p>
+
+<hr>
+
+<p>Velkan later explained the truth of Kael’s Stoneborn bloodline to the others beside the central firepit while rain slowly died overhead.</p>
+
+<hr>
+
+<p>The refugees listened like they were hearing an ancient legend reborn.</p>
+
+<hr>
+
+<p>Rayden stood silently through most of it.</p>
+
+<hr>
+
+<p>His eyes shifted once toward Seraphine’s room.</p>
+
+<p>Then toward Velkan.</p>
+
+<hr>
+
+<p>The respect inside him had changed now.</p>
+
+<p>Deepened.</p>
+
+<hr>
+
+<p>Even Sorin’s eyes looked suspiciously wet beneath the firelight.</p>
+
+<hr>
+
+<p>Rayden stared toward Havenfire’s damaged walls.</p>
+
+<p>Toward the people rebuilding them together.</p>
+
+<p>Toward the protectors standing beside him now.</p>
+
+<hr>
+
+<p>And quietly...</p>
+
+<p>a thought formed.</p>
+
+<hr>
+
+<p>Maybe they were finally finding people who believed in the same future.</p>
+
+<hr>
+
+<p>But another question followed immediately after.</p>
+
+<hr>
+
+<p>Would they stay?</p>
+
+<hr>
+<p><!--SECTION VIII ENDS --> </p>
+
+<!-- SECTION 8 ENDS -->
+
+<!-- SECTION 9 STARTS -->
+ <h2 id="section-9">IX. The Warmth of Havenfire</h2>
+ <p class="era">Sundered Age — Year 1041</p>
+<hr>
+<p>For the first time in days...</p>
+
+<p>Havenfire smelled like food instead of death.</p>
+
+<hr>
+
+<p>The morning air carried woodsmoke, stew, roasted meat, wet earth, and fresh bread through the damaged fortress while sunlight finally pushed through the endless gray clouds above the frontier.</p>
+
+<hr>
+
+<p>No alarm bells rang.</p>
+
+<p>No screams echoed from the walls.</p>
+
+<p>No corrupted creatures clawed at the gates.</p>
+
+<hr>
+
+<p>Only rebuilding.</p>
+
+<hr>
+
+<p>Hammering.</p>
+<p>Voices.</p>
+<p>Children running through muddy streets again.</p>
+
+<hr>
+
+<p>Rayden woke sitting outside Kael’s cabin with Dawnpiercer resting against his shoulder.</p>
+
+<hr>
+
+<p>At some point during the night, exhaustion had finally dragged him unconscious beside the doorway itself.</p>
+
+<hr>
+
+<p>His eyes opened slowly.</p>
+
+<hr>
+
+<p>And for one terrifying second...</p>
+
+<p>he forgot where he was.</p>
+
+<hr>
+
+<p>Then he heard laughter somewhere beyond the courtyard.</p>
+
+<hr>
+
+<p>Warm.</p>
+
+<p>Alive.</p>
+
+<hr>
+
+<p>Rayden exhaled quietly.</p>
+
+<hr>
+
+<p>Havenfire still stood.</p>
+
+<hr>
+
+<p>The damaged walls were already being rebuilt.</p>
+
+<p>Dwarves repaired gate reinforcements beside beastkin carpenters while refugees hauled stone together through the muddy roads.</p>
+
+<hr>
+
+<p>Marcus Ironmane inspected the surviving horses personally near the rebuilt stables while Helna distributed medicines beside Vera and several Ashen Guard healers.</p>
+
+<hr>
+
+<p>Even the corrupted fields had begun changing.</p>
+
+<hr>
+
+<p>Silver-white purification marks spread slowly across the farmland where Seraphine’s order had burned away the infection from the soil itself.</p>
+
+<hr>
+
+<p>The land still looked wounded.</p>
+
+<p>But alive.</p>
+
+<hr>
+
+<p>And at the center of Havenfire...</p>
+
+<p>the great fire burned strong again.</p>
+
+<hr>
+
+<p>People praised Seraphine openly now.</p>
+
+<hr>
+
+<p>Some called her blessed.</p>
+<p>Some called her holy.</p>
+<p>One elderly refugee cried after seeing the walls purified and whispered that the Saint of Ash herself had descended to save them.</p>
+
+<hr>
+
+<p>Havenfire offered her everything.</p>
+
+<hr>
+
+<p>The best room inside the fortress.</p>
+<p>The warmest blankets.</p>
+<p>The finest preserved wine.</p>
+<p>The highest seat during the evening gathering.</p>
+
+<hr>
+
+<p>Seraphine refused every single one.</p>
+
+<hr>
+
+<p>Instead...</p>
+
+<p>she quietly carried her own bowl of stew toward the central firepit and sat beside everyone else on an overturned wooden crate.</p>
+
+<hr>
+
+<p>Like an ordinary traveler.</p>
+
+<hr>
+
+<p>The refugees stared initially.</p>
+
+<p>Then slowly...</p>
+
+<p>they relaxed.</p>
+
+<hr>
+
+<p>Children approached first.</p>
+
+<p>They always did.</p>
+
+<hr>
+
+<p>One small beastkin girl offered Seraphine a badly carved wooden rabbit missing one ear.</p>
+
+<hr>
+
+<p>Seraphine accepted it like receiving a sacred artifact.</p>
+
+<hr>
+
+<p>That alone made Havenfire adore her completely.</p>
+
+<hr>
+
+<p>By evening, the entire settlement gathered around the central firepit.</p>
+
+<hr>
+
+<p>Not because everything was fixed.</p>
+
+<p>Not because the danger was gone.</p>
+
+<hr>
+
+<p>Because they survived.</p>
+
+<hr>
+
+<p>Long wooden tables stood unevenly across the courtyard beneath hanging lanterns while salvaged food from surviving stores filled iron pots large enough to feed the exhausted settlement.</p>
+
+<hr>
+
+<p>Dwarven roast meat.</p>
+<p>Human stew.</p>
+<p>Beastkin spice bread.</p>
+<p>Moon Elf herbal tea prepared awkwardly by Lyria after several children demanded she “make mysterious elf drinks.”</p>
+
+<hr>
+
+<p>Lyria still looked offended by the phrase.</p>
+
+<hr>
+
+<p>Even the Ashen Guard sat among the people now.</p>
+
+<hr>
+
+<p>That shocked everyone.</p>
+
+<hr>
+
+<p>Most kingdoms feared the Ashen Guard too much to even approach them during meals.</p>
+
+<p>Havenfire handed them bowls and asked if they wanted more stew.</p>
+
+<hr>
+
+<p>The guards looked emotionally confused by kindness.</p>
+
+<hr>
+
+<p>Then Kael appeared.</p>
+
+<hr>
+
+<p>The entire courtyard froze instantly.</p>
+
+<hr>
+
+<p>Kael walked slowly from the cabin using a wooden support stick while GraveTide remained strapped across his back despite Helna threatening physical violence if he carried it.</p>
+
+<hr>
+
+<p>His movements looked painful.</p>
+
+<p>His skin still carried faint stone-like scars across his arms and neck.</p>
+
+<p>But he was alive.</p>
+
+<hr>
+
+<p>The entire courtyard erupted.</p>
+
+<hr>
+
+<p>Cheers.</p>
+<p>Shouting.</p>
+<p>Dwarves slamming mugs together.</p>
+<p>Children screaming “THE WALL!” loud enough to shake birds from nearby rooftops.</p>
+
+<hr>
+
+<p>Kael immediately looked exhausted again.</p>
+
+<hr>
+
+<p class="quote">“Did the gate survive?”</p>
+
+<hr>
+
+<p>Rayden crossed the courtyard before anyone answered.</p>
+
+<hr>
+
+<p>And hugged him hard enough to nearly reopen the wounds.</p>
+
+<hr>
+
+<p>Kael looked horrified.</p>
+
+<hr>
+
+<p class="quote">“What are you doing?”</p>
+
+<hr>
+
+<p>Rayden ignored him completely.</p>
+
+<hr>
+
+<p>Kael shoved him backward awkwardly using the walking stick.</p>
+
+<hr>
+
+<p class="quote">“Get off me.”</p>
+
+<hr>
+
+<p>Lyria calmly sipped tea nearby.</p>
+
+<hr>
+
+<p class="quote">“Careful.”</p>
+
+<p class="quote">“He cried at your bedside yesterday.”</p>
+
+<hr>
+
+<p>Rayden nearly choked.</p>
+
+<hr>
+
+<p>Kael stared at him in absolute betrayal.</p>
+
+<hr>
+
+<p>The entire courtyard exploded laughing.</p>
+
+<hr>
+
+<p>Even Velkan.</p>
+
+<hr>
+
+<p>Which turned out to be a terrible sign.</p>
+
+<hr>
+
+<p>Because Velkan Drake drank heavily.</p>
+
+<hr>
+
+<p>Very heavily.</p>
+
+<hr>
+
+<p>Sorin discovered this too late.</p>
+
+<hr>
+
+<p>The Drakari scholar sat beside the firepit holding an enormous dwarven mug while explaining advanced magical theory to three extremely confused children and one chicken.</p>
+
+<hr>
+
+<p class="quote">“The problem with lesser arcane institutions...”</p>
+
+<p>Velkan pointed at the chicken.</p>
+
+<p class="quote">“...is fundamentally structural incompetence.”</p>
+
+<hr>
+
+<p>The chicken pecked his boot.</p>
+
+<hr>
+
+<p>Velkan looked offended.</p>
+
+<hr>
+
+<p>Sorin buried his face into one hand.</p>
+
+<hr>
+
+<p class="quote">“Mentor.”</p>
+
+<hr>
+
+<p>Velkan ignored him entirely and attempted to explain dimensional theory to the fire itself.</p>
+
+<hr>
+
+<p>The dwarves loved him immediately afterward.</p>
+
+<hr>
+
+<p>Music eventually returned too.</p>
+
+<hr>
+
+<p>Not polished music.</p>
+
+<p>Real music.</p>
+
+<hr>
+
+<p>Dwarves beat rhythm against shields and barrels while beastkin hunters sang rough frontier songs around the fire.</p>
+
+<hr>
+
+<p>Then unexpectedly...</p>
+
+<p>the Ashen Guard joined in.</p>
+
+<hr>
+
+<p>Their voices were deep.</p>
+
+<p>Old.</p>
+
+<p>Heavy with years spent walking through corruption and death together.</p>
+
+<hr>
+
+<p>And Seraphine...</p>
+
+<p>laughed.</p>
+
+<hr>
+
+<p>Softly at first.</p>
+
+<p>Then genuinely.</p>
+
+<hr>
+
+<p>The children dragged her toward the fire circle moments later.</p>
+
+<hr>
+
+<p>At first she resisted.</p>
+
+<p>Then finally gave up and danced with them beneath the lantern light while ash-white robes spun softly through the warm evening air.</p>
+
+<hr>
+
+<p>Lyria watched quietly from beside the firepit.</p>
+
+<hr>
+
+<p>One small dwarf girl suddenly approached her carrying a tiny flower growing between Havenfire’s inner stones.</p>
+
+<hr>
+
+<p class="quote">“For the elf lady.”</p>
+
+<hr>
+
+<p>Lyria blinked.</p>
+
+<hr>
+
+<p>The child waited patiently.</p>
+
+<hr>
+
+<p>The Moon Elf who had slaughtered corrupted creatures from horseback without hesitation stared at the flower like it was an unsolvable magical puzzle.</p>
+
+<hr>
+
+<p>Then carefully accepted it.</p>
+
+<hr>
+
+<p class="quote">“Thank you.”</p>
+
+<hr>
+
+<p>The child smiled proudly and ran away.</p>
+
+<hr>
+
+<p>Lyria stared at the flower for a very long time afterward.</p>
+
+<hr>
+
+<p>Rayden eventually sat beside Seraphine near the fire while several refugees continued praising her openly.</p>
+
+<hr>
+
+<p class="quote">“The Saint saved Havenfire.”</p>
+
+<hr>
+
+<p>Seraphine looked visibly uncomfortable immediately.</p>
+
+<hr>
+
+<p>Before she could answer, Rayden casually interrupted:</p>
+
+<hr>
+
+<p class="quote">“She has a name.”</p>
+
+<hr>
+
+<p>Silence followed briefly.</p>
+
+<hr>
+
+<p>Seraphine looked toward him quietly.</p>
+
+<hr>
+
+<p>No worship.</p>
+
+<p>No distance.</p>
+
+<p>No pedestal.</p>
+
+<hr>
+
+<p>Just another protector beside the fire.</p>
+
+<hr>
+
+<p>Something softened in her expression afterward.</p>
+
+<hr>
+
+<p>Late into the night, Havenfire slowly quieted.</p>
+
+<hr>
+
+<p>Children slept beside exhausted parents.</p>
+
+<p>The wounded finally rested properly.</p>
+
+<p>The Ashen Guard maintained silent patrols along purified sections of the walls.</p>
+
+<hr>
+
+<p>Most of Havenfire eventually drifted to sleep beneath repaired rooftops and warm fires.</p>
+
+<hr>
+
+<p>But not everyone.</p>
+
+<hr>
+
+<p>Near the dying central flames, six figures remained awake.</p>
+
+<hr>
+
+<p>Rayden.</p>
+<p>Kael.</p>
+<p>Lyria.</p>
+<p>Velkan.</p>
+<p>Seraphine.</p>
+<p>Sorin.</p>
+
+<hr>
+
+<p>Velkan was sober now.</p>
+
+<p>Unfortunately.</p>
+
+<hr>
+
+<p>The warmth of celebration slowly faded into quieter conversation while the frontier winds moved softly beyond Havenfire’s repaired walls.</p>
+
+<hr>
+
+<p>Sorin broke the silence first.</p>
+
+<hr>
+
+<p class="quote">“The infested zone still exists a few miles north.”</p>
+
+<hr>
+
+<p>His expression darkened.</p>
+
+<hr>
+
+<p class="quote">“If we leave it alone...”</p>
+
+<p class="quote">“this happens again.”</p>
+
+<hr>
+
+<p>Everyone nodded.</p>
+
+<hr>
+
+<p>Kael rested both hands against the walking stick quietly.</p>
+
+<hr>
+
+<p class="quote">“Then we reach them before they reach us.”</p>
+
+<hr>
+
+<p>Velkan looked up sharply.</p>
+
+<hr>
+
+<p>Then suddenly grinned.</p>
+
+<hr>
+
+<p class="quote">“Counterattack.”</p>
+
+<hr>
+
+<p>Rayden slowly drew Kingsbane from beside the fire.</p>
+
+<hr>
+
+<p>The black-and-gold blade reflected orange flame across tired faces.</p>
+
+<hr>
+
+<p>Something dangerous moved behind Rayden’s eyes again.</p>
+
+<hr>
+
+<p class="quote">“This time...”</p>
+
+<hr>
+
+<p>His fingers tightened around the hilt.</p>
+
+<hr>
+
+<p class="quote">“none of them survive.”</p>
+
+<hr>
+
+<p>Seraphine immediately pointed toward Kael without even looking at him.</p>
+
+<hr>
+
+<p class="quote">“You are not joining a counterattack in this condition.”</p>
+
+<hr>
+
+<p>Kael looked offended instantly.</p>
+
+<hr>
+
+<p class="quote">“I survived death.”</p>
+
+<hr>
+
+<p class="quote">“You survived because five people physically stopped you from dying.”</p>
+
+<hr>
+
+<p>Lyria nearly laughed into her tea.</p>
+
+<p>Sorin fully laughed.</p>
+
+<p>Even Rayden smirked.</p>
+
+<hr>
+
+<p>Seraphine crossed both arms now.</p>
+
+<hr>
+
+<p class="quote">“Rest.”</p>
+
+<p class="quote">“Recover.”</p>
+
+<p class="quote">“Then you can go hit things with your hammer again.”</p>
+
+<hr>
+
+<p>Kael looked deeply disappointed by reason.</p>
+
+<hr>
+
+<p>Then Seraphine’s expression softened slightly.</p>
+
+<hr>
+
+<p class="quote">“And I’ll help purge the corruption from this land too.”</p>
+
+<hr>
+
+<p>Silence followed quietly afterward.</p>
+
+<hr>
+
+<p>Not empty silence.</p>
+
+<p>Heavy silence.</p>
+
+<hr>
+
+<p>The kind shared between people realizing they may have just found others willing to stand beside them for something larger than survival.</p>
+
+<hr>
+
+<p>Beyond Havenfire’s walls, the corrupted frontier still waited in darkness.</p>
+
+<hr>
+
+<p>And soon...</p>
+
+<p>the protectors of Havenfire would march toward it together.</p>
+
+<hr>
+
+<p><!-- CHAPTER 4 SECTION IX ENDS --> </p>
+
+
+<!-- SECTION 9 ENDS -->
+<!-- SECTION 10 STARTS -->
+<h2 id="section-10">X.The Cleansing March</h2>
+<p class="era">Sundered Age — Year 1041</p>
+<hr>
+<p>The decision to counterattack did not begin with rage.</p>
+
+<p>It began with a map.</p>
+
+<hr>
+
+<p>Near midnight, after Havenfire’s celebration had finally quieted and the last songs faded beneath dying firelight, Rayden, Kael, Lyria, Velkan, Seraphine, Sorin, Daven, Vera, Brek, Marcus, Helna, and the five Ashen Guard gathered inside the rebuilt command hall.</p>
+
+<p>The roof still leaked from the siege.</p>
+
+<p>One wall remained scorched black from corruption fire.</p>
+
+<p>Several floorboards had been replaced with mismatched timber.</p>
+
+<p>But the central war table stood strong.</p>
+
+<hr>
+
+<p>Upon it, Sorin unfolded a Vaelmark projection map.</p>
+
+<p>Silver-blue light spread across the room, forming a ghostly image of Havenfire, the northern fields, the ruined watch roads, and the corrupted forest several miles beyond the fortress.</p>
+
+<hr>
+
+<p>Black pulses glowed inside the forest.</p>
+
+<p>Not randomly.</p>
+
+<p>In clusters.</p>
+
+<hr>
+
+<p>Velkan leaned over the map quietly.</p>
+
+<p>His expression lost every trace of drunken warmth from the feast.</p>
+
+<p>The Ashen Scholar had returned.</p>
+
+<hr>
+
+<p class="quote">“There.”</p>
+
+<p>He pointed toward the largest pulse.</p>
+
+<p class="quote">“Primary corruption heart.”</p>
+
+<hr>
+
+<p>Sorin marked three smaller points around it.</p>
+
+<p class="quote">“Secondary nests.”</p>
+
+<p class="quote">“Likely connected through root channels beneath the soil.”</p>
+
+<hr>
+
+<p>Lyria studied the projected terrain.</p>
+
+<p class="quote">“The forest will defend the heart.”</p>
+
+<hr>
+
+<p>Kael rested both hands on his walking stick.</p>
+
+<p>He looked pale.</p>
+
+<p>Still scarred.</p>
+
+<p>Still healing.</p>
+
+<p>Still impossible to keep away from a war table.</p>
+
+<hr>
+
+<p class="quote">“Then we don’t march an army into it.”</p>
+
+<hr>
+
+<p>Everyone looked at him.</p>
+
+<hr>
+
+<p>Kael tapped the map with two fingers.</p>
+
+<p class="quote">“Five go in.”</p>
+
+<p class="quote">“The rest hold Havenfire.”</p>
+
+<hr>
+
+<p>Daven frowned immediately.</p>
+
+<p class="quote">“Five?”</p>
+
+<hr>
+
+<p>Kael looked at Rayden.</p>
+
+<p>Then Lyria.</p>
+
+<p>Then Velkan.</p>
+
+<p>Then Seraphine.</p>
+
+<hr>
+
+<p class="quote">“The corruption adapts to numbers.”</p>
+
+<p class="quote">“Large force gives it more fear, more wounds, more bodies to infect.”</p>
+
+<p class="quote">“Small force gives it less to feed on.”</p>
+
+<hr>
+
+<p>Velkan’s eyes narrowed slightly.</p>
+
+<p class="quote">“That is annoyingly correct.”</p>
+
+<hr>
+
+<p>Kael gave him a dry look.</p>
+
+<p class="quote">“Try not to sound surprised.”</p>
+
+<hr>
+
+<p>Seraphine stepped closer to the map.</p>
+
+<p>The silver-white glow from her palm touched the black projection briefly.</p>
+
+<p>The corruption pulse recoiled.</p>
+
+<hr>
+
+<p class="quote">“If we destroy the heart, I can purge the remaining spread.”</p>
+
+<hr>
+
+<p>Sorin looked toward her.</p>
+
+<p class="quote">“How large a radius?”</p>
+
+<hr>
+
+<p>Seraphine hesitated.</p>
+
+<p class="quote">“If the heart is weakened enough...”</p>
+
+<p class="quote">“several miles.”</p>
+
+<hr>
+
+<p>Velkan’s eyes sharpened.</p>
+
+<p class="quote">“Purgation Wave.”</p>
+
+<hr>
+
+<p>The Ashen Guard standing behind Seraphine went very still.</p>
+
+<hr>
+
+<p>That told Rayden more than words could.</p>
+
+<hr>
+
+<p>Seraphine nodded.</p>
+
+<p class="quote">“Only if I still have enough strength left.”</p>
+
+<hr>
+
+<p>Rayden looked toward the map.</p>
+
+<p>The corrupted forest pulsed again.</p>
+
+<p>Like a heart.</p>
+
+<hr>
+
+<p class="quote">“Then we make sure you do.”</p>
+
+<hr>
+
+<p>Lyria looked at him.</p>
+
+<p class="quote">“You mean we keep her protected.”</p>
+
+<hr>
+
+<p>Rayden nodded.</p>
+
+<p class="quote">“Always.”</p>
+
+<hr>
+
+<p>Kael straightened painfully.</p>
+
+<p class="quote">“Formation.”</p>
+
+<hr>
+
+<p>He pointed first to himself.</p>
+
+<p class="quote">“I anchor.”</p>
+
+<hr>
+
+<p>Then Rayden.</p>
+
+<p class="quote">“He breaks whatever reaches me.”</p>
+
+<hr>
+
+<p>Lyria.</p>
+
+<p class="quote">“She kills anything we fail to notice.”</p>
+
+<hr>
+
+<p>Velkan.</p>
+
+<p class="quote">“He controls terrain.”</p>
+
+<hr>
+
+<p>Seraphine.</p>
+
+<p class="quote">“She keeps us alive and purges what should not exist.”</p>
+
+<hr>
+
+<p>Velkan folded his arms.</p>
+
+<p class="quote">“Very poetic.”</p>
+
+<hr>
+
+<p>Kael looked at him flatly.</p>
+
+<p class="quote">“Very practical.”</p>
+
+<hr>
+
+<p>Vera stepped forward next.</p>
+
+<p class="quote">“And the fort?”</p>
+
+<hr>
+
+<p>Kael turned to Daven and Brek.</p>
+
+<hr>
+
+<p class="quote">“You hold it.”</p>
+
+<hr>
+
+<p>Brek swallowed once.</p>
+
+<p>Daven did not.</p>
+
+<hr>
+
+<p>Daven nodded.</p>
+
+<p class="quote">“We hold.”</p>
+
+<hr>
+
+<p>Kael’s gaze stayed on him for a moment longer.</p>
+
+<p class="quote">“No hero charges.”</p>
+
+<p class="quote">“No chasing.”</p>
+
+<p class="quote">“If anything runs from that forest toward Havenfire, you kill it before it reaches the gate.”</p>
+
+<hr>
+
+<p>Daven nodded again.</p>
+
+<p class="quote">“Understood.”</p>
+
+<hr>
+
+<p>Marcus tapped the southern field on the map.</p>
+
+<p class="quote">“I’ll keep riders ready for evacuation and flanking.”</p>
+
+<hr>
+
+<p>Helna added immediately:</p>
+
+<p class="quote">“And I’m keeping the animals inside the inner pens this time.”</p>
+
+<p class="quote">“If one corrupted wolf gets near my goats again, I’ll kill it myself.”</p>
+
+<hr>
+
+<p>Several people believed her.</p>
+
+<p>All of them should have.</p>
+
+<hr>
+
+<p>Sorin finally spoke.</p>
+
+<p class="quote">“I stay at Havenfire.”</p>
+
+<hr>
+
+<p>Rayden looked toward him.</p>
+
+<hr>
+
+<p>Sorin nodded toward the walls outside.</p>
+
+<p class="quote">“The fort needs artillery more than the strike team does.”</p>
+
+<p class="quote">“If the forest sends anything back at us, I’ll erase it before it becomes your problem.”</p>
+
+<hr>
+
+<p>Velkan looked toward his disciple.</p>
+
+<p>Something almost proud moved across his face.</p>
+
+<p>Almost.</p>
+
+<hr>
+
+<p class="quote">“Try not to miss.”</p>
+
+<hr>
+
+<p>Sorin smiled thinly.</p>
+
+<p class="quote">“I learned from someone insufferable.”</p>
+
+<hr>
+
+<p>The meeting ended before dawn.</p>
+
+<hr>
+
+<p>But Havenfire did not sleep.</p>
+
+<hr>
+
+<p>The hours before the march became preparation.</p>
+
+<hr>
+
+<p>Not panic.</p>
+
+<p>Preparation.</p>
+
+<hr>
+
+<p>That alone proved how much Havenfire had changed.</p>
+
+<hr>
+
+<p>Dwarves inspected mounted crossbows along the walls and oiled firing tracks until the mechanisms moved smoothly enough to swivel with one hand.</p>
+
+<p>Farmhands stacked arrow bundles at every tower.</p>
+
+<p>Beastkin hunters marked kill zones beyond the outer trenches.</p>
+
+<p>Ashen Guards purified stored water, weapons, and bandages.</p>
+
+<p>Vera moved through the fortress assigning runners, stretcher teams, emergency fire crews, and fallback shelters with terrifying efficiency.</p>
+
+<hr>
+
+<p>Daven drilled the militia before sunrise.</p>
+
+<p>Forty-five fighters stood in the lower yard beneath cold gray light.</p>
+
+<p>Not professional soldiers.</p>
+
+<p>Not yet.</p>
+
+<hr>
+
+<p>But they no longer looked like frightened refugees holding spears for the first time.</p>
+
+<hr>
+
+<p>Daven walked between them with sword and shield ready.</p>
+
+<p class="quote">“The five are not leaving us helpless.”</p>
+
+<p class="quote">“They are trusting us.”</p>
+
+<hr>
+
+<p>That landed harder than any speech.</p>
+
+<hr>
+
+<p>Brek stood at the main gate.</p>
+
+<p>Where Kael usually stood.</p>
+
+<p>The weight of that position sat visibly across his shoulders.</p>
+
+<hr>
+
+<p>Kael approached him quietly.</p>
+
+<hr>
+
+<p>Brek straightened immediately.</p>
+
+<p class="quote">“Commander.”</p>
+
+<hr>
+
+<p>Kael looked at the gate.</p>
+
+<p>Then at Brek.</p>
+
+<hr>
+
+<p class="quote">“Don’t try to be me.”</p>
+
+<hr>
+
+<p>Brek frowned slightly.</p>
+
+<hr>
+
+<p>Kael tapped Brek’s shield once.</p>
+
+<p class="quote">“Be the thing standing here when I’m not.”</p>
+
+<hr>
+
+<p>Brek’s grip tightened.</p>
+
+<hr>
+
+<p class="quote">“Yes, Commander.”</p>
+
+<hr>
+
+<p>Nearby, Seraphine worked among the five.</p>
+
+<hr>
+
+<p>She carved anti-corruption seals into armor, cloth, leather, and steel with silver-white light shaped through her fingers.</p>
+
+<p>Rayden’s chest plate.</p>
+
+<p>Kael’s shoulder guard.</p>
+
+<p>Lyria’s bracers.</p>
+
+<p>Velkan’s sleeves.</p>
+
+<p>Her own robes.</p>
+
+<hr>
+
+<p>Each seal burned briefly, then settled into a soft glow beneath the material.</p>
+
+<hr>
+
+<p class="quote">“Fifteen minutes.”</p>
+
+<p>Seraphine repeated.</p>
+
+<p class="quote">“The protection is strongest at first.”</p>
+
+<p class="quote">“After that, I must renew it.”</p>
+
+<hr>
+
+<p>Rayden rolled his shoulder.</p>
+
+<p class="quote">“Then we fight in intervals.”</p>
+
+<hr>
+
+<p>Velkan corrected him immediately.</p>
+
+<p class="quote">“We fight efficiently.”</p>
+
+<hr>
+
+<p>Kael grunted.</p>
+
+<p class="quote">“Same thing if you’re good at it.”</p>
+
+<hr>
+
+<p>Lyria checked Eclipsing Whisper.</p>
+
+<p class="quote">“None of you are quiet.”</p>
+
+<hr>
+
+<p>Rayden looked at her.</p>
+
+<p class="quote">“We’re walking into a screaming forest.”</p>
+
+<hr>
+
+<p>Lyria’s expression remained perfectly calm.</p>
+
+<p class="quote">“Exactly.”</p>
+
+<hr>
+
+<p>For some reason, that made everyone laugh.</p>
+
+<hr>
+
+<p>Not loudly.</p>
+
+<p>Not carelessly.</p>
+
+<p>But enough.</p>
+
+<hr>
+
+<p>The five stood before Havenfire’s gates at dawn.</p>
+
+<p>Rayden with Dawnpiercer, Kingsbane, shield, and Vossfang.</p>
+
+<p>Kael with GraveTide and warhammer.</p>
+
+<p>Lyria with Eclipsing Whisper and twin daggers.</p>
+
+<p>Velkan with Cinderwake and floating runes circling both hands.</p>
+
+<p>Seraphine with silver-white light moving gently across her palms.</p>
+
+<hr>
+
+<p>Behind them, Havenfire watched.</p>
+
+<p>Dwarves on towers.</p>
+
+<p>Farmers with bows.</p>
+
+<p>Children peeking from behind parents.</p>
+
+<p>Ashen Guards standing like pale flames near the inner gate.</p>
+
+<hr>
+
+<p>This time the people of Havenfire were not watching saviors march out.</p>
+
+<p>They were watching their protectors.</p>
+
+<hr>
+
+<p>The gates opened.</p>
+
+<hr>
+
+<p>The five walked into the corruption together.</p>
+
+<hr>
+
+<p>The forest breathed when they entered.</p>
+
+<p>Not metaphorically.</p>
+
+<p>Actually breathed.</p>
+
+<hr>
+
+<p>Black mist pulsed slowly between dead trees while infected roots moved beneath the soil like veins under diseased flesh.</p>
+
+<p>Small animals fused halfway into the earth stared blindly from corrupted nests, unable to die properly.</p>
+
+<hr>
+
+<p>The first seal interval began.</p>
+
+<hr>
+
+<p>Seraphine lifted one hand.</p>
+
+<p class="quote">“Stay inside the light.”</p>
+
+<hr>
+
+<p>Silver-white threads connected briefly between all five protectors.</p>
+
+<p>A formation spell.</p>
+
+<p>Not binding.</p>
+
+<p>Guiding.</p>
+
+<hr>
+
+<p>They advanced.</p>
+
+<hr>
+
+<p>At first, the infected frontier stayed silent.</p>
+
+<p>Too silent.</p>
+
+<hr>
+
+<p>Then corrupted goblins burst from beneath the soil near an abandoned watchtower.</p>
+
+<p>Flying parasite creatures descended screaming through the fog above them.</p>
+
+<hr>
+
+<p>The five moved instantly.</p>
+
+<p>Not separately.</p>
+
+<p>Together.</p>
+
+<hr>
+
+<p>Kael slammed GraveTide into the ground.</p>
+
+<p>The impact shook the road hard enough to stagger the charging goblins.</p>
+
+<p>Velkan’s gravity runes crushed the airborne creatures directly from the sky.</p>
+
+<p>Lyria’s arrows split mid-flight.</p>
+
+<p>Three corrupted creatures died before touching earth.</p>
+
+<hr>
+
+<p>Rayden surged through the center like controlled catastrophe.</p>
+
+<p>Kingsbane carved through infected bodies in enormous black-and-gold arcs while Seraphine’s healing light followed him continuously, restoring torn muscles, sealing cuts, and purging corruption splatter from his skin before it could root.</p>
+
+<hr>
+
+<p>The synchronization felt terrifyingly natural.</p>
+
+<hr>
+
+<p>A corrupted hobgoblin lunged toward Seraphine from the blind side.</p>
+
+<p>Lyria’s arrow removed its head instantly.</p>
+
+<p>Without looking.</p>
+
+<p>Without hesitation.</p>
+
+<hr>
+
+<p class="quote">“Move left.”</p>
+
+<hr>
+
+<p>Rayden obeyed immediately.</p>
+
+<p>A second later, Velkan’s spell annihilated the exact space Rayden had vacated beneath a rain of silver arcane spears.</p>
+
+<hr>
+
+<p>Velkan blinked once.</p>
+
+<p class="quote">“You trust her aim that much?”</p>
+
+<hr>
+
+<p>Rayden split another corrupted creature apart.</p>
+
+<p class="quote">“She hasn’t missed yet.”</p>
+
+<hr>
+
+<p>Kael laughed loudly while absorbing a massive impact from a corrupted beast nearly twice his size.</p>
+
+<p>Titan’s Vow activated instantly.</p>
+
+<p>Golden chains of force erupted around nearby allies as Kael absorbed the impact through the ancient vow.</p>
+
+<hr>
+
+<p>Then his skin turned partially to stone.</p>
+
+<hr>
+
+<p>The force that should have cracked ribs struck hardened Stoneborn flesh and dispersed into the ground beneath him.</p>
+
+<hr>
+
+<p>Kael looked down at his own arm.</p>
+
+<p>Stone faded back into skin.</p>
+
+<hr>
+
+<p class="quote">“Oh.”</p>
+
+<p>He grinned.</p>
+
+<p class="quote">“That’s useful.”</p>
+
+<hr>
+
+<p>Even Seraphine laughed at that.</p>
+
+<p>Actually laughed.</p>
+
+<p>In the middle of battle.</p>
+
+<hr>
+
+<p>Because for the first time in years...</p>
+
+<p>she trusted the people beside her completely.</p>
+
+<hr>
+
+<p>Fifteen minutes ended quickly.</p>
+
+<hr>
+
+<p>Too quickly.</p>
+
+<hr>
+
+<p>The seals began dimming as they reached the second corruption nest.</p>
+
+<p>Black fog pushed closer.</p>
+
+<p>Dead roots twitched toward exposed boots.</p>
+
+<hr>
+
+<p>Seraphine stopped immediately.</p>
+
+<p class="quote">“Circle.”</p>
+
+<hr>
+
+<p>The formation shifted.</p>
+
+<p>Kael stepped forward.</p>
+
+<p>Rayden turned left.</p>
+
+<p>Lyria took high ground atop a collapsed stone arch.</p>
+
+<p>Velkan raised containment runes around them.</p>
+
+<p>Seraphine renewed the seals.</p>
+
+<hr>
+
+<p>The corruption attacked during the renewal.</p>
+
+<hr>
+
+<p>Of course it did.</p>
+
+<hr>
+
+<p>Corrupted wolves burst from behind ruined walls while human-shaped things crawled across ceilings of collapsed structures, jaws split open too wide.</p>
+
+<hr>
+
+<p>Kael took the first charge.</p>
+
+<p>Rayden took the second.</p>
+
+<p>Lyria fired downward so quickly that arrows sounded like rain striking flesh.</p>
+
+<p>Velkan floated several feet above the ground, Cinderwake glowing as he twisted the battlefield into controlled killing lanes.</p>
+
+<hr>
+
+<p>Seraphine’s hands moved across each seal.</p>
+
+<p>One by one.</p>
+
+<p>Rekindling them.</p>
+
+<hr>
+
+<p>She did not hurry.</p>
+
+<p>That was the terrifying part.</p>
+
+<p>She trusted them enough to be precise.</p>
+
+<hr>
+
+<p>When the renewal finished, the ground around them was covered in bodies.</p>
+
+<p>Black blood flowed through broken stone cracks.</p>
+
+<p>Still no one had been touched by corruption.</p>
+
+<hr>
+
+<p>They moved deeper.</p>
+
+<hr>
+
+<p>The forest no longer hid its hatred.</p>
+
+<hr>
+
+<p>Roots burst from beneath the soil.</p>
+
+<p>Trees twisted unnaturally.</p>
+
+<p>Dead animals fused into bark walls screamed without mouths while black spores drifted through the fog like living ash.</p>
+
+<hr>
+
+<p>Then the forest woke.</p>
+
+<hr>
+
+<p>The corrupted Waking Tree rose from the center valley.</p>
+
+<p>Hundreds of roots tore from earth while dozens of human corpses remained half-fused into its bark, twitching slowly as corruption spread through the gigantic trunk.</p>
+
+<p>Its branches opened like skeletal wings.</p>
+
+<hr>
+
+<p>The thing screamed.</p>
+
+<p>The entire forest screamed with it.</p>
+
+<hr>
+
+<p>Velkan immediately lifted both hands.</p>
+
+<p class="quote">“Formation.”</p>
+
+<hr>
+
+<p>The five moved perfectly.</p>
+
+<p>Kael forward.</p>
+
+<p>Rayden breach left.</p>
+
+<p>Lyria elevation support.</p>
+
+<p>Seraphine center.</p>
+
+<p>Velkan rear suppression.</p>
+
+<hr>
+
+<p>Like they had fought together for years.</p>
+
+<hr>
+
+<p>The Waking Tree slammed roots through the ground hard enough to split stone roads apart.</p>
+
+<p>Rayden leapt between collapsing terrain while Kingsbane severed corrupted roots thicker than siege beams.</p>
+
+<p>Each cut released black sap that screamed as it struck Seraphine’s seals and evaporated.</p>
+
+<hr>
+
+<p>Lyria fired continuously from elevated ruins.</p>
+
+<p>Celestialmark ignited across bark weak points, exposing pulsing knots beneath the corruption.</p>
+
+<p>Her arrows struck them one after another, each impact creating bursts of pale starlight inside the monstrous tree’s body.</p>
+
+<hr>
+
+<p>Velkan levitated higher.</p>
+
+<p>Silver rune circles rotated beneath him while arcane bombardments erased entire sections of corrupted forest with catastrophic precision.</p>
+
+<p>He was calm.</p>
+
+<p>Almost bored.</p>
+
+<hr>
+
+<p>That made him more frightening.</p>
+
+<hr>
+
+<p class="quote">“I understand why kingdoms dislike me.”</p>
+
+<p>Velkan said while crushing three root tendrils into dust through gravitational collapse.</p>
+
+<hr>
+
+<p>Kael blocked a massive root strike with GraveTide.</p>
+
+<p class="quote">“Only now?”</p>
+
+<hr>
+
+<p>Rayden laughed while splitting another root apart.</p>
+
+<hr>
+
+<p>The five were laughing.</p>
+
+<p>Not from cruelty.</p>
+
+<p>From trust.</p>
+
+<hr>
+
+<p>For the first time, none of them fought alone.</p>
+
+<hr>
+
+<p>Then the Titan emerged.</p>
+
+<hr>
+
+<p>Larger than the one that assaulted Havenfire.</p>
+
+<p>Covered in hardened corruption crystal while flying parasite creatures erupted from its shoulders like swarming vultures.</p>
+
+<p>Its left hand dragged a broken stone pillar as a club.</p>
+
+<hr>
+
+<p>The battlefield exploded into chaos.</p>
+
+<hr>
+
+<p>Lyria dropped three flying creatures instantly.</p>
+
+<p>Then a fourth.</p>
+
+<p>Then a fifth.</p>
+
+<hr>
+
+<p>But one got through.</p>
+
+<hr>
+
+<p>The parasite dove directly toward Seraphine as she renewed Rayden’s fading seal.</p>
+
+<hr>
+
+<p>Lyria moved before thought.</p>
+
+<p>She dropped from the ruined arch, landed between Seraphine and the creature, and fired point-blank upward.</p>
+
+<hr>
+
+<p>The arrow struck.</p>
+
+<p>Too late.</p>
+
+<hr>
+
+<p>The parasite detonated.</p>
+
+<hr>
+
+<p>The blast tore Lyria backward in a spray of blood and silver hair.</p>
+
+<p>She crashed against broken stone ruins, one side of her torso nearly destroyed by corruption shrapnel.</p>
+
+<hr>
+
+<p>Even the Moon Elf looked shocked.</p>
+
+<hr>
+
+<p>The battlefield froze for half a second.</p>
+
+<hr>
+
+<p>Then Seraphine moved.</p>
+
+<hr>
+
+<p>Rayden tried to turn.</p>
+
+<p>Kael roared for him to stay in formation.</p>
+
+<p>Velkan sealed the opening with gravity runes.</p>
+
+<hr>
+
+<p>Seraphine reached Lyria beside the ruins and saw the wound.</p>
+
+<hr>
+
+<p>Fatal.</p>
+
+<p>Completely fatal.</p>
+
+<hr>
+
+<p>Without hesitation, she pressed both hands against Lyria’s chest.</p>
+
+<hr>
+
+<p class="quote">“Martyr’s Embrace.”</p>
+
+<hr>
+
+<p>The world went silent.</p>
+
+<hr>
+
+<p>Silver-white light poured from Seraphine into Lyria so violently that the surrounding corruption recoiled twenty paces from them.</p>
+
+<p>Destroyed flesh reformed.</p>
+
+<p>Blood returned.</p>
+
+<p>Broken ribs reconstructed.</p>
+
+<p>The fatal wound vanished slowly beneath divine radiance...</p>
+
+<hr>
+
+<p>while Seraphine coughed blood onto the battlefield.</p>
+
+<hr>
+
+<p>Cost.</p>
+
+<p>Always cost.</p>
+
+<hr>
+
+<p>Lyria’s eyes opened weakly.</p>
+
+<p>The first thing she saw was Seraphine barely conscious beside her.</p>
+
+<hr>
+
+<p class="quote">“You idiot.”</p>
+
+<p>Lyria’s voice was barely a whisper.</p>
+
+<hr>
+
+<p>Seraphine smiled tiredly.</p>
+
+<p class="quote">“You jumped in front of me first.”</p>
+
+<hr>
+
+<p>Above them, the Titan charged.</p>
+
+<hr>
+
+<p>Kael intercepted it head-on.</p>
+
+<p>Titan’s Vow activated fully.</p>
+
+<p>Stone spread across his entire body as he absorbed the impossible impact directly.</p>
+
+<p>The ground beneath him shattered.</p>
+
+<hr>
+
+<p>But he did not move.</p>
+
+<p>Not one inch.</p>
+
+<hr>
+
+<p class="quote">“RAYDEN!”</p>
+
+<hr>
+
+<p>Rayden answered with Kingsbane.</p>
+
+<hr>
+
+<p>No Temporal Frenzy.</p>
+
+<p>No loss of control.</p>
+
+<p>Only Berserker pushed to the edge and held there by will, trust, and Seraphine’s healing light still burning faintly across his armor.</p>
+
+<hr>
+
+<p>He sprinted up the Titan’s own arm.</p>
+
+<p>Vossfang launched around a crystal horn jutting from its shoulder.</p>
+
+<p>Rayden swung around the creature’s head as it tried to crush him against its own armor.</p>
+
+<p>Kingsbane tore through parasite sacs along the neck, spraying black fluid across the battlefield.</p>
+
+<hr>
+
+<p>Then Rayden reached the skull.</p>
+
+<hr>
+
+<p>Kael shouted from below:</p>
+
+<p class="quote">“NOW!”</p>
+
+<hr>
+
+<p>Rayden drove Kingsbane down through the Titan’s face.</p>
+
+<hr>
+
+<p>The impact split the creature apart from the inside.</p>
+
+<p>Corruption crystal erupted outward.</p>
+
+<p>Black blood rained across the valley.</p>
+
+<p>The Titan collapsed screaming so hard the ground shook beneath Havenfire’s distant walls.</p>
+
+<hr>
+
+<p>Then the forest itself attacked again.</p>
+
+<p>Too many roots.</p>
+
+<p>Too many bodies.</p>
+
+<p>Too much corruption feeding the Waking Tree.</p>
+
+<hr>
+
+<p>Velkan looked upward.</p>
+
+<hr>
+
+<p class="quote">“Pyrewing.”</p>
+
+<hr>
+
+<p>Blue fire descended from the heavens.</p>
+
+<hr>
+
+<p>The named volcanic drake tore through storm clouds above the battlefield before unleashing catastrophic blue flame across the corrupted Waking Tree.</p>
+
+<p>The entire infected forest ignited instantly.</p>
+
+<p>Black roots screamed.</p>
+
+<p>Corruption exploded outward.</p>
+
+<p>Then burned away beneath volcanic drakefire.</p>
+
+<hr>
+
+<p>The Waking Tree thrashed against the sky, its corpse-fused bark cracking open under the flames.</p>
+
+<p>Faces trapped inside the trunk screamed one final time before dissolving into ash.</p>
+
+<hr>
+
+<p>Seraphine looked toward the burning tree with sorrow, not satisfaction.</p>
+
+<hr>
+
+<p>Rayden noticed.</p>
+
+<p>And understood.</p>
+
+<hr>
+
+<p>Those had been people once.</p>
+
+<hr>
+
+<p>The surviving corrupted creatures began retreating.</p>
+
+<p>That was their mistake.</p>
+
+<hr>
+
+<p>The five hunted them together.</p>
+
+<p>Laughing.</p>
+
+<p>Actually laughing.</p>
+
+<hr>
+
+<p>Not because death was funny.</p>
+
+<p>Because for the first time in their lives...</p>
+
+<p>they knew someone covered their blind side.</p>
+
+<hr>
+
+<p>Velkan vaporized fleeing corruption beasts through gravitational collapse spells while muttering academic complaints about battlefield inefficiency.</p>
+
+<p>Kael shoulder-charged through entire hordes like a living fortress.</p>
+
+<p>Lyria sniped fleeing flyers from impossible distances while Rayden tore through the center like war itself given human shape.</p>
+
+<p>And Seraphine stood among them...</p>
+
+<p>healing.</p>
+
+<p>purifying.</p>
+
+<p>saving.</p>
+
+<p>smiling.</p>
+
+<hr>
+
+<p>Back at Havenfire, the fort phase began.</p>
+
+<hr>
+
+<p>It started when the forest vomited out everything too small, too wounded, or too afraid to survive the five protectors.</p>
+
+<p>Corrupted goblins.</p>
+
+<p>Infected wolves.</p>
+
+<p>Half-burned parasite creatures.</p>
+
+<p>Rotting human-shaped things running blindly from Pyrewing’s fire.</p>
+
+<hr>
+
+<p>They fled south.</p>
+
+<p>Toward Havenfire.</p>
+
+<hr>
+
+<p>This time, the fortress was ready.</p>
+
+<hr>
+
+<p>Sorin stood atop the western artillery platform beside two Vaelmark rune technicians and one terrified young mage trainee.</p>
+
+<p>The mounted arcane cannon hummed beneath his hand.</p>
+
+<hr>
+
+<p class="quote">“Range?”</p>
+
+<hr>
+
+<p>A dwarf spotter shouted from the tower:</p>
+
+<p class="quote">“Two hundred paces!”</p>
+
+<hr>
+
+<p>Sorin adjusted the cannon.</p>
+
+<p class="quote">“Too close.”</p>
+
+<hr>
+
+<p>He fired anyway.</p>
+
+<hr>
+
+<p>Blue-white artillery erupted across the outer road, vaporizing the first cluster of corrupted creatures before they reached the killing ditch.</p>
+
+<hr>
+
+<p>The mounted dwarven crossbows opened next.</p>
+
+<p>Huge bolts tore through infected bodies, pinning goblins to the earth, punching wolves apart, shattering crystal spines.</p>
+
+<hr>
+
+<p>Farmhands fired from the walls.</p>
+
+<p>Children carried arrows.</p>
+
+<p>Old refugees passed oil jars.</p>
+
+<p>Dwarves reloaded siege braces.</p>
+
+<p>Beastkin hunters picked off anything fast enough to evade the heavy weapons.</p>
+
+<hr>
+
+<p>Everyone helped.</p>
+
+<p>No one hid uselessly.</p>
+
+<hr>
+
+<p>The Ashen Guards moved along the inner wall in perfect discipline, burning corruption from bodies before they could infect the gate road.</p>
+
+<hr>
+
+<p>At the main gate, Brek stood exactly where Kael once had.</p>
+
+<p>Shield planted.</p>
+
+<p>Spear ready.</p>
+
+<hr>
+
+<p>Daven stood beside him.</p>
+
+<p>Sword and shield.</p>
+
+<p>Calm now.</p>
+
+<p>Commanding.</p>
+
+<hr>
+
+<p>When three corrupted creatures survived the artillery and reached the gate, Brek caught the first with his shield hard enough to break its skull against iron.</p>
+
+<p>Daven killed the second through the throat.</p>
+
+<p>The third reached the threshold.</p>
+
+<hr>
+
+<p>Every refugee on the wall held their breath.</p>
+
+<hr>
+
+<p>Brek stepped forward.</p>
+
+<p>One heavy spear thrust.</p>
+
+<p>The creature died before crossing.</p>
+
+<hr>
+
+<p>Daven looked toward him.</p>
+
+<p>Brek looked back.</p>
+
+<p>Neither smiled.</p>
+
+<hr>
+
+<p>But both knew.</p>
+
+<p>The gate held.</p>
+
+<hr>
+
+<p>Not one corrupted creature crossed.</p>
+
+<p>Not one civilian died.</p>
+
+<p>Not today.</p>
+
+<hr>
+
+<p>By dusk, the corrupted valley finally fell silent.</p>
+
+<p>The five stood together among mountains of dead corruption while blue flame faded across the ruined forest.</p>
+
+<p>They were breathing hard.</p>
+
+<p>Bleeding.</p>
+
+<p>Exhausted.</p>
+
+<p>Alive.</p>
+
+<hr>
+
+<p>Seraphine stepped forward slowly.</p>
+
+<p>Her silver eyes looked across the infected land.</p>
+
+<p>And she raised one hand.</p>
+
+<hr>
+
+<p class="quote">“Purgation Wave.”</p>
+
+<hr>
+
+<p>Silver-white light exploded across the valley.</p>
+
+<p>Not violently.</p>
+
+<p>Beautifully.</p>
+
+<hr>
+
+<p>A rolling purification pulse swept across the land itself while corruption veins dissolved into ash beneath celestial radiance.</p>
+
+<p>Black fog vanished.</p>
+
+<p>Dead soil breathed again.</p>
+
+<p>The forest stopped screaming.</p>
+
+<p>Sunlight touched the valley floor for the first time in years.</p>
+
+<hr>
+
+<p>Velkan stared openly.</p>
+
+<p>For once...</p>
+
+<p>truly speechless.</p>
+
+<hr>
+
+<p>Then quietly:</p>
+
+<p class="quote">“A true Celestial...”</p>
+
+<hr>
+
+<p>Seraphine lowered her arm slowly.</p>
+
+<p>Exhaustion nearly dropped her to one knee.</p>
+
+<p>Lyria caught her before Rayden moved.</p>
+
+<hr>
+
+<p>The two women looked at each other quietly.</p>
+
+<p>No grand words.</p>
+
+<p>None needed.</p>
+
+<hr>
+
+<p>But deeper beneath the valley ruins...</p>
+
+<p>they found something horrifying.</p>
+
+<hr>
+
+<p>Not random corruption.</p>
+
+<p>Not natural spread.</p>
+
+<hr>
+
+<p>A network.</p>
+
+<p>Organized.</p>
+
+<p>Controlled.</p>
+
+<hr>
+
+<p>Ancient symbols carved beneath the roots.</p>
+
+<p>Movement patterns.</p>
+
+<p>Directed mutations.</p>
+
+<p>Hidden tunnels leading farther north and west.</p>
+
+<hr>
+
+<p>Something was creating this deliberately.</p>
+
+<p>Watching.</p>
+
+<p>Learning.</p>
+
+<p>Preparing.</p>
+
+<hr>
+
+<p>And nearby...</p>
+
+<p>Lyria suddenly paused.</p>
+
+<hr>
+
+<p>A corrupted scout corpse already lay dead beside the ruins.</p>
+
+<p>Its throat was sliced perfectly.</p>
+
+<p>No sound.</p>
+
+<p>No struggle.</p>
+
+<p>No visible attacker.</p>
+
+<hr>
+
+<p>Velkan crouched beside the body slowly.</p>
+
+<p>His eyes narrowed.</p>
+
+<hr>
+
+<p class="quote">“Interesting.”</p>
+
+<hr>
+
+<p>Lyria looked toward the shadows of the ruined tower above them.</p>
+
+<p>For half a heartbeat, she felt watched.</p>
+
+<hr>
+
+<p>Then nothing.</p>
+
+<hr>
+
+<p>No sound.</p>
+
+<p>No movement.</p>
+
+<p>No presence.</p>
+
+<hr>
+
+<p>Only absence shaped like intention.</p>
+
+<hr>
+
+<p>Somewhere nearby, something invisible had been watching Havenfire’s protectors carefully.</p>
+
+<p>And had already disappeared.</p>
+
+<hr>
+
+<p>That night, Havenfire welcomed the five home as legends.</p>
+
+<hr>
+
+<p>But something had changed.</p>
+
+<p>Not only in the protectors.</p>
+
+<p>In the fortress itself.</p>
+
+<hr>
+
+<p>Havenfire no longer looked like prey.</p>
+
+<p>It looked dangerous.</p>
+
+<hr>
+
+<p>Sorin prepared to return to Vaelmark near the central fire.</p>
+
+<p>He studied Velkan quietly.</p>
+
+<hr>
+
+<p class="quote">“You’re staying.”</p>
+
+<hr>
+
+<p>Velkan sipped dwarven alcohol calmly.</p>
+
+<p class="quote">“For observation.”</p>
+
+<hr>
+
+<p>Sorin stared at him.</p>
+
+<p class="quote">“Of course.”</p>
+
+<hr>
+
+<p>Velkan glanced toward the courtyard, where refugees laughed with Ashen Guards and children reenacted the battle using sticks, shields, and exaggerated monster noises.</p>
+
+<hr>
+
+<p>His voice softened slightly.</p>
+
+<p class="quote">“Killing corrupted things never seemed enjoyable before.”</p>
+
+<hr>
+
+<p>Sorin’s expression shifted.</p>
+
+<p>He understood what Velkan meant beneath the strange wording.</p>
+
+<hr>
+
+<p>Not the killing.</p>
+
+<p>The company.</p>
+
+<hr>
+
+<p>Seraphine sat beside Rayden afterward.</p>
+
+<p>The fortress glowed warmly around them while her five Ashen Guards laughed with refugees nearby.</p>
+
+<hr>
+
+<p class="quote">“I saw you cry for your friend.”</p>
+
+<hr>
+
+<p>Rayden looked away immediately.</p>
+
+<p class="quote">“I begged too.”</p>
+
+<hr>
+
+<p>Seraphine smiled softly.</p>
+
+<p class="quote">“Yes.”</p>
+
+<hr>
+
+<p>A pause.</p>
+
+<hr>
+
+<p class="quote">“You really care about people.”</p>
+
+<hr>
+
+<p>Rayden looked around Havenfire.</p>
+
+<p>At Kael laughing beside Brek.</p>
+
+<p>At Lyria finally relaxed near the fire.</p>
+
+<p>At children running beside Ashen Guards.</p>
+
+<p>At people rebuilding instead of hiding.</p>
+
+<hr>
+
+<p>Then finally:</p>
+
+<p class="quote">“Stay.”</p>
+
+<hr>
+
+<p>Seraphine looked toward her five Ashen Guards.</p>
+
+<p>They looked happier here than they had in years.</p>
+
+<p>Not feared.</p>
+
+<p>Not worshipped.</p>
+
+<p>Welcomed.</p>
+
+<hr>
+
+<p>Family.</p>
+
+<hr>
+
+<p>Seraphine smiled gently.</p>
+
+<p>Then looked toward Rayden.</p>
+
+<p>Toward Havenfire.</p>
+
+<p>Toward the protectors beside the fire.</p>
+
+<hr>
+
+<p class="quote">“Yes.”</p>
+
+<hr>
+
+<p>She stood slowly.</p>
+
+<p class="quote">“Let’s protect it together.”</p>
+
+<hr>
+
+<p>Velkan laughed loudly behind them.</p>
+
+<p>A rare genuine laugh.</p>
+
+<p>Warm.</p>
+
+<p>Dangerous.</p>
+
+<p>Excited.</p>
+
+<hr>
+
+<p class="quote">“Oh...”</p>
+
+<p>The Drakari scholar stared into Havenfire’s firelight.</p>
+
+<p class="quote">“I think something legendary is about to happen.”</p>
+
+<hr>
+
+<p>Rayden looked at the fire.</p>
+
+<p>Then at the people gathered around it.</p>
+
+<p>Kael.</p>
+<p>Lyria.</p>
+<p>Velkan.</p>
+<p>Seraphine.</p>
+
+<hr>
+
+<p>Not followers.</p>
+
+<p>Not weapons.</p>
+
+<p>Protectors.</p>
+
+<hr>
+
+<p>For the first time, the future did not feel like a place he was walking toward alone.</p>
+
+<hr>
+
+<!-- SECTION 10 ENDS -->
+ <p><!-- CHAPTER 4 ENDS --></p>
+
+<h2>END OF CHAPTER 4</h2>
+</div><!-- /wrapper -->
+
+</body>
+</html>

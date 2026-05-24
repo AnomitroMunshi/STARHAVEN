@@ -1,0 +1,5976 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starhaven — Chapter 1: The Boy Who Ran Through Fire</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --bg: #080810;
+  --bg2: #0b0c18;
+  --bg3: #10111e;
+  --gold: #c8983a;
+  --gold2: #e4b84a;
+  --gold3: #f5d070;
+  --text: #ddd6c8;
+  --text2: #b8aa90;
+  --text3: #8a7e6a;
+  --red: #8a2020;
+  --red2: #c03030;
+  --blue: #1a2a5a;
+  --blue2: #3050a0;
+  --silver: #a0a8b8;
+  --void: #1a0a2a;
+  --void2: #3a1a5a;
+  --corruption: #0a1a0a;
+  --divider: #2a2830;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 2.0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+}
+
+.chapter-header {
+  text-align: center;
+  padding: 60px 0 50px;
+  position: relative;
+}
+
+.chapter-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--text3);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.chapter-number {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(13px, 2.2vw, 17px);
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.chapter-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(26px, 5vw, 48px);
+  color: var(--gold3);
+  line-height: 1.25;
+  font-weight: 700;
+  text-shadow: 0 0 60px rgba(200, 152, 58, 0.18);
+  margin-bottom: 30px;
+}
+
+.chapter-ornament {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.toc {
+  background: var(--bg2);
+  border: 1px solid var(--divider);
+  border-top: 3px solid var(--gold);
+  padding: 28px 32px;
+  margin: 0 0 60px;
+  border-radius: 4px;
+}
+
+.toc-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+.toc ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+}
+
+.toc li a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.toc li a::before {
+  content: '◆';
+  font-size: 7px;
+  color: var(--gold);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.toc li a:hover {
+  color: var(--gold2);
+}
+
+p {
+  font-size: 17.5px;
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 28px 0;
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: var(--gold2);
+  letter-spacing: 0.08em;
+  margin: 52px 0 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2::before {
+  content: '✦';
+  color: var(--gold);
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.quote {
+  border-left: 3px solid var(--gold);
+  padding: 6px 0 6px 20px;
+  font-style: italic;
+  color: #c6b79d;
+  margin: 4px 0;
+  line-height: 1.85;
+  background: linear-gradient(90deg, rgba(200,152,58,0.04), transparent 60%);
+}
+
+.void-text {
+  font-style: italic;
+  color: #7a6aaa;
+  letter-spacing: 0.04em;
+  border-left: 3px solid #3a1a5a;
+  padding: 6px 0 6px 20px;
+  margin: 4px 0;
+  background: linear-gradient(90deg, rgba(58,26,90,0.08), transparent 60%);
+  line-height: 1.85;
+}
+
+.chapter-end {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.chapter-end-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+
+.epilogue-header {
+  text-align: center;
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.epilogue-label {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text3);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.epilogue-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  color: var(--gold2);
+}
+
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0;
+  justify-content: center;
+}
+
+.section-break-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--divider), transparent);
+}
+
+..section-break-star {
+  font-size: 13px;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.era {
+  display: block;
+  margin: 44px 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text3);
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .wrapper { padding: 40px 24px 80px; }
+  .toc ul { grid-template-columns: 1fr; }
+  .chapter-title { font-size: clamp(22px, 7vw, 36px); }
+  p { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<header class="chapter-header">
+  <span class="chapter-eyebrow">✦ The Starhaven Chronicles · Sundered Age ✦</span>
+  <span class="chapter-number">Chapter 1</span>
+  <h1 class="chapter-title">Chapter 1 — The Boy Who Ran Through Fire</h1>
+  <div class="chapter-ornament">
+    <div class="ornament-line"></div>
+    <div class="ornament-diamond"></div>
+    <div class="ornament-line"></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <p class="toc-title">Table of Contents</p>
+  <ul>
+    <li><a href="#section-1">I. Oaksmane Orphanage</a></li>
+    <li><a href="#section-2">II. Lord Halbrecht Veyne</a></li>
+    <li><a href="#section-3">III. The Night of Fire</a></li>
+    <li><a href="#section-4">IV. The Execution</a></li>
+    <li><a href="#section-5">V. The Boy Left Alive</a></li>
+    <li><a href="#section-6">VI. Elira Voss</a></li>
+    <li><a href="#section-7">VII. Ash and Ember</a></li>
+    <li><a href="#section-8">VIII. Dawnpiercer</a></li>
+    <li><a href="#section-9">IX. Temporal Frenzy</a></li>
+    <li><a href="#section-10">X. The Weight of Time</a></li>
+  </ul>
+</nav>
+
+<p>The first winter Rayden Cale remembered smelled of wet ash.</p>
+
+<p>Not snow.</p>
+<p>Not pine.</p>
+<p>Ash.</p>
+
+<p>Even years later, long after kingdoms fell beneath his banners and armies crossed oceans under Starhaven colors, smoke still reached him first whenever memory opened old doors.</p>
+
+<p>Smoke.</p>
+<p>Then screaming.</p>
+<p>Then fire.</p>
+
+<p>That was how his life began.</p>
+
+<hr>
+
+<h2 id="section-1">I. Oaksmane Orphanage</h2>
+<p class="era">Sundered Age — Year 1031</p>
+<hr>
+
+<p>Before kingdoms.</p>
+
+<p>Before Starhaven.</p>
+
+<p>Before men called him a legend.</p>
+
+<p>Rayden Cale belonged to a collapsing orphanage in the lower districts of Oaksmane.</p>
+
+<hr>
+
+<p>Oaksmane was the kind of place wealthy people described as “necessary.”</p>
+
+<p>Factories stood beside brothels.</p>
+<p>Churches beside gambling dens.</p>
+<p>Children beside corpses.</p>
+
+<p>The rich districts uphill called it the labor quarter.</p>
+
+<p>The people living there called it survival.</p>
+
+<p>Smoke permanently stained the sky above the district from iron foundries and tannery furnaces. The narrow canals running between the streets carried slaughterhouse runoff dark enough to resemble watered blood during winter.</p>
+
+<p>Most people born in Oaksmane never escaped it.</p>
+
+<p>Most died owing someone money.</p>
+
+<hr>
+
+<p>The orphanage stood near the canal district behind an abandoned grain warehouse and leaned slightly eastward from old structural damage nobody could afford to repair.</p>
+
+<p>The roof leaked during storms.</p>
+<p>The cellar flooded every spring.</p>
+<p>The windows froze from the inside during winter.</p>
+
+<p>But inside those walls, thirty-two abandoned children still found something resembling home.</p>
+
+<p>That alone made the building more valuable than half the noble estates in Oaksmane.</p>
+
+<hr>
+
+<p>Sister Marianne ran the orphanage with exhaustion hidden behind discipline.</p>
+
+<p>She taught reading every morning using damaged books donated by churches.</p>
+<p>Math lessons came after lunch.</p>
+<p>Chores before dusk.</p>
+
+<p>The older children hauled coal and water.</p>
+<p>The younger ones cleaned floors, repaired blankets, peeled vegetables, and patched clothes near the stove.</p>
+
+<p>Every candle mattered.</p>
+<p>Every loaf of bread mattered.</p>
+<p>Every winter felt dangerous.</p>
+
+<p>But Marianne refused to allow the children to become feral.</p>
+
+<p>That stubbornness kept many of them alive.</p>
+
+<hr>
+
+<p>Rayden was eleven years old that winter.</p>
+
+<p>Too angry for his age.</p>
+<p>Too observant.</p>
+<p>Too willing to fight.</p>
+
+<p>He spent most mornings bruised from arguments with older boys or bleeding from training accidents in the yard behind the orphanage.</p>
+
+<p>His closest friend was another orphan named <strong>Caelum</strong>, a sharp-tongued boy two years older than him who possessed unstable magical talent he barely understood.</p>
+
+<p>Sometimes candles lit when Caelum lost his temper.</p>
+<p>Sometimes spoons bent during arguments.</p>
+<p>Once, during winter, the wash basin froze solid because another boy punched him hard enough to split his lip.</p>
+
+<p>The other children thought it was incredible.</p>
+
+<p>Rayden thought it meant Caelum would survive longer than most people in Oaksmane.</p>
+
+<hr>
+
+<p>The two became inseparable.</p>
+
+<p>They stole bread from the dock markets together.</p>
+<p>Shared blankets during winter freezes.</p>
+<p>Fought older street gangs behind warehouse alleys.</p>
+
+<p>At night they whispered about impossible futures while rain leaked through the ceiling overhead.</p>
+
+<p>Caelum wanted to become a mage someday.</p>
+
+<p>Rayden wanted enough strength that nobody could ever make children afraid again.</p>
+
+<p>Neither boy understood how expensive those dreams truly were.</p>
+
+<hr>
+
+<p>Rayden’s older brother, <strong>Garrick Cale</strong>, returned whenever military rotations allowed.</p>
+
+<p>To the children, Garrick felt larger than ordinary men.</p>
+
+<p>Not because he was famous.</p>
+
+<p>Because he cared.</p>
+
+<p>He fixed broken furniture.</p>
+<p>Brought extra food whenever he could steal military rations safely.</p>
+<p>Remembered birthdays.</p>
+<p>Stayed awake beside children with nightmares.</p>
+
+<p>In Oaksmane, kindness looked almost supernatural.</p>
+
+<hr>
+
+<p>But Garrick carried something heavy behind his eyes.</p>
+
+<p>Rayden noticed it more each year.</p>
+
+<p>The exhaustion.</p>
+<p>The restrained anger.</p>
+<p>The constant tension whenever certain names appeared in conversation.</p>
+
+<p>Because Garrick did not serve a kingdom.</p>
+
+<p>He served under Lord Halbrecht Veyne’s district military authority.</p>
+
+<hr>
+
+<p>Halbrecht controlled most military contracts surrounding Oaksmane and the lower industrial territories.</p>
+
+<p>Poor boys became soldiers beneath him because poor boys needed food more than dignity.</p>
+
+<p>Garrick hated the work.</p>
+
+<p>Marianne hated it more.</p>
+
+<p>But military pay helped keep the orphanage alive during famine winters.</p>
+
+<p>That was how men like Halbrecht ruled places like Oaksmane.</p>
+
+<p>Not through loyalty.</p>
+
+<p>Dependency.</p>
+
+<hr>
+
+<p>Whenever Garrick returned, training began immediately.</p>
+
+<p>The older boys gathered behind the orphanage beside the frozen canal carrying wooden practice swords carved from scrap lumber.</p>
+
+<p>Even some girls joined despite Garrick pretending not to notice.</p>
+
+<p>Marianne watched from the back steps every time while pretending to organize laundry.</p>
+
+<p>Usually failing.</p>
+
+<hr>
+
+<p>Garrick taught discipline before combat.</p>
+
+<p class="quote">
+“A sword doesn’t make you dangerous,”
+</p>
+
+<p>he told them repeatedly.</p>
+
+<p class="quote">
+“Hunger does. Fear does. A sword only decides what kind of monster you become afterward.”
+</p>
+
+<p>Most children only half-understood lessons like that.</p>
+
+<p>Rayden listened to every word.</p>
+
+<hr>
+
+<p>Garrick trained Rayden harder than the others.</p>
+
+<p>Longer stances.</p>
+<p>More punishment drills.</p>
+<p>More bruises.</p>
+
+<p>One freezing evening after practice, Garrick stopped Rayden mid-swing beside the canal wall.</p>
+
+<p class="quote">
+“You’re fighting angry again.”
+</p>
+
+<p>Rayden tightened both hands around the wooden sword.</p>
+
+<p class="quote">
+“So?”
+</p>
+
+<p>Garrick looked toward the factory smoke beyond Oaksmane.</p>
+
+<p class="quote">
+“So angry men die early.”
+</p>
+
+<p>Rayden frowned.</p>
+
+<p class="quote">
+“What survives then?”
+</p>
+
+<p>For a while Garrick said nothing.</p>
+
+<p>Then quietly:</p>
+
+<p class="quote">
+“The ones who know what they’re protecting.”
+</p>
+
+<hr>
+
+<p>Marianne and Garrick spent long nights together after the children slept.</p>
+
+<p>Usually near the kitchen stove beneath dim candlelight.</p>
+<p>Repairing clothes.</p>
+<p>Reviewing ration books.</p>
+<p>Speaking quietly while snow gathered outside the windows.</p>
+
+<p>The children pretended not to notice the way Marianne smiled differently around him.</p>
+
+<p>Or how Garrick relaxed slightly whenever she entered the room.</p>
+
+<p>But everyone noticed.</p>
+
+<p>Especially Rayden.</p>
+
+<p>Sometimes he woke during the night and saw them sitting together silently with their hands touching across the table beside the dying stove fire.</p>
+
+<p>Not speaking.</p>
+
+<p>Just existing beside each other in peace for a few stolen minutes.</p>
+
+<p>In Oaksmane, that counted as luxury.</p>
+
+<hr>
+
+<p>Fear always lived near the orphanage.</p>
+
+<p>Especially after dark.</p>
+
+<p>Some nights expensive carriages moved too slowly through the district streets.</p>
+<p>Some guards stared too long at older girls.</p>
+<p>Some wealthy men donated food with smiles that made Marianne’s face harden afterward.</p>
+
+<p>Children surviving in dangerous places learned quickly which adults felt wrong.</p>
+
+<hr>
+
+<p>The final peaceful night of Rayden’s childhood ended beside the stove.</p>
+
+<p>The children slept beneath patched blankets while snow drifted softly outside the cracked windows.</p>
+
+<p>Caelum practiced tiny sparks of magic between his fingers.</p>
+<p>Garrick sharpened wooden practice swords beside the table.</p>
+<p>Marianne repaired winter coats beneath candlelight.</p>
+
+<p>And Rayden — eleven years old, bruised, angry, alive — slowly fell asleep believing the orphanage would still exist tomorrow.</p>
+
+<p>He was wrong.</p>
+
+<hr>
+
+<h2 id="section-2">II. Lord Halbrecht Veyne</h2>
+<p class="era">Sundered Age — Year 1031</p>
+<hr>
+
+<p>Children learned fear before they learned language in Oaksmane.</p>
+
+<p>Not dramatic fear.</p>
+
+<p>Not battlefield fear.</p>
+
+<p>Smaller things.</p>
+
+<p>The sound of boots stopping outside your alley at night.</p>
+<p>The smell of alcohol on wealthy men.</p>
+<p>The silence adults used when speaking about nobles.</p>
+
+<p>Rayden learned all of those before turning eleven.</p>
+
+<p>Lord Halbrecht Veyne taught him the rest.</p>
+
+<hr>
+
+<p>To the upper districts, Halbrecht was admired.</p>
+
+<p>The newspapers called him:</p>
+
+<p class="quote">
+“The Lantern of Oaksmane.”
+</p>
+
+<p>He funded orphanages.</p>
+<p>Donated grain during famine winters.</p>
+<p>Sponsored church restoration projects.</p>
+<p>Paid for military widows’ funerals.</p>
+
+<p>His portrait hung inside government halls.</p>
+
+<p>People described him as:
+cultured,
+soft-spoken,
+disciplined,
+generous.</p>
+
+<p>Rich districts loved men like Halbrecht because they turned cruelty into paperwork.</p>
+
+<hr>
+
+<p>The lower districts knew different stories.</p>
+
+<p>Girls disappearing from dockside streets.</p>
+<p>Young servants transferred quietly between noble estates.</p>
+<p>Soldiers beaten half-dead after questioning orders.</p>
+
+<p>No one said Halbrecht’s name loudly when discussing such things.</p>
+
+<p>Because poor people survived longer by pretending not to notice monsters.</p>
+
+<hr>
+
+<p>Garrick noticed everything.</p>
+
+<p>That was the problem.</p>
+
+<hr>
+
+<p>One freezing evening after military rotation, Garrick arrived at the orphanage later than usual with fresh bruises across his jaw and dried blood staining the collar of his uniform.</p>
+
+<p>Marianne immediately pulled him into the kitchen after the children slept.</p>
+
+<p>Rayden overheard part of the conversation through the hallway.</p>
+
+<p>Not intentionally.</p>
+
+<p>The walls were simply thin.</p>
+
+<hr>
+
+<p class="quote">
+“You fought again.”
+</p>
+
+<p>Garrick sat heavily beside the stove.</p>
+
+<p class="quote">
+“He deserved worse.”
+</p>
+
+<p>Marianne cleaned blood from his cheek carefully.</p>
+
+<p class="quote">
+“You’ll get yourself killed.”
+</p>
+
+<p>Garrick laughed quietly.</p>
+
+<p>Not because anything was funny.</p>
+
+<p>Because exhausted people sometimes laughed instead of screaming.</p>
+
+<p class="quote">
+“You know what one of Halbrecht’s officers did today?”
+</p>
+
+<p>Marianne said nothing.</p>
+
+<p>Garrick stared into the fire.</p>
+
+<p class="quote">
+“A girl stole bread near the south market.”<br><br>
+“She couldn’t have been older than fourteen.”<br><br>
+“They broke three fingers teaching her discipline.”
+</p>
+
+<p>The room stayed quiet for several seconds afterward.</p>
+
+<p>Then Garrick spoke again.</p>
+
+<p class="quote">
+“He watched it happen.”<br><br>
+“Smiling.”
+</p>
+
+<hr>
+
+<p>Marianne closed her eyes slowly.</p>
+
+<p>Like someone hearing confirmation of a fear they already carried.</p>
+
+<p class="quote">
+“You need to leave his service.”
+</p>
+
+<p>Garrick immediately shook his head.</p>
+
+<p class="quote">
+“And go where?”<br><br>
+“You think soldiers like me retire?”<br><br>
+“You think poor men get choices?”
+</p>
+
+<p>His voice lowered afterward.</p>
+
+<p class="quote">
+“If I disappear, this place loses half its winter food.”
+</p>
+
+<p>Marianne looked around the orphanage kitchen.</p>
+
+<p>The cracked walls.</p>
+<p>The ration shelves.</p>
+<p>The sleeping children beyond the hallway.</p>
+
+<p>She hated that he was right.</p>
+
+<hr>
+
+<p>Later that night, Garrick found Rayden awake pretending to sleep near the stove.</p>
+
+<p>Without speaking, Garrick sat beside him and handed over a wrapped piece of sweetbread stolen from military rations.</p>
+
+<p>Rayden accepted it silently.</p>
+
+<p>After a while he asked:</p>
+
+<p class="quote">
+“Why don’t you kill him?”
+</p>
+
+<p>Garrick became very still.</p>
+
+<p>The fire crackled softly between them.</p>
+
+<p>Finally:</p>
+
+<p class="quote">
+“Because men like Halbrecht never stand alone.”
+</p>
+
+<p>Rayden frowned.</p>
+
+<p>Garrick looked toward the dark windows.</p>
+
+<p class="quote">
+“You kill one monster wearing silk, another one inherits the chair before the body gets cold.”
+</p>
+
+<p>That answer stayed with Rayden for years.</p>
+
+<hr>
+
+<p>Halbrecht visited the orphanage again three days later.</p>
+
+<p>The entire building changed when his carriage stopped outside.</p>
+
+<p>Children became quieter.</p>
+<p>Marianne’s shoulders stiffened.</p>
+<p>Even Garrick’s jaw tightened visibly.</p>
+
+<p>Fear moved through rooms faster than smoke.</p>
+
+<hr>
+
+<p>Halbrecht entered wearing dark winter velvet trimmed with silver embroidery.</p>
+
+<p>Snow melted slowly across his polished boots while two armed guards remained near the doorway.</p>
+
+<p>One carried a military saber.</p>
+
+<p>The other wore black battlemage markings stitched into the collar of his coat.</p>
+
+<p>The mage was young.</p>
+<p>Arrogant.</p>
+<p>Too comfortable holding power.</p>
+
+<p>Small blue sparks occasionally danced unconsciously across his fingertips.</p>
+
+<p>The younger children stared at him with fascination.</p>
+
+<p>Caelum did not.</p>
+
+<p>Caelum looked terrified.</p>
+
+<hr>
+
+<p>Rayden noticed immediately.</p>
+
+<p>Caelum had gone pale beside the staircase.</p>
+
+<p class="quote">
+“What’s wrong?”
+</p>
+
+<p>Caelum stared toward Halbrecht without blinking.</p>
+
+<p class="quote">
+“Something’s wrong around him.”
+</p>
+
+<p>Rayden frowned.</p>
+
+<p class="quote">
+“What does that mean?”
+</p>
+
+<p>Caelum swallowed hard.</p>
+
+<p class="quote">
+“I don’t know.”<br><br>
+“It feels…”<br><br>
+“Cold.”
+</p>
+
+<p>Then the candle beside them suddenly extinguished itself.</p>
+
+<hr>
+
+<p>Halbrecht moved through the orphanage smiling politely while Marianne guided him room to room.</p>
+
+<p>He complimented the children.</p>
+<p>Praised the discipline.</p>
+<p>Asked harmless questions softly.</p>
+
+<p>Everything about him sounded civilized.</p>
+
+<p>That was what made him terrifying.</p>
+
+<p>Monsters shouting about cruelty were easy to recognize.</p>
+
+<p>Halbrecht spoke gently while making children afraid to breathe.</p>
+
+<hr>
+
+<p>At one point he stopped near the older girls repairing winter coats beside the stove.</p>
+
+<p>One girl lowered her eyes immediately.</p>
+
+<p>Another subtly shifted farther away.</p>
+
+<p>Halbrecht smiled warmly.</p>
+
+<p class="quote">
+“You work very hard here.”
+</p>
+
+<p>His hand rested briefly against one girl’s shoulder.</p>
+
+<p>She visibly flinched.</p>
+
+<p>The noble noticed.</p>
+
+<p>And smiled slightly wider.</p>
+
+<p>Rayden saw Garrick’s hand tighten hard enough around a chair behind them that the wood creaked.</p>
+
+<hr>
+
+<p>Marianne noticed too.</p>
+
+<p>She stepped between Halbrecht and the girls smoothly enough to appear accidental.</p>
+
+<p class="quote">
+“The younger children prepared tea.”
+</p>
+
+<p>Halbrecht’s eyes rested on her for several seconds afterward.</p>
+
+<p>Not angry.</p>
+
+<p>Interested.</p>
+
+<p>That look frightened Rayden more than shouting would have.</p>
+
+<hr>
+
+<p>The battlemage guard wandered near the training yard afterward while Garrick supervised practice drills with the boys.</p>
+
+<p>The mage watched them with amused contempt.</p>
+
+<p class="quote">
+“Training them for war already?”
+</p>
+
+<p>Garrick ignored him.</p>
+
+<p>The mage smiled.</p>
+
+<p>Blue sparks rolled lazily between his fingers.</p>
+
+<p class="quote">
+“You know what happens to most slum boys in military service?”<br><br>
+“They die before twenty.”
+</p>
+
+<p>Garrick finally looked at him then.</p>
+
+<p class="quote">
+“And yet you’re still talking.”
+</p>
+
+<p>The mage laughed.</p>
+
+<p>But his hand drifted closer toward the spell focus attached near his belt.</p>
+
+<p>For a moment Rayden genuinely thought Garrick might kill him right there in the yard.</p>
+
+<p>Part of him wanted Garrick to.</p>
+
+<hr>
+
+<p>That night, after Halbrecht finally left, Marianne locked every door personally.</p>
+
+<p>Twice.</p>
+
+<p>Then checked the upstairs windows.</p>
+
+<p>Then the cellar entrance.</p>
+
+<p>Rayden watched silently from the staircase.</p>
+
+<p>She was afraid.</p>
+
+<p>Not nervous.</p>
+
+<p>Afraid.</p>
+
+<p>Adults rarely allowed children to see that openly.</p>
+
+<hr>
+
+<p>Garrick found her beside the stove after midnight.</p>
+
+<p>Snow hammered softly against the windows outside.</p>
+
+<p>The kitchen fire burned low.</p>
+
+<p>For a long time neither spoke.</p>
+
+<p>Finally Marianne whispered:</p>
+
+<p class="quote">
+“He’s going to come back.”
+</p>
+
+<p>Garrick said nothing.</p>
+
+<p>Because they both already knew she was right.</p>
+
+<p>Marianne stared into the fire.</p>
+
+<p class="quote">
+“I see the way he looks at them.”
+</p>
+
+<p>Garrick’s jaw tightened slowly.</p>
+
+<p class="quote">
+“If he touches any of the children…” 
+</p>
+
+<p>He stopped speaking halfway through the sentence.</p>
+
+<p>Because both of them understood how that sentence ended.</p>
+
+<p>Not with survival.</p>
+
+<hr>
+
+<p>Marianne reached across the table and held his hand tightly.</p>
+
+<p class="quote">
+“Don’t throw your life away.”
+</p>
+
+<p>Garrick looked at her quietly.</p>
+
+<p>Tired.</p>
+<p>Angry.</p>
+<p>In love.</p>
+
+<p>Then he said the thing that would eventually destroy all of them:</p>
+
+<p class="quote">
+“Some things deserve violence.”
+</p>
+
+<hr>
+
+
+<h2 id="section-3">III. The Night of Fire</h2>
+<p class="era">Sundered Age — Year 1031</p>
+<hr>
+
+<p>The storm arrived just after midnight.</p>
+
+<p>Rain hammered the rooftops of Oaksmane hard enough to shake loose old wood from the factory walls, and thunder rolled across the district like distant artillery.</p>
+
+<p>Most of the orphanage children slept downstairs near the stove because the upper floor had become too cold to survive through the night comfortably.</p>
+
+<p>Blankets overlapped across the floor.</p>
+<p>Tiny bodies slept shoulder-to-shoulder for warmth.</p>
+<p>The fire crackled softly inside the iron stove.</p>
+
+<p>For a few brief hours, the orphanage almost felt peaceful.</p>
+
+<hr>
+
+<p>Marianne sat beside the kitchen table repairing winter coats beneath candlelight while rain tapped steadily against the windows.</p>
+
+<p>Caelum sat nearby with two younger boys watching tiny sparks dance between his fingertips.</p>
+
+<p>The younger children giggled quietly every time the sparks changed color.</p>
+
+<p>Rayden sat cross-legged near the stove sharpening old wooden practice swords using Garrick’s whetstone despite knowing the stone was meant for steel.</p>
+
+<p class="quote">
+“You’re ruining it.”
+</p>
+
+<p>Caelum grinned without looking up.</p>
+
+<p>Rayden shrugged.</p>
+
+<p class="quote">
+“It already looks ruined.”
+</p>
+
+<p>Marianne smiled faintly from the table.</p>
+
+<p>Small moments like that mattered more in Oaksmane than people realized.</p>
+
+<p>Poor children learned to treasure peace because it never stayed long.</p>
+
+<hr>
+
+<p>Garrick was gone.</p>
+
+<p>Military rotation under Halbrecht’s command.</p>
+
+<p>Rayden hated those nights most.</p>
+
+<p>The orphanage always felt less safe without him there.</p>
+
+<p>Even Marianne seemed quieter whenever Garrick was away.</p>
+
+<hr>
+
+<p>Thunder shook the windows again.</p>
+
+<p>One of the younger girls stirred nervously in her sleep.</p>
+
+<p>Marianne stood, walked across the room, and gently pulled the blanket higher around the child’s shoulders.</p>
+
+<p>Rayden watched her for a moment.</p>
+
+<p>Then the knocking started.</p>
+
+<hr>
+
+<p>Three slow knocks against the front door.</p>
+
+<p>Not requests.</p>
+
+<p>Ownership.</p>
+
+<p>The entire orphanage became still.</p>
+
+<p>Even the storm suddenly sounded distant.</p>
+
+<p>Marianne froze beside the doorway.</p>
+
+<p>Rayden saw fear enter her face immediately.</p>
+
+<p>Real fear.</p>
+
+<p>Not concern.</p>
+
+<p>Not nervousness.</p>
+
+<p>Fear.</p>
+
+<hr>
+
+<p>The knocking came again.</p>
+
+<p>Slow.</p>
+<p>Patient.</p>
+
+<p>Confident.</p>
+
+<p>Marianne quietly slipped one hand beneath her apron before approaching the door.</p>
+
+<p>Rayden noticed the kitchen knife immediately.</p>
+
+<p>She had been expecting this.</p>
+
+<hr>
+
+<p>When Marianne finally opened the door, cold rain and torchlight spilled into the orphanage hall.</p>
+
+<p>Lord Halbrecht Veyne stood outside beneath a black umbrella held by one of his guards.</p>
+
+<p>Two soldiers waited behind him.</p>
+
+<p>The battlemage from earlier visits stood nearest the stairs, blue sparks crawling lazily between his fingers.</p>
+
+<p>Halbrecht smiled warmly.</p>
+
+<p class="quote">
+“My apologies for the hour.”<br><br>
+“The storm became unpleasant.”
+</p>
+
+<p>Marianne did not move aside.</p>
+
+<p class="quote">
+“The children are sleeping.”
+</p>
+
+<p>Halbrecht’s expression remained calm.</p>
+
+<p class="quote">
+“Then I’ll be brief.”
+</p>
+
+<p>Without waiting for permission, he stepped inside.</p>
+
+<hr>
+
+<p>The guards followed immediately.</p>
+
+<p>One quietly shut the door behind them.</p>
+
+<p>The battlemage traced glowing symbols briefly near the frame.</p>
+
+<p>The lock clicked by itself.</p>
+
+<p>Caelum went pale instantly.</p>
+
+<p class="quote">
+“Rayden...”<br><br>
+“They locked it.”
+</p>
+
+<p>Rayden’s stomach tightened.</p>
+
+<hr>
+
+<p>Halbrecht slowly removed his gloves while walking deeper into the orphanage.</p>
+
+<p>He complimented the repairs.</p>
+<p>Asked if the children were fed properly.</p>
+<p>Spoke softly enough that, without context, he might have sounded kind.</p>
+
+<p>That was what made him terrifying.</p>
+
+<p>Everything cruel about him wore a civilized face first.</p>
+
+<hr>
+
+<p>The older girls near the stove lowered their heads immediately when Halbrecht approached.</p>
+
+<p>One visibly shifted backward.</p>
+
+<p>Another grabbed the sleeve of the younger child beside her protectively.</p>
+
+<p>Halbrecht noticed every reaction.</p>
+
+<p>And enjoyed it.</p>
+
+<hr>
+
+<p class="quote">
+“You work very hard here.”
+</p>
+
+<p>His hand rested against one older girl’s shoulder.</p>
+
+<p>She flinched hard enough to nearly drop the sewing basket in her lap.</p>
+
+<p>Halbrecht smiled slightly wider.</p>
+
+<p class="quote">
+“There’s no reason to be frightened.”
+</p>
+
+<p>Marianne moved immediately between them.</p>
+
+<p class="quote">
+“They’re children.”
+</p>
+
+<p>For the first time that night, Halbrecht’s eyes changed.</p>
+
+<p>The warmth disappeared.</p>
+
+<p>Not anger.</p>
+
+<p>Something colder.</p>
+
+<hr>
+
+<p class="quote">
+“You forget who funds this building.”
+</p>
+
+<p>Marianne did not move.</p>
+
+<p class="quote">
+“No.”<br><br>
+“I remember exactly.”
+</p>
+
+<p>The room became dangerously quiet.</p>
+
+<p>Even the guards looked tense now.</p>
+
+<p>Rayden saw one of them glance nervously toward Halbrecht.</p>
+
+<p>The noble slowly stepped closer to Marianne.</p>
+
+<p class="quote">
+“You should be careful how you speak to your betters.”
+</p>
+
+<p>Then his eyes drifted back toward the girls.</p>
+
+<p class="quote">
+“Especially when they depend on generosity.”
+</p>
+
+<hr>
+
+<p>One of the older girls tried quietly moving away.</p>
+
+<p>Halbrecht grabbed her wrist immediately.</p>
+
+<p>She cried out in fear.</p>
+
+<p>Rayden moved before thinking.</p>
+
+<p>He grabbed the nearest wooden practice sword and charged.</p>
+
+<p class="quote">
+“LET HER GO!”
+</p>
+
+<p>The wooden blade struck Halbrecht across the shoulder hard enough to crack loudly.</p>
+
+<p>The room froze.</p>
+
+<p>For half a second nobody moved.</p>
+
+<p>Then the battlemage laughed.</p>
+
+<p class="quote">
+“The little animal bites.”
+</p>
+
+<hr>
+
+<p>Halbrecht slowly turned toward Rayden.</p>
+
+<p>The civilized mask was gone now.</p>
+
+<p>Only contempt remained.</p>
+
+<p>One of the guards struck Rayden across the face hard enough to throw him against the table.</p>
+
+<p>Caelum screamed.</p>
+
+<p>The younger children woke instantly in panic.</p>
+
+<p>Everything shattered afterward.</p>
+
+<hr>
+
+<p>Marianne moved first.</p>
+
+<p>The kitchen knife flashed from beneath her apron and buried itself into a guard’s throat.</p>
+
+<p>Hot blood exploded across the stove and floorboards.</p>
+
+<p>The man collapsed choking violently while trying to pull the blade free.</p>
+
+<p>Everyone stared at Marianne in shock.</p>
+
+<p>Including Halbrecht.</p>
+
+<p>For one glorious second, the terrified caretaker of the orphanage looked like a cornered wolf willing to die with its teeth buried in something important.</p>
+
+<p class="quote">
+“GET AWAY FROM THEM!”
+</p>
+
+<hr>
+
+<p>The battlemage reacted instantly.</p>
+
+<p>Blue fire erupted across his hands.</p>
+
+<p>He hurled ignition magic into the curtains beside the staircase.</p>
+
+<p>The old dry fabric exploded into flame immediately.</p>
+
+<p>Another spell struck the shelves near the kitchen.</p>
+
+<p>Oil lamps shattered.</p>
+
+<p>Fire raced across the floorboards.</p>
+
+<p>The storm wind pouring through cracked windows fed the flames hungrily.</p>
+
+<p>Within seconds the orphanage became an inferno.</p>
+
+<hr>
+
+<p>Children screamed everywhere.</p>
+
+<p>Smoke rolled downward across the ceiling thick enough to choke on.</p>
+
+<p>The younger boys panicked immediately, trampling blankets while trying to run toward the locked front door.</p>
+
+<p>One slammed against it desperately.</p>
+
+<p>It did not move.</p>
+
+<p>The battlemage smiled.</p>
+
+<hr>
+
+<p>Chaos consumed the orphanage.</p>
+
+<p>One guard grabbed an older girl by the hair and dragged her screaming toward the hallway wall.</p>
+
+<p>Another overturned tables searching for hiding children.</p>
+
+<p>The fire spread unnaturally fast now, climbing walls and beams like living things.</p>
+
+<p>Smoke burned Rayden’s lungs.</p>
+
+<p>He could barely see.</p>
+
+<hr>
+
+<p>Caelum raised trembling hands instinctively.</p>
+
+<p>Ice exploded across the nearby floorboards in a desperate uncontrolled burst of magic, slowing part of the flames long enough for several younger children to escape toward the pantry corridor.</p>
+
+<p>The battlemage noticed immediately.</p>
+
+<p class="quote">
+“Well.”<br><br>
+“A gifted one.”
+</p>
+
+<p>Blue fire gathered in his palms.</p>
+
+<p>Caelum froze in terror.</p>
+
+<hr>
+
+<p>Rayden tackled the mage before the spell released fully.</p>
+
+<p>The half-formed fire blast detonated sideways into the ceiling beams instead.</p>
+
+<p>Burning timber crashed downward between Rayden and Caelum in an explosion of sparks.</p>
+
+<p>Children screamed behind the collapsing debris.</p>
+
+<p>Rayden tried reaching through the flames.</p>
+
+<p class="quote">
+“CAELUM!”
+</p>
+
+<p>Smoke swallowed the answer.</p>
+
+<p>Then another section of the ceiling collapsed between them.</p>
+
+<p>Rayden never saw him again that night.</p>
+
+<hr>
+
+<p>Marianne fought like someone who already understood she would die there.</p>
+
+<p>She smashed boiling soup across one guard’s face.</p>
+<p>Stabbed another through the side of the neck with broken kitchen steel.</p>
+<p>Dragged terrified children toward collapsing exits while smoke blackened her lungs.</p>
+
+<p>One little girl became trapped beneath a fallen beam near the staircase.</p>
+
+<p>Marianne tried lifting it alone despite the flames climbing her sleeves.</p>
+
+<p>She could have escaped then.</p>
+
+<p>Instead she stayed.</p>
+
+<hr>
+
+<p>The battlemage kicked Rayden hard enough to crack ribs.</p>
+
+<p>Blue fire gathered again around his hands.</p>
+
+<p class="quote">
+“You should’ve stayed quiet.”
+</p>
+
+<p>Then the front doors exploded inward.</p>
+
+<hr>
+
+<p>Garrick arrived like violence given human form.</p>
+
+<p>Rain and smoke burst around him as he charged through the doorway carrying military steel still wet from the storm outside.</p>
+
+<p>He saw the burning orphanage.</p>
+<p>The screaming children.</p>
+<p>Marianne covered in blood.</p>
+<p>Rayden half-buried beneath debris.</p>
+
+<p>And something inside him broke permanently.</p>
+
+<hr>
+
+<p>The first guard died before turning fully around.</p>
+
+<p>Garrick’s sword entered through the man’s mouth and exited behind the skull.</p>
+
+<p>The second lost his arm at the elbow.</p>
+
+<p>The battlemage barely managed to raise a spell barrier before Garrick slammed into him hard enough to drive both men through a burning table.</p>
+
+<p>Blue fire erupted wildly across the room.</p>
+
+<p>Garrick beat the mage to death against the floorboards with such brutality that Rayden barely recognized him anymore.</p>
+
+<hr>
+
+<p>Then Garrick saw Marianne.</p>
+
+<p>Still alive.</p>
+
+<p>Barely.</p>
+
+<p>Burns covered one side of her body.</p>
+<p>Blood soaked her dress.</p>
+<p>Smoke trembled in every breath.</p>
+
+<p>Yet she still shielded trapped children behind her.</p>
+
+<p>Garrick stared at her in horror.</p>
+
+<p>Marianne looked back at him through the flames.</p>
+
+<p class="quote">
+“Save them.”
+</p>
+
+<p>Not herself.</p>
+
+<p>Them.</p>
+
+<hr>
+
+<p>The ceiling groaned overhead.</p>
+
+<p>Burning beams began collapsing across the orphanage.</p>
+
+<p>Garrick dragged Rayden upright while children screamed somewhere beyond the smoke-choked hallways.</p>
+
+<p>Rayden kept searching desperately through the fire.</p>
+
+<p class="quote">
+“CAELUM!”<br><br>
+“CAELUM!”
+</p>
+
+<p>No answer came.</p>
+
+<p>Only fire.</p>
+
+<hr>
+
+<p>Garrick tried reaching Marianne.</p>
+
+<p>Half the upper floor collapsed between them first.</p>
+
+<p>Burning debris exploded across the room.</p>
+
+<p>The trapped children screamed once.</p>
+
+<p>Then stopped.</p>
+
+<p>Marianne disappeared behind the flames.</p>
+
+<p>Garrick screamed her name exactly once.</p>
+
+<p>Rayden never forgot the sound.</p>
+
+<p>It did not sound human.</p>
+
+<hr>
+
+<p>Garrick carried Rayden through the pantry corridor moments before the orphanage roof collapsed completely.</p>
+
+<p>The sound thundered across Oaksmane.</p>
+
+<p>Burning sparks spiraled upward into the storm sky like dying stars.</p>
+
+<p>The screams inside stopped one by one.</p>
+
+<p>Then silence remained.</p>
+
+<hr>
+
+<p>Lord Halbrecht Veyne survived.</p>
+
+<p>That was the cruelest part.</p>
+
+<p>Monsters like him usually did.</p>
+
+<hr>
+<!-- SECTION III END -->
+
+
+<!-- SECTION IV START -->
+
+<h2 id="section-4">IV. The Execution</h2>
+<p class="era">Sundered Age — Year 1031</p>
+<hr>
+
+<p>The official report described the orphanage fire as an accident caused by unstable heating lanterns during the storm.</p>
+
+<p>Twenty-three children dead.</p>
+<p>Structural collapse.</p>
+<p>Tragic circumstances.</p>
+
+<p>No mention of soldiers.</p>
+<p>No mention of screaming girls dragged through smoke.</p>
+<p>No mention of magical fire.</p>
+
+<p>No mention of Lord Halbrecht Veyne.</p>
+
+<hr>
+
+<p>Oaksmane returned to normal frighteningly fast.</p>
+
+<p>The factories reopened by sunrise.</p>
+<p>The canals still carried blood-colored waste.</p>
+<p>The rich districts still held parties uphill while smoke from the orphanage ruins drifted through the lower streets.</p>
+
+<p>Poor people learned early that the world did not stop for their dead.</p>
+
+<hr>
+
+<p>Rayden woke three days later inside a rotting storage room behind an abandoned butcher shop.</p>
+
+<p>Every breath hurt.</p>
+
+<p>The battlemage’s kick had cracked ribs.</p>
+<p>Burns covered one side of his arm.</p>
+<p>The smoke damage inside his lungs made coughing feel like swallowing broken glass.</p>
+
+<p>Fever came and went constantly.</p>
+
+<p>Sometimes he woke screaming because he smelled smoke again.</p>
+
+<p>Sometimes he heard children crying inside walls that no longer existed.</p>
+
+<p>Sometimes he saw Marianne burning every time he closed his eyes.</p>
+
+<hr>
+
+<p>Garrick stayed beside him almost the entire time.</p>
+
+<p>He barely slept.</p>
+<p>Barely spoke.</p>
+<p>Barely moved unless Rayden’s fever worsened.</p>
+
+<p>The man who once laughed with orphan children now looked like something hollowed out from the inside.</p>
+
+<hr>
+
+<p>One night Rayden woke to the sound of Garrick vomiting outside the room.</p>
+
+<p>Not ordinary sickness.</p>
+
+<p>The violent kind.</p>
+
+<p>The kind soldiers developed after seeing things they could not survive mentally.</p>
+
+<p>Rayden quietly watched through the cracked doorway while Garrick knelt in the alley rain with bloodshot eyes and shaking hands.</p>
+
+<p>For the first time in his life, Garrick looked weak.</p>
+
+<p>That frightened Rayden more than the fire had.</p>
+
+<hr>
+
+<p>Later that night Garrick sat beside him in silence while sharpening his military sword beneath lantern light.</p>
+
+<p>The blade still carried dried blood inside the fuller groove.</p>
+
+<p>Rayden stared at it for a long time.</p>
+
+<p class="quote">
+“You killed them.”
+</p>
+
+<p>Garrick did not answer immediately.</p>
+
+<p>Finally:</p>
+
+<p class="quote">
+“Not enough.”
+</p>
+
+<hr>
+
+<p>Rayden asked the question anyway.</p>
+
+<p class="quote">
+“Did you find Caelum?”
+</p>
+
+<p>Silence.</p>
+
+<p>Garrick looked away first.</p>
+
+<p>That answer hurt worse than words.</p>
+
+<hr>
+
+<p>The next morning Garrick marched directly into the Oaksmane district barracks carrying Marianne’s bloodstained kitchen knife wrapped in cloth.</p>
+
+<p>Rayden tried following him despite the fever.</p>
+
+<p>Garrick stopped him near the alley entrance.</p>
+
+<p class="quote">
+“Stay here.”
+</p>
+
+<p class="quote">
+“He killed them.”
+</p>
+
+<p>Garrick’s face hardened.</p>
+
+<p class="quote">
+“I know.”
+</p>
+
+<p class="quote">
+“Then kill him.”
+</p>
+
+<p>For a moment something dangerous moved behind Garrick’s eyes.</p>
+
+<p>Then it disappeared.</p>
+
+<p class="quote">
+“If I kill him now, they’ll bury the truth with me.”<br><br>
+“I’m doing this properly first.”
+</p>
+
+<p>That sentence haunted Rayden later.</p>
+
+<p>Because it was the last time Garrick still believed justice and law were connected.</p>
+
+<hr>
+
+<p>The accusation became public before noon.</p>
+
+<p>Witnesses later described Garrick standing inside the district command hall soaked from rainwater while openly naming Lord Halbrecht responsible for the orphanage massacre.</p>
+
+<p>Soldiers went silent.</p>
+
+<p>Officers stopped writing.</p>
+
+<p>Even servants froze.</p>
+
+<p>Because everyone in that room believed him.</p>
+
+<p>That was the problem.</p>
+
+<hr>
+
+<p>Halbrecht arrived less than an hour later.</p>
+
+<p>Perfectly composed.</p>
+<p>Fresh gloves.</p>
+<p>Clean uniform coat.</p>
+
+<p>The burn mark across his wrist from Rayden’s wooden sword strike had already been hidden beneath silk wrappings.</p>
+
+<p>He looked like a man attending business negotiations.</p>
+
+<p>Not someone who had watched children burn alive days earlier.</p>
+
+<hr>
+
+<p>Garrick attacked him before the hearing even began.</p>
+
+<p>Not recklessly.</p>
+
+<p>Not emotionally.</p>
+
+<p>Like an execution.</p>
+
+<p>He crossed the command hall in three steps and slammed Halbrecht against the stone wall hard enough to crack plaster.</p>
+
+<p>The noble’s guards reacted instantly.</p>
+
+<p>Steel erupted across the room.</p>
+
+<p>Garrick broke one man’s jaw with the hilt of his sword before six soldiers dragged him to the ground.</p>
+
+<p>Even restrained, he kept trying to reach Halbrecht.</p>
+
+<p class="quote">
+“You burned children.”
+</p>
+
+<p>Halbrecht calmly adjusted his gloves.</p>
+
+<p class="quote">
+“You are emotional, Sergeant Cale.”
+</p>
+
+<p>Garrick nearly broke free after that.</p>
+
+<hr>
+
+<p>The trial lasted less than two hours.</p>
+
+<p>No orphan survivors were questioned.</p>
+<p>No investigation occurred.</p>
+<p>No evidence was reviewed.</p>
+
+<p>Marianne was officially recorded as mentally unstable.</p>
+
+<p>The fire became an unfortunate accident.</p>
+
+<p>Garrick became the criminal.</p>
+
+<hr>
+
+<p>The charges included:</p>
+
+<ul>
+<li>Assault against noble authority</li>
+<li>Treasonous conduct</li>
+<li>Incitement of unrest</li>
+<li>Attempted murder of a district lord</li>
+</ul>
+
+<p>The sentence was immediate execution.</p>
+
+<hr>
+
+<p>Rayden learned about it from a drunk dockworker near sunset.</p>
+
+<p>At first he refused to believe him.</p>
+
+<p>Then he started running.</p>
+
+<hr>
+
+<p>The fever still burned through his body.</p>
+
+<p>His ribs screamed every time he inhaled.</p>
+
+<p>But Rayden sprinted through Oaksmane anyway, slipping through rainwater and muddy streets while desperately trying to reach the execution square.</p>
+
+<p>On the way he begged anyone armed for help.</p>
+
+<p>Mercenaries.</p>
+<p>Guards.</p>
+<p>Dock fighters.</p>
+
+<p>Most laughed.</p>
+
+<p>One mercenary looked at the execution order and quietly handed it back.</p>
+
+<p class="quote">
+“That name’s protected, kid.”
+</p>
+
+<p>Another said:</p>
+
+<p class="quote">
+“You don’t survive fighting nobles.”
+</p>
+
+<p>Rayden hated adults after that.</p>
+
+<hr>
+
+<p>The execution platform stood at the center of Oaksmane’s lower market square beside the frozen fountain.</p>
+
+<p>Snow drifted lightly through the evening air.</p>
+
+<p>Hundreds gathered to watch.</p>
+
+<p>Public executions were not punishment.</p>
+
+<p>They were reminders.</p>
+
+<hr>
+
+<p>The executioner waiting beside the block was enormous.</p>
+
+<p>An orc.</p>
+
+<p>Nearly seven feet tall with gray-green skin covered in ritual scar patterns burned into the flesh years earlier.</p>
+
+<p>His shoulders looked broad enough to carry doors as shields.</p>
+
+<p>The execution axe resting beside him resembled a siege weapon more than a tool.</p>
+
+<p>Its blade was stained dark from old blood no amount of sharpening ever fully removed.</p>
+
+<p>The crowd whispered his title quietly:</p>
+
+<p class="quote">
+“Gorvak the Silent.”
+</p>
+
+<p>The orc never spoke.</p>
+
+<p>He simply performed executions because the district paid well and dead men did not care what race held the axe.</p>
+
+<hr>
+
+<p>Garrick arrived in chains shortly after dusk.</p>
+
+<p>Rayden almost failed to recognize him.</p>
+
+<p>They had beaten him badly.</p>
+
+<p>One eye swollen shut.</p>
+<p>Split lips.</p>
+<p>Bruised ribs visible even beneath torn clothing.</p>
+
+<p>But he still walked upright.</p>
+
+<p>That mattered.</p>
+
+<hr>
+
+<p>Halbrecht watched from an elevated balcony wrapped in heavy winter furs while wine steamed gently beside him.</p>
+
+<p>Warm.</p>
+<p>Comfortable.</p>
+<p>Protected.</p>
+
+<p>That image stayed inside Rayden forever.</p>
+
+<p>Power watching suffering from safety.</p>
+
+<hr>
+
+<p>The magistrate began reading the charges while snow gathered slowly across the execution platform.</p>
+
+<p>His voice sounded bored.</p>
+
+<p>Like condemning innocent men had become routine years earlier.</p>
+
+<p>Maybe it had.</p>
+
+<hr>
+
+<p>Rayden forced himself through the crowd desperately.</p>
+
+<p class="quote">
+“GARRICK!”
+</p>
+
+<p>People shoved him backward immediately.</p>
+
+<p>Someone struck him across the shoulder.</p>
+
+<p>Another voice snapped:</p>
+
+<p class="quote">
+“Shut the boy up.”
+</p>
+
+<p>Garrick heard him anyway.</p>
+
+<hr>
+
+<p>For the first time since the orphanage fire, Garrick smiled.</p>
+
+<p>Small.</p>
+<p>Broken.</p>
+<p>Tired.</p>
+
+<p>But real.</p>
+
+<p>Then he shook his head once.</p>
+
+<p>Don’t.</p>
+
+<p>Rayden understood immediately.</p>
+
+<p>Garrick was not afraid of dying.</p>
+
+<p>He was afraid Rayden would try to stop it.</p>
+
+<hr>
+
+<p>The magistrate asked for final words.</p>
+
+<p>Garrick lifted his head slowly.</p>
+
+<p>Snow settled across his dark hair.</p>
+
+<p>His eyes found Rayden through the crowd immediately.</p>
+
+<p>Everything else disappeared for one moment.</p>
+
+<p>The crowd.</p>
+<p>The square.</p>
+<p>The world.</p>
+
+<p>Only the brothers remained.</p>
+
+<hr>
+
+<p>Garrick spoke softly.</p>
+
+<p>Only for Rayden.</p>
+
+<p class="quote">
+“Live.”<br><br>
+“Not like them.”
+</p>
+
+<hr>
+
+<p>Gorvak the Silent stepped forward.</p>
+
+<p>The massive orc looked at Garrick for several seconds before positioning him beside the execution block.</p>
+
+<p>For the briefest moment, something resembling pity crossed the executioner’s scarred face.</p>
+
+<p>Then professionalism returned.</p>
+
+<p>Because pity did not stop axes.</p>
+
+<hr>
+
+<p>Rayden screamed when the blade rose.</p>
+
+<p>Not words.</p>
+
+<p>Just raw sound torn from somewhere deep enough to damage the soul.</p>
+
+<p>The axe fell.</p>
+
+<hr>
+
+<p>Blood sprayed across the snow.</p>
+
+<p>The crowd recoiled instinctively.</p>
+
+<p>The sound echoed through the frozen square like splitting timber.</p>
+
+<p>One woman began crying somewhere nearby.</p>
+
+<p>Halbrecht calmly sipped wine from the balcony above.</p>
+
+<hr>
+
+<p>Rayden collapsed to his knees in the snow.</p>
+
+<p>The world became distant afterward.</p>
+
+<p>Muted.</p>
+<p>Cold.</p>
+<p>Wrong.</p>
+
+<p>He barely remembered leaving the square.</p>
+
+<p>Only fragments remained:</p>
+
+<ul>
+<li>The steam rising from Garrick’s blood in winter air</li>
+<li>The sound of the execution axe striking wood</li>
+<li>The crows lifting from nearby rooftops all at once</li>
+<li>Halbrecht smiling faintly from the balcony above</li>
+</ul>
+
+<hr>
+
+<p>That night, beside the frozen canals of Oaksmane, Rayden Cale cried until no sound came out anymore.</p>
+
+<p>Not because the world was cruel.</p>
+
+<p>He already knew that.</p>
+
+<p>Because the world had murdered the only man who ever taught him what strength was supposed to protect.</p>
+
+<p>And somewhere beneath the grief, beneath the horror, beneath the helplessness...</p>
+
+<p>Something inside him quietly began learning how to hate.</p>
+
+<hr>
+<!-- SECTION IV END -->
+
+
+<!-- SECTION V START -->
+<h2 id="section-5">V. The Boy Left Alive</h2>
+<p class="era">Sundered Age — Year 1032</p>
+<hr>
+
+<p>Winter continued after Garrick died.</p>
+
+<p>That offended Rayden more than anything else.</p>
+
+<p>The factories still opened before sunrise.</p>
+<p>The market still filled with shouting merchants.</p>
+<p>The canals still carried black industrial runoff beneath frozen bridges.</p>
+
+<p>Oaksmane kept breathing like nothing important had happened.</p>
+
+<p>As if twenty-three burned children and one executed soldier were ordinary numbers swallowed by another week.</p>
+
+<hr>
+
+<p>For a while, Rayden wandered the district without direction.</p>
+
+<p>Not living.</p>
+
+<p>Just continuing.</p>
+
+<hr>
+
+<p>The fever returned constantly.</p>
+
+<p>Smoke damage still burned inside his lungs, making every cold breath painful. Some mornings he woke beneath alley scaffolding coughing black mucus into the snow while stray dogs watched from nearby garbage piles.</p>
+
+<p>He stopped noticing the cold after the second week.</p>
+
+<p>Hunger replaced it.</p>
+
+<hr>
+
+<p>At night he dreamed about the orphanage.</p>
+
+<p>Not the real version.</p>
+
+<p>The burning one.</p>
+
+<p>In the dreams, the hallways never ended.</p>
+<p>The smoke never cleared.</p>
+<p>The children kept screaming behind walls he could not break open.</p>
+
+<p>Sometimes Marianne appeared through the fire carrying burned blankets in her arms.</p>
+
+<p>Sometimes Garrick stood on the execution platform staring at him silently while snow fell forever around them.</p>
+
+<p>The worst dreams were the quiet ones.</p>
+
+<p>The ones where Caelum simply vanished without explanation.</p>
+
+<hr>
+
+<p>Rayden stopped sleeping properly after that.</p>
+
+<hr>
+
+<p>The orphanage ruins were stripped within days.</p>
+
+<p>Scavengers stole iron nails from the collapsed beams.</p>
+<p>Broken furniture disappeared.</p>
+<p>Even partially burned blankets vanished.</p>
+
+<p>One afternoon Rayden returned there alone and found children from another district playing beside the ruins.</p>
+
+<p>Laughing.</p>
+
+<p>He almost attacked them before realizing they simply did not know what happened there.</p>
+
+<p>The world erased poor people quickly.</p>
+
+<hr>
+
+<p>Halbrecht’s influence only grew stronger afterward.</p>
+
+<p>New district patrols appeared near the docks.</p>
+<p>Military banners hung across Oaksmane streets.</p>
+<p>More disappearances spread through the lower districts.</p>
+
+<p>No one spoke openly anymore.</p>
+
+<p>Because everyone had seen what happened to Garrick.</p>
+
+<hr>
+
+<p>Rayden learned quickly that starving children became invisible to adults.</p>
+
+<p>Invisible people survived differently.</p>
+
+<hr>
+
+<p>He stole food first.</p>
+
+<p>Bread from market carts.</p>
+<p>Dried fish from canal merchants.</p>
+<p>Rotten fruit discarded behind taverns.</p>
+
+<p>The first time he was caught, a butcher broke two of his teeth with a wooden club.</p>
+
+<p>Rayden returned three nights later and stole from him again anyway.</p>
+
+<p>Hunger removed fear eventually.</p>
+
+<hr>
+
+<p>Street gangs noticed him soon after.</p>
+
+<p>Oaksmane always produced predators faster than soldiers.</p>
+
+<p>Most gangs controlled alley territory, smuggling routes, gambling dens, or child theft operations near the docks.</p>
+
+<p>Orphans without protection became merchandise quickly.</p>
+
+<hr>
+
+<p>One night three older boys cornered Rayden beneath the canal bridge near the slaughterhouse district.</p>
+
+<p>The oldest carried a rusted knife.</p>
+
+<p class="quote">
+“You sleep around our territory now.”
+</p>
+
+<p>Rayden said nothing.</p>
+
+<p>The second boy grabbed his coat and searched for stolen food.</p>
+
+<p>When he found only half-frozen bread, he laughed.</p>
+
+<p class="quote">
+“That all?”
+</p>
+
+<p>The third boy noticed Garrick’s whetstone hanging from Rayden’s belt.</p>
+
+<p class="quote">
+“Take that too.”
+</p>
+
+<p>Something inside Rayden snapped then.</p>
+
+<hr>
+
+<p>He moved before thinking.</p>
+
+<p>The broken metal shard hidden inside his sleeve punched upward beneath the second boy’s jaw and buried itself through the roof of his mouth.</p>
+
+<p>Hot blood sprayed across Rayden’s hands.</p>
+
+<p>The boy collapsed immediately, choking violently while his teeth scattered across the frozen stone.</p>
+
+<p>Everyone froze.</p>
+
+<p>Including Rayden.</p>
+
+<hr>
+
+<p>The wounded boy twitched helplessly in the snow.</p>
+
+<p>Blood pooled black beneath him.</p>
+
+<p>The other two stumbled backward in panic.</p>
+
+<p>One started screaming for help.</p>
+
+<p>The other ran.</p>
+
+<p>Rayden remained standing there breathing hard while the dying boy clawed weakly at his arm.</p>
+
+<p>Then the movement stopped.</p>
+
+<hr>
+
+<p>Rayden stared at the corpse for a very long time afterward.</p>
+
+<p>He expected guilt.</p>
+
+<p>Horror.</p>
+
+<p>Regret.</p>
+
+<p>Instead he felt something colder.</p>
+
+<p>Understanding.</p>
+
+<p>Violence worked.</p>
+
+<p>Law had executed Garrick.</p>
+<p>Violence saved people.</p>
+
+<p>That realization frightened him more than the killing itself.</p>
+
+<hr>
+
+<p>Days blurred together afterward.</p>
+
+<p>Rayden became harder.</p>
+
+<p>Quieter.</p>
+
+<p>He stopped talking unless necessary.</p>
+<p>Stopped trusting strangers.</p>
+<p>Stopped expecting kindness.</p>
+
+<p>The anger inside him no longer burned hot.</p>
+
+<p>It froze.</p>
+
+<hr>
+
+<p>Rumors spread constantly through the lower districts if someone listened carefully enough.</p>
+
+<p>Rayden listened to all of them.</p>
+
+<p>He heard about missing girls near Halbrecht-controlled warehouses.</p>
+<p>About strange illnesses spreading among soldiers.</p>
+<p>About men returning from certain estates with blackened veins and violent tempers.</p>
+
+<p>One drunk dockworker whispered something stranger than the rest.</p>
+
+<p class="quote">
+“They say the lord keeps priests underground now.”
+</p>
+
+<p>Another spat into the canal afterward.</p>
+
+<p class="quote">
+“Not priests.”<br><br>
+“Something worse.”
+</p>
+
+<p>Rayden remembered that conversation years later.</p>
+
+<hr>
+
+<p>The cold nearly killed him before spring arrived.</p>
+
+<p>Not dramatically.</p>
+
+<p>Not heroically.</p>
+
+<p>Quietly.</p>
+
+<hr>
+
+<p>It happened behind the abandoned southern tannery after another failed theft attempt left him bleeding from the scalp and limping badly from a cracked ankle.</p>
+
+<p>Snow fell heavily that night.</p>
+
+<p>Rayden curled beside the tannery wall wrapped in stolen cloth while fever burned through his body hard enough to blur reality.</p>
+
+<p>For hours he drifted between consciousness and dreams.</p>
+
+<p>He saw Marianne repairing coats beside the stove again.</p>
+<p>Garrick sharpening swords.</p>
+<p>Caelum laughing somewhere nearby.</p>
+
+<p>Then the visions changed.</p>
+
+<p>The orphanage burned again.</p>
+
+<p>Children screamed inside smoke.</p>
+<p>Garrick’s severed head rolled across execution snow.</p>
+<p>Halbrecht smiled from the flames.</p>
+
+<p>Rayden tried standing.</p>
+
+<p>His body failed immediately.</p>
+
+<hr>
+
+<p>Snow gathered slowly across his shoulders.</p>
+
+<p>The cold became strangely gentle after a while.</p>
+
+<p>That frightened him most.</p>
+
+<p>Because somewhere deep down, he realized this was probably how dying began.</p>
+
+<hr>
+
+<p>Footsteps approached through the storm.</p>
+
+<p>Slow.</p>
+
+<p>Measured.</p>
+
+<p>Not afraid.</p>
+
+<p>Rayden forced one eye open weakly.</p>
+
+<p>An old woman stood above him beneath a dark traveling cloak carrying a lantern in one hand and a massive sword across her back.</p>
+
+<p>Her face was scarred.</p>
+<p>One eye clouded white from an old injury.</p>
+<p>The other studied him carefully.</p>
+
+<p>Not kindly.</p>
+
+<p>Professionally.</p>
+
+<hr>
+
+<p>She crouched beside him and noticed the metal shard still clenched inside his frozen hand.</p>
+
+<p>Then the bruises.</p>
+<p>The starvation.</p>
+<p>The combat posture he maintained even half-conscious.</p>
+
+<p>Finally she looked directly into his eyes.</p>
+
+<p>And saw the hatred there.</p>
+
+<hr>
+
+<p>The old woman sighed quietly.</p>
+
+<p class="quote">
+“Either you die tonight...” 
+</p>
+
+<p>Her gaze sharpened slightly.</p>
+
+<p class="quote">
+“...or you become something dangerous.”
+</p>
+
+<p>Then she lifted Rayden over one shoulder and carried him into the storm.</p>
+
+<!-- SECTION V END -->
+<hr>
+<!-- SECTION VI STARTS -->
+<h2 id="section-6">VI. Elira Voss</h2>
+<p class="era">Sundered Age — Year 1032</p>
+<hr>
+
+<p>Rayden Cale should have died behind the southern tannery.</p>
+
+<p>Most children abandoned in Oaksmane eventually did.</p>
+
+<p>Not dramatically.</p>
+
+<p>Not heroically.</p>
+
+<p>They froze.</p>
+<p>Starved.</p>
+<p>Disappeared.</p>
+
+<p>The city swallowed poor children quietly because silence was cheaper than compassion.</p>
+
+<hr>
+
+<p>But Rayden did not die.</p>
+
+<p>Because Elira Voss found him first.</p>
+
+<hr>
+
+<p>He woke three days later with a knife pressed against his throat.</p>
+
+<p>Instinct moved before thought.</p>
+
+<p>Rayden grabbed the wrist immediately, twisted hard, and rolled sideways off the cot despite the explosion of pain through his ribs.</p>
+
+<p>The room spun violently.</p>
+
+<p>A boot slammed into his stomach before he fully stood.</p>
+
+<p>He crashed into the wooden floor coughing blood.</p>
+
+<p>The knife never moved from his throat.</p>
+
+<p class="quote">
+“Good.” 
+</p>
+
+<p>The old woman stood over him beneath lantern light.</p>
+
+<p>Tall.</p>
+<p>Broad-shouldered.</p>
+<p>Scarred.</p>
+
+<p>One eye clouded white from an old injury.</p>
+<p>Burn scars climbed across her neck disappearing beneath the collar of her shirt.</p>
+<p>Gray hair tied behind her head roughly with leather cord.</p>
+
+<p>She looked less like a retired adventurer and more like someone war had forgotten to kill properly.</p>
+
+<hr>
+
+<p class="quote">
+“You still react before thinking.”<br><br>
+“That means you’re alive.”
+</p>
+
+<p>Rayden glared at her through fever haze.</p>
+
+<p class="quote">
+“Who are you?”
+</p>
+
+<p>The woman sheathed the knife calmly.</p>
+
+<p class="quote">
+“Elira Voss.”
+</p>
+
+<p>Even half-conscious, Rayden recognized the name.</p>
+
+<p>People in Oaksmane taverns still whispered stories about her.</p>
+
+<p>The Iron Widow.</p>
+
+<p>Former A-Rank adventurer.</p>
+<p>Dungeon Vanguard survivor.</p>
+<p>The woman who once killed a tunnel wyrm by crawling inside its mouth after losing her sword arm grip during a collapse.</p>
+
+<p>Most stories about Elira ended with:
+“and everyone else died.”</p>
+
+<p>Rayden suddenly understood why.</p>
+
+<hr>
+
+<p>Elira’s home stood beyond the southern outskirts of Oaksmane near abandoned quarry territory where monster sightings occasionally drove normal civilians away.</p>
+
+<p>The structure itself resembled a fortified hunting lodge more than a house.</p>
+
+<p>Weapons hung across the walls.</p>
+<p>Monster bones decorated ceiling beams.</p>
+<p>Maps covered entire sections of wood paneling.</p>
+
+<p>Everything smelled faintly of steel, smoke, medicine, and old leather.</p>
+
+<p>It felt dangerous.</p>
+
+<p>Safe places usually didn’t.</p>
+
+<hr>
+
+<p>Recovery took weeks.</p>
+
+<p>Elira treated wounds harshly.</p>
+
+<p>No comforting words.</p>
+<p>No soft reassurances.</p>
+
+<p>When Rayden’s fever worsened, she forced medicine down his throat while insulting his survival instincts.</p>
+
+<p>When his ribs reopened from coughing, she wrapped them tighter and told him pain was useful because it reminded idiots they still possessed organs worth protecting.</p>
+
+<p>Rayden hated her immediately.</p>
+
+<p>That was probably why she kept him alive.</p>
+
+<hr>
+
+<p>The first real conversation happened during rain.</p>
+
+<p>Rayden sat near the fireplace sharpening scavenged metal while Elira cleaned monster blood from a massive greatsword resting across her lap.</p>
+
+<p>The weapon looked absurdly heavy.</p>
+
+<p>Its name, engraved near the guard, read:</p>
+
+<p class="quote">
+GRAVEWARDEN
+</p>
+
+<p>Elira noticed him staring.</p>
+
+<p class="quote">
+“You know why large monsters kill most adventurers?”
+</p>
+
+<p>Rayden shrugged slightly.</p>
+
+<p class="quote">
+“They’re stronger.”
+</p>
+
+<p>Elira snorted.</p>
+
+<p class="quote">
+“No.”<br><br>
+“Because idiots keep fighting monsters like they’re men.”
+</p>
+
+<p>She pointed toward one of the maps hanging nearby.</p>
+
+<p class="quote">
+“Large monsters are terrain.”<br><br>
+“You climb them.”<br><br>
+“You cripple joints.”<br><br>
+“You use momentum.”<br><br>
+“You survive longer than they expect.”
+</p>
+
+<p>Rayden listened carefully.</p>
+
+<p>Elira noticed that too.</p>
+
+<hr>
+
+<p>Three days later training began.</p>
+
+<p>No discussion.</p>
+<p>No agreement.</p>
+
+<p>Elira simply threw a practice knife at Rayden’s face during breakfast.</p>
+
+<p>He barely dodged in time.</p>
+
+<p class="quote">
+“Too slow.”
+</p>
+
+<hr>
+
+<p>The training nearly killed him repeatedly.</p>
+
+<p>Elira did not teach like soldiers.</p>
+
+<p>Soldiers taught formations.</p>
+<p>Obedience.</p>
+<p>Battlefield order.</p>
+
+<p>Elira taught survival.</p>
+
+<hr>
+
+<p>Rayden learned how to break fingers during grapples.</p>
+<p>How to choke larger opponents using leverage.</p>
+<p>How to dislocate shoulders.</p>
+<p>How to stab upward beneath jawlines.</p>
+<p>How to use momentum instead of strength.</p>
+
+<p>Every mistake hurt.</p>
+
+<p>Elira beat him bloody with wooden staffs whenever his guard dropped.</p>
+
+<p>Sometimes she attacked him randomly while he slept.</p>
+<p>Sometimes during meals.</p>
+<p>Once while he bathed in freezing river water.</p>
+
+<p class="quote">
+“The world doesn’t announce violence politely.”
+</p>
+
+<hr>
+
+<p>Wrestling became his strongest discipline fastest.</p>
+
+<p>Rayden lacked size.</p>
+<p>Lacked reach.</p>
+
+<p>So Elira turned him into something harder to predict.</p>
+
+<p>Close-range aggression.</p>
+<p>Grappling.</p>
+<p>Momentum reversals.</p>
+<p>Joint destruction.</p>
+
+<p>She taught him how larger enemies moved before attacking.</p>
+<p>How weight shifted.</p>
+<p>How balance failed.</p>
+
+<p>At thirteen years old, Rayden could already throw grown men onto stone hard enough to fracture ribs.</p>
+
+<p>Elira called that:</p>
+
+<p class="quote">
+“adequate.”
+</p>
+
+<hr>
+
+<p>The adventurer world revealed itself slowly afterward.</p>
+
+<p>Elira took him into guild halls across the southern territories where monster hunters, dungeon raiders, mercenaries, scouts, battlemages, thieves, and healers traded contracts beneath alcohol smoke and bounty boards.</p>
+
+<p>Rayden learned quickly:</p>
+
+<p>Most adventurers died young.</p>
+
+<p>Low-rank dungeons still killed experienced people.</p>
+<p>Healers were worth more than armored soldiers.</p>
+<p>Magic users could change entire battles.</p>
+<p>Corrupted dungeons occasionally produced things better left unnamed.</p>
+
+<p>Guild halls smelled like wet leather, blood, cheap ale, and exhaustion.</p>
+
+<p>Rayden liked them immediately.</p>
+
+<p>At least adventurers were honest about danger.</p>
+
+<hr>
+
+<p>He met Elira’s daughter during his second month there.</p>
+
+<p>And immediately disliked her.</p>
+
+<hr>
+
+<p>Selene Voss stood leaning against the guild entrance wall cleaning blood from a short blade when Elira dragged Rayden inside after training.</p>
+
+<p>She looked around seventeen.</p>
+
+<p>Auburn-brown hair tied behind her shoulders.</p>
+<p>Amber eyes.</p>
+<p>Slim athletic frame hidden beneath layered travel cloaks.</p>
+
+<p>Medical pouches lined her waist beside combat knives and rune-marked bandages.</p>
+
+<p>A faded scar crossed her left wrist from an old magical backlash injury.</p>
+
+<p>Unlike Elira, Selene smiled easily.</p>
+
+<p>Unlike Rayden, the smile reached her eyes.</p>
+
+<p>That annoyed him instantly.</p>
+
+<hr>
+
+<p>Selene studied him for several seconds.</p>
+
+<p class="quote">
+“This is the alley corpse you brought home?”
+</p>
+
+<p>Elira dropped monster contracts onto the guild counter.</p>
+
+<p class="quote">
+“He bites.”<br><br>
+“Try not to lose fingers.”
+</p>
+
+<p>Selene smirked.</p>
+
+<p class="quote">
+“He looks feral.”
+</p>
+
+<p>Rayden answered immediately.</p>
+
+<p class="quote">
+“You look expensive.”
+</p>
+
+<p>Selene laughed hard enough to nearly choke.</p>
+
+<p>Elira looked exhausted instantly.</p>
+
+<hr>
+
+<p>Their relationship improved slowly.</p>
+
+<p>Mostly because Elira forced them onto training contracts together.</p>
+
+<p>Selene specialized in hybrid healing magic and close combat support.</p>
+
+<p>Unlike traditional healers, she fought inside combat zones directly.</p>
+
+<p>Barrier magic.</p>
+<p>Rapid treatment.</p>
+<p>Short blade counters.</p>
+<p>Emergency stabilization.</p>
+
+<p>She moved through battlefields like someone stitching broken moments back together before death fully arrived.</p>
+
+<p>Rayden eventually trusted her enough to stop sleeping with a knife in hand.</p>
+
+<p>That alone took nearly a year.</p>
+
+<hr>
+
+<p>The nightmares never fully stopped.</p>
+
+<p>Some nights Elira found Rayden awake outside the lodge gripping training knives hard enough to split skin across his palms.</p>
+
+<p>Some nights Selene heard him screaming Garrick’s name through the walls.</p>
+
+<p>Neither spoke about it directly.</p>
+
+<p>People surviving dark places often respected silence more than comfort.</p>
+
+<hr>
+
+<p>Training ended officially two years later.</p>
+
+<p>Rayden was fourteen.</p>
+
+<p>Taller now.</p>
+<p>Lean muscle replacing starvation.</p>
+<p>Scars crossing both hands.</p>
+<p>Movement sharper.</p>
+<p>Eyes colder.</p>
+
+<p>But alive.</p>
+
+<p>Dangerously alive.</p>
+
+<hr>
+
+<p>Elira summoned both disciples outside the lodge at dawn during first snowfall.</p>
+
+<p>Two wrapped bundles rested beside her chair.</p>
+
+<p>She looked older that morning somehow.</p>
+
+<p>Tired in ways combat scars never caused.</p>
+
+<hr>
+
+<p>She handed the first bundle to Rayden.</p>
+
+<p>Inside rested a black steel bracer covered in ancient grappling runes.</p>
+
+<p>Compact launcher mechanisms lined the forearm.</p>
+<p>Thin enchanted chain rested coiled beneath layered plates.</p>
+
+<p>Rayden stared silently.</p>
+
+<p class="quote">
+“Vossfang Bracer,”
+</p>
+
+<p>Elira said.</p>
+
+<p class="quote">
+“Pulled me out of six dungeon collapses.”<br><br>
+“Works on will activation.”<br><br>
+“Stone. Wood. Monster flesh. Doesn’t care.”<br><br>
+“Try not to kill yourself learning momentum.”
+</p>
+
+<p>Rayden equipped it carefully.</p>
+
+<p>The runes glowed faintly beneath his skin.</p>
+
+<p>For the first time since Garrick died, he smiled slightly.</p>
+
+<hr>
+
+<p>Selene received the second gift.</p>
+
+<p>A dark silver-threaded cloak folded beneath protective leather wrapping.</p>
+
+<p>Selene immediately recognized it.</p>
+
+<p class="quote">
+“No way.” 
+</p>
+
+<p>Elira shrugged.</p>
+
+<p class="quote">
+“You’re fast enough now.”
+</p>
+
+<p>The cloak shimmered once beneath lantern light before vanishing entirely for several seconds.</p>
+
+<p>Selene laughed like a child seeing magic for the first time again.</p>
+
+<p class="quote">
+“Shadeveil…”<br><br>
+“You kept this?”
+</p>
+
+<p class="quote">
+“Thought about selling it once,”
+</p>
+
+<p>Elira muttered.</p>
+
+<p class="quote">
+“Then I remembered I hate merchants.”
+</p>
+
+<hr>
+
+<p>That evening, Elira walked both of them toward the adventurer guild beneath falling snow.</p>
+
+<p>The streets bustled with mercenaries, hunters, caravan guards, battlemages, and exhausted dungeon survivors dragging monster corpses toward appraisal stations.</p>
+
+<p>The world suddenly felt much larger than Oaksmane.</p>
+
+<p>More dangerous too.</p>
+
+<hr>
+
+<p>Elira stopped outside the guild entrance.</p>
+
+<p>For a long moment she simply looked at them.</p>
+
+<p>Not as children anymore.</p>
+
+<p>As adventurers.</p>
+
+<p>As weapons the world would eventually point somewhere.</p>
+
+<hr>
+
+<p class="quote">
+“The world out there is cruel.”<br><br>
+“Dungeons are crueler.”<br><br>
+“People are worst of all.”<br><br>
+“So survive long enough to become difficult to kill.”
+</p>
+
+<p>Then she shoved the guild doors open.</p>
+
+<p>And Rayden Cale stepped into the adventurer world for the first time.</p>
+
+
+<hr>
+<!-- SECTION VI ENDS -->
+<!-- SECTION VII STARTS -->
+<h2 id="section-7">VII. Ash and Ember</h2>
+<p class="era">Sundered Age — Year 1034</p>
+<hr>
+
+<p>The Adventurer Guild of Westreach smelled like blood, wet leather, old ale, and exhaustion.</p>
+
+<p>Rayden liked it immediately.</p>
+
+<hr>
+
+<p>The guild hall occupied a converted stone warehouse near the outer trade roads where caravans, mercenaries, monster hunters, smugglers, battlemages, and desperate men gathered beneath the same roof pretending they were different professions.</p>
+
+<p>Massive contract boards covered the walls.</p>
+<p>Monster skulls hung from ceiling beams.</p>
+<p>Half the people inside carried visible scars.</p>
+
+<p>The other half carried hidden ones.</p>
+
+<hr>
+
+<p>Rayden stood beside Selene beneath the registration counter while snow melted from their boots onto the floorboards.</p>
+
+<p>The clerk looked them over once.</p>
+
+<p>Young.</p>
+<p>Poor equipment.</p>
+<p>No official ranking.</p>
+
+<p>Another pair of hopeful idiots likely to die inside caves for copper rewards.</p>
+
+<p>Guild halls saw dozens every month.</p>
+
+<p class="quote">
+“Names?”
+</p>
+
+<p class="quote">
+“Rayden Cale.” 
+</p>
+
+<p class="quote">
+“Selene Voss.”
+</p>
+
+<p>The clerk continued writing lazily.</p>
+
+<p class="quote">
+“Specialties?”
+</p>
+
+<p>Rayden answered instantly.</p>
+
+<p class="quote">
+“Killing things.”
+</p>
+
+<p>Selene closed her eyes slowly.</p>
+
+<p class="quote">
+“He means frontline combat.”<br><br>
+“I’m support healer and barrier magic.”
+</p>
+
+<p>The clerk finally looked interested.</p>
+
+<p>Healers mattered.</p>
+
+<p>Most adventurer parties would rather lose a swordsman than a competent healer.</p>
+
+<hr>
+
+<p>They started with sewer contracts.</p>
+
+<p>Everyone did.</p>
+
+<hr>
+
+<p>The first dungeon beneath Westreach contained little more than oversized corpse-rats, flooded tunnels, and enough disease to kill careless adventurers slower than monsters would.</p>
+
+<p>Rayden almost died anyway.</p>
+
+<p>Not from monsters.</p>
+
+<p>From impatience.</p>
+
+<hr>
+
+<p>He charged too aggressively into a narrow tunnel system and triggered a nest collapse filled with plague-rats the size of hunting dogs.</p>
+
+<p>The creatures poured through darkness shrieking violently while diseased saliva sprayed across stone.</p>
+
+<p>Selene barely erected a barrier in time before the first wave hit them.</p>
+
+<p class="quote">
+“RAYDEN!”
+</p>
+
+<p>He ignored her entirely.</p>
+
+<p>Vossfang launched from his wrist with a metallic snap and buried into the tunnel ceiling.</p>
+
+<p>Rayden swung upward above the swarm, flipped across the narrow corridor, and dropped directly into the middle of the nest with both blades moving.</p>
+
+<p>Blood exploded across the walls.</p>
+
+<p>Rotting rat corpses burst apart beneath steel.</p>
+
+<p>One creature leapt onto his back and nearly tore out his throat before Selene drove a glowing combat knife through its skull from behind.</p>
+
+<p>Moments later both of them stood knee-deep in twitching corpses while sewer water turned pink around their boots.</p>
+
+<p>Selene stared at him breathing hard.</p>
+
+<p class="quote">
+“You are clinically insane.”
+</p>
+
+<p>Rayden wiped blood from his face.</p>
+
+<p class="quote">
+“We survived.”
+</p>
+
+<p class="quote">
+“That’s apparently your answer to everything.”
+</p>
+
+<p>He shrugged.</p>
+
+<p>It was.</p>
+
+<hr>
+
+<p>Months passed in contracts and violence.</p>
+
+<p>Goblin nests.</p>
+<p>Bandit camps.</p>
+<p>Escort routes through monster territory.</p>
+<p>Ruined crypts filled with corpse-eaters.</p>
+
+<p>Westreach’s surrounding frontier existed in permanent negotiation with death.</p>
+
+<p>Adventurers simply charged extra for entering the argument willingly.</p>
+
+<hr>
+
+<p>Rayden developed a reputation quickly.</p>
+
+<p>Not because he was strongest.</p>
+
+<p>Because he fought incorrectly.</p>
+
+<hr>
+
+<p>Most swordsmen kept distance from large monsters.</p>
+
+<p>Rayden climbed them.</p>
+
+<p>Ogre hunts became infamous after witnesses watched him fire Vossfang into a charging beast’s shoulder before launching himself upward across its body like a predator attacking larger prey.</p>
+
+<p>He blinded the creature by driving steel through one eye socket while hanging from the side of its skull.</p>
+
+<p>Another time he severed a swamp troll’s hamstring tendons before grappling beneath its torso and cutting upward through exposed arteries while the monster screamed itself to death in black water.</p>
+
+<p>Older adventurers began calling him:</p>
+
+<p class="quote">
+“The Wall-Climber.”
+</p>
+
+<p>Rayden hated the nickname immediately.</p>
+
+<p>Which guaranteed it survived.</p>
+
+<hr>
+
+<p>Selene became his opposite in battle.</p>
+
+<p>Where Rayden moved violently, she moved precisely.</p>
+
+<p>Where he advanced recklessly, she stabilized chaos around him.</p>
+
+<p>Barrier magic shimmered around collapsing formations seconds before impact.</p>
+<p>Healing light closed wounds mid-combat.</p>
+<p>Her blades appeared only when enemies broke too close.</p>
+
+<p>Together they became frighteningly synchronized.</p>
+
+<p>Rayden stopped needing verbal warnings.</p>
+<p>Selene already knew where he intended to move.</p>
+
+<p>Selene stopped fearing monster charges.</p>
+<p>Rayden was already intercepting them.</p>
+
+<p>They fought like two survivors trying desperately to keep the other alive.</p>
+
+<p>Because they were.</p>
+
+<hr>
+
+<p>Their first real payment went toward a room at an upper-floor tavern overlooking Westreach’s eastern canal district.</p>
+
+<p>The room was tiny.</p>
+
+<p>One bed.</p>
+<p>One stove.</p>
+<p>One cracked window.</p>
+
+<p>But it had heat.</p>
+
+<p>To Rayden, that still felt luxurious.</p>
+
+<hr>
+
+<p>The romance began quietly.</p>
+
+<p>Not through declarations.</p>
+
+<p>Through survival.</p>
+
+<hr>
+
+<p>Selene stitched wounds while Rayden slept half-conscious after contracts.</p>
+<p>Rayden sharpened her blades before difficult hunts without mentioning it.</p>
+<p>They shared meals because separate portions cost more.</p>
+<p>Shared blankets during winter contracts because frontier lodges froze after midnight.</p>
+
+<p>Sometimes Rayden woke during storms to find Selene asleep against his shoulder beside dying campfires while monster howls echoed through distant forests.</p>
+
+<p>And for the first time since Oaksmane, he no longer felt completely alone.</p>
+
+<hr>
+
+<p>The first time they slept together happened after the Blackroot Crypt contract.</p>
+
+<p>Neither discussed it beforehand.</p>
+
+<p>The dungeon had nearly killed them both.</p>
+
+<hr>
+
+<p>Blackroot Crypt sat beneath an abandoned monastery where failed burial rituals corrupted entire underground chambers.</p>
+
+<p>The dead there did not remain properly dead.</p>
+
+<p>Some fused together.</p>
+<p>Some crawled without lower bodies.</p>
+<p>Some still whispered through melted mouths while trapped inside walls of blackened flesh.</p>
+
+<p>Rayden never forgot the smell.</p>
+
+<p>Rot.</p>
+<p>Wet stone.</p>
+<p>Human organs left too long underground.</p>
+
+<hr>
+
+<p>Halfway through the expedition they discovered another adventurer party fused into the crypt interior itself.</p>
+
+<p>Living.</p>
+
+<p>Barely.</p>
+
+<p>One woman’s torso protruded from a wall of pulsing flesh while her lower body had already been absorbed entirely into the dungeon growth.</p>
+
+<p>Her eyes still moved.</p>
+
+<p>She begged Selene to kill her before the crypt finished consuming the rest.</p>
+
+<p>Selene cried afterward while cleaning blood from her hands.</p>
+
+<p>Rayden sat beside her silently for almost an hour.</p>
+
+<p>Neither spoke much on the journey home.</p>
+
+<hr>
+
+<p>That night rain hammered against the tavern windows while Selene sat shirtless beside the stove treating claw wounds across Rayden’s chest.</p>
+
+<p>Her fingers shook slightly.</p>
+
+<p>Not from fear.</p>
+
+<p>From delayed horror.</p>
+
+<p>Rayden noticed immediately.</p>
+
+<p class="quote">
+“You saved them.”
+</p>
+
+<p>Selene laughed bitterly.</p>
+
+<p class="quote">
+“I killed them.”
+</p>
+
+<p class="quote">
+“You freed them.”
+</p>
+
+<p>She looked at him then.</p>
+
+<p>Really looked.</p>
+
+<p>And suddenly the distance between them disappeared.</p>
+
+<hr>
+
+<p>The kiss tasted faintly of blood and cheap whiskey.</p>
+
+<p>Neither cared.</p>
+
+<p>People surviving violent worlds learned quickly not to postpone warmth unnecessarily.</p>
+
+<hr>
+
+<p>Afterward Selene rested against his chest while rain struck the windows softly beyond the candlelight.</p>
+
+<p>Rayden stared at the ceiling for a long time listening to her breathing.</p>
+
+<p>Eventually Selene traced the scars across his ribs quietly.</p>
+
+<p class="quote">
+“You never talk about Oaksmane.”
+</p>
+
+<p>Rayden became still.</p>
+
+<p>For several seconds she thought he might pull away.</p>
+
+<p>Instead he whispered:</p>
+
+<p class="quote">
+“There’s nothing there worth remembering.”
+</p>
+
+<p>Selene understood immediately that meant the opposite.</p>
+
+<hr>
+
+<p>Their first truly horrific contract arrived three months later.</p>
+
+<p>The guild called it:</p>
+
+<p class="quote">
+Mournhollow Sink.
+</p>
+
+<p>Low casualty estimate.</p>
+
+<p>Minor corruption signs.</p>
+
+<p>The report lied about all of it.</p>
+
+<hr>
+
+<p>The dungeon entrance sat beneath collapsed quarry ruins two days north of Westreach.</p>
+
+<p>The corruption began immediately after entry.</p>
+
+<p>The walls breathed.</p>
+<p>Organic veins pulsed beneath stone.</p>
+<p>Entire chambers smelled like infected wounds.</p>
+
+<p>Deeper below they found missing adventurers hanging cocooned from ceiling growths while parasitic organisms slowly hollowed them alive from the inside.</p>
+
+<p>Some victims were still conscious.</p>
+
+<p>One begged Rayden to cut off his own legs before the corruption spread higher.</p>
+
+<p>Another tried ripping his own face open to remove things moving beneath the skin.</p>
+
+<p>Selene nearly vomited.</p>
+
+<p>Rayden simply grew colder.</p>
+
+<hr>
+
+<p>The dungeon core itself resembled a gigantic pulsating heart fused into the cavern floor.</p>
+
+<p>When they destroyed it, the entire chamber began collapsing instantly.</p>
+
+<p>A corrupted crawler the size of a carriage erupted from beneath the floor and pinned Selene against falling stone before she could escape.</p>
+
+<p>The creature’s feeding limbs pierced through her side armor.</p>
+
+<p>Blood exploded across the cavern.</p>
+
+<p>Selene screamed.</p>
+
+<hr>
+
+<p>Rayden moved before thought existed.</p>
+
+<p>Vossfang launched.</p>
+
+<p>The chain wrapped around a hanging rock column above the monster.</p>
+
+<p>Rayden used the momentum violently, swinging through the collapsing cavern at full speed before driving both blades through the creature’s skull hard enough to split bone apart.</p>
+
+<p>The impact snapped one sword completely.</p>
+
+<p>Black blood sprayed across his face.</p>
+
+<p>The dying creature crashed sideways while Rayden dragged Selene free moments before the ceiling collapsed behind them.</p>
+
+<hr>
+
+<p>They escaped the dungeon half-buried in blood, dust, and monster remains.</p>
+
+<p>Selene collapsed outside the entrance from blood loss while rain poured over the ruined quarry.</p>
+
+<p>Rayden knelt beside her breathing hard enough to shake.</p>
+
+<p>For several terrifying seconds he genuinely believed she would die there.</p>
+
+<p>Something inside him nearly broke again.</p>
+
+<p>Selene noticed.</p>
+
+<p>Even half-conscious, she managed a weak smile.</p>
+
+<p class="quote">
+“You look worse than I do.”
+</p>
+
+<p>Rayden grabbed her hand hard enough to hurt.</p>
+
+<p class="quote">
+“Don’t.”
+</p>
+
+<p>Just one word.</p>
+
+<p>But she understood everything inside it.</p>
+
+<hr>
+
+<p>By fifteen, Rayden and Selene had become recognized names within Westreach’s lower and mid-rank adventurer circles.</p>
+
+<p>Not famous yet.</p>
+
+<p>But known.</p>
+
+<p>The Wall-Climber and the Lantern Veil.</p>
+
+<p>The violent swordsman who climbed monsters.</p>
+<p>The healer who fought beside the frontlines instead of behind them.</p>
+
+<p>Together they survived contracts many older adventurers refused entirely.</p>
+
+<hr>
+
+<p>And slowly, dangerously...</p>
+
+<p>Hope returned to Rayden Cale.</p>
+
+<p>Which made the future crueler than either of them understood yet.</p>
+
+
+
+<hr>
+<!-- SECTION VII ENDS -->
+<!-- SECTION VIII START -->
+ 
+
+<h2 id="section-8">VIII. Dawnpiercer</h2>
+<p class="era">Sundered Age — Year 1036</p>
+<hr>
+
+<p>The rumors began with screams beneath stone.</p>
+
+<hr>
+
+<p>Three mining crews vanished near the northern ridge roads outside Westreach after a winter earthquake collapsed part of the old mountain basin.</p>
+
+<p>At first people blamed cave-ins.</p>
+
+<p>Then the bodies started returning.</p>
+
+<p>Not alive.</p>
+
+<p>Not entirely dead either.</p>
+
+<hr>
+
+<p>The first survivor stumbled into Westreach at dawn wrapped in blood-soaked priest cloth with both hands burned black to the wrist.</p>
+
+<p>Witnesses claimed he kept repeating the same sentence over and over until his throat failed.</p>
+
+<p class="quote">
+“The guardians still pray.”
+</p>
+
+<p>He died before sunset.</p>
+
+<hr>
+
+<p>Two more adventurer parties disappeared afterward.</p>
+
+<p>The guild officially classified the newly exposed ruins as:</p>
+
+<p class="quote">
+HOLLOWWATCH
+</p>
+
+<p>Ancient fortress-city.</p>
+<p>Unknown origin.</p>
+<p>Extreme casualty risk.</p>
+
+<p>The reward tripled within six days.</p>
+
+<hr>
+
+<p>Elira Voss refused the contract immediately.</p>
+
+<p>That alone frightened Selene.</p>
+
+<hr>
+
+<p>Rain hammered against the lodge roof while Elira stared silently at the Hollowwatch request spread across the table.</p>
+
+<p>The old adventurer’s expression darkened more with every line she read.</p>
+
+<p class="quote">
+“Holy ruin.”<br><br>
+“Underground cathedral structure.”<br><br>
+“Guardian architecture.”<br><br>
+“Corruption traces.”
+</p>
+
+<p>Elira dropped the parchment.</p>
+
+<p class="quote">
+“That combination kills people.”
+</p>
+
+<hr>
+
+<p>Rayden leaned against the wall nearby cleaning Vossfang carefully.</p>
+
+<p class="quote">
+“Then why’s the guild still sending parties?”
+</p>
+
+<p>Elira looked directly at him.</p>
+
+<p class="quote">
+“Because desperate people will crawl into hell if someone promises enough coin.”
+</p>
+
+<p>Rayden said nothing.</p>
+
+<p>Which told Elira exactly what he was thinking.</p>
+
+<hr>
+
+<p class="quote">
+“No.”
+</p>
+
+<p>Rayden looked up.</p>
+
+<p class="quote">
+“You didn’t even ask.”
+</p>
+
+<p class="quote">
+“I don’t need to.”<br><br>
+“You’ve had that look since the announcement.”
+</p>
+
+<p>Selene quietly watched both of them from beside the stove.</p>
+
+<p>She knew the expression too.</p>
+
+<p>Rayden wore it whenever strength appeared somewhere dangerous enough to possibly kill him.</p>
+
+<hr>
+
+<p class="quote">
+“We’re not prepared for something like Hollowwatch,”
+</p>
+
+<p>Selene said carefully.</p>
+
+<p>Rayden finally answered.</p>
+
+<p class="quote">
+“Then we prepare.”
+</p>
+
+<p>Elira slammed her cup onto the table hard enough to crack wood.</p>
+
+<p class="quote">
+“No.”<br><br>
+“You survive.”<br><br>
+“There’s a difference.”
+</p>
+
+<hr>
+
+<p>Three days later Rayden accepted the contract anyway.</p>
+
+<hr>
+
+<p>The recruitment happened inside the Westreach Guild Hall beneath torchlight and alcohol smoke.</p>
+
+<p>The moment Hollowwatch’s reward reached upper silver-tier range, experienced adventurers started pretending they had never been afraid of it.</p>
+
+<p>Fear always became negotiable when enough money entered the conversation.</p>
+
+<hr>
+
+<p>The first to join was Dorun Graymaw.</p>
+
+<p>A dwarf built like collapsed stone walls.</p>
+
+<p>Forty-one years old.</p>
+<p>Heavy shield specialist.</p>
+<p>Veteran tunnel fighter.</p>
+
+<p>His beard carried iron rings etched with old clan marks, and his left ear was missing entirely from some forgotten battlefield.</p>
+
+<p>Dorun watched Rayden during recruitment for nearly a full minute before speaking.</p>
+
+<p class="quote">
+“You move like a man trying to outrun death itself.”
+</p>
+
+<p>Rayden shrugged.</p>
+
+<p class="quote">
+“Hasn’t caught me yet.”
+</p>
+
+<p>Dorun laughed once.</p>
+
+<p class="quote">
+“Aye.”<br><br>
+“That’s usually what the dangerous ones say.”
+</p>
+
+<hr>
+
+<p>Nyssa Veil joined next.</p>
+
+<p>Nightborn Human.</p>
+<p>Scout.</p>
+<p>Trap specialist.</p>
+
+<p>Her black leather gear carried more hidden knives than visible ones, and silver tattoos curled beneath one eye like spilled ink.</p>
+
+<p>Nyssa smiled constantly.</p>
+
+<p>Never sincerely.</p>
+
+<p class="quote">
+“Hollowwatch pays enough that I’m willing to risk ancient curses.”<br><br>
+“Not enough that I’m willing to trust optimistic people.”
+</p>
+
+<p>Her eyes drifted toward Rayden.</p>
+
+<p class="quote">
+“You look extremely optimistic about violence.”
+</p>
+
+<p>Selene answered before Rayden could.</p>
+
+<p class="quote">
+“He’s worse than that.”
+</p>
+
+<hr>
+
+<p>The third recruit drew attention immediately.</p>
+
+<p>Moon Elf.</p>
+
+<p>Tall.</p>
+<p>Silver-haired.</p>
+<p>Elegant in the way ancient forests felt elegant before something killed you inside them.</p>
+
+<p>Tharel Ethen carried a rune-carved longbow across his back and spoke with the calm precision of someone educated far beyond Westreach frontier life.</p>
+
+<p>Several humans inside the guild stared openly.</p>
+
+<p>Moon Elves rarely left eastern territories willingly.</p>
+
+<hr>
+
+<p>Tharel studied the Hollowwatch contract quietly before speaking.</p>
+
+<p class="quote">
+“These symbols are pre-Sundered.”<br><br>
+“Older than most surviving kingdoms.”
+</p>
+
+<p>Nyssa raised an eyebrow.</p>
+
+<p class="quote">
+“You can read them?”
+</p>
+
+<p class="quote">
+“Partially.”
+</p>
+
+<p>His eyes shifted toward Rayden briefly.</p>
+
+<p class="quote">
+“And if the rumors are accurate...”<br><br>
+“Something sacred still sleeps beneath that ruin.”
+</p>
+
+<hr>
+
+<p>The final recruit arrived carrying an axe larger than some tavern tables.</p>
+
+<p>Korr Vash.</p>
+
+<p>Orc.</p>
+
+<p>Thirty-four years old.</p>
+<p>Frontline berserker.</p>
+
+<p>Several adventurers moved away instinctively when he approached.</p>
+
+<p>Korr ignored them.</p>
+
+<p>His armor was old battlefield steel repaired dozens of times, and ritual scars covered both arms beneath sleeveless leather plating.</p>
+
+<p>He sat heavily beside Rayden.</p>
+
+<p class="quote">
+“You’re the climber.”
+</p>
+
+<p>Rayden nodded once.</p>
+
+<p class="quote">
+“You’re the orc.”
+</p>
+
+<p>Korr stared at him for two seconds.</p>
+
+<p>Then laughed loud enough to shake mugs nearby.</p>
+
+<p class="quote">
+“I like him.”
+</p>
+
+<hr>
+
+<p>The journey north took four days through abandoned military roads swallowed slowly by snow and dead forest.</p>
+
+<p>As they traveled, the world around Hollowwatch changed subtly.</p>
+
+<p>Birdsong disappeared first.</p>
+
+<p>Then animal tracks.</p>
+
+<p>Even the wind felt quieter there.</p>
+
+<p>Like the mountain itself was holding breath.</p>
+
+<hr>
+
+<p>They found the first corpse two miles from the ruins.</p>
+
+<p>An adventurer frozen against a tree trunk with both hands clasped together in prayer.</p>
+
+<p>The flesh beneath his armor had turned black.</p>
+
+<p>Holy symbols were carved into his own chest repeatedly using broken fingernails.</p>
+
+<p>Selene crouched beside the body silently.</p>
+
+<p class="quote">
+“He did this to himself.”
+</p>
+
+<p>Tharel’s expression darkened.</p>
+
+<p class="quote">
+“Something inside Hollowwatch breaks people before it kills them.”
+</p>
+
+<hr>
+
+<p>The ruins appeared at dusk.</p>
+
+<p>And every member of the party stopped speaking immediately.</p>
+
+<hr>
+
+<p>Hollowwatch was enormous.</p>
+
+<p>Half-buried beneath collapsed mountain stone and centuries of snow.</p>
+
+<p>Broken cathedral towers rose from the earth like gravestones for forgotten gods.</p>
+<p>Gigantic statues of armored knights lined the outer approach.</p>
+
+<p>Most no longer possessed heads.</p>
+
+<p>The remaining ones stared toward the mountain entrance with expressions twisted by time and erosion into something mournful.</p>
+
+<p>Ancient banners still hung frozen against shattered walls.</p>
+
+<p>No wind moved them.</p>
+
+<hr>
+
+<p class="quote">
+“By the old gods...” 
+</p>
+
+<p>Dorun whispered.</p>
+
+<p>Korr tightened his grip on the axe handle slowly.</p>
+
+<p>Even Nyssa stopped smiling.</p>
+
+<hr>
+
+<p>The entrance descended beneath a collapsed holy courtyard illuminated faintly by pale blue fire burning from ancient wall braziers that should not still exist.</p>
+
+<p>Yet they did.</p>
+
+<p>Something below remained alive enough to maintain them.</p>
+
+<hr>
+
+<p>Inside Hollowwatch, silence became oppressive.</p>
+
+<p>Not natural silence.</p>
+
+<p>Buried silence.</p>
+
+<p>The kind found inside tombs large enough to become cities.</p>
+
+<hr>
+
+<p>The deeper halls resembled a dead empire preserved beneath stone.</p>
+
+<p>Massive prayer chambers.</p>
+<p>Broken stained glass depicting armored guardians.</p>
+<p>Ancient murals showing soldiers fighting towering shadow-like creatures beneath blackened skies.</p>
+
+<p>Rayden noticed something unsettling immediately.</p>
+
+<p>The warriors in those murals did not fight for conquest.</p>
+
+<p>They fought protecting civilians behind them.</p>
+
+<p>Shield walls.</p>
+<p>Evacuations.</p>
+<p>Last stands.</p>
+
+<p>Hollowwatch had been built for defense.</p>
+
+<hr>
+
+<p>The first undead attacked near the lower reliquary halls.</p>
+
+<p>Former guardians.</p>
+
+<p>Still wearing ancient silver armor fused directly into rotting flesh.</p>
+
+<p>Their eyes glowed faint gold beneath cracked helms while broken prayers escaped their ruined throats.</p>
+
+<p class="quote">
+“...hold...”<br><br>
+“...the line...”<br><br>
+“...protect...”
+</p>
+
+<p>Then they charged.</p>
+
+<hr>
+
+<p>The battle exploded violently.</p>
+
+<p>Dorun slammed forward first, shield crashing against ancient steel hard enough to shake the corridor.</p>
+
+<p>Korr’s axe split one guardian nearly in half from shoulder to hip, spraying blackened organs across cathedral stone.</p>
+
+<p>Tharel’s glowing arrows punched through undead eye sockets with surgical precision.</p>
+
+<p>Nyssa vanished into shadows entirely before reappearing behind another guardian to drive twin blades between exposed armor gaps.</p>
+
+<p>And Rayden...</p>
+
+<p>Rayden climbed.</p>
+
+<hr>
+
+<p>Vossfang launched upward.</p>
+
+<p>The chain hooked around a hanging cathedral support beam as Rayden swung over the charging undead formation before dropping feet-first onto one guardian’s shoulders.</p>
+
+<p>Steel plunged downward through the helmet seam.</p>
+
+<p>The impact shattered ancient vertebrae.</p>
+
+<p>Before the corpse fully fell, Rayden already launched himself toward the next target.</p>
+
+<p>Movement.</p>
+<p>Momentum.</p>
+<p>Violence.</p>
+
+<p>Elira’s training lived inside every strike.</p>
+
+<hr>
+
+<p>After the battle, Selene treated wounds near a broken chapel while snow drifted silently through collapsed ceiling arches overhead.</p>
+
+<p>Korr sat nearby cleaning gore from his axe.</p>
+
+<p class="quote">
+“You fight angry.”
+</p>
+
+<p>Rayden looked up.</p>
+
+<p>Korr shrugged.</p>
+
+<p class="quote">
+“Not criticism.”<br><br>
+“Observation.”
+</p>
+
+<p>For a moment neither spoke.</p>
+
+<p>Then the orc added quietly:</p>
+
+<p class="quote">
+“Angry men survive battles.”<br><br>
+“Sometimes.”<br><br>
+“They rarely survive peace.”
+</p>
+
+<p>Rayden remembered that sentence years later.</p>
+
+<hr>
+
+<p>That night the party camped inside a ruined prayer hall beneath shattered celestial murals.</p>
+
+<p>The fire burned low.</p>
+
+<p>Outside the chamber, distant chanting echoed through Hollowwatch’s lower depths.</p>
+
+<p>No living voices created it.</p>
+
+<p>Yet it continued anyway.</p>
+
+<hr>
+
+<p>Selene sat beside Rayden beneath shared blankets while the others slept nearby.</p>
+
+<p>The cold made their breaths visible.</p>
+
+<p>For once Rayden looked uncertain.</p>
+
+<p>Not afraid exactly.</p>
+
+<p>Something worse.</p>
+
+<p>Haunted.</p>
+
+<p>Selene noticed immediately.</p>
+
+<p class="quote">
+“You can still leave.”
+</p>
+
+<p>Rayden stared toward the darkness beyond the chamber.</p>
+
+<p class="quote">
+“No.”
+</p>
+
+<p class="quote">
+“Why?”
+</p>
+
+<p>Long silence followed.</p>
+
+<p>Finally:</p>
+
+<p class="quote">
+“Because if strength like this exists...”<br><br>
+“I need it before someone worse finds it first.”
+</p>
+
+<p>Selene leaned against him quietly afterward.</p>
+
+<p>Neither noticed Tharel awake nearby listening silently from the shadows.</p>
+
+
+<hr>
+
+<p>The deeper levels of Hollowwatch had stopped resembling a fortress.</p>
+
+<p>Now they resembled a wound.</p>
+
+<hr>
+
+<p>The architecture changed first.</p>
+
+<p>Smooth cathedral stone gradually disappeared beneath black organic growth spreading across walls and pillars like diseased muscle tissue.</p>
+
+<p>Veins pulsed slowly beneath the surfaces.</p>
+<p>Breathing sounds echoed through corridors with no visible source.</p>
+<p>Ancient holy statues had fused into the flesh itself — stone faces half-submerged inside living corruption while frozen expressions screamed silently from the walls.</p>
+
+<p>The deeper they descended, the warmer Hollowwatch became.</p>
+
+<p>Like walking into the throat of something enormous.</p>
+
+<hr>
+
+<p>Nyssa stopped joking entirely.</p>
+
+<p>Even Korr’s usual calm confidence had sharpened into tension.</p>
+
+<p>Only Tharel appeared unsurprised.</p>
+
+<p>The Moon Elf studied the corrupted walls with growing dread.</p>
+
+<p class="quote">
+“This ruin was not consumed.”<br><br>
+“It was infected.”
+</p>
+
+<p>Rayden looked toward him.</p>
+
+<p class="quote">
+“What’s the difference?”
+</p>
+
+<p>Tharel’s silver eyes darkened.</p>
+
+<p class="quote">
+“One dies naturally.”<br><br>
+“The other spreads.”
+</p>
+
+<hr>
+
+<p>They found the next adventurer party near the lower sanctum stairs.</p>
+
+<p>Or parts of them.</p>
+
+<hr>
+
+<p>The corpses had become embedded into the walls themselves.</p>
+
+<p>Not hanging.</p>
+
+<p>Absorbed.</p>
+
+<p>Arms protruded from pulsating flesh.</p>
+<p>Faces remained half-visible beneath translucent organic membrane.</p>
+<p>One man’s jaw still moved weakly despite most of his torso already disappearing inside the living wall growth.</p>
+
+<p>His eyes rolled desperately toward the party as they approached.</p>
+
+<p class="quote">
+“Please...” 
+</p>
+
+<p>Blood bubbled from his mouth.</p>
+
+<p class="quote">
+“Please don’t leave me awake.”
+</p>
+
+<p>Selene froze.</p>
+
+<p>Nyssa quietly looked away.</p>
+
+<p>Dorun lowered his shield slowly.</p>
+
+<p>Korr stepped forward without hesitation and buried his axe through the man’s skull in one clean strike.</p>
+
+<p>Silence followed.</p>
+
+<p>The wall continued pulsing afterward.</p>
+
+<hr>
+
+<p class="quote">
+“That thing’s learning,”
+</p>
+
+<p>Nyssa whispered.</p>
+
+<p>She pointed toward the organic growth.</p>
+
+<p>Human faces were forming beneath the flesh now.</p>
+
+<p>Dozens of them.</p>
+
+<p>Moving slightly.</p>
+
+<hr>
+
+<p>Rayden’s stomach tightened.</p>
+
+<p>For the first time since Oaksmane, fear returned properly.</p>
+
+<p>Not fear of death.</p>
+
+<p>Fear of becoming trapped inside something worse.</p>
+
+<hr>
+
+<p>The lower sanctum entrance stood beyond a massive circular chamber lined with gigantic knight statues kneeling toward a sealed cathedral gate.</p>
+
+<p>Ancient runes glowed faint gold across the floor.</p>
+
+<p>Most had already been partially corrupted by black vein-like growth spreading outward from beneath the gate itself.</p>
+
+<p>Tharel knelt near the symbols immediately.</p>
+
+<p>His expression changed the moment he translated them.</p>
+
+<p class="quote">
+“Guardians of the Final Dawn.”<br><br>
+“Those who stand here stand for all.”
+</p>
+
+<p>Rayden stared toward the sealed doors.</p>
+
+<p class="quote">
+“Sounds dramatic.”
+</p>
+
+<p>Tharel looked at him sharply.</p>
+
+<p class="quote">
+“You don’t understand.”<br><br>
+“This was never a dungeon.”<br><br>
+“It was a fortress designed to hold something back.”
+</p>
+
+<hr>
+
+<p>The cathedral gate opened by itself.</p>
+
+<p>Slowly.</p>
+
+<p>Stone grinding against stone echoed through the chamber like thunder.</p>
+
+<p>And something inside Hollowwatch awakened.</p>
+
+<hr>
+
+<p>The screaming started immediately afterward.</p>
+
+<p>Not human screams.</p>
+
+<p>Metallic.</p>
+
+<p>The knight statues surrounding the chamber began moving.</p>
+
+<p>Ancient stone cracked apart as armored guardian constructs tore themselves free from centuries of stillness.</p>
+
+<p>Golden light burned behind empty helmets.</p>
+
+<p>Gigantic tower shields slammed into position across the chamber.</p>
+
+<p>Ancient halberds lowered together.</p>
+
+<p>Then the guardians charged.</p>
+
+<hr>
+
+<p>The battle became chaos instantly.</p>
+
+<p>Dorun met the first construct head-on with a shield impact violent enough to shake the floor beneath them.</p>
+
+<p>Korr’s axe smashed into ancient armor, splitting one guardian’s shoulder apart in an explosion of sparks and broken stone.</p>
+
+<p>Nyssa disappeared into the moving battlefield entirely while Tharel’s enchanted arrows punched glowing holes through construct joints.</p>
+
+<p>And still more kept coming.</p>
+
+<hr>
+
+<p>Rayden launched upward using Vossfang.</p>
+
+<p>The chain hooked around a broken cathedral pillar as he swung over the advancing line before crashing feet-first into a guardian’s upper torso.</p>
+
+<p>The impact cracked armor.</p>
+
+<p>Rayden grappled onto the construct’s shoulders instantly, driving blades repeatedly into exposed rune seams while the massive guardian tried throwing him loose.</p>
+
+<p>Stone fists shattered pillars around them.</p>
+
+<p>Rayden kept climbing.</p>
+
+<hr>
+
+<p>One construct reached Selene before anyone else could intercept.</p>
+
+<p>Its halberd slammed downward hard enough to crater stone.</p>
+
+<p>Selene barely avoided death by erecting a barrier at the final second.</p>
+
+<p>The impact shattered the spell instantly.</p>
+
+<p>The guardian raised its weapon again.</p>
+
+<p>Korr intercepted it.</p>
+
+<hr>
+
+<p>The orc hit the construct like a siege weapon.</p>
+
+<p>His axe tore through one armored knee while roaring battle chants in a language none of them understood.</p>
+
+<p>The guardian staggered.</p>
+
+<p>Korr looked over his shoulder toward Selene.</p>
+
+<p class="quote">
+“MOVE!”
+</p>
+
+<p>Then three more constructs crashed into him simultaneously.</p>
+
+<hr>
+
+<p>The corridor entrance behind them collapsed.</p>
+
+<p>Dust exploded through the chamber.</p>
+
+<p>Korr disappeared beneath stone guardians and falling debris together.</p>
+
+<p>For several seconds his axe continued swinging through the dust cloud.</p>
+
+<p>Then the movement stopped.</p>
+
+<hr>
+
+<p>Silence hit Rayden harder than the battle itself.</p>
+
+<p>Another person gone.</p>
+
+<p>Another corpse buried beneath stone.</p>
+
+<p>Another failure.</p>
+
+<p>Something ugly moved inside him afterward.</p>
+
+<hr>
+
+<p class="quote">
+“RAYDEN!”
+</p>
+
+<p>Selene’s scream snapped him back.</p>
+
+<p>A guardian’s halberd nearly removed his head before he twisted aside.</p>
+
+<p>The blade shaved across his shoulder instead, tearing flesh open deep enough to expose bone.</p>
+
+<p>Pain exploded through his body.</p>
+
+<p>Rayden answered with violence.</p>
+
+<hr>
+
+<p>Vossfang launched again.</p>
+
+<p>The chain wrapped around the guardian’s neck as Rayden used the momentum to swing behind it before locking both legs around the construct’s upper torso.</p>
+
+<p>Then he drove a dagger directly into the glowing core beneath its helmet.</p>
+
+<p>The explosion of holy light blasted him backward across the chamber.</p>
+
+<p>Rayden crashed against cathedral stone hard enough to crack ribs again.</p>
+
+<p>And still he stood.</p>
+
+<hr>
+
+<p>Because standing was what survivors did.</p>
+
+<hr>
+
+<p>After the battle, only five remained.</p>
+
+<p>Korr Vash did not rise again.</p>
+
+<p>Dorun quietly removed the orc’s clan talisman from the collapsed rubble while Selene treated wounds nearby.</p>
+
+<p>Nobody spoke for several minutes.</p>
+
+<p>Finally Nyssa muttered:</p>
+
+<p class="quote">
+“I hate heroic people.”
+</p>
+
+<p>Tharel answered softly.</p>
+
+<p class="quote">
+“No.”<br><br>
+“You hate surviving them.”
+</p>
+
+<hr>
+
+<p>The cathedral beyond the gate waited in absolute silence afterward.</p>
+
+<p>And somewhere deep below Hollowwatch...</p>
+
+<p>Something ancient was still watching Rayden Cale approach.</p>
+
+<hr>
+
+<p>The cathedral of Hollowwatch was still alive.</p>
+
+<hr>
+
+<p>The realization came slowly.</p>
+
+<p>Not through movement.</p>
+<p>Not through sound.</p>
+
+<p>Through pressure.</p>
+
+<p>The deeper they descended beyond the sanctum gate, the more every corridor felt aware of them.</p>
+
+<p>The walls pulsed faintly beneath ancient stone.</p>
+<p>The air smelled of incense mixed with blood rot.</p>
+<p>Broken prayer bells rang somewhere far below despite no wind existing underground.</p>
+
+<p>And beneath all of it...</p>
+
+<p>Something breathed.</p>
+
+<hr>
+
+<p>The final cathedral chamber dwarfed everything above it.</p>
+
+<p>Gigantic pillars vanished upward into darkness beyond sight.</p>
+<p>Ancient holy banners hung in tatters from impossible heights.</p>
+<p>Golden braziers still burned around the chamber perimeter after centuries underground.</p>
+
+<p>At the center stood a colossal armored figure kneeling before a massive stone altar.</p>
+
+<p>Its sword remained planted point-first into the floor.</p>
+<p>Its shield rested beside it.</p>
+
+<p>Neither had rusted.</p>
+
+<hr>
+
+<p>Tharel stopped walking immediately.</p>
+
+<p>His face had gone pale.</p>
+
+<p class="quote">
+“By the stars...”
+</p>
+
+<p>Even Dorun whispered quieter now.</p>
+
+<p class="quote">
+“That’s no construct.”
+</p>
+
+<p>No.</p>
+
+<p>It wasn’t.</p>
+
+<hr>
+
+<p>The kneeling figure wore ancient silver-white armor scarred by battles older than surviving kingdoms.</p>
+
+<p>Great tears split the chestplate.</p>
+<p>Black corruption veins crawled beneath portions of the metal.</p>
+<p>Yet golden light still pulsed weakly through cracked rune channels across the armor.</p>
+
+<p>The thing kneeling before the altar had once been human.</p>
+
+<p>Or close enough.</p>
+
+<hr>
+
+<p>Then the cathedral doors behind them slammed shut.</p>
+
+<p>Every brazier erupted brighter instantly.</p>
+
+<p>And the giant knight opened its eyes.</p>
+
+<hr>
+
+<p>Gold.</p>
+
+<p>Pure burning gold.</p>
+
+<p>The pressure inside the cathedral became unbearable.</p>
+
+<p>Selene nearly collapsed immediately.</p>
+<p>Nyssa staggered backward.</p>
+<p>Dorun raised his shield instinctively.</p>
+
+<p>Only Tharel remained perfectly still.</p>
+
+<p>Because the Moon Elf understood something terrifying before the others did.</p>
+
+<p class="quote">
+“It’s testing us.”
+</p>
+
+<hr>
+
+<p>The knight slowly stood.</p>
+
+<p>The sound echoed across the cathedral like mountains shifting.</p>
+
+<p>Nearly twelve feet tall.</p>
+<p>Armor glowing faintly beneath corruption.</p>
+<p>The gigantic shield alone looked larger than carriage doors.</p>
+
+<p>And still the ancient guardian carried itself with exhaustion rather than aggression.</p>
+
+<p>Like something that had stood watch too long.</p>
+
+<hr>
+
+<p>The guardian’s voice rolled through the cathedral.</p>
+
+<p>Not spoken aloud.</p>
+
+<p>Felt.</p>
+
+<p class="quote">
+WHO COMES BEFORE THE FINAL DAWN?
+</p>
+
+<hr>
+
+<p>No one answered immediately.</p>
+
+<p>Because every instinct inside them screamed to run.</p>
+
+<p>Rayden stepped forward anyway.</p>
+
+<p class="quote">
+“Adventurers.”
+</p>
+
+<p>The guardian’s burning gaze fixed onto him.</p>
+
+<p class="quote">
+FOR WHAT PURPOSE?
+</p>
+
+<p>Rayden opened his mouth.</p>
+
+<p>Stopped.</p>
+
+<p>Because suddenly he realized he did not fully know anymore.</p>
+
+<p>Strength?</p>
+<p>Survival?</p>
+<p>Revenge?</p>
+
+<p>The answer tangled inside him.</p>
+
+<hr>
+
+<p>Black corruption spread further across the guardian’s armor.</p>
+
+<p>The cathedral trembled violently.</p>
+
+<p class="quote">
+THE UNWORTHY SHALL NOT CLAIM THE DAWN.
+</p>
+
+<p>Then the guardian attacked.</p>
+
+<hr>
+
+<p>The first shield impact shattered stone across half the cathedral.</p>
+
+<p>Dorun intercepted barely in time.</p>
+
+<p>The dwarf’s shield screamed against the collision while blood exploded from his nose instantly.</p>
+
+<p class="quote">
+“MOVE!”
+</p>
+
+<p>The party scattered as the guardian’s greatsword crashed downward next.</p>
+
+<p>The strike split the cathedral floor open completely.</p>
+
+<p>Golden fire erupted through the fracture lines.</p>
+
+<hr>
+
+<p>Rayden launched upward immediately.</p>
+
+<p>Vossfang fired toward the cathedral rafters.</p>
+
+<p>The chain snapped tight as he swung across the chamber directly toward the guardian’s upper body.</p>
+
+<p>Steel collided against ancient armor.</p>
+
+<p>Sparks exploded.</p>
+
+<p>The guardian barely reacted.</p>
+
+<p>One massive hand seized Rayden mid-air and hurled him through a stone pillar hard enough to collapse it entirely.</p>
+
+<p>Pain detonated through his ribs.</p>
+
+<p>Dust swallowed everything.</p>
+
+<hr>
+
+<p>Selene’s barrier magic intercepted the next sword strike moments before Dorun died.</p>
+
+<p>The barrier shattered instantly.</p>
+
+<p>Selene coughed blood onto the cathedral floor.</p>
+
+<p>Nyssa dragged her backward before the guardian’s shield smashed downward where they had stood.</p>
+
+<p>Stone exploded.</p>
+
+<p>Entire sections of cathedral flooring collapsed into darkness below.</p>
+
+<hr>
+
+<p>Tharel’s arrows struck glowing seams beneath the guardian’s armor repeatedly.</p>
+
+<p>For the first time, the ancient knight staggered slightly.</p>
+
+<p>Golden light flickered.</p>
+
+<p>Then corruption surged harder through its body.</p>
+
+<p>The guardian roared.</p>
+
+<p>And suddenly the cathedral changed.</p>
+
+<hr>
+
+<p>Rayden’s surroundings vanished instantly.</p>
+
+<hr>
+
+<p>Fire.</p>
+
+<p>Screaming.</p>
+
+<p>Smoke.</p>
+
+<p>The orphanage burned around him again.</p>
+
+<p>Children cried for help somewhere behind collapsing walls.</p>
+<p>Marianne screamed through the flames.</p>
+<p>Caelum vanished into smoke.</p>
+
+<p>Rayden staggered backward breathing hard.</p>
+
+<p class="quote">
+“No...”
+</p>
+
+<hr>
+
+<p>The vision shifted.</p>
+
+<p>Snow.</p>
+
+<p>Execution platform.</p>
+
+<p>Garrick kneeling beside the block while blood stained winter stone.</p>
+
+<p>Halbrecht smiling from above.</p>
+
+<p>The axe rising.</p>
+
+<p>Again.</p>
+
+<p>Again.</p>
+
+<p>Again.</p>
+
+<p>Every failure.</p>
+<p>Every death.</p>
+<p>Every helpless moment returned together.</p>
+
+<hr>
+
+<p>The guardian’s voice echoed through the nightmare.</p>
+
+<p class="quote">
+WHY DO YOU SEEK STRENGTH?
+</p>
+
+<hr>
+
+<p>Rayden fell to one knee.</p>
+
+<p>His hands shook violently.</p>
+
+<p>Because part of him knew the answer already.</p>
+
+<p>Hatred.</p>
+
+<p>He wanted power so monsters like Halbrecht could never exist safely again.</p>
+
+<p>So nobody could ever burn children and survive afterward.</p>
+
+<p>So nobody could ever execute people like Garrick while crowds watched helplessly.</p>
+
+<p>The hatred inside him was real.</p>
+
+<p>Ancient.</p>
+
+<p>Growing.</p>
+
+<hr>
+
+<p>But beneath it...</p>
+
+<p>Something else still lived.</p>
+
+<hr>
+
+<p>Rayden saw Selene smiling beside campfires.</p>
+<p>Elira teaching him how to survive.</p>
+<p>Korr holding the corridor.</p>
+<p>Marianne shielding children.</p>
+<p>Garrick saying:</p>
+
+<p class="quote">
+“Know what you’re protecting.”
+</p>
+
+<hr>
+
+<p>The fire around him faded slowly.</p>
+
+<p>Rayden stood.</p>
+
+<p>His breathing steadied.</p>
+
+<p>And finally he answered.</p>
+
+<p class="quote">
+“So nobody helpless stands alone again.”
+</p>
+
+<hr>
+
+<p>The vision shattered instantly.</p>
+
+<p>Rayden returned to the cathedral mid-battle.</p>
+
+<p>Just in time to see the guardian’s blade descending toward Selene.</p>
+
+<hr>
+
+<p>He moved without hesitation.</p>
+
+<p>Vossfang launched.</p>
+
+<p>The chain wrapped around the guardian’s sword arm as Rayden used the momentum violently, swinging directly upward across the giant knight’s body.</p>
+
+<p>He climbed.</p>
+
+<p>Exactly as Elira taught him.</p>
+
+<p>Stone-shattering force missed Selene by inches.</p>
+
+<p>Rayden sprinted across the guardian’s shoulders while holy fire exploded around them.</p>
+
+<p>The ancient knight tried grabbing him.</p>
+
+<p>Too slow.</p>
+
+<p>Rayden drove both blades directly into the corruption-vein spreading across the guardian’s neck.</p>
+
+<p>Golden light erupted.</p>
+
+<p>The guardian staggered violently.</p>
+
+<p>Tharel’s final enchanted arrow struck the exposed core beneath the helmet seam at the exact same moment.</p>
+
+<p>The cathedral exploded with blinding radiance.</p>
+
+<hr>
+
+<p>Silence followed.</p>
+
+<hr>
+
+<p>The guardian fell to one knee slowly.</p>
+
+<p>The corruption retreated from portions of its armor.</p>
+
+<p>And for the first time...</p>
+
+<p>The ancient knight looked peaceful.</p>
+
+<hr>
+
+<p>The massive figure reached toward the altar beside it.</p>
+
+<p>Golden light spread across the cathedral floor.</p>
+
+<p>Then the guardian placed one hand over its chest.</p>
+
+<p>Like a soldier saluting another.</p>
+
+<p class="quote">
+THE DAWN REMEMBERS.
+</p>
+
+<p>The guardian collapsed afterward.</p>
+
+<p>Stillness finally consumed Hollowwatch.</p>
+
+<hr>
+
+<p>At the center of the altar rested the relic.</p>
+
+<hr>
+
+<p>Dawnpiercer.</p>
+
+<p>A silver-white greatblade surrounded by faint golden runes that pulsed like a heartbeat beneath the steel.</p>
+
+<p>Beside it rested a massive shield scarred by ancient war damage yet somehow untouched by time.</p>
+
+<p>Even dormant, the weapon radiated presence.</p>
+
+<p>Not conquest.</p>
+
+<p>Protection.</p>
+
+<hr>
+
+<p>Rayden approached slowly.</p>
+
+<p>The moment his hand touched the sword hilt, the cathedral erupted with golden light.</p>
+
+<p>Visions flooded through him instantly.</p>
+
+<p>Ancient defenders holding impossible lines.</p>
+<p>Civilians evacuated beneath burning skies.</p>
+<p>Guardians dying one after another while protecting people they would never meet again.</p>
+
+<p>Last stands.</p>
+<p>Sacrifice.</p>
+<p>Duty.</p>
+
+<p>Then silence.</p>
+
+<hr>
+
+<p>Dawnpiercer accepted him.</p>
+
+<p>The moment Dawnpiercer awakened, Hollowwatch began dying.</p>
+
+<hr>
+
+<p>The cathedral shook violently.</p>
+
+<p>Ancient pillars cracked apart.</p>
+<p>Golden fire erupted through the floor seams.</p>
+<p>The corruption spreading across the walls screamed.</p>
+
+<p>Not metaphorically.</p>
+
+<p>The flesh embedded into the cathedral actually screamed.</p>
+
+<p>Hundreds of distorted human voices echoed together through Hollowwatch’s depths while the living corruption recoiled from the light pouring out of Dawnpiercer.</p>
+
+<p>Entire sections of black organic growth ignited instantly.</p>
+
+<p>The ruin had survived for centuries.</p>
+
+<p>Now it was finally collapsing.</p>
+
+<hr>
+
+<p>Rayden staggered backward as power surged through him violently.</p>
+
+<p>The sword felt heavy.</p>
+
+<p>Not physically.</p>
+
+<p>Emotionally.</p>
+
+<p>Like carrying the weight of every person who had once died protecting others beneath Hollowwatch’s banners.</p>
+
+<p>Golden rune-light spread across his arm beneath the skin before fading slowly.</p>
+
+<p>The shield beside the altar lifted on its own.</p>
+
+<p>Then slammed against his forearm with a shockwave powerful enough to extinguish half the cathedral braziers.</p>
+
+<p>Selene stared openly.</p>
+
+<p class="quote">
+“Rayden...”
+</p>
+
+<p>Even Nyssa looked unsettled now.</p>
+
+<p class="quote">
+“That weapon just chose you.”<br><br>
+“I don’t know whether to congratulate you or run.”
+</p>
+
+<hr>
+
+<p>Tharel approached the altar slowly.</p>
+
+<p>The Moon Elf looked almost reverent.</p>
+
+<p class="quote">
+“Dawnpiercer...”<br><br>
+“I thought it was myth.”
+</p>
+
+<p>His silver eyes studied Rayden carefully afterward.</p>
+
+<p class="quote">
+“No ordinary adventurer survives a relic trial.”
+</p>
+
+<p>Rayden barely heard him.</p>
+
+<p>Because the sword still whispered.</p>
+
+<p>Not words.</p>
+
+<p>Memories.</p>
+
+<p>Echoes.</p>
+
+<p>Ancient defenders standing against impossible darkness.</p>
+
+<p>Shield walls refusing to break.</p>
+<p>Men and women dying with their backs toward civilians instead of escape routes.</p>
+
+<p>Dawnpiercer remembered all of them.</p>
+
+<hr>
+
+<p>Then Hollowwatch roared.</p>
+
+<hr>
+
+<p>The entire cathedral lurched sideways violently.</p>
+
+<p>One of the massive support pillars collapsed into the abyss below.</p>
+
+<p>Golden flames spread across the chamber ceiling while corrupted flesh peeled screaming from the walls.</p>
+
+<p>Dorun looked upward once.</p>
+
+<p class="quote">
+“We’re out of time.”
+</p>
+
+<hr>
+
+<p>The escape became a war against the ruin itself.</p>
+
+<hr>
+
+<p>The upper corridors collapsed one after another as the surviving party sprinted upward through falling debris and screaming cathedral halls.</p>
+
+<p>Corrupted guardians wandered blindly through the chaos while holy fire consumed them alive.</p>
+
+<p>Entire sections of Hollowwatch caved inward beneath mountain pressure.</p>
+
+<p>And still the corruption kept trying to stop them.</p>
+
+<hr>
+
+<p>Near the shattered reliquary halls, the walls themselves burst open.</p>
+
+<p>Massive flesh-growth tendrils erupted outward covered in half-formed human faces screaming through stretched skin.</p>
+
+<p>Nyssa barely avoided being dragged into the wall entirely.</p>
+
+<p>Rayden intercepted instantly.</p>
+
+<p>Dawnpiercer moved differently from ordinary steel.</p>
+
+<p>Cleaner.</p>
+
+<p>Faster.</p>
+
+<p>The blade cut through corrupted flesh like sunlight through shadow.</p>
+
+<p>Golden fire exploded from the strike.</p>
+
+<p>The screaming growth recoiled violently while black blood sprayed across cathedral stone.</p>
+
+<p>For the first time since entering Hollowwatch...</p>
+
+<p>The corruption felt afraid.</p>
+
+<hr>
+
+<p>Rayden noticed something terrifying then.</p>
+
+<p>Dawnpiercer did not become stronger from hatred.</p>
+
+<p>It became stronger every time he protected someone.</p>
+
+<p>Every intercepted strike.</p>
+<p>Every defensive movement.</p>
+<p>Every moment he placed himself between danger and another person.</p>
+
+<p>The relic was responding to instinct.</p>
+
+<p>To purpose.</p>
+
+<p>To Garrick.</p>
+
+<hr>
+
+<p>The realization nearly broke him emotionally.</p>
+
+<hr>
+
+<p>They reached the upper sanctum moments before the final collapse began.</p>
+
+<p>The mountain itself was falling inward now.</p>
+
+<p>Ancient statues shattered.</p>
+<p>Cathedral ceilings collapsed behind them.</p>
+<p>Entire stairways disappeared into darkness.</p>
+
+<p>And still Hollowwatch screamed beneath the earth.</p>
+
+<hr>
+
+<p>Near the final exit, Dorun suddenly stopped moving.</p>
+
+<p>Blood soaked the dwarf’s beard heavily.</p>
+
+<p>Only then did the others notice the massive shard of cathedral stone embedded through his lower side.</p>
+
+<p>He had been carrying the injury silently for nearly half the escape.</p>
+
+<hr>
+
+<p>Selene moved immediately.</p>
+
+<p class="quote">
+“We can heal—”
+</p>
+
+<p>Dorun grabbed her wrist firmly.</p>
+
+<p class="quote">
+“No.” 
+</p>
+
+<p>His voice sounded tired now.</p>
+
+<p>Older.</p>
+
+<p class="quote">
+“Save the strength.” “You’ll need it outside.”
+</p>
+
+<p>Rayden stepped forward.</p>
+
+<p class="quote">
+“We carry you.”
+</p>
+
+<p>Dorun looked at him for several seconds.</p>
+
+<p>Then laughed weakly.</p>
+
+<p class="quote">
+“Boy...”<br><br>
+“I weigh more than your entire tragic backstory.”
+</p>
+
+<p>Even Nyssa almost smiled at that.</p>
+
+<hr>
+
+<p>Dorun slowly removed the iron clan rings woven through his beard one by one.</p>
+
+<p>Old dwarf-forged steel.</p>
+<p>Scratched by battle.</p>
+<p>Worn smooth by decades of survival.</p>
+
+<p>He pressed them heavily into Rayden’s palm.</p>
+
+<p class="quote">
+“Remember me, boy...” 
+</p>
+
+<p>Blood ran from the corner of Dorun’s mouth as another tremor shook Hollowwatch around them.</p>
+
+<p>Yet somehow the dwarf still grinned.</p>
+
+<p class="quote">
+“Remember your savior...”<br>“Hahahaha hahahahaha hahahaha—”
+</p>
+
+<p>The laugh turned into coughing.</p>
+
+<p>Dark blood splattered across the ruined sanctum floor.</p>
+
+<p>Still, Dorun’s single remaining eye gleamed stubbornly beneath the collapsing cathedral light.</p>
+
+<p class="quote">
+“If you ever meet my family...”<br><br>
+“Give them the rings.”<br><br>
+“Tell them Dorun Graymaw died standing.”
+</p>
+
+<p>Another violent impact thundered through Hollowwatch.</p>
+
+<p>The corrupted creatures screamed somewhere beyond the collapsing corridor.</p>
+
+<p>Dorun slowly rose behind his shield one final time.</p>
+
+<p>Old.</p>
+<p>Bleeding.</p>
+<p>Broken.</p>
+
+<p>Yet still unmovable.</p>
+
+<p class="quote">
+“Now go.”<br><br>
+“That’s an order.”
+</p>
+
+
+<hr>
+
+<p>Rayden hesitated.</p>
+
+<p>Again.</p>
+
+<p>Another person staying behind.</p>
+<p>Another sacrifice.</p>
+<p>Another loss.</p>
+
+<p>Selene grabbed his arm hard.</p>
+
+<p class="quote">
+“RAYDEN!”
+</p>
+
+<p>The dwarf roared as corrupted creatures burst through the collapsing corridor behind him.</p>
+
+<p>Shield met claws.</p>
+<p>Stone exploded.</p>
+<p>Ancient battle chants echoed through the sanctum.</p>
+
+<p>And for one final moment, Dorun Graymaw stood exactly like the guardians of Hollowwatch once had.</p>
+
+<p>Holding the line.</p>
+
+<hr>
+
+<p>The survivors escaped seconds before the mountain collapsed entirely.</p>
+
+<hr>
+
+<p>Snow exploded outward across the mountainside.</p>
+<p>Stone thundered downward into the valley below.</p>
+<p>Golden fire erupted briefly through the collapsing ruins before vanishing beneath rock forever.</p>
+
+<p>Hollowwatch disappeared into the earth once more.</p>
+
+<p>This time permanently.</p>
+
+<hr>
+
+<p>For a long while, nobody spoke.</p>
+
+<p>Cold mountain wind moved silently through the snowfields around them.</p>
+
+<p>Selene sat beside a broken stone marker staring blankly at blood across her hands.</p>
+
+<p>Nyssa smoked quietly while pretending not to shake.</p>
+
+<p>Tharel stood facing the buried ruins with lowered head.</p>
+
+<p>Even Rayden could not find words.</p>
+
+<p>Because Hollowwatch had changed him.</p>
+
+<p>Deeply.</p>
+
+<p>Irreversibly.</p>
+
+<hr>
+
+<p>When they finally returned to Westreach six days later, the guild hall fell silent.</p>
+
+<p>Not because they survived.</p>
+
+<p>Because of what Rayden carried.</p>
+
+<hr>
+
+<p>Dawnpiercer radiated presence even wrapped in cloth.</p>
+
+<p>Veteran adventurers stared openly.</p>
+<p>Guild officers stood from their seats.</p>
+<p>One old battlemage nearly dropped his drink after sensing the relic’s aura.</p>
+
+<p>And slowly, quietly...</p>
+
+<p>Rumors began spreading through Westreach.</p>
+
+<hr>
+
+<p>The boy who survived Hollowwatch.</p>
+
+<p>The swordsman chosen by an ancient relic.</p>
+
+<p>The Wall-Climber carrying the light of dead guardians.</p>
+
+<hr>
+
+<p>Rayden Cale was sixteen years old.</p>
+
+<p>And for the first time in his life...</p>
+
+<p>The world had started noticing him back.</p>
+
+
+<hr>
+<!-- SECTION VIII END --> 
+
+<!-- SECTION IX STARTS -->
+<h2 id="section-9">IX. Temporal Frenzy</h2>
+<p class="era">Sundered Age — Year 1036</p>
+
+<p>Hollowwatch changed everything.</p>
+
+<hr>
+
+<p>The guild stopped treating Rayden Cale like a reckless teenager afterward.</p>
+
+<p>Veteran adventurers moved aside when he entered briefing halls.</p>
+<p>Mid-rank mercenary captains started watching him carefully during combat evaluations.</p>
+<p>Even guild officers lowered their voices whenever Dawnpiercer appeared near the contract boards.</p>
+
+<p>Because relic-bearers rarely stayed ordinary for long.</p>
+
+<hr>
+
+<p>Rayden hated the attention immediately.</p>
+
+<p>Not because it frightened him.</p>
+
+<p>Because it changed nothing important.</p>
+
+<p>The dead still remained dead.</p>
+
+<hr>
+
+<p>At sixteen, Rayden had already survived more violence than most soldiers twice his age.</p>
+
+<p>Yet every victory only sharpened the same unbearable realization:</p>
+
+<p>He still was not strong enough.</p>
+
+<hr>
+
+<p>The nightmares worsened after Hollowwatch.</p>
+
+<p>Now the guardian’s memories mixed with his own.</p>
+
+<p>Sometimes Rayden dreamed of ancient shield walls breaking beneath black skies while civilians screamed behind them.</p>
+
+<p>Sometimes he saw Garrick standing among the old defenders.</p>
+
+<p>Sometimes he woke gripping Dawnpiercer hard enough to bleed.</p>
+
+<hr>
+
+<p>Selene noticed the change first.</p>
+
+<p>Rayden trained longer.</p>
+<p>Slept less.</p>
+<p>Fought harder.</p>
+
+<p>There were moments during contracts where he moved so aggressively it almost looked self-destructive.</p>
+
+<p>As though every battle secretly contained someone he failed to save already.</p>
+
+<hr>
+
+<p>One evening after a wyvern extermination contract, Selene found him alone outside the guild sharpening Dawnpiercer beneath freezing rain.</p>
+
+<p>Blood dripped slowly from his knuckles where the sword hilt had rubbed skin raw during training.</p>
+
+<p class="quote">
+“You’re doing it again.”
+</p>
+
+<p>Rayden did not look up.</p>
+
+<p class="quote">
+“Doing what?”
+</p>
+
+<p>Selene stepped closer.</p>
+
+<p class="quote">
+“Trying to become strong enough to fight memories.”
+</p>
+
+<p>For once, Rayden had no answer.</p>
+
+<hr>
+
+<p>The Temporal Rift contract appeared three days later.</p>
+
+<p>And immediately every experienced adventurer in Westreach wanted nothing to do with it.</p>
+
+<hr>
+
+<p>The reports sounded impossible.</p>
+
+<p>Scouts vanishing from open roads.</p>
+<p>Hunters aging decades overnight.</p>
+<p>Corpses discovered before the victims officially disappeared.</p>
+<p>Entire patrols found frozen mid-motion like statues.</p>
+
+<p>Worst of all:</p>
+
+<p>Survivors described hearing their own footsteps several seconds before actually taking them.</p>
+
+<hr>
+
+<p>The guild classified the anomaly as:</p>
+
+<p class="quote">
+TEMPORAL RIFT EVENT
+</p>
+
+<p>Potential dungeon formation.</p>
+<p>Extreme magical instability.</p>
+<p>Unknown threat classification.</p>
+
+<p>Reward:</p>
+
+<p>absurd.</p>
+
+<hr>
+
+<p>Nyssa Veil nearly laughed when she saw the contract.</p>
+
+<p class="quote">
+“No.”<br><br>
+“Absolutely not.”<br><br>
+“Hollowwatch already took years off my life.”
+</p>
+
+<p>Yet somehow she still attended the expedition briefing anyway.</p>
+
+<p>Mostly because she did not entirely trust Rayden to survive reality-breaking magic without supervision.</p>
+
+<hr>
+
+<p>Tharel returned as well.</p>
+
+<p>The Moon Elf’s fascination with temporal anomalies outweighed common sense.</p>
+
+<p class="quote">
+“Time-afflicted ruins are exceptionally rare.”<br><br>
+“Usually because everyone dies before documenting them.”
+</p>
+
+<p>Nyssa stared at him.</p>
+
+<p class="quote">
+“You’re both clinically damaged.”
+</p>
+
+<hr>
+
+<p>The new recruits arrived shortly afterward.</p>
+
+<p>Varik Stonevein looked more mercenary captain than adventurer.</p>
+
+<p>Bear-Kin.</p>
+<p>Thirty-eight.</p>
+<p>Massive frame wrapped in layered spear-war harnesses.</p>
+
+<p>Gray fur lined portions of his jaw and neck while old battlefield scars crossed both hands.</p>
+
+<p>Unlike Korr, Varik carried himself with disciplined military restraint.</p>
+
+<p>His first words to Rayden were:</p>
+
+<p class="quote">
+“I don’t work for glory.”<br><br>
+“I work for survival.”
+</p>
+
+<p>Rayden respected him immediately.</p>
+
+<hr>
+
+<p>The final member unsettled everyone except Tharel.</p>
+
+<p>Lysara Quill arrived carrying enough magical equipment to resemble a walking laboratory.</p>
+
+<p>Twenty-nine years old.</p>
+<p>Human battlemage.</p>
+<p>Temporal anomaly researcher.</p>
+
+<p>Thin silver spectacles rested across sharp eyes that constantly studied everything around her like a puzzle worth dissecting.</p>
+
+<p>She looked at Dawnpiercer for exactly three seconds before whispering:</p>
+
+<p class="quote">
+“Interesting.”
+</p>
+
+<p>Rayden instantly disliked her.</p>
+
+<p>Selene disliked her faster.</p>
+
+<hr>
+
+<p>The Temporal Rift lay beyond the northern frontier territories where abandoned war roads cut through dead valleys scarred by ancient magical battles.</p>
+
+<p>The landscape itself felt wrong long before they reached the anomaly.</p>
+
+<p>Birds avoided the region entirely.</p>
+<p>Snow fell upward occasionally before correcting itself.</p>
+<p>Shadows stretched in directions opposing the sunlight.</p>
+
+<p>Even sound behaved incorrectly.</p>
+
+<hr>
+
+<p>On the second night, Nyssa heard someone whisper her name beside the campfire.</p>
+
+<p>No one had spoken.</p>
+
+<p>Thirty seconds later, Varik actually said it.</p>
+
+<p>The rogue immediately stopped eating.</p>
+
+<p class="quote">
+“I officially hate this place.”
+</p>
+
+<hr>
+
+<p>They found the first Rift victims near dawn.</p>
+
+<p>Three mercenaries frozen beside the roadside.</p>
+
+<p>Not dead.</p>
+
+<p>Aged.</p>
+
+<hr>
+
+<p>Their bodies looked eighty years older than the missing-person reports described.</p>
+
+<p>Skin sagged.</p>
+<p>Hair whitened completely.</p>
+<p>Eyes collapsed inward from age deterioration.</p>
+
+<p>One corpse still gripped a sword rusted by decades that technically had not happened yet.</p>
+
+<p>Selene crouched beside the bodies slowly.</p>
+
+<p class="quote">
+“These men disappeared last week.”
+</p>
+
+<p>Lysara adjusted her spectacles with visible excitement.</p>
+
+<p class="quote">
+“Localized acceleration.”<br><br>
+“Fascinating.”
+</p>
+
+<p>Nyssa looked horrified.</p>
+
+<p class="quote">
+“If you say fascinating one more time, I’m stabbing you.”
+</p>
+
+<hr>
+
+<p>The Rift itself appeared at twilight.</p>
+
+<p>And every instinct inside Rayden screamed danger immediately.</p>
+
+<hr>
+
+<p>The anomaly floated above the valley floor like fractured glass suspended in air.</p>
+
+<p>Reality bent around it unnaturally.</p>
+
+<p>Snowflakes froze motionless near the edges before suddenly continuing movement again.</p>
+<p>Light distorted.</p>
+<p>Sound echoed before being created.</p>
+
+<p>The world itself looked wounded there.</p>
+
+<hr>
+
+<p>Then the monster attacked.</p>
+
+<hr>
+
+<p>No warning.</p>
+
+<p>No roar.</p>
+
+<p>Just sudden movement.</p>
+
+<p>A creature burst from the Rift distortion fast enough to appear almost invisible.</p>
+
+<p>Long skeletal limbs.</p>
+<p>Bone-white exoskeleton.</p>
+<p>Multiple eyes flickering in and out of existence.</p>
+
+<p>The thing moved incorrectly.</p>
+
+<p>Not quickly.</p>
+
+<p>Wrongly.</p>
+
+<hr>
+
+<p>Varik barely raised his spear before the creature removed his left arm completely.</p>
+
+<p>Blood exploded across the snow.</p>
+
+<p>The severed limb landed fifteen feet away still gripping the weapon.</p>
+
+<p>Varik screamed.</p>
+
+<p>Then the scream repeated itself backwards.</p>
+
+<hr>
+
+<p>Reality fractured.</p>
+
+<p>The monster struck Nyssa before the first attack sound fully reached them.</p>
+
+<p>Her body flew sideways through frozen air while blood droplets remained suspended motionless around her.</p>
+
+<p>Tharel’s arrows fired.</p>
+
+<p>The creature dodged before he released them.</p>
+
+<p>Lysara shouted something about temporal displacement.</p>
+
+<p>Rayden heard none of it properly.</p>
+
+<p>Because suddenly...</p>
+
+<p>Selene was directly in the creature’s path.</p>
+
+<hr>
+
+<p>And Rayden had seen this before.</p>
+
+<p>Too many times.</p>
+
+<p>Fire.</p>
+<p>Execution platforms.</p>
+<p>Collapsing cathedrals.</p>
+
+<p>People dying while he arrived too slowly.</p>
+
+<p>Something inside him broke open.</p>
+
+<hr>
+
+<p>The world stopped.</p>
+
+<hr>
+
+<p>Not literally.</p>
+
+<p>Worse.</p>
+
+<hr>
+
+<p>Rayden’s perception accelerated violently beyond human limits.</p>
+
+<p>Blood droplets hung suspended in air like floating rubies.</p>
+<p>Snowflakes drifted individually.</p>
+<p>Muscle tension beneath the creature’s limbs became visible before movement occurred.</p>
+
+<p>He could see trajectories.</p>
+<p>Momentum.</p>
+<p>Intent.</p>
+
+<p>Everything moved unbearably slow.</p>
+
+<p>Except him.</p>
+
+<hr>
+
+<p>Pain exploded instantly.</p>
+
+<p>His nervous system screamed.</p>
+<p>Blood vessels burst inside his eyes.</p>
+<p>Muscles tore beneath the strain.</p>
+
+<p>But Rayden moved anyway.</p>
+
+<hr>
+
+<p>Vossfang launched.</p>
+
+<p>The chain screamed through slowed air while Rayden accelerated across the battlefield in impossible motion.</p>
+
+<p>Dawnpiercer ignited in golden light.</p>
+
+<p>He intercepted the creature less than inches before impact reached Selene.</p>
+
+<p>The monster turned toward him slowly.</p>
+
+<p>Too slowly.</p>
+
+<hr>
+
+<p>Rayden saw everything.</p>
+
+<p>The weak point beneath its shifting jaw.</p>
+<p>The delayed weight transfer.</p>
+<p>The opening before the second strike.</p>
+
+<p>He drove Dawnpiercer upward through the creature’s skull with enough force to split the upper body apart entirely.</p>
+
+<p>Golden fire erupted through the Rift valley.</p>
+
+<p>The monster died before normal time fully resumed.</p>
+
+<hr>
+
+<p>Then reality snapped back into place.</p>
+
+<hr>
+
+<p>Sound crashed into the world all at once.</p>
+
+<p>Varik screaming.</p>
+<p>Nyssa coughing blood.</p>
+<p>Selene shouting Rayden’s name.</p>
+
+<p>And Rayden himself collapsing into the snow.</p>
+
+<hr>
+
+<p>Blood poured from both his eyes.</p>
+
+<p>His entire body convulsed violently as shredded muscle fibers spasmed beneath the skin.</p>
+
+<p>Dawnpiercer slipped from numb fingers.</p>
+
+<p>For several horrifying seconds Rayden could not feel his own legs.</p>
+
+<hr>
+
+<p>Lysara stared at him in genuine disbelief.</p>
+
+<p class="quote">
+“No...”<br><br>
+“That’s impossible.”
+</p>
+
+<p>Tharel’s expression looked equally disturbed.</p>
+
+<p class="quote">
+“He accelerated perception itself...”
+</p>
+
+<p>Nyssa whispered weakly:</p>
+
+<p class="quote">
+“What the hell are you?”
+</p>
+
+<hr>
+
+<p>Selene dropped beside Rayden immediately.</p>
+
+<p>Healing magic spread desperately across torn muscles while her hands visibly trembled.</p>
+
+<p>Because for a few brief moments...</p>
+
+<p>Rayden had not looked human.</p>
+
+<p>He had looked like violence moving faster than reality.</p>
+
+<hr>
+
+<p>Later that night beside the campfire, while the others slept uneasily nearby, Selene wrapped fresh bandages around Rayden’s bleeding hands in silence.</p>
+
+<p>The firelight shook softly across her face.</p>
+
+<p>Finally she whispered:</p>
+
+<p class="quote">
+“You scared me.”
+</p>
+
+<p>Rayden looked down at the blood staining the snow beneath his boots.</p>
+
+<p>For once...</p>
+
+<p>He was afraid too.</p>
+<hr>
+<!-- SECTION IX END --> 
+
+<!-- SECTION X START --> 
+
+<h2 id="section-10">X. The Weight of Time</h2>
+<p class="era">Sundered Age — Year 1036</p>
+
+<p>Temporal Frenzy nearly killed him.</p>
+
+<hr>
+
+<p>The party discovered this two hours after the battle.</p>
+
+<p>Because Rayden stopped being able to walk.</p>
+
+<hr>
+
+<p>The first collapse happened beside the northern ridge trail while snowstorms swallowed the Rift valley behind them.</p>
+
+<p>One moment Rayden was moving silently beside Selene.</p>
+
+<p>The next his legs simply failed.</p>
+
+<p>He crashed face-first into the snow hard enough to smear blood across the ice.</p>
+
+<p>Then the convulsions began.</p>
+
+<hr>
+
+<p>Every muscle in his body spasmed violently beneath the skin.</p>
+
+<p>Blood leaked steadily from his eyes.</p>
+<p>His breathing became uneven.</p>
+<p>Nerve tremors ran through both arms hard enough to make Dawnpiercer rattle against stone beside him.</p>
+
+<p>Selene dropped beside him immediately.</p>
+
+<p class="quote">
+“Rayden!” 
+</p>
+
+<p>Healing magic spread desperately through his torn nervous system.</p>
+
+<p>And for the first time since meeting him...</p>
+
+<p>Selene looked genuinely terrified.</p>
+
+<hr>
+
+<p>Rayden could still hear the slowed world.</p>
+
+<p>Even now.</p>
+
+<p>Snowflakes.</p>
+<p>Heartbeats.</p>
+<p>Breathing patterns.</p>
+
+<p>The world felt wrong.</p>
+
+<p>Like his mind had not fully returned to normal time yet.</p>
+
+<p>It hurt.</p>
+
+<p>Gods, it hurt.</p>
+
+<hr>
+
+<p>Varik crouched nearby gripping his bandaged stump silently.</p>
+
+<p>The Bear-Kin veteran stared at Rayden for a long moment before muttering:</p>
+
+<p class="quote">
+“I’ve fought battlemages.”<br><br>
+“I’ve fought war priests.”<br><br>
+“I once watched a drake tear through an entire infantry line.”<br><br>
+“I’ve never seen anything like that.”
+</p>
+
+<p>Nyssa answered quietly from the campfire.</p>
+
+<p class="quote">
+“That’s because nothing like that should exist.”
+</p>
+
+<hr>
+
+<p>Lysara Quill barely slept the entire return journey.</p>
+
+<p>She spent most nights writing frantic notes beneath lanternlight while occasionally staring toward Rayden with deeply unsettling fascination.</p>
+
+<p>Once, Selene caught her sketching magical flow diagrams beside the words:</p>
+
+<p class="quote">
+TEMPORAL ACCELERATION RESPONSE?
+</p>
+
+<p>Selene nearly burned the notebook.</p>
+
+<hr>
+
+<p>Tharel remained quieter than usual afterward.</p>
+
+<p>The Moon Elf studied Rayden constantly during travel.</p>
+
+<p>Not fearfully.</p>
+
+<p>Cautiously.</p>
+
+<p>Like someone recognizing the beginning of something historically dangerous.</p>
+
+<hr>
+
+<p>On the fifth night, while the others slept, Tharel finally spoke.</p>
+
+<p class="quote">
+“Temporal manipulation was forbidden long before modern kingdoms existed.”
+</p>
+
+<p>Rayden sat beside the fire sharpening Dawnpiercer slowly.</p>
+
+<p class="quote">
+“I’m not manipulating time.”
+</p>
+
+<p>Tharel’s silver eyes reflected firelight.</p>
+
+<p class="quote">
+“No.”<br><br>
+“You’re forcing your perception beyond mortal limits.”<br><br>
+“That may be worse.”
+</p>
+
+<p>Rayden said nothing.</p>
+
+<p>Because deep down...</p>
+
+<p>He knew Tharel was right.</p>
+
+<hr>
+
+<p>Westreach exploded with rumors before they even reached the city gates.</p>
+
+<hr>
+
+<p>Apparently surviving a reality-breaking Rift while wielding a holy relic made people memorable.</p>
+
+<p>By the time the party returned to the guild hall:</p>
+
+<p>everyone already knew.</p>
+
+<hr>
+
+<p>The Wall-Climber survived the Temporal Rift.</p>
+
+<p>The Dawnpiercer bearer moved faster than sight.</p>
+<p>The young adventurer killed an anomaly-class creature alone.</p>
+<p>Time itself slowed around him.</p>
+
+<p>Every retelling became more exaggerated.</p>
+
+<p>Which somehow made the truth more frightening.</p>
+
+<hr>
+
+<p>The guild officers immediately elevated Rayden and Selene’s rank evaluations afterward.</p>
+
+<p>High C-Class.</p>
+
+<p>Borderline B-Class.</p>
+
+<p>At sixteen.</p>
+
+<p>Veteran adventurers openly resented them for it.</p>
+
+<p>Others looked impressed.</p>
+
+<p>A few looked afraid.</p>
+
+<hr>
+
+<p>Rayden noticed the fear most.</p>
+
+<p>And hated it.</p>
+
+<hr>
+
+<p>The recovery period lasted nearly three weeks.</p>
+
+<p>Selene forced him to remain inside their tavern room after he collapsed attempting to train on the second day.</p>
+
+<p>The argument nearly became physical.</p>
+
+<hr>
+
+<p class="quote">
+“You tore muscle fibers down to the bone!”
+</p>
+
+<p>Rayden shoved himself upright from the bed despite shaking hands.</p>
+
+<p class="quote">
+“I can still move.”
+</p>
+
+<p class="quote">
+“You couldn’t feel your legs yesterday!”
+</p>
+
+<p class="quote">
+“And?”
+</p>
+
+<p>Selene stared at him in disbelief.</p>
+
+<p class="quote">
+“AND?”<br><br>
+“Do you hear yourself anymore?”
+</p>
+
+<hr>
+
+<p>Silence followed.</p>
+
+<p>Heavy.</p>
+<p>Ugly.</p>
+
+<p>Because both of them knew the truth already.</p>
+
+<p>Rayden would destroy himself for strength if necessary.</p>
+
+<p>And that terrified her more than any dungeon ever had.</p>
+
+<hr>
+
+<p>The training resumed anyway.</p>
+
+<p>Quietly.</p>
+<p>Painfully.</p>
+
+<p>Rayden began testing Temporal Frenzy in controlled bursts beyond the city outskirts.</p>
+
+<p>The results were catastrophic initially.</p>
+
+<hr>
+
+<p>One second activation:</p>
+<p>nosebleeds.</p>
+
+<p>Two seconds:</p>
+<p>temporary blindness.</p>
+
+<p>Three seconds:</p>
+<p>full body spasms and memory blackouts.</p>
+
+<p>The ability devoured the human body every time he used it.</p>
+
+<hr>
+
+<p>Yet slowly...</p>
+
+<p>Rayden adapted.</p>
+
+<hr>
+
+<p>He learned breathing control.</p>
+<p>Muscle pacing.</p>
+<p>How to limit perception overload.</p>
+
+<p>Selene helped stabilize mana flow after every training session while Elira — after hearing about the Rift incident — arrived personally to insult his survival instincts for nearly two straight hours.</p>
+
+<hr>
+
+<p class="quote">
+“You stupid little bastard.”
+</p>
+
+<p>Elira paced around the training grounds furiously while Rayden sat bruised against a wooden post.</p>
+
+<p class="quote">
+“Temporal acceleration?”<br><br>
+“You know what most people call abilities like that?”
+</p>
+
+<p>Rayden wiped blood from his mouth.</p>
+
+<p class="quote">
+“What?”
+</p>
+
+<p class="quote">
+“Short life expectancy.”
+</p>
+
+<hr>
+
+<p>Even Elira looked unsettled by Temporal Frenzy.</p>
+
+<p>That worried Rayden more than the pain did.</p>
+
+<hr>
+
+<p>The nights became softer afterward.</p>
+
+<p>Not peaceful.</p>
+
+<p>But softer.</p>
+
+<hr>
+
+<p>Selene started sleeping closer beside him after the Rift.</p>
+
+<p>Sometimes because Rayden woke screaming from slowed-time nightmares.</p>
+<p>Sometimes because she did.</p>
+
+<p>Often neither spoke about it afterward.</p>
+
+<p>They simply held each other quietly beneath candlelight while Westreach’s rainstorms rattled against the windows.</p>
+
+<hr>
+
+<p>One night Rayden woke to find Selene watching him instead of sleeping.</p>
+
+<p>The room remained dark except for dying firelight.</p>
+
+<p class="quote">
+“What?”
+</p>
+
+<p>Selene hesitated.</p>
+
+<p>Then answered honestly.</p>
+
+<p class="quote">
+“I was checking if you were still breathing.”
+</p>
+
+<hr>
+
+<p>Something inside Rayden hurt hearing that.</p>
+
+<p>Not physically.</p>
+
+<p>Worse.</p>
+
+<p>Because he realized she truly believed one day he simply might not wake up anymore.</p>
+
+<hr>
+
+<p>He pulled her closer silently afterward.</p>
+
+<p>Selene rested against his chest listening to his heartbeat for a long time.</p>
+
+<p>Eventually she whispered:</p>
+
+<p class="quote">
+“You don’t have to carry everything alone.”
+</p>
+
+<p>Rayden stared toward the ceiling.</p>
+
+<p>For most of his life, carrying things alone had been the only reliable option.</p>
+
+<p>Now...</p>
+
+<p>He wasn’t sure anymore.</p>
+
+<hr>
+
+<p>Outside Westreach, the world slowly drifted toward war.</p>
+
+<hr>
+
+<p>Trade routes became unstable first.</p>
+<p>Then border patrols vanished.</p>
+<p>Then kingdoms started hiring mercenaries openly.</p>
+
+<p>Adventurer contracts decreased across multiple regions while military requests tripled.</p>
+
+<p>Monster outbreaks near frontier territories worsened simultaneously.</p>
+
+<p>Rumors spread constantly through guild halls:</p>
+
+<p>Southern kingdoms mobilizing.</p>
+<p>Nobles buying steel in bulk.</p>
+<p>Void-corrupted creatures appearing farther west.</p>
+
+<p>Something large was coming.</p>
+
+<p>Everyone felt it.</p>
+
+<hr>
+
+<p>The guild suffered because of it.</p>
+
+<p>Dungeon contracts paid less.</p>
+<p>Trade caravans stopped traveling.</p>
+<p>Entire adventurer parties began switching into mercenary work simply to survive economically.</p>
+
+<p>War paid better than monsters.</p>
+
+<p>Usually because humans were worse.</p>
+
+<hr>
+
+<p>One evening, while overlooking the canal lights of Westreach from the tavern rooftop, Selene leaned quietly against Rayden’s shoulder beneath the cold night wind.</p>
+
+<p>The city below buzzed with drunken soldiers, mercenaries, and nervous merchants.</p>
+
+<p>War already lingered in the air.</p>
+
+<hr>
+
+<p class="quote">
+“If things keep getting worse...”<br><br>
+“We may have to take military contracts.”
+</p>
+
+<p>Rayden looked across the distant frontier roads disappearing into darkness.</p>
+
+<p>He had spent years trying to survive violence.</p>
+
+<p>Now the world seemed determined to drown in it completely.</p>
+
+<hr>
+
+<p class="quote">
+“Then we survive that too.”
+</p>
+
+<p>Selene smiled faintly.</p>
+
+<p>Tired.</p>
+<p>Sad.</p>
+<p>Real.</p>
+
+<p>And somewhere far beyond Westreach...</p>
+
+<p>Kingdoms were already sharpening swords for the wars that would eventually shape Starhaven itself.</p>
+
+<hr>
+<!-- SECTION X END -->
+
+<!-- The end of the chapter is here. The next chapter will be posted in a separate file. -->
+<hr>
+<h2>END OF CHAPTER 1</h2>
+
+</div><!-- /wrapper -->
+
+</body>
+</html>
