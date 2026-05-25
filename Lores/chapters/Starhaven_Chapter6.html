@@ -1,0 +1,1141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starhaven — Chapter 6: The War of Starhold</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --bg: #080810;
+  --bg2: #0b0c18;
+  --bg3: #10111e;
+  --gold: #c8983a;
+  --gold2: #e4b84a;
+  --gold3: #f5d070;
+  --text: #ddd6c8;
+  --text2: #b8aa90;
+  --text3: #8a7e6a;
+  --red: #8a2020;
+  --red2: #c03030;
+  --blue: #1a2a5a;
+  --blue2: #3050a0;
+  --silver: #a0a8b8;
+  --void: #1a0a2a;
+  --void2: #3a1a5a;
+  --corruption: #0a1a0a;
+  --divider: #2a2830;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 2.0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+}
+
+.chapter-header {
+  text-align: center;
+  padding: 60px 0 50px;
+  position: relative;
+}
+
+.chapter-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--text3);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.chapter-number {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(13px, 2.2vw, 17px);
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.chapter-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(26px, 5vw, 48px);
+  color: var(--gold3);
+  line-height: 1.25;
+  font-weight: 700;
+  text-shadow: 0 0 60px rgba(200, 152, 58, 0.18);
+  margin-bottom: 30px;
+}
+
+.chapter-ornament {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.toc {
+  background: var(--bg2);
+  border: 1px solid var(--divider);
+  border-top: 3px solid var(--gold);
+  padding: 28px 32px;
+  margin: 0 0 60px;
+  border-radius: 4px;
+}
+
+.toc-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+.toc ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+}
+
+.toc li a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.toc li a::before {
+  content: '◆';
+  font-size: 7px;
+  color: var(--gold);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.toc li a:hover {
+  color: var(--gold2);
+}
+
+p {
+  font-size: 17.5px;
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 28px 0;
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: var(--gold2);
+  letter-spacing: 0.08em;
+  margin: 52px 0 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2::before {
+  content: '✦';
+  color: var(--gold);
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.quote {
+  border-left: 3px solid var(--gold);
+  padding: 6px 0 6px 20px;
+  font-style: italic;
+  color: #c6b79d;
+  margin: 4px 0;
+  line-height: 1.85;
+  background: linear-gradient(90deg, rgba(200,152,58,0.04), transparent 60%);
+}
+
+.void-text {
+  font-style: italic;
+  color: #7a6aaa;
+  letter-spacing: 0.04em;
+  border-left: 3px solid #3a1a5a;
+  padding: 6px 0 6px 20px;
+  margin: 4px 0;
+  background: linear-gradient(90deg, rgba(58,26,90,0.08), transparent 60%);
+  line-height: 1.85;
+}
+
+.timeline {
+  font-style: italic;
+  color: var(--gold2);
+  border-left: 3px solid var(--gold);
+  padding: 12px 18px;
+  margin: 24px 0;
+  background: rgba(232, 194, 112, 0.08);
+  border-radius: 6px;
+}
+
+.chapter-end {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.chapter-end-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+
+.epilogue-header {
+  text-align: center;
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.epilogue-label {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text3);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.epilogue-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  color: var(--gold2);
+}
+
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0;
+  justify-content: center;
+}
+
+.section-break-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--divider), transparent);
+}
+
+.section-break-star {
+  font-size: 13px;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.era {
+  display: block;
+  margin: 44px 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text3);
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .wrapper { padding: 40px 24px 80px; }
+  .toc ul { grid-template-columns: 1fr; }
+  .chapter-title { font-size: clamp(22px, 7vw, 36px); }
+  p { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<header class="chapter-header">
+  <span class="chapter-eyebrow">✦ The Starhaven Chronicles · Sundered Age ✦</span>
+  <span class="chapter-number">Chapter Six</span>
+  <h1 class="chapter-title"> The War of Starhold</h1>
+  <div class="chapter-ornament">
+    <div class="ornament-line"></div>
+    <div class="ornament-diamond"></div>
+    <div class="ornament-line"></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <p class="toc-title">Table of Contents</p>
+  <ul>
+    <li><a href="#section-1">I. The Mustering at Greenveil</a></li>
+   
+   
+  </ul>
+</nav>
+
+<hr>
+<!--SECTION 1 Starts -->
+<h2 id="section-1">I. The Mustering at Greenveil</h2>
+<p class="era">Greenveil — Year 1042</p>
+<hr>
+
+<p>The war horns of Greenveil sounded before sunrise.</p>
+
+<hr>
+
+<p>The sound rolled through Greywood slowly.</p>
+
+<p>Deep.</p>
+
+<p>Ancient.</p>
+
+<p>Heavy enough to shake frost loose from the forest branches overhead.</p>
+
+<hr>
+
+<p>Fog drifted through the towering trees while thousands of fires burned across the valley below Greenveil’s outer sanctuary walls.</p>
+
+<hr>
+
+<p>The frontier had come to war.</p>
+
+<hr>
+
+<p>Greenveil no longer resembled the quiet boundary settlement Rayden’s group had entered weeks earlier carrying Sorin’s dying body through terrified streets.</p>
+
+<hr>
+
+<p>Now the city breathed like a military heart.</p>
+
+<hr>
+
+<p>Army camps stretched between the Greywood tree lines.</p>
+
+<p>Temporary forge pits glowed beneath canvas shelters.</p>
+
+<p>Field kitchens smoked beside supply wagons while exhausted cooks stirred massive iron pots large enough to feed entire formations at once.</p>
+
+<hr>
+
+<p>The smell of wet earth mixed with:</p>
+
+<p>horse sweat,</p>
+<p>forge smoke,</p>
+<p>cooked meat,</p>
+<p>healing herbs,</p>
+<p>and oil used for siege machinery.</p>
+
+<hr>
+
+<p>Everywhere people moved.</p>
+
+<hr>
+
+<p>Blacksmiths hammered damaged armor beside wood dwarves carving replacement spear shafts from Greywood timber.</p>
+
+<p>Hunters unloaded fresh carcasses from forest wagons while Greenveil herbalists carried crates of anti-infection salves between healer tents already overflowing with wounded scouts and exhausted marchers.</p>
+
+<hr>
+
+<p>Nobody wasted motion.</p>
+
+<hr>
+
+<p>Because everyone understood:</p>
+
+<p>once the army marched west from Greenveil…</p>
+
+<p>many of them would never see these fires again.</p>
+
+<hr>
+
+<p>At the center of the valley, the coalition army assembled.</p>
+
+<hr>
+
+<p>Four thousand militia infantry from Havenfire stood beneath layered shield formations while torchlight reflected across mismatched armor gathered from dozens of ruined settlements.</p>
+
+<hr>
+
+<p>Swords.</p>
+<p>Spears.</p>
+<p>Maces.</p>
+<p>Axes.</p>
+
+<hr>
+
+<p>Not professional soldiers.</p>
+
+<p>Survivors.</p>
+
+<hr>
+
+<p>Daven Holt walked the formation lines personally with scarred discipline.</p>
+
+<hr>
+
+<p>Stopping crooked shield grips.</p>
+
+<p>Correcting spear spacing.</p>
+
+<p>Forcing exhausted recruits to repeat formation turns until their legs nearly collapsed beneath them.</p>
+
+<hr>
+
+<p>Because Daven understood something many commanders did not.</p>
+
+<hr>
+
+<p>Bad formation killed faster than enemy steel.</p>
+
+<hr>
+
+<p>Nearby stood Kael’s personal shield line.</p>
+
+<hr>
+
+<p>Four hundred heavy infantry carrying tower shields nearly the height of their bodies.</p>
+
+<p>Massive spears rested beside blunt warhammers designed specifically for crushing armored opponents once formation lines broke.</p>
+
+<hr>
+
+<p>Their armor matched more closely than the rest of Havenfire’s army.</p>
+
+<p>Not elegant.</p>
+
+<p>Functional.</p>
+
+<hr>
+
+<p>Layered defensive plating.</p>
+
+<p>Reinforced shoulders.</p>
+
+<p>Interlocking shield hooks.</p>
+
+<hr>
+
+<p>Kael moved silently among them adjusting shield placements himself.</p>
+
+<hr>
+
+<p>This was not merely infantry.</p>
+
+<hr>
+
+<p>This was doctrine.</p>
+
+<hr>
+
+<p>The beginning of the wall philosophy that would later define Ironpass itself.</p>
+
+<hr>
+
+<p>Farther uphill, Lyria’s formations filled the elevated ridges overlooking Greenveil.</p>
+
+<hr>
+
+<p>Eight hundred mixed-race archers from Havenfire stood beside:</p>
+
+<p>seventy-five Greenveil wood elf longbow hunters,</p>
+
+<p>and forty-five wood dwarf crossbow specialists already calibrating range markers into nearby trees.</p>
+
+<hr>
+
+<p>The difference between the groups was immediately visible.</p>
+
+<hr>
+
+<p>The Havenfire archers checked arrows nervously.</p>
+
+<p>The wood elves stood almost motionless beneath pale forest cloaks.</p>
+
+<p>The dwarves adjusted machinery with grim mechanical patience.</p>
+
+<hr>
+
+<p>Lyria walked between them all equally.</p>
+
+<hr>
+
+<p>Correcting posture.</p>
+
+<p>Testing bow tension personally.</p>
+
+<p>Adjusting firing intervals.</p>
+
+<hr>
+
+<p>One nervous young human archer released too early during formation practice.</p>
+
+<hr>
+
+<p>The arrow shattered harmlessly against stone.</p>
+
+<hr>
+
+<p>Lyria calmly took the bow from his trembling hands.</p>
+
+<hr>
+
+<p>Then fired three arrows in rapid succession.</p>
+
+<hr>
+
+<p>All three struck the same knot in a distant tree nearly two hundred meters uphill.</p>
+
+<hr>
+
+<p>No speech followed afterward.</p>
+
+<hr>
+
+<p>The young archer simply nodded once shakily and reset his stance.</p>
+
+<hr>
+
+<p>Near Greenveil’s northern edge…</p>
+
+<p>people made room automatically when the Ashen Guards passed.</p>
+
+<hr>
+
+<p>Only thirty-three.</p>
+
+<hr>
+
+<p>And yet they carried themselves with enough quiet certainty to unsettle entire formations simply by walking near them.</p>
+
+<hr>
+
+<p>Silver purification chains.</p>
+<p>Ash-marked armor.</p>
+<p>Execution blades wrapped in pale cloth.</p>
+
+<hr>
+
+<p>Lena Crest directed recruits preparing anti-corruption emergency kits while Seraphine moved silently between them drawing purification symbols across supply wagons, medical tents, and water barrels.</p>
+
+<hr>
+
+<p>Not ceremony.</p>
+
+<p>Preparation.</p>
+
+<hr>
+
+<p>Several soldiers instinctively touched protective charms when she passed.</p>
+
+<hr>
+
+<p>Others looked away completely.</p>
+
+<hr>
+
+<p>Because everyone who survived Moonfall Lake understood something now.</p>
+
+<hr>
+<p>One by one, soldiers stepped forward before the Ashen Guards in complete silence.</p>
+
+<hr>
+
+<p>No formation calls.</p>
+
+<p>No conversation.</p>
+
+<hr>
+
+<p>Only the sound of silver ash brushing against steel.</p>
+
+<hr>
+
+<p>Ashen Guard members moved slowly through the waiting lines marking armor piece by piece with anti-corruption sigils.</p>
+
+<p>Breastplates.</p>
+<p>Helmets.</p>
+<p>Shield interiors.</p>
+<p>Even weapon handles.</p>
+
+<hr>
+
+<p>Pale geometric symbols spread across metal beneath torchlight while purification incense burned continuously nearby.</p>
+
+<hr>
+
+<p>Some soldiers closed their eyes while the markings were applied.</p>
+
+<p>Others whispered prayers beneath their breath.</p>
+
+<p>A few visibly trembled.</p>
+
+<hr>
+
+<p>Because everyone understood what the sigils truly meant.</p>
+
+<hr>
+
+<p>If corruption breached the battlefield lines…</p>
+
+<p>these markings might become the only reason their bodies remained their own after death.</p>
+
+<hr>
+
+<p>One young militia recruit froze completely when Lena Crest reached for his helmet.</p>
+
+<hr>
+
+<p>The Ashen Guard captain paused.</p>
+
+<hr>
+
+<p class="quote">“First battle?”</p>
+
+<hr>
+
+<p>The young soldier nodded silently.</p>
+
+<hr>
+
+<p>Lena finished carving the sigil across the front of his armor with calm precision.</p>
+
+<hr>
+
+<p class="quote">“Stay near the shield wall.”</p>
+
+<p class="quote">“If the corruption reaches your eyes…”</p>
+
+<hr>
+
+<p>She tied a silver purification ribbon around his wrist.</p>
+
+<hr>
+
+<p class="quote">“…run toward us.”</p>
+
+<hr>
+
+<p>The recruit swallowed hard and nodded again.</p>
+
+<hr>
+
+<p>Nearby, Seraphine continued marking armor personally without looking up once.</p>
+
+<p>Her pale fingers moved across steel with mechanical familiarity born from too many battlefields already lost elsewhere.</p>
+
+<hr>
+
+<p>Not blessing soldiers.</p>
+
+<hr>
+
+<p>Preparing them for what happened after death if the lines broke.</p>
+
+<p>If Seraphine Mire walked calmly into battle…</p>
+
+<p>then the corruption ahead was already terrible beyond imagination.</p>
+
+<hr>
+
+<p>Far above Greenveil, the sky thundered.</p>
+
+<hr>
+
+<p>Heads lifted across the camp immediately.</p>
+
+<hr>
+
+<p>Then the drakes appeared.</p>
+
+<hr>
+
+<p>One hundred and twenty armored drake riders descended through the clouds beneath Ninth Sky banners while rune-light flashed across scaled wings overhead.</p>
+
+<hr>
+
+<p>The ground itself trembled beneath the landing impact.</p>
+
+<hr>
+
+<p>Children hiding near the healer tents stared upward in awe while nervous horses panicked against restraints.</p>
+
+<hr>
+
+<p>Sorin landed first.</p>
+
+<hr>
+
+<p>The drake rider removed his helmet slowly revealing the blackened scars still crossing one side of his neck beneath the jawline.</p>
+
+<hr>
+
+<p>The corruption had stopped spreading.</p>
+
+<p>But it had not left him untouched.</p>
+
+<hr>
+
+<p>Behind him descended the battlemage corps.</p>
+
+<hr>
+
+<p>Fifty Vaelmark war mages wearing dark rune-thread cloaks stepped from formation drakes with disciplined silence while arcane staffs pulsed faintly blue through the fog.</p>
+
+<hr>
+
+<p>And among them…</p>
+
+<p>one hooded battlemage stood strangely still.</p>
+
+<hr>
+
+<p>Watching.</p>
+
+<hr>
+
+<p>Rayden noticed him immediately.</p>
+
+<hr>
+
+<p>Not because the man stood out.</p>
+
+<p>Because something felt wrong.</p>
+
+<hr>
+
+<p>Familiar.</p>
+
+<hr>
+
+<p>The hooded battlemage watched Rayden through the crowd without movement while soldiers and drake handlers rushed around him in chaos.</p>
+
+<hr>
+
+<p>Then slowly…</p>
+
+<p>the figure turned away.</p>
+
+<hr>
+
+<p>Rayden frowned instinctively.</p>
+
+<hr>
+
+<p>Lyria noticed immediately.</p>
+
+<hr>
+
+<p class="quote">“What?”</p>
+
+<hr>
+
+<p>Rayden looked back toward the Vaelmark formations.</p>
+
+<hr>
+
+<p>The hooded battlemage had already disappeared into the gathering mist.</p>
+
+<hr>
+
+<p class="quote">“…nothing.”</p>
+
+<hr>
+
+<p>But the strange feeling remained.</p>
+
+<hr>
+
+<p>At the western beast corrals, Thorin’s forces prepared separately from the rest of the coalition.</p>
+
+<hr>
+
+<p>Not in military lines.</p>
+
+<p>Like hunters preparing for a storm.</p>
+
+<hr>
+
+<p>War beast riders secured armor onto massive dire boars while Greywood veterans calmed chained direwolves already sensing violence approaching from the west.</p>
+
+<hr>
+
+<p>Eighteen war beasts stood ready.</p>
+
+<hr>
+
+<p>Dire bears.</p>
+<p>Direwolves.</p>
+<p>Armored boar chargers.</p>
+
+<hr>
+
+<p>Even veteran militia soldiers avoided standing too close to them.</p>
+
+<hr>
+
+<p>One armored dire bear snapped through a thick wooden restraint post with a single bite before handlers dragged it back under control.</p>
+
+<hr>
+
+<p>Nearby stood another massive wildblood dwarf nearly equal to Thorin in size.</p>
+
+<hr>
+
+<p>Unlike Thorin’s ancient silence, however…</p>
+
+<p>this one laughed openly while lifting an entire supply crate onto a wagon himself.</p>
+
+<hr>
+
+<p>Garruk Blackroot.</p>
+
+<p>Thorin’s younger brother.</p>
+
+<hr>
+
+<p>His beard had been braided with beast teeth instead of iron rings while old claw scars crossed both arms openly without shame.</p>
+
+<hr>
+
+<p>Three Greywood beast riders argued loudly nearby over which war boar had kicked a handler unconscious earlier that morning.</p>
+
+<hr>
+
+<p>Garruk listened for several seconds before bursting into laughter.</p>
+
+<hr>
+
+<p class="quote">“That means the beast still respects itself.”</p>
+
+<hr>
+
+<p>Even some Havenfire soldiers laughed nervously nearby.</p>
+
+<hr>
+
+<p>Thorin merely shook his head once.</p>
+
+<hr>
+
+<p>But for a moment…</p>
+
+<p>the enormous wildblood dwarf almost looked less alone.</p>
+
+<hr>
+
+<p>Farther downslope, Vera Holt directed the siege corps through muddy assembly grounds filled with unfinished war machines.</p>
+
+<hr>
+
+<p>Twenty-five siege engines stood partially assembled beneath rain-dark canvas.</p>
+
+<hr>
+
+<p>Stone launchers reinforced with ironwood frames.</p>
+
+<p>Heavy bolt throwers large enough to pierce fortress gates.</p>
+
+<p>Reinforced breach wagons layered with wet hide and plated timber for surviving burning oil.</p>
+
+<hr>
+
+<p>And beside them…</p>
+
+<p>Vaelmark’s arcane artillery crews prepared weapons most Havenfire soldiers had never seen before.</p>
+
+<hr>
+
+<p>Massive rune-cannons rested upon rotating steel platforms while battlemages carved stabilization sigils directly into the muddy ground beneath them.</p>
+
+<hr>
+
+<p>Arcane condenser towers hummed softly blue through the fog.</p>
+
+<p>Crystal-fed repeater arrays rotated slowly beside ammunition carts glowing with unstable rune shells.</p>
+
+<hr>
+
+<p>One drakari engineer shouted something urgently before an arcane rotary cannon suddenly ignited with blinding blue recoil.</p>
+
+<hr>
+
+<p>A deafening burst of condensed arcane fire tore across the valley and vaporized an entire dead tree line hundreds of meters away.</p>
+
+<hr>
+
+<p>The shockwave alone knocked several militia recruits backward into the mud.</p>
+
+<hr>
+
+<p>Nearby soldiers stared openly.</p>
+
+<p>Some impressed.</p>
+
+<p>Some terrified.</p>
+
+<hr>
+
+<p>Because Vaelmark did not wage war like the frontier kingdoms.</p>
+
+<hr>
+
+<p>It engineered destruction.</p>
+
+<hr>
+
+<p>Nearly two hundred people moved through the siege camp constantly.</p>
+
+<hr>
+
+<p>Carpenters.</p>
+<p>Blacksmiths.</p>
+<p>Hunters.</p>
+<p>Cooks.</p>
+<p>Labor crews.</p>
+
+<hr>
+
+<p>Because wars were not won by heroes alone.</p>
+
+<hr>
+
+<p>They were won by the people carrying wood through the rain while heroes slept.</p>
+
+<hr>
+
+<p>As evening approached, the coalition commanders finally gathered inside Greenveil’s central command hall.</p>
+
+<hr>
+
+<p>The room smelled of wet cloaks, smoke, and old parchment.</p>
+
+<hr>
+
+<p>Maps covered nearly every table.</p>
+
+<p>Charcoal route markings layered across terrain sketches beside supply calculations and casualty estimates already prepared before the battle even began.</p>
+
+<hr>
+
+<p>Outside, the sounds of the army never stopped.</p>
+
+<hr>
+
+<p>Hammer strikes.</p>
+
+<p>Drakes roaring.</p>
+
+<p>Soldiers shouting formation counts.</p>
+
+<p>Wounded scouts arriving.</p>
+
+<hr>
+
+<p>thousands of soldiers prepared to march toward the hilltop fortress.</p>
+
+<hr>
+
+<p>Then suddenly—</p>
+
+<p>the lantern flames shifted.</p>
+
+<hr>
+
+<p>Nyx stood inside the room.</p>
+
+<hr>
+
+<p>No door had opened.</p>
+
+<p>No footsteps sounded.</p>
+
+<hr>
+
+<p>One moment the corner was empty.</p>
+
+<p>The next moment the assassin existed there.</p>
+
+<hr>
+
+<p>Mud and blood stained one sleeve of his dark armor.</p>
+
+<hr>
+
+<p>Something black dripped slowly from one of the twin daggers in his hand.</p>
+
+<hr>
+
+<p>Nyx dropped three severed cult insignias onto the map table.</p>
+
+<hr>
+
+<p class="quote">“Outer scouts.”</p>
+
+<hr>
+
+<p>Silence settled immediately.</p>
+
+<hr>
+
+<p>Nyx pointed toward the western approach routes.</p>
+
+<hr>
+
+<p class="quote">“The fortress is ready for siege.”</p>
+
+<hr>
+
+<p>His voice remained calm.</p>
+
+<hr>
+
+<p class="quote">“Anti-drake ballistae on the upper ridges.”</p>
+
+<p class="quote">“Secondary walls behind the main gate.”</p>
+
+<p class="quote">“Kill corridors built into the eastern breach routes.”</p>
+
+<p class="quote">“Hidden supply reserves beneath the southern district.”</p>
+
+<p class="quote">“Cult tunnels under the lower fortress.”</p>
+
+<hr>
+
+<p>Kael’s expression darkened further with every sentence.</p>
+
+<hr>
+
+<p>This was not a corrupted ruin anymore.</p>
+
+<p>This was a military fortress.</p>
+
+<hr>
+
+<p>Nyx then moved separately around the table.</p>
+
+<hr>
+
+<p>He leaned briefly toward:</p>
+
+<p>Kael.</p>
+<p>Lyria.</p>
+<p>Rayden.</p>
+<p>Velkan.</p>
+<p>Thorin.</p>
+
+<hr>
+
+<p>Different whispers for each.</p>
+
+<p>Different information.</p>
+
+<hr>
+
+<p>No one else heard any of it.</p>
+
+<hr>
+
+<p>Then finally Nyx stepped backward toward the shadows again.</p>
+
+<hr>
+
+<p>Rayden looked toward him.</p>
+
+<hr>
+
+<p class="quote">“You’re leaving already?”</p>
+
+<hr>
+
+<p>Nyx’s pale eyes reflected faintly beside the lanternlight.</p>
+
+<hr>
+
+<p class="quote">“I was never really here.”</p>
+
+<hr>
+
+<p>Then he vanished back into darkness.</p>
+
+<hr>
+
+<p>The room remained silent afterward.</p>
+
+<hr>
+
+<p>Outside beyond Greenveil’s walls…</p>
+
+<p>thousands of soldiers prepared to march toward the Fortress.</p>
+
+<hr>
+
+<p>And somewhere far beyond the forests…</p>
+
+<p>Warlord Drevak waited behind black stone walls with fifty thousand soldiers beneath the shadow of the falling star.</p>
+
+<hr>
+
+<!--CHAPTER VI SECTION I ENDS -->
+
+
+
+
+<h2>END OF CHAPTER 6</h2>
+</div><!-- /wrapper -->
+
+</body>
+</html>
