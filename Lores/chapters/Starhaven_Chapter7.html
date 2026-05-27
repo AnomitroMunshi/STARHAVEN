@@ -1,0 +1,2014 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starhaven — Chapter 6: The War of Starhold</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --bg: #080810;
+  --bg2: #0b0c18;
+  --bg3: #10111e;
+  --gold: #c8983a;
+  --gold2: #e4b84a;
+  --gold3: #f5d070;
+  --text: #ddd6c8;
+  --text2: #b8aa90;
+  --text3: #8a7e6a;
+  --red: #8a2020;
+  --red2: #c03030;
+  --blue: #1a2a5a;
+  --blue2: #3050a0;
+  --silver: #a0a8b8;
+  --void: #1a0a2a;
+  --void2: #3a1a5a;
+  --corruption: #0a1a0a;
+  --divider: #2a2830;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 2.0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+}
+
+.chapter-header {
+  text-align: center;
+  padding: 60px 0 50px;
+  position: relative;
+}
+
+.chapter-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--text3);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.chapter-number {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(13px, 2.2vw, 17px);
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.chapter-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(26px, 5vw, 48px);
+  color: var(--gold3);
+  line-height: 1.25;
+  font-weight: 700;
+  text-shadow: 0 0 60px rgba(200, 152, 58, 0.18);
+  margin-bottom: 30px;
+}
+
+.chapter-ornament {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.toc {
+  background: var(--bg2);
+  border: 1px solid var(--divider);
+  border-top: 3px solid var(--gold);
+  padding: 28px 32px;
+  margin: 0 0 60px;
+  border-radius: 4px;
+}
+
+.toc-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+.toc ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+}
+
+.toc li a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.toc li a::before {
+  content: '◆';
+  font-size: 7px;
+  color: var(--gold);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.toc li a:hover {
+  color: var(--gold2);
+}
+
+p {
+  font-size: 17.5px;
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 28px 0;
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: var(--gold2);
+  letter-spacing: 0.08em;
+  margin: 52px 0 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2::before {
+  content: '✦';
+  color: var(--gold);
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.quote {
+  border-left: 3px solid var(--gold);
+  padding: 6px 0 6px 20px;
+  font-style: italic;
+  color: #c6b79d;
+  margin: 4px 0;
+  line-height: 1.85;
+  background: linear-gradient(90deg, rgba(200,152,58,0.04), transparent 60%);
+}
+
+.void-text {
+  font-style: italic;
+  color: #7a6aaa;
+  letter-spacing: 0.04em;
+  border-left: 3px solid #3a1a5a;
+  padding: 6px 0 6px 20px;
+  margin: 4px 0;
+  background: linear-gradient(90deg, rgba(58,26,90,0.08), transparent 60%);
+  line-height: 1.85;
+}
+
+.timeline {
+  font-style: italic;
+  color: var(--gold2);
+  border-left: 3px solid var(--gold);
+  padding: 12px 18px;
+  margin: 24px 0;
+  background: rgba(232, 194, 112, 0.08);
+  border-radius: 6px;
+}
+
+.chapter-end {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.chapter-end-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+
+.epilogue-header {
+  text-align: center;
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--divider);
+  margin-top: 60px;
+}
+
+.epilogue-label {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text3);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.epilogue-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 22px;
+  color: var(--gold2);
+}
+
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0;
+  justify-content: center;
+}
+
+.section-break-line {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--divider), transparent);
+}
+
+.section-break-star {
+  font-size: 13px;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+.era {
+  display: block;
+  margin: 44px 0 0;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text3);
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .wrapper { padding: 40px 24px 80px; }
+  .toc ul { grid-template-columns: 1fr; }
+  .chapter-title { font-size: clamp(22px, 7vw, 36px); }
+  p { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<header class="chapter-header">
+  <span class="chapter-eyebrow">✦ The Starhaven Chronicles · Sundered Age ✦</span>
+  <span class="chapter-number">Chapter Seven</span>
+  <h1 class="chapter-title"> The War of Starhold</h1>
+  <div class="chapter-ornament">
+    <div class="ornament-line"></div>
+    <div class="ornament-diamond"></div>
+    <div class="ornament-line"></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <p class="toc-title">Table of Contents</p>
+  <ul>
+    <li><a href="#section-1">I. The Weight of Building</a></li>
+  
+   
+   
+  </ul>
+</nav>
+
+<hr>
+<!--SECTION 1 Starts -->
+<!--CHAPTER VII SECTION I STARTS -->
+<h2 id="section-1">I. The Weight of Building</h2>
+<p class="era">Starhold · Ironpass · Greenveil · Vaelmark — Year 1043–1044</p>
+
+<hr>
+
+<p>Starhold did not look like a capital city.</p>
+
+<hr>
+
+<p>It looked like one refusing to stop becoming one.</p>
+
+<hr>
+
+<p>The eastern wall stood at fifty percent.</p>
+
+<p>The residential districts below it were organized mud with purpose — not streets yet, but mud that led somewhere specific and arrived there reliably.</p>
+
+<p>Three granaries operated simultaneously in the southern quarter, filling the dawn air with the warm-grain smell that Havenfire had carried for two years and Starhold was only beginning to learn.</p>
+
+<hr>
+
+<p>Thirty thousand people lived here now.</p>
+
+<hr>
+
+<p>They had not all been invited.</p>
+
+<p>Many had arrived by following wagons that seemed to know where they were going.</p>
+
+<p>Others had walked for days toward a name they had heard in a tavern or a refugee camp or whispered across a ruined frontier settlement in the particular way that names spread when they carry something true inside them.</p>
+
+<hr>
+
+<p>Starhaven.</p>
+
+<hr>
+
+<p>The mixed-race districts had formed without policy.</p>
+
+<p>Human farmers beside beastkin traders beside wood elf craftspeople beside former enemy soldiers working their restitution labor.</p>
+
+<p>Nobody announced these neighborhoods.</p>
+
+<p>They simply became — shaped by proximity and shared cookfires and the particular democracy of people who had all arrived with nothing and were building something from the same starting point.</p>
+
+<hr>
+
+<p>The city smelled of construction.</p>
+
+<p>Fresh mortar.</p>
+
+<p>Forge smoke.</p>
+
+<p>Pine resin from Greenveil timber.</p>
+
+<hr>
+
+<p>And underneath all of it — barely detectable, easy to miss if you hadn't known what the air had smelled like before — clean.</p>
+
+<hr>
+
+<p>The corruption smell that had lived in this valley for years was gone.</p>
+
+<hr>
+
+<p>Had been gone since the purification.</p>
+
+<hr>
+
+<p>Some of the older refugees noticed it on quiet mornings and stood still for a moment before continuing whatever they were doing.</p>
+
+<hr>
+
+<p>Like people checking that something painful was still absent.</p>
+
+<hr>
+
+<p>Like people who hadn't yet fully trusted that it would stay gone.</p>
+
+<hr>
+
+<!-- RHEGAR THORNE ARRIVES -->
+
+<p>The northeastern road brought him in the third month of Year 1043.</p>
+
+<hr>
+
+<p>Not quickly.</p>
+
+<hr>
+
+<p>Rhegar Thorne had sent his letter in Year 1042 and arrived fourteen months later.</p>
+
+<p>The gap was not hesitation.</p>
+
+<p>It was completion.</p>
+
+<hr>
+
+<p>He had finished every open engagement first.</p>
+
+<p>Briefed his replacements personally.</p>
+
+<p>Transferred his command records to Ironmere's military archive.</p>
+
+<p>Said goodbye to the army he had spent twenty years building — the army that had never lost a fortress — in the particular way of someone who understood that leaving a thing properly was part of respecting what it had been.</p>
+
+<hr>
+
+<p>Then he walked away from it.</p>
+
+<hr>
+
+<p>He arrived with forty-seven soldiers.</p>
+
+<p>Not the ones who had begged to follow him — there had been hundreds of those.</p>
+
+<p>The forty-seven he had chosen himself, for specific reasons he had worked out before asking each one.</p>
+
+<hr>
+
+<p>He carried a single saddlebag.</p>
+
+<hr>
+
+<p>Inside it: eighteen years of engagement records.</p>
+
+<p>Three detailed maps of the eastern continental road network.</p>
+
+<p>A personal field notebook labelled in his own hand: <em>Problems I Do Not Have Answers To.</em></p>
+
+<p>Seven entries.</p>
+
+<p>All Void-related tactical puzzles he had been working on since before Starhaven existed.</p>
+
+<hr>
+
+<p>He was fifty-two years old.</p>
+
+<p>He moved like something that had not been stopped yet and did not expect to be.</p>
+
+<hr>
+
+<p>The gate guard at Starhold's northeastern entrance had to double-check the registration because nobody had told the gate that the Grand Marshal was arriving today.</p>
+
+<hr>
+
+<p>Rhegar waited.</p>
+
+<hr>
+
+<p>With exactly the patience of someone who had never once needed urgency on their own behalf.</p>
+
+<hr>
+
+<p>Rayden came down from the eastern wall himself when the messenger reached him.</p>
+
+<hr>
+
+<p>They stood facing each other at the gate.</p>
+
+<hr>
+
+<p>Two men who had spent their lives building things that survived.</p>
+
+<p>One of them just arrived.</p>
+
+<p>One of them still figuring out what arriving meant.</p>
+
+<hr>
+
+<p>Rhegar looked at the walls.</p>
+
+<p>At the scaffolding.</p>
+
+<p>At the organized mud becoming streets.</p>
+
+<p>At the thirty thousand people visible from where he stood going about the work of building something that hadn't existed two years ago.</p>
+
+<hr>
+
+<p>Then at Rayden.</p>
+
+<hr>
+
+<p class="quote">"Show me the walls."</p>
+
+<hr>
+
+<p>Not the throne room.</p>
+
+<p>Not the council chamber.</p>
+
+<p>Not the founding council or the allied commanders or any of the things that might have been offered to a Grand Marshal arriving to take command of a kingdom's military.</p>
+
+<hr>
+
+<p>The walls.</p>
+
+<hr>
+
+<p>Rayden showed him the walls.</p>
+
+<hr>
+
+<p>They walked the eastern perimeter for two hours.</p>
+
+<hr>
+
+<p>Rhegar said almost nothing.</p>
+
+<p>He touched the stone at stress points.</p>
+
+<p>He calculated load distribution by eye in the way of someone who had been doing it for thirty years and no longer needed to consciously perform the calculation.</p>
+
+<p>He wrote in his field notebook at three specific locations — the notes short, precise, already containing the solutions alongside the problems.</p>
+
+<hr>
+
+<p>When they returned to the gate he closed the notebook.</p>
+
+<hr>
+
+<p class="quote">"Better than I expected."</p>
+
+<hr>
+
+<p>Rayden, who was already learning the register of the man beside him, understood that this was the equivalent of high praise.</p>
+
+<hr>
+
+<p class="quote">"Not good enough yet."</p>
+
+<hr>
+
+<p>And that this was a promise.</p>
+
+<hr>
+
+<p>Rhegar Thorne became Grand Marshal of Starhaven three days after his arrival.</p>
+
+<hr>
+
+<p>He spent those three days walking.</p>
+
+<hr>
+
+<p>Every district.</p>
+
+<p>Every road approach.</p>
+
+<p>Every training ground.</p>
+
+<p>Every supply depot.</p>
+
+<p>Every watchtower and patrol post and gate mechanism on the current perimeter.</p>
+
+<hr>
+
+<p>At the end of the three days he produced a document — forty-one pages, handwritten, structured with the methodical clarity of someone who had never once wasted a word — that outlined the complete military reorganization of Starhaven's defense structure.</p>
+
+<hr>
+
+<p>Kael read it in one sitting.</p>
+
+<hr>
+
+<p>Made two notations in the margin.</p>
+
+<hr>
+
+<p>Then brought it to Rayden with the expression he wore when he had nothing negative to say and wasn't entirely sure how to hold that.</p>
+
+<hr>
+
+<!-- DORAN ASHE FOLLOWS -->
+
+<p>Doran Ashe did not arrive quietly.</p>
+
+<hr>
+
+<p>He arrived with two thousand soldiers, three supply wagons of field doctrine manuals, and a horse named Ironside who was the largest animal most of the city's thirty thousand residents had encountered at close range.</p>
+
+<hr>
+
+<p>Doran himself was large.</p>
+
+<p>Direct.</p>
+
+<p>Consistently underestimated by people who judged by appearance rather than outcome.</p>
+
+<p>Forty-seven years old with the particular economy of movement of someone who had spent decades knowing that energy spent unnecessarily was energy unavailable when it mattered.</p>
+
+<hr>
+
+<p>He looked at the training grounds for twenty minutes without speaking.</p>
+
+<hr>
+
+<p>Then made one suggestion to Daven Holt.</p>
+
+<hr>
+
+<p>Precise.</p>
+
+<p>Specific.</p>
+
+<p>Immediately applicable.</p>
+
+<hr>
+
+<p>Daven stared at him.</p>
+
+<hr>
+
+<p class="quote">"Your eastern flank compression is eight seconds slower than it needs to be."</p>
+
+<hr>
+
+<p>Daven folded his arms.</p>
+
+<hr>
+
+<p class="quote">"We won a battle at six thousand against fifty thousand with that same flank compression."</p>
+
+<hr>
+
+<p class="quote">"Against someone who didn't use the eastern flank advantage properly."</p>
+
+<hr>
+
+<p>A pause.</p>
+
+<hr>
+
+<p class="quote">"Next time they might."</p>
+
+<hr>
+
+<p>Daven looked at him for a long moment.</p>
+
+<p>The expression of a man considering whether to be offended and deciding the math was too obvious.</p>
+
+<hr>
+
+<p>Then turned back toward the training ground.</p>
+
+<hr>
+
+<p class="quote">"Show me."</p>
+
+<hr>
+
+<p>This was how Doran Ashe joined Starhaven.</p>
+
+<hr>
+
+<p>Not through ceremony.</p>
+
+<p>Not through formal appointment.</p>
+
+<hr>
+
+<p>Through a training ground conversation that ended with Daven acknowledging — not loudly, not publicly, but clearly — that the man beside him knew something worth knowing.</p>
+
+<hr>
+
+<!-- THE IRONMERE ALLIANCE -->
+
+<p>The political consequence of Rhegar's recruitment arrived by messenger three weeks after Rhegar himself.</p>
+
+<hr>
+
+<p>Official diplomatic seal.</p>
+
+<p>Ironmere's crest.</p>
+
+<hr>
+
+<p>The letter was addressed to Rayden Cale, King of Starhaven.</p>
+
+<hr>
+
+<p>Inside: a full military alliance offer.</p>
+
+<p>180,000 committed soldiers.</p>
+
+<p>Trade access along the eastern road network.</p>
+
+<p>Formal diplomatic recognition.</p>
+
+<hr>
+
+<p>And beneath the official language — in a different hand, in smaller script, clearly added after the formal letter was composed — a single sentence from Queen Mira Vorn:</p>
+
+<hr>
+
+<p class="quote">"He speaks well of you. That is sufficient."</p>
+
+<hr>
+
+<p>King Aldric Vorn could have treated Rhegar's departure as defection.</p>
+
+<p>Stripped rank retroactively.</p>
+
+<p>Filed a diplomatic protest.</p>
+
+<p>Made an enemy of the kingdom that had just built itself on his doorstep.</p>
+
+<hr>
+
+<p>He had not.</p>
+
+<hr>
+
+<p>Because Aldric Vorn was a king who understood that a general who built something better was not a betrayal.</p>
+
+<p>He was evidence.</p>
+
+<hr>
+
+<p>Kael read the alliance letter twice.</p>
+
+<p>Looked at the numbers.</p>
+
+<p>Looked at the eastern road access implications.</p>
+
+<p>Looked at Rayden.</p>
+
+<hr>
+
+<p>For once he did not immediately find the structural weakness in the arrangement.</p>
+
+<hr>
+
+<p>Rayden recognized this as the closest thing to approval Kael's expression was capable of producing.</p>
+
+<hr>
+
+<!-- IRONPASS AT TWENTY PERCENT -->
+
+<p>Two days' ride northeast, Ironpass was twenty percent complete.</p>
+
+<hr>
+
+<p>It looked like the skeleton of something enormous.</p>
+
+<p>Bones visible, the full shape apparent, the flesh not yet attached.</p>
+
+<hr>
+
+<p>The outer ring's first wall stood in sections — some fully raised, some at foundation level, some still marked in chalk on bare stone by Kael's survey teams.</p>
+
+<p>The three-ring fortification system existed entirely in Kael's notebooks and the minds of his engineers and the chalk lines on the ground that told workers where the inner ring residential district would eventually stand, where the middle ring military barracks would follow, where the outer ring's defensive positions would create the layered approach system that made the fortress theoretically unbreachable.</p>
+
+<hr>
+
+<p>Theoretically.</p>
+
+<p>Kael did not use that word.</p>
+
+<hr>
+
+<p>Twenty thousand people lived inside the construction zone.</p>
+
+<p>Workers and engineers and soldiers and their families occupying early residential structures and organized camp districts that were more permanent than tents and less permanent than the city they were building.</p>
+
+<hr>
+
+<p>They were all building the thing they lived inside.</p>
+
+<hr>
+
+<p>Brek Stonefall walked the perimeter at dawn every day.</p>
+
+<hr>
+
+<p>Ironvow across his arm.</p>
+
+<p>The same ritual as Havenfire, adapted for a construction site larger than anything Havenfire had been.</p>
+
+<hr>
+
+<p>The wall still needed anchoring.</p>
+
+<p>The person holding it needed to know the wall was held.</p>
+
+<hr>
+
+<p>Kael rotated between Starhold and Ironpass.</p>
+
+<p>Never fully absent from either.</p>
+
+<p>Managing the paradox of building two things simultaneously by treating the road between them as a third thing that also needed building — watchtowers, waystations, patrol camps, messenger posts appearing mile by mile along the northeastern route as if the road itself was becoming what connected the two cities rather than merely the distance between them.</p>
+
+<hr>
+
+<p>When Kael arrived at Ironpass from Starhold, Brek gave him three sentences.</p>
+
+<p>The structural progress.</p>
+
+<p>The supply line status.</p>
+
+<p>The two decisions made in Kael's absence that had required immediate judgment.</p>
+
+<hr>
+
+<p>Kael corrected where needed.</p>
+
+<p>Said nothing where not needed.</p>
+
+<hr>
+
+<p>This was the most efficient command system either of them had ever worked inside.</p>
+
+<p>Neither had commented on it.</p>
+
+<p>Neither needed to.</p>
+
+<hr>
+
+<!-- RENZO'S SECOND FAILURE -->
+
+<p>The first rift gate attempt had happened eight months earlier.</p>
+
+<hr>
+
+<p>It had produced a portal to the inside of a granite wall twelve feet underground.</p>
+
+<p>Nobody had gone through it.</p>
+
+<p>The wall had sealed around the portal edges before anyone made the attempt.</p>
+
+<p>The granite had been permanently warm for three weeks afterward.</p>
+
+<hr>
+
+<p>Renzo Fal had described this in her research log as: <em>Informative.</em></p>
+
+<hr>
+
+<p>The second attempt was today.</p>
+
+<hr>
+
+<p>The underlying problem — which she explained to nobody present because nobody present was qualified to follow the explanation — was that spatial folding required a precise understanding of the relationship between two anchor points expressed in non-Euclidean coordinate terms.</p>
+
+<p>The mathematics existed.</p>
+
+<p>She had developed them herself across fourteen months of work, starting from the chest of books she had carried through Havenfire's gate and rebuilding the theoretical framework from first principles because the existing literature on rift gate construction was, in her assessment, wrong in four separate foundational assumptions.</p>
+
+<hr>
+
+<p>The execution was the problem.</p>
+
+<hr>
+
+<p>The execution required a physical bridging component between the mathematical model and the actual space, and that bridge kept collapsing at the third anchor verification.</p>
+
+<hr>
+
+<p>The second attempt produced a portal that opened correctly.</p>
+
+<hr>
+
+<p>Held for four seconds.</p>
+
+<hr>
+
+<p>Then inverted.</p>
+
+<hr>
+
+<p>Nobody else in the room knew what inverted meant in this specific spatial context.</p>
+
+<hr>
+
+<p>Renzo knew.</p>
+
+<p>She had been watching for it.</p>
+
+<p>She took twelve notes in rapid succession before closing the portal.</p>
+
+<hr>
+
+<p>Then looked at the notes.</p>
+
+<p>Then at the research log.</p>
+
+<hr>
+
+<p>Wrote one word.</p>
+
+<hr>
+
+<p><em>Closer.</em></p>
+
+<hr>
+
+<p>Velkan was present — she had requested a theoretical observer for the second attempt, and Velkan had been at Starhold that week traveling from Vaelmark.</p>
+
+<hr>
+
+<p>He looked at the residual spatial distortion still visible in the air where the portal had been.</p>
+
+<p>The particular shimmer of space that had briefly been somewhere else and hadn't entirely decided to return to being here.</p>
+
+<hr>
+
+<p>Then at Renzo.</p>
+
+<hr>
+
+<p class="quote">"You know what the problem is."</p>
+
+<hr>
+
+<p class="quote">"I know what three of the problems are."</p>
+
+<hr>
+
+<p class="quote">"How many total?"</p>
+
+<hr>
+
+<p>Renzo considered this with the seriousness the question deserved.</p>
+
+<hr>
+
+<p class="quote">"Currently? Six."</p>
+
+<hr>
+
+<p>Velkan looked at the shimmer again.</p>
+
+<hr>
+
+<p class="quote">"Get it to five."</p>
+
+<hr>
+
+<p>He came back for every subsequent attempt whenever his rotation brought him to Starhold.</p>
+
+<p>Not as a collaborator — Renzo did not require collaboration, she required a thinking partner who could follow the mathematics well enough to challenge her assumptions without needing the answers explained first.</p>
+
+<hr>
+
+<p>Velkan qualified.</p>
+
+<hr>
+
+<p>Barely, by his own admission.</p>
+
+<p>Which Renzo considered the most honest thing a theoretical physicist had said to her in fifteen years of research.</p>
+
+<hr>
+
+<!-- THE ATHENAEUM — VELKAN AND SENNA -->
+
+<p>The Starhaven Athenaeum had one hundred members by the end of Year 1043.</p>
+
+<hr>
+
+<p>Senna Ash ran the day-to-day operations with the systematic efficiency of someone who had been waiting her entire career for an institution worthy of her organizational capacity.</p>
+
+<p>Velkan provided the vision and the institutional authority and the particular scholarly credibility that came from a man who had spent eleven years producing the most comprehensive analysis of Void corruption in recorded history.</p>
+
+<hr>
+
+<p>Together they had built something that was not yet a library and not yet a university and was precisely what it needed to be: a place where documented knowledge came to be preserved rather than lost.</p>
+
+<hr>
+
+<p>Every week Velkan arrived from Vaelmark or returned from the frontier with something new for the archive.</p>
+
+<p>Every week Senna had organized, catalogued, cross-referenced, and made retrievable whatever had arrived before him.</p>
+
+<hr>
+
+<p>The hundred members included former scholars from collapsed kingdoms, researchers who had written letters, practitioners whose knowledge had nowhere to live before this building existed.</p>
+
+<p>They came from seven different territories.</p>
+
+<p>They worked in twelve languages between them.</p>
+
+<p>The organizational system Senna had built handled all of it without strain.</p>
+
+<hr>
+
+<p>Velkan occasionally looked at the working archive with the expression of a man who had spent years accumulating knowledge in a personal system that was functional but would not have scaled past his own lifespan.</p>
+
+<hr>
+
+<p>He had not said this to Senna.</p>
+
+<hr>
+
+<p>He didn't need to.</p>
+
+<p>She had known it from the first day.</p>
+
+<hr>
+
+<!-- SERAPHINE'S HOSPITAL — ISOLDE CREN — CORRUPTION WORK -->
+
+<p>The hospital was not what people had expected.</p>
+
+<hr>
+
+<p>They had expected a healing shrine.</p>
+
+<p>A sanctified space where purification happened under silver light and the Ashen Saint's particular grace.</p>
+
+<hr>
+
+<p>What Seraphine built was a functioning medical institution.</p>
+
+<hr>
+
+<p>Healers — magical and non-magical both — working beside each other under structured protocols.</p>
+
+<p>Triage systems.</p>
+
+<p>Supply chains for medicines.</p>
+
+<p>Documentation of treatment outcomes.</p>
+
+<p>Ward systems separating corruption exposure from standard injuries from long-term recovery cases.</p>
+
+<hr>
+
+<p>The non-magical component was Isolde Cren's.</p>
+
+<hr>
+
+<p>Isolde had arrived from a frontier settlement where she had been treating corruption exposure for three years without magical support.</p>
+
+<p>Not by accident — the settlement had no Ashen Guard access.</p>
+
+<p>She had developed her own treatment protocols entirely through observation and documentation.</p>
+
+<hr>
+
+<p>She had not written to Seraphine to request a position.</p>
+
+<hr>
+
+<p>She had submitted her research for review.</p>
+
+<hr>
+
+<p>Seraphine read it in one sitting.</p>
+
+<p>Then sent one message.</p>
+
+<hr>
+
+<p class="quote">"Come. Bring the research."</p>
+
+<hr>
+
+<p>What Isolde brought was a decade of systematic documentation on the physical effects of Void-touch exposure in patients treated without magic.</p>
+
+<p>The data revealed — crucially, almost embarrassingly — that several standard non-magical interventions significantly slowed corruption progression when magical treatment was unavailable or delayed.</p>
+
+<hr>
+
+<p>Information the Ashen Order had never collected.</p>
+
+<p>Because the Ashen Order had never needed to look for it.</p>
+
+<hr>
+
+<p>Seraphine looked at the data for a long time.</p>
+
+<hr>
+
+<p class="quote">"Why didn't we know this?"</p>
+
+<hr>
+
+<p class="quote">"Because no one was looking."</p>
+
+<hr>
+
+<p>Isolde Cren became Chief Physician.</p>
+
+<p>Not as Seraphine's subordinate.</p>
+
+<p>As her equal in separate domains — Seraphine handling purification and magical treatment protocols, Isolde handling physical medicine, the hospital's outcomes better than either could produce alone.</p>
+
+<hr>
+
+<p>The hospital also sent Ashen Guard units outward.</p>
+
+<hr>
+
+<p>Small teams.</p>
+
+<p>Two or three guards per unit, Lena Crest coordinating the deployment rotation.</p>
+
+<p>Moving through the frontier territories where corruption still lived in old battlefield sites and collapsed settlement ruins and the places Drevak's army had occupied for years.</p>
+
+<hr>
+
+<p>They charged for the service.</p>
+
+<p>Not extortionately — a rate calculated to cover the guard's costs and generate enough revenue to fund the next deployment.</p>
+
+<p>Outer territories paid because corruption concealment cost more than corruption treatment, and Seraphine's teams did not merely treat.</p>
+
+<p>They purified.</p>
+
+<p>Completely.</p>
+
+<p>Permanently.</p>
+
+<hr>
+
+<p>Word of this spread faster than the teams themselves could travel.</p>
+
+<hr>
+
+<p>By the end of Year 1043 there was a waiting list six months long.</p>
+
+<hr>
+
+<p>Seraphine and Rayden went personally to the most severe cases.</p>
+
+<hr>
+
+<p>Not as a diplomatic gesture.</p>
+
+<p>As necessity — the largest corruption sites required both of them and Rayden had learned, across four frontier expeditions in Year 1043, that Kingsbane's temporal resonance had a secondary effect nobody had expected.</p>
+
+<hr>
+
+<p>It destabilized deep corruption anchors.</p>
+
+<hr>
+
+<p>Not as powerfully as it split a meteor.</p>
+
+<p>But consistently enough that sites Seraphine alone could only partially purify became fully purifiable when Rayden was present with Kingsbane drawn.</p>
+
+<hr>
+
+<p>He practiced primarily with Dawnpiercer in these expeditions.</p>
+
+<p>Kingsbane was dangerous in enclosed spaces and against opponents that didn't require it.</p>
+
+<p>But at corruption anchors Kingsbane came out and the combination of his temporal resonance and Seraphine's purification light worked the way it had worked at the meteor — not fighting the corruption, replacing it.</p>
+
+<hr>
+
+<p>Rayden described the frontier expeditions to Kael as: <em>necessary and exhausting.</em></p>
+
+<hr>
+
+<p>Kael described them to the council as: <em>strategically essential and operationally sound.</em></p>
+
+<hr>
+
+<p>Both were correct.</p>
+
+<hr>
+
+<!-- DUNGEONS -->
+
+<p>The dungeons were a separate problem entirely.</p>
+
+<hr>
+
+<p>Void fractures did not produce only corruption zones.</p>
+
+<p>Sometimes they produced spaces — collapsed pocket dimensions, shattered planar anchors, underground chambers where reality had been under enough Void pressure long enough that the space itself had become something other than ordinary rock and earth.</p>
+
+<hr>
+
+<p>The locals called them dungeons.</p>
+
+<p>The term was informal, imprecise, and had spread across every frontier settlement regardless of what official terminology the Athenaeum preferred.</p>
+
+<p>Dungeons it was.</p>
+
+<hr>
+
+<p>They appeared near old corruption sites, near places where Drevak's forces had performed extended ritual work, near the fault lines where the Void's fractures ran closest to the surface.</p>
+
+<p>Each one different.</p>
+
+<p>Each one containing things that had lived in the space between the Void and the world long enough to have stopped being entirely either.</p>
+
+<hr>
+
+<p>Rayden went himself when the report indicated something that required more than standard clearing teams.</p>
+
+<hr>
+
+<p>Sometimes with Kai — the two of them moving through unstable spaces with the particular ease of people who had fought alongside each other at the worst possible moment and trusted each other's read of any room they entered.</p>
+
+<p>Sometimes with Lena Crest, whose Ashen Guard training made her extraordinarily capable in corruption-dense enclosed spaces and whose complete absence of fear regarding anything smaller than a titan Rayden found professionally reassuring.</p>
+
+<p>Sometimes with Lyria, when the dungeon's aerial structure allowed range work and the alternative was sending in fighters without coverage.</p>
+
+<p>Sometimes with Daven, whose approach to a dungeon was the same as his approach to a shield wall — identify the thing causing the most structural problems and remove it immediately.</p>
+
+<p>Sometimes with Nyx, when the report suggested something that required solving quietly rather than forcefully.</p>
+
+<hr>
+
+<p>Nyx's dungeon methodology was not something Rayden entirely understood.</p>
+
+<p>He had stopped asking questions about it after the third dungeon where Nyx had already been inside for two hours before the rest of the team arrived.</p>
+
+<hr>
+
+<!-- LYRIA — TRAINING AND ORDER -->
+
+<p>Lyria had two roles and performed both with the focused economy of someone who did not distinguish between work and the absence of work — only between motion and stillness, and she preferred motion.</p>
+
+<hr>
+
+<p>The first was training Starhaven's ranged units.</p>
+
+<hr>
+
+<p>Not just archers.</p>
+
+<p>Every specialist range role — crossbow crews, elevated sniper positions, artillery spotters for the siege weapon network Vera was building, forward observers who would serve as the eyes connecting the range units to the battlefield commanders.</p>
+
+<hr>
+
+<p>No drake archer units — that was Vaelmark's specialty and Vaelmark's alone.</p>
+
+<p>What Lyria built was the ground-based range capability that worked alongside aerial support rather than duplicating it.</p>
+
+<hr>
+
+<p>The curriculum's underlying principle was hers: <em>accuracy without context is useless.</em></p>
+
+<p>Every training session included terrain reading alongside the physical skills.</p>
+
+<p>Every trainee left understanding not just how to shoot accurately but why they were shooting, at what, from where, and what happened if they missed and needed to adapt.</p>
+
+<hr>
+
+<p>Her graduates did not just hit targets.</p>
+
+<p>They understood the battlefield.</p>
+
+<hr>
+
+<p>The second role was city order.</p>
+
+<hr>
+
+<p>Starhold's rapid growth had produced the predictable frictions of a young city.</p>
+
+<p>Theft.</p>
+
+<p>Disputes over resource allocation.</p>
+
+<p>The specific complications that arose when recently resurrected former enemies navigated the same markets as the people they had fought six months earlier.</p>
+
+<p>The ordinary violence of people with competing claims on the same space.</p>
+
+<hr>
+
+<p>Lyria approached this observationally.</p>
+
+<hr>
+
+<p>She walked the developing districts at different hours.</p>
+
+<p>Noted patterns.</p>
+
+<p>Identified where the friction originated rather than where it expressed itself.</p>
+
+<p>Addressed sources.</p>
+
+<hr>
+
+<p>Three interventions in Year 1043 prevented three situations from becoming something that would have set the city's mixed-race integration back significantly.</p>
+
+<p>None of them involved violence.</p>
+
+<p>All involved Lyria being in the right place at the right time with the right information.</p>
+
+<hr>
+
+<p>Dren Solm recorded all three.</p>
+
+<hr>
+
+<p>Lyria told him she would prefer he hadn't.</p>
+
+<hr>
+
+<p>He wrote that down too.</p>
+
+<hr>
+
+<!-- VERA AND DAVEN -->
+
+<p>Vera had claimed the southern artillery positions as her domain six months before anyone officially assigned them to her.</p>
+
+<hr>
+
+<p>The wall artillery system she was designing was different in kind from anything that had existed at Havenfire — not siege weapons adapted for defense but a fully integrated network where each position's firing arc overlapped with three others, creating redundant kill coverage across every approach route without any single position being essential.</p>
+
+<hr>
+
+<p>The argument with the Vaelmark engineers about rune-stabilization had lasted three months and produced, at the end of those months, a hybrid system using Vaelmark arcane stabilization for the primary cannons and Havenfire engineering principles for the mechanical redundancies.</p>
+
+<hr>
+
+<p>Both sides claimed victory.</p>
+
+<p>Both were correct.</p>
+
+<p>Vera documented this as a successful collaboration in the engineering record and described it to Daven as <em>the most exhausting argument that produced the best outcome I have ever had with people who were wrong about everything except the part where they were right.</em></p>
+
+<hr>
+
+<p>Daven trained with Rayden in the mornings.</p>
+
+<hr>
+
+<p>Before the city woke.</p>
+
+<p>Before the administrative demands of Starhaven's growing military arrived.</p>
+
+<p>The training ground in the quiet hour when the forge fires were just starting and the drill fields were empty.</p>
+
+<hr>
+
+<p>It had started as drilling — two commanders maintaining battlefield readiness in a city that was not currently at war.</p>
+
+<p>It had become something else.</p>
+
+<hr>
+
+<p>Honest.</p>
+
+<hr>
+
+<p>The specific partnership of people who trusted each other completely and expressed it through the willingness to hit each other at full capacity without taking it personally when the other person didn't pull the strike.</p>
+
+<hr>
+
+<p>Rayden trained primarily with Dawnpiercer.</p>
+
+<p>The golden blade was precise in a way Kingsbane was not — a weapon built for the kind of fight where you needed to be fast and controlled rather than devastating.</p>
+
+<p>Kingsbane stayed on his back during training sessions because Kingsbane drawn in a training yard tended to end training sessions.</p>
+
+<hr>
+
+<p>Daven's broken leg had healed correctly but not identically.</p>
+
+<p>He compensated without knowing he compensated.</p>
+
+<p>Rayden pointed it out one morning with the flat precision of someone who had spent enough time watching Daven move to notice the three-centimeter weight shift that most observers would never see.</p>
+
+<hr>
+
+<p>They worked on it for three weeks until the compensation was gone.</p>
+
+<hr>
+
+<p>Then Daven pointed out the right shoulder tension in Rayden's Dawnpiercer form.</p>
+
+<p>The ghost of the Ruinfall impact still living in the muscle.</p>
+
+<p>Pulling the fast draw slightly wide of true on the first stroke.</p>
+
+<hr>
+
+<p>They worked on that for a month.</p>
+
+<hr>
+
+<!-- KAI, VELKAN, SORIN — VAELMARK -->
+
+<p>Kai, Velkan, and Sorin had returned to Vaelmark in late Year 1042 with what remained of Ninth Sky.</p>
+
+<hr>
+
+<p>The return was not a homecoming.</p>
+
+<p>It was an accounting.</p>
+
+<hr>
+
+<p>Sixty-two empty saddle harnesses on the launch platforms.</p>
+
+<p>Names spoken in the silver arenas before any rebuilding discussion began.</p>
+
+<p>Pyrewing's recovery visible to everyone — she flew differently now, the scar pulling slightly on the banking turn, but she flew.</p>
+
+<hr>
+
+<p>Sorin spent the first month rebuilding Ninth Sky's roster from scratch.</p>
+
+<hr>
+
+<p>Slowly.</p>
+
+<p>Each rider interviewed personally, evaluated not just for aerial skill but for the combination of courage and judgment the war had demonstrated mattered.</p>
+
+<hr>
+
+<p>He was not building toward the sixty or ninety of the pre-war corps.</p>
+
+<hr>
+
+<p>He was building toward something larger.</p>
+
+<p>Something that could answer any aerial threat that came at Starhaven.</p>
+
+<p>Something that would never again have sixty-two empty platforms.</p>
+
+<hr>
+
+<p>Alongside the rebuilding, Sorin's riders began new work.</p>
+
+<hr>
+
+<p>The corruption had retreated from Starhold but it had not retreated from the world.</p>
+
+<p>Void fractures still ran through frontier territories, old battlefield sites, the places Drevak's army had occupied for years.</p>
+
+<hr>
+
+<p>Drake riders carrying Vaelmark rune-marking equipment began systematic aerial purification work.</p>
+
+<p>Marking corrupted sites from above.</p>
+
+<p>Coordinating with Ashen Guard ground teams.</p>
+
+<p>Mapping the corruption's remaining presence across the territories surrounding Starhaven.</p>
+
+<hr>
+
+<p>Not combat.</p>
+
+<p>Prevention.</p>
+
+<hr>
+
+<p>The understanding that what the battle had stopped could begin again if nobody watched for it.</p>
+
+<hr>
+
+<p>Velkan traveled between Vaelmark and Starhold.</p>
+
+<p>The rotation was not equal — his attention divided in the way of someone who had started two things that both required him and had accepted that divided attention at full commitment was the only honest way to manage it.</p>
+
+<hr>
+
+<p>Kai came with him on the Starhold visits.</p>
+
+<p>Not every one.</p>
+
+<p>Some.</p>
+
+<hr>
+
+<p>When he came he trained with the battlemage corps in the morning.</p>
+
+<p>Worked alongside Rayden on corruption site clearance when the expeditions aligned.</p>
+
+<p>And in the evenings — not always, not formally, but often enough that it had become its own kind of pattern — sat in the unfinished parts of the fortress with Rayden and talked about nothing in particular.</p>
+
+<hr>
+
+<p>Oaksmane.</p>
+
+<p>The candles.</p>
+
+<p>Things that had happened eleven years ago and things that had not happened yet.</p>
+
+<hr>
+
+<p>Two people who had been running in the same direction without knowing it finding it surprisingly unremarkable to arrive at the same place.</p>
+
+<hr>
+
+<p>There were nights they sparred until past dark.</p>
+
+<p>Nights they ate bad food in the half-finished mess hall and argued about tactical theory with the particular intensity of people who had survived the theory being tested and had opinions about what the results meant.</p>
+
+<p>Nights Kai demonstrated a new spell formation and Rayden watched with the focused attention of someone cataloguing what an ally could do — not for tactical records, simply because he had spent eleven years not knowing what Caelum had become and was still, quietly, making up for the gap.</p>
+
+<hr>
+
+<p>Kai noticed this.</p>
+
+<hr>
+
+<p>He said nothing about it.</p>
+
+<hr>
+
+<p>He found it, on the whole, better than the alternative.</p>
+
+<hr>
+
+<!-- MARCUS, HELNA, DRESH — GREENVEIL -->
+
+<p>Marcus had chosen Greenveil the way Garruk had said he would.</p>
+
+<hr>
+
+<p>Not because anyone directed him.</p>
+
+<p>Because the land was right.</p>
+
+<hr>
+
+<p>The grazing territory around the forest edge was better than anything available near Starhold or Ironpass.</p>
+
+<p>The volcanic shelf running beneath the Greywood foothills produced soil conditions that Helna identified immediately as exceptional — the kind of mineral density that didn't come from ordinary earth but from centuries of Thorin's root network enriching everything it touched.</p>
+
+<hr>
+
+<p>The land practically asked to be farmed.</p>
+
+<hr>
+
+<p>They arrived in early Year 1043.</p>
+
+<p>The three of them.</p>
+
+<p>Marcus, Helna, and Dresh — seventeen years old now and carrying himself differently than the fifteen-year-old who had held the horse pen at Havenfire while both parents rode away from him.</p>
+
+<hr>
+
+<p>The Ironmane Fields began as two paddocks and a veterinary station.</p>
+
+<hr>
+
+<p>By the end of Year 1043 there were twelve paddocks, a breeding program, and the first generation of what would eventually become Starhaven's cavalry bloodline — horses bred specifically for the kingdom's military requirements.</p>
+
+<p>Larger than standard warhorses.</p>
+
+<p>More responsive to mixed-beast formation training.</p>
+
+<p>Raised from birth alongside Greenveil's direwolves and war boars and the other animals that Thorin's people had worked with for years, eliminating the instinctive panic responses that made mixed-beast cavalry formations historically difficult to sustain.</p>
+
+<hr>
+
+<p>Helna ran the veterinary operation with the same systematic efficiency she had brought to every medical context since the battle.</p>
+
+<p>She was also expanding the Greywood root compound research — the treatment that had saved Pyrewing — documenting its applications across different draconic tissue types with the methodical patience of someone who understood that a treatment that worked once needed to be understood before it could be replicated reliably.</p>
+
+<hr>
+
+<p>Velkan read her first report to the Athenaeum and sent back a six-page response within the week.</p>
+
+<hr>
+
+<p>Helna was mildly surprised by this.</p>
+
+<hr>
+
+<p>Then deeply unsurprised.</p>
+
+<hr>
+
+<p>Dresh was doing everything.</p>
+
+<hr>
+
+<p>Cavalry training in the mornings.</p>
+
+<p>Paddock work before dawn.</p>
+
+<p>Sitting in on Thorin's forest patrol meetings when they passed through.</p>
+
+<p>Learning war-horse handling techniques that Marcus had never formally taught him because they had never needed to be formal — absorbed over sixteen years of proximity and now being applied to animals whose quality exceeded anything they had worked with before.</p>
+
+<hr>
+
+<p>At seventeen he was doing the work of someone considerably older.</p>
+
+<p>Not because he was forced to.</p>
+
+<p>Because the land was his and the horses were his and the people around him were building something he wanted to be part of.</p>
+
+<hr>
+
+<p>Greenveil itself was growing around the Ironmane Fields and Thorin's forest sanctuary simultaneously.</p>
+
+<hr>
+
+<p>Not a city yet.</p>
+
+<p>Moving toward one with the organic momentum of a place where the right people and the right land and the right purpose had aligned at the same time.</p>
+
+<hr>
+
+<p>The most fertile territory in Starhaven's sphere.</p>
+
+<p>Thorin's root network enriching the soil.</p>
+
+<p>Marcus's agricultural operation producing food.</p>
+
+<p>The forest sanctuary providing natural defensive depth that no wall could replicate.</p>
+
+<hr>
+
+<p>A city at the edge of wild things.</p>
+
+<p>Neither fully urban nor wilderness.</p>
+
+<p>Understanding slowly what it was.</p>
+
+<hr>
+
+<!-- THE NULL BLADES FORM -->
+
+<p>Nyx was never in the city directly.</p>
+
+<hr>
+
+<p>He was always in the consequences.</p>
+
+<hr>
+
+<p>By Year 1044 something called the Null Blades had begun appearing in intelligence reports from five different territories.</p>
+
+<p>Not as a named organization.</p>
+
+<p>As a pattern.</p>
+
+<hr>
+
+<p>Specific individuals disappearing from specific locations before they became specific threats.</p>
+
+<p>Specific information arriving in Rayden's hands from sources that could not be traced to their origin.</p>
+
+<p>Specific threats to Starhaven's developing road network neutralized in the days before they would have materialized as attacks.</p>
+
+<hr>
+
+<p>The operatives were not all assassins.</p>
+
+<hr>
+
+<p>Some were scouts.</p>
+
+<p>Some were information brokers who had spent years cultivating access in territories that had no diplomatic relationship with Starhaven.</p>
+
+<p>Some were former spies from collapsed kingdoms who needed new handlers and had found — through channels they couldn't fully explain — that Starhaven was offering something other than coin.</p>
+
+<hr>
+
+<p>Purpose.</p>
+
+<p>Cover.</p>
+
+<p>The specific protection of belonging to something that would not dissolve when the next political wind changed.</p>
+
+<hr>
+
+<p>Handler Vex managed operational coordination.</p>
+
+<p>Kira Null managed the information network.</p>
+
+<hr>
+
+<p>The Null Ward — three blocks in Starhold's central district that did not appear on civilian maps and whose streets occasionally seemed to loop back on themselves — was under construction.</p>
+
+<hr>
+
+<p>Its existence appeared on three official records: Rayden's, Kael's, and one sealed document in the Athenaeum requiring two signatories to open.</p>
+
+<hr>
+
+<p>Nyx had read all three.</p>
+
+<hr>
+
+<p>Nobody asked how.</p>
+
+<hr>
+
+<!-- THE POLICIES -->
+
+<p>Starhaven's founding policies did not arrive as proclamations.</p>
+
+<hr>
+
+<p>They arrived as decisions that became precedents that became law.</p>
+
+<hr>
+
+<p>The first was merit before bloodline.</p>
+
+<hr>
+
+<p>A mason from a former enemy territory — working restitution labor, armed with nothing but six years of structural engineering experience — approached Vera with a suggestion about the southern wall's load distribution.</p>
+
+<hr>
+
+<p>Under the old world's political logic he would not have spoken.</p>
+
+<p>His background disqualified him from the conversation.</p>
+
+<hr>
+
+<p>He spoke anyway.</p>
+
+<hr>
+
+<p>The suggestion was good.</p>
+
+<p>Vera implemented it and credited him by name in the engineering record.</p>
+
+<p>He became a paid engineer six months later.</p>
+
+<hr>
+
+<p>Kael noted this case in the council's working record and proposed formalizing the principle: <em>appointment and advancement determined by demonstrated capability, not origin, race, or prior allegiance.</em></p>
+
+<hr>
+
+<p>Rayden signed it the same day.</p>
+
+<hr>
+
+<p>The second was military service as a path to citizenship.</p>
+
+<hr>
+
+<p>Five years of service to Starhaven's military — border patrol, construction defense, dungeon clearing, corruption site work — granted full citizenship and the right to claim a land allocation in any of the five road settlements.</p>
+
+<p>Not just to humans.</p>
+
+<p>To any race.</p>
+
+<p>To former enemy soldiers who had chosen to remain.</p>
+
+<p>To people who had arrived with nothing and chose to defend the place that had given them something.</p>
+
+<hr>
+
+<p>The third was corruption concealment as severe crime.</p>
+
+<hr>
+
+<p>Any settlement or individual who detected corruption signs and concealed them rather than reporting to the nearest Ashen Guard post faced legal consequence equal to allowing the corruption to spread.</p>
+
+<hr>
+
+<p>The reasoning was simple and Rayden stated it directly in the policy document:</p>
+
+<hr>
+
+<p class="quote">"The Void spreads in the dark. We fight it in the open. Anyone who chooses the dark over us has already chosen a side."</p>
+
+<hr>
+
+<p>The fourth was scholar and engineer protections.</p>
+
+<hr>
+
+<p>Any documented researcher, physician, engineer, or architect working under Starhaven's framework received specific legal protections: their research could not be confiscated by military authority, their work records were protected from noble or political interference, and their right to publish findings — including findings that challenged official positions — was guaranteed under the founding charter.</p>
+
+<hr>
+
+<p>Velkan had proposed this one.</p>
+
+<p>Renzo had added three specific clauses to the draft.</p>
+
+<p>Senna Ash had archived the final version with a notation that read simply: <em>Finally.</em></p>
+
+<hr>
+
+<p>The fifth was road neutrality.</p>
+
+<hr>
+
+<p>All five roads under Starhaven's maintenance were open to any trader, traveler, or caravan regardless of kingdom of origin, race, or prior political relationship with Starhaven, provided they registered at the nearest waystation and carried no weapons beyond personal defense size.</p>
+
+<hr>
+
+<p>Trade moved freely or it moved elsewhere.</p>
+
+<p>Starhaven wanted it here.</p>
+
+<hr>
+
+<p>The sixth arrived not as a policy but as a question that Tiber Oswick — forty years old, recently arrived from the eastern commercial territories, already running the trading post coordination with an instinct for exchange rates that made even Kael pause and reconsider his arithmetic — had asked Rayden directly:</p>
+
+<hr>
+
+<p class="quote">"What do you say to people who want to come but aren't certain yet?"</p>
+
+<hr>
+
+<p>Rayden had looked at him.</p>
+
+<hr>
+
+<p class="quote">"Say to them."</p>
+
+<hr>
+
+<p class="quote">"You have three years."</p>
+
+<p class="quote">"Come to any city — Starhold, Ironpass, Greenveil, Vaelmark."</p>
+
+<p class="quote">"Work, live, see if this is where you belong."</p>
+
+<p class="quote">"At the end of three years, stay or leave."</p>
+
+<p class="quote">"No questions asked either way."</p>
+
+<hr>
+
+<p>Tiber looked at him for a moment.</p>
+
+<hr>
+
+<p class="quote">"That will bring more people than you're ready for."</p>
+
+<hr>
+
+<p class="quote">"Good."</p>
+
+<hr>
+
+<p>The Open Visa — three years free residency, work rights, and full access to any Starhaven city, with no obligation and no penalty for leaving — became the sixth founding policy.</p>
+
+<hr>
+
+<p>Tiber, who had spent twenty years watching kingdoms build walls to keep people out, spent three days after that conversation staring at his trade projections in a state of something that resembled professional shock.</p>
+
+<hr>
+
+<p>Then rewrote them.</p>
+
+<p>All of them.</p>
+
+<p>Because the numbers were going to be different.</p>
+
+<p>Very different.</p>
+
+<hr>
+
+<!-- RAYDEN INTERVIEWING -->
+
+<p>Late in the evenings, after the administrative demands had been addressed and the training ground sessions were done and the corruption site dispatches had been read and the alliance correspondence had been signed, Rayden sat in a small room off the main council chamber and interviewed recruits.</p>
+
+<hr>
+
+<p>Not every recruit.</p>
+
+<p>The ones whose specific capability or history or potential marked them as something the kingdom would build around.</p>
+
+<hr>
+
+<p>He asked the same opening question to everyone.</p>
+
+<hr>
+
+<p class="quote">"What can you do that nobody else where you came from could do?"</p>
+
+<hr>
+
+<p>The answers told him things the formal applications did not.</p>
+
+<p>Not the content of the answer.</p>
+
+<p>The way the person held the question.</p>
+
+<p>Whether they reached for the impressive answer or the true one.</p>
+
+<p>Whether they understood the difference.</p>
+
+<hr>
+
+<p>A former Drevak officer being considered for a command position gave a polished answer about strategic capability and battlefield experience.</p>
+
+<hr>
+
+<p>Rayden sent him to the standard officer track.</p>
+
+<hr>
+
+<p>Good officer material.</p>
+
+<p>Not someone to build around.</p>
+
+<hr>
+
+<p>A half-elf blacksmith's apprentice from a collapsed frontier settlement gave a halting answer about an alloy she had developed accidentally while repairing a broken tool with whatever materials she had at hand.</p>
+
+<p>The alloy had held under stress conditions that should have destroyed it.</p>
+
+<p>She had no idea why.</p>
+
+<p>She had been trying to figure it out for three years.</p>
+
+<hr>
+
+<p>Rayden sent her to Vera with a note that said: <em>She found something. Find out what.</em></p>
+
+<hr>
+
+<p>The room was small.</p>
+
+<p>Deliberately.</p>
+
+<hr>
+
+<p>He had been offered the throne room for these sessions.</p>
+
+<p>He had declined.</p>
+
+<hr>
+
+<p>Because the throne room told people who he was in relation to them.</p>
+
+<p>The small room told him who they were when they weren't performing.</p>
+
+<hr>
+
+<p>Dren Solm recorded four hours' worth of these interviews in Year 1043.</p>
+
+<hr>
+
+<p>Then wrote in the chronicle:</p>
+
+<hr>
+
+<p class="quote">"The king of Starhaven spends four hours every week in a small room asking people what they can do. He has been offered a throne room. He declined. The small room is more honest. I suspect this is why Starhaven keeps building faster than anyone expected."</p>
+
+<hr>
+
+<p>Outside, the city continued.</p>
+
+<hr>
+
+<p>The hammers after dark.</p>
+
+<p>The forge fires before dawn.</p>
+
+<p>The five roads carrying more travelers every week.</p>
+
+<hr>
+
+<p>Starhold was fifty percent walls and one hundred percent intention.</p>
+
+<hr>
+
+<p>And somewhere on the eastern road approaching the northeastern gate…</p>
+
+<p>another caravan was arriving.</p>
+
+<hr>
+
+<p>Another fifty people who had heard a name.</p>
+
+<hr>
+
+<p>And walked toward it.</p>
+
+<hr>
+
+<!--CHAPTER VII SECTION I ENDS -->
+
+
+
+<h2>END OF CHAPTER 7</h2>
+</div><!-- /wrapper -->
+
+</body>
+</html>
