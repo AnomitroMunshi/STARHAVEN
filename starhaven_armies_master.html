@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starhaven — Complete Military Registry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Georgia',serif;background:#07070d;color:#d4c9a8;}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:#05050e;border-bottom:1px solid #1a1a30;padding:.5rem 1rem;display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;}
+.nav a{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:#7a7a9a;text-decoration:none;padding:.3rem .6rem;border:1px solid #1a1a2a;border-radius:2px;transition:all .2s;}
+.nav a:hover{color:#e8c060;border-color:#5a4a20;}
+
+/* HEADER */
+.ph{text-align:center;padding:2.5rem 2rem 1.5rem;background:#04040c;border-bottom:1px solid #181828;}
+.ph-title{font-size:2.4rem;letter-spacing:.15em;color:#e8d48a;text-transform:uppercase;font-weight:normal;}
+.ph-sub{font-size:.8rem;color:#5a5a7a;letter-spacing:.2em;text-transform:uppercase;margin:.4rem 0 .8rem;}
+.stats{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin:.6rem 0 0;}
+.st{text-align:center;background:#080812;border:1px solid #181828;padding:.5rem 1rem;border-radius:2px;}
+.st-v{font-size:1.2rem;color:#e8c060;display:block;}
+.st-l{font-size:.65rem;color:#4a4a6a;letter-spacing:.1em;text-transform:uppercase;}
+
+/* SECTION HEADER */
+.sh{text-align:center;padding:1.5rem 1rem .6rem;border-top:1px solid #141420;margin-top:1px;}
+.sh-title{font-size:1.2rem;color:#e8d48a;letter-spacing:.1em;text-transform:uppercase;font-weight:normal;}
+.sh-desc{font-size:.78rem;color:#6a6a7a;max-width:700px;margin:.3rem auto 0;line-height:1.5;}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:1px;padding:1px;max-width:1600px;margin:0 auto;}
+
+/* CARD */
+.card{background:#0c0c18;border-top:3px solid;position:relative;}
+.cb{padding:1.2rem 1.4rem 1.5rem;}
+
+/* Card top */
+.cn{font-size:1.15rem;color:#e8d490;letter-spacing:.07em;text-transform:uppercase;font-weight:normal;line-height:1.2;}
+.cs{font-size:.72rem;color:#5a5a78;letter-spacing:.11em;text-transform:uppercase;margin:.2rem 0 .3rem;}
+.cm{font-size:.82rem;color:#a09060;font-style:italic;margin-bottom:.5rem;}
+.sb{display:inline-block;font-size:.72rem;padding:.2rem .65rem;border:1px solid;border-radius:2px;letter-spacing:.04em;margin-bottom:.7rem;}
+
+/* Commander */
+.cr{display:flex;gap:.6rem;margin:.5rem 0 .3rem;align-items:flex-start;}
+.av{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:bold;border:1px solid rgba(255,255,255,.15);margin-top:1px;}
+.ri{flex:1;}
+.rn{font-size:.88rem;color:#d4b870;}
+.rt{font-size:.7rem;color:#585870;margin:.1rem 0;}
+.rd{font-size:.73rem;color:#9a9870;line-height:1.4;}
+
+/* Section label */
+.sl{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:#383858;border-bottom:1px solid #111120;padding-bottom:.25rem;margin:.85rem 0 .45rem;}
+
+/* Info grid */
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.3rem 0;}
+.il{font-size:.62rem;color:#383858;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.12rem;}
+.iv{font-size:.78rem;color:#a89c70;line-height:1.4;}
+
+/* Equipment table */
+table.eq{width:100%;border-collapse:collapse;}
+table.eq tr{border-bottom:1px solid #0f0f1e;}
+table.eq tr:last-child{border-bottom:none;}
+table.eq td{padding:.28rem .35rem;font-size:.76rem;vertical-align:top;line-height:1.4;}
+.ec{color:#404060;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;width:70px;padding-top:.33rem;}
+.en{color:#c8b870;font-variant:small-caps;width:140px;}
+.ed{color:#7a7860;}
+
+/* Units */
+.ug{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:.35rem;margin:.35rem 0;}
+.ub{background:#080810;border:1px solid #141424;padding:.35rem .45rem;}
+.un{font-size:.69rem;color:#c0a860;font-variant:small-caps;margin-bottom:.12rem;}
+.ur{font-size:.65rem;color:#5a5a72;line-height:1.3;}
+
+/* Tags */
+.tg{display:flex;flex-wrap:wrap;gap:.3rem;margin:.35rem 0;}
+.t{font-size:.68rem;padding:.15rem .5rem;border-radius:2px;border:1px solid;letter-spacing:.04em;}
+
+/* Note box */
+.nb{background:#060610;border-left:2px solid;padding:.5rem .65rem;font-size:.73rem;color:#8a8760;line-height:1.5;margin-top:.65rem;border-radius:0 2px 2px 0;}
+
+/* Doctrine */
+ul.dl{list-style:none;}
+ul.dl li{font-size:.74rem;color:#9a9878;padding:.25rem 0;border-bottom:1px dotted #101020;display:flex;gap:.4rem;}
+ul.dl li:last-child{border-bottom:none;}
+.dk{color:#e0b840;font-variant:small-caps;font-size:.72rem;min-width:90px;flex-shrink:0;}
+
+footer{text-align:center;padding:2rem 1rem;color:#2a2a4a;font-size:.72rem;border-top:1px solid #101018;margin-top:1px;}
+footer .ft{color:#4a4030;font-size:.85rem;margin-bottom:.3rem;}
+
+/* COLOR THEMES */
+.t-dg{border-top-color:#7a1a10;}.t-dg .sb{color:#c04030;border-color:#6a1808;}.t-dg .av{background:#120404;}
+.t-iw{border-top-color:#6a5010;}.t-iw .sb{color:#c09020;border-color:#5a3808;}.t-iw .av{background:#100c00;}
+.t-sw{border-top-color:#1a4818;}.t-sw .sb{color:#4a8828;border-color:#183010;}.t-sw .av{background:#04080a;}
+.t-ns{border-top-color:#182870;}.t-ns .sb{color:#4070b0;border-color:#182850;}.t-ns .av{background:#04060e;}
+.t-pv{border-top-color:#183810;}.t-pv .sb{color:#407820;border-color:#183010;}.t-pv .av{background:#040a04;}
+.t-nb{border-top-color:#2a1458;}.t-nb .sb{color:#6838a0;border-color:#201048;}.t-nb .av{background:#06020c;}
+.t-ag{border-top-color:#083828;}.t-ag .sb{color:#307860;border-color:#062818;}.t-ag .av{background:#020806;}
+.t-il{border-top-color:#581808;}.t-il .sb{color:#a03010;border-color:#481008;}.t-il .av{background:#0c0300;}
+.t-sr{border-top-color:#183068;}.t-sr .sb{color:#3868a8;border-color:#142850;}.t-sr .av{background:#040610;}
+.t-vw{border-top-color:#281050;}.t-vw .sb{color:#583890;border-color:#200c40;}.t-vw .av{background:#060210;}
+.t-rc{border-top-color:#184060;}.t-rc .sb{color:#387890;border-color:#143050;}.t-rc .av{background:#020810;}
+.t-ff{border-top-color:#601808;}.t-ff .sb{color:#a83018;border-color:#501008;}.t-ff .av{background:#0e0200;}
+.t-sf{border-top-color:#487010;}.t-sf .sb{color:#709018;border-color:#384808;}.t-sf .av{background:#080c02;}
+.t-bf{border-top-color:#183870;}.t-bf .sb{color:#3878b0;border-color:#143060;}.t-bf .av{background:#040810;}
+.t-tf{border-top-color:#504008;}.t-tf .sb{color:#907018;border-color:#403008;}.t-tf .av{background:#0c0800;}
+.t-gd{border-top-color:#507008;}.t-gd .sb{color:#708018;border-color:#405008;}.t-gd .av{background:#080c00;}
+.t-lc{border-top-color:#601818;}.t-lc .sb{color:#a02818;border-color:#501010;}.t-lc .av{background:#0c0202;}
+.t-bc{border-top-color:#102060;}.t-bc .sb{color:#284890;border-color:#0c1848;}.t-bc .av{background:#020408;}
+.t-wc{border-top-color:#286010;}.t-wc .sb{color:#489020;border-color:#205010;}.t-wc .av{background:#040c02;}
+.t-ka{border-top-color:#203060;}.t-ka .sb{color:#385880;border-color:#182448;}.t-ka .av{background:#020408;}
+.t-sp{border-top-color:#381408;}.t-sp .sb{color:#703020;border-color:#2c0c08;}.t-sp .av{background:#080200;}
+.t-grey{border-top-color:#303038;}.t-grey .sb{color:#787880;border-color:#282830;}.t-grey .av{background:#0a0a0c;}
+.t-mc{border-top-color:#482808;}.t-mc .sb{color:#886018;border-color:#382008;}.t-mc .av{background:#0a0600;}
+.t-co{border-top-color:#601820;}.t-co .sb{color:#a02030;border-color:#501018;}.t-co .av{background:#0c0204;}
+.t-ws{border-top-color:#103050;}.t-ws .sb{color:#306070;border-color:#0c2040;}.t-ws .av{background:#020608;}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="#pillar">Pillar Armies</a>
+  <a href="#standing">Standing Army</a>
+  <a href="#specialized">Specialized</a>
+  <a href="#naval">Naval</a>
+  <a href="#siege">Siege</a>
+  <a href="#garrisons">Garrisons</a>
+  <a href="#provincial">Provincial</a>
+  <a href="#mercenary">Mercenary</a>
+</nav>
+<div class="ph">
+  <div class="ph-title">Armies of Starhaven</div>
+  <div class="ph-sub">Complete Military Registry · Armour & Weapons · Year 1052</div>
+  <div class="stats">
+    <div class="st"><span class="st-v">461,000+</span><span class="st-l">Active Forces</span></div>
+    <div class="st"><span class="st-v">2.1M+</span><span class="st-l">With Allied Forces</span></div>
+    <div class="st"><span class="st-v">80,000</span><span class="st-l">Standing Army</span></div>
+    <div class="st"><span class="st-v">240</span><span class="st-l">Warships</span></div>
+    <div class="st"><span class="st-v">280</span><span class="st-l">Iron Tanks</span></div>
+    <div class="st"><span class="st-v">40</span><span class="st-l">Dragons</span></div>
+  </div>
+</div>
+
+<!-- ═══ PILLAR ARMIES ═══ -->
+<div id="pillar" class="sh"><div class="sh-title">⚔ The Eleven — Pillar Armies</div><div class="sh-desc">The personal armies of the Eleven. 11 commanders, 11 armies, each built around one person's specific capability.</div></div>
+<div class="grid">
+
+<!-- DAWNGUARD -->
+<div class="card t-dg">
+<div class="cb">
+<div class="cn">The Dawnguard</div><div class="cs">Personal Army of Rayden Cale · Pillar of the Dawn</div>
+<div class="cm">"We are the Dawn. We are the Wall. We are Starhaven."</div>
+<span class="sb">500 Elite Soldiers</span>
+<div class="cr"><div class="av" style="color:#c04030;">DH</div><div class="ri"><div class="rn">Captain Daven Holt · Sub: Sergeant Mira Voss (Shadow Unit)</div><div class="rt">Starhold Capital · Deploys with Rayden</div><div class="rd">Every member individually certified by Daven. Corruption-sealed gear for Void-zone operations. When Dawnguard appears on a battlefield, the engagement is being decided now.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#c04030;border-color:#5a1808;">Royal Kingsguard</span><span class="t" style="color:#c04030;border-color:#5a1808;">Breach Response</span><span class="t" style="color:#c04030;border-color:#5a1808;">Anti-Corruption Operations</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Dawnguard Plate</td><td class="ed">Layered blacksteel. Rune-etched, corruption-sealed. Operates in Void-dense environments where standard armor fails within minutes.</td></tr>
+<tr><td class="ec">Helm</td><td class="en">Corruption-Sealed Helm</td><td class="ed">Full-seal helm with anti-miasma lining. Sealed against Void corruption and battlefield fear-magic.</td></tr>
+<tr><td class="ec">Cloak</td><td class="en">Dawn Cloak</td><td class="ed">Weathered crimson mantle. Symbol of oath and unity. Worn by every member — the identifying mark of the Dawnguard.</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Bastion Shield</td><td class="ed">Interlocking-edge design. Built for the wall and the breach. Side-hooks lock adjacent shields into impenetrable formation walls.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Dawnblade</td><td class="ed">Forged specifically for war against both men and Void-touched creatures. Standard-length longsword with anti-corruption edge treatment.</td></tr>
+<tr><td class="ec">Polearm</td><td class="en">Breach Spear</td><td class="ed">Used to hold, push, and break through. Formation weapon — works in conjunction with the Bastion Shield in phalanx configuration.</td></tr>
+<tr><td class="ec">Heavy</td><td class="en">Breach Hammer</td><td class="ed">Shatters heavy armor and the unnatural. Used when spear-work has collapsed into close engagement.</td></tr>
+<tr><td class="ec">Tool</td><td class="en">Dawn Lantern</td><td class="ed">Anti-corruption rune lantern. Carries concentrated purification light. Drives back Void presence in enclosed spaces.</td></tr>
+</table>
+<div class="sl">Unit Types</div>
+<div class="ug">
+<div class="ub"><div class="un">Dawnguard Sentinel</div><div class="ur">Shield wall anchor — front line</div></div>
+<div class="ub"><div class="un">Dawnguard Veteran</div><div class="ur">Assault breach — post-wall collapse</div></div>
+<div class="ub"><div class="un">Dawnguard Warden</div><div class="ur">Close escort — Rayden's direct flank</div></div>
+<div class="ub"><div class="un">Dawnguard Champion</div><div class="ur">Elite — individually named fighters</div></div>
+<div class="ub"><div class="un">Shadow Unit</div><div class="ur">Mira Voss — covert operations</div></div>
+</div>
+</div></div>
+
+<!-- IRONWALL -->
+<div class="card t-iw">
+<div class="cb">
+<div class="cn">Ironwall</div><div class="cs">Personal Army of Kael Varric · Pillar of the Wall</div>
+<div class="cm">"The Line Holds."</div>
+<span class="sb">15,000 Heavy Infantry</span>
+<div class="cr"><div class="av" style="color:#c09020;">KV</div><div class="ri"><div class="rn">Kael Varric · Ironpass Citadel HQ</div><div class="rt">Minister of Defense</div><div class="rd">The unbreakable shield of Starhaven. Forged in endurance, discipline, and stone-like will. They stand where others would fall. The capital must never see battle.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#c09020;border-color:#5a3808;">Heavy Infantry</span><span class="t" style="color:#c09020;border-color:#5a3808;">Siege Defense</span><span class="t" style="color:#c09020;border-color:#5a3808;">Fortress Warfare</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Bastion Plate</td><td class="ed">Heaviest standard infantry armor in the kingdom. Reinforced for durability and impact resistance. Built to withstand siege-level assaults. Matte black with gold lion-crest trim.</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Bulwark Shield</td><td class="ed">Massive rectangular tower shield. Interlocking side-hooks anchor adjacent shields into formation walls that resist cavalry charges and siege impacts simultaneously.</td></tr>
+<tr><td class="ec">War Beasts</td><td class="en">Armored Warhorses</td><td class="ed">Heavily barded destriers for officers and cavalry exploitation. Dreadmaw-lineage war rhinos in the elite Gravetide Guard — Cain-designed armoring.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Polearm</td><td class="en">Ironwall Spear</td><td class="ed">9-foot anti-cavalry formation spear. Designed for phalanx combat and wall defense simultaneously. Steel tip with Void-resistance treatment.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Wallbreaker Axe</td><td class="ed">One-handed military axe. Used when formations collapse into close combat. Heavy enough to split reinforced door-wood in a single strike.</td></tr>
+</table>
+<div class="sl">Unit Types</div>
+<div class="ug">
+<div class="ub"><div class="un">Heavy Vanguard</div><div class="ur">Phalanx core — forward shield wall</div></div>
+<div class="ub"><div class="un">Breach Rank</div><div class="ur">Pikes and warhammers post-collision</div></div>
+<div class="ub"><div class="un">Gravetide Guard</div><div class="ur">Elite veterans — Kael's personal unit</div></div>
+<div class="ub"><div class="un">Siege Engineers</div><div class="ur">Fortification support under fire</div></div>
+</div>
+</div></div>
+
+<!-- SILENT WARDENS -->
+<div class="card t-sw">
+<div class="cb">
+<div class="cn">Silent Wardens</div><div class="cs">Personal Army of Lyria Valen · Pillar of the Eye</div>
+<div class="cm">"The Arrow Arrives First."</div>
+<span class="sb">3,000 Rangers & Scouts</span>
+<div class="cr"><div class="av" style="color:#4a8828;">LV</div><div class="ri"><div class="rn">Lyria Valen · Sub: Cass Thorn, Fenris Grey</div><div class="rt">Greenveil / Mobile Deployment</div><div class="rd">Move as wind through leaves — seen only when it is too late. Masters of the longbow, trackers, and shadows. Lyria's eyes across the wilderness and the swift end of her will.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#4a8828;border-color:#183010;">Reconnaissance</span><span class="t" style="color:#4a8828;border-color:#183010;">Precision Archery</span><span class="t" style="color:#4a8828;border-color:#183010;">Deep Forest Operations</span><span class="t" style="color:#4a8828;border-color:#183010;">Target Elimination</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Moonweave Leather</td><td class="ed">Lightweight, silent reinforced leather with flexible moonsteel plates at joints. Designed for full archery range-of-motion. No metal-on-metal contact — no sound when moving.</td></tr>
+<tr><td class="ec">Cloak</td><td class="en">Shadow Cloak</td><td class="ed">Terrain-adaptive camouflage cloak over the leather. Changes appearance against woodland, stone, and snow environments. Warden-standard issue.</td></tr>
+<tr><td class="ec">Mount</td><td class="en">Moonfire Forest Elks</td><td class="ed">Forest Stag used by Rangers for deep-forest recon. Both mounts are silent movement specialists.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Warden Longbow</td><td class="ed">Moonwood composite bow. Enchanted for extreme range, power, and perfect balance. Each bow custom-fitted to the individual warden. Cannot be effectively used by anyone else.</td></tr>
+<tr><td class="ec">Arrows</td><td class="en">Warden Arrow Kit</td><td class="ed">Three types — standard penetration, signal arrows (for coordinate marking), Voidbane-tipped (for corruption-site clearance operations).</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Silverthorn Daggers</td><td class="ed">Twin short blades etched with silverthorn runes. Silent kills and close-quarter engagement when the bow range is exhausted.</td></tr>
+<tr><td class="ec">Field Kit</td><td class="en">Warden Field Gear</td><td class="ed">Climbing hooks, tracking kits, camo pouches, survival tools. Everything fits in a belt-harness. Nothing rattles.</td></tr>
+</table>
+<div class="sl">Elite — Starshot Rangers</div>
+<div class="nb" style="border-color:#1a4818;">Selected from Wardens who demonstrate understanding rather than only accuracy. One arrow, one target, no second chances. Currently the most precise long-range unit in Starhaven's military.</div>
+</div></div>
+
+<!-- NINTH SKY -->
+<div class="card t-ns">
+<div class="cb">
+<div class="cn">Ninth Sky Corps</div><div class="cs">Personal Army of Velkan Drake · Pillar of the Mind</div>
+<div class="cm">"The sky is not our limit. It is our weapon."</div>
+<span class="sb">2,500 · Battlemages & Drake Riders</span>
+<div class="cr"><div class="av" style="color:#4070b0;">VD</div><div class="ri"><div class="rn">Velkan Drake · Sub: Sorin (Operational), Dael Ashe (Countermage)</div><div class="rt">Vaelmark Arcane Base</div><div class="rd">Rebuilt from 62 losses at the War of Starhold. Every rider since chosen by Sorin personally. Aerial arcane artillery that strikes beyond what the enemy can reach.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#4070b0;border-color:#182850;">Arcane Artillery</span><span class="t" style="color:#4070b0;border-color:#182850;">Battlefield Control</span><span class="t" style="color:#4070b0;border-color:#182850;">Synchronized Magical Assault</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Runebound Battleplate</td><td class="ed">Silver-blue armor with rune channels that simultaneously disperse physical impact and maintain active mana flow for casting. Lighter than standard plate at equal protection.</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Arcane Shield</td><td class="ed">Lightweight rune-shield that absorbs incoming magical attacks and reflects bolt-type projectiles. Not a physical shield — an active rune maintained on the body surface.</td></tr>
+<tr><td class="ec">Drake Kit</td><td class="en">Rune-Harness Light Scale</td><td class="ed">Sky drakes wear light-scale rune harnesses (18–24ft wingspan). Designed for fast strike operations — not heavy assault barding.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Arcane Focus Staff</td><td class="ed">Primary spellcasting focus for long-range bombardment and synchronized elemental volleys. Carries the coordination signal for multi-mage simultaneous casting.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Spellblade</td><td class="ed">Enchanted shortsword for close engagement when aerial operations force dismounted combat. Standard for all Corps personnel.</td></tr>
+<tr><td class="ec">Field</td><td class="en">Mage Field Kit</td><td class="ed">Mana crystals, rune scrolls, rift detector, mana vials, signal orbs, spell runes, ward beacons. Standard loadout for all Corps battlemages.</td></tr>
+</table>
+<div class="sl">Unit Breakdown</div>
+<div class="ug">
+<div class="ub"><div class="un">Arcane Infantry</div><div class="ur">Frontline mages — hold and advance</div></div>
+<div class="ub"><div class="un">Silverfire Magisters</div><div class="ur">Artillery — long-range bombardment</div></div>
+<div class="ub"><div class="un">RiftBinders</div><div class="ur">Control — terrain/spatial manipulation</div></div>
+<div class="ub"><div class="un">Drake Riders</div><div class="ur">Strike wings — high-speed assault</div></div>
+<div class="ub"><div class="un">Ward Whispers</div><div class="ur">Support — shields, wards, healing</div></div>
+</div>
+</div></div>
+
+<!-- PRIMAL VANGUARD -->
+<div class="card t-pv">
+<div class="cb">
+<div class="cn">Primal Vanguard</div><div class="cs">Personal Army of Thorin Blackroot · Pillar of the Land</div>
+<div class="cm">"The Wild Endures."</div>
+<span class="sb">8,000+ Warriors · 3,000 War Beasts</span>
+<div class="cr"><div class="av" style="color:#407820;">TB</div><div class="ri"><div class="rn">Thorin Blackroot (Wildblood Dwarf) · Mount: Grond (alpha dire bear)</div><div class="rt">Greenveil · Greywood Sanctuary</div><div class="rd">First mixed beast-and-cavalry formation in Starhaven's history. The Ironmane horses are not afraid of the war beasts — raised alongside them from birth. What the old world theorized, Starhaven built.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#407820;border-color:#183010;">War-Beast Command</span><span class="t" style="color:#407820;border-color:#183010;">Terrain Manipulation</span><span class="t" style="color:#407820;border-color:#183010;">Primal Assault</span><span class="t" style="color:#407820;border-color:#183010;">Monster Suppression</span></div>
+<div class="sl">Armour (Warriors)</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Rootguard Harness</td><td class="ed">Living wood and ironwood armor grown and shaped by nature-affinity. Adaptive — reshapes to absorb different impact types. Self-repairing when in contact with Greywood soil. Mixed-race formation: humans, wood elves, wildblood dwarves, beastkin.</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Stonebark Shield</td><td class="ed">Living shield grown from stonebark trees. Reinforced with vine-lattice and earth runes that harden on impact — becomes stronger as it takes damage up to a threshold.</td></tr>
+<tr><td class="ec">Beast Armor</td><td class="en">War-Beast Harness</td><td class="ed">Ironwood-reinforced armor fitted to each war beast type. Dire wolves: light speed-harness. War bears: heavy chest plating. Mosshorn rhinos: full siege-plate. Great elk: flank guards. Thornfang cats: minimal — speed is their armor.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Earthsplitter Axe</td><td class="ed">Massive two-handed axe carved from ancient ironwood and stone. Cleaves armor, bone, and earth simultaneously. The standard heavy weapon across Stoneclaw Brute infantry.</td></tr>
+<tr><td class="ec">Support</td><td class="en">Rootcaller Staff</td><td class="ed">Battle-mage weapon for Rootcaller Shamans — channels earth, vine, and living-wood manipulation. Battlefield buffs, terrain shaping, and creature healing.</td></tr>
+<tr><td class="ec">Infantry</td><td class="en">Warden Spear & Hunter's Bow</td><td class="ed">Woodborn Guardians carry formation spears. Feral Hunter skirmishers carry shortbows for approach harassment before closing to melee.</td></tr>
+<tr><td class="ec">Natural</td><td class="en">War Beast Weapons</td><td class="ed">3,000 war beasts are warriors, not mounts. Dire wolf claws and pack coordination. War bear crushing strength. Rhino impact force. Thornfang cat ambush. Each beast fights as a unit member.</td></tr>
+</table>
+<div class="sl">War Beasts</div>
+<div class="ug">
+<div class="ub"><div class="un">Dire Wolves</div><div class="ur">Fast flanking hunters — pack coordinated</div></div>
+<div class="ub"><div class="un">War Bears</div><div class="ur">Frontline breakers — unstoppable</div></div>
+<div class="ub"><div class="un">Great Elk</div><div class="ur">Pack beasts — towering shock presence</div></div>
+<div class="ub"><div class="un">Mosshorn Rhinos</div><div class="ur">Siege breakers — can break gates</div></div>
+<div class="ub"><div class="un">Thornfang Cats</div><div class="ur">Silent killers — ambush specialists</div></div>
+</div>
+</div></div>
+
+<!-- NULL BLADES -->
+<div class="card t-nb">
+<div class="cb">
+<div class="cn">Null Blades</div><div class="cs">Personal Army of Nyx Ravel · Pillar of Secrets</div>
+<div class="cm">"We Were Never Here."</div>
+<span class="sb">320 (True Number Unknown)</span>
+<div class="cr"><div class="av" style="color:#6838a0;">NR</div><div class="ri"><div class="rn">Nyx Ravel · Sub: Handler Vex, Kira Null</div><div class="rt">Duskwall Hidden Bastion · Unknown Outposts</div><div class="rd">Exist where light does not reach. They do not hold ground — they take it unseen. When the enemy dies not knowing why, the mission is complete.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#6838a0;border-color:#201048;">Infiltration</span><span class="t" style="color:#6838a0;border-color:#201048;">Assassination</span><span class="t" style="color:#6838a0;border-color:#201048;">Sabotage</span><span class="t" style="color:#6838a0;border-color:#201048;">Intelligence Warfare</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Umbral Weave Armor</td><td class="ed">Shadow-dyed layered leather infused with umbral essence. Absorbs light — no reflection, no glint. Silences movement at the fiber level. Built for vanishing in any environment.</td></tr>
+<tr><td class="ec">Mount</td><td class="en">Shadowfang Wolf Harness</td><td class="ed">Umbra — shadowfang wolf. Bred in darkness, silent as breath. The harness carries no metal fittings. Null Blades who operate mounted do not make sound on approach.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Shadowfang Daggers</td><td class="ed">Twin balanced short blades. Umbral-edged — maintains sharpness in all conditions. Coated in operative-chosen poison (paralytic, sedative, or lethal). Silent draw, silent strike.</td></tr>
+<tr><td class="ec">Ranged</td><td class="en">Whisper Crossbow</td><td class="ed">Compact, silent, deadly. Fires quarrels coated in paralytic or lethal toxin. The sound on discharge is less than a door closing. Effective at 60 meters.</td></tr>
+<tr><td class="ec">Field Kit</td><td class="en">Operative Standard Kit</td><td class="ed">Poisons (3 variants), smoke bombs, garrotes, lockpicks, disguise compounds, micro-explosives for exfiltration, signal stones. Entire kit fits in a coat. Nothing rattles.</td></tr>
+</table>
+<div class="sl">Elite — Voidwalkers</div>
+<div class="nb" style="border-color:#2a1458;">Personal operatives trained by Nyx himself. Five operational modes: Total Silence (unheard, no trace) · Heartstop (one strike, everything ends) · Ghoststep (appear, disappear) · Black Veil (hide in plain sight) · Night's End (the target never sees tomorrow).</div>
+</div></div>
+
+<!-- ASHEN GUARD -->
+<div class="card t-ag">
+<div class="cb">
+<div class="cn">Ashen Guard</div><div class="cs">Personal Army of Seraphine Mire · Pillar of the Heart</div>
+<div class="cm">"We are the light that follows the fire."</div>
+<span class="sb">5,000 Combat Healers</span>
+<div class="cr"><div class="av" style="color:#307860;">SM</div><div class="ri"><div class="rn">Seraphine Mire · Sub: Lena Crest (Field Ops), Tomás Rael (Exorcist Captain)</div><div class="rt">Sancthaven HQ · All frontier deployments</div><div class="rd">40% decrease in field mortality credited to their protocols. The purification revenue from outer territories funded Starhaven's early construction. Ela Voss commands the Mercy Riders sub-unit (2,000 mounted medics).</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#307860;border-color:#062818;">Combat Healing</span><span class="t" style="color:#307860;border-color:#062818;">Void Purification</span><span class="t" style="color:#307860;border-color:#062818;">Curse-Breaking</span><span class="t" style="color:#307860;border-color:#062818;">Frontline Support</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Ashen Guard Plate</td><td class="ed">Silver-plated reinforced plate. Purification sigils etched into every joint. Operates in Void-dense environments where standard armor fails within minutes. Silver-plating carries passive purification charge renewed monthly by the Veilborn Arcanum.</td></tr>
+<tr><td class="ec">Helm</td><td class="en">Sealed Ashen Helm</td><td class="ed">Full-seal helm for deep corruption sites. Anti-miasma crystal in the vision slit. Rated for 4 hours of operation in heavily corrupted air before requiring purification cycle.</td></tr>
+<tr><td class="ec">Mercy Riders</td><td class="en">Mercy Rider Leather</td><td class="ed">Light reinforced leather for Ela Voss's 2,000 mounted medics. Ashen cross on right pauldron — non-combatant signal visible at distance. Red-and-silver coloring. Modified saddle carries second rider or stretcher.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Purification Staff/Blade</td><td class="ed">Dual-purpose — combat spear configuration for engagement, staff configuration for channeling purification light. Switch takes 3 seconds. Every Ashen Guard member trained in both modes.</td></tr>
+<tr><td class="ec">Tool</td><td class="en">Silver Light Lantern</td><td class="ed">Condensed purification charge in lantern housing. Rapid deployment in dark corrupted spaces where individual casting is insufficient. Lena Crest carries three. Standard issue: one.</td></tr>
+<tr><td class="ec">Medical</td><td class="en">Field Medical Kit</td><td class="ed">Advanced healing supplies combining Seraphine's magical protocols and Isolde Cren's non-magical treatments. Carried by all Ashen Guard and Mercy Riders.</td></tr>
+<tr><td class="ec">Exorcist</td><td class="en">Exorcist's Chain (Tomás Rael)</td><td class="ed">Silver chain with binding anchors for physical constraint of Void-touched entities before purification. Used on the cases that required something other than standard purification.</td></tr>
+</table>
+</div></div>
+
+<!-- IRON LEGION -->
+<div class="card t-il">
+<div class="cb">
+<div class="cn">Iron Legion</div><div class="cs">Personal Army of Cain Drakhar · Pillar of Iron</div>
+<div class="cm">"Iron does not break. It is reforged."</div>
+<span class="sb">12,000 Soldiers · 280 Tanks · Augmented Battalion</span>
+<div class="cr"><div class="av" style="color:#a03010;">CD</div><div class="ri"><div class="rn">Cain Drakhar · Sub: Bane Crux (Iron-Marshal, Augmented)</div><div class="rt">Forgehaven Tidegate Arsenal · 60 forward tanks at Ironpass</div><div class="rd">Won the Valdenmor War in 4 days alone. 9 tanks lost total — Cain spent 6 days redesigning the slope-angle plating afterward. Never lost a fortress he was assigned to hold.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#a03010;border-color:#481008;">Heavy Siege</span><span class="t" style="color:#a03010;border-color:#481008;">Mechanized Warfare</span><span class="t" style="color:#a03010;border-color:#481008;">Augmented Assault</span><span class="t" style="color:#a03010;border-color:#481008;">Iron Tide Tanks</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Iron Legion Plate</td><td class="ed">Cain-forged black iron plate. Heavier than standard military, stronger than anything in the kingdom outside the Dwarven Holds. Anti-corruption coating standard. Manufactured at Tidegate Arsenal to Cain's personal specifications.</td></tr>
+<tr><td class="ec">Augmented</td><td class="en">Integrated Augmentation</td><td class="ed">600 Augmented Battalion soldiers wear metal-flesh integrated armor — not plate over body, but steel fused into the frame. Each augmentation designed by Cain personally around the soldier's remaining biology. No two sets identical.</td></tr>
+<tr><td class="ec">Tanks</td><td class="en">Iron Tide Tank Shell</td><td class="ed">280 mechanized platforms. Reinforced sloped frontal plating (redesigned Year 1049 — 15-degree incline geometry from Valdenmor slope analysis). Can assault any fortress ever designed. 60 forward-deployed at Ironpass.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Infantry</td><td class="en">Legion Spear & War-Axe</td><td class="ed">Standard heavy spear for formation engagement. War-axe for close combat when lines collapse. The Legion trains on the assumption that the tanks make line collapse unlikely — the axe is insurance.</td></tr>
+<tr><td class="ec">Augmented</td><td class="en">Integrated Weapons</td><td class="ed">Arm-mounted blades, enhanced impact gauntlets, compressed-force fists. Each augmented soldier's weapons are integrated into their body — drawn means deployed instantly.</td></tr>
+<tr><td class="ec">Tank</td><td class="en">Tank Cannon Array</td><td class="ed">Each Iron Tide tank carries a primary cannon and secondary anti-infantry systems. Armored columns perform encirclement before enemy counter-orders can be issued. The tank wins the battle; the infantry secures the aftermath.</td></tr>
+</table>
+</div></div>
+
+<!-- STORMRIDERS -->
+<div class="card t-sr">
+<div class="cb">
+<div class="cn">Stormriders</div><div class="cs">Personal Army of Aurelia Vex · Pillar of the Sky</div>
+<div class="cm">"This is a new problem." — Zephyros, on Vrak flying fortresses</div>
+<span class="sb">1,200 Dragon Cavalry · 40 Dragons · 160 Storm-Mages</span>
+<div class="cr"><div class="av" style="color:#3868a8;">AV</div><div class="ri"><div class="rn">Aurelia Vex (Tempestian Human, Storm Affinity) · Sub: Wing-Marshal Dara Stenn, Lev Cray</div><div class="rt">Skyperch HQ (built specifically for Zephyros requirements)</div><div class="rd">Zephyros — elder storm dragon, several hundred years old, acknowledged by Pyrewing. 40 total war-dragons. Flamecrest Breach co-doctrine with Karas Flamecrest at 11,000 feet. Never once failed to control the sky.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#3868a8;border-color:#142850;">Dragon Cavalry</span><span class="t" style="color:#3868a8;border-color:#142850;">Aerial Assault</span><span class="t" style="color:#3868a8;border-color:#142850;">Storm-Mage Support</span><span class="t" style="color:#3868a8;border-color:#142850;">Sky Dominance</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Storm Rider Plate</td><td class="ed">Aurelia-designed specifications. Electrical-discharge resistant — critical requirement. Zephyros and the 40 dragons produce passive static charge. Standard armor would electrocute the wearer within 20 minutes of proximity. Articulated for full aerial combat range of motion.</td></tr>
+<tr><td class="ec">Altitude</td><td class="en">High-Altitude Sealing Kit</td><td class="ed">Sealed joints and thermal layering for operations above 10,000 feet. Temperature-rated to -50 at operational ceiling. All Stormrider armor is altitude-certified.</td></tr>
+<tr><td class="ec">Mount</td><td class="en">Dragon Rider Harness</td><td class="ed">Combat-rated mounting system for extreme altitude and storm conditions. All 40 harnesses fitted by Aurelia personally. Zephyros's harness was designed with his input — he indicated preferences by stillness and movement.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Storm Spear</td><td class="ed">Channels rider's storm affinity — electrically charged on contact. 160 storm-mage fliers carry variants tuned to their individual arcane frequency. Non-mage riders carry an uncharged version.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Electro-Blades</td><td class="ed">Twin short blades with electrical charge — for close engagement dismounted or in-air. Charge modulated from stun to lethal. Standard for Stormrider officers.</td></tr>
+<tr><td class="ec">Dragons</td><td class="en">Natural Weapons</td><td class="ed">40 war-dragons are primary weapons — fire breath, wing-force, claw strikes, and in Zephyros's case, directed lightning storm generation. The riders direct; the dragons execute at a scale no weapon system can match.</td></tr>
+</table>
+</div></div>
+
+<!-- VEIL WATCH -->
+<div class="card t-vw">
+<div class="cb">
+<div class="cn">Veil Watch</div><div class="cs">Personal Army of Elysia Nocturne · Pillar of the Veil</div>
+<div class="cm">"The Veil holds only for those who understand it."</div>
+<span class="sb">900 · Only Force Cleared for S+ Void Events</span>
+<div class="cr"><div class="av" style="color:#583890;">EN</div><div class="ri"><div class="rn">Elysia Nocturne · Sub: Shade Arren (Void-Hunter), Mira Fael (Psion-Lead)</div><div class="rt">Ashenveil HQ</div><div class="rd">When an S+ dungeon event occurs anywhere in Starhaven, all other forces hold perimeter. The Veil Watch steps forward. This is the standing protocol. It has never been questioned.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#583890;border-color:#200c40;">Psionic Operations</span><span class="t" style="color:#583890;border-color:#200c40;">Void Detection</span><span class="t" style="color:#583890;border-color:#200c40;">Reality Manipulation</span><span class="t" style="color:#583890;border-color:#200c40;">S+ Dungeon Closure</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Veil-Sealed Plate</td><td class="ed">Standard plate with dimensional stabilization runes. Without these runes, soldiers entering S+ Void events risk partial phase-shift — partial displacement into Void-adjacent space. With them, the risk is accepted and managed. Runes provided by Veilborn Arcanum.</td></tr>
+<tr><td class="ec">Focus</td><td class="en">Psion Focus Crystal</td><td class="ed">Personal crystal attuned to each operative's psionic frequency. Used for reality manipulation operations. Cannot be used by anyone other than the attuned person. Grown over 2 years from seeds Elysia brings from Void-adjacent space.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Reality-Anchor Blade</td><td class="ed">Dimensionally-hardened blade — effective against entities that standard weapons pass through. The only blade in the kingdom that reliably cuts something not entirely in this plane. Zareth Kull's Void Breaker research adapted for close-combat scale by Elysia.</td></tr>
+<tr><td class="ec">S+ Weapon</td><td class="en">Dimensional Breach Platform</td><td class="ed">Zareth Kull design — built in 4 days when S+ dungeon hardened against all conventional siege weapons. Effective against Void-hardened structures, corrupted stone, dimensional barriers. Classification: S-level restricted. Elysia approved 7 more units. Rayden signed same hour.</td></tr>
+</table>
+<div class="sl">Unit Types</div>
+<div class="ug">
+<div class="ub"><div class="un">Psion Operatives</div><div class="ur">Reality manipulation specialists</div></div>
+<div class="ub"><div class="un">Void Detectors</div><div class="ur">Early warning — sense Void presence</div></div>
+<div class="ub"><div class="un">Voidwalkers</div><div class="ur">Mira Fael — enter Void-adjacent space</div></div>
+<div class="ub"><div class="un">Shade Hunters</div><div class="ur">S+ entity active termination</div></div>
+</div>
+</div></div>
+
+<!-- RESONANCE CORPS -->
+<div class="card t-rc">
+<div class="cb">
+<div class="cn">Resonance Corps</div><div class="cs">Personal Army of Bob Vale · Pillar of the Bond</div>
+<div class="cm">"The Bond makes every army 60% stronger."</div>
+<span class="sb">600 · Makes All Other Forces 60% More Effective</span>
+<div class="cr"><div class="av" style="color:#387890;">BV</div><div class="ri"><div class="rn">Bob Vale · Sub: Orin Dael, Sara Venn</div><div class="rt">Vaelmark / Field Deployment · 400-person Resonance Mage Network kingdom-wide</div><div class="rd">The Soul Link relay makes every Starhaven force operating within its network 60% more effective. 600 soldiers with the right architecture outperform any comparable force numerically. The army that makes every other army better.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#387890;border-color:#143050;">Soul Link Relay</span><span class="t" style="color:#387890;border-color:#143050;">Team Coordination</span><span class="t" style="color:#387890;border-color:#143050;">60% Force Multiplier</span><span class="t" style="color:#387890;border-color:#143050;">Kingdom-Wide Network</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Resonance-Threaded Plate</td><td class="ed">Standard plate with Soul Link resonance threads woven into the underlayer. Allows the armor itself to maintain partial Soul Link connectivity even in areas of magical interference. Bob Vale's personal innovation — armor as network node.</td></tr>
+<tr><td class="ec">Network</td><td class="en">Network Node Robe (400 personnel)</td><td class="ed">The 400 Resonance Mage Network personnel distributed across all cities and rift gates wear location-specific frequency-threaded robes. Each set carries the resonance signature of its assigned node. Network degrades gracefully — 60% effectiveness maintained even at 30% node loss.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Soul Link Anchor Staff</td><td class="ed">Primary tool — not a traditional weapon. Maintains Soul Link resonance network for all forces in range. Each staff tuned to a specific frequency. The 400 Network personnel carry smaller relay versions connecting to the same system.</td></tr>
+<tr><td class="ec">Relay Array</td><td class="en">Relay Crystal Array</td><td class="ed">3 crystals per network node, each tuned to adjacent nodes. Automatic signal rerouting if one path is disrupted. Network-wide coherence maintained through redundancy, not single-point reliability.</td></tr>
+<tr><td class="ec">Defense</td><td class="en">Resonance Blade</td><td class="ed">Short sword with coordination-disruption enchantment — disrupts enemy unit coordination for 30 seconds on contact. Last-resort weapon. The Corps is architecture, not a combat force.</td></tr>
+</table>
+</div></div>
+
+</div><!-- end pillar grid -->
+
+<!-- ═══ STANDING ARMY ═══ -->
+<div id="standing" class="sh"><div class="sh-title">⚔ Grand Standing Army</div><div class="sh-desc">80,000 professional soldiers in four Field Armies, the Starfall Legion, and three heavy cavalry formations under Grand Marshal Rhegar Thorne.</div></div>
+<div class="grid">
+
+<!-- FIRST FIELD ARMY -->
+<div class="card t-ff">
+<div class="cb">
+<div class="cn">First Field Army</div><div class="cs">Grand Standing Army · Hammer Doctrine</div>
+<div class="cm">"Mass, weight, sustained pressure."</div>
+<span class="sb">20,000 Soldiers</span>
+<div class="cr"><div class="av" style="color:#a83018;">DA</div><div class="ri"><div class="rn">Field Marshal Doran Ashe · Mount: Ironside</div><div class="rt">Ironpass Forward / Campaign Mobile</div><div class="rd">20-year Ironmere veteran. Never broken in 9 years of Starhaven command. Three-day engagement at Eastern Crossing: held 20,000 against 40,000. Does not outmaneuver — hits harder and holds longer.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#a83018;border-color:#501008;">Heavy Infantry</span><span class="t" style="color:#a83018;border-color:#501008;">Concentrated Force</span><span class="t" style="color:#a83018;border-color:#501008;">Assault Cavalry</span><span class="t" style="color:#a83018;border-color:#501008;">Siege Engineers</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Ironmere Field Plate</td><td class="ed">Reinforced matte-black plate with gold trim — Ironmere tradition maintained after the alliance transfer. Impact-rated for heavy siege engagement. Anti-corruption coating applied Year 1046. Mixed-race formation: humans, dwarves, half-elves, beastkin.</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Ironwall Tower Shield</td><td class="ed">Massive rectangular formation shield with interlocking side-hooks for phalanx anchoring. Kael's design — adopted by First Army from Ironwall doctrine. The shield that builds walls from people.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Formation Spear</td><td class="ed">9-foot anti-cavalry formation spear. First rank standard. Steel tip with Void-resistance treatment applied after Year 1044 frontier engagements.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Hammer Axe</td><td class="ed">One-handed military axe for post-formation close combat. Adopted from Doran's own weapon preference — the axes that earned the "Ash and Ember" fighting style now standard across First Army close-combat doctrine.</td></tr>
+</table>
+</div></div>
+
+<!-- SECOND FIELD ARMY -->
+<div class="card t-sf">
+<div class="cb">
+<div class="cn">Second Field Army</div><div class="cs">Grand Standing Army · Speed Doctrine</div>
+<div class="cm">"Move 30% faster than any comparable formation."</div>
+<span class="sb">20,000 Soldiers</span>
+<div class="cr"><div class="av" style="color:#709018;">CV</div><div class="ri"><div class="rn">Field Marshal Clea Vorn (Half Moon Elf)</div><div class="rt">Coldmarch Western Deployment</div><div class="rd">Starhaven-born. Rose from cavalry scout to Field Marshal in 9 years. Lyria trained alongside her for 3 months — Warden precision integrated into cavalry maneuver doctrine. Thinks in motion. Plans on horseback.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#709018;border-color:#384808;">Flanking Maneuvers</span><span class="t" style="color:#709018;border-color:#384808;">Multi-Front Warfare</span><span class="t" style="color:#709018;border-color:#384808;">Speed Doctrine</span><span class="t" style="color:#709018;border-color:#384808;">Strategic Reserve</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Cutting Wind Plate</td><td class="ed">Light cavalry half-plate — speed-optimized over protection. Fully articulated joints for mounted range of motion. Forest-green with silver edge trim. Mixed-race: Moon Elves, humans, beastkin, half-elves in equal measure.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Cavalry Lance</td><td class="ed">12-foot ashwood lance for opening engagement. Lighter than First Army equivalent — higher maneuver speed prioritized over maximum impact weight.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Curved Cavalry Saber</td><td class="ed">Post-lance close combat. Second Army trains heavier on saber work than any other Field Army. Clea's philosophy: charge decisions may fail. Saber decisions are final.</td></tr>
+<tr><td class="ec">Scout</td><td class="en">Scout Shortbow</td><td class="ed">Carried by skirmisher units — integration of Irae Duskwind's horse-archer doctrine, added Year 1048. Not standard for heavy cavalry. Standard for the Second Army's flanking skirmisher element.</td></tr>
+</table>
+</div></div>
+
+<!-- THIRD FIELD ARMY -->
+<div class="card t-bf">
+<div class="cb">
+<div class="cn">Third Field Army</div><div class="cs">Grand Standing Army · Defensive Reserve</div>
+<div class="cm">"Twenty years without a fortress. The wall is in the soldiers."</div>
+<span class="sb">20,000 Soldiers</span>
+<div class="cr"><div class="av" style="color:#3878b0;">BT</div><div class="ri"><div class="rn">Field Marshal Brek Tane (Age 46)</div><div class="rt">Distributed Garrisons / Ironpass Anchor</div><div class="rd">Led 400 soldiers for 20 years without a fortress after Ashveil Hold fell to a Void incursion. Arrived at Ironpass Year 1044. Found three structural corrections Kael had missed — on day two. Filed them without being asked.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#3878b0;border-color:#143060;">Defensive Formations</span><span class="t" style="color:#3878b0;border-color:#143060;">Fortification Support</span><span class="t" style="color:#3878b0;border-color:#143060;">Garrison Reserve</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Garrison Heavy Plate</td><td class="ed">Maximum-weight protection — defensive doctrine prioritizes survivability over mobility. Extended siege padding underneath. Anti-corruption treatment applied to all helmets (Void proximity protocol).</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Defensive Bulwark</td><td class="ed">Heavier than Ironwall standard. Brek Tane's design — adds bottom ground-anchoring hooks for extended defensive stands without shield fatigue.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Garrison Spear</td><td class="ed">10-foot variant — longer reach than standard. Third Army holds defensive lines against assault formations. The extra reach buys 2 seconds. 2 seconds is the difference.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">War Hammer</td><td class="ed">Favored over axe in Brek Tane's formations — armor-cracking impact against heavily-armored assault troops. Weight over speed in defensive doctrine.</td></tr>
+</table>
+</div></div>
+
+<!-- FOURTH FIELD ARMY -->
+<div class="card t-tf">
+<div class="cb">
+<div class="cn">Fourth Field Army</div><div class="cs">Grand Standing Army · Rift Gate Mobile Response</div>
+<div class="cm">"18 minutes. Anywhere in the kingdom."</div>
+<span class="sb">20,000 Soldiers</span>
+<div class="cr"><div class="av" style="color:#907018;">VT</div><div class="ri"><div class="rn">Field Marshal Veyra Tal (Moon Elf, Age 131)</div><div class="rt">Starhold Emergency Reserve</div><div class="rd">Minister of Diplomacy and emergency Field Marshal. Rift gate mobile — 18-minute deployment anywhere in the kingdom. Fastest Field Army response in the world. 60 years of patience and more left.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#907018;border-color:#403008;">Mobile Crisis Response</span><span class="t" style="color:#907018;border-color:#403008;">Rift Gate Operations</span><span class="t" style="color:#907018;border-color:#403008;">18-Minute Anywhere</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Response Plate</td><td class="ed">Medium-weight — balanced for rapid deployment. Every piece is transit-weight-rated for rift gate mass limits. The Fourth Army can gate-transit as a full force, not in segments.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Versatile Spear (Collapsible)</td><td class="ed">8-foot spear that disassembles into 4-foot transit sections and reassembles in 30 seconds. Designed specifically for rift gate operations — full-length spears complicate gate transit.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Crisis Sword</td><td class="ed">Standard shortsword. Universal across all Fourth Army — the weapon that works in every situation the spear doesn't cover.</td></tr>
+</table>
+</div></div>
+
+<!-- STARFALL LEGION -->
+<div class="card t-gd">
+<div class="cb">
+<div class="cn">Starfall Legion</div><div class="cs">Grand Standing Army · Elite Rapid Response</div>
+<div class="cm">"The force you need most is always the one you failed to have ready."</div>
+<span class="sb">12,000 Elite Soldiers</span>
+<div class="cr"><div class="av" style="color:#708018;">RT</div><div class="ri"><div class="rn">Grand Marshal Rhegar Thorne · Starhold / Emergency Deployment</div><div class="rt">Permanent readiness status · Rift gate mobile</div><div class="rd">Named after Starhaven's founding star symbolism. Rhegar's personal ready force. Field notebook currently at entry 14, all Void-related tactical problems. Has never lost a fortress in 18 years.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#708018;border-color:#384808;">Elite Rapid Infantry</span><span class="t" style="color:#708018;border-color:#384808;">First Response</span><span class="t" style="color:#708018;border-color:#384808;">Crisis Deployment</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Starfall Plate</td><td class="ed">Black steel with gold star-crest. The founding star worn by the kingdom's personal response force. Lighter than Field Army plate for faster mobilization. Anti-corruption treatment standard. Mixed-race: every race in Starhaven represented proportionally.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Starfall Spear</td><td class="ed">9-foot multi-purpose. Can be carried at run-pace, planted for cavalry defense, or thrown. Rhegar's specification: balanced for the person moving, not the person standing.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Legion Blade</td><td class="ed">Single-handed sword for tight engagement post-spear. Standard across all Legion personnel. Consistent — the sword every Legion member trains on identically.</td></tr>
+</table>
+</div></div>
+
+<!-- IRONMANE LANCERS -->
+<div class="card t-lc">
+<div class="cb">
+<div class="cn">Ironmane Lancers</div><div class="cs">Standing Army · Heavy Cavalry</div>
+<div class="cm">"Forward. Unbroken."</div>
+<span class="sb">8,000 Heavy Cavalry</span>
+<div class="cr"><div class="av" style="color:#a02818;">DI</div><div class="ri"><div class="rn">Captain Dresh Ironmane · Youngest Captain in Standing Army History (Age 22)</div><div class="rt">Ironmane Fields, Greenveil</div><div class="rd">Every horse personally bred by Marcus Ironmane. Raised alongside Greenveil's war beasts from birth — these horses do not fear dire wolves or war bears. The cavalry that cannot be disrupted by the things that disrupt other cavalry. Mixed-race: humans, dwarves, elves, beastkin.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#a02818;border-color:#501010;">Heavy Cavalry Charge</span><span class="t" style="color:#a02818;border-color:#501010;">Shock & Breakthrough</span><span class="t" style="color:#a02818;border-color:#501010;">Flank Collapse</span><span class="t" style="color:#a02818;border-color:#501010;">Pursuit</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Rider</td><td class="en">Ironmane Cavalry Plate</td><td class="ed">Blackened steel with gold trim. Built for mobility and impact — not static defense. Reinforced at shoulder and knee for lance-charge shock absorption. Crimson plume on the helm. The identification of Starhaven's hammer at a distance.</td></tr>
+<tr><td class="ec">Helm</td><td class="en">Ironmane Cavalry Helm</td><td class="ed">Reinforced steel with lioncrest and crimson plume. Full face protection. The crimson visible across any battlefield — friend and enemy both know what it means.</td></tr>
+<tr><td class="ec">Horse</td><td class="en">Crimson Horse Barding</td><td class="ed">Heavy barding forged for protection and psychological impact. Ironmane bloodline horses are larger than standard — the barding scales accordingly. The crimson tide of the Ironmane charge is visible from two miles away.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Ironmane War Lance</td><td class="ed">12-foot lance with ashwood core and steel-reinforced tip. The Ironmane Wedge formation concentrates 8,000 lances into a single thrust designed to break any formation ever built. "The Hammer of Starhaven."</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Lionfang Saber</td><td class="ed">Curved saber for devastating mounted combat after initial lance impact. When the lance has done its work, the saber continues it. Heavy curved blade — enough weight to exploit a broken formation at speed.</td></tr>
+</table>
+<div class="sl">Unit Breakdown</div>
+<div class="ug">
+<div class="ub"><div class="un">Ironmane Lancers</div><div class="ur">Main line — disciplined heavy charge</div></div>
+<div class="ub"><div class="un">Red Banner Lancers</div><div class="ur">Elite veterans — unbreakable discipline</div></div>
+<div class="ub"><div class="un">Ironmane Vanguard</div><div class="ur">Skirmish cavalry — screening and recon</div></div>
+<div class="ub"><div class="un">Ironmane Guard</div><div class="ur">Command unit — Dresh's personal guard</div></div>
+</div>
+</div></div>
+
+<!-- BLACK CHARGE -->
+<div class="card t-bc">
+<div class="cb">
+<div class="cn">The Black Charge</div><div class="cs">Elite Cavalry Regiment · Rayden's Strike Force</div>
+<div class="cm">"Strike First. Leave None Standing."</div>
+<span class="sb">800 Elite Shock Cavalry</span>
+<div class="cr"><div class="av" style="color:#284890;">VD</div><div class="ri"><div class="rn">Charge-Captain Vespera Drakewynn (Age 25)</div><div class="rt">Blackspire Barracks, Western Border</div><div class="rd">Youngest successful captain in Starhaven military history. 23 engagements. 23 broken enemy lines. Never once failed. Deployed only when victory demands speed — the decision has never been wrong.</td></div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#284890;border-color:#0c1848;">Elite Shock Cavalry</span><span class="t" style="color:#284890;border-color:#0c1848;">Breakthrough</span><span class="t" style="color:#284890;border-color:#0c1848;">Commander Hunting</span><span class="t" style="color:#284890;border-color:#0c1848;">Night Raids</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Rider</td><td class="en">Nightriders' Plate</td><td class="ed">Custom lightweight armor — black iron with Vaelmark arcane impact-absorption enchantment. Built for mobility and survival at charge speed. Cain-forged black iron on the outer layer. Velkan-enchanted impact dispersal on the underlayer.</td></tr>
+<tr><td class="ec">Helm</td><td class="en">Black Charge Helm</td><td class="ed">Light, well-balanced helm for speed and full vision. Lower profile than heavy cavalry helms — maximizes field of view at charge pace. Wing emblem on both sides.</td></tr>
+<tr><td class="ec">Horse</td><td class="en">Nightmane Barding</td><td class="ed">Bred for speed, aggression, endurance — lighter build for explosive charges. Minimal barding for speed preservation. Trained to ignore pain. Trained for fire, noise, and chaos. Fears nothing that a cavalry horse should fear.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Ruinspike Lance</td><td class="ed">12-foot lance designed for maximum impact and penetration. Heavier-tipped than standard cavalry lance — the Black Charge does not need to withdraw for a second pass. One pass is sufficient.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Grimtalon Saber</td><td class="ed">Curved saber for post-charge pursuit and commander hunting. Devastating in mounted combat. The weapon that finishes what the Ruinspike started.</td></tr>
+</table>
+<div class="sl">Unit Breakdown</div>
+<div class="ug">
+<div class="ub"><div class="un">Black Lancers</div><div class="ur">Main — heavily armored shock</div></div>
+<div class="ub"><div class="un">Shadowriders</div><div class="ur">Light — flanking, harassment</div></div>
+<div class="ub"><div class="un">Drakewynn's Talons</div><div class="ur">Elite guard — hardest edge</div></div>
+<div class="ub"><div class="un">Nighthunters</div><div class="ur">Night raids — terror operations</div></div>
+</div>
+</div></div>
+
+<!-- WINDLANCE CAVALRY -->
+<div class="card t-wc">
+<div class="cb">
+<div class="cn">Windlance Cavalry</div><div class="cs">Standing Army · Horse Archer Division</div>
+<div class="cm">"We do not chase. We are already where you are going."</div>
+<span class="sb">9,000 Horse Archers</span>
+<div class="cr"><div class="av" style="color:#489020;">ID</div><div class="ri"><div class="rn">Lance-General Irae Duskwind (Half Moon Elf, Age 29)</div><div class="rt">Ironmane Fields (Base) · Field Mobile</div><div class="rd">Born to nomadic plains rider family. Trained by Lyria's Wardens for precision archery, cross-trained under Marcus for horsemanship. Founded Year 1047 from her own concept paper. "The cavalry equivalent of a bow." — Marcus Ironmane.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#489020;border-color:#205010;">Horse Archery</span><span class="t" style="color:#489020;border-color:#205010;">Flanking Mobile Fire</span><span class="t" style="color:#489020;border-color:#205010;">Harassment</span><span class="t" style="color:#489020;border-color:#205010;">Recon</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Rider</td><td class="en">Windlance Rider Plate</td><td class="ed">Lightweight half-plate over reinforced riding leather. Covers vitals without restricting archery motion. Pauldrons angled to allow full overhead draw. Mixed-race: half Moon Elves, humans, plains-folk beastkin — all with nomadic rider backgrounds.</td></tr>
+<tr><td class="ec">Helm</td><td class="en">Open-Face Cavalry Helm</td><td class="ed">Wide vision gap. Sighting requirements override cheek protection. Moon Elf riders often forgo this — their distance vision does not require the same assistance.</td></tr>
+<tr><td class="ec">Horse</td><td class="en">Light Cavalry Barding</td><td class="ed">Speed-optimized — chest and flank protection only. Ironmane bloodline natural resilience compensates for reduced coverage.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Windbow</td><td class="ed">Short recurve saddle-optimized composite bow. Lyria-pattern accuracy applied to mounted use. Fires at full gallop with Warden-level precision. Each bow custom-fitted to the individual rider — cannot be effectively used by anyone else.</td></tr>
+<tr><td class="ec">Arrows</td><td class="en">Three-Type Quiver</td><td class="ed">Standard penetration · Voidbane-tipped (corruption site clearance) · Incendiary (anti-formation). 24 per quiver. Two quivers standard loadout — 48 arrows per engagement.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Cavalry Saber</td><td class="ed">Light curved blade for close engagement when bow becomes impractical. A getting-clear weapon, not a dueling weapon.</td></tr>
+<tr><td class="ec">Opening</td><td class="en">Windlance</td><td class="ed">12-foot composite lance for opening charges before transitioning to bow. Gives the unit its name. Not carried on extended operations — deployed for specific charge-and-transition engagements.</td></tr>
+</table>
+</div></div>
+
+<!-- ARCANE ARTILLERY CORPS -->
+<div class="card t-ka">
+<div class="cb">
+<div class="cn">Arcane Artillery Corps</div><div class="cs">Standing Army · Battlemage Artillery</div>
+<div class="cm">"Precision elemental bombardment. Synchronized at 1,200 minds."</div>
+<span class="sb">1,200 Battlemages</span>
+<div class="cr"><div class="av" style="color:#385880;">KA</div><div class="ri"><div class="rn">Arch-Battlemage Kai (Age 24) · Trained under Velkan Drake</div><div class="rt">Vaelmark / Forward Positions</div><div class="rd">Coordinated precision elemental volleys during the War of Starhold — destroyed anti-drake ballistae, enemy mage lines, and corrupted siege formations. One of the founding generation. The magical fire superiority that makes standard approaches to Starhaven suicidal.</div></div></div>
+<div class="sl">Role</div>
+<div class="tg"><span class="t" style="color:#385880;border-color:#182448;">Magical Bombardment</span><span class="t" style="color:#385880;border-color:#182448;">Synchronized Casting</span><span class="t" style="color:#385880;border-color:#182448;">Elemental Siege</span></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Battlemage Combat Plate</td><td class="ed">Rune-etched reinforced plate with mana-channel grooves. Same base construction as Ninth Sky Runebound Battleplate but heavier for ground operations. Disperse impact while maintaining casting capability simultaneously.</td></tr>
+<tr><td class="ec">Defense</td><td class="en">Arcane Shield Rune</td><td class="ed">Active rune on the body surface — absorbs and reflects incoming magical attacks. Refreshed before every engagement. Not a physical shield — a maintained magical barrier running continuously during operations.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Arcane Focus Staff</td><td class="ed">Primary casting focus for long-range bombardment. Carries the coordination signal — allows Kai to synchronize 1,200 simultaneous casts across the formation. Without it, 1,200 individual casters. With it, one voice.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Needle</td><td class="ed">Enchanted rapier for close engagement when artillery positioning is compromised. Standard for all Corps personnel.</td></tr>
+<tr><td class="ec">Specialist</td><td class="en">Burnmark Gauntlets</td><td class="ed">Arcane gauntlets amplifying directed elemental casting. Standard for Kai personally and senior Corps officers. Developed over 11 years of self-directed training.</td></tr>
+</table>
+</div></div>
+
+</div><!-- end standing grid -->
+
+<!-- ═══ SPECIALIZED ═══ -->
+<div id="specialized" class="sh"><div class="sh-title">🔱 Specialized & Support Units</div><div class="sh-desc">Purpose-built forces from mechanized armor to void hunters. Every unit built for a specific gap in conventional military capability.</div></div>
+<div class="grid">
+
+<!-- VOID BREAKERS -->
+<div class="card t-vw">
+<div class="cb">
+<div class="cn">Void Breakers</div><div class="cs">Specialized · Void Entity Hunters · Four Orders</div>
+<span class="sb">2,400 (4 Orders of 600)</span>
+<div class="cr"><div class="av" style="color:#583890;">ZK</div><div class="ri"><div class="rn">Director Zareth Kull · 4 Order Masters</div><div class="rt">Ashenveil HQ / Field Mobile</div><div class="rd">Built the Dimensional Breach Platform in 4 days when conventional weapons failed at an S+ dungeon. Four specialized orders each targeting a different entity classification.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">All Orders</td><td class="en">Void-Sealed Plate</td><td class="ed">Heavy reinforced plate with full corruption seal. Operates in deep Void-touch environments where standard armor begins degrading within minutes. Purple-black coloring. Void-resistance runes etched by Veilborn Arcanum annually — treatment expires and must be renewed.</td></tr>
+</table>
+<div class="sl">Weapons by Order</div>
+<table class="eq">
+<tr><td class="ec">Order Fang</td><td class="en">Beast-Kill Kit</td><td class="ed">Void-tipped greatspear, chain-net launcher for immobilization, anti-Void toxin applicator bolts. For Void entities with physical form that attack aggressively.</td></tr>
+<tr><td class="ec">Order Hollow</td><td class="en">Dimensional Tools</td><td class="ed">Reality-anchor bolts, dimensional sealing compounds, Zareth's containment formulae in explosive anchors. For entities without stable physical form that phase through conventional weapons.</td></tr>
+<tr><td class="ec">Order Brand</td><td class="en">Tracker Kit</td><td class="ed">Corruption-trace compounds, Void-signature detectors, field classification instruments. Finds the entity before it becomes an engagement. Prevention over combat.</td></tr>
+<tr><td class="ec">Order Seal</td><td class="en">Capture System</td><td class="ed">Void-binding chains, containment sphere framework, transportation cages rated to S-class entity strength. For entities that must be contained rather than destroyed.</td></tr>
+</table>
+</div></div>
+
+<!-- IRONBOLT DIVISION -->
+<div class="card t-co">
+<div class="cb">
+<div class="cn">Ironbolt Division</div><div class="cs">Specialized · Arcane Crossbow Artillery</div>
+<div class="cm">"80,000 bolts per day. Four types. Any target."</div>
+<span class="sb">3,500 Soldiers</span>
+<div class="cr"><div class="av" style="color:#a02030;">SD</div><div class="ri"><div class="rn">Bolt-Captain Sera Drenn</div><div class="rt">Ironpass · All Major Fortresses</div><div class="rd">Four bolt types designed for different target categories. Mobile forge capability for bolt production during extended campaigns — the division never runs out because it manufactures in the field.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Artillery Crew Plate</td><td class="ed">Medium plate — lighter than front-line infantry for battery repositioning mobility. Arcane crossbow operation involves significant vibration and recoil; dampening padding at shoulder and forearm contact points. Arcane shield amulets standard.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Ironbolt Heavy Crossbow</td><td class="ed">Arcane-enhanced. 800lb draw weight via mechanical assist system (Cyrus Vexley design). 400-yard effective range. Cannot be operated by hand without the assist mechanism — the power is mechanical, not personal strength.</td></tr>
+<tr><td class="ec">Bolt: Std</td><td class="en">Standard (Armor Penetration)</td><td class="ed">Anti-personnel, anti-cavalry. Steel bodkin tip rated to pierce Ironmere-standard plate at 200 yards.</td></tr>
+<tr><td class="ec">Bolt: VB</td><td class="en">Voidbane (Anti-Corruption)</td><td class="ed">Silver-alloy tip with purification compound. Penetrates Void-hardened targets that standard bolts deflect from. Produced in cooperation with Ashen Guard protocols.</td></tr>
+<tr><td class="ec">Bolt: TB</td><td class="en">Thunderbolt (Explosive)</td><td class="ed">12-foot detonation radius on impact. Anti-formation, anti-structure. The bolt that ends a charge before it reaches the line.</td></tr>
+<tr><td class="ec">Bolt: CA</td><td class="en">Chain-Arc (Multi-Target)</td><td class="ed">Lightning chain — up to 5 connected targets in sequence. Effective against grouped targets in close formation. Co-developed with Vaelmark arcane engineers.</td></tr>
+<tr><td class="ec">Production</td><td class="en">Mobile Forge Kit</td><td class="ed">Each 100-soldier unit carries a mobile forge for field bolt production. The 80,000/day capacity continues on campaign. Sera Drenn designed the field-production architecture — the division never sieges without ammunition.</td></tr>
+</table>
+</div></div>
+
+<!-- MERCY RIDERS -->
+<div class="card t-ag">
+<div class="cb">
+<div class="cn">Mercy Riders</div><div class="cs">Ashen Guard Component · Mounted Medical Corps</div>
+<div class="cm">"3-minute treatment guarantee. Never broken in 6 years."</div>
+<span class="sb">2,000 Mounted Medics</span>
+<div class="cr"><div class="av" style="color:#307860;">EV</div><div class="ri"><div class="rn">Mercy-Captain Ela Voss</div><div class="rt">Sancthaven / All Field Deployments</div><div class="rd">40% decrease in field mortality across all armies. The guarantee has never been broken. Starhaven soldiers fight differently knowing that if they go down, 3 minutes is the maximum wait.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Mercy Rider Leather</td><td class="ed">Light reinforced leather. Red-and-silver coloring — non-combatant signal visible at distance. Ashen cross on right pauldron. Not designed to stop swords. Designed to identify who not to shoot. Modified saddle carries a second injured rider or a full stretcher across the horse's back.</td></tr>
+</table>
+<div class="sl">Weapons & Medical</div>
+<table class="eq">
+<tr><td class="ec">Weapon</td><td class="en">Mercy Spear (6-foot)</td><td class="ed">Defensive only. Creates space while treating a patient. 6-foot range keeps Void-influenced attackers away from the treatment space. Not a combat weapon — a boundary weapon.</td></tr>
+<tr><td class="ec">Medical</td><td class="en">Rider's Medical Pack</td><td class="ed">Dual saddle-bag system: magical healing compounds (left saddle), Isolde Cren's non-magical protocols (right saddle). Combat tourniquet wrap on belt for immediate deployment.</td></tr>
+<tr><td class="ec">Trauma</td><td class="en">Trauma Horse Rig</td><td class="ed">Every Mercy Rider horse trained to carry weight on both sides without spooking. Can carry an unconscious soldier full-speed without breaking stride.</td></tr>
+</table>
+</div></div>
+
+<!-- STONETHROW CORPS -->
+<div class="card t-ff">
+<div class="cb">
+<div class="cn">Stonethrow Corps</div><div class="cs">Iron Legion Component · Conventional Siege Artillery</div>
+<div class="cm">"Fire for effect, not for warning."</div>
+<span class="sb">2,200 Artillery Crews</span>
+<div class="cr"><div class="av" style="color:#a83018;">VH</div><div class="ri"><div class="rn">Siege-Captain Vera Holt</div><div class="rt">All Major Fortresses / Mobile Siege Trains</div><div class="rd">The hybrid Vaelmark-Havenfire artillery system Vera designed is the most integrated urban artillery network on the continent. Vaelmark arcane stabilization primary, Havenfire mechanical redundancy backup. Both sides called it a success.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Artillery Crew Plate</td><td class="ed">Heavy chest and shoulder plate for debris and counter-fire survival. Full face-guard standard — trebuchet operation produces fragmentation from stone payloads. Arcane shield amulets for stabilization system operation.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Siege Battery Array</td><td class="ed">Catapults, trebuchets, and ballista batteries. Hybrid Vaelmark-Havenfire system: arcane stabilization for accuracy, mechanical redundancy for reliability under fire. Payload types: standard stone (280lb), incendiary, Voidbane compound for corruption clearance.</td></tr>
+<tr><td class="ec">Defense</td><td class="en">Crew Sword & Crossbow</td><td class="ed">Standard sidearms. Artillery crews are priority targets during a siege — the enemy always tries to silence the batteries first. Defense weapons for the interval before infantry relief arrives.</td></tr>
+</table>
+</div></div>
+
+<!-- DAWNSCOPE CORPS -->
+<div class="card t-sw">
+<div class="cb">
+<div class="cn">Dawnscope Corps</div><div class="cs">Specialized · Three-Tier Precision Snipers</div>
+<div class="cm">"Patience is not waiting. It's being ready while you wait."</div>
+<span class="sb">600 Marksmen · Three Tiers</span>
+<div class="cr"><div class="av" style="color:#4a8828;">CV</div><div class="ri"><div class="rn">Range-Marshal Coren Veld · Tier 3: Vael "Nightwind" Noss (3.2-mile record)</div><div class="rt">All Major Fortifications / Mobile Field Deployment</div><div class="rd">Lyria found Coren tracking a Void creature her Wardens had lost — he had been following it for 3 days. Zero high-value target misses in 11 years. Corps record: 3.2 miles, moving target, night, 40mph crosswind.</div></div></div>
+<div class="sl">Armour by Tier</div>
+<table class="eq">
+<tr><td class="ec">Tier 1</td><td class="en">Wall Scout Plate</td><td class="ed">Standard reinforced leather with steel shoulder protection. Full archery range of motion from elevated wall positions. Darkened finish — no reflection at any angle.</td></tr>
+<tr><td class="ec">Tier 2</td><td class="en">Starshot Cloak</td><td class="ed">Terrain-adaptive camouflage cloak over minimal plate. Weight-reduced for position-to-position field movement. Warden-pattern design — Lyria's influence visible in the construction method.</td></tr>
+<tr><td class="ec">Tier 3</td><td class="en">Shadow Weave (Vael-built)</td><td class="ed">Near-invisible field gear. Vael "Nightwind" Noss builds his own. The method is not documented. The results are.</td></tr>
+</table>
+<div class="sl">Weapons by Tier</div>
+<table class="eq">
+<tr><td class="ec">Tier 1</td><td class="en">Dawnscope Longbow</td><td class="ed">Moonwood composite with crystal-lens sight attachment. 600-meter rated. Enchanted string for consistent pull weight across full temperature range — functions identically at -40 and +40.</td></tr>
+<tr><td class="ec">Tier 2</td><td class="en">Starshot Compound Bow</td><td class="ed">Mechanically-assisted compound bow for extreme distance. Signal-cut arrows for coordinated volley targeting across the formation.</td></tr>
+<tr><td class="ec">Tier 3</td><td class="en">Nightwind Resonance Bow (Vael)</td><td class="ed">Custom-built by Vael. Moon-iron self-forged arrows. Current record: 3.2 miles. Not standardized because it cannot be standardized. It belongs to one person.</td></tr>
+<tr><td class="ec">All Tiers</td><td class="en">Precision Shortsword</td><td class="ed">For close engagement if the position is compromised. All tiers carry one. Presence is usually sufficient deterrent before it needs to be drawn.</td></tr>
+</table>
+</div></div>
+
+<!-- HOLY KNIGHTS OF STARHAVEN -->
+<div class="card t-wc">
+<div class="cb">
+<div class="cn">Holy Knights of Starhaven</div><div class="cs">Kingdom Sacred Military Order · Sancthaven</div>
+<div class="cm">"Where darkness stands, we ride."</div>
+<span class="sb">7,000 Knights & Paladins</span>
+
+<div class="cr">
+<div class="av" style="color:#489020;">BV</div>
+<div class="ri">
+<div class="rn">High Commander Brynhild Voss · Sub: Sir Aldric Dawnshield, Sister Elara Vale</div>
+<div class="rt">Sancthaven Cathedral Fortress · Kingdom-Wide Deployment</div>
+<div class="rd">Founded after the First Void Crusade. The sacred sword of Starhaven. Where the Ashen Guard preserves life, the Holy Knights destroy the source of suffering. Their banners have marched against demon invasions, corruption outbreaks, necromantic cults, and monsters powerful enough to threaten entire provinces.</div>
+</div>
+</div>
+
+<div class="sl">Role</div>
+<div class="tg">
+<span class="t" style="color:#489020;border-color:#205010;">Holy Warfare</span>
+<span class="t" style="color:#489020;border-color:#205010;">Monster Hunting</span>
+<span class="t" style="color:#489020;border-color:#205010;">Demon Suppression</span>
+<span class="t" style="color:#489020;border-color:#205010;">Sacred Protection</span>
+</div>
+
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Sanctified Dawnplate</td><td class="ed">Silver-white full plate engraved with sacred scripture and purification sigils. Resistant to curses, corruption, fear magic, and necrotic energy. Blessed annually within Sancthaven's Grand Cathedral.</td></tr>
+
+<tr><td class="ec">Helm</td><td class="en">Halo Helm</td><td class="ed">Closed holy-war helm with blessed visor runes. Designed to protect against illusion magic, terror effects, and corruption whispers during prolonged engagements.</td></tr>
+
+<tr><td class="ec">Mount</td><td class="en">Sunfire Chargers</td><td class="ed">Massive warhorses selectively bred for crusade warfare. Fearless against dragons, demons, monsters, and corrupted creatures. Every mount undergoes sacred bonding rituals.</td></tr>
+</table>
+
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Sunlance</td><td class="ed">Blessed heavy cavalry lance designed for monster and demon hunting. Impact enchantments release bursts of radiant energy capable of shattering corruption armor.</td></tr>
+
+<tr><td class="ec">Secondary</td><td class="en">Judicator Blade</td><td class="ed">Sacred longsword forged in Sancthaven's holy forges. Silvered edge remains effective against undead, demons, cursed entities, and void-touched abominations.</td></tr>
+
+<tr><td class="ec">Relic</td><td class="en">Oathchain</td><td class="ed">Blessed chain weapon used by Exorcist Knights. Designed to restrain corrupted champions and demon entities before purification or execution.</td></tr>
+
+<tr><td class="ec">Command</td><td class="en">Dawnbreaker (Brynhild)</td><td class="ed">Legendary warhammer carried by Brynhild Voss herself. Radiant shockwaves generated from direct strikes have shattered corruption nests and fortress gates alike.</td></tr>
+</table>
+
+<div class="sl">Elite Orders</div>
+<div class="ug">
+<div class="ub"><div class="un">Dawn Templars</div><div class="ur">Heavy holy infantry</div></div>
+<div class="ub"><div class="un">Radiant Cavaliers</div><div class="ur">Sacred cavalry shock force</div></div>
+<div class="ub"><div class="un">Exorcist Knights</div><div class="ur">Anti-demon specialists</div></div>
+<div class="ub"><div class="un">Relic Wardens</div><div class="ur">Protect sacred artifacts</div></div>
+<div class="ub"><div class="un">Saintguard</div><div class="ur">Brynhild's personal escort</div></div>
+</div>
+
+<div class="nb" style="border-color:#286010;">
+The Holy Knights have never retreated from a kingdom-class corruption event. When their banners appear, civilians cheer, cultists flee, and monsters become priority targets.
+</div>
+
+</div></div>
+
+<!-- CROWNWARDENS -->
+<div class="card t-ka">
+<div class="cb">
+<div class="cn">Crownwardens</div><div class="cs">Kingdom Internal Security & Law Enforcement</div>
+<div class="cm">"The law must reach where armies should not."</div>
+<span class="sb">15,000 Wardens · Kingdom-Wide Authority</span>
+
+<div class="cr">
+<div class="av" style="color:#385880;">GW</div>
+<div class="ri">
+<div class="rn">High Marshal Garron Vale · Sub: Commander Mira Thorne, Chief Investigator Corvin Ash</div>
+<div class="rt">Starhold Capital · All Provinces</div>
+<div class="rd">The shield protecting Starhaven from threats within. They investigate crimes, dismantle criminal organizations, hunt smugglers, suppress corruption rings, and ensure even nobles remain subject to the law. Their authority extends across every province of the kingdom.</div>
+</div>
+</div>
+
+<div class="sl">Role</div>
+<div class="tg">
+<span class="t" style="color:#385880;border-color:#182448;">Law Enforcement</span>
+<span class="t" style="color:#385880;border-color:#182448;">Counter-Smuggling</span>
+<span class="t" style="color:#385880;border-color:#182448;">Internal Security</span>
+<span class="t" style="color:#385880;border-color:#182448;">Criminal Investigation</span>
+</div>
+
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Warden Mail</td><td class="ed">Dark steel half-plate reinforced for urban operations and long patrols. Built for mobility rather than battlefield warfare. Recognizable throughout Starhaven by its blue-and-silver crest.</td></tr>
+
+<tr><td class="ec">Shield</td><td class="en">Justice Shield</td><td class="ed">Medium-sized shield optimized for arrests, crowd control, and riot suppression. Reinforced edges designed for defensive formations within city streets.</td></tr>
+
+<tr><td class="ec">Mount</td><td class="en">Patrol Chargers</td><td class="ed">Fast-response horses stationed throughout Starhaven's provinces. Selected for endurance, speed, and calm temperament during urban disturbances.</td></tr>
+</table>
+
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Warden Longsword</td><td class="ed">Reliable military-grade blade used throughout the organization. Balanced for both battlefield emergencies and law enforcement duties.</td></tr>
+
+<tr><td class="ec">Control</td><td class="en">Judgment Baton</td><td class="ed">Non-lethal enforcement weapon for arrests, crowd control, and riot response. Designed to incapacitate rather than kill.</td></tr>
+
+<tr><td class="ec">Ranged</td><td class="en">Repeater Crossbow</td><td class="ed">Compact urban-response crossbow used against dangerous fugitives and organized criminal groups. Effective in narrow streets and confined environments.</td></tr>
+
+<tr><td class="ec">Specialist</td><td class="en">Binding Shackles</td><td class="ed">Rune-etched restraints developed in Vaelmark. Capable of containing rogue mages, cultists, and magically enhanced criminals.</td></tr>
+</table>
+
+<div class="sl">Divisions</div>
+<div class="ug">
+<div class="ub"><div class="un">Black Seal Investigators</div><div class="ur">Major crime & treason</div></div>
+<div class="ub"><div class="un">Iron Wardens</div><div class="ur">Riot & heavy response</div></div>
+<div class="ub"><div class="un">Rift Marshals</div><div class="ur">Magical crime specialists</div></div>
+<div class="ub"><div class="un">Border Wardens</div><div class="ur">Anti-smuggling operations</div></div>
+<div class="ub"><div class="un">King's Eyes</div><div class="ur">Internal affairs division</div></div>
+</div>
+
+<div class="nb" style="border-color:#203060;">
+Every noble, merchant prince, governor, guild master, and military officer within Starhaven falls under Crownwarden jurisdiction. Only Rayden Cale himself possesses authority above a King's Eye investigation warrant.
+</div>
+
+</div></div>
+
+<!-- ENGINEERING CORPS -->
+<div class="card t-gd">
+<div class="cb">
+<div class="cn">Engineering Corps</div><div class="cs">Specialized · Combat Engineering & Infrastructure</div>
+<span class="sb">3,000 Engineers</span>
+<div class="cr"><div class="av" style="color:#708018;">CX</div><div class="ri"><div class="rn">Under Minister Cyrus Vexley · All Field Armies and Major Cities</div><div class="rt">Kingdom-Wide Deployment</div><div class="rd">Built 6 arcane railway lines, 31 rift gates, and maintains all kingdom infrastructure. The corps that makes Starhaven's expansion physically possible. "If it can't survive a siege, it is vanity."</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Engineer's Harness</td><td class="ed">Heavy leather work-harness with steel plate at chest and shoulders. 12 standard tool-mount positions. Optimized for surviving falling stone and construction site hazards — not combat. The engineer's armor that saves lives by keeping them working, not fighting.</td></tr>
+</table>
+<div class="sl">Weapons & Tools</div>
+<table class="eq">
+<tr><td class="ec">Primary Tool</td><td class="en">Construction Maul</td><td class="ed">Primary engineering tool that doubles as a combat weapon. Every Corps member carries one. Kael noted this was efficient. Cyrus said he had not considered the combat application.</td></tr>
+<tr><td class="ec">Defense</td><td class="en">Shortsword</td><td class="ed">Standard military. For when the site is compromised and retreat is unavailable. Engineers are not line fighters — the sword is the last resort before withdrawal.</td></tr>
+<tr><td class="ec">Specialist</td><td class="en">Arcane Survey Kit</td><td class="ed">Crystal measurement instruments, structural stress calculators, arcane conduit testers. Cyrus designed the standard kit. Every kit carries the same specification. No improvisation on precision measurements.</td></tr>
+</table>
+</div></div>
+
+<!-- FIELD APOTHECARY CORPS -->
+<div class="card t-ag">
+<div class="cb">
+<div class="cn">Field Apothecary Corps</div><div class="cs">Specialized · Non-Magical Battlefield Medicine</div>
+<span class="sb">1,800 Personnel · Embedded with All Field Armies</span>
+<div class="cr"><div class="av" style="color:#307860;">IC</div><div class="ri"><div class="rn">Chief Physician Isolde Cren</div><div class="rt">Sancthaven / Field Embedded</div><div class="rd">Developed non-magical corruption treatment protocols that significantly slow Void-touch progression when magical treatment is unavailable. Her decade of documentation revealed treatments the Ashen Order never found because they never needed to look outside magic.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Apothecary Coat</td><td class="ed">White-grey heavy linen over reinforced vest. Not battle armor — contamination resistance and sterile treatment surface. Corruption-resistant threading in the outer layer. Clearly non-combatant at distance.</td></tr>
+</table>
+<div class="sl">Equipment</div>
+<table class="eq">
+<tr><td class="ec">Medical</td><td class="en">Cren's Protocol Kit</td><td class="ed">Non-magical corruption-slowing compounds, surgical instruments, blood-stop agents, bone-set clamps, fever protocols, wound packing systems. Documented in 10 volumes. The non-magical capability that saves lives when magic is unavailable or exhausted.</td></tr>
+<tr><td class="ec">Defense</td><td class="en">Belt Knife</td><td class="ed">Standard. For the situations Isolde doesn't discuss. Carried. Rarely relevant. Present.</td></tr>
+</table>
+</div></div>
+
+<!-- GRIFFIN SCOUTS -->
+<div class="card t-ns">
+<div class="cb">
+<div class="cn">Griffin Scouts</div><div class="cs">Specialized Aerial · Mountain Recon & Message Relay</div>
+<div class="cm">"First to see. First to know."</div>
+<span class="sb">180 Scout-Riders · 60 Griffins</span>
+<div class="cr"><div class="av" style="color:#4070b0;">TS</div><div class="ri"><div class="rn">Wing-Commander Tessa Skarne · Marcus Ironmane (Griffin Breeding)</div><div class="rt">Skyperch / Mountain Deployment</div><div class="rd">Griffin breeding program in formal partnership with Marcus Ironmane. Scout griffins are smaller and faster than Stormwing combat griffins — same bloodline, different selection criteria. 14,000-foot altitude capability.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Rider</td><td class="en">Scout Flight Plate</td><td class="ed">Minimum-weight armor for altitude operations. Reinforced leather with steel chest plate. Wind-sealed seams for high-altitude cold. Temperature-rated to -40 at 14,000 feet.</td></tr>
+<tr><td class="ec">Griffin</td><td class="en">Scout Recon Harness</td><td class="ed">Lightweight reconnaissance harness only — no combat barding. Message cylinder mounts, observation instrument brackets, quick-release rider system for emergency dismount. Griffins are not combat-trained. Speed and endurance are their roles.</td></tr>
+</table>
+<div class="sl">Weapons & Equipment</div>
+<table class="eq">
+<tr><td class="ec">Defense</td><td class="en">Scout Shortbow</td><td class="ed">Compact recurve for aerial angle defensive use. Scouts do not engage unless withdrawal is impossible. The weapon exists for the last option.</td></tr>
+<tr><td class="ec">Sidearm</td><td class="en">Belt Knife (×2)</td><td class="ed">Standard tool and emergency weapon. Every rider carries two — one for gear, one for the situation where gear becomes insufficient.</td></tr>
+<tr><td class="ec">Mission</td><td class="en">Observation Package</td><td class="ed">Crystal-lens far-sight instrument, 6-type signal flares, sealed message cylinders, aerial survey parchment, altitude compass. The kit that makes the mission possible.</td></tr>
+</table>
+</div></div>
+
+<!-- STARGUARD ESCORT -->
+<div class="card t-gd">
+<div class="cb">
+<div class="cn">Starguard Escort</div><div class="cs">Specialized · VIP & Diplomatic Protection</div>
+<span class="sb">800 Elite Guards</span>
+<div class="cr"><div class="av" style="color:#708018;">SG</div><div class="ri"><div class="rn">Under Daven Holt (Dawnguard Coordination)</div><div class="rt">Starhold / Mobile with Diplomatic Missions</div><div class="rd">Second-tier elite after Dawnguard. Protected 17 foreign dignitaries simultaneously at the Iron Star Festival. Concealed secondary weapons drawn twice without incident becoming public.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Starguard Dress Plate</td><td class="ed">Ceremonial-grade heavy plate — as strong as the Dawnguard's, better-looking for state functions. Gold star-crest and formal coloring. The plate that sends the right signal at a diplomatic reception without sacrificing the capability for the wrong situation.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Honor Blade</td><td class="ed">Formal longsword with ceremonial finish over a fully functional fighting weapon. Every Starguard member draws and engages in under 2 seconds. The ceremonial finish does not slow the draw.</td></tr>
+<tr><td class="ec">Concealed</td><td class="en">Concealed Shortsword</td><td class="ed">Carried under the formal cloak. For when the situation requires a weapon that was not visible before it was needed. The weapon for the incident that should not have happened.</td></tr>
+<tr><td class="ec">Escort Kit</td><td class="en">VIP Protection Pack</td><td class="ed">Direct communication crystal to Dawnguard Command, signal flares, restraint cord, emergency medical kit. The kit that turns guards into a protection operation.</td></tr>
+</table>
+</div></div>
+
+<!-- ASHEN SHIELDS -->
+<div class="card t-grey">
+<div class="cb">
+<div class="cn">Ashen Shields Protectorate</div><div class="cs">Specialized · Ashenveil Protectorate Defense</div>
+<span class="sb">6,000 Soldiers</span>
+<div class="cr"><div class="av" style="color:#787880;">PA</div><div class="ri"><div class="rn">Governor Petra Allus (Valdris Remnant)</div><div class="rt">Ashenveil (Permanent)</div><div class="rd">Founded by soldiers the Kingdom of Valdris abandoned at the frontier. Starhaven came for them when Valdris did not. Not contract loyalty — something deeper. The force that stayed because it had nowhere else that had chosen them first.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Frontier Protectorate Plate</td><td class="ed">Heavy frontier armor — Ashenveil is Void-adjacent territory. Anti-corruption treatment applied as standard. Ashen cross markings — born from proximity to Seraphine's work.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Frontier Spear & Tower Shield</td><td class="ed">Standard heavy formation weapons. Ashenveil's Void proximity means Voidbane-treated spear tips are standard — not optional, required. The frontier makes requirements that the interior does not have.</td></tr>
+</table>
+</div></div>
+
+<!-- CITIZEN'S MILITIA -->
+<div class="card t-grey">
+<div class="cb">
+<div class="cn">Citizen's Militia</div><div class="cs">Reserve · Volunteer Local Defense Network</div>
+<span class="sb">~25,000 Volunteers · Kingdom-Wide</span>
+<div class="cr"><div class="av" style="color:#787880;">RM</div><div class="ri"><div class="rn">Regional Commanders (Distributed Authority)</div><div class="rt">All Towns, Villages, and Settlements</div><div class="rd">Every settlement defended. No community unprotected. 18-minute rift gate response from any Field Army means the Militia's job is to hold until professionals arrive — not win alone.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Settlement Plate</td><td class="ed">Medium reinforced leather over chainmail. Anti-corruption treatment on helmets standard for all settlements within 5 miles of a known Void fracture — these receive treated helmets before anything else.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Issue</td><td class="en">Settlement Spear & Round Shield</td><td class="ed">8-foot standard spear. Round medium shield. Spear-and-shield chosen because it requires the least training to use at baseline effectiveness — the Militia trains 2 days per month. Baseline is sufficient until the Field Army arrives.</td></tr>
+<tr><td class="ec">Personal</td><td class="en">Own Arms (Accepted)</td><td class="ed">Hunter bows, farming tools, heirloom blades — all accepted alongside issue equipment. Starhaven doctrine: a person defending their own settlement fights differently. This is an asset.</td></tr>
+</table>
+</div></div>
+
+</div><!-- end specialized grid -->
+
+<!-- ═══ NAVAL ═══ -->
+<div id="naval" class="sh"><div class="sh-title">⚓ Naval Forces</div><div class="sh-desc">240 warships plus classified intelligence fleet. Built after the Thalassian League alliance opened ocean access.</div></div>
+<div class="grid">
+
+<div class="card t-ns">
+<div class="cb">
+<div class="cn">Dawnfleet</div><div class="cs">Naval · Oceanic Operations</div>
+<span class="sb">140 Warships</span>
+<div class="cr"><div class="av" style="color:#4070b0;">VC</div><div class="ri"><div class="rn">Admiral Valtor Crane · Student of Crest Vane</div><div class="rt">Saltmere Grand Naval Hub</div><div class="rd">Misdirected Corthane's fleet 12 miles off position on Day 1 of the Five Thrones War — naval engagement decided before contact. Backbone of the Naval Expansion Doctrine.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Saltmere Naval Plate</td><td class="ed">Water-resistant medium plate with anti-rust treatment applied quarterly. Lighter than land-armor for ship deck mobility. Floatation vest worn under plate — crew survival protocol standard.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Ship</td><td class="en">Dawnfleet Artillery</td><td class="ed">4–12 deck-mounted cannons per warship. Standard shells plus naval incendiary loads. Thalassian technical collaboration improved firing arc systems Year 1050.</td></tr>
+<tr><td class="ec">Boarding</td><td class="en">Naval Boarding Kit</td><td class="ed">Grapple hooks, boarding shields (smaller, wider grip for ship-deck footing), naval cutlass, belaying pin secondary.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-rc">
+<div class="cb">
+<div class="cn">Tideguard</div><div class="cs">Naval · Coastal Defense & Harbor Control</div>
+<span class="sb">100 Patrol Vessels</span>
+<div class="cr"><div class="av" style="color:#387890;">SM</div><div class="ri"><div class="rn">Admiral Syra Mael</div><div class="rt">Dawncliff Sea Fortress / Saltmere</div><div class="rd">Dual sea-cliff doctrine with Dawncliff's 8 cliff batteries. Ships hold the sea approach while artillery covers them from 300-foot cliffs above. No hostile ship has tested this configuration twice.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Coastal Patrol Leather</td><td class="ed">Reinforced leather over chainmail. Lighter than Dawnfleet plate for boarding, inspection, and patrol operations that coastal vessels conduct constantly.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Patrol Cutlass & Shield</td><td class="ed">Standard naval cutlass, round patrol shield. Grapple kit standard on all vessels.</td></tr>
+<tr><td class="ec">Coordination</td><td class="en">Cliff Coordination Kit</td><td class="ed">Signal mirrors, coded flag system, crystal relay for Dawncliff timing coordination. The dual sea-cliff doctrine requires precise synchronization between ship positioning and battery fire.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-nb">
+<div class="cb">
+<div class="cn">Crowsnest Fleet</div><div class="cs">Naval · Maritime Intelligence</div>
+<span class="sb">Classified</span>
+<div class="cr"><div class="av" style="color:#6838a0;">NX</div><div class="ri"><div class="rn">Intelligence Operations (Nyx Coordination)</div><div class="rt">Saltmere / Mobile Operations</div><div class="rd">Intelligence gathering vessels, reconnaissance, maritime espionage. Provides maritime intelligence for Umbral Web foreign network operations. Operates in waters the official fleet does not formally enter.</div></div></div>
+<div class="sl">Armour & Weapons</div>
+<table class="eq">
+<tr><td class="ec">All</td><td class="en">Classified</td><td class="ed">Cover identities determine visible equipment. Classified fleet strength, classified routes, classified arming. The Crowsnest Fleet's most important weapons are the information it carries and the routes nobody knows it uses.</td></tr>
+</table>
+</div></div>
+
+</div>
+
+<!-- ═══ SIEGE ═══ -->
+<div id="siege" class="sh"><div class="sh-title">💣 Siege Engines & Heavy War Machines</div><div class="sh-desc">From 18 Ironveil trebuchets to the S-level Dimensional Breach Platform.</div></div>
+<div class="grid">
+
+<div class="card t-il">
+<div class="cb">
+<div class="cn">Ironveil Trebuchet Battery</div><div class="cs">Siege · Long-Range Bombardment</div>
+<span class="sb">18 Trebuchets · 540 Crew</span>
+<div class="cr"><div class="av" style="color:#a03010;">AC</div><div class="ri"><div class="rn">Chief Siege-Engineer Aldren Croft</div><div class="rt">Forgehaven (6) · Ironpass (4) · Frosthold (2) · Mobile Reserve (6)</div><div class="rd">280-pound payload at 420 yards. Mobile units assemble in 22 minutes. All 18 in sequence: 280-yard kill zone, 8-second reload. First deployed Year 1046 — Vel'Nathar collapsed before batteries cleared to fire. Filed: "Ready. Unnecessary. Available."</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Crew</td><td class="en">Artillery Crew Plate</td><td class="ed">Heavy chest and shoulder protection. Full face-guard against stone payload fragmentation. Crews are priority targets during siege — armor rated for counter-fire survival while operating the machines.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Ironveil Trebuchet</td><td class="ed">280-pound stone, incendiary, or Voidbane compound payload. 420-yard range. Mobile on reinforced wagons. The Voidbane compound payload — developed with Ashen Guard protocols — clears corrupted earth over a 40-yard radius.</td></tr>
+<tr><td class="ec">Defense</td><td class="en">Crew Crossbow & Shortsword</td><td class="ed">Personal defense for the interval before infantry relief arrives. The batteries are always targets. The crews are always defended.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-mc">
+<div class="cb">
+<div class="cn">Rampart — Siege Tower Division</div><div class="cs">Siege · Fortification Escalade</div>
+<span class="sb">12 Towers · 1,200 Assault Crew</span>
+<div class="cr"><div class="av" style="color:#886018;">BH</div><div class="ri"><div class="rn">Tower-Marshal Brix Holt · Ashfield Staging Depot</div><div class="rt">Mobile</div><div class="rd">12 sixty-foot towers, 100 assault soldiers each. Never failed to reach a deployed wall. The upper suppression platform covers the bridge crossing. 6-second folding bridge. Cain's impact plating rated to 40 ballista bolts per tower.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Assault</td><td class="en">Assault Breach Plate</td><td class="ed">Heavy reinforced — tower-top assault exits from 60 feet under active defensive fire. Must absorb ballista bolt hits and allow continued movement. Designed for 40-bolt survival rating (Cain's specification after testing).</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Assault</td><td class="en">Breach Spear & Tower Shield</td><td class="ed">6-foot short spear for bridge-crossing engagement — longer weapons are impractical exiting a folding bridge at 60 feet. Tower shield for the bridge itself. Once across: shield dropped, close combat begins.</td></tr>
+<tr><td class="ec">Tool</td><td class="en">Breach Hammer</td><td class="ed">For door and barrier breaching on the wall. The assault crew's job after crossing is to open the fortress from the inside. The hammer is built for that.</td></tr>
+<tr><td class="ec">Suppression</td><td class="en">Platform Crossbows (×8)</td><td class="ed">Upper tower platform carries 8 heavy crossbows. Suppression fire covers the bridge crossing. The team that stays in the tower so the team crossing can survive.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-grey">
+<div class="cb">
+<div class="cn">Groundbreaker — Tunnel Assault Corps</div><div class="cs">Siege · Foundation Mining</div>
+<span class="sb">800 Sappers · 200 Combat Engineers</span>
+<div class="cr"><div class="av" style="color:#787880;">VA</div><div class="ri"><div class="rn">Master-Sapper Veld Ashe</div><div class="rt">Ironpass Forward / Ashfield Depot</div><div class="rd">Undermines standard stone fortification foundations in 72 hours under combat conditions. Combined with the Rampart — one goes over, one goes under. Together they have never encountered a fortress they could not breach.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Tunnel Sapper Plate</td><td class="ed">Low-profile reinforced plate — tunnel operations require minimal height clearance. Angled shoulder pauldrons. Knee and elbow reinforcement for tunnel crawling. Full anti-corruption treatment for operations near old Void sites beneath fortifications.</td></tr>
+</table>
+<div class="sl">Weapons & Tools</div>
+<table class="eq">
+<tr><td class="ec">Tools</td><td class="en">Groundbreaker Mining Kit</td><td class="ed">Demolition picks, foundation assessment probes, load-bearing calculators, tunnel prop systems, timed collapse charges. Undermines in 72 hours. Counter-tunneling specialists operate in opposing tunnel networks simultaneously — the shorter sword wins in tight space.</td></tr>
+<tr><td class="ec">Combat</td><td class="en">Sapper Shortsword & Buckler</td><td class="ed">Short sword and round buckler — tunnel engagement tools. Longer weapons cannot be used below 5-foot clearance. The tunnel defines the weapon, not the doctrine.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-vw">
+<div class="cb">
+<div class="cn">Dimensional Breach Platform</div><div class="cs">Siege · S-Level Void Operations</div>
+<span class="sb">S-LEVEL RESTRICTED · Under Veil Watch Command</span>
+<div class="cr"><div class="av" style="color:#583890;">ZK</div><div class="ri"><div class="rn">Designer/Director: Zareth Kull</div><div class="rt">S-Level Classification — Elysia Nocturne command</div><div class="rd">Built in Year 1049 when an S+ dungeon produced dimensional hardening that standard siege equipment could not breach. Zareth built the first prototype in 4 days while the containment team waited outside.</div></div></div>
+<div class="sl">Weapon System</div>
+<table class="eq">
+<tr><td class="ec">System</td><td class="en">Dimensional Breach Platform</td><td class="ed">Effective against Void-hardened structures, corrupted stone, dimensional barriers, and S+ dungeon cores. Ineffective against conventional targets — this is not a conventional weapon. Only deployed when everything else has already failed. Elysia approved 7 additional units. Rayden signed the same hour.</td></tr>
+<tr><td class="ec">Crew</td><td class="en">Veil-Sealed Plate</td><td class="ed">Operators wear Veil Watch dimensional stabilization armor during platform deployment — the Void energies the platform generates would destabilize unprotected personnel.</td></tr>
+</table>
+</div></div>
+
+</div>
+
+<!-- ═══ GARRISONS ═══ -->
+<div id="garrisons" class="sh"><div class="sh-title">🏰 Fort Garrisons</div><div class="sh-desc">112,000 soldiers holding Starhaven's four critical strategic positions. These garrisons have never been breached.</div></div>
+<div class="grid">
+
+<div class="card t-bf">
+<div class="cb">
+<div class="cn">Ironpass Citadel</div><div class="cs">Primary Eastern Fortress · Three-Ring System</div>
+<span class="sb">48,000 Garrison · 60 Forward Tanks</span>
+<div class="cr"><div class="av" style="color:#3878b0;">BS</div><div class="ri"><div class="rn">Warden Brek Stonefall · Engineer-Captain Olla Marsh</div><div class="rt">Eastern Border · Kael Varric Design · Never Breached</div><div class="rd">Three-ring fortification from scratch — Kael's design. Zero surprise engagements in 6 years. 60 forward Iron Tide tanks. Brek Stonefall holds the gate Kael built. "The capital must never see battle." It has not.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Ironpass Siege Plate</td><td class="ed">Heaviest standard-issue armor in the kingdom. Kael's specification: "If the wall fails, the man becomes the wall." Full anti-corruption treatment. The eastern border requires maximum protection — the armor reflects that requirement without compromise.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Wall Arms</td><td class="en">Fortification Battery Array</td><td class="ed">Ironbolt crossbow arrays on all three rings, conventional ballista on the outer ring parapets, Iron Tide tank forward positions at the eastern approach. Three concentric battery lines — breach all three before reaching the garrison.</td></tr>
+<tr><td class="ec">Infantry</td><td class="en">Garrison Spear (10-ft) & Tower Shield</td><td class="ed">Formation spear and interlocking tower shield — Ironwall Phalanx doctrine practised by 48,000 soldiers who hold the east.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-rc">
+<div class="cb">
+<div class="cn">Dawncliff Sea Fortress</div><div class="cs">Coastal Fortress · 300-Foot Sea Cliffs</div>
+<span class="sb">28,000 Garrison · 8 Cliff Batteries · 2,400-Yard Range</span>
+<div class="cr"><div class="av" style="color:#387890;">ES</div><div class="ri"><div class="rn">Commander Ela Seawall · Bram Seawall (Lighthouse Keeper)</div><div class="rt">Carved into 300-foot sea cliffs · Vaelmark + Forgehaven Engineered</div><div class="rd">"Fire for effect, not for warning." The distinction was relevant once. No hostile ship has tested the cliff batteries a second time. Bram keeps the lighthouse. Ela ensures nothing hostile reaches it.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Cliff Battery Plate</td><td class="ed">Salt-resistant heavy plate with anti-rust treatment every 6 weeks. Vaelmark arcane stabilization adds vibration-damping padding for 2,400-yard range artillery operation. The cliff face conditions demand it.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">8 Cliff Battery Systems</td><td class="ed">Eight artillery systems carved into the 300-foot cliff face. 2,400-yard range. Each battery independently targeted. The dual sea-cliff doctrine: ships hold the approach, batteries cover the ships from above. Both layers must be destroyed simultaneously — they are not designed to be.</td></tr>
+<tr><td class="ec">Infantry</td><td class="en">Garrison Naval Plate & Spear</td><td class="ed">Medium sea-resistant plate. Standard spear for cliff-top garrison defense — the last layer, engaged only if the batteries and fleet have both failed.</td></tr>
+</table>
+</div></div>
+
+<div class="card t-rc" style="border-top-color:#2a4858;">
+<div class="cb">
+<div class="cn">Frosthold Bastion</div><div class="cs">Northern Mountain Fortress</div>
+<span class="sb">22,000 Garrison</span>
+<div class="cr"><div class="av" style="color:#387890;">WF</div><div class="ri"><div class="rn">Commander Wyld Frostmere (Dwarf, Age 41)</div><div class="rt">Northern Mountain Passes</div><div class="rd">3 incursion attempts turned into weather disasters without a single conventional engagement. Blizzard doctrine studied at the military academy. Kael said "correct" once about his reports. Wyld has it framed.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Mountain Siege Plate</td><td class="ed">Cold-rated heavy plate. Conditions make standard armor brittle. Thermal underlayer standard. Dwarven garrison (40-50%) wear dwarven-make variants — slightly different, significantly better. Nobody mentions this.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Mountain Spear & Ice-Axe</td><td class="ed">7-foot spear (shorter for cliff terrain close engagement). Mountain ice-axe serves as climbing tool, barrier tool, and weapon equally. Snowtusk cavalry carry elk-scaled lances for mounted operations on armored elk.</td></tr>
+<tr><td class="ec">Doctrine</td><td class="en">Blizzard Control System</td><td class="ed">The Blizzard Command Center and Storm Caller staff (Wyld's) that have turned 3 incursion attempts into natural disasters. 61 volumes of weather log documentation. The weather is the weapon. Wyld gives it direction.</td></tr>
+</table>
+<div class="sl">Forces</div>
+<div class="ug">
+<div class="ub"><div class="un">Mountain Skirmishers</div><div class="ur">Light — cliffside warfare, ambush</div></div>
+<div class="ub"><div class="un">FrostGuard</div><div class="ur">Heavy — hold the mountain gate</div></div>
+<div class="ub"><div class="un">Snowtusk Cavalry</div><div class="ur">Armored elk — mountain-native</div></div>
+<div class="ub"><div class="un">IceBreakers</div><div class="ur">Elite assault — breach fortifications</div></div>
+</div>
+</div></div>
+
+<div class="card t-bf" style="border-top-color:#6a1818;">
+<div class="cb">
+<div class="cn">Veilhold Keep</div><div class="cs">Southern Frontier Border Fortress</div>
+<span class="sb">14,000 Garrison</span>
+<div class="cr"><div class="av" style="color:#3878b0;">VA</div><div class="ri"><div class="rn">Commander Virel Ashmark</div><div class="rt">Southern Border</div><div class="rd">Southernmost significant military installation. Primary staging for Southern Realm alliance coordination. Participated in siege tower testing — 3 towers topped, none crossed, both sides filed it as a success.</div></div></div>
+<div class="sl">Armour & Weapons</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Frontier Garrison Plate</td><td class="ed">Standard heavy garrison plate. Southern border exposure means heat-management underlayer replaces the cold-rated version used at Frosthold. Anti-corruption treatment standard.</td></tr>
+<tr><td class="ec">Primary</td><td class="en">Formation Spear & Tower Shield</td><td class="ed">Standard Ironwall Phalanx doctrine — the same formation system Kael developed and that every major garrison has adopted. 14,000 soldiers trained on identical doctrine for allied operation capability.</td></tr>
+</table>
+</div></div>
+
+</div>
+
+<!-- ═══ PROVINCIAL ═══ -->
+<div id="provincial" class="sh"><div class="sh-title">🌲 Provincial Forces</div><div class="sh-desc">Greenveil's territorial defense force — separate from Thorin's Primal Vanguard. 18,000 to 35,000 soldiers defending the province itself.</div></div>
+<div class="grid">
+
+<div class="card t-pv">
+<div class="cb">
+<div class="cn">Greenveil Defense Forces</div><div class="cs">Provincial Army of Greenveil · The Forest Stands Watch</div>
+<div class="cm">"The Forest Stands Watch."</div>
+<span class="sb">18,000 Peace / Up to 35,000 Fully Called</span>
+<div class="cr"><div class="av" style="color:#407820;">TB</div><div class="ri"><div class="rn">Thorin Blackroot — Lord of Greenveil</div><div class="rt">Throughout Greenveil Province · Strongholds, Outposts, Forests, Villages</div><div class="rd">Separate from the Primal Vanguard. The province's standing territorial defense — distributed across every corner of Greenveil, not concentrated. The forest itself is the defense; these soldiers make it lethal.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Greenwood Scale Armor</td><td class="ed">Lightweight armor reinforced with hardened leather and livingwood plates. Flexible, quiet, forest-adapted. No metal-on-metal contact. No reflective surfaces. Built to disappear into the environment rather than withstand it.</td></tr>
+<tr><td class="ec">Cloak</td><td class="en">Leafweave Cloak</td><td class="ed">Woven from Greywood vine fiber. Changes color with terrain. Does not rustle. Standard issue for all Greenveil Rangers and Pathfinder units.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Warden Spear</td><td class="ed">Balanced for thrusting in tight forest formations and against Void-touched creatures simultaneously. Different balance point than standard military spear — the forest does not offer open formation lanes.</td></tr>
+<tr><td class="ec">Ranged</td><td class="en">Hunter's Bow</td><td class="ed">Longbow from moonwood and yew. Used by rangers and skirmishers. Every person in Greenveil who grew up there can use this. It is not issued — it is already present.</td></tr>
+<tr><td class="ec">Tool/Weapon</td><td class="en">Woodsman Hatchet</td><td class="ed">Versatile tool and weapon. Combat, survival, and clearing forest threats. The object that is both the most ordinary and most dangerous thing a Greenveil soldier carries.</td></tr>
+</table>
+<div class="sl">Branches</div>
+<div class="ug">
+<div class="ub"><div class="un">Greenveil Wardens</div><div class="ur">Main arm — discipline, endurance</div></div>
+<div class="ub"><div class="un">Greenveil Rangers</div><div class="ur">Eyes of the forest — scouts, trackers</div></div>
+<div class="ub"><div class="un">Rootguard Militia</div><div class="ur">People in arms — defending their homes</div></div>
+<div class="ub"><div class="un">BeastWardens</div><div class="ur">Monster suppression specialists</div></div>
+<div class="ub"><div class="un">Pathfinder Rangers</div><div class="ur">Deep ambush and survival ops</div></div>
+<div class="ub"><div class="un">Sentinel Guard</div><div class="ur">Keeps and strongholds</div></div>
+</div>
+</div></div>
+
+</div>
+
+<!-- ═══ MERCENARY ═══ -->
+<div id="mercenary" class="sh"><div class="sh-title">🗡 Mercenary Companies</div><div class="sh-desc">The finest independent fighting forces in the known world, under permanent retainer or standing contract to Starhaven.</div></div>
+<div class="grid">
+
+<!-- BROKEN CROWN -->
+<div class="card t-mc">
+<div class="cb">
+<div class="cn">The Broken Crown Company</div><div class="cs">Mercenary · Permanent Retainer</div>
+<div class="cm">"We fought for crowns. We fight for Starhaven."</div>
+<span class="sb">12,000 Soldiers · 4,000 ✦/Month Permanent Retainer</span>
+<div class="cr"><div class="av" style="color:#886018;">AM</div><div class="ri"><div class="rn">Captain-General Aldric "Ironjaw" Morne</div><div class="rt">Irongate District, Goldgate / Campaign Mobile</div><div class="rd">Founded Year 1028. Oldest active mercenary company in the registry. Siege and breakthrough specialists. Rayden's personal loyalty — not the kingdom's contract, his. Immediate response. 12,000 soldiers always ready.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Crown-Shard Plate</td><td class="ed">Heavy siege plate assembled from the salvage of seven different collapsed kingdom armories. Inconsistent appearance, consistent quality. Every piece chosen by someone who survived enough to know what mattered. The armor of people who have seen too many kingdoms fall.</td></tr>
+<tr><td class="ec">Shield</td><td class="en">Breach Shield</td><td class="ed">Smaller than tower shields — designed for active assault, not passive defense. Interlocking rim hooks for sustained breakthrough formation. The shield that breaches, not the shield that holds.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Siege Maul</td><td class="ed">Two-handed war-maul. Broken Crown specialty is siege and breakthrough — the maul opens gates, formations, and morale simultaneously. The correct tool for the correct work.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Heavy Shortsword</td><td class="ed">For close quarters post-breach. When the maul has done its work and the formation has collapsed into close combat.</td></tr>
+</table>
+</div></div>
+
+<!-- IRON REAVERS -->
+<div class="card t-co">
+<div class="cb">
+<div class="cn">The Iron Reavers</div><div class="cs">Mercenary · Ashfield Standing Contract</div>
+<div class="cm">"31 consecutive engagements without retreat."</div>
+<span class="sb">3,800 Soldiers</span>
+<div class="cr"><div class="av" style="color:#a02030;">GV</div><div class="ri"><div class="rn">Warlord Grena Vashk</div><div class="rt">Ashfield Barracks / Campaign Mobile</div><div class="rd">Largest pure-infantry mercenary force. 31 consecutive engagements without retreat. Kael: "Expensive but honest." Oversees Ashfield's formalization. The Iron Reavers Barracks anchors Ashfield's Irongate District.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Battle-Scarred Plate</td><td class="ed">Heavy infantry plate — no two sets identical. Every set personal, maintained personally, carries the dents of the engagements that didn't kill the person wearing it. 31 engagements of dents per survivor. The armor that tells the story of the company's record.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Reaver Greatsword</td><td class="ed">Two-handed greatsword, 5-foot blade. Pure infantry — the greatsword is the right weapon for frontline attrition and scorched advance doctrine. Maintained to the same standard as the armor. Personal.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Reaver Battle-Axe</td><td class="ed">Single-handed axe carried as secondary. When the greatsword becomes too close or too fatigued. The Reavers don't retreat — they also don't run out of options.</td></tr>
+</table>
+</div></div>
+
+<!-- STORMWING BROTHERHOOD -->
+<div class="card t-sr">
+<div class="cb">
+<div class="cn">Stormwing Brotherhood</div><div class="cs">Mercenary Aerial · Griffin Combat Cavalry</div>
+<div class="cm">"Founded by Aurelia's Stormrider washouts."</div>
+<span class="sb">800 Riders · 120 Combat Griffins</span>
+<div class="cr"><div class="av" style="color:#3868a8;">TS</div><div class="ri"><div class="rn">Wing-Commander Tessa Skarne</div><div class="rt">Skyperch Basing Rights / Campaign Mobile</div><div class="rd">Founded by those who failed Aurelia's Stormriders selection — built something to prove it was the wrong standard. Griffin breeding from Ironmane Fields. Competes with Stormriders for altitude records. 60 wind-mage fliers integrated.</td></div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Rider</td><td class="en">Combat Rider Plate</td><td class="ed">Lightweight riding armor for griffin-saddle operations. Heavier than Griffin Scouts (combat role requires more protection). Wind-sealed for altitude operations to 14,000 feet.</td></tr>
+<tr><td class="ec">Griffin</td><td class="en">Combat Griffin Barding</td><td class="ed">Heavier than Scout griffins' harness — the Stormwing griffins are combat-trained. Chest and shoulder barding. Lighter than heavy cavalry barding — speed and agility preserved. These griffins are weapons.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Aerial Lance</td><td class="ed">8-foot cavalry lance for dive-approach engagement. Wind-mage fliers (60) carry arcane staves tuned to individual frequency — the Stormwing Brotherhood's unique combat integration.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Wind-Blade & Shortbow</td><td class="ed">Short curved blade for post-dive close combat. Compact shortbow for medium approach harassment before closing.</td></tr>
+<tr><td class="ec">Griffin</td><td class="en">Combat Talons & Beak</td><td class="ed">Stormwing griffins are combat-trained, unlike Griffin Scouts. Natural weapons — enhanced by selective breeding and combat training program developed by Tessa Skarne over 5 years.</td></tr>
+</table>
+</div></div>
+
+<!-- REDBONE CAVALRY -->
+<div class="card t-ff">
+<div class="cb">
+<div class="cn">Redbone Cavalry</div><div class="cs">Mercenary · Coldmarch Plains Horse Warriors</div>
+<div class="cm">"The horse you own fights different from the horse you borrowed."</div>
+<span class="sb">900 Riders · Every Rider Owns Their Mount · 4-Hour Mobilization</span>
+<div class="cr"><div class="av" style="color:#a83018;">DF</div><div class="ri"><div class="rn">Ride-Captain Dusk Ferren</div><div class="rt">Coldmarch Plains (Base) / Campaign Mobile</div><div class="rd">Every rider owns their mount — not policy, identity. 14 bonded duskstriders for nocturnal flanking operations. Fastest mercenary cavalry mobilization in the registry. Zero mount losses to non-combat causes on campaign.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Rider</td><td class="en">Plains Rider Leather</td><td class="ed">Hardened plains-leather over chain underlayer. Every set personal — riders modify their own over years of use. The result is armor as individual as the rider. Standard in function; unique in fact.</td></tr>
+<tr><td class="ec">Horse</td><td class="en">Owner's Barding</td><td class="ed">No standard barding — each rider outfits their own mount. The variety reflects the personal bond between rider and horse that is the company's fundamental capability. Some horses are unbarded for pure speed operations.</td></tr>
+<tr><td class="ec">Helm</td><td class="en">Open Plains Helm</td><td class="ed">Low-profile steel or reinforced leather cap. Maximum vision for terrain reading at speed. The Coldmarch plains demand it.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Redbone Lance</td><td class="ed">9-foot ashwood lance — lighter than standard military for high-speed maneuver. Red-cord wrapped grip (origin of the company name). Each lance personal to its rider. Not interchangeable.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Plains Saber</td><td class="ed">Single-edged curved blade for pursuit and close engagement. Slight forward-weight for mounted cutting strikes during pursuit operations.</td></tr>
+<tr><td class="ec">Ranged</td><td class="en">Cavalry Shortbow</td><td class="ed">Compact recurve for medium-range harassment during flanking runs. Volume fire at speed — not precision, pressure.</td></tr>
+</table>
+</div></div>
+
+<!-- SILVERCHAIN MAGES -->
+<div class="card t-ns">
+<div class="cb">
+<div class="cn">The Silverchain Mages</div><div class="cs">Mercenary Arcane · Contract Warfare</div>
+<div class="cm">"Memory-bonded operators. Non-compete with Ninth Sky Corps."</div>
+<span class="sb">340 Mages</span>
+<div class="cr"><div class="av" style="color:#4070b0;">TV</div><div class="ri"><div class="rn">Arch-Contractor Thessaly Vorn / Arcanist-General Mael Sorn</div><div class="rt">Vaelmark Outer Quarter (Licensed Tower)</div><div class="rd">Only mercenary company with a formal non-compete agreement with the Ninth Sky Corps — Velkan Drake signed it personally. Handle arcane contract operations the Corps cannot take for political reasons.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Runic Contract Robes</td><td class="ed">Layered runic robes — enchanted for contract warfare specifically. Memory-bond anchors sewn into the lining. No two sets carry identical enchantments. The robe is as much a tool as the staff.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Silverchain Focus Staff</td><td class="ed">Silver-chain-wrapped casting focus. The chain component is the memory-bond anchor system — allows operators to share battlefield awareness in real-time during contracts. Different architecture from Bob Vale's Soul Link. Same general category. Different problem solved.</td></tr>
+<tr><td class="ec">Specialist</td><td class="en">Dissolution Kit</td><td class="ed">Arcane ward-breaking tools — counter-resonance instruments, binding pattern analyzers, six-stage dissolution compounds. The kit that makes the Silverchain valuable for politically sensitive operations the official Corps cannot take.</td></tr>
+<tr><td class="ec">Secondary</td><td class="en">Mage-Blade</td><td class="ed">Enchanted shortsword with moderate disruption charge. For when magic isn't the right answer. Both commanders carry one. Neither discusses why.</td></tr>
+</table>
+</div></div>
+
+<!-- DEEP TIDE COVENANT -->
+<div class="card t-ag">
+<div class="cb">
+<div class="cn">The Deep Tide Covenant</div><div class="cs">Mercenary Naval · Deep Ocean Navigation</div>
+<div class="cm">"The charts nobody else has."</div>
+<span class="sb">Classified Fleet</span>
+<div class="cr"><div class="av" style="color:#307860;">CS</div><div class="ri"><div class="rn">Wave-Elder Cressia Stormdrift</div><div class="rt">Deep Ocean Operations</div><div class="rd">Cressia's current charts contain sea-routes that even Admiral-King Crest Vane has never fully mapped — 40 years of his attempts. The two maintain profound mutual respect over this fact. The Covenant navigates where the Dawnfleet cannot go.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Deep-Sea Pressure Suit</td><td class="ed">Partially arcane, partially engineering — allows extended deep-water operations. The design is not shared. The Thalassian League has been trying to obtain it for 20 years. The Covenant has declined every offer.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Navigation</td><td class="en">Stormdrift Charts</td><td class="ed">Not weapons in the conventional sense. More valuable than weapons. The sea-routes nobody else has are why the Covenant has a contract and why the contract is maintained regardless of cost.</td></tr>
+<tr><td class="ec">Combat</td><td class="en">Naval Boarding Arms</td><td class="ed">Standard naval cutlass and boarding hook. The Covenant is navigators first. When combat happens, it is treated as an obstacle between them and the destination. It gets removed efficiently. Then they continue navigating.</td></tr>
+</table>
+</div></div>
+
+<!-- ASHEN SHIELD CORPS -->
+<div class="card t-grey">
+<div class="cb">
+<div class="cn">Ashen Shield Corps</div><div class="cs">Mercenary · Hospital Protection Retainer</div>
+<div class="cm">"Standing retainer — field hospitals never threatened."</div>
+<span class="sb">Contract Variable</span>
+<div class="cr"><div class="av" style="color:#787880;">CD</div><div class="ri"><div class="rn">Contract-Captain Cova Drell</div><div class="rt">Sancthaven / Field Hospital Deployment</div><div class="rd">Protection of Seraphine's field hospitals and Ashen Guard medical operations. Cova Drell's presence has prevented the situations that would require the contract's hostile action clause. It has never been invoked.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Protectorate Heavy Plate</td><td class="ed">Heavy plate clearly marked with the Ashen cross — the visual signal that the hospital and its protectors are present. Not for stealth. For deterrence. Hostiles understand what the cross means when paired with armed soldiers in heavy plate.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Guard Spear & Tower Shield</td><td class="ed">Standard heavy formation weapons. The Ashen Shield Corps is a presence force — the spear and shield signal that a fight here would be costly. Combined with the Ashen cross marking, the message is clear. It has been clear enough. Every time.</td></tr>
+</table>
+</div></div>
+
+<!-- VOID HOUNDS -->
+<div class="card t-vw">
+<div class="cb">
+<div class="cn">Void Hounds</div><div class="cs">Mercenary · Monster Hunting Specialists</div>
+<div class="cm">"Zero losses on S-rank under personal command."</div>
+<span class="sb">1,600 Hunters</span>
+<div class="cr"><div class="av" style="color:#583890;">CV</div><div class="ri"><div class="rn">Hunt-Master Cren Voss</div><div class="rt">Goldgate Guild Charter / Field Mobile</div><div class="rd">14 confirmed apex kills under Cren's personal command. Zareth Kull's professional rival — a productive adversarial respect. Zero hunter losses on S-rank contracts under personal command. Operates alongside Void Breakers on major engagements.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Hunter's Corruption Seal</td><td class="ed">Anti-corruption treated leather over reinforced plate. Working near Void entities constantly means the armor is not about stopping swords — it's about surviving the environment. Zareth Kull reviews their armor specifications annually. The relationship is professional. Both have their own methods. Both methods work.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Voidbane Spear</td><td class="ed">Corruption-disruption tipped hunting spear. The tip formula comes from Zareth Kull's research — sharing information that saves lives supersedes professional rivalry. 14 apex kills under Cren's command.</td></tr>
+<tr><td class="ec">Containment</td><td class="en">Hunter's Binding Kit</td><td class="ed">Void-entity containment compounds, tracking dust, anti-corruption light bombs for area denial. The kit that makes monster hunting professional rather than suicidal.</td></tr>
+</table>
+</div></div>
+
+<!-- GREYWOOD WARDENS -->
+<div class="card t-sw">
+<div class="cb">
+<div class="cn">Greywood Wardens</div><div class="cs">Mercenary · Deep Forest Warfare & Monster Suppression</div>
+<div class="cm">"The forest tells us. We tell no one."</div>
+<span class="sb">Variable Strength · Forest Contract Specialists</span>
+<div class="cr"><div class="av" style="color:#4a8828;">SA</div><div class="ri"><div class="rn">Warden-Prime Sela Ashbark (Wood Elf, Age 128)</div><div class="rt">Greywood Border / Forest Contract Operations</div><div class="rd">128 years of Greywood knowledge. Works alongside the Greenveil Defense Forces and Silent Wardens. Monster suppression, Void-touched containment, deep forest operations. Mount: Stillfoot — a shadowdeer. Does not make sound. Has never been seen by an enemy first.</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Bark-Scale Harness</td><td class="ed">Living bark plates hardened over chainmail. Naturally camouflaged — matches Greywood coloring in all seasons. Self-repairing when in contact with Greywood soil. Lighter than metal, stronger than leather. Thorin's root-weave technique applied to armor construction.</td></tr>
+<tr><td class="ec">Cloak</td><td class="en">Greywood Vine Cloak</td><td class="ed">Woven from Greywood vine fiber. Terrain-adaptive coloring. Does not rustle in wind. The cloak that makes Sela Ashbark invisible when she chooses to be.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Warden Spear & Hunter's Bow</td><td class="ed">Standard Greyveil equipment — spear for beast suppression in forest formations, shortbow for long approach clearance before entering range. The tools of someone who has been doing this for 128 years.</td></tr>
+<tr><td class="ec">Control</td><td class="en">Warden's Crook</td><td class="ed">Used for beast containment and Void-creature management. Binding rune carved into the crook's end. Used more than any other tool Ashbark carries — the forest has more things that need management than things that need killing.</td></tr>
+</table>
+</div></div>
+
+<!-- BLACKSHORE CORSAIRS -->
+<div class="card t-ws">
+<div class="cb">
+<div class="cn">Blackshore Corsairs</div><div class="cs">Mercenary Naval · Coastal Contract</div>
+<div class="cm">"Dual-contracted with Tideguard for overflow."</div>
+<span class="sb">Contract Fleet</span>
+<div class="cr"><div class="av" style="color:#306070;">SB</div><div class="ri"><div class="rn">Sova Blacktide</div><div class="rt">Coastal Operations / Saltmere Overflow</div><div class="rd">Coastal harassment, rapid response maritime, irregular naval operations. Tideguard overflow partner — Iron Star Festival saw 400-ship routing managed with Blackshore overflow. Sova's fighting style described by Tideguard officers as "unhelpful for planning purposes."</div></div></div>
+<div class="sl">Armour</div>
+<table class="eq">
+<tr><td class="ec">Body</td><td class="en">Corsair Sea-Leather</td><td class="ed">Hardened sea-leather — water-resistant, quick-drying, does not rust like plate. The Blackshore work in conditions that degrade conventional armor rapidly. Their armor looks worse than it is.</td></tr>
+</table>
+<div class="sl">Weapons</div>
+<table class="eq">
+<tr><td class="ec">Primary</td><td class="en">Corsair Cutlass & Hook</td><td class="ed">Single-edge curved blade and boarding hook — the traditional coastal raider's paired tools. The hook is for ships. The cutlass is for everything else.</td></tr>
+<tr><td class="ec">Ranged</td><td class="en">Naval Crossbow</td><td class="ed">Compact naval crossbow. Loads faster than a bow in wet conditions. Standard Blackshore issue. Reliable in the conditions that make other ranged weapons unreliable.</td></tr>
+</table>
+</div></div>
+
+</div>
+
+<footer>
+<div class="ft">Total: 461,000+ Active · 2.1M+ With Allied Forces · Year 1052</div>
+Starhaven Royal Army · The Sundered Age<br>
+<span style="font-style:italic;color:#2a2a40;">"From six thousand survivors on a hilltop to four hundred and sixty-one thousand soldiers — built in a decade because people refused to stop."</span>
+</footer>
+</body>
+</html>
