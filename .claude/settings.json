@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check \"d:/STARHAVEN/starhaven_wiki.html\")",
+      "Bash(node -e ' *)",
+      "Bash(node _fix_final.js)",
+      "Bash(node --input-type=module)",
+      "Bash(node _fix_transport.js)",
+      "Bash(node _fix_chron_meta.js)",
+      "Bash(node _tmp_check.mjs)",
+      "Bash(node _add_brektane.js)",
+      "Bash(grep -v \"//\\\\|color:\\\\|weapon\\\\|ability\\\\|mount\\\\|partner\\\\|relation\\\\|note:\\\\|type:\\\\|image:\\\\|quote:\\\\|bio:\\\\|desc:\\\\|status:\\\\|category:\\\\|role:\\\\|race:\\\\|subtitle:\\\\|title:\\\\|background:\\\\|tags:\")"
+    ]
+  }
+}
