@@ -484,6 +484,7 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn" data-filter="Commander" onclick="charsRender('Commander',this)">Commanders</button>
       <button class="tab-btn" data-filter="Scholar" onclick="charsRender('Scholar',this)">Scholars</button>
       <button class="tab-btn" data-filter="Allied" onclick="charsRender('Allied',this)">Allied</button>
+      <button class="tab-btn" data-filter="Others" onclick="charsRender('Others',this)">Others</button>
     </div>
     <div class="search-bar">
       <input class="search-input" id="char-search" placeholder="Search characters…" oninput="charSearch=this.value.toLowerCase();charsRender(charFilter)">
@@ -659,6 +660,9 @@ a.lore-card:hover{transform:translateY(-2px)}
 // ════════════════════════════════════════
 //  CHAPTERS — edit summaries here
 // ════════════════════════════════════════
+let activeSection = 'story';
+const sectionRendered = {};
+
 const CHAPTERS = [
   {
     id: 'ch1',
@@ -941,7 +945,7 @@ const CHARACTERS = [
     relationships:[{name:'Nyx Ravel',type:'rival'},{name:'Rayden Cale',type:'ally'}],
     tags:['Founder','Pillar of the Eye','Silent Wardens'],
   background:'Moon Elf, 127 years old though she appears 27. Spent decades as an independent reconnaissance operative before Starhaven existed. Lost four Silent Warden scouts during the Five Thrones War — their names are in her field notes in smaller handwriting than everything else.',
-    mount:{name:'Nymeris',desc:'Silver Moonfire Panther — rare bond-animal, moves in near-silence. Used for infiltration approaches where dragons and horses are not viable.'},
+    pet: { name: 'Nymeris', desc: 'A Bald Eagle raised by Marcus, given to her as a companion.' },
     partner:null,
     achievements:['3.2-mile confirmed shot — the longest in kingdom records',
       'Led reconnaissance on all four S+ dungeon floors before Elysia\'s seal teams entered',
@@ -993,7 +997,7 @@ const CHARACTERS = [
     relationships:[{name:'Rayden Cale',type:'ally'},{name:'Dren Solm',type:'ally'}],
     tags:['Founder','Pillar of the Heart','Ashen Guard'],
   background:'Half-Celestial / Half-Human. Cleansed the Ashenveil plains before the city\'s founding — six months alone in corrupted territory. Wrote the Five Thrones War peace preamble before negotiations began. Healed Elder Kira during the Varathos engagement — the first time a Giant elder had ever been healed by a Starhaven operative. Listed Kira as co-author on the resulting medical paper.',
-    mount:{name:'Auriel',desc:'Celestial White Stag — bond animal that appeared the night Seraphine chose to stay in the Ashenveil rather than retreat. Has never been tethered.'},
+    pet:{name:'Auriel',desc:'Celestial White Stag — bond animal that appeared the night Seraphine chose to stay in the Ashenveil rather than retreat. Has never been tethered.'},
     partner:{name:'Brother Adael Mire',relation:'Twin brother (civilian healer)',desc:'Adael runs the pediatric ward of Sancthaven Hospital, having chosen medicine over celestial duty. They correspond weekly. He is the only person she asks for advice on things that are not about the kingdom. He calls her \'Sera.\' Nobody else does.'},
     achievements:['Sable Conclave - Entered a classified environment rated unsurvivable. Emerged 31 hours later. Nature of what was done inside: unrecorded.',
       'Restored 800 square miles of Verdant farmland',
@@ -1020,7 +1024,8 @@ const CHARACTERS = [
     relationships:[{name:'Rayden Cale',type:'ally'},{name:'Lyria Valen',type:'rival'}],
     tags:['Founder','Pillar of Secrets','Null Blades'],
   background:'Shadekin. Origin before Starhaven is classified even from the royal record. Designed the security architecture of Goldgate before a single building was placed. Identified Velcross\'s 23 embedded agents 11 days before their activation — neutralized all simultaneously with zero fatalities. Sent Velcross the complete asset list before she confirmed her own failure. The gap between Velcross\'s realization and Nyx\'s message was 40 seconds.',
-    mount:{name:'Umbra',desc:'Shadowfang Wolf — pure black with a light-absorbing quality. Appears to be made of concentrated dark rather than darkness. Bond animal, not a trained mount in any conventional sense.'},
+    mount:{name:'Umbra',desc:'Shadowfang Panther — pure black with a light-absorbing quality. Appears to be made of concentrated dark rather than darkness. Bond animal, not a trained mount in any conventional sense.'},
+    pet:null,
     partner:null,
     achievements:['Neutralized 23 Velcross agents simultaneously — zero fatalities, zero witnesses',
       'Fed false fleet coordinates to Corthane — 14 warships redirected to empty ocean',
@@ -1048,7 +1053,7 @@ const CHARACTERS = [
     relationships:[{name:'Rayden Cale',type:'ally'},{name:'Aurelia Vex',type:'ally'}],
     tags:['Founder','Pillar of the Land','Greenveil'],
   background:'Wildblood Dwarf — primal nature-bonding bloodline. Founded Greenveil\'s living architecture by asking the root network what it needed rather than imposing a design. The city grew two new districts in directions no planner had proposed. Trapped 28,000 Drakken warriors in the Greywood for four days using terrain alone. Walked alone into a Drakken parlay where no allied soldier had survived the approach.',
-    mount:{name:'Grond',desc:'Colossal Dire Bear — ancient, scarred, enormous beyond any normal specimen. Has been with Thorin for over three decades. Does not allow other riders.'},
+    pet:{name:'Grond',desc:'Colossal Dire Bear — ancient, scarred, enormous beyond any normal specimen. Has been with Thorin for over three decades. Does not allow other riders.'},
     partner:null,
     achievements:['Designed Greenveil\'s living architecture — city grew in unplanned directions afterward',
       'Trapped 28,000 Drakken warriors in the Greywood for 4 days using terrain alone',
@@ -1073,7 +1078,7 @@ const CHARACTERS = [
     relationships:[{name:'Rayden Cale',type:'ally'},{name:'Thorin Blackroot',type:'ally'}],
     tags:['Founder','Pillar of the Sky','Stormriders'],
   background:'Tempestian Human with storm affinity. Personally certified every dragon-rider at Highspire before the formation flew. Experienced nerve fatigue from the Five Thrones War that required 8 grounded days — the longest she has been out of the sky since taking command. Proposed the Skyhammer aerial bombardment platform in Year 1045.',
-    mount:{name:'Zephyros',desc:'Elder Storm Dragon — several hundred years old, blue-grey-white with storm-threaded scales. Wingspan beyond any living standard drake. The two have been bonded since Aurelia was 14. Zephyros indicated the Skyperch architectural requirements by standing in specific places until someone wrote them down.'},
+    pet:{name:'Zephyros',desc:'Elder Storm Dragon — several hundred years old, blue-grey-white with storm-threaded scales. Wingspan beyond any living standard drake. The two have been bonded since Aurelia was 14. Zephyros indicated the Skyperch architectural requirements by standing in specific places until someone wrote them down.'},
     partner:null,
     achievements:['Day 30 of Five Thrones War — 12 siege engines destroyed in a single sortie, zero Starhaven fatalities',
       'Banned from the Starmark Grand Prix dragon racing category for making it no longer competitive',
@@ -1109,20 +1114,22 @@ const CHARACTERS = [
     id:'bob', name:'Bob Vale',
     title:'Pillar of the Bond · Soul Link Anchor',
     category:'The Eleven', status:'alive',
-    age:'Unknown', race:'Unknown', role:'Soul Link Anchor',
+    age:'Unknown(Looks 20s)', race:'Half-Celestian', role:'Soul Link Anchor',
     image:'starhaven_chars_image/bob.png', color:'#C8A030',
     commands:['Resonance Corps'],
-    weapons:['Unknown'],
+    weapons:['Luminaire Gauntlet','Threadpiercer Rapier'],
     abilities:[
-      {name:'Soul Link',     type:'ultimate', desc:'Connects all eleven Pillars — a communication and coordination network beyond normal battlefield communication.'},
-      {name:'Pure Presence', type:'passive',  desc:'So entirely and genuinely present with whoever he is fighting that the person forgets winning was the point.'},
+      {name:'Dreamlock', type:'ultimate', desc:'Mass unconciousness spell, cant wake up without his permission. He can maintain it across multiple people at once.'},
+      {name:'Soul Link', type:'active', desc:'Connects all eleven Pillars — a communication and coordination network beyond normal battlefield communication.'},
+      {name:'Pure Presence', type:'active',  desc:'So entirely and genuinely present with whoever he is fighting that the person forgets winning was the point.'},
+      {name:'Echo Memory', type:'passive',  desc:'Reads true emotional imprint of events on locations and objects.'},
     ],
     quote:'"He is the most dangerous thing in the arena. Not because he can beat you. Because while you are trying to beat him, you forget that winning was the point." — Elysia Nocturne',
     bio:"The quality that Bob has — of being so entirely and genuinely present with whoever he is fighting that the combat becomes secondary. He lost every bout at the Trial. He won every conversation that happened during the bout.",
     relationships:[{name:'Rayden Cale',type:'ally'},{name:'Seraphine Mire',type:'ally'}],
     tags:['Founder','Pillar of the Bond','Soul Link'],
   background:'Youngest of the Eleven in apparent age. Half-Celestian / Half-Human. Founded the Bond faculty at the Arcanum from scratch with no existing curriculum to reference. Held Soul Link across six simultaneous engagements during the Varathos campaign. Collapsed for 4 hours 40 minutes after the Five Thrones War final engagement. First message from Mira when he recovered: \'Are you whole?\'',
-    mount:null,
+    pet: { name: 'Snow', desc: 'A rare white Capuchin monkey' },
     partner:{name:'Mira Duskwalk',relation:'Partner (Year 1052 onward)',desc:'Ashwalker healer and Void-reader. He built a one-way resonance anchor for her — the only such anchor in existence not used for military purposes. She found two errors in an Athenaeum paper and wrote corrections in pencil on the margins. Their first exchange after the Five Thrones War: \'Are you whole?\' \'No. But I will be.\' \'Good. Read my paper.\''},
     achievements:['Soul Link across 6 simultaneous Varathos engagements',
       '4h40m continuous Soul Link — Five Thrones War final engagement (longest recorded)',
@@ -1388,7 +1395,7 @@ const CHARACTERS = [
     id:'senna', name:'Senna Ash',
     title:'Royal Archivist · Starhaven Royal Athenaeum',
     category:'Scholar', status:'alive',
-    age:'Unknown', race:'Unknown', role:'Royal Archivist',
+    age:'Unknown', race:'Wood Elf', role:'Royal Archivist',
     image:'starhaven_chars_image/senna.png', color:'#806040',
     weapons:['Quill and seal'], abilities:[],
     quote:'"The only song that understands why the crater still glows."',
@@ -1658,6 +1665,225 @@ const CHARACTERS = [
       'Foreign trade licensing system — zero treaty violations in 9 years',
       'Trade network extended to 6 foreign kingdoms — all stable, all profitable'],
     },
+  {
+    id:'sultankarath', name:'Sultan Rashid al-Kavar',
+    title:'The Steady Throne',
+    category:'Allied', status:'alive',
+    age:61, race:'Human', role:'Sultan · Karath Sultanate Leader',
+    image:'starhaven_chars_image/sultankarath.png',
+    color:'#EF9F27',
+    commands:['Karath Sultanate — 300,000 soldiers'],
+    weapons:['Sultanate authority'],
+    abilities:[
+      {name:'Stabilized Rule', type:'passive', desc:'Rayden stabilized the Karath succession crisis in Year 1048 — personally, without an army. Rashid has been ruling steadily since. His personal assessment: "He made the other claimants understand that the succession dispute was less appealing than the Starhaven alliance." He does not describe what specifically was said. He smiles when asked.'},
+    ],
+    quote:'"He made the situation clear. I chose clarity." — on what Rayden said to stabilize the succession',
+    bio:'When asked what Rayden said to stabilize the succession: he smiles. No one has pressed further. The smiling is informative.',
+    background:'Sultan whose succession crisis was stabilized by Rayden in Year 1048 — personally, without an army. Has ruled steadily since. Does not describe what Rayden said. Smiles when asked. The Sultanate has committed 140,000 soldiers to the Starhaven alliance.',
+    partner:{name:'Sultana Aria al-Kavar', relation:'Wife — Sultana of Karath', desc:'Aria runs the Sultanate\'s internal administration and agricultural policy. She was the first person in the Karath court to advocate for accepting Starhaven\'s alliance offer. Rashid took her advice. He takes her advice on most things. The Sultanate has been the better for it.'},
+    achievements:[
+      'Karath Sultanate stable rule — Year 1048 onward',
+      '100,000 soldiers committed to Starhaven alliance — most consistent allied military contributor by headcount',
+      'Succeeded a succession crisis that most observers believed would fracture the Sultanate',
+    ],
+    relationships:[
+      {name:'Rayden Cale', type:'ally'},
+      {name:'Veyra Tal',   type:'ally'},
+    ],
+    tags:['Allied King','Karath Sultanate','Succession Stabilized'],
+  },
+  {
+    id:'sultanaria', name:'Sultana Aria al-Kavar',
+    title:'The Counsel Behind the Throne',
+    category:'Allied', status:'alive',
+    age:57, race:'Human', role:'Sultana of Karath · Internal Administration',
+    image:'starhaven_chars_image/sultanaria.png',
+    color:'#EF9F27',
+    weapons:['Diplomatic pen — the real authority'],
+    abilities:[
+      {name:'Strategic Counsel', type:'passive', desc:'First person in the Karath court to advocate for accepting the Starhaven alliance offer. Rashid took her advice. The Sultanate has committed 140,000 soldiers as a result. She runs internal administration and agricultural policy — the parts of the Sultanate that keep 140,000 soldiers fed and equipped. Rashid signs what she recommends. This arrangement has not been discussed publicly.'},
+    ],
+    quote:'"He listens. That is not as common as it sounds." — on Sultan Rashid',
+    bio:'The operational mind behind the Karath Sultanate. Rashid makes the public decisions; Aria makes the decisions work. She was the first voice in court to argue for accepting Starhaven\'s alliance offer. The Sultanate has not made a significant administrative decision she has not shaped.',
+    background:'Sultana of Karath. Manages internal administration and agricultural policy for a nation of 140,000 committed soldiers. First to advocate for the Starhaven alliance within the Karath court. Her influence extends well beyond her formal role.',
+    partner:{name:'Sultan Rashid al-Kavar', relation:'Husband — Sultan of Karath', desc:'Rashid takes her advice on most things. The Sultanate has been the better for it.'},
+    achievements:[
+      'First Karath court voice to advocate Starhaven alliance — the counsel that changed the kingdom\'s direction',
+      'Agricultural restructuring — supports 140,000-soldier commitment without civilian food shortfall',
+      'Internal stability through three succession-adjacent crises — none became succession crises',
+    ],
+    relationships:[
+      {name:'Sultan Rashid al-Kavar', type:'ally'},
+      {name:'Rayden Cale',            type:'ally'},
+    ],
+    tags:['Allied Sultana','Karath Sultanate','Counsel'],
+  },
+  {
+    id:'veraholt', name:'Vera Holt',
+    title:'The Breach Architect',
+    category:'Commander', status:'alive',
+    age:33, race:'Human', role:'Siege-Captain · Iron Legion',
+    image:'starhaven_chars_image/veraholt.png',
+    color:'#888780',
+    commands:['Stonethrow Corps'],
+    weapons:['The Opener — engineer\'s hammer', 'Standard Iron Legion sidearm'],
+    abilities:[
+      {name:'Breach Architecture', type:'passive', desc:'Plans and executes fortress breaches for the Iron Legion advance. Her breakthrough pattern — used at the Valdris eastern fortress complex — is now a training standard. Cain personally reviewed her plans for six major siege operations and said "correct" each time. She keeps a tally.'},
+    ],
+    quote:'"She plans the breach, he charges through it. This is either the most efficient or the most concerning marriage in the military." — Kael Varric, at their wedding. It was received well.',
+    bio:'Married to Captain Daven Holt. Everyone in both their respective units considers this the most strategically complicated marriage in the kingdom. She plans the breach. He leads the charge through it. They discussed the ethics of this once and decided it was fine. Their son Roen is two.',
+    background:'Siege engineer who rose through Cain\'s Iron Legion. Married Daven Holt in Year 1050. Son Roen born Year 1052. Kael Varric is the godfather. Operates on foot at breach points — no mount, no distance.',
+    partner:{name:'Captain Daven Holt', relation:'Husband — Captain of the Dawnguard', desc:'She plans the breach. He leads the charge through it. Kael said this at their wedding and received a longer laugh than expected.'},
+    achievements:[
+      'Valdris eastern fortress breach pattern — now an Iron Legion training standard',
+      'Six "correct" assessments from Cain Drakhar — she keeps the tally',
+      'Stonethrow Corps field deployment — zero position overrun in three major sieges',
+    ],
+    relationships:[
+      {name:'Daven Holt',   type:'husband'},
+      {name:'Cain Drakhar', type:'ally'},
+    ],
+    tags:['Commander','Iron Legion','Siege-Captain','Breach Architect'],
+  },
+  {
+    id:'crestvane', name:'Admiral-King Crest Vane',
+    title:'The Sovereign of the Sea',
+    category:'Allied', status:'alive',
+    age:64, race:'Human', role:'Admiral-King · Thalassian League Leader',
+    image:'starhaven_chars_image/crestvane.png',
+    color:'#185FA5',
+    commands:['Thalassian League Royal Fleet — 80 Warships'],
+    weapons:['Naval command authority', 'Naval Millitary Saber'],
+    abilities:[
+      {name:'Naval Sovereignty', type:'passive', desc:'Rules the Thalassian League — a maritime federation of seven sea-states spanning the western and central ocean trade routes. Trained Valtor Crane personally. Knew the Varathos islands existed for over 40 years and never gained entry. Upon finally entering through Kira\'s Door, he stood in silence for several seconds and said only: "Adequate."'},
+    ],
+    quote:'"Adequate." — upon seeing Kira\'s Door after forty years of trying to reach Varathos',
+    bio:'Reserved, analytical, and almost unnervingly composed. Approaches naval warfare the way scholars approach mathematics. The only known person to react to Kira\'s Door with the word "adequate." Among the Thalassian League, this is considered an extraordinary reaction.',
+    background:'Admiral-King of the Thalassian League. Trained Valtor Crane personally — that relationship became the foundation of the Starhaven maritime alliance. Spent 40 years attempting to chart the Varathos route before Starhaven opened it.',
+    mount:{name:'The Permanent Tide', desc:'League flagship — his command vessel and, effectively, his office.'},
+    partner:{name:'Seren Vane', relation:'Wife — commands the League\'s Second Fleet', desc:'Seren commands the defensive arm of the Thalassian fleet. She and Crest have a professional arrangement that has never required renegotiation because their areas of operation have never overlapped.'},
+    achievements:[
+      'Thalassian League — seven sea-states unified under one maritime command',
+      'Trained Valtor Crane — whose partnership with Nyx delivered the Five Thrones War naval victory',
+      'Varathos entry through Kira\'s Door — 40-year objective achieved',
+      '80 warships committed to Starhaven alliance',
+    ],
+    relationships:[
+      {name:'Valtor Crane', type:'ally'},
+      {name:'Seren Vane',   type:'ally'},
+      {name:'Rayden Cale',  type:'ally'},
+    ],
+    tags:['Allied King','Thalassian League','Admiral-King','Naval Sovereign'],
+  },
+  {
+    id:'valtor', name:'Valtor Crane',
+    title:'The Tidewall',
+    category:'Commander', status:'alive',
+    age:'35', race:'Elf', role:'Admiral of the Dawnfleet · Naval Strategy Director',
+    image:'starhaven_chars_image/valtor.png',
+    color:'#185FA5',
+    commands:['Dawnfleet'],
+    weapons:['Naval command — the fleet is his weapon','Ancestral Bow','Naval Saber'],
+    abilities:[
+      {name:'Naval Mastery', type:'passive', desc:'Trained personally under Admiral-King Crest Vane of the Thalassian League. Misdirected Corthane\'s fleet 12 miles off position on Day 1 of the Five Thrones War using Nyx Ravel\'s false intelligence — the naval engagement was decided before visual contact. One of the primary architects of Starhaven\'s Naval Expansion Doctrine. "Firm clarification of port policy" has been used five times in official reports.'},
+    ],
+    quote:'"Firm clarification of port policy." — his diplomatic description of engaging hostile fleets. Used five times.',
+    bio:'One of the greatest naval tacticians in the known world. Every allied fleet checks into Saltmere first — his arrangement. Treats oceans as territory instead of distance. The harbor revenues his network generates make Tiber Oswick visibly emotional in budget meetings.',
+    background:'Trained under Admiral-King Crest Vane. His personal relationship with Crest became the foundation of Starhaven\'s maritime alliance network. Following the Southern Ocean expansion, his Naval Expansion Doctrine is now the standard for all Starhaven maritime operations.',
+    mount:{name:"Starhold's Reach", desc:'His flagship and command vessel — rarely leaves it during active operations.'},
+    partner:{name:'Admiral-Scholar Pren Vane', relation:'Wife — retired Thalassian cartographer', desc:'Pren charted the eastern sea routes that Valtor uses as operational corridors. She is now retired and annotates charts in their Saltmere residence. She is very specific about annotations.'},
+    achievements:[
+      'Five Thrones War — misdirected Corthane\'s fleet, decisive naval victory before visual contact',
+      'Naval Expansion Doctrine — now the standard for all Starhaven maritime operations',
+      'Every allied fleet checks into Saltmere first — his arrangement, his revenue architecture',
+    ],
+    relationships:[
+      {name:'Syra Mael',  type:'ally'},
+      {name:'Nyx Ravel',  type:'ally'},
+      {name:'Crest Vane', type:'ally'},
+    ],
+    tags:['Commander','Admiral','Dawnfleet','Naval Strategy'],
+  },
+  {
+    id:'kingaldric', name:'King Aldric Vorn',
+    title:'The Patient Throne of Ironmere',
+    category:'Allied', status:'alive',
+    age:61, race:'Human', role:'King of Ironmere · Full Alliance Partner',
+    image:'starhaven_chars_image/aldricVorn.png',
+    color:'#888780',
+    commands:['Ironmere Royal Army — 180,000 soldiers'],
+    weapons:['Royal authority'],
+    abilities:[
+      {name:'Strategic Alliance', type:'passive', desc:'Signed the full alliance rather than treat Rhegar\'s recruitment as defection. Submitted Rael Koss to the Iron Star Festival. Reads every letter Rael sends home monthly. His Queen drafted the alliance terms before he signed — he signs what she writes. This arrangement has been in place for 38 years. Everyone who knows them is aware of it.'},
+    ],
+    quote:'"Rhegar built us. Then he built something worth protecting. I chose to protect it with him." — on the Starhaven alliance',
+    bio:'Read every letter Rael Koss sent from the Iron Star Festival. Has maintained this alliance partnership for ten years without wavering. Long-term alliance thinking. Respects demonstrated capability.',
+    background:'King of Ironmere. Signed full alliance when Starhaven recruited Rhegar — chose alliance over treating the recruitment as defection. Reads every letter Rael sends home. His Queen drafted the alliance terms before Aldric signed.',
+    partner:{name:'Queen Mira Vorn', relation:'Wife — Queen of Ironmere', desc:'Mira has ruled Ironmere alongside Aldric for 38 years. She drafted the alliance terms before Aldric signed — he signs what she writes. This arrangement has been in place for 38 years. Neither has mentioned it publicly. Everyone who knows them is aware of it.'},
+    achievements:[
+      'Full military alliance with Starhaven — 180,000 soldiers, 60,000 reserve',
+      'Ironmere Iron Phalanx — 12,000 elite committed',
+      'Submitted Rael Koss to Iron Star Festival — reads his letters monthly',
+    ],
+    relationships:[
+      {name:'Rhegar Thorne', type:'ally'},
+      {name:'Rael Koss',     type:'ally'},
+    ],
+    tags:['Allied King','Ironmere','Full Alliance Partner'],
+  },
+  {
+    id:'sorvane', name:'Sorvane Nullis',
+    title:"The Living Dead's Shepherd",
+    category:'Allied', status:'alive',
+    age:89, race:'Human (extended by arcane means)', role:'Arch-Necromancer · Sable Conclave Leader',
+    image:'starhaven_chars_image/sorvane.png',
+    color:'#534AB7',
+    commands:['Sable Conclave Force — 30,000 + 18,000 Undead'],
+    weapons:["Necromancer's focus-staff — bone-and-iron", 'Personal undead guard — permanent'],
+    abilities:[
+      {name:'Undead Command', type:'passive', desc:'Commands 30,000 living soldiers and 18,000+ undead — the most unusual military force in the allied network. Seraphine has diplomatically complex feelings about the undead component. Sorvane Nullis has diplomatically complex feelings about Seraphine\'s feelings. They have established a working relationship based on mutual professionalism and significant mutual discomfort. It functions.'},
+    ],
+    quote:'"The most honest diplomatic arrangement I have experienced in 89 years." — on his working relationship with Seraphine Mire',
+    bio:'Has established a working relationship with Seraphine based on mutual professionalism and significant mutual discomfort. Has described this as the most honest diplomatic arrangement in 89 years. 89 years of existence — some of which were not conventionally living.',
+    background:"89-year-old Arch-Necromancer whose conclave was saved from internal Void-corruption collapse by Seraphine's purification. He had never seen anything like what she did in that event. He sent a formal alliance offer the following month. 30,000 soldiers and 18,000+ undead committed.",
+    achievements:[
+      'Assisted during Starhold battle — Arrived with 30,000 soldiers to support',
+      'Sable Conclave stable command through internal Void-corruption crisis',
+      '18,000+ undead force — the only undead army in the Starhaven alliance network',
+      'Given Gold mining rights to Starhaven in Sable Conclave territory as part of alliance terms',
+      'Established working relationship with Seraphine Mire — widely considered extraordinary',
+    ],
+    relationships:[
+      {name:'Seraphine Mire', type:'ally'},
+      {name:'Rayden Cale',    type:'ally'},
+    ],
+    tags:['Allied Leader','Sable Conclave','Arch-Necromancer','Undead Command'],
+  },
+  {
+    id:'sira', name:'Sira',
+    title:'The Mammoth Elder',
+    category:'Others', status:'alive',
+    age:'~60', race:'Mammoth', role:'Elder of the Convoy Mammoth Herd',
+    image:'starhaven_chars_image/Sira.png',
+    color:'#7A6A50',
+    weapons:[],
+    abilities:[
+      {name:"Elder's Assessment", type:'passive', desc:"The acknowledged elder of the mammoth convoy that arrived at Starhaven in Year 1053. Stood at the far end of the holding area and watched Helna approach with the patience of a creature that had been assessed by strangers many times before and had developed her own evaluation of the process. Helna stood still. Sira's trunk extended. It found Helna's forearm. Held there for a moment. The assessment, from both directions, was complete."},
+    ],
+    quote:'"The sixty-year-old mammoth who had come from a place the forest had never encountered and who was, at this moment, eating her evening feed with the unhurried certainty of a creature that had decided her assessment was complete and the place was acceptable." — Chapter VIII',
+    bio:"Convoy elder — approximately sixty years old. The mammoth the handlers named Sira. Arrived with the convoy in Year 1053. Stood at the far end of the holding area and assessed Helna Ironmane with the patience of a creature that has been evaluated by strangers many times and has long since built her own evaluation process.",
+    background:"Arrived as part of the Year 1053 mammoth convoy to Starhaven. Observed by both Helna Ironmane during veterinary assessment and by Thorin Blackroot, who stood at the field's edge for two hours watching the mammoths settle in. The forest — which had never encountered mammoths — adjusted its evening calls around her presence.",
+    achievements:[
+      'Survived the convoy journey from a place the forest had never encountered',
+      'First mammoth elder to be assessed by Helna Ironmane — assessment mutual, both directions',
+      'Acknowledged elder of the herd — the other animals orient to her',
+    ],
+    relationships:[
+      {name:'Helna Ironmane',   type:'ally'},
+      {name:'Thorin Blackroot', type:'ally'},
+    ],
+    tags:['Others','Mammoth','Chapter VIII','Convoy Elder'],
+  },
 ];
 // ════════════════════════════════════════
 //  MUSEUM  — 26 images from Lores/Mueseum/
@@ -3002,7 +3228,7 @@ function charsRender(filter, btn) {
   if (cnt)  cnt.textContent  = list.length;
   if (cnt2) cnt2.textContent = list.length + ' characters';
 
-  const order = ['The Eleven','Commander','Scholar','Allied'];
+  const order = ['The Eleven','Commander','Scholar','Allied','Others'];
   const grouped = {};
   order.forEach(g => { grouped[g] = []; });
   list.forEach(c => {
@@ -3143,6 +3369,10 @@ function openCharModal(id) {
     ${c.mount?`<div style="margin-bottom:14px;display:flex;gap:10px;align-items:flex-start;background:var(--bg3);border-radius:7px;padding:10px 14px">
       <span style="font-size:20px;line-height:1">🐴</span>
       <div><p class="dl" style="margin-bottom:3px">Mount</p><p style="font-size:13px;color:var(--gold2);font-weight:600;margin:0 0 2px">${c.mount.name||c.mount}</p>${c.mount.desc?`<p style="font-size:11px;color:var(--text3);margin:0;line-height:1.55">${c.mount.desc}</p>`:''}
+      </div></div>`:''}
+    ${c.pet?`<div style="margin-bottom:14px;display:flex;gap:10px;align-items:flex-start;background:var(--bg3);border-radius:7px;padding:10px 14px">
+      <span style="font-size:20px;line-height:1">🐾</span>
+      <div><p class="dl" style="margin-bottom:3px">Pet</p><p style="font-size:13px;color:var(--gold2);font-weight:600;margin:0 0 2px">${c.pet.name||c.pet}</p>${c.pet.desc?`<p style="font-size:11px;color:var(--text3);margin:0;line-height:1.55">${c.pet.desc}</p>`:''}
       </div></div>`:''}
     ${c.partner?`<div style="margin-bottom:14px;background:var(--bg3);border-radius:7px;padding:10px 14px">
       <p class="dl" style="margin-bottom:4px">Partner / Family</p>
@@ -3535,8 +3765,6 @@ function balladsRender() {
 // ════════════════════════════════════════
 //  NAVIGATION
 // ════════════════════════════════════════
-let activeSection = 'story';
-const sectionRendered = {};
 
 function showSection(id, linkEl) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -3668,8 +3896,7 @@ window.addEventListener('scroll',()=>{
 // ════════════════════════════════════════
 //  INIT — render the first section
 // ════════════════════════════════════════
-renderSection('story');
-sectionRendered['story']=true;
+showSection('story');
 
 </script>
 </body>
