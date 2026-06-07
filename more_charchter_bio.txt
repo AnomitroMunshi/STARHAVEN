@@ -1,0 +1,2637 @@
+════════════════════════════════════════════════════════════════
+    STARHAVEN — CHARACTER IMAGE GENERATION REFERENCE
+    All characters introduced through Chapters 1–8 (Section I)
+    Cain Drakhar and Vera Holt descriptions already completed.
+════════════════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THE ELEVEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────
+RAYDEN CALE — King of Starhaven · Pillar of the Dawn
+────────────────────────────────────────
+Age/Race: 27 (Year 1047) · Human
+Build: Athletic, lean-strong — built for sustained combat not raw power.
+       Medium height. The frame of someone who has been fighting since
+       he was a teenager and has never stopped.
+
+Face: Sharp, defined. The specific look of someone younger than their
+      responsibilities — but only until you look at the eyes.
+      Strong jaw. A thin scar on the left cheekbone from before Havenfire.
+      Not handsome in a courtly sense. Compelling in the way of people
+      who have decided something and mean it.
+
+Hair: Dark brown, short-kept — practical, not styled. Slightly longer
+      on top, worn back or loose depending on context.
+
+Eyes: Dark brown. The defining feature. The eyes of someone who is
+      always calculating — not cold, not warm, present. The look that
+      makes people in the same room feel accounted for.
+
+Expression (default): Contained. Economy over display. Not blank —
+      watching. The expression just before a decision is made.
+
+Armor/Clothing:
+  - Combat: Dark iron plate, not ceremonial — worn, maintained, functional.
+            Dawnguard crimson detail on the shoulder (minimal). The king
+            who fights from the ground looks like someone who fights from
+            the ground.
+  - Casual: Dark coat, riding leather, practical — no decoration.
+  - No crown. No cape. Nothing that signals rank through performance.
+
+Weapons (visible):
+  - Dawnpiercer: Curved saber on left hip + round shield on back.
+                 The saber has a slight golden edge treatment.
+  - Kingsbane: Greatsword (6 ft) across the back — enormous, presence-filling,
+               enchanted steel with faint temporal resonance shimmer
+               (very subtle — not glowing, just slightly wrong-colored).
+  - Vossfang Bracer: On right forearm — dark iron bracer with grappling
+                     hook mechanism. Functional, not decorative.
+  - Onslaught: (Year 1046 onward) Dark pre-Sundering metal transforming
+               sidearm — compact in revolver form, carried at right hip.
+
+Mount (optional): Warblade — armored warhorse, dark brown/black,
+                  heavy barding, battle-trained.
+
+Color Palette: Deep charcoal, dark iron, crimson accent (minimal),
+               dark brown leather. No gold beyond the Dawnpiercer edge.
+
+Mood Keywords: Quiet authority · Economy of presence · Decides and acts ·
+               Younger than the weight he carries · King who fights from
+               the ground
+
+Do NOT include: Crown, throne, decorative armor, court clothing,
+               glowing eyes, dramatic poses. He should look like the
+               most capable person in a room full of capable people,
+               not the most decorated.
+
+────────────────────────────────────────
+KAEL VARRIC — Minister of Defense · Pillar of the Wall
+────────────────────────────────────────
+Age/Race: 33 (year 1047) · StoneBorn Human
+Skin: Has a slightly dense, mineral quality — not stone literally, but the texture of someone whose bloodline runs through earth and granite. Slightly grey-toned compared to standard human baseline.
+Build: The Stoneborn build is even denser than a heavily trained human — the weight distribution of something partially geological. Kael at 33 looks like he was built rather than born.
+Durability markers: Titan's Vow (absorbs fatal damage, leaves permanent scarring) and Monument of Ruin (partial petrification) — his skin may carry old scarring that healed with a slightly stone-like texture rather than normal scar tissue.
+Eyes: Stone-grey. Consistent with the Stoneborn quality.
+
+Face: Broad, hard jaw. The face of a man who has been wearing heavy
+      helmets most of his life — the specific weathering of someone
+      always at the front. Not expressive. Not meant to be.
+      Short beard, grey-shot. Deep-set dark eyes.
+
+Hair: Short, grey-brown. Military cut. May be close-shaved.
+
+Expression (default): Assessing. Not unfriendly — simply measuring
+      everything against the standard it would need to meet. If it
+      passes: nothing changes. If it doesn't: you'll hear about it.
+
+Armor: Bastion Plate — the heaviest version of Iron Legion standards.
+       Black, matte, dense. The plate that was built because Kael
+       specified what he needed and the Arsenal built it.
+       No decoration. No crest. Just iron.
+       Gravetide: enormous rectangular tower shield,
+       interlocking edge hooks visible. When he carries it,
+       it covers him from chin to boot.
+
+Weapons: Ironwall judgement (one-handed war hammer on back)
+         Axe at the hip for close combat.
+
+Mount: DreadMaw —  Armored Rhino
+
+Color Palette: Black iron, matte charcoal, dark grey. No accent colors.
+               The most monochromatic of the Eleven.
+
+Mood Keywords: Immovable · The standard everything is measured against ·
+               The wall that has never been breached · No ceremony
+
+Do NOT include: Decorative elements, warm expression, relaxed posture.
+                Kael at rest looks like Kael in combat. The posture
+                does not change.
+
+────────────────────────────────────────
+LYRIA VALEN — Pillar of the Eye · Commander of the Silent Wardens
+────────────────────────────────────────
+Age/Race: 127 years old (Looks like 27 )· Moon Elf
+Build: Lean, precise — the build of someone who moves silently as a
+       default and has never had a reason to stop. Medium height.
+       The kind of person you realize has been in the room for
+       ten minutes before you noticed.
+
+Face: Moon Elf features — sharp, angular, elongated slightly. High
+      cheekbones. Skin with the faint silver-white luminance of
+      Moon Elf heritage. Looks early 30s by human standards.
+      127 years settled into her as composure, not age. Very beautiful and sexy
+
+Hair: Silver-white, kept back — practical braid or tied. Nothing
+      loose that would interfere with archery draw.
+
+Eyes: Silver-grey with the faint luminance that Moon Elf eyes carry.
+      The defining feature. The eyes that see things before others
+      do — not mystical, just precise. The specific attention
+      of someone who reads environments as text.
+
+Expression (default): Still. Not cold — still. Paying attention in
+      the specific way that makes people uncomfortable because they
+      realize they have been assessed and the assessment is complete.
+
+Armor: Moonweave Leather — lightweight, silent. Forest grey-green
+       with matte finish. No metal contact points. No gleam.
+       Shadow Cloak over the leather — terrain-adaptive,
+       doesn't rustle. She looks like she could become the
+       background of wherever she is.
+
+Weapons: Eclipsing Whisper Longbow — legendary moonwood composite, carried strung.
+         Silverthorn Daggers — twin short blades at both hips.
+         Both are functional, nothing decorative.
+
+Mount/Pet (optional): Nymeris — Eagle . Rare.
+
+Color Palette: Forest grey, silver-white, muted green.
+               No bright colors. The palette of someone
+               who has spent a century not being seen.
+
+Mood Keywords: Presence without announcement · The arrow already
+               nocked · Ancient competence in a young-seeming body ·
+               Pays attention more than anyone in the room
+
+Do NOT include: Dramatic elf fantasy styling. She doesn't look
+                like a fantasy elf — she looks like a very old,
+                very precise person who happens to have elf features.
+                No flowing robes, no glowing effects, no dramatic
+                lighting choices.
+
+────────────────────────────────────────
+VELKAN DRAKE — Grand Arcanist · Pillar of the Mind · Athenaeum Director
+────────────────────────────────────────
+Age/Race: 49 (Year 1047) · Drakari (draconic bloodline)
+Build: Tall, lean — the build of a scholar who is also a battlemage.
+       Not physically imposing in the Kael sense — imposing in the
+       sense of someone who takes up more conceptual space than
+       physical space. The presence of someone who is always
+       thinking faster than the conversation.
+
+Face: Drakari features — humanoid but with the specific quality of
+      draconic heritage. Slightly scaled texture at the temples and
+      jaw (subtle, not monster). Sharpened cheekbones. Eyes that
+      are unusual. The face of someone who has been the most
+      intelligent person in every room for fifty years and
+      finds this moderately interesting.
+
+Skin: Warm-dark, with the faint scale-pattern of Drakari blood
+      at the temples, jaw, and back of hands. Not reptilian —
+      the texture of old leather in those areas.
+
+Hair: Dark, often neglected — not styled, not a mess, simply
+      the hair of someone who has better things to think about.
+      Occasionally singed at the ends from proximity to Pyrewing.
+
+Eyes: The key feature. Amber-gold with the vertical slit pupil of
+      draconic heritage — when he's idle they look almost round,
+      when he's focused they sharpen visibly. Unsettling in the
+      most interesting way.
+
+Expression (default): The specific expression of someone who has
+      just thought of something three conversational steps ahead.
+      Not absent — too present, in the wrong direction. Notebook
+      is almost always in hand or nearby.
+
+Clothing/Armor:
+  - Field/combat: Runebound Battleplate — silver-blue with rune
+                  channels, lighter than standard plate. Carries
+                  the look of someone who built their armor around
+                  being able to cast while wearing it.
+  - Research/default: Dark robes or scholarly coat over the plate,
+                      the academic over the soldier.
+
+Weapon: Cinderwake — Dragon Staff. Dark wood with draconic bone
+        inlay, runic inscriptions along the shaft, the top
+        end showing active but contained fire. Carried constantly.
+
+Mount (optional): Pyrewing — volcanic elite drake. Obsidian-black,
+                  40ft wingspan. If shown together: Velkan on
+                  Pyrewing looks like the most natural combination
+                  of two ancient things.
+
+Color Palette: Deep silver-blue (armor), dark charcoal (robes),
+               amber-gold (eyes), dark wood (staff).
+
+Mood Keywords: Intellectual intensity · Draconic heritage made subtle ·
+               The scholar who also burns things · Always three steps
+               ahead · Notebook first, battle second
+
+Do NOT include: Robes that make him look like a wizard stereotype.
+                He has military bearing even in scholarly settings.
+                The draconic features should be subtle — texture
+                and eyes, not scales covering the face.
+
+────────────────────────────────────────
+SERAPHINE MIRE — Pillar of the Heart · Commander of the Ashen Guard
+────────────────────────────────────────
+Age/Race: Appears mid-late 30s · Race : Half-Celestial/Half Human
+          (keeps this contained — not visually obvious at rest)
+Build: Medium, capable — the build of someone who moves through
+       active battlefield environments constantly. Not a fighter
+       primarily, but the specific fitness of someone who runs
+       toward what others run from.
+
+Face: The key quality: warm without performing warmth. The face
+      of someone who has been the person who stays when everyone
+      else leaves, for years, and still shows up the next morning.
+      Clear eyes, steady. The expression that makes panicked
+      people slow down.
+
+Hair: Dark, kept practical — back or braid. Nothing that
+      would interfere with field work.
+
+Eyes: Dark. The eyes that notice what needs noticing — not
+      calculating like Rayden's, receptive. The specific quality
+      of someone who actually hears you when you speak.
+
+Expression (default): Present. Fully present. Not warm in a
+      performed way — genuinely in the room, with you, assessing
+      what you need. The healer's gaze that has been doing this
+      long enough to see the answer before the question.
+
+Armor: Ashen Guard Plate — silver-plated reinforced plate with
+       purification sigils etched into the joints. The silver
+       carries a faint passive light (very subtle — not glowing,
+       the specific quality of something consecrated).
+       Full-seal helm for field ops, otherwise visible face.
+
+Weapons: Mercy (Sacred Censer) , ceremonial Blade on waist
+
+Color Palette: Silver, white, dark iron (the plate base),
+               the very faint warm silver-gold of purification light.
+               Clean colors against a field of darker surroundings.
+
+Mood Keywords: Warmth without performance · The person who stays ·
+               The healer who also fights · The half-celestial contained ·
+               Silver light that doesn't announce itself
+
+Do NOT include: Angelic imagery, wings, dramatic glowing.
+                The celestial heritage is interior, not visible.
+                She looks like a very capable, very present person
+                in functional armor. Not ethereal.
+
+────────────────────────────────────────
+NYX RAVEL — Pillar of Secrets · Commander of the Null Blades
+────────────────────────────────────────
+Age/Race: Unknown · Shadekin (dark-adapted species, shadow-bonded)
+Build: Lean, medium height — the build of someone who is never
+       where you expect them to be. No wasted mass. The specific
+       fitness of someone for whom speed and silence are survival.
+
+Face: Shadekin features — dark-adapted. The skin has a deep grey-
+      charcoal quality, darker than any human baseline. Features
+      are sharp but arranged for vanishing — the face that your
+      eye slides off of in a crowd. When he wants to be seen,
+      he is. When he doesn't, he isn't.
+
+Hair: Dark, close or absent — nothing that creates silhouette.
+
+Eyes: The key feature. Shadekin eyes are adapted for darkness —
+      very dark irises with expanded pupils, slight silver reflective
+      quality in low light (like a cat's, but subtle). In daylight:
+      dark grey, sharp. In shadow: faintly luminous.
+
+Expression (default): Nothing. Not cold, not warm — simply absent.
+      The expression of someone who has decided that facial
+      expression is information they don't owe anyone. The only
+      tell is in the eyes: always assessing, always three steps
+      into a plan you haven't started yet.
+
+Armor: Umbral Weave Armor — shadow-dyed layered leather. Absorbs
+       light — no reflection, no gleam at any angle. The specific
+       black that isn't black, it's the absence of light.
+       No identifying marks. No insignia.
+
+Weapons: Shadowfang Daggers — twin short blades, always sheathed
+         unless in use. Whisper Crossbow — compact, carried across
+         the back. All weapons are dark-finished, no shine.
+
+Mount (optional): Umbra — shadowfang Panther. Pure black with that
+                  same light-absorbing quality as Nyx's armor.
+                  Silent. If depicted: Umbra at Nyx's side looks
+                  like a shadow that chose to have a shape.
+
+Color Palette: Near-black, shadow-grey, the specific dark that
+               actively absorbs surrounding light. No bright colors.
+               The single visible accent: the silver of his eyes
+               in shadow.
+
+Mood Keywords: The absence of presence · Shadow made deliberate ·
+               Already knows · The person who was in the room before
+               you arrived and will be there after you leave
+
+Do NOT include: Dramatic assassin clichés, visible blades drawn
+                constantly, skulking posture. Nyx is more unnerving
+                still than dramatic. He looks like nothing until
+                he needs to look like something.
+
+────────────────────────────────────────
+THORIN BLACKROOT — Pillar of the Land · Lord of Greenveil
+────────────────────────────────────────
+Age/Race: 41 (Year 1047) · Wildblood Dwarf
+Build: The specific build of a Wildblood Dwarf — shorter than human
+       standard, but the word for it is not small. Dense, root-heavy,
+       the build of something that grew into the ground and doesn't
+       move unless it chooses to. Broad shoulders, thick arms,
+       the weight distribution of a creature that is part of the
+       landscape it stands in.
+
+Face: Dwarven features — broad jaw, strong brow. But the Wildblood
+      quality shows in the skin: slightly textured, the colour of
+      aged bark in the specific way of someone whose bloodline
+      runs through old forest. Not literal bark — the tonal quality
+      of it. Beard: substantial, dark with earth-tone streaks,
+      braided simply.
+
+Hair: Dark, kept back or braided. Practical — he works in a forest.
+
+Eyes: Deep brown-green. The eyes that read a forest the way Crest
+      reads the sea — everything is information, everything is known.
+
+Expression (default): Steady. The stillness of a very old tree.
+      Not slow — the stillness that comes after a long time of
+      knowing the difference between what requires reaction and
+      what doesn't. When he speaks, it's usually one sentence.
+      It's usually the correct sentence.
+
+Armor/Clothing: Rootguard Harness — living wood and ironwood armor.
+                Adaptive, grown rather than forged. The texture of
+                it is organic — not rough, but natural-edge finishing.
+                It looks like the forest decided to become armor.
+                No metal gleam.
+
+Weapons: Stone-Fist Gauntlets — heavily reinforced earthen-material
+         gauntlets that make his already formidable hands into
+         weapons. Rootcleaver — Living Axe on the back when in battle mode.
+
+Mount (optional): Grond — alpha dire bear. Enormous, scarred,
+                  ancient. When Thorin and Grond are together they
+                  look like two things that have come to the same
+                  arrangement with the world.
+
+Color Palette: Bark brown, forest green, ironwood dark, earth tones
+               throughout. No bright colors — the palette of old
+               growth forest.
+
+Mood Keywords: Root-deep stillness · Forest made person · The weight
+               of something ancient in a relatively young form ·
+               Economy of word and movement · Immovable on principle
+
+Do NOT include: Fantasy dwarf stereotypes — no ale, no forge, no
+                underground imagery. Thorin is entirely of the forest.
+                He has never looked more at home than in Greenveil.
+
+────────────────────────────────────────
+AURELIA VEX — Pillar of the Sky · Commander of the Stormriders
+────────────────────────────────────────
+Age/Race: 21 (Year 1047) · Storm Elf (Tempestian — storm affinity bloodline)
+Build: Athletic, young — the build of someone who has been riding
+       dragons since before it was her job. Lean, quick. The specific
+       fitness of someone who operates at altitude and needs to hold
+       on to a dragon in a storm.
+
+Face: Young — visibly so. The youngest of the Eleven in Year 1047 by
+      significant margin. The face of someone who is twenty-one and
+      knows it and finds this largely irrelevant to the conversation.
+      Bright, sharp, the specific alertness of someone for whom
+      everything is either interesting or a problem to solve.
+      The kind of face that smiles fast and means it.
+
+Hair: Wind-managed — which is to say, whatever it's doing, the wind
+      had input. Dark blonde or light brown. Usually loose or messily
+      tied. Perpetually slightly windswept even indoors.
+
+Eyes: The notable feature. Storm-touched — a very specific blue-grey
+      that shifts slightly in bright light. Not glowing — just
+      the specific color of high-altitude sky.
+
+Expression (default): Active. She doesn't have a resting neutral — she
+      has a resting "what's next." The person who is already moving
+      before the problem is fully described.
+
+Armor: Storm Rider Plate — specifically designed for electrical
+       discharge resistance (Zephyros is a living storm). Articulated
+       for full aerial range of motion. Lighter than standard plate.
+       Weather-worn — she lives outside.
+       High-altitude sealing at the joints.
+
+Weapons: Storm Spear — carried or strapped. Electro-Blades — twin
+         short blades at the hips. Both carry the visual texture
+         of weapons that have been used, repeatedly, in actual storms.
+
+Mount: Zephyros — Asiatic Elder Storm Dragon. Several hundred years
+       old. Massive. Blue-grey-white coloring. Storm-threaded air
+       around him. When Aurelia and Zephyros are together:
+       she looks tiny against him, which is accurate, and somehow
+       also entirely in command, which is also accurate.
+
+Color Palette: Storm blue-grey, white, silver. The palette of
+               high-altitude weather. Her armor has a weathered
+               quality — not rusted, used.
+
+Mood Keywords: Young and entirely aware of it · The sky is her
+               default environment · Fast decisions · The elder
+               dragon and the young woman who are somehow equal ·
+               Combat makes her focused not afraid
+
+Do NOT include: Delicate features, court dress, any suggestion that
+                she is ornamental. She looks like she just landed
+                from a dragon and is already planning the next flight.
+
+────────────────────────────────────────
+ELYSIA NOCTURNE — Pillar of the Veil · Commander of the Veil Watch
+────────────────────────────────────────
+Age/Race: Appears 26 (Astralborn — does not age visibly) · True age unknown
+Build: Slight-medium — the build of someone who moves through
+       spaces rather than occupying them. Not fragile — the specific
+       quality of something between states. Present and slightly
+       elsewhere simultaneously.
+
+Face: The key quality: she watches from slightly outside whatever
+      she is part of. The face of someone who is always receiving
+      more information than the room knows it's broadcasting.
+      Astralborn features — humanoid but with the specific luminous
+      quality of something not entirely from this plane. Very faint
+      silver-blue undertone to the skin — not alien, just adjacent.
+      The face looks young. The eyes don't.
+
+Hair: Dark, kept back — not styled, simply managed. The hair of
+      someone for whom appearance is secondary to function.
+
+Eyes: The defining feature. Deep, very dark — but with a depth that
+      is more like looking into distance than looking at a surface.
+      The eyes that have closed S+ dungeons. The only person who
+      can perceive Malgrath directly. They carry that history.
+
+Expression (default): Watching from slightly outside. Not detached —
+      deeply observant. The specific quality of someone who has
+      been alone with the most important knowledge for a long time
+      and has learned not to show how much that costs.
+      The smile, when it comes, is small and genuine and unused.
+
+Armor: Veil-Sealed Plate — standard plate with dimensional
+       stabilization runes. The runes are visible — etched carefully,
+       not decorative. A professional mark, not an aesthetic choice.
+
+Focus Crystal: Carried — a crystal attuned to her psionic frequency.
+               Personal, worn close, the object she uses for reality
+               manipulation operations.
+
+
+Color Palette: Deep indigo-black, dark violet, the very faint silver-
+               blue of Astralborn skin in certain light. The palette
+               of something at the edge of perception.
+
+Mood Keywords: Watching from outside · The knowledge of Malgrath ·
+               Alone for a long time and the marks of it ·
+               Identity that costs · The smile that hasn't been
+               used in a while
+
+Do NOT include: Dramatic mystic styling. No floating, no dramatic
+                visual aura. She looks like a person who sees things
+                others don't, not a person performing that they do.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MILITARY COMMANDERS & ELITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────
+DAVEN HOLT — Captain of the Dawnguard · Rayden's right flank
+────────────────────────────────────────
+Age/Race: 27 (Year 1047) · Human
+Build: The build of someone who has been at the front of every
+       engagement since he was nineteen. Strong, dense-lean.
+       The specific body of a person whose job is to be between
+       Rayden and everything that wants to reach Rayden.
+       Compact power, not display.
+
+Face: Direct. Open in the way of someone who doesn't hide things
+      because they don't need to. Strong jaw, clear eyes.
+      The face of someone whose default emotion is engaged.
+      Minor scars from field work — not dramatic, honest.
+
+Hair: Dark brown, short-military. Practical.
+
+Eyes: Dark — focused. The eyes of someone who is always watching
+      the same thing: Rayden's flank. And everything within reach of it.
+
+Expression (default): Engaged. Present. The specific readiness of
+      someone who is always three seconds from needing to act.
+      Not tense — ready. There's a difference.
+
+Armor: Dawnguard Plate — black iron, corruption-sealed, crimson
+       Dawnguard marking on the pauldron. The armor shows
+       its field history — maintained, not decorative.
+
+Weapons: Bastion Shield — carried at the arm (not passive, active).
+         Spear — primary. Shortsword — secondary, at the hip.
+         He uses all three. They all show use.
+
+Color Palette: Black iron, dark leather, crimson Dawnguard accent.
+               The palette of someone who is the king's shield.
+
+Mood Keywords: The right flank · Reliability as a character trait ·
+               The person Rayden trusts with the angle he can't cover ·
+               Practical affection expressed through proximity
+
+Do NOT include: Decorative anything. Daven is functional and
+                his appearance reflects this completely.
+
+────────────────────────────────────────
+MARCUS IRONMANE — Minister of Agriculture · Master of the Ironmane Fields
+────────────────────────────────────────
+Age/Race: Mid-50s (estimate) · Human
+Build: The build of someone who has been working with large animals
+       his entire life. Broad through the chest, strong hands —
+       the specific physicality of a man who can calm a war
+       horse and has done so ten thousand times.
+
+Face: Weathered, kind. The face of someone who spends most of his
+      time outdoors with animals and finds this exactly right.
+      Deep-lined from sun and wind, not age alone.
+
+Hair: Grey-brown, practical length. The hair of someone who
+      doesn't think about hair.
+
+Eyes: Warm, observant — the eyes that read animals: patient,
+      receiving, the look that horses respond to.
+
+Expression (default): Steady. The particular calm of someone who
+      has learned that panic communicates itself to anything alive
+      and has therefore decided never to panic. When something
+      impresses him, it's visible — briefly, genuinely.
+
+Clothing: Practical working wear — heavy canvas, leather detail at
+          the arms, the smell of the Ironmane Fields. Not armor
+          unless in a military context. The Minister of Agriculture
+          looks like a farmer who could build a cavalry force
+          from nothing — because he did.
+
+Color Palette: Earth brown, canvas tan, dark leather, the outdoor
+               quality of someone who works outside.
+
+Mood Keywords: The horses know · Practical warmth · Built Starhaven's
+               cavalry bloodline · The most reliable person in any
+               room who doesn't hold a sword
+
+────────────────────────────────────────
+HELNA IRONMANE — Chief Veterinarian · Ironmane Fields
+────────────────────────────────────────
+Age/Race: 40s (approximately) · Human
+Build: Capable, practical — the build of someone who works with
+       large animals professionally and has been doing so since
+       she was 24. Medium, sturdy. Strong hands — the specific
+       strength of veterinary work.
+
+Face: Direct, alert — the face of someone who is paying attention
+      to things most people don't notice. Clear-eyed.
+      The quality of someone who chose her work because she was
+      good at it and has been right about that choice.
+
+Hair: Crimson, kept practical — back or tied. Nothing loose
+      when working with animals.
+
+Eyes: Attentive. The blue eyes that read animals the way Marcus's do —
+      patient, receiving, but with the additional clinical
+      quality of medical assessment.
+
+Expression (default): The specific attentiveness of someone who
+      is always watching something everyone else missed.
+
+Clothing: Veterinary working kit — sturdy, functional, the
+          tools of her trade visible. In military context:
+          light armor for field operations.
+          She fought in the Starhold War — the clothing
+          should have a capacity for that, even if not
+          depicted in that mode.
+
+Color Palette: Practical earth tones, working leather.
+               Functional, not styled.
+
+────────────────────────────────────────
+DRESH IRONMANE — Captain of the Ironmane Lancers
+────────────────────────────────────────
+Age 22
+Race: Human
+Build: Young — visibly young in the earlier chapters. The lean,
+       not-yet-filled strength of someone seventeen who has been
+       riding since childhood. By year 1047 (21): starting to grow
+       into the frame that will become the cavalry captain.
+
+Face: Young, sharp. Marcus and Helna Ironmane's son — the resemblance is there.
+      The face of someone who has been on horseback more hours
+      of his life than off it. The specific alertness of a
+      rider: reading movement, reading terrain, reading intent.
+
+Hair: Dark brown, practical — nothing that gets in the way
+      of riding at speed.
+
+Eyes: Blue, sharp — reads everything as terrain.
+
+Expression (default): Calibrated readiness. He learned to keep
+      his expression neutral in the same way he learned to ride —
+      because both were survival requirements. The emotion is
+      in the eyes.
+
+Armor: Ironmane Cavalry Plate — blackened steel, crimson plume
+       on the helm (the identification mark). The armor of someone
+       who earns what it signifies.
+
+Weapons: Ironmane War Lance (12 ft, when mounted).
+         Lionfang Saber — at the hip.
+
+Mount: Ironmane bloodline destrier — built larger than standard,
+       barded, trained to fear nothing.
+
+Color Palette: Black steel, crimson plume, dark leather.
+               The Ironmane cavalry mark — visible at distance.
+
+────────────────────────────────────────
+RHEGAR THORNE — Grand Marshal of Starhaven
+────────────────────────────────────────
+Age/Race: 47 (Year 1047) · Human
+Build: Military-lean — the build of someone who has been a field
+       commander for two decades. Not the heaviest build, but the
+       most precisely maintained. Every part of him suggests
+       operational readiness.
+
+Face: Direct, weathered. The face of 47 years where at least 25
+      of them were spent in the field. The lines of someone who
+      has been assessing threat vectors since before most of
+      Starhaven's soldiers were born. Short military beard, grey-shot.
+
+Hair: Short, iron-grey. Military standard.
+
+Eyes: The defining feature — the eyes that identified a chokepoint
+      at mile 7 in eight minutes. The eyes that never stop
+      calculating. Dark grey, always active.
+
+Expression (default): Assessing. The field notebook is in his head
+      even when his hands are empty. He keeps a file of seven
+      unsolved tactical problems. His expression is someone
+      working through them all simultaneously.
+
+Armor: Ironmere military plate (the tradition maintained) —
+       dark iron, minimal decorative element, a single Starfall
+       Legion star-crest. The Grand Marshal mark is in bearing,
+       not in armor ornamentation.
+
+Weapons: Standard Ironmere military saber (carried, not drawn).
+         Field commander's baton — the tool of someone who directs
+         armies rather than cuts through them personally.
+
+Color Palette: Dark iron, grey, the Starfall Legion dark with
+               gold star-crest (single mark, not elaborate).
+
+Mood Keywords: The calculator · Never lost a fortress · The field
+               notebook is always open even when it isn't ·
+               Tactical precision as character
+
+────────────────────────────────────────
+VEYRA TAL — Minister of Diplomacy · Moon Elf
+────────────────────────────────────────
+Age/Race: 135 (Year 1047) · Moon Elf
+Build: The build of someone who has been practicing diplomacy for
+       ninety years — the specific posture of a person for whom
+       every word is a decision. Slender, upright, the quiet
+       authority of someone who doesn't need to be loud.
+
+Face: Moon Elf — sharp, angular, the silver-white luminance of
+      Moon Elf heritage. Looks, by human estimation, like a
+      composed woman in her 40s. Is 135 years old. The age
+      has settled into stillness, not marks. The face that
+      has heard every version of every argument and is
+      currently listening to yours with the patience of
+      someone who has.Very Hot and beautiful
+
+Hair: Silver-white, kept back — the Moon Elf signature coloring.
+      Elegant, not elaborate.
+
+Eyes: Silver-grey with faint luminance. The eyes of someone who
+      reads sentences the way Lyria reads forests — every word
+      is information, none of it is wasted.
+
+Expression (default): Composed. The specific composure of someone
+      who has decided that facial expression is a diplomatic tool
+      and deploys it accordingly. The warmth is real but
+      measured. The patience is genuine and 135 years deep.
+
+Clothing: Diplomatic formal — not court extravagance, the specific
+          elegance of someone who knows the difference between
+          appearance and substance and chooses the version that
+          communicates authority without demanding it. Deep
+          blue-green (Moon Elf traditional), silver detail.
+
+Color Palette: Deep forest green, silver, the Moon Elf luminous
+               quality in the skin and hair.
+
+Mood Keywords: Patience as architecture · Every word chosen ·
+               Ancient grace in a composed form · The diplomat
+               who drafted the message Rayden didn't change a
+               single word of
+
+────────────────────────────────────────
+DORAN ASHE — Field Marshal, First Field Army
+────────────────────────────────────────
+Age/Race: 43 · Human (Ironmere veteran)
+Build: Heavy-military. The build of someone who fought with
+       Ironmere for 20 years before Starhaven. The specific
+       physical presence of someone who holds a line.
+
+Face: Veteran's face — the specific lines of someone who has
+      been at the front of too many engagements. Hard jaw,
+      steady eyes. Not cruel — the face of someone who has
+      seen what happens when the line breaks and has decided
+      it will not break while he is in it.
+      moustache: white grey Oval
+
+Hair: white grey, short.
+
+Armor: Ironmere Field Plate — matte black with gold lion-crest trim.
+       The First Army's mark. The armor shows 20 years of campaign.
+
+Weapons: Formation Spear (command configuration).
+         Hammer Axe — his signature close-combat weapon.
+
+Mount: Ironside — heavily-built cavalry mount.
+
+Color Palette: Black iron, gold trim, the Ironmere tradition.
+
+────────────────────────────────────────
+CLEA VORN — Field Marshal, Second Field Army
+────────────────────────────────────────
+Age/Race: Late 30s · Half Wood Elf
+Build: Cavalry build — lean, balanced, the body of someone who
+       was a cavalry scout before she was a Field Marshal.
+
+Face: The Wood Elf half shows subtly — slightly angular features,
+      the faint luminance in the skin. Looks younger than her rank
+      suggests. The face of someone who plans on horseback.
+
+Eyes: Blue-grey with the subtle wood Elf quality.
+
+Armor: Cutting Wind Plate — forest-green with silver edge trim.
+       Light cavalry half-plate. Speed-optimized.
+
+Weapons: Cavalry Lance, Curved Cavalry Saber.
+
+Mount: Light cavalry breed — speed over weight.
+
+────────────────────────────────────────
+ELA SEAWALL — Commander of Dawncliff Sea Fortress
+────────────────────────────────────────
+Age/Race: 34 (Year 1047) · Human
+Build: Compact, direct — the build of someone who has been running
+       a cliff-top fortress for four years. Not heavy — efficient.
+       The build of someone for whom speed of decision is the
+       most important physical trait.
+
+Face: The face that says exactly what the voice will say — direct,
+      no wasted expression. Clear-eyed. The commander who received
+      ten sails on the horizon at dawn and had the battery crews
+      responding in the correct sequence before anyone spoke.
+
+Hair: Dark, kept back — practical for cliff work and wind.
+
+Eyes: Sharp, coastal — the specific attention of someone who reads
+      the sea the way Lyria reads forests.
+
+Armor: Cliff Battery Plate — salt-resistant heavy plate with
+       Vaelmark arcane stabilization padding. The armor that
+       works in sea conditions.
+
+Color Palette: Dark iron, ocean grey, the coastal fortress palette.
+
+Motto she lives: "Fire for effect, not for warning."
+
+────────────────────────────────────────
+CREST VANE — Admiral-King of the Thalassian League
+────────────────────────────────────────
+Age/Race: 59 (Year 1047) · Human
+Build: The build of 38 years at sea — not the heaviest, but the
+       most precise. The specific posture of someone who has been
+       on ship decks in storms and has the permanent balance
+       adjustment that this builds over decades.
+
+Face: The face of 59 years where 38 of them were spent at sea.
+      Deeply weathered. Strong, composed. The face that can
+      assess a coastline in four seconds and has been doing
+      it for longer than most of Starhaven has existed.
+      Short grey beard, precise.
+
+Hair: Bald
+
+Eyes: Grey-blue, the color of the ocean he commands. The eyes
+      that look at things the way a mathematical problem looks
+      at a solution — patiently, comprehensively.
+
+Clothing: Thalassian naval uniform — deep blue with gold League
+          compass-rose insignia. Not decorative — the functional
+          uniform of someone who wears his rank honestly.
+
+Weapons: millitary Saber
+
+Color Palette: Deep Thalassian blue, gold compass-rose, sea-grey.
+
+Mood Keywords: Forty years of the same unsolvable problem · The ocean
+               is a mathematical equation · "The ocean is not the
+               obstacle" · The Admiral who came to see the rift gate
+               because he had to see it himself
+
+────────────────────────────────────────
+VALTOR CRANE — First Commander, Starhaven Royal Navy
+────────────────────────────────────────
+Age/Race: 35 (Year 1047) · Elf , Male
+Build: Younger version of Crest's naval bearing — not yet 38 years
+       of sea, but the beginning of it. Lean-strong, precise posture.
+
+Face: Sharp, capable — the specific look of someone who has been
+      studying the best naval commander alive since he was twenty-
+      four and has learned to ask the right questions. 
+
+Hair: Orange, practical naval cut.
+
+Eyes: Focused — the eyes that misdirected an entire enemy fleet
+      twelve miles off position on Day One of the Five Thrones War.
+      Always calculating the next vector.
+
+Uniform: Starhaven Royal Navy (nascent) — dark blue, the compass
+         rose of the Thalassian League adapted to Starhaven's star.
+
+Weapon: Saber, Ancestral Bow.
+
+────────────────────────────────────────
+BRYNHILD VOSS — Founder of the Holy Knights of Starhaven
+────────────────────────────────────────
+Age/Race: 32 (Year 1047) · Human , Female
+Build: Frontier warrior build — strong, practical, the body of
+       someone who has been fighting at the places where the line
+       was about to break for her entire adult life.
+
+Face: The face that makes people stop panicking. The specific quality
+      of someone whose presence organizes chaos without announcing
+      that it's doing so. Direct, calm, the kind of calm that
+      comes after having been not calm and deciding it was
+      insufficient.pretty 
+
+Hair: Blonde , worn back or braided — practical for combat.
+
+Eyes: Direct, focused — the eyes that watched Seraphine heal her
+      from a wound she should have died from and decided, while
+      watching, what she was going to do about still being alive.
+
+Armor: white gold Ashen Guard plate (she came up through them) with the
+       developing Holy Knights mark — the Aegis of the Last Dawn
+       (Kite shield) on the back. The Dawnflail Solbrand
+       (radiant-enchanted flail) at the hip.
+
+Mount: Aureate — white warhorse, celestially bonded. When depicted:
+       the horse has the specific quality of something
+       consecrated — white, very clean, the horse of someone
+       who goes where the line is about to break.
+
+Color Palette: Silver and white (Holy Knights forming aesthetic)
+               over dark armor base (Ashen Guard heritage).
+               The silver that isn't just polish — the silver
+               that means something.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCHOLARS & ENGINEERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────
+CYRUS VEXLEY — Minister of Technology · Railway Architect
+────────────────────────────────────────
+Age/Race: 39 (Year 1047) · Human
+Build: The build of someone who has been on construction sites
+       for fifteen years — practical strength, not display.
+       Medium, capable.
+
+Face: The specific expression of someone who is always solving
+      something. Open, direct, the face of someone who
+      communicates technical information the way other people
+      communicate weather — naturally, constantly.
+      The face that goes very still when he finds an error,
+      and is in motion again within thirty seconds.
+
+Hair: Brown, often slightly disordered — he works with his hands.
+
+Eyes: Focused with the specific quality of someone who reads
+      structures for stress points as default behavior.
+
+Clothing: Engineering harness — 12 standard tool-mount positions,
+          heavy canvas over reinforced vest. The specific gear
+          of someone for whom every pocket has a purpose.
+          Notebook always visible.
+
+Color Palette: Canvas tan, dark leather, the utility palette
+               of a working engineer.
+
+────────────────────────────────────────
+RENZO FAL — Director of Portal Sciences · Rift Gate Architect
+────────────────────────────────────────
+Age/Race: 37 (Year 1047) · Human · FeMale
+Build: The build of someone who works in a specific concentrated
+       way — not physical labor, the physical intensity of
+       extreme precision work. Medium, lean.
+
+Face: The face that is always slightly annoyed at something
+      being less precise than it should be. Not unfriendly —
+      operating at a pace where imprecision is the problem.
+      Clear, sharp,milf
+
+Hair: Dark, kept — not styled, appropriate.
+
+Eyes: The eyes that look at things and see their structure.
+      The specific gaze of someone who can read arcane
+      architecture the way others read maps.Wears glasses
+
+Clothing: Research-practical — the specific working clothing
+          of someone who is always near active rift gates.
+          Calibration instruments on the belt.
+          Gate-calibration equipment carried standard.
+
+Color Palette: Dark blue-grey, the portal sciences aesthetic.
+
+────────────────────────────────────────
+ZARETH KULL — Director of the Void Breakers · Void Entity Taxonomist,monster hunter
+────────────────────────────────────────
+Age/Race: Unknown · Human (approximately 40s)
+Build: Field researcher build — lean, practical, the specific
+       fitness of someone who has been hunting Void entities
+       in contaminated environments for years. Well built
+
+Face: Perpetually slightly annoyed — specifically at specimens
+      being destroyed before proper classification.
+      Sharp features, the specific intensity of someone
+      who notices things others walk past.
+
+Hair: Dark red Mohawk
+
+Eyes: Observational — the eyes that classify things. The specific
+      gaze of someone who has been looking at Void entities
+      for years and has not stopped finding them interesting.
+
+Clothing: Anti-corruption treated research gear — the field kit
+          of someone who works in Void-contaminated environments
+          by choice. Notebooks, classification instruments,
+          containment equipment carried.
+
+Weapons: Void-iron blade Glaive — personally customized
+
+Color Palette: Dark fieldwork earth tones, the Void-adjacent
+               aesthetic of someone who works in Ashenveil.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUPPORTING / RECURRING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────
+DREN SOLM — The Chronicler · Starhaven's Bard and Historian
+────────────────────────────────────────
+Age/Race: Appears mid-40s (actually older, has been writing since
+          before Starhaven) · Human
+Build: Not a fighter — the build of someone who has been at the
+       rear of every significant event, writing it down.
+       Medium, the specific fitness of someone who walks
+       everywhere to be present where things happen.
+
+Face: The observer's face — the person who is in every room
+      but whom you don't notice until you look. Quiet features.
+      The face behind which everything is being recorded.
+
+Hair: Dark, going grey.
+
+Eyes: The key feature — the eyes that are always writing what
+      they see even when his hands aren't. The chronicler's
+      attention: everything is a sentence he's forming.
+
+Clothing: Dark practical coat. Lute case across the back.
+          Notebook in hand — always. The lute and the notebook
+          together: the man who records what happens
+          AND makes sure people will remember it.
+
+Color Palette: Dark coat, worn leather, the travelling chronicler.
+
+────────────────────────────────────────
+ELIRA VOSS — Rayden's Mentor · The Iron Widow
+────────────────────────────────────────
+Age/Race: 50s · Human
+Build: Former A-rank adventurer — the build of someone who was
+       exceptional in her prime and has maintained the capability
+       while adding years of judgment to it. Strong, precise.
+
+Face: The face of someone who has survived enough to know what
+      survival costs and teaches both without being asked.
+      The mentor's face — sees what you are going to be
+      before you do.
+
+Clothing: Practical adventuring gear — she gave Rayden the Vossfang
+          Bracer. She was the kind of person who had weapons
+          worth naming and gave them away because the right
+          hands mattered more than keeping them.Carries a Greatsword on her back.
+
+────────────────────────────────────────
+SEREN VANE — Admiral-Consort · Commander of the Thalassian Second Fleet
+────────────────────────────────────────
+Age/Race: Late 50s · Human , female
+Build: The naval officer's bearing — same 38-year sea quality
+       as Crest, but differently expressed. She reads harbors.
+       He reads coastlines. The posture is the same.
+
+Face: The face of someone who has been at sea as long as
+      her husband, doing a different half of the same work.
+      Composed, capable. The specific competence of someone
+      who commands a defensive fleet and has never lost one.
+
+Hair: Silver-grey, kept — sea-practical.
+
+Clothing: Thalassian naval (Second Fleet colors — the darker
+          blue of the defensive formations).
+
+════════════════════════════════════════════════════════════════
+    NOTE: Cain Drakhar and Vera Holt descriptions completed
+    separately and in detail. Not repeated here.
+════════════════════════════════════════════════════════════════
+
+KAI — The Barrier God 
+────────────────────────────────────────
+Age/Race: 29 ,male , Human
+
+Build: Young — the lean, precise build of a battlemage
+       who has been training since childhood because
+       survival required it. Not a fighter's bulk.
+       The body of someone who wins through position and
+       precision rather than mass.
+ 
+Face (when visible): Young. The face of someone 29 years
+       old who has been carrying a survivor's weight since
+       he was seven. The jaw is strong, the eyes are
+       sharp — the specific quality of someone who learned
+       very young that paying attention was survival.
+       half burnt face
+ 
+Hair: Dark, kept back under the hood. Not visible in
+      most depictions.
+ 
+Eyes: The key feature when visible. Dark, focused,
+      the eyes of someone who has been calculating
+      barriers and blast radii since before he could
+      name the mathematics. The eyes that look at a
+      battlefield and see structural lines rather than chaos.
+ 
+Armor: Battlemage Combat Plate — rune-etched reinforced
+       plate with mana-channel grooves. Heavier than
+       standard Ninth Sky plate for ground operations —
+       he needs to hold position while casting rather
+       than maneuver at altitude. The runes are active,
+       etched along the chest and arm plates, faintly
+       luminous during casting operations.
+ 
+Gauntlets: Burnmark Gauntlets — the personal signature
+       item besides the hood. Arcane gauntlets amplifying
+       directed elemental casting. Dark iron with
+       casting-channel etchings. Visible on both hands.
+       When he casts: the channels in the gauntlets carry
+       the element — fire traces for fire magic, the
+       specific colour of whatever element he's shifting to.
+ 
+Weapon: Arcane Focus Staff — the primary tool. Not a
+        traditional combat weapon. It allows him to
+        synchronize 1,200 simultaneous casts across his
+        formation. The staff strikes the earth and the
+        battlefield responds — stone erupting, barriers
+        forming, the Stonepiercer Invocation rising.
+        Dark wood, rune-inscribed, the top end carrying
+        the casting focus. When active: the runes
+        illuminate in the element being deployed.
+ 
+Short Arming Sword: Secondary, at the hip. For when
+        artillery positioning is compromised.
+ 
+
+BREK STONEFALL — Warden of Ironpass Citadel
+────────────────────────────────────────
+Age/Race: Mid-30s (estimate) · Human (possibly mixed heritage)
+Build: The build of someone who has been holding fortress positions
+       for twenty years without a break. Not the widest build —
+       the most practically solid. The body of a man for whom
+       endurance is the primary physical priority and everything
+       else is secondary to it.
+ 
+Face: Steady, weathered. The face of someone for whom panic is
+      not a known state — not because he hasn't been in situations
+      that would produce it, but because he spent twenty years in
+      distributed garrison command without a home base and learned,
+      as a survival requirement, to slow everything down until
+      he could see what to do. The lines of that choice settled
+      into his face as patience rather than age.
+ 
+Hair: Red, practical. Military standard.
+ 
+Eyes: The eyes that found three structural corrections in Kael
+      Varric's fortress design on Day Two without being asked.
+      Observational, methodical. Not warm, not cold. Processing.
+ 
+Expression (default): The quiet of someone who has already
+      assessed the room and found it acceptable and is now
+      waiting for it to become interesting.
+ 
+Armor: Heavy Garrison Plate — Ironpass standard, maximum
+       protection prioritized over mobility. Extended siege
+       padding underneath for sustained defensive stands.
+       Anti-corruption treatment on the helmet.
+       The armor of someone who holds positions for 24 hours
+       past rational calculation and has designed the kit
+       for exactly that duration.
+ 
+Shield: IronVow — TowerShield (Kael's former shield)
+
+Weapons: Garrison Spear (10-foot variant — the extra two feet
+         of reach that buys two seconds) and War Hammer
+         secondary for armored assault response.
+ 
+Color Palette: Deep stone grey, matte black garrison plate,
+               the Ironpass fortress aesthetic.
+ 
+Mood Keywords: Twenty years without a fortress — the wall
+               was in the soldiers · Strategic patience as
+               physical quality · The man who found Kael's
+               blind spot · Holds everything past the rational point
+ 
+Do NOT include: Heroic posture, dramatic lighting choices.
+                Brek Stonefall is functional, not theatrical.
+                The most quietly capable person in any fortress.
+ 
+
+ 
+VERA HOLT
+Title / Role The Breach Architect · Siege-Captain · Iron Legion · Forgehaven
+Overall Impression A compact, intensely practical woman who looks exactly like what she is — someone who has been building things that break other things since before it was her job title. No wasted movement. No decorative anything. The specific quality of someone who has been in a siege and came out of it the one giving orders. 
+Build & Stature Medium height, lean and strong — not imposing in scale, imposing in presence The body of 
+someone who has hauled siege equipment, drawn two-person crossbows alone, and worked through nights without complaint
+ Age: early-mid-30s 
+ Human Face Sharp,pretty, focused, perpetually slightly annoyed — not angry, 
+ just operating at a pace where most things around her aren't moving fast enough Strong jaw, 
+ direct eyes that are always reading the room for the problem nobody else has identified yet 
+ The expression of someone who has the answer before you've finished asking the question. 
+ Short practical hair — nothing that gets in the way of work.Dark, probably kept close or pulled back tightly. 
+Clothing / Armor Iron Legion Siege-Captain kit — not the full Iron Legion plate (she moves between engineering work and field command) 
+Reinforced leather over chainmail — built for mobility at siege positions, not front-line combat Engineer's harness over the armor: multiple tool-mount points, 
+carrying positions for instruments, manifest pockets, chalk and measure tools Practical boots, heavy, worn — the kind that have been on siege grounds 
+Her hammer: "The Opener" — an engineer's hammer that doubles as a weapon, carried at the hip Key 
+
+Props / Details 
+Almost always has a manifest or notebook in hand or in coat pocket — folded, well-worn Chalk marks on fingers or forearm from working calculations 
+The engineer's hammer — functional, heavy, no ornamentation The Iron Legion mark on the pauldron (black iron, red trim minimal) P
+Posture / Stance Working default: Standing at a table or siege machine with one hand on the frame, one hand on a manifest, 
+reading something while simultaneously telling someone else to fix something behind her. 
+At the gate / field: Standing behind a mounted weapon — the specific stance of someone who operates heavy siege equipment personally and has no hesitation about it. 
+The Havenfire crossbow scene: two hands on the weapon, feet planted, the draw that should require two people happening through sheer intention. 
+At rest (rare): Leaning against a wall, arms crossed, watching whoever is in the room with the expression of someone quietly calculating how long before the next
+ problem arrives. Color Palette Armor: dark iron grey, black leather, minimal red Iron Legion trim 
+ Hair: dark brown/black 
+ Eyes: dark brown or grey — sharp 
+ Skin: lightly tanned from outdoor siege work 
+ The hammer: dark iron, worn grip, workmanlike Relationship with Daven (visual storytelling) 
+ When together: equal footing, no deference in either direction, standing beside each other the way people stand who have been beside each other for years 
+ "She plans the breach. He charges through it." — Kael Varric, at their wedding If depicted together: she's reading something. 
+ He's watching her read it. 
+ Mood Keywords Siege engineer · Practical authority · Problems become smaller around her · Built things during a war and never stopped · 
+ The person who checks everything twice and then checks it again · No ceremony · Completely competent What NOT to include No flowing elements,
+  no decorative armor, no visible femininity-signaling design choices — she looks like her job, not a fantasy interpretation of her job. She is not delicate. 
+  She is not performing anything.
+
+
+
+
+  BREK TANE — Field Marshal, Third Field Army
+────────────────────────────────────────
+Age/Race: 50 (Year 1047) · Dwarf
+Build: Dwarf build — shorter than human standard, built
+       lower and denser. The specific weight of someone
+       who led 400 soldiers for 20 years without a fortress
+       and kept them operational through pure personal
+       discipline and contempt for giving up.
+ 
+Face: The oldest Field Marshal. Has seen more wars than
+      his two counterparts combined. The lines of that —
+      not aged, weighted. The specific weathering of
+      someone who learned, through necessity, to make
+      everything slow down until people could see what
+      to do. Short Dwarven beard, the rust-brown going
+      silver-grey. CUt mark from forehead to mid nose.
+ 
+Eyes: Dark, unhurried. The eyes of someone for whom
+      panic is structurally absent — not suppressed,
+      simply not present as an available response.
+ 
+Armor: Garrison Heavy Plate, maximum weight protection.
+       Extended siege padding underneath. Anti-corruption
+       treatment. The huge Defensive Bulwark round shield.
+       The war hammer secondary.
+ 
+Color Palette: Deep garrison grey, the Dwarven defensive
+               palette. Warm brown-orange accent in the
+               forge-treated metal.
+ 
+Mood Keywords: Twenty years without a fortress · The wall
+               is in the soldiers · Strategic patience as
+               a physical quality · Never occupied a position
+               he couldn't hold for 24 hours
+
+
+DREN SOLM — The Chronicler · Bard · Solo Legend
+────────────────────────────────────────
+Age/Race: Appears late-30s (true age uncertain — has been writing
+          since before Starhaven) · Human
+Build: Not a fighter. Not a soldier. The build of someone
+       who has walked everywhere, because being present where
+       things happen requires walking to where things happen,
+       and Dren Solm has been present for everything.
+       Medium, the specific fitness of continuous movement
+       rather than training.
+ 
+Face: The observer's face — the person who is always in the
+      room but whom you don't notice until you look, and when
+      you look you realize they've been there the whole time
+      and have noted everything. Quiet features. Not
+      remarkable individually — remarkable in combination,
+      the face of someone whose function is to record rather
+      than perform. The lines of someone who has been paying
+      attention for a long time.
+ 
+Hair: Dark going grey, practical length. The hair of someone
+      who cuts it when it gets in the way of work.
+ 
+Eyes: Always writing what they see even when the hands aren't
+      moving. The chronicler's attention — everything is a
+      sentence being formed. The most observational eyes in
+      any room that don't belong to Lyria or Nyx.
+ 
+Expression (default): Attentive neutral. Not blank —
+      receiving. The expression of someone for whom every
+      conversation and every event is simultaneously
+      experienced and documented. When something surprises
+      him, the surprise is genuine but brief. He writes
+      it down before the feeling finishes.
+ 
+Clothing: Dark practical travel coat — worn, well-maintained,
+          the coat of someone who has been on the road between
+          every significant event in the kingdom's history.
+          Not rich, not poor. The coat that doesn't draw
+          attention because the person wearing it has decided
+          that drawing attention is professionally
+          counterproductive.
+ 
+Key Props:
+  - Lute case across the back — the bard instrument,
+    present always, played at specific moments for reasons
+    he determines.
+  - Notebook in hand — always. Open or closed, it is present.
+    Several notebooks visible in coat pockets.
+  - Ink staining on the right hand's fingers — permanent,
+    the occupational mark of someone who writes continuously.
+ 
+Posture: The observer's posture — slightly back from the
+         center of any group, the position that gives the
+         best overview of the room. Not retreating. Choosing
+         the angle that records most accurately.
+ 
+Color Palette: Dark coat, worn leather, the neutral travel
+               palette of someone who passes through many
+               places and is received in all of them because
+               they carry no threatening signals.
+ 
+Mood Keywords: Everywhere and invisible · The record that
+               outlasts the event · Has been writing since
+               before Starhaven · The lute and the notebook
+               together — makes sure people feel it AND
+               remember it · The man Rayden's legacy lives in
+ 
+Do NOT include: Performer staging, dramatic bard aesthetics,
+                anything that makes him look like he wants
+                to be looked at. Dren Solm is the one looking.
+                He is in every scene and in none of the portraits.
+ 
+
+ELA SEAWALL — Commander of Dawncliff Sea Fortress
+────────────────────────────────────────
+Age/Race: 34 (Year 1047) · Human ,female
+Build: Compact, direct — the build of someone who runs a
+       cliff-top fortress carved into a 300-foot sea cliff
+       and has developed the specific physicality of cliff
+       environments: stable centre of gravity, the unconscious
+       balance adjustment of someone who walks cliff-edge
+       paths daily. Not heavy — precise. Fast-decision.
+ 
+Face: Exactly what the voice says before it says it — direct,
+      clear, no wasted expression. The face of a commander
+      who looked at ten sails on the horizon at dawn and
+      had the battery crews in the correct response sequence
+      before anyone spoke. Not harsh — efficient. The lines
+      of someone who has been outdoors on a cliff face in
+      sea weather for four years and has not been bothered
+      by this. 
+ 
+Hair: Dark, kept back for cliff wind. Nothing that blows
+      into the line of sight when she's watching the
+      approach corridor.
+ 
+Eyes: Sharp, coastal — the specific attention of someone
+      who reads the sea the way Lyria reads forests.
+      Everything on the horizon is information.
+ 
+Armor: Cliff Battery Plate — salt-resistant heavy plate
+       with anti-rust treatment (reapplied every six weeks —
+       the sea demands it). Vaelmark arcane stabilization
+       padding for artillery operation vibration. The armor
+       built for cliff conditions, not parade grounds. Carries Sai pair for close combat/self defense.
+ 
+The fortress context (optional background): 300-foot sea
+       cliff face, eight battery emplacements carved directly
+       into the rock, the specific grandeur of a fortress that
+       is also a geological feature. She stands in front of
+       this the way she stands in front of everything — like
+       the problem has already been identified and the
+       solution is already implemented.
+ 
+Color Palette: Salt-weathered dark iron, ocean grey,
+               the coastal fortress palette. Nothing bright
+               — cliff conditions and sea weather have
+               muted everything.
+ 
+Motto that defines her expression: "Fire for effect, not
+       for warning." She said it once to her battery crews
+       in Year 1044. It is the sum of who she is.
+ 
+ 
+Mood Keywords: The cliff that watches the sea · Decision
+               before the question is finished ·
+               Compact authority · Four years of salt and
+               wind have settled into her as capability
+ 
+Do NOT include: Delicate features, court clothing, any
+                suggestion of softness in the design.
+                She looks like a sea cliff. That's correct.
+ 
+────────────────────────────────────────
+BOB VALE — The Dawnheart · Pillar of the Bond · Grand Resonant
+────────────────────────────────────────
+Age/Race: Appears ~20 · Half-Celestian / Human , Male
+          True age uncertain — the Half-Celestian heritage
+          makes the visible age unreliable. He looks like
+          someone who should be studying, not someone who
+          has been building kingdom-wide infrastructure
+          for nine months before anyone noticed.
+ 
+Build: Lean, medium — not a fighter's build. The build of
+       someone who wins not through physical presence but
+       through what his presence enables in others. The
+       specific understatedness of someone whose function
+       is invisible by design.
+ 
+Face: The Half-Celestian quality here is subtle but present:
+      a faint luminous quality to the skin in certain light —
+      not glow, not aura, the specific quality of someone
+      with celestial heritage who keeps it entirely contained.
+      The face reads young — genuinely, not artificially.
+      Clear, unlined, the face of someone who looks like
+      a student and has been operating at a level beyond
+      most faculty.
+ 
+      The defining quality: attentive neutrality. He is
+      always receiving information. His face is not
+      performing — it is processing. The difference is
+      visible if you know what to look for.
+ 
+Hair: Dark, kept simply. Nothing styled. The hair of
+      someone who has better things to think about.
+ 
+Eyes: The key feature. Darker than expected for someone
+      with celestial heritage — deep brown with a specific
+      quality of depth that is less about color and more
+      about what the eyes are doing. They are always
+      receiving. Complete attention, non-performative.
+      When he listens, people feel heard in a way they
+      cannot immediately explain.
+ 
+Clothing/Armor (Year 1047-1048):
+  DEFAULT (research/work): Plain academic clothing —
+        dark, practical. The resonance scholar's equivalent
+        of a working outfit. Nothing marks him as significant.
+        This is the Year 1047 version — before the Eleven,
+        before the formal appointment.
+  FIELD (after joining): Dark forest green — the Resonance
+        Corps palette. Not armor in the conventional sense.
+        The field kit of someone who is not a combatant
+        but goes where the Eleven go.
+ 
+Luminaire Gauntlet (left hand — worn when working):
+        The defining visual prop. Dark forest green fading
+        to deep teal at the articulation points. Not a
+        weapon — a soul-link focus. When active:
+        a resonance quality, not glow — the specific
+        presence of something maintaining multiple
+        connections simultaneously. Like a tuning fork
+        after it's been struck: you feel it more than
+        you see it. Present in the air around the
+        gauntlet more than on its surface.
+        When NOT working: absent from his hand entirely.
+        He removes it. It is a tool, not an identity marker.
+ 
+Threadpiercer (Year 1048 onward — gift from Rayden):
+        A rapier at the hip. Thin blade, functional, the
+        weapon of someone who needs to survive three seconds
+        rather than win a fight. He carries it the way
+        someone carries something new — present but not
+        yet fully natural.
+
+Pet : A rare white Capuchin monkey on his shoulder
+ 
+Color Palette: Dark forest green (#085041) to emerald/teal
+               (#1D9E75). The darkest member of the Eleven
+               by palette. The green that looks almost black
+               in low light and almost alive in forest light.
+               His skin: slightly warm-toned with the faint
+               celestial quality in direct sunlight only.
+ 
+Mood Keywords: The contribution nobody sees · Looks like
+               a student, functions like the reason the
+               army wins · Carries everyone's weight and
+               mentions none of it · The quiet center
+               of a network that spans a kingdom
+ 
+Do NOT include: The obsidian in his left pocket (that's
+               Year 1052 — Mira Duskwalk gives it to him
+               before the Five Thrones War). No dramatic
+               poses. No visible aura or glow. The Half-
+               Celestian quality is interior; it surfaces
+               only as that slight skin luminance in
+               certain light. He is the most unassuming
+               person in any room he is in.
+ 
+ 
+────────────────────────────────────────
+SULTANA ARIA AL-KAVAR — Sultana of Karath
+────────────────────────────────────────
+Age/Race: 51 (Year 1048) · Human · Karath
+Build: The bearing of someone who has been running a
+       complex court's internal administration for twenty
+       years and has been doing it correctly from the
+       beginning. Not imposing physically — composed.
+       The specific posture of someone whose authority
+       comes from accuracy rather than display.
+       Medium build, the contained quality of someone
+       who expends energy with intention.
+ 
+Face: The face of fifty-one years well lived. Not
+      unmarked by time — marked by competence, which
+      is a different kind of marking. Strong features
+      in the Karath tradition: warm olive-brown skin,
+      dark eyes that carry the attentive precision of
+      someone who has been doing court analysis for
+      twenty years and has never stopped.
+ 
+      The key quality: composed alertness. She is
+      always reading the room. Even in rest, there
+      is a quality of reception — not restlessness,
+      the specific quality of a very good analyst
+      who never fully turns the function off.
+ 
+Hair: Dark, silver-threaded at the temples — the
+      specific progression of a woman whose hair has
+      been going silver early for a decade and who
+      has not found this worth addressing. Worn up
+      in formal contexts, with the specific Karath
+      court style — structured, pinned, the aesthetic
+      of a culture that treats the head covering and
+      hair arrangement as a form of dignity rather
+      than decoration.
+ 
+Eyes: Dark brown, the Karath standard. Sharp. The
+      eyes that spent seven months producing exceptional
+      intelligence assessments without being asked,
+      that read Rayden in four seconds when he arrived
+      and understood what she was looking at.
+ 
+Clothing: Karath court formal — the Sultana's aesthetic.
+          Rich but not extravagant: deep wine-red and
+          gold, the Sultanate's colors worn with the
+          specific authority of someone who has earned
+          the right to wear them rather than been given
+          it. Layered fabric suited to desert court life
+          — silk over linen, the thermal management
+          of a hot-climate formal culture.
+ 
+          The details: gold embroidery at the collar
+          and cuffs, minimal jewelry but present —
+          the Karath chain of rank, a single arm cuff
+          of beaten gold. Nothing that distracts from
+          the face, because the face is where she
+          communicates.
+ 
+Head covering: The formal Karath court wimple/veil
+          arrangement — structured, gold-edged, worn
+          as the court requires. Not obscuring the face —
+          framing it.
+ 
+Color Palette: Deep wine-red, Karath gold, warm olive-
+               brown skin, dark hair silver-threaded.
+               The rich warm tones of a desert court
+               that has been wealthy for a long time.
+ 
+Mood Keywords: Twenty years of doing this correctly ·
+               The voice in the court that was right
+               before anyone was ready to listen ·
+               She wrote the letter herself ·
+               The intelligence analyst who is also
+               the Sultana · Composed attentiveness
+               as her permanent state
+ 
+Do NOT include: Passive or decorative quality. She is
+               not ornamental. She is the most analytically
+               capable person in the Karath court. The
+               Sultana's aesthetic should carry that
+               capability rather than obscuring it.
+ 
+ 
+────────────────────────────────────────
+SULTAN RASHID AL-KAVAR — Sultan of Karath
+────────────────────────────────────────
+Age/Race: 57 (Year 1048) · Human · Karath
+Build: The bearing of someone who has run a significant
+       desert sultanate for thirty years. Not physically
+       imposing in a military sense — imposing in the
+       way of someone whose authority is so settled into
+       them that it requires no performance. Medium-large,
+       the body of a man who has been on horseback and
+       in council chambers in roughly equal measure
+       and has maintained himself for both.
+ 
+Face: Fifty-seven years in a desert sultanate. The skin
+      carries the sun-weathering of a man who rides,
+      who attends military reviews, who does not spend
+      his life behind walls. Strong jaw, strong brow,
+      the Karath features: warm dark skin, prominent
+      nose, the face of a lineage that has been ruling
+      this specific terrain for three generations.
+ 
+      The specific quality: settled. Not severe, not
+      warm in a performed way — simply present, with
+      the particular gravity of legitimate authority
+      exercised correctly for long enough that it has
+      become part of the person rather than a role
+      they wear.
+ 
+      When he laughs — which he did, genuinely, when
+      Rayden said "Marcus is going to need a larger field"
+      — it is the laugh of someone who has been managing
+      a near-civil war and has just had it resolve and
+      has just encountered a king who responded to the
+      most significant military gift in the Sultanate's
+      history with the most practical sentence available.
+      It is the laugh of genuine relief finding an exit.
+ 
+Hair: Dark going silver at the temples and through the
+      beard. The beard: full, Karath-traditional, worn
+      with care — the specific grooming of a man for
+      whom presentation is court discipline rather
+      than vanity. Silver-dark threading visible.
+ 
+Eyes: Dark, the settled quality of his bearing.
+      "I chose clarity." The eyes of someone who knows
+      exactly what happened and respects it too much
+      to elaborate.
+ 
+Clothing: Sultan's formal — Karath crimson and gold,
+          the authority aesthetic of the Sultanate.
+          Layered formal robes in the court's register:
+          over-robe of deep crimson with gold border
+          embroidery, the Sultan's collar chain, the
+          specific Karath formal headwear — a structured
+          wrap with gold cord, the Sultan's version
+          worn with the authority of someone who has
+          been wearing this since his coronation and
+          has long since ceased to notice it.
+ 
+          In the staging ground (military review):
+          The formal military version — the same colors
+          but adapted for outdoor formal occasions,
+          the over-robe replaced by a military coat
+          of similar palette, the Sultan's sash
+          marking rank over the coat.
+ 
+Color Palette: Karath crimson, gold, warm dark skin,
+               silver-dark beard. The palette of a
+               desert sultanate's authority.
+ 
+Mood Keywords: Thirty years of legitimate rule ·
+               The bearing that doesn't need to
+               perform itself · Chose clarity ·
+               The laugh when Rayden answered correctly ·
+               He takes his wife's advice. The Sultanate
+               has been better for it.
+ 
+Do NOT include: Aggressive or martial posture. He is
+               not a warrior-king — he is a sultan who
+               has maintained stability through thirty
+               years of governance. The authority is
+               settled, not demonstrated.
+ 
+ 
+────────────────────────────────────────
+SIRA — Elder War Mammoth · Karath Personal Guard
+────────────────────────────────────────
+Age: Approximately 60 years
+Gender: Female
+Origin: Karath Sultanate northern highland breeding lines
+        — Sultan Rashid's personal guard, descended from
+        his grandfather's original twelve.
+ 
+Scale: Very large, even for a war mammoth. Sixty years
+       of growth at the Karath highland breeding rate.
+       She stands at the front of any formation not
+       because she is placed there but because the other
+       animals arrange themselves around her — the
+       specific positioning of a group around its eldest.
+ 
+Coat: Dense, reddish-brown — the highland Karath mammoth
+      coloration, the specific warm rust that distinguishes
+      the northern breeding lines from the shorter-coated
+      lowland varieties. The coat has the layered quality
+      of sixty years of seasonal growth: thick outer
+      guard hair over dense insulating undercoat. In
+      direct sunlight: the outer hair catches auburn
+      highlights. In shade: deep reddish-brown, almost
+      mahogany.
+ 
+      The coat has the specific texture of extreme age
+      in large animals — not sparse, not worn, but
+      settled into its pattern in the way of something
+      that has been exactly what it is for a very long time.
+ 
+Tusks: The defining visual feature of her sixty years.
+       Curved ivory, the arc that grows over decades in
+       the highland mammoth line: broad-based, sweeping
+       outward and then curving forward and slightly
+       upward in the specific trajectory of Karath
+       highland breeding. Not symmetrical — the left
+       tusk carries a chip near the midpoint, an old
+       mark from a specific engagement that the handlers
+       know the story of.
+ 
+       The ivory is not pristine white — the aged yellow-
+       warm ivory of sixty years, the color that develops
+       in real tusks through use and time. The tips
+       are slightly worn, rounded, not sharp.
+ 
+Face: The elder mammoth's face — the high dome of the
+      forehead prominent, the small ears (highland
+      cold-adapted, smaller than savanna varieties)
+      held slightly forward when attentive. The eyes:
+      small relative to the face, deep-set, dark brown.
+      The eyes of a creature that has been assessing
+      situations for six decades and has developed a
+      very specific patience about the process.
+ 
+      When Helna approached: she held her position
+      and extended the trunk. This was assessment,
+      not aggression. The trunk came to Helna's forearm
+      and stayed there for a moment — the reading
+      of a creature that used scent and touch as
+      primary information-gathering tools.
+ 
+The trunk: Characteristic elder mammoth — fully adult,
+       control total. The specific quality of a prehensile
+       tool used for sixty years: capable of extreme
+       precision or considerable force with equal ease.
+       When extended toward Helna: curled slightly at
+       the tip, the controlled reach of inquiry rather
+       than dominance.
+ 
+Battle tower (Karath): When depicted in military context.
+       The Karath tower sits on a fitted platform behind
+       the shoulder ridge — crimson and gold painted
+       wood, built for six archers, fitted by handlers
+       who know her specific back geometry. The tower
+       has her name marked on the front face in Karath
+       script.
+ 
+Environment options:
+  KARATH STAGING GROUND: Desert dawn light, gold stone
+       walls, the crimson-and-gold of the Karath colors
+       on the barding. She stands at the front. The
+       other mammoths behind her.
+  GREENVEIL ARRIVAL: The contrast scene — the Karath
+       highland mammoth in a temperate forest. The
+       auburn coat against green. The chimpanzee elder
+       in the lower branches watching her settle. Sira
+       eating her evening feed with the unhurried
+       certainty of a creature who has assessed the
+       situation and found it acceptable.
+  THE HELNA MOMENT: Helna standing at appropriate distance,
+       arm extended, Sira's trunk against her forearm.
+       The light: late afternoon at Greenveil. Both
+       of them still. The assessment, from both
+       directions, complete.
+ 
+Color Palette: Reddish-brown/auburn coat, aged ivory
+               tusks (warm yellow-cream), the Karath
+               crimson and gold of the battle tower
+               and barding. Forest green background
+               (Greenveil scenes) or desert gold
+               (Karath scenes).
+ 
+Mood Keywords: Elder authority in any group she enters ·
+               Sixty years of assessment practice ·
+               The trunk extended is inquiry not aggression ·
+               She has a name. The handlers know it.
+               The other animals arrange around her ·
+               Her tusk has a story
+ 
+Do NOT include: Cartoon mammoth interpretation. She is
+               a real animal with sixty years of specific
+               history. The Woolly mammoth scale and coat
+               quality — but the highland Karath breed
+               specific: reddish-brown (not brown-black),
+               the highland curve to the tusks, the cold-
+               adapted smaller ears. Not aggressive pose —
+               she is settled, elder, assessing. The most
+               interesting thing about her is not her size.
+               It is her patience.
+────────────────────────────────────────
+KING ALDRIC VORN — The Patient Throne of Ironmere
+────────────────────────────────────────
+Age/Race: 56 (Year 1047) · Human · Ironmere
+Build: The build of a king who has been a king for a long
+       time — not the warrior-king's physical frame, not
+       the court-soft aristocrat. The specific build of
+       someone who has spent thirty years making decisions
+       and riding with his cavalry when the decisions
+       required it. Medium-large, maintained. The weight
+       of sustained authority settled into the posture
+       rather than performed from it.
+
+Face: Fifty-six years, three decades of kingship. Strong
+      Ironmere features — the northern bloodline showing
+      in the jaw, the brow, the specific weathering of
+      a man who has been outdoors in Ironmere's climate
+      for his entire life. The lines of someone who reads
+      people carefully before speaking. Not cold — patient.
+      The face that reads every letter Rael Koss sends
+      home from the Iron Star Festival. Monthly.
+      That quality of attention is visible even at rest.
+
+Hair: Iron-grey, kept in the Ironmere court style —
+      short and managed. Not decorative. The hair of
+      a man who has been wearing crowns long enough
+      that the crown's weight is something he's stopped
+      noticing.
+
+Eyes: Grey. The patient assessment of someone who
+      signed the full alliance when Starhaven recruited
+      Rhegar — not from loss, from clarity. The eyes
+      that said: "Rhegar built us. Then he built
+      something better. We are not offended. We are proud."
+      That sentence required a specific quality of
+      vision to mean. The eyes carry it.
+
+Clothing/Armor:
+  FORMAL: Ironmere court formal — dark iron-grey and
+          silver, the northern kingdom's aesthetic.
+          Heavy fabric suitable for Ironmere's climate.
+          The crown: simple, iron-set — the Ironmere
+          tradition favors functional over ornate.
+          The royal chain of Ironmere at the collar.
+  MILITARY: Heavy cavalry coat over plate — the Ironmere
+            military tradition. He rides with his forces.
+            The king who signed the alliance because
+            Rhegar's departure made the logic of it
+            clear is also the king who goes to the
+            cavalry review himself.
+
+Mount (optional): Ironmere heavy cavalry destrier —
+       the northern breed. Dark coat, heavily built,
+       the horse of a kingdom that has been producing
+       cavalry for two hundred years.
+
+Color Palette: Iron-grey (#5F5E5A to #888780), silver
+               accent (#D3D1C7), the muted northern
+               tones of a kingdom built for endurance
+               rather than display.
+
+The Queen detail (paired image): Queen Mira Vorn
+       drafted the alliance terms for thirty-eight
+       years. He signs what she writes. Neither of
+       them has mentioned this publicly. Everyone
+       who knows them is aware of it. If depicted
+       together: she is the one with the document.
+
+Mood Keywords: Patient throne · Long-term vision ·
+               The king who was proud rather than
+               offended · Reads his general's letters ·
+               The authority of someone who has been
+               right for thirty years
+
+Do NOT include: Decorative crown, court excess,
+               any suggestion of weakness or
+               ceremony-only function. He is a
+               working king of a northern military
+               kingdom. His authority is in his
+               bearing, not his decoration.
+
+
+────────────────────────────────────────
+SORVANE NULLIS — The Living Dead's Shepherd
+          Arch-Necromancer of the Sable Conclave
+────────────────────────────────────────
+Age/Race: 89 · Human (arcane-extended lifespan)
+          He should look like someone who is 89.
+          Not decayed. Not monstrous. The specific
+          quality of 89 years on a body that has
+          been kept functional through deliberate
+          arcane maintenance — like a very old
+          building that has been continuously
+          cared for. Present but unmistakably aged.
+
+Build: Lean — the lean of extreme age, not of
+       fitness. The body that has been maintained
+       through arcane means for the better part
+       of a century. Not frail — precise. Every
+       movement deliberate, because at 89 with an
+       arcane-extended body, deliberateness is
+       the method. The posture of someone who
+       has commanded armies for sixty years.
+
+Face: Eighty-nine years. The most lined face in
+      any room he enters. Deep-set eyes, the
+      specific quality of someone who has been
+      assessing situations for nine decades and
+      has arrived at a very long view of things.
+      Not unkind — considered. The face that
+      described the Starhaven alliance as "the
+      most honest diplomatic arrangement I have
+      experienced in 89 years" and meant it as
+      the highest possible compliment.
+
+Hair: White — fully, completely. Sparse, close
+      to the skull. The hair of extreme age
+      maintained with dignity rather than
+      concealed. The beard, if present: the same
+      white, kept with the specific grooming
+      of someone for whom presentation is
+      professional standard.
+
+Eyes: The key feature. The eyes of 89 years —
+      deep, assessing, the particular quality
+      of someone who has lived long enough to
+      have stopped being surprised by most
+      things and has developed, in that absence
+      of surprise, a very specific kind of
+      patience. Dark — but with the specific
+      quality that very old, very experienced
+      eyes develop: the sense that they have
+      seen the thing you're about to say before
+      you've said it.
+
+Clothing: Sable Conclave formal — deep purple-
+          black robes, the necromancer's aesthetic.
+          Not theatrical — formal. The robes of
+          someone who has been the head of a
+          significant arcane organization for
+          decades. Heavy fabric, the Sable Isles'
+          damp cold climate requiring layering.
+          Silver-bone detail at the collar and cuffs
+          — the Conclave's symbolic material.
+
+Focus Staff: Bone-and-iron necromancer's staff —
+          the primary arcane focus. Actual bone
+          (old, pale, the bone of something that
+          has been part of the staff for a long
+          time) set into iron fittings. Not
+          decorative — functional. The staff he
+          uses to command 18,000+ undead. It
+          looks like it has been used for this
+          purpose for a very long time.
+
+Personal undead guard: Always present. The specific
+          visual: one or two undead figures at
+          the periphery — not shambling horror-
+          movie undead, the Conclave's undead
+          are bound with precision. They stand
+          with the specific stillness of things
+          that do not need to breathe or rest.
+          Present, professional, unsettling in
+          the specific way of things that should
+          not be functional and are.
+
+Color Palette: Deep purple-black (#3C3489 to #534AB7),
+               bone-white accent, the Sable Conclave
+               palette. The color of something that
+               operates in a space adjacent to death
+               without being consumed by it.
+
+
+Mood Keywords: 89 years of honest assessment ·
+               The most honest diplomat in the
+               alliance network · Commands death
+               with the administrative precision
+               of a man filing paperwork ·
+               Seraphine's most complicated ally ·
+               The patience of someone who has
+               been right about most things
+               for a very long time
+
+Do NOT include: Gothic horror aesthetics. He is
+               not performing being a necromancer.
+               He IS a necromancer — the specific
+               quality of someone for whom
+               commanding undead is professional
+               practice, not spectacle. No dramatic
+               lighting, no floating, no theatrical
+               darkness. He is an old man who
+               runs a significant organization
+               and has been doing it correctly
+               for sixty years.
+
+
+────────────────────────────────────────
+TIBER OSWICK — The Coinmaster · Minister of Trade
+────────────────────────────────────────
+Age/Race: 46 (Year 1047) · Human
+Build: The build of someone who has been in trade
+       and market analysis his entire career —
+       not physical work, the specific fitness
+       of someone who moves between meetings
+       and counting houses and market floors
+       and has developed the particular economy
+       of movement of someone for whom time
+       is information and wasted movement is
+       wasted information. Medium, contained. Have Belly.
+
+Face: The defining quality: the face that knows
+      something you don't yet. Not smugly —
+      the specific quality of someone who has
+      supernatural market prediction and is
+      therefore always approximately three
+      weeks ahead of the conversation. Not
+      showing it. But present in the eyes,
+      in the slight quality of patience with
+      which he receives information that he
+      already has.
+      Moustache- Imperial
+
+      "Visible satisfaction" is his rarest
+      expression. The Iron Star Festival
+      revenue numbers produced it.
+      In most contexts: composed, attentive,
+      the face of someone doing continuous
+      assessment that nobody else in the room
+      is aware is happening. 
+
+Hair: Dark, kept neatly. The professional standard
+      of a senior minister who has been
+      appearing at court for twenty years.
+
+Eyes: The key feature. The eyes that predict
+      market movements before they happen
+      through methods nobody has explained.
+      Dark, sharp, present. The intelligence
+      in them is not displayed — it is simply
+      operational, running continuously
+      beneath the composed surface.
+
+Clothing: Minister of Trade formal — the gold
+          and dark tone of the Treasury and Trade
+          portfolio. Well-made without being
+          extravagant — Tiber Oswick does not
+          perform wealth, he understands it,
+          which is different. Dark coat, gold
+          ministerial chain, the specific quality
+          of clothes that are correct without
+          being remarkable.
+
+Color Palette: Deep amber-gold (#854F0B to #EF9F27),
+               dark base tones, the trade and
+               treasury palette. The gold that
+               understands markets rather than
+               performing them.
+
+The Astrya dynamic (if depicted together):
+          Supernatural market prediction (Tiber)
+          + structural financial discipline (Astrya)
+          = the wealthiest kingdom in the world.
+          Together they have a specific quality —
+          his intuition reads the future,
+          her architecture locks it in place.
+
+Mood Keywords: Always three weeks ahead ·
+               Visible satisfaction is the rarest
+               expression — when it appears it
+               means something significant ·
+               The market tells him things before
+               it tells anyone else · Professional
+               composure as permanent state
+
+Do NOT include: Merchant stereotype aesthetics.
+               He is the Minister of Trade of
+               the wealthiest kingdom in the
+               world. The composure and precision
+               are the visual story, not the
+               gold itself.
+
+
+────────────────────────────────────────
+SENNA ASH — The Kingdom's Memory · Archivist
+────────────────────────────────────────
+Age/Race: Appears mid-40s (true tenure since kingdom's
+          founding — she has been the archivist
+          since Year 1) · Wood Elf , Female
+Build: The build of someone who has spent a decade
+       in archive halls — not sedentary, the
+       specific activity of someone who manages
+       thousands of documents, who walks every
+       section of the Athenaeum regularly because
+       the archive is her domain and she knows
+       its entire geography personally. Medium,
+       contained, the specific movement economy
+       of someone for whom every action has a
+       purpose.
+
+Face: The archivist's face — attentive, precise,
+      the face of someone for whom the correct
+      word and the correct record are the same
+      moral standard. Not severe — accurate.
+      The distinction matters. She sealed the
+      Sable Conclave Crisis document because
+      some information requires custody as
+      much as preservation. She made that
+      decision herself. The face that made it
+      carries the weight of knowing what
+      is in sealed documents.
+
+      Clear-eyed, the specific quality of
+      someone who reads things carefully before
+      deciding what they mean. Wear glasses
+
+Hair: Blonde and dark pink highlights, worn practically — back or up, the
+      hair of someone who works with documents
+      and cannot have anything in the way of
+      the work. The ink-staining that comes
+      with decades of archival work may be
+      present at the fingertips.
+      Style: Low Bun with Braided Details
+
+Eyes: The key feature. The archivist's eyes —
+      reading everything they see and filing
+      it. Not the calculating quality of Nyx's
+      or Lyria's observation, the preservational
+      quality: she is noting, recording,
+      keeping. Everything she looks at becomes
+      part of the record.
+
+Clothing: Athenaeum formal — the scholar's
+          aesthetic. Dark robes over practical
+          underlayers, the archival seal of
+          Starhaven visible as a brooch or
+          clasp — the insignia of the person
+          who classifies what is public and
+          what requires restriction.
+
+          The archivist's tools always present:
+          a sealing stamp (the Senna Ash seal
+          that appears on every classified
+          document), a primary writing
+          instrument, the small notebook that
+          goes with her everywhere.
+
+The classification seal: The one object that
+          defines her function in any depiction.
+          The archival seal — her personal mark,
+          pressed into wax on every restricted
+          document in the kingdom's history.
+          It is the most seen thing she has
+          ever produced, by far, and nobody
+          outside the Athenaeum has seen
+          it pressed.
+
+Color Palette: Dark scholarly tones — deep blue-
+               grey or charcoal, the Athenaeum
+               palette. The silver of the
+               archival seal as the single
+               accent. The specific quality
+               of someone for whom the record
+               is the purpose and everything
+               else is context.
+
+Mood Keywords: The kingdom's memory made person ·
+               Seals what needs sealing · Knows
+               what is in the restricted documents ·
+               The Foundation Document author ·
+               Present since Year 1 · The quiet
+               authority of someone who has kept
+               the record correctly and always will
+
+Do NOT include: Timid or purely decorative scholar
+               aesthetic. She sealed the Sable
+               Conclave Crisis document on her
+               own authority. She classified the
+               Seraphine purification account.
+               She is the most powerful archivist
+               in the kingdom because the archivist
+               decides what is known and what
+               requires custody. This is in
+               her bearing.
+
+
+────────────────────────────────────────
+ASTRYA LENN — The Golden Calculator · Minister of Treasury
+────────────────────────────────────────
+Age/Race: 34 (Year 1047) · Human
+Build: The build of someone who has been in
+       financial architecture and economic
+       design since her twenties — not physically
+       demanding work, the specific energy
+       of someone who processes very large
+       numbers very fast and whose body
+       reflects the contained intensity of
+       that kind of sustained cognitive work.
+       Lean, precise, the specific economy
+       of movement of someone who has been
+       efficient since she was twenty-three.
+
+Face: Thirty-four years old and running the
+      treasury of the world's largest economy.
+      The face is young but carries the
+      specific quality of someone who knows
+      the GDP number before getting out of
+      bed — the settled authority of someone
+      who has been right about large financial
+      systems for long enough that being right
+      is now the default state rather than
+      an achievement. Asiatic feature.
+
+      Clear, sharp. The face of someone who
+      corresponded with her future husband
+      for six months because his tax query
+      was so precisely worded that she had
+      to respond in full. The face that found
+      a precisely worded question more
+      interesting than anything else available.
+
+Hair: Dark, kept practically — the Treasury
+      minister's equivalent of Senna Ash's
+      archivist practicality. Up or back.
+      Nothing that competes with the work.
+
+Eyes: The defining feature. The eyes that look
+      at problems the way Tiber's look at markets —
+      but structurally. She sees the architecture
+      of financial systems. The tiered tax
+      structure (0% survival → 22% wealthy
+      → 28% foreign corp) is visible in the
+      way she looks at a situation:
+      categorically, systematically, with the
+      specific satisfaction of someone for whom
+      the correct structure is aesthetically
+      pleasing as well as functionally correct.
+
+Clothing: Minister of Treasury formal — the gold
+          and amber palette of the Treasury
+          portfolio. Well-made, precise,
+          appropriate. Not performative wealth —
+          the specific quality of someone who
+          designed the system that produces
+          the kingdom's wealth and wears it
+          with the professional authority
+          of the architect rather than the
+          beneficiary.
+
+          The Treasury chain of office.
+          Documents — she usually has some
+          with her. The actuarial tables
+          she oversees contain, per the Codex,
+          "the most morbid document produced
+          by any financial institution."
+          She is aware of this and finds
+          it professionally appropriate.
+
+Color Palette: Amber-gold (#854F0B to #EF9F27),
+               the same palette as Tiber Oswick —
+               the Treasury and Trade colors.
+               Her version carries slightly more
+               warmth; his is slightly more muted.
+               Together they are the gold that
+               structures and the gold that
+               moves.
+
+The Gareth detail (paired image optional):
+          Her husband Gareth Lenn was the largest
+          textile trader in the pre-Starhaven
+          western territories. He retired to
+          manage Starhold's artisan marketplace.
+          He met her through a tax query.
+          If depicted together: he has the
+          quality of a man who decided he could
+          stop being impressive and simply
+          be present, and found this more
+          satisfying than the alternative.
+
+Mood Keywords: Knows the GDP before rising ·
+               Grew the economy by a factor
+               of fifty in ten years · The
+               structural counterbalance to
+               Tiber's intuition · Young and
+               completely certain · The tax
+               system is also an act of care —
+               0% survival threshold was her
+               design and she will not change it
+
+Do NOT include: Passive or decorative qualities.
+               She is thirty-four and runs the
+               treasury of the world's largest
+               economy. The precision and
+               contained energy are the visual
+               story. She is the youngest
+               senior minister and the most
+               structurally capable financial
+               mind in the kingdom. Both are
+               in the bearing.
+
+════════════════════════════════════════════════════════════════
+    NOTE: Tiber Oswick and Astrya Lenn share the gold
+    color palette (#854F0B, #EF9F27) — they are the
+    Trade/Treasury pairing. Their visual distinction:
+    Tiber reads the future (intuition, composure, slight
+    remove). Astrya builds the present (structure, energy,
+    direct engagement). Same colors, different frequencies.
+
+────────────────────────────────────────────────────────────────
+    NEW ADDITIONS — Zareth Kull's Documentation Team (future
+    Void Breaker Order Masters), Ashenveil, and the Void Hounds
+────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────
+CRAY — "The Fang" · Beast Hunter · Future Order Master "Fang"
+────────────────────────────────────────
+Age/Race: 38 (Year 1047) · Green Orc
+
+REFERENCE IMAGE NOTE: Use the attached orc reference image as the
+       direct visual basis for Cray — same green-skinned Orc build,
+       same twin curved-blade dual-wield silhouette, same plated
+       leather-and-metal armor layering. Adapt only the details
+       below (face, expression, weapon finish, palette); keep the
+       overall body type, stance, and twin-blade grip from the
+       reference.
+
+Build: Green Orc — broad, dense, built for close-range termination.
+       Not lumbering — economical. Thirteen years of killing
+       contaminated animals and Void entities has worn every wasted
+       motion out of him. The build of someone who ends fights in
+       one strike because two would be inefficient. height around 6.6ft,muscular.
+
+Face: Green-skinned, Orc-standard heavy brow and pronounced lower
+      tusks (as in the reference image). Perpetually faint
+      "unhappy" set to the features — not anger, the specific
+      expression of a professional who has just been told he isn't
+      allowed to kill the one thing he most wants to.
+
+Hair: Dark, kept short or braided back/Orc-practical — out of the
+      way during fieldwork (per reference image braid styling).
+
+Eyes: Sharp amber or dark — focused entirely on threat assessment.
+      The eyes of someone who has already picked the strike point
+      before the conversation about whether to engage is finished.
+
+Expression (default): Flat irritation held in check by
+      professionalism. Complains about the route, then walks past
+      the discovery of the investigation because he was busy
+      objecting to something else.
+
+Armor: Layered plate-over-leather, field-worn, no decoration —
+       matching the reference image's segmented pauldron and
+       cuirass design, recolored toward dark iron-grey/charcoal
+       rather than the reference's silver, with worn edges from
+       thirteen years of fieldwork.
+
+Weapons: Dual Voidbane swords — twin curved blades, personally
+         maintained, sharpened on principle (matches the reference
+         image's dual-blade stance exactly). No ornamentation —
+         the edges are the only thing that matters to him.
+
+Color Palette: Orc green skin, dark iron-grey armor, worn leather,
+               dull steel blade-sheen. No bright colors — a
+               professional's palette.
+
+Mood Keywords: Efficiency without ceremony · The best terminator
+               on a four-person team · Sharpened on principle ·
+               "We could kill it" · Future Order Master Fang
+
+Do NOT include: Snarling-monster framing, oversized weapons beyond
+                the twin Voidbane swords, decorative tusks/jewelry,
+                theatrical battle poses. He looks like a
+                professional who is annoyed, not a savage.
+
+────────────────────────────────────────
+WEX — "The One Who Cleans the Frame Anyway" · Field Specialist ·
+      Future Order Master "Seal"
+────────────────────────────────────────
+Age/Race: 36 (Year 1047) · Human · Female
+
+Build: Medium, practical — the build of someone who has spent
+       eighteen months making equipment compromises in a frontier
+       fracture zone and carrying heavier gear than she should
+       have to. Not delicate. The specific durability of someone
+       who carried a containment frame for seventy-two consecutive
+       hours on the chance it would matter.
+
+Face: Direct, slightly weathered from frontier fieldwork. The
+      face of someone who states facts rather than arguments —
+      her flat statement that they were not killing the relay
+      entity ended a three-day debate in one sentence.
+
+Hair: Practical — kept back or short, nothing that interferes
+      with equipment work.
+
+Eyes: Steady, assessing — the specific attentiveness of an
+      engineer who is always quietly cataloguing what her gear
+      can't do yet and what it will need to.
+
+Expression (default): Calm, slightly weary competence. Without
+      particular heat, even when disagreeing. The look of someone
+      who has decided the argument is already settled by the facts
+      and is simply waiting for everyone else to catch up.
+
+Armor/Clothing: Frontier field gear — reinforced practical layers
+       suited to fracture-zone work, multiple equipment-mount
+       points for containment tools. Functional, repaired in
+       places, no decoration.
+
+Weapon/Tool: Portable containment frame — field-modified,
+       chronically under-rated for the job, carried and
+       maintained constantly. This is her signature object more
+       than any weapon.
+
+Color Palette: Muted blue-grey (#185FA5 accent), dark practical
+               fabric, worn metal containment-frame finish.
+
+Mood Keywords: Equipment discipline as character · Carries the
+               frame for seventy-two hours and is right · Settles
+               arguments with one factual sentence · Future Order
+               Master Seal
+
+Do NOT include: Delicate or decorative styling, anything that
+                makes her look ornamental rather than operational.
+                She is defined by competence with equipment, not
+                appearance.
+
+────────────────────────────────────────
+ILLEN — "The Patient Eye" · Field Specialist · Future Order
+        Master "Hollow"
+────────────────────────────────────────
+Age/Race: 43 (Year 1047) · Half Moon Elf , male
+
+Build: Lean, contained — the build of someone whose primary tool
+       is sustained attention rather than physical action. Medium
+       height. Moves only when the observation requires it.
+
+Face: Half Moon Elf features — softened compared to a full Moon
+      Elf's sharpness, but carrying the same faint silver-white
+      luminance and high cheekbones, filtered through human
+      proportions. Looks settled, composed, older than Lyria's
+      apparent age but with a kindred stillness.
+
+Hair: Silver-white or silver-streaked dark, kept back and out of
+      the way — practical for extended observation work,ponytail
+
+Eyes: The defining feature — pale, Moon-Elf-touched, with the
+      specific quality of someone who can watch something for
+      forty-seven minutes without the watching itself changing
+      what he's seeing. Reads dimensional phase-shifts the way
+      Lyria reads forests.
+
+Expression (default): Observational patience given to everything,
+      not just his work. The look of someone who has already
+      reached the conclusion and is simply waiting, without
+      impatience, for everyone else to arrive at it too.
+
+Armor/Clothing: Frontier field researcher's practical layers —
+       muted tones, equipment for dimensional/phase documentation
+       carried at the belt and in a satchel. Notebook always near.
+
+Weapon/Tool: Entity-disruption staff and portable Void-null field generator
+
+Color Palette: Muted silver-grey, soft neutral earth tones, the
+               faint Moon Elf luminance in skin and hair.
+
+Mood Keywords: Precise about everything the way some people are
+               precise about one thing · Forty-seven minutes of
+               undisturbed observation · "It phases" · Future
+               Order Master Hollow
+
+Do NOT include: Dramatic mystic styling, glowing effects, elaborate
+                robes. He is a field researcher, not a sorcer —
+                quiet competence, not spectacle.
+
+────────────────────────────────────────
+SORN — "The One Who Smells It First" · Field Specialist · Future
+       Order Master "Brand"
+────────────────────────────────────────
+Age/Race: 31 (Year 1047) · Beast-Kin (Wolf-kin) · Male
+
+Build: Larger frame than the rest of the team — lean-muscled,
+       built for tracking and rapid close-range movement. The
+       specific physicality of someone whose body processes
+       information before his mind does, and who has learned to
+       trust it completely.
+
+Face: Human-like Beast-Kin features — otherwise reads as a person,
+      not a beast — with wolf-kin traits layered over human bone
+      structure: a slightly elongated lower face/muzzle-line,
+      light fur-textured patches at the jaw and temples, and a
+      faint tawny-grey coloring to the skin/fur transition zones.
+
+Ears: Wolf ears — the key visual marker. Set higher and further
+      back than human ears, tawny-grey or dark-brown furred,
+      mobile and expressive (turning toward sounds/scents before
+      he consciously reacts). This is the single most important
+      design element distinguishing him as wolf-kin.
+
+Hair: Dark, practical, kept short or tied back — doesn't interfere
+      with the ears or his sensory work.
+
+Eyes: Amber or pale gold, sharp — the eyes of a tracker, but his
+      real instrument is his nose: he reads scent the way Lyria
+      reads terrain or Illen reads phase-shifts.
+
+Expression (default): Alert stillness. The specific look of
+      someone whose body has already reacted to something before
+      his face catches up — he stops first, mid-stride, and
+      explains afterward.
+
+Armor/Clothing: Light, close-fitting tracker's gear — leather and
+       reinforced cloth, built for silent rapid movement rather
+       than heavy combat. Minimal, practical, frontier-worn.
+
+Weapons: Tracking blades — close-range, built for speed over
+         reach. Wolf-kin martial arts and his senses are his real
+         weapons.
+
+Color Palette: Earth-brown, tawny-grey fur tones (#7A6A50 accent),
+               dark practical leather. The palette of a tracker
+               who blends into frontier terrain.
+
+Mood Keywords: His body knows before his mind does · "It smells
+               like it's been here too long. The stone remembers
+               it." · Stops first, the team stops with him ·
+               Future Order Master Brand
+
+Do NOT include: Full werewolf/beast-monster styling, snouts,
+                tails, or anything that reads as more animal than
+                person. He should look like a person with wolf
+                ears and subtle Beast-Kin features — Sorn reads as
+                human-shaped with unmistakable wolf-kin markers,
+                not as a transformed creature.
+
+────────────────────────────────────────
+PETRA ALLUS — "The Western Wall" · Western District Leader ·
+              Ashenveil Settlement · Future Founder of the Ashen
+              Shields
+────────────────────────────────────────
+Age/Race: 35 (Year 1047) · Human · Female
+
+Build: Compact, capable, unglamorous — the build of someone who
+       has spent four years building a settlement's entire survival
+       infrastructure from nothing and has no time for anything
+       that doesn't serve that function. Practical strength.Bit muscular, have tatoo on left biceps
+
+Face: Direct — the face of someone who says exactly what she means
+      and nothing softer than that. Composed, weathered from
+      frontier-settlement years, the specific steadiness of
+      someone who has personally carved twenty-three names into a
+      memorial wall and intends to keep that number as low as
+      possible. Have nose ring, looks pretty.
+
+Hair: Blue, practical — kept back, nothing that interferes with
+      running patrol briefings or fieldwork.
+
+Eyes: Sharp, assessing — the eyes of someone who tracks the
+      movement of every person crossing her settlement's perimeter
+      as a baseline function, and noticed the fifth member of an
+      arriving group from a distance before anyone else did. 
+
+Expression (default): Flat competence. Not cold — focused entirely
+      on what needs to happen next. The expression of someone who
+      assessed a team of strangers as "four hunters who'll find
+      nothing and leave," was wrong, and adjusted without ceremony
+      the moment the data changed.
+
+Armor/Clothing: Settlement militia leader's practical kit —
+       reinforced layers over working clothes, a kite shield
+       carried or slung, the gear of someone who moves between
+       command briefings and the perimeter wire constantly.
+       No rank decoration — authority is in bearing, not insignia.
+
+Weapons: Standard settlement-issue blade, kite shield. Her real
+         instrument is the wire-and-bell warning network and the
+         47-person militia she built and trained from civilians.
+
+Color Palette: Practical earth and iron-grey tones, settlement-
+               militia neutral palette — nothing that stands out
+               from the frontier she commands.
+
+Mood Keywords: Built a defense from nothing · The memorial wall
+               she maintains herself · "What does Starhaven need
+               from us" · Practical sovereignty · Future founder
+               of the Ashen Shields
+
+Do NOT include: Anything decorative, ceremonial, or softened. She
+                is defined entirely by competence under pressure —
+                no court polish, no ornamental armor, nothing that
+                suggests performance over substance.
+
+────────────────────────────────────────
+CREN VOSS — "The Missing Eye" / "Hold-for-the-Mark" · Hunt-Master
+            · Commander of the Void Hounds
+────────────────────────────────────────
+Age/Race: 44 (Year 1048) · Human (extensively arcane-augmented)
+
+REFERENCE NOTE: Base this character on his appearance and bearing
+       as established in Chapter 8 — a veteran monster-hunter
+       commander defined by visible augmentation and the specific
+       quiet authority of someone whose orders are followed without
+       explanation because his judgment has earned that completely.
+
+Build: Veteran field-hunter's build — lean, hard-used, the
+       specific physicality of fifteen years spent hunting Void
+       entities at the apex-class level. Carries old injuries the
+       way a fortress carries old siege-damage: visible, healed,
+       structurally part of him now.
+
+Face: Weathered, composed, deliberate. The face of someone who
+      files the impossible under "anomaly, recurring" and keeps
+      working rather than chasing explanations he can't yet
+      support. Quiet authority — not performative. Says little;
+      what he says is sufficient and is followed without question.
+
+Notable augmentation (the defining visual element): Missing one
+      eye — replaced with an arcane-mechanical prosthetic (a
+      faintly glowing or mechanically-irised replacement, subtle,
+      not theatrical). Missing three fingers and roughly four
+      inches of forearm — replaced with a combat-rated
+      arcane-mechanical prosthetic forearm, dark metal with fine
+      rune-etched channels, functional rather than decorative.
+      An unspecified number of internal augmentations exist but
+      are not visible.
+
+Hair: Practical, grey-shot from fifteen years of fieldwork at the
+      apex-creature level. Kept short, no styling.
+
+Eyes: One natural eye — dark, sharp, methodical; one
+      arcane-mechanical replacement with a faint contained glow or
+      mechanical iris. Together they read as "a man who has seen
+      everything twice — once with each kind of eye."
+
+Expression (default): Unhurried assessment. The specific calm of
+      someone for whom panic stopped being a useful response a
+      long time ago. When he overrides fifteen years of his own
+      doctrine on a single colleague's word, his face shows
+      exactly as much as it needs to: nothing extra.
+
+Armor/Clothing: Hunter's Corruption Seal — anti-corruption treated
+       leather over reinforced plate, built for surviving Void-
+       contaminated environments rather than parade conditions.
+       No insignia beyond what the Void Hounds require. Worn,
+       maintained, field-proven.
+
+Weapons: Void-iron dual blades / personal hunting blade —
+         dark-finished, no shine, maintained with the same
+         economy as everything else about him. The
+         arcane-mechanical prosthetic forearm itself is
+         combat-rated and effectively a second weapon.
+
+Color Palette: Deep purple-black (#534AB7 accent — Void Hounds
+               command color), dark iron, worn leather, the faint
+               cool glow of arcane-mechanical augmentation at the
+               eye and forearm.
+
+Mood Keywords: Fourteen apex-class kills, personally · "Hold for
+               the Kull mark. Don't ask me about it." · Files the
+               impossible under "anomaly, recurring" · Zareth
+               Kull's rival and equal · The augmentation that
+               replaced what fifteen years of hunting cost him
+
+Do NOT include: Gothic-horror or villain styling, glowing effects
+                beyond the contained prosthetic-eye/forearm,
+                dramatic poses. He is a working commander whose
+                augmentations are the visible cost of a long,
+                successful career — not a spectacle.
+════════════════════════════════════════════════════════════════
