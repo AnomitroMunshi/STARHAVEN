@@ -168,6 +168,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .rel-tag.ally{border-color:var(--teal2);color:var(--teal3)}
 .rel-tag.rival{border-color:var(--red);color:var(--red2)}
 .rel-tag.mentor{border-color:var(--purple2);color:var(--purple3)}
+.rel-tag.enemy{border-color:var(--red2);color:var(--red2);background:var(--red)18}
 
 /* Info chips */
 .chip-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}
@@ -485,6 +486,7 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn" data-filter="Scholar" onclick="charsRender('Scholar',this)">Scholars</button>
       <button class="tab-btn" data-filter="Allied" onclick="charsRender('Allied',this)">Allied</button>
       <button class="tab-btn" data-filter="Others" onclick="charsRender('Others',this)">Others</button>
+      <button class="tab-btn" data-filter="Known Enemies" onclick="charsRender('Known Enemies',this)">Known Enemies</button>
     </div>
     <div class="search-bar">
       <input class="search-input" id="char-search" placeholder="Search characters…" oninput="charSearch=this.value.toLowerCase();charsRender(charFilter)">
@@ -2581,8 +2583,9 @@ const MUSEUM = [
   { id:'zephyros',           path:'Lores/Mueseum/zephyros.png',           title:'Zephyros — Storm Dragon',      caption:"Aurelia Vex's mount. Asiatic Elder Storm Dragon, several hundred years old." },
   // ── Historical ───────────────────────────
   { id:'kael_vs_orc',        path:'Lores/Mueseum/kael_vs_orc_commander_1042.png', title:'Battle of 1042 — Kael vs Orc Commander', caption:'The engagement at the Ashen Ridge, Year 1042. The blow that scarred the stone.' },
-  { id:'dorun_graymaw',      path:'Lores/Mueseum/Dorun-Graymaw.png',      title:'Dorun-Graymaw\'s Statue in his hometown', caption:'Dorun-Graymaw\'s Statue in his hometown' },
-  { id:'blackcharge_first_charge',      path:'Lores/Mueseum/BlackCharge-first-charge.png',      title:'Black Charge Cavalry\'s Vespera in action', caption:'Black Charge Cavalry\'s Vespera in action' },
+  { id:'dorun_graymaw',      path:'Lores/Mueseum/Dorun-Graymaw.png',      title:'Statue of Dorun-Graymaw in his Hometown', caption:'Statue of Dorun-Graymaw in his Hometown' },
+  { id:'blackcharge_first_charge', path:'Lores/Mueseum/BlackCharge-first-charge.png',      title:'Vespera — Black Charge Cavalry in Action', caption:'Vespera — Black Charge Cavalry in Action' },
+   { id:'drogar-army', path:'Lores/Mueseum/drogar-army-battle.png',      title:'Battle of 1049 - Greenveil', caption:'1049 -Drogar\'s army charging' },
 ];
 // ════════════════════════════════════════
 //  ARMIES
@@ -3748,6 +3751,13 @@ function openCharModal(id) {
         <div class="rel-list">${c.relationships.map(r=>`<span class="rel-tag ${r.type}">${r.name} <em style="color:var(--text4);font-size:10px">(${r.type})</em></span>`).join('')}</div>
       </div>` : '';
 
+  // known enemies
+  const enemiesHtml = c.enemies && c.enemies.length
+    ? `<div style="margin-top:14px">
+        <p class="dl" style="margin-bottom:6px;color:var(--red2)">Known Enemies</p>
+        <div class="rel-list">${c.enemies.map(e=>`<span class="rel-tag enemy">${e.name}${e.note?` <em style="color:var(--text4);font-size:10px">(${e.note})</em>`:''}</span>`).join('')}</div>
+      </div>` : '';
+
   // tags
   const tagsHtml = c.tags && c.tags.length
     ? `<div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:4px">${c.tags.map(t=>`<span class="rel-tag">${t}</span>`).join('')}</div>` : '';
@@ -3792,6 +3802,7 @@ function openCharModal(id) {
     </div>`:''}
     ${c.quote?`<blockquote class="char-quote">${c.quote}</blockquote>`:''}
     ${relsHtml}
+    ${enemiesHtml}
     ${tagsHtml}
   `;
 
