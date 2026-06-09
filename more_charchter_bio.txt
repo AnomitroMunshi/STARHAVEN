@@ -2634,4 +2634,551 @@ Do NOT include: Gothic-horror or villain styling, glowing effects
                 dramatic poses. He is a working commander whose
                 augmentations are the visible cost of a long,
                 successful career — not a spectacle.
+
+────────────────────────────────────────
+LENA CREST — "The Constant Mercy" · Battle-Warden of the Ashen
+             Guard · Field Operations Commander
+────────────────────────────────────────
+Age/Race: 34 (Year 1047) · Human · Female
+
+Build: Medium, capable, built for the front line rather than the
+       rear of it. Seraphine's protégée and field commander —
+       her entire doctrine is built on the idea that a healer
+       belongs beside the advance line, not behind it. The
+       physicality of someone who has knelt beside corrupted
+       wounds, ridden twenty feet behind a king and a battlemage
+       without needing to say anything, and walked into
+       corruption-dense enclosed spaces without fear of anything
+       smaller than a titan.
+
+Face: Direct, steady, quietly unshakeable. The face of someone
+      whose default state is focused calm under pressure — the
+      specific expression of a person who has triaged battlefield
+      wounds so many times that urgency has become precision
+      rather than panic. Warm but economical — she spends
+      expression the way she spends motion: only when it serves
+      the moment.
+
+Hair: Dark, practical — braided, field-ready. Nothing
+      that would catch on armor or interfere with fast medical work.
+
+Eyes: Steady, observant, reading injuries and battlefield flow
+      simultaneously. The eyes of someone who "had been listening
+      to both of them and had nothing to add and no intention of
+      adding anything until the situation required it" — patient
+      readiness rather than passive waiting.
+
+Expression (default): Focused patience. Present, alert, already
+      three moves into the triage sequence before the wounded
+      soldier has finished falling. The calm that makes panicking
+      people slow down — Seraphine's influence made personal and
+      operational.
+
+Armor: Ashen Guard Plate — the same armor Seraphine's healers wear
+       in the field: silver-plated reinforced plate with
+       purification sigils etched at the joints, carrying a faint
+       passive consecrated light (subtle, not glowing). On Lena
+       specifically: practical weight distribution built for
+       someone who needs to move and fight simultaneously — this
+       is explicitly noted as her signature configuration, the
+       template the Ashen Guard now trains toward. Visible field
+       wear from the Five Thrones War's 61-day front line.
+
+Weapons/Tools: Healer's mace "Kindness" — her primary weapon,
+       doubling as a casting focus. Warden shield — defensive
+       casting focus, carried for advancing alongside shield walls.
+       Dual-purpose Purification Staff/Blade per Ashen Guard
+       standard (spear-to-staff configuration, three-second
+       switch). Carries three Silver Light Lanterns at all times
+       (standard issue is one) — the detail that says everything
+       about how she prepares.
+
+Mount: "Constant" — Black warhorse. Practical, battle-trained,
+       the mount of someone who advances with the formation rather
+       than trailing it.
+
+Color Palette: Warm rose-crimson (#993556 to #D4537E), silver
+               purification accents (#ED93B1 highlight), the Ashen
+               Guard's consecrated-silver base. Slightly warmer
+               and more rose-toned than Seraphine's cooler silver-
+               white, marking her as the field-command variant of
+               the same aesthetic.
+
+Mood Keywords: "Don't wait for them to fall. Keep them standing." ·
+               Heals in motion — her own innovation · Moves with
+               the advance line, not behind it · Kael's approval
+               means everything · The healer who advanced beside
+               the Havenfire shield wall · Carries three lanterns
+               when the standard is one
+
+Do NOT include: Passive or rear-line healer framing, fragility,
+                ornamental robes, anything that suggests she
+                stays back from danger. Lena is defined by being
+                exactly where the fighting is — composed,
+                forward-positioned, and completely unafraid of
+                anything that isn't titan-sized.
+
+────────────────────────────────────────
+GARRUK BLACKROOT — "The Forest's Laughter" · Beast-Brother of
+                   Greywood · Beast-Rider Commander
+────────────────────────────────────────
+Age/Race: ~38 (deceased Year 1047) · Wildblood Dwarf
+
+Build: Wildblood Dwarf — nearly Thorin's equal in size, the same
+       dense, root-heavy, ground-grown physicality as his brother,
+       but carried completely differently: where Thorin is stillness,
+       Garruk is constant motion and noise. Broad, powerful,
+       built for riding war-beasts into a charge and fighting
+       with two axes at once.
+
+Face: Dwarven features in the Wildblood line — broad jaw, strong
+      brow, skin with the same bark-toned quality as Thorin's.
+      Unlike his brother's stillness, Garruk's face is almost
+      always mid-laugh — open, loud, completely unguarded. The
+      kind of presence that turns an exhausted column of soldiers
+      back into something that sounds human again.
+
+Hair/Beard: Dark, with earth-tone streaks like Thorin's, but the
+      defining detail is the beard: braided not with iron rings
+      but with beast teeth — trophies and tokens from the
+      creatures he's bonded with and fought alongside over years
+      in the deep Greywood.
+
+Eyes: Warm brown-green, like Thorin's — but where Thorin's eyes
+      read a forest as information, Garruk's eyes read a room for
+      who needs to laugh next.
+
+Scars: Old claw-scars cross both forearms and arms, worn
+       completely without shame or self-consciousness — the
+       visible record of years spent fighting corruption alone,
+       one nest at a time, deep in the Greywood.
+
+Expression (default): Mid-laugh, or about to be. Loud, open,
+      protective warmth. The specific quality of someone who has
+      seen the worst the forest has to offer and decided that
+      laughing at it, often and loudly, is its own kind of
+      defiance.
+
+Armor/Clothing: Beast-rider gear — heavier and rougher than
+       Thorin's grown-wood Rootguard Harness; practical layered
+       leather and reinforced plate built for riding direwolves
+       and dire boars into a charge, scuffed and claw-marked from
+       constant contact with war-beasts. No ceremony, no polish.
+
+Weapons: Twin war-axes — unnamed, paired, carried and used
+         together in relentless close-range combination. Built
+         for cutting through corrupted creatures and cult
+         soldiers alike with equal ease.
+
+Mount/Companion: Garruk's alpha direwolf — a massive,
+       alpha-bonded direwolf that rode beside him into every
+       battle, the bond visibly mutual rather than merely
+       trained. (When depicted together: the wolf reflects
+       Garruk's own loud, protective energy rather than a
+       beast being controlled.)
+
+Color Palette: Warm earth-brown, bark and ironwood tones (#8A5A2A
+               accent), beast-tooth bone-white in the beard,
+               old scar-pale against weathered skin. A warmer,
+               rougher palette than Thorin's — forest-and-blood
+               rather than forest-and-stone.
+
+Mood Keywords: The forest's laughter · Nearly Thorin's equal in
+               size, his opposite in temperament · Beard braided
+               with beast teeth · Old scars worn without shame ·
+               "Good. That means you belong here." · Threw
+               himself into a falling siege pillar to save his
+               brother
+
+Do NOT include: Solemnity, stillness, or quiet dignity — that's
+                Thorin. Garruk is the loud, scarred, laughing
+                counterpoint to his brother's silence. No
+                polished or ceremonial armor; he looks like
+                someone who lives with war-beasts, not someone
+                who commands from a distance.
+
+────────────────────────────────────────
+SELENE VOSS — "The Lantern Veil" / "The Veil Saint" · Hybrid
+              Healer · Combat Medic · Rayden Cale's Partner
+────────────────────────────────────────
+Age/Race: ~24 at death (Year 1039) · Human · Female
+
+REFERENCE IMAGES NOTE: Use the two attached images as the direct
+       visual basis for Selene. Image 1 (snowy battlefield, gold
+       healing-light over a fallen warrior, sword and star-shield
+       in the snow) is her reference for combat-healer/Asterfall
+       scenes — auburn hair, dark travel-worn cloak, glowing
+       restoration magic at the hands. Image 2 (guild entrance,
+       cleaning a blade, facing a dark-haired young man) is her
+       reference for early Westreach/guild scenes — same auburn
+       hair and face, leaning posture, half-amused half-assessing
+       expression, knife and rag in hand, layered practical
+       travel gear with belt pouches. Keep this exact face, hair
+       color/texture, and build across both contexts; adjust only
+       expression and lighting for the scene's emotional register.
+
+Build: Slim, athletic — the frame of someone who fights inside
+       combat zones rather than behind them. Around seventeen
+       when Rayden first met her; about twenty-four at death —
+       the same build, more weathered, more certain of itself.
+
+Face: Auburn-brown hair, often loose or half-tied, framing a
+      face that smiles easily — and unlike Rayden's, the smile
+      reaches the eyes. Sharp-tongued warmth. The face of someone
+      who called a feral, half-starved boy "expensive" within a
+      minute of meeting him, and meant it as an opening rather
+      than an insult.She is beautiful, literal beauty and hot
+
+Hair: Auburn-brown, tied back during combat/fieldwork (per
+      reference image 1) or loose and windswept in quieter
+      moments (reference image 2). Slightly damp/mussed in
+      battlefield contexts — practical, not styled.
+
+Eyes: Amber. The defining feature — warm, perceptive, missing
+      nothing, carrying both the humor and the steadiness that
+      made her the emotional center of Rayden's early years.
+
+Marks: A faded scar crosses her left wrist — the residue of an
+       old magical backlash, visible but not dwelt on.
+
+Expression (default): Sharp-tongued and warm in the same breath —
+      half-amused, half already-assessing-the-wound. In combat:
+      total focus, the specific calm of someone who has decided
+      the people behind her matter more than the thing in front
+      of her.
+
+Clothing/Armor: Travel cloaks layered over practical combat-medic
+       gear — medical pouches and rune-marked bandages at the
+       waist beside combat knives. Dark, weathered, well-worn
+       fabric (matches reference image 1's tattered dark cloak;
+       reference image 2's lighter layered guild-era travel gear
+       for earlier scenes). The Shadeveil Cloak — an ancient
+       stealth relic gifted by Elira Voss — worn or carried when
+       stealth/rescue work is needed; grants near-total
+       invisibility for short durations.
+
+Weapons/Tools: Short combat blades, hidden knives, rune-marked
+       bandages, barrier and restoration magic — her healing
+       manifests as warm gold light at the hands and fingertips
+       (per reference image 1's glowing restoration sigil).
+
+Color Palette: Warm amber-gold (#C9A656 accent — her healing
+               light), auburn hair, dark travel-worn cloak fabric,
+               muted battlefield greys and snow-blues in
+               Asterfall-era scenes.
+
+Mood Keywords: The first frontline healer to fight inside the
+               battle rather than behind it · "Stay awake, Ray...
+               I love you." · Stitched his wounds, he sharpened
+               her blades · The orchard — the place that would
+               exist after the war · Took the collapsing wall
+               onto herself so the refugees wouldn't have to
+
+Do NOT include: Passive rear-line healer framing, fragile or
+                ornamental styling, glowing halos or angelic
+                imagery. She is warm, sharp, and combat-capable —
+                a healer who stands in the fire, not above it.
+                Match the grounded, lived-in look of both
+                reference images rather than any "saintly"
+                interpretation of her title.
+════════════════════════════════════════════════════════════════
+
+────────────────────────────────────────
+IRAE DUSKWIND — "The Galloping Storm" · Commander
+                of the Windlance Cavalry
+────────────────────────────────────────
+Age/Race: 23 · Half Moon Elf
+
+Build: Lean, athletic, built for the specific discipline she
+       invented — the body of someone who spent years training
+       in two completely different schools (Warden marksmanship
+       and cavalry horsemanship) at once and fused them into one
+       new thing. Looks like she's already moving even at rest.
+
+Face: Half Moon Elf features — sharp, angular, the faint
+      silver-white luminance of Moon Elf heritage filtered
+      through human proportions, giving her a slightly warmer,
+      more weathered look than a full Moon Elf. The face of
+      someone who arrived at Starhold's training grounds already
+      certain the standards would be insufficient — and was right.
+
+Hair: Practical, plains-rider style — kept back or braided,
+      built to survive a full gallop without becoming a problem.
+      Dark with a faint silvered quality at certain angles
+      (the Moon Elf trait, understated).Bob Cut hairstyle with dark highlights.
+
+Eyes: Sharp, green-toned or pale, with the faint Moon Elf
+      luminance. The eyes of someone who can track a moving
+      target from a galloping horse with Warden-level precision —
+      always reading distance, angle, and wind at once.
+
+Expression (default): Focused intensity edged with quiet
+      satisfaction — the look of someone who built something that
+      didn't exist before and knows exactly what it's worth.
+      Not arrogant — certain. "Warden precision. Cavalry speed.
+      Nobody had put them together before — so I did."
+
+Armor/Clothing: Windlance Cavalry command gear — lightweight,
+       saddle-optimized armor that prioritizes mobility and full
+       range of motion for mounted archery over raw protection.
+       Green-toned accents (#489020) marking her command rank.
+       Built for someone who lives on horseback.
+
+Weapons: Windbow — short recurve, saddle-optimized, her signature
+         weapon (alongside the recurve horsebow she arrived with,
+         "half her height"). Saber carried for emergency melee.
+         Silent Warden training blades from her Warden years and Small cavalry shield on back/side.
+
+Mount: Swiftmere — grey plains-bred warhorse of exceptional
+       speed. The horse and rider read as a single unit in
+       motion; she does not so much ride as extend through it.
+
+Color Palette: Plains green (#489020 accent), grey (matching
+               Swiftmere's coat), warm earth and leather tones,
+               the faint cool silver-white of Moon Elf heritage
+               at the edges.
+
+Mood Keywords: Warden precision, cavalry speed — fused into
+               something new · "We do not chase. We are already
+               where you are going." · Walked two hundred miles
+               to be assessed by Lyria, and Lyria put down her
+               own bow · The cavalry equivalent of a bow ·
+               Six hundred riders, one heartbeat
+
+Do NOT include: Delicate or ornamental styling, heavy ceremonial
+                armor that would slow mounted archery, anything
+                that separates her visually from her horse and
+                bow — those two things are inseparable from her
+                identity. She is defined by motion and precision
+                combined, not by presence at rest.
+
+────────────────────────────────────────
+DR. ISOLDE CREN — "The Hands That Hold" · Chief Physician ·
+                  Hospital Network Director · Apothecary Corps
+                  Founder
+────────────────────────────────────────
+Age/Race: 45 (Year 1047) · Human · Female
+
+Build: The build of someone who has been doing physical medicine —
+       not magic, not casting, hands-in medicine — for twenty
+       years in frontier conditions. Capable, precise, neither
+       the administrative softness of a court physician nor the
+       battlefield bulk of a combat medic. The specific body of
+       a person who treats trauma without magical backup because
+       there is none available and the patient is still alive.
+
+Face: Direct, attentive, the face of someone who monitors
+      Seraphine Mire's accumulated physical cost from Martyr's
+      Embrace use and has told no one — not because she is cold,
+      but because that is her professional standard. Clear-eyed.
+      The expression of a physician who asks "why" as a reflex,
+      not a question.
+
+Hair: Practical — kept back from the face entirely, the clinical
+      standard of someone who works over patients. Warmer tone,
+      auburn or dark brown, going silver at the edges.
+
+Eyes: Clinical attentiveness — reading patients the way Lyria
+      reads terrain. The eyes that looked at a decade's worth of
+      misattributed Void-touch complications and immediately asked
+      why nobody had collected that data before.
+
+Expression (default): Composed professional focus. Not cold —
+      the specific warmth of someone who chose medicine because
+      she was good at it and has been right about that choice for
+      twenty years. When she disagrees with a clinical decision,
+      she says so directly. When she is right, she does not
+      remind anyone.
+
+Clothing: Chief Physician's working kit — practical layered
+       garments over a physician's professional coat, clinical
+       instrument belt (the apothecary tools, the diagnostic
+       equipment, always present). Not the Ashen Guard's silver
+       purification aesthetic — Isolde's palette is the warm
+       rose-crimson (#993556) of the Sancthaven medical domain,
+       applied in practical professional clothing rather than
+       armor. A physician's coat that has been in frontier
+       conditions and been cleaned without becoming ceremonial.
+
+Color Palette: Warm rose-crimson (#993556 accent — Sancthaven
+               medical), dark neutral base tones, the clean
+               clinical palette of someone who treats physical
+               wounds in a domain where everything else is magical.
+
+Mood Keywords: "Because no one was looking." · Monitors
+               Seraphine weekly and has told no one · Arrived
+               with research, not an application · Free basic
+               medical care across all settlements — her design ·
+               Stopped two Iron Star fights on safety grounds —
+               both fighters wrote thank-you letters · Her
+               clinical disagreements with her husband Jeren are
+               the most productive arguments in Sancthaven
+
+Do NOT include: Cold or emotionally distant doctor stereotype.
+                She is warm — rigorously warm, the warmth of
+                someone who cares precisely and completely.
+                No elaborate robes or ceremonial dress; she
+                looks like she is about to treat someone, because
+                she usually is.
+
+────────────────────────────────────────
+VESPERA DRAKEWYNN — "The Storm Before the Charge" · Captain of
+                    the Black Charge · Elite Cavalry Commander
+────────────────────────────────────────
+Age/Race: 25 (Year 1047) · Nightborn Human · Female
+
+Build: The build of someone who defeated every veteran candidate
+       in the Black Charge trials and received command at
+       twenty-five. Not the heaviest cavalry build — the most
+       precisely devastating. The physicality of a cavalry general
+       whose parents were both legendary commanders on a different
+       continent, and who trained in the doctrine they left her.
+
+Face: Striking — not ornamental, battlefield-striking. The
+      specific quality of a face that projects charisma at range,
+      the kind that works equally on allies and enemies. Fierce,
+      sharp, certain of itself in the way of someone who has
+      never once doubted whether she belonged in a command role.
+      Nightborn human features — slightly deeper skin tone and
+      the specific quality of a lineage adapted to dark-climate
+      environments, warm-dark rather than pale. True beauty with Brain.
+
+Hair: Dark, windswept — what it becomes after a charge. Managed
+      enough for the helmet, loose enough to read as someone
+      who is always just back from or about to go on one.
+
+Eyes: Dark, fierce, focused. The eyes of someone for whom combat
+      reads as a targeting problem with an obvious solution —
+      not reckless, fast. She decides before others have finished
+      describing the situation.
+
+Expression (default): Fierce confidence that is not arrogance —
+      the specific assurance of someone who earned what she
+      has by demonstrating it against every veteran who said
+      she couldn't. The look that makes armies break formation
+      before the lance lands.
+
+Armor: Black cavalry plate — full combat armor designed for shock
+       charge rather than siege defense, articulated for maximum
+       mounted mobility. Dark iron, battle-worn from trials and
+       field command. The Black Charge's dark aesthetic — no
+       bright insignia, just the weight of what's coming.
+
+Weapons: Ruinspike — shadowsteel cavalry lance, long, forged
+         to pierce heavy armor and break lines at full charge.
+         Grimtalon — curved saber at the hip for mounted close
+         combat after the charge. Ashfang Pistols — twin rune-
+         flint cavalry hand cannons at both hips, inherited from
+         her mother; dark-finished, worn-grip, the look of
+         weapons that have been used and kept. She fires them
+         once per charge, at the moment of maximum impact.
+         Never missed.
+
+Mount: RedMane — crimson armored warhorse bred for shock charges
+       and sustained battlefield endurance, selected personally
+       by Marcus Ironmane for her command style. The specific
+       red-armored coloring makes it visible from distance — this
+       is tactical, not decorative. When depicted with Vespera:
+       she looks like the storm, and RedMane is the ground
+       it moves on.
+
+Color Palette: Black armor, dark iron, the deep crimson (#6A1010)
+               of her cavalry's mark and RedMane's coat.
+               Shadowsteel lance-sheen (dark, not silver).
+               The palette of something arriving fast from
+               a direction you were not watching.
+
+Mood Keywords: "You hear us before you see us. By the time you
+               see us, the decision is already made." · Earned
+               command at 25 — no one mentions this twice ·
+               Her parents' continent is gone. Starhaven is the
+               first thing since that is not grief. She rides
+               like she means to keep it. · Fires the Ashfang
+               Pistols once per charge, at maximum impact, has
+               never missed
+
+Do NOT include: Ornamental or decorative cavalry aesthetics,
+                anything that reads as "princess on horseback."
+                She looks like what she is — a cavalry commander
+                who defeated every veteran in the kingdom to
+                earn her position, whose parents were war legends,
+                and who fights like she was trained in a different
+                war than everyone around her. The darkness and
+                the crimson are the visual truth, not a costume.
+
+────────────────────────────────────────
+WYLD FROSTMERE — "The Cold Wall" · Frosthold Bastion Commander ·
+                 Northern Border Defense · Blizzard Combat
+                 Specialist
+────────────────────────────────────────
+Age/Race: 41 (Year 1047) · Dwarf · Male
+
+Build: Dwarf — the dense, root-heavy build of the Dwarven line,
+       but expressed as the specific physicality of someone who
+       lives in Frosthold's northern posting year-round, by
+       choice, because nobody else wanted it. Built for cold
+       more than combat — the endurance-weight of someone whose
+       garrison discipline is the weather itself.
+
+Face: Weathered, dry-humored — the face of someone who sent
+      three incursion attempts back as weather disasters, wrote
+      the after-action reports anyway, and considered it
+      "unsporting to call them battles." The lines of someone
+      who has been standing in blizzards at Frosthold for years
+      and finds them professionally useful.
+
+Hair/Beard: Dwarven-traditional, dark with frost-grey threading
+      from the posting's climate. Beard practical rather than
+      elaborate — the beard of a garrison commander who goes
+      outside in actual blizzards.
+
+Eyes: Calm, assessing — the eyes of someone who reads wind
+      direction and incoming weather the way other commanders
+      read enemy formations, because at Frosthold they are
+      the same information. The annotation he added to his
+      military academy course materials ("The part about wind
+      direction is wrong") lives in these eyes.
+
+Expression (default): Dry, patient satisfaction. The look of
+      someone waiting for the moment the enemy makes the mistake
+      he has already accounted for — which at Frosthold is
+      always the moment they underestimate the cold.
+
+Armor: Northern garrison plate — Dwarven cold-weather reinforced,
+       maximum protection variant with layered insulation
+       underneath. Built for sustained exposure to Frosthold's
+       conditions rather than rapid deployment. Anti-corruption
+       treatment on the helm (northern Void-touch environments
+       require it). Matte blue-grey finish, frost-worn.
+
+Weapons: Permafrost — frost-tempered war-axe, his signature
+         weapon. Frost-treated blade with the specific look of
+         metal that has been exposed to extreme cold for years
+         and maintained anyway.
+
+Mount: Snowtusk — armored mountain elk. The northern posting's
+       standard for commanders who actually go outside in
+       blizzards. Elk-large, sure-footed on ice, the practical
+       choice rather than the dramatic one.
+
+Color Palette: Deep cold blue (#185FA5 accent), matte garrison
+               grey, frost-white, the northern bastion palette.
+               The colors of a fortress built into a place where
+               the weather is the primary military asset.
+
+Mood Keywords: "The blizzard is my garrison. I just give it
+               direction." · Requested the posting no one wanted ·
+               Kael Varric reviewed two years of reports and
+               replied: "Correct." — Wyld had it framed. It is
+               the finest professional recognition of his career.
+               · Three incursion attempts dissolved as weather
+               disasters. Zero conventional engagement required.
+               He considers this a gift. He receives it gratefully.
+
+Do NOT include: Heroic battle-ready posture or dramatic lighting.
+                Wyld Frostmere is functional, patient, and dry —
+                the garrison commander whose most powerful weapon
+                is a storm he didn't make and learned to use. He
+                looks like the cold wall the title says he is,
+                not a heroic figure against it.
 ════════════════════════════════════════════════════════════════

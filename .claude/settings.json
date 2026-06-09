@@ -9,7 +9,11 @@
       "Bash(node _fix_chron_meta.js)",
       "Bash(node _tmp_check.mjs)",
       "Bash(node _add_brektane.js)",
-      "Bash(grep -v \"//\\\\|color:\\\\|weapon\\\\|ability\\\\|mount\\\\|partner\\\\|relation\\\\|note:\\\\|type:\\\\|image:\\\\|quote:\\\\|bio:\\\\|desc:\\\\|status:\\\\|category:\\\\|role:\\\\|race:\\\\|subtitle:\\\\|title:\\\\|background:\\\\|tags:\")"
+      "Bash(grep -v \"//\\\\|color:\\\\|weapon\\\\|ability\\\\|mount\\\\|partner\\\\|relation\\\\|note:\\\\|type:\\\\|image:\\\\|quote:\\\\|bio:\\\\|desc:\\\\|status:\\\\|category:\\\\|role:\\\\|race:\\\\|subtitle:\\\\|title:\\\\|background:\\\\|tags:\")",
+      "Bash(powershell -c ' *)",
+      "Read(//c/temp/sh_text/**)",
+      "Bash(rm -f /mnt/c/temp/sh_text/codex_char_*.txt)",
+      "Bash(powershell -c \"Remove-Item C:\\\\temp\\\\sh_text\\\\codex_char_*.txt -Force\")"
     ]
   }
 }
