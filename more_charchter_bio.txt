@@ -3181,4 +3181,73 @@ Do NOT include: Heroic battle-ready posture or dramatic lighting.
                 is a storm he didn't make and learned to use. He
                 looks like the cold wall the title says he is,
                 not a heroic figure against it.
+
+────────────────────────────────────────
+SORIN — Wing Commander · Sub-Commander of the Ninth Sky Corps (Operations)
+────────────────────────────────────────
+Age/Race: 39 · Drakari (draconic bloodline),male
+
+Build: Lean, hard-muscled — a drake rider's build, built for
+       wind-resistance and grip strength rather than raw bulk.
+       Sits straighter than most, even on the ground, the
+       posture of someone permanently braced against a dive.
+
+Face: Drakari features — humanoid with a faint scaled texture at
+      the temples, jaw, and the backs of the hands (subtle, not
+      monster). Sharper, harder-edged than Velkan's scholarly
+      version of the same bloodline — Sorin's draconic traits
+      read as a flight-predator's, not a thinker's.
+      Petite Goate beard, red.
+
+Hair: Bald, have a tatoo on right side abve ear.
+
+Eyes: Amber-gold with the vertical slit pupil of draconic
+      heritage, like Velkan's but harder — narrowed habitually,
+      the eyes of someone scanning formation gaps. They track
+      movement before they settle on a face.
+
+Expression (default): Flat, assessing — the look of a man who
+      vets every rider in the Corps personally and has never
+      stopped doing the math on who lives and who doesn't.
+      Not cold exactly — controlled. Burns instead of bends.
+
+Armor/Clothing: Ninth Sky Corps drake-rider harness-plate —
+      flight-rigged armor with reinforced leg straps and a
+      high collar against wind, blue-grey metal with rune
+      channels running down the forearms and chest that glow
+      faint orange when his fire-arcane is active. Lighter
+      and more wind-cut than Velkan's Runebound Battleplate,
+      built for being strapped to a drake's back at speed.
+
+Weapons/Tools: Emberstave Staff and a rune-channel lance — the
+      lance is the signature piece, a long drake-rider's lance
+      with glowing rune-channels along its length that flare
+      bright orange-red when he releases a Flareburst. The
+      staff is carried as backup/ground weapon, more compact
+      than Velkan's Cinderwake.
+
+
+Mount (optional): A Ninth Sky Corps drake — if shown, a
+      battle-drake(wvyren) in corps colors (blue-grey harness over
+      dark scales), built for fast formation flying rather
+      than Pyrewing's volcanic bulk.
+
+Color Palette: Blue-grey (#4070B0) Ninth Sky Corps colors as the
+      primary accent, with arcane fire-orange glow along the
+      rune channels of his lance and armor. Dark scaled skin
+      tones at temples/jaw/hands. Overall cooler and more
+      metallic than Velkan's warm dark-academic palette.
+
+Mood Keywords: Burns instead of bends · Operations commander,
+               not a frontline showpiece · Personally vetted
+               every rider since the War of Starhold · The kind
+               of competence that doesn't need to announce itself
+
+Do NOT include: Scholarly or academic styling — Sorin is a
+                field operations commander, not a researcher.
+                No robes, no notebook. He should read as a
+                hardened drake-rider in flight gear, harder-edged
+                and more military than Velkan's version of the
+                same Drakari bloodline.
+════════════════════════════════════════════════════════════════
 ════════════════════════════════════════════════════════════════

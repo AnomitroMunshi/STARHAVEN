@@ -1365,7 +1365,7 @@ const CHARACTERS = [
     age:'41 (Year 1047)', race:'Wildblood Dwarf', role:'Lord of Greenveil',
     image:'starhaven_chars_image/thorin.png', color:'#3A5A20',
     commands:['Primal Vanguard','Greenveil Defense Forces'],
-    weapons:['Stone-Fist Gauntlets','Earthsplitter Axe'],
+    weapons:['Stone-Fist Gauntlets','Rootcleaver — Living Axe'],
     abilities:[
       {name:'The First Beast Awakens', type:'ultimate', desc:"Full primal form — held 4 hours in Varathos, record. Requires Bob to pull him back."},
       {name:'Primal Ascendancy', type:'active', desc:"Transforms into ancient beast-form. Immense strength and regeneration. Prolonged use risks losing his humanity."},
@@ -2554,6 +2554,46 @@ const CHARACTERS = [
   tags:['Scholar','Chief Physician','Apothecary Corps','Sancthaven'],
 },
 
+  {
+    id:'sorin', name:'Sorin',
+    title:'Wing Commander · Sub-Commander of the Ninth Sky Corps (Operations)',
+    category:'Commander', status:'alive',
+    age:'39', race:'Drakari', role:'Drake Rider / Operations Commander',
+    image:'starhaven_chars_image/sorin.png', color:'#4070B0',
+    commands:['Ninth Sky Corps (Operations)'],
+    weapons:['Emberstave Staff','Rune-channel lance'], abilities:[
+      {name:'Cinderwake Lineage',  type:'passive', desc:'Trained directly under Velkan Drake — inherited the Cinderwake school\'s fire-arcane fundamentals without its gravity discipline. Every spell Sorin casts burns hotter and faster than it bends.'},
+      {name:'Flareburst Lance',    type:'active',  desc:'Channels arcane fire down the length of his rune-channel lance and releases it as a single concussive burst on contact — built for punching through formation lines from drake-back.'},
+      {name:'Skyfire Marker',      type:'active',  desc:'Launches a tracking flare of arcane flame that clings to its target and burns a visible trail through the air, letting the entire Ninth Sky Corps converge fire on one point without a spoken order.'},
+      {name:'Cataclysm Wing',      type:'ultimate', desc:'Drives his drake into a full burning dive and detonates the gathered arcane fire in a single wide-radius blast at impact — a tool he reserves for when a formation must be broken in one pass, with no second pass coming.'},
+    ], quote:'"Velkan taught me to bend. I never could. So he taught me to burn instead."',
+    bio:'Operations commander of the Ninth Sky Corps under Velkan Drake. Took over rider selection after the War of Starhold, where the Corps suffered 62 losses — every rider since has been personally chosen by Sorin, vetted not just for skill but for how they fly in a formation that has already been broken once and rebuilt.',
+    relationships:[{name:'Velkan Drake',type:'professional'},{name:'Dael Ashe',type:'professional'}],
+    tags:['Commander','Ninth Sky Corps','Drake Rider','Operations'],
+    background:'Survived the War of Starhold as part of the Ninth Sky Corps\' original roster. In the aftermath, Velkan Drake handed rider selection and operational command to Sorin — a decision that has held for years without review.',
+    partner:null,
+    achievements:['Rebuilt the Ninth Sky Corps\' rider roster after the War of Starhold','Personally selected every rider in the Corps since the rebuild'],
+  },
+
+  {
+    id:'gorvakdoomhide', name:'Gorvak Doomhide',
+    title:'The Doomhide · Warlord of the United Highlands',
+    category:'Known Enemies', status:'alive',
+    age:'400+ years', race:'Ancient Mountain Troll', role:'Warlord · Commander of the Highland Horde',
+    image:'starhaven_chars_image/gorvakDoomHide.png', color:'#605850',
+    commands:['Gorvak\'s Highland Army'],
+    weapons:['Unnamed dark killing implement (short-hafted)'], abilities:[
+      {name:'Four Centuries of Not Dying', type:'passive', desc:'Four hundred years of surviving everything the Stormmassif has thrown at him. The wild tribes follow him for this reason alone — in the highlands, survival is the only credential that matters.'},
+      {name:'The Walk', type:'active', desc:'Advances on a target at an unhurried, deliberate pace — no charge, no display of aggression. Nothing he has walked toward has ever managed to escape before he arrived.'},
+      {name:'Cold Assessment', type:'ultimate', desc:'Four centuries of decision-making with the emotion stripped out. He assesses a battlefield, commits to a conclusion, and acts on it without doubt or hesitation — and without the tells that come from anger or fear.'},
+    ], quote:'"The Void is behind us. Starhaven is ahead. Starhaven has food, water, territory. We will take it."',
+    bio:'Unified the highland tribes not through diplomacy or charisma, but through the sole authority of having survived longer than anyone else in the Stormmassif. Cold, patient, and tactical — cruelty is a functional outcome to him, not a pleasure. He is leading the Highland Horde toward Starhaven, fleeing the Void at his back without realizing Starhaven is the only force actively fighting it.',
+    relationships:[{name:'Kragh Skullsplitter',type:'subordinate'},{name:'Drokha Bloodtusk',type:'subordinate'}],
+    tags:['Known Enemies','Highland Horde','Warlord','Troll'],
+    background:'An ancient mountain troll, estimated at over four hundred years old, bearing centuries of scarring across granite-grey skin that no longer resembles flesh. Wears a single spiked golden pauldron taken from a defeated enemy and a worn, clan-marked belt plate — trophies accumulated one opponent at a time over centuries. Commands the United Highlands\' combined horde, including Kragh Skullsplitter\'s berserker clans and Drokha Bloodtusk\'s beast cavalry.',
+    partner:null,
+    achievements:['Unified the highland tribes of the Stormmassif under a single banner','Survived four centuries in the Stormmassif without defeat'],
+  },
 
 
 ];
@@ -3647,7 +3687,7 @@ function charsRender(filter, btn) {
   if (cnt)  cnt.textContent  = list.length;
   if (cnt2) cnt2.textContent = list.length + ' characters';
 
-  const order = ['The Eleven','Commander','Scholar','Allied','Others'];
+  const order = ['The Eleven','Commander','Scholar','Allied','Others','Known Enemies'];
   const grouped = {};
   order.forEach(g => { grouped[g] = []; });
   list.forEach(c => {
@@ -3655,8 +3695,8 @@ function charsRender(filter, btn) {
     grouped[c.category].push(c);
   });
 
-  const groupIcons  = {'The Eleven':'⚔',Commander:'🛡',Scholar:'📚',Allied:'🤝'};
-  const groupLabels = {'The Eleven':'The Eleven',Commander:'Commanders',Scholar:'Scholars',Allied:'Allied'};
+  const groupIcons  = {'The Eleven':'⚔',Commander:'🛡',Scholar:'📚',Allied:'🤝','Known Enemies':'☠'};
+  const groupLabels = {'The Eleven':'The Eleven',Commander:'Commanders',Scholar:'Scholars',Allied:'Allied','Known Enemies':'Known Enemies'};
 
   let html = '';
   order.forEach(grp => {
