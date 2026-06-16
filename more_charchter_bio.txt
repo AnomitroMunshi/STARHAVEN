@@ -3249,5 +3249,73 @@ Do NOT include: Scholarly or academic styling — Sorin is a
                 hardened drake-rider in flight gear, harder-edged
                 and more military than Velkan's version of the
                 same Drakari bloodline.
+
+────────────────────────────────────────
+DENA VEIL — Commander · Greenveil Defense Force
+────────────────────────────────────────
+Age/Race: 51 · Wood Dwarf (female)
+
+Build: Compact and solid in the Wood Dwarf way — shorter than
+       a human but with the layered muscle of someone who has
+       stood at a tree line and drawn a longbow every day of
+       her adult life. Her posture is that of a person who
+       owns the ground she's standing on. Earned, not assumed.
+
+Face: Weathered by decades of outdoor command — not harsh,
+      but deeply marked by the forest. Wood Dwarf features:
+      broader jaw, slightly flatter nose, warm earthy skin
+      tone with the ruddy quality of a life spent outdoors.
+      The face of a fourth-generation commander who has seen
+      everything and written all of it down.
+
+Hair: Dark with grey threaded through it — kept practical,
+      tied back or braided close to the head. Nothing that
+      would interfere with a longbow draw or tangle in tree
+      cover. Four generations of this defense line have worn
+      the same practical hair.
+
+Eyes: Sharp, dark, deliberate — the eyes of someone who
+      reads a treeline for threat the way others read a room.
+      Always tracking. Calm, not cold.
+
+Expression (default): The quiet authority of someone who does
+      not need to raise her voice. Alert, composed, and
+      slightly ahead of whatever is being said — already
+      planning the next rank-volley before the current one
+      lands. Gets that down in the record. All of it.
+
+Armor/Clothing: GDF forest-combat gear — medium armor in dark
+      green and bark-brown, built for forest terrain movement
+      and prolonged treeline defense. Practical layering:
+      leather over reinforced under-layer, with enough room
+      to draw a longbow at full extension from standing.
+      No plume, no decoration — the rank shows in how she
+      carries herself, not what she wears.
+
+Weapons/Tools: Longbow (primary) — a generational weapon,
+      four-generation draw weight refined to its final form,
+      worn smooth with use and maintained impeccably. Forest
+      spear (secondary, carried at hip for the moment the
+      archers cannot hold alone). Both weapons are tools, not
+      trophies.
+
+Color Palette: Deep forest greens (#2A6A3A) and bark-browns as
+      the dominant palette — GDF treeline camouflage. Earthy
+      skin tones with ruddy outdoor weathering. Nothing bright,
+      nothing that catches light in a forest.
+
+Mood Keywords: Four generations deep · The tree line has never
+               broken · Gets it in the record · The moment
+               archers cannot hold — she steps forward herself
+               · Quiet command authority, not spectacle
+
+Do NOT include: Dramatic fantasy forest-elf styling. Dena Veil
+                is a Wood Dwarf defense force commander, not an
+                elf ranger. No glowing arrows, no dramatic
+                canopy lighting, no flowing cloak. She should
+                look like a professional who has been doing this
+                job longer than most soldiers have been alive —
+                compact, grounded, and completely at home at
+                the treeline boundary she has defended for decades.
 ════════════════════════════════════════════════════════════════
 ════════════════════════════════════════════════════════════════
