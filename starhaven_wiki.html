@@ -527,6 +527,7 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn active" data-filter="all" onclick="armyRender('all',this)">All Forces</button>
       <button class="tab-btn" data-filter="eleven" onclick="armyRender('eleven',this)">👑 Pillar Armies</button>
       <button class="tab-btn" data-filter="standing" onclick="armyRender('standing',this)">⚔️ Standing</button>
+      <button class="tab-btn" data-filter="cavalry" onclick="armyRender('cavalry',this)">🐴 Cavalry</button>
       <button class="tab-btn" data-filter="specialized" onclick="armyRender('specialized',this)">🔱 Specialized</button>
       <button class="tab-btn" data-filter="naval" onclick="armyRender('naval',this)">⚓ Naval</button>
       <button class="tab-btn" data-filter="siege" onclick="armyRender('siege',this)">⚙️ Siege & Assault</button>
@@ -2657,6 +2658,69 @@ const CHARACTERS = [
     partner:null,
     achievements:['Rebuilt the Stonefang Clan to 4,300 after Gorvak\'s destruction','Killed Gorvak Doomhide in single combat — Year 1049','Unified the United Highland Coalition under Starhaven alliance — Year 1049'],
   },
+  {
+    id:'drokhabloodtusk', name:'Drokha Bloodtusk',
+    title:'Beastmaster and Rider Commander · Drogar\'s Highland Army',
+    category:'Allied', status:'alive',
+    age:'Unknown (decades)', race:'Orc (Beast-rider lineage)', role:'Beastmaster / Beast Cavalry Commander',
+    image:'starhaven_chars_image/drokhabloodtusk.png', color:'#8A4A18',
+    commands:['Hyena Riders','Bull War Riders','War Beasts','Cyclopean Crushers'],
+    weapons:['Enormous mace (single-handed)'], abilities:[
+      {name:'Bred for Obedience',   type:'passive',  desc:'Decades of beast breeding — every creature in his cavalry follows commands absolutely, without hesitation. Where other beastmasters build partnership, Drokha built total obedience. The formations are precise. The beasts wait to be told. He has only recently begun to understand what he traded away.'},
+      {name:'Formation Command',    type:'active',   desc:'Signals Hyena Riders forward as bait, Bull War Riders as the weight that follows the bait\'s success, War Beasts as mobile artillery behind both. A layered beast-cavalry assault doctrine he developed over decades and has never had to explain twice.'},
+      {name:'Mace Clear',          type:'active',   desc:'When he commits directly, the enormous mace swings single-handed at a force that should require two. Ends engagements the way a door closes — sudden, final, without drama.'},
+      {name:'The Sabertooth',      type:'ultimate', desc:'The most dangerous individual creature on the field — faster than anything its size, intelligent in the specific predatory way that chose targets rather than simply charged. Devoted to Drokha with a loyalty his breeding methods could not explain. Killed at Greenveil, Year 1049, by Sira\'s mammoth herd. Drokha leapt clear at the last moment. He gave two of its cubs to Marcus Ironmane.'},
+    ], quote:'"I bred for obedience. Decades of it. I thought obedience was the same thing as loyalty."',
+    bio:'Commander of all beast units in Gorvak\'s highland army — Hyena Riders, Bull War Riders, War Beasts, and Cyclopean Crushers. Bred his beasts for obedience over decades, the way Marcus Ironmane breeds horses — except where Marcus breeds for partnership, Drokha bred for obedience, and the difference showed in how the beasts moved. His sabertooth was the most feared individual creature in the highland army. It died at Greenveil. After the battle, he knelt before Sira in acknowledgment — not forgiveness, not grief. Mutual recognition.',
+    relationships:[{name:'Gorvak Doomhide',type:'subordinate'},{name:'Drogar Stonefang',type:'ally'},{name:'Marcus Ironmane',type:'rival'},{name:'Thorin Blackroot',type:'rival'}],
+    tags:['Known Enemies','Beastmaster','Highland Army','Beast Cavalry'],
+    background:'Moves through his cavalry formations atop a sabertooth larger than any horse — a creature that regarded everyone except Drokha with the patient contempt of a predator that had decided nothing nearby was worth a reaction. On Day 3 of Greenveil, committed his full beast cavalry and had his formation read and countered by Sira before it finished executing. After Gorvak\'s death, walked to Drogar\'s circle on foot — the absence of the sabertooth its own kind of testimony.',
+    mount:{name:'Sabertooth (Unnamed)',desc:'Enormous sabertooth — larger than any horse, faster than anything its size should have been. Responded to Drokha alone. Devoted to him with a loyalty his breeding methods could not explain. Killed in combat by Sira\'s mammoth herd at Greenveil, Year 1049. Drokha gave two of its cubs to Marcus Ironmane.'},
+    partner:null,
+    achievements:['Commanded Gorvak\'s full beast cavalry at Greenveil — Year 1049','Gifted two sabertooth cubs to Marcus Ironmane\'s breeding program after Greenveil'],
+  },
+
+  {
+    id:'brenoakshield', name:'Bren Oakshield',
+    title:'Beastmaster Company Commander · Primal Vanguard',
+    category:'Commander', status:'alive',
+    age:'Unknown (11+ years field command)', race:'Human', role:'Beastmaster / Dire Wolf Pack Commander',
+    image:'', color:'#3A5A2A',
+    commands:['Primal Vanguard (Beastmaster Company)'],
+    weapons:['Hunting short-sword','Sharp Boomerang','Command horn','Martial Arts'], abilities:[
+      {name:'Pack Instinct',        type:'passive',  desc:'Eleven years commanding dire wolf packs has given him a reading of pack behavior that operates faster than conscious thought. He knows when a wolf is about to break formation, which seam they\'ll target, and when to pull them back, without needing to watch the wolves directly.'},
+      {name:'Loose the Pack',       type:'active',   desc:'Signals all three dire wolf packs forward in coordinated assault — low, fast, aimed at the gaps between adjacent shields where two angles meet and neither soldier can fully cover the other. The wolves move with the coordinated fluidity that made them devastating against the broken Berserkers.'},
+      {name:'Force the Choice',     type:'active',   desc:'His signature tactical call: instead of testing shield seams individually, redirects the packs to pressure the formation\'s rear simultaneously. Forces the enemy line to choose between holding its front and covering what\'s behind it. The line cannot do both.'},
+      {name:'Three Packs, One Line', type:'ultimate', desc:'Commits all forty handlers and three dire wolf packs to a single coordinated assault on one section of enemy formation — not to breach it immediately, but to lock it in place while the rest of Thorin\'s Primal Vanguard closes. Used to pin Kethra\'s Shieldguards at Greenveil in Year 1049.'},
+    ], quote:'"Stop testing the seams. Force the formation to choose."',
+    bio:'Beastmaster company commander embedded in Thorin\'s Primal Vanguard. Forty handlers, three dire wolf packs, assigned to the central line. Eleven years of field command — knows when to probe and when the probe has given everything it is going to give. Made the call at Greenveil that shifted the central engagement: stop testing Kethra\'s shield seams individually, force the formation to choose between its front and its rear.',
+    relationships:[{name:'Thorin Blackroot',type:'ally'}],
+    tags:['Commander','Primal Vanguard','Beastmaster','Dire Wolves'],
+    background:'Operates behind the Primal Vanguard\'s front edge — close enough to read the engagement, far enough to redirect his packs without entering it himself. Deployed against the Orc Berserkers on Day 1 with devastating effect. On Day 2, faced Kethra\'s Shieldguards — a formation that did not break the way the Berserkers had — and adapted his tactics mid-engagement.',
+    partner:null,
+    achievements:['Dire wolf packs credited with breaking the Berserker advance on Day 1 at Greenveil — Year 1049'],
+  },
+
+  {
+    id:'brokkgraniteborn', name:'Brokk Graniteborn',
+    title:'Commander · Stonemark Dwarven Advance Contingent',
+    category:'Allied', status:'alive',
+    age:'Unknown (decades)', race:'Dwarf', role:'Heavy Infantry Commander / Stonemark Tactical Commander',
+    image:'', color:'#706050',
+    commands:['Stonemark Advance Contingent (600 dwarves)'],
+    weapons:['Stonemark warhammer','Granite infantry shield'], abilities:[
+      {name:'Mountain-Quiet March',  type:'passive',  desc:'Four hundred years of dwarven engineering applied to the problem of moving six hundred heavy infantry through mountain terrain without being detected. Not stealth — something more precise than stealth. Brokk\'s contingent reached position at Greenveil\'s Greypeak passes without a single highland scout registering their approach.'},
+      {name:'Hammer Front',          type:'active',   desc:'Takes the front of his formation himself, warhammer in hand. The Stonemark dwarves fight better when their commander is the first obstacle the enemy has to address. Brokk has understood this about his people for decades and has never led from anywhere else.'},
+      {name:'Dwarven Line Lock',     type:'active',   desc:'Commands his infantry into an interlocking shield formation that holds terrain rather than advancing across it. Turns a position into a fixed point that the enemy must spend more than it can afford to move. Used to hold the northern pass approach while Drogar\'s force closed on Gorvak.'},
+      {name:'Northern Wing Break',   type:'ultimate', desc:'The Greypeak approach executed in full — six hundred dwarves arriving from the concealed mountain route and breaking Gorvak\'s entire northern wing before it knew the contingent was there. Completed less than thirty minutes before Drogar killed Gorvak. Year 1049.'},
+    ], quote:'"Sit, girl. You\'re just in time for the part where the dwarves win."',
+    bio:'Stonemark Hold\'s senior tactical commander — Dren Stonemark himself held in reserve as the political anchor, Brokk sent as the military one. Six hundred dwarves, heavy mountain infantry. Chose the concealed route through the Greypeak passes rather than the fastest approach — arrived correctly instead of quickly, broke Gorvak\'s northern wing, and spent the evening after the battle sharing dwarven ale with goblin engineers and orc warriors around a fire that had no business being as comfortable as it was.',
+    relationships:[{name:'Dren Stonemark',type:'professional'},{name:'Rayden Cale',type:'ally'},{name:'Aurelia Vex',type:'ally'}],
+    tags:['Allied','Stonemark','Dwarf','Heavy Infantry','Chapter 9'],
+    background:'Received his mobilization orders alongside a single additional line from Rhegar — the one he kept for the rest of his career. Used every hour of the three days transit to bring his contingent in correctly. After the battle, his fire became one of the evening\'s largest gathering points — goblins, orc warriors, and Aurelia Vex arriving unannounced and staying for the stories.',
+    partner:null,
+    achievements:['Led the concealed Greypeak mountain approach undetected — Year 1049','Broke Gorvak\'s northern wing with 600 dwarves — Greenveil, Year 1049'],
+  },
 
 ];
 // ════════════════════════════════════════
@@ -2875,6 +2939,14 @@ const ARMIES = [
     image:'Lores/Mueseum/first-field-army.png',
     roles:['Heavy Infantry','Concentrated Force','Assault Cavalry','Siege Engineers'],
     desc:'20-year Ironmere veteran. Never broken in 9 years of Starhaven command. Three-day engagement at Eastern Crossing: held 20,000 against 40,000. Does not outmaneuver — hits harder and holds longer.',
+    units:[
+      'Heavy Infantry',
+      'Heavy Spearmen',
+      'Heavy Archers',
+      'Assault Cavalry',
+      'Siege Engineers',
+      'Command & Logistics',
+    ],
     armor:[
       {slot:'Body',   name:'Ironmere Field Plate',      desc:'Reinforced matte-black plate with gold trim — Ironmere tradition. Heavier than standard Starhaven issue.'},
       {slot:'Shield', name:'Ironwall Tower Shield',     desc:'Massive rectangular formation shield with interlocking side-hooks for phalanx. Doran\'s preferred formation tool.'},
@@ -2888,8 +2960,17 @@ const ARMIES = [
     tier:'standing', strength:'5,000 Soldiers', color:'#709018',
     commander:'Field Marshal Clea Vorn (Half Moon Elf)', hq:'Coldmarch Western Deployment',
     image:'Lores/Mueseum/SecondArmy.png',
-    roles:['Flanking Maneuvers','Multi-Front Warfare','Speed Doctrine','Strategic Reserve'],
+    roles:['Vanguard','Flanking Maneuvers','Multi-Front Warfare','Speed Doctrine','Strategic Reserve'],
     desc:'Lyria trained alongside Clea for 3 months — Warden precision integrated into cavalry maneuver doctrine. Thinks in motion. Plans on horseback.',
+    units:[
+      'Light Infantry',
+      'Medium Infantry',
+      'Archers',
+      'Light Cavalry',
+      'Mounted Archers',
+      'Scouts & Recon',
+      'Strategic Reserve',
+    ],
     armor:[
       {slot:'Body',  name:'Cutting Wind Plate', desc:'Light cavalry half-plate — speed-optimized over protection. Fully articulated joints for unrestricted cavalry maneuver.'},
     ],
@@ -2904,6 +2985,14 @@ const ARMIES = [
     image:'Lores/Mueseum/ThirdArmy.png',
     roles:['Defensive Formations','Fortification Support','Garrison Reserve'],
     desc:'Led 400 soldiers for 20 years without a fortress after Ashveil Hold fell to a Void incursion. Found three structural corrections Kael had missed — on day two.',
+    units:[
+      'Heavy Spearmen',
+      'Heavy Infantry',
+      'Crossbowmen',
+      'Engineers',
+      'Reserve Infantry',
+      'Command & Logistics',
+    ],
     armor:[
       {slot:'Body',   name:'Garrison Heavy Plate',  desc:'Maximum-weight protection — defensive doctrine prioritizes survivability over mobility.'},
       {slot:'Shield', name:'Defensive Bulwark',     desc:'Heavier than Ironwall standard. Brek Tane\'s design — adds bottom ground-anchoring spike for static defensive lines.'},
@@ -2912,12 +3001,12 @@ const ARMIES = [
   },
   {
     id:'ironmane-lancers', name:'Ironmane Lancers',
-    subtitle:'Standing Army · Heavy Cavalry',
+    subtitle:'Cavalry · Elite Heavy Shock Cavalry',
     motto:'"Forward. Unbroken."',
-    tier:'standing', strength:'600 Heavy Cavalry', color:'#A02818',
+    tier:'cavalry', strength:'600 Elite Heavy Shock Cavalry', color:'#A02818',
     commander:'Captain Dresh Ironmane (Age 22)', hq:'Ironmane Fields, Greenveil',
     image:'Lores/Mueseum/IronManeLancers.png',
-    roles:['Heavy Cavalry Charge','Shock & Breakthrough','Flank Collapse','Pursuit'],
+    roles:['Elite Heavy Shock Cavalry Charge','Shock & Breakthrough','Flank Collapse','Pursuit'],
     desc:'Every horse personally bred by Marcus Ironmane. Raised alongside Greenveil\'s war beasts from birth — these horses do not fear dire wolves or war bears.',
     armor:[
       {slot:'Rider', name:'Ironmane Cavalry Plate',    desc:'Blackened steel with gold trim. Built for mobility and impact — not static defense.'},
@@ -2928,9 +3017,9 @@ const ARMIES = [
   },
   {
     id:'windlance-cavalry', name:'Windlance Cavalry',
-    subtitle:'Standing Army · Horse Archer Division',
+    subtitle:'Cavalry · Elite Horse Archer Division',
     motto:'"We do not chase. We are already where you are going."',
-    tier:'standing', strength:'600 Horse Archers', color:'#489020',
+    tier:'cavalry', strength:'600 Horse Archers', color:'#489020',
     commander:'Lance-General Irae Duskwind (Half Moon Elf, Age 29)', hq:'Ironmane Fields / Field Mobile',
     image:'Lores/Mueseum/windlanceCavalry.png',
     roles:['Horse Archery','Flanking Mobile Fire','Harassment','Recon'],
@@ -2951,6 +3040,24 @@ const ARMIES = [
     roles:['Magical Bombardment','Synchronized Casting','Elemental Siege'],
     desc:'Coordinated precision elemental volleys during the War of Starhold. The magical fire superiority that makes standard approaches to Starhaven suicidal.',
     note:'',
+  },
+
+  // ══ CAVALRY ══════════════════════════════════════════
+  {
+    id:'black-charge', name:'Black Charge',
+    subtitle:'Cavalry · Cataphracts Cavalry · Breakthrough & Night Raid',
+    motto:'"She is twenty-five. Nobody mentions this more than once."',
+    tier:'cavalry', strength:'800 Elite Cavalry', color:'#6A1010',
+    commander:'Captain Vespera Drakewynn', hq:'Ironmane Fields / Field Mobile',
+    image:'Lores/Mueseum/BlackCharge.png',
+    roles:['Shock Breakthrough','Night Raids','Line Breaking','Pursuit'],
+    desc:'Black-armored, crimson horse, shadowsteel lance — arrival sounds like an oncoming storm. No recorded instance of Crimson Breakthrough failing to break its target. Entire armies have broken formation upon hearing the Black Charge approach through darkness.',
+    armor:[
+      {slot:'Rider', name:'Black Charge Plate',      desc:'Matte-black cavalry plate — no insignia, no reflection. Vespera\'s signature: the only way to identify the Black Charge before it lands is to hear it.'},
+      {slot:'Lance', name:'Ruinspike',               desc:'Shadowsteel cavalry lance, forged to pierce heavy armor and break lines at full charge. Vespera\'s personal weapon.'},
+      {slot:'Mount', name:'RedMane Barding',         desc:'Crimson armored warhorse barding on Ironmane-bred bloodline. Selected by Marcus Ironmane specifically for Vespera\'s charge style.'},
+    ],
+    note:'Ashfang Pistols fired once per charge since command. No missed shot on record.',
   },
 
   // ══ SPECIALIZED ══════════════════════════════════════
@@ -3034,7 +3141,143 @@ const ARMIES = [
     image:'Lores/Mueseum/GreenveileDefenseForce.png',
     roles:['Provincial Defense','Forest Warfare','Primal Vanguard Reserve Pool'],
     desc:'The defense force of the Greenveil territory — feeds into the Primal Vanguard as its primary reserve and recruitment pool. Forest warfare specialists above all others.',
+    units:[
+      'Warden Infantry',
+      'Warden Archers',
+      'Beast Wardens',
+      'Scout Corps',
+      'War Beasts (Dire Wolves, War Bears, Mosshorn Rhinos, Thornfang Cats, Great Elk)',
+      'Sentinel Guards',
+    ],
     note:'',
+  },
+
+  // ══ ALLIED FORCES (EXTERNAL) ══════════════════════════
+  {
+    id:'sable-conclave', name:'Sable Conclave',
+    subtitle:'Allied · Necromantic Order of the Sable Isles',
+    motto:'"The Sable Conclave remembers who stood beside the dead when the living chose fear."',
+    tier:'allied', strength:'Undead Legions (classified)', color:'#3A1A5A',
+    commander:'Arch-Necromancer Sorvane Nullis (Age 89)', hq:'Sable Isles',
+    image:'Lores/Mueseum/sableConclave.png',
+    roles:['Undead Legion Deployment','Necromantic Support','Sable Isles Naval Access','Arcane Intelligence'],
+    desc:'Starhaven\'s first external ally — secured in Year 1042 when Velkan and Seraphine answered Sorvane Nullis\'s distress call that eleven kingdoms ignored. When the Sable Conclave\'s dead went rogue, eight kingdoms never replied and two turned the messenger away. Starhaven came. The Conclave Seal of Debt was invoked — an oath used only once in two hundred years. Sorvane Nullis knelt; every necromancer in the cathedral followed. Not submission. Debt.',
+    units:[
+      'Arch-Necromancer\'s Undead Guard (permanent escort, travel with Sorvane)',
+      'Preserved Dead Legions (thousands — maintained in the Sable Cathedral)',
+      'Necromancer Mages',
+      'Skeleton Infantry - medium armor, swords and spears',
+      'Skeleton Archers',
+      'Specialized Undead Units',
+      'ELITE: Revenant Knights — heavily armored, mounted undead shock cavalry. The most elite unit in the Conclave\'s forces.',
+    ],
+    note:'"The most honest diplomatic arrangement I have experienced in 89 years." — Sorvane Nullis, at the Starhold Naming Ceremony.',
+  },
+  {
+    id:'ironmere-alliance', name:'Kingdom of Ironmere',
+    subtitle:'Allied Kingdom · Northern Military Power',
+    motto:'"He speaks well of you. That is sufficient."',
+    tier:'allied', strength:'Full Kingdom Military Force', color:'#506070',
+    commander:'King Aldric Vorn (Age 56)', hq:'Ironmere (Northern Continent)',
+    image:'Lores/Mueseum/ironmere.png',
+    roles:['Full Kingdom Alliance','Heavy Cavalry Partnership','Veteran Infantry','Strategic Northern Anchor'],
+    desc:'Ironmere formalized the alliance in Chapter 7 — three weeks after Rhegar Thorne left their service to become Starhaven\'s Grand Marshal. Aldric Vorn could have treated Rhegar\'s departure as defection. He called it evidence. Queen Mira Vorn drafted the alliance terms, as she has drafted Aldric\'s decisions for thirty-eight years. The alliance did not require negotiation. Rhegar had already done it.',
+    units:[
+      'Ironmere Shock Heavy Infantry',
+      'Royal Heavy Cavalry',
+      'Ironmere Veterans (the tradition Rhegar built from)',
+      'Royal Archers',
+      'Royal Engineers & Siege Corps',
+      'Command & Logistics',
+    ],
+    note:'Attended the Starhold Naming Ceremony in Year 1049. Queen Mira drafted the terms. Aldric signed.',
+  },
+  {
+    id:'thalassian-league', name:'Thalassian League',
+    subtitle:'Allied Naval Power · Sea-State Chain',
+    motto:'"The ocean is not the obstacle."',
+    tier:'allied', strength:'Full Thalassian Fleet (sea-state chain)', color:'#1A5070',
+    commander:'Admiral-King Crest Vane (Age 59) · Admiral-Consort Seren Vane', hq:'Thalassian Sea-States (Southeast)',
+    image:'',
+    roles:['Naval Superiority','Ocean Approach Access','Vrak Isles Transit','Rift Gate Reinforcement'],
+    desc:'Alliance signed in Year 1046 (Chapter 7). Crest Vane had observers in Starhold since Year 1043 — he was watching before anyone asked. The deal: Starhaven gains ocean access to the Vrak Isles through Thalassian-charted waters; the League receives a rift gate on a Thalassian sea-state, turning weeks of fleet transit into minutes. A sea power with land-speed reinforcement is a different strategic category entirely. Crest Vane knew this before the offer was made.',
+    units:[
+      'Thalassian First Fleet (Admiral-King Crest Vane)',
+      'Thalassian Second Fleet — Defensive (Admiral-Consort Seren Vane)',
+      'Marine Boarding Corps',
+      'Naval Artillery',
+      'Harbor Garrison Forces',
+      'Sea-State Island Garrisons',
+    ],
+    note:'Crest Vane was at the Starhold Naming Ceremony. He watched Valtor Crane\'s fleet hold formation in Saltmere harbor the way a teacher watches a student who has become what they were always going to become.',
+  },
+  {
+    id:'karath-sultanate', name:'Karath Sultanate',
+    subtitle:'Allied Kingdom · Desert Military Power',
+    motto:'"The alliance is not a document."',
+    tier:'allied', strength:'~14,600 troops + 52 war beasts gifted', color:'#804010',
+    commander:'Sultan Rashid al-Kavar (Age 57) · Sultana Aria al-Kavar (Age 51)', hq:'Karath Sultanate (Southeast Coast)',
+    image:'Lores/Mueseum/karathSultanate.png',
+    roles:['Desert Warfare','War Beast Deployment','Camel Corps Logistics','Sand-Terrain Infantry'],
+    desc:'Alliance secured in Year 1048 (Chapter 8) when Sultana Aria wrote to Rayden personally — bypassing diplomatic channels, using her own seal — warning of imminent civil war. Rayden and Lyria traveled to Karath alone, no Dawnguard. They defused four faction leaders in one room in two hours and forty minutes. Sultan Rashid walked Rayden to the staging ground afterward and gave him half his war beasts. "These are mine," he said. Not the Sultanate\'s. His.',
+    units:[
+      'Mammoths unit (lead formation, tower-mounted, 6 archers each)',
+      '50 War Elephants (armored, tower-mounted, 4 pikes each)',
+      '1,500 Desert Cavalry (Karath bloodline, built for sand and distance)',
+      '800 Military Transport Camels',
+      '800 Fighting Camelknights (camel-mounted shock cavalry)',
+      '12,000 Desert sword and shield Infantry (sand-light armor, mobile open-terrain warfare)',
+      '10000 Desert Archers (light armor, mobile open-terrain warfare)',
+      '12000 Desert medium Spearmen (medium armor, mobile open-terrain warfare)',
+      '5000 Desert Heavy infantry (heavy armor, heavy two-handed execution axe )',
+    ],
+    note:'"Marcus is going to need a larger field." — Rayden Cale, upon receiving 52 war beasts as an alliance gift. Sultan Rashid laughed. First laughter the court had heard in three weeks.',
+  },
+  {
+    id:'stonemark-holds', name:'Stonemark Holds',
+    subtitle:'Allied Dwarven Nation · Mountain Military Power',
+    motto:'"The kingdom asks for your best. The kingdom will remember what you send."',
+    tier:'allied', strength:'Advance contingent + full hold reserves', color:'#6A5030',
+    commander:'Commander Brokk Graniteborn · Dren Stonemark (political anchor)', hq:'Stonemark Hold (Greypeak Mountains)',
+    image:'Lores/Mueseum/stonemarkAlliance.png',
+    roles:['Mountain Infantry','Siege Engineering','Highland Terrain Warfare','Stone Fortification'],
+    desc:'Alliance formalized after Rayden went to Stonemark Hold and visited Hilda Graymaw three levels below the grand hall before any diplomacy — returning five iron rings a dying dwarf named Dorun had pressed into his hands at Hollowwatch thirteen years prior. The stone-tongue oaths were signed in the Grand Hall afterward. In Year 1049, Brokk Graniteborn\'s advance contingent moved through the Greypeak eastern passes in dwarven silence — four hundred years of engineering applied to the problem of heavily armored infantry crossing stone without announcing themselves.',
+    units:[
+      'Ironbreakers: Dwarven Heavy Infantry (Hammer and Shield)',
+      'Hammerers: Dwarven Light Infantry (Axes and Spears)',
+      'Longbeards: Dwarven Elite Infantry (Two-Handed Hammers)',
+      'Quarrelers: Dwarven Crossbow Corps',
+      'Thunderers: Dwarven hand Cannoneers',
+      'Mountain Engineers',
+      'Cannon Crews: Dwarven Artillery Operators',
+    ],
+    note:'Grand Marshal Rhegar added one line to the mobilization order that was not in any draft version: "The kingdom asks for your best. The kingdom will remember what you send." Brokk Graniteborn kept it for the rest of his career.',
+  },
+  {
+    id:'stonefang-remnant', name:'Stonefang Remnant',
+    subtitle:'Allied Mountain Orc Clan · Highland Berserkers',
+    motto:'"The forest is yours. I will not enter without your word. Name your terms."',
+    tier:'allied', strength:'4,300 Warriors', color:'#5A3020',
+    commander:'High Chieftain Drogar Stonefang', hq:'Highland Mountains (Northwest)',
+    image:'',
+    roles:['Mountain Berserker Assault','Highland Terrain Warfare','Anti-Corruption Force','Flank Breaching'],
+    desc:'Drogar Stonefang refused Gorvak Doomhide\'s unification. His clan was destroyed for it. He rebuilt from the survivors. In Year 1049 he sent a message to Nyx\'s network in old highland orc dialect: four thousand three hundred warriors, ready, waiting at the forest boundary for Starhaven\'s word. His Mountain Berserkers are not Kragh\'s berserkers. They train. Every day. Including waiting days. "Because the day we don\'t train is the day we forget why we\'re still alive when the Berserker Clans to the south aren\'t." — Veteran Korga.',
+    units:[
+      'Ancestor Guard — Elite Bodyguard of Drogar Stonefang',
+      'Mountain Berserkers — Commanded by Korga',
+      'Red-Skinned Troll Tribe - Commanded by Kaszrek',
+      'Half-Orc Barbarians — Commanded by Threska',
+      'Blackfang Shieldguards (spear and shield) — Commanded by Kethra Blackfang',
+      'Berserker Clans- Commanded by Kragh Skullsplitter',
+      'Beast Cavalry — Commanded by Drokha Bloodtusk',
+      'Redspire Clan- Commanded by Karsh Redspire',
+      'Goblin Skirmishers & Archers — Commanded by Grik the Goblin',
+      'Avalanche Breakers (Brutes)',
+      'Orc Warriors (Infantry)',
+      'Ogre Brutes / Siege Units',
+
+    ],
+    note:'The Stonefang Remnant is defined by what happened before the battle, not during it. Discipline is the inheritance of survival.',
   },
 
   // ══ MERCENARY ════════════════════════════════════════
@@ -4011,10 +4254,11 @@ function armyRender(filter, btn) {
   if (cnt)  cnt.textContent  = list.length;
   if (cnt2) cnt2.textContent = list.length + ' armies';
 
-  const tierOrder  = ['eleven','standing','specialized','naval','siege','garrison','allied','merc'];
+  const tierOrder  = ['eleven','standing','cavalry','specialized','naval','siege','garrison','allied','merc'];
   const tierLabels = {
     eleven:'⚔ Pillar Armies — The Eleven',
     standing:'🛡 Grand Standing Army',
+    cavalry:'🐴 Elite Cavalry',
     specialized:'🔱 Specialized & Support',
     naval:'⚓ Naval Forces',
     siege:'🏰 Siege & Assault',
@@ -4023,9 +4267,9 @@ function armyRender(filter, btn) {
     merc:'🗡 Mercenary Contracts',
   };
   const tierColors = {
-    eleven:'var(--gold2)', standing:'var(--red2)', specialized:'var(--blue3)',
-    naval:'var(--teal3)', siege:'var(--amber3)', garrison:'var(--gray2)',
-    allied:'var(--green3)', merc:'var(--text2)',
+    eleven:'var(--gold2)', standing:'var(--red2)', cavalry:'var(--amber3)',
+    specialized:'var(--blue3)', naval:'var(--teal3)', siege:'var(--amber3)',
+    garrison:'var(--gray2)', allied:'var(--green3)', merc:'var(--text2)',
   };
 
   const grouped = {};
@@ -4059,6 +4303,15 @@ function armyCard(a, tierColor) {
   const rolesHtml = (a.roles||[]).map(r =>
     `<span class="rel-tag" style="font-size:10px;border-color:${a.color}44;color:${a.color}">${r}</span>`
   ).join('');
+
+  const unitsHtml = a.units && a.units.length
+    ? `<div style="margin-top:10px;border-top:1px solid var(--border2);padding-top:10px">
+        <p style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Unit Composition</p>
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr><th style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:3px 6px;border-bottom:1px solid var(--border2)">Unit</th></tr></thead>
+          <tbody>${a.units.map((u,i)=>`<tr style="background:${i%2===0?'transparent':'var(--bg3)'}"><td style="font-size:11px;color:var(--text2);padding:4px 6px;border-bottom:1px solid var(--border2)22">${u}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>` : '';
 
   const armorHtml = a.armor && a.armor.length
     ? `<div style="margin-top:10px;border-top:1px solid var(--border2);padding-top:10px">
@@ -4096,6 +4349,7 @@ function armyCard(a, tierColor) {
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px">${rolesHtml}</div>
         ${a.desc ? `<p style="font-size:12px;color:var(--text2);line-height:1.65;margin:0">${a.desc}</p>` : ''}
+        ${unitsHtml}
         ${armorHtml}
         ${noteHtml}
       </div>

@@ -3317,5 +3317,140 @@ Do NOT include: Dramatic fantasy forest-elf styling. Dena Veil
                 job longer than most soldiers have been alive —
                 compact, grounded, and completely at home at
                 the treeline boundary she has defended for decades.
+
+────────────────────────────────────────
+BREN OAKSHIELD — Beastmaster Company Commander · Primal Vanguard
+────────────────────────────────────────
+Age/Race: Unknown (implied 30s–40s, 11+ years field command) · Human (male)
+
+Build: Lean and rangy — the build of someone who spends most
+       of his life outdoors keeping pace with dire wolves across
+       rough terrain. Not a front-line fighter's bulk; the
+       functional fitness of a handler who needs to read an
+       engagement from behind the front edge and move fast
+       when the packs need redirecting.Also a martial artist for close combat.
+
+Face: Weathered, practical — the face of a man who has spent
+      over a decade in the field with large predator animals.
+      Unremarkable in the way competent field commanders often
+      are: no scars that tell a story, just the wear of years
+      outside. Alert eyes that track movement instinctively.
+
+Hair: Dark, kept short and practical — nothing a wolf can grab.
+      Maybe a few days of stubble at most, not maintained enough
+      to be a beard.
+
+Eyes: Dark, sharp, and slightly unfocused in conversation —
+      he's always reading something other than the person
+      talking to him. The eyes of someone whose awareness
+      defaults to the perimeter, not the center.
+
+Expression (default): Quiet, calculating — the expression of
+      a man who is already three seconds ahead of the current
+      situation. Not tense; patient in the way predator-handlers
+      learn to be patient. Knows when to probe and when the
+      probe has given everything it's going to give.
+
+Armor/Clothing: Primal Vanguard field kit — medium leather
+      armor in dark greens and browns, built for forest terrain
+      and freedom of movement over protection. Command horn
+      at his hip, always accessible. No heavy plate — he needs
+      to read the engagement, not take a charge.
+
+Weapons/Tools: Hunting short-sword (sidearm, not his primary
+      tool) and a command horn — the horn is the real weapon,
+      the instrument that coordinates three dire wolf packs
+      across a broken engagement line. Both are worn, functional,
+      maintained. Also carries a sharp boomerang as his main weapon.
+
+
+Color Palette: Forest greens and bark-browns (#3A5A2A) —
+      Primal Vanguard field palette. Dark leather, no bright
+      metals. The palette of a man who operates behind the
+      front edge and does not want to be seen.
+
+Mood Keywords: Eleven years behind the front line · Knows the
+               wolves before they do · Stop testing the seams,
+               force the choice · Quiet tactical intelligence,
+               no theatrics
+
+Do NOT include: Heroic warrior posture or front-line fighter
+                framing. Bren Oakshield operates behind the
+                engagement, not in it. No battle-cry expression,
+                no raised sword. He should look like the person
+                who just decided where the wolves go next — calm,
+                positioned, and already watching the formation's
+                rear.
+
+────────────────────────────────────────
+BROKK GRANITEBORN — Commander · Stonemark Dwarven Advance Contingent
+────────────────────────────────────────
+Age/Race: Unknown (decades of command, reads as 60s–70s in Dwarf terms) · Dwarf (male)
+
+Build: Classic heavy-infantry Dwarf — broad-shouldered, thick-
+       limbed, built like the mountain range he marched through.
+       Not fat, not soft: the dense, load-bearing solidity of
+       a commander who takes the hammer front himself and has
+       done so for decades. Heavy even by Dwarf standards.
+
+Face: Older, deeply weathered — the face of a Dwarf who has
+      commanded heavy infantry through mountain terrain for
+      most of his life. Strong jaw, deep-set eyes, probably
+      a full beard in the Stonemark tradition (well-kept —
+      he's the senior tactical commander, not a berserker).
+      The face of someone whose quote is "Sit, girl. You're
+      just in time for the part where the dwarves win."
+
+Hair/Beard: Grey or iron-grey beard, full and kept — Stonemark
+      traditional. May have braided elements or clan markers
+      worked into the beard. Hair similarly grey and close-
+      cropped or pulled back under his helm.
+
+Eyes: Deep-set, calm, and impossibly unhurried — the eyes of
+      a commander who chose the concealed three-day mountain
+      route over the fast one, arrived correctly, and considers
+      this obvious. Steady, evaluating, faintly amused.
+
+Expression (default): The settled confidence of a man who has
+      been doing this for decades and finds most crises
+      manageable. Not smug — genuinely unbothered. The evening
+      after breaking Gorvak's northern wing he was sharing ale
+      around a fire with goblins and orcs. That is this man's
+      face.
+
+Armor/Clothing: Stonemark heavy dwarven plate — thick, granite-
+      grey and earth-toned stone-metal, built for mountain
+      terrain and prolonged engagement. Functional engravings
+      (clan/unit markers, not decorative flourishes). Granite
+      infantry shield on arm or propped nearby — large by
+      Dwarf standards, used as a line-locking tool as much as
+      personal protection. The armor of someone who leads from
+      the front.
+
+Weapons/Tools: Stonemark warhammer — his primary weapon and
+      command signal. When Brokk drives it into the ground,
+      his entire formation resets. Heavy, worn with use,
+      clearly the weapon of decades of field command.
+
+Color Palette: Granite-grey and stone-brown (#706050) —
+      Stonemark colors. Heavy iron and earth tones throughout.
+      The palette of deep mountain rock, not polished hall
+      metal. Warm around the edges from the evening fire that
+      followed the battle.
+
+Mood Keywords: Arrived correctly instead of quickly · Six
+               hundred dwarves, zero scouts registered the
+               approach · Leads from the hammer front · At
+               home by the fire after the battle as much as
+               on the battlefield
+
+Do NOT include: Aggressive battle-fury posture or theatric
+                dwarf-warrior staging. Brokk Graniteborn is
+                decades of settled tactical command — he is
+                calm, solid, and faintly amused by most
+                situations. No rage-face, no dramatic weapon
+                raise. He looks like the person who just won
+                because he planned better than the enemy did,
+                and knew it before the march began.
 ════════════════════════════════════════════════════════════════
 ════════════════════════════════════════════════════════════════
