@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starhaven · Full Unit Roster</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=EB+Garamond:wght@400;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08090C;--panel:#0F1118;--panel2:#13161E;--border:#1E222E;--border2:#262B38;
+  --parchment:#E6DFC8;--muted:#7A7568;--faint:#3A3830;--gold:#C8A040;--gold-dim:#6A5520;
+  /* Source colors */
+  --own:#182818;--own-b:#2A4A2A;--own-t:#80C080;
+  --ally:#181828;--ally-b:#2A2A4A;--ally-t:#8080C0;
+  --new:#201830;--new-b:#402860;--new-t:#C090FF;
+  --gar:#181818;--gar-b:#303030;--gar-t:#909090;
+  --merc:#281808;--merc-b:#4A3018;--merc-t:#C09050;
+  /* Branch colors */
+  --inf:#8A2020;--ran:#2A6A2A;--cav:#204A8A;--pol:#6A5020;
+  --bst:#6A3A10;--fly:#2A2A8A;--mon:#5A2A5A;--mag:#3A1A6A;
+  --rel:#8A6A10;--ste:#1A5A5A;--eng:#4A4A2A;--art:#5A3A10;
+  --nav:#104A6A;--und:#2A1040;--cmd:#6A6A2A;--log:#285028;
+  --int:#302040;--spt:#1A3A3A;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--parchment);font-family:'EB Garamond',serif;padding:18px 12px 60px;font-size:14px;}
+.wrap{max-width:1600px;margin:0 auto;}
+
+/* HERO */
+.hero{text-align:center;padding:18px 0 22px;border-bottom:1px solid var(--border);margin-bottom:20px;}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.35em;color:var(--gold-dim);text-transform:uppercase;margin-bottom:8px;}
+.eyebrow::before,.eyebrow::after{content:'✦';margin:0 8px;}
+h1{font-family:'Cinzel',serif;font-weight:900;font-size:clamp(22px,4vw,44px);
+  background:linear-gradient(180deg,#EDE4C8,var(--gold) 65%,var(--gold-dim));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.05em;}
+.hero-sub{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.1em;margin-top:7px;text-transform:uppercase;}
+
+/* FILTERS */
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;padding:12px 14px;background:var(--panel);border:1px solid var(--border);border-radius:5px;}
+.filter-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;align-self:center;margin-right:4px;}
+.fbtn{font-family:'JetBrains Mono',monospace;font-size:10px;padding:4px 10px;border-radius:3px;cursor:pointer;border:1px solid var(--border2);background:var(--panel2);color:var(--muted);transition:all .15s;}
+.fbtn:hover,.fbtn.active{color:var(--parchment);border-color:var(--gold-dim);background:#1A1810;}
+.fbtn[data-src="own"].active{background:var(--own);border-color:var(--own-b);color:var(--own-t);}
+.fbtn[data-src="ally"].active{background:var(--ally);border-color:var(--ally-b);color:var(--ally-t);}
+.fbtn[data-src="new"].active{background:var(--new);border-color:var(--new-b);color:var(--new-t);}
+.fbtn[data-src="gar"].active{background:var(--gar);border-color:var(--gar-b);color:var(--gar-t);}
+.fbtn[data-src="merc"].active{background:var(--merc);border-color:var(--merc-b);color:var(--merc-t);}
+
+/* STATS */
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:8px 14px;text-align:center;}
+.stat-n{font-family:'Cinzel',serif;font-size:22px;font-weight:700;color:var(--gold);}
+.stat-l{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-top:2px;}
+
+/* SEARCH */
+.search-wrap{margin-bottom:14px;}
+#search{width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:4px;padding:8px 12px;color:var(--parchment);font-family:'JetBrains Mono',monospace;font-size:12px;outline:none;}
+#search:focus{border-color:var(--gold-dim);}
+#search::placeholder{color:var(--faint);}
+
+/* TABLE */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:5px;}
+table{width:100%;border-collapse:collapse;background:var(--panel);}
+thead tr{background:var(--panel2);position:sticky;top:0;z-index:10;}
+th{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.14em;color:var(--muted);
+  text-transform:uppercase;padding:9px 12px;text-align:left;border-bottom:1px solid var(--border2);
+  white-space:nowrap;cursor:pointer;user-select:none;}
+th:hover{color:var(--gold);}
+th.sorted-asc::after{content:' ↑';color:var(--gold);}
+th.sorted-desc::after{content:' ↓';color:var(--gold);}
+td{padding:7px 12px;border-bottom:1px solid var(--border);vertical-align:middle;line-height:1.4;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:rgba(255,255,255,.013);}
+tr.hidden{display:none;}
+
+/* UNIT NAME */
+.uname{font-family:'EB Garamond',serif;font-weight:600;font-size:15px;color:var(--parchment);}
+
+/* SOURCE PILL */
+.src{font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 7px;border-radius:2px;white-space:nowrap;}
+.src-own {background:var(--own); border:1px solid var(--own-b); color:var(--own-t);}
+.src-ally{background:var(--ally);border:1px solid var(--ally-b);color:var(--ally-t);}
+.src-new {background:var(--new); border:1px solid var(--new-b); color:var(--new-t);}
+.src-gar {background:var(--gar); border:1px solid var(--gar-b); color:var(--gar-t);}
+.src-merc{background:var(--merc);border:1px solid var(--merc-b);color:var(--merc-t);}
+
+/* BRANCH TAG */
+.branch{font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 7px;border-radius:2px;white-space:nowrap;font-weight:700;}
+.br-inf{background:#3A0A0A;color:#E07070;}
+.br-ran{background:#0A2A0A;color:#70D070;}
+.br-cav{background:#080E2A;color:#70A0E0;}
+.br-pol{background:#2A1E08;color:#D0A060;}
+.br-bst{background:#2A1408;color:#D08040;}
+.br-fly{background:#08083A;color:#8080E0;}
+.br-mon{background:#200A20;color:#C070C0;}
+.br-mag{background:#100820;color:#A070E0;}
+.br-rel{background:#2A2008;color:#E0C050;}
+.br-ste{background:#081E1E;color:#50C0C0;}
+.br-eng{background:#181808;color:#B0B060;}
+.br-art{background:#200E08;color:#D08040;}
+.br-nav{background:#081820;color:#40A0C0;}
+.br-und{background:#0A0618;color:#9060C0;}
+.br-cmd{background:#202008;color:#C0C050;}
+.br-log{background:#0A180A;color:#60B060;}
+.br-int{background:#100818;color:#9070C0;}
+.br-spt{background:#0A1818;color:#50A0A0;}
+
+/* CLASS */
+.cls{font-size:14px;color:var(--parchment);}
+.subcls{font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+
+/* LOCATION */
+.loc{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);}
+
+/* SECTION HEADER ROW */
+tr.sec-head td{background:#0A0C10;padding:6px 12px;border-top:2px solid var(--border2);}
+.sec-title{font-family:'Cinzel',serif;font-size:12px;font-weight:700;color:var(--gold-dim);letter-spacing:.08em;text-transform:uppercase;}
+
+/* EMPTY STATE */
+.empty{text-align:center;padding:40px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--faint);}
+
+footer{text-align:center;margin-top:32px;padding-top:16px;border-top:1px solid var(--border);}
+.motto{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.1em;color:var(--gold-dim);text-transform:uppercase;}
+.fsub{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--faint);margin-top:5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="eyebrow">Starhaven Royal Military Archive</div>
+  <h1>FULL UNIT ROSTER</h1>
+  <div class="hero-sub">All Units · Branch · Class · Sub-Class · Location · Year 1052</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n" id="total-count">0</div><div class="stat-l">Total Units</div></div>
+  <div class="stat"><div class="stat-n" style="color:var(--own-t)">65</div><div class="stat-l">Starhaven Own</div></div>
+  <div class="stat"><div class="stat-n" style="color:var(--ally-t)">40</div><div class="stat-l">Allied</div></div>
+  <div class="stat"><div class="stat-n" style="color:var(--new-t)">23</div><div class="stat-l">Newly Created</div></div>
+  <div class="stat"><div class="stat-n" style="color:var(--merc-t)">3</div><div class="stat-l">Mercenary</div></div>
+</div>
+
+<div class="filters">
+  <span class="filter-label">Source:</span>
+  <button class="fbtn active" data-src="all">All</button>
+  <button class="fbtn" data-src="own">🏰 Starhaven Own</button>
+  <button class="fbtn" data-src="ally">🤝 Allied</button>
+  <button class="fbtn" data-src="new">🆕 New Units</button>
+  <button class="fbtn" data-src="gar">🏯 Garrison</button>
+  <button class="fbtn" data-src="merc">⚔️ Mercenary</button>
+  <span class="filter-label" style="margin-left:14px">Branch:</span>
+  <button class="fbtn" data-branch="all">All</button>
+  <button class="fbtn" data-branch="Infantry">Infantry</button>
+  <button class="fbtn" data-branch="Cavalry">Cavalry</button>
+  <button class="fbtn" data-branch="Ranged">Ranged</button>
+  <button class="fbtn" data-branch="Polearm">Polearm</button>
+  <button class="fbtn" data-branch="Beast Cavalry">Beast</button>
+  <button class="fbtn" data-branch="Flying">Flying</button>
+  <button class="fbtn" data-branch="Magic">Magic</button>
+  <button class="fbtn" data-branch="Stealth">Stealth</button>
+  <button class="fbtn" data-branch="Artillery">Artillery</button>
+  <button class="fbtn" data-branch="Naval">Naval</button>
+  <button class="fbtn" data-branch="Undead">Undead</button>
+</div>
+
+<div class="search-wrap">
+  <input type="text" id="search" placeholder="Search unit name, class, location...">
+</div>
+
+<div class="tbl-wrap">
+<table id="roster">
+<thead>
+  <tr>
+    <th data-col="name">Unit Name</th>
+    <th data-col="src">Source</th>
+    <th data-col="branch">Branch</th>
+    <th data-col="class">Class</th>
+    <th data-col="sub">Sub-Class</th>
+    <th data-col="loc">Location</th>
+  </tr>
+</thead>
+<tbody id="tbody">
+
+<!-- ═══ PILLAR ARMIES ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚔ The Eleven — Pillar Armies</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">The Dawnguard</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Very Heavy Infantry</span></td><td><span class="subcls">Royal Guard Infantry</span></td><td><span class="loc">Starhold Capital</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Ironwall</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Siege Defense · Line Holder</span></td><td><span class="loc">Ironpass / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Stealth"><td><span class="uname">Silent Wardens</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Rangers</span></td><td><span class="subcls">Longbowmen / Sharpshooters</span></td><td><span class="loc">Greenveil / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Flying"><td><span class="uname">Ninth Sky Corps</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-fly">Flying</span></td><td><span class="cls">Dragon / Wyvern Riders</span></td><td><span class="subcls">Aerial Battle Mage · Arcane Artillery</span></td><td><span class="loc">Vaelmark Arcane Base</span></td></tr>
+
+<tr data-src="own" data-branch="Beast Cavalry"><td><span class="uname">Primal Vanguard</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">War-Beast Command</span></td><td><span class="subcls">Primal Assault · Monster Suppression</span></td><td><span class="loc">Greenveil / Greywood</span></td></tr>
+
+<tr data-src="own" data-branch="Stealth"><td><span class="uname">Null Blades</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Assassins</span></td><td><span class="subcls">Shadow Walkers · Covert Ops</span></td><td><span class="loc">Duskwall — Classified</span></td></tr>
+
+<tr data-src="own" data-branch="Magic"><td><span class="uname">Ashen Guard</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-mag">Magic</span></td><td><span class="cls">Healer</span></td><td><span class="subcls">Combat Healing · Void Purification</span></td><td><span class="loc">Sancthaven / All Fronts</span></td></tr>
+
+<tr data-src="own" data-branch="Magic"><td><span class="uname">Iron Legion</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-mag">Special</span></td><td><span class="cls">Mechanized ⚙️</span></td><td><span class="subcls">Iron Tide Tanks · Augmented Infantry</span></td><td><span class="loc">Forgehaven Tidegate Arsenal</span></td></tr>
+
+<tr data-src="own" data-branch="Magic"><td><span class="uname">Resonance Corps</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-mag">Magic</span></td><td><span class="cls">Bond / Resonance ⚙️</span></td><td><span class="subcls">Soul Link · +60% Force Multiplier</span></td><td><span class="loc">Vaelmark / Embedded All Armies</span></td></tr>
+
+<!-- ═══ INTELLIGENCE ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🔍 Intelligence Organizations</span></td></tr>
+
+<tr data-src="new" data-branch="Stealth"><td><span class="uname">The Web 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-int">Intelligence</span></td><td><span class="cls">Intelligence Network</span></td><td><span class="subcls">Counterintelligence · Diplomatic Intel</span></td><td><span class="loc">Classified — All Capitals</span></td></tr>
+
+<tr data-src="new" data-branch="Stealth"><td><span class="uname">The Shadow Court 🆕 ♀</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-int">Intelligence</span></td><td><span class="cls">Court Intelligence</span></td><td><span class="subcls">Female Only · Leverage Mapping</span></td><td><span class="loc">Classified — All Noble Courts</span></td></tr>
+
+<!-- ═══ STANDING ARMIES ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚔ Grand Standing Army — Field Armies</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">1st Field Army — Heavy Infantry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Hammer Doctrine · Main Line</span></td><td><span class="loc">Ironpass / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Polearm"><td><span class="uname">1st Field Army — Heavy Spearmen</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Heavy Spearmen</span></td><td><span class="subcls">Anti-Cavalry · Formation Anchor</span></td><td><span class="loc">Ironpass / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Ranged"><td><span class="uname">1st Field Army — Heavy Archers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Heavy Archers</span></td><td><span class="subcls">Sustained Barrage · Volley Fire</span></td><td><span class="loc">Ironpass / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">1st Field Army — Assault Cavalry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Exploitation · Local Breakthrough</span></td><td><span class="loc">Ironpass / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Engineering"><td><span class="uname">1st Field Army — Siege Engineers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-eng">Engineering</span></td><td><span class="cls">Engineers</span></td><td><span class="subcls">Siege Support · Field Fortification</span></td><td><span class="loc">Ironpass / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">2nd Field Army — Light Infantry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Light Infantry</span></td><td><span class="subcls">Speed Doctrine · Vanguard Screen</span></td><td><span class="loc">Coldmarch / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">2nd Field Army — Medium Infantry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Medium Infantry</span></td><td><span class="subcls">Flexible Frontline · Speed Doctrine</span></td><td><span class="loc">Coldmarch / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Ranged"><td><span class="uname">2nd Field Army — Archers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Archers</span></td><td><span class="subcls">Standard Ranged · Mobile Support</span></td><td><span class="loc">Coldmarch / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">2nd Field Army — Light Cavalry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Light Cavalry</span></td><td><span class="subcls">Flank Guard · Outer Perimeter</span></td><td><span class="loc">Coldmarch / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">2nd Field Army — Mounted Archers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Mounted Archers</span></td><td><span class="subcls">Mobile Harassment · Bait Doctrine</span></td><td><span class="loc">Coldmarch / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Stealth"><td><span class="uname">2nd Field Army — Scouts & Recon</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Scouts</span></td><td><span class="subcls">Battlefield Awareness · Forward Eyes</span></td><td><span class="loc">Coldmarch / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Polearm"><td><span class="uname">3rd Field Army — Heavy Spearmen</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Heavy Spearmen</span></td><td><span class="subcls">Anti-Cavalry Wall · Defensive Anchor</span></td><td><span class="loc">Distributed Garrisons</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">3rd Field Army — Heavy Infantry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Garrison-Rated · Defensive Reserve</span></td><td><span class="loc">Distributed Garrisons</span></td></tr>
+
+<tr data-src="own" data-branch="Ranged"><td><span class="uname">3rd Field Army — Crossbowmen</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Crossbowmen</span></td><td><span class="subcls">Anti-Elite · Anti-Formation</span></td><td><span class="loc">Distributed Garrisons</span></td></tr>
+
+<tr data-src="own" data-branch="Engineering"><td><span class="uname">3rd Field Army — Engineers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-eng">Engineering</span></td><td><span class="cls">Engineers</span></td><td><span class="subcls">Field Fortification · Stakes & Barriers</span></td><td><span class="loc">Distributed Garrisons</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">4th Field Army — Medium Infantry 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Medium Infantry</span></td><td><span class="subcls">Adaptive Doctrine · Second Front</span></td><td><span class="loc">Starhold Central Reserve</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">4th Field Army — Light Infantry 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Light Infantry</span></td><td><span class="subcls">Multi-Terrain Screening</span></td><td><span class="loc">Starhold Central Reserve</span></td></tr>
+
+<tr data-src="new" data-branch="Ranged"><td><span class="uname">4th Field Army — Heavy Crossbowmen 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Heavy Crossbowmen</span></td><td><span class="subcls">Anti-Armor Ranged</span></td><td><span class="loc">Starhold Central Reserve</span></td></tr>
+
+<tr data-src="new" data-branch="Polearm"><td><span class="uname">4th Field Army — Halberdiers 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Halberdiers</span></td><td><span class="subcls">Anti-Armor · Anti-Cavalry · Anti-Beast</span></td><td><span class="loc">Starhold Central Reserve</span></td></tr>
+
+<tr data-src="new" data-branch="Engineering"><td><span class="uname">4th Field Army — Field Engineers 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-eng">Engineering</span></td><td><span class="cls">Engineers</span></td><td><span class="subcls">Emergency Fortification · Breach</span></td><td><span class="loc">Starhold Central Reserve</span></td></tr>
+
+<tr data-src="new" data-branch="Stealth"><td><span class="uname">4th Field Army — Scout & Recon 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Scouts</span></td><td><span class="subcls">Direct Intel to Veyra Tal</span></td><td><span class="loc">Starhold Central Reserve</span></td></tr>
+
+<!-- ═══ CAVALRY ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🐴 Cavalry Units</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">Black Charge</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Cataphracts</span></td><td><span class="subcls">Shock Cavalry · Breakthrough · 23/23</span></td><td><span class="loc">Starhold Reserve / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">Ironmane Lancers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Very Heavy Cavalry</span></td><td><span class="subcls">Elite Heavy Shock · Never Disrupted</span></td><td><span class="loc">Ironmane Fields / Mobile</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">Windlance Cavalry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Mounted Archers</span></td><td><span class="subcls">Light Horse Archers · Harassment</span></td><td><span class="loc">Mobile with 2nd Army</span></td></tr>
+
+<tr data-src="new" data-branch="Cavalry"><td><span class="uname">Silver Swan Cavalry Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Modular Flank Security · 4 Regional Breeds</span></td><td><span class="loc">4 Regional Depots (N/E/W/S)</span></td></tr>
+
+<tr data-src="new" data-branch="Cavalry"><td><span class="uname">— Silver Swan North (Coldblood) 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Mountain-Capable · Cold Endurance</span></td><td><span class="loc">Coldmarch</span></td></tr>
+
+<tr data-src="new" data-branch="Cavalry"><td><span class="uname">— Silver Swan East (Ashfield Runner) 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Fastest Breed · Open Plains</span></td><td><span class="loc">Ashfield</span></td></tr>
+
+<tr data-src="new" data-branch="Cavalry"><td><span class="uname">— Silver Swan West (Forest Cross) 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Woodland Sure-Footed · Silent</span></td><td><span class="loc">Greyveil Approach</span></td></tr>
+
+<tr data-src="new" data-branch="Cavalry"><td><span class="uname">— Silver Swan South (Sandhoof Cross) 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Heat-Adapted · Karath Bloodline</span></td><td><span class="loc">Sancthaven</span></td></tr>
+
+<tr data-src="new" data-branch="Cavalry"><td><span class="uname">The Dawnlancers 🆕 ♀</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Heavy Cavalry</span></td><td><span class="subcls">Female Elite · Dawn Wedge · Long Dawn Pursuit</span></td><td><span class="loc">Mobile with 2nd Army</span></td></tr>
+
+<!-- ═══ SPECIALIZED — INFANTRY ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚔ Specialized Units — Infantry / Shock</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">The Warbreakers 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Shock Infantry</span></td><td><span class="subcls">Breach Assault · No Fall-Back Doctrine</span></td><td><span class="loc">Mobile with 1st + 4th Army</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">The Ashrunners 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Light Shock Infantry</span></td><td><span class="subcls">Gap Exploitation · 10-Second Window</span></td><td><span class="loc">Mobile with 2nd + 4th Army</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">Dawnsteel Order 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Shock Infantry</span></td><td><span class="subcls">Individual Combat · Three Cuts Doctrine</span></td><td><span class="loc">Mobile with 4th Army</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">Ironbreaker Mace Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Great Weapon Infantry</span></td><td><span class="subcls">Anti-Heavy Infantry · Grundhammer</span></td><td><span class="loc">Fortgehaven</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">The Gauntlet Army 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Unarmed Martial ⚙️</span></td><td><span class="subcls">Iron Fist · Beastman · Cold Focus</span></td><td><span class="loc">Greypeak Highland Approaches</span></td></tr>
+
+<!-- ═══ SPECIALIZED — POLEARM ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚔ Specialized Units — Polearm</span></td></tr>
+
+<tr data-src="new" data-branch="Polearm"><td><span class="uname">Ironveil Spear Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Heavy Spearmen</span></td><td><span class="subcls">Modular Anti-Cavalry · Ironveil Lock</span></td><td><span class="loc">Distributed — 1 Battalion per Field Army</span></td></tr>
+
+<tr data-src="own" data-branch="Polearm"><td><span class="uname">Void Breakers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Monster Hunters</span></td><td><span class="subcls">Void Entity · 4 Orders: Fang/Hollow/Brand/Seal</span></td><td><span class="loc">Ashenveil / Deployed</span></td></tr>
+
+<!-- ═══ SPECIALIZED — RANGED ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🏹 Specialized Units — Ranged</span></td></tr>
+
+<tr data-src="own" data-branch="Ranged"><td><span class="uname">Ironbolt Division</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Heavy Crossbowmen</span></td><td><span class="subcls">Fixed Battery · 80,000 Bolts/Day · 4 Ammo Types</span></td><td><span class="loc">Ironpass / Fortresses</span></td></tr>
+
+<tr data-src="new" data-branch="Ranged"><td><span class="uname">Silverleaf Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Longbowmen</span></td><td><span class="subcls">Elven Precision · 180lb Draw · 400yd Range</span></td><td><span class="loc">Mobile with 4th Army</span></td></tr>
+
+<tr data-src="own" data-branch="Magic"><td><span class="uname">Arcane Artillery Corps</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-art">Artillery</span></td><td><span class="cls">Magical Artillery</span></td><td><span class="subcls">Synchronized Elemental · Opens Every Battle</span></td><td><span class="loc">Vaelmark / Mobile</span></td></tr>
+
+<!-- ═══ SPECIALIZED — AERIAL / MAGIC ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">✦ Specialized Units — Aerial / Magic</span></td></tr>
+
+<tr data-src="new" data-branch="Flying"><td><span class="uname">Skywarden Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-fly">Flying</span></td><td><span class="cls">Light Flying / Recon</span></td><td><span class="subcls">Ashwing Eagles · Signal Relay · 4 Aeries</span></td><td><span class="loc">Distributed — 1 Aerie per Field Army</span></td></tr>
+
+<tr data-src="new" data-branch="Magic"><td><span class="uname">The Runebreakers 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-mag">Magic</span></td><td><span class="cls">Anti-Magic Specialist</span></td><td><span class="subcls">Null-Stone · Silence Bolts · Mage Hunters</span></td><td><span class="loc">Embedded — 450 per Field Army</span></td></tr>
+
+<tr data-src="new" data-branch="Artillery"><td><span class="uname">Iron Talon Batteries 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-art">Artillery</span></td><td><span class="cls">Mobile Anti-Aerial</span></td><td><span class="subcls">Talon Grid · Standard/Screamer/Chain Bolts</span></td><td><span class="loc">Embedded — 6 Batteries per Field Army</span></td></tr>
+
+<!-- ═══ SPECIALIZED — SUPPORT / MISC ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚙ Specialized Units — Support & Command</span></td></tr>
+
+<tr data-src="own" data-branch="Magic"><td><span class="uname">Apothecary Corps</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-spt">Support</span></td><td><span class="cls">Field Medical</span></td><td><span class="subcls">Non-Magical Medicine · Surgery · Disease</span></td><td><span class="loc">Embedded — All Field Armies</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Holy Knights — Dawn Templars</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-rel">Religious</span></td><td><span class="cls">Paladin</span></td><td><span class="subcls">Heavy Holy Infantry · Main Line</span></td><td><span class="loc">Sancthaven Cathedral Fortress</span></td></tr>
+
+<tr data-src="own" data-branch="Cavalry"><td><span class="uname">Holy Knights — Radiant Cavaliers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-rel">Religious</span></td><td><span class="cls">Paladin</span></td><td><span class="subcls">Cavalry Shock · Sacred Charge</span></td><td><span class="loc">Sancthaven Cathedral Fortress</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Holy Knights — Exorcist Knights</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-rel">Religious</span></td><td><span class="cls">Inquisitor</span></td><td><span class="subcls">Anti-Demon · Overwatch Response</span></td><td><span class="loc">Sancthaven / Frosthold</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Holy Knights — Relic Wardens</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-rel">Religious</span></td><td><span class="cls">Paladin</span></td><td><span class="subcls">Anti-Undead · Binding Disruption</span></td><td><span class="loc">Sancthaven Cathedral Fortress</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Holy Knights — Saintguard</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-rel">Religious</span></td><td><span class="cls">Paladin</span></td><td><span class="subcls">Sacred Protection · Role Undefined</span></td><td><span class="loc">Sancthaven Cathedral Fortress</span></td></tr>
+
+<tr data-src="new" data-branch="Infantry"><td><span class="uname">The Undying Colors 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-cmd">Command</span></td><td><span class="cls">Standard Bearers</span></td><td><span class="subcls">Rally Point · 3rd Rank Every Formation</span></td><td><span class="loc">Embedded — All Armies & Pillars</span></td></tr>
+
+<tr data-src="new" data-branch="Magic"><td><span class="uname">Arcanum Tidewatch 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Sea Mages</span></td><td><span class="subcls">Weather Control · Hull Warding · Arcanum Secondment</span></td><td><span class="loc">Saltmere Naval Capital</span></td></tr>
+
+<tr data-src="new" data-branch="Engineering"><td><span class="uname">Iron Road Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-log">Logistics</span></td><td><span class="cls">Logistics Corps</span></td><td><span class="subcls">600 Wagons · Multi-Front Supply · Field Forge</span></td><td><span class="loc">Ashfield Hub / Fortgehaven</span></td></tr>
+
+<tr data-src="new" data-branch="Stealth"><td><span class="uname">Dusk Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Night Warfare</span></td><td><span class="subcls">Dark Ops · Dusk Mask · No-Fire Rule</span></td><td><span class="loc">Distributed — 1 Company per Field Army</span></td></tr>
+
+<tr data-src="new" data-branch="Stealth"><td><span class="uname">The Ironpack 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-spt">Support</span></td><td><span class="cls">War Hound Corps</span></td><td><span class="subcls">Ashound/Ironjaw/Nighthound · Handler-Hound Pairs</span></td><td><span class="loc">Distributed — 100 pairs per Field Army</span></td></tr>
+
+<tr data-src="new" data-branch="Stealth"><td><span class="uname">The Crown Shadows 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Diplomatic Guard</span></td><td><span class="subcls">Cover-Identity · 60 Members · Invisible Circle</span></td><td><span class="loc">Mobile with Rayden Cale</span></td></tr>
+
+<!-- ═══ NAVAL ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚓ Naval Forces</span></td></tr>
+
+<tr data-src="own" data-branch="Naval"><td><span class="uname">Dawnfleet</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Warship Fleet</span></td><td><span class="subcls">240 Warships · Ocean Operations</span></td><td><span class="loc">Dawncliff Sea Fortress</span></td></tr>
+
+<tr data-src="new" data-branch="Naval"><td><span class="uname">Tidebreaker Corps 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Marines</span></td><td><span class="subcls">Shore Defense · Marine Strike Force</span></td><td><span class="loc">Dawncliff (3,500) / Saltmere (1,500)</span></td></tr>
+
+<tr data-src="new" data-branch="Naval"><td><span class="uname">Tidebreaker — Shore Infantry 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Marines</span></td><td><span class="subcls">Beach & Wet Stone Footing Doctrine</span></td><td><span class="loc">Dawncliff</span></td></tr>
+
+<tr data-src="new" data-branch="Naval"><td><span class="uname">Tidebreaker — Cliff Assault Guard 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Marines</span></td><td><span class="subcls">Vertical Terrain · Grapple-Trained</span></td><td><span class="loc">Dawncliff</span></td></tr>
+
+<tr data-src="new" data-branch="Naval"><td><span class="uname">Tidebreaker — Marine Strike Force 🆕</span></td><td><span class="src src-new">🆕 New</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Marines</span></td><td><span class="subcls">Boarding · Counter-Beachhead · Offensive</span></td><td><span class="loc">Saltmere / Mobile</span></td></tr>
+
+<!-- ═══ ARTILLERY ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">💣 Siege & Artillery</span></td></tr>
+
+<tr data-src="own" data-branch="Artillery"><td><span class="uname">Stonethrow Corps</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-art">Artillery</span></td><td><span class="cls">Trebuchet / Catapult / Ballista</span></td><td><span class="subcls">Voidbane Payload · Vaelmark-Havenfire Hybrid</span></td><td><span class="loc">All Major Fortresses / Mobile</span></td></tr>
+
+<!-- ═══ GARRISONS ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🏯 Garrison Forces</span></td></tr>
+
+<tr data-src="gar" data-branch="Infantry"><td><span class="uname">FrostGuard</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Gate Defense · Mountain Warfare</span></td><td><span class="loc">Frosthold Bastion</span></td></tr>
+
+<tr data-src="gar" data-branch="Infantry"><td><span class="uname">IceBreakers</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Shock Infantry</span></td><td><span class="subcls">Breach Fortifications · Elite Assault</span></td><td><span class="loc">Frosthold Bastion</span></td></tr>
+
+<tr data-src="gar" data-branch="Beast Cavalry"><td><span class="uname">Snowtusk Cavalry</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Snow Elk Cavalry ⚙️</span></td><td><span class="subcls">Mountain Snow Elk · Cold-Adapted</span></td><td><span class="loc">Frosthold Bastion</span></td></tr>
+
+<tr data-src="gar" data-branch="Infantry"><td><span class="uname">Mountain Skirmishers</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Light Infantry</span></td><td><span class="subcls">Ambush · Cliffside Warfare · Hit-and-Run</span></td><td><span class="loc">Frosthold Bastion</span></td></tr>
+
+<tr data-src="gar" data-branch="Stealth"><td><span class="uname">Ranger Companies</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Rangers</span></td><td><span class="subcls">Long-Range Specialists · Strike from Shadows</span></td><td><span class="loc">Frosthold Bastion</span></td></tr>
+
+<tr data-src="gar" data-branch="Infantry"><td><span class="uname">Northern Militia</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Militia</span></td><td><span class="subcls">Villagers · Hunters · Clansmen</span></td><td><span class="loc">Frosthold Bastion</span></td></tr>
+
+<tr data-src="gar" data-branch="Infantry"><td><span class="uname">Ironpass Garrison</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Three-Ring Fortress · 60 Iron Tide Tanks</span></td><td><span class="loc">Ironpass Citadel</span></td></tr>
+
+<tr data-src="gar" data-branch="Naval"><td><span class="uname">Dawncliff Garrison</span></td><td><span class="src src-gar">🏯 Garrison</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Coastal Defense</span></td><td><span class="subcls">Cliff Batteries · Naval Base · Anti-Invasion</span></td><td><span class="loc">Dawncliff Sea Fortress</span></td></tr>
+
+<!-- ═══ GREENVEIL ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🌲 Greenveil Defense Forces</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Warden Infantry</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Light Infantry</span></td><td><span class="subcls">Forest Defense · Warden Doctrine</span></td><td><span class="loc">Greenveil</span></td></tr>
+
+<tr data-src="own" data-branch="Ranged"><td><span class="uname">Warden Archers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Light Archers</span></td><td><span class="subcls">Forest Ranged · Mobile Harassment</span></td><td><span class="loc">Greenveil</span></td></tr>
+
+<tr data-src="own" data-branch="Beast Cavalry"><td><span class="uname">Beast Wardens — Dire Wolf Handlers</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Wolf Riders</span></td><td><span class="subcls">Handler-Bond · Dire Wolf Strike</span></td><td><span class="loc">Greenveil</span></td></tr>
+
+<tr data-src="own" data-branch="Beast Cavalry"><td><span class="uname">Greenveil War Beasts — War Bears</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">War Bear Cavalry ⚙️</span></td><td><span class="subcls">Full Plate Barding · Heavy Beast Wave</span></td><td><span class="loc">Greenveil / Primal Vanguard</span></td></tr>
+
+<tr data-src="own" data-branch="Beast Cavalry"><td><span class="uname">Greenveil War Beasts — Mosshorn Rhinos</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Rhino Cavalry ⚙️</span></td><td><span class="subcls">Fast Disruption · Formation Break</span></td><td><span class="loc">Greenveil / Primal Vanguard</span></td></tr>
+
+<tr data-src="own" data-branch="Beast Cavalry"><td><span class="uname">Greenveil War Beasts — Thornfang Cats</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Cat Cavalry ⚙️</span></td><td><span class="subcls">Fast Flanking Predators</span></td><td><span class="loc">Greenveil / Primal Vanguard</span></td></tr>
+
+<tr data-src="own" data-branch="Beast Cavalry"><td><span class="uname">Greenveil War Beasts — Great Elk</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Forest Elk Cavalry ⚙️</span></td><td><span class="subcls">Woodland-Adapted · Forest Subspecies</span></td><td><span class="loc">Greenveil</span></td></tr>
+
+<tr data-src="own" data-branch="Stealth"><td><span class="uname">Greenveil Scout Corps</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-ste">Stealth</span></td><td><span class="cls">Scouts</span></td><td><span class="subcls">Forest Recon · Tracking</span></td><td><span class="loc">Greenveil</span></td></tr>
+
+<tr data-src="own" data-branch="Infantry"><td><span class="uname">Sentinel Guards</span></td><td><span class="src src-own">🏰 Own</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Elite Infantry</span></td><td><span class="subcls">Garrison-Elite · Forest Defense</span></td><td><span class="loc">Greenveil</span></td></tr>
+
+<!-- ═══ SABLE CONCLAVE ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">💀 Allied — Sable Conclave</span></td></tr>
+
+<tr data-src="ally" data-branch="Undead"><td><span class="uname">Skeleton Infantry</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-und">Undead</span></td><td><span class="cls">Skeleton Warriors</span></td><td><span class="subcls">Absorbing Wave · Never Rout · Never Tire</span></td><td><span class="loc">Sable Isles</span></td></tr>
+
+<tr data-src="ally" data-branch="Undead"><td><span class="uname">Skeleton Archers</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-und">Undead</span></td><td><span class="cls">Skeleton Warriors</span></td><td><span class="subcls">Tireless Volley · Sustained Fire</span></td><td><span class="loc">Sable Isles</span></td></tr>
+
+<tr data-src="ally" data-branch="Undead"><td><span class="uname">Specialized Undead Units</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-und">Undead</span></td><td><span class="cls">Grave Guard</span></td><td><span class="subcls">Elite Undead Line</span></td><td><span class="loc">Sable Cathedral</span></td></tr>
+
+<tr data-src="ally" data-branch="Undead"><td><span class="uname">Revenant Knights</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-und">Undead</span></td><td><span class="cls">Death Knights</span></td><td><span class="subcls">Mounted Undead Shock Cavalry · Sable Elite</span></td><td><span class="loc">Sable Isles</span></td></tr>
+
+<tr data-src="ally" data-branch="Undead"><td><span class="uname">Arch-Necromancer's Guard</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-und">Undead</span></td><td><span class="cls">Grave Guard</span></td><td><span class="subcls">Personal Escort · Travels with Sorvane</span></td><td><span class="loc">Mobile with Sorvane Nullis</span></td></tr>
+
+<tr data-src="ally" data-branch="Magic"><td><span class="uname">Necromancer Mages</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-mag">Magic</span></td><td><span class="cls">Necromancer</span></td><td><span class="subcls">Binds & Sustains Undead Legions</span></td><td><span class="loc">Sable Isles</span></td></tr>
+
+<!-- ═══ KARATH SULTANATE ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🐪 Allied — Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Beast Cavalry"><td><span class="uname">Karath Mammoths</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Mammoth Riders</span></td><td><span class="subcls">Tower-Mounted · 6 Archers Each · Lead Formation</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Beast Cavalry"><td><span class="uname">Karath War Elephants (50)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">War Elephants</span></td><td><span class="subcls">Armored · Tower-Mounted · 4 Pikes Each</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Cavalry"><td><span class="uname">Desert Cavalry (1,500)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Medium Cavalry</span></td><td><span class="subcls">Karath Bloodline · Sand & Distance</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Cavalry"><td><span class="uname">Fighting Camelknights (800)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Shock Cavalry</span></td><td><span class="subcls">Camel-Mounted · Desert Shock</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Desert Sword & Shield Infantry (12,000)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Medium Infantry</span></td><td><span class="subcls">Sand-Light Armor · Open-Terrain Mobile</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Ranged"><td><span class="uname">Desert Archers (10,000)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Archers</span></td><td><span class="subcls">Mobile · Largest Single Ranged Unit in Alliance</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Polearm"><td><span class="uname">Desert Medium Spearmen (12,000)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Spearmen</span></td><td><span class="subcls">Anti-Cavalry · Desert Formation</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Desert Heavy Infantry (5,000)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Great Weapon Infantry</span></td><td><span class="subcls">Heavy Two-Handed Execution Axe</span></td><td><span class="loc">Karath Sultanate</span></td></tr>
+
+<!-- ═══ STONEMARK HOLDS ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🪨 Allied — Stonemark Holds</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Ironbreakers (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Hammer & Shield · Mountain Warfare</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Hammerers (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Light Infantry</span></td><td><span class="subcls">Axes & Spears · Vanguard</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Longbeards (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Elite Infantry</span></td><td><span class="subcls">Two-Handed Hammers · Counter-Push</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<tr data-src="ally" data-branch="Ranged"><td><span class="uname">Quarrelers (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Crossbowmen</span></td><td><span class="subcls">Dwarven Crossbow Corps</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<tr data-src="ally" data-branch="Ranged"><td><span class="uname">Thunderers (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Handgunners</span></td><td><span class="subcls">Hand Cannoneers · Direct Fire</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<tr data-src="ally" data-branch="Engineering"><td><span class="uname">Mountain Engineers (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-eng">Engineering</span></td><td><span class="cls">Engineers</span></td><td><span class="subcls">400 Years Mountain Engineering</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<tr data-src="ally" data-branch="Artillery"><td><span class="uname">Cannon Crews (Dwarven)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-art">Artillery</span></td><td><span class="cls">Cannon</span></td><td><span class="subcls">Dwarven Artillery Operators</span></td><td><span class="loc">Stonemark Hold</span></td></tr>
+
+<!-- ═══ STONEFANG REMNANT ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">🪓 Allied — Stonefang Remnant</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Ancestor Guard</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Elite Infantry</span></td><td><span class="subcls">Drogar's Personal Elite · Command Anchor</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Mountain Berserkers</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Berserkers</span></td><td><span class="subcls">Disciplined Frenzy · Train Every Day</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Berserker Clans (Kragh)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Berserkers</span></td><td><span class="subcls">Wilder Tradition · Uncontrolled Frenzy</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Half-Orc Barbarians (Threska)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Berserkers</span></td><td><span class="subcls">Heavy Assault · Shock Troops</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Polearm"><td><span class="uname">Blackfang Shieldguards (Kethra)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Spearmen</span></td><td><span class="subcls">Spear & Shield · Defensive Anchor in Chaos</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Orc Warriors</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Medium Infantry</span></td><td><span class="subcls">Standard Melee Backbone</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Redspire Clan (Karsh)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Medium Infantry</span></td><td><span class="subcls">Separate Clan Formation</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Avalanche Breakers</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Great Weapon Infantry</span></td><td><span class="subcls">Heavy Brutes · Initial Collision</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Beast Cavalry"><td><span class="uname">Stonefang Beast Cavalry (Drokha)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-bst">Beast Cavalry</span></td><td><span class="cls">Beast Cavalry ⚙️</span></td><td><span class="subcls">Shock Assault · Speed Exploitation</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Ranged"><td><span class="uname">Goblin Skirmishers & Archers (Grik)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Light Archers</span></td><td><span class="subcls">Light Harassment · Advance Screen</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Engineering"><td><span class="uname">Goblin Tunnel Scouts</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-eng">Engineering</span></td><td><span class="cls">Sappers</span></td><td><span class="subcls">Tunnel Scouts · Climbers · Breach Support</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Monster"><td><span class="uname">Red-Skinned Troll Tribe (Kaszrek)</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-mon">Monster</span></td><td><span class="cls">Trolls</span></td><td><span class="subcls">Regenerating · Attrition Absorber</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<tr data-src="ally" data-branch="Monster"><td><span class="uname">Ogre Brutes / Siege Units</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-mon">Monster</span></td><td><span class="cls">Ogres</span></td><td><span class="subcls">Siege Breaker · Dense Formation Crusher</span></td><td><span class="loc">Stonefang — Highland Mountains</span></td></tr>
+
+<!-- ═══ KINGDOM OF IRONMERE ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚔ Allied — Kingdom of Ironmere</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Ironmere Shock Heavy Infantry</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Shock & Counter-Push · Ironmere Tradition</span></td><td><span class="loc">Ironmere Kingdom</span></td></tr>
+
+<tr data-src="ally" data-branch="Infantry"><td><span class="uname">Ironmere Veterans</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Elite Infantry</span></td><td><span class="subcls">The Tradition Rhegar Built From</span></td><td><span class="loc">Ironmere Kingdom</span></td></tr>
+
+<tr data-src="ally" data-branch="Cavalry"><td><span class="uname">Royal Heavy Cavalry</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-cav">Cavalry</span></td><td><span class="cls">Heavy Cavalry</span></td><td><span class="subcls">Right Flank Reinforcement</span></td><td><span class="loc">Ironmere Kingdom</span></td></tr>
+
+<tr data-src="ally" data-branch="Ranged"><td><span class="uname">Royal Archers</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-ran">Ranged</span></td><td><span class="cls">Archers</span></td><td><span class="subcls">Rear Fire Support</span></td><td><span class="loc">Ironmere Kingdom</span></td></tr>
+
+<tr data-src="ally" data-branch="Engineering"><td><span class="uname">Royal Engineers & Siege Corps</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-eng">Engineering</span></td><td><span class="cls">Siege Masters</span></td><td><span class="subcls">Engineers & Siege Support</span></td><td><span class="loc">Ironmere Kingdom</span></td></tr>
+
+<!-- ═══ THALASSIAN LEAGUE ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚓ Allied — Thalassian League</span></td></tr>
+
+<tr data-src="ally" data-branch="Naval"><td><span class="uname">Thalassian First Fleet</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Warship Fleet</span></td><td><span class="subcls">Admiral-King Crest Vane · Offensive</span></td><td><span class="loc">Thalassian Sea-States</span></td></tr>
+
+<tr data-src="ally" data-branch="Naval"><td><span class="uname">Thalassian Second Fleet</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Warship Fleet</span></td><td><span class="subcls">Admiral-Consort Seren Vane · Defensive</span></td><td><span class="loc">Thalassian Sea-States</span></td></tr>
+
+<tr data-src="ally" data-branch="Naval"><td><span class="uname">Marine Boarding Corps</span></td><td><span class="src src-ally">🤝 Allied</span></td><td><span class="branch br-nav">Naval</span></td><td><span class="cls">Marines</span></td><td><span class="subcls">Ship-to-Ship · Boarding Actions</span></td><td><span class="loc">Thalassian Sea-States</span></td></tr>
+
+<!-- ═══ MERCENARY ═══ -->
+<tr class="sec-head"><td colspan="6"><span class="sec-title">⚔️ Mercenary</span></td></tr>
+
+<tr data-src="merc" data-branch="Infantry"><td><span class="uname">The Iron Reavers</span></td><td><span class="src src-merc">⚔️ Merc</span></td><td><span class="branch br-inf">Infantry</span></td><td><span class="cls">Heavy Infantry</span></td><td><span class="subcls">Anti-Corruption · Ashfield Standing Contract</span></td><td><span class="loc">Ashfield</span></td></tr>
+
+<tr data-src="merc" data-branch="Polearm"><td><span class="uname">Void Hounds</span></td><td><span class="src src-merc">⚔️ Merc</span></td><td><span class="branch br-pol">Polearm</span></td><td><span class="cls">Monster Hunters</span></td><td><span class="subcls">Void Entity Tracking · B-Tier Events</span></td><td><span class="loc">Varies by Contract</span></td></tr>
+
+<tr data-src="merc" data-branch="Magic"><td><span class="uname">Silverchain Mages</span></td><td><span class="src src-merc">⚔️ Merc</span></td><td><span class="branch br-mag">Magic</span></td><td><span class="cls">Enchanter</span></td><td><span class="subcls">Ward Architecture · Buff & Counter-Magic</span></td><td><span class="loc">Varies by Contract</span></td></tr>
+
+</tbody>
+</table>
+</div>
+
+<div id="empty-state" class="empty" style="display:none">No units match your filters.</div>
+
+<footer>
+  <div class="motto">Every Unit Named. Every Position Marked.</div>
+  <div class="fsub">STARHAVEN FULL UNIT ROSTER · WIKI-VERIFIED + NEW UNITS · YEAR 1052</div>
+</footer>
+</div>
+
+<script>
+const tbody = document.getElementById('tbody');
+const rows = Array.from(tbody.querySelectorAll('tr[data-src]'));
+const emptyState = document.getElementById('emptyState');
+const totalCount = document.getElementById('total-count');
+totalCount.textContent = rows.length;
+
+let activeSrc = 'all', activeBranch = 'all', searchTerm = '';
+
+function applyFilters() {
+  let visible = 0;
+  rows.forEach(r => {
+    const src = r.dataset.src;
+    const branch = r.dataset.branch;
+    const text = r.textContent.toLowerCase();
+    const srcOk = activeSrc === 'all' || src === activeSrc;
+    const branchOk = activeBranch === 'all' || branch === activeBranch;
+    const searchOk = searchTerm === '' || text.includes(searchTerm);
+    const show = srcOk && branchOk && searchOk;
+    r.classList.toggle('hidden', !show);
+    if (show) visible++;
+  });
+  totalCount.textContent = visible;
+  const empty = document.getElementById('empty-state');
+  if (empty) empty.style.display = visible === 0 ? 'block' : 'none';
+}
+
+document.querySelectorAll('.fbtn[data-src]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.fbtn[data-src]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeSrc = btn.dataset.src;
+    applyFilters();
+  });
+});
+
+document.querySelectorAll('.fbtn[data-branch]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.fbtn[data-branch]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeBranch = btn.dataset.branch;
+    applyFilters();
+  });
+});
+
+document.getElementById('search').addEventListener('input', e => {
+  searchTerm = e.target.value.toLowerCase().trim();
+  applyFilters();
+});
+
+// Sort
+let sortCol = null, sortDir = 1;
+document.querySelectorAll('th[data-col]').forEach((th, i) => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortDir *= -1; else { sortCol = col; sortDir = 1; }
+    document.querySelectorAll('th').forEach(t => t.classList.remove('sorted-asc','sorted-desc'));
+    th.classList.add(sortDir === 1 ? 'sorted-asc' : 'sorted-desc');
+    const sorted = rows.slice().sort((a, b) => {
+      const ai = ['name','src','branch','class','sub','loc'].indexOf(col);
+      const ta = a.cells[ai]?.textContent.trim() || '';
+      const tb = b.cells[ai]?.textContent.trim() || '';
+      return ta.localeCompare(tb) * sortDir;
+    });
+    sorted.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+</body>
+</html>

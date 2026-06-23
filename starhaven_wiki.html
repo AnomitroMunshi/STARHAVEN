@@ -170,13 +170,10 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .rel-tag.mentor{border-color:var(--purple2);color:var(--purple3)}
 .rel-tag.enemy{border-color:var(--red2);color:var(--red2);background:var(--red)18}
 
-/* Info chips */
-.chip-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}
-.chip{font-size:9px;padding:2px 8px;border-radius:20px;background:var(--bg3);border:1px solid var(--border3);color:var(--text3);font-family:'JetBrains Mono',monospace}
-.chip.gold{color:var(--gold2);border-color:var(--amber2)}
+.unit-class-field{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 10px}
+.unit-class-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text4);text-transform:uppercase;letter-spacing:.08em;min-width:82px}
+.unit-class-value{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text2);background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:999px;padding:4px 10px}
 
-/* ══ LORE / CHRONICLES CARDS ══ */
-.lore-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin-bottom:8px}
 .lore-card{background:var(--bg2);border:1px solid var(--border2);border-radius:10px;overflow:hidden;transition:border-color .18s,transform .14s;cursor:pointer}
 .lore-card:hover{border-color:var(--border3);transform:translateY(-2px)}
 .lore-card.expanded{border-color:var(--border3)}
@@ -2866,6 +2863,44 @@ const ARMIES = [
     ],
     note:'Elite: Voidwalkers — five operational modes: Total Silence, Heartstop, Ghoststep, Black Veil, Night\'s End.',
   },
+  
+  // Inserted intelligence entries: The Web + The Shadow Court (from starhaven-all-new-unit-entries.txt)
+  {
+    id:'the-web', name:'The Web',
+    subtitle:'Intelligence Network · 3-Ring Cell Structure · All-Domain Coverage',
+    motto:'"What the Null Blades don\'t know, the Web does."',
+    tier:'specialized', strength:'~400–600 (classified · Mira has not confirmed this estimate)', color:'#2A3A2A',
+    commander:'Director Mira Vael (Half-Elf · Age 61)', hq:'Classified — cells in all allied capitals and major Starhaven cities',
+    image:'',
+    roles:['Intelligence Gathering','Counterintelligence','Diplomatic Intelligence','Economic Intelligence','Void Early Warning'],
+    desc:'The Null Blades identifies a target and eliminates it. The Web identifies why the target is a target, what removing it will cause, what it will reveal, and what the seventeen other things connected to it are doing while everyone is watching the target. Mira Vael built a better intelligence network than Starhaven had with no funding, no training, and no authority. Nyx Ravel found it, traced it to her in three days, and brought the report to Rayden rather than neutralizing it.',
+    units:[
+      'Outer Ring "The Threads" — civilian-embedded informants (ladies-in-waiting, musicians, merchants, harbor staff)',
+      'Middle Ring "The Needles" — trained agents with cover identities, manage 5–8 Threads each',
+      'Inner Ring "The Court" — 12 analysts, full picture holders, never go into the field',
+      'The Liaison — single person known only to Rayden, Mira, and Nyx (currently Senna Ash)',
+    ],
+    armor:[],
+    note:'CELL STRUCTURE: No member knows the full network. Each knows one upward contact and downward contacts only. Killing one cell gives up two names — both already aware they may be burned. LIAISON: Senna Ash carries information between Web and Null Blades. Her access to all records makes her movements completely unremarkable. She has not recorded this role in any chronicle — the only thing she has not recorded. MIRA\'S POLICY: "We don\'t share everything we know. You get what\'s actionable. The rest is mine." Rayden agreed.',
+  },
+
+  {
+    id:'shadow-court', name:'The Shadow Court',
+    subtitle:'All-Female Intelligence · Court Penetration · Leverage Mapping',
+    motto:'"Every court has a shadow. Ours has teeth."',
+    tier:'specialized', strength:'Unknown — Serell\'s policy: "The day someone can count us is the day we\'ve failed."', color:'#2A1A3A',
+    commander:'Court-Mistress Serell Vane (Half-Elf · Female · Age 52 · former diplomatic envoy)', hq:'Classified — cells in all allied courts and noble houses',
+    image:'',
+    roles:['Court Intelligence','Diplomatic Penetration','Interpersonal Leverage Mapping','Long-Term Embeds','Enemy Court Infiltration'],
+    desc:'There are spaces in every court where a male agent stands out. Not because male agents are incompetent — because courts operate on social architecture built by men who talked freely in front of women in service roles because they had been taught, formally and informally, that such women didn\'t matter. The Shadow Court is built around that specific architectural flaw. A lady-in-waiting hears everything.',
+    units:[
+      'Outer Ring "The Weavers" — court-embedded civilians (ladies-in-waiting, musicians, translators, healers)',
+      'Middle Ring "The Needles" — trained agents with court cover identities',
+      'Inner Ring "The Court" — 12 women managing specific geographic/political domains',
+    ],
+    armor:[],
+    note:'ALL-FEMALE. ALL RACES. Elf agents preferred for long-term embeds (decades in one court without aging out). SERELL\'S LEVERAGE MAP: Physical map in her private rooms, updated weekly — who owes who, who is afraid of who, who wants what they cannot say publicly. Used operationally 14 times. 11 resolved without violence. 3 did not. She considers all 14 her best work. RELATIONSHIP WITH THE WEB: Sister organizations. Share intelligence when both determine it actionable. Never share sources. They like each other. This is the rarest thing in intelligence work.',
+  },
   {
     id:'ashen-guard', name:'Ashen Guard',
     subtitle:'Personal Army of Seraphine Mire · Pillar of the Heart',
@@ -2999,6 +3034,59 @@ const ARMIES = [
     ],
     note:'',
   },
+
+  // Inserted: Fourth Field Army + Gauntlet Army (from starhaven-all-new-unit-entries.txt)
+  {
+    id:'fourth-field-army', name:'Fourth Field Army',
+    subtitle:'Grand Standing Army · Adaptive Response Doctrine',
+    motto:'"Every front. Every terrain. Every hour."',
+    tier:'standing', strength:'20,000 Soldiers', color:'#6A4A8A',
+    commander:'Field Marshal Veyra Tal', hq:'Starhold Central Reserve — No Fixed Border',
+    image:'',
+    roles:['Second-Front Response','Adaptive Combined Arms','Multi-Terrain Warfare','Strategic Reserve'],
+    desc:'The army with no doctrine because it must be ready for all of them. Where the First Army hammers, the Second flanks, and the Third holds — the Fourth arrives at whatever the others cannot reach. Veyra Tal commands the only standing army in Starhaven built to fight a war it has never been briefed on.',
+    units:[
+      'Medium Infantry (5,000)',
+      'Light Infantry (3,000)',
+      'Heavy Crossbowmen (2,500)',
+      'Halberdiers (2,500)',
+      'Field Engineers (1,500)',
+      'Scout & Recon Element (1,000)',
+      'Silver Swan Cavalry Detachment (2,000)',
+      'Embedded Medical & Supply (2,500)',
+    ],
+    armor:[
+      {slot:'Body',    name:'Adaptive Field Plate',    desc:'Medium-weight articulated plate. Not as heavy as First Army nor as light as Second. Designed for versatility across terrain types rather than optimizing for a single doctrine.'},
+      {slot:'Helm',    name:'Open-Face Campaign Helm', desc:'Unenclosed visor for wide field visibility. The Fourth Army fights by reading the field, not by absorbing a charge.'},
+    ],
+    note:'Halberdiers cover anti-armor, anti-cavalry, and anti-beast simultaneously — the only unit in Starhaven doing all three. Embeds its own medical and supply element to operate before Iron Road Corps supply lines are established. Silver Swan detachment rotates by Rhegar\'s order, never permanently assigned.',
+  },
+
+  {
+    id:'gauntlet-army', name:'The Gauntlet Army',
+    subtitle:'Independent Beastman Martial Army · No Conventional Weapons',
+    motto:'"The mountain does not carry a sword."',
+    tier:'specialized', strength:'12,000', color:'#6A3A18',
+    commander:'War-Elder Vrakas Stonehide (Beastman · Stonehide Clan · Age 67 · still fights in front line)', hq:'Greypeak Highland Approaches',
+    image:'',
+    roles:['Heavy Impact Martial Combat','Unarmed Close Combat','Formation Breaking','Independent Front Assignment'],
+    desc:'Every other army carries something forged. The Gauntlet Army\'s principle: a Stonehide Beastman\'s natural strength, natural hide equivalent to light plate, and pain tolerance that outlasts conventional opponents is degraded by holding a weapon. A sword requires grip, angle, edge-alignment, swing arc. A fist requires none of these. When Rayden\'s envoy arrived, Vrakas asked one question: does Starhaven let his people fight the way his people fight? He signed immediately.',
+    units:[
+      'Iron Fist Battalions — 6,000 (standard Gauntlet combat doctrine)',
+      'Grapple Corps — 2,000 (disarm, takedown, control)',
+      'Stonehide Heavies — 2,000 (vs. armored cavalry & monsters)',
+      'Ashpaw Volunteers — 1,000 (Brex Ashpaw\'s people — fast forward shock)',
+      'Vrakas\'s War-Circle — 500 (personal elite)',
+      'Field Recovery — 500',
+    ],
+    armor:[
+      {slot:'Gauntlets', name:'Iron-Reinforced Strike Gauntlets', desc:'Iron-reinforced leather from knuckle to elbow. Protects hands during impact against armored opponents. Nothing on the fingers — the fist is the weapon.'},
+      {slot:'Body',      name:'Gauntlet Army Chest-Plate',       desc:'Heavy iron chest and shoulder plate only. Arms fully free. Stonehide Clan\'s natural hide provides light-plate equivalent at skin level.'},
+      {slot:'Legs',      name:'Heavy Greaves',                   desc:'Iron-banded leather greaves to the knee. Close-quarters fighting produces frequent leg strikes.'},
+    ],
+    note:'CRITICAL DISTINCTION: Not berserkers. Berserkers fight in escalating frenzy. Gauntlet fighters fight in absolute cold focus. Vrakas\'s 40-year doctrine teaches slowing internally while moving faster externally. Cannot be embedded in conventional formations — their combat style is disruptive to adjacent units. Requires its own front. Vrakas has refused the title General three times. The Gauntlet Army has a War-Elder.',
+  },
+
   {
     id:'ironmane-lancers', name:'Ironmane Lancers',
     subtitle:'Cavalry · Elite Heavy Shock Cavalry',
@@ -3030,6 +3118,101 @@ const ARMIES = [
     ],
     note:'',
   },
+
+  // Inserted cavalry & shock units: Silver Swan, Dawnlancers, Warbreakers, Ashrunners
+  {
+    id:'silver-swan-cavalry', name:'Silver Swan Cavalry Corps',
+    subtitle:'Medium Cavalry · Four Regional Detachments · Modular Deployment',
+    motto:'"We ride before the order reaches us."',
+    tier:'cavalry', strength:'4,800 Riders (4 Detachments of 1,200)', color:'#7A9AB0',
+    commander:'Marshal-Rider Caelen Voss', hq:'Four Regional Depots — North/East/West/South',
+    image:'',
+    roles:['Flank Security','Rapid Response','Pursuit','Multi-Front Cavalry Reserve'],
+    desc:'The workhorse between Windlance\'s precision and Ironmane\'s elite charge. Armored enough for sustained melee, mobile enough to redeploy anywhere on the field. Four detachments, four regional horse breeds from Marcus Ironmane\'s breeding grounds, one corps that belongs to every Field Army simultaneously and is permanently assigned to none.',
+    units:[
+      'North Detachment — Coldblood Draft Cross · Coldmarch (mountain-capable, cold-endurance)',
+      'East Detachment — Sandhoof Cross · Ashfield (heat-adapted, Karath bloodline influence)',
+      'West Detachment — Greyveil Forest Cross · Greyveil',
+      'South Detachment — AshenVeil Runner · AshenVeil',
+      'Per detachment: Lance Riders (500) · Mounted Crossbowmen (300) · Pursuit Riders (250) · Command & Signal (150)',
+    ],
+    note:'Horses bred from Marcus Ironmane\'s four regional breeding grounds — distinct from the elite Ironmane bloodline reserved for the Lancers and Black Charge. Any detachment can attach to any Field Army as a modular flank-security or rapid-response element. They rotate by Rhegar\'s order. Insignia: silver swan in flight, one per saddle clasp.',
+  },
+
+  {
+    id:'dawnlancers', name:'The Dawnlancers',
+    subtitle:'Elite All-Female Cavalry · Dawn Wedge Doctrine · 2nd Field Army',
+    motto:'"The line broke. We held. The rest is history."',
+    tier:'cavalry', strength:'1,800 Riders (3 Lances of 600)', color:'#C8882A',
+    commander:'Lance-Commander Aera Coldwind (Half-Moon Elf · Female · Age 34)', hq:'Mobile with 2nd Field Army',
+    image:'',
+    roles:['Precision Cavalry Strike','Fast Flanking','Dawn Wedge Formation','Long Dawn Pursuit','Independent Operations'],
+    desc:'Founded by Field Marshal Clea Vorn after the Eastern Crossing engagement — where the left flank\'s all-female sub-commanders held two hours without orders, without senior command, inventing the Dawn Wedge formation in real time under fire. Clea wrote one line in the after-action margin: "There\'s something different about how they fight when they\'re commanding themselves. I want to find out what it is." The Dawnlancers are that answer.',
+    units:[
+      'First Lance "The Point" — 600 (Aera\'s personal lance, wedge-leading, veteran riders)',
+      'Second Lance "The Wings" — 600 (Split Dawn element, two Wing Squads of 300, independent operation)',
+      'Third Lance "The Depth" — 600 (sustaining element, Long Dawn pursuit)',
+      'Dawnrunner Stable Corps — 120 (non-combat, considered most important by Aera)',
+    ],
+    armor:[
+      {slot:'Body',     name:'Dawnlancer Cavalry Plate', desc:'Between Ironmane and Silver Swan weight. Full chest plate, articulated pauldrons redesigned for female shoulder geometry after Year 1. Deep copper-gold with a white dawn-line along the right collarbone — the unit identifier.'},
+      {slot:'Helm',     name:'Dawnlancer Crest Helm',    desc:'Closed face, swept-back vertical crest rising from the crown — copper-gold lance tip. At speed in formation the crests create a visual line allowing peripheral navigation without turning the head.'},
+      {slot:'Mount',    name:'Dawnrunner Warhorses',     desc:'Marcus Ironmane\'s personal breeding project — 18 months. Sandhoof Cross base, Silver Swan speed, Ironmane stamina. Holds full speed for 400 yards without velocity drop. His second-best work.'},
+      {slot:'Primary',  name:'Dawn Lance',               desc:'8ft, reinforced iron tip, crossguard 8 inches behind tip. Crossguard prevents over-penetration — lance withdrawn in the same movement as the strike. Multiple hits per charge pass, not a single hit and a lost weapon.'},
+      {slot:'Secondary',name:'Dawnlancer Short Sword',   desc:'26-inch straight blade, sheathed across the back for gallop-accessible draw without destabilizing the rider.'},
+    ],
+    note:'Three doctrines: (1) DAWN WEDGE — standard charge formation, Aera at point, splits and opens enemy line like a key. (2) SPLIT DAWN — two Lances diverge mid-charge, hits two points simultaneously while third drives straight. Requires crest-alignment navigation. (3) LONG DAWN — pursuit until enemy cannot reform as a threat. Not a distance — a condition. All-female. All races. Founded by Clea Vorn. Aera\'s pre-charge ritual: turn, face own riders, 10 seconds silence, turn back. Enemy observers have written this is more unsettling than a battle cry.',
+  },
+
+  {
+    id:'warbreakers', name:'The Warbreakers',
+    subtitle:'Shock Infantry · Breach Run Doctrine · 1st & 4th Field Army',
+    motto:'"The banner falls when we do. Not before."',
+    tier:'specialized', strength:'9,000 (3 Regiments of 3,000)', color:'#8A2A18',
+    commander:'Breach-Marshal Sever Aldric (Human · Age 38 · lost left eye at Eastern Crossing)', hq:'Mobile with 1st and 4th Field Army + 1 Central Reserve regiment',
+    image:'',
+    roles:['Formation Breaking','Breach Assault','Line Penetration','Gap Holding'],
+    desc:'The only unit in Starhaven\'s military with a doctrine that has no defensive posture, no fall-back position, no contingency for a failed charge. They are not berserkers — berserkers lose themselves to violence. Warbreakers choose violence with full clarity. Doran Ashe\'s Hammer Doctrine had no hammer unit. Sever Aldric is the hammer.',
+    units:[
+      'Breach Battalions — 3 × 900 (main striking element)',
+      'Breach Engineers — 150 per regiment (portable iron mantlets, discarded at 20 yards)',
+      'Medical Surge Teams — 150 per regiment (post-breach casualty extraction)',
+    ],
+    armor:[
+      {slot:'Body',     name:'Warbreaker Assault Plate', desc:'Angular forward-facing deflection plate — chest and shoulder sloped to shed blows sideways, not absorb them. Lighter on back than front. Deep iron-red treatment, darkened at edges. Angular plates catch light at odd angles in formation. Enemy soldiers describe it as "a wall of broken mirrors advancing."'},
+      {slot:'Helm',     name:'The Crest Helm',           desc:'Closed-face, forward-swept horizontal crest — cuts air resistance on sprint. Reinforced nose-bridge and brow. Single Starhaven star at left temple. Sever designed it himself; the left eye socket is solid iron where the visor slot would be.'},
+      {slot:'Vambrace', name:'Warbreaker Crushers',      desc:'Full forearm plate, iron-knuckled at the fist. Extends past the knuckle on the weapon hand — at zero distance the fist is the weapon. Consulted with Vrakas Stonehide on the design.'},
+      {slot:'Greaves',  name:'Sprint Greaves',           desc:'Articulated at knee and ankle for maximum sprint range of motion. Heavier shin-plate, lighter thigh-plate. Built for the 30-yard sprint under arrow fire.'},
+      {slot:'Primary',  name:'Warbreaker Axe',           desc:'Heavy single-edge war axe — 4ft handle, forward-weighted blade. Not balanced for sustained melee — balanced for maximum force at the end of a sprint. The first three seconds of contact are not fighting. They are arriving.'},
+      {slot:'Secondary',name:'Ironspike Shield',         desc:'14-inch reinforced iron buckler on the off-forearm. A punching weapon in close quarters, not a defensive tool. Pointed at the boss.'},
+    ],
+    note:'BREACH RUN DOCTRINE: (1) WAIT — 80 yards behind line, Sever identifies the cracking section (not hardest fighting — weakest formation discipline). (2) THE CALL — single horn, two descending beats. (3) THE BREACH — walk at 40 yards, full sprint at 30 yards, axes raised at 20. Morale check happens here. Several units have broken before contact. (4) THE PRESS — hold the gap open while Heavy Infantry pours through. ~60% retention per engagement. Sever: "The other 40% made the gap. Don\'t ask me to apologize for the math."',
+  },
+
+  {
+    id:'ashrunners', name:'The Ashrunners',
+    subtitle:'Light Shock Infantry · 10-Second Window · 2nd & 4th Field Army',
+    motto:'"Don\'t chase them. Become where they\'re going."',
+    tier:'specialized', strength:'2,400 (72 Rush Squads of 30 across 2 armies)', color:'#6A4A2A',
+    commander:'Rush-Captain Vael Dusken (Human-Elf · Mixed · Age 29)', hq:'Mobile with 2nd and 4th Field Army',
+    image:'',
+    roles:['Gap Exploitation','Formation Disruption','Light Shock Assault','Speed Breakthrough'],
+    desc:'The Warbreakers break a held line with mass and armor. The Ashrunners exploit a breaking line with speed. The unit that moves into the 3-second window between when a formation begins to crack and when it collapses. Vael Dusken identifies a gap before it opens. The Ashrunners are already moving when it does. The tactical weapon Clea Vorn\'s Speed Doctrine was missing — an infantry equivalent of what her cavalry already does.',
+    units:[
+      'Rush Squads — 72 squads of 30 (across both armies)',
+      'Reading Corps — 80 total / 40 per army (formation analysis, flags gap precursors)',
+      'Medical Dash Teams — 40 total / 20 per army (fastest medics in Starhaven)',
+    ],
+    armor:[
+      {slot:'Body',    name:'Ashrunner Scale Vest',  desc:'Scale — overlapping iron scales on leather backing. Chest, back, upper arms only. Slows a sprint by 4% vs full plate\'s 15%. Scales treated dark grey. A small ash-mark at the left collarbone — unit ritual, origin unknown, three different answers from Vael when asked.'},
+      {slot:'Helm',    name:'Ashrunner Half-Helm',   desc:'Open face, iron browplate, cheek guards. Nothing restricts peripheral vision. A unit member who can\'t see sideways at full sprint is a liability.'},
+      {slot:'Boots',   name:'Sprint Boots',          desc:'Reinforced leather, iron-studded sole, ankle support for hard direction changes. Most expensive piece of kit. Individually fitted. Replaced every 6 months active service. Non-negotiable.'},
+      {slot:'Primary', name:'Twin Ashrunner Hatchets', desc:'Two short-handled single-edge hatchets. 16-inch handle, forward-weighted head. Unbalanced deliberately — weight carries through the target. Light enough to run with both raised.'},
+      {slot:'Secondary',name:'Throwing Darts (×4)',  desc:'Not a primary weapon. Thrown in the 3 seconds before contact to disrupt specific soldiers at the target zone. A dart in the shoulder of the gap-holder makes them hesitate half a second. Half a second is the window.'},
+    ],
+    note:'THE TEN-SECOND WINDOW: No phases, no pauses. (1) READ (continuous) — watch for three simultaneous signs: soldiers angling feet toward retreat routes, command signals increasing in frequency, shield spacing widening. Vael signals before the gap confirms. (2) SPRINT — already in pre-sprint ready position (weight forward, heels raised, hatchets at waist) for up to 4 minutes. (3) ENTRY — darts at 3 seconds before contact, go through not at the edge soldiers. (4) INSIDE — twin hatchets in close quarters against formation fighters turned the wrong way. (5) SIGNAL — two short horn notes for Heavy Infantry / Warbreakers to advance. Mixed race. Mixed gender.',
+  },
+
   {
     id:'arcane-artillery', name:'Arcane Artillery Corps',
     subtitle:'Standing Army · Battlemage Artillery',
@@ -3072,6 +3255,321 @@ const ARMIES = [
     desc:'Built the Dimensional Breach Platform in 4 days when conventional weapons failed. Four orders: Fang (beast-kill), Hollow (dimensional), Brand (tracker), Seal (capture).',
     note:'',
   },
+
+  // Inserted specialized corps (from starhaven-all-new-unit-entries.txt)
+  {
+    id:'ironveil-spear-corps', name:'Ironveil Spear Corps',
+    subtitle:'Modular Anti-Cavalry & Anti-Beast Polearm Formation',
+    motto:'"The line is wherever we plant the spear."',
+    tier:'specialized', strength:'8,000 (4 Battalions of 2,000)', color:'#5A7060',
+    commander:'Spear-Marshal Drel Voss', hq:'Distributed — 1 Battalion per Field Army',
+    image:'',
+    roles:['Anti-Cavalry Defense','Anti-Beast Formation','Modular Deployment','Polearm Anchor'],
+    desc:'Third Army has its own Heavy Spearmen — but when Third Army deploys to the main front, every other Field Army loses its anti-cavalry layer. The Ironveil Spear Corps solves this: four self-contained battalions that train with their assigned Field Army but remain under Drel Voss\'s central command, ready to be reassigned to any front where cavalry or beast-cavalry breaks through.',
+    units:[
+      'Heavy Spearmen — tower shield, 14ft spear (800 per battalion)',
+      'Halberdiers — anti-armor inner ring (600 per battalion)',
+      'Pikemen — 18ft pike, extended reach outer ring (400 per battalion)',
+      'Shield Wall Engineers — portable stake barriers & trench spikes (200 per battalion)',
+    ],
+    armor:[
+      {slot:'Body',    name:'Ironveil Fortress Plate', desc:'Heavy full plate with reinforced iron banding at shoulder and thigh — specifically rated for beast-bite and horn-impact. Heavier than standard heavy infantry issue.'},
+      {slot:'Greaves', name:'Extended Beast Greaves',  desc:'Extends to mid-thigh rather than standard knee-height. Beast attacks are lower than mounted cavalry strikes. Distinguishes Ironveil from Third Army\'s standard spear units.'},
+      {slot:'Shield',  name:'Ironveil Tower Shield',   desc:'Ground-anchored tower shield with iron floor-spike at the base — planted during a charge to brace against impact. Wider than standard to close formation gaps against beast-width charges.'},
+    ],
+    note:'IRONVEIL LOCK FORMATION: Pikemen outer ring (extended reach). Heavy Spearmen second ring, braced against planted stakes. Halberdiers inner ring engage disorganized riders after charge breaks. Shield Wall Engineers pre-deploy obstacles 40 yards forward before contact. Effective against cavalry, war-beasts, and any charge-based unit.',
+  },
+
+  {
+    id:'skywarden-corps', name:'Skywarden Corps',
+    subtitle:'Light Aerial Reconnaissance · Four Aeries · One Per Field Army',
+    motto:'"We see what the ground cannot."',
+    tier:'specialized', strength:'48 Riders (4 Aeries of 12)', color:'#3A5888',
+    commander:'Sky-Marshal Ren Dael', hq:'Distributed — one Aerie per Field Army depot',
+    image:'',
+    roles:['Strategic Reconnaissance','Signal Relay','Command Communication','Emergency Precision Strike'],
+    desc:'Ninth Sky Corps rules the sky with drakes and arcane artillery. The Skywarden Corps sees. Forty-eight Ashwing Eagle riders embedded across all four Field Armies, operating 15–20 miles ahead of any army\'s position. They relay intelligence ground scouts cannot reach and carry orders to fronts where the Resonance Corps is not present. The corps that wins battles before they start.',
+    units:[
+      'First Aerie — 1st Field Army · Aerie-Captain Sola Dren · Southern Ashwing (broad wingspan, long glide)',
+      'Second Aerie — 2nd Field Army · Aerie-Captain Ryn Vael · Western Ashwing (fastest, mountain-agile)',
+      'Third Aerie — 3rd Field Army · Aerie-Captain Mael Cress · Northern Ashwing (cold-weather, durable)',
+      'Fourth Aerie — 4th Field Army · Aerie-Captain Sera Voss · Eastern Ashwing (longest range, open plains)',
+    ],
+    armor:[
+      {slot:'Body',  name:'Skywarden Scale Vest', desc:'Leather reinforced with scale plate at shoulders and chest only. Weight is the enemy at altitude. Wing-feather motif pressed into each shoulder plate.'},
+      {slot:'Helm',  name:'Aerie Open Helm',      desc:'Fully open-face. Peripheral vision at altitude is non-negotiable. Each Aerie-Captain wears a colored cord matching their army\'s field color.'},
+      {slot:'Mount', name:'Ashwing Eagle Tack',   desc:'Minimal — saddle and guide-harness only. No barding on the eagle. The bird\'s speed is the defense.'},
+    ],
+    note:'Ashwing Eagles: distinct from Ninth Sky\'s sky drakes — smaller, faster, quieter, breed faster, operate in weather that grounds drakes. A different capability, not a lesser one. Each Aerie carries a small payload of alchemical fire for single precision strike on high-value targets. Aerial recon 15–20 miles ahead pre-battle. Signal relay between fronts mid-campaign. Pursuit tracking post-battle.',
+  },
+
+  {
+    id:'runebreakers', name:'The Runebreakers',
+    subtitle:'Anti-Magic Embedded Corps · Null-Stone Suppression',
+    motto:'"Silence is the most dangerous sound on a battlefield."',
+    tier:'specialized', strength:'1,800 — 450 per Field Army', color:'#4A3A6A',
+    commander:'Rune-Marshal Cassia Vayne (Human · Age 44 · former Vaelmark Arcanum — failed mage)', hq:'Distributed — embedded within each Field Army',
+    image:'',
+    roles:['Mage Elimination','Anti-Magic Suppression','Corruption Screening','Pre-Battle Identification','Counter-Casting'],
+    desc:'The Arcane Artillery Corps counters a mage 300 yards away in the rear. The Runebreakers exist for the mage 10 yards away inside your own infantry formation. Their premise: magic is only a weapon if the mage survives long enough to cast it. Cassia Vayne is a failed mage who reads casting sequences better than any mage alive and has spent her career making that the most useful skill on a battlefield.',
+    units:[
+      'Hunter Teams — 1,200 (4-person: Tracker + Silence Bolt operator + 2 Closers)',
+      'Formation Guard — 400 (passive Null-field at key points within Heavy Infantry)',
+      'Cassia\'s Investigative Division — 200 (pre/post-battle magical intelligence)',
+    ],
+    armor:[
+      {slot:'Body',    name:'Runebreaker Suppression Plate', desc:'Medium plate with Null-Stone fragments embedded at every major joint. Creates 3-yard radius of reduced magical conductivity. Spells cast within 3 yards require 40% more energy. Precision-geometry spells lose accuracy. The armor looks unremarkable — deliberately. They don\'t want mages to identify them before they close.'},
+      {slot:'Helm',    name:'Rune-Visor Helm',               desc:'Closed face with amber-tinted visor — Vaelmark-developed compound allows the wearer to see active magical signatures as heat-shimmer distortions. A mage preparing to cast glows faintly amber. A fully charged spell appears bright gold. Does not work on Void magic.'},
+      {slot:'Cloak',   name:'Null-Weave Field Cloak',        desc:'Short shoulder cloak woven with powdered Null-Stone. Extends suppression field slightly beyond armor. Disrupts magical tracking — a targeting spell has difficulty locking onto a Runebreaker through the Null-Weave.'},
+      {slot:'Gauntlets',name:'Interrupt Gauntlets',          desc:'Iron-reinforced, flexible at fingers. Palm-face is flat iron, wide enough to physically slap a mage\'s hands apart during casting gesture. Disrupting the physical component breaks a cast with no magical knowledge required. Just timing and reach.'},
+      {slot:'Primary', name:'Runebreaker Short Sword',       desc:'24-inch blade, Null-Stone edge treatment. Against an actively magical target, the Null-Stone edge disrupts the magical field at point of contact — magical defenses collapse on impact rather than deflecting the blade.'},
+      {slot:'Secondary',name:'Silence Bolt Crossbow',        desc:'Short crossbow loaded with Silence Bolts — compressed Null-Stone head detonates on impact with magical field. Not physically damaging. Produces 5-yard radius Null-burst, interrupts casting, prevents casting for ~8 seconds. Cassia designed it. Three years and 400 failed tests. Her best work.'},
+      {slot:'Carried',  name:'Null-Stone Grenades (×4)',     desc:'Ceramic spheres of concentrated Null-Stone powder. 10-yard Null-field for 30 seconds. In that 30 seconds any mage caught inside is just a person in robes with limited combat training facing armored soldiers.'},
+    ],
+    note:'PRE-BATTLE SCREENING: Walk allied formation before every major engagement, Rune-Visor scanning for unusual magical auras. 20 minutes per 5,000 soldiers. The only unit in Starhaven that screens its own forces before battle. COUNTER-CORRUPTION AUTHORITY: If Void-corruption begins within own formation during engagement, Runebreakers have authority to act without chain-of-command approval — same authority level as the Dawnguard. Used twice. Both times correctly. Rhegar reviewed both. Added a third allowed use case he has not shared.',
+  },
+
+  {
+    id:'iron-talon-batteries', name:'Iron Talon Batteries',
+    subtitle:'Mobile Anti-Aerial Artillery · Talon Grid Doctrine · 6 Batteries per Field Army',
+    motto:'"What flies must fall."',
+    tier:'specialized', strength:'240 crew (24 batteries of 10 · 6 per Field Army)', color:'#4A5A3A',
+    commander:'Battery-Marshal Dorn Ashvane (Dwarf · Age 112 · former Stonemark Mountain Engineer)', hq:'Distributed — embedded with each Field Army',
+    image:'',
+    roles:['Anti-Aerial Defense','Mobile Ballista','Drake & Wyvern Hunting','Aerial Kill-Zone Creation'],
+    desc:'Ninth Sky Corps handles air superiority when present. When they\'re not present — any front that isn\'t the main engagement — there is nothing between an enemy wyvern and the army below. The Iron Talon Batteries are that something. Dorn Ashvane spent 34 design iterations building the weapon to kill drakes. He considers this a normal engineering problem.',
+    units:[
+      '6 batteries per Field Army (10 crew each)',
+      '3 Reserve Batteries at Starhold for emergency deployment',
+      'Each battery: 1 Commander/Targeter · 2 Loaders · 1 Bolt-Selector · 1 Carriage-Operator',
+    ],
+    armor:[
+      {slot:'Crew',     name:'Talon Battery Crew Plate', desc:'Medium chest and arm protection — crews are stationary targets during firing. Salt-resistant and weather-treated for all terrain types.'},
+      {slot:'Weapon',   name:'Iron Talon Mk.III Swivel Ballista', desc:'Full-rotation swivel carriage — 360° horizontal, 15°–85° elevation. Steel-wound torsion mechanism. Reload time: 25 seconds with full crew of 5. Breaks into 4 cart-loads for horse transport. Deployment time: 3 minutes.'},
+      {slot:'Bolt-A',   name:'Standard Talon Bolt',      desc:'4ft iron-shafted bolt, Tracking Rune at tip. Minor course-correction in first 50 yards — compensates for wind and target movement. Effective range vs. aerial targets: 180 yards.'},
+      {slot:'Bolt-B',   name:'Screamer Bolt',            desc:'Hollow bolt with air-vane cutouts producing high-pitched wail in flight. Causes panic responses in untrained mounts — wyvern flinches, changes direction, throws rider\'s aim. Used to disrupt flight pattern before standard bolt fires.'},
+      {slot:'Bolt-C',   name:'Chain Bolt',               desc:'Two bolts connected by 3ft of heavy iron chain, fired simultaneously via double-loaded mechanism. Creates 3ft cutting edge in flight for wing membrane targeting. A wyvern with severed wing membrane loses controlled flight instantly. Designed after Dorn studied Ninth Sky Corps drake anatomy at Velkan\'s invitation.'},
+    ],
+    note:'TALON GRID DOCTRINE (3 batteries): Battery A — Tracking (follows target, fires when lead-solution is correct). Battery B — Leading (fires 2 seconds ahead of projected path). Battery C — Screamer (disrupts flight making target predictable for A and B). ANTI-DRAGON (all 6 batteries): Chain bolts targeting both wings simultaneously on a Screamer-disrupted, predictable flight path. Dorn has not tested this against an actual dragon. He is confident in the mathematics.',
+  },
+
+  {
+    id:'dawnsteel-order', name:'Dawnsteel Order',
+    subtitle:'Individual Combat Specialists · 4th Field Army Strike Unit',
+    motto:'"One strike. Enough."',
+    tier:'specialized', strength:'1,200', color:'#3A3010',
+    commander:'Blade-Marshal Koren Ashveil (Human · Age 44 · 3× Starhold Trial champion)', hq:'Mobile with 4th Field Army',
+    image:'',
+    roles:['Breach Closing','Champion Elimination','Precision Melee','Formation-Breakdown Combat','Gate & Bridge Assault'],
+    desc:'Every other melee unit in Starhaven fights in formations. The Dawnsteel Order fights in disciplined individual combat within a loose collective. Each of the 1,200 fighters is capable of handling two or three opponents simultaneously, effective even after the formation has broken down entirely — the exact situation where every other melee unit starts to fail.',
+    units:[
+      'Glaive Formation Corps — 500 (Ashveil Glaive, polearm mode, loose 5-man cells)',
+      'Longblade Strike Corps — 400 (Starhaven Longblade, individual combat)',
+      'Dual-Weapon Vanguard — 200 (Glaive + Longblade simultaneously, ambidextrous)',
+      'Koren\'s Command Guard — 100 (hand-selected by Koren in individual trial combat)',
+    ],
+    armor:[
+      {slot:'Body',     name:'Dawnsteel Lamellar Plate',  desc:'Articulated lamellar — overlapping scaled segments, full range of motion. No pauldron caps restricting overhead swing. No knee guards preventing low-stance draw. Lacquered black with white dawn-circle on chest.'},
+      {slot:'Helm',     name:'Dawnsteel Open Helm',       desc:'Open face. The Read requires watching the opponent\'s eyes. Full enclosure defeats the purpose.'},
+      {slot:'Primary',  name:'Ashveil Glaive',            desc:'6ft single-edge curved blade on a 3ft steel-core handle. Functions as polearm in loose formation and as single-weapon in individual close combat. Curve allows draw-cuts a straight blade cannot execute in tight spaces.'},
+      {slot:'Secondary',name:'Starhaven Longblade',       desc:'Straight-backed, single-edge, 36 inches. Drawn only when the formation breaks into individual combat. For the confined space where glaive range becomes a liability.'},
+    ],
+    note:'THREE CUTS DOCTRINE: (1) THE READ — 2 seconds of stillness before engagement, assessing dominant hand, armor weight distribution, footing. Never skipped. (2) THE ENTRY — one committed movement closing distance and creating the angle. Not a charge. Controlled. (3) THE CUT — one fully committed strike at the single gap the Read identified. If it lands correctly, the fight is over. Dawnsteel fighters move calmer than berserkers, slower than shock cavalry — their casualty-infliction rate is disproportionate to their numbers.',
+  },
+
+  {
+    id:'ironbreaker-mace-corps', name:'Ironbreaker Mace Corps',
+    subtitle:'Anti-Heavy Infantry · Two-Handed Flanged Mace Specialists',
+    motto:'"The armor is the wound."',
+    tier:'specialized', strength:'3,000', color:'#502A10',
+    commander:'Warden-Breaker Torvan Grund (Half-Orc · Age 51 · former 3rd Field Army sergeant)', hq:'Fortgehaven Industrial City',
+    image:'',
+    roles:['Anti-Heavy Infantry','Anti-Plate Melee','Formation Insertion','Kinetic Impact Specialists'],
+    desc:'Swords deflect off plate. Axes skitter off plate. A flanged mace transmits kinetic force through plate directly into the body beneath — broken bones, ruptured organs, concussion through the helmet. The armor becomes the injury mechanism. Torvan Grund identified this gap himself, watched Starhaven\'s melee units fail against heavy-armored opposition, and petitioned Rhegar Thorne directly.',
+    units:[
+      'Primary Mace Battalions — 2,000',
+      'Brace Guard — 500 (shield-bearers covering two-handed grip exposure)',
+      'Grundhammer Forge Team — 200 (field replacement — mace head cracks under sustained use)',
+      'Medical — concussion-specific — 300',
+    ],
+    armor:[
+      {slot:'Body',     name:'Ironbreaker Full Plate',    desc:'Very heavy — 85lb total kit. Reinforced at shoulder and forearm to absorb recoil of Grundhammer\'s own impact. The corps takes as much force as it delivers.'},
+      {slot:'Boots',    name:'Stance-Plate Boots',        desc:'Wider stance-base for the planted two-handed swing. The corps trains in full kit every day.'},
+      {slot:'Helm',     name:'Ironbreaker Closed Helm',   desc:'Full enclosure — no open-face option. They are at arm\'s length from opponents at full swing. Reinforced crown.'},
+      {slot:'Primary',  name:'Grundhammer',               desc:'Two-handed flanged mace. 5ft handle, 18lb iron head, eight flanges. Does not pierce plate — transmits maximum kinetic force through armor into the body beneath. Named for Torvan Grund.'},
+      {slot:'Secondary',name:'Spiked Strike Gauntlet',    desc:'Short spiked iron gauntlet on the off-hand — for close work when the mace cannot swing.'},
+    ],
+    note:'TACTICAL DEPLOYMENT: Never leads a charge. Inserted into a melee already in progress where Starhaven\'s line is failing against heavy-armored opposition. Starhaven\'s Heavy Infantry holds the enemy in place. Mace Corps pushes through gaps and engages. Infantry re-closes around them. The enemy cannot retreat from the mace strikes and cannot counter-attack through the surrounding infantry line.',
+  },
+
+  {
+    id:'silverleaf-corps', name:'Silverleaf Corps',
+    subtitle:'Elven Precision Longbow · 4th Field Army · Commander\'s Overwatch',
+    motto:'"The arrow arrives before the order to fire."',
+    tier:'specialized', strength:'600', color:'#3A6840',
+    commander:'Archbow Sylara Evenmere (Elven · Age 340 · former Elderwood Sovereignty war-archer)', hq:'Mobile with Fourth Field Army',
+    image:'',
+    roles:['Commander Elimination','High-Value Target Removal','Beast Suppression at Range','Counter-Caster','Precision Overwatch'],
+    desc:'Every other archer unit in Starhaven fires in mass volleys. The Silverleaf Corps eliminates. Six hundred elven longbowmen capable of consistent precision hits at 300+ yards on a moving target, sustained for the entire battle without muscle failure. Sylara Evenmere left the Elderwood Sovereignty 60 years ago. She serves Starhaven because she considers Rayden\'s racial integration policy the only governance model on the continent worth defending with her remaining centuries.',
+    units:[
+      'Command Elimination Squadron — 120 (enemy commanders, banner-bearers, champions)',
+      'Beast Suppression Squadron — 120 (eye-shots & joint-shots on war-beasts and drakes)',
+      'Counter-Caster Squadron — 120 (interrupts casting signatures before spell completes)',
+      'Formation Disruption Squadron — 120 (only volley-capable element in the corps)',
+      'Scout-Archers — 80 (forward-embedded with Skywarden recon)',
+      'Sylara\'s Personal Guard — 40 (finest shots in the corps)',
+    ],
+    armor:[
+      {slot:'Body',    name:'Elderwood Bark-Plate',    desc:'Elderwood-treated bark-plate over silk underlayer. Resists standard arrow penetration. Weighs a third of chainmail. Sylara developed the treatment formula herself and has not shared it with the Arcanum.'},
+      {slot:'Arms',    name:'Draw-Clearance Vambrace', desc:'Left arm only — reinforced at inner forearm for bowstring clearance, tapered at shoulder to avoid restricting the 180lb draw. Right arm unenclosed.'},
+      {slot:'Helm',    name:'Silverleaf Open Crown',   desc:'Thin silver circlet with a single pressed leaf on the brow. Minimal weight, maximum sight line. Sylara\'s personal version is older than most of Starhaven\'s founding treaties.'},
+      {slot:'Weapon',  name:'Ashwood Longbow',         desc:'180lb draw weight. Effective range 400 yards stationary, 300 yards moving target. Silk-core bowstring resists weather changes better than standard sinew. Secondary: short curved blade for close defense only.'},
+    ],
+    note:'Elven physiology provides two capabilities no human longbow unit can replicate: (1) Low-light vision — fully effective at dusk and pre-dawn. (2) Draw endurance — a 180lb draw destroys a human shoulder in ~40 minutes; Sylara\'s corps maintains peak draw for hours. Coordinates with Dawnlancers — Counter-Caster Squadron specifically interrupts anti-cavalry spells before Dawnlancer charges.',
+  },
+
+  {
+    id:'undying-colors', name:'The Undying Colors',
+    subtitle:'Standard Bearer Corps · Embedded in Every Formation',
+    motto:'"The banner falls when we do. Not before."',
+    tier:'specialized', strength:'440 Total — 40 per Field Army · 40 per Active Pillar · 40 Supreme Command', color:'#8A7030',
+    commander:'Banner-Marshal Sael Vorn', hq:'Distributed — embedded in every Field Army and Pillar',
+    image:'',
+    roles:['Rally Point','Battlefield Signal','Morale Anchor','Friend/Foe Identification','Command Communication'],
+    desc:'Starhaven had the Eleven Banners ballad before it had banner bearers trained to carry them into battle. Sael Vorn changed that. The Undying Colors are not a fighting formation — they are the nervous system of a formation already fighting. Forty per unit means no soldier on a 20,000-strong line is more than 200 yards from a visible color at any point.',
+    units:[
+      '40 per Field Army (×4 = 160)',
+      '40 per Active Pillar in field (×6 standard deployment = 240)',
+      '40 Supreme Command (Rhegar Thorne\'s command post)',
+    ],
+    armor:[
+      {slot:'Body',   name:'Color-Guard Half-Plate',  desc:'Medium half-plate at chest and arms. Left arm free-range for banner pole grip, right arm protected for the short sword. No pauldron on the left shoulder — the banner needs full upward range of motion.'},
+      {slot:'Helm',   name:'Open-Face Bearer Helm',   desc:'Fully open-face. Bearers need visibility in all directions. Small enamel plate in unit color on left cheek — commanders identify their bearer at range.'},
+      {slot:'Weapon', name:'Undying Banner Pole',     desc:'Iron-capped at both ends. Top carries unit standard above the Starhaven Starfield. Base is a functional weapon — iron cap weighted and balanced as a staff. The pole does not go down.'},
+    ],
+    note:'DOCTRINE: Bearers hold the third rank — visible above fighters ahead, protected by fighters behind. If a bearer falls, the soldier immediately to their left picks up the banner without order. Trained until it is reflex, not decision. The banner is a non-magical signal system — cannot be jammed, corrupted, or Void-disrupted. The most primitive technology on the field is the most reliable one.',
+  },
+
+  {
+    id:'arcanum-tidewatch', name:'Arcanum Tidewatch',
+    subtitle:'Naval Arcane Support · Vaelmark Arcanum Secondment · Saltmere Posted',
+    motto:'"The sea has no patience for untrained casters."',
+    tier:'specialized', strength:'120 Mages (3-year minimum posting)', color:'#1A5868',
+    commander:'Senior Tidemaster (Arcanum-appointed, rotating)', hq:'Saltmere Naval Capital',
+    image:'',
+    roles:['Weather Manipulation','Naval Navigation','Ship Warding','Combat Casting','Fleet Signal Relay'],
+    desc:'Every branch of Starhaven\'s military has arcane integration — except the 240-warship fleet. The Arcanum Tidewatch closes that gap, drawing graduates from Vaelmark on voluntary secondment. They remain Arcanum members, answer to Arcanum hierarchy on magical conduct, and return to Vaelmark after posting. Saltmere borrows them. It does not own them.',
+    units:[
+      '~1 mage per capital warship',
+      '2 mages on fleet flagships',
+      'Weather Reading & Manipulation specialists',
+      'Navigation & Depth-Sensing specialists',
+      'Ship Protection & Ward-Laying specialists',
+      'Combat Casting specialists (boarding engagements)',
+      'Fleet Signal Relay operators',
+    ],
+    armor:[
+      {slot:'Robes',  name:'Arcanum Oilskin Overrobe', desc:'Deep navy blue Arcanum robes with salt-treated oilskin outer layer. Deep-sea green trim distinguishes Tidewatch from land-deployed Arcanum mages. Identifiable at 100 yards on a ship deck.'},
+      {slot:'Arms',   name:'Copper Tide Bracers',       desc:'Copper bracers engraved with tide-rune sequences attuned to water and weather elemental frequencies. Distinct from silver bracers of the Arcane Artillery Corps on land.'},
+      {slot:'Weapon', name:'Tidestaff',                 desc:'5ft staff with resonance crystal at the head, attuned to water and weather elemental work. Secondary: standard Arcanum shortsword for boarding emergencies only.'},
+    ],
+    note:'INSTITUTIONAL NOTE: Fleet admiral cannot order a Tidewatch mage to do something the Arcanum has ruled off-limits. Mages on secondment remain under Arcanum jurisdiction for magical conduct while under naval command for operational deployment. Apprentice mages with weather or water affinity are pipeline-routed here after Vaelmark graduation.',
+  },
+  {
+    id:'dusk-corps', name:'The Dusk Corps',
+    subtitle:'Night Warfare Specialists · Four Night Companies · Embedded per Field Army',
+    motto:'"The battle continues after the sun decides to leave."',
+    tier:'specialized', strength:'3,600 (4 Night Companies of 900)', color:'#1A1A3A',
+    commander:'Dusk-Marshal Vera Ashborne (Moon Elf · Female · Age 178)', hq:'Distributed — 1 company per Field Army + 1 reserve at Starhold',
+    image:'',
+    roles:['Night Assault','Dark Operations','Pre-Dawn Raids','Silent Formation Combat','Supply Line Interdiction at Night'],
+    desc:'Starhaven\'s forces fight exactly as well at night as in daylight — which means they don\'t. Every unit trained in daylight formation doctrine loses 30–60% effectiveness after dark. The Dusk Corps inverts this. Their founding insight: darkness doesn\'t disadvantage everyone equally. It disadvantages people who trained in the light. People who trained in the dark are fine. Vera Ashborne\'s proposal to Rhegar Thorne was one page. He approved it in the same meeting.',
+    units:[
+      'Night Assault Companies — 4 × 800 (10-person squads, one Moon/Half-Elf per squad as low-light anchor)',
+      'Signal Corps — 80 total / 20 per company (drum-pulse operators, body-language communicators)',
+      'Dusk Scouts — 80 total / 20 per company (48hr advance terrain recon in daylight)',
+    ],
+    armor:[
+      {slot:'Body',    name:'Dusk Corps Shadow Plate',   desc:'Voidite-trace steel alloy — light-absorbing surface, near-zero reflection under torchlight. In darkness: visually absent. Medium weight — the Dusk Corps needs fast movement in darkness; heavy armor catches ground obstacles.'},
+      {slot:'Mask',    name:'The Dusk Mask',             desc:'Full-face iron mask, matte-treated. (1) Identity concealment for operational deniability. (2) Echolocation crystal in nose-piece — amplifies sound-bounce in 15-foot radius, spatial awareness in total darkness. (3) Narrow amber slit lenses — reduces light intake for firelight-to-dark transitions. The mask is the role. Worn operational. Removed off-duty.'},
+      {slot:'Boots',   name:'Silent-Step Boots',         desc:'No iron-sole. Thick compressed leather, smooth base — near-soundless on stone, wood, and soil. Known limitation: poor grip on wet surfaces. Accepted trade-off.'},
+      {slot:'Primary', name:'Dusk Blade',                desc:'22-inch single-edge blade. Shorter than standard — in darkness, longer weapons catch surfaces that shorter ones clear. Designed for the specific geometry of confined dark-space combat.'},
+      {slot:'Secondary',name:'Night Crossbow',           desc:'Compact crossbow with silent compression loading — no click on mechanism engagement. 80-yard range (vs. 120 standard). In darkness the 40-yard reduction is irrelevant. You cannot see 120 yards at night anyway.'},
+      {slot:'Carried', name:'Smoke Vials (×6)',          desc:'Dense black smoke compound. At night in mixed-light environments, produces darkness where firelight was — giving the Dusk Corps their operational environment inside a torch-lit camp or castle approach.'},
+    ],
+    note:'THREE-HOUR DARK PROTOCOL: Every Dusk Corps soldier enters a dark chamber 3 hours before deployment. No light. No activity. Biological dark-adaptation advantage before the operation starts. NO FIRE RULE: No Dusk Corps soldier lights a fire — not in training, not in camp, not at rest. "Every time you light a fire you remind your body that the dark is something to escape from. I need you to be someone for whom the dark is home." — Vera Ashborne. Washout rate: 68%. Highest in any Starhaven unit. NIGHTHOUND INTEGRATION: 2 Ironpack Nighthound pairs per company for scent-detection coverage beyond echolocation range.',
+  },
+  {
+    id:'ironpack', name:'The Ironpack',
+    subtitle:'War Hound Corps · Handler-Hound Pairs · Three Breed Lines',
+    motto:'"They don\'t wait for orders. They wait for the scent."',
+    tier:'specialized', strength:'400 handler-hound pairs (3 Breed Lines · 20-pair Packs)', color:'#4A3A20',
+    commander:'Pack-Marshal Sela Ironbone (Beastkin · Female · Age 34)', hq:'Distributed — 100 pairs per Field Army',
+    image:'',
+    roles:['Formation Disruption','Scent Tracking','Tunnel Detection','Void Early Warning','Night Operations Support'],
+    desc:'Starhaven\'s military has beasts at the strategic level (Primal Vanguard) and as cavalry (Snowtusk, Forest Elk). What it never had is beasts at the squad level — bonded pairs that provide capabilities no amount of additional human soldiers can replicate. A war hound cannot be bribed. It cannot be fooled by a disguise. It smells through stone. It hears a heartbeat at 60 yards. It reaches a running opponent before cavalry can close to melee range.',
+    units:[
+      'ASHOUND LINE: Greyhound-mastiff cross — scent tracking (72hr trail in rain), 300yd detection radius, Void early-warning (behavioral)',
+      'IRONJAW LINE: Mastiff-Rottweiler cross, 120–150lb, iron-plate chest — formation disruption, deployed 15 seconds before infantry contact',
+      'NIGHTHOUND LINE: Doberman-greyhound cross, black coat, near-silent — night operations alongside Dusk Corps, scent detection in darkness',
+      '20-pair Packs — operational unit. Each pair: 24-month bonding protocol before deployment. The bond itself is a performance multiplier.',
+    ],
+    armor:[
+      {slot:'Handler Body',  name:'Ironpack Handler Plate',  desc:'Medium plate with no protruding surface elements — no pauldrons, no hooks. Handler and hound move as one unit; the armor must not interfere with the dog\'s movement at full sprint alongside.'},
+      {slot:'Handler Helm',  name:'Half-Helm with Whistle Channel', desc:'Open face. Whistle-channel in cheek guard — seven distinct frequencies inaudible to humans, audible to canine hearing at 200 yards. The primary command system during operations.'},
+      {slot:'Ironjaw Armor', name:'Ironjaw Combat Plate',   desc:'Chest shield and neck gorget only. Nothing on legs or face — restricts movement and sprint speed. Light enough that the hound\'s charge is unaffected.'},
+      {slot:'Primary',       name:'Ironpack Short Lance',   desc:'5ft lance — shorter than cavalry, longer than infantry spear. Designed for covering the hound\'s approach and protecting a downed hound while maintaining weapon reach. Operates in the same space as the dog without interfering.'},
+    ],
+    note:'TACTICAL FUNCTIONS: (1) FORMATION DISRUPTION — 20 Ironjaw pairs released 15 seconds before infantry contact. Psychological disruption of enemy formation before the infantry arrives. (2) SCENT TRACKING — attached to Silent Wardens for deep recon. Can track through water, underground, days-old trail. (3) TUNNEL DETECTION — Ashounds detect sapper tunneling via earth-disturbance patterns before surface signs appear. 4 pairs permanently at Ironpass. (4) VOID EARLY WARNING — Ashound behavioral changes (circling, specific vocalizations, area refusal) precede every other detection method. Now part of Void Breakers\' early-warning protocol. (5) NIGHT — Nighthounds provide 300yd scent-detection coverage beyond Dusk Corps echolocation range. SELA\'S RULE: No commands to her personal hound Ash in spoken words — ever. "If I have to tell her in words, I\'ve waited too long." HANDLER ASSESSMENT: 72-hour separation test before certification. Sela never explains what she\'s looking for. Everyone who passes knows. Everyone who fails knows too.',
+  },
+  {
+    id:'crown-shadows', name:'The Crown Shadows',
+    subtitle:'Diplomatic Protective Escort · 60 Members · Cover-Identity Operations',
+    motto:'"The safest king is the one nobody is watching."',
+    tier:'specialized', strength:'60 members total — permanently small by design', color:'#2A2A4A',
+    commander:'Shadow-Warden Kira Voss (Human · Female · Age 41 · former Null Blades operative)', hq:'Classified — travels with Rayden Cale',
+    image:'',
+    roles:['Diplomatic Mission Protection','Cover-Identity Operations','Court Threat Assessment','Escalation Response','Royal Escort'],
+    desc:'Rayden Cale traveled to Karath with only Lyria. No Dawnguard. No Null Blades. The Dawnguard announces military intent. The Null Blades eliminates rather than protects. Starhaven needed a unit that can escort a king through hostile territory, into foreign courts, across enemy-adjacent diplomatic contexts — and look, throughout the entire operation, like it is doing none of those things. The Crown Shadows look like scribes, translators, stewards, honor attendants, scholars. They are 60 of the most capable individual fighters in Starhaven who chose to spend their careers looking like none of those things.',
+    units:[
+      'Cover roles: Senior Archivist · Library Assistant · Court Translator · Personal Steward · Honor Guard Attendant · Trade Representative · Retinue Servant · Personal Cook',
+      'Minimum 8 Crown Shadows present at any diplomatic function — different roles, invisible circle coverage of all approach angles',
+      'Kira Voss arrives 72 hours before Rayden at every destination — walks every room, assigns coverage before the mission begins',
+    ],
+    armor:[
+      {slot:'Body',    name:'Concealed Scale Vest',    desc:'Scale plate over torso only, worn under formal diplomatic dress. The rest is unarmored by operational necessity. Their protection is positioning, not armor.'},
+      {slot:'Primary', name:'Slim Wrist Blade',        desc:'14-inch blade, wrist sheath — concealed under diplomatic sleeve. Primary engagement weapon.'},
+      {slot:'Secondary',name:'Compact Folding Crossbow', desc:'Folds flat, carried in a document satchel. Identical in size to a standard document case. Assembled in 4 seconds.'},
+      {slot:'Carried', name:'Throwing Knives (×3) + Poison Vials (×2)', desc:'Sleep compound and contact nerve agent — non-lethal baseline. Mission-dependent escalation authorized by Kira Voss only.'},
+      {slot:'Personal', name:'Member-Selected Concealed Weapon', desc:'Individual choice within: "cannot be identified as a weapon on casual visual inspection." One member carries a weighted book. One member\'s walking staff has a blade core. One member\'s medicine kit contains three things that are not medicine.'},
+    ],
+    note:'ESCALATION TIERS: T0 (normal) — cover maintained, completely invisible. T1 (elevated) — positions shift without breaking cover, Rayden steered to defensive position by "steward" without explanation. T2 (imminent threat) — cover abandoned, physical perimeter formed, extraction begins. Diplomatic mission ends. T3 (active engagement) — Kira responds personally. Happened once. 11 seconds. One casualty (the assassin). Official report: "a misunderstanding was resolved through diplomatic channels." SELECTION: Candidates observed for 3 months before approach. If they notice the observation: stronger candidate. If they approach YOU first: offer immediately. Has happened once. That member is currently third in command. KIRA\'S METRIC: "The only number that matters is how many times Null Blades has been called for a Tier 4 escalation." Answer: zero. She considers this the only performance metric.',
+  },
+
+  {
+    id:'iron-road-corps', name:'Iron Road Corps',
+    subtitle:'Multi-Front Logistics & Armory Replenishment',
+    motto:'"The army that eats wins."',
+    tier:'specialized', strength:'12,000 (Largest Non-Combat Force in Starhaven)', color:'#5A4A28',
+    commander:'Provision-Marshal Senn Aldric', hq:'Ashfield (primary hub) · Fortgehaven (industrial supply)',
+    image:'',
+    roles:['Multi-Front Supply Chain','Field Forge Operations','Armory Replenishment','Road Engineering','Convoy Defense'],
+    desc:'An army that runs out of arrows loses. An army that runs out of food collapses. An army fighting on two simultaneous fronts with no logistics corps does both. Senn Aldric built the Iron Road Corps on one principle: supply scales geometrically across fronts, not linearly. 12,000 personnel, 600 supply wagons, four climate-specific ration variants, and mobile forges that keep every weapon sharp.',
+    units:[
+      'Wagon Train Masters & Drivers — 3,000 (600 supply wagons on rotating front routes)',
+      'Field Armorers & Forge Teams — 2,000 (mobile forges near each front)',
+      'Armory Replenishment Teams — 2,000 (arrows · siege stone · alchemical components)',
+      'Ration Corps — 1,500 (4 climate variants: cold/heat/standard/maritime)',
+      'Water & Fuel Division — 1,000',
+      'Road Engineering Teams — 1,000',
+      'Supply Guard — 1,500 (combat-rated light infantry · crossbow-armed · convoy defense)',
+    ],
+    armor:[
+      {slot:'Body',  name:'Logistics Corps Padded Coat', desc:'Reinforced leather coat. Non-combatant supply personnel. Treated under Starhaven\'s battlefield conventions accordingly.'},
+      {slot:'Arms',  name:'Supply Guard Chainmail',       desc:'Supply Guard only — medium chainmail over the standard coat. Distinguishes the 1,500 combat-rated escorts from non-combat personnel.'},
+    ],
+    note:'Coordinates with Tiber Oswick\'s trade network for procurement — Senn Aldric moves supply, Tiber sources it. Supply Guard trains specifically for enemy black ops against supply lines (Null-Blades-style raids are the primary threat). The corps\'s biggest vulnerability: the 600 supply wagons. Losing a wagon train can starve a front faster than losing a battle.',
+  },
   {
     id:'holy-knights', name:'Holy Knights of Starhaven',
     subtitle:'Kingdom Sacred Military Order · Sancthaven',
@@ -3098,6 +3596,33 @@ const ARMIES = [
     roles:['Oceanic Operations','Naval Superiority','Troop Transport'],
     desc:'Primary deep-water fleet. 240 warships covering oceanic operations from the Dawncliff Sea Fortress. The naval arm that Project Skyreach was designed to eventually replace for long-range operations.',
     note:'',
+  },
+
+  // Inserted naval coastal defense: Tidebreaker Corps
+  {
+    id:'tidebreaker-corps', name:'Tidebreaker Corps',
+    subtitle:'Shore Defense & Coastal Counter-Landing Force',
+    motto:'"Dawncliff guards the sea. We guard what the sea reaches."',
+    tier:'naval', strength:'6,000', color:'#285870',
+    commander:'Shore-Marshal Caela Vorn', hq:'Dawncliff (3,500) · Saltmere (1,500) · Mobile Shore Reserve (1,000)',
+    image:'',
+    roles:['Shore Landing Defense','Coastal Counter-Assault','Harbor Protection','Cliff Terrain Combat'],
+    desc:'Dawnfleet holds open water. Dawncliff holds the fortress walls. Nobody held the space between — the beaches, harbor approaches, cliff-face landing points, and Seabreak Harbor itself. Caela Vorn, former Dawnfleet officer who crossed to shore command after the Third Naval Engagement of Year 1044, built the Tidebreaker Corps specifically for that transitional zone.',
+    units:[
+      'Shore Infantry — 2,000 (beach & wet stone footing doctrine)',
+      'Cliff Assault Guard — 800 (vertical terrain · grapple-trained)',
+      'Coastal Crossbow Batteries — 1,000 (elevated, overlapping beach approach fire zones)',
+      'Tide Engineers — 600 (underwater stakes, chain barriers, harbor blocking)',
+      'Marine Strike Force — 800 (boarding & counter-beachhead offensive element)',
+      'Shore Command & Signal — 300',
+      'Medical — salt-water adapted — 500',
+    ],
+    armor:[
+      {slot:'Body',  name:'Tidebreaker Shore Plate', desc:'Medium chainmail over salt-treated leather. No full plate. Quick-release buckles at shoulder and hip for swimming. Corrosion-treated for salt spray and repeated sea exposure.'},
+      {slot:'Boots', name:'Shore Grip Boots',        desc:'Studded leather sole, iron toe-cap. Designed for wet stone, sand, and wooden ship decks. Wider stance base for uneven coastal terrain.'},
+      {slot:'Helm',  name:'Coastal Open Helm',       desc:'Open-face. Enclosed helms fill with water in harbor breach scenarios. Simple iron band with cheekguards — maximum visibility, minimum drowning risk.'},
+    ],
+    note:'The only Starhaven unit with salt-water wound treatment protocol — Isolde Cren\'s Apothecary Corps does not train for this. Shore Infantry trains on wet stone and sand footing — meaningfully different balance discipline from standard infantry. Marine Strike Force is the only offensive element — used to board ships that breach the harbor or counter-land if a hostile force has established a beachhead.',
   },
   {
     id:'ironpass-garrison', name:'Ironpass Citadel',
@@ -4304,6 +4829,84 @@ function armyCard(a, tierColor) {
     `<span class="rel-tag" style="font-size:10px;border-color:${a.color}44;color:${a.color}">${r}</span>`
   ).join('');
 
+  
+
+  const unitClassLabelOverrides = {
+    'ironmane-lancers':'Heavy Cavalry',
+    'windlance-cavalry':'Light Cavalry',
+    'silver-swan-cavalry':'Medium Cavalry',
+    'dawnlancers':'Heavy Cavalry',
+    'warbreakers':'Heavy Infantry',
+    'ashrunners':'Light Infantry',
+    'black-charge':'Heavy Cavalry',
+    'ironwall':'Very Heavy Infantry',
+    'gauntlet-army':'Heavy Infantry',
+    'ironveil-spear-corps':'Heavy Infantry',
+    'skywarden-corps':'Light Cavalry',
+    'runebreakers':'Heavy Infantry',
+    'iron-talon-batteries':'Heavy Artillery',
+    'dawnsteel-order':'Elite Infantry',
+    'ironbreaker-mace-corps':'Heavy Infantry',
+    'silverleaf-corps':'Medium Ranged',
+    'undying-colors':'Medium Infantry',
+    'arcanum-tidewatch':'Naval Support',
+    'iron-road-corps':'Logistics Support',
+    'tidebreaker-corps':'Heavy Naval',
+    'dawnfleet':'Naval Fleet',
+    'arcane-artillery':'Arcane Artillery'
+  };
+
+  // Pill CSS map removed from JS — badge pills are no longer rendered on cards
+
+  const unitClassKeywords = ['Infantry','Cavalry','Artillery','Shock','Heavy','Light','Elite','Medium','Specialized','Mounted','Archers','Horse Archer','Guard','Corps','Division','Fleet','Order','Breach','Reconnaissance','Naval','Aerial'];
+  const subtitleSegments = a.subtitle ? a.subtitle.split('·').map(s => s.trim()).filter(Boolean) : [];
+  const scoreSegment = segment => {
+    return unitClassKeywords.reduce((score, keyword) =>
+      score + (new RegExp(`\\b${keyword}\\b`, 'i').test(segment) ? keyword.length : 0)
+    , 0);
+  };
+  const bestSubtitleSegment = subtitleSegments.reduce((best, segment) => {
+    const currentScore = scoreSegment(segment);
+    return currentScore > best.score ? { segment, score: currentScore } : best;
+  }, { segment: '', score: 0 }).segment;
+  const fallbackLabel = bestSubtitleSegment || subtitleSegments[0] || (a.tier ? a.tier.charAt(0).toUpperCase() + a.tier.slice(1) : '');
+
+  const unitClassCandidates = [
+    'Light Shock Infantry', 'Shock Infantry', 'Very Heavy Infantry', 'Heavy Infantry', 'Medium Infantry', 'Light Infantry',
+    'Cataphracts Cavalry', 'Very Heavy Cavalry', 'Heavy Cavalry', 'Medium Cavalry', 'Light Cavalry', 'Mounted Archers',
+    'Arcane Artillery', 'Heavy Artillery', 'Naval Support', 'Naval Force', 'Logistics Support', 'Medium Ranged', 'Elite Infantry'
+  ];
+
+  const inferUnitClass = text => {
+    const source = (text || '').trim();
+    if (!source) return a.tier ? `${a.tier.charAt(0).toUpperCase() + a.tier.slice(1)} Unit` : 'Unknown Unit';
+    const normalized = source.toLowerCase();
+    for (const candidate of unitClassCandidates) {
+      if (new RegExp(`\\b${candidate.toLowerCase()}\\b`, 'i').test(source)) return candidate;
+    }
+    if (/cavalry|horse archer|mounted|charge|cataphracts/i.test(normalized)) {
+      if (/very heavy/i.test(normalized)) return 'Very Heavy Cavalry';
+      if (/heavy|shock|elite|cataphracts/i.test(normalized)) return 'Heavy Cavalry';
+      if (/medium/i.test(normalized)) return 'Medium Cavalry';
+      return 'Light Cavalry';
+    }
+    if (/infantry|shock|breach|rush|order|guard|mace|spearman|halberdier|pikemen/i.test(normalized)) {
+      if (/very heavy/i.test(normalized)) return 'Very Heavy Infantry';
+      if (/heavy|elite/i.test(normalized)) return 'Heavy Infantry';
+      if (/medium/i.test(normalized)) return 'Medium Infantry';
+      return 'Light Infantry';
+    }
+    if (/artillery|battlemage|battery|arcane/i.test(normalized)) return 'Arcane Artillery';
+    if (/naval|fleet|shore|ship/i.test(normalized)) return 'Naval Force';
+    if (/recon|scout|aerial/i.test(normalized)) return 'Light Cavalry';
+    return a.tier ? `${a.tier.charAt(0).toUpperCase() + a.tier.slice(1)} Unit` : 'Unknown Unit';
+  };
+
+  const unitClassLabel = unitClassLabelOverrides[a.id] || inferUnitClass(a.subtitle || fallbackLabel);
+  const unitClassHtml = unitClassLabel
+    ? `<div class="unit-class-field"><span class="unit-class-label">Unit Class</span><span class="unit-class-value">${unitClassLabel}</span></div>`
+    : '';
+
   const unitsHtml = a.units && a.units.length
     ? `<div style="margin-top:10px;border-top:1px solid var(--border2);padding-top:10px">
         <p style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Unit Composition</p>
@@ -4333,7 +4936,9 @@ function armyCard(a, tierColor) {
       <div style="height:4px;background:linear-gradient(90deg,${a.color}55,${a.color})"></div>
       ${imgHtml}
       <div style="padding:14px 16px">
-        <h3 style="font-family:'Cinzel',serif;font-size:14px;color:var(--gold2);margin:0 0 2px">${a.name}</h3>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:6px">
+          <h3 style="font-family:'Cinzel',serif;font-size:14px;color:var(--gold2);margin:0">${a.name}</h3>
+        </div>
         <p style="font-size:10px;color:var(--text3);font-family:'JetBrains Mono',monospace;line-height:1.4;margin:0 0 6px">${a.subtitle}</p>
         ${a.motto ? `<p style="font-size:11px;color:var(--amber3);font-style:italic;margin:0 0 8px;line-height:1.4">${a.motto}</p>` : ''}
         <span style="display:inline-block;font-size:10px;font-family:'JetBrains Mono',monospace;color:${a.color};background:${a.color}15;border:1px solid ${a.color}44;border-radius:4px;padding:2px 8px;margin-bottom:9px">${a.strength}</span>
@@ -4347,6 +4952,7 @@ function armyCard(a, tierColor) {
             <p style="font-size:11px;color:var(--text2)">${a.hq}</p>
           </div>
         </div>
+        ${unitClassHtml}
         <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px">${rolesHtml}</div>
         ${a.desc ? `<p style="font-size:12px;color:var(--text2);line-height:1.65;margin:0">${a.desc}</p>` : ''}
         ${unitsHtml}
