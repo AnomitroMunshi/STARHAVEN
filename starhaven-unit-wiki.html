@@ -309,6 +309,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
       gap: 10px;
+      align-items: start;
     }
 
     /* UNIT CARD — Horizontal */
@@ -338,7 +339,7 @@
       display: none;
       align-items: center;
       justify-content: center;
-      padding: 24px;
+      padding: 8px;
       background: rgba(7, 8, 11, 0.85);
       backdrop-filter: blur(6px);
       z-index: 250;
@@ -351,13 +352,15 @@
     .card-modal .modal-card {
       position: relative;
       width: 100%;
-      max-width: 980px;
-      max-height: calc(100vh - 64px);
-      overflow: auto;
+      max-width: min(1440px, 96vw);
+      max-height: calc(100vh - 16px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
       background: var(--panel2);
       border: 1px solid var(--border2);
       border-radius: 12px;
-      box-shadow: 0 0 60px rgba(0, 0, 0, .35);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, .7);
     }
 
     .card-modal .modal-close {
@@ -379,27 +382,35 @@
     }
 
     .card-modal .modal-body {
-      padding: 16px;
+      padding: 0;
       display: flex;
-      justify-content: center;
+      flex: 1;
+      min-height: 0;
+      overflow: hidden;
     }
 
     .card-modal .modal-body .unit-card {
       width: 100%;
-      max-width: 940px;
       display: flex;
       gap: 0;
+      overflow: hidden;
+      min-height: 0;
     }
 
     .card-modal .modal-body .card-img {
-      width: 320px;
-      min-width: 320px;
-      aspect-ratio: 3/4;
+      width: 560px;
+      min-width: 560px;
+      align-self: stretch;
     }
 
     .card-modal .modal-body .card-body {
-      padding: 20px 22px;
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px 26px 32px;
       gap: 12px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border2) transparent;
+      min-height: 0;
     }
 
     .card-modal .modal-body .unit-name {
@@ -434,16 +445,16 @@
     /* ZOOM & PAN */
     .modal-img-container {
       position: relative;
-      width: 320px;
-      min-width: 320px;
-      aspect-ratio: 3/4;
+      width: 560px;
+      min-width: 560px;
+      height: 100%;
       overflow: hidden;
       background: var(--panel2);
-      border: 1px solid var(--border);
-      border-radius: 4px;
+      border-right: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
 
     .modal-img-wrapper {
@@ -458,6 +469,10 @@
 
     .modal-img-wrapper img {
       display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform-origin: center center;
       transition: transform .1s ease-out;
       cursor: grab;
       user-select: none;
@@ -519,9 +534,11 @@
 
     /* IMAGE */
     .card-img {
-      width: 120px;
-      aspect-ratio: 3/4;
+      width: 160px;
+      min-width: 160px;
+      min-height: 213px;
       flex-shrink: 0;
+      align-self: stretch;
       background: var(--panel2);
       position: relative;
       overflow: hidden;
@@ -713,8 +730,12 @@
       color: var(--muted);
     }
 
-    /* ARMOR LIST */
+    /* ARMOR LIST — hidden in grid, shown only in modal */
     .armor-list {
+      display: none;
+    }
+
+    .opened-card .armor-list {
       display: flex;
       flex-direction: column;
       gap: 3px;
@@ -968,6 +989,30 @@
       color: var(--br-anm);
     }
 
+    /* NOTES */
+    .card-notes {
+      border-top: 1px solid var(--border);
+      padding-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .notes-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .notes-text {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -1118,43 +1163,83 @@
             "label": "Very Heavy Infantry",
             "cards": [
               {
-                "id": "dawnguard",
+                "id": "ironwall",
                 "data-br": "Infantry",
                 "data-src": "own",
-                "name": "The Dawnguard",
+                "name": "Ironwall",
                 "branch": "Infantry",
-                "className": "Very Heavy Infantry",
-                "subtitle": "· Royal Guard · Anti-Corruption",
+                "className": " Very Heavy Infantry",
+                "subtitle": "· Siege Defense · Line Holder · Phalanx",
                 "srcPill": "🏰 Own",
                 "armorBadge": "V.Heavy",
                 "armorClass": "armor-badge a-vh",
-                "location": "Starhold Capital",
-                "army": "Pillar of Rayden Cale",
-                "image": "Lores/Mueseum/DawnGuard.png",
-                "imageAlt": "The Dawnguard",
+                "location": "Ironpass Citadel / Mobile",
+                "army": "Pillar of Kael Varric",
+                "image": "unitImages/ironwall.png",
+                "imageAlt": "Ironwall",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Dawnguard Plate",
-                    "desc": "— Layered blacksteel. Rune-etched, corruption-sealed. Operates in Void-d…"
-                  },
-                  {
-                    "slot": "Helm",
-                    "name": "Corruption-Sealed Helm",
-                    "desc": "— Full-seal with anti-miasma lining. Sealed against Void corruption."
-                  },
-                  {
-                    "slot": "Cloak",
-                    "name": "Dawn Cloak",
-                    "desc": "— Weathered crimson mantle — symbol of oath. Every member wears it. The …"
+                    "name": "Bastion Plate",
+                    "desc": "— Massive fortress-grade blacksteel plate. Engineered for prolonged shieldwall warfare, siege defense, and monster impact resistance. Among the heaviest armor issued in Starhaven."
                   },
                   {
                     "slot": "Shield",
-                    "name": "Bastion Shield",
-                    "desc": "— Interlocking-edge design. Side-hooks lock adjacent shields."
+                    "name": "Bulwark Shield",
+                    "desc": "— Tower-sized interlocking shield reinforced with iron ribs and anchor hooks. Designed to create an unbroken wall against cavalry, monsters, and siege assaults."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Ironwall War Spear",
+                    "desc": "— 9ft steel-shod formation spear optimized for phalanx warfare. Effective against cavalry charges, large beasts, and advancing infantry."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Bastion Shortsword",
+                    "desc": "— Broad military sidearm carried for close-quarters combat when formations collapse or fighting reaches the shieldwall."
+                  }
+                ]
+              },
+              {
+                "id": "black-bastions",
+                "data-br": "Infantry",
+                "data-src": "own",
+                "name": "Black Bastions",
+                "branch": "Infantry",
+                "className": "Elite Infantry",
+                "subtitle": "· Very Heavy Infantry · Battlefield Anchor",
+                "srcPill": "🏰 Own",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Starhold",
+                "army": "1st Army · 3rd Army Attachments",
+                "image": "unitImages/black-bastions.png",
+                "imageAlt": "",
+                "notes": "The Black Bastions are Starhaven's heaviest field infantry. Unlike Ironwall, they are not fortress troops. They march with expeditionary armies and are deployed wherever the battle is expected to break.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Bastion Warplate",
+                    "desc": "— Extremely heavy blacksteel plate built for open-field warfare rather than siege defense."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Bulwark Tower Shield",
+                    "desc": "— Massive battlefield shield capable of forming mobile walls against arrows, cavalry, and monsters."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Breaker PoleAxe",
+                    "desc": "— Heavy poleaxe designed to crush armor, hook shields, and bring down large targets."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Bastion Longsword",
+                    "desc": "— Broad battlefield sword used once formations close."
                   }
                 ]
               }
+
             ]
           },
           {
@@ -1173,18 +1258,33 @@
                 "armorClass": "armor-badge a-vh",
                 "location": "Greenveil",
                 "army": "Greenveil Defense Forces",
-                "image": "",
+                "image": "unitImages/sentinel-guards.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
                     "name": "Greenveil Elder Plate",
-                    "desc": "— Bark-reinforced plate grown from Greenveil's oldest stonebark trees. C…"
+                    "desc": "— Bark-reinforced heavy plate grown from Greenveil's oldest stonebark trees. Combines forged steel and living wood into a resilient defensive shell."
                   },
                   {
                     "slot": "Shield",
                     "name": "Sentinel Bark Shield",
-                    "desc": "— Grown not forged. Regrows over 72 hours after damage."
+                    "desc": "— Grown rather than forged. Dense living wood reinforced with ironwood roots. Slowly regenerates damage over time."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Sentinel War Spear",
+                    "desc": "— Heavy forest-forged spear designed to stop cavalry, beasts, and monsters attempting to breach Greenveil's borders."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Ironwood Longsword",
+                    "desc": "— Broad defensive longsword carried when fighting closes beyond spear range."
+                  },
+                  {
+                    "slot": "Cloak",
+                    "name": "Greenveil Guardian Cloak",
+                    "desc": "— Forest-dyed mantle worn by Greenveil's elite defenders. Blends naturally among woodland terrain."
                   }
                 ]
               },
@@ -1201,18 +1301,23 @@
                 "armorClass": "armor-badge a-h",
                 "location": "Ironmere Kingdom",
                 "army": "Kingdom of Ironmere — King Aldric Vorn",
-                "image": "",
+                "image": "unitImages/ironmere-vets.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Ironmere Veteran Plate",
-                    "desc": "— Earned, not issued. Each suit marks 10+ years of active service."
+                    "name": "Ironmere Warplate",
+                    "desc": "— Battle-worn heavy plate forged for decades of campaigning. Functional, durable, and maintained by generations of kingdom armorers."
                   },
                   {
-                    "slot": "Helm",
-                    "name": "Veteran's Iron Helm",
-                    "desc": "— Full enclosure — survivors' preference."
+                    "slot": "Shield",
+                    "name": "Kingdom Heater Shield",
+                    "desc": "— Large steel-rimmed shield bearing Ironmere heraldry. Built for disciplined formation warfare."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Veteran Longspear",
+                    "desc": "— Professional infantry spear designed to hold lines, repel cavalry, and support shieldwall formations."
                   }
                 ]
               },
@@ -1229,13 +1334,28 @@
                 "armorClass": "armor-badge a-h",
                 "location": "Stonefang — Highland Mountains",
                 "army": "Stonefang Remnant — Drogar Stonefang",
-                "image": "",
+                "image": "unitImages/ancestor-guard.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Ancestral Stone Plate",
-                    "desc": "— Carved from highland stone-ore. Only the Stonefang elite can lift it."
+                    "name": "Ancestor Stoneplate",
+                    "desc": "— Massive black stone-and-steel plate engraved with ancestral runes. Among the heaviest armor worn by any living warrior."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Ancestor Deathmask",
+                    "desc": "— Full-faced war helm bearing the carved likenesses of honored ancestors. Intended to inspire allies and terrify enemies."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Runebreaker Greataxe",
+                    "desc": "— Monumental two-handed greataxe capable of shattering shields, armor, and monster bone."
+                  },
+                  {
+                    "slot": "Alternate Weapon",
+                    "name": "Earthshaker Warhammer",
+                    "desc": "— Massive rune-carved hammer wielded by the strongest guards. Designed to crush heavily armored foes and siege defenses."
                   }
                 ]
               }
@@ -1245,35 +1365,50 @@
             "label": "Heavy Infantry",
             "cards": [
               {
-                "id": "ironwall",
+                "id": "dawnguard",
                 "data-br": "Infantry",
                 "data-src": "own",
-                "name": "Ironwall",
+                "name": "The Dawnguard",
                 "branch": "Infantry",
                 "className": "Heavy Infantry",
-                "subtitle": "· Siege Defense · Line Holder · Phalanx",
+                "subtitle": "· Royal Guard · Anti-Corruption",
                 "srcPill": "🏰 Own",
                 "armorBadge": "Heavy",
                 "armorClass": "armor-badge a-h",
-                "location": "Ironpass Citadel / Mobile",
-                "army": "Pillar of Kael Varric",
-                "image": "Lores/Mueseum/IronWall.png",
-                "imageAlt": "Ironwall",
+                "location": "Starhold Capital",
+                "army": "Pillar of Rayden Cale",
+                "image": "unitImages/dawnguard.png",
+                "imageAlt": "The Dawnguard",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Bastion Plate",
-                    "desc": "— Heaviest standard infantry armor. Reinforced for sustained impact abso…"
+                    "name": "Dawnguard Plate",
+                    "desc": "— Layered blacksteel plate etched with anti-corruption runes. Balances protection and mobility for prolonged combat against corrupted enemies."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Corruption-Sealed Helm",
+                    "desc": "— Full-face helm with anti-miasma lining and sealed breathing vents. Designed for operations in corrupted environments."
                   },
                   {
                     "slot": "Shield",
-                    "name": "Bulwark Shield",
-                    "desc": "— Massive tower shield. Interlocking side-hooks anchor adjacent shields …"
+                    "name": "Dawnshield",
+                    "desc": "— Reinforced kite shield engraved with purification sigils. Built for both formation warfare and independent combat."
                   },
                   {
-                    "slot": "Mounts",
-                    "name": "Armored Warhorses",
-                    "desc": "— Heavily barded destriers for officers. Dreadmaw-lineage stock."
+                    "slot": "Weapon",
+                    "name": "Dawnguard Longsword",
+                    "desc": "— Elite military longsword forged from blacksteel. Designed for versatility against infantry, monsters, and corrupted creatures."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Purifier Spear",
+                    "desc": "— Anti-monster thrusting spear issued for specific deployments against large corrupted targets."
+                  },
+                  {
+                    "slot": "Cloak",
+                    "name": "Dawn Cloak",
+                    "desc": "— Crimson oath-cloak worn by every Dawnguard. Symbol of service to Starhaven and the defense of its people."
                   }
                 ]
               },
@@ -1290,18 +1425,28 @@
                 "armorClass": "armor-badge a-h",
                 "location": "Ironpass / Mobile",
                 "army": "1st Field Army — Doran Ashe",
-                "image": "Lores/Mueseum/first-field-army.png",
+                "image": "unitImages/1fa-heavy.png",
                 "imageAlt": "1st Field Army — Heavy Infantry",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Ironmere Field Plate",
-                    "desc": "— Reinforced matte-black plate with gold trim. Heavier than standard Sta…"
+                    "name": "Fieldplate Armor",
+                    "desc": "— Reinforced campaign plate designed for long marches and open-field warfare. Balances protection, endurance, and mobility."
                   },
                   {
                     "slot": "Shield",
-                    "name": "Ironwall Tower Shield",
-                    "desc": "— Massive rectangular formation shield with interlocking hooks for phala…"
+                    "name": "Starhaven Kite Shield",
+                    "desc": "— Standard heavy infantry shield used throughout the 1st Army. Large enough for formation warfare without sacrificing maneuverability."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Field Longspear",
+                    "desc": "— Professional infantry spear designed to hold battle lines, repel cavalry, and support coordinated formations."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Starsteel Arming Sword",
+                    "desc": "— Reliable battlefield sidearm issued to veteran heavy infantry once formations close."
                   }
                 ]
               },
@@ -1318,18 +1463,28 @@
                 "armorClass": "armor-badge a-h",
                 "location": "Distributed Garrisons",
                 "army": "3rd Field Army — Brek Tane",
-                "image": "Lores/Mueseum/ThirdArmy.png",
+                "image": "unitImages/3fa-heavy.png",
                 "imageAlt": "3rd Field Army — Heavy Infantry",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Garrison Heavy Plate",
-                    "desc": "— Maximum-weight protection — defensive doctrine prioritizes survivabili…"
+                    "name": "Stoneplate Harness",
+                    "desc": "— Heavy plate designed by Stonemark engineers. Worn by dwarfs, humans, goblins, and half-orcs serving in the 3rd Army."
                   },
                   {
                     "slot": "Shield",
-                    "name": "Defensive Bulwark",
-                    "desc": "— Heavier than Ironwall standard. Adds bottom ground-anchoring spike."
+                    "name": "Stonewall Shield",
+                    "desc": "— Large rectangular shield optimized for shieldwall warfare, missile defense, and siege advances."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Holdbreaker Warhammer",
+                    "desc": "— Dwarven-pattern polehammer designed to crush armor, break shields, and hold formation lines against cavalry and monstrous assaults."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Stonemark War Axe",
+                    "desc": "— Dwarven-pattern sidearm favored throughout the 3rd Army for close-quarters combat."
                   }
                 ]
               }
@@ -1351,13 +1506,28 @@
                 "armorClass": "armor-badge a-m",
                 "location": "Coldmarch / Mobile",
                 "army": "2nd Field Army — Clea Vorn",
-                "image": "Lores/Mueseum/SecondArmy.png",
+                "image": "unitImages/2fa-medium.png",
                 "imageAlt": "2nd Field Army — Medium Infantry",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Cutting Wind Plate",
-                    "desc": "— Light cavalry half-plate — speed-optimized. Articulated joints for unr…"
+                    "name": "Ranger Harness",
+                    "desc": "— Reinforced mail and partial plate optimized for mobility, long marches, and rapid battlefield maneuver."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Starhaven Round Shield",
+                    "desc": "— Lightweight battlefield shield offering protection without limiting movement."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Field Longsword",
+                    "desc": "— Primary battlefield weapon of the 2nd Army. Designed for aggressive infantry assaults and flexible formation combat."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Twin War Axes",
+                    "desc": "— A matched pair of belt-carried axes worn on both hips. Used when formations break and fighting becomes chaotic and close."
                   }
                 ]
               },
@@ -1374,18 +1544,28 @@
                 "armorClass": "armor-badge a-m",
                 "location": "Starhold Central Reserve",
                 "army": "4th Field Army — Veyra Tal",
-                "image": "",
+                "image": "unitImages/4fa-medium.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Adaptive Field Plate",
-                    "desc": "— Medium-weight articulated plate. Versatility across terrain types over…"
+                    "name": "Vanguard Campaign Armor",
+                    "desc": "— Medium armor built for endurance rather than specialization. Suitable for every terrain and campaign type."
                   },
                   {
-                    "slot": "Helm",
-                    "name": "Open-Face Campaign Helm",
-                    "desc": "— Unenclosed visor — the Fourth Army fights by reading the field, not ab…"
+                    "slot": "Shield",
+                    "name": "Field Shield",
+                    "desc": "— Standardized shield allowing the 4th Army to integrate with any Starhaven formation."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Field Longsword",
+                    "desc": "— Primary weapon of the 4th Army. Effective in formation warfare, skirmishes, sieges, and defensive actions."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "War Hatchet",
+                    "desc": "— Universal sidearm used for combat, engineering, and survival tasks during extended campaigns."
                   }
                 ]
               },
@@ -1402,18 +1582,33 @@
                 "armorClass": "armor-badge a-m",
                 "location": "Karath Sultanate",
                 "army": "Karath Sultanate — Sultan Rashid",
-                "image": "",
+                "image": "unitImages/karath-sword.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Desert Sand-Plate",
-                    "desc": "— Light articulated plate rated for desert heat. Layered linen underlaye…"
+                    "name": "Sunscale Lamellar",
+                    "desc": "— Layered bronze-steel lamellar over breathable desert linen. Built for heat resistance and mobile protection."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Karathi Veiled Helm",
+                    "desc": "— Open-faced bronze helm with mail neck guard and sand veil. Protects against sun, dust, and glancing blows."
                   },
                   {
                     "slot": "Shield",
-                    "name": "Karath Round Shield",
-                    "desc": "— Medium round shield — mobile open-terrain use, not phalanx locking."
+                    "name": "Karathi Round Shield",
+                    "desc": "— Reinforced round shield of layered hardwood and bronze. Light enough for fast desert movement."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Karathi War Scimitar",
+                    "desc": "— Broad curved blade optimized for fast slashing attacks and fluid desert warfare."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Desert Long Dagger",
+                    "desc": "— Curved backup blade carried at the waist for close combat and survival."
                   }
                 ]
               }
@@ -1429,19 +1624,39 @@
                 "name": "2nd Field Army — Light Infantry",
                 "branch": "Infantry",
                 "className": "Light Infantry",
-                "subtitle": "· Vanguard Screen · Speed Doctrine",
+                "subtitle": "· Vanguard Screen · Speed Doctrine · Infantry-Skirmisher Hybrid",
                 "srcPill": "🏰 Own",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Coldmarch / Mobile",
                 "army": "2nd Field Army — Clea Vorn",
-                "image": "Lores/Mueseum/SecondArmy.png",
+                "image": "unitImages/2fa-light.png",
                 "imageAlt": "2nd Field Army — Light Infantry",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Cutting Wind Light Plate",
-                    "desc": "— Minimal coverage — chest and upper arms only. Speed over protection."
+                    "name": "Pathfinder Harness",
+                    "desc": "— Lightweight brigandine and reinforced leather designed for rapid movement, scouting, and extended field operations."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Open Scout Helm",
+                    "desc": "— Light steel helm with cheek guards providing protection without limiting vision or awareness."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Starhaven Round Shield",
+                    "desc": "— Compact round shield optimized for mobility, skirmishing, and close combat."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Field Arming Sword",
+                    "desc": "— Fast, versatile battlefield sword suited for both formation fighting and independent engagements."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Skirmisher Javelins",
+                    "desc": "— Three to five throwing javelins carried across the back. Used to harass, disrupt, and soften enemy formations before melee."
                   }
                 ]
               },
@@ -1458,13 +1673,33 @@
                 "armorClass": "armor-badge a-l",
                 "location": "Starhold Central Reserve",
                 "army": "4th Field Army — Veyra Tal",
-                "image": "",
+                "image": "unitImages/4fa-light.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Adaptive Light Coat",
-                    "desc": "— Reinforced canvas and leather — versatile across terrain types."
+                    "name": "Pathfinder Harness",
+                    "desc": "— Layered leather, mail, and light plate designed for mountains, forests, deserts, ruins, and extended campaigns."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Vanguard Scout Helm",
+                    "desc": "— Open-faced steel helm with detachable hood and neck guard. Built for visibility and adaptability across varied terrain."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Ranger Round Shield",
+                    "desc": "— Compact reinforced shield suitable for skirmishing, climbing, scouting, and close combat."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Trailbreaker Falchion",
+                    "desc": "— Broad single-edged battlefield blade effective against lightly armored troops, beasts, and rough terrain combat."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Pathfinder Javelins",
+                    "desc": "— Three throwing javelins carried on the back for harassment, ambushes, and opening engagements."
                   }
                 ]
               },
@@ -1481,18 +1716,38 @@
                 "armorClass": "armor-badge a-l",
                 "location": "Frosthold Bastion",
                 "army": "Frosthold Garrison — Wyld Frostmere",
-                "image": "",
+                "image": "unitImages/mtn-skirmishers.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Mountain Skirmisher Leathers",
-                    "desc": "— Thin leather with iron shoulder caps. Cliffside movement over protecti…"
+                    "name": "Frosthide Skirmisher Leathers",
+                    "desc": "— Fur-lined reinforced leather with light iron shoulder caps. Built for cliffside movement, snow marches, and cold-weather ambushes."
                   },
                   {
-                    "slot": "Boots",
-                    "name": "Cliffside Grip Boots",
-                    "desc": "— Studded sole for cliff-face and ice movement."
+                    "slot": "Helm",
+                    "name": "Open Mountain Helm",
+                    "desc": "— Light steel helm with fur lining and cheek guards. Keeps vision clear during storms, climbs, and hit-and-run attacks."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Cliffguard Buckler",
+                    "desc": "— Small round shield strapped to the forearm. Light enough for climbing and fast movement across broken terrain."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Frost Javelins",
+                    "desc": "— Four heavy throwing javelins carried across the back. Used to ambush patrols, disrupt formations, and harass advancing enemies."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Mountain Short Spear",
+                    "desc": "— Compact spear designed for cliff fighting, narrow passes, and sudden downhill charges after javelin volleys."
+                  },
+                  {
+                    "slot": "Sidearm",
+                    "name": "Icefang Hatchet",
+                    "desc": "— Utility combat axe used for climbing, survival, and close combat."
                   }
                 ]
               },
@@ -1509,18 +1764,39 @@
                 "armorClass": "armor-badge a-l",
                 "location": "Greenveil",
                 "army": "Greenveil Defense Forces — Dena Veil",
-                "image": "",
+                "image": "unitImages/warden-infantry.png",
                 "imageAlt": "",
+                "notes": "The Warden Infantry are the elite forest defenders of Greenveil. They are Wood Elves trained to move silently, strike quickly, and use the terrain to their advantage against any invader.",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Greenveil Warden Leather",
-                    "desc": "— Forest-dyed leather. Bark-reinforced at chest. Blends into Greenveil's…"
+                    "name": "Greenveil Ranger Harness",
+                    "desc": "— Reinforced leather and ironwood scale armor designed for silent movement through dense forests and rough terrain."
                   },
                   {
-                    "slot": "Cloak",
-                    "name": "Forest Warden Cloak",
-                    "desc": "— Leaf-pattern camouflage — standard issue for all Warden Infantry."
+                    "slot": "Helm",
+                    "name": "Warden Hood & Skullcap",
+                    "desc": "— Hardened leather hood over a concealed steel skullcap. Provides protection without limiting hearing or peripheral vision."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Ironwood Buckler",
+                    "desc": "— Lightweight forearm shield crafted from Greenveil ironwood. Favored during patrols and skirmishes."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Warden Shortspear",
+                    "desc": "— Versatile forest spear effective against beasts, cavalry, and woodland raiders."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Throwing Spears",
+                    "desc": "— Three light throwing spears carried across the back for ambushes and opening volleys."
+                  },
+                  {
+                    "slot": "Sidearm",
+                    "name": "Ironwood Falchion",
+                    "desc": "— Broad chopping blade used when fighting closes beneath the trees."
                   }
                 ]
               },
@@ -1531,24 +1807,34 @@
                 "name": "Hammerers",
                 "branch": "Infantry",
                 "className": "Light Infantry",
-                "subtitle": "· Dwarven Vanguard · Axes & Spears",
+                "subtitle": "· Dwarven Light Shock Infantry · Axes & Hammers",
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Stonemark Hold",
                 "army": "Stonemark Holds — Brokk Graniteborn",
-                "image": "",
+                "image": "unitImages/hammerers-sm.png",
                 "imageAlt": "",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Dwarven Light War-Coat",
-                    "desc": "— Reinforced leather over chain shirt. Dwarven construction — compact an…"
+                    "name": "Highland Raider Harness",
+                    "desc": "— Lightweight dwarven mail reinforced with leather and steel plates. Built for aggressive mountain warfare and rapid assaults."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Stonepath Helm",
+                    "desc": "— Open-faced dwarven helm providing protection while maintaining visibility during charges and rough-terrain combat."
                   },
                   {
                     "slot": "Weapon",
-                    "name": "Dwarven War-Axe",
-                    "desc": "— Single-edge short axe and spear — the vanguard pairing in Stonemark do…"
+                    "name": "Stoneforge Throwing Hammers",
+                    "desc": "— Four balanced throwing hammers carried across the back. Used moments before impact to stagger enemies and break shield formations."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Highland War Axe",
+                    "desc": "— Broad dwarven assault axe optimized for close combat, shield breaking, and brutal mountain engagements."
                   }
                 ]
               }
@@ -3705,7 +3991,7 @@
         "branch": "🐺 Beast Cavalry",
         "subgroups": [
           {
-            "label": "Wolf Riders",
+            "label": "War-Beast Command",
             "cards": [
               {
                 "id": "primal-vanguard",
@@ -3739,32 +4025,48 @@
                     "desc": "— Ironwood-fitted per beast type: Dire Wolves light harness, War Bears f…"
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "label": "Dire Wolf Handler Corps",
+            "cards": [
               {
                 "id": "beast-wardens",
                 "data-br": "Beast Cavalry",
                 "data-src": "own",
-                "name": "Beast Wardens — Dire Wolf Handlers",
+                "name": "Dire Wolf Handler Corps",
                 "branch": "Beast Cavalry",
-                "className": "Wolf Riders",
-                "subtitle": "· Handler-Bond · Dire Wolf Strike",
+                "className": "Beast Handler Unit",
+                "subtitle": "· 1 Handler per 4–5 Wolves · Handler-Bond · Can Ride",
                 "srcPill": "🏰 Own",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Greenveil",
-                "army": "Greenveil Defense Forces",
+                "army": "Greenveil Defense Forces — Primal Vanguard",
                 "image": "",
                 "imageAlt": "",
+                "notes": "Handlers operate on foot, directing wolf packs through bond-trained signal commands. Each handler is paired with 4–5 Dire Wolves for life. Handlers can mount their wolves for pursuit or rapid repositioning if required.",
                 "armor": [
                   {
-                    "slot": "Body",
+                    "slot": "Handler Body",
                     "name": "Greenveil Bond Leather",
-                    "desc": "— Light leather — bond-training requires unrestricted movement between h…"
+                    "desc": "— Light leather — bond-training requires unrestricted movement between handler and wolf. Iron shoulder cap only."
+                  },
+                  {
+                    "slot": "Handler Weapon",
+                    "name": "Handler Spear & Shortsword",
+                    "desc": "— 6ft handler spear for beast direction and personal defense. Shortsword sidearm for close quarters."
+                  },
+                  {
+                    "slot": "Ride Option",
+                    "name": "Wolf-Mounted Pursuit",
+                    "desc": "— Handlers can mount their bonded wolf for pursuit or rapid movement. No saddle — bareback bond-ride only."
                   },
                   {
                     "slot": "Beast",
                     "name": "Dire Wolf Speed Harness",
-                    "desc": "— Light iron harness. Fast-entry mount. Connects to handler's wrist-teth…"
+                    "desc": "— Light iron harness. Fast-entry mount. Connects to handler's wrist-tether for pack coordination."
                   }
                 ]
               }
@@ -3774,7 +4076,7 @@
             "label": "Snow Elk / Forest Elk Cavalry",
             "cards": [
               {
-                "id": "snowtusk",
+                "id": "snowtusk-cavalry",
                 "data-br": "Beast Cavalry",
                 "data-src": "gar",
                 "name": "Snowtusk Cavalry",
@@ -3786,18 +4088,24 @@
                 "armorClass": "armor-badge a-h",
                 "location": "Frosthold Bastion",
                 "army": "Frosthold Garrison — Wyld Frostmere",
-                "image": "",
+                "image": "unitImages/snowtusk-cavalry.png",
                 "imageAlt": "",
+                "notes": "Exclusive to Frosthold. Snowtusk War Elk cannot be transported to lower altitudes — the beasts deteriorate rapidly below the snowline. Wyld Frostmere has refused all requests to deploy them south. Riders can be only Dwarves or goblins — the beasts are too large for human riders. The Frost Lance & Icefang Saber are the only weapons issued to this unit.",
                 "armor": [
                   {
                     "slot": "Rider",
-                    "name": "Coldplate Riding Armor",
-                    "desc": "— Heavy plate adapted for extreme cold. Joint seals prevent ice-lock."
+                    "name": "Frosthide Cavalry Plate",
+                    "desc": "— Fur-lined medium plate forged for arctic warfare. Reinforced chest, shoulders, and arms while preserving mounted mobility."
                   },
                   {
                     "slot": "Mount",
-                    "name": "Snow Elk Riding Tack",
-                    "desc": "— Cold-rated saddle and chest guard. Snow Elk naturally resist barding w…"
+                    "name": "Snowtusk War Elk",
+                    "desc": "— Massive northern elk bred for snow, ice, and mountain terrain. Thick hide, immense stamina, and natural cold resistance."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Frost Lance & Icefang Saber",
+                    "desc": "— Heavy cavalry lance for impact followed by a broad curved saber designed for mounted combat in tight formations."
                   }
                 ]
               },
@@ -3832,56 +4140,122 @@
             ]
           },
           {
-            "label": "War Bear / Rhino / Cat Cavalry",
+            "label": "Beast Handler Units",
             "cards": [
               {
                 "id": "war-bears",
                 "data-br": "Beast Cavalry",
                 "data-src": "own",
-                "name": "War Bears",
+                "name": "War Bear Corps",
                 "branch": "Beast Cavalry",
-                "className": "War Bear Cavalry ⚙️",
-                "subtitle": "· Full Plate Barding · Heavy Beast Wave",
+                "className": "Beast Handler Unit",
+                "subtitle": "· 1 Handler per 4–5 Bears · Full Plate Barding · Can Ride",
                 "srcPill": "🏰 Own",
-                "armorBadge": "V.Heavy",
-                "armorClass": "armor-badge a-vh",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
                 "location": "Greenveil / Primal Vanguard",
                 "army": "Primal Vanguard — Thorin Blackroot",
-                "image": "",
+                "image": "unitImages/war-bears.png",
                 "imageAlt": "",
+                "notes": "Handlers operate on foot alongside their bears. Each handler directs 4–5 War Bears through bond-commands and physical cues. Handlers can mount their bear for assault charges or repositioning when required.",
                 "armor": [
                   {
-                    "slot": "Rider",
-                    "name": "Beast-Bond Plate",
-                    "desc": "— Rootguard Harness variant — articulated to allow bear-back movement."
+                    "slot": "Handler Body",
+                    "name": "War-Bond Handler Harness",
+                    "desc": "— Light leather with iron shoulder caps and arm guards. Keeps the handler mobile around 800lb war bears. No plate — weight slows the bond-bond response."
                   },
                   {
-                    "slot": "Beast",
+                    "slot": "Handler Weapon",
+                    "name": "Handler Spear & Shortsword",
+                    "desc": "— 6ft iron-tipped spear for beast direction and personal defense. Shortsword sidearm for close engagement after bear contact."
+                  },
+                  {
+                    "slot": "Ride Option",
+                    "name": "Bear-Mounted Assault",
+                    "desc": "— Handler can mount their bonded War Bear for assault charges. Rootguard Harness variant issued for mounted use — articulated to allow bear-back movement."
+                  },
+                  {
+                    "slot": "Beast Armor",
                     "name": "Full War-Bear Plate Barding",
-                    "desc": "— Iron barding custom-fitted per bear. Heaviest beast armor in any Starh…"
+                    "desc": "— Iron barding custom-fitted per bear. Heaviest beast armor in the Primal Vanguard. Head, neck, chest, and shoulder coverage."
                   }
                 ]
               },
               {
-                "id": "rhinos-cats",
+                "id": "mosshorn-rhinos",
                 "data-br": "Beast Cavalry",
                 "data-src": "own",
-                "name": "Mosshorn Rhinos & Thornfang Cats",
+                "name": "Mosshorn Rhino Corps",
                 "branch": "Beast Cavalry",
-                "className": "Rhino / Cat Cavalry ⚙️",
-                "subtitle": "· Fast Disruption · Formation Break",
+                "className": "Beast Handler Unit",
+                "subtitle": "· 1 Handler per 4–5 Rhinos · Formation Breaker · Can Ride",
                 "srcPill": "🏰 Own",
-                "armorBadge": "Heavy",
-                "armorClass": "armor-badge a-h",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
                 "location": "Greenveil / Primal Vanguard",
                 "army": "Primal Vanguard — Thorin Blackroot",
                 "image": "",
                 "imageAlt": "",
+                "notes": "Mosshorn Rhinos are used primarily to break enemy formations. Handlers direct 4–5 rhinos on foot through trained horn-signal commands. Handlers mount for the charge approach, dismount before impact to avoid being thrown.",
                 "armor": [
                   {
-                    "slot": "Beast",
-                    "name": "Beast Combat Harness",
-                    "desc": "— Ironwood-fitted per beast anatomy. Rhinos: horn-guard reinforcement. C…"
+                    "slot": "Handler Body",
+                    "name": "Rhino-Handler Leather Harness",
+                    "desc": "— Light leather, iron-reinforced chest and shoulders. Handlers work around charging rhinos — plate would restrict the evasive movement required."
+                  },
+                  {
+                    "slot": "Handler Weapon",
+                    "name": "Handler Spear & Shortsword",
+                    "desc": "— 6ft spear for beast direction and crowd control. Shortsword for personal defense once rhinos are engaged."
+                  },
+                  {
+                    "slot": "Ride Option",
+                    "name": "Rhino-Mounted Approach",
+                    "desc": "— Handlers ride their rhino to the engagement point, then dismount before the charge impact. Bareback — no saddle structure survives rhino-impact force."
+                  },
+                  {
+                    "slot": "Beast Armor",
+                    "name": "Mosshorn Combat Harness",
+                    "desc": "— Ironwood-fitted harness with iron horn-guard reinforcement. Protects skull and neck — the impact zone on a charging rhino."
+                  }
+                ]
+              },
+              {
+                "id": "thornfang-cats",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Thornfang Cat Corps",
+                "branch": "Beast Cavalry",
+                "className": "Beast Handler Unit",
+                "subtitle": "· 1 Handler per 4–5 Cats · Fast Disruption · Can Ride",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Greenveil / Primal Vanguard",
+                "army": "Primal Vanguard — Thorin Blackroot",
+                "image": "",
+                "imageAlt": "",
+                "notes": "Thornfang Cats are the fastest unit in the Primal Vanguard. Handlers direct 4–5 cats through whistle-signal and wrist-line. Used for flanking, gap exploitation, and high-speed disruption. Handlers can ride for repositioning — Thornfangs are the only beast in the corps fast enough to outpace mounted cavalry.",
+                "armor": [
+                  {
+                    "slot": "Handler Body",
+                    "name": "Cat-Handler Speed Harness",
+                    "desc": "— Minimal leather — chest and arm only. Thornfang handlers must match their cats' lateral movement. Any weight that slows the handler breaks the bond-direction."
+                  },
+                  {
+                    "slot": "Handler Weapon",
+                    "name": "Handler Short Spear & Shortsword",
+                    "desc": "— 4ft short spear — standard length interferes with cat movement at speed. Shortsword primary when cats close to melee range."
+                  },
+                  {
+                    "slot": "Ride Option",
+                    "name": "Cat-Mounted Pursuit",
+                    "desc": "— Handlers can mount Thornfangs for rapid repositioning or pursuit. Fastest mount option in the Primal Vanguard — exceeds standard cavalry speed over short distances."
+                  },
+                  {
+                    "slot": "Beast Armor",
+                    "name": "Thornfang Speed Harness",
+                    "desc": "— Minimal ironwood-fitted harness — shoulder and flank only. Full barding would eliminate the speed advantage that makes Thornfang Cats effective."
                   }
                 ]
               }
@@ -5193,6 +5567,11 @@
           <span class="a-name">${escapeHtml(a.name)}</span>
           <span class="a-desc">${escapeHtml(a.desc)}</span>
          </div>`).join('');
+      const notesHtml = card.notes ? `
+        <div class="card-notes">
+         <span class="notes-label">Notes</span>
+         <span class="notes-text">${escapeHtml(card.notes)}</span>
+        </div>` : '';
       return `      <div class="unit-card" data-br="${escapeHtml(card['data-br'])}" data-src="${escapeHtml(card['data-src'])}" id="${escapeHtml(card.id)}">
        <div class="card-img">
         ${image}${placeholder}
@@ -5211,7 +5590,7 @@
          <span class="sub-name">${escapeHtml(card.subtitle || '')}</span>
         </div>
         <div class="armor-list">${armorRows}
-        </div>
+        </div>${notesHtml}
         <div class="card-foot">
          <span class="loc-tag">${escapeHtml(card.location || '')}</span>
          <span class="army-tag">${escapeHtml(card.army || '')}</span>
@@ -5289,22 +5668,174 @@
     const cardModal = document.getElementById("cardModal");
     const modalBody = cardModal.querySelector(".modal-body");
     const modalClose = cardModal.querySelector(".modal-close");
+
+    function initZoomPan(container, img, zoomLabel) {
+      let scale = 1, tx = 0, ty = 0;
+      let isDragging = false, startX = 0, startY = 0, startTx = 0, startTy = 0;
+      let lastTouchDist = 0;
+      const ac = new AbortController();
+      const sig = { signal: ac.signal };
+      container._zoomCleanup = () => ac.abort();
+
+      function clamp() {
+        const maxTx = Math.max(0, (scale - 1) * container.offsetWidth / 2);
+        const maxTy = Math.max(0, (scale - 1) * container.offsetHeight / 2);
+        tx = Math.max(-maxTx, Math.min(maxTx, tx));
+        ty = Math.max(-maxTy, Math.min(maxTy, ty));
+      }
+
+      function apply() {
+        img.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+        zoomLabel.textContent = Math.round(scale * 100) + '%';
+      }
+
+      function zoom(factor, originX, originY) {
+        const prev = scale;
+        scale = Math.max(1, Math.min(6, scale * factor));
+        if (scale === 1) { tx = 0; ty = 0; }
+        else {
+          // shift translation so zoom appears anchored to the cursor point
+          const rect = container.getBoundingClientRect();
+          const cx = (originX ?? rect.left + rect.width / 2) - rect.left - rect.width / 2;
+          const cy = (originY ?? rect.top + rect.height / 2) - rect.top - rect.height / 2;
+          tx += cx * (1 - scale / prev);
+          ty += cy * (1 - scale / prev);
+          clamp();
+        }
+        apply();
+      }
+
+      // Wheel zoom
+      container.addEventListener('wheel', e => {
+        e.preventDefault();
+        zoom(e.deltaY < 0 ? 1.12 : 1 / 1.12, e.clientX, e.clientY);
+      }, { passive: false, signal: ac.signal });
+
+      // Zoom buttons
+      container.parentElement.querySelectorAll('.zoom-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const a = btn.dataset.action;
+          if (a === 'in') zoom(1.25);
+          else if (a === 'out') zoom(1 / 1.25);
+          else if (a === 'reset') { scale = 1; tx = 0; ty = 0; apply(); }
+        }, sig);
+      });
+
+      // Mouse drag
+      img.addEventListener('mousedown', e => {
+        if (scale <= 1) return;
+        e.preventDefault();
+        isDragging = true;
+        startX = e.clientX - tx; startY = e.clientY - ty;
+        img.classList.add('panning');
+      }, sig);
+
+      window.addEventListener('mousemove', e => {
+        if (!isDragging) return;
+        tx = e.clientX - startX;
+        ty = e.clientY - startY;
+        clamp(); apply();
+      }, sig);
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+        img.classList.remove('panning');
+      }, sig);
+
+      // Touch pinch-zoom + drag
+      container.addEventListener('touchstart', e => {
+        if (e.touches.length === 2) {
+          lastTouchDist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+        } else if (e.touches.length === 1 && scale > 1) {
+          isDragging = true;
+          startX = e.touches[0].clientX - tx;
+          startY = e.touches[0].clientY - ty;
+        }
+      }, { passive: true, signal: ac.signal });
+
+      container.addEventListener('touchmove', e => {
+        e.preventDefault();
+        if (e.touches.length === 2) {
+          const d = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          const mx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+          const my = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+          zoom(d / lastTouchDist, mx, my);
+          lastTouchDist = d;
+        } else if (e.touches.length === 1 && isDragging) {
+          tx = e.touches[0].clientX - startX;
+          ty = e.touches[0].clientY - startY;
+          clamp(); apply();
+        }
+      }, { passive: false, signal: ac.signal });
+
+      container.addEventListener('touchend', () => {
+        isDragging = false; lastTouchDist = 0;
+      }, { passive: true, signal: ac.signal });
+    }
+
     function openCardModal(card) {
       modalBody.innerHTML = "";
       const clone = card.cloneNode(true);
       clone.classList.add("opened-card");
       clone.style.margin = "0";
+
+      // Replace card-img with zoomable container
+      const cardImg = clone.querySelector('.card-img');
+      const srcImg = cardImg && cardImg.querySelector('img');
+      if (srcImg && srcImg.src) {
+        const container = document.createElement('div');
+        container.className = 'modal-img-container';
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'modal-img-wrapper';
+
+        const zoomImg = document.createElement('img');
+        zoomImg.src = srcImg.src;
+        zoomImg.alt = srcImg.alt || '';
+        zoomImg.draggable = false;
+
+        const controls = document.createElement('div');
+        controls.className = 'modal-zoom-controls';
+        controls.innerHTML =
+          '<button class="zoom-btn" data-action="out" title="Zoom out">&#8722;</button>' +
+          '<span class="zoom-level">100%</span>' +
+          '<button class="zoom-btn" data-action="in"  title="Zoom in">&#43;</button>' +
+          '<button class="zoom-btn" data-action="reset" title="Reset" style="font-size:11px">&#8635;</button>';
+
+        wrapper.appendChild(zoomImg);
+        container.appendChild(wrapper);
+        container.appendChild(controls);
+        cardImg.replaceWith(container);
+
+        // init after append so offsetWidth is available
+        requestAnimationFrame(() => {
+          const label = controls.querySelector('.zoom-level');
+          initZoomPan(container, zoomImg, label);
+        });
+      }
+
       modalBody.appendChild(clone);
       cardModal.classList.add("active");
       cardModal.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
     }
+
     function closeCardModal() {
+      const container = modalBody.querySelector('.modal-img-container');
+      if (container && container._zoomCleanup) container._zoomCleanup();
       cardModal.classList.remove("active");
       cardModal.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
       modalBody.innerHTML = "";
     }
+
     document.querySelectorAll(".unit-card").forEach(card => {
       card.addEventListener("click", () => openCardModal(card));
     });
