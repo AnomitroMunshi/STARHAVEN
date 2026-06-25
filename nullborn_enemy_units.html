@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Nullborn Host — Enemy Unit Registry · Year 1052</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#05060A;--panel:#08090F;--panel2:#0B0C14;
+  --border:#16181F;--border2:#1E2028;
+  --void:#7020C0;--void2:#4A1080;--void-glow:rgba(100,30,180,.2);
+  --void-text:#C060FF;--void-dim:#7030A0;
+  --blood:#A01820;--blood2:#6A0F14;--blood-text:#FF4040;--blood-dim:#C03030;
+  --gold:#C4962A;--gold-dim:#7A5A10;
+  --ink:#D0C8A8;--ink-dim:#706858;--ink-faint:#282420;
+  --corrupt:#30C080;--half:#C08020;--titan:#FF6020;--commander:#FFD060;--commander-dim:#A08020;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Crimson Pro",Georgia,serif;font-size:16px;line-height:1.7;padding-bottom:100px}
+.page-header{position:relative;overflow:hidden;background:linear-gradient(180deg,#06040E 0%,#08050F 100%);border-bottom:1px solid #1A1030;padding:48px 24px 32px;text-align:center}
+.page-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(100,20,200,.25) 0%,transparent 70%);pointer-events:none}
+.eyebrow{font-family:"Cinzel",serif;font-size:10px;color:var(--void-dim);letter-spacing:.3em;text-transform:uppercase;margin-bottom:12px;opacity:.7}
+.page-header h1{font-family:"Cinzel",serif;font-size:clamp(22px,4vw,38px);font-weight:700;color:var(--void-text);letter-spacing:.06em;text-shadow:0 0 40px rgba(150,40,255,.4);margin-bottom:6px}
+.page-header .sub{font-family:"Cinzel",serif;font-size:12px;color:var(--ink-dim);letter-spacing:.1em}
+.toc{display:flex;flex-wrap:wrap;gap:6px;padding:12px 20px;border-bottom:1px solid var(--border);background:var(--panel)}
+.toc a{font-family:"Cinzel",serif;font-size:10px;color:var(--ink-dim);text-decoration:none;padding:4px 10px;border:0.5px solid var(--border2);border-radius:4px;letter-spacing:.04em;transition:all .15s}
+.toc a:hover{color:var(--void-text);border-color:var(--void2)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 16px}
+.section{margin-top:52px}
+.section-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border2)}
+.section-icon{font-size:22px;flex-shrink:0}
+.section-title{font-family:"Cinzel",serif;font-size:20px;font-weight:700;letter-spacing:.05em}
+.section-desc{font-size:13px;color:var(--ink-dim);margin-top:2px;font-family:"Cinzel",serif;font-weight:400;letter-spacing:.03em}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--panel);border:0.5px solid var(--border2);border-radius:10px;overflow:hidden;transition:border-color .15s,box-shadow .15s;cursor:pointer}
+.card:hover{border-color:var(--void2);box-shadow:0 0 20px rgba(100,20,180,.12)}
+.card-top{padding:14px 16px 10px;display:flex;align-items:flex-start;gap:10px}
+.card-icon{font-size:28px;flex-shrink:0;line-height:1;margin-top:2px}
+.card-name{font-family:"Cinzel",serif;font-size:14px;font-weight:700;letter-spacing:.03em;margin-bottom:3px}
+.card-sub{font-size:12px;color:var(--ink-dim);letter-spacing:.03em}
+.card-body{padding:0 16px 14px;font-size:14px;color:#B8B0A0;line-height:1.65}
+.card-tags{display:flex;flex-wrap:wrap;gap:4px;padding:8px 16px 12px;border-top:0.5px solid var(--border)}
+.tag{font-family:"Cinzel",serif;font-size:9px;font-weight:600;padding:2px 7px;border-radius:3px;letter-spacing:.05em;text-transform:uppercase}
+.void-card{border-left:3px solid var(--void)}
+.blood-card{border-left:3px solid var(--blood)}
+.titan-card{border-left:3px solid var(--titan)}
+.commander-card{border-left:3px solid var(--commander);background:rgba(255,200,60,.04)}
+.half-card{border-left:3px solid var(--half)}
+.corrupt-card{border-left:3px solid var(--corrupt)}
+.t-void{background:rgba(100,20,180,.2);color:var(--void-text)}
+.t-blood{background:rgba(160,20,30,.2);color:var(--blood-text)}
+.t-titan{background:rgba(200,80,20,.2);color:#FF8040}
+.t-cmd{background:rgba(200,160,20,.2);color:var(--commander)}
+.t-half{background:rgba(180,120,20,.2);color:#E0A030}
+.t-corrupt{background:rgba(40,180,100,.15);color:#40D090}
+.t-fly{background:rgba(60,100,200,.2);color:#80A8FF}
+.t-beast{background:rgba(140,80,20,.2);color:#D09040}
+.t-special{background:rgba(180,40,140,.2);color:#FF60D0}
+.t-heavy{background:rgba(60,70,100,.2);color:#90A0C0}
+.t-alien{background:rgba(20,160,160,.2);color:#40E0E0}
+.stat-row{display:flex;align-items:center;gap:8px;padding:3px 16px}
+.stat-label{font-family:"Cinzel",serif;font-size:9px;color:var(--ink-dim);width:70px;flex-shrink:0;letter-spacing:.04em;text-transform:uppercase}
+.stat-bar-bg{flex:1;height:5px;background:var(--border2);border-radius:3px;overflow:hidden}
+.stat-bar-fill{height:100%;border-radius:3px}
+.stat-val{font-family:"Cinzel",serif;font-size:10px;color:var(--ink-dim);width:32px;text-align:right;flex-shrink:0}
+.stats-wrap{padding:4px 0 10px}
+.cmd-card{background:var(--panel2);border:1px solid var(--commander-dim,#A08020);border-top:3px solid var(--commander);border-radius:10px;padding:20px 24px;margin-bottom:14px}
+.cmd-name{font-family:"Cinzel",serif;font-size:18px;font-weight:700;color:var(--commander);letter-spacing:.05em;margin-bottom:2px}
+.cmd-title{font-family:"Cinzel",serif;font-size:11px;color:var(--ink-dim);letter-spacing:.1em;margin-bottom:12px}
+.cmd-desc{font-size:15px;line-height:1.75;color:#C8C0A0;margin-bottom:12px}
+.cmd-quote{border-left:2px solid var(--gold-dim,#7A5A10);padding:8px 14px;font-style:italic;color:#A09060;font-size:14px;margin:10px 0}
+.cmd-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
+.void-divider{height:1px;background:linear-gradient(90deg,transparent,var(--void2),transparent);margin:40px 0}
+#overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.75);align-items:flex-start;justify-content:center;padding:50px 16px 20px;overflow-y:auto}
+#overlay.open{display:flex}
+#mbox{background:var(--panel2);border:1px solid var(--border2);border-radius:14px;max-width:520px;width:100%;position:relative;overflow:hidden;flex-shrink:0}
+#mbox .mhead{padding:20px 24px 14px;border-bottom:0.5px solid var(--border2)}
+#mbox .mname{font-family:"Cinzel",serif;font-size:16px;font-weight:700;padding-right:30px;margin-bottom:2px}
+#mbox .msub{font-size:11px;color:var(--ink-dim);letter-spacing:.04em;font-family:"Cinzel",serif}
+#mbox .mbody{padding:14px 24px 20px;font-size:14px;line-height:1.75;color:#C0B898}
+#mcls{position:absolute;top:14px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:var(--ink-dim);padding:3px 6px;border-radius:4px}
+#mcls:hover{background:var(--border2)}
+.footer{text-align:center;font-family:"Cinzel",serif;font-size:10px;color:var(--ink-faint);padding:20px;letter-spacing:.06em;margin-top:40px;border-top:0.5px solid var(--border)}
+.summary-box{background:rgba(100,20,180,.06);border:1px solid rgba(100,20,180,.2);border-top:3px solid var(--void);border-radius:0 0 8px 8px;padding:24px 28px;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <div class="eyebrow">Intelligence Registry — Nyx Ravel & Velkan Drake · Classified · Year 1052</div>
+  <h1>THE NULLBORN HOST</h1>
+  <div class="sub">Enemy Order of Battle · Commanders · Units · Monsters · Titans · Alien Class</div>
+</div>
+<div class="toc">
+  <a href="#commanders">Commanders</a>
+  <a href="#heavy-inf">Heavy Infantry</a>
+  <a href="#medium-inf">Medium Infantry</a>
+  <a href="#light-inf">Light Infantry</a>
+  <a href="#special-inf">Special Infantry</a>
+  <a href="#cavalry">Cavalry</a>
+  <a href="#half-corrupt">Half Corrupted</a>
+  <a href="#full-corrupt">Full Corrupted</a>
+  <a href="#beasts">Corrupted Beasts</a>
+  <a href="#flying">Flying Units</a>
+  <a href="#monsters">Monster Units</a>
+  <a href="#siege">Siege Corps</a>
+  <a href="#engineers">Combat Engineers</a>
+  <a href="#support">Battlefield Support</a>
+  <a href="#anti-mage">Anti-Mage</a>
+  <a href="#anti-air">Anti-Air</a>
+  <a href="#hero-hunters">Hero Hunters</a>
+  <a href="#underground">Underground</a>
+  <a href="#fortifications">Living Fortifications</a>
+  <a href="#logistics">Logistics</a>
+  <a href="#naval">Naval Forces</a>
+  <a href="#psywar">Psy-War</a>
+  <a href="#titans">The Titans</a>
+  <a href="#alien">Alien Class</a>
+  <a href="#vrak-remnants">Vrak Remnants</a>
+</div>
+<div class="wrap">
+
+<!-- COMMANDERS -->
+<div class="section" id="commanders">
+<div class="section-header"><span class="section-icon">👁</span><div><div class="section-title" style="color:var(--commander)">The Named Commanders</div><div class="section-desc">Warlord Drevak & His Six — The Void's Will Made Flesh</div></div></div>
+
+<div class="cmd-card">
+  <div class="cmd-name">WARLORD DREVAK</div>
+  <div class="cmd-title">Supreme Commander · The Warlord Who Does Not Hurry · Servant of Malgrath · Returned From Death</div>
+  <div class="cmd-desc">Black armor not forged but grown — corruption itself having shaped the plating over years into something that fits his body the way a second skeleton fits. A massive glaive resting against one shoulder with the casual ease of a man who has held it so long it became part of how he moves. Void corruption moves beneath the metal plating like liquid darkness searching for its next direction. Tall. Still. With the particular stillness of a man who has stopped needing to prove anything.<br><br>Drevak is not a zealot. He is a conclusion. He has reached the arithmetic of the Void — that this world is already dying, that existence itself is the only thing worth fighting for and Malgrath is the only one offering it — and he has found it clarifying rather than frightening. Everything he does flows from the calm of someone who believes he is right in the way mathematics is right.<br><br>He was killed at the Havenfire Fortress engagement. He returned. The Void does not lose its instruments permanently. He is larger than he was. The corruption coverage is more complete. The glaive looks heavier. He carries it as if it is lighter than before.</div>
+  <div class="cmd-quote">"The King beyond the Void does not fight for land. He fights for existence itself. The only thing that outlasts everything else."</div>
+  <div class="cmd-tags"><span class="tag t-void">Void Warlord</span><span class="tag t-cmd">Supreme Command</span><span class="tag t-special">Corruption-Grown Armor</span><span class="tag t-blood">Returned from Death</span><span class="tag t-void">Glaive — Void-Forged</span></div>
+</div>
+
+<div class="cmd-card" style="border-color:#6A0F14;border-top-color:var(--blood)">
+  <div class="cmd-name" style="color:var(--blood-text)">GRATH'UEL THE UNBOUND</div>
+  <div class="cmd-title">Eastern Flank Commander · Former Orc General · Void-Augmented Beyond Return · Twelve Feet</div>
+  <div class="cmd-desc">A former orc general whose corruption augmentation has crossed the threshold that most Void-touched soldiers never survive — not because their bodies fail but because their identity fails first. Grath'Uel retained the general. His tactical awareness is intact. His patience is intact. What the Void took was every limit he previously accepted about what he was willing to do to win.<br><br>Twelve feet. Void-plate grown directly into his skin over five years of immersion. His weapon is what remained of his original war maul after five years of corruption contact — something neither maul nor anchor, weighing approximately what a small siege engine weighs, swung with the ease of a man who stopped noticing the weight some time ago.<br><br>Commands the eastern flank from the front. His soldiers don't move without him — the eastern cluster's Coordinator defers to his direct orders. The eastern flank is the most disciplined sector in the army because Grath'Uel's attention is always there. He was neutralized at Ashfield. He will return. Corruption-augmented beings at his saturation level do not remain neutralized.</div>
+  <div class="cmd-quote">"He moved through his formation with the particular patience of someone who had never once needed to rush toward anything."</div>
+  <div class="cmd-tags"><span class="tag t-blood">12 Feet · Void-Plate Grown</span><span class="tag t-blood">Eastern Flank · Front Command</span><span class="tag t-special">Void Anchor-Maul</span><span class="tag t-void">Post-Threshold Corruption</span></div>
+</div>
+
+<div class="cmd-card" style="border-color:#3020A0;border-top-color:#8040FF">
+  <div class="cmd-name" style="color:#A070FF">SERA NULLBORN</div>
+  <div class="cmd-title">Void Mage Corps Commander · Mobile Position · Former Human Archmage · Identity Partially Retained · Current Location Unknown</div>
+  <div class="cmd-desc">Corruption has not degraded Sera Nullborn's intelligence. It removed every hesitation around it. She was an archmage of the second tier — capable, disciplined, ambitious. The Void agreed with her self-assessment completely and then removed the self doing the assessing.<br><br>What remained is a mage of exceptional capability operating without ethical constraint. Her Void-bolt barrages produce twelve-mage synchronized strike equivalent from a single caster. She moves constantly in irregular patterns that resist predictive targeting. She recalibrated her entire corps around Runebreaker density within four minutes of the first exchange at Ashfield.<br><br>She escaped the Ashfield encirclement through dimensional fold before the wings closed. Nyx Ravel has two cells tracking her current position. They have not reported back in six days.</div>
+  <div class="cmd-tags"><span class="tag t-void">Void Archmage</span><span class="tag t-special">12-Mage Equivalent Solo</span><span class="tag t-fly">Dimensional Fold Escape</span><span class="tag t-blood">Location Unknown</span><span class="tag t-half">Identity Retained</span></div>
+</div>
+
+<div class="cmd-card" style="border-color:#202030;border-top-color:#404060">
+  <div class="cmd-name" style="color:#C0C8E0">THE PALE GENERAL</div>
+  <div class="cmd-title">Center-Rear · Unidentified Race · Void-Crystal Encased · Network Architect · Contained — Ongoing</div>
+  <div class="cmd-desc">Race unidentified. Entirely encased in Void-crystal growth — visible only as a silhouette that does not move like a biological form. Did not move for four hours and forty-nine minutes at Ashfield. When it finally moved, it targeted the Resonance Corps node cluster — not the main line, not any conventional tactical target. The Soul Link itself.<br><br>The Pale General is the Nullborn host's strategic intelligence — responsible for the Coordinator network architecture, the wyvern adaptation, the lane-system learning in the first contact hour. It was carrying a document when Zareth Kull's Seal Order contained it. Velkan Drake read the document for six minutes and sealed the chamber from the outside. Rhegar created a new classification that night. It currently contains one entry.<br><br>Status: Contained. Zareth and Velkan are working on what the containment means and how long it holds.</div>
+  <div class="cmd-tags"><span class="tag t-void">Network Architect</span><span class="tag t-alien">Unknown Race · Crystal Encased</span><span class="tag t-special">Soul Link Counter-Frequency</span><span class="tag t-corrupt">Contained — Ongoing</span></div>
+</div>
+
+<div class="cmd-card" style="border-color:var(--blood2);border-top-color:var(--blood)">
+  <div class="cmd-name" style="color:#FF6060">KETH'MAUR THE FLAYED</div>
+  <div class="cmd-title">Western Flank Commander · Former Human Gladiator Champion · Void-Membrane Skin · 47 Wins Undefeated Before Corruption</div>
+  <div class="cmd-desc">Once the champion of the Sundered Age colosseum circuit — forty-seven sanctioned fights, retired undefeated, volunteered for a border incursion during the Void's early reach because retirement bored him. The corruption found a body that had spent thirty years being optimized for killing and made very few changes.<br><br>The changes it did make: his skin shed entirely during deep immersion and was replaced by Void-membrane — absorbing kinetic impact rather than transmitting it. Conventional blades produce surface cuts that close within eight seconds. Crushing weapons work better. He knows this and fights at close range regardless, because close range is where he has always been comfortable.<br><br>Tall, lean, scarred in ways that predate his corruption and in ways that postdate it. The pre-corruption scars are straight. The post-corruption scars are not straight in the way that self-healing Void-membrane is not precise about the direction it closes. Commands the western flank cavalry and the Blood Orc vanguard. Treats the engagement timeline as personal.</div>
+  <div class="cmd-tags"><span class="tag t-blood">Western Flank</span><span class="tag t-special">Void-Membrane Skin — 8s Close</span><span class="tag t-heavy">Former Gladiator · 47-0</span><span class="tag t-half">Partial Identity Retained</span></div>
+</div>
+
+<div class="cmd-card" style="border-color:#4A2060;border-top-color:#9040C0">
+  <div class="cmd-name" style="color:#D080FF">VASHARA OF THE SECOND DEATH</div>
+  <div class="cmd-title">Mage Liaison Commander · Formerly Elven · Void Resurrection x2 · Died at Vrak Isles — Walked Back Out Six Weeks Later</div>
+  <div class="cmd-desc">Vashara died at the Vrak Isles engagement fourteen months ago. Not almost died. Died — confirmed by Starhaven medical assessment, body recovered, death recorded in the official register. She returned six weeks later walking out of a Void-saturation zone sealed as unrecoverable. The Void's resurrection capability is not widely understood. Vashara is the most documented case in Starhaven's intelligence files.<br><br>She is the Nullborn host's liaison between the Void mage battalions and the Coordinator network — coordinating the timing of mage strikes with network-directed infantry advances to produce the two-stage assault pattern Cassia Vayne identified at Ashfield. Full corruption at elven retention stage: the elongated form, the grace repurposed. She moves beautifully and is terrible because of it. Carries no weapon. Does not need one.</div>
+  <div class="cmd-tags"><span class="tag t-void">Mage-Network Liaison</span><span class="tag t-corrupt">Void Resurrection Confirmed x2</span><span class="tag t-alien">Elven — Corrupted Grace</span><span class="tag t-special">Two-Stage Assault Architect</span></div>
+</div>
+
+<div class="cmd-card" style="border-color:#3A2000;border-top-color:#A05000">
+  <div class="cmd-name" style="color:#E09040">BORRAK STONECROWN</div>
+  <div class="cmd-title">Titan Handler · Former Stonemark Dwarven Engineer · 60% Corrupted · Void-Bone Interface Hands · Walks Among Them</div>
+  <div class="cmd-desc">The only being in the Nullborn host who can walk among the Void Titans without being incidentally destroyed by their movement and maintain the sustained signal contact required to give them direction. The Titans predate the Coordinator architecture and retain enough residual will to resist pure signal direction. Borrak provides the hybrid — an organic handler who interfaces directly with the Titan signal channels through Void-bone growth that has replaced his original hands over 60% corruption progression.<br><br>Formerly a master engineer at the Stonemark Holds. His dwarven structural knowledge translated directly to understanding Titan physiology — he knows exactly where each Titan's corruption growth has weakened its original form and where it has reinforced it. He knows which ones survived Ashfield and what was changed in the process. Starhaven does not. This asymmetry is the specific advantage Rhegar cannot close until the next engagement provides data.</div>
+  <div class="cmd-tags"><span class="tag t-titan">Titan Handler · 11 Units</span><span class="tag t-half">60% Corrupted</span><span class="tag t-special">Void-Bone Interface Hands</span><span class="tag t-beast">Former Stonemark Engineer</span></div>
+</div>
+
+</div><!-- /commanders -->
+<div class="void-divider"></div>
+
+<!-- HEAVY INFANTRY -->
+<div class="section" id="heavy-inf">
+<div class="section-header"><span class="section-icon">🛡</span><div><div class="section-title" style="color:var(--blood-text)">Heavy Infantry</div><div class="section-desc">The Weight That Does Not Stop</div></div></div>
+<div class="cards">
+
+<div class="card blood-card" onclick="M('Bloodwall Vanguard','Full Corruption · 15,000 · Fused Void-Iron Plate','The heaviest armored ground force in the Nullborn host. Plate fused with Void-growth into something that cannot be removed — it grows. Each engagement, survivors return with more coverage than they left with. Tower shields of solid Void-iron. Corruption-forged blades that leave trace contamination on every wound requiring Ashen Guard purification within 45 seconds or the trace corruption establishes itself in the wound. They advance at a walk. Walking is sufficient. The Bloodwall Vanguard has never needed to run toward anything.')">
+  <div class="card-top"><div class="card-icon">🛡</div><div><div class="card-name" style="color:var(--blood-text)">Bloodwall Vanguard</div><div class="card-sub">Full Corruption · 15,000 · Iron Front</div></div></div>
+  <div class="card-body">Fused Void-iron plate that grows with the soldier after each engagement. Walks. Never runs. Blade wounds need purification within 45 seconds or trace corruption self-establishes.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Armor</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:96%;background:#A01820"></div></div><span class="stat-val">96</span></div><div class="stat-row"><span class="stat-label">Threat</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:88%;background:#7020C0"></div></div><span class="stat-val">88</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-heavy">Fused Plate</span><span class="tag t-void">Trace Contamination Blade</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Blood-Iron Minotaurs','Full Corruption · 3,000 · 9–12 Feet · Grath\'Uel\'s Eastern Vanguard','Nine to twelve feet. Corrupted steel plate welded directly to bone structure in places where conventional barding cannot be attached. War axes with Void-iron heads each weighing approximately what a standard soldier weighs. They charge without explicit command — the Coordinator gives them a direction and they travel in that direction until there is nothing left in it. Deployed on Grath\'Uel\'s eastern flank as the front rank. Living battering rams. The infantry following them through whatever gap they create has a measurably easier time.')">
+  <div class="card-top"><div class="card-icon">🐂</div><div><div class="card-name" style="color:var(--blood-text)">Blood-Iron Minotaurs</div><div class="card-sub">Full Corruption · 3,000 · 9–12 Feet</div></div></div>
+  <div class="card-body">Plate welded to bone. Charge without command — Coordinator gives direction, they go. Void-iron axes heavier than a soldier. Eastern front rank: living battering rams.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Impact</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:97%;background:#A01820"></div></div><span class="stat-val">97</span></div><div class="stat-row"><span class="stat-label">Control</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:35%;background:#7020C0"></div></div><span class="stat-val">35</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-beast">Minotaur</span><span class="tag t-titan">9–12 Feet</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Null Plate Sentinels','Void-Sworn Elite · 8,000 · Chosen Corruption · Anti-Magic Heavy','Soldiers who requested the corruption process. The Null-iron plate applied selectively to armor rather than the body absorbs magical energy rather than transmitting it — rendering them resistant to arcane attack that standard heavy infantry would not survive. Shields of Null-iron absorb elemental energy and release it downward into the earth rather than into the bearer. The Arcane Artillery Corps answer that does not work as expected. Cassia Vayne\'s Silence Bolts work — at 2-second interrupt duration instead of the usual 8. She has filed a request for additional Null-Stone.')">
+  <div class="card-top"><div class="card-icon">⬛</div><div><div class="card-name" style="color:var(--void-text)">Null Plate Sentinels</div><div class="card-sub">Void-Sworn · 8,000 · Anti-Magic Heavy</div></div></div>
+  <div class="card-body">Chose corruption. Null-iron absorbs arcane energy. Runebreaker interrupt: 2 seconds instead of 8. The arcane artillery counter that doesn't work as planned.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Arcane Res</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:92%;background:#7020C0"></div></div><span class="stat-val">92</span></div></div>
+  <div class="card-tags"><span class="tag t-void">Null-Iron Plate</span><span class="tag t-half">Chosen Corruption</span><span class="tag t-special">Anti-Magic Shield</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Corrupted Trolls — Stone-Blood','Full Corruption · 4,000 · 8–10 Feet · Self-Regenerating','Highland trolls whose corruption integrated with natural regenerative biology. Cuts close in four seconds. Conventional blunt trauma slows regeneration but does not stop it. Voidbane payload or purification: stops it completely. Eight to ten feet. Void-stone skin — not rigid, it flexes, but it transmits less impact than any organic material should. They carry what they find, and what a corrupted troll finds useful to carry says something about what it intends to do with it. Western flank breakthrough element.')">
+  <div class="card-top"><div class="card-icon">🪨</div><div><div class="card-name" style="color:var(--blood-text)">Corrupted Trolls — Stone-Blood</div><div class="card-sub">Full Corruption · 4,000 · 8–10 Feet</div></div></div>
+  <div class="card-body">Regeneration + Void integration. Cuts close in 4 seconds. Void-stone skin reduces impact transfer. Voidbane or purification stops regen. Western flank breakthrough.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Regen Rate</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:90%;background:#30C080"></div></div><span class="stat-val">90</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-corrupt">Void Regeneration</span><span class="tag t-beast">Troll · 8–10ft</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Bonecage Cyclops — The Blinded','Full Corruption · 800 · 14–16 Feet · Soul Link Hunters','Single-eyed giants whose original eye has been replaced by a Void-crystal lens that perceives Soul Link resonance frequencies as visible signal. They can target Resonance Corps node clusters specifically — the Pale General directed them against the Soul Link at Ashfield. Bone-cage armor grown from the cyclops\'s own externalized ribcage structure. Stone mauls the size of small wagons. They are slow. They do not stop. Aerial bombardment or Iron Tide Tanks: assessed counters.')">
+  <div class="card-top"><div class="card-icon">👁</div><div><div class="card-name" style="color:var(--blood-text)">Bonecage Cyclops</div><div class="card-sub">Full Corruption · 800 · 14–16 Feet · Node Hunters</div></div></div>
+  <div class="card-body">Void-crystal eye targets Soul Link frequencies. Bone-cage armor grown from own skeleton. Directed at Resonance Corps nodes specifically. Slow. Does not stop. Aerial or tanks: counter.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Node Threat</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:88%;background:#A01820"></div></div><span class="stat-val">88</span></div><div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:22%;background:#7020C0"></div></div><span class="stat-val">22</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-beast">Cyclops · 14–16ft</span><span class="tag t-void">Soul Link Targeting</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Bloodsoaked Crimson Guard','Full Corruption · 5,000 · Drevak\'s Elite Shock · Red Void-Iron','Former elite infantry from three kingdoms, captured during Nullborn expansion, offered a choice. All accepted. Blood-red plate — not painted, the Void-iron at their saturation level has taken on hematic coloring from sustained blood contact. Matched oversized greatswords they could not have wielded before corruption enhanced them. Their combat style is what happens when exceptional soldiers have their limits removed and receive weapons to match. Ironbreaker Mace Corps: viable counter, high cost, not alone.')">
+  <div class="card-top"><div class="card-icon">🩸</div><div><div class="card-name" style="color:var(--blood-text)">Bloodsoaked Crimson Guard</div><div class="card-sub">Full Corruption · 5,000 · Blood-Red Void-Iron</div></div></div>
+  <div class="card-body">Blood-red Void-iron — genuinely colored by corruption, not painted. Former elite infantry enhanced past their original limits. Oversized greatswords they couldn't wield before. Counter: Ironbreakers, high cost.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Elite Level</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:94%;background:#A01820"></div></div><span class="stat-val">94</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-blood">Elite Shock</span><span class="tag t-heavy">Blood-Red Void-Iron</span></div>
+</div>
+
+</div></div><!-- /heavy -->
+<div class="void-divider"></div>
+
+<!-- MEDIUM INFANTRY -->
+<div class="section" id="medium-inf">
+<div class="section-header"><span class="section-icon">⚔</span><div><div class="section-title" style="color:#D08040">Medium Infantry</div><div class="section-desc">The Advancing Network Mass</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Void Infantry — Core Legions','Full Corruption · 90,000–110,000 · The Networked Mass','The backbone of the Nullborn host. Humans, orcs, elves, goblins — what they were is visible because corruption leaves the biology present and changes only the intention behind it. Black vein network visible across skin and armor that has not been removed since corruption reached them. Eyes slightly wrong — the specific frequency shifted one step from where it should be. They do not maintain formation discipline. They maintain network discipline. Kill enough to sever the node. The node reroutes. Velkan timed the reroute: four seconds. Individual combat capability varies by race and prior training. What is consistent: no fear, no hesitation, no self-preservation. The Void does not permit doubt.')">
+  <div class="card-top"><div class="card-icon">☠</div><div><div class="card-name" style="color:var(--void-text)">Void Infantry — Core Legions</div><div class="card-sub">Full Corruption · 90,000–110,000 · Network Mass</div></div></div>
+  <div class="card-body">Mixed race, network-directed. Eyes slightly wrong. 4-second reroute after node loss. No fear, no hesitation. Kill the Coordinator architecture — not the mass itself.</div>
+  <div class="card-tags"><span class="tag t-void">Network Directed</span><span class="tag t-blood">Full Corrupt</span><span class="tag t-corrupt">4-Second Node Reroute</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Blood Orcs — The Crimson Surge','Full Corruption · 20,000 · Permanent Berserk State','Void immersion intersected with orc adrenaline physiology: the corruption permanently locks them in the biological state their bodies produce at maximum physical stress. In uncorrupted orcs this lasts minutes and degrades after. In Blood Orcs it never ends and there is no degradation phase because there is no after. Faster and harder than standard corrupted infantry. Crimson-tinged from permanently engorged surface blood vessels. The tradeoff: reduced coordination. The Coordinator signal works harder on Blood Orc clusters than any other infantry. Kill the Coordinator: the cluster becomes an uncontrolled berserk mob moving at full speed in its last given direction. This is not always a better outcome.')">
+  <div class="card-top"><div class="card-icon">🩸</div><div><div class="card-name" style="color:var(--blood-text)">Blood Orcs — The Crimson Surge</div><div class="card-sub">Full Corruption · 20,000 · Locked Berserk</div></div></div>
+  <div class="card-body">Permanent adrenaline-lock. Faster, harder, crimson skin. Lose Coordinator = uncontrolled berserk mob at full speed in last-given direction. Not always a better outcome.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:85%;background:#A01820"></div></div><span class="stat-val">85</span></div><div class="stat-row"><span class="stat-label">Control</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:28%;background:#7020C0"></div></div><span class="stat-val">28</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Blood Orc</span><span class="tag t-blood">Full Corrupt</span><span class="tag t-special">Permanent Berserk</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Corrupted Beastmen — The Gaunt','Full Corruption · 12,000 · 7–9 Feet · Quad/Biped Shift','Beastman populations the Void reached first. Corruption directed muscle-to-bone ratio shifts producing bodies stripped of everything not required for violence. Gaunt in the way large predatory animals are gaunt — not malnourished but optimized. Seven to nine feet. Shifts between bipedal and quadrupedal depending on terrain and speed required. Corruption-bone claws replaced fingernails over years of immersion. No armor: the corruption-hardened skin is the armor. The Gauntlet Army fighters look at each other when they see the Gaunt. Not because they are frightened. Because they recognize what they are seeing.')">
+  <div class="card-top"><div class="card-icon">🦴</div><div><div class="card-name" style="color:var(--blood-text)">Corrupted Beastmen — The Gaunt</div><div class="card-sub">Full Corruption · 12,000 · Quad/Biped Shift</div></div></div>
+  <div class="card-body">7–9 feet. Quad/biped based on terrain. Corruption-bone claws. Hardened skin replaces armor. Pure directional violence. The Gauntlet Army fighters recognize what they're looking at.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:92%;background:#A01820"></div></div><span class="stat-val">92</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-beast">Beastman</span><span class="tag t-special">Quad/Biped · No Armor Needed</span></div>
+</div>
+
+<div class="card half-card" onclick="M('Cult Infantry — Void Sworn','Half Corruption · 60,000–80,000 · The Willing','Soldiers serving Malgrath by choice: cult infantry who believe this is transcendence, mercenary companies who signed contracts before understanding them, and survivors of consumed kingdoms who chose survival over resistance. Conventional fighters with selective partial corruption. They retain individual will. They retain individual doubt. This is the variable Starhaven correctly identified: at the right moment these soldiers can make a decision the corrupted cannot. At the Ashfield encirclement, some dropped weapons. Some ran. Some sat down in the field and stopped.')">
+  <div class="card-top"><div class="card-icon">⚔</div><div><div class="card-name" style="color:var(--half)">Cult Infantry — Void Sworn</div><div class="card-sub">Half Corruption · 60,000–80,000 · The Willing</div></div></div>
+  <div class="card-body">Chose partial corruption. Retain will — retain doubt. The morale weak point. At Ashfield encirclement: dropped weapons, ran, sat down. They can still make choices.</div>
+  <div class="card-tags"><span class="tag t-half">Partial Corrupt</span><span class="tag t-half">Retains Will</span><span class="tag t-blood">Morale Variable</span></div>
+</div>
+
+</div></div><!-- /medium -->
+<div class="void-divider"></div>
+
+<!-- LIGHT INFANTRY -->
+<div class="section" id="light-inf">
+<div class="section-header"><span class="section-icon">🗡</span><div><div class="section-title" style="color:#80C040">Light Infantry</div><div class="section-desc">Speed, Infiltration, Disruption</div></div></div>
+<div class="cards">
+
+<div class="card corrupt-card" onclick="M('Void Goblins — The Crawl','Full Corruption · 25,000 · Infiltration & Swarm','The corruption restructured their spatial reasoning to prioritize the small, the hidden, the approach that should not exist. Their skeleton structure is partially cartilaginous through Void immersion — not boneless, but capable of compression that solid bone does not permit. They fit where others cannot reach. Move hours before the main advance, filling high ground and crevices the opposition classifies as impassable. Unlike uncorrupted counterparts, they establish and hold rather than hit and run. When the main advance arrives, the difficult terrain is already taken. Swarm behavior with Coordinator direction: coherent multi-angle attack. Without direction: diffuse and individually lethal — harder to counter than the coordinated version.')">
+  <div class="card-top"><div class="card-icon">🕷</div><div><div class="card-name" style="color:var(--corrupt)">Void Goblins — The Crawl</div><div class="card-sub">Full Corruption · 25,000 · Infiltration Swarm</div></div></div>
+  <div class="card-body">Partially cartilaginous skeleton. Fit through impassable terrain. Hours ahead of main advance. Establish and hold instead of hit and run. Lose Coordinator: becomes harder to counter, not easier.</div>
+  <div class="card-tags"><span class="tag t-corrupt">Full Corrupt</span><span class="tag t-void">Infiltration</span><span class="tag t-special">Cartilaginous Skeleton</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Shadow Elves — The Inverted','Full Corruption · 6,000 · Solo Covert · Counter-Silent Wardens','Elven scouts whose corruption enhanced natural elven stealth and removed the ethics governing when it is used. They move beautifully. They move terribly. Each operates alone — not cells, solo. Six thousand elven shadows pursuing individual target lists without group coordination. Lyria Valen\'s Silent Wardens are specifically their counter — both units have met across four prior engagements and adjusted each time. The Shadow Elves know about Starshot Rangers. The Rangers know about them. The engagement between the units is personal at this point in a way that battlefield units rarely manage.')">
+  <div class="card-top"><div class="card-icon">🌑</div><div><div class="card-name" style="color:var(--blood-text)">Shadow Elves — The Inverted</div><div class="card-sub">Full Corruption · 6,000 · Solo Covert</div></div></div>
+  <div class="card-body">Corrupted elven grace repurposed. Solo operators — no cells. Counter to Null Blades by nature. Personal history with Silent Wardens across 4 engagements. It's become mutual.</div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-void">Elven Stealth</span><span class="tag t-special">Solo — No Cell Structure</span></div>
+</div>
+
+<div class="card half-card" onclick="M('Ashwalker Raiders — Mercenary Light','Half Corruption · 15,000 · Experienced & Rational','Mercenary companies who signed contracts before understanding what the contracts were attached to. Partial corruption for speed and fatigue reduction. Still retain individual will. The most experienced conventional light infantry in the Nullborn host — because surviving long enough to command a company requires being better at this than everyone who tried to kill you doing it. At Ashfield: 11 of 15 Ashwalker Raider companies made the calculation when the encirclement closed. Four did not. Those four companies were the last conventional resistance to end.')">
+  <div class="card-top"><div class="card-icon">🗡</div><div><div class="card-name" style="color:var(--half)">Ashwalker Raiders</div><div class="card-sub">Half Corruption · 15,000 · Mercenary Light</div></div></div>
+  <div class="card-body">Experienced merc light infantry. Partial enhancement. Retain choice. At Ashfield: 11/15 companies sat down at encirclement. 4 didn't — were last to end. The difference matters.</div>
+  <div class="card-tags"><span class="tag t-half">Partial Corrupt</span><span class="tag t-half">Mercenary</span><span class="tag t-blood">Morale Variable</span></div>
+</div>
+
+</div></div><!-- /light -->
+<div class="void-divider"></div>
+
+<!-- SPECIAL INFANTRY -->
+<div class="section" id="special-inf">
+<div class="section-header"><span class="section-icon">☠</span><div><div class="section-title" style="color:#FF4060">Special Infantry</div><div class="section-desc">Purpose-Built Nightmare</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Void Mage Battalions','Full Corruption · 800–1,200 · Sera Nullborn\'s Corps','Mages whose deep-saturation corruption enhanced rather than degraded casting capacity. Void bolts bypass conventional magical shields. Dimensional tears deployed as area weapons. Corruption-propagation spells convert fallen soldiers into new corruption vectors within 90 seconds if not purified. Operate in structured battalions — timing integrated with infantry advances. At Ashfield: recalibrated around Runebreaker density within four minutes of first exchange. Cassia Vayne requested three additional Null-Stone shipments the same day. Counter: Runebreakers, Silverchain ward destruction, sustained aerial suppression. None eliminate the threat — they manage it at cost.')">
+  <div class="card-top"><div class="card-icon">⚡</div><div><div class="card-name" style="color:var(--void-text)">Void Mage Battalions</div><div class="card-sub">Full Corruption · 800–1,200 · Sera's Corps</div></div></div>
+  <div class="card-body">Void bolts bypass shields. Propagation rounds: fallen soldiers become vectors in 90 seconds if unpurified. Recalibrate around Runebreakers in 4 minutes. Counter manages, doesn't eliminate.</div>
+  <div class="card-tags"><span class="tag t-void">Void Arcane</span><span class="tag t-blood">Full Corrupt</span><span class="tag t-special">Propagation Rounds</span><span class="tag t-void">Shield-Bypass</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Coordinator Entities — The Directorate','Void Architecture · 12–18 Visible + Unknown Sub-Surface','Not soldiers. Physical manifestations of network intelligence. Each connects approximately 8,000 surrounding corrupted infantry into a coherent tactical unit. Exist partially in dimensional fold — present but not entirely in this plane, which is why they are never at the front and why conventional targeting cannot reach them without dimensional medium. They do not fight. They direct. Kill one: 4-second disruption window across 8,000 infantry. The Ashfield battle was decided by fourteen Coordinator kills in six hours — Lyria Valen\'s Starshot Rangers operating at dimensional-medium range, hunting signals rather than bodies. Priority target above all others. All other targets are secondary.')">
+  <div class="card-top"><div class="card-icon">👁</div><div><div class="card-name" style="color:var(--void-text)">Coordinator Entities</div><div class="card-sub">Void Architecture · 12–18 Visible · Network Core</div></div></div>
+  <div class="card-body">8,000 infantry per entity. Dimensional fold — partially off-plane. 4-second disruption window per kill. 14 kills decided Ashfield. Priority target above all others. All others are secondary.</div>
+  <div class="card-tags"><span class="tag t-void">Network Node</span><span class="tag t-alien">Dimensional Fold</span><span class="tag t-special">PRIORITY TARGET</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Void Brutes — The Unmade','Full Corruption · 3,000 · 12 Feet · Proportions Wrong','What those creatures became after the Void spent an indeterminate time improving on the biology it started with. Twelve feet. Proportions slightly wrong in specific ways — the shoulders too wide for the spine, arms extended past where arms are supposed to end. The visual signature of something remade without concern for whether the result would look right. It does not look right. It functions. Void-iron fused to major skeletal structures — not plating but integrated, producing surface that is half armor and half anatomy. Against fortified positions and heavy infantry concentrations that have survived everything else. Iron Tide Tanks: assessed counter. Correct.')">
+  <div class="card-top"><div class="card-icon">💀</div><div><div class="card-name" style="color:var(--blood-text)">Void Brutes — The Unmade</div><div class="card-sub">Full Corruption · 3,000 · 12 Feet · Wrong Proportions</div></div></div>
+  <div class="card-body">12 feet. Proportions wrong: shoulders too wide, arms too long. Void-iron fused to skeleton — half armor, half anatomy. Against fortified concentrations that survived everything else. Counter: Iron Tide Tanks.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Threat</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:88%;background:#7020C0"></div></div><span class="stat-val">88</span></div></div>
+  <div class="card-tags"><span class="tag t-void">Full Corrupt</span><span class="tag t-titan">12 Feet</span><span class="tag t-blood">Remade Anatomy</span></div>
+</div>
+
+</div></div><!-- /special -->
+<div class="void-divider"></div>
+
+<!-- CAVALRY -->
+<div class="section" id="cavalry">
+<div class="section-header"><span class="section-icon">🐎</span><div><div class="section-title" style="color:#D06020">Cavalry — Heavy, Medium, Light</div><div class="section-desc">The Moving Wall · Swift Reach · Bait and Bleed</div></div></div>
+<div class="cards">
+
+<div class="card blood-card" onclick="M('Void-Plate Heavy Cavalry','Full Corruption · 12,000 · Fear-Free Charge · Corruption Lances','Mounts larger than standard warhorses by 40%, faster in the first hundred yards of a charge, incapable of fear. Riders at varying corruption stages. Corruption lances — Void-iron tips leaving trace contamination on penetrating wounds. Full Void-plate barding. Charge doctrine: break formation, hold penetration, do not pursue — the gap is for the infantry behind. Counter: Ironveil Spear Corps primary, Closing Wings strategic. The corrupted cavalry breakthrough creates penetrations. The corrupted cavalry does not exploit them. That is the infantry\'s role.')">
+  <div class="card-top"><div class="card-icon">🐎</div><div><div class="card-name" style="color:var(--blood-text)">Void-Plate Heavy Cavalry</div><div class="card-sub">Full Corruption · 12,000 · Charge & Hold</div></div></div>
+  <div class="card-body">Mounts 40% larger, fear-free. Corruption lance = trace contamination. Break formation, hold, hand off to infantry. Counter: Ironveil Spear Corps + Closing Wings trap.</div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-heavy">Void-Plate Mount</span><span class="tag t-void">Trace Contamination Lance</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Blood Orc War Riders','Full Corruption · 8,000 · Berserk Mounted · Keth\'Maur\'s Hammer','Blood Orc cavalry carrying permanent-berserk physiology into a mounted context. Faster than heavy cavalry, more aggressive than any doctrine accounts for, less controllable. The Coordinator works hardest on Blood Orc clusters of any cavalry unit. They close to axe range immediately — no interest in a weapon requiring arm\'s-length distance from the target. Partial barding: prevents easy disabling, doesn\'t slow the charge. They break formations spectacularly. They don\'t hold the gap because they\'re already looking for the next thing to break. The infantry behind them doesn\'t always find usable space.')">
+  <div class="card-top"><div class="card-icon">🩸</div><div><div class="card-name" style="color:var(--blood-text)">Blood Orc War Riders</div><div class="card-sub">Full Corruption · 8,000 · Berserk Mounted</div></div></div>
+  <div class="card-body">Permanent berserk on horseback. Close to axe range — no lances. Break formations, don't hold gaps. Infantry behind finds no usable space half the time. Spectacular but undisciplined.</div>
+  <div class="card-tags"><span class="tag t-blood">Blood Orc</span><span class="tag t-special">Berserk Mounted</span><span class="tag t-blood">Gap Uncontrolled</span></div>
+</div>
+
+<div class="card half-card" onclick="M('Ashwalker Dark Lancers — Medium Cavalry','Half Corruption · 18,000 · Mercenary Mounted · Rational','Experienced riders who accepted partial corruption for performance. Better speed, endurance, damage threshold. Not fanatics, not network-directed. They follow orders and when the orders stop making sense they make the calculation experienced mercenaries make. At Ashfield, the Closing Wings\' encirclement primarily disintegrated the Ashwalker Dark Lancers — not because they were the weakest but because they were the most rational. The fully corrupted cavalry fought until no cavalry remained. The Ashwalker Dark Lancers looked at the mathematics and chose.')">
+  <div class="card-top"><div class="card-icon">🗡</div><div><div class="card-name" style="color:var(--half)">Ashwalker Dark Lancers</div><div class="card-sub">Half Corruption · 18,000 · Merc Medium Cav</div></div></div>
+  <div class="card-body">Experienced merc cavalry, partial enhancement. Most rational unit in the host. Closing Wings disintegrated them at Ashfield — they chose when the math stopped working. The corrupted cavalry fought until dead.</div>
+  <div class="card-tags"><span class="tag t-half">Partial Corrupt</span><span class="tag t-half">Mercenary</span><span class="tag t-blood">Morale Variable — Closing Wings Counter</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Void Harrier Corps — Light Cavalry','Full Corruption · 20,000 · Disruption Doctrine','Fast, lightly armored, network-directed disruption cavalry targeting supply lines, medical stations, command positions — appearing where defenses are not oriented. The unit that makes Bob Vale\'s Soul Link network most valuable: the Void Harriers\' speed advantage is eliminated if every Starhaven unit responds 15 seconds earlier than anticipated. Soul Link communication moves faster than Harrier cavalry. The anticipated surprise doesn\'t materialize. Without the Soul Link: the Harriers are where the losses come from in the first hour before the network warms.')">
+  <div class="card-top"><div class="card-icon">💨</div><div><div class="card-name" style="color:var(--void-text)">Void Harrier Corps</div><div class="card-sub">Full Corruption · 20,000 · Light Disruption</div></div></div>
+  <div class="card-body">Speed over armor. Target medical stations, supply, command positions. Soul Link eliminates their primary advantage — 15-second earlier response window. Without Soul Link: first-hour threat.</div>
+  <div class="card-tags"><span class="tag t-void">Light Cavalry</span><span class="tag t-blood">Full Corrupt</span><span class="tag t-special">Disruption Doctrine</span></div>
+</div>
+
+</div></div><!-- /cavalry -->
+<div class="void-divider"></div>
+
+<!-- HALF CORRUPTED -->
+<div class="section" id="half-corrupt">
+<div class="section-header"><span class="section-icon">🌗</span><div><div class="section-title" style="color:var(--half)">Half Corrupted — The In-Between</div><div class="section-desc">Retain Will · Can Still Choose · The Intelligence Asset Risk</div></div></div>
+<div class="cards">
+
+<div class="card half-card" onclick="M('The Turned — Former Kingdom Soldiers','Half Corruption · 30,000 · Survivors Who Chose Survival','Remnants of kingdoms the Void consumed. Not fanatics. Survivors who chose survival over resistance and are fighting for the thing keeping them alive. Early-stage corruption: physical enhancement, pain reduction, minor sensory amplification. Retain full individual consciousness. They know what the Void is. They have watched soldiers they knew progress to the stage where the eyes are wrong and the person is no longer present. They fight because the alternative is reaching that stage without having chosen anything. Three Turned soldiers provided Nyx Ravel with Coordinator position data at Ashfield. They are not in the casualty records.')">
+  <div class="card-top"><div class="card-icon">🌗</div><div><div class="card-name" style="color:var(--half)">The Turned — Former Kingdom Soldiers</div><div class="card-sub">Half Corruption · 30,000 · Survivors</div></div></div>
+  <div class="card-body">Former kingdom soldiers. Know what full corruption becomes. Fight to avoid reaching it by their own choice. Most likely to defect. Three provided Nyx Coordinator data at Ashfield. Not in the records.</div>
+  <div class="card-tags"><span class="tag t-half">Partial Corrupt</span><span class="tag t-half">Retains Will</span><span class="tag t-corrupt">Intel Defection Risk</span></div>
+</div>
+
+<div class="card half-card" onclick="M('Corruption Shamans — The Whisperers','Half Corruption · 2,000 · Ground Preparation · Pre-Battle','The Nullborn inverted equivalent of the Stonefang Shamans. They walk the Nullborn line before engagement performing a rite older than the Coordinator network — preparing the ground. Areas where Whisperers completed the rite show elevated corruption propagation: wounds that normally require 90-second purification windows require it in 45 seconds. They resist conventional magical suppression because the rite is not magic in the classifiable sense. Cassia Vayne identified and eliminated fourteen at Ashfield during pre-dawn screening. The remaining eighteen had already finished.')">
+  <div class="card-top"><div class="card-icon">🌀</div><div><div class="card-name" style="color:var(--half)">Corruption Shamans — The Whisperers</div><div class="card-sub">Half Corruption · 2,000 · Ground Preparation</div></div></div>
+  <div class="card-body">Pre-battle ground corruption rite. Reduces purification window from 90s to 45s in prepared zones. Not classifiable magic — resists Runebreaker suppression. Cassia killed 14 pre-dawn. 18 had already finished.</div>
+  <div class="card-tags"><span class="tag t-half">Partial Corrupt</span><span class="tag t-void">Ground Corruption</span><span class="tag t-special">Resists Magic Counter</span></div>
+</div>
+
+</div></div><!-- /half -->
+<div class="void-divider"></div>
+
+<!-- FULL CORRUPTED SPECIAL -->
+<div class="section" id="full-corrupt">
+<div class="section-header"><span class="section-icon">🖤</span><div><div class="section-title" style="color:var(--void-text)">Full Corrupted — Special Cases</div><div class="section-desc">Past the Point of Return</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('The Fourth Commander','Full Corruption · Individual · Shadow Duelist · Replaced','The fourth of Drevak\'s original commanders. Eyes black from edge to edge. Armor fused completely with corruption — the boundary between man and what consumed him no longer meaningful. Corrupted twin blades. Can sense movement inside shadow — has been in darkness long enough to learn its texture. The only individual in the Nullborn host who gave Nyx Ravel a genuine contest. Required Lyria\'s arrow through a crack too small to thread in corruption glow, then Nightfall Absolute, then both daggers. Did not survive Havenfire. A replacement fourth commander has been identified in intelligence files. Different individual, same role. Nyx has a dossier.')">
+  <div class="card-top"><div class="card-icon">🗡</div><div><div class="card-name" style="color:var(--void-text)">The Fourth Commander</div><div class="card-sub">Full Corruption · Individual · Shadow Duelist · Replaced</div></div></div>
+  <div class="card-body">Eyes fully black. Senses movement inside shadow. Twin corrupted blades. Only individual to contest Nyx genuinely. Required Lyria intervention to end. Replacement identified. Nyx has a dossier.</div>
+  <div class="card-tags"><span class="tag t-void">Full Corrupt</span><span class="tag t-special">Shadow Sense</span><span class="tag t-blood">Nyx Counter — Required Lyria</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Void-Forged Husks — The Silent','Full Corruption · 10,000 · Consciousness Absent · Final Wave','Soldiers who have reached a corruption stage beyond what the Coordinator network needs to manage. The consciousness is absent. What remains: a body that moves, fights, and does not stop until physically prevented. They do not hold formation. They do not receive direction. They advance in the last direction they were pointed at the moment their consciousness departed and continue until a target or until the body cannot sustain motion. No morale — no morale to calculate. No fatigue response — the body has stopped listening to what the biology says about fatigue. Deployed at the rear of the advance as the final wave — arriving at whatever has survived everything in front of them.')">
+  <div class="card-top"><div class="card-icon">💀</div><div><div class="card-name" style="color:var(--blood-text)">Void-Forged Husks — The Silent</div><div class="card-sub">Full Corruption · 10,000 · Last Stage · Final Wave</div></div></div>
+  <div class="card-body">Consciousness absent. Advance in last-given direction. No morale, no fatigue. Deployed behind everything — arrive after the battle appears over. The thing that comes when you thought it was done.</div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-void">No Network Required</span><span class="tag t-special">Final Wave · Last Stage</span></div>
+</div>
+
+</div></div><!-- /full corrupt -->
+<div class="void-divider"></div>
+
+<!-- CORRUPTED BEASTS -->
+<div class="section" id="beasts">
+<div class="section-header"><span class="section-icon">🐺</span><div><div class="section-title" style="color:#D08020">Corrupted Beasts</div><div class="section-desc">What the Void Made of Things That Were Already Dangerous</div></div></div>
+<div class="cards">
+
+<div class="card blood-card" onclick="M('Void Dire Wolves — The Starving','Full Corruption · 5,000 Wolves · Perpetual Hunt State','Predatory drive amplified, satiation response removed. Perpetually in the hunting state uncorrupted dire wolves occupy for minutes at the end of a successful hunt. In Void Dire Wolves it never ends. Larger than Greenveil\'s bonded wolves by 20–30%. Corruption-blackened fur absorbs light slightly — in low light, harder to see than their size suggests. Their Handlers are half-corrupted, providing minimal direction. The wolves don\'t require much — target selection is not complex. They identify threats and move toward them. Counter: Greenveil\'s bonded Dire Wolf Handler Corps. The encounter between corrupted and bonded dire wolves is one of the few places where the emotional weight matches the tactical stakes.')">
+  <div class="card-top"><div class="card-icon">🐺</div><div><div class="card-name" style="color:var(--blood-text)">Void Dire Wolves — The Starving</div><div class="card-sub">Full Corruption · 5,000 · Perpetual Hunt</div></div></div>
+  <div class="card-body">Satiation removed. Always hunting. 20–30% larger. Light-absorbing fur. Counter: Greenveil's bonded wolves. The most emotionally weighted tactical encounter on the field.</div>
+  <div class="card-tags"><span class="tag t-beast">Corrupted Wolf</span><span class="tag t-blood">Full Corrupt</span><span class="tag t-void">Perpetual Hunt State</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Null Bears — The Unmothered','Full Corruption · 800 · 10–14 Feet · Target-Specific','Corrupted cave bears whose maternal aggression drive has been isolated and amplified — the behavioral state a bear occupies when its cubs are threatened, sustained without end, directed at everything that is not Nullborn host. Ten to fourteen feet. Corruption-grown bone-plate on shoulders and skull redirecting impact from the brain cavity. Void-claw growth extending natural claws by 18 inches. Used against specific high-value targets in the Starhaven formation that the Coordinator network has flagged. Counter: Thorin\'s War Bears. The engagement between Null Bears and War Bears at Ashfield was one of the few moments where both sides paused to look at what was happening before continuing.')">
+  <div class="card-top"><div class="card-icon">🐻</div><div><div class="card-name" style="color:var(--void-text)">Null Bears — The Unmothered</div><div class="card-sub">Full Corruption · 800 · 10–14 Feet · Target Specific</div></div></div>
+  <div class="card-body">Maternal aggression permanent and directionless. 10–14 feet, bone-plate skull, 18-inch Void claws. Targeted at specific high-value positions. Counter: War Bears. Both sides paused to look at Ashfield.</div>
+  <div class="card-tags"><span class="tag t-beast">Corrupted Bear</span><span class="tag t-blood">Full Corrupt</span><span class="tag t-titan">10–14 Feet</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Corruption Hounds — Ashfangs','Half Corruption · 8,000 · Counter-Ironpack Bred','Bred specifically as a response to Starhaven\'s Ironpack after its performance was documented. Corruption Hounds detect the seven-frequency whistle channel that Sela Ironbone\'s handlers use below human hearing. When a handler issues a whistle command, the nearest Ashfang shifts behavior to target the signal source. The Ironpack\'s primary tactical advantage — invisible commands — becomes a targeting beacon. Sela Ironbone is aware of this. The Ironpack now uses secondary command channels that are not whistle-based. The Corruption Hounds\' targeting response has not been updated to match. Sela is not going to tell them.')">
+  <div class="card-top"><div class="card-icon">🐕</div><div><div class="card-name" style="color:var(--blood-text)">Corruption Hounds — Ashfangs</div><div class="card-sub">Half Corruption · 8,000 · Counter-Ironpack</div></div></div>
+  <div class="card-body">Bred to detect Ironpack whistle frequencies. Handler command = targeting beacon. Ironpack switched to secondary channels. Ashfangs are targeting a frequency Ironpack no longer uses. Sela isn't telling them.</div>
+  <div class="card-tags"><span class="tag t-beast">Corrupted Hound</span><span class="tag t-half">Half Corrupt</span><span class="tag t-special">Frequency Hunter — Outdated</span></div>
+</div>
+
+</div></div><!-- /beasts -->
+<div class="void-divider"></div>
+
+<!-- FLYING UNITS -->
+<div class="section" id="flying">
+<div class="section-header"><span class="section-icon">🦅</span><div><div class="section-title" style="color:#6080FF">Flying Units</div><div class="section-desc">Sky Denial · Aerial Bombardment · Void From Above</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Voidspore Bombards — The Drifting Death','Void-Grown Organism · 300 · 12 Feet Diameter · Thermal Drift','Not wyverns. Not corrupted fliers. Grown by the Void in saturation zones over an unknown period — not a converted creature but an original one. Twelve feet in diameter. Radially symmetric body with trailing dissolution filaments — not tentacles but close enough in appearance that soldiers use the word. Translucent Void-matter body, corruption visible within it like liquid in a lantern. They drift at altitude on thermal currents responding to heat signatures below. On impact or when struck by conventional weapons, the body ruptures dispersing Void-dissolution compound across a 40-yard radius. Without purification within 30 seconds, the corruption process in anything contacted becomes self-sustaining. Conventional arrows pop the body without destroying the compound — the worst counter is also the most intuitive one. Lightning disrupts thermal guidance. Elemental fire mid-air destroys the compound.')">
+  <div class="card-top"><div class="card-icon">🎆</div><div><div class="card-name" style="color:var(--void-text)">Voidspore Bombards</div><div class="card-sub">Void-Grown · 300 · 12ft · Dissolution Drift</div></div></div>
+  <div class="card-body">Grown — not corrupted. 12ft radial body drifts on thermals toward heat. Rupture = 40-yard dissolution, 30-second purification window. Arrows pop without destroying compound. Lightning disrupts guidance. Fire mid-air destroys it.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Threat Radius</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:88%;background:#7020C0"></div></div><span class="stat-val">40yd</span></div></div>
+  <div class="card-tags"><span class="tag t-void">Void-Grown Organism</span><span class="tag t-fly">Thermal Drift</span><span class="tag t-special">30-Second Window</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Screaming Void Mantas — Sky Blades','Full Corruption · 400 Mantas · 12–18ft · Silent Low-Pass','Manta-ray-adjacent creatures from deep Void zones, membrane-modified for atmospheric flight. They do not have wings — they ride air currents the way manta rays ride ocean currents. Twelve to eighteen feet wingspan. Fly below Stormrider altitude, above ground infantry engagement range: in the gap between both defenses. Attack profile: silent low-altitude passes over troop concentrations, dissolution filaments trailing beneath, contact corruption on any soldier in the path. Corruption-modified membranes produce no sound in flight. They arrive unannounced. Aurelia identified this at first deployment and noted she had not previously considered specific counters for silent low-altitude mass-effect passes over infantry. She has one now. It involves significant collateral disruption to own formation.')">
+  <div class="card-top"><div class="card-icon">🦋</div><div><div class="card-name" style="color:var(--blood-text)">Screaming Void Mantas</div><div class="card-sub">Full Corruption · 400 · 12–18ft · Silent Passes</div></div></div>
+  <div class="card-body">Silent low-altitude passes between Stormrider and ground ranges. 12–18ft wingspan. Contact dissolution filaments. No sound — arrive unannounced. Aurelia had no counter prepared at first contact.</div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-fly">Silent Flight · Gap Altitude</span><span class="tag t-void">Contact Dissolution</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Void Moth Swarms — The Consuming Dark','Full Corruption · 50 Swarms · Null-Stone Scale Dust','Individual creatures the size of a human forearm. Corruption-enhanced moths whose scale dust has been converted from light-scattering particulate to Null-stone particulate. A single moth: inconvenience. A swarm of ten thousand: an arcane disruption field moving through air. The Null-stone scale dust in the swarm\'s dispersal zone produces the same Null-field as Cassia Vayne\'s Grenades, covering the area the swarm passes through. Mages inside the swarm cannot cast for the swarm\'s duration plus 15 seconds. The Arcane Artillery Corps inside a Void Moth Swarm is a collection of people in robes unable to do anything useful. Counter: fire-based arcane before reaching range, Iron Talon at close range, Stonethrow incendiary. The counter doesn\'t help the mages already inside.')">
+  <div class="card-top"><div class="card-icon">🦟</div><div><div class="card-name" style="color:var(--void-text)">Void Moth Swarms</div><div class="card-sub">Full Corruption · 50 Swarms · Null-Stone Scale Dust</div></div></div>
+  <div class="card-body">10,000 moths per swarm = moving Null-Stone field. Arcane Artillery inside: cannot cast for duration + 15 seconds. Counter: fire before reaching range. Inside the swarm: no useful counter for the mages already there.</div>
+  <div class="card-tags"><span class="tag t-void">Swarm · Null Dust</span><span class="tag t-fly">Arcane Disruption Field</span><span class="tag t-special">Mage Suppression Area</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Corrupted Wyvern Riders — Sky Legion','Full Corruption · 60–80 Wyverns · 3 Riders Each','Three Void-armored riders per wyvern — aerial platform with combat capability that the Ninth Sky Corps drakes (single rider each) must engage at numerical disadvantage per unit contact. Void-growth on wing membranes is structural reinforcement, not decoration. Chain bolts targeting membranes reduce flight — Velkan\'s counter produced 11 grounded in the first volley. Eight recovered. At Ashfield, when Iron Talon chain bolt targeting became established, the formations dispersed across 2,000 yards in four seconds — Coordinator network directing the aerial formation from the ground. The sky engagement is never only about the sky.')">
+  <div class="card-top"><div class="card-icon">🐉</div><div><div class="card-name" style="color:var(--blood-text)">Corrupted Wyvern Riders</div><div class="card-sub">Full Corruption · 60–80 · 3 Riders Per · Coordinator-Directed</div></div></div>
+  <div class="card-body">3 riders per wyvern. Structural Void-growth on membranes. Recover from chain bolt damage. Coordinator-directed from ground. Adapted Iron Talon counter in 4 seconds at Ashfield. The sky war is never only about the sky.</div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-fly">Coordinator-Directed Air</span><span class="tag t-void">Void Dissolution Venom</span></div>
+</div>
+
+</div></div><!-- /flying -->
+<div class="void-divider"></div>
+
+<!-- MONSTER UNITS -->
+<div class="section" id="monsters">
+<div class="section-header"><span class="section-icon">💀</span><div><div class="section-title" style="color:#FF4020">Monster Units</div><div class="section-desc">Things That Should Not Walk Fields</div></div></div>
+<div class="cards">
+
+<div class="card blood-card" onclick="M('Corrupted Ogres — The Overmade','Full Corruption · 2,000 · 15–20 Feet · Does Not Decelerate','Ogres whose corruption optimization has been running without ceiling on a physiology with no natural cap on physical capability for an indeterminate time. Fifteen to twenty feet. Void-reinforced joints handle structural loads that should not be handleable at this size — load distribution modified so the stresses their size produces do not fail. They are not slower for their size. The assumption that larger means slower fails at the 40-yard approach mark when they have not decelerated the way the calculation assumed. Mosshorn Rhino Corps: effective per Thorin\'s assessment. Iron Tide Tanks: definitive. Everything else: buying time for those two.')">
+  <div class="card-top"><div class="card-icon">👹</div><div><div class="card-name" style="color:var(--blood-text)">Corrupted Ogres — The Overmade</div><div class="card-sub">Full Corruption · 2,000 · 15–20 Feet</div></div></div>
+  <div class="card-body">15–20 feet. Void-reinforced joints. Does not decelerate at 40-yard mark as calculated. Counter: Mosshorn Rhinos effective, Iron Tide Tanks definitive. Everything else buys time for those.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Threat</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:95%;background:#A01820"></div></div><span class="stat-val">95</span></div></div>
+  <div class="card-tags"><span class="tag t-blood">Full Corrupt</span><span class="tag t-titan">15–20 Feet</span><span class="tag t-special">Non-Decelerating</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Null Leviathans — The Chained','Full Corruption · 12 · 25–30 Feet · Secondary Limb System','Something that lived in deep Void-saturation zones long enough that the question of what it was before is no longer meaningful. Twenty-five to thirty feet. Quadrupedal with a secondary pair of limbs grown by the Void to handle soldiers who attempt to climb primary limbs to reach vital points — the Void noticed this happened once and added the counter. The Chained designation refers to the suppression chain architecture connecting each to three Borrak-grade handler teams. Without chains, the Leviathans do not discriminate between Nullborn and Starhaven. With chains, imperfect discrimination. The handlers consider this an acceptable operational parameter. No single-unit counter. Velkan plus Ninth Sky Corps bombardment: 70% success rate per engagement.')">
+  <div class="card-top"><div class="card-icon">🐊</div><div><div class="card-name" style="color:var(--void-text)">Null Leviathans — The Chained</div><div class="card-sub">Full Corruption · 12 · 25–30 Feet · Secondary Arms</div></div></div>
+  <div class="card-body">25–30 feet. Secondary arms added to handle climbers. Void-iron chain suppression — imperfect discrimination. No single-unit counter. Velkan + Ninth Sky: 70% success. Three handler teams per Leviathan.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Scale</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:98%;background:#7020C0"></div></div><span class="stat-val">25–30ft</span></div></div>
+  <div class="card-tags"><span class="tag t-void">Full Corrupt</span><span class="tag t-titan">25–30 Feet</span><span class="tag t-special">Secondary Limb System</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Bone Golems — Risen Architecture','Void Constructed · 500 · 18 Feet · Composite Battlefield Remains','Not a corrupted creature. Constructed. The Pale General\'s architecture applied to the problem of combat unit construction. Eighteen feet of battlefield bones fused by Void-binding into a continuous composite structure — not the remains of a single creature but dozens of battlefield casualties fused into one operating form. The specific horror: soldiers at close range have recognized specific remains in the composite. Starhaven after-action testimony about this has been redacted from the public record by Senna Ash. Destroyed by physical dismemberment — Void-binding holds the composite but does not regenerate severed connections. Ironbreaker Mace Corps: effective. Holy Knights Relic Wardens: very effective, for reasons spiritual as much as tactical.')">
+  <div class="card-top"><div class="card-icon">💀</div><div><div class="card-name" style="color:var(--blood-text)">Bone Golems — Risen Architecture</div><div class="card-sub">Void Constructed · 500 · 18 Feet · Composite Remains</div></div></div>
+  <div class="card-body">Built from battlefield dead — multiple soldiers fused into one. Soldiers recognize components at close range. Senna Ash redacted the testimony. Dismemberment kills it. Relic Wardens: most effective counter, spiritually and tactically.</div>
+  <div class="card-tags"><span class="tag t-void">Void Constructed</span><span class="tag t-titan">18 Feet</span><span class="tag t-special">Composite Battlefield Remains</span></div>
+</div>
+
+</div></div><!-- /monsters -->
+<div class="void-divider"></div>
+
+
+<!-- SIEGE CORPS -->
+<div class="section" id="siege">
+<div class="section-header"><span class="section-icon">🏹</span><div><div class="section-title" style="color:#C08020">Siege Corps</div><div class="section-desc">The Void Does Not Transport Siege Engines — It Grows Them</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Void Ballista Batteries','Void-Grown Siege Organisms · 240 Batteries · Anti-Wall / Anti-Wyvern','Living siege frames grown from Void-bone and tendon-cable. They root themselves into soil before firing, drawing structural stability from corrupted ground rather than wheels or bracing crews. Their ammunition is not carried — it grows inside the firing channel as black iron spines. A mature battery can fire every forty seconds until purification burns the root-node beneath it. Primary targets: walls, Iron Tide Tanks, Ninth Sky Corps approach lanes, and any large creature attempting a clean charge. Counter: fire, ground purification, engineer demolition teams, and long-range Dawnscope targeting of the root-node rather than the weapon body.')">
+  <div class="card-top"><div class="card-icon">🏹</div><div><div class="card-name" style="color:var(--void-text)">Void Ballista Batteries</div><div class="card-sub">Void-Grown · 240 Batteries · Anti-Wall / Anti-Air</div></div></div>
+  <div class="card-body">Rooted living ballistae. Grow their own black-iron spines. Best fired from corrupted ground. Kill the root-node, not the frame.</div>
+  <div class="card-tags"><span class="tag t-void">Siege</span><span class="tag t-special">Root-Node Weakness</span><span class="tag t-fly">Anti-Wyvern</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Bone Mortars — The Rattle Guns','Void Constructed · 600 Tubes · Corruption Pod Artillery','Mortars assembled from rib-spines, giant femurs, and Void-binding. They fire steep arcs over fortifications, delivering corruption pods, plague-corpse bundles, and splintering bone clusters. Their purpose is not only killing. Their purpose is to make safe ground unsafe behind the line. A Bone Mortar strike turns a hospital yard, supply camp, or reserve position into a purification emergency. Counter: Stormrider bombardment, Silent Warden infiltration, and Seraphine-class purge if the pod bursts inside friendly lines.')">
+  <div class="card-top"><div class="card-icon">💀</div><div><div class="card-name" style="color:var(--blood-text)">Bone Mortars — The Rattle Guns</div><div class="card-sub">Void Constructed · 600 Tubes · Rear-Area Terror</div></div></div>
+  <div class="card-body">High-arc artillery launching corruption pods and bone clusters. Designed to poison the safe rear, not just break the front.</div>
+  <div class="card-tags"><span class="tag t-blood">Artillery</span><span class="tag t-void">Corruption Pods</span><span class="tag t-special">Rear-Area Strike</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Flesh Trebuchets — Muscle Engines','Living Siege Engine · 90 Confirmed · Throws Living Ammunition','Built from stretched muscle, bone pylons, and bound nervous tissue. They do not use ropes. The throwing arm is pulled by living muscle grown around a skeletal frame, producing terrifying force and unpredictable recoil. Ammunition includes corruption sacs, stitched beast-bombs, captured corpses, and occasionally still-living corrupted infantry who detonate on impact. The crews are not operators but feeders, keeping the muscle engine supplied with blood and biomass. Counter: fire, severing tendon masses, or killing the feeder crews before the engine has warmed.')">
+  <div class="card-top"><div class="card-icon">🩸</div><div><div class="card-name" style="color:var(--blood-text)">Flesh Trebuchets</div><div class="card-sub">Living Siege Engine · 90 · Biomass Artillery</div></div></div>
+  <div class="card-body">Muscle-powered trebuchets that throw corruption sacs, beast-bombs, and living payloads. Kill feeders or burn tendons.</div>
+  <div class="card-tags"><span class="tag t-blood">Living Engine</span><span class="tag t-beast">Biomass Fed</span><span class="tag t-special">Fire Weakness</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- COMBAT ENGINEERS -->
+<div class="section" id="engineers">
+<div class="section-header"><span class="section-icon">⚙</span><div><div class="section-title" style="color:#A070FF">Combat Engineers</div><div class="section-desc">The Counter-Kael Doctrine · Battlefield Construction Under Corruption</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Corruption Architects','Void Engineer Corps · 4,000 · Field Construction / Terrain Corruption','The Nullborn answer to Starhaven engineering. They do not build with stone and timber. They grow bridges from ribwork, raise trench walls from hardened corruption mud, and seed roads with blackroot veins that allow heavy units to cross ground that should not hold them. Given fifteen minutes, they can turn a field into a hostile machine. Given an hour, they can make the battlefield belong to the Void. Counter: Kael-directed engineer raids, purification firebreaks, and Dawnscope elimination of marked Architect leaders.')">
+  <div class="card-top"><div class="card-icon">⚙</div><div><div class="card-name" style="color:var(--void-text)">Corruption Architects</div><div class="card-sub">Void Engineers · 4,000 · Terrain Conversion</div></div></div>
+  <div class="card-body">Grow bridges, trenches, roads, and barriers from corruption matter. Fifteen minutes changes a field. One hour owns it.</div>
+  <div class="card-tags"><span class="tag t-void">Engineer Corps</span><span class="tag t-special">Counter-Kael</span><span class="tag t-corrupt">Terrain Conversion</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Void Spire Crews','Engineer-Signal Hybrid · 900 Crews · Coordinator Range Amplifier','Specialist crews that raise black spires behind the battleline. Each spire extends Coordinator range, amplifies Void Mage output, and accelerates wound-corruption in a surrounding zone. Spires are fragile while growing and extremely difficult to destroy once hardened. Velkan classifies them as priority two targets — below Coordinators, above commanders. If three spires form a triangle, the ground between them becomes a prepared killing geometry. Counter: immediate demolition before hardening, aerial strike, or Resonance Corps disruption.')">
+  <div class="card-top"><div class="card-icon">🗼</div><div><div class="card-name" style="color:var(--void-text)">Void Spire Crews</div><div class="card-sub">900 Crews · Signal Amplifier · Mage Boost</div></div></div>
+  <div class="card-body">Raise spires that extend Coordinator range and mage strength. Fragile while growing, nightmare once hardened.</div>
+  <div class="card-tags"><span class="tag t-void">Amplifier</span><span class="tag t-special">Priority Two</span><span class="tag t-alien">Killing Geometry</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- BATTLEFIELD SUPPORT -->
+<div class="section" id="support">
+<div class="section-header"><span class="section-icon">🥁</span><div><div class="section-title" style="color:#FFD060">Battlefield Support</div><div class="section-desc">The Units That Make Everything Around Them Worse</div></div></div>
+<div class="cards">
+
+<div class="card commander-card" onclick="M('Doom Drummers','Battlefield Support · 1,200 · Tempo Control / Berserk Acceleration','Massive drum teams carried on bone platforms or walking sledges. Their rhythm forces corrupted physiology into higher output — faster movement, stronger impact, shorter reaction delays. Blood Orcs under Doom Drum cadence become nearly uncontrollable, but the impact is devastating for the first seven minutes. The drums are not magical enough for standard suppression, not mundane enough to ignore. Counter: Silent Wardens, Starshot sniping, or cavalry raids through the support line.')">
+  <div class="card-top"><div class="card-icon">🥁</div><div><div class="card-name" style="color:var(--commander)">Doom Drummers</div><div class="card-sub">1,200 · Tempo Control · Berserk Acceleration</div></div></div>
+  <div class="card-body">War drums that increase speed, impact, and aggression. Turns Blood Orcs into a seven-minute disaster.</div>
+  <div class="card-tags"><span class="tag t-cmd">Support</span><span class="tag t-blood">Berserk Boost</span><span class="tag t-special">Assassination Target</span></div>
+</div>
+
+<div class="card half-card" onclick="M('Corruption Priests','Ritual Support · 3,000 · Regeneration Sustain / Wound Acceleration','Not mages in the academic sense. Priests maintain corruption through rites, chants, blood geometry, and sacrifice. Nearby corrupted units regenerate faster and resist purification longer. If left alive behind a heavy infantry push, they turn a costly victory into a repeating problem as supposedly disabled bodies begin standing again. Counter: Holy Knights, Ashen Guard, Runebreaker disruption, and direct officer-level kill orders.')">
+  <div class="card-top"><div class="card-icon">🕯</div><div><div class="card-name" style="color:var(--half)">Corruption Priests</div><div class="card-sub">3,000 · Ritual Sustain · Regeneration Support</div></div></div>
+  <div class="card-body">Increase regeneration and purification resistance nearby. If ignored, dead-looking units stand up again.</div>
+  <div class="card-tags"><span class="tag t-half">Ritual Support</span><span class="tag t-corrupt">Regen Boost</span><span class="tag t-special">Holy Counter</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Signal Keepers','Coordinator Sub-Nodes · Unknown Count · Network Continuity','Lesser signal officers grown or trained to preserve command coherence when a Coordinator dies. They cannot replace a Coordinator completely, but they reduce the 4-second disruption window to a staggered 2-second seizure across smaller clusters. Starhaven doctrine after Ashfield assumed Coordinator kills create full disruption. Signal Keepers exist to make that doctrine age badly. Counter: simultaneous node-chain elimination, Nyx-directed decapitation, and Resonance Corps signal flooding.')">
+  <div class="card-top"><div class="card-icon">📡</div><div><div class="card-name" style="color:var(--void-text)">Signal Keepers</div><div class="card-sub">Sub-Nodes · Network Continuity · Anti-Decapitation</div></div></div>
+  <div class="card-body">Keep network clusters functioning after Coordinator death. Reduce clean disruption windows. Makes Ashfield doctrine less reliable.</div>
+  <div class="card-tags"><span class="tag t-void">Sub-Node</span><span class="tag t-special">Anti-Decapitation</span><span class="tag t-alien">Signal Warfare</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- ANTI-MAGE -->
+<div class="section" id="anti-mage">
+<div class="section-header"><span class="section-icon">⛓</span><div><div class="section-title" style="color:#90A0C0">Anti-Mage Corps</div><div class="section-desc">Mage Killers · Null Chains · Silence Doctrine</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Spellbreaker Legion','Anti-Mage Infantry · 7,000 · Null Chains / Mage Hooks','Medium-heavy infantry equipped with Null-chain launchers, mage hooks, and silence-spears. Their job is not to win the line fight. Their job is to cross enough ground to put a chain into a caster, drag them out of formation, and let the follow-up squad finish the kill. Against Starhaven mages, they operate in pairs with Void Moth Swarm cover. Counter: shield infantry escort, Runebreaker mirrors, and immediate cavalry punishment once they overextend.')">
+  <div class="card-top"><div class="card-icon">⛓</div><div><div class="card-name" style="color:var(--void-text)">Spellbreaker Legion</div><div class="card-sub">7,000 · Null Chains · Mage Hooks</div></div></div>
+  <div class="card-body">Drag casters out of formation with Null-chains and silence-spears. Often attack under Void Moth cover.</div>
+  <div class="card-tags"><span class="tag t-void">Anti-Mage</span><span class="tag t-special">Null Chains</span><span class="tag t-heavy">Escort Required</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Null Hounds','Anti-Mage Beasts · 2,500 · Mana-Scent Trackers','Hounds bred to track mana flow instead of scent. Invisibility, darkness, and mundane concealment mean little if a caster is still drawing power. Null Hounds do not understand targets, only trails. They are released behind Spellbreaker lines and follow the freshest active magic signature until they reach the throat attached to it. Counter: mana decoys, dead-cast wards, and non-casting escort fighters.')">
+  <div class="card-top"><div class="card-icon">🐕</div><div><div class="card-name" style="color:var(--blood-text)">Null Hounds</div><div class="card-sub">2,500 · Mana-Scent Trackers · Mage Hunters</div></div></div>
+  <div class="card-body">Track active mana instead of smell. Invisibility does not matter if the caster is still drawing power.</div>
+  <div class="card-tags"><span class="tag t-beast">Hound</span><span class="tag t-void">Mana Tracking</span><span class="tag t-special">Mage Hunter</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- ANTI AIR -->
+<div class="section" id="anti-air">
+<div class="section-header"><span class="section-icon">🪝</span><div><div class="section-title" style="color:#80A8FF">Anti-Air Corps</div><div class="section-desc">Ground-Based Sky Denial · The Answer to Wyverns and Stormriders</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Void Harpoon Batteries','Ground Anti-Air · 500 Batteries · Wing Pinning / Drag-Down','Tripod siege weapons firing barbed Void-iron harpoons attached to tendon-cables. They do not need to kill a flying mount. They need to pin one wing, drag the mount below safe altitude, and let ground troops finish the fall. Each battery is served by partially corrupted crews who feel no fear under aerial approach. Counter: high-altitude bombing, Dawnscope crew removal, and false dive-bait from Ninth Sky Corps.')">
+  <div class="card-top"><div class="card-icon">🪝</div><div><div class="card-name" style="color:var(--void-text)">Void Harpoon Batteries</div><div class="card-sub">500 Batteries · Ground Anti-Air · Drag-Down</div></div></div>
+  <div class="card-body">Harpoon wings, drag flyers below safe altitude. Designed to wound flight, not kill instantly.</div>
+  <div class="card-tags"><span class="tag t-fly">Anti-Air</span><span class="tag t-void">Void-Iron Harpoon</span><span class="tag t-special">Wing Pinning</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Rift Throwers','Dimensional Chain Artillery · 120 Teams · Impossible Angles','Specialized crews firing chains through short dimensional folds. The chain leaves the launcher in one direction and exits from another angle above or beside the target. The first sign of attack is often the chain already wrapping around a wing joint or rider harness. Inaccurate at long range, terrifying inside prepared geometry. Counter: destroy Void Spires, avoid triangle-spire zones, and keep aerial units moving unpredictably rather than circling.')">
+  <div class="card-top"><div class="card-icon">🌀</div><div><div class="card-name" style="color:var(--void-text)">Rift Throwers</div><div class="card-sub">120 Teams · Dimensional Chain Artillery</div></div></div>
+  <div class="card-body">Chains exit from impossible angles through dimensional folds. Most dangerous inside Void Spire geometry.</div>
+  <div class="card-tags"><span class="tag t-void">Dimensional Weapon</span><span class="tag t-fly">Anti-Air</span><span class="tag t-alien">Impossible Angle</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- HERO HUNTERS -->
+<div class="section" id="hero-hunters">
+<div class="section-header"><span class="section-icon">👑</span><div><div class="section-title" style="color:#FF60D0">Hero Hunter Corps</div><div class="section-desc">Units That Do Not Fight Armies — They Hunt Pillars</div></div></div>
+<div class="cards">
+
+<div class="card commander-card" onclick="M('King\'s End','Hero Hunter Corps · 50 · Pillar-Kill Doctrine','Fifty warriors built around one doctrine: ignore the battle, isolate the Pillar, force a decision. Each cell carries anti-healing blades, Null shackles, memory-disrupting dust, and one single-use dimensional spike meant to prevent rescue by movement magic or shadow step. They do not seek victory in the field. They seek the death of Rayden, Seraphine, Thorin, Nyx, Velkan, or any commander whose survival holds a flank together. Counter: never allow a Pillar to fight alone, assign Dawnguard or Null Blade counter-cells, and treat suspicious gaps as traps rather than opportunities.')">
+  <div class="card-top"><div class="card-icon">👑</div><div><div class="card-name" style="color:var(--commander)">King's End</div><div class="card-sub">50 · Hero Hunters · Pillar-Kill Doctrine</div></div></div>
+  <div class="card-body">Ignore armies. Hunt Pillars. Carry anti-healing blades, Null shackles, memory dust, and rescue-denial spikes.</div>
+  <div class="card-tags"><span class="tag t-special">Hero Hunter</span><span class="tag t-cmd">Pillar Threat</span><span class="tag t-void">Rescue Denial</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Rift Blades','Assassin-Duelists · 300 · Short Step / Commander Kill','Elite corrupted duelists trained to appear inside command bubbles for less than ten seconds. They cannot hold ground and do not try. Their blades are treated with slow corruption venom designed to force commanders away from command duties and into purification response. They are weaker than King\'s End individually, but far more numerous and often used as false pressure before the true hunter cell arrives. Counter: layered bodyguards, Silent Warden shadow screens, and command posts that assume the first assassination wave is not the real one.')">
+  <div class="card-top"><div class="card-icon">🗡</div><div><div class="card-name" style="color:var(--blood-text)">Rift Blades</div><div class="card-sub">300 · Assassin-Duelists · Command Bubble Breach</div></div></div>
+  <div class="card-body">Short-step assassins. Strike command bubbles for ten seconds, poison command rhythm, then vanish or die.</div>
+  <div class="card-tags"><span class="tag t-blood">Assassin</span><span class="tag t-void">Short Step</span><span class="tag t-special">False First Wave</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- UNDERGROUND -->
+<div class="section" id="underground">
+<div class="section-header"><span class="section-icon">🪱</span><div><div class="section-title" style="color:#D09040">Underground Warfare</div><div class="section-desc">The War Below Walls, Wells, and Roads</div></div></div>
+<div class="cards">
+
+<div class="card blood-card" onclick="M('Void Burrowers','Siege Beasts · 300 · Sub-Wall Tunneling','Worm-like siege creatures plated in segmented corruption shell. They tunnel under walls, roads, and shield formations, collapsing ground beneath disciplined lines. They do not need to breach a gate if the courtyard itself falls inward. Their arrival is detected first by wrong vibrations through stone. Counter: dwarven ground-listening posts, Stonemark counter-tunnels, seismic wards, and flooding tunnels with purification fire.')">
+  <div class="card-top"><div class="card-icon">🪱</div><div><div class="card-name" style="color:var(--blood-text)">Void Burrowers</div><div class="card-sub">300 · Sub-Wall Siege Beasts · Ground Collapse</div></div></div>
+  <div class="card-body">Tunnel under walls and formations. Collapse courtyards instead of breaching gates. First detected by wrong stone vibration.</div>
+  <div class="card-tags"><span class="tag t-beast">Burrower</span><span class="tag t-special">Anti-Fortress</span><span class="tag t-blood">Ground Collapse</span></div>
+</div>
+
+<div class="card corrupt-card" onclick="M('Hollow Crawlers','Urban Infiltration Creatures · 20,000 · Wells / Drains / Cracks','Small pale creatures with cartilage bodies and needle teeth. They enter through drains, wells, latrines, cracked cisterns, and collapsed cellars. One Crawler is a nuisance. A thousand inside a city before dawn becomes a massacre in sleeping districts, food stores, and healer tents. They are designed for the hour before the gates open. Counter: sealed water discipline, city-rat hunters, sacred ash in drains, and Silent Warden night sweeps.')">
+  <div class="card-top"><div class="card-icon">🕷</div><div><div class="card-name" style="color:var(--corrupt)">Hollow Crawlers</div><div class="card-sub">20,000 · Urban Infiltration · Wells and Drains</div></div></div>
+  <div class="card-body">Enter cities through drains and wells. Meant to cause panic before gates even open.</div>
+  <div class="card-tags"><span class="tag t-corrupt">Infiltration</span><span class="tag t-special">Urban Siege</span><span class="tag t-void">Cartilage Body</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- LIVING FORTIFICATIONS -->
+<div class="section" id="fortifications">
+<div class="section-header"><span class="section-icon">🧱</span><div><div class="section-title" style="color:#C060FF">Living Fortifications</div><div class="section-desc">Defenses That Breathe, Walk, and Grow Back</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Corruption Obelisks','Living Field Fortification · Variable Count · Area Corruption Anchor','Obelisks grown from Void-crystal and compacted bone. They anchor corruption in an area, strengthen nearby corrupted units, and interfere with purification rites. Unlike Spires, Obelisks are defensive anchors rather than signal amplifiers. A Nullborn army retreating around Obelisks becomes far harder to finish because wounded units recover inside the radius. Counter: Ashen Guard purge teams, holy demolition charges, and denying the enemy time to seed them before battle.')">
+  <div class="card-top"><div class="card-icon">🗿</div><div><div class="card-name" style="color:var(--void-text)">Corruption Obelisks</div><div class="card-sub">Field Anchor · Regeneration Radius · Purge Interference</div></div></div>
+  <div class="card-body">Defensive corruption anchors. Strengthen nearby units and interfere with purification. Makes retreating enemies hard to finish.</div>
+  <div class="card-tags"><span class="tag t-void">Fortification</span><span class="tag t-corrupt">Area Anchor</span><span class="tag t-special">Purge Interference</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Living Walls','Regenerating Barriers · Grown In-Field · Flesh / Bone / Void-Mud','Walls grown from flesh, bone, and hardened Void-mud. They bleed when cut, thicken when ignored, and sprout hooked spines once mature. Living Walls are used to split enemy formations, isolate cavalry, protect mage battalions, and create temporary corridors for heavy infantry. Counter: fire, acid, Iron Tide crushing, and Kael-directed breach drills before the wall matures.')">
+  <div class="card-top"><div class="card-icon">🧱</div><div><div class="card-name" style="color:var(--blood-text)">Living Walls</div><div class="card-sub">Regenerating Barriers · Formation Splitters</div></div></div>
+  <div class="card-body">Flesh-bone barriers that thicken over time. Used to split formations and protect mage battalions.</div>
+  <div class="card-tags"><span class="tag t-blood">Living Barrier</span><span class="tag t-special">Formation Splitter</span><span class="tag t-corrupt">Regenerates</span></div>
+</div>
+
+<div class="card titan-card" onclick="M('Walking Bastions','Mobile Fortifications · 18 · 40 Feet · Carry Mages and Artillery','Forty-foot moving fortresses made of layered bone plate and Void-iron ribwork. They carry archers, Void Mages, harpoon crews, and Spire seed-teams on their backs. Not as dangerous as Titans in direct melee, but far more useful to an army because they bring a platform wherever the ground is not supposed to support one. Counter: leg-joint demolition, concentrated artillery, and aerial strike against the crew platforms.')">
+  <div class="card-top"><div class="card-icon">🏰</div><div><div class="card-name" style="color:var(--titan)">Walking Bastions</div><div class="card-sub">18 · 40 Feet · Mobile Fortresses</div></div></div>
+  <div class="card-body">Moving fortresses carrying mages, harpoons, archers, and spire teams. Less lethal than Titans, more useful to command.</div>
+  <div class="card-tags"><span class="tag t-titan">40 Feet</span><span class="tag t-heavy">Mobile Platform</span><span class="tag t-special">Crew Decks</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- LOGISTICS -->
+<div class="section" id="logistics">
+<div class="section-header"><span class="section-icon">☠</span><div><div class="section-title" style="color:#706858">Logistics</div><div class="section-desc">How the Void Feeds a War That Should Not Sustain Itself</div></div></div>
+<div class="cards">
+
+<div class="card half-card" onclick="M('Corpse Harvesters','Battlefield Recovery · 6,000 · Biomass / Bone Collection','Teams that follow behind the main advance collecting dead from both sides. Starhaven intelligence classifies them as logistics, but soldiers call them grave thieves. Harvested bodies become Bone Golems, corruption biomass, mortar ammunition, or ritual fuel. If allowed to work overnight after a battle, the enemy army becomes larger in the morning in ways that break morale. Counter: battlefield denial, respectful burning rites, Sable necromancer interception, and no unsecured dead behind the line.')">
+  <div class="card-top"><div class="card-icon">☠</div><div><div class="card-name" style="color:var(--half)">Corpse Harvesters</div><div class="card-sub">6,000 · Battlefield Recovery · Biomass Logistics</div></div></div>
+  <div class="card-body">Collect the dead for Bone Golems, mortar ammunition, ritual fuel, and corruption biomass. Let them work overnight and the enemy grows.</div>
+  <div class="card-tags"><span class="tag t-half">Logistics</span><span class="tag t-void">Body Recovery</span><span class="tag t-special">Morale Damage</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Flesh Carriers','Supply Beasts · 900 · Ammunition / Corruption Pool Transport','Gigantic six-legged beasts carrying corruption pools, bone ammunition, spire seeds, chain bundles, and replacement tissue for living siege engines. They are not glamorous. They are why the Nullborn can continue fighting after the first day. A Flesh Carrier column destroyed early can delay siege deployment by hours. A Flesh Carrier column ignored means every Void engine keeps eating, firing, and growing. Counter: Windlance raids, Closing Wings interdiction, and aerial harassment.')">
+  <div class="card-top"><div class="card-icon">🐛</div><div><div class="card-name" style="color:var(--blood-text)">Flesh Carriers</div><div class="card-sub">900 · Supply Beasts · Siege Sustain</div></div></div>
+  <div class="card-body">Carry corruption pools, ammunition, spire seeds, and replacement tissue. Ugly logistics. Essential threat.</div>
+  <div class="card-tags"><span class="tag t-beast">Supply Beast</span><span class="tag t-special">Siege Sustain</span><span class="tag t-blood">Interdiction Target</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- NAVAL FORCES -->
+<div class="section" id="naval">
+<div class="section-header"><span class="section-icon">🌊</span><div><div class="section-title" style="color:#40E0E0">Naval Forces</div><div class="section-desc">The Answer to the Dawnfleet · War From Black Water</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Bone Dreadnoughts','Living Warships · 40 Confirmed · Void-Bone Hulls','Massive living ships built from fused bone, blackwood, and drowned flesh. They do not sink normally because flooding parts of the hull does not kill the whole ship. Their rib-cannons fire bone lances and corruption shells. Boarding one is like entering a corpse that has not agreed to be dead. Counter: Dawnfleet fire-ships, Tideguard mage storms, hull-purge boarding teams, and targeting the heart-keel instead of the outer hull.')">
+  <div class="card-top"><div class="card-icon">🚢</div><div><div class="card-name" style="color:var(--void-text)">Bone Dreadnoughts</div><div class="card-sub">40 · Living Warships · Heart-Keel Weakness</div></div></div>
+  <div class="card-body">Living warships with Void-bone hulls and rib-cannons. Boarding feels like entering a corpse that fights back.</div>
+  <div class="card-tags"><span class="tag t-alien">Naval</span><span class="tag t-void">Living Ship</span><span class="tag t-special">Heart-Keel</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Abyss Leviathans','Sea Monsters · 9 Confirmed · Fleet Breakers','Deep-water corrupted leviathans used to break formations beneath the waterline. They do not attack the flagship first. They attack escort ships, supply vessels, and rescue boats, turning fleet order into panic before the main dreadnought line arrives. Their hide resists bolts and ballista fire at shallow angle. Counter: Tideguard depth charges, chained lightning through water, and baiting them into reef shallows where their turning radius fails.')">
+  <div class="card-top"><div class="card-icon">🐋</div><div><div class="card-name" style="color:var(--blood-text)">Abyss Leviathans</div><div class="card-sub">9 · Sea Monsters · Fleet Breakers</div></div></div>
+  <div class="card-body">Attack escorts and rescue vessels first. Create panic below the waterline before dreadnoughts arrive.</div>
+  <div class="card-tags"><span class="tag t-beast">Sea Monster</span><span class="tag t-blood">Fleet Breaker</span><span class="tag t-special">Reef Shallow Counter</span></div>
+</div>
+
+<div class="card half-card" onclick="M('Drowned Host Marines','Corrupted Sailors · 18,000 · Amphibious Assault','Sailors, pirates, coastal militia, and drowned soldiers raised or corrupted for sea assault. They do not need clean landing beaches. They walk through surf, climb harbor chains, crawl through drainage mouths, and fight in flooded streets. Their lungs have either been altered or no longer matter. Counter: Dawncliff harbor nets, tide-fire, archers watching below the waterline, and never assuming a stormy beach is empty.')">
+  <div class="card-top"><div class="card-icon">⚓</div><div><div class="card-name" style="color:var(--half)">Drowned Host Marines</div><div class="card-sub">18,000 · Amphibious Assault · Harbor Infiltration</div></div></div>
+  <div class="card-body">Walk through surf, climb harbor chains, enter cities through water routes. Perfect coastal nightmare.</div>
+  <div class="card-tags"><span class="tag t-half">Marine Infantry</span><span class="tag t-alien">Amphibious</span><span class="tag t-special">Harbor Infiltration</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- PSYCHOLOGICAL WARFARE -->
+<div class="section" id="psywar">
+<div class="section-header"><span class="section-icon">🧠</span><div><div class="section-title" style="color:#FF60D0">Psychological Warfare</div><div class="section-desc">The Battle Before Contact · Fear, Memory, Exhaustion</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('Echo Sirens','Voice Mimics · Unknown Count · Patrol Lure / Command Confusion','Entities or corrupted singers capable of reproducing familiar voices with unsettling accuracy. They imitate commanders, spouses, lost children, wounded friends, and sometimes the target\'s own voice speaking from somewhere impossible. They are most effective before battle, in fog, forest, ruined cities, or night marches. They do not kill directly. They separate people from the formation. Counter: challenge codes, paired patrol discipline, Soul Link verification, and never answering a familiar voice from the dark.')">
+  <div class="card-top"><div class="card-icon">🎙</div><div><div class="card-name" style="color:var(--void-text)">Echo Sirens</div><div class="card-sub">Voice Mimics · Patrol Lure · Command Confusion</div></div></div>
+  <div class="card-body">Mimic familiar voices to pull soldiers out of formation. Most dangerous before battle and during night movement.</div>
+  <div class="card-tags"><span class="tag t-special">Voice Mimic</span><span class="tag t-void">Psychological</span><span class="tag t-alien">Formation Breaker</span></div>
+</div>
+
+<div class="card blood-card" onclick="M('Fear Heralds','Aura Units · 700 · Panic Pressure / Morale Collapse','Tall robed figures carrying bells made from rib cages. Their presence lowers courage, tightens breath, and makes retreat feel reasonable even to disciplined soldiers. They are not mind controllers. They simply make the human body believe survival requires distance. Against Starhaven veterans the effect is reduced, but militia and allies suffer heavily. Counter: Holy Knights, war choirs, commanders visible on the line, and killing the bell-carriers first.')">
+  <div class="card-top"><div class="card-icon">🔔</div><div><div class="card-name" style="color:var(--blood-text)">Fear Heralds</div><div class="card-sub">700 · Panic Aura · Bell-Carriers</div></div></div>
+  <div class="card-body">Make retreat feel reasonable. Not mind control — biological fear pressure. Bell-carriers must die first.</div>
+  <div class="card-tags"><span class="tag t-blood">Morale Attack</span><span class="tag t-special">Panic Aura</span><span class="tag t-cmd">Commander Counter</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Nightmare Weavers','Dream Corruptors · 300 · Pre-Battle Exhaustion','Agents who work before the battle, corrupting dreams in camps within range of prepared ground. Soldiers wake exhausted, guilty, angry, or convinced they heard orders in their sleep. Their effect is subtle until the battle begins and reactions are half a second slower than training requires. Counter: Seraphine-sanctioned sleep wards, rotating watchfire prayers, Sable dream-interruption rites, and moving camp after unexplained shared nightmares.')">
+  <div class="card-top"><div class="card-icon">🌙</div><div><div class="card-name" style="color:var(--void-text)">Nightmare Weavers</div><div class="card-sub">300 · Dream Corruption · Pre-Battle Exhaustion</div></div></div>
+  <div class="card-body">Corrupt dreams before battle. Troops wake slower, guilt-ridden, angry, or convinced they heard false orders.</div>
+  <div class="card-tags"><span class="tag t-void">Dream Warfare</span><span class="tag t-special">Pre-Battle Attack</span><span class="tag t-half">Subtle Threat</span></div>
+</div>
+
+</div></div>
+<div class="void-divider"></div>
+
+<!-- TITANS -->
+<div class="section" id="titans">
+<div class="section-header"><span class="section-icon">🗿</span><div><div class="section-title" style="color:var(--titan)">The Void Titans</div><div class="section-desc">Forty Feet. Ancient. Patient. The Walking End.</div></div></div>
+<div class="cards">
+
+<div class="card titan-card" onclick="M('Void Titan — Standard Class','Ancient · 40 Feet · 11+ at Ashfield · Stasis-Released · Post-Engagement Reinforced','Ancient corrupted beings held in stasis and released. Approximately forty feet. Corruption growths fused directly into stone-black flesh. The specific patience of something that has never needed to hurry because nothing in its path is expected to still be there by the time it arrives. Conventional weapons slow them — they do not stop. Arcane and purification-based strikes disrupt the corruption binding holding their form. Kai\'s assessment: sustained elemental strike at neck-junction, 11 seconds per Titan. Velkan identified a dimensional geometry weakness there. Three fell at Ashfield in the coordinated strike. The fourth had additional corruption growth the standard geometry didn\'t account for. Individual variation. Survivors from each engagement are reinforced against what stopped them at the previous one. Borrak Stonecrown knows where each one has been reinforced. Starhaven does not.')">
+  <div class="card-top"><div class="card-icon">🗿</div><div><div class="card-name" style="color:var(--titan)">Void Titan — Standard Class</div><div class="card-sub">Ancient · 40 Feet · Stasis-Released · Post-Engagement Reinforced</div></div></div>
+  <div class="card-body">40 feet. Patience is the threat. Conventional weapons: slow only. Neck-junction 11-second window. Survivors reinforced against what stopped them. Borrak knows where. Starhaven doesn't.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Scale</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:97%;background:#FF6020"></div></div><span class="stat-val">40ft</span></div><div class="stat-row"><span class="stat-label">Speed</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:35%;background:#A03010"></div></div><span class="stat-val">35</span></div></div>
+  <div class="card-tags"><span class="tag t-titan">40 Feet · Ancient</span><span class="tag t-void">Stasis-Released</span><span class="tag t-blood">Post-Engagement Adaptive</span></div>
+</div>
+
+<div class="card titan-card" onclick="M('The Malgrath-Touched — First Class','Singular · 60+ Feet · Never Stasis · Serves by Choice','One Titan that has never been in stasis because it has never needed to be contained. It moves at the Nullborn Empire\'s direction because its will and Malgrath\'s currently align. If that changes, no one in the host will be in a position to correct it. Sixty feet minimum. Corruption growth shaped over decades of direct Malgrath contact into specific architectural configurations: localized Void-field projection, Soul Link signal severance in a 200-yard radius, ground-contact corruption propagation accelerating battlefield corruption in its immediate vicinity. It has not been deployed. Velkan\'s document from the Pale General describes the expected deployment timeline. Rhegar\'s classification created that night currently contains one entry.')">
+  <div class="card-top"><div class="card-icon">🌑</div><div><div class="card-name" style="color:var(--titan)">The Malgrath-Touched — First Class</div><div class="card-sub">Singular · 60+ Feet · Serves by Choice · Not Yet Deployed</div></div></div>
+  <div class="card-body">60+ feet. Never in stasis — serves by choice. Severs Soul Link in 200-yard radius. Ground-contact corruption propagation. Not yet deployed. The document Velkan sealed the chamber over describes when.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Scale</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:100%;background:#FF6020"></div></div><span class="stat-val">60ft+</span></div><div class="stat-row"><span class="stat-label">Soul Link</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:100%;background:#7020C0"></div></div><span class="stat-val">SEVERS</span></div></div>
+  <div class="card-tags"><span class="tag t-titan">60+ Feet</span><span class="tag t-void">Soul Link Severs 200yd</span><span class="tag t-blood">Malgrath Direct</span><span class="tag t-special">NOT YET DEPLOYED</span></div>
+</div>
+
+</div></div><!-- /titans -->
+<div class="void-divider"></div>
+
+<!-- ALIEN CLASS -->
+<div class="section" id="alien">
+<div class="section-header"><span class="section-icon">👾</span><div><div class="section-title" style="color:#40E0E0">Alien Class — The Architecturally Wrong</div><div class="section-desc">Grown From Nothing · No Natural Ancestor · No Counter Doctrine</div></div></div>
+<div class="cards">
+
+<div class="card void-card" onclick="M('The Severim — Four-Armed Void Architects','Void Grown · 600 · 8 Feet · Four Arms · Unknown Class','Not corrupted — grown. The Void producing its own biological forms from corruption substrate after sustained presence in a territory. No documented species ancestor. Appeared at Ashfield without prior intelligence warning. Velkan said two words through the Soul Link at 06:50: &quot;Unknown class.&quot; Eight feet. Four arms: two primary (movement and close combat), two secondary at thorax level (tools and weapons simultaneously). They move correctly but look wrong because secondary arms introduce simultaneous capability that biology with two arms has no frame of reference for. They set up Void-resonance architecture components during the battle that amplify the mage corps output. Destroying the infrastructure is the objective. Finding it during active combat against unknown-class four-armed enemies is the problem.')">
+  <div class="card-top"><div class="card-icon">👾</div><div><div class="card-name" style="color:#40E0E0">The Severim — Void Architects</div><div class="card-sub">Void Grown · 600 · 8 Feet · Four Arms</div></div></div>
+  <div class="card-body">Grown, not corrupted. No ancestor. 8 feet, 4 arms — 2 primary combat, 2 secondary tools simultaneously. Build mage-amplification infrastructure during battle. "Unknown class." — Velkan, 06:50.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Multi-task</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:95%;background:#20C0C0"></div></div><span class="stat-val">95</span></div><div class="stat-row"><span class="stat-label">Counter Known</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:8%;background:#7020C0"></div></div><span class="stat-val">None</span></div></div>
+  <div class="card-tags"><span class="tag t-alien">Void Grown</span><span class="tag t-alien">Four Arms</span><span class="tag t-special">Infrastructure Builders</span><span class="tag t-void">Mage Amplification</span></div>
+</div>
+
+<div class="card void-card" onclick="M('The Hollow Choir — Voice Weapons','Void Grown · Unknown Number · Incorporeal at Will · Soul Link Mimic','Entities existing at the boundary between physical and incorporeal — transitioning between states at will. Physical form: humanoid-adjacent, seven feet, no recognizable features, skin the texture of dried Void-membrane. Incorporeal: a silhouette of concentrated darkness passing through physical material freely. Their weapon is their voice. Literally. The Hollow Choir produces resonance in the exact frequency range the Soul Link uses for node communication — indistinguishable from Soul Link communication until the message content is processed. They do not give false commands. They give delayed commands — correct instructions timed to arrive after the correct moment has passed. Bob Vale identified the intrusion at Ashfield in six minutes. Those six minutes cost four units acting on instructions that were right thirty seconds before and catastrophically wrong by the time they were received.')">
+  <div class="card-top"><div class="card-icon">🎵</div><div><div class="card-name" style="color:#40E0E0">The Hollow Choir</div><div class="card-sub">Void Grown · Unknown Count · Physical/Incorporeal Toggle · Voice Weapons</div></div></div>
+  <div class="card-body">Toggle physical/incorporeal freely. Replicate Soul Link frequency exactly. Deliver delayed-correct commands: right 30 seconds ago, catastrophic now. Bob Vale detected in 6 minutes. 4 units acted on wrong orders in that window.</div>
+  <div class="card-tags"><span class="tag t-alien">Void Grown</span><span class="tag t-fly">Incorporeal Toggle</span><span class="tag t-special">Soul Link Mimic</span><span class="tag t-void">Delayed Command Weapon</span></div>
+</div>
+
+<div class="card void-card" onclick="M('Void Walkers — Threshold Hunters','Void Grown · 200 · 9 Feet · Dimensional Step 40 Yards · Cell Hunters','Nine feet of approximately humanoid form with proportions requiring a different bone structure than any documented species. Four limbs, secondary joint in each at non-anatomical positions. Move with the quality of something whose articulation points are wrong. Primary capability: short-range dimensional stepping — not teleportation, stepping through fold for up to 40 yards, silent exit, 0.4 seconds. They hunt cell-structured covert operatives: Void Walkers find Null Blades cells specifically. Nyx Ravel encountered his first at Ashfield at 09:31, arriving behind a cell that had just disrupted Sera Nullborn\'s position. He survived. The cell did not. His report is two pages. Last line: &quot;Do not send cells into areas where Walkers have been confirmed.&quot;')">
+  <div class="card-top"><div class="card-icon">🚪</div><div><div class="card-name" style="color:#40E0E0">Void Walkers — Threshold Hunters</div><div class="card-sub">Void Grown · 200 · 9 Feet · 40-Yard Dimensional Step</div></div></div>
+  <div class="card-body">9 feet, wrong joint placement. 40-yard dimensional step, 0.4s, silent. Hunt covert cell structures. Killed a Null Blades cell at Ashfield. Nyx is the only direct contact survivor. "Do not send cells where Walkers are confirmed."</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Step Range</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:80%;background:#20C0C0"></div></div><span class="stat-val">40yd</span></div><div class="stat-row"><span class="stat-label">Threat</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:92%;background:#7020C0"></div></div><span class="stat-val">92</span></div></div>
+  <div class="card-tags"><span class="tag t-alien">Void Grown</span><span class="tag t-void">Dimensional Step 40yd</span><span class="tag t-special">Cell Hunter</span><span class="tag t-blood">Null Blades Counter</span></div>
+</div>
+
+<div class="card void-card" onclick="M('The Unmeasured — Null Entity Class','Void Grown · Unknown Quantity · Unknown Form · Encountered Once','A designation rather than a unit. Zareth Kull created the classification after the Ashfield engagement for entities that were encountered and survived without producing usable assessment data. The four Seal Order members who encountered something in the sub-surface emergence zones at sectors D-2 and E-1 returned with no wounds and no recollection of what occurred in those sectors between 08:07 and 08:19. Twelve minutes. No injuries. No combat signs. No memory. The Brand Order identified residual Void-signature in those sectors consistent with entity presence but inconsistent with any catalogued entity type. Zareth\'s assessment note: &quot;We do not know what these are. We know they were present. We know they did not harm the Seal Order members. We do not know why. The unknown in the last sentence is more alarming than the unknown in any of the others.&quot;')">
+  <div class="card-top"><div class="card-icon">❓</div><div><div class="card-name" style="color:#40E0E0">The Unmeasured — Null Entity Class</div><div class="card-sub">Unknown · Unknown Form · Encountered Once · No Assessment Data</div></div></div>
+  <div class="card-body">A classification for what was encountered and produced no assessment. Four Seal Order members: 12 minutes in their presence, no wounds, no memory. "We do not know what these are. We do not know why they didn't harm them. The last unknown is the alarming one." — Zareth Kull.</div>
+  <div class="card-tags"><span class="tag t-alien">Unknown Form</span><span class="tag t-void">No Assessment</span><span class="tag t-special">Zero Data — One Encounter</span><span class="tag t-blood">Classification: Active</span></div>
+</div>
+
+</div></div><!-- /alien -->
+
+<div class="void-divider"></div>
+
+<!-- VRAK REMNANTS -->
+<div class="section" id="vrak-remnants">
+<div class="section-header"><span class="section-icon">🏰</span><div><div class="section-title" style="color:#B8A060">Vrak Remnants — Pre-Sundering Constructs</div><div class="section-desc">Ancient · Not Nullborn · Not Allied · Autonomous Void-Response Architecture</div></div></div>
+
+<div class="cmd-card" style="border-color:#6A5020;border-top-color:#C8902A;background:rgba(180,140,40,.04)">
+  <div class="cmd-name" style="color:#D4A840">THE FLYING FORTRESS OF THE VRAK ISLES</div>
+  <div class="cmd-title">Pre-Sundering Autonomous Construct · Vrak Isles Origin · Not Nullborn · Allegiance: Void Suppression · Status: Active — Returns East After Contact</div>
+  <div class="cmd-desc">Stone and metal. Ancient. Vast. Larger than anything the fleet had ever built, and it moved with the calm of something that had been doing this when the Thalassian League's oldest ancestor was not yet born — and expected to continue doing it after the League's last ship had turned to memory.<br><br>Not Nullborn. Not corrupted. A pre-Sundering defense construct of the Vrak civilization, operating autonomously on its original directive: locate and suppress Void corruption. It does not target people. It targets the Void-saturated terrain and entities within its sensor range. The distinction has proven catastrophically important when people are positioned near what it is targeting.<br><br>Zephyros — a storm dragon of several centuries — stopped when he saw it. Three seconds of absolute stillness from something that has not been surprised by anything in living memory. Not threat assessment. Recognition. The specific quality of an ancient entity encountering something it has not seen in a very long time and deciding, unhurriedly, how to feel about the fact that it still exists.<br><br>At the Vrak Isles engagement: primary weapons disabled by Zephyros's electrical cascade through the targeting architecture. Secondary weapons found a frequency his storm was not covering and began firing at Void-saturated island sections — the shots were hitting the wrong things for the wrong reasons and the outcome was going to be bad regardless of intent. Aurelia jumped from Zephyros onto the upper hull at speed and physically severed the power conduit between the secondary battery positions. The fortress stopped firing. It did not retaliate.<br><br>Post-engagement behavior: it matched the fleet's course for four hours — close enough to be visible, far enough to be unambiguous. Not intercepting. Not targeting. Not a threat assessment. Something else. Navigator Crest, thirty-eight years at sea, watched it for a long time. "It's remembering us." After four hours it turned and returned east toward the Vrak Isles.<br><br>Cain Drakhar spent eighteen months studying Vrak instruments and power schematics recovered from the Isles. The flying fortress uses magnetic propulsion extended to three-dimensional movement — the same foundational principle Cyrus Vexley independently arrived at for the railway, scaled to something large enough to carry a fortress. Velkan spent forty minutes writing in Cain's workshop without stopping when shown the translated schematics. He said nothing except: "You designed the same machinery."</div>
+  <div class="cmd-quote">"It's remembering us." — Navigator Crest, thirty-eight years at sea, watching the fortress match the fleet's course through the morning light.</div>
+  <div class="cmd-tags"><span class="tag t-alien">Pre-Sundering Vrak</span><span class="tag t-special">Autonomous · Not Nullborn</span><span class="tag t-fly">Magnetic Propulsion · 3D</span><span class="tag t-void">Void-Suppression Directive</span><span class="tag t-heavy">Stone and Metal · Vast Scale</span><span class="tag t-corrupt">Targets Void — Not People</span></div>
+</div>
+
+<div class="cards">
+
+<div class="card" style="border:0.5px solid #6A5020;border-left:3px solid #C8902A;background:rgba(180,140,40,.04)" onclick="M('Primary Weapons Array','Pre-Sundering · Disabled at Vrak Isles Engagement · Vulnerable to Electrical Disruption','The main battery of the flying fortress — disabled at the Vrak Isles engagement when Zephyros induced an electrical cascade through the targeting architecture. The disruption ran through the primary weapons systems in ways that prevented clean targeting solutions for the duration of the engagement. Mechanism: the targeting architecture operates on an electrical signal network; a sufficiently powerful electrical storm that enters the hull disrupts the frequency coordination across the array. The primary weapons did not fire during the Vrak engagement. Aurelia and Velkan have this data. Whether the fortress has self-repair capability for this disruption is unknown.')">
+  <div class="card-top"><div class="card-icon">⚡</div><div><div class="card-name" style="color:#D4A840">Primary Weapons Array</div><div class="card-sub">Disabled at Vrak Isles · Electrical Cascade Vulnerability</div></div></div>
+  <div class="card-body">Targeting architecture runs on electrical signal network. Zephyros's storm entered the hull and disrupted frequency coordination across the entire primary array. Did not fire at all during the engagement. Whether self-repair is possible: unknown.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Output</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:96%;background:#C8902A"></div></div><span class="stat-val">96</span></div><div class="stat-row"><span class="stat-label">Elec. Vuln</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:78%;background:#7020C0"></div></div><span class="stat-val">High</span></div></div>
+  <div class="card-tags"><span class="tag t-alien">Pre-Sundering Array</span><span class="tag t-special">Disabled — Vrak Isles</span><span class="tag t-fly">Electrical Disruption Counter</span></div>
+</div>
+
+<div class="card" style="border:0.5px solid #6A5020;border-left:3px solid #C8902A;background:rgba(180,140,40,.04)" onclick="M('Secondary Weapons Array — Upper Hull Batteries','Pre-Sundering · Disabled by Aurelia at Vrak Isles · Power Conduit on Upper Hull','Two secondary battery positions on the upper hull, connected by a power distribution conduit running along the hull surface between them. The secondary array found a frequency outside Zephyros\'s storm coverage and began firing at Void-saturated island sections. Aurelia identified the conduit from Cain\'s translated schematics and severed it physically — jumping from Zephyros\'s back onto the upper hull at speed, disabling the secondary weapons mid-engagement. The fortress did not retaliate for the boarding action. The conduit is the critical structural vulnerability: external, accessible from above, undefended against physical approach that bypasses the primary battery depression angle.')">
+  <div class="card-top"><div class="card-icon">🔋</div><div><div class="card-name" style="color:#D4A840">Secondary Weapons Array</div><div class="card-sub">Upper Hull Batteries · Conduit Severed — Vrak Isles · Accessible by Boarding</div></div></div>
+  <div class="card-body">Power conduit runs exposed along upper hull between two battery positions. Aurelia severed it mid-engagement after jumping from Zephyros at speed — the secondary batteries cannot depress far enough to target something moving across the upper hull surface. Critical external vulnerability: physical boarding disables the secondary array.</div>
+  <div class="stats-wrap"><div class="stat-row"><span class="stat-label">Board Vuln</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:88%;background:#C8902A"></div></div><span class="stat-val">High</span></div><div class="stat-row"><span class="stat-label">Retaliation</span><div class="stat-bar-bg"><div class="stat-bar-fill" style="width:5%;background:#7020C0"></div></div><span class="stat-val">None</span></div></div>
+  <div class="card-tags"><span class="tag t-alien">Pre-Sundering Array</span><span class="tag t-special">Conduit — Upper Hull</span><span class="tag t-fly">Boarding Counter Confirmed</span><span class="tag t-corrupt">No Retaliation to Boarding</span></div>
+</div>
+
+<div class="card" style="border:0.5px solid #6A5020;border-left:3px solid #C8902A;background:rgba(180,140,40,.04)" onclick="M('Void-Suppression Sensor Array','Pre-Sundering · Autonomous Target Identification · Targets Void Corruption, Not People','The fortress identifies targets by Void-saturation level in the terrain and entities around it — not by biological profile or allegiance. It responded to the Vrak Isles engagement by targeting the highest Void-corruption concentration zones on the island surface regardless of who was positioned in those zones. The sensor array cannot distinguish between a Void-corrupted titan standing in a zone and a Starhaven soldier standing in the same zone. This is not a malfunction. This is the original design: the pre-Sundering Vrak built this to fight the Void in an era before the current alliance existed. The distinction only becomes catastrophic when allied forces are fighting inside Void-saturated terrain, which is exactly where they fight now.')">
+  <div class="card-top"><div class="card-icon">👁</div><div><div class="card-name" style="color:#D4A840">Void-Suppression Sensor Array</div><div class="card-sub">Autonomous Target ID · Targets Corruption Not Allegiance · Friendly Fire Risk</div></div></div>
+  <div class="card-body">Targets Void-saturation concentration — not biological profile. Cannot distinguish allied soldiers from Void entities in the same corrupted zone. Not a malfunction: original pre-Sundering design. Becomes friendly-fire risk whenever allied forces fight inside Void-saturated terrain, which is always.</div>
+  <div class="card-tags"><span class="tag t-alien">Pre-Sundering Sensor</span><span class="tag t-void">Void-Saturation Targeting</span><span class="tag t-special">Friendly Fire Risk</span><span class="tag t-corrupt">Not Hostile — Not Safe</span></div>
+</div>
+
+<div class="card" style="border:0.5px solid #6A5020;border-left:3px solid #C8902A;background:rgba(180,140,40,.04)" onclick="M('Propulsion Architecture — Magnetic Suspension','Pre-Sundering · Magnetic Principle Extended to 3D · Same Basis as Cain\'s Iron Tide','The fortress remains aloft through a magnetic propulsion system derived from pre-Sundering Vrak engineering — the same foundational principle as Cyrus Vexley\'s railway and Cain Drakhar\'s Iron Tide tanks, extended to three-dimensional movement at fortress scale. No momentum required to maintain altitude. It stopped in mid-air and held position for several seconds without any visible adjustment mechanism. Movement is slow — the calm of something that has never needed to hurry — but altitude is maintained regardless of weather, wind, or storm conditions. Zephyros\'s storm did not affect its altitude or stability. Only the internal electrical targeting architecture was disrupted. Cain spent eighteen months reverse-engineering the notation system to produce readable schematics.')">
+  <div class="card-top"><div class="card-icon">🧲</div><div><div class="card-name" style="color:#D4A840">Magnetic Propulsion Architecture</div><div class="card-sub">Pre-Sundering · 3D Magnetic Suspension · No Momentum Required</div></div></div>
+  <div class="card-body">Maintains altitude without momentum — holds position mid-air. Same magnetic principle as Cain's Iron Tide and Vexley's railway, scaled to fortress dimensions and extended to three axes. Storm conditions, wind, and Zephyros's electrical field did not affect flight stability. Only the internal targeting architecture was disrupted — the propulsion ran continuously throughout.</div>
+  <div class="card-tags"><span class="tag t-alien">Pre-Sundering Drive</span><span class="tag t-fly">Magnetic 3D Suspension</span><span class="tag t-special">Storm-Proof Propulsion</span><span class="tag t-heavy">Fortress Scale</span></div>
+</div>
+
+</div>
+
+<div class="summary-box" style="border-color:rgba(180,140,40,.3);border-top-color:#C8902A;background:rgba(180,140,40,.05);margin-top:20px">
+  <div style="font-family:'Cinzel',serif;font-size:13px;color:#B8903A;margin-bottom:10px;letter-spacing:.04em">Assessment Note — Velkan Drake & Cain Drakhar</div>
+  <p style="font-size:14px;color:var(--ink-dim);line-height:1.8">The flying fortress is not our enemy. It is also not our ally. It is a pre-Sundering machine operating on a directive older than every nation on this continent, and that directive happens to align with ours in one specific way: it targets the Void. The problem is that its target identification cannot account for the difference between a Void Titan standing in corrupted ground and a Starhaven soldier standing in the same ground.<br><br>What we know: primary array vulnerable to sustained electrical disruption (Zephyros class). Secondary array vulnerable to physical boarding via upper hull — conduit location confirmed, no defensive response to boarding confirmed at Vrak Isles. It did not retaliate when Aurelia physically severed the conduit. It watched us for four hours afterward and then went home. Crest called it "remembering us." I don't have a better word.<br><br>What we don't know: whether there are more. Whether they can be communicated with. Whether the Vrak Isles itself is a factor. Whether the Nullborn know they exist and are avoiding whatever territory they patrol, or whether the Nullborn have not encountered them yet.<br><br>The last question matters most. If the Nullborn do not know the flying fortresses exist, they are an asymmetric advantage we have not chosen to deploy. If the Nullborn have already adapted to them, we need to know how.<br><br>— V.D. / C.D.</p>
+</div>
+
+</div><!-- /vrak-remnants -->
+
+<div class="void-divider"></div>
+
+<div class="summary-box">
+  <div style="font-family:'Cinzel',serif;font-size:15px;color:var(--void-text);margin-bottom:12px;letter-spacing:.04em">Intelligence Summary — Nyx Ravel</div>
+  <p style="font-size:15px;color:var(--ink-dim);line-height:1.8">The Nullborn host at Ashfield was a vanguard. The unit registry represents confirmed and assessed elements. The Severim appeared without prior documentation. The Hollow Choir was not in any intelligence file before the Soul Link intrusion. The Void Walkers killed a Null Blades cell before I knew they existed. The Unmeasured have no entry because they produced no usable data except a question I do not yet have a method of answering.<br><br>The pattern: the Nullborn Empire introduces units we have no doctrine for and observes how long it takes Starhaven to develop one. Ashfield introduced four unknown-class entities simultaneously. The next engagement will introduce more. The registry grows in one direction.<br><br>Sera Nullborn is uncontained. The Malgrath-Touched Titan has not been deployed. The document Velkan sealed the chamber over has been read by three people. None of them slept well afterward. Drevak is larger than he was. The Void does not waste what it returns.<br><br>— N.R.</p>
+</div>
+
+</div><!-- /wrap -->
+
+<!-- MODAL -->
+<div id="overlay"><div id="mbox"><div class="mhead"><div class="mname" id="mname"></div><div class="msub" id="msub"></div></div><div class="mbody" id="mbody"></div><button id="mcls">×</button></div></div>
+<div class="footer">NULLBORN HOST REGISTRY · CLASSIFIED · STARHAVEN INTELLIGENCE · NYX RAVEL + VELKAN DRAKE · YEAR 1052</div>
+<script>
+function M(name,sub,body){
+  document.getElementById('mname').textContent=name;
+  document.getElementById('msub').textContent=sub;
+  document.getElementById('mbody').innerHTML=body.replace(/\n/g,'<br/>');
+  document.getElementById('overlay').classList.add('open');
+}
+document.getElementById('mcls').addEventListener('click',function(e){e.stopPropagation();document.getElementById('overlay').classList.remove('open');});
+document.getElementById('overlay').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});
+document.getElementById('mbox').addEventListener('click',function(e){e.stopPropagation();});
+</script>
+</body>
+</html>

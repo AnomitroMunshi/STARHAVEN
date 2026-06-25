@@ -211,6 +211,85 @@
       color: var(--c-merc);
     }
 
+    /* SEARCH */
+    .search-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 12px 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      max-width: 420px;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 9px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 13px;
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--panel2);
+      border: 1px solid var(--border2);
+      border-radius: 3px;
+      color: var(--parchment);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10.5px;
+      padding: 5px 28px 5px 28px;
+      outline: none;
+      transition: border-color .15s;
+    }
+
+    .search-input:focus {
+      border-color: var(--gold-dim);
+    }
+
+    .search-input::placeholder {
+      color: var(--muted);
+    }
+
+    .search-clear {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 11px;
+      cursor: pointer;
+      display: none;
+      background: none;
+      border: none;
+      padding: 2px 3px;
+      line-height: 1;
+      transition: color .12s;
+    }
+
+    .search-clear:hover {
+      color: var(--parchment);
+    }
+
+    .search-clear.visible {
+      display: block;
+    }
+
+    .search-count {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      color: var(--muted);
+      white-space: nowrap;
+      min-width: 70px;
+    }
+
     /* HERO */
     .hero {
       text-align: center;
@@ -309,7 +388,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
       gap: 10px;
-      align-items: start;
+      align-items: stretch;
     }
 
     /* UNIT CARD — Horizontal */
@@ -320,6 +399,7 @@
       border-radius: 5px;
       overflow: hidden;
       min-height: 0;
+      height: 100%;
       transition: border-color .15s;
       cursor: pointer;
     }
@@ -1010,7 +1090,34 @@
       font-size: 12px;
       color: var(--muted);
       line-height: 1.5;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      overflow: hidden;
+    }
+
+    .notes-see-more {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 9px;
+      color: var(--gold-dim);
+      letter-spacing: .08em;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-top: 2px;
+      display: inline-block;
+    }
+
+    .opened-card .notes-text {
+      display: block;
+      -webkit-line-clamp: unset;
+      line-clamp: unset;
+      overflow: visible;
       white-space: pre-wrap;
+    }
+
+    .opened-card .notes-see-more {
+      display: none;
     }
 
     footer {
@@ -1033,6 +1140,65 @@
       font-size: 9px;
       color: var(--faint);
       margin-top: 6px;
+    }
+
+    /* ── MOBILE MODAL FIX ───────────────────────────────────────────── */
+    @media (max-width: 700px) {
+      .card-modal {
+        padding: 0;
+        align-items: flex-end;
+      }
+
+      .card-modal .modal-card {
+        max-width: 100vw;
+        width: 100vw;
+        max-height: 92dvh;
+        border-radius: 16px 16px 0 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      /* stack image on top, description below — both in one scrollable column */
+      .card-modal .modal-body {
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .card-modal .modal-body .unit-card {
+        flex-direction: column;
+        overflow: visible;
+        min-height: unset;
+      }
+
+      /* image: full width, fixed portrait height */
+      .card-modal .modal-body .card-img,
+      .modal-img-container {
+        width: 100% !important;
+        min-width: unset !important;
+        height: 55vw;
+        min-height: 220px;
+        max-height: 320px;
+        flex-shrink: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      /* description: not independently scrollable — parent scrolls */
+      .card-modal .modal-body .card-body {
+        overflow-y: visible;
+        overflow-x: hidden;
+        flex: none;
+        width: 100%;
+        padding: 18px 16px 32px;
+      }
+
+      /* hide zoom controls on mobile to free space */
+      .modal-zoom-controls {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -1119,6 +1285,15 @@
         <button class="sf" data-sf="merc">
           ⚔️ Mercenary
         </button>
+      </div>
+      <div class="search-row">
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input class="search-input" id="searchInput" type="text"
+            placeholder="Search units, armies, commanders, locations..." autocomplete="off" spellcheck="false" />
+          <button class="search-clear" id="searchClear" title="Clear search">✕</button>
+        </div>
+        <span class="search-count" id="searchCount"></span>
       </div>
     </div>
   </div>
@@ -1213,7 +1388,7 @@
                 "armorBadge": "V.Heavy",
                 "armorClass": "armor-badge a-vh",
                 "location": "Starhold",
-                "army": "1st Army · 3rd Army Attachments",
+                "army": "Starhaven Command — Rhaegar · Cross-Army (1st & 3rd Field Army Primary)",
                 "image": "unitImages/black-bastions.png",
                 "imageAlt": "",
                 "notes": "The Black Bastions are Starhaven's heaviest field infantry. Unlike Ironwall, they are not fortress troops. They march with expeditionary armies and are deployed wherever the battle is expected to break.",
@@ -1335,8 +1510,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Heavy",
                 "armorClass": "armor-badge a-h",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Drogar Stonefang",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Drogar Stonefang",
                 "image": "unitImages/ancestor-guard.png",
                 "imageAlt": "",
                 "notes": "Drogar Stonefang's personal guard and the military core of the Stonefang Remnant. Their helms bear the carved likenesses of honored ancestors — worn to inspire the living as much as to honor the dead.",
@@ -1805,6 +1980,45 @@
                     "slot": "Secondary",
                     "name": "Skirmisher Javelins",
                     "desc": "— Three to five throwing javelins carried across the back. Used to harass, disrupt, and soften enemy formations before melee."
+                  }
+                ]
+              },
+              {
+                "id": "coldmarch-ironline",
+                "data-br": "Infantry",
+                "data-src": "own",
+                "name": "Coldmarch Ironline",
+                "branch": "Infantry",
+                "className": "Close Order Infantry · Line Hold",
+                "subtitle": "· Sword & Shield · 2nd Field Army · The Line Holds",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Coldmarch / Mobile",
+                "army": "2nd Field Army — Clea Vorn",
+                "image": "unitImages/coldmarch-ironline.png",
+                "imageAlt": "Coldmarch Blades",
+                "notes": "The dedicated close-assault infantry of Clea Vorn's 2nd Army. Where the Coldmarch Light Infantry breaks formations with javelins and constant movement, the Ironline is the wave that follows immediately behind. They carry no ranged weapons, no spears, and no secondary battlefield tools—only sword and shield. Their task is simple: exploit the opening before the enemy recovers. Unlike heavy infantry, they do not become anchored in prolonged shieldwall fighting. They keep advancing, widening the breach, forcing isolated engagements, and driving the enemy formation apart. Every piece of equipment is chosen to reduce weight without sacrificing survivability, allowing the Ironline to maintain the relentless tempo that defines the 2nd Army.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Coldmarch Assault Harness",
+                    "desc": "— Hardened leather reinforced with overlapping iron scales across the chest and shoulders. Built to survive close combat while remaining light enough for rapid advances and continuous maneuver."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Ironline Combat Helm",
+                    "desc": "— Open-faced steel helm with cheek guards and a reinforced brow. Provides protection without limiting vision or mobility during aggressive assaults."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Coldmarch Assault Shield",
+                    "desc": "— Lightweight convex round shield with an iron rim and reinforced boss. Optimized for quick blocks, shield punches, and fighting on the move rather than static formations."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Coldmarch Arming Sword",
+                    "desc": "— Single-handed battlefield sword balanced for speed and endurance. The Ironline carries no backup ranged weapon—the sword is expected to solve every problem once the distance closes."
                   }
                 ]
               },
@@ -2288,21 +2502,21 @@
             "label": "Great Weapon Infantry",
             "cards": [
               {
-                "id": "mace-corps",
+                "id": "grundhammer-forge",
                 "data-br": "Infantry",
                 "data-src": "new",
-                "name": "Ironbreaker Mace Corps",
+                "name": "Grundhammer Forge Team",
                 "branch": "Infantry",
-                "className": "Great Weapon Infantry",
-                "subtitle": "· Anti-Heavy Infantry · The Armor Is The Wound",
+                "className": "Great Weapon Infantry · Ironbreaker Mace Corps",
+                "subtitle": "· Anti-Heavy Infantry · The Armor Is The Wound · 200",
                 "srcPill": "🆕 New",
                 "armorBadge": "V.Heavy",
                 "armorClass": "armor-badge a-vh",
                 "location": "Fortgehaven",
-                "army": "New Unit — Torvan Grund",
-                "image": "unitImages/mace-corps.png",
+                "army": "Starhaven Specialized — Torvan Grund · Ironbreaker Mace Corps",
+                "image": "unitImages/grundhammer-forge.png",
                 "imageAlt": "",
-                "notes": "Purpose-built to defeat heavy armor. The Grundhammer does not pierce plate — it transmits impact force through it. Each engagement is fought one opponent at a time, at arm's length. Based at Fortgehaven under Torvan Grund.",
+                "notes": "The 200-strong elite core of the Ironbreaker Mace Corps — the only soldiers in the alliance who carry a Grundhammer into the line. Purpose-built to defeat heavy armor. The Grundhammer does not pierce plate — it transmits impact force through it. Each of these fighters was personally selected by Torvan Grund. Each engagement is fought one opponent at a time, at arm's length. The Ironhold Guard holds the space around them so the swing can land.",
                 "armor": [
                   {
                     "slot": "Body",
@@ -2312,22 +2526,61 @@
                   {
                     "slot": "Boots",
                     "name": "Stance-Plate Boots",
-                    "desc": "— Wider stance-base for planted two-handed swings."
+                    "desc": "— Wider stance-base for planted two-handed swings. The swing generates as much force downward as forward — the boots distribute it."
                   },
                   {
                     "slot": "Helm",
                     "name": "Ironbreaker Closed Helm",
-                    "desc": "— Fully enclosed helm with reinforced crown. No open-face option."
+                    "desc": "— Fully enclosed helm with reinforced crown. No open-face option. The swing arc of the Grundhammer means the wielder is at the center of close-range chaos."
                   },
                   {
                     "slot": "Primary",
                     "name": "Grundhammer",
-                    "desc": "— Two-handed flanged mace. 5ft handle, 18lb iron head, eight flanges. Does not pierce plate — transmits force through armor."
+                    "desc": "— Two-handed flanged mace. 5ft handle, 18lb iron head, eight flanges. Does not pierce plate — transmits force through armor. Each hammer is forge-marked to its wielder."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Spiked Strike Gauntlet",
                     "desc": "— Short spiked iron gauntlet on the off-hand for close work when the mace cannot swing."
+                  }
+                ]
+              },
+              {
+                "id": "ironhold-guard",
+                "data-br": "Infantry",
+                "data-src": "new",
+                "name": "The Ironhold Guard",
+                "branch": "Infantry",
+                "className": "Heavy Infantry · Ironbreaker Mace Corps",
+                "subtitle": "· Brace Guard · Shield the Swing · 500",
+                "srcPill": "🆕 New",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Fortgehaven",
+                "army": "Starhaven Specialized — Torvan Grund · Ironbreaker Mace Corps",
+                "image": "unitImages/ironhold-guard.png",
+                "imageAlt": "",
+                "notes": "The 500-strong protective element of the Ironbreaker Mace Corps — their job is to hold the space around the Grundhammer Forge Team while the two-handed swing is drawn back. A Grundhammer at full draw is an 8-foot arc of committed motion; the wielder cannot defend himself mid-swing. The Ironhold Guard closes that gap. They carry short push-shields and form a tight ring around each mace fighter — not a shieldwall, a moving bracket that travels with the wielder through the line.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Ironhold Brace Plate",
+                    "desc": "— 70lb full plate, slightly lighter than the Grundhammer fighters'. Built for close-quarters push and hold rather than two-handed weapon recoil. Reinforced at the shield arm."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Ironhold Closed Helm",
+                    "desc": "— Fully enclosed, narrower profile than the Ironbreaker Helm. Reduced vision — the Ironhold Guard fights by feel and proximity, not sight lines."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Ironhold Push-Shield",
+                    "desc": "— Compact square iron shield, edge-reinforced. Not a formation shield — used for pushing opponents away from the mace-wielder's swing arc. Weighted for body-check use."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Ironhold Short Mace",
+                    "desc": "— Single-handed flanged mace, 2.5ft. Enough force to break a guard; short enough to work inside the bracket when the push-shield is extended."
                   }
                 ]
               },
@@ -2391,8 +2644,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Lt–Med",
                 "armorClass": "armor-badge a-lm",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Korga",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Korga",
                 "image": "unitImages/mountain-berserkers.png",
                 "imageAlt": "",
                 "notes": "Stonefang's berserker contingent under Korga. Disciplined frenzy — they train every day, and the training holds. Not the Gauntlet Army's cold focus doctrine, but controlled escalating intensity rather than uncontrolled rage.",
@@ -2579,7 +2832,7 @@
             ]
           },
           {
-            "label": "Drogar's Highland Coalition — Stonefang Remnant",
+            "label": "Drogar Stonefang · Highland Coalition",
             "cards": [
               {
                 "id": "blackfang-shieldguards",
@@ -2681,7 +2934,7 @@
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "Field Deployment — Drogar's Coalition",
-                "army": "Allied — Stonefang Remnant · Drogar Stonefang",
+                "army": "Highland Coalition — Drogar Stonefang",
                 "image": "unitImages/avalanche-breakers.png",
                 "imageAlt": "",
                 "notes": "One thousand. Each Breaker carries a two-handed stone maul that is, in its way, a unique object — quarried, shaped, and balanced by the Breaker who carries it. The specific relationship between a monster-killer and the only tool that has ever proven sufficient against the things they kill. A maul that is even slightly unbalanced might glance off an Ogre Brute's hide instead of breaking through it, and a Breaker whose maul fails at the wrong moment does not generally get a second moment. The entire doctrine: you do not fight a large creature, you end it quickly or you die slowly. On the waiting day before battle they did not train — they spent it rebalancing grips, re-wrapping handles. The quiet ritual of professionals who understand their lives depend on a tool that works exactly right, every time.",
@@ -2872,7 +3125,7 @@
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Forward Edge — Drogar's Coalition",
-                "army": "Allied — Stonefang Remnant · Threska",
+                "army": "Highland Coalition — Threska",
                 "image": "unitImages/half-orc-barbarians.png",
                 "imageAlt": "",
                 "notes": "Two hundred strong — the fastest unit in Drogar's army. Commanded by Threska, crimson-crested helm, a lifetime of being underestimated. Half-Orcs across the Stormmassif never had a formation built around them. Drogar built one. Each Barbarian chooses their own armor — light, always — making that tradeoff of speed over protection themselves. They don't hit hard. They hit fast and from everywhere, and by the time you've found where the first strike came from, three more have already landed. It is said that unshielded, they can match the pace of a horse — whether that is training, bloodline, or something stranger, no one has settled the question.",
@@ -3261,6 +3514,50 @@
                 ]
               }
             ]
+          },
+          {
+            "label": "Defensive Contract · Mercenary",
+            "cards": [
+              {
+                "id": "ashen-shields-m",
+                "data-br": "Infantry",
+                "data-src": "merc",
+                "name": "Ashen Shields",
+                "branch": "Infantry",
+                "className": "Defensive Mercenary Infantry · Civilian Extraction",
+                "subtitle": "· Shield-Warden Cova Drell · 1,100 · Hold Until You're Out",
+                "srcPill": "⚔️ Merc",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Sancthaven Quarter / Field Deployment",
+                "army": "Mercenary — Seraphine Mire Standing Retainer · Cova Drell",
+                "image": "unitImages/ashen-shields-m.png",
+                "imageAlt": "Ashen Shields",
+                "notes": "1,100 soldiers under Shield-Warden Cova Drell. The Ashen Shields are a defensive contract company — they hold until the civilians are out, or they don't charge at all. That clause has never been invoked. Seraphine Mire keeps them on standing retainer specifically to protect field hospitals and Mercy Rider positions — the Ashen Shields are the reason nobody has successfully overrun a Starhaven field hospital. Founded by Petra Allus, a former garrison commander who declined Kael Varric's rank offer and chose to build this instead. Petra is no longer with the company — she is running Ashenveil's western district and developing what comes next. Cova Drell runs it now. The company's doctrine has not changed since the day it was written.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Ashen Shield Plate",
+                    "desc": "— Medium plate, battle-worn. No crest, no decoration — this is working armor. Reinforced at the pauldrons and forearms for sustained shield-wall holding."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Kite Shield",
+                    "desc": "— Full kite shield. The formation tool and the identity marker. Iron-rimmed, reinforced boss. Built for prolonged close-quarter protection, not skirmish deflection."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Arming Sword & Shortsword",
+                    "desc": "— Arming sword primary. Shortsword sidearm for close-press fighting when the formation compresses. No ranged weapon — the Ashen Shields do not open engagements. They close them."
+                  },
+                  {
+                    "slot": "Contract",
+                    "name": "Standing Retainer — Seraphine Mire",
+                    "desc": "— Permanent contract with the Pillar of the Heart. Deployed wherever Mercy Riders operate. The clause: hold until the last patient is out or the last medic has withdrawn. Never invoked."
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3270,83 +3567,432 @@
         "branch": "🏹 Ranged",
         "subgroups": [
           {
-            "label": "Longbowmen · Sharpshooters",
+            "label": "Silent Wardens · Lyria Valen",
             "cards": [
               {
-                "id": "silent-wardens",
+                "id": "moonveil-wardens",
                 "data-br": "Ranged",
                 "data-src": "own",
-                "name": "Silent Wardens",
+                "name": "Moonveil Wardens",
                 "branch": "Ranged",
-                "className": "Longbowmen · Sharpshooters",
-                "subtitle": "· Deep Forest Ops · Commander Elimination",
+                "className": "Longbowmen · Warden Corps",
+                "subtitle": "· Silent Wardens Main Force · Deep Forest Ops · Shadow Doctrine",
                 "srcPill": "🏰 Own",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Greenveil / Mobile",
-                "army": "Pillar of Lyria Valen",
-                "image": "Lores/Mueseum/SilentWardens.png",
-                "imageAlt": "Silent Wardens",
-                "notes": "Lyria Valen's personal army and the eyes of the Pillar of the Eye. They do not hold lines — they remove targets before engagements begin. Moonfire Forest Elks allow silent movement through terrain no horse can navigate. Elite sub-unit: the Starshot Rangers.",
+                "army": "Pillar of Lyria Valen — Silent Wardens · Main Corps",
+                "image": "unitImages/moonveil-wardens.png",
+                "imageAlt": "Moonveil Wardens",
+                "notes": "The main corps of Lyria Valen's Silent Wardens and the first Starhaven formation deployed before nearly every major engagement. Long before the main armies arrive, the Moonveil Wardens are already watching—mapping terrain, tracking enemy movement, identifying commanders, and selecting firing positions. When battle begins, they transition seamlessly from reconnaissance to coordinated long-range warfare. Rather than seeking individual kills like the Starshot Rangers, the Moonveil Corps dominates the battlefield through disciplined volleys, suppression, counter-archery, and terrain denial. Their camouflage doctrine adapts to woodland, open plains, rocky highlands, ruins, and snowfields alike. By the time the enemy realizes the Wardens have begun firing, the battlefield has already been shaped in Starhaven's favor.",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Moonweave Leather",
-                    "desc": "— Lightweight, silent reinforced leather. No metal contact — silent move…"
+                    "name": "Moonweave Warden Leather",
+                    "desc": "— Layered reinforced leather with quilted cloth lining and silent fastening straps. No exposed metal contact to eliminate unnecessary noise while remaining durable enough for prolonged field operations."
                   },
                   {
                     "slot": "Cloak",
-                    "name": "Shadow Cloak",
-                    "desc": "— Terrain-adaptive camouflage. Changes appearance against woodland, ston…"
+                    "name": "Moonveil Warden Cloak",
+                    "desc": "— Multi-layer camouflage cloak with interchangeable outer panels for woodland, grassland, rocky terrain, ruined settlements, and snowfields. Designed to break the wearer's silhouette rather than rely on magic."
                   },
                   {
-                    "slot": "Mount",
-                    "name": "Moonfire Forest Elks",
-                    "desc": "— Silent movement — no horseshoe noise, no cracked branches."
+                    "slot": "Primary",
+                    "name": "Moonwood Longbow",
+                    "desc": "— Hand-crafted longbow of moonwood and ash laminate. Individually tuned to each Warden for exceptional accuracy, smooth draw, and remarkably quiet release. Built for sustained battlefield archery as well as precision fire."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Warden Arrow Set",
+                    "desc": "— Carries broadheads for infantry, bodkins for armored targets, crescent heads for ropes and rigging, and signal arrows for battlefield communication. Black-fletched to reduce visibility in flight."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Moonknife",
+                    "desc": "— Long single-edged fighting knife used for survival, silent kills, and emergency close combat. Wardens avoid melee whenever possible, but every member is trained to survive it."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Silentstep Boots",
+                    "desc": "— Soft-soled leather boots reinforced for long marches across woodland, rocky ground, open plains, and snow without sacrificing silent movement."
                   },
                   {
                     "slot": "Kit",
-                    "name": "Warden Field Gear",
-                    "desc": "— Climbing hooks, tracking kits, camouflage netting. 72-hour self-suffic…"
+                    "name": "Warden Reconnaissance Kit",
+                    "desc": "— Climbing hooks, rope, camouflage netting, observation glass, trail markers, field rations, water bladder, and supplies for seventy-two hours of independent reconnaissance behind friendly lines."
                   }
                 ]
               },
               {
-                "id": "silverleaf",
+                "id": "starshot-rangers",
+                "data-br": "Ranged",
+                "data-src": "own",
+                "name": "Starshot Rangers",
+                "branch": "Ranged",
+                "className": "Elite Sharpshooter · Silent Warden Sub-Unit",
+                "subtitle": "· 30 Rangers · Commander Kill · Solo Operate",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Deep Operations · Mobile",
+                "army": "Pillar of Lyria Valen — Silent Wardens Sub-Unit",
+                "image": "unitImages/starshot-rangers.png",
+                "imageAlt": "Starshot Rangers",
+                "notes": "Thirty elite archers pulled from the Silent Wardens — the ones Lyria kept watching after the rest stopped watching. Each Starshot Ranger operates independently beyond the Warden line, taking shots the corps cannot: longer range, harder angle, tighter window. They are not scouts. They are closers. Single-target, single-shot mandate. Lyria selects replacements personally. There are currently no vacancies.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Moonweave Leather",
+                    "desc": "— Same silent-movement leather as the Wardens. Personal fit — no two are identically tailored."
+                  },
+                  {
+                    "slot": "Cloak",
+                    "name": "Deep Shadow Cloak",
+                    "desc": "— Heavier camouflage adaptation than standard Warden issue. Optimized for extended solo concealment in any terrain."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Starshot Longbow",
+                    "desc": "— Precision longbow personally calibrated by Lyria for each Ranger. Higher draw weight than corps-issue. Effective at ranges the Warden line cannot reach."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Lone Ranger Field Kit",
+                    "desc": "— 5-day rations, signal mirror, elimination confirmers, extraction route maps. Operates without resupply or contact."
+                  }
+                ]
+              },
+              {
+                "id": "silverleaf-cmd",
                 "data-br": "Ranged",
                 "data-src": "new",
-                "name": "Silverleaf Corps",
+                "name": "Command Elimination Squadron",
                 "branch": "Ranged",
-                "className": "Longbowmen",
-                "subtitle": "· Elven Precision · 180lb Draw · 400yd Range",
+                "className": "Longbowmen · Silverleaf Corps",
+                "subtitle": "· Headshot Doctrine · Command Priority · 120",
                 "srcPill": "🆕 New",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Mobile — 4th Army",
-                "army": "New Unit — Archbow Sylara Evenmere",
-                "image": "unitImages/silverleaf.png",
+                "army": "Starhaven Specialized — Archbow Sylara Evenmere · Silverleaf Corps",
+                "image": "unitImages/silverleaf-cmd.png",
                 "imageAlt": "",
-                "notes": "Elven longbow corps under Archbow Sylara Evenmere. The 180lb draw is a standard enrollment requirement — not negotiable. At 400 yards stationary range they are the longest-reach infantry ranged unit in the alliance.",
+                "notes": "The 120-strong command-kill squadron of the Silverleaf Corps. Their target list begins with enemy officers, standard bearers, and battlefield commanders — remove the head, collapse the body. Every member of the Command Elimination Squadron has made a confirmed command-tier kill at over 250 yards before being admitted. Sylara considers them the most dangerous 120 archers in the alliance.",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Elderwood Bark-Plate",
-                    "desc": "— Bark-plate over silk underlayer. Resists standard arrow penetration. T…"
+                    "name": "Silverleaf War Harness",
+                    "desc": "— Elderwood bark-lamellar layered over reinforced silk and supple leather. Exceptionally light while distributing the immense strain of repeated 180lb warbow draws. Designed for long battlefield engagements rather than stealth."
                   },
                   {
                     "slot": "Arms",
-                    "name": "Draw-Clearance Vambrace",
-                    "desc": "— Left arm only. Tapered at shoulder to avoid restricting the 180lb draw…"
+                    "name": "Drawmaster Vambrace",
+                    "desc": "— Reinforced left vambrace with an asymmetrical shoulder guard that protects against repeated string impact without restricting a full 180lb draw. Right arm remains lightly armored for fluid release."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Silverleaf Open Crown",
-                    "desc": "— Thin silver circlet with pressed leaf. Sylara's is older than most of …"
+                    "name": "Silverleaf Circlet",
+                    "desc": "— Forged silver circlet bearing the Silverleaf emblem. Every archer earns the right to wear it only after mastering the Corps' full draw standard. It marks discipline rather than rank."
                   },
                   {
-                    "slot": "Weapon",
-                    "name": "Ashwood Longbow",
-                    "desc": "— 180lb draw. 400yd stationary range. 300yd moving target. Silk-core bow…"
+                    "slot": "Primary",
+                    "name": "Silverleaf Warbow",
+                    "desc": "— Towering laminated warbow crafted from Elder Ash and Moonwood. Standardized at a 180lb draw with an effective range of 400 yards against stationary targets and 300 yards against moving formations. Individually tuned to each archer."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Command-Kill Shafts",
+                    "desc": "— Lighter shafts than standard corps-issue, weight-calibrated for long-distance accuracy over penetration. Target profile is unarmored command — speed and flat trajectory matter more than armor defeat."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Silverleaf Shortsword",
+                    "desc": "— Straight single-edged infantry blade issued for close defense once the enemy reaches the line. Reliable, practical, and intended only as a last resort."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Target-Mark Field Kit",
+                    "desc": "— Observation glass, wind ribbons, target-range rangefinder, command-tier insignia reference sheet, spare strings. Every shot at a command target is a confirmed read, not a guess."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Silverstride Boots",
+                    "desc": "— Reinforced leather boots designed for stability during repeated full-draw shooting while remaining comfortable on long marches. Optimized for firm footing rather than silent movement."
+                  }
+                ]
+              },
+              {
+                "id": "silverleaf-beast",
+                "data-br": "Ranged",
+                "data-src": "new",
+                "name": "The Fang-Stalkers",
+                "branch": "Ranged",
+                "className": "Longbowmen · Silverleaf Corps",
+                "subtitle": "· Beast Suppression · Heavy Bodkin · 120",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Mobile — 4th Army",
+                "army": "Starhaven Specialized — Archbow Sylara Evenmere · Silverleaf Corps",
+                "image": "unitImages/silverleaf-beast.png",
+                "imageAlt": "",
+                "notes": "120 Silverleaf archers specialized in suppressing and bringing down large enemy war beasts — Void creatures, enemy mammoths, warbeasts, and siege monsters. The Fang-Stalkers carry the heaviest arrowheads in the corps: deep-penetration broadheads designed for thick hide rather than armor plate. They do not aim for killing shots alone — controlled suppression shots to limbs and joints are equally valid. A grounded beast is a stopped beast.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Silverleaf Beast Harness",
+                    "desc": "— Modified Silverleaf War Harness with reinforced shoulders and widened ammunition belts to support the additional weight of monster-killing arrows while preserving the Corps' mobility."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Drawmaster Vambrace",
+                    "desc": "— Reinforced left vambrace with additional elbow bracing for repeated high-stress draws using oversized beast arrows."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Silverleaf Circlet",
+                    "desc": "— Standard Silverleaf circlet distinguished by a single dark iron fang mounted beneath the central leaf, marking the wearer as a certified Fang-Stalker."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Fangbow",
+                    "desc": "— Reinforced Silverleaf Warbow with strengthened limb cores built to launch oversized beast arrows at full 180lb draw without compromising accuracy."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Fang-Stalker Beast Arrows",
+                    "desc": "— Heavy ash shafts carrying interchangeable deep-penetration bodkins, broadheads, and tendon-cutting barbed heads. Intended to cripple, blind, and halt monstrous targets before they reach friendly lines."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Falchion",
+                    "desc": "— Heavy single-edged emergency blade for close defense against wounded beasts or smaller monsters that breach the archer line."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Monster Suppression Kit",
+                    "desc": "— Spare reinforced bowstrings, observation glass, anatomical field guides, arrow puller, climbing rope, whetstone, and emergency medical supplies for extended anti-monster operations."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Silverstride Boots",
+                    "desc": "— Reinforced field boots providing stable footing while firing heavy beast arrows across broken ground and uneven terrain."
+                  }
+                ]
+              },
+              {
+                "id": "silverleaf-caster",
+                "data-br": "Ranged",
+                "data-src": "new",
+                "name": "The Spell-Enders",
+                "branch": "Ranged",
+                "className": "Longbowmen · Silverleaf Corps",
+                "subtitle": "· Counter-Caster · Runed Disruption Shafts · 120",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Mobile — 4th Army",
+                "army": "Starhaven Specialized — Archbow Sylara Evenmere · Silverleaf Corps",
+                "image": "unitImages/silverleaf-caster.png",
+                "imageAlt": "",
+                "notes": "120 Silverleaf archers trained specifically to interrupt enemy spellcasting before the cast completes. The Spell-Enders carry Runed Disruption Shafts — arrowheads fitted with Null-Stone fragments that release a brief suppression pulse on impact. A hit does not need to be fatal; it needs to break concentration. They work in coordination with the Runebreakers — the Runebreakers identify the caster, the Spell-Enders fire before the Silence Bolt can reach.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Spellwarden Harness",
+                    "desc": "— Silverleaf War Harness lined with thin Null-Stone weave around the chest and shoulders. Provides limited resistance against magical backlash while preserving the mobility of a standard Silverleaf archer."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Nullstone Drawmaster Vambrace",
+                    "desc": "— Reinforced draw-hand vambrace inlaid with powdered Null-Stone to safely handle suppression arrows and minimize arcane interference during rapid firing."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Silverleaf Circlet",
+                    "desc": "— Standard Silverleaf circlet distinguished by a single violet crystal set beneath the central leaf, identifying the wearer as a Spell-Ender."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Swiftcast Warbow",
+                    "desc": "— A lighter-limbed variant of the Silverleaf Warbow optimized for exceptionally fast draw-and-release cycles. Built to interrupt spellcasting before completion rather than maximize penetration."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Nullshard Arrows",
+                    "desc": "— Precision arrows fitted with stabilized Null-Stone fragments. On impact they release a brief suppression pulse capable of disrupting spell formation, breaking concentration, and collapsing incomplete arcane constructs. Each Spell-Ender carries only twelve due to their rarity."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Spellbreaker Dagger",
+                    "desc": "— Slim anti-mage combat dagger forged from Null-Steel. Designed as an emergency weapon against enemy spellcasters and magical barriers."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Counter-Caster Kit",
+                    "desc": "— Observation glass, spare bowstrings, protected Nullshard arrow case, wind ribbons, arcane identification charts, and target priority records provided by the Runebreakers."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Silverstride Boots",
+                    "desc": "— Reinforced field boots providing stable footing during rapid repositioning and repeated high-speed shooting."
+                  }
+                ]
+              },
+              {
+                "id": "silverleaf-formation",
+                "data-br": "Ranged",
+                "data-src": "new",
+                "name": "The Scatter-Shot",
+                "branch": "Ranged",
+                "className": "Longbowmen · Silverleaf Corps",
+                "subtitle": "· Formation Disruption · Volley Doctrine · 120",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Mobile — 4th Army",
+                "army": "Starhaven Specialized — Archbow Sylara Evenmere · Silverleaf Corps",
+                "image": "unitImages/silverleaf-formation.png",
+                "imageAlt": "",
+                "notes": "120 Silverleaf archers whose job is to break enemy formations before the Starhaven infantry line makes contact. The Scatter-Shot fires sustained volley sequences into the depth of an approaching formation — not to kill but to compress, disorganize, and slow. A formation that breaks step under arrows is a formation that arrives at the infantry line already fractured. The Scatter-Shot is the reason Starhaven infantry engages disordered opponents.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Silverleaf War Harness",
+                    "desc": "— Standard corps issue. The Scatter-Shot prioritizes sustained draw rate — harness is broken in over multiple campaigns for maximum draw-cycle comfort."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Drawmaster Vambrace",
+                    "desc": "— Standard corps vambrace. The Scatter-Shot draws faster than any other squadron; the vambrace takes the most sustained wear."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Silverleaf Circlet",
+                    "desc": "— Standard circlet. The Scatter-Shot wears no distinguishing cord — volley fire is the baseline corps function; no special identification needed."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Silverleaf Warbow",
+                    "desc": "— Standard 180lb draw. The Scatter-Shot fires the highest volume of arrows per engagement in the corps."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Scatter-Flight Broadheads",
+                    "desc": "— Wider-head broadheads designed to maximize wounding area within a packed formation. Not optimized for penetration — optimized for disruption. Shafts are slightly lighter for faster volley cycles."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Silverleaf Shortsword",
+                    "desc": "— Standard corps blade."
+                  }
+                ]
+              },
+              {
+                "id": "silverleaf-scout",
+                "data-br": "Ranged",
+                "data-src": "new",
+                "name": "The Far-Walkers",
+                "branch": "Ranged",
+                "className": "Scout Archers · Silverleaf Corps",
+                "subtitle": "· Independent Recon · Forward Position · 80",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Mobile — 4th Army — Forward Screen",
+                "army": "Starhaven Specialized — Archbow Sylara Evenmere · Silverleaf Corps",
+                "image": "unitImages/silverleaf-scout.png",
+                "imageAlt": "",
+                "notes": "The Far-Walkers are the Silverleaf Corps' forward observation element. Operating days ahead of the main army in pairs or quartets, they secure ridgelines, towers, cliffs, and elevated terrain from which they map enemy movement and relay battlefield intelligence. Their arrows eliminate exposed officers, scouts, and targets of opportunity, but information remains their greatest weapon. Long before the Silverleaf Corps arrives, the Far-Walkers have already chosen where the battle will be fought.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Far-Walker Harness",
+                    "desc": "— Lightweight Silverleaf lamellar with shortened lower plates and reduced waist equipment, allowing unrestricted climbing, running, and rapid movement across elevated terrain."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Climber's Drawmaster Vambrace",
+                    "desc": "— Reinforced draw-arm guard with padded lining to withstand repeated contact against rock faces, trees, and cliff edges during observation missions."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Far-Walker's Circlet",
+                    "desc": "— Silver circlet bearing a small emerald beneath the Silverleaf emblem, marking the wearer as a forward observer."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Pathfinder Warbow",
+                    "desc": "— Slightly shorter Silverleaf warbow designed for rapid deployment in broken terrain while retaining excellent battlefield accuracy."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Observer's Quiver",
+                    "desc": "— Mixed load of bodkins, broadheads, signal arrows, smoke markers, and command-target shafts, allowing the Far-Walkers to adapt to changing battlefield conditions."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Silverleaf Hatchet",
+                    "desc": "— Compact field axe used for climbing, shelter building, and emergency close combat."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Far-Walker Observation Kit",
+                    "desc": "— Observation glass, engraved rangefinder, collapsible spotting scope, signal mirror, climbing rope, chalk markers, detailed maps, weather journal, and seven days of provisions."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Ridgestep Boots",
+                    "desc": "— Lightweight reinforced boots with exceptional grip for cliffs, ridgelines, and uneven mountain terrain."
+                  }
+                ]
+              },
+              {
+                "id": "silverleaf-guard",
+                "data-br": "Ranged",
+                "data-src": "new",
+                "name": "The Evenmere Guard",
+                "branch": "Ranged",
+                "className": "Personal Guard · Silverleaf Corps",
+                "subtitle": "· Archbow's Own · Close Protection · 40",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Mobile — 4th Army — Command Proximity",
+                "army": "Starhaven Specialized — Archbow Sylara Evenmere · Silverleaf Corps",
+                "image": "unitImages/silverleaf-guard.png",
+                "imageAlt": "",
+                "notes": "Sylara Evenmere's personal guard — 40 of the most technically accomplished archers in the corps. The Evenmere Guard does not operate independently. Their role is to maintain a protective arc around Sylara during the engagement and to eliminate any threat that closes to within bow range of her position. They are the only Silverleaf element that will draw steel before drawing the bow. Sylara chose each member personally.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Silverleaf War Harness",
+                    "desc": "— Standard corps harness with a silver-thread embroidered hem — the only visible distinction between the Evenmere Guard and the rest of the corps. Sylara's instruction: visible rank marks make her protection readable to the enemy."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Drawmaster Vambrace",
+                    "desc": "— Standard corps vambrace. The Evenmere Guard trains with the vambrace as a blocking tool — close-quarters protection means the bow arm may need to deflect a blade."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Silverleaf Circlet",
+                    "desc": "— Standard circlet. No distinguishing cord. The Evenmere Guard are functionally invisible within the corps until they act."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Silverleaf Warbow",
+                    "desc": "— Standard 180lb draw. The Evenmere Guard are among the finest shots in the corps — close-range protection demands accuracy at near-zero margin."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Evenmere Blade",
+                    "desc": "— A longer single-edged blade than standard corps issue — 24 inches versus the shortsword's 18. The Guard is expected to fight at swordspoint if the line collapses to Sylara's position."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Command-Kill Shafts",
+                    "desc": "— Same as the Command Elimination Squadron. The Evenmere Guard targets anything that points a weapon toward Sylara's position, regardless of rank."
                   }
                 ]
               }
@@ -3516,8 +4162,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Grik",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Grik",
                 "image": "unitImages/goblin-skirmishers.png",
                 "imageAlt": "",
                 "notes": "The advance screen of Stonefang's ranged arm — contributed by Grik, who understood early that a warband built entirely around close-range shock had a problem the moment the enemy decided not to come to them. Goblins fit the role precisely: small targets, fast movers, natural climbers. They push out ahead of the main orc line, find the high ground before the enemy can claim it, and make advancing into Stonefang formation deeply unpleasant. Their bows are short — built for highland terrain where a longbow's draw arm catches on rockface. Accurate enough at 60 yards. Devastating from above at 30. They are not meant to hold ground. They are meant to ensure that when the orc line hits, the enemy has already been disrupted, picked apart, and forced into bad positioning.",
@@ -3555,8 +4201,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Grik",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Grik",
                 "image": "unitImages/hobgoblin-warbow.png",
                 "imageAlt": "",
                 "notes": "Every Hobgoblin Warbow archer enters the field with a target list — not a target type, a specific target. Officers. Standard-bearers. Cavalry riders who look like they give orders. Before the battle begins, Grik's command tier walks the line assigning marks. Each archer fires once they have a clean shot on their assigned target and not before. No volley fire. No suppression. No wasted arrows. The result is that within the first ninety seconds of engagement, Stonefang's enemies tend to lose the people who know what to do next. What makes them unique among every archer unit in the alliance is the flat-trajectory draw — they fire low and hard rather than in arching volleys, which means their arrows hit with far more force but require true line of sight. It also means the arrow arrives before the enemy hears it leave the string. Chainmail over a red-dyed gambeson, silver helm with black plume — the plume is not ceremonial. It is the signal to Grik's command that the archer has taken their shot.",
@@ -3599,8 +4245,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Grik",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Grik",
                 "image": "unitImages/goblin-crossbow.png",
                 "imageAlt": "",
                 "notes": "Goblins fit in places humans, orcs, and dwarves do not. Narrow mountain passes. Tight crevices above a road. The gap in a collapsed wall that looks too small to matter. The Goblin Ambush Crossbows are built entirely around that fact. They deploy before the engagement — sometimes hours before — into positions the enemy would not think to cover because the enemy did not think anyone could get there. When the orc line engages and the enemy's attention is forward, the crossbows fire from the sides, from above, from behind rubble at fifteen yards. At that range, a light crossbow bolt goes through chainmail reliably. The reload is slow — they know this. Each goblin gets three bolts into the air and then moves, relocates, and finds a new gap. They are never in the same place twice. No other unit in Starhaven operates at this range or from these positions — the Goblin Ambush Crossbows are not a ranged unit by conventional definition. They are a close-range ambush tool that happens to fire a projectile.",
@@ -3643,8 +4289,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Grik · Drogar",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Grik · Drogar Stonefang",
                 "image": "unitImages/stonefang-shamans.png",
                 "imageAlt": "",
                 "notes": "Neither orc nor goblin alone — the Stonefang Shamans draw from both bloodlines, and the clans have never argued the point. Grik identified them and Drogar gave them standing. What they do is not magic in the way the Arcane Artillery fires, or the Ashen Guard heals. It is older than that. Before a Stonefang engagement, the Shamans walk the line and speak to the dead — specifically, to the warrior-dead of the Stormmassif, the ancestors of every orc and goblin in the formation. The soldiers who hear those names fight differently. Not harder out of anger. Differently, as if something has settled into place behind their eyes. The Shamans do not attack. They do not carry weapons of significance. What they do to enemies is subtler: a working placed on the ground ahead of the enemy advance that makes the air feel wrong, that makes soldiers lose certainty in their footing, that makes the highland wind come from the wrong direction at the wrong moment. None of it would stop a single determined fighter. Across a formation of thousands pressing into Stonefang terrain, it costs lives. They also serve as the Remnant's only field communication layer — the Shamans move between units, through terrain no one else navigates as quickly, carrying Grik's orders in the old bone-notch language that only the clans read.",
@@ -3878,41 +4524,158 @@
             "label": "Heavy Cavalry",
             "cards": [
               {
-                "id": "dawnlancers",
+                "id": "dawnlancers-the-point",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "The Dawnlancers",
+                "name": "The Point — First Lance",
                 "branch": "Cavalry",
-                "className": "Heavy Cavalry",
-                "subtitle": "· Female Elite · Dawn Wedge · Long Dawn Pursuit",
+                "className": "Heavy Cavalry · Dawnlancers",
+                "subtitle": "· Dawn Wedge Tip · Shock Lance · 600",
                 "srcPill": "🆕 New",
                 "armorBadge": "Heavy",
                 "armorClass": "armor-badge a-h",
                 "location": "Mobile with 2nd Army",
-                "army": "New Unit ♀ — Aera Coldwind",
-                "image": "unitImages/dawnlancers.png",
+                "army": "2nd Field Army — Aera Coldwind · Dawnlancers",
+                "image": "unitImages/dawnlancers-the-point.png",
                 "imageAlt": "",
-                "notes": "All-female heavy cavalry commanded by Aera Coldwind, attached to Clea Vorn's 2nd Army. The Dawn Wedge is their signature formation — a precision breakthrough that transitions immediately into the Long Dawn Pursuit. Their Dawnrunner mounts are a product of Marcus Ironmane's 18-month breeding program, sustaining full charge speed for 400 yards.",
+                "notes": "The front element of Aera Coldwind's Dawnlancers — 600 riders who form the tip of the Dawn Wedge. They strike first, break the line first, and hold the breach open for The Wings to push through. No unit in the alliance sustains a charge at full Dawnrunner speed as long as The Point. They are selected from the Dawnlancers for the highest charge-impact tolerance.",
                 "armor": [
                   {
                     "slot": "Body",
                     "name": "Dawnlancer Cavalry Plate",
-                    "desc": "— Between Ironmane and Silver Swan weight. Copper-gold with white dawn-l…"
+                    "desc": "— Copper-gold with white dawn-line trim. Between Ironmane and Silver Swan weight — built for sustained charge, not prolonged engagement. The Point's plate carries a single red cord at the pauldron — charge identification only."
                   },
                   {
                     "slot": "Helm",
                     "name": "Dawnlancer Crest Helm",
-                    "desc": "— Closed face. Swept-back vertical crest — copper-gold lance tip. Crests…"
+                    "desc": "— Closed face. Swept-back vertical crest — copper-gold lance tip. Crests form a visual wedge at speed; direction of charge reads instantly from distance."
                   },
                   {
                     "slot": "Mount",
-                    "name": "Dawnrunner Warhorses",
-                    "desc": "— Marcus Ironmane's 18-month project. Holds full speed for 400 yards wit…"
+                    "name": "Dawnrunner Warhorse",
+                    "desc": "— Marcus Ironmane's 18-month project. Holds full charge speed for 400 yards without breaking stride. The Point's horses are selected for highest impact endurance."
                   },
                   {
                     "slot": "Primary",
                     "name": "Dawn Lance",
-                    "desc": "— 8ft, crossguard 8 inches behind tip — prevents over-penetration. Withd…"
+                    "desc": "— 8ft, crossguard 8 inches behind the tip — prevents over-penetration. Withdrawn cleanly after impact; the rider is already past the target."
+                  }
+                ]
+              },
+              {
+                "id": "dawnlancers-the-wings",
+                "data-br": "Cavalry",
+                "data-src": "new",
+                "name": "The Wings — Second Lance",
+                "branch": "Cavalry",
+                "className": "Heavy Cavalry · Dawnlancers",
+                "subtitle": "· Twin Wing Squads · Flank Collapse · 2×300",
+                "srcPill": "🆕 New",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Mobile with 2nd Army",
+                "army": "2nd Field Army — Aera Coldwind · Dawnlancers",
+                "image": "unitImages/dawnlancers-the-wings.png",
+                "imageAlt": "",
+                "notes": "The flanking element of the Dawnlancers — 600 riders split into two Wing Squads of 300. While The Point drives through the front, The Wings peel left and right, collapsing the flanks of any formation that turns to respond. The split-wing drill is rehearsed until both squads can diverge from a single charge with no verbal signal — weight shift and lead change only.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Dawnlancer Cavalry Plate",
+                    "desc": "— Copper-gold. Same plate as The Point — no distinction in armour. The Wings carry a white cord at the left pauldron; each squad (East Wing, West Wing) wears the cord on the opposite side to read split direction at speed."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Dawnlancer Crest Helm",
+                    "desc": "— Closed face. Wing squads add a horizontal secondary bar welded to the crest — visible at flank angle for formation control when The Wings diverge."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Dawnrunner Warhorse",
+                    "desc": "— Bred for lateral agility as well as straight charge. The Wing manoeuvre requires the horse to bank at speed without losing footing on broken terrain."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Dawn Lance",
+                    "desc": "— 8ft. Identical reach to The Point — consistency is critical when both wings strike flanks simultaneously."
+                  }
+                ]
+              },
+              {
+                "id": "dawnlancers-the-depth",
+                "data-br": "Cavalry",
+                "data-src": "new",
+                "name": "The Depth — Third Lance",
+                "branch": "Cavalry",
+                "className": "Heavy Cavalry · Dawnlancers",
+                "subtitle": "· Reserve Strike · Long Dawn Pursuit · 600",
+                "srcPill": "🆕 New",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Mobile with 2nd Army",
+                "army": "2nd Field Army — Aera Coldwind · Dawnlancers",
+                "image": "unitImages/dawnlancers-the-depth.png",
+                "imageAlt": "",
+                "notes": "The reserve and pursuit element of the Dawnlancers — 600 riders who hold until the breach is confirmed open. The Depth does not charge into resistance; it charges into collapse. Once The Point and The Wings have broken the formation, The Depth transitions immediately to the Long Dawn Pursuit — riding down retreating elements before they can regroup into a second line.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Dawnlancer Cavalry Plate",
+                    "desc": "— Copper-gold. The Depth's plate carries no cord marking — they are the silent reserve. An enemy who has identified The Point and The Wings does not know The Depth is waiting."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Dawnlancer Crest Helm",
+                    "desc": "— Closed face. No secondary crest marking. The Depth does not signal position before the charge begins."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Dawnrunner Warhorse",
+                    "desc": "— Selected for distance endurance above sprint speed. The Depth's horses are conditioned for the Long Dawn Pursuit — sustained gallop over terrain, not 400-yard burst."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Dawn Lance",
+                    "desc": "— 8ft. Carried into the breach charge; switched to sabre once the formation fragments and individual pursuit combat begins."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Dawnlancer Pursuit Sabre",
+                    "desc": "— Single-edged, slightly curved cavalry sabre. Drawn when the lance run ends and the rout begins. The Depth carries more blades than lances by the end of a pursuit engagement."
+                  }
+                ]
+              },
+              {
+                "id": "dawnrunner-stable",
+                "data-br": "Cavalry",
+                "data-src": "new",
+                "name": "The Dawnrunner Stable",
+                "branch": "Cavalry",
+                "className": "Stable Corps · Dawnlancers Support",
+                "subtitle": "· Ironmane Breeding Programme · 120 Stable Riders",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Mobile with 2nd Army — Rear Column",
+                "army": "2nd Field Army — Aera Coldwind · Dawnlancers",
+                "image": "unitImages/dawnrunner-stable.png",
+                "imageAlt": "",
+                "notes": "120 specialists responsible for the Dawnrunner warhorses — the living product of Marcus Ironmane's 18-month breeding programme. Each Stable Rider is bonded to a specific set of horses; they manage conditioning, injury recovery, campaign transport, and ongoing breeding records. Without The Dawnrunner Stable, the Dawnlancers cannot sustain their charge doctrine beyond a single campaign. They are the least visible element of the Dawnlancers and the one Aera Coldwind considers most irreplaceable.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Stable Rider Harness",
+                    "desc": "— Light leather working harness. Not a combat garment — built for long hours in the saddle and physical horse care across varied terrain."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Open Stable Cap",
+                    "desc": "— Reinforced leather cap. Protects against kicks and falls during close horse work. Not rated for battlefield combat."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Ironmane Field Stable Kit",
+                    "desc": "— Veterinary tools, farrier equipment, liniment, feed supplements, hoof wrap, breeding records, and injury logs. The Stable Rider carries the programme's continuity in their saddlebag."
                   }
                 ]
               },
@@ -4113,7 +4876,7 @@
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "North Regional Depot",
-                "army": "New Unit — Caelen Voss",
+                "army": "Silver Swan Cavalry Corps — Caelen Voss",
                 "image": "unitImages/silver-swan-north.png",
                 "imageAlt": "",
                 "notes": "Caelen Voss's northern lance detachment. One of four regional Silver Swan corps, each independently self-contained. The North detachment rides Coldblood Cross warhorses bred for ice and snow — the insulated underlayer and frost-resistant joints mean cold weather is not a limiting factor. Flank security is the primary role; the lance is the engagement tool.",
@@ -4157,7 +4920,7 @@
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "South Regional Depot",
-                "army": "New Unit — Caelen Voss",
+                "army": "Silver Swan Cavalry Corps — Caelen Voss",
                 "image": "unitImages/silver-swan-south.png",
                 "imageAlt": "",
                 "notes": "Caelen Voss's southern lance detachment — the most formally presented of the four. Purple-marked plate and purple-dyed manes reflect the southern courts environment where first impressions carry political weight. The Royal bloodline warhorses are disciplined for formal settings without sacrificing battlefield capability.",
@@ -4201,7 +4964,7 @@
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "East Regional Depot",
-                "army": "New Unit — Caelen Voss",
+                "army": "Silver Swan Cavalry Corps — Caelen Voss",
                 "image": "unitImages/silver-swan-east.png",
                 "imageAlt": "",
                 "notes": "Caelen Voss's eastern lance detachment. Operates across open desert and plains terrain bordering the Karath Sultanate. Sand-gold plate with ventilated joints, desert scimitar as secondary — the eastern kit is purpose-built for heat endurance during sustained open-ground operations. Their Desert Warhorses carry Karath bloodline for endurance.",
@@ -4245,7 +5008,7 @@
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "West Regional Depot",
-                "army": "New Unit — Caelen Voss",
+                "army": "Silver Swan Cavalry Corps — Caelen Voss",
                 "image": "unitImages/silver-swan-west.png",
                 "imageAlt": "",
                 "notes": "Caelen Voss's western lance detachment, operating across passes and highland terrain. Mountain-bred warhorses with strong hindquarters for uphill charges; the gray-green plate and mountain-finish armor are built for rough-terrain durability over parade presentation. The mountain axe replaces the sabre for dismounted utility on peaks.",
@@ -5028,7 +5791,7 @@
                 "armorBadge": "Heavy",
                 "armorClass": "armor-badge a-h",
                 "location": "Distributed — 1 Battalion per Field Army",
-                "army": "New Unit — Drel Voss",
+                "army": "Starhaven Specialized — Drel Voss · Ironveil Spear Corps",
                 "image": "unitImages/ironveil.png",
                 "imageAlt": "",
                 "notes": "Drel Voss's new modular anti-cavalry corps — one battalion distributed to each Field Army. The Ironveil Lock is a combined formation with the accompanying Halberdier element: spear wall stops the charge, halberdiers engage the disorganized aftermath. Beast-rated plate and extended greaves specifically account for Void entity threats, not just cavalry.",
@@ -5135,7 +5898,7 @@
                 "armorBadge": "Med–Hvy",
                 "armorClass": "armor-badge a-mh",
                 "location": "Distributed — per Field Army",
-                "army": "New Unit — Drel Voss",
+                "army": "Starhaven Specialized — Drel Voss · Ironveil Spear Corps",
                 "image": "unitImages/ironveil-halb.png",
                 "imageAlt": "",
                 "notes": "The inner ring of Drel Voss's Ironveil formation — where the Spear Corps stops the charge, these halberdiers engage disorganized riders in the aftermath. Same Ironveil Fortress Plate as the spearmen beside them. The hook component of the halberd is specifically designed for dismounting riders entangled in the spearwall.",
@@ -5168,8 +5931,8 @@
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Lt–Med",
                 "armorClass": "armor-badge a-lm",
-                "location": "Stonefang — Highland Mountains",
-                "army": "Stonefang Remnant — Kethra Blackfang",
+                "location": "Highland Coalition — Highland Mountains",
+                "army": "Highland Coalition — Kethra Blackfang",
                 "image": "unitImages/blackfang.png",
                 "imageAlt": "",
                 "notes": "The only dedicated defensive unit the Stonefang Remnant fields — a notable fact in a warband built around Grik's aggressive doctrine. Commanded by Kethra Blackfang. The clan tower shield is wider than standard for crowd control in mountain passes where flanking room is limited. Both anti-cavalry and pass-denial roles.",
@@ -5223,39 +5986,161 @@
             ]
           },
           {
-            "label": "Monster Hunters",
+            "label": "Void Breaker Orders · Zareth Kull",
             "cards": [
               {
-                "id": "void-breakers",
+                "id": "fang-order",
                 "data-br": "Polearm",
                 "data-src": "own",
-                "name": "Void Breakers",
+                "name": "Fang Order",
                 "branch": "Polearm",
-                "className": "Monster Hunters",
-                "subtitle": "· Void Entity Hunting · 4 Orders",
+                "className": "Void Breaker · Apex Beast Kill",
+                "subtitle": "· Order Master: Cray · 600 Hunters · Large Entity Elimination",
                 "srcPill": "🏰 Own",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "Ashenveil / Field Deployment",
-                "army": "Starhaven Specialized — Zareth Kull",
-                "image": "unitImages/void-breakers.png",
-                "imageAlt": "",
-                "notes": "Zareth Kull's Void Entity specialists — four Orders, each trained for a distinct threat type. Fang Order: lances for large entities. Hollow Order: nets and containment for incorporeal threats. Brand Order: torch and fire for susceptible entities. Seal Order: containment and binding. 34% historical failure rate is not a deficiency — it reflects the nature of what they hunt. Void-trace crystal in the visor allows basic entity detection.",
+                "army": "Void Breakers — Zareth Kull · Order Master: Cray",
+                "image": "unitImages/fang-order.png",
+                "imageAlt": "Fang Order",
+                "notes": "The Void Breakers' apex-kill division — 600 beast-specialist hunters under Order Master Cray. The Fang's mandate is large Void entities: track, isolate, eliminate before they reach settlements. Highest confirmed apex-kill count of any order. Cray carries dual Voidbane swords, personally maintained and sharpened on principle. His team has noted that his default response to any new entity is \"we could kill it\" — he said this about the relay entity for three consecutive days while obeying the order not to. The order's 34% failure rate is the best available measurement for what they hunt. Cray does not consider this satisfying.",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Void-Rated Plate",
-                    "desc": "— Standard plate with Void-interference suppression coating. Tested in A…"
+                    "name": "Void-Rated Combat Plate",
+                    "desc": "— Medium plate with Void-interference suppression coating. Tested in Ashenveil fracture zones. Allows the mobility a kill operation requires without sacrificing the baseline protection Void-entity contact demands."
                   },
                   {
                     "slot": "Helm",
                     "name": "Void Filter Helm",
-                    "desc": "— Sealed against corruption miasma. Void-trace crystal in visor for basi…"
+                    "desc": "— Sealed against corruption miasma. Void-trace crystal in visor for basic entity detection before visual contact."
                   },
                   {
                     "slot": "Weapon",
-                    "name": "Order-Specific Arms",
-                    "desc": "— Fang: lances. Hollow: nets and containment. Brand: torches and fire. S…"
+                    "name": "Voidbane Lance",
+                    "desc": "— Standard Fang Order issue for large entity engagements. Extended reach for entities that cannot be safely approached at sword range."
+                  },
+                  {
+                    "slot": "Command",
+                    "name": "Cray — Dual Voidbane Swords",
+                    "desc": "— Order Master's personal kit. Personally maintained, sharpened on principle. Used when the lance isn't fast enough."
+                  }
+                ]
+              },
+              {
+                "id": "hollow-order",
+                "data-br": "Polearm",
+                "data-src": "own",
+                "name": "Hollow Order",
+                "branch": "Polearm",
+                "className": "Void Breaker · Observation & Documentation",
+                "subtitle": "· Order Master: Illen · 400 Specialists · Fracture Zone Watch",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Ashenveil Fracture Zones / Field",
+                "army": "Void Breakers — Zareth Kull · Order Master: Illen",
+                "image": "unitImages/hollow-order.png",
+                "imageAlt": "Hollow Order",
+                "notes": "The observation and documentation order — 400 specialists under Order Master Illen. The Hollow's mandate is long-term Void phenomenon study in frontier fracture zones: watching what moves, how it moves, and what it means before action is taken. The most comprehensive field reports in the Void Breakers' archive come from the Hollow. Their work is cited in strategic planning more than any other order's output. Illen is a Half Moon Elf — the patience is not trained, it is structural. She spent forty-seven minutes at a relay entity's third circuit point in the founding investigation and returned with the single most important observation of eighteen months: it phases, partially, four to six seconds, every time, with total consistency. That observation reframed everything. Luna, her nocturnal companion, has senses that complement Illen's in ways no instrument has been able to replicate.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Void-Rated Observation Plate",
+                    "desc": "— Medium plate, Void-interference suppression coating. Configured for extended field deployment — lighter joint assembly than Fang Order kit. Observation operations require stillness over mobility."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Void Filter Helm",
+                    "desc": "— Sealed against corruption miasma. Void-trace crystal in visor. Hollow Order helms include an additional documentation lens — observations are recorded through the visor."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Entity-Disruption Staff",
+                    "desc": "— Primary field tool and close-defense weapon. Disrupts Void entity coherence at range without full termination — keeps the subject in observation range."
+                  },
+                  {
+                    "slot": "Command",
+                    "name": "Illen — Portable Void-Null Field Generator",
+                    "desc": "— Order Master's personal equipment. Creates a localized suppression field. Used during high-risk observation operations to prevent entity response to the observer's presence."
+                  }
+                ]
+              },
+              {
+                "id": "brand-order",
+                "data-br": "Polearm",
+                "data-src": "own",
+                "name": "Brand Order",
+                "branch": "Polearm",
+                "className": "Void Breaker · Corruption Tracking",
+                "subtitle": "· Order Master: Sorn · Wolf-Kin Senses · Void Trail Pursuit",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Ashenveil / Mobile Tracking",
+                "army": "Void Breakers — Zareth Kull · Order Master: Sorn",
+                "image": "unitImages/brand-order.png",
+                "imageAlt": "Brand Order",
+                "notes": "The tracking order — under Order Master Sorn, a Wolf-Kin whose body registers information before his mind has processed it. The Brand's mandate is finding: Void corruption paths, entity movement routes, fracture zone spread direction, and source locations no instrument has detected yet. Sorn located the founding investigation's relay entity circuit path three full days before any detection instrument confirmed it existed. He described it as: \"It smells like it's been here too long. The stone remembers it.\" The team has learned to stop when Sorn stops. The reason always becomes clear shortly. Shadow — a pack of five trailhounds Sorn has trained specifically for Void entity detection — functions as an extension of the Order's tracking capacity. The pack has an accuracy rate on Void-trace that instruments cannot match at speed.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Void-Rated Tracking Harness",
+                    "desc": "— Medium plate, Void-interference suppression coating. Configured for rapid movement — Brand Order tracking operations cover large terrain distances. Lighter assembly than Fang, heavier than a scout rig."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Void Filter Helm — Open Profile",
+                    "desc": "— Sealed against miasma but configured with reduced cheek coverage — Sorn's Wolf-Kin senses require unrestricted sensory access. The Void-trace crystal is secondary to what he can already detect."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Tracking Blades",
+                    "desc": "— Close-range, built for speed over reach. Sorn's kit is not built for sustained melee — the tracking operation ends before engagement whenever possible."
+                  },
+                  {
+                    "slot": "Pack",
+                    "name": "Shadow — Five Void Trailhounds",
+                    "desc": "— Sorn's personal pack. Trained over years for Void-trace detection. Three types: Ashound (tracking and scout), Ironjaw (combat), Nighthound (dark operations). Pack accuracy on Void-trace at speed exceeds instrumented measurement."
+                  }
+                ]
+              },
+              {
+                "id": "seal-order",
+                "data-br": "Polearm",
+                "data-src": "own",
+                "name": "Seal Order",
+                "branch": "Polearm",
+                "className": "Void Breaker · Containment & Capture",
+                "subtitle": "· Order Master: Wex · 500 Specialists · Live Capture Doctrine",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Ashenveil / Field Deployment",
+                "army": "Void Breakers — Zareth Kull · Order Master: Wex",
+                "image": "unitImages/seal-order.png",
+                "imageAlt": "Seal Order",
+                "notes": "The containment order — 500 specialists under Order Master Wex. The Seal's mandate is capture rather than kill: taking Void entities alive when the intelligence or research value exceeds the operational cost. Wex developed the containment protocols the entire organization now runs on. In the founding investigation, she carried a containment frame for seventy-two consecutive hours on the chance it would matter. She was right. When the three-day debate about whether to kill or contain the relay entity reached its fourth repetition, Wex ended it with one sentence: \"We are not killing it. I have been carrying this containment frame for seventy-two hours.\" The argument did not resume. The Seal Order runs on chronically under-rated equipment that Wex has kept functional through eighteen months of field operations and counting — zero catastrophic failures.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Void-Rated Containment Plate",
+                    "desc": "— Medium plate, Void-interference suppression coating. Configured for extended carry — Seal Order operations require sustained presence at containment sites after the entity is secured."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Void Filter Helm",
+                    "desc": "— Sealed against corruption miasma. Void-trace crystal standard. Seal Order helms include a secondary sealing indicator — shows containment field integrity during active capture."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Containment Frame",
+                    "desc": "— Portable entity containment apparatus. Field-modified by Wex. Rated below the operations it is used for. Has not failed."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Binding Net & Seal Rods",
+                    "desc": "— Net for incorporeal and mobile entities. Seal rods drive containment anchors into terrain for stationary binding. Standard Seal Order field kit."
                   }
                 ]
               },
@@ -5445,6 +6330,45 @@
                     "desc": "— Minimal — forest movement requires full elk flexibility. Light chest g…"
                   }
                 ]
+              },
+              {
+                "id": "silver-moon-elk-riders",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Silver Moon Elk Riders",
+                "branch": "Beast Cavalry",
+                "className": "Mounted Ranger · Moon Elk Cavalry",
+                "subtitle": "· 100 Riders · Silent Warden Mounted Wing",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Greenveil / Mobile",
+                "army": "Pillar of Lyria Valen — Silent Warden Mounted Wing",
+                "image": "unitImages/silver-moon-elk-riders.png",
+                "imageAlt": "Silver Moon Elk Riders",
+                "notes": "The mounted arm of the Silent Wardens. One hundred rangers riding Silver Moon Elks — the only mount that moves silently at speed through forest terrain no standard horse enters. Riders maintain full Warden doctrine on elk: no visible approach, no loud advance, no identifiable formation silhouette. Used to flank positions before the Warden line opens, cut off retreating command targets, or extract personnel from positions that cannot be held on foot. Silver Moon Elks carry archers at full gallop without breaking branch or disturbing soil. The sound profile of a hundred of them moving together is that of a light wind.",
+                "armor": [
+                  {
+                    "slot": "Rider",
+                    "name": "Moonweave Riding Leather",
+                    "desc": "— Silent-movement leather with grip-reinforced saddle contact points. Allows standing shots at full elk gallop."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Silver Moon Elk",
+                    "desc": "— Rare Greenveil-native elk, silver-white coats, near-silent hooves. Faster than warhorses through dense forest. Bred under Lyria Valen's personal program."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Warden Recurve Shortbow",
+                    "desc": "— Shorter recurve bow designed for elk-mounted use. Reduced draw length, maintained precision. Effective to 200 yards at full gallop."
+                  },
+                  {
+                    "slot": "Cloak",
+                    "name": "Shadow Rider Cloak",
+                    "desc": "— Covers rider and reduces mounted silhouette at distance. Moon Elk coloring and cloak together make the unit difficult to identify as cavalry at range."
+                  }
+                ]
               }
             ]
           },
@@ -5571,8 +6495,120 @@
             ]
           },
           {
+            "label": "Forest Constructs",
+            "cards": [
+              {
+                "id": "forest-golems",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Forest Golems",
+                "branch": "Beast Cavalry",
+                "className": "Ancient Forest Construct · Greenveil Guardian",
+                "subtitle": "· 20–30 Known · Thorin-Bonded · War Deployable",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Legendary",
+                "armorClass": "armor-badge a-leg",
+                "location": "Greenveil / Greywood Sanctuary",
+                "army": "Pillar — Thorin Blackroot (Greenveil Guardian Force)",
+                "image": "unitImages/forest-golems.png",
+                "imageAlt": "Forest Golems",
+                "notes": "Twenty to thirty are known to exist. No one has found more. Greenveil does not give up its oldest things easily, and the Golems are older than the settlements — older than the roads, possibly older than the name given to the forest. They are not constructs in the engineering sense. They were not built. They grew — or condensed, or woke — from the deep ironwood and root-stone of the Greywood's oldest groves. Each one is different in shape: some are broad-shouldered and upright like armored figures; others move low and four-limbed, closer to the forest floor. All of them are large. None of them speak. They respond to Thorin Blackroot and no one else. Thorin has never explained how the bond works. When asked, he gives a one-sentence answer that does not answer the question. In battle they are slow to start and nearly impossible to stop — a single Golem engaging a line does not break the line, it removes the line. War deployment requires Thorin's direct presence at or near the field. They do not take orders relayed by proxy; they feel his presence or they do not move. Starhaven does not advertise that these exist.",
+                "armor": [
+                  {
+                    "slot": "Form",
+                    "name": "Ancient Ironwood Shell",
+                    "desc": "— The Golem's body is its armor. Outer layer is centuries-compressed ironwood and root-stone — no forged material achieves comparable density at this thickness. Strikes that would destroy a tank leave surface scoring."
+                  },
+                  {
+                    "slot": "Natural Weapons",
+                    "name": "Root Strike / Stone Fist",
+                    "desc": "— No carried weapons. Impact force comes from mass and movement. Root-strike is a ground-level sweep that displaces formations rather than targeting individuals. Stone fist is used on fortifications and siege equipment."
+                  },
+                  {
+                    "slot": "Bond",
+                    "name": "Thorin-Bond (Exclusive)",
+                    "desc": "— Responds only to Thorin Blackroot's direct presence. Mechanism unknown. Attempted proxy command has failed in every recorded instance. No documentation of how the bond was established."
+                  },
+                  {
+                    "slot": "Regeneration",
+                    "name": "Forest Regeneration",
+                    "desc": "— Damage sustained in combat repairs over days to weeks if the Golem returns to deep Greywood. Rate varies by Golem. Minor damage closes within hours. Major structural damage takes longer — the oldest and largest Golems regenerate slowest."
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "label": "Mammoth Riders · War Elephants",
             "cards": [
+              {
+                "id": "starhaven-mammoth-corps",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Starhaven Mammoth Corps",
+                "branch": "Beast Cavalry",
+                "className": "War Mammoth · Convoy Herd",
+                "subtitle": "· Gift of Sultan Rashid · Sira's Herd · Ironmane Fields",
+                "srcPill": "🏰 Own",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Ironmane Fields / Starhold",
+                "army": "Starhaven Beast Corps — Gifted by Karath Sultanate · Year 1048",
+                "image": "unitImages/starhaven-mammoth-corps.png",
+                "imageAlt": "Starhaven Mammoth Corps",
+                "notes": "Fifty-two mammoths gifted to Starhaven by Sultan Rashid al-Kavar personally — not the Sultanate's, his own. He walked Rayden to the staging ground after the alliance was signed and said: \"These are mine.\" Then handed them over. They arrived with the Karath gift-convoy in Year 1048, along with thirty war elephants. Sira — approximately sixty years old — led the convoy. She is the elder of the herd and the one Helna Ironmane assessed first. The assessment went both ways. Sira stood at the far end of the holding area and evaluated Helna with the patience of a creature that has been evaluated by strangers many times and built her own process for it. Thorin Blackroot stood at the field's edge for two hours watching the mammoths settle in. The forest — which had never encountered mammoths — adjusted its evening calls around Sira's presence. The corps is small by Karath standards, but Starhaven does not need a full mammoth line to benefit from their presence in a formation.",
+                "armor": [
+                  {
+                    "slot": "Mount",
+                    "name": "Starhaven-Fitted Mammoth Plating",
+                    "desc": "— Adapted from the Karath standard — iron plate panels on head, shoulders, and flanks. Helna Ironmane's team refitted each panel to the individual mammoth after veterinary assessment. Sira's set took longest."
+                  },
+                  {
+                    "slot": "Handler",
+                    "name": "Ironmane Handler Corps",
+                    "desc": "— Handlers trained under Helna Ironmane's direct program. Work on-foot or platform-mounted. Handler-to-mammoth bond developed over the first year of integration. Sira selected her own handler. The choice was not disputed."
+                  },
+                  {
+                    "slot": "Platform",
+                    "name": "Starhaven Tower Platform",
+                    "desc": "— Adapted from Karath tower design — slightly lower profile, built in Forgehaven. 4–6 positions per mammoth depending on tower configuration selected."
+                  }
+                ]
+              },
+              {
+                "id": "starhaven-war-elephant-corps",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Starhaven War Elephant Corps",
+                "branch": "Beast Cavalry",
+                "className": "War Elephants · Ironmane Fields",
+                "subtitle": "· Gift of Sultan Rashid · 30 Elephants · Ironmane Fields",
+                "srcPill": "🏰 Own",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Ironmane Fields / Starhold",
+                "army": "Starhaven Beast Corps — Gifted by Karath Sultanate · Year 1048",
+                "image": "unitImages/starhaven-war-elephant-corps.png",
+                "imageAlt": "Starhaven War Elephant Corps",
+                "notes": "Thirty war elephants, part of Sultan Rashid's personal gift-convoy to Starhaven in Year 1048. Smaller than the Karath Mammoths but faster to deploy — lower platform profile means the tower can be raised and configured in less time. Helna Ironmane leads their care and integration program. Marcus Ironmane consulted on handler selection, applying the same observation methods he built for Starhaven's horse cavalry bloodline program. The thirty are quartered at Ironmane Fields alongside the mammoth herd. The handlers — largely drawn from Greenveil foresters and Primal Vanguard support — adapted faster than expected. Thorin noted the elephants learned the forest's morning routine within three weeks.",
+                "armor": [
+                  {
+                    "slot": "Mount",
+                    "name": "Starhaven Elephant Plating",
+                    "desc": "— Iron plate on head, neck, and chest. Armored trunk guard. Tusks banded with iron caps. Refitted in Forgehaven to individual elephant measurements."
+                  },
+                  {
+                    "slot": "Handler",
+                    "name": "Ironmane Elephant Handler Corps",
+                    "desc": "— Handlers drawn from Greenveil foresters and Primal Vanguard support personnel. Trained by Helna Ironmane's program alongside the mammoth handlers."
+                  },
+                  {
+                    "slot": "Platform",
+                    "name": "Elephant Pike Tower",
+                    "desc": "— 4 pike positions. Lower profile than the mammoth tower — faster deployment and better mobility in built terrain. Forgehaven-produced variant of the Karath original."
+                  }
+                ]
+              },
               {
                 "id": "karath-mammoths",
                 "data-br": "Beast Cavalry",
@@ -5628,6 +6664,65 @@
                     "slot": "Tower",
                     "name": "Elephant Pike Tower",
                     "desc": "— 4 pike positions. Lower profile than mammoth tower — faster deployment…"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Rare Race Units",
+            "cards": [
+              {
+                "id": "ashstride-warband",
+                "data-br": "Cavalry",
+                "data-src": "new",
+                "name": "The Ashstride Warband",
+                "branch": "Cavalry",
+                "className": "Centaur Shock · Mobile Reserve · Rare Race",
+                "subtitle": "· Veth Sunreach · 500 Strong · Axe-Sworn · Deployed at Need",
+                "srcPill": "🆕 New",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Mobile — Rhegar Thorne's Discretion · Families Near Ironpass",
+                "army": "Grand Standing Army — Mobile Reserve (Grand Marshal Rhegar Thorne) · No Fixed Assignment",
+                "image": "unitImages/ashstride-warband.png",
+                "imageAlt": "The Ashstride Warband",
+                "notes": "Centaurs — half-human, half-horse — from the Sunreach Steppes: vast open grasslands that sit at the far southeastern edge of the known world, beyond the frontier, off every chart Starhaven has ever produced. Their homeland has no name on any map. Five hundred warriors. A very rare race. The Ashstride are the only centaur warband anyone in Starhaven has ever encountered.\n\nThe change came slowly on the Steppes. Eastern grass died in sections. Prey animals stopped returning to the eastern reaches. The Ashstride sent eleven scouts east. Three came back. Their reports matched: something was spreading from the edge of the world, moving west — patient, total, and growing. The Ashstride called it the Hunger. Starhaven scholars who later reviewed the accounts placed it in the same category as Ashenveil Void corruption — older and further advanced, but the same root. Their homeland was not recoverable.\n\nThe warband — 500 warriors, with wives and children — made a two-year migration across three territories no Starhaven cartographer had documented. They arrived at the eastern approaches of Ironpass Citadel in Year 1045. Brek Stonefall met them at the gate. The negotiation was direct: the Ashstride had no interest in charity. They were offering a trade. Their fighting strength — mobile, adaptable, requiring no mount logistics, no stable, no groom — in exchange for settled land near Ironpass for their families, supply contracts covering food, coin, and materials, access to Starhaven's technological infrastructure, and — specifically requested by clan elder Mirra Duststep — admission of centaur children to Learnstead University.\n\nRayden authorized the full terms the same week Brek's message arrived. Sixteen centaur children are currently enrolled at Learnstead. Their families live in a permanent settlement called Dustmark, built alongside the eastern road to Ironpass. They receive full Starhaven supply and infrastructure access. In exchange, the warband deploys at Rhegar Thorne's discretion. No single army holds them. They go where the line is breaking.\n\nThe Embersunder Greataxe is their signature — a weapon built for a body that can accelerate to cavalry speeds and still swing it at full strength on impact. Opposing infantry who have faced the Ashstride describe the experience as a cavalry charge that does not stop when the horses hit the line.",
+                "armor": [
+                  {
+                    "slot": "Upper Body",
+                    "name": "Sunreach Warplate",
+                    "desc": "— Heavy iron plate covering the humanoid chest, abdomen, and upper arms. Engraved with clan migration marks documenting the two-year journey from the Sunreach Steppes. No two sets are identical."
+                  },
+                  {
+                    "slot": "Lower Flanks",
+                    "name": "Steelhide Barding",
+                    "desc": "— Hardened leather reinforced with iron strips protecting the horse body from neck to hindquarters. Lighter than full iron barding — preserves the endurance needed for long-distance deployment marches between army positions."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Ashstride War Helm",
+                    "desc": "— Open-faced iron helm with carved steppes patterns pressed into the surface. Clan identification marks on the brow plate. No crest — the Ashstride have no use for features that cost aerodynamics at a gallop."
+                  },
+                  {
+                    "slot": "Shoulders",
+                    "name": "Stormback Pauldrons",
+                    "desc": "— Heavy iron shoulder guards fitted for the broader frame of the centaur upper body. Reinforced at the joint seams to absorb axe-swing impact loads on the upswing and carry-return."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Embersunder Greataxe",
+                    "desc": "— The Ashstride's signature weapon. A massive double-headed war axe forged in the steppes style — longer haft and wider blade geometry than standard greataxes, built for the arm reach and swing leverage of a centaur body at full cavalry speed. No equivalent human-scale weapon exists. The sound of five hundred Embersunder axes clearing their shoulder-carries is reportedly audible across a battlefield before the Ashstride enters visual range."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Ashstep Warspear",
+                    "desc": "— A long iron-tipped warspear carried across the back when not in use. Used when terrain or formation depth requires reach rather than axe-arc impact — particularly effective against cavalry countercharges and tight corridor engagements."
+                  },
+                  {
+                    "slot": "Hooves",
+                    "name": "Iron-Shod War Hooves",
+                    "desc": "— Combat-fitted iron shoes with extended edge ridges. The Ashstride's hooves are trained weapons. A rear kick from a war-shod centaur carries force comparable to a cavalry charge impact. Infantry attempting to encircle routing centaurs have discovered this at close range."
                   }
                 ]
               }
@@ -5689,7 +6784,7 @@
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Distributed — 1 Aerie per Field Army",
-                "army": "New Unit — Ren Dael",
+                "army": "Starhaven Field Command — Ren Dael · 1 Aerie Embedded per Field Army",
                 "image": "unitImages/skywarden.png",
                 "imageAlt": "",
                 "notes": "Ren Dael's aerial reconnaissance and signal relay corps — one aerie embedded per Field Army. Ashwing Eagles carry minimal tack, no barding; weight is the enemy of altitude. Each Aerie-Captain wears a colored cord matching their army for aerial identification. They are not fighters; they are eyes and voice for the commanders below.",
@@ -5697,17 +6792,153 @@
                   {
                     "slot": "Body",
                     "name": "Skywarden Scale Vest",
-                    "desc": "— Leather with scale plate at shoulders and chest only. Weight is the en…"
+                    "desc": "— Leather with scale plate at shoulders and chest only. Weight is the enemy of altitude — the vest is the minimum protection consistent with sustained flight operations."
                   },
                   {
                     "slot": "Helm",
                     "name": "Aerie Open Helm",
-                    "desc": "— Fully open-face. Each Aerie-Captain wears a colored cord matching thei…"
+                    "desc": "— Fully open-face. Each Aerie-Captain wears a colored cord matching their Field Army — visible from below for aerial identification."
                   },
                   {
                     "slot": "Mount",
                     "name": "Ashwing Eagle Tack",
-                    "desc": "— Minimal — saddle and guide-harness only. No barding. The bird's speed …"
+                    "desc": "— Minimal — saddle and guide-harness only. No barding. The bird's speed and vision are the asset; weight compromises both."
+                  }
+                ]
+              },
+              {
+                "id": "dawnwatch-aerie",
+                "data-br": "Flying",
+                "data-src": "new",
+                "name": "Dawnwatch Aerie",
+                "branch": "Flying",
+                "className": "Light Flying · Recon · Skywarden Corps",
+                "subtitle": "· 1st Field Army · Aerie-Captain Sola Dren",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Embedded — 1st Field Army",
+                "army": "1st Field Army — Doran Ashe · Ren Dael · Skywarden Corps",
+                "image": "unitImages/dawnwatch-aerie.png",
+                "imageAlt": "",
+                "notes": "The First Aerie of the Skywarden Corps, embedded with Doran Ashe's 1st Field Army. Led by Aerie-Captain Sola Dren, the Dawnwatch Aerie covers the 1st Army's advance and flanks — mapping enemy positions, relaying signals, and confirming ground commander orders across terrain where courier lines are too slow. Sola Dren wears the gold cord of the 1st Army; her birds are recognizable to every officer in the First.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Skywarden Scale Vest",
+                    "desc": "— Standard corps vest. The Dawnwatch riders add a gold-thread chest stripe — 1st Army identification, matching the Field Marshal's command color."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Aerie Open Helm",
+                    "desc": "— Open-face. Sola Dren's Aerie-Captain helm carries a gold cord — the marker that every 1st Army signal officer learns to look for first."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Ashwing Eagle Tack",
+                    "desc": "— Minimal tack. The Dawnwatch Aerie's birds are conditioned for low-altitude passes over active formations — closer than any other Aerie operates."
+                  }
+                ]
+              },
+              {
+                "id": "veilwatch-aerie",
+                "data-br": "Flying",
+                "data-src": "new",
+                "name": "Veilwatch Aerie",
+                "branch": "Flying",
+                "className": "Light Flying · Recon · Skywarden Corps",
+                "subtitle": "· 2nd Field Army · Aerie-Captain Ryn Vael",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Embedded — 2nd Field Army",
+                "army": "2nd Field Army — Clea Vorn · Ren Dael · Skywarden Corps",
+                "image": "unitImages/veilwatch-aerie.png",
+                "imageAlt": "",
+                "notes": "The Second Aerie of the Skywarden Corps, embedded with Clea Vorn's 2nd Field Army. Aerie-Captain Ryn Vael's specialty is low-visibility reconnaissance — the Veilwatch Aerie operates at dusk and dawn margins when enemy aerial observation is degraded. Ryn Vael established the corps' fog-flying protocols after operating in the mountain passes near Coldmarch.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Skywarden Scale Vest",
+                    "desc": "— Standard corps vest. The Veilwatch riders add a blue-thread chest stripe — 2nd Army identification."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Aerie Open Helm",
+                    "desc": "— Open-face. Ryn Vael's helm carries a blue cord. The Veilwatch Aerie operates at low-light margins — the cord color is chosen for visibility against sky rather than ground."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Ashwing Eagle Tack",
+                    "desc": "— Standard minimal tack. The Veilwatch birds are trained for low-visibility flight — they respond to touch signal rather than verbal command in fog conditions."
+                  }
+                ]
+              },
+              {
+                "id": "stormwatch-aerie",
+                "data-br": "Flying",
+                "data-src": "new",
+                "name": "Stormwatch Aerie",
+                "branch": "Flying",
+                "className": "Light Flying · Recon · Skywarden Corps",
+                "subtitle": "· 3rd Field Army · Aerie-Captain Mael Cress",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Embedded — 3rd Field Army",
+                "army": "3rd Field Army — Brek Tane · Ren Dael · Skywarden Corps",
+                "image": "unitImages/stormwatch-aerie.png",
+                "imageAlt": "",
+                "notes": "The Third Aerie of the Skywarden Corps, embedded with Brek Tane's 3rd Field Army. Aerie-Captain Mael Cress leads the unit with a reputation for operating through weather conditions the other Aeries ground for. The Stormwatch Aerie trained alongside the Stormriders for one season — Mael Cress considers bad weather a tactical advantage rather than a limitation.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Skywarden Scale Vest",
+                    "desc": "— Standard corps vest with a red-thread chest stripe for 3rd Army identification. The Stormwatch riders add an additional wind-brace strap at the shoulder — rough-weather flying."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Aerie Open Helm",
+                    "desc": "— Open-face. Mael Cress's helm carries a red cord. The Stormwatch Aerie uses a wider chin-strap than corps standard — Cress specified it after a storm-dive incident."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Ashwing Eagle Tack",
+                    "desc": "— Standard minimal tack with reinforced saddle straps at the leg. The Stormwatch birds are conditioned for turbulence — they do not break formation in high wind."
+                  }
+                ]
+              },
+              {
+                "id": "ironwatch-aerie",
+                "data-br": "Flying",
+                "data-src": "new",
+                "name": "Ironwatch Aerie",
+                "branch": "Flying",
+                "className": "Light Flying · Recon · Skywarden Corps",
+                "subtitle": "· 4th Field Army · Aerie-Captain Sera Voss",
+                "srcPill": "🆕 New",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Embedded — 4th Field Army",
+                "army": "4th Field Army — Veyra Tal · Ren Dael · Skywarden Corps",
+                "image": "unitImages/ironwatch-aerie.png",
+                "imageAlt": "",
+                "notes": "The Fourth Aerie of the Skywarden Corps, embedded with Veyra Tal's 4th Field Army. Aerie-Captain Sera Voss leads the youngest Aerie in the corps — half her riders completed their eagle-bonding training within the last two years. The Ironwatch Aerie specializes in infantry coordination signaling, developing hand-signal protocols with the 4th Army's ground officers that reduce relay time by a full 40 seconds.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Skywarden Scale Vest",
+                    "desc": "— Standard corps vest with a silver-thread chest stripe for 4th Army identification."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Aerie Open Helm",
+                    "desc": "— Open-face. Sera Voss's helm carries a silver cord — the most recently commissioned of the four Aerie-Captains, but Ren Dael rates the Ironwatch Aerie's ground coordination protocols as the best in the corps."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Ashwing Eagle Tack",
+                    "desc": "— Standard minimal tack. The Ironwatch birds are trained for low-altitude signal passes — closer to the ground line than any other Aerie, which improves officer-readable observation at cost of exposure."
                   }
                 ]
               },
@@ -5717,8 +6948,8 @@
                 "data-src": "own",
                 "name": "Stormriders",
                 "branch": "Flying",
-                "className": "Storm Elf · Aerial Cavalry",
-                "subtitle": "· Aurelia Vex · Lightning Assault · Open-Sky Doctrine",
+                "className": "War Griffin Riders · Storm Elf Aerial Corps",
+                "subtitle": "· Sword of the Sky · Aurelia Vex · Lightning Assault",
                 "srcPill": "🏰 Own",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
@@ -5726,32 +6957,81 @@
                 "army": "Pillar — Aurelia Vex",
                 "image": "unitImages/stormriders.png",
                 "imageAlt": "",
-                "notes": "Aurelia Vex's personal aerial cavalry — Storm Elves bred for altitude, speed, and atmospheric combat. Stormriders do not wait for conditions to be favourable; they manufacture them. Aurelia leads from Zephyros, an Asiatic Elder Storm Dragon several hundred years old. Storm-threaded riding suits allow sustained operation inside active weather systems — thunder, lightning, and wind are tactical tools, not hazards. Stormriders strike from altitude before ground units engage, disbanding enemy formations from above before the infantry arrives. Aurelia's doctrine: already moving before the problem is fully described.",
+                "notes": "Starhaven's aerial strike corps — Storm Elves riding War Griffins, called the Sword of the Sky. Each rider bonds with a single War Griffin; the pair trains together until the griffin responds to weight shift alone, no command needed at speed. Stormriders do not wait for favourable conditions — they manufacture them. They strike from altitude before ground units engage, disbanding enemy formations from above before infantry arrives. Aurelia Vex commands the corps from Zephyros — a legendary Asiatic Storm Dragon of several centuries, whose presence in the sky changes the weather in a 3-mile radius. Thunder, lightning, and wind are not hazards to the Stormriders. They are tactical tools. Aurelia's doctrine: already moving before the problem is fully described.",
                 "armor": [
                   {
                     "slot": "Body",
                     "name": "Storm-Threaded Riding Suit",
-                    "desc": "— Lightning-conductive weave insulated at joints. Allows operation inside active storm systems. Wind drag reduction seams for high-altitude flight."
+                    "desc": "— Lightning-conductive weave insulated at joints. Allows sustained operation inside active storm systems. Wind drag reduction seams for high-altitude combat flight."
                   },
                   {
                     "slot": "Helm",
                     "name": "Tempestian Helm",
-                    "desc": "— Open-face. Magnetised inner band — prevents disorientation inside storm cloud. Colour-coded cord for aerial identification."
+                    "desc": "— Open-face. Magnetised inner band prevents disorientation inside storm cloud. Colour-coded cord for aerial formation identification."
                   },
                   {
                     "slot": "Primary",
                     "name": "Storm Spear",
-                    "desc": "— Storm Elf-forged. Conducts atmospheric charge on impact. Used as a lance from altitude."
+                    "desc": "— Storm Elf-forged lance. Conducts atmospheric charge on impact. Used in diving lance charges from altitude — the Stormrider's primary kill method."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Electro-Blades",
-                    "desc": "— Paired short blades. Atmospheric charge discharged on contact — melee use at close quarters after dive."
+                    "desc": "— Paired short blades. Atmospheric charge discharged on contact — melee use at close quarters after the dive breaks into a ground engagement."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "War Griffin",
+                    "desc": "— Each rider's bonded War Griffin. Lion-eagle hybrid bred for aerial combat. Responds to rider weight shift at speed — no verbal command required mid-dive."
                   },
                   {
                     "slot": "Command",
-                    "name": "Zephyros",
-                    "desc": "— Aurelia's mount. Asiatic Elder Storm Dragon. Several hundred years old. The storm follows him."
+                    "name": "Zephyros — Legendary Asiatic Storm Dragon",
+                    "desc": "— Aurelia Vex's mount. Several centuries old. Legendary Asiatic Storm Dragon — his presence alters weather in a 3-mile radius. The storm does not follow Zephyros. Zephyros is the storm."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Aerial Bombardment · Skyhammer",
+            "cards": [
+              {
+                "id": "skyhammer",
+                "data-br": "Flying",
+                "data-src": "own",
+                "name": "Skyhammer",
+                "branch": "Flying",
+                "className": "Aerial Bombardment Platform ⚙️",
+                "subtitle": "· 12 Griffins · 24 Wyverns · Aurelia Vex · Strategic Strike",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Ninth Sky Corps Base — Vaelmark / Field Deployment",
+                "army": "Starhaven Command — Aurelia Vex Authorization",
+                "image": "unitImages/skyhammer.png",
+                "imageAlt": "Skyhammer",
+                "notes": "Aerial bombardment capability. 12 griffins and 24 wyverns assigned to the Skyhammer program — not the Ninth Sky Corps combat roster, but the dedicated ordinance delivery arm. Aurelia Vex authorizes deployment; the Skyhammer is not a reactive unit, it is a committed strike asset. Payload types: incendiary canisters, arcane disruption charges, and — authorized by Zareth Kull only — Void-null detonation devices for entity-dense formations. Wyvern riders carry the heavy ordinance; griffin riders are close escort and precision strike. The griffins respond faster and hold formation better in contested airspace; the wyverns can carry four times the payload. Skyhammer operates at altitude outside standard archer range and above most ground-based artillery. The only realistic counter is aerial interdiction — and Aurelia accounts for that.",
+                "armor": [
+                  {
+                    "slot": "Rider",
+                    "name": "Skyhammer Flight Plate",
+                    "desc": "— Medium plate modified for aerial harness. Streamlined pauldrons, no cape or pennant — nothing that creates drag or catches in the mount's wingbeat. Arcane-treated against high-altitude cold and wind shear."
+                  },
+                  {
+                    "slot": "Ordinance",
+                    "name": "Payload Harness System",
+                    "desc": "— Purpose-built drop harness for griffin and wyvern saddle mounts. Incendiary canisters (standard), arcane disruption charges (Vaelmark-produced), Void-null detonation devices (Zareth Kull authorization required). Manual release by rider on approach vector."
+                  },
+                  {
+                    "slot": "Mount — Griffin",
+                    "name": "Escort Griffin",
+                    "desc": "— 12 assigned. Faster, more maneuverable than wyverns. Close escort role and precision strike on point targets. Each griffin carries a single rider; payload capacity is secondary to speed."
+                  },
+                  {
+                    "slot": "Mount — Wyvern",
+                    "name": "Heavy-Load Wyvern",
+                    "desc": "— 24 assigned. Larger wingspan and body mass than griffin. Heavy ordinance carriers — 4× payload capacity. Slower and less maneuverable; the griffins exist partly to clear the airspace for them."
                   }
                 ]
               }
@@ -5889,12 +7169,85 @@
                   {
                     "slot": "Body",
                     "name": "Resonance-Threaded Plate",
-                    "desc": "— Standard plate with Soul Link resonance threads in underlayer. Network…"
+                    "desc": "— Standard plate with Soul Link resonance threads in underlayer. Network nodes are woven directly into the chest lining — the wearer is a relay point whether they know it or not."
                   },
                   {
                     "slot": "Robe",
                     "name": "Network Node Robe",
-                    "desc": "— 400 Resonance Mage Network personnel. Runed robes — node anchor points…"
+                    "desc": "— 400 Resonance Mage Network personnel. Runed robes — node anchor points embroidered at every joint. The robe is the node."
+                  }
+                ]
+              },
+              {
+                "id": "the-thread-runners",
+                "data-br": "Magic",
+                "data-src": "own",
+                "name": "The Thread-Runners",
+                "branch": "Magic",
+                "className": "Field Relay · Resonance Corps",
+                "subtitle": "· Mobile Node Relay · Soul Link Maintenance · Sara Venn",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Field Embedded — All Armies",
+                "army": "Pillar — Bob Vale · Resonance Corps",
+                "image": "unitImages/the-thread-runners.png",
+                "imageAlt": "",
+                "notes": "The mobile relay arm of the Resonance Corps, led by Sara Venn. The Thread-Runners are the mages who physically move through the battle line to maintain the Soul Link network under active field conditions — when nodes go dark from combat disruption, death, or magical interference, a Thread-Runner closes the gap. They move constantly, never holding position for longer than ninety seconds. Sara Venn has never lost a network segment in combat.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Thread-Runner Field Robe",
+                    "desc": "— Lighter than the standard Network Node Robe — built for rapid movement across broken terrain while maintaining resonance alignment. Runed hem anchors the Soul Link thread during transit."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Resonance Transit Cap",
+                    "desc": "— Minimal head covering with a runed inner band — keeps the Thread-Runner's own node alignment stable while running. Open face; situational awareness is the priority."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Relay Stride Boots",
+                    "desc": "— Light, reinforced for hard ground and rubble. The Thread-Runner is always moving. The boots are replaced every three campaigns."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Node Repair Kit",
+                    "desc": "— Spare resonance thread, anchor rune stamps, a contact crystal for direct line to Bob Vale, and a 30-second emergency node bypass kit. Sara Venn designed the kit herself."
+                  }
+                ]
+              },
+              {
+                "id": "vales-voice",
+                "data-br": "Magic",
+                "data-src": "own",
+                "name": "Vale's Voice",
+                "branch": "Magic",
+                "className": "Command Link · Resonance Corps",
+                "subtitle": "· Bob Vale's Personal Relay · Direct Command Channel · 4",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Command Proximity — Bob Vale",
+                "army": "Pillar — Bob Vale · Resonance Corps",
+                "image": "unitImages/vales-voice.png",
+                "imageAlt": "",
+                "notes": "Bob Vale's four personal relay officers — the direct command channel between Vale and every field commander in the alliance. Each of the four is permanently attuned to a specific Field Army commander; when Vale issues an order, it arrives in the commander's mind within two seconds regardless of distance. Vale's Voice officers do not speak to anyone except Vale and their assigned commander. They are the quietest four people in the alliance and the most important.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Command-Thread Robe",
+                    "desc": "— Deep navy robe with gold resonance threading — the only garment in the Resonance Corps with a visible rank distinction. The gold thread marks a permanent attunement bond; it cannot be reused for another wearer."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Vale's Voice Circlet",
+                    "desc": "— A runed silver circlet that maintains the permanent attunement link. Cannot be removed in the field without breaking the bond. Each of the four circlets was personally attuned by Bob Vale."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Attunement Anchor Crystal",
+                    "desc": "— A personal resonance crystal carried at all times, paired to both Bob Vale and the assigned Field Army commander. Glows faintly when the command channel is active. Goes dark only when Vale is unconscious or dead."
                   }
                 ]
               },
@@ -5910,7 +7263,7 @@
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "Embedded — 450 per Field Army",
-                "army": "New Unit — Cassia Vayne",
+                "army": "Starhaven Specialized — Cassia Vayne · Runebreakers",
                 "image": "unitImages/runebreakers-card.png",
                 "imageAlt": "",
                 "notes": "Cassia Vayne's counter-magic specialists — 450 embedded per Field Army. The amber visor identifies a mage preparing to cast before the spell fires; the Silence Bolt interrupts it with a 5-yard Null-burst on impact. Null-Stone fragments at every plate joint suppress magic within a 3-yard radius. The counter to every magical threat the alliance faces.",
@@ -5918,27 +7271,115 @@
                   {
                     "slot": "Body",
                     "name": "Runebreaker Suppression Plate",
-                    "desc": "— Null-Stone fragments at every joint. 3-yard radius of reduced magical …"
+                    "desc": "— Null-Stone fragments at every joint. 3-yard radius of reduced magical activity around the wearer. Not a ward — a suppression field."
                   },
                   {
                     "slot": "Helm",
                     "name": "Rune-Visor Helm",
-                    "desc": "— Amber-tinted visor — mage preparing to cast glows amber. Full spell re…"
+                    "desc": "— Amber-tinted visor — a mage preparing to cast glows amber through it. Full spell recognition before the cast completes."
                   },
                   {
                     "slot": "Cloak",
                     "name": "Null-Weave Field Cloak",
-                    "desc": "— Powdered Null-Stone through the weave. Disrupts magical tracking on th…"
+                    "desc": "— Powdered Null-Stone through the weave. Disrupts magical tracking on the wearer — locator spells and divination fail against it."
                   },
                   {
                     "slot": "Weapon",
                     "name": "Runebreaker Short Sword",
-                    "desc": "— Null-Stone edge — magical defenses collapse on contact rather than def…"
+                    "desc": "— Null-Stone edge — magical defenses collapse on contact rather than deflecting the blade."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Silence Bolt Crossbow",
-                    "desc": "— 5-yard Null-burst on impact. Interrupts casting. Prevents re-cast for …"
+                    "desc": "— 5-yard Null-burst on impact. Interrupts casting. Prevents re-cast for 8–12 seconds depending on the caster's power level."
+                  }
+                ]
+              },
+              {
+                "id": "the-null-hunters",
+                "data-br": "Magic",
+                "data-src": "new",
+                "name": "The Null-Hunters",
+                "branch": "Magic",
+                "className": "Anti-Magic Specialist · Runebreakers",
+                "subtitle": "· Active Mage Hunt · Silence Bolt Priority · 1,200",
+                "srcPill": "🆕 New",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Embedded — Active Pursuit · All Field Armies",
+                "army": "Starhaven Specialized — Cassia Vayne · Runebreakers",
+                "image": "unitImages/the-null-hunters.png",
+                "imageAlt": "",
+                "notes": "The 1,200-strong active hunting arm of the Runebreakers — the soldiers who move toward the magical threat rather than holding position against it. When the amber visor lights up, The Null-Hunters close the distance and put a Silence Bolt through the caster before the cast completes. They do not wait for the threat to come to them. Cassia Vayne trains them on a single doctrine: identify, close, silence. Everything else is a distraction.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Runebreaker Suppression Plate",
+                    "desc": "— Standard Runebreaker plate — Null-Stone joint fragments, 3-yard suppression field. The Null-Hunters' plate is slightly lighter at the legs — pursuit movement requires speed."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Rune-Visor Helm",
+                    "desc": "— Standard amber visor. The Null-Hunters' visors are calibrated to a higher sensitivity than the Formation Guard — they are designed to read a mage at greater range, buying more time to close."
+                  },
+                  {
+                    "slot": "Cloak",
+                    "name": "Null-Weave Field Cloak",
+                    "desc": "— Standard Null-Stone weave. The Null-Hunters wear it with the hood raised during approach — magical tracking suppression is more important during the close than during the hold."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Silence Bolt Crossbow",
+                    "desc": "— The Null-Hunters carry the crossbow as their primary weapon, not secondary. Closing to melee is a failure state — they should have silenced the caster at range."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Runebreaker Short Sword",
+                    "desc": "— Null-Stone edge. Drawn when the crossbow bolt doesn't stop the cast — close-quarters suppression of last resort."
+                  }
+                ]
+              },
+              {
+                "id": "the-rune-shield-guard",
+                "data-br": "Magic",
+                "data-src": "new",
+                "name": "The Rune-Shield Guard",
+                "branch": "Magic",
+                "className": "Anti-Magic Specialist · Runebreakers",
+                "subtitle": "· Formation Protection · Null-Wall · 400",
+                "srcPill": "🆕 New",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Embedded — Formation Perimeter · All Field Armies",
+                "army": "Starhaven Specialized — Cassia Vayne · Runebreakers",
+                "image": "unitImages/the-rune-shield-guard.png",
+                "imageAlt": "",
+                "notes": "The 400-strong defensive element of the Runebreakers — their job is to hold the magical perimeter around the allied formation while The Null-Hunters pursue active threats. The Rune-Shield Guard does not move toward the caster. They stand between the caster's spell and the soldiers it is aimed at. Their overlapping Null-Stone suppression fields create a moving ward wall that reduces incoming magical damage across the entire formation they protect.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Runebreaker Suppression Plate",
+                    "desc": "— Standard Runebreaker plate with an additional Null-Stone plate layer at the chest and shield arm — the Rune-Shield Guard takes direct magical impacts that The Null-Hunters redirect."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Rune-Visor Helm",
+                    "desc": "— Standard amber visor. The Rune-Shield Guard's visors are calibrated to identify area-effect spells in formation — they are watching for the wide cast, not the targeted kill."
+                  },
+                  {
+                    "slot": "Cloak",
+                    "name": "Null-Weave Field Cloak",
+                    "desc": "— Standard Null-Stone weave, worn fully extended. The cloak is part of the overlapping suppression wall — each guard's cloak adds 3 yards of coverage to the adjacent guard's field."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Null-Shield",
+                    "desc": "— A large rectangular shield with Null-Stone fragments embedded across its face. When held in formation, it extends the suppression field forward by 2 yards. Not designed for melee blocking — designed to absorb magical impact."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Runebreaker Short Sword",
+                    "desc": "— Null-Stone edge. The Rune-Shield Guard draws it only when the formation breaks and melee is unavoidable."
                   }
                 ]
               },
@@ -6272,7 +7713,7 @@
                 "army": "New Unit — Sela Ironbone",
                 "image": "unitImages/ironpack-c.png",
                 "imageAlt": "",
-                "notes": "Sela Ironbone's handler-hound pairs — 100 per Field Army. Three hound types: Ashound (tracking and scout), Ironjaw (combat engagement — chest and neck plate only, sprint speed unaffected), Nighthound (dark operations). Seven-frequency whistle-channel in the handler's helm operates below human hearing; the hound responds, the enemy does not know a command was given.",
+                "notes": "Sela Ironbone's handler-hound pairs — 100 per Field Army. Three hound types: Ashound (tracking and scout), SteelJaw (combat engagement — chest and neck plate only, sprint speed unaffected), Nighthound (dark operations). Seven-frequency whistle-channel in the handler's helm operates below human hearing; the hound responds, the enemy does not know a command was given.",
                 "armor": [
                   {
                     "slot": "Handler",
@@ -6533,7 +7974,7 @@
                 "armorBadge": "Crew",
                 "armorClass": "armor-badge a-na",
                 "location": "Distributed — 6 Batteries per Field Army",
-                "army": "New Unit — Dorn Ashvane",
+                "army": "Starhaven Field Command — Dorn Ashvane · 6 Batteries Embedded per Field Army",
                 "image": "unitImages/iron-talon.png",
                 "imageAlt": "",
                 "notes": "Dorn Ashvane's mobile anti-aerial batteries — six per Field Army. The Mk.III Swivel Ballista has 360° horizontal and 15°–85° elevation coverage, purpose-built for aerial targets. Three bolt types: Standard with tracking rune for course-correction, Screamer bolts that induce panic in untrained mounts, and Chain bolts targeting wing membranes to sever controlled flight.",
@@ -6606,7 +8047,7 @@
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Ashfield Hub / Fortgehaven",
-                "army": "New Unit — Senn Aldric",
+                "army": "Starhaven Field Command — Senn Aldric · Multi-Front Deployment · All Field Armies",
                 "image": "unitImages/iron-road.png",
                 "imageAlt": "",
                 "notes": "Senn Aldric's multi-front logistics corps — 600 wagons operating from Ashfield Hub and Fortgehaven. The field forge capability distinguishes the Iron Road from standard supply columns: armaments and equipment are repaired and manufactured in the field, not just transported from fixed depots. 1,500 Supply Guards are the combat-rated escort distinguishing logistics from non-combatant personnel.",
@@ -6669,6 +8110,215 @@
                     "slot": "Draft",
                     "name": "Stone Aurochs",
                     "desc": "— Two per wagon. Low-slung mountain draft beasts bred for highland hauling. Body mass sufficient to anchor a wagon against cavalry impact — the charge stops the horse, not the aurochs. Yoked in tandem; the inner yoke transfers chain tension to the beast's chest rather than the neck during locked formation stress."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Siege Engines · Heavy War Machines",
+            "cards": [
+              {
+                "id": "ironveil-trebuchet",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Ironveil Trebuchet Battery",
+                "branch": "Artillery",
+                "className": "Siege Artillery · Long-Range Bombardment",
+                "subtitle": "· 18 Trebuchets · Aldren Croft · 420-Yard Range",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Siege Train — Field Deployable",
+                "army": "Starhaven Siege Command — Aldren Croft",
+                "image": "unitImages/ironveil-trebuchet.png",
+                "imageAlt": "Ironveil Trebuchet Battery",
+                "notes": "18 trebuchet platforms under Siege Engineer Aldren Croft. Standard payload: 280-pound iron-cased projectile with a practical range of 420 yards at optimal elevation. Assembly time from siege train to firing position: 22 minutes per unit. Croft has drilled this to 19 minutes on flat terrain with no wind. Ironveil is the longest-reach ground siege asset in Starhaven's arsenal — it operates at ranges that keep crews entirely outside standard crossbow and short-range ballista return fire. Payload variants: standard iron shot (structure breach), incendiary bundle (deny-and-burn), and arcane disruption round (Vaelmark-produced, suppresses magical wards on fortress walls for approximately 4 minutes per hit). The incendiary bundle is the most commonly requisitioned variant. Croft prefers the disruption round.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Siege Engineer Plate",
+                    "desc": "— Medium plate with padded underlayer. The trebuchet arm generates significant wind and noise on release; crew plate has reinforced collar and ear guards standard."
+                  },
+                  {
+                    "slot": "Platform",
+                    "name": "Ironveil Frame",
+                    "desc": "— Counterweight trebuchet, Cain Drakhar redesigned frame Year 1044. Iron reinforcement at pivot and counterweight housing. Disassembles into 6 sections for siege train transport; 22-minute assembly standard, 19 minutes for Croft's trained crews."
+                  },
+                  {
+                    "slot": "Payload",
+                    "name": "Tri-Variant Ammunition",
+                    "desc": "— Standard iron shot (280lb, structure breach), incendiary bundle (deny-and-burn), arcane disruption round (Vaelmark-produced — suppresses magical wards for ~4 minutes per impact, limited stock)."
+                  }
+                ]
+              },
+              {
+                "id": "rampart-towers",
+                "data-br": "Engineering",
+                "data-src": "own",
+                "name": "Rampart — Siege Tower Division",
+                "branch": "Engineering",
+                "className": "Siege Engineering · Tower Assault",
+                "subtitle": "· 12 Towers · Brix Holt · 100 Soldiers Each · 6-Second Bridge",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Siege Train — Field Deployable",
+                "army": "Starhaven Siege Command — Brix Holt",
+                "image": "unitImages/rampart-towers.png",
+                "imageAlt": "Rampart Siege Tower Division",
+                "notes": "12 siege towers under Tower-Marshal Brix Holt. Each tower stands 60 feet — tall enough to crest a standard fortress wall with 4 feet of clearance. Capacity: 100 soldiers per tower, staged across 5 internal decks for controlled deployment. The drop-bridge mechanism at the top deck deploys in 6 seconds from the moment the tower contacts the wall — the soldiers on deck 5 are through the gap before most defenders realize the contact happened. Brix Holt designed the bridge mechanism himself after watching two previous towers deploy too slowly during the Ashen Passage campaign. The towers roll on iron-rimmed wooden wheels with a triple-axle front assembly; the rolling crew is separate from the assault soldiers and withdraws once the tower is committed. Each tower is assigned a dedicated Apothecary Corps team that enters on deck 2 immediately after the first assault wave.",
+                "armor": [
+                  {
+                    "slot": "Assault Crew",
+                    "name": "Tower Assault Plate",
+                    "desc": "— Heavy plate. Soldiers in Rampart towers take the first contact on fortress walls — they are the first through the bridge gap. The armor reflects that."
+                  },
+                  {
+                    "slot": "Structure",
+                    "name": "60-Foot Iron-Reinforced Tower",
+                    "desc": "— Timber frame with iron plate exterior on the facing side. Interior decks are timber — lighter than iron decking and faster to rebuild if a tower is lost. 5 internal decks, 20 soldiers per deck."
+                  },
+                  {
+                    "slot": "Mechanism",
+                    "name": "Brix Drop-Bridge System",
+                    "desc": "— Spring-loaded drop bridge, top deck. 6-second deployment from contact to full extension. Designed by Tower-Marshal Brix Holt after the Ashen Passage delay incident. The spring loading replaced a winch mechanism."
+                  }
+                ]
+              },
+              {
+                "id": "groundbreaker",
+                "data-br": "Engineering",
+                "data-src": "own",
+                "name": "Groundbreaker — Tunnel Assault Corps",
+                "branch": "Engineering",
+                "className": "Siege Engineering · Subsurface Assault",
+                "subtitle": "· 800 Sappers · 200 Engineers · Veld Ashe · 72hr Foundation Breach",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Siege Train — Field Deployable",
+                "army": "Starhaven Siege Command — Veld Ashe",
+                "image": "unitImages/groundbreaker.png",
+                "imageAlt": "Groundbreaker Tunnel Assault Corps",
+                "notes": "800 combat sappers and 200 siege engineers under Tunnel-Captain Veld Ashe. Groundbreaker's purpose is subsurface approach and foundation breach — collapsing a fortress wall section from underneath. The standard Groundbreaker timeline is 72 hours from initial dig to controlled collapse of a 30-foot wall section. Faster with soft ground. Slower with rock. Veld Ashe has collapsed 7 fortifications in his career. Six of them fell in under 80 hours. The seventh fell in 41 hours after Ashe redirected to a previously-unidentified drainage culvert. The 800 sappers rotate in 6-hour shifts; the 200 engineers manage the structural support system that keeps the tunnel intact until the collapse is ready. Cain Drakhar designed the tunnel-support architecture used by Groundbreaker. Veld Ashe modified it twice without telling him. They have an ongoing disagreement about this that both consider friendly.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Groundbreaker Brace-Plate",
+                    "desc": "— Medium plate reinforced at shoulder and knee for crawl-work and low-ceiling environments. No full helm — replaced with a close-fitting iron cap with integrated forehead lamp bracket."
+                  },
+                  {
+                    "slot": "Tool",
+                    "name": "Short-Head Mining Mattock",
+                    "desc": "— Primary digging tool. Short handle for tunnel-width use. The mattock is also the sapper's close-quarters weapon if the tunnel is contested."
+                  },
+                  {
+                    "slot": "Structure",
+                    "name": "Cain Tunnel-Support Architecture",
+                    "desc": "— Prefabricated wooden support frames, assembled underground at 6-foot intervals. Cain Drakhar's design; Veld Ashe has modified it twice. The modifications have held. The argument about them has not resolved."
+                  }
+                ]
+              },
+              {
+                "id": "ironjaw-rams",
+                "data-br": "Engineering",
+                "data-src": "own",
+                "name": "Ramhead — Battering Ram Division",
+                "branch": "Engineering",
+                "className": "Siege Engineering · Gate Breach",
+                "subtitle": "· 6 Rams · Sora Keld · Ironteeth / Stonefall / Deepbreach / The Weight / Endurance / Final Toll",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Siege Train — Field Deployable",
+                "army": "Starhaven Siege Command — Sora Keld",
+                "image": "unitImages/ironjaw-rams.png",
+                "imageAlt": "Ramhead Battering Ram Division",
+                "notes": "6 battering rams under Ram-Captain Sora Keld. The rams are named — as all good tools should be, in Keld's view. Ironteeth (the lead ram, first contact), Stonefall (follow-up if Ironteeth doesn't finish the job), Deepbreach (because most gates give in by the third), The Weight (the heavy variant, built for reinforced and double-gated walls), Endurance (for the long gates — the ones that take time), and Final Toll (deployed when the question of whether the gate falls has already been answered). Each ram is iron-capped, suspended in a timber frame on chains, swung by a crew of 40 under a protective overhead roof. Keld's doctrine: the gate is never as strong as whoever built it believed. She has not been wrong yet. The roof structure doubles as a shield against dropping attacks from above.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Ram Guard Plate",
+                    "desc": "— Heavy plate. The 40-person swing crew operates in close range of a gate under active defense — they receive crossbow fire, oil, and debris. The roof provides cover overhead; the plate covers everything else."
+                  },
+                  {
+                    "slot": "Structure",
+                    "name": "Protective Roof Frame",
+                    "desc": "— Timber frame with iron plate overlay over the swing crew area. Angled to deflect poured oil away from the crew and the ram. Catches fire — Keld's solution is to move fast and break the gate before it gets hot."
+                  },
+                  {
+                    "slot": "Ram",
+                    "name": "Iron-Capped Swing Ram",
+                    "desc": "— Heavy timber ram, iron-capped at the striking face. Suspended by chains within the frame. Crew swings in unison — Keld keeps a drumbeat for timing. The names are painted on the iron cap in white: Ironteeth, Stonefall, Deepbreach, The Weight, Endurance, Final Toll. All six legible."
+                  }
+                ]
+              },
+              {
+                "id": "bastion-fang",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Bastion Fang Division",
+                "branch": "Artillery",
+                "className": "Fixed Fortification Artillery · Anti-Siege Defense",
+                "subtitle": "· 180 Ballistae · Sera Drenn · Fortress Defense Network",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Ironpass Citadel · Dawncliff · Frosthold · Starhold Walls",
+                "army": "Starhaven Fortress Command — Sera Drenn",
+                "image": "unitImages/bastion-fang.png",
+                "imageAlt": "Bastion Fang Division",
+                "notes": "180 fixed-position ballistae distributed across Starhaven's fortress network, under Ballista-Commander Sera Drenn. Unlike the Iron Talon Corps (mobile ballista, field use), the Bastion Fang Division exists only in fixed emplacements — built into fortress walls, tower parapets, and gate-house mounts. They do not move. They do not need to. Sera Drenn's assignment philosophy: every siege approach that exists must have ballista coverage. If it doesn't, build the emplacement. Ironpass Citadel holds 72 of the 180; the remaining 108 are distributed across Dawncliff, Frosthold, and the inner walls of Starhold. Standard bolts and armor-piercing bolt variants. Anti-aerial mounts are elevated 15° above standard — Drenn added that specification after the first Void entity aerial incidents.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Fortification Crew Plate",
+                    "desc": "— Medium plate. Emplacement crews are stationary — they do not maneuver, but they operate in high-priority enemy fire zones. The plate accounts for sustained incoming fire during a siege."
+                  },
+                  {
+                    "slot": "Platform",
+                    "name": "Fixed Emplacement Mount",
+                    "desc": "— Iron-framed fixed mount built into fortress wall or parapet. 180° traverse. Elevated 15° above horizontal on anti-aerial mounts (Drenn specification). Cannot be repositioned; must be destroyed to remove from play."
+                  },
+                  {
+                    "slot": "Ammunition",
+                    "name": "Standard & Armor-Piercing Bolt",
+                    "desc": "— Standard iron bolt (range: 380 yards), armor-piercing variant (range: 290 yards, designed for heavy armored assault columns and large creature targets). Fire bolt available at Ironpass and Dawncliff."
+                  }
+                ]
+              },
+              {
+                "id": "void-siege-battery",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Void Siege Battery",
+                "branch": "Artillery",
+                "className": "Classified · Void-Class Artillery",
+                "subtitle": "· 8 Platforms · ~40 Operators · Dual Authorization · S-Restricted",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Legendary",
+                "armorClass": "armor-badge a-leg",
+                "location": "Classified",
+                "army": "Joint Authorization — Zareth Kull · Elysia Nocturne",
+                "image": "unitImages/void-siege-battery.png",
+                "imageAlt": "Void Siege Battery",
+                "notes": "8 platforms. Approximately 40 operators. Deployment requires joint written authorization from both Zareth Kull (Pillar — Void Mastery) and Elysia Nocturne (Pillar — The Veil). No other authorization pathway exists. S-level classification — the full technical specification is held in three copies: one with Zareth Kull, one with Elysia Nocturne, one in the sealed vault at Ashenveil command. The Void Siege Battery fires a contained Void detonation into a target area — the effect is not fire, not concussion, not arcane disruption. Survivors of proximity events describe it as \"everything the wrong way.\" Documented use: twice in recorded Starhaven history, both in Year 1047 at the Ashenveil Containment Event. Cain Drakhar built the platforms. Zareth Kull designed the payload. Elysia Nocturne wrote the authorization protocol. The protocol is longer than the technical specification.",
+                "armor": [
+                  {
+                    "slot": "Operator",
+                    "name": "Void-Shielded Operating Plate",
+                    "desc": "— Classified specification. External appearance: full-coverage matte black plate with no insignia. Void-treatment confirmed. Material composition and enchantment schema not filed in standard registry."
+                  },
+                  {
+                    "slot": "Platform",
+                    "name": "Classified Platform",
+                    "desc": "— 8 units. Construction overseen by Cain Drakhar. Platform dimensions classified. Transport method classified. Deployment time classified."
+                  },
+                  {
+                    "slot": "Payload",
+                    "name": "Void Detonation Charge — Zareth Kull Design",
+                    "desc": "— Contained Void detonation. Effect radius classified. Documented effect: survivors describe proximity experience as 'everything the wrong way.' Payload design by Zareth Kull. Authorization by Zareth Kull + Elysia Nocturne jointly. No exceptions documented."
                   }
                 ]
               }
@@ -6960,7 +8610,7 @@
         "branch": "⚙ Support · Mechanized",
         "subgroups": [
           {
-            "label": "Medical · Iron Legion",
+            "label": "Medical · Iron Legion Sub-Units",
             "cards": [
               {
                 "id": "apothecary",
@@ -6974,7 +8624,7 @@
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Embedded — All Field Armies",
-                "army": "Starhaven Support — Isolde Cren",
+                "army": "Starhaven Support — Isolde Cren · Embedded Across All Field Armies",
                 "image": "unitImages/apothecary.png",
                 "imageAlt": "",
                 "notes": "Isolde Cren's non-magical field medical corps — the surgical and disease prevention arm distinct from the Ashen Guard's healing magic. Embedded across all Field Armies. Heavy canvas waxed against blood and weather; no plate because mobility matters more than protection when moving through a battle's aftermath. Works in parallel with Ashen Guard — mundane medicine covers what magic cannot.",
@@ -6992,36 +8642,75 @@
                 ]
               },
               {
-                "id": "iron-legion-c",
+                "id": "iron-tide",
                 "data-br": "Support",
                 "data-src": "own",
-                "name": "Iron Legion",
+                "name": "Iron Tide",
                 "branch": "Support",
-                "className": "Mechanized ⚙️",
-                "subtitle": "· Iron Tide Tanks · Augmented Infantry",
+                "className": "Mechanized Tank Division ⚙️",
+                "subtitle": "· 280 Tanks · Cain Drakhar · Ironspine Command",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Legendary",
+                "armorClass": "armor-badge a-leg",
+                "location": "Forgehaven Tidegate Arsenal",
+                "army": "Pillar — Cain Drakhar · Iron Legion",
+                "image": "unitImages/iron-tide.png",
+                "imageAlt": "Iron Tide",
+                "notes": "280 mechanized combat platforms — the Iron Tide. Cain Drakhar's personal command vehicle is Ironspine, the first tank ever completed, redesigned three times and still running. Sloped frontal plating architecture was overhauled in Year 1048 to improve deflection against magical artillery — Cain spent four months on the geometry alone after losing a tank to a parabolic arcane round at the Ashen Passage. Each platform is built at Forgehaven Tidegate Arsenal. No other nation in the known world has produced a single functional armored platform to date. The Iron Tide does not move fast — it moves inevitably.",
+                "armor": [
+                  {
+                    "slot": "Hull",
+                    "name": "Sloped Iron Plate — Post-1048 Redesign",
+                    "desc": "— Layered iron with internal void-treated lining. Sloped at 38° frontal angle — Cain's calculation for maximum deflection against parabolic arcane rounds. Redesigned after Year 1048 Ashen Passage engagement."
+                  },
+                  {
+                    "slot": "Primary Weapon",
+                    "name": "Arcane Bore Cannon",
+                    "desc": "— Fixed forward-mount. Fires a condensed arcane bolt at close-medium range with enough force to breach standard fortress wall sections. Reload time: 22 seconds. Operated by a 2-person internal crew."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Ironspine Command Variant",
+                    "desc": "— Cain's personal platform. Modified for command communication with extended rear antenna array and a secondary void-null emitter. Heavier than standard — compensated by upgraded motive assembly."
+                  },
+                  {
+                    "slot": "Crew",
+                    "name": "3-Person Crew Standard",
+                    "desc": "— Driver, gunner, commander. Cain's Iron Tide doctrine: the crew does not exit the platform while in a combat zone unless the platform is destroyed or the mission is complete."
+                  }
+                ]
+              },
+              {
+                "id": "ironframe-corps",
+                "data-br": "Support",
+                "data-src": "own",
+                "name": "Ironframe Corps",
+                "branch": "Support",
+                "className": "Ironframe Corps · Iron Legion ⚙️",
+                "subtitle": "· 600 Soldiers · Steel-Fused Frames · Cain Design",
                 "srcPill": "🏰 Own",
                 "armorBadge": "V.Heavy",
                 "armorClass": "armor-badge a-vh",
-                "location": "Forgehaven Tidegate Arsenal",
-                "army": "Pillar — Cain Drakhar",
-                "image": "unitImages/iron-legion-c.png",
-                "imageAlt": "",
-                "notes": "Cain Drakhar's mechanized Pillar — based at Forgehaven Tidegate Arsenal. 600 Augmented Battalion soldiers with steel fused directly into their frames; no two sets are identical — Cain designed each augmentation personally. 280 Iron Tide Tanks with sloped frontal plating redesigned in Year 1048 for improved deflection. The most technologically advanced force in the alliance.",
+                "location": "Forgehaven Tidegate Arsenal / Field Deployment",
+                "army": "Pillar — Cain Drakhar · Iron Legion",
+                "image": "unitImages/ironframe-corps.png",
+                "imageAlt": "Ironframe Corps",
+                "notes": "600 soldiers with steel fused directly into their physical frames — the Ironframe Corps. Every augmentation was designed by Cain Drakhar personally; no two are identical. Some soldiers have full arm replacements. Some have spinal reinforcement and load-bearing hip struts. Some have partial facial plating following combat injury. The augmentation process is voluntary, takes 4–8 weeks of surgical and recovery time, and is permanent. Cain reviews every candidate's proposed augmentation himself before approval. The Ironframe Corps is the only military force in the world where the commanding officer has personally modified every soldier in it. Their pain tolerance is clinically reclassified.",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Iron Legion Plate",
-                    "desc": "— Cain-forged black iron plate. Heavier than standard, stronger than any…"
+                    "name": "Iron Legion Integrated Plate",
+                    "desc": "— Cain-forged black iron plate worn over augmentation. The plate is fitted to the augmented frame, not the body — in several cases the distinction no longer exists. No two sets are identical."
                   },
                   {
-                    "slot": "Aug",
-                    "name": "Integrated Augmentation",
-                    "desc": "— 600 Augmented Battalion — steel fused into frame. No two sets identica…"
+                    "slot": "Augmentation",
+                    "name": "Frame Integration — Cain-Designed",
+                    "desc": "— Steel fused to skeletal and muscular structure under surgical process. Augmentations vary: arm/leg replacement, spinal reinforcement, hip struts, partial facial plating. Each designed by Cain Drakhar personally for the individual soldier."
                   },
                   {
-                    "slot": "Tank",
-                    "name": "Iron Tide Tank Shell",
-                    "desc": "— 280 mechanized platforms. Sloped frontal plating redesigned Year 1048 …"
+                    "slot": "Weapons",
+                    "name": "Oversized Combat Arms",
+                    "desc": "— Augmented Battalion soldiers carry weapons scaled to their modified frames — mauls, heavy-bore short-range arcane weaponry, or oversized bladed implements that standard infantry cannot lift. Weapon selection is individual, not unit-standard."
                   }
                 ]
               }
@@ -7092,6 +8781,79 @@
                     "slot": "Carried",
                     "name": "Slim Wrist Blade",
                     "desc": "— 14-inch, wrist-sheathed. Concealed under court sleeve."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Veil Watch · Elysia Nocturne",
+            "cards": [
+              {
+                "id": "veil-hunters",
+                "data-br": "Intelligence",
+                "data-src": "own",
+                "name": "Veil Hunters",
+                "branch": "Intelligence",
+                "className": "Void Response · Active Entity Hunt",
+                "subtitle": "· Shade Arren · Void-Hunter · Active Response Arm",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Ashenveil / Mobile Deployment",
+                "army": "Pillar — Elysia Nocturne · Veil Watch · Shade Arren Command",
+                "image": "unitImages/veil-hunters.png",
+                "imageAlt": "Veil Hunters",
+                "notes": "The active response arm of Veil Watch, led by Shade Arren (designation: Void-Hunter). Where Veil Seers detect and monitor, Veil Hunters move and close. They are mobilized the moment an entity breaches psionic quarantine or a S+ dungeon threshold is crossed. Arren does not wait for confirmation — his teams move on Mira Fael's first alert. Unit composition is classified, but field reports suggest cells of 4–6 per insertion. No cell has ever been confirmed killed in action. Elysia Nocturne authorizes deployment; Zareth Kull is notified as a courtesy, not a requirement. Arren has declined every offer of a permanent command post.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Void-Treated Field Plate",
+                    "desc": "— Medium plate treated against Void corruption. Matte black, no insignia. Absorption-warded at collar and wrist seams — the most common Void contact points."
+                  },
+                  {
+                    "slot": "Weapons",
+                    "name": "Void-Null Blades",
+                    "desc": "— Short paired blades etched with Void-null script. Designed by Zareth Kull's Seal Order. Disrupt Void entity cohesion on contact."
+                  },
+                  {
+                    "slot": "Utility",
+                    "name": "Psionic Anchor Spike",
+                    "desc": "— Thrown anchor spike — pins a Void entity's spatial signature for 8–12 seconds. Allows Veil Seer remote lock from distance. Each hunter carries three."
+                  }
+                ]
+              },
+              {
+                "id": "veil-seers",
+                "data-br": "Intelligence",
+                "data-src": "own",
+                "name": "Veil Seers",
+                "branch": "Intelligence",
+                "className": "Psionic Operations · Void Detection Array",
+                "subtitle": "· Mira Fael · Psion-Lead · Reality Monitoring",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Veil Watch Stations / Remote Arrays",
+                "army": "Pillar — Elysia Nocturne · Veil Watch · Mira Fael Command",
+                "image": "unitImages/veil-seers.png",
+                "imageAlt": "Veil Seers",
+                "notes": "The psionic detection and reality-monitoring arm of Veil Watch, led by Mira Fael (designation: Psion-Lead). Veil Seers do not engage — they perceive, identify, and relay. Each Seer maintains a permanent psionic thread into their assigned monitoring zone; Mira Fael holds simultaneous threads across all active zones. When an S+ dungeon anomaly registers or Void entity activity is detected, the Seer's alert reaches Shade Arren's teams before the entity has fully materialized. Their accuracy rate is classified. Mira Fael is one of only four known individuals who can perceive Void entity signature without direct visual contact — the other three are Elysia Nocturne, Zareth Kull, and one individual whose name does not appear in any Starhaven filing.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Psionic Focus Robes",
+                    "desc": "— Light layered robes threaded with resonance filaments. Not armor — attunement gear. Reduces psionic interference from ambient Void presence. Mira Fael's design."
+                  },
+                  {
+                    "slot": "Focus",
+                    "name": "Seer Crystal Array",
+                    "desc": "— Personal crystal cluster carried at the sternum. Amplifies range and precision of psionic monitoring threads. Shatters if the Seer's concentration is broken violently — considered a casualty indicator."
+                  },
+                  {
+                    "slot": "Defense",
+                    "name": "Psion Ward Bracer",
+                    "desc": "— Single bracer, dominant hand. Emits a psionic burst on contact that disrupts Void entity targeting. Emergency use only — the burst also drops all monitoring threads simultaneously."
                   }
                 ]
               }
@@ -7177,6 +8939,12 @@
       "inf": "bh-inf", "ran": "bh-ran", "cav": "bh-cav", "pol": "bh-pol", "bst": "bh-bst", "fly": "bh-fly", "mag": "bh-mag", "rel": "bh-rel", "ste": "bh-ste", "eng": "bh-eng", "art": "bh-art", "nav": "bh-nav", "und": "bh-und", "cmd": "bh-cmd", "spt": "bh-spt", "int": "bh-int", "anm": "bh-anm"
     };
     const SRC_PILL_CLASSES = { own: "sp-own", ally: "sp-ally", new: "sp-new", gar: "sp-gar", merc: "sp-merc" };
+    const BRANCH_COLORS = {
+      "Infantry": "#C86060", "Ranged": "#60C060", "Cavalry": "#6090D0", "Polearm": "#C0A050",
+      "Beast Cavalry": "#D08040", "Flying": "#8080D8", "Magic": "#A060D8", "Religious": "#D0C050",
+      "Stealth": "#50C0C0", "Engineering": "#A0A050", "Artillery": "#C07040", "Naval": "#40A0C0",
+      "Undead": "#8050C0", "Command": "#C0C050", "Support": "#50A0A0", "Intelligence": "#9060C0", "Animals": "#70B840"
+    };
 
     function escapeHtml(text) {
       return String(text || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -7187,6 +8955,7 @@
       const placeholder = `<div class="placeholder" style="${card.image ? 'display:none' : 'display:flex'}"><div class="placeholder-icon">🛡</div><div class="placeholder-ratio">3:4</div></div>`;
       const badgeClass = SRC_PILL_CLASSES[card['data-src']] || 'sp-own';
       const branchTagClass = BRANCH_TAG_CLASSES[card['data-br']] || '';
+      const borderColor = BRANCH_COLORS[card['data-br']] || '#383530';
       const armorRows = (card.armor || []).map(a => `
          <div class="armor-row">
           <span class="a-slot">${escapeHtml(a.slot)}</span>
@@ -7197,8 +8966,10 @@
         <div class="card-notes">
          <span class="notes-label">Notes</span>
          <span class="notes-text">${escapeHtml(card.notes)}</span>
+         <span class="notes-see-more">see more ↗</span>
         </div>` : '';
-      return `      <div class="unit-card" data-br="${escapeHtml(card['data-br'])}" data-src="${escapeHtml(card['data-src'])}" id="${escapeHtml(card.id)}">
+      const searchText = [card.name, card.className, card.subtitle, card.army, card.location, card['data-br'], card.branch, card.notes || '', (card.armor || []).map(a => a.name).join(' ')].join(' ').toLowerCase();
+      return `      <div class="unit-card" data-br="${escapeHtml(card['data-br'])}" data-src="${escapeHtml(card['data-src'])}" data-search="${escapeHtml(searchText)}" id="${escapeHtml(card.id)}" style="border-left:3px solid ${borderColor}">
        <div class="card-img">
         ${image}${placeholder}
        </div>
@@ -7249,23 +9020,43 @@
   </script>
   <script>
     // Branch filter
-    let activeBr = "all", activeSf = "all";
+    let activeBr = "all", activeSf = "all", activeSearch = "";
 
     function applyFilters() {
-      document.querySelectorAll(".unit-card").forEach(c => {
-        const src = c.dataset.src;
-        const br = c.dataset.br;
-        const brOk = activeBr === "all" || br === activeBr;
-        const sfOk = activeSf === "all" || src === activeSf;
-        c.classList.toggle("hidden", !(brOk && sfOk));
+      const q = activeSearch.trim().toLowerCase();
+      let visibleCount = 0;
+      const allCards = document.querySelectorAll(".unit-card");
+
+      allCards.forEach(c => {
+        const brOk = activeBr === "all" || c.dataset.br === activeBr;
+        const sfOk = activeSf === "all" || c.dataset.src === activeSf;
+        const sqOk = !q || (c.dataset.search || "").includes(q);
+        const visible = brOk && sfOk && sqOk;
+        c.classList.toggle("hidden", !visible);
+        if (visible) visibleCount++;
       });
-      // Show/hide sections
+
+      // Hide sub-groups with no visible cards
+      document.querySelectorAll(".sub-group").forEach(sg => {
+        sg.style.display = sg.querySelector(".unit-card:not(.hidden)") ? "" : "none";
+      });
+
+      // Hide branch-sections with no visible cards
       document.querySelectorAll(".branch-section").forEach(sec => {
-        const secBr = sec.dataset.sec;
-        const match = activeBr === "all" || activeBr === secBr || sec.querySelector(".unit-card:not(.hidden)");
-        if (activeBr !== "all") sec.style.display = sec.querySelector(".unit-card:not(.hidden)") ? "" : "none";
-        else sec.style.display = "";
+        sec.style.display = sec.querySelector(".unit-card:not(.hidden)") ? "" : "none";
       });
+
+      // Update count display
+      const countEl = document.getElementById("searchCount");
+      if (countEl) {
+        if (q) {
+          countEl.textContent = visibleCount + " / " + allCards.length + " units";
+        } else if (activeBr !== "all" || activeSf !== "all") {
+          countEl.textContent = visibleCount + " units";
+        } else {
+          countEl.textContent = "";
+        }
+      }
     }
 
     document.querySelectorAll(".tab").forEach(t => {
@@ -7288,6 +9079,33 @@
         activeSf = s.dataset.sf;
         applyFilters();
       });
+    });
+
+    // Search
+    const searchInput = document.getElementById("searchInput");
+    const searchClear = document.getElementById("searchClear");
+
+    searchInput.addEventListener("input", () => {
+      activeSearch = searchInput.value;
+      searchClear.classList.toggle("visible", activeSearch.length > 0);
+      applyFilters();
+    });
+
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      activeSearch = "";
+      searchClear.classList.remove("visible");
+      applyFilters();
+      searchInput.focus();
+    });
+
+    // Ctrl+F / Cmd+F shortcut focuses the search bar
+    document.addEventListener("keydown", e => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "f") {
+        e.preventDefault();
+        searchInput.focus();
+        searchInput.select();
+      }
     });
 
     // Card open modal
