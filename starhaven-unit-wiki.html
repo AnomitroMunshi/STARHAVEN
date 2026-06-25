@@ -1142,6 +1142,64 @@
       margin-top: 6px;
     }
 
+    /* ── MODAL NAVIGATION ──────────────────────────────────────────── */
+    .modal-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 14px;
+      border-top: 1px solid var(--border);
+      background: var(--panel2);
+      flex-shrink: 0;
+    }
+
+    .modal-nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: transparent;
+      border: 1px solid var(--border2);
+      border-radius: 6px;
+      color: var(--parchment);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      padding: 5px 11px;
+      cursor: pointer;
+      transition: background .14s, border-color .14s;
+      max-width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-shrink: 1;
+    }
+
+    .modal-nav-btn:hover:not(:disabled) {
+      background: rgba(255, 255, 255, .05);
+      border-color: var(--gold-dim);
+    }
+
+    .modal-nav-btn:disabled {
+      opacity: 0.28;
+      cursor: default;
+    }
+
+    .modal-nav-label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 160px;
+      display: inline-block;
+    }
+
+    .modal-nav-count {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: var(--faint);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
     /* ── MOBILE MODAL FIX ───────────────────────────────────────────── */
     @media (max-width: 700px) {
       .card-modal {
@@ -1371,6 +1429,13 @@
     <div class="modal-card">
       <button type="button" class="modal-close" aria-label="Close">×</button>
       <div class="modal-body"></div>
+      <div class="modal-nav">
+        <button id="modalPrev" class="modal-nav-btn" disabled aria-label="Previous unit">&#8592; <span
+            class="modal-nav-label" id="modalPrevLabel"></span></button>
+        <span class="modal-nav-count" id="modalNavCount"></span>
+        <button id="modalNext" class="modal-nav-btn" disabled aria-label="Next unit"><span class="modal-nav-label"
+            id="modalNextLabel"></span> &#8594;</button>
+      </div>
     </div>
   </div>
   <div id="zoomOverlay" style="display:none;position:fixed;inset:0;z-index:249;"></div>
@@ -1463,6 +1528,65 @@
                     "slot": "Secondary",
                     "name": "Bastion Longsword",
                     "desc": "— Broad battlefield sword used once formations close."
+                  }
+                ]
+              },
+              {
+                "id": "stonemark-bulwark",
+                "data-br": "Infantry",
+                "data-src": "ally",
+                "name": "Stonemark Bulwark",
+                "branch": "Infantry",
+                "className": "Elite Heavy Infantry · Bulwark Phalanx",
+                "subtitle": "· Round Shield Wall · Spear Bracing · Stonemark's Finest",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Stonemark Hold",
+                "army": "Stonemark Holds — Brokk Graniteborn",
+                "image": "unitImages/stonemark-bulwark.png",
+                "imageAlt": "Stonemark Bulwark",
+                "notes": "The Stonemark Bulwark are Brokk Graniteborn's most elite formation — the shield-and-spear vanguard that has defended the Stonemark Holds for over three hundred years. They do not charge. They receive.\n\nTheir doctrine is built around the granite circle: a concave round shield wall that curves inward at the flanks, channeling cavalry directly onto braced spear lines. A mounted charge that hits the Bulwark's formation does not break through — it stops. The horses cannot reach the dwarves behind the shields; the spear shafts brace against individual anchor points embedded in the stone-reinforced bracers on each soldier's forearm. The circle tightens under impact instead of giving.\n\nEvery Stonemark Bulwark soldier carries the Hearthstone Round — a large convex iron shield forged with a domed center that deflects lance tips and sword cuts away from the bearer's body. The dome also transfers lateral impact across the formation rather than concentrating it on the point of contact. At full formation depth, the Bulwark has absorbed war elephant charges at the mountain passes and held.\n\nBrokk Graniteborn committed two full units of Bulwark to the Starhaven alliance — the only Stonemark formation he considers non-negotiable as a contribution. Everything else in the Stonemark contingent is supplementary. The Bulwark is what Stonemark sends when it is serious.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Bulwark Forge Plate",
+                    "desc": "— Master-forged Stonemark plate weighing nearly twice that of standard infantry armor. Reinforced with layered iron-carbon plates and rune-bound joints, engineered to endure prolonged formation combat rather than pursuit."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Hearthstone Bulwark",
+                    "desc": "— Massive convex blacksteel round shield with a pronounced domed boss. Precision-forged rims interlock with adjacent shields to create the Granite Circle, dispersing impact across the entire formation instead of the individual bearer."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Bulwark Greathelm",
+                    "desc": "— Fully enclosed dwarven greathelm with a forward-angled brow, reinforced cheek guards, and a narrow visor optimized for spear-bracing discipline rather than wide-angle combat."
+                  },
+                  {
+                    "slot": "Bracer",
+                    "name": "Spear Anchor Bracer",
+                    "desc": "— Heavy forged bracer fitted with an integrated steel locking socket that secures the spear shaft against the forearm, allowing the formation to absorb cavalry, monster, and siege-beast impacts without losing weapon control."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Granite Wall Spear",
+                    "desc": "— Eight-foot steel-cored mountain hardwood spear built exclusively for formation warfare. The rear spike locks into the Spear Anchor Bracer, creating an immovable brace capable of stopping cavalry charges and monstrous assaults."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Bulwark War Axe",
+                    "desc": "— Broad-headed dwarven war axe drawn once formations compress beyond spear range. Optimized for brutal chopping power inside dense shield walls."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Stonefoot Greaves",
+                    "desc": "— Reinforced greaves with oversized hobnailed boots that bite into rock, mud, snow, and broken ground, preventing the formation from being driven backward under impact."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Formation Harness",
+                    "desc": "— Shield locking pins, spare spear couplings, repair wedges, whetstone, formation markers, and field maintenance tools carried to preserve the integrity of the Granite Circle during extended engagements."
                   }
                 ]
               }
@@ -1806,6 +1930,50 @@
                     "slot": "Secondary",
                     "name": "Stonemark War Axe",
                     "desc": "— Dwarven-pattern sidearm favored throughout the 3rd Army for close-quarters combat."
+                  }
+                ]
+              },
+              {
+                "id": "ironbreakers-sm",
+                "data-br": "Infantry",
+                "data-src": "ally",
+                "name": "Ironbreakers (Stonemark)",
+                "branch": "Infantry",
+                "className": "Heavy Infantry · Shieldwall Formation",
+                "subtitle": "· Hammer & Shield · Stonemark Line Infantry · Hold Doctrine",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Stonemark Hold",
+                "army": "Stonemark Holds — Brokk Graniteborn",
+                "image": "unitImages/ironbreakers-sm.png",
+                "imageAlt": "Ironbreakers (Stonemark)",
+                "notes": "The Ironbreakers are the backbone of Stonemark's military — the standard-bearers of dwarven shieldwall doctrine and the most numerous heavy formation Brokk Graniteborn deploys. Where the Stonemark Bulwark are specialists, the Ironbreakers are the line itself.\n\nEvery Ironbreaker carries an iron kite shield and a single-handed warhammer. The shield does the first job — locking with adjacent shields to form a wall that cavalry will not ride through and arrow volleys will not penetrate. The hammer does the second job — once the enemy is at the wall, the hammer goes over and into whatever presents itself: helms, shoulders, kneecaps, anything load-bearing. The dwarf does not step forward. The enemy breaks trying to get through the line.\n\nThe Ironbreaker doctrine is old enough that it predates the Stonemark Holds alliance records. The name itself is disputed — some accounts claim it refers to breaking iron formations (enemy shieldwalls); others that it comes from the Ironhold Pass where the formation was first deployed at scale against an orc invasion that brought siege equipment. The siege equipment was not used. The Ironbreakers stopped the army before it reached deployment range.\n\nBrokk Graniteborn contributed the largest portion of his contingent as Ironbreakers — the formation he trusts to hold while everything else maneuvers. In joint exercises with Starhaven's 3rd Field Army, their integration with the Stonewall Shield infantry has been evaluated as near-seamless: same doctrine, different builders.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Ironbreaker Forge Plate",
+                    "desc": "— Standard Stonemark heavy plate — iron-core with hardened steel facing. Heavier than most human equivalents but proportioned for dwarven build. Full torso, arms, and legs. The leg plate is articulated at the knee to allow the deep-stance shieldwall bracing position without binding."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Stonemark Kite Shield",
+                    "desc": "— Iron kite shield, edge-hardened and flatface-reinforced. Designed to interlock laterally with adjacent shields under light lateral pressure — the wall self-tightens when pushed. Carries a forearm brace and grip loop for sustained hold against sustained cavalry impact."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Ironbreaker War Helm",
+                    "desc": "— Full-coverage dwarven steel helm with a drop nasal bar and wide cheek guards. Heavier than the Bulwark Greathelm — less visor restriction, built for prolonged formation combat where forward sight matters more than impact-absorption angle."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Stonemark Warhammer",
+                    "desc": "— Single-handed iron warhammer, compact head with a square face and back spike. Range-balanced for use inside a shieldwall — short enough to swing in tight formation, heavy enough to stagger a fully armored human or orc on direct contact. Standard-issue across the Ironbreaker corps."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Stonemark Field Knife",
+                    "desc": "— Short broad-bladed utility knife carried for close-quarters work when the hammer can no longer be swung. Secondary to the hammer in every engagement."
                   }
                 ]
               }
@@ -2257,6 +2425,60 @@
             ]
           },
           {
+            "label": "Wetland Infantry · Rhegar Reserve",
+            "cards": [
+              {
+                "id": "reedwalkers",
+                "data-br": "Infantry",
+                "data-src": "own",
+                "name": "The Reedwalkers",
+                "branch": "Infantry",
+                "className": "Wetland Infantry · Terrain Specialists",
+                "subtitle": "· Rhegar's Reserve · Swamp Doctrine · Activated on Terrain",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Starhold Reserve — Activated for Wetland Campaigns",
+                "army": "Starhaven Command — Rhegar Thorne · Reserve (Wetland Operations)",
+                "image": "unitImages/reedwalkers.png",
+                "imageAlt": "",
+                "notes": "The Reedwalkers do not appear on the standard deployment roster. They do not rotate through Field Army assignments. They are not listed alongside the Silver Shields or the Oath-Axes in Rhegar's published order of battle. This is intentional.\n\nRhegar Thorne holds the Reedwalkers for one specific condition: the battlefield is wet. Delta country, river flood plains, marsh terrain, tidal approaches — any ground where standard military formations lose thirty to fifty percent of their combat effectiveness simply by existing in it. When that terrain appears in a campaign, the Reedwalkers activate. Until then, they train.\n\nThey are light infantry, built for movement through terrain that kills formed cavalry and sinks heavy infantry. No plate — plate is weight, and weight in a marsh is a death sentence. Padded linen over light leather, treated against water absorption. Their spear is the primary weapon: range advantage without the bulk of a polearm, and the butt can be planted in soft ground for stability. Their round hide shields do not waterlog. Their short swords are backup only.\n\nWhat makes them effective is not their equipment. It is their knowledge. A Reedwalker knows which ground holds and which gives way. They know how to cross a river channel without sound. They know which reed beds conceal a man and which ones collapse under weight. They know how to strike from a direction that conventional military doctrine says cannot have infantry in it — because conventional military doctrine was not written for this terrain.\n\nPut them on dry ground against heavy infantry and they are outclassed. Rhegar knows this. He has never deployed them on dry ground.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Reedwalker Field Wrap",
+                    "desc": "— Padded linen over light leather, both treated with wax and oil against water saturation. No metal plates on the torso — metal rusts in marsh conditions and adds weight that becomes critical when crossing water silently. The wrap is dark-dyed and carries no reflective surface."
+                  },
+                  {
+                    "slot": "Legs",
+                    "name": "Wetland Waders",
+                    "desc": "— Oiled leather leggings, knee-high, reinforced at the inner thigh and knee. Built to move through knee-deep water without binding. The boot sole is wide and flat — distributes weight across soft ground to prevent sinking."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Reedwalker Cap",
+                    "desc": "— Minimal iron-strip reinforced leather cap. No full helm — full helms degrade hearing, and in marsh terrain the ability to hear foot placement and water movement is a tactical asset more valuable than head protection."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Wetland Spear",
+                    "desc": "— Seven-foot ashwood spear, oiled shaft against water damage. Iron tip, standard. The butt is capped with a wide iron disc — planted in soft ground, it provides a stable bracing point for formation hold on terrain that would not hold a shield wall. Can be used as a pole to test ground depth before stepping."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Hide Round Shield",
+                    "desc": "— Boiled hide over a wicker frame, iron boss. Does not waterlog. Does not sink. Light enough to carry one-handed for extended wading without arm fatigue. No wood core — wood swells and splits under sustained water exposure."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Short Wetland Blade",
+                    "desc": "— Broad short blade, rust-resistant iron, carried at the hip. Close defense only. The Reedwalkers engage at spear range whenever possible — closing to blade distance in marsh terrain removes the stability advantage the spear provides."
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "label": "Shock Infantry",
             "cards": [
               {
@@ -2676,6 +2898,55 @@
                     "slot": "Secondary",
                     "name": "Clan Dagger",
                     "desc": "— Utility and emergency sidearm carried by every Longbeard."
+                  }
+                ]
+              },
+              {
+                "id": "ashveil-reapers",
+                "data-br": "Infantry",
+                "data-src": "own",
+                "name": "The Ashveil Reapers",
+                "branch": "Infantry",
+                "className": "Great Weapon Infantry · Anti-Cavalry Sweep · Void Border Doctrine",
+                "subtitle": "· Sweep Arc · Ashenveil Border Origin · Anti-Cavalry · Anti-Mass",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Ashenveil Border / Mobile — Grand Standing Army",
+                "army": "Starhaven Specialized — Grand Standing Army (Kael Varric Doctrine)",
+                "image": "unitImages/ashveil-reapers.png",
+                "imageAlt": "The Ashveil Reapers",
+                "notes": "The Ashveil Reapers did not begin as a military unit. They began as border farmers.\n\nIn the years when Zareth Kull's Void Breakers were stretched thin across the Ashenveil perimeter, the settlements nearest the corruption line had to hold the edge themselves. What they had were the tools of harvest work — scythes — and the understanding that fighting a slow-moving Void creature one at a time, with a sword thrust, was a losing method when six more were behind it. The wide horizontal sweep arc of a war scythe cleared a line. Two fighters sweeping in sequence cleared a corridor. The border communities built a doctrine from necessity.\n\nKael Varric observed one of their engagements during a Void Breaker support inspection in Year 1044. He watched the sweep clear a cavalry charge's legs before the horses reached the line — the same technique, the same arc, a completely different target. He formalized the unit into the standing army within the month.\n\nThe Ashveil Reapers now carry two mandates: anti-cavalry sweep in open battle (the standing army role Kael identified), and anti-mass close terrain engagement against Void and enemy infantry clusters where individual combat is not viable. The war scythe does not thrust — it sweeps. Against a cavalry charge, the horizontal arc catches legs and belly. Against a packed infantry formation, it takes whatever presents itself at mid-body height across a six-foot radius. One Reaper does not kill one enemy. One Reaper threatens a corridor.\n\nThey still carry the Ashenveil treatment on their plate. Old habit. The Void did not stop being a threat when the scythes moved to a new battlefield.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Ashveil Border Harness",
+                    "desc": "— Medium blackened plate with asymmetrical shoulder construction. The leading shoulder is reinforced while the weapon arm remains highly articulated for unrestricted sweeping attacks. Finished with Ashenveil's anti-corruption treatment."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Reaper Visor Helm",
+                    "desc": "— Half-enclosed steel helm with a narrow horizontal visor and reinforced cheek guards, providing wide peripheral vision during rotational combat."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Ashveil Reaping Glaive",
+                    "desc": "— Military polearm descended from the border harvest scythe. Long blacksteel haft with a reinforced inward-curving blade, forward hook, and counterweight, built to clear cavalry, dense infantry, and Void swarms with devastating sweep attacks."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Border Falchion",
+                    "desc": "— Broad single-edged side blade drawn once combat closes beyond the polearm's effective sweep radius."
+                  },
+                  {
+                    "slot": "Hands",
+                    "name": "Reaper Grip Gauntlets",
+                    "desc": "— Reinforced wrist-lock gauntlets engineered to absorb the immense rotational force generated by repeated full-power sweeping strikes."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Ashen March Boots",
+                    "desc": "— Reinforced hobnailed boots providing exceptional stability during rapid pivots, lateral movement, and sustained fighting on broken ground."
                   }
                 ]
               }
@@ -4272,6 +4543,55 @@
                     "desc": "— Reinforced leather marching boots built for long campaigns while providing a stable shooting platform on varied terrain."
                   }
                 ]
+              },
+              {
+                "id": "ashbow-archers",
+                "data-br": "Ranged",
+                "data-src": "own",
+                "name": "Ashbow Archers",
+                "branch": "Ranged",
+                "className": "Archers · Volume Fire",
+                "subtitle": "· High Rate · Formation Suppression · Crossbow Complement",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Distributed Garrisons",
+                "army": "3rd Field Army — Brek Tane",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The 3rd Army's crossbowmen are its teeth — accurate, armor-piercing, slow. The Ashbow Archers are the other thing: fast. Where a crossbow soldier fires two bolts per minute under optimal conditions, an Ashbow Archer fires ten arrows. They do not replace the crossbow contingent. They exist alongside it, filling the gap the crossbow cannot fill — suppression, volume, speed, the unarmored flanks and horses that bodkins are too precise to address efficiently.\n\nBrek Tane introduced them after a garrison rotation exercise exposed the 3rd Army's weakness against fast cavalry swarms: the crossbows tracked individual targets and broke them cleanly, but the second wave was already through the gap before the reload completed. The Ashbow Archers saturate that gap. Three volleys in the air before the first lands. Enemy cavalry adjusting to the crossbow fire finds itself riding into something else entirely.\n\nThey are distributed across garrison positions the same way the crossbowmen are — Brek Tane does not concentrate his ranged arms, he layers them. An Ashbow contingent backs every crossbow cluster. The crossbow fires at the armored threat. The Ashbow fires at everything around it.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Garrison Archer Vest",
+                    "desc": "— Padded leather vest with light steel chest plate. Weight kept minimal to allow sustained draw over prolonged garrison engagements."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Open Field Helm",
+                    "desc": "— Light steel cap with minimal cheek guard. Full peripheral vision preserved — an archer who cannot track moving cavalry at the edges of their sight is an archer who misses."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Draw Bracers",
+                    "desc": "— Reinforced leather bracers on both forearms. Right arm: bowstring protection for the high draw rate. Left arm: grip stabilization for sustained hold during volley sequences."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Ashbow Field Recurve",
+                    "desc": "— 75lb laminated recurve built for speed over raw power: short draw cycle, fast release, minimal settle time between shots. Ten arrows per minute is the training standard. The bow is named for the ashwood laminate in the limbs — same timber as the garrison fencing at Ironpass, which Brek Tane considers appropriate."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Volume Quiver",
+                    "desc": "— Forty broadhead arrows, hip-mounted for rapid access during volley sequences. Broadhead standard rather than bodkin — the crossbows handle armored penetration. The Ashbow Archers handle everything around it."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Short Combat Blade",
+                    "desc": "— Single-edged short blade for close defense if the garrison position is breached. If the Ashbow Archers are fighting in melee, something has already gone wrong at the crossbow line."
+                  }
+                ]
               }
             ]
           },
@@ -4432,6 +4752,65 @@
             ]
           },
           {
+            "label": "Slingers",
+            "cards": [
+              {
+                "id": "the-slingers",
+                "data-br": "Ranged",
+                "data-src": "own",
+                "name": "The Slingers",
+                "branch": "Ranged",
+                "className": "Slingers · First Strike Corps",
+                "subtitle": "· Three-Shot Protocol · First to the Field · 2nd Army Advance Arm",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Coldmarch / Mobile — 2nd Field Army Forward",
+                "army": "2nd Field Army — Clea Vorn",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The Slingers are the first unit to reach the battlefield and the first to open fire. They move ahead of the main 2nd Army column — unencumbered, carrying little beyond their slings and sorted shot — and engage before any melee element has closed distance. The battle begins when they decide it does.\n\nThree ammo types, each with a distinct purpose and a distinct moment. Stone shots go out first at maximum range — suppression, disruption, forcing the enemy to raise shields and break marching posture. Metal shots follow as range closes — denser, flatter trajectory, aimed at helmeted officers, cavalry horses, shield bosses, anything load-bearing. Mini bombs come last, at the moment before the 2nd Army's cavalry and infantry hit — timed or impact-fused, dropped into the tightest clusters, opening the gaps the main advance will move through.\n\nThe Slingers carry no heavy armor. A leather vest, a padded cap, a pouch of sorted shot — that is the entire kit. What makes them fast is not their legs but their load. They can cover ground that fully armored infantry cannot match, arrive at positions before the enemy expects contact, and disappear into the flanks before the melee closes. Clea Vorn's Speed Doctrine is built on movement being the primary weapon; the Slingers execute that principle before a sword is drawn.\n\nThey do not hold ground after their opening sequence. The engagement is theirs to start. The 2nd Army decides when it ends.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Slinger Field Vest",
+                    "desc": "— Padded leather vest, minimal coverage. No back plate, no leg armor. The Slingers are not designed to absorb hits — they are designed to not be where hits land. Weight is the enemy of their doctrine."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Padded Field Cap",
+                    "desc": "— Reinforced leather cap with light iron crown strip. No cheek guards — full peripheral vision required for tracking multiple targets during continuous repositioning."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Slinger's Cord",
+                    "desc": "— Braided leather sling, wrist-loop anchored, weighted pouch. Effective range: stone shot at 150 yards accurate, metal shot at 100 yards penetrating, mini bomb at 60 yards reliable. The cord itself weighs nothing. That is the point."
+                  },
+                  {
+                    "slot": "Shot — Stone",
+                    "name": "River Stone Shot",
+                    "desc": "— Smooth river stones, sorted by weight for consistent flight arc. Used at maximum range for opening suppression — force shield raises, break marching posture, disrupt cavalry formation before the army arrives. Volume over precision."
+                  },
+                  {
+                    "slot": "Shot — Metal",
+                    "name": "Cast Iron Slug",
+                    "desc": "— Oval cast-iron shot, 40g. Denser than stone, flatter trajectory at 80–100 yards. Used for targeted work: officer helms, horse skulls, shield bosses, knee plates. A metal slug at 80 yards into an unprotected face is lethal. Into a standard iron helm it is a concussion and a position lost."
+                  },
+                  {
+                    "slot": "Shot — Bomb",
+                    "name": "Mini Bomb Canister",
+                    "desc": "— Small clay or iron canisters packed with compressed black powder and a short fuse or impact cap. Released into tight infantry blocks or behind shield walls immediately before the 2nd Army's main element strikes. Not designed to kill directly — designed to break formation cohesion in the three seconds before contact. A formation that flinches is a formation that loses."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Short Blade",
+                    "desc": "— Compact single-edged blade carried as last resort. The Slingers are not a melee unit. If an enemy has closed to blade range, the Slinger's job is already done and the 2nd Army's infantry will handle what comes next."
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "label": "Support · Shamans",
             "cards": [
               {
@@ -4453,23 +4832,38 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Shaman's Bone-and-Hide Mantle",
-                    "desc": "— Layered beast hide with ancestor bone worked into the collar and shoulders. Not armor by military standards — the bones are specific, sourced from honored dead, and the wearing of them is a ritual appointment as much as a garment."
+                    "name": "Ancestor Hide Mantle",
+                    "desc": "— Thick mountain beast hide layered with cured leather and ceremonial bone plates taken only from honored Stonefang ancestors. More ritual garment than battlefield armor, yet durable enough for constant travel across the highlands."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Antler Crown",
-                    "desc": "— Carved mountain antler, fitted to the individual shaman. No two are alike. Marks them as non-combatant by Stonefang law — a shaman in the antler crown is not to be struck by clan members. Enemy armies are not bound by this, which is why the Shamans move fast and stay low."
+                    "name": "Stormmassif Antler Crown",
+                    "desc": "— Individually carved mountain antlers bound with ironstone rings, feathers, and ancestral bone charms. Every crown is unique and passed from one shaman to another upon death."
+                  },
+                  {
+                    "slot": "Neck",
+                    "name": "Ancestor Totems",
+                    "desc": "— Bone necklaces, carved tusks, ironstone pendants, and braided clan cords representing the warrior lineages whose spirits the shaman calls upon before battle."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Ritual Bone Staff",
-                    "desc": "— Carved highland hardwood, topped with stacked ancestor bones and a chunk of Stormmassif ironstone. Functional as a walking staff on rough terrain. The ironstone conducts something — no Starhaven artificer has been permitted to study one up close."
+                    "name": "Ancestor Staff",
+                    "desc": "— Highland hardwood staff crowned with carved ancestor bones, Stormmassif ironstone, and prayer bindings. Used for rituals, signaling, and traversing harsh mountain terrain rather than direct combat."
                   },
                   {
                     "slot": "Secondary",
-                    "name": "Totem Pouch",
-                    "desc": "— Belt-worn leather pouch containing bone-notch tablets, dried highland herbs used in pre-battle ritual, ash from the Stonefang ancestral fire, and ground ironstone for marking the terrain workings ahead of enemy advance."
+                    "name": "Spirit Satchel",
+                    "desc": "— Heavy leather pouch containing bone-notch tablets, sacred ash, dried herbs, powdered ironstone, ritual pigments, and carved clan fetishes used during battlefield ceremonies."
+                  },
+                  {
+                    "slot": "Ritual",
+                    "name": "Stonefang Ritual Kit",
+                    "desc": "— Chalk, ash, carved standing stones, ancestor bones, braided prayer cords, and ceremonial oils used to prepare ritual circles, bless warriors, and mark cursed ground before an engagement."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Mountain Walker Boots",
+                    "desc": "— Thick hide boots reinforced with woven rawhide and iron studs, built for traversing cliffs, scree slopes, and frozen mountain passes without losing footing."
                   }
                 ]
               }
@@ -4526,13 +4920,43 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Dwarven Crossbow Plate",
-                    "desc": "— Medium plate with reinforced shooting shoulder. Dwarven construction —…"
+                    "name": "Stonemark Quarreler Plate",
+                    "desc": "— Master-forged dwarven medium plate with reinforced chest, articulated shoulders, and a heavily braced firing side for repeated crossbow use."
                   },
                   {
-                    "slot": "Weapon",
-                    "name": "Dwarven Steel Crossbow",
-                    "desc": "— 150lb draw via dwarven ratchet mechanism. Fires armor-splitting quarre…"
+                    "slot": "Helm",
+                    "name": "Granite Sallet",
+                    "desc": "— Fully enclosed dwarven steel helm with reinforced neck guard and narrow visor for maximum battlefield protection."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Ratchet Bracers",
+                    "desc": "— Reinforced steel bracers incorporating locking hooks that stabilize the crossbow during crank reloads."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Granite Ratchet Crossbow",
+                    "desc": "— Massive 150lb dwarven steel crossbow equipped with Brokk Graniteborn's ratcheting crank mechanism for rapid, reliable reloads."
+                  },
+                  {
+                    "slot": "Bolts",
+                    "name": "Granite Quarrels",
+                    "desc": "— Hardened blacksteel armor-breaking bolts designed to penetrate heavy plate, shields, and thick monster hide."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Dwarven War Axe",
+                    "desc": "— Compact single-handed axe carried for close combat after the crossbow has been discharged."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Quarreler Pavise",
+                    "desc": "— Folding dwarven pavise carried on the back and deployed before firing to protect the crew during reloads."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Engineer Reload Kit",
+                    "desc": "— Spare gears, winding crank, replacement bowstrings, maintenance hammer, oil flask, and reinforced bolt case."
                   }
                 ]
               }
@@ -4541,35 +4965,6 @@
           {
             "label": "Heavy Crossbowmen",
             "cards": [
-              {
-                "id": "ironbolt",
-                "data-br": "Ranged",
-                "data-src": "own",
-                "name": "Ironbolt Division",
-                "branch": "Ranged",
-                "className": "Heavy Crossbowmen",
-                "subtitle": "· Fixed Battery · 80,000 Bolts/Day",
-                "srcPill": "🏰 Own",
-                "armorBadge": "Heavy",
-                "armorClass": "armor-badge a-h",
-                "location": "Ironpass / Fortresses",
-                "army": "Starhaven Specialized",
-                "image": "unitImages/ironbolt.png",
-                "imageAlt": "",
-                "notes": "Starhaven's dedicated fortress crossbow arm. Fixed battery positions at Ironpass and major fortifications — not mobile, but devastating at sustained fire. Four ammo types give them tactical flexibility: standard, armor-piercing, incendiary, and Voidbane for supernatural targets. 80,000 bolts per day is their sustained operational rate.",
-                "armor": [
-                  {
-                    "slot": "Body",
-                    "name": "Ironbolt Artillery Plate",
-                    "desc": "— Maximum-weight plate for crew protection at fixed battery positions."
-                  },
-                  {
-                    "slot": "Weapon",
-                    "name": "Ironbolt Heavy Battery",
-                    "desc": "— Four ammo types: standard, armor-piercing, incendiary, Voidbane. Fixed…"
-                  }
-                ]
-              },
               {
                 "id": "4fa-hcross",
                 "data-br": "Ranged",
@@ -4659,8 +5054,8 @@
                 "data-src": "ally",
                 "name": "Thunderers",
                 "branch": "Ranged",
-                "className": "Handgunners",
-                "subtitle": "· Dwarven Hand Cannoneers · Direct Fire",
+                "className": "Thunderbuss Corps",
+                "subtitle": "· Dwarven Blunderbuss Unit · Direct Fire",
                 "srcPill": "🤝 Allied",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
@@ -4668,17 +5063,47 @@
                 "army": "Stonemark Holds — Brokk Graniteborn",
                 "image": "unitImages/thunderers.png",
                 "imageAlt": "",
-                "notes": "The only gunpowder unit in the alliance. Brokk Graniteborn's Thunderers carry dwarven-forged hand cannons — weapons the wider world has not yet developed. The blast-rated face shields and cotton ear protection are not ceremonial; a volley of Thunderers is heard for a mile. Direct fire only; they shatter armor at close-medium range.",
+                "notes": "The Thunderers are the only gunpowder corps in the alliance. Rather than pursuing long-range accuracy, Stonemark's engineers perfected the Thunderbuss—a massive dwarven blunderbuss capable of firing interchangeable shot loads that devastate infantry, cavalry, and monsters at close range. Every volley is deafening, the blast echoing through the mountains long after the smoke clears. Thunderers never fight alone; they deploy behind dwarven shield walls and crossbow lines, stepping forward only when the enemy enters the kill zone. Few formations remain intact after hearing the first thunder.",
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Dwarven Gunner's Plate",
-                    "desc": "— Medium plate with blast-rated face shield. Thunderers pack cotton ear …"
+                    "name": "Thunderer's Blast Plate",
+                    "desc": "— Reinforced dwarven medium plate with a blast-resistant chest, thickened shoulders, and layered leather powder apron. Built to absorb heavy recoil while allowing stable firing of the massive Thunderbuss."
                   },
                   {
-                    "slot": "Weapon",
-                    "name": "Dwarven Hand Cannon",
-                    "desc": "— Forged in Stonemark's deep holds. Fires iron ball at plate-cracking ve…"
+                    "slot": "Helm",
+                    "name": "Blast Visor Helm",
+                    "desc": "— Heavy dwarven steel helm fitted with a hinged perforated blast visor, reinforced brow, and cotton-lined ear guards to protect against muzzle flash and the deafening shockwave of mass volleys."
+                  },
+                  {
+                    "slot": "Hands",
+                    "name": "Powder Gauntlets",
+                    "desc": "— Heat-resistant leather gauntlets reinforced with blacksteel fingertips for handling hot barrels, burning fuses, and rapid battlefield reloading."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Stonemark Thunderbuss",
+                    "desc": "— Massive dwarven blunderbuss with a flared steel barrel and reinforced walnut stock. Devastating inside 50 yards, firing interchangeable powder charges capable of shredding infantry, crippling cavalry, and staggering monsters."
+                  },
+                  {
+                    "slot": "Ammunition",
+                    "name": "Thunder Charges",
+                    "desc": "— Pre-measured powder cartridges with interchangeable loads: iron shot for infantry, hardened steel shot for armored targets, chain shot for cavalry disruption, and Dragonfire incendiary loads reserved for siege defense."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Forge Axe",
+                    "desc": "— Compact single-handed dwarven war axe carried once the Thunderbuss has been discharged or enemies close into melee."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Powder Harness",
+                    "desc": "— Powder horn, cartridge bandolier, ramrod, cleaning brush, spare flints, ignition tools, barrel oil, and emergency repair kit. Every Thunderer is trained to maintain his own weapon in the field."
+                  },
+                  {
+                    "slot": "Special",
+                    "name": "Thunderer's Ear Padding",
+                    "desc": "— Thick wool-and-cotton ear inserts worn beneath the helmet. A full Thunderer volley is said to be heard for over a mile; without them, permanent hearing damage is inevitable."
                   }
                 ]
               }
@@ -5874,6 +6299,60 @@
                     "desc": "— Speed-optimized — chest and flank only."
                   }
                 ]
+              },
+              {
+                "id": "recurve-company-third",
+                "data-br": "Cavalry",
+                "data-src": "own",
+                "name": "Recurve Company of the Third",
+                "branch": "Cavalry",
+                "className": "Medium Horse Archers · Velhold Grassland Riders",
+                "subtitle": "· Velhold Riders · Bow-Wheel Doctrine · Flank Harassment",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Velhold Grasslands / Mobile — 3rd Field Army Attached",
+                "army": "3rd Field Army — Brek Tane",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The Recurve Company comes from the open grassland territories of Velhold — a riding people whose cavalry tradition predates Starhaven's standing army by generations. They are not Starhaven-raised soldiers who learned to shoot from horseback. They are horsemen who learned to fight from birth and joined Starhaven's alliance as a distinct attached unit, bringing their doctrine with them intact.\n\nBrek Tane's 3rd Army holds. That is its doctrine — garrison positions, defensive lines, soldiers as the fortress wall. The Recurve Company is the thing the 3rd Army was missing: something that moves when the line is under pressure. When an enemy flanking column tries to go around the 3rd Army's position, the Recurve Company rides to contest it. They do not charge. They pass across the flanking force's front, loose arrows in sequence, wheel, pass again. Each pass degrades. By the third pass, a cavalry formation that started at full strength is at half cohesion and has not yet made contact with anything it can hit back.\n\nMedium armor — lamellar plate over mail — means they can absorb a return volley or survive a brief melee if the wheel-and-shoot phase fails. They are not heavy cavalry and do not pretend to be. They are not light skirmishers either. The medium classification is deliberate: enough protection to function if things go wrong, enough mobility to ensure things usually do not.\n\nTheir primary sidearm after the bow is the curved saber — the same weapon carried by Velhold riders for generations, adapted from steppe cavalry tradition. The mace is carried for armored targets: when the bow has done its work and the enemy is still standing, the mace is what ends the engagement. They do not close unless they choose to. When they choose to, they finish it.",
+                "armor": [
+                  {
+                    "slot": "Rider — Body",
+                    "name": "Velhold Lamellar Chest",
+                    "desc": "— Lamellar plate over mail hauberk — small rectangular iron plates laced in overlapping rows across the torso. Flexible enough for the bow draw arc, dense enough to stop most arrow volleys at range. Standard Velhold construction, carried from their home tradition unchanged."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Velhold Conical Helm",
+                    "desc": "— Tall conical iron helm, riveted construction, with a sliding nasal bar and mail aventail draping to the shoulders. The aventail protects neck and jaw while leaving the eyes clear for range estimation. The conical profile deflects downward strikes from above — a practical consideration for riders who operate below elevated infantry positions."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Velhold Round Shield",
+                    "desc": "— Small iron-bossed round shield, saddle-hung during the bow phase. Raised only when the Company closes to melee range — during the wheel-and-shoot sequence, both hands stay on the bow. Light enough to not interfere with the draw."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Velhold Recurve Bow",
+                    "desc": "— Composite recurve, short limb construction for mounted use — horn, sinew, and wood laminate. Effective range 120 yards accurate from the saddle. The short limb design allows a full draw without the bow catching on the horse's neck during lateral fire. The Parthian shot — firing backward over the horse's rump during a wheel — is standard training, not a specialist technique."
+                  },
+                  {
+                    "slot": "Sidearm",
+                    "name": "Velhold Curved Saber",
+                    "desc": "— Single-edged curved saber, Velhold-pattern, worn at the hip. The same saber design carried by Velhold riders across generations — a cutting weapon optimized for mounted slashing strokes rather than thrusting. Used when the bow phase ends and the enemy is still present."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Iron Flanged Mace",
+                    "desc": "— Carried at the saddle for armored targets. When the saber deflects off plate, the mace does not. Six flanged ridges transmit kinetic force through the armor into the body beneath. The Recurve Company does not carry it for show."
+                  },
+                  {
+                    "slot": "Horse",
+                    "name": "Velhold Steppe Horse",
+                    "desc": "— Compact, deep-chested grassland breed from Velhold territory. Bred for endurance over sustained ground rather than sprint speed — the wheel-and-shoot doctrine requires multiple passes across a formation's front, not a single fast charge. Partial barding on neck and chest; flank left unarmored for speed."
+                  }
+                ]
               }
             ]
           },
@@ -6125,40 +6604,6 @@
           {
             "label": "Spearmen",
             "cards": [
-              {
-                "id": "blackfang",
-                "data-br": "Polearm",
-                "data-src": "ally",
-                "name": "Blackfang Shieldguards",
-                "branch": "Polearm",
-                "className": "Spearmen",
-                "subtitle": "· The One Defensive Unit in Stonefang",
-                "srcPill": "🤝 Allied",
-                "armorBadge": "Lt–Med",
-                "armorClass": "armor-badge a-lm",
-                "location": "Highland Coalition — Highland Mountains",
-                "army": "Highland Coalition — Kethra Blackfang",
-                "image": "unitImages/blackfang.png",
-                "imageAlt": "",
-                "notes": "The only dedicated defensive unit the Stonefang Remnant fields — a notable fact in a warband built around Grik's aggressive doctrine. Commanded by Kethra Blackfang. The clan tower shield is wider than standard for crowd control in mountain passes where flanking room is limited. Both anti-cavalry and pass-denial roles.",
-                "armor": [
-                  {
-                    "slot": "Body",
-                    "name": "Blackfang Clan Plate",
-                    "desc": "— Medium highland plate. Clan-marked with Blackfang sigil at left pauldr…"
-                  },
-                  {
-                    "slot": "Shield",
-                    "name": "Clan Tower Shield",
-                    "desc": "— Heavy wood and iron construction — wider than standard for crowd contr…"
-                  },
-                  {
-                    "slot": "Weapon",
-                    "name": "Highland Spear",
-                    "desc": "— 8ft, heavy iron tip. Dual-purpose: anti-cavalry and crowd control in m…"
-                  }
-                ]
-              },
               {
                 "id": "desert-spear",
                 "data-br": "Polearm",
@@ -6740,6 +7185,50 @@
                     "desc": "— Damage sustained in combat repairs over days to weeks if the Golem returns to deep Greywood. Rate varies by Golem. Minor damage closes within hours. Major structural damage takes longer — the oldest and largest Golems regenerate slowest."
                   }
                 ]
+              },
+              {
+                "id": "the-wrought",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "The Wrought",
+                "branch": "Beast Cavalry",
+                "className": "Iron Construct · Forgehaven Origin · Classified",
+                "subtitle": "· Cain Drakhar · Twelve Completed · Each Named · No Two Alike",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Legendary",
+                "armorClass": "armor-badge a-leg",
+                "location": "Forgehaven — Tidegate Vault (when not deployed)",
+                "army": "Iron Legion — Cain Drakhar (Direct Command) · Rayden Authorization Required for Deployment",
+                "image": "unitImages/the-wrought.png",
+                "imageAlt": "The Wrought",
+                "notes": "Twelve exist. Cain Drakhar built each one personally. Each has a name. No two are the same.\n\nThe Wrought are not the Iron Tide. The Iron Tide is manufacturing — repeatable, scalable, replaceable. The Wrought are something Cain Drakhar has never described in those terms. The Tidegate Arsenal project that produced them ran for four years in a vault below Forgehaven that has no public record of what it was for. The soul-core calibration — the process that gives each Wrought construct the operational awareness to make battlefield decisions within parameters, to distinguish ally from enemy, to adapt when the engagement does not match the briefing — succeeded in twelve attempts and failed in all others. Cain has not disclosed how many others there were.\n\nEach Wrought construct stands between eight and eleven feet tall, depending on the design iteration. Each was built for a specific combat role: two are breaker units, built to walk into fortifications and come back out; two are anti-siege, designed to intercept and destroy war machines; three are line fighters, designed to enter and hold positions infantry cannot; two are suppression units, carrying weapons that no living soldier could lift or sustain; one moves faster than anything its size has any right to; one has never been deployed, and Cain has given no indication of when that will change; one Cain does not discuss.\n\nThey do not speak. They respond to Cain Drakhar's direct command channel — a specialized arcane link maintained through a Vaelmark-developed signal anchor Cain carries at all times. Proxy command has never been tested because Cain has never been unconscious in their presence. They stand still when not ordered. Completely still — no breath, no movement, no sound. The Forgehaven engineers who work the lower vault have learned not to walk the corridor without a light source. The first time someone does it in the dark, they do not do it twice.\n\nThey cannot be replaced. The soul-core calibration process that produced the successful twelve has not been reproduced. Cain has said, once, in a written assessment sent to Rayden and no one else, that he does not expect to reproduce it. That assessment has not been shared with the standing army. Rhegar Thorne knows they exist. He does not know the number.",
+                "armor": [
+                  {
+                    "slot": "Form",
+                    "name": "Forgehaven Iron Shell",
+                    "desc": "— Each Wrought's body is its own armor — iron alloy construction at a thickness and density that Cain Drakhar has not published specifications for. The alloy is not standard Forgehaven manufacture. The composition is recorded in a single document in the Tidegate Vault. Standard anti-tank fire causes surface damage. Nothing available to current enemy rosters has been confirmed to penetrate a Wrought's chest casing."
+                  },
+                  {
+                    "slot": "Core",
+                    "name": "Arcane Soul-Core",
+                    "desc": "— The mechanism that separates the Wrought from every other construct in the world. Not a simple command receiver — an operational awareness engine capable of battlefield decision-making within assigned parameters. The soul-core runs warm; Forgehaven engineers have measured heat output from the chest cavity. Cain Drakhar describes them as 'aware.' He has not elaborated on what that means."
+                  },
+                  {
+                    "slot": "Weapons",
+                    "name": "Role-Specific (Per Unit)",
+                    "desc": "— No two Wrought carry the same weapons. The suppression units carry crew-served weapons that no living soldier could lift in sustained operation. The breakers carry nothing — their arms are the weapon. The line fighters carry oversized versions of Starhaven's standard infantry weapons, scaled for their frame. The fast unit carries nothing visible."
+                  },
+                  {
+                    "slot": "Command",
+                    "name": "Drakhar Command Channel",
+                    "desc": "— Arcane signal link from a Vaelmark-developed anchor carried by Cain Drakhar at all times. Range: approximately one mile in open terrain, degraded in high-magic environments. Within that range, Cain's commands transmit instantaneously to all twelve. Beyond it, the Wrought hold their last instruction until contact is restored — they do not improvise outside the channel range."
+                  },
+                  {
+                    "slot": "Repair",
+                    "name": "Forgehaven Restoration (Vault Only)",
+                    "desc": "— Field damage can be stabilized but not repaired outside the Tidegate Vault. Minor damage — surface scoring, joint damage — can be addressed in the field with standard Forgehaven toolkit. Structural damage to the core housing, the limb actuators, or the soul-core casing requires vault restoration. Estimated restoration time per major damage event: four to six weeks. There is no procedure for a destroyed soul-core."
+                  }
+                ]
               }
             ]
           },
@@ -7031,6 +7520,60 @@
                     "slot": "Weapons",
                     "name": "Throwing Spears (x4) · Karathi War Scimitar",
                     "desc": "— Four throwing spears for pre-charge and post-charge harassment. Karathi war scimitar for close engagement if the charge slows into a melee situation. Desert chariot doctrine prioritizes mobility over commitment — throw, turn, throw again before the enemy can respond."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Apex Beast Riders",
+            "cards": [
+              {
+                "id": "aethran-colossi",
+                "data-br": "Beast Cavalry",
+                "data-src": "new",
+                "name": "The Aethran Colossi",
+                "branch": "Beast Cavalry",
+                "className": "Apex Predator Riders · Irreplaceable · War Refugees",
+                "subtitle": "· Riva Trid · 27 Riders · Aethran Fangwalkers · Under Rhegar Thorne",
+                "srcPill": "🆕 New",
+                "armorBadge": "Legendary",
+                "armorClass": "armor-badge a-leg",
+                "location": "Saltmere — Mobile (Rhegar Thorne's Discretion)",
+                "army": "Grand Standing Army — Rhegar Thorne (Direct Command) · The Aethran Dominion Remnant",
+                "image": "unitImages/aethran-colossi.png",
+                "imageAlt": "The Aethran Colossi",
+                "notes": "Twenty-seven riders. Twenty-seven Aethran Fangwalkers. That is all that remains of the Dominion's war titan corps — and the Dominion itself.\n\nThe Aethran Dominion bred and rode Fangwalkers for generations before it collapsed. What caused the Collapse is not on record in Starhaven's files because Riva Trid has not explained it, and no one in command has pressed the question. The riders escaped by sea — 27 riders, 27 Fangwalkers, crossing ocean in modified cargo holds that were the only ships large enough to take them. They bribed passage through the Golden Coast Federation, the only crossing route that would not turn a Fangwalker hold away at the dock.\n\nThey arrived at Saltmere harbor. Starhaven's coast guards raised every alarm they had the moment the first Fangwalker stepped off the ship onto the dock — a 40-foot animal moving through a harbor is not something the duty roster covers. Riva Trid walked down the gangplank herself, unarmed, and asked to speak with whoever was in command.\n\nThat request moved: coast guard → Ela Seawall's office at Dawncliff → Nyx Ravel (who intercepts everything unusual entering Saltmere and was watching before Riva finished the sentence) → Kael Varric (military assessment) → Rhegar Thorne (operational fit) → Rayden Cale, who met them in person at Saltmere docks. Riva Trid's terms were direct: shelter and supply for the riders and their mounts, and a position. In exchange: the Colossi fight under Starhaven's banner, under Rhegar Thorne's command, under the same supply terms as any standing army unit.\n\nRayden authorized it the same day.\n\nThe Fangwalkers cannot be replaced. There is no breeding program — Starhaven does not have the knowledge, and the riders have not offered it. Every Fangwalker lost is permanently gone. Rhegar Thorne deploys them accordingly: only when the objective justifies what a Fangwalker death costs permanently. In practice, what a Fangwalker does to a battle line — a 40-foot apex predator at full charge through formed infantry — is something no cavalry unit, war beast, or siege engine in Starhaven's roster replicates. Rayden's assessment after the first field exercise was two words. The record of what those two words were has not been released.",
+                "armor": [
+                  {
+                    "slot": "Rider Body",
+                    "name": "Aethran Dominion War Plate",
+                    "desc": "— The riders arrived in this armor and it has not been replaced. Aethran-forged heavy plate, distinctive in construction from any Starhaven equivalent. Reinforced at the thighs and knees for the mounted grip required on a Fangwalker's upper back. Starhaven's armorers have offered replacements; every rider has declined."
+                  },
+                  {
+                    "slot": "Rider Helm",
+                    "name": "Dominion War Helm",
+                    "desc": "— Fully enclosed Aethran-forged war helm. Jaw reinforcement for the physical shock of a Fangwalker charge impact — the rider's head must survive the deceleration when 40 feet of predator hits a formation. Clan markings on each helm are different. Riva Trid's carries a cracked left plate from the crossing — she has not repaired it."
+                  },
+                  {
+                    "slot": "Rider Primary",
+                    "name": "Aethran Reach Lance",
+                    "desc": "— A long-hafted lance built for use from the height of a Fangwalker's back — approximately 16 feet from the ground. Effective reach against infantry, other mounted units, and siege equipment. The lance is a secondary threat; the Fangwalker is the primary one."
+                  },
+                  {
+                    "slot": "Rider Secondary",
+                    "name": "Aethran Cavalry Blade",
+                    "desc": "— Curved heavy cavalry sword carried at the hip for close engagement if the lance is lost or the engagement collapses into melee range. Aethran construction — heavier than a Starhaven cavalry blade, single-edge, longer."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Aethran Fangwalker",
+                    "desc": "— Forty feet of apex predator, trained from birth in the Aethran Dominion to carry a rider and fight under direction. Massive jaw, heavy tail, forelimbs used for pinning and striking in close engagement. Natural hide is comparable to medium plate at the flank; skull and chest are effectively armored by bone density. Fast at charge speed — slower than cavalry over distance, devastating over a short run."
+                  },
+                  {
+                    "slot": "Mount Armor",
+                    "name": "Fangwalker War Barding",
+                    "desc": "— Partial iron barding at the head, neck, and chest. The Fangwalker's natural hide handles most ranged fire; the barding protects the skull and throat — the two points where concentrated bolt fire can cause meaningful damage. Flank and tail unarmored by choice — the weight would reduce charge speed and the natural hide is sufficient against all but concentrated armor-piercing fire."
                   }
                 ]
               }
@@ -8427,6 +8970,35 @@
             "label": "Siege Engines · Heavy War Machines",
             "cards": [
               {
+                "id": "ironbolt-batteries",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Ironbolt Batteries",
+                "branch": "Artillery",
+                "className": "Fortress Ballista Network · Fixed Battery",
+                "subtitle": "· 80,000 Bolts/Day · Ironpass + All Major Fortresses · Four Ammo Types",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Ironpass Citadel / Dawncliff / Frosthold / All Major Fortifications",
+                "army": "Starhaven Siege Command — Fortress Artillery Division",
+                "image": "unitImages/ironbolt-batteries.png",
+                "imageAlt": "",
+                "notes": "Starhaven's dedicated fortress ballista network. Fixed battery positions across Ironpass Citadel, Dawncliff Sea Fortress, Frosthold Bastion, and every major fortification in the alliance — not mobile, not field-deployable, but at sustained fire rates no field crossbow corps can match. 80,000 bolts per day is the sustained operational rate across the full network. Four ammo types give the batteries tactical flexibility no single-type crossbow arm has: standard for volume fire, armor-piercing for elite heavy infantry and cavalry, incendiary for siege equipment and supply denial, and Voidbane for supernatural targets — the only fortress artillery in the network with a dedicated anti-Void munition. The Ironbolt Batteries do not move to the battle. It is the reason certain battles do not reach the fortress.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Ironbolt Artillery Plate",
+                    "desc": "— Maximum-weight plate for crew protection at fixed battery positions. Heavier than field infantry equivalent — crew are stationary, weight is not a mobility cost."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Ironbolt Heavy Ballista Battery",
+                    "desc": "— Crew-served fortress ballista. Four ammo types: standard bolt (volume fire, 120-yard effective range), armor-piercing head (penetrates heavy plate at 90 yards), incendiary bundle (siege equipment and supply denial), Voidbane bolt (Vaelmark-treated tip, disrupts necromantic binding and Void entity cohesion on impact). Reload: two crew, 8 seconds per bolt at trained rate."
+                  }
+                ]
+              },
+              {
                 "id": "ironveil-trebuchet",
                 "data-br": "Artillery",
                 "data-src": "own",
@@ -8627,6 +9199,152 @@
                     "slot": "Payload",
                     "name": "Void Detonation Charge — Zareth Kull Design",
                     "desc": "— Contained Void detonation. Effect radius classified. Documented effect: survivors describe proximity experience as 'everything the wrong way.' Payload design by Zareth Kull. Authorization by Zareth Kull + Elysia Nocturne jointly. No exceptions documented."
+                  }
+                ]
+              },
+              {
+                "id": "scorpio-batteries",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Scorpio Field Batteries",
+                "branch": "Artillery",
+                "className": "Field Artillery · Light Torsion Bolt Thrower",
+                "subtitle": "· Two-Man Crew · 300-Yard Effective · Anti-Personnel Precision",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Field Mobile — Embedded per Infantry Regiment",
+                "army": "Starhaven Siege Command — Field Artillery Division",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The Scorpio is not a fortress weapon and not a siege-train weapon. It is a field weapon — light enough to be repositioned mid-engagement, heavy enough to punch through plate at 200 yards. Two-person crew: one aims, one loads. The torsion mechanism is wound between shots by the loader while the aimer holds target acquisition. Reload time at trained rate: 18 seconds.\n\nThe Scorpio's tactical role is precision anti-personnel at ranges that standard crossbow crews cannot reliably cover. A standard infantry crossbow is effective at 60 yards against plate. A Scorpio bolt at 200 yards against an unarmored target is lethal; against plate at 150 yards it penetrates reliably. Against a mounted officer at 250 yards it is the weapon of choice. Commanders, standard-bearers, cavalry officers holding a flank — these are Scorpio targets.\n\nEach battery is assigned to an infantry regiment rather than operating as a centralized pool. The Scorpio crew moves with the regiment, sets up forward of the main line during the approach phase, and begins priority target elimination before the infantry closes distance. By the time melee contact occurs, the opposing command structure has been under precision bolt fire for three to five minutes.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Light Artillery Harness",
+                    "desc": "— Reinforced leather chest and arm coverage. The Scorpio crew are mobile and must reposition frequently — full plate is not carried. Arm protection is prioritized: the winding mechanic on the torsion arms generates significant tension on the loader's forearms."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Scorpio Torsion Bolt Thrower",
+                    "desc": "— Single-bolt torsion engine, two-arm twisted sinew springs. Adjustable elevation from 0° to 35°. Traverse: 15° left and right from center without repositioning the frame. Bolt size: standard 3ft iron-tipped field bolt. Effective range: 300 yards. Armor-penetrating range: 150 yards against plate. Crew: 2. Reload: 18 seconds trained rate."
+                  },
+                  {
+                    "slot": "Bolt",
+                    "name": "Scorpio Field Bolt",
+                    "desc": "— 3-foot iron-tipped hardwood shaft. Standard tip for anti-personnel work; broadhead tip available for anti-cavalry (horse targeting). A Scorpio battery carries 120 bolts per deployment cycle."
+                  }
+                ]
+              },
+              {
+                "id": "carroballista-corps",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Carroballista Corps",
+                "branch": "Artillery",
+                "className": "Field Artillery · Cart-Mounted Mobile Ballista",
+                "subtitle": "· Horse-Drawn · Repositions Under Fire · Anti-Cavalry & Heavy Infantry",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Field Mobile — Cavalry Column Attached",
+                "army": "Starhaven Siege Command — Field Artillery Division",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The Carroballista is a heavy ballista mounted on a two-horse cart. The cart is the weapon's defining feature — it can reposition at cavalry speed, unlimber in 40 seconds, fire, and move again before return artillery can range in on its former position. Where the Scorpio crew picks a position and holds it, the Carroballista battery is never in the same place twice.\n\nThe mounted ballista fires a heavier bolt than the Scorpio — 5 feet, iron-capped, capable of penetrating standard fortress-quality gate timber at 80 yards and heavy cavalry barding at 200. Against massed infantry formations, the bolt passes through the first target and continues into the second. At 150 yards against a tight column, two-body penetration is documented. Against cavalry in full barding, it is the only field-mobile artillery in Starhaven's arsenal that reliably drops an armored horse.\n\nThe corps attaches to cavalry columns for field operations — the horses that pull the cart are from the same breeding pool as the cavalry mounts, which means the battery moves with the cavalry rather than lagging behind it. In pursuit operations, Carroballista batteries ride ahead to cut off retreating formations at choke points. In defensive operations they set up, fire into the advancing column, and withdraw to the next position before contact.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Mobile Artillery Plate",
+                    "desc": "— Medium plate, rider-configuration. The Carroballista crew ride the cart to position and dismount to fire — the plate allows both horseback travel and ground operation without change. Reinforced at the shoulders: the ballista's draw arm generates lateral force during cocking."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Cart-Mounted Heavy Ballista",
+                    "desc": "— Heavy two-arm ballista fixed to a swivel mount on the cart bed. The swivel allows 180° traverse without repositioning the cart. Elevation: 0° to 25°. Bolt: 5-foot iron-capped hardwood. Range: 350 yards. Armor penetration: heavy cavalry barding at 200 yards; gate timber at 80 yards. Crew: 3 (driver, aimer, loader). Unlimber time: 40 seconds."
+                  },
+                  {
+                    "slot": "Horse",
+                    "name": "Cavalry-Grade Draft Pair",
+                    "desc": "— Two horses from Starhaven's cavalry breeding pool rather than standard draft horses. Faster than conventional artillery teams, capable of matching cavalry column pace. The pair is armored at chest and neck — they are also the battery's most expensive component and are protected accordingly."
+                  },
+                  {
+                    "slot": "Bolt",
+                    "name": "Heavy Penetrating Bolt",
+                    "desc": "— 5-foot iron-capped bolt. Standard tip penetrates plate at 200 yards and timber at 80. Anti-cavalry variant has a wider cap designed to maximize energy transfer through barding. Each Carroballista carries 60 bolts per deployment."
+                  }
+                ]
+              },
+              {
+                "id": "polybolus-corps",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Polybolus Repeater Corps",
+                "branch": "Artillery",
+                "className": "Field Artillery · Repeating Bolt Thrower · High Volume",
+                "subtitle": "· Chain-Feed Mechanism · 10 Bolts/Min · Formation Saturation",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Crew",
+                "armorClass": "armor-badge a-na",
+                "location": "Field Positions — Defensive Line Embedded",
+                "army": "Starhaven Siege Command — Field Artillery Division",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The Polybolus solves a different problem than the Scorpio or Carroballista. It does not kill a single target with precision. It puts ten bolts downrange per minute into a designated area and lets the volume do the work. The chain-feed mechanism — a rotating wooden cylinder with pre-loaded bolt channels — cycles the next bolt into position as the previous one fires. One operator handles the crank and keeps the chain moving. One operator aims and adjusts elevation. The bolts are lighter than standard ballista rounds; the mechanism cannot handle the full-weight penetrating bolt the Carroballista fires. What it can handle is sustained fire at a rate no human crossbow crew matches.\n\nPolybolus batteries are embedded in defensive line positions — fixed emplacements where the target zone is pre-designated. An advancing infantry column enters the engagement range of three or four Polybolus units simultaneously and finds itself under forty bolts per minute from one battery cluster. The individual bolt lacks the penetration of heavier systems. Against unarmored infantry at 150 yards it is lethal. Against medium armor at 100 yards it is effective. Against heavy plate at close range it is suppression — not kill fire, but enough to disrupt formation cohesion and drive shields up, which creates openings for the Scorpio's precision work.\n\nCain Drakhar contributed to the chain-feed mechanism redesign in Year 1046 after the original wooden cylinder cracked under sustained operation in cold weather. The current version is iron-core with wooden casing.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Repeater Crew Harness",
+                    "desc": "— Medium leather and light plate. The Polybolus crew are position-bound during operation — they do not reposition under fire. The harness prioritizes coverage over mobility."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Polybolus Chain-Feed Repeater",
+                    "desc": "— Two-arm torsion ballista with iron-core chain-feed cylinder. Cylinder capacity: 10 bolts per load cycle. Fire rate: 10 bolts per minute at trained rotation speed. Range: 200 yards effective. Penetration: light to medium armor at 100 yards; suppression against plate. Crank-operated feed. Crew: 2 (aimer, crank operator). Reload of the cylinder: 90 seconds."
+                  },
+                  {
+                    "slot": "Bolt",
+                    "name": "Repeater Short Bolt",
+                    "desc": "— 2-foot lightweight iron-tipped bolt sized for the chain-feed cylinder. Cannot be used in standard ballistae — the lighter shaft would not sustain the torsion force. Carried in pre-loaded cylinder magazines of 10; each Polybolus battery carries 20 magazines (200 bolts) per deployment cycle."
+                  }
+                ]
+              },
+              {
+                "id": "arcane-cannons-vaelmark",
+                "data-br": "Artillery",
+                "data-src": "own",
+                "name": "Arcane Cannon Corps — Vaelmark",
+                "branch": "Artillery",
+                "className": "Arcane Artillery · Variable Output · Mana-Channel Discharge",
+                "subtitle": "· Vaelmark Athenaeum Design · Adjustable Yield · Anti-Fortification & Anti-Formation",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Arcane",
+                "armorClass": "armor-badge a-arc",
+                "location": "Vaelmark / Forward Battery Deployment",
+                "army": "Starhaven Specialized — Vaelmark Athenaeum · Arcane Artillery Division",
+                "image": "",
+                "imageAlt": "",
+                "notes": "The Arcane Cannon Corps is the product of the Vaelmark Athenaeum's siege engineering division — the same institution that produced the jade-trigger mechanism for the Jade Crossbow Corps and the arcane stabilization for the Ironveil Trebuchet. The cannon itself is a mana-channel discharge platform: a reinforced iron barrel mounted on a wheeled frame, fed by a continuous mana line drawn from a paired Athenaeum-trained operator rather than loaded with mechanical projectiles.\n\nThe yield is variable — the operator controls discharge magnitude from a sustained low-power suppression beam to a single high-magnitude concussive discharge capable of breaching a 6-foot stone wall section. Variable output is the Arcane Cannon's primary tactical advantage over mechanical artillery: the same weapon that opens a gate on Tuesday can suppress a skirmish line on Wednesday without changing any component. The operator adjusts. The platform is the same.\n\nThe mana-channel discharge is not fire, not arcane lightning, and not void energy. It is described in Athenaeum documentation as 'concentrated force propagated through a channeled arcane medium' — which in practice means it hits like a very large, very fast object that leaves no burning debris. Useful for engagements where incendiary risk to allied positions is a concern.\n\nVaelmark maintains the manufacture and repair exclusively. Every Arcane Cannon Corps operator is Vaelmark-trained and carries a certification mark from the Athenaeum. The barrels are inspected after every 40 discharges. Velkan's standing order: no barrel fires discharge 41 without inspection. This order has never been tested — no barrel has reached 40 without being inspected first.",
+                "armor": [
+                  {
+                    "slot": "Operator",
+                    "name": "Vaelmark Arcane Plate",
+                    "desc": "— Medium plate with mana-channel integration points at the forearms and chest. The plate does not store mana — it channels it from the operator to the cannon barrel during sustained discharge. Vaelmark-crafted; not reproducible by standard smiths. The channel points glow a soft blue during active use."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Vaelmark Arcane Cannon",
+                    "desc": "— Iron barrel, 6-foot length, 8-inch bore, mounted on a two-wheel iron frame. Mana-channel input at the breech end, discharge at the muzzle. Variable yield: minimum (suppression — 100-yard effective spread), standard (anti-formation — 200-yard point impact), maximum (anti-fortification — single 6-foot wall section breach at 150 yards). Cooldown between maximum discharges: 4 minutes. Standard and minimum discharges: no cooldown required. Manufactured exclusively at Vaelmark Athenaeum."
+                  },
+                  {
+                    "slot": "Power Source",
+                    "name": "Paired Athenaeum Operator",
+                    "desc": "— Each cannon requires a trained mana-feed operator whose sole role is maintaining the channel during sustained operation. The barrel operator aims and controls yield. The feed operator maintains the mana line and monitors the barrel temperature. Two-person crew minimum; a third operator rotates in on extended deployments to prevent feed-operator fatigue. Mana exhaustion in the feed operator is the platform's primary operational limit."
+                  },
+                  {
+                    "slot": "Inspection",
+                    "name": "40-Discharge Inspection Protocol",
+                    "desc": "— Mandated by Velkan. Every barrel is inspected by a Vaelmark-certified engineer after every 40 discharges. No exceptions on record. The protocol includes barrel integrity check, channel-point realignment, and feed-coupling pressure test. Barrels that fail inspection are returned to Vaelmark for remanufacture — field repair is not authorized."
                   }
                 ]
               }
@@ -9464,6 +10182,34 @@
     const cardModal = document.getElementById("cardModal");
     const modalBody = cardModal.querySelector(".modal-body");
     const modalClose = cardModal.querySelector(".modal-close");
+    const modalPrev = document.getElementById("modalPrev");
+    const modalNext = document.getElementById("modalNext");
+    const modalNavCount = document.getElementById("modalNavCount");
+    const modalPrevLabel = document.getElementById("modalPrevLabel");
+    const modalNextLabel = document.getElementById("modalNextLabel");
+    let currentCardIdx = -1;
+
+    function getVisibleCards() {
+      return Array.from(document.querySelectorAll(".unit-card:not(.hidden)"));
+    }
+
+    function updateModalNav(cards, idx) {
+      const prev = cards[idx - 1];
+      const next = cards[idx + 1];
+      modalPrev.disabled = !prev;
+      modalNext.disabled = !next;
+      modalPrevLabel.textContent = prev ? (prev.querySelector(".unit-name")?.textContent || "—") : "";
+      modalNextLabel.textContent = next ? (next.querySelector(".unit-name")?.textContent || "—") : "";
+      modalNavCount.textContent = `${idx + 1} / ${cards.length}`;
+    }
+
+    function openCardByIndex(idx) {
+      const cards = getVisibleCards();
+      if (idx < 0 || idx >= cards.length) return;
+      currentCardIdx = idx;
+      openCardModal(cards[idx]);
+      updateModalNav(cards, idx);
+    }
 
     function initZoomPan(container, img, zoomLabel) {
       let scale = 1, tx = 0, ty = 0;
@@ -9662,11 +10408,25 @@
     });
 
     document.querySelectorAll(".unit-card").forEach(card => {
-      card.addEventListener("click", () => openCardModal(card));
+      card.addEventListener("click", () => {
+        const cards = getVisibleCards();
+        openCardByIndex(cards.indexOf(card));
+      });
     });
+
     modalClose.addEventListener("click", closeCardModal);
     cardModal.addEventListener("click", e => {
       if (e.target === cardModal) closeCardModal();
+    });
+
+    modalPrev.addEventListener("click", () => openCardByIndex(currentCardIdx - 1));
+    modalNext.addEventListener("click", () => openCardByIndex(currentCardIdx + 1));
+
+    document.addEventListener("keydown", e => {
+      if (!cardModal.classList.contains("active")) return;
+      if (e.key === "ArrowRight") { e.preventDefault(); openCardByIndex(currentCardIdx + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); openCardByIndex(currentCardIdx - 1); }
+      if (e.key === "Escape") closeCardModal();
     });
 
     // Scroll spy
