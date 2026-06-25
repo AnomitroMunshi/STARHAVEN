@@ -4557,39 +4557,44 @@
                 "armorClass": "armor-badge a-l",
                 "location": "Distributed Garrisons",
                 "army": "3rd Field Army — Brek Tane",
-                "image": "",
+                "image": "unitImages/ashbow-archers.png",
                 "imageAlt": "",
                 "notes": "The 3rd Army's crossbowmen are its teeth — accurate, armor-piercing, slow. The Ashbow Archers are the other thing: fast. Where a crossbow soldier fires two bolts per minute under optimal conditions, an Ashbow Archer fires ten arrows. They do not replace the crossbow contingent. They exist alongside it, filling the gap the crossbow cannot fill — suppression, volume, speed, the unarmored flanks and horses that bodkins are too precise to address efficiently.\n\nBrek Tane introduced them after a garrison rotation exercise exposed the 3rd Army's weakness against fast cavalry swarms: the crossbows tracked individual targets and broke them cleanly, but the second wave was already through the gap before the reload completed. The Ashbow Archers saturate that gap. Three volleys in the air before the first lands. Enemy cavalry adjusting to the crossbow fire finds itself riding into something else entirely.\n\nThey are distributed across garrison positions the same way the crossbowmen are — Brek Tane does not concentrate his ranged arms, he layers them. An Ashbow contingent backs every crossbow cluster. The crossbow fires at the armored threat. The Ashbow fires at everything around it.",
                 "armor": [
                   {
                     "slot": "Body",
                     "name": "Garrison Archer Vest",
-                    "desc": "— Padded leather vest with light steel chest plate. Weight kept minimal to allow sustained draw over prolonged garrison engagements."
+                    "desc": "— Reinforced padded leather with a light steel breastplate, built for sustained rapid shooting without restricting movement."
+                  },
+                  {
+                    "slot": "Shoulders",
+                    "name": "Garrison Archer Mantle",
+                    "desc": "— Waxed dark-blue shoulder mantle protecting bowstring and quiver from rain while breaking the soldier's silhouette on fortress walls."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Open Field Helm",
-                    "desc": "— Light steel cap with minimal cheek guard. Full peripheral vision preserved — an archer who cannot track moving cavalry at the edges of their sight is an archer who misses."
+                    "name": "Garrison Archer Sallet",
+                    "desc": "— Open-faced steel sallet with shallow cheek guards and an extended neck plate, preserving peripheral vision while protecting against overhead missile fire."
                   },
                   {
                     "slot": "Arms",
                     "name": "Draw Bracers",
-                    "desc": "— Reinforced leather bracers on both forearms. Right arm: bowstring protection for the high draw rate. Left arm: grip stabilization for sustained hold during volley sequences."
+                    "desc": "— Reinforced leather bracers built for continuous high-rate shooting and stable bow control."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Ashbow Field Recurve",
-                    "desc": "— 75lb laminated recurve built for speed over raw power: short draw cycle, fast release, minimal settle time between shots. Ten arrows per minute is the training standard. The bow is named for the ashwood laminate in the limbs — same timber as the garrison fencing at Ironpass, which Brek Tane considers appropriate."
+                    "name": "Ironpass Ashbow",
+                    "desc": "— Laminated ashwood recurve optimized for sustained rapid fire rather than raw draw weight. Ten aimed arrows per minute is the corps standard."
                   },
                   {
                     "slot": "Arrows",
-                    "name": "Volume Quiver",
-                    "desc": "— Forty broadhead arrows, hip-mounted for rapid access during volley sequences. Broadhead standard rather than bodkin — the crossbows handle armored penetration. The Ashbow Archers handle everything around it."
+                    "name": "Suppression Quiver",
+                    "desc": "— Forty broadhead arrows carried for uninterrupted volley fire against cavalry, exposed infantry, and formation gaps while the crossbow corps engages armored targets."
                   },
                   {
                     "slot": "Secondary",
-                    "name": "Short Combat Blade",
-                    "desc": "— Single-edged short blade for close defense if the garrison position is breached. If the Ashbow Archers are fighting in melee, something has already gone wrong at the crossbow line."
+                    "name": "Garrison Hatchet",
+                    "desc": "— Compact utility axe carried for engineering tasks and emergency close combat after a breached defensive position."
                   }
                 ]
               }
@@ -4767,7 +4772,7 @@
                 "armorClass": "armor-badge a-l",
                 "location": "Coldmarch / Mobile — 2nd Field Army Forward",
                 "army": "2nd Field Army — Clea Vorn",
-                "image": "",
+                "image": "unitImages/the-slingers.png",
                 "imageAlt": "",
                 "notes": "The Slingers are the first unit to reach the battlefield and the first to open fire. They move ahead of the main 2nd Army column — unencumbered, carrying little beyond their slings and sorted shot — and engage before any melee element has closed distance. The battle begins when they decide it does.\n\nThree ammo types, each with a distinct purpose and a distinct moment. Stone shots go out first at maximum range — suppression, disruption, forcing the enemy to raise shields and break marching posture. Metal shots follow as range closes — denser, flatter trajectory, aimed at helmeted officers, cavalry horses, shield bosses, anything load-bearing. Mini bombs come last, at the moment before the 2nd Army's cavalry and infantry hit — timed or impact-fused, dropped into the tightest clusters, opening the gaps the main advance will move through.\n\nThe Slingers carry no heavy armor. A leather vest, a padded cap, a pouch of sorted shot — that is the entire kit. What makes them fast is not their legs but their load. They can cover ground that fully armored infantry cannot match, arrive at positions before the enemy expects contact, and disappear into the flanks before the melee closes. Clea Vorn's Speed Doctrine is built on movement being the primary weapon; the Slingers execute that principle before a sword is drawn.\n\nThey do not hold ground after their opening sequence. The engagement is theirs to start. The 2nd Army decides when it ends.",
                 "armor": [
@@ -6836,36 +6841,252 @@
             "label": "War-Beast Command",
             "cards": [
               {
-                "id": "primal-vanguard",
+                "id": "rootfang",
                 "data-br": "Beast Cavalry",
                 "data-src": "own",
-                "name": "Primal Vanguard",
+                "name": "The RootFang",
                 "branch": "Beast Cavalry",
-                "className": "War-Beast Command",
-                "subtitle": "· Primal Assault · 11,000+ Warriors + Beasts",
+                "className": "Elite Beast Cavalry · Primal Vanguard",
+                "subtitle": "· Thorin & Grond · 100 Wildblood Dwarf Riders · Mixed Mounts",
                 "srcPill": "🏰 Own",
-                "armorBadge": "Medium",
-                "armorClass": "armor-badge a-m",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
                 "location": "Greenveil / Greywood Sanctuary",
-                "army": "Pillar — Thorin Blackroot (Mount: Grond)",
-                "image": "Lores/Mueseum/PrimalVanguard.png",
-                "imageAlt": "Primal Vanguard",
-                "notes": "Thorin Blackroot's command — 11,000+ warriors and beasts operating as a single primal assault force out of Greenveil and the Greywood Sanctuary. Thorin rides Grond, a unique war beast that serves as both mount and symbol of command. Rootguard Harness is living wood grown by nature-affinity, not forged. The Stonebark shield regrows over 72 hours.",
+                "army": "Primal Vanguard — Thorin Blackroot",
+                "image": "unitImages/rootfang.png",
+                "imageAlt": "",
+                "notes": "Thorin Blackroot's personal elite — 100 Wildblood Dwarf beast riders who literally ride into battle. The RootFang is not a handler unit. Every rider is mounted. Every mount is bonded. The mixed roster — War Boars, War Bears, Dire Wolves, War Tigers, War Lions, War Gorillas — is not a design decision. It is the consequence of Wildblood Dwarf beast-bonding in the Greywood: you ride what bonds to you, and no two bonds are the same.\n\nThorin leads on Grond — a colossal Dire Bear, ancient and scarred, enormous beyond any normal specimen. Grond has been with Thorin for over three decades and does not allow other riders. When Thorin commands the RootFang charge, Grond is at the front.\n\nGarruk Blackroot's entire beast command — his Dire Wolf riders and his bonded pack — was folded into the RootFang after Garruk died in Year 1043, crushed by a siege pillar that had been falling toward Thorin. Garruk's alpha direwolf, a massive bond-animal that no other rider has approached since, runs with the unit unmounted. It runs at Grond's left shoulder. Soldiers who have seen the charge report it never leaves that position, regardless of what happens in front of it.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Rootfang Ironwood Plate",
+                    "desc": "— Heavy ironwood-and-iron composite plate grown and shaped for each Wildblood Dwarf rider individually by Rootcaller Shamans — six weeks per set. No two sets are identical; the ironwood grows to the rider's specific frame over years of wear."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Beast-Tooth War Helm",
+                    "desc": "— Iron war helm set with the teeth of the rider's first bonded beast — a Wildblood Dwarf tradition marking the bond-year. Thorin's helm carries Grond's first shed claw. Garruk's riders still wear helms set with direwolf teeth; they have not replaced them."
+                  },
+                  {
+                    "slot": "Primary — Thorin",
+                    "name": "Rootcleaver",
+                    "desc": "— Thorin's personal weapon. A living axe — ironwood haft grown rather than shaped, with a stone-iron blade edge. The only weapon in the Primal Vanguard that has a root network of its own. Thorin has carried it for over twenty years."
+                  },
+                  {
+                    "slot": "Gauntlets — Thorin",
+                    "name": "Stone-Fist Gauntlets",
+                    "desc": "— Thorin's personal gauntlets, shaped from Greywood stone. Used when Rootcleaver cannot swing — close quarters, formation press, or when Thorin's primal form begins to surface and the axe becomes less relevant than what his hands can do."
+                  },
+                  {
+                    "slot": "Primary — Riders",
+                    "name": "RootFang War Axe",
+                    "desc": "— Single-handed iron war axe with ironwood haft, designed for one-handed mounted use. Most RootFang riders carry two — one axe, one hand free for beast-direction. The unit standard issue."
+                  },
+                  {
+                    "slot": "Mount Grip",
+                    "name": "Beast-Grip Gauntlets",
+                    "desc": "— Iron-reinforced gauntlets with grip-ridges on the palm for bareback riding. Dire Wolves, War Tigers, War Lions, and War Gorillas are all ridden bareback — no saddle structure survives the movement of these beasts. The grip ridge is the difference between staying mounted through a charge and not."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Woodborn Guardians",
+            "cards": [
+              {
+                "id": "woodborn-guardians",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Woodborn Guardians",
+                "branch": "Beast Cavalry",
+                "className": "Frontline Infantry · Primal Vanguard",
+                "subtitle": "· Shield Wall · Rooted Defense · Living Wood Armor",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Greenveil / Greywood Sanctuary",
+                "army": "Primal Vanguard — Thorin Blackroot",
+                "image": "unitImages/woodborn-guardians.png",
+                "imageAlt": "",
+                "notes": "The frontline shield wall of the Primal Vanguard — the warriors who hold the line while the beasts do their work. Woodborn Guardians are masters of rooted defense: once their Stonebark shields are planted and their feet are set, they do not move. Their Rootguard Harness is not forged — it is grown directly from ironwood by nature-affinity and reinforces under sustained impact. The Stonebark shield regrows over 72 hours if cracked. They are not the Primal Vanguard's fastest element. They are the reason everything else survives long enough to do what it was trained to do.",
                 "armor": [
                   {
                     "slot": "Body",
                     "name": "Rootguard Harness",
-                    "desc": "— Living wood and ironwood grown by nature-affinity. Reinforces under im…"
+                    "desc": "— Living ironwood grown by nature-affinity directly to the wearer's frame. Not forged — grown. Reinforces under sustained impact as the wood fibres compress and interlock. Cannot be transferred to another wearer; it dies within 48 hours of separation."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Stonebark War Helm",
+                    "desc": "— Hollowed stonebark casing lined with packed moss. Impact-absorbing rather than deflecting — the stonebark material compresses inward and holds the force. Heavier than iron helms of the same coverage."
                   },
                   {
                     "slot": "Shield",
-                    "name": "Stonebark Shield",
-                    "desc": "— Living shield from stonebark trees. Regrows over 72 hours."
+                    "name": "Stonebark Tower Shield",
+                    "desc": "— Full-body coverage shield grown from mature stonebark. Can be planted into the ground as a fixed wall. Regrows hairline cracks over 72 hours. A cracked shield is not replaced — it is allowed to heal."
                   },
                   {
-                    "slot": "Beast",
-                    "name": "War-Beast Harness",
-                    "desc": "— Ironwood-fitted per beast type: Dire Wolves light harness, War Bears f…"
+                    "slot": "Primary",
+                    "name": "Ironwood Spear",
+                    "desc": "— 7ft spear of dense ironwood. Used braced behind the Stonebark shield. The Woodborn Guardians do not attack from behind the shield — they hold the line and let the spear reach over it."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Root-Blade",
+                    "desc": "— Short ironwood-handled blade for use when the formation breaks to close quarters. Reinforced edge with a bark-resin coating that resists dulling."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Rootcaller Shamans",
+            "cards": [
+              {
+                "id": "rootcaller-shamans",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Rootcaller Shamans",
+                "branch": "Beast Cavalry",
+                "className": "Battle Mage · Primal Vanguard",
+                "subtitle": "· Earth & Vine Control · Living Wood · Field Healers",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Greenveil / Greywood Sanctuary",
+                "army": "Primal Vanguard — Thorin Blackroot",
+                "image": "unitImages/rootcaller-shamans.png",
+                "imageAlt": "",
+                "notes": "The Primal Vanguard's battle mage and healer element. Rootcaller Shamans manipulate earth, vines, and living wood — raising root barriers mid-engagement, collapsing ground under enemy formations, and accelerating the regrowth of the Guardians' Stonebark shields. In the healer role they work through the living matter of the Rootguard Harness itself — the harness is still alive, and a Rootcaller can direct its regrowth. They do not fight at close range. They fight at the distance where the earth between them and the enemy is the weapon.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Rootweave Robe",
+                    "desc": "— Layers of compressed vine and woven bark-cloth over a moss underlayer. Not a combat garment — built to maintain skin contact with the earth at all times through the hem. The contact is part of the casting architecture."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Living Crown",
+                    "desc": "— A circlet of living wood that grows from the shaman's own nature-affinity. No two are the same shape. It is not worn — it grows from the scalp over years of affinity practice and cannot be removed without severing the attunement."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Rootcaller Staff",
+                    "desc": "— A living wood staff that serves as both casting focus and terrain anchor. Driven into the earth at the start of an engagement — the staff reads the soil composition through it. Shamans who lose their staff mid-engagement lose 40% of their range and precision."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Vine-Sling",
+                    "desc": "— A sling of woven living vine used to launch bark-resin canisters into enemy formations before the earth manipulation begins. Not a weapon — a disruption tool to force formation opening before the roots come up."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Healer's Bark Pouch",
+                    "desc": "— Dried root-paste, compressed moss, regrowth accelerant made from Greywood sap. Applied directly to wounds and to cracked Stonebark shields. The Guardians do not carry field dressings. The Rootcaller carries them for both."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Feral Hunters",
+            "cards": [
+              {
+                "id": "feral-hunters",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Feral Hunters",
+                "branch": "Beast Cavalry",
+                "className": "Skirmishers · Primal Vanguard",
+                "subtitle": "· Ambush · Harass · Fast & Silent · Bleed the Line",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Greenveil / Greywood Sanctuary",
+                "army": "Primal Vanguard — Thorin Blackroot",
+                "image": "unitImages/feral-hunters.png",
+                "imageAlt": "",
+                "notes": "The Primal Vanguard's skirmish and disruption element. Fast. Silent. Deadly. Feral Hunters do not hold ground — they exist to make holding ground expensive for the enemy. They move ahead of the main force, locate flanks and command positions, and harry the enemy line with hit-disappear-reappear patterns that cannot be screened against in woodland terrain. They do not engage at close quarters unless the engagement is already won. Their preferred tactic: ambush from canopy or undergrowth, three volleys, gone before the enemy has located the source.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Feral Hunter Skin Harness",
+                    "desc": "— Minimal — hide and bark-leather strips at chest and shoulders only. The Feral Hunter's defense is not armor but absence. Plate would make them audible. Silence is the armor."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Canopy Hood",
+                    "desc": "— Bark-threaded cloth hood with moss and vine camouflage woven in. Changes appearance with the terrain — Greywood moss in forest, dried bark in open ground. Covers the face to the eyes."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Greywood Shortbow",
+                    "desc": "— Compact recurve bow from Greywood heartwood. Shorter draw weight than corps-issue but significantly faster nock-to-release — optimized for three-volley-disappear doctrine. Effective to 120 yards."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Feral Hunter Quiver",
+                    "desc": "— 24 broadheads and 6 vine-barbed shafts. The vine-barbed shafts tangle in armor joints and require time to remove — forcing the target to stop moving during the Feral Hunter's withdrawal."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Hunter Knife Pair",
+                    "desc": "— Two short-bladed knives for close-quarters emergency use and for cutting vine-barbed arrows free from their own equipment during repositioning. Last resort in a doctrine built around never reaching last resort."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Silent-Step Wraps",
+                    "desc": "— Bark-fibre and moss wrapped feet coverings. No sole — direct ground contact. The Feral Hunter feels terrain through the foot before weighting a step. No creak, no impact, no sound."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Stoneclaw Brutes",
+            "cards": [
+              {
+                "id": "stoneclaw-brutes",
+                "data-br": "Beast Cavalry",
+                "data-src": "own",
+                "name": "Stoneclaw Brutes",
+                "branch": "Beast Cavalry",
+                "className": "Shock Infantry · Primal Vanguard",
+                "subtitle": "· Armored Berserkers · Line Breakers · Stone-Plate",
+                "srcPill": "🏰 Own",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Greenveil / Greywood Sanctuary",
+                "army": "Primal Vanguard — Thorin Blackroot",
+                "image": "unitImages/stoneclaw-brutes.png",
+                "imageAlt": "",
+                "notes": "The shock element of the Primal Vanguard — heavily armored berserkers whose job is to break through the line the Woodborn Guardians have pinned in place. Stoneclaw Brutes wear stone-plate grown from quarried Greywood stone and shaped by Rootcaller Shamans — heavier than iron, nearly immune to blade penetration, and irreplaceable if lost because the shaping process takes three months. They fight with the Stoneclaw Gauntlets that give the unit its name — iron-reinforced stone claw fittings that turn a punch into a structural impact. They do not use conventional weapons. Their body is the weapon. No Stoneclaw Brute has ever retreated. This is not a policy. It is an observation.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Stone-Plate Harness",
+                    "desc": "— Quarried Greywood stone shaped by Rootcaller Shamans into fitted plate. Heavier than iron plate of the same coverage — a Stoneclaw Brute carries approximately 110lb of armor. Nearly immune to blade penetration. Takes three months to shape a replacement set. A Brute whose stone-plate is destroyed fights without it rather than wait three months."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Stoneclaw War Mask",
+                    "desc": "— Full-face stone mask, shaped to the Brute's features during the Rootcaller shaping process. No two are the same face. The mask is a single piece — no visor, no opening. Vision through two narrow eye slots only. Peripheral vision is not the priority. Forward pressure is the priority."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Stoneclaw Gauntlets",
+                    "desc": "— Iron-reinforced stone claw extensions fitted over both fists. Each claw is 8 inches of shaped iron emerging from a stone backing plate that distributes the impact across the entire hand and wrist. A Stoneclaw strike against plate armor transmits force in the same manner as the Ironbreaker Mace Corps — through the plate into the body beneath."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Stone-Slab Pauldrons",
+                    "desc": "— Oversized stone shoulder plates that double as impact weapons in a shoulder charge. The Stoneclaw Brute's second attack option after the gauntlets: a shoulder drop into a formation gap that is structurally equivalent to a battering ram hitting at human height."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Stone-Plate Greaves",
+                    "desc": "— Full leg coverage in shaped Greywood stone. The greave-weight adds to the forward momentum of a charge — a Stoneclaw Brute at full run hits with the combined force of the body and approximately 40lb of moving stone per leg."
                   }
                 ]
               }
