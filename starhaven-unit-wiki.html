@@ -1199,6 +1199,53 @@
       .modal-zoom-controls {
         display: none;
       }
+
+      /* tap image → fullscreen overlay */
+      .modal-img-wrapper img {
+        cursor: zoom-in;
+      }
+    }
+
+    /* ── FULLSCREEN IMAGE OVERLAY ───────────────────────────────────── */
+    #imgFullscreen {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.96);
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    #imgFullscreen.open {
+      display: flex;
+    }
+
+    #imgFullscreen img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 6px;
+      user-select: none;
+    }
+
+    #imgFullscreen .imgfs-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
@@ -1327,6 +1374,10 @@
     </div>
   </div>
   <div id="zoomOverlay" style="display:none;position:fixed;inset:0;z-index:249;"></div>
+  <div id="imgFullscreen">
+    <button class="imgfs-close" id="imgFsClose" aria-label="Close">&#215;</button>
+    <img id="imgFsImg" src="" alt="">
+  </div>
   <script>
     const UNIT_DATA = [
       {
@@ -3966,33 +4017,43 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silverleaf War Harness",
-                    "desc": "— Standard corps harness with a silver-thread embroidered hem — the only visible distinction between the Evenmere Guard and the rest of the corps. Sylara's instruction: visible rank marks make her protection readable to the enemy."
+                    "name": "Evenmere Guard Harness",
+                    "desc": "— Master-crafted Silverleaf War Harness with silver-thread embroidery and reinforced chest lamellae. Reserved exclusively for the Archbow's forty personal guardians."
                   },
                   {
                     "slot": "Arms",
-                    "name": "Drawmaster Vambrace",
-                    "desc": "— Standard corps vambrace. The Evenmere Guard trains with the vambrace as a blocking tool — close-quarters protection means the bow arm may need to deflect a blade."
+                    "name": "Guardian Vambrace",
+                    "desc": "— Reinforced Drawmaster vambrace built for both precision archery and close-quarters blade deflection."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Silverleaf Circlet",
-                    "desc": "— Standard circlet. No distinguishing cord. The Evenmere Guard are functionally invisible within the corps until they act."
+                    "name": "Evenmere Circlet",
+                    "desc": "— Silver circlet bearing a polished moonstone beneath the Silverleaf emblem, marking the wearer as one of the Archbow's chosen guardians."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Silverleaf Warbow",
-                    "desc": "— Standard 180lb draw. The Evenmere Guard are among the finest shots in the corps — close-range protection demands accuracy at near-zero margin."
-                  },
-                  {
-                    "slot": "Secondary",
-                    "name": "Evenmere Blade",
-                    "desc": "— A longer single-edged blade than standard corps issue — 24 inches versus the shortsword's 18. The Guard is expected to fight at swordspoint if the line collapses to Sylara's position."
+                    "name": "Guardian Warbow",
+                    "desc": "— Individually tuned 180lb Silverleaf warbow optimized for rapid close-range response and exceptional long-range precision."
                   },
                   {
                     "slot": "Arrows",
-                    "name": "Command-Kill Shafts",
-                    "desc": "— Same as the Command Elimination Squadron. The Evenmere Guard targets anything that points a weapon toward Sylara's position, regardless of rank."
+                    "name": "Guardian Quiver",
+                    "desc": "— Mixed load of command-kill bodkins, armor-piercing shafts, broadheads, and signal arrows, allowing immediate response to any threat approaching the Archbow."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Evenmere Longblade",
+                    "desc": "— Twenty-four inch single-edged sword designed for defending the Archbow in confined engagements after enemy forces breach the archer line."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Guardian Buckler",
+                    "desc": "— Compact silver-rimmed buckler carried across the back. Used only during close-quarters protection and light enough to avoid interfering with archery."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Command Guard Kit",
+                    "desc": "— Spare bowstrings, medical pouch, command whistle, signal flags, observation glass, emergency maps, and field repair tools for maintaining command continuity during battle."
                   }
                 ]
               }
@@ -4020,13 +4081,38 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Ironmere Field Plate (reduced)",
-                    "desc": "— Same plate family as Heavy Infantry but shortened to allow full draw a…"
+                    "name": "Ironmere Field Plate (Reduced)",
+                    "desc": "— Medium-heavy field plate from the same armor family as 1st Army heavy infantry, shortened at the waist and reduced at the draw-side shoulder to allow a full bow arc."
                   },
                   {
-                    "slot": "Bow",
+                    "slot": "Helm",
+                    "name": "Ironmere Archer Helm",
+                    "desc": "— Open-faced steel helm with cheek guards and a reinforced brow. Built to survive counter-arrow fire without limiting sightlines."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Draw-Clearance Pauldron",
+                    "desc": "— Asymmetrical shoulder protection: heavier on the bow arm, reduced on the draw arm. Allows repeated full draws while retaining infantry-grade protection."
+                  },
+                  {
+                    "slot": "Primary",
                     "name": "Ironmere Warbow",
-                    "desc": "— 120lb draw. Armor-piercing bodkin heads. Issued with 40 arrows per eng…"
+                    "desc": "— Heavy 120lb battlefield warbow designed for sustained volleys over friendly infantry lines."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Ironmere Bodkin Quiver",
+                    "desc": "— Forty armor-piercing bodkin arrows issued per engagement, optimized for punching into shield lines, mail, and lightly plated troops."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Short Arming Sword",
+                    "desc": "— Compact battlefield sword carried for close defense if the infantry line collapses."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Volley Kit",
+                    "desc": "— Spare bowstring, wax, range markers, arrow bundles, and reinforced ground stakes for maintaining firing lines during prolonged barrage engagements."
                   }
                 ]
               }
@@ -4054,13 +4140,43 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Archer's Field Coat",
-                    "desc": "— Reinforced leather chest. Right shoulder open for draw arc."
+                    "name": "Coldmarch Archer Harness",
+                    "desc": "— Reinforced leather brigandine with steel chest plates and an asymmetrical right shoulder to allow unrestricted bow draw. Built for mobility during continuous battlefield repositioning."
                   },
                   {
-                    "slot": "Bow",
-                    "name": "Standard Starhaven Recurve",
-                    "desc": "— 80lb draw. Standard-issue across the Field Armies."
+                    "slot": "Helm",
+                    "name": "Coldmarch Scout Helm",
+                    "desc": "— Open-faced steel helmet with light cheek guards, offering protection while preserving vision and hearing during rapid movement."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Quickdraw Bracers",
+                    "desc": "— Reinforced leather bracers designed for rapid draw cycles and protection against repeated bowstring impact."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Starhaven Field Recurve",
+                    "desc": "— 80lb laminated recurve bow emphasizing fast draw speed, battlefield flexibility, and accurate fire while advancing or repositioning."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Mobile Archer Quiver",
+                    "desc": "— Mixed load of broadheads, bodkins, and signal arrows carried in a lightweight hip quiver for rapid access during movement."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Coldmarch Falchion",
+                    "desc": "— Compact single-edged falchion suited to fast close combat when archers are forced into melee during mobile engagements."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Mobile Field Kit",
+                    "desc": "— Spare bowstring, wax, signal whistle, lightweight bedroll, water flask, emergency rations, and field dressing. Designed for long marches with minimal weight."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Swiftstep Boots",
+                    "desc": "— Lightweight leather boots with reinforced soles providing speed, stability, and endurance across grassland, hills, and broken terrain."
                   }
                 ]
               },
@@ -4112,8 +4228,48 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Ironmere Archer Plate",
-                    "desc": "— Half-plate with articulated draw arm. Standard Ironmere issue."
+                    "name": "Ironmere Royal Archer Plate",
+                    "desc": "— Finely crafted half-plate over padded gambeson with articulated shoulders and segmented waist protection. Offers superior defense while preserving a full bow draw and disciplined battlefield mobility."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Royal Archer Sallet",
+                    "desc": "— Open-faced sallet with reinforced cheek guards and adjustable neck plate. Designed for excellent visibility during prolonged volley engagements."
+                  },
+                  {
+                    "slot": "Arms",
+                    "name": "Royal Draw Vambraces",
+                    "desc": "— Steel-and-leather vambraces with an asymmetrical draw-side shoulder, allowing unrestricted bow movement while protecting against incoming arrows."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Ironmere Royal Warbow",
+                    "desc": "— Laminated yew warbow with a 100lb draw, balancing range, accuracy, and sustained volley fire. Favored for disciplined formation shooting rather than rapid skirmishing."
+                  },
+                  {
+                    "slot": "Arrows",
+                    "name": "Royal Volley Quiver",
+                    "desc": "— Forty mixed arrows including bodkins for armored targets, broadheads for infantry, and signal arrows for battlefield coordination."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Royal Arming Sword",
+                    "desc": "— Standard Ironmere arming sword carried for close defense once enemy forces reach the archer line."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Royal Buckler",
+                    "desc": "— Compact round buckler carried across the back. Intended for personal defense after the bow is abandoned, without interfering with archery."
+                  },
+                  {
+                    "slot": "Kit",
+                    "name": "Royal Archer Field Kit",
+                    "desc": "— Spare bowstring, bow wax, maintenance tools, whetstone, field rations, water flask, and range stakes for maintaining disciplined firing lines during extended engagements."
+                  },
+                  {
+                    "slot": "Boots",
+                    "name": "Ironmere March Boots",
+                    "desc": "— Reinforced leather marching boots built for long campaigns while providing a stable shooting platform on varied terrain."
                   }
                 ]
               }
@@ -4440,6 +4596,55 @@
                     "slot": "Weapon",
                     "name": "4th Army Heavy Crossbow",
                     "desc": "— 150lb draw. Armor-piercing heads. Paired with Halberdiers for anti-hea…"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Rapid Crossbow Corps",
+            "cards": [
+              {
+                "id": "jade-crossbow",
+                "data-br": "Ranged",
+                "data-src": "own",
+                "name": "Jade Crossbow Corps",
+                "branch": "Ranged",
+                "className": "Rapid Crossbow · Greatsword Melee · Dual Role",
+                "subtitle": "· Vaelmark Mechanism · Large Pool · Embedded Per Field Army · Greatsword Draw on Contact",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Distributed — Contingents Embedded with All Four Field Armies",
+                "army": "Grand Standing Army — Distributed Pool (All Field Armies · Rhegar Thorne Allocation)",
+                "image": "unitImages/jade-crossbow.png",
+                "imageAlt": "Jade Crossbow Corps",
+                "notes": "The Jade Crossbow Corps emerged from a Vaelmark Athenaeum engineering project commissioned after battlefield observation showed standard crossbow infantry losing tactical value as enemy formations began fielding heavier armor at higher volume. The response was not a heavier bolt — it was a faster mechanism. The jade-trigger assembly developed at Vaelmark reduces crossbow reset time by approximately forty percent over a standard lever crossbow: three bolts where a standard unit fires one, at the cost of penetration beyond eighty yards. At sixty yards and under, the jade crossbow remains armor-effective. Beyond that range, it becomes suppression rather than killing fire — which is sufficient, since the Jade Corps is designed to suppress, pin, and break formation cohesion before closing.\n\nThe greatsword was Kael Varric's addition. His standing requirement — that no Starhaven ranged unit field without the ability to hold its own position if cavalry reaches the line — was applied to the Jade Corps at formation. Each soldier trains the full transition: close crossbow, draw greatsword from the back mount, set stance, in under four seconds. The greatsword is not a sidearm carried for emergencies. It is an equal second role. The Jade Corps is trained to be a ranged unit and a greatsword unit, in sequence, on the same battlefield.\n\nThe jade-green plate is not decorative. The lamellar geometry was specified by Vaelmark engineers to allow full draw-arc articulation on both shoulders simultaneously — a requirement no standard medium plate met. The color is a consequence of the jade-alloy compound used in the plate's joint channels. It became the unit's visual identifier before anyone formally decided it should.\n\nThe Jade Corps operates as a large distributed pool across the standing army. Rhegar Thorne allocates contingents to each of the four Field Armies based on engagement type — heavy against armored formations, reduced in close terrain where rapid reloading loses its advantage. No Field Army owns a permanent Jade Corps contingent; the allocation shifts with the campaign. The Corps answers to Grand Marshal Thorne for deployment and to Kael Varric for doctrine and standards.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Jade Corps Lamellar Plate",
+                    "desc": "— Medium plate with jade-alloy channel compound in the joint segments. The compound provides shoulder articulation range required for both crossbow draw and greatsword swing from the same armor configuration — a requirement no standard medium plate met. Jade-green in color as a consequence of the alloy; now the unit's visual identifier across the battlefield."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Jade Corps Open Helm",
+                    "desc": "— Open-face for unobstructed crossbow sighting. Jade inlay on the brow band. Cheek guards stop short of the jaw for peripheral vision during rapid bolt case changes."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Jade-Trigger Rapid Crossbow",
+                    "desc": "— Compact mechanism with a Vaelmark-developed jade trigger assembly that reduces reset time by 40% versus a standard lever crossbow. Shorter bolt, effective to 80 yards at armor-penetrating range, 120 yards suppressive. Rate: three bolts per standard crossbow cycle. The jade trigger is an Athenaeum proprietary mechanism — not issued outside the Corps."
+                  },
+                  {
+                    "slot": "Bolts",
+                    "name": "Mixed Bolt Case (x40)",
+                    "desc": "— Forty bolts per soldier in two belt-mounted side cases for rapid-draw access during sustained fire. Standard, bodkin (armor-piercing), and incendiary tips in a 3:2:1 ratio. The bodkin is the primary load — the Jade Corps is a formation-break unit, not a suppression unit."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Jade Greatsword",
+                    "desc": "— Hand-and-a-half blade carried sheathed in a back mount, hilt up, for a two-hand draw transition trained to complete in under four seconds. Jade channel inlay runs along the flat of the blade — a Vaelmark resonance guide that increases impact force on the downswing. The Corps carries them regardless of whether the engineers' measurements are disputed."
                   }
                 ]
               }
@@ -6678,7 +6883,7 @@
                 "data-src": "new",
                 "name": "The Ashstride Warband",
                 "branch": "Cavalry",
-                "className": "Centaur Shock · Mobile Reserve · Rare Race",
+                "className": "Centaur Shock · Mobile Reserve · Rare Race · Anti-Cavalry",
                 "subtitle": "· Veth Sunreach · 500 Strong · Axe-Sworn · Deployed at Need",
                 "srcPill": "🆕 New",
                 "armorBadge": "Heavy",
@@ -6723,6 +6928,109 @@
                     "slot": "Hooves",
                     "name": "Iron-Shod War Hooves",
                     "desc": "— Combat-fitted iron shoes with extended edge ridges. The Ashstride's hooves are trained weapons. A rear kick from a war-shod centaur carries force comparable to a cavalry charge impact. Infantry attempting to encircle routing centaurs have discovered this at close range."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "War Chariot Corps",
+            "cards": [
+              {
+                "id": "chariot-runners",
+                "data-br": "Cavalry",
+                "data-src": "own",
+                "name": "Starhaven Chariot Runners",
+                "branch": "Cavalry",
+                "className": "War Chariot Corps · Open Terrain Strike",
+                "subtitle": "· Sandhoof Cross · Large Pool · Embedded Per Field Army · Karath-Instructed Doctrine",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Distributed — Contingents Embedded with All Four Field Armies · Home Base: Ashfield",
+                "army": "Grand Standing Army — Distributed Pool (All Field Armies · Rhegar Thorne Allocation) · Joint Training: Karath Sultanate",
+                "image": "unitImages/chariot-runners.png",
+                "imageAlt": "Starhaven Chariot Runners",
+                "notes": "Starhaven's war chariot corps — the youngest formed division in the standing army, built from the ground up with direct Karath Sultanate instruction. The alliance with Sultan Rashid brought more than mammoth riders and desert cavalry; it brought generations of chariot doctrine. At Karath's proposal, a joint military training program was established at Ashfield, where senior Karath chariot masters spent two full seasons teaching Starhaven drivers formation spacing, scythe-wheel management across varying terrain, javelin timing from the platform, and the critical crew-dismount protocol before a charge collapses into infantry melee.\n\nThe Sandhoof Cross — a horse bred in Ashfield, combining desert horse speed with highland endurance stock — became the natural choice for the Starhaven corps. Not the fastest breed available, but the most reliable across the hard-ground terrain Starhaven operates on. The Karath chariot is built for sand: wider wheel spread for surface flotation, lighter frame, horses bred for burst acceleration. The Ashfield adaptation uses a narrower wheel and heavier frame to handle stone, packed earth, and open plains without structural loss on impact.\n\nThe Chariot Runners operate as a large distributed pool. Rhegar Thorne allocates chariot contingents to each of the four Field Armies based on terrain and campaign type — open-terrain engagements receive heavier chariot support; mountain or forest operations receive none. No Field Army owns the corps outright; the pool is reallocated per campaign. Home base and training remains Ashfield.\n\nBoth corps train together annually at Ashfield. Karath instructors still run the formation doctrine sessions. Starhaven drivers have begun developing open-plains adaptations the Karath masters credit as genuine improvements. The two chariots are not identical — they are complementary, and both sides know it.",
+                "armor": [
+                  {
+                    "slot": "Chariot Frame",
+                    "name": "Ashfield War Chariot",
+                    "desc": "— Iron-reinforced hardwood frame, lower profile than the Karath desert chariot. Built for hard-ground terrain rather than sand flotation — narrower wheel spread, heavier base construction. Karath-designed blade wheel mounts adapted by Starhaven smiths."
+                  },
+                  {
+                    "slot": "Wheels",
+                    "name": "Blade Wheel Kit",
+                    "desc": "— Karath-pattern scythe blade extensions, adapted for Starhaven manufacture. Removable for road transit. Ashfield smiths extended the blade length by two inches over the Karath original after live-combat observation during joint exercises."
+                  },
+                  {
+                    "slot": "Horses",
+                    "name": "Sandhoof Cross Warhorse Pair",
+                    "desc": "— The Ashfield-bred Sandhoof Cross: desert horse speed crossed with highland endurance stock. Not the fastest chariot horse, but the most durable across non-sand terrain. Barded at chest and shoulder. Both horses trained to hold direction under charge impact — Karath doctrine requires equal driver-responsiveness from both."
+                  },
+                  {
+                    "slot": "Driver",
+                    "name": "Chariot Driver Harness",
+                    "desc": "— Lightweight plate at torso and arms, open at the legs for driving stance. Karath-pattern footbar at the platform base — both feet braced for the charge impact. Driver's left arm carries a small buckler; right hand holds the reins."
+                  },
+                  {
+                    "slot": "Fighter",
+                    "name": "Chariot Fighter Half-Plate",
+                    "desc": "— Medium plate for the fighting crewman. Left side reinforced for shield use during the approach; right arm light for full javelin throw arc. Karath doctrine pairs one thrower and one driver; the Starhaven adaptation adds an arming sword for post-dismount melee — drivers are trained for both mounted and dismounted scenarios."
+                  },
+                  {
+                    "slot": "Weapons",
+                    "name": "Javelin Set (x4) · Arming Sword",
+                    "desc": "— Four javelins carried in the platform rack for pre-charge and post-charge harassment. Arming sword drawn if the crew dismounts into infantry melee. Karath protocol prefers the crew stay mounted; Starhaven drivers train for both."
+                  }
+                ]
+              },
+              {
+                "id": "karath-desert-chariots",
+                "data-br": "Cavalry",
+                "data-src": "ally",
+                "name": "Karath Desert Chariots",
+                "branch": "Cavalry",
+                "className": "Desert War Chariot · Speed Doctrine",
+                "subtitle": "· Sultan Rashid · Generations of Expertise · Ashfield Joint Training Partner",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Karath Sultanate / Ashfield Joint Training Ground",
+                "army": "Karath Sultanate — Sultan Rashid · Joint Training Partner: Starhaven Chariot Runners",
+                "image": "unitImages/karath-desert-chariots.png",
+                "imageAlt": "Karath Desert Chariots",
+                "notes": "The oldest chariot tradition in the known alliance network. Sultan Rashid's chariot corps has operated desert war chariots for generations — the doctrine, the horse breeding programs, the scythe-wheel design standards, and the formation spacing mathematics were all developed in Karath long before the Starhaven alliance formalized them as transferable knowledge.\n\nThe Karath chariot is built for sand: wide wheel spread to prevent sinking into loose terrain, light frame to maximize speed across dune surfaces, desert horses bred for burst acceleration rather than sustained endurance. A Karath chariot on open desert is faster than anything Starhaven fields. That same chariot on packed stone or hard earth runs slower than the Ashfield adaptation — a trade the Karath masters acknowledge without apology. Their terrain is desert. They have optimized for it accordingly.\n\nWhen the alliance was established, Sultan Rashid personally proposed the Ashfield joint training program. His reasoning was direct: a second chariot corps in the alliance multiplies the tactical value of chariot doctrine in any combined engagement, and Starhaven terrain coverage fills a gap the Karath corps cannot. Karath chariot masters have instructed at Ashfield for two seasons. They have not formally endorsed every Starhaven adaptation. They have noted, in their own records, that several Ashfield drivers have become genuinely good.",
+                "armor": [
+                  {
+                    "slot": "Chariot Frame",
+                    "name": "Karath Desert Chariot",
+                    "desc": "— Wide-wheeled light frame designed for sand-surface flotation. Thinner construction than the Ashfield adaptation — optimized for speed on loose terrain over structural impact resistance on hard ground. The original template from which the Starhaven Ashfield variant was adapted."
+                  },
+                  {
+                    "slot": "Wheels",
+                    "name": "Desert Scythe Wheels",
+                    "desc": "— The original Karath design. Wider blade, shorter extension than the Starhaven adaptation. Geometry tuned for sand-surface drag characteristics — the Ashfield variant adjusted proportions for hard-ground performance."
+                  },
+                  {
+                    "slot": "Horses",
+                    "name": "Karath Desert Warhorse Pair",
+                    "desc": "— Bred specifically for burst acceleration across sand and loose terrain. Lighter than the Sandhoof Cross, faster in a short sprint, less durable over sustained hard-ground operation. Lightly barded — weight is the enemy of speed in desert chariot doctrine."
+                  },
+                  {
+                    "slot": "Driver",
+                    "name": "Karath Chariot Driver Gear",
+                    "desc": "— Light desert linen under minimal plate at chest and upper arm only. Karath drivers rely on the chariot's speed as the primary protection layer; armor weight is minimized. Sun veil across the lower face for desert operations."
+                  },
+                  {
+                    "slot": "Fighter",
+                    "name": "Karath Chariot Fighter Gear",
+                    "desc": "— Light plate on fighting side only. Four throwing spears and a Karathi war scimitar. Karath doctrine: three spears thrown on approach, one held for close range, then the decision to disengage or commit to scimitar melee. The doctrine prefers disengagement — the chariot is fastest when it keeps moving."
+                  },
+                  {
+                    "slot": "Weapons",
+                    "name": "Throwing Spears (x4) · Karathi War Scimitar",
+                    "desc": "— Four throwing spears for pre-charge and post-charge harassment. Karathi war scimitar for close engagement if the charge slows into a melee situation. Desert chariot doctrine prioritizes mobility over commitment — throw, turn, throw again before the enemy can respond."
                   }
                 ]
               }
@@ -8553,6 +8861,50 @@
                     "desc": "— Fully barded undead warhorse. Fearless, tireless, requires no feeding …"
                   }
                 ]
+              },
+              {
+                "id": "sable-chariots",
+                "data-br": "Undead",
+                "data-src": "ally",
+                "name": "Sable Bone Chariots",
+                "branch": "Undead",
+                "className": "Skeleton Chariot Formation · Impact Wave",
+                "subtitle": "· Undead Warhorse Pair · Scythed Wheels · No Fear · No Retreat",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Sable Isles",
+                "army": "Sable Conclave — Sorvane Nullis",
+                "image": "unitImages/sable-chariots.png",
+                "imageAlt": "Sable Bone Chariots",
+                "notes": "Sorvane Nullis's chariot arm — bone-frame chariots driven by skeleton crews and pulled by pairs of barded undead warhorses. The crew cannot rout. The horses cannot tire. Once the charge is committed there is no commander decision to pull back — the necromantic binding drives them forward until the chariot stops or the enemy does.\n\nThe scythed wheel blades extend from each hub at knee height against infantry — the primary killing mechanism before the crew ever raises a weapon. Sorvane Nullis fields the Sable Chariots as the closing hammer: the Skeleton Infantry absorbs attention and fixes enemy formations, the Revenant Knights threaten flanks and force defensive repositioning, and the Bone Chariots crash through the gap created by both. A living cavalry unit can be broken by counterfire or a failed charge. These cannot. An opposing commander who routes the Revenant Knights with anti-cavalry fire will find the Bone Chariots have not noticed.",
+                "armor": [
+                  {
+                    "slot": "Chariot Frame",
+                    "name": "Bone-Reinforced Sable Chassis",
+                    "desc": "— Necromantically fused bone and ironwood frame. Structural coherence is provided by the binding rather than conventional joinery — the chassis does not splinter on impact the way wood alone would. Lighter than a comparable iron-framed war chariot."
+                  },
+                  {
+                    "slot": "Wheels",
+                    "name": "Sable Scythe Wheels",
+                    "desc": "— Iron blade extensions fitted to both wheel hubs, extending at knee height against infantry. The primary killing mechanism in the charge phase before the crew engages. Blades are removable for transit between engagements."
+                  },
+                  {
+                    "slot": "Crew",
+                    "name": "Skeleton Chariot Crew (x2)",
+                    "desc": "— Two skeletal warriors per chariot: one driver, one fighter. The necromantic binding provides coordination between them — no training relationship required. Driver holds the horses; fighter engages anything that reaches the platform or pursues broken infantry."
+                  },
+                  {
+                    "slot": "Horses",
+                    "name": "Undead Warhorse Pair",
+                    "desc": "— Two fully barded undead warhorses per chariot. Fearless, tireless, requiring no feeding or stable care. They run at full speed into formed infantry without hesitation. The barding adds impact mass to the charge and provides additional protection on the approach."
+                  },
+                  {
+                    "slot": "Weapons",
+                    "name": "Bone Spear & Sable Blade",
+                    "desc": "— Fighter crew carries a bone-hafted iron spear for reach combat and a Sable short blade for close-quarters once the chariot is embedded or halted. Driver carries a Sable knife — last resort only."
+                  }
+                ]
               }
             ]
           }
@@ -9263,6 +9615,13 @@
           const label = controls.querySelector('.zoom-level');
           initZoomPan(container, zoomImg, label);
         });
+
+        // mobile tap → fullscreen
+        zoomImg.addEventListener('click', () => {
+          if (window.matchMedia('(max-width: 700px)').matches) {
+            openImgFullscreen(zoomImg.src, zoomImg.alt);
+          }
+        });
       }
 
       modalBody.appendChild(clone);
@@ -9279,6 +9638,28 @@
       document.body.style.overflow = "";
       modalBody.innerHTML = "";
     }
+
+    const imgFullscreen = document.getElementById('imgFullscreen');
+    const imgFsImg = document.getElementById('imgFsImg');
+    const imgFsClose = document.getElementById('imgFsClose');
+
+    function openImgFullscreen(src, alt) {
+      imgFsImg.src = src;
+      imgFsImg.alt = alt || '';
+      imgFullscreen.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeImgFullscreen() {
+      imgFullscreen.classList.remove('open');
+      imgFsImg.src = '';
+      document.body.style.overflow = 'hidden'; // keep card modal scroll locked
+    }
+
+    imgFsClose.addEventListener('click', closeImgFullscreen);
+    imgFullscreen.addEventListener('click', e => {
+      if (e.target === imgFullscreen) closeImgFullscreen();
+    });
 
     document.querySelectorAll(".unit-card").forEach(card => {
       card.addEventListener("click", () => openCardModal(card));
