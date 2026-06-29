@@ -2859,11 +2859,17 @@ const ARMIES = [
     subtitle:'Personal Army of Velkan Drake · Pillar of the Mind',
     motto:'"The sky is not our limit. It is our weapon."',
     tier:'eleven', strength:'2,500 · Battlemages & Drake Riders', color:'#4070B0',
-    commander:'Velkan Drake · Sub: Sorin (Ops), Dael Ashe (Countermage)', hq:'Vaelmark Arcane Base',
+    commander:'Velkan Drake · Sub: Sorin Vael (Ops), Dael Ashe (Countermage), Kai (Arcane Artillery)', hq:'Vaelmark Arcane Base',
     image:'Lores/Mueseum/ninthSkyCorps.png',
     roles:['Arcane Artillery','Battlefield Control','Synchronized Magical Assault'],
     desc:'Rebuilt from 62 losses at the War of Starhold. Every rider since chosen by Sorin personally. Aerial arcane artillery that strikes beyond what the enemy can reach.',
-    note:'',
+    units:[
+      'Drake Riders — Sorin Vael (Ops Commander) · 180 bond-paired riders · Each rider-drake bond inseparable · Standard corps mount: Sky Drake (18–24ft wingspan)',
+      'Ninth Sky Battlemages & Countermages — Dael Ashe · 3,500 · Arcane bombardment + countermage suppression',
+      'Arcane Artillery Corps — Kai (Arch-Battlemage) · 1,500 · Synchronized elemental casting · Sub: Arcane Cannon Corps Vaelmark (700)',
+      'Skymark Corps (NEW) — 12–18 mages · Target designation for Skyhunter Lance Battery · Velkan Drake auth · Speed drake mounts',
+    ],
+    note:'Pyrewing (Velkan\'s bond mount) is a legendary drake-dragon hybrid — 40ft wingspan, blue dragonfire emission, unique in the coalition. Standard corps mounts are Sky Drakes (18–24ft), bond-paired 1:1 with riders.',
   },
   {
     id:'stormriders', name:'Stormriders',
@@ -2900,7 +2906,12 @@ const ARMIES = [
     image:'Lores/Mueseum/NullBlades.png',
     roles:['Infiltration','Assassination','Sabotage','Intelligence Warfare'],
     desc:'Exist where light does not reach. They do not hold ground — they take it unseen. When the enemy dies not knowing why, the mission is complete.',
-    note:'Elite: Voidwalkers — five operational modes: Total Silence, Heartstop, Ghoststep, Black Veil, Night\'s End.',
+    units:[
+      'Null Blades Main Force — 500 total · Infiltration, assassination, sabotage · Handler Vex, Kira Null',
+      'Ironpack — Sela Ironbone · 600 handlers / 3,000 hounds · Field intelligence tracking · Nyx Ravel direct',
+      'The Greymark (NEW) — 80 operators · 60 Human + 20 Half-Elf · Mid-battle command elimination · Nyx Ravel auth only · No reserve — all 80 active or not deployed',
+    ],
+    note:'Elite: Voidwalkers — five operational modes: Total Silence, Heartstop, Ghoststep, Black Veil, Night\'s End. The Greymark: first deployment at Nyx Ravel\'s discretion only.',
   },
   
   // Inserted intelligence entries: The Web + The Shadow Court (from starhaven-all-new-unit-entries.txt)
@@ -2948,10 +2959,12 @@ const ARMIES = [
     roles:['Combat Healing','Void Purification','Curse-Breaking','Frontline Support'],
     desc:'40% decrease in field mortality credited to their protocols. The purification revenue from outer territories funded Starhaven\'s early construction.',
     units:[
-      'Ashen Guard Main Force — 3,000 · Combat purifiers, curse-breakers, purification specialists · Lena Crest (Field Ops)',
+      'Battle Wardens — Lena Crest (Field Commander) · Advance-line healing element · Move with the formation, not behind it · Mobile healing field doctrine · 40% injury-to-recovery decrease',
+      'Combat Healers — Core purification and curse-breaking unit · Void Purifiers & Curse-Breakers · Sealed Ashen Helm · Purification sigils at every joint',
       'Mercy Riders — 2,000 mounted medics · Ashen cross non-combatant protocol · 3-minute treatment guarantee, never broken in 6 years',
+      'Ashen Exorcists — Captain Tomás Rael · Entity removal & deep curse purification · Last-resort intervention beyond Combat Healer scope · Sancthaven Restricted Quarter',
     ],
-    note:'Sub-unit: Mercy Riders (2,000 mounted medics) — 3-minute treatment guarantee. Never broken in 6 years.',
+    note:'Sub-units: Battle Wardens (advance-line, Lena Crest) · Combat Healers (purification core) · Mercy Riders (mounted medics, 3-min guarantee) · Ashen Exorcists (Tomás Rael, entity removal).',
   },
   {
     id:'apothecary-corps', name:'Apothecary Corps',
