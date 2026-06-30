@@ -111,6 +111,7 @@
 | Oath-Axes | — | Cross-Army Specialist | 500 | 100 | **600** |
 | Ember Company | — | Cross-Army Specialist | 500 | 100 | **600** |
 | The Reedwalkers | — | Rhegar Thorne Direct — Wetland Reserve | 1,200 | 300 | **1,500** |
+| Beastmen Berserkers of the East *(NEW)* | — | Starhaven Command — Rhaegar | 720 | — | **720** |
 | Ironveil Spear Corps | — | Cross-Army Specialist | 12,000 | 3,000 | **15,000** |
 | Ironveil Halberdiers | — | Cross-Army Specialist | 8,000 | 2,000 | **10,000** |
 | Ashrunners | — | Cross-Army Specialist | 3,000 | 600 | **3,600** |
@@ -146,7 +147,7 @@
 | └─ The Wings — Second Lance | Aera Coldwind | Dawnlancers · 2nd Army | 600 (2×300) | — | *sub-unit* |
 | └─ The Depth — Third Lance | Aera Coldwind | Dawnlancers · 2nd Army | 600 | — | *sub-unit* |
 | The Dawnrunner Stable *(NEW)* | Marcus Ironmane | Dawnlancers · 2nd Army Rear | 120 specialists | — | **120** |
-| Silver Swan Cavalry Corps | **Caelen Voss** | Floating Reserve | 6,000 | 1,500 | **7,500** |
+| Silver Swan Cavalry Corps | **Reva Stallforth** | Floating Reserve | 6,000 | 1,500 | **7,500** |
 
 *Silver Swan now organized into four regional detachments (North · South · East · West), each with Lance, Mounted Crossbow, Pursuit Rider, and Command & Signal sub-units. Total unchanged.*
 
@@ -252,7 +253,10 @@
 | Rampart — Siege Tower Division | Brix Holt | Coalition Siege Engineering | Siege towers | 12 towers | — | **12 towers** |
 | Groundbreaker — Tunnel Assault Corps | Veld Ashe | Coalition Siege Engineering | Mining / tunnel collapse | 800 sappers / 200 engineers | — | **1,000** |
 | Ramhead — Battering Ram Division | Sora Keld | Coalition Siege Engineering | Battering ram | 6 rams | — | **6 rams** |
+| Shield Wall Engineers Corps *(NEW)* | Calla Brennick | Coalition Siege Engineering | Rapid field fortification | 1,000 | — | **1,000** |
 | Skyhunter Lance Battery *(NEW)* | — | High Command Strategic Reserve | Lance launcher | 6 launchers | — | **6 launchers** |
+
+*Shield Wall Engineers Corps: open-field counterpart to Groundbreaker (tunnels) and Rampart (siege towers) — builds portable stake lines, trench spikes, and modular obstacle walls in the gap between formations under fire, not staged before contact. On call to any Field Army.*
 
 ---
 
@@ -360,6 +364,25 @@
 
 ---
 
+## NAVAL FORCES — Dawnfleet
+
+| Unit | Commander | Subunit of | Hulls | Notes |
+|------|-----------|-----------|-------|-------|
+| Dawnfleet (total registry) | — | Starhaven Naval Registry | **240** | Operates from Dawncliff Sea Fortress |
+| Swiftwake Scouts *(NEW)* | — | Dawnfleet Auxiliary | 40 | Light recon / signal relay — see-and-report, not see-and-fight |
+| Dawncliff Ramships *(NEW)* | — | Dawnfleet / Tidebreaker Embarked | 60 | Prow-breakers; carry Tidebreaker Corps marines for the boarding follow-through |
+| Cinderwake Fireships *(NEW)* | — | Dawnfleet Auxiliary | 30 | Expendable, oil/pitch rigged, single-use vs. concentrated enemy fleets |
+| Stormcaller Bombards *(NEW)* | — | Dawnfleet / Arcanum Tidewatch Paired | 50 | Vaelmark-mounted cannon, stand-off; one Tidewatch mage per hull |
+| Tideborn Transports *(NEW)* | — | Dawnfleet Auxiliary | 60 | Unarmed troop/landing craft; always escorted |
+| Tidebreaker Corps | Caela Vorn | New Unit | 5,000 (3,500 Dawncliff / 1,500 Saltmere) | Marines — shore defense + ship-to-ship boarding; embark on Dawncliff Ramships, not the sailors who crew them |
+| Arcanum Tidewatch | — | Arcanum Secondment | unknown | Sea mages, Saltmere — weather control / hull warding; pairs with Stormcaller Bombards |
+| Thalassian First Fleet | Admiral-King Crest Vane | Thalassian League (Allied) | unknown | Offensive role complementing Dawnfleet's defensive posture |
+| Marine Boarding Corps | — | Thalassian League (Allied) | unknown | Ship-to-ship boarding specialists |
+
+*40 (Swiftwake) + 60 (Ramships) + 30 (Fireships) + 50 (Bombards) + 60 (Transports) = 240 hulls, matching the established Dawnfleet total. Tidebreaker Corps and Arcanum Tidewatch are personnel, not hulls — they crew/embark aboard the ship classes above rather than being counted as separate vessels.*
+
+---
+
 ## SIEGE-SPECIFIC NEW UNITS *(Created for Vael'Dorum)*
 
 | Unit | Commander | Subunit of | Race | Active | Reserve | Total |
@@ -392,14 +415,15 @@
 | Category | Active | Reserve | Total |
 |----------|--------|---------|-------|
 | Field Army Infantry (all 4 armies) | ~120,500 | ~36,150 | **~156,650** |
-| Cross-Army Specialist Infantry | ~31,700 | ~7,150 | **~38,850** |
+| Cross-Army Specialist Infantry | ~32,420 | ~7,150 | **~39,570** |
 | HQ Reserve Pool | ~26,935 | ~6,296 | **~33,231** |
 | Cavalry | ~16,200 | ~3,700 | **~19,900** |
 | Ranged | ~5,000 | ~1,205 | **~6,205** |
 | Dawnsteel Order | ~1,630 | ~341 | **~1,971** |
 | Magic & Anti-Magic | ~5,820 | ~1,618 | **~7,438** |
 | Aerial | ~398 | ~78 | **~476** |
-| Artillery & Siege (crew) | ~860 crew | ~215 crew | **~1,075 crew** |
+| Artillery & Siege (crew/engineers) | ~1,860 | ~215 | **~2,075** |
+| Naval (Tidebreaker Corps; ship crews unknown) | ~5,000 | — | **~5,000 + 240 hulls (crew unknown)** |
 | Beast & Primal | ~8,525 + beasts | ~2,131 + beasts | **~10,656 + beasts** |
 | Iron Legion | ~1,262 + 350 tanks | ~180 | **~1,442 + 350 tanks** |
 | Void & Veil | ~1,000 | ~149 | **~1,149** |
@@ -409,7 +433,7 @@
 | Logistics | ~3,700 wagons/crew | ~925 | **~4,625** |
 | Solo Legends | 8 | — | **8** |
 | **NEW UNITS (Vael'Dorum)** | **~2,480** | **—** | **~2,480** |
-| **STARHAVEN TOTAL** | **~235,373** | **~63,891** | **~299,264** |
+| **STARHAVEN TOTAL** | **~242,093** | **~63,891** | **~305,984 + 240 hulls (crew unknown)** |
 
 ---
 
@@ -536,9 +560,14 @@
 | Radiant Cavaliers | Brynhild Voss | Holy Knights | 1,200 | 240 | **1,440** |
 | Exorcist Knights | Brynhild Voss | Holy Knights | 600 | 120 | **720** |
 | Relic Wardens | Brynhild Voss | Holy Knights | 600 | 120 | **720** |
+| Pyrelight Archers *(NEW — 6th Order)* | Brynhild Voss | Holy Knights | 500 | 100 | **600** |
+| Warband of the Dawnplate *(NEW — Embedded)* | Sister-Commander Edda Rensh | Holy Knights | 140 | — | **140** |
 | Brynhild Voss Command Guard | — | Brynhild Voss | 40 | 8 | **48** |
 
-**Holy Knights Total: ~13,440 active · ~3,088 reserve · ~16,528 total**
+*Pyrelight Archers: consecrated crossbow corps, bolts treated with Seraphine's purification compound (same treatment as Relic Wardens' blades) — first ranged anti-undead/anti-Void capability in the order.*
+*Warband of the Dawnplate: non-line War Priest cells (8–12 each, ~12 cells coalition-wide) embedded with Field Armies and garrisons. Resolve/anti-fear, Void-corruption resistance, faster wound stabilization aura. Founded on Edda Rensh's petition; no reserve — all 140 active or not deployed.*
+
+**Holy Knights Total: ~14,080 active · ~3,188 reserve · ~17,268 total**
 
 ---
 
@@ -614,19 +643,37 @@
 
 ---
 
+## NEWLY DOCUMENTED UNITS *(Naval, Holy Knights, Engineering — not Vael'Dorum-specific)*
+
+| Unit | Commander | Race | Role | Total |
+|------|-----------|------|------|-------|
+| **Swiftwake Scouts** | — | — | Naval recon / signal relay | **40 hulls** |
+| **Dawncliff Ramships** | — | — | Naval prow-breaker, carries Tidebreaker Corps | **60 hulls** |
+| **Cinderwake Fireships** | — | — | Expendable fleet-breaker | **30 hulls** |
+| **Stormcaller Bombards** | — | — | Naval stand-off artillery, Vaelmark-mounted | **50 hulls** |
+| **Tideborn Transports** | — | — | Unarmed troop/landing craft | **60 hulls** |
+| **Pyrelight Archers** | Brynhild Voss | Human | 6th Holy Knights order — consecrated ranged, purification bolts | **600** |
+| **Warband of the Dawnplate** | Edda Rensh | Human | Embedded War Priest support — resolve/anti-fear/stabilization aura | **140** |
+| **Shield Wall Engineers Corps** | Calla Brennick | — | Standalone field fortification, deployable to any Field Army | **1,000** |
+| **Beastmen Berserkers of the East** | — | Beastmen (Northern Wilds) | Boar-bonded anti-cavalry hunters, never ridden | **720** |
+
+*Naval hull breakdown (240 total) reflects the existing Dawnfleet figure restructured into named ship-classes — not a force increase. Holy Knights and Shield Wall Engineers are genuine additions to coalition strength, reflected in the totals above.*
+
+---
+
 ## FULL COALITION GRAND TOTAL
 
 | Force | Active | Reserve | Total |
 |-------|--------|---------|-------|
-| **Starhaven** | ~235,373 | ~63,891 | **~299,264** |
+| **Starhaven** | ~242,093 | ~63,891 | **~305,984 + 240 hulls** |
 | **Karath Sultanate** | ~50,330 | ~14,921 | **~65,251** |
 | **Stonemark Holds** | ~13,370 | ~3,291 | **~16,661** |
 | **Highland Coalition** | ~41,761 | ~11,553 | **~53,314** |
-| **Holy Knights** | ~13,440 | ~3,088 | **~16,528** |
+| **Holy Knights** | ~14,080 | ~3,188 | **~17,268** |
 | **Ironmere Kingdom** | ~21,030 | ~6,156 | **~27,186** |
 | **Sable Conclave** | ~36,402 | ~3,210* | **~39,612*** |
 | **Mercenaries** | ~3,695 | ~923 | **~4,618** |
-| **COALITION TOTAL** | **~415,401** | **~107,033** | **~522,434*** |
+| **COALITION TOTAL** | **~422,761** | **~107,133** | **~529,894 + 240 hulls*** |
 
 *Sable Conclave reserve understated — mid-battle reanimation capability not counted*
 
