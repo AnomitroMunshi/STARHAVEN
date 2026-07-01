@@ -1,8 +1,9 @@
 # STARHAVEN Unit Audit
-**Unit IDs currently in file: 213**
-**Planned future units (not yet in file): 6**
-**Consolidated list total: 211** *(Silver Swan 16 regional cards → 4 types)*
-*Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-06-26*
+**Unit IDs currently in file: 292 wiki cards audited · 258 tracked here**
+**Planned future units (not yet in file): 5**
+**Consolidated list total: 256** *(Silver Swan 16 regional cards → 4 types)*
+*Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-07-02*
+*Full second-pass audit completed 2026-07-02: 292 wiki cards cross-checked against this list — see "Second-Pass Audit Additions" section for units found in the wiki but previously untracked here. Mount/beast reference cards (personal mounts, war-horse breeds, exotic mounts — ~26 cards in `sec-animals`) are intentionally out of scope for this list, same as always — they're equipment/companion references, not standing units.*
 
 ---
 
@@ -287,7 +288,7 @@
 141. Ironmere Veterans *(Rhegar-tradition discipline · King Aldric Vorn's standing line)*
 142. Royal Heavy Cavalry *(Matte black and gold plate · Right flank reinforcement)*
 143. Royal Archers *(Rear-echelon fire support · Half-plate)*
-144. Ironmere Shock Heavy Infantry *(planned — not yet in unit wiki)*
+144. Ironmere Shock Heavy Infantry
 145. Royal Engineers & Siege Corps *(planned — not yet in unit wiki)*
 146. Command & Logistics *(planned — not yet in unit wiki)*
 
@@ -419,6 +420,86 @@
 
 ---
 
+## Newly Added Units *(Post-Audit, 2026-07-02)*
+
+212. The Requiem Wardens *(Rhaegar's Reserve · Heavy Shock Cavalry · 600 riders · Black Ashen-cross plate, poleaxe-armed · Committed only to end a broken engagement, never to open one)*
+213. The Skyspear Valkyries *(Warqueen Isolde Skyward · All-female mercenary free company · 900 · Spear-and-shield wall + axe rotation · No standing contracts, highest bidder only)*
+
+---
+
+## Second-Pass Audit Additions *(2026-07-02 — units confirmed in wiki HTML, previously untracked here)*
+
+### Rhaegar's Reserve — additional cards
+214. The Doomcleavers *(Commander Fosho Tanachi · Heavy Greatsword Infantry · Mixed Human-Orc · 1,200 · Anti-Formation Doctrine)*
+221. Drakekin Pyromancers *(Flamewarden Riasa Tem · Velkan's Patronage · Offensive Battle Mage · 240)*
+225. Picket Scouts *(Captain Iva Renn · Perimeter early warning · 150 · No-Engagement Doctrine, Thread-Runners relay)*
+228. The Forgepact Battery *(Colonel Dessa Marrow & Brokk Graniteborn — joint Stonemark project · Starhaven's first gunpowder corps · 480)*
+
+### Ninth Sky Corps — explicit sub-entries *(previously only referenced via parent #7)*
+215. Ninth Sky Corps: Drake Riders *(Captain Sorin Vael · 216)*
+216. Ninth Sky Battlemages / Countermages *(Commander Dael Ashe · 4,550)*
+
+### Ashen Guard — explicit sub-entries *(previously only referenced via parent #21)*
+217. Ashen Battle Wardens *(Lena Crest · Advance-line healing sub-unit)*
+218. Combat Healers *(Ashen Guard core — magical healing & Void purification, the operational unit behind the "Ashen Guard" parent entry)*
+219. Ashen Exorcists *(Captain Tomás Rael · Entity removal, deep curse purification · Last-resort intervention)*
+
+### Resonance Corps — additional card
+220. Projection Crystal Relay Operators *(Pillar — Bob Vale · 10 · Distributed relay crystal maintenance)*
+
+### Holy Knights — additional cards
+222. Pyrelight Archers *(6th Order · Consecrated crossbow, purification bolts · 600)*
+223. Warband of the Dawnplate *(Sister-Commander Edda Rensh · Embedded War Priest cells · 140 · No reserve)*
+
+### Intelligence — additional card
+224. The Greymark *(Nyx Ravel · 80 · Mid-battle command elimination · No reserve)*
+
+### Siege / Vael'Dorum-era Engineering — additional cards
+226. Skyhunter Lance Battery *(High Command · 6 launchers · Triple authorization: Rayden + Velkan + Rhegar)*
+227. Skymark Corps *(Velkan Drake · 12–18 mages · Skyhunter target designation)*
+229. Redtunnel Corps *(Crex, att. Veld Ashe · Red Goblin · 400 · Stormmassif deep-ridge tunnel combat)*
+230. Pavise Shield Corps *(Grael Ironwall · Orc/Half-Orc · 2,000 · Killing Ground crossing cover)*
+231. Shield Wall Engineers Corps *(Calla Brennick · 1,000 · Rapid field fortification, open-field counterpart to Groundbreaker and Rampart)*
+
+### Dawnfleet — additional named ship-classes *(previously only the 240-hull total was tracked)*
+232. Swiftwake Scouts *(40 hulls · Naval recon / signal relay)*
+233. Dawncliff Ramships *(60 hulls · Prow-breakers, carry Tidebreaker Corps)*
+234. Cinderwake Fireships *(30 hulls · Expendable fleet-breaker)*
+235. Stormcaller Bombards *(50 hulls · Vaelmark-mounted stand-off artillery, paired with Arcanum Tidewatch)*
+236. Tideborn Transports *(60 hulls · Unarmed troop/landing craft, always escorted)*
+
+### Field Army & Allied Command Guards — additional cards
+237. Doran Ashe — Elite Cavalry Guard *(80 · 1st Field Army)*
+238. Clea Vorn — Elite Cavalry Guard *(80 · 2nd Field Army)*
+239. Brek Tane — Elite Infantry Guard *(80 · 3rd Field Army)*
+240. Veyra Tal — Elite Cavalry Guard *(80 · 4th Field Army)*
+241. Samir al-Dusk Command Guard *(40 · Karath Sultanate)*
+242. Brokk Graniteborn Command Guard *(30 · Stonemark Holds)*
+
+### Ranged / Stealth — additional cards
+243. Bowmen of the Last Hollow *(Captain Brennick Stane · Rhaegar's Reserve · 1,800 · Velhold recruitment, no-melee doctrine, personal sidearm last resort)*
+244. The Evenmere Guard *(40 · Sylara Evenmere's personal protection · Silverleaf Corps · Only element to draw steel before bow)*
+
+### Runebreakers — explicit sub-entries *(previously only referenced via parent #91)*
+245. The Null-Hunters *(1,200 active hunters · Identify, close, silence doctrine)*
+246. The Rune-Shield Guard *(400 · Overlapping Null-Stone suppression wall)*
+
+### Known Names — Individual Operatives *(named characters embedded within existing units, each their own wiki card)*
+247. Pell Ashcord *(Half-Elf · The Reedwalkers · Wetland Navigator, never promoted)*
+248. Maren Coldhand *(Coldmarch Ironline · 2nd Field Army veteran)*
+249. "Twice-Burned" Gareth *(The Ashrunners · Named for surviving two formation collapses)*
+250. Orvin Slate *(Scorpio Field Batteries · Trajectory savant, no instruments)*
+251. Tunnel-Voice Rusk *(Groundbreaker · Sapper with underground sense)*
+252. Tenn "Wallpost" Ferryn *(Ironveil Spear Corps · Western anchor, third rank, 11 years same position)*
+253. Sister-Commander Edda Rensh *(Dawn Templars · One of seven Sister-Commanders — same person who founded #223 Warband of the Dawnplate, tracked here as her Dawn Templars card)*
+254. Sir Aldren Greyne *(Sable Conclave · Revenant Knights · Conscious revenant, former Holy Knight)*
+255. Gram Stons *(Stonemark Longbeards · 213 years serving)*
+256. Root-Watcher Sylen *(Woodborn Guardians · Primal Vanguard · 340-year western watch)*
+257. Kraag Half-Ear *(Redspire Clan · Highland Coalition)*
+258. Vurd Shatterknee *(Half-Orc Barbarians · Highland Coalition)*
+
+---
+
 ## Notes & Flags
 
 **The Eleven Pillars:** Rayden Cale · Kael Varric · Lyria Valen · Velkan Drake · Aurelia Vex · Thorin Blackroot · Nyx Ravel · Seraphine Mire · Cain Drakhar · Elysia Nocturne · Bob Vale
@@ -429,7 +510,6 @@
 **Helna Ironmane** = Handler Coordinator (veterinarian role, Dresh's mother — not a command position)
 
 **Entries marked *(planned)* have no unit card yet in `starhaven-unit-wiki.html` and will be added in future:**
-- 144 — Ironmere Shock Heavy Infantry
 - 145 — Royal Engineers & Siege Corps
 - 146 — Command & Logistics
 - 196 — Necromancer Mages
@@ -438,6 +518,16 @@
 **The Wrought** (entry 25) = Iron Legion · Cain Drakhar direct command · 12 named iron constructs with soul-core awareness · Rayden authorization required for deployment · Tidegate Vault, Forgehaven
 
 **Silver Swan** consolidated: 16 regional cards → 4 type entries (Lance · Crossbow · Pursuit · Command & Signal), each with 4 regional variants (North/South/East/West).
+
+**The Requiem Wardens** (entry 212) = Starhaven Command — Rhaegar Thorne · Direct Reserve · card added directly under "Grand Marshal's Reserve · Rhaegar Thorne" in `starhaven-unit-wiki.html`, alongside The Longmark and Bowmen of the Last Hollow.
+
+**The Skyspear Valkyries** (entry 213) = Free Company, no Starhaven command subunit · card added under "Mercenary Forces — Cavalry & Infantry" in `starhaven-unit-wiki.html`, alongside Red Bone Cavalry and Iron Reavers. Second confirmed all-female unit in the wiki after The Shadow Court.
+
+**2026-07-02 Second-Pass Audit:** Full extraction of all 292 unit cards (308 `"id":` fields minus 16 `sec-*` section wrappers) from `starhaven-unit-wiki.html`, cross-checked against every entry in this file. Findings:
+- **Nothing was deleted.** Every previously-tracked entry (1–211) still has a matching wiki card, except the five still-genuinely-planned ones (145, 146, 196, 210, 211) — those were already flagged as such. Entry 144 (Ironmere Shock Heavy Infantry) was incorrectly flagged "planned" — it has had a wiki card (`ironmere-shock`) all along; the flag has been corrected.
+- **45 units confirmed in the wiki but previously untracked here** — added as entries 214–258 above, organized by parent command.
+- **Intentionally out of scope, not added:** the ~26 individual mount/beast reference cards in `sec-animals` (personal mounts, war-horse breeds, exotic mounts) — these are equipment/companion references, not standing units, consistent with this document's scope since its creation.
+- **Silver Swan** 16 regional cards remain consolidated into 4 type entries per the original design note — confirmed still accurate, not a gap.
 
 **Void Siege Battery** counted once under Veil Watch. Joint auth with Zareth Kull required.
 

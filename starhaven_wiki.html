@@ -3805,6 +3805,24 @@ const ARMIES = [
     note:'Alliance is operational, not political. Do not attempt unified command structures — the clans will not accept them. Coordinate objectives, let each commander execute independently. The Stonefang Clan integration is the largest single reinforcement the Coalition has received.',
   },
 
+  // ══ RIVAL POWERS ═════════════════════════════════════
+  {
+    id:'zharak-emirate', name:'Zharak Emirate',
+    subtitle:'Rival Power · Eastern Desert Emirate',
+    motto:'"The sand remembers whose it was first."',
+    tier:'rival', strength:'Unconfirmed — estimated full emirate levy', color:'#3A2410',
+    commander:'Emir Zahid al-Morad · Vizier Nessa Korrath (foreign affairs)', hq:'Zharak Emirate (Southeastern Continent)',
+    image:'',
+    roles:['Border Pressure','Trade Route Denial','Desert Warfare','Diplomatic Antagonism'],
+    desc:'Karath Sultanate\'s neighbor and long-standing rival — a succession-era border dispute over the Zharak Reach trade corridor that neither side has formally conceded in three generations. Sultan Rashid\'s alliance with Starhaven has not improved relations; al-Morad reads it as encirclement. No open war, no formal peace — raiding parties and closed caravan routes instead. Starhaven has no direct alliance or conflict with Zharak. Yet.',
+    units:[
+      'Zharak Sand Cavalry (raiding formations)',
+      'Emirate Border Levies',
+      'Zharak Reach Toll Garrisons',
+    ],
+    note:'Sultana Aria on Zharak: "Rashid negotiates with people who want something from him. Zahid does not want anything from us. He wants what was already his." Unconfirmed intent — no engagement on record yet.',
+  },
+
   // ══ MERCENARY ════════════════════════════════════════
   {
     id:'iron-reavers', name:'The Iron Reavers',
@@ -4123,6 +4141,17 @@ const LOCATIONS = [
     lore:'Ashfield was contested for six years before the Ashen Passage War settled the question. The answer cost more than expected. The crater that resulted from the final engagement has been glowing for five years. The Arcanum has three active research teams attempting to explain it. None have succeeded.',
     tags:['Southern Frontier','Ashen Passage','Contested Territory','Year 1042'],
   transport:{riftGates:2,trainStation:'Ashfield Eastern Depot'},
+  },
+  {
+    id:'ashenfield', name:'Ashenfield',
+    type:'frontier', region:'Southeastern Coast — below Forgehaven',
+    population:'~22,000', founded:'Year 1036',
+    governor:'Forgehaven Garrison Command (logistics oversight)',
+    military:'Tidegate Overflow Yard · Forgehaven Coastal Watch',
+    desc:'The coastal support settlement below Forgehaven — where the Tidegate Arsenal\'s output gets loaded onto barges for the run down to Dawncliff and Saltmere. Fishing fleets share the harbor with military transports. Distinct from Ashfield: no crater, no war, just the unglamorous work of keeping a war machine fed.',
+    lore:'Cain Drakhar calls Ashenfield "the part of the Arsenal nobody photographs." The barge schedule has not slipped in six years. The dockworkers consider this a point of professional pride roughly equal to a soldier\'s unbroken service record, and get visibly offended when it is compared to anything less.',
+    tags:['Coastal','Logistics','Forgehaven Overflow','Shipping'],
+  transport:{riftGates:1,trainStation:'Ashenfield Docks Halt'},
   },
   {
     id:'karath-dun', name:'Karath Dun',

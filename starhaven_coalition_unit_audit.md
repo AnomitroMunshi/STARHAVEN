@@ -112,6 +112,7 @@
 | Ember Company | — | Cross-Army Specialist | 500 | 100 | **600** |
 | The Reedwalkers | — | Rhegar Thorne Direct — Wetland Reserve | 1,200 | 300 | **1,500** |
 | Beastmen Berserkers of the East *(NEW)* | — | Starhaven Command — Rhaegar | 720 | — | **720** |
+| The Doomcleavers *(NEW)* | Commander Fosho Tanachi | Rhaegar Thorne Direct Reserve | 1,200 | — | **1,200** |
 | Ironveil Spear Corps | — | Cross-Army Specialist | 12,000 | 3,000 | **15,000** |
 | Ironveil Halberdiers | — | Cross-Army Specialist | 8,000 | 2,000 | **10,000** |
 | Ashrunners | — | Cross-Army Specialist | 3,000 | 600 | **3,600** |
@@ -155,6 +156,9 @@
 | Windlance Cavalry | Irae Duskwind | Northern / Western Fronts | 900 | 225 | **1,125** |
 | Recurve Company of the Third | — | 3rd Field Army | 400 | 100 | **500** |
 | Ashstride Warband | Mirra Duststep | Mobile Reserve | 700 | 175 | **875** |
+| Requiem Wardens *(NEW)* | — | Rhegar Thorne Direct Reserve | 600 | — | **600** |
+
+*Requiem Wardens: heavy shock cavalry, black plate with the Ashen cross forged into the armor, poleaxe-armed. Committed only to end a broken, unsalvageable engagement quickly rather than let it drag on — Rhegar's standing order: "End it. Don't linger." No reserve — full 600 active or not deployed.*
 
 ---
 
@@ -225,6 +229,7 @@
 | Runebreakers | Cassia Vayne | Cross-Army Anti-Magic | 3,000 | 600 | **3,600** |
 | Rootcaller Shamans | — | Pillar — Thorin / Primal | 120 | 18 | **138** |
 | Hollow Order | — | Anti-Magic Specialist | See wiki | — | — |
+| Drakekin Pyromancers *(NEW)* | Flamewarden Riasa Tem | Starhaven Command — Rhaegar / Velkan's Patronage | 240 | — | **240** |
 
 ---
 
@@ -255,6 +260,7 @@
 | Ramhead — Battering Ram Division | Sora Keld | Coalition Siege Engineering | Battering ram | 6 rams | — | **6 rams** |
 | Shield Wall Engineers Corps *(NEW)* | Calla Brennick | Coalition Siege Engineering | Rapid field fortification | 1,000 | — | **1,000** |
 | Skyhunter Lance Battery *(NEW)* | — | High Command Strategic Reserve | Lance launcher | 6 launchers | — | **6 launchers** |
+| The Forgepact Battery *(NEW)* | Col. Dessa Marrow & Brokk Graniteborn | Starhaven Command — Rhaegar / Joint Stonemark Project | Cannon & mortar | 480 | — | **480** |
 
 *Shield Wall Engineers Corps: open-field counterpart to Groundbreaker (tunnels) and Rampart (siege towers) — builds portable stake lines, trench spikes, and modular obstacle walls in the gap between formations under fire, not staged before contact. On call to any Field Army.*
 
@@ -325,8 +331,10 @@
 | Ironpack — handlers | Sela Ironbone | Pillar — Nyx / Field Intel | 600 handlers | 150 handlers | **750 handlers** |
 | Ironpack — hounds | Sela Ironbone | Pillar — Nyx / Field Intel | 3,000 hounds | 750 hounds | **3,750 hounds** |
 | The Greymark *(NEW)* | — | Pillar — Nyx | 80 operators | — | **80** |
+| Picket Scouts *(NEW)* | Captain Iva Renn | Starhaven Command — Rhaegar Thorne Direct Reserve | 150 | — | **150** |
 
 *Greymark: 60 Human operators + 20 Half-Elf operators. Mid-battle command elimination. No reserve — all 80 active or not deployed.*
+*Picket Scouts: 50 three-scout cells, perimeter early-warning, no-engagement doctrine, relayed through the Thread-Runners network. No reserve — all 150 active or not deployed.*
 
 ---
 
@@ -415,25 +423,26 @@
 | Category | Active | Reserve | Total |
 |----------|--------|---------|-------|
 | Field Army Infantry (all 4 armies) | ~120,500 | ~36,150 | **~156,650** |
-| Cross-Army Specialist Infantry | ~32,420 | ~7,150 | **~39,570** |
+| Cross-Army Specialist Infantry | ~33,620 | ~7,150 | **~40,770** |
 | HQ Reserve Pool | ~26,935 | ~6,296 | **~33,231** |
-| Cavalry | ~16,200 | ~3,700 | **~19,900** |
+| Cavalry | ~16,800 | ~3,700 | **~20,500** |
 | Ranged | ~5,000 | ~1,205 | **~6,205** |
 | Dawnsteel Order | ~1,630 | ~341 | **~1,971** |
-| Magic & Anti-Magic | ~5,820 | ~1,618 | **~7,438** |
+| Magic & Anti-Magic | ~6,060 | ~1,618 | **~7,678** |
 | Aerial | ~398 | ~78 | **~476** |
-| Artillery & Siege (crew/engineers) | ~1,860 | ~215 | **~2,075** |
+| Artillery & Siege (crew/engineers) | ~2,340 | ~215 | **~2,555** |
 | Naval (Tidebreaker Corps; ship crews unknown) | ~5,000 | — | **~5,000 + 240 hulls (crew unknown)** |
 | Beast & Primal | ~8,525 + beasts | ~2,131 + beasts | **~10,656 + beasts** |
 | Iron Legion | ~1,262 + 350 tanks | ~180 | **~1,442 + 350 tanks** |
 | Void & Veil | ~1,000 | ~149 | **~1,149** |
-| Intelligence & Stealth | ~1,180 + hounds | ~237 + hounds | **~1,417 + hounds** |
+| Intelligence & Stealth | ~1,330 + hounds | ~237 + hounds | **~1,567 + hounds** |
 | Resonance Corps | ~696 | ~174 | **~870** |
 | Medical & Support | ~9,680 | ~2,412 | **~12,092** |
 | Logistics | ~3,700 wagons/crew | ~925 | **~4,625** |
 | Solo Legends | 8 | — | **8** |
 | **NEW UNITS (Vael'Dorum)** | **~2,480** | **—** | **~2,480** |
-| **STARHAVEN TOTAL** | **~242,093** | **~63,891** | **~305,984 + 240 hulls (crew unknown)** |
+| **NEW UNITS (Post-Vael'Dorum — Requiem Wardens, Doomcleavers, Drakekin Pyromancers, Picket Scouts, Forgepact Battery)** | **~2,670** | **—** | **~2,670** |
+| **STARHAVEN TOTAL** | **~244,763** | **~63,891** | **~308,654 + 240 hulls (crew unknown)** |
 
 ---
 
@@ -615,8 +624,11 @@
 | Goldgate Adventurer Groups | Drev Holt (Guild) | Mercenary / HQ Reserve | 108 (18 groups) | 36 (6 groups) | **144 (24 groups)** |
 | Ashen Shields | Cova Drell | Mercenary / Seraphine | 1,500 | 375 | **1,875** |
 | Silverchain Mages | — | Mercenary / Coalition Ward | 80 | 12 | **92** |
+| The Skyspear Valkyries *(NEW)* | Warqueen Isolde Skyward | Free Company — No Standing Contract | 900 | — | **900** |
 
-**Mercenary Total: ~3,695 active · ~923 reserve · ~4,618 total**
+*Skyspear Valkyries: all-female free company, five-deep spear-and-shield wall doctrine with axe rotation. Highest-bidder contracts only, never a standing retainer — Isolde Skyward negotiates one campaign at a time. No reserve — full 900 active or not deployed.*
+
+**Mercenary Total: ~4,595 active · ~923 reserve · ~5,518 total**
 
 ---
 
@@ -643,6 +655,21 @@
 
 ---
 
+## NEW UNITS SUMMARY *(Post-Vael'Dorum Additions)*
+
+| Unit | Commander | Race | Role | Total |
+|------|-----------|------|------|-------|
+| **The Requiem Wardens** | — (Rhegar Reserve) | Human | Heavy shock cavalry · field-ending mercy doctrine | **600** |
+| **The Skyspear Valkyries** | Warqueen Isolde Skyward | Mixed (all-female) | Elite mercenary spear-shield infantry · free company | **900** |
+| **The Doomcleavers** | Commander Fosho Tanachi | Mixed Human-Orc | Heavy greatsword infantry · anti-formation breach | **1,200** |
+| **Drakekin Pyromancers** | Flamewarden Riasa Tem | Drakekin | Offensive battle mage · innate pyromancy | **240** |
+| **Picket Scouts** | Captain Iva Renn | — | Perimeter early warning · no-engagement doctrine | **150** |
+| **The Forgepact Battery** | Col. Dessa Marrow & Brokk Graniteborn | Joint Human-Dwarf | Starhaven's first gunpowder corps — mobile cannon & mortar | **480** |
+
+*These five (plus Requiem Wardens and Skyspear Valkyries above) were confirmed present in `starhaven-unit-wiki.html` during the 2026-07-02 second-pass audit but had never been added to this document's tables. All are Rhaegar Thorne's Direct Reserve except Skyspear Valkyries (independent mercenary free company).*
+
+---
+
 ## NEWLY DOCUMENTED UNITS *(Naval, Holy Knights, Engineering — not Vael'Dorum-specific)*
 
 | Unit | Commander | Race | Role | Total |
@@ -665,15 +692,15 @@
 
 | Force | Active | Reserve | Total |
 |-------|--------|---------|-------|
-| **Starhaven** | ~242,093 | ~63,891 | **~305,984 + 240 hulls** |
+| **Starhaven** | ~244,763 | ~63,891 | **~308,654 + 240 hulls** |
 | **Karath Sultanate** | ~50,330 | ~14,921 | **~65,251** |
 | **Stonemark Holds** | ~13,370 | ~3,291 | **~16,661** |
 | **Highland Coalition** | ~41,761 | ~11,553 | **~53,314** |
 | **Holy Knights** | ~14,080 | ~3,188 | **~17,268** |
 | **Ironmere Kingdom** | ~21,030 | ~6,156 | **~27,186** |
 | **Sable Conclave** | ~36,402 | ~3,210* | **~39,612*** |
-| **Mercenaries** | ~3,695 | ~923 | **~4,618** |
-| **COALITION TOTAL** | **~422,761** | **~107,133** | **~529,894 + 240 hulls*** |
+| **Mercenaries** | ~4,595 | ~923 | **~5,518** |
+| **COALITION TOTAL** | **~426,331** | **~107,133** | **~533,464 + 240 hulls*** |
 
 *Sable Conclave reserve understated — mid-battle reanimation capability not counted*
 
@@ -713,6 +740,9 @@ Never deployed as of Year 1052. Triple authorization lock. Strategic reserve onl
 
 **The Greymark:**
 New unit — created for Vael'Dorum, not deployed at Vael'Dorum. First deployment will be at Nyx Ravel's discretion, activated only when a battlefield commander-elimination target cannot be reached by any other asset.
+
+**2026-07-02 Second-Pass Audit:**
+Full cross-reference of all 292 unit cards in `starhaven-unit-wiki.html` against this document. No units were found to have been deleted from the wiki — every previously-tracked unit still has a matching card. Five units existed in the wiki but had never been added here (now added above): The Doomcleavers, Drakekin Pyromancers, Picket Scouts, The Forgepact Battery, and The Requiem Wardens (added same session). A handful of rows already in this document (five Highland Coalition/Holy Knights/Ironmere command guards, Royal Engineers & Siege Corps, Goldgate Adventurer Groups, Orc Warriors, Beast Wardens — Greenveil) do not yet have a matching wiki card — left in place as documented lore pending a future card, not removed, since absence of a card doesn't necessarily mean the unit doesn't exist narratively.
 
 ---
 
