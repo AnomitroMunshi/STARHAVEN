@@ -486,6 +486,9 @@
     .card-modal .modal-body .card-body {
       flex: 1;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
+      overscroll-behavior: contain;
       padding: 24px 26px 32px;
       gap: 12px;
       scrollbar-width: thin;
@@ -1274,6 +1277,11 @@
         flex: none;
         width: 100%;
         padding: 18px 16px 32px;
+      }
+
+      .card-modal .modal-body {
+        touch-action: pan-y;
+        overscroll-behavior: contain;
       }
 
       /* hide zoom controls on mobile to free space */
