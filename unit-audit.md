@@ -338,10 +338,16 @@
 172. Half-Orc Barbarians *(Threska)*
 173. Blue Skinned Orc Clan *(Kragh Skullsplitter)*
 174. Redspire Clan *(Karsh Redspire)*
+174a. Orc Warriors *(Independent — 6,500 · not yet in unit wiki)*
 
 ### Gauntlet Army — War-Elder Vrakas Stonehide *(12,000 Beastmen)*
 175. The Gauntlet Army *(No weapons — natural combat only · Requires own front · Vrakas still fights front line at 67)*
 176. Ashpaw Volunteers *(Brex Ashpaw's people · Fast forward shock · Inside Gauntlet Army)*
+
+### Command Guards *(not yet in unit wiki)*
+176a. Drogar Stonefang Command Guard *(48 total)*
+176b. Kethra Blackfang Command Guard *(24 total)*
+176c. Drokha Bloodtusk Command Guard *(24 total)*
 
 ---
 

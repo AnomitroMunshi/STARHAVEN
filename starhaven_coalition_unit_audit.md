@@ -534,11 +534,11 @@
 |------|-----------|-----------|--------|---------|-------|
 | Red-Skinned Troll Tribe | Kaszrek | Highland Coalition | 800 | 200 | **1,000** |
 
-### Blue Orc Berserker Clans — Kragh Skullsplitter
+### Blue Skinned Orc Clan — Kragh Skullsplitter
 
 | Unit | Commander | Subunit of | Active | Reserve | Total |
 |------|-----------|-----------|--------|---------|-------|
-| Blue Orc Berserker Clans | Kragh Skullsplitter | Highland Coalition | 4,000 | 1,200 | **5,200** |
+| Blue Skinned Orc Clan | Kragh Skullsplitter | Highland Coalition | 4,000 | 1,200 | **5,200** |
 
 ### Independent Clans
 

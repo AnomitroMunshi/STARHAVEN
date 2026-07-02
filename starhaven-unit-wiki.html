@@ -895,6 +895,26 @@
       font-size: 9px;
     }
 
+    .video-link {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      color: var(--gold);
+      border-left: 1px solid var(--border2);
+      padding-left: 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .video-link:hover {
+      text-decoration: underline;
+    }
+
+    .video-link::before {
+      content: "🎬 ";
+      font-size: 9px;
+    }
+
     .opened-card .total-tag {
       font-size: 12px;
       padding: 3px 10px;
@@ -3692,7 +3712,7 @@
                 "name": "Redspire Clan",
                 "branch": "Infantry",
                 "className": "Orc Warriors · Flank Specialists",
-                "subtitle": "· Karsh Redspire · 26,000+ · The Clan That Needed to Matter",
+                "subtitle": "· Karsh Redspire · 3,250 · The Clan That Needed to Matter",
                 "srcPill": "🤝 Ally",
                 "armorBadge": "Heavy",
                 "armorClass": "armor-badge a-h",
@@ -3701,7 +3721,7 @@
                 "total": "3,250",
                 "image": "unitImages/redspire-clan.png",
                 "imageAlt": "",
-                "notes": "Twenty-six thousand — commanded by Karsh Redspire. The clan had wanted standing in the coalition since Gorvak's unification. They had been at war with the Ironjaw clan for forty years over passes in the Stormmassif that no longer exist — Gorvak ended that war before either side could call it finished, the kind of ending that satisfies no one. The Redspire had been waiting for an assignment that let them matter. When Gorvak gave the order for a flanking route, the Redspire asked for it before anyone else could. Gorvak sent enough to make the flank credible and held the rest in the main column. After Drogar killed Gorvak by right of combat and absorbed eleven clans, the Redspire came under Drogar's command with the rest.",
+                "notes": "Three thousand two hundred fifty — commanded by Karsh Redspire. The clan had wanted standing in the coalition since Gorvak's unification. They had been at war with the Ironjaw clan for forty years over passes in the Stormmassif that no longer exist — Gorvak ended that war before either side could call it finished, the kind of ending that satisfies no one. The Redspire had been waiting for an assignment that let them matter. When Gorvak gave the order for a flanking route, the Redspire asked for it before anyone else could. Gorvak sent enough to make the flank credible and held the rest in the main column. After Drogar killed Gorvak by right of combat and absorbed eleven clans, the Redspire came under Drogar's command with the rest.",
                 "armor": [
                   {
                     "slot": "Body",
@@ -8777,36 +8797,6 @@
                 ]
               },
               {
-                "id": "resonance",
-                "data-br": "Magic",
-                "data-src": "own",
-                "name": "Resonance Corps",
-                "branch": "Magic",
-                "className": "Bond / Resonance ⚙️",
-                "subtitle": "· Soul Link · +60% Force Multiplier",
-                "srcPill": "🏰 Own",
-                "armorBadge": "Light",
-                "armorClass": "armor-badge a-l",
-                "location": "Vaelmark / Field Embedded",
-                "army": "Pillar — Bob Vale",
-                "total": "750",
-                "image": "unitImages/resonance.png",
-                "imageAlt": "",
-                "notes": "Bob Vale's Soul Link network — a 60% force multiplier embedded across every formation in the alliance. Resonance-threaded underlayers connect soldiers through a mage network; the 400 Network Node personnel maintain the connection under field conditions. Not a combat unit itself — a capability multiplier for every other unit in the order of battle.",
-                "armor": [
-                  {
-                    "slot": "Body",
-                    "name": "Resonance-Threaded Plate",
-                    "desc": "— Standard plate with Soul Link resonance threads in underlayer. Network nodes are woven directly into the chest lining — the wearer is a relay point whether they know it or not."
-                  },
-                  {
-                    "slot": "Robe",
-                    "name": "Network Node Robe",
-                    "desc": "— 400 Resonance Mage Network personnel. Runed robes — node anchor points embroidered at every joint. The robe is the node."
-                  }
-                ]
-              },
-              {
                 "id": "the-thread-runners",
                 "data-br": "Magic",
                 "data-src": "own",
@@ -8897,7 +8887,7 @@
                 "total": "10",
                 "image": "unitImages/projection-crystal-relay.png",
                 "imageAlt": "Projection Crystal Relay Operators",
-                "notes": "The eight operators who manage the Projection Crystal Relay network — the broadcast layer of Bob Vale's Resonance Corps, distinct from Vale's Voice (which is the direct command channel) and the Thread-Runners (which maintain the Soul Link field network). The Projection Crystal Relay is for mass-broadcast: situation updates, formation orders, and Pillar communications that need to reach multiple commanders simultaneously rather than one at a time.\n\nEach operator manages a crystal node calibrated to a specific broadcast frequency — sector-based, so a relay operator for the northern front is not broadcasting on the same frequency as the eastern. Vale coordinates the eight nodes as a single system; in practice, an order issued through Bob Vale reaches all relevant commanders via a combination of Vale's Voice (direct, immediate, one-to-one) and the Projection Relay (broadcast, slightly slower, one-to-many). The two systems are complementary — if Vale's Voice is the targeted strike, the Projection Crystal Relay is the area announcement.\n\nTwo operators are held in reserve and not forward-deployed. This is not a rotation policy. It is a continuity protocol: if three or more forward nodes go dark simultaneously — whether from combat disruption, magical interference, or operator loss — the reserve operators can establish bridge frequencies within twelve minutes. Bob Vale described this as 'the thing that keeps a bad day from becoming a catastrophic one.'",
+                "notes": "The eight operators who manage the Projection Crystal Relay network — the broadcast layer of Bob Vale's Resonance Corps, distinct from Vale's Voice (which is the direct command channel) and the Thread-Runners (which maintain the Soul Link field network). The Projection Crystal Relay is for mass-broadcast: situation updates, formation orders, and Pillar communications that need to reach multiple commanders simultaneously rather than one at a time.\n\nEach operator manages a crystal node calibrated to a specific broadcast frequency — sector-based, so a relay operator for the northern front is not broadcasting on the same frequency as the eastern. Vale coordinates the eight nodes as a single system; in practice, an order issued through Bob Vale reaches all relevant commanders via a combination of Vale's Voice (direct, immediate, one-to-one) and the Projection Relay (broadcast, slightly slower, one-to-many). The two systems are complementary — if Vale's Voice is the targeted strike, the Projection Crystal Relay is the area announcement.\n\nTwo operators are held in reserve and not forward-deployed. This is not a rotation policy. It is a continuity protocol: if three or more forward nodes go dark simultaneously — whether from combat disruption, magical interference, or operator loss — the reserve operators can establish bridge frequencies within twelve minutes. Bob Vale described this as 'the thing that keeps a bad day from becoming a catastrophic one.'\n\nThe crystal arrays themselves are Cyrus Vexley's design — the same projection-crystal system that carried the Founding Day ceremony live to every major settlement simultaneously, repurposed for sector-based military broadcast and paired with Vaelmark's Resonance infrastructure to carry a continuous signal instead of a scheduled one. That gives the network a second function nobody advertises: Grand Marshal Rhegar Thorne can pull live footage from any forward node directly at Starhold HQ, without waiting on a runner or a report. He does not do this constantly. He does it exactly as often as he needs to.",
                 "armor": [
                   {
                     "slot": "Body",
@@ -9294,7 +9284,27 @@
                   {
                     "slot": "Body",
                     "name": "Saintguard Plate",
-                    "desc": "— Heaviest Holy Knights plate. Saintguard doctrine: absorb what others c…"
+                    "desc": "— The heaviest plate in the Holy Knights' entire order. Double-layered gold-trimmed steel over a consecrated inner lining; built to absorb blows other orders' plate would not stop."
+                  },
+                  {
+                    "slot": "Helm",
+                    "name": "Saintguard Greathelm",
+                    "desc": "— Fully enclosed greathelm with a reinforced brow and sacred sun-ray crest. Trades peripheral vision for maximum coverage, in keeping with the order's absorb-first doctrine."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Saintguard Bulwark",
+                    "desc": "— A tower shield rather than the Dawn Templars' kite — wide enough to cover the knight beside them. Consecrated iron face, built to anchor a line rather than maneuver."
+                  },
+                  {
+                    "slot": "Gauntlets",
+                    "name": "Saintguard Gauntlets",
+                    "desc": "— Reinforced steel gauntlets with sacred sigils at the knuckle, matched in weight to the Saintguard Plate for full-body protection with no unarmored joint."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Saintguard Warhammer",
+                    "desc": "— A one-handed consecrated warhammer, carried alongside the Bulwark rather than a blade — built to break what the shield cannot simply hold back."
                   }
                 ]
               },
@@ -13276,6 +13286,10 @@
       return String(text || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
     }
 
+    const VIDEO_UNITS = new Set([
+      "ironwall", "2fa-light", "2fa-medium", "feral-hunters", "1fa-assault", "2fa-light-cav"
+    ]);
+
     function renderCard(card) {
       const image = card.image ? `<img alt="${escapeHtml(card.imageAlt || card.name || '')}" src="${escapeHtml(card.image)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>` : '';
       const placeholder = `<div class="placeholder" style="${card.image ? 'display:none' : 'display:flex'}"><div class="placeholder-icon">🛡</div><div class="placeholder-ratio">3:4</div></div>`;
@@ -13318,6 +13332,7 @@
          <span class="loc-tag">${escapeHtml(card.location || '')}</span>
          <span class="army-tag">${escapeHtml(card.army || '')}</span>
          ${card.total && card.total !== 'unknown' ? `<span class="total-tag">${escapeHtml(card.total)}</span>` : ''}
+         ${VIDEO_UNITS.has(card.id) ? `<a class="video-link" href="unitVideos/${escapeHtml(card.id)}.mp4" onclick="event.preventDefault();event.stopPropagation();window.handleVideoLinkClick(this)">Watch Video</a>` : ''}
         </div>
        </div>
       </div>`;
@@ -13636,11 +13651,52 @@
     function closeCardModal() {
       const container = modalBody.querySelector('.modal-img-container');
       if (container && container._zoomCleanup) container._zoomCleanup();
+      const video = modalBody.querySelector('video');
+      if (video) video.pause();
       cardModal.classList.remove("active");
       cardModal.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
       modalBody.innerHTML = "";
     }
+
+    function showVideoInModal(src) {
+      let container = modalBody.querySelector('.modal-img-container');
+      if (!container) {
+        const cardImg = modalBody.querySelector('.card-img');
+        if (!cardImg) return;
+        container = document.createElement('div');
+        container.className = 'modal-img-container';
+        cardImg.replaceWith(container);
+      } else if (container._zoomCleanup) {
+        container._zoomCleanup();
+      }
+      container.innerHTML = '';
+      const video = document.createElement('video');
+      video.src = src;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.style.width = '100%';
+      video.style.height = '100%';
+      video.style.objectFit = 'contain';
+      video.style.background = '#000';
+      container.appendChild(video);
+    }
+
+    window.handleVideoLinkClick = function (linkEl) {
+      const src = linkEl.getAttribute('href');
+      const srcCard = linkEl.closest('.unit-card');
+      if (srcCard && srcCard.classList.contains('opened-card')) {
+        showVideoInModal(src);
+        return;
+      }
+      const cards = getVisibleCards();
+      const idx = cards.indexOf(srcCard);
+      if (idx > -1) {
+        openCardByIndex(idx);
+        showVideoInModal(src);
+      }
+    };
 
     const imgFullscreen = document.getElementById('imgFullscreen');
     const imgFsImg = document.getElementById('imgFsImg');
