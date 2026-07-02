@@ -2,7 +2,7 @@
 
 | Unit Name | Class | Branch | Commander | Captain |
 |---|---|---|---|---|
-| Ironwall | Very Heavy Infantry | Infantry | Pillar of Kael Varric |  |
+| Ironwall | Very Heavy Infantry | Infantry | Kael Varric |  |
 | Black Bastions | Elite Infantry | Infantry | Rhaegar |  |
 | Stonemark Bulwark | Elite Heavy Infantry · Bulwark Phalanx | Infantry | Brokk Graniteborn | Brak Graymaw |
 | Sentinel Guards | Elite Infantry | Infantry | Greenveil Defense Forces |  |
@@ -11,7 +11,7 @@
 | Ancestor Guard | Elite Infantry | Infantry | Drogar Stonefang |  |
 | The Silver Shields | Elite Infantry · Black Orc Legion | Infantry | Rhaegar |  |
 | The Oath-Axes | Elite Infantry · Oath-Bound Guard | Infantry | Rhaegar |  |
-| The Dawnguard | Heavy Infantry | Infantry | Pillar of Rayden Cale |  |
+| The Dawnguard | Heavy Infantry | Infantry | Rayden Cale |  |
 | 1st Field Army — Heavy Infantry | Heavy Infantry | Infantry | Doran Ashe |  |
 | 3rd Field Army — Heavy Infantry | Heavy Infantry | Infantry | Brek Tane |  |
 | Ironbreakers (Stonemark) | Heavy Infantry · Shieldwall Formation | Infantry | Brokk Graniteborn | Ulfrid Hammergrip |
@@ -256,42 +256,3 @@
 | The Shadow Court | Court Intelligence ♀ | Intelligence | Serell Vane |  |
 | Veil Hunters | Void Response · Active Entity Hunt | Intelligence | Elysia Nocturne |  |
 | Veil Seers | Psionic Operations · Void Detection Array | Intelligence | Elysia Nocturne |  |
-| Warblade | Personal Warhorse · Rayden Cale | Animals | Rayden Cale (Personal Mount) |  |
-| DreadMaw | Personal War Rhino · Kael Varric | Animals | Kael Varric (Personal Mount) |  |
-| Pyrewing | Legendary Drake-Dragon Hybrid · Velkan Drake's Bond Mount | Animals | Velkan Drake (Personal Bond Mount) |  |
-| Auriel | Celestial White Stag · Seraphine Mire's Bond Animal | Animals | Seraphine Mire (Bond Animal) |  |
-| Grond | Colossal Dire Bear · Thorin Blackroot's Bond Mount | Animals | Thorin Blackroot (Bond Mount) |  |
-| Mournfang | Cybernetic War Beast · Cain Drakhar's Mount | Animals | Cain Drakhar (Personal Mount) |  |
-| White Capuchin — Bob Vale | Companion Animal · Pillar of the Bond | Animals | Bob Vale (Personal Companion) |  |
-| Ironmane Charger | Legendary Warhorse · Ironmane Bloodline | Animals | Ironmane Bloodline |  |
-| Ironmane Endurance Warhorse | Endurance Warhorse · Ironmane Variant | Animals | Ironmane Bloodline |  |
-| Dawnrunner Warhorse | Ironmane Design · Multi-Role Cavalry Mount | Animals | Marcus Ironmane |  |
-| Crimsonblood Warhorse | Cataphract Warhorse · Heavy Shock Cavalry | Animals | Elara Dawnborn |  |
-| Sunfire Charger | Holy Knight Mount · White Warhorse | Animals | Seraphine Mire |  |
-| Mercy Charger | Light Warhorse · Medical Dispatch Mount | Animals | Seraphine Mire |  |
-| Undead War Horse | Undead Mount · Sable Conclave | Animals | Sorvane Nullis |  |
-| Windrunner | Speed-Optimised Warhorse · Windlance Cavalry Mount | Animals | Irae Duskwind |  |
-| Velhold Grassland Horse | Steppe Warhorse · Recurve Company Mount | Animals | 3rd Field Army |  |
-| Karath War Camel | Exotic Cavalry Mount · Desert-Bred | Animals | Samir al-Dusk |  |
-| Snowtusk War Elk | Arctic Cavalry Mount · Mountain Elk | Animals | Wyld Frostmere |  |
-| Silver Moon Elk | Forest Cavalry Mount · Silent Warden | Animals | Silent Warden Mounted Wing |  |
-| War Hyena | Light Cavalry Beast · Highland Coalition | Animals | Drokha Bloodtusk |  |
-| Ironhorn War Bull | Heavy Cavalry Beast · Highland Coalition | Animals | Drokha Bloodtusk |  |
-| Thornfang Cat | Primal Vanguard Beast · Speed Predator | Animals | Thorin Blackroot |  |
-| Aethran Fangwalker | Apex Predator Mount · Irreplaceable | Animals | Rhaegar Thorne |  |
-| Sky Drake | Drake · Aerial Strike Mount · Bond-Paired | Animals | Velkan Drake |  |
-| Ashwing Eagle | Aerial Scout Mount · Reconnaissance | Animals | Ren Dael |  |
-| War Griffin | Aerial Combat Mount · Storm Elf | Animals | Pillar Aurelia Vex |  |
-| Skymark Wyvern-Hybrid | Purpose-Bred Speed Drake · Fastest Aerial Asset in the Coalition | Animals | Velkan Drake |  |
-| Zephyros | Legendary Asiatic Storm Dragon · Aurelia Vex's Mount | Animals | Pillar Aurelia Vex (Personal Mount) |  |
-| War Boar | Shock Beast · Low-Line Charge | Animals | Highland Coalition / Starhaven Beast Corps |  |
-| War Bear | Heavy Assault Beast · Close-Range | Animals | Highland Coalition / Starhaven Beast Corps |  |
-| Dire Wolves | Pack Predator · Fast Flanking Beast | Animals | Highland Coalition / Starhaven Beast Corps |  |
-| War Tiger | Apex Ambush Beast · Strike & Withdraw | Animals | Starhaven Beast Corps |  |
-| War Lion | Prestige Combat Beast · Shock & Intimidation | Animals | Starhaven Beast Corps / Allied Forces |  |
-| War Gorilla | Heavy Melee Beast · Formation Breaker | Animals | Starhaven Beast Corps |  |
-| Mosshorn Rhino | Heavy Charge Beast · Living Siege Ram | Animals | Starhaven Beast Corps / Primal Vanguard |  |
-| Shadowfang Panther — Umbra | Bond Animal · Null Blades · Nyx Ravel | Animals | Nyx Ravel (Bond Animal) |  |
-| War Mammoth | Megafauna · Tower-Mounted Platform | Animals | Sultan Rashid |  |
-| War Elephant | Megafauna · Tower-Mounted Platform | Animals | Sultan Rashid |  |
-| Brand Order | Void Breaker · Corruption Tracking | Animals | Zareth Kull |  |
