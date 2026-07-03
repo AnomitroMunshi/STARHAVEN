@@ -251,6 +251,7 @@
 |------|-----------|-----------|-------------|--------|---------|-------|
 | Ironveil Trebuchet Battery | Aldren Croft | Coalition Artillery | Trebuchet | 20 batteries / 60 crew | 15 crew | **75 crew** |
 | Stonethrow Corps | Vera Holt | Coalition Artillery | Catapult | 60 crews | 15 crews | **75 crews** |
+| Stonecast Onager Battery *(NEW)* | Siege-Captain Renna Oswick | Coalition Artillery | Onager | 24 batteries / 76 crew | 20 crew | **96 crew** |
 | Scorpio Field Batteries | — | Coalition Artillery | Light bolt thrower | 150 batteries / 300 crew | 75 crew | **375 crew** |
 | Carroballista Corps | — | Coalition Artillery | Mobile ballista | 100 units / 200 crew | 50 crew | **250 crew** |
 | Polybolus Repeater Corps | — | Coalition Artillery | Repeating bolt thrower | 120 crews | 30 crews | **150 crews** |
@@ -415,6 +416,8 @@
 | Lyss Anven | Pillar — Nyx / Independent | 1 | — | **1** |
 | Talon & Hex | Coalition / Independent | 2 | — | **2** |
 | Dren Solm | Independent (Chronicle) | 1 | — | **1** |
+| Zafir | Karath Sultanate (Allied) | 1 | — | **1** |
+| Roland Ashguard | Kingdom of Ironmere (Allied) | 1 | — | **1** |
 
 ---
 
@@ -430,7 +433,7 @@
 | Dawnsteel Order | ~1,630 | ~341 | **~1,971** |
 | Magic & Anti-Magic | ~6,060 | ~1,618 | **~7,678** |
 | Aerial | ~398 | ~78 | **~476** |
-| Artillery & Siege (crew/engineers) | ~2,340 | ~215 | **~2,555** |
+| Artillery & Siege (crew/engineers) | ~2,416 | ~235 | **~2,651** |
 | Naval (Tidebreaker Corps; ship crews unknown) | ~5,000 | — | **~5,000 + 240 hulls (crew unknown)** |
 | Beast & Primal | ~8,525 + beasts | ~2,131 + beasts | **~10,656 + beasts** |
 | Iron Legion | ~1,262 + 350 tanks | ~180 | **~1,442 + 350 tanks** |
@@ -442,7 +445,7 @@
 | Solo Legends | 8 | — | **8** |
 | **NEW UNITS (Vael'Dorum)** | **~2,480** | **—** | **~2,480** |
 | **NEW UNITS (Post-Vael'Dorum — Requiem Wardens, Doomcleavers, Drakekin Pyromancers, Picket Scouts, Forgepact Battery)** | **~2,670** | **—** | **~2,670** |
-| **STARHAVEN TOTAL** | **~244,763** | **~63,891** | **~308,654 + 240 hulls (crew unknown)** |
+| **STARHAVEN TOTAL** | **~244,839** | **~63,911** | **~308,750 + 240 hulls (crew unknown)** |
 
 ---
 
@@ -596,6 +599,26 @@
 
 ---
 
+## VANARI CLAN
+**Commander: High Chieftain Rudra Vanar**
+*Ancient beastkin (ape-kin) civilization of the Unknown North — allied by shared cause against Void corruption, not treaty or conquest.*
+
+| Unit | Commander | Subunit of | Active | Reserve | Total |
+|------|-----------|-----------|--------|---------|-------|
+| Vanari Warriors | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 4,000 | — | **4,000** |
+| Vanari TreeRunners | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 2,000 | — | **2,000** |
+| Vanari Shock Infantry | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 1,000 | — | **1,000** |
+| Vanari Elites | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 100 | — | **100** |
+| Vanari Thunder Riders | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 600 | — | **600** |
+| Baboon Vanari | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 500 | — | **500** |
+| The Kodandin | High Chieftain Rudra Vanar | High Chieftain Rudra Vanar | 1,500 | — | **1,500** |
+
+*No listed reserve — the Vanari host is a legendary, honor-bound levy that answers as a whole clan when called, not a conventional standing army that rotates troops in and out of reserve.*
+
+**Vanari Clan Total: ~9,700 active · folded into the FULL COALITION GRAND TOTAL below (not into STARHAVEN TOTALS, since the Vanari are allied, not Starhaven-owned)**
+
+---
+
 ## SABLE CONCLAVE
 **Commander: Sorvane Nullis**
 *Far western flank — fully independent*
@@ -692,7 +715,7 @@
 
 | Force | Active | Reserve | Total |
 |-------|--------|---------|-------|
-| **Starhaven** | ~244,763 | ~63,891 | **~308,654 + 240 hulls** |
+| **Starhaven** | ~244,839 | ~63,911 | **~308,750 + 240 hulls** |
 | **Karath Sultanate** | ~50,330 | ~14,921 | **~65,251** |
 | **Stonemark Holds** | ~13,370 | ~3,291 | **~16,661** |
 | **Highland Coalition** | ~41,761 | ~11,553 | **~53,314** |
@@ -700,9 +723,11 @@
 | **Ironmere Kingdom** | ~21,030 | ~6,156 | **~27,186** |
 | **Sable Conclave** | ~36,402 | ~3,210* | **~39,612*** |
 | **Mercenaries** | ~4,595 | ~923 | **~5,518** |
-| **COALITION TOTAL** | **~426,331** | **~107,133** | **~533,464 + 240 hulls*** |
+| **Vanari Clan** | ~9,700 | — | **~9,700** |
+| **COALITION TOTAL** | **~436,107** | **~107,153** | **~543,260 + 240 hulls*** |
 
 *Sable Conclave reserve understated — mid-battle reanimation capability not counted*
+*Vanari Clan carries no reserve rotation — a legendary honor-bound host, not a standing conventional army; the full ~9,700 is always the active figure.*
 
 ---
 
@@ -722,7 +747,7 @@
 | Zephyros | 1 | Aurelia's — elder-class Asiatic Storm Dragon |
 | Sira | 1 | Elder Mammoth — psychological asset |
 | Sorvane Nullis | 1 | Arch-Necromancer, 89 years — cannot be replaced |
-| All named Solo Legends | 8 | Yami · Barek Kade · Mirova · Torak · Lyss Anven · Talon · Hex · Dren Solm |
+| All named Solo Legends | 10 | Yami · Barek Kade · Mirova · Torak · Lyss Anven · Talon · Hex · Dren Solm · Zafir · Roland Ashguard |
 | All Eleven Pillars | 11 | Irreplaceable by definition |
 
 ---

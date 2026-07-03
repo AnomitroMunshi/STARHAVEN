@@ -225,8 +225,10 @@ a.lore-card:hover{transform:translateY(-2px)}
 
 /* ══ ARMY CARDS ══ */
 .army-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px;margin-bottom:30px}
-.army-card{background:var(--bg2);border:1px solid var(--border2);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .18s;position:relative}
+.army-card{background:var(--bg2);border:1px solid var(--border2);border-radius:10px;overflow:hidden;transition:border-color .2s,transform .18s;position:relative;cursor:pointer}
 .army-card:hover{border-color:var(--border3);transform:translateY(-2px)}
+.army-desc-excerpt{font-size:12px;color:var(--text2);line-height:1.65;margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+.army-see-more{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--gold-dim,var(--amber3));letter-spacing:.08em;text-transform:uppercase;margin-top:4px;display:inline-block}
 .army-card.tier-eleven{border-color:rgba(212,168,50,.2)}
 .army-card.tier-eleven:hover{border-color:var(--gold)}
 .army-card.tier-elite:hover{border-color:var(--red2)}
@@ -542,18 +544,6 @@ a.lore-card:hover{transform:translateY(-2px)}
     <div id="char-roster" class="char-roster"></div>
   </div>
 
-  <!-- CHAR MODAL -->
-  <div class="char-modal-overlay" id="char-modal-overlay" onclick="if(event.target===this)closeCharModal()">
-    <div class="char-modal" id="char-modal">
-      <div class="char-modal-strip" id="char-modal-strip"></div>
-      <button class="char-modal-close" onclick="closeCharModal()">&#215;</button>
-      <div class="char-modal-inner">
-        <div class="char-modal-portrait" id="char-modal-portrait"></div>
-        <div class="char-modal-content" id="char-modal-content"></div>
-      </div>
-    </div>
-  </div>
-
   <!-- ARMY -->
   <div id="section-army" class="section">
     <div class="s-hero">
@@ -665,6 +655,29 @@ a.lore-card:hover{transform:translateY(-2px)}
   </div>
 
 </main>
+
+<!-- CHAR MODAL -->
+<div class="char-modal-overlay" id="char-modal-overlay" onclick="if(event.target===this)closeCharModal()">
+  <div class="char-modal" id="char-modal">
+    <div class="char-modal-strip" id="char-modal-strip"></div>
+    <button class="char-modal-close" onclick="closeCharModal()">&#215;</button>
+    <div class="char-modal-inner">
+      <div class="char-modal-portrait" id="char-modal-portrait"></div>
+      <div class="char-modal-content" id="char-modal-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ARMY MODAL -->
+<div class="char-modal-overlay" id="army-modal-overlay" onclick="if(event.target===this)closeArmyModal()">
+  <div class="char-modal" id="army-modal">
+    <div class="char-modal-strip" id="army-modal-strip"></div>
+    <button class="char-modal-close" onclick="closeArmyModal()">&#215;</button>
+    <div class="char-modal-inner">
+      <div class="char-modal-content" id="army-modal-content" style="flex:1"></div>
+    </div>
+  </div>
+</div>
 
 <!-- ══ BALLAD PLAYER BAR ══ -->
 <div class="ballad-player-bar" id="ballad-bar">
@@ -1449,7 +1462,7 @@ const CHARACTERS = [
     quote:'"Good. That means you belong here." — to Marcus Ironmane, on the forest claiming him',
     bio:'Thorin\'s younger brother, and nearly his equal in size — but where Thorin carries an ancient silence, Garruk laughs constantly, openly, at everything. Beard braided with beast teeth instead of iron rings. Old claw scars cross both arms, worn without shame. The kind of presence that turns a column of exhausted soldiers into something that sounds human again.',
     background:'Spent years fighting corruption alone in the deep Greywood, one nest at a time, while the forest slowly lost ground season by season. Built his command around Greywood\'s war-beasts — direwolves, armored dire boars, his own alpha-bonded companions — riding an armored direwolf into the western flank during the march on the fortress. Cut down a cult battalion commander in single combat, then turned immediately to face two corrupted titans alongside Thorin in the rear clearings, refusing to let them reach the supply lines and the people behind them.',
-    pet:{name:"Garruk's alpha direwolf", desc:'A massive, alpha-bonded direwolf that rode beside him into every battle. When Garruk fell, it reached his body before anyone else did and pressed its head against his broken armor — making a sound, the soldiers said, that was older than howling and that none of them had heard a wolf make before.'},
+    pet:{name:'Fenrik', desc:"Garruk's massive, alpha-bonded direwolf, who rode beside him into every battle. When Garruk fell, Fenrik reached his body before anyone else did and pressed its head against his broken armor — making a sound, the soldiers said, that was older than howling and that none of them had heard a wolf make before. Corps doctrine called for him to be rebonded to a new handler within the season; he refused every pairing offered and simply began following Thorin Blackroot instead, uninvited, and never stopped. He rests beside Grond at councils now and answers to no one else."},
     achievements:[
       'Commanded Greywood\'s beast-riders — the only rider the forest\'s most dangerous war-beasts would fully accept',
       'Broke a cult battalion\'s western flank command structure in single combat, fighting two axes against a corruption-trained warblade',
@@ -2768,6 +2781,26 @@ const CHARACTERS = [
     partner:null,
     achievements:['Led the concealed Greypeak mountain approach undetected — Year 1049','Broke Gorvak\'s northern wing with 600 dwarves — Greenveil, Year 1049'],
   },
+  {
+    id:'rudravanar', name:'Rudra Vanar',
+    title:'High Chieftain of the Vanari Clans · Voice of the Unknown North',
+    category:'Allied', status:'alive',
+    age:'Unknown (centuries, by clan reckoning)', race:'Vanari (Ape-kin, Titan-descended)', role:'High Chieftain / Beastkin Warlord',
+    image:'starhaven_chars_image/rudravanar.png', color:'#5A7A3A',
+    commands:['The Vanari Clans (all)','The March of the North'],
+    weapons:['Titan Gada (ancestral)'], abilities:[
+      {name:'Titan\'s Judgment',   type:'passive',  desc:'Reads character rather than strength. Rudra crossed the northern frontier not to test Rayden Cale in combat but to judge him in conversation — the meeting lasted under an hour. What convinces Rudra cannot be bought, threatened, or performed.'},
+      {name:'The Unbreakable Word', type:'passive',  desc:'A pledge from Rudra is treated by every Vanari clan as absolute — no document, seal, or witness required. No Vanari clan has broken a High Chieftain\'s word in living memory.'},
+      {name:'Titan Gada Strike',   type:'active',   desc:'The ancestral Gada — driven point-first into the earth before Starhold as the alliance\'s only seal — is heavy enough that almost no one beyond Rudra can lift it, let alone swing it in combat.'},
+      {name:'Call of the Clans',   type:'ultimate', desc:'Summons every scattered Vanari clan under a single banner — not done in living memory before the March of the North. Nearly eight thousand warriors descended from the highlands in answer to one word.'},
+    ], quote:'"Not because of treaties. Because of honor."',
+    bio:'Ancient beyond easy reckoning, even by Vanari standards — High Chieftain of a confederation of ape-kin clans that predates most human kingdoms and answers to no throne but its own. Forbade all contact with the southern kingdoms for centuries, until the Void Fractures reached the Titan groves and gave the clans an enemy they could not simply outrun or outwait.',
+    relationships:[{name:'Rayden Cale',type:'ally'}],
+    tags:['Allied','Vanari Clan','High Chieftain','Legendary Army','Beastkin','Chapter 9'],
+    background:'The Vanari Clans are the oldest surviving beastkin civilization in the known world — descended from the ancient Mountain and Jungle Titans, scattered through the forests, cliffs, and highlands of the Unknown North since before recorded history. For so long that even the Elves had come to treat them as myth: no outsider was known to have seen a Vanari warband and lived to describe it clearly. When word reached Rudra that a young king was uniting old enemies against the same corruption consuming the northern wilds, he crossed the frontier alone to judge the man himself. Rayden offered no tribute and demanded no oath — only the truth that the Void would not stop at Starhaven\'s borders. Rudra accepted, drove his ancestral Titan Gada into the earth before Starhold, and left without a signed word between them. Months later, watchers on the northern ridges reported the forests moving. They were not moving — nearly eight thousand Vanari warriors were descending from the mountains, the first time every major clan had marched beneath a single banner. Coalition veterans call that day The March of the North. The Vanari answer for as long as the cause outweighs the borders of nations — and for exactly that long. If Starhaven\'s cause ever curdles, the clans simply leave.',
+    partner:null,
+    achievements:['United every major Vanari clan under a single banner for the first time in living memory — The March of the North','Judged Rayden Cale worthy of alliance in under an hour, without combat or treaty','Planted the ancestral Titan Gada before Starhold as the alliance\'s only binding seal'],
+  },
 
 ];
 // ════════════════════════════════════════
@@ -3804,6 +3837,26 @@ const ARMIES = [
       'Red-Skinned Troll Tribe — Kaszrek · Reckless vanguard · Absorb initial fire before berserkers hit',
     ],
     note:'Alliance is operational, not political. Do not attempt unified command structures — the clans will not accept them. Coordinate objectives, let each commander execute independently. The Stonefang Clan integration is the largest single reinforcement the Coalition has received.',
+  },
+  {
+    id:'vanari-clan', name:'Vanari Clan',
+    subtitle:'Allied · Ancient Beastkin Civilization of the Unknown North',
+    motto:'"Not because of treaties. Because of honor."',
+    tier:'allied', strength:'~9,700 Warriors (The March of the North)', color:'#3A5A28',
+    commander:'High Chieftain Rudra Vanar', hq:'The Unknown North (Titan Highlands)',
+    image:'',
+    roles:['Ancient Beastkin Civilization','Honor-Bound Alliance','Highland & Forest Warfare','Legendary Reinforcement'],
+    desc:'The oldest surviving beastkin civilization on the continent — ape-kin descendants of the ancient Mountain and Jungle Titans, scattered across the forests, cliffs, and highlands of the Unknown North since before recorded history. For centuries even the Elves considered them myth; no outsider had reportedly seen a Vanari warband and lived to describe it. The Void Fractures reached their ancestral groves before any embassy did. When word reached High Chieftain Rudra Vanar that a human king was uniting old enemies against the same darkness, Rudra crossed the frontier to judge the man himself — and judged him worthy inside an hour. No treaty was signed. Rudra drove his ancestral Titan Gada into the earth before Starhold: while it stands, the Vanari answer Starhaven\'s call, for as long as the cause outweighs the borders of nations. Their loyalty runs to the fight against the Void, not to any throne — only Rayden and Rudra can invoke the alliance, and the clans leave the day that stops being true.',
+    units:[
+      'Vanari Warriors — 4,000 · Main assault infantry · spears, axes, curved falchions, stone hammers, round wooden shields',
+      'Vanari TreeRunners — 2,000 · Langur-blooded skirmishers · twin hunting spears, blowpipes, slings, climbing knives · hit, move, disappear',
+      'Vanari Shock Infantry — 1,000 · Gorilla-blooded heavy shock · massive iron Gada, almost no armor · mobility over protection',
+      'Vanari Elites — 100 · Rudra\'s most honored warriors, not merely his strongest · rune-engraved, Titan-forged Gadas, no two alike',
+      'Vanari Thunder Riders — 600 · Heavy cavalry mounted on bred Thunderfang Great Cats · charges broken terrain ordinary cavalry cannot cross',
+      'Baboon Vanari — 500 · Light shock raiders and elite duelists · favors single combat over formation fighting',
+      'The Kodandin — 1,500 · Orangutan-blooded bowbearers of the mythic Kodanda · draw weights no human archer corps can match · fewer shots, far harder ones',
+    ],
+    note:'"They were not moving. Nearly eight thousand Vanari warriors were descending from the mountains." — watchers on the northern ridges, the day coalition veterans came to call The March of the North.',
   },
 
   // ══ RIVAL POWERS ═════════════════════════════════════
@@ -4846,121 +4899,91 @@ function armyRender(filter, btn) {
   container.innerHTML = html;
 }
 
-function armyCard(a, tierColor) {
-  const imgHtml = a.image
-    ? `<div class="army-card-img" style="background-image:url('${a.image}');border-bottom:1px solid var(--border2);cursor:pointer" onclick="openImgModal('${a.image}','${a.name.replace(/'/g,"\'")}','')"></div>`
-    : '';
+const ARMY_UNIT_CLASS_OVERRIDES = {
+  'ironmane-lancers':'Heavy Cavalry',
+  'windlance-cavalry':'Light Cavalry',
+  'silver-swan-cavalry':'Medium Cavalry',
+  'dawnlancers':'Heavy Cavalry',
+  'warbreakers':'Heavy Infantry',
+  'ashrunners':'Light Infantry',
+  'black-charge':'Heavy Cavalry',
+  'ironwall':'Very Heavy Infantry',
+  'gauntlet-army':'Heavy Infantry',
+  'ironveil-spear-corps':'Heavy Infantry',
+  'skywarden-corps':'Light Cavalry',
+  'runebreakers':'Heavy Infantry',
+  'iron-talon-batteries':'Heavy Artillery',
+  'dawnsteel-order':'Elite Infantry',
+  'ironbreaker-mace-corps':'Heavy Infantry',
+  'silverleaf-corps':'Medium Ranged',
+  'undying-colors':'Medium Infantry',
+  'arcanum-tidewatch':'Naval Support',
+  'iron-road-corps':'Logistics Support',
+  'tidebreaker-corps':'Heavy Naval',
+  'dawnfleet':'Naval Fleet',
+  'arcane-artillery':'Arcane Artillery'
+};
 
-  const rolesHtml = (a.roles||[]).map(r =>
-    `<span class="rel-tag" style="font-size:10px;border-color:${a.color}44;color:${a.color}">${r}</span>`
-  ).join('');
+const ARMY_UNIT_CLASS_KEYWORDS = ['Infantry','Cavalry','Artillery','Shock','Heavy','Light','Elite','Medium','Specialized','Mounted','Archers','Horse Archer','Guard','Corps','Division','Fleet','Order','Breach','Reconnaissance','Naval','Aerial'];
+const ARMY_UNIT_CLASS_CANDIDATES = [
+  'Light Shock Infantry', 'Shock Infantry', 'Very Heavy Infantry', 'Heavy Infantry', 'Medium Infantry', 'Light Infantry',
+  'Cataphracts Cavalry', 'Very Heavy Cavalry', 'Heavy Cavalry', 'Medium Cavalry', 'Light Cavalry', 'Mounted Archers',
+  'Arcane Artillery', 'Heavy Artillery', 'Naval Support', 'Naval Force', 'Logistics Support', 'Medium Ranged', 'Elite Infantry'
+];
 
-  
+function armyUnitClassLabel(a) {
+  if (ARMY_UNIT_CLASS_OVERRIDES[a.id]) return ARMY_UNIT_CLASS_OVERRIDES[a.id];
 
-  const unitClassLabelOverrides = {
-    'ironmane-lancers':'Heavy Cavalry',
-    'windlance-cavalry':'Light Cavalry',
-    'silver-swan-cavalry':'Medium Cavalry',
-    'dawnlancers':'Heavy Cavalry',
-    'warbreakers':'Heavy Infantry',
-    'ashrunners':'Light Infantry',
-    'black-charge':'Heavy Cavalry',
-    'ironwall':'Very Heavy Infantry',
-    'gauntlet-army':'Heavy Infantry',
-    'ironveil-spear-corps':'Heavy Infantry',
-    'skywarden-corps':'Light Cavalry',
-    'runebreakers':'Heavy Infantry',
-    'iron-talon-batteries':'Heavy Artillery',
-    'dawnsteel-order':'Elite Infantry',
-    'ironbreaker-mace-corps':'Heavy Infantry',
-    'silverleaf-corps':'Medium Ranged',
-    'undying-colors':'Medium Infantry',
-    'arcanum-tidewatch':'Naval Support',
-    'iron-road-corps':'Logistics Support',
-    'tidebreaker-corps':'Heavy Naval',
-    'dawnfleet':'Naval Fleet',
-    'arcane-artillery':'Arcane Artillery'
-  };
-
-  // Pill CSS map removed from JS — badge pills are no longer rendered on cards
-
-  const unitClassKeywords = ['Infantry','Cavalry','Artillery','Shock','Heavy','Light','Elite','Medium','Specialized','Mounted','Archers','Horse Archer','Guard','Corps','Division','Fleet','Order','Breach','Reconnaissance','Naval','Aerial'];
+  const scoreSegment = segment => ARMY_UNIT_CLASS_KEYWORDS.reduce((score, keyword) =>
+    score + (new RegExp(`\\b${keyword}\\b`, 'i').test(segment) ? keyword.length : 0)
+  , 0);
   const subtitleSegments = a.subtitle ? a.subtitle.split('·').map(s => s.trim()).filter(Boolean) : [];
-  const scoreSegment = segment => {
-    return unitClassKeywords.reduce((score, keyword) =>
-      score + (new RegExp(`\\b${keyword}\\b`, 'i').test(segment) ? keyword.length : 0)
-    , 0);
-  };
   const bestSubtitleSegment = subtitleSegments.reduce((best, segment) => {
     const currentScore = scoreSegment(segment);
     return currentScore > best.score ? { segment, score: currentScore } : best;
   }, { segment: '', score: 0 }).segment;
   const fallbackLabel = bestSubtitleSegment || subtitleSegments[0] || (a.tier ? a.tier.charAt(0).toUpperCase() + a.tier.slice(1) : '');
+  const source = (a.subtitle || fallbackLabel || '').trim();
+  const tierUnit = a.tier ? `${a.tier.charAt(0).toUpperCase() + a.tier.slice(1)} Unit` : 'Unknown Unit';
+  if (!source) return tierUnit;
 
-  const unitClassCandidates = [
-    'Light Shock Infantry', 'Shock Infantry', 'Very Heavy Infantry', 'Heavy Infantry', 'Medium Infantry', 'Light Infantry',
-    'Cataphracts Cavalry', 'Very Heavy Cavalry', 'Heavy Cavalry', 'Medium Cavalry', 'Light Cavalry', 'Mounted Archers',
-    'Arcane Artillery', 'Heavy Artillery', 'Naval Support', 'Naval Force', 'Logistics Support', 'Medium Ranged', 'Elite Infantry'
-  ];
+  const normalized = source.toLowerCase();
+  for (const candidate of ARMY_UNIT_CLASS_CANDIDATES) {
+    if (new RegExp(`\\b${candidate.toLowerCase()}\\b`, 'i').test(source)) return candidate;
+  }
+  if (/cavalry|horse archer|mounted|charge|cataphracts/i.test(normalized)) {
+    if (/very heavy/i.test(normalized)) return 'Very Heavy Cavalry';
+    if (/heavy|shock|elite|cataphracts/i.test(normalized)) return 'Heavy Cavalry';
+    if (/medium/i.test(normalized)) return 'Medium Cavalry';
+    return 'Light Cavalry';
+  }
+  if (/infantry|shock|breach|rush|order|guard|mace|spearman|halberdier|pikemen/i.test(normalized)) {
+    if (/very heavy/i.test(normalized)) return 'Very Heavy Infantry';
+    if (/heavy|elite/i.test(normalized)) return 'Heavy Infantry';
+    if (/medium/i.test(normalized)) return 'Medium Infantry';
+    return 'Light Infantry';
+  }
+  if (/artillery|battlemage|battery|arcane/i.test(normalized)) return 'Arcane Artillery';
+  if (/naval|fleet|shore|ship/i.test(normalized)) return 'Naval Force';
+  if (/recon|scout|aerial/i.test(normalized)) return 'Light Cavalry';
+  return tierUnit;
+}
 
-  const inferUnitClass = text => {
-    const source = (text || '').trim();
-    if (!source) return a.tier ? `${a.tier.charAt(0).toUpperCase() + a.tier.slice(1)} Unit` : 'Unknown Unit';
-    const normalized = source.toLowerCase();
-    for (const candidate of unitClassCandidates) {
-      if (new RegExp(`\\b${candidate.toLowerCase()}\\b`, 'i').test(source)) return candidate;
-    }
-    if (/cavalry|horse archer|mounted|charge|cataphracts/i.test(normalized)) {
-      if (/very heavy/i.test(normalized)) return 'Very Heavy Cavalry';
-      if (/heavy|shock|elite|cataphracts/i.test(normalized)) return 'Heavy Cavalry';
-      if (/medium/i.test(normalized)) return 'Medium Cavalry';
-      return 'Light Cavalry';
-    }
-    if (/infantry|shock|breach|rush|order|guard|mace|spearman|halberdier|pikemen/i.test(normalized)) {
-      if (/very heavy/i.test(normalized)) return 'Very Heavy Infantry';
-      if (/heavy|elite/i.test(normalized)) return 'Heavy Infantry';
-      if (/medium/i.test(normalized)) return 'Medium Infantry';
-      return 'Light Infantry';
-    }
-    if (/artillery|battlemage|battery|arcane/i.test(normalized)) return 'Arcane Artillery';
-    if (/naval|fleet|shore|ship/i.test(normalized)) return 'Naval Force';
-    if (/recon|scout|aerial/i.test(normalized)) return 'Light Cavalry';
-    return a.tier ? `${a.tier.charAt(0).toUpperCase() + a.tier.slice(1)} Unit` : 'Unknown Unit';
-  };
+function armyRolesHtml(a) {
+  return (a.roles||[]).map(r =>
+    `<span class="rel-tag" style="font-size:10px;border-color:${a.color}44;color:${a.color}">${r}</span>`
+  ).join('');
+}
 
-  const unitClassLabel = unitClassLabelOverrides[a.id] || inferUnitClass(a.subtitle || fallbackLabel);
+function armyCard(a, tierColor) {
+  const unitClassLabel = armyUnitClassLabel(a);
   const unitClassHtml = unitClassLabel
     ? `<div class="unit-class-field"><span class="unit-class-label">Unit Class</span><span class="unit-class-value">${unitClassLabel}</span></div>`
     : '';
 
-  const unitsHtml = a.units && a.units.length
-    ? `<div style="margin-top:10px;border-top:1px solid var(--border2);padding-top:10px">
-        <p style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Unit Composition</p>
-        <table style="width:100%;border-collapse:collapse">
-          <thead><tr><th style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:3px 6px;border-bottom:1px solid var(--border2)">Unit</th></tr></thead>
-          <tbody>${a.units.map((u,i)=>`<tr style="background:${i%2===0?'transparent':'var(--bg3)'}"><td style="font-size:11px;color:var(--text2);padding:4px 6px;border-bottom:1px solid var(--border2)22">${u}</td></tr>`).join('')}</tbody>
-        </table>
-      </div>` : '';
-
-  const armorHtml = a.armor && a.armor.length
-    ? `<div style="margin-top:10px;border-top:1px solid var(--border2);padding-top:10px">
-        <p style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Armour &amp; Equipment</p>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          ${a.armor.map(item=>`<div style="display:flex;gap:8px;align-items:flex-start">
-            <span style="font-size:9px;color:${a.color};font-family:'JetBrains Mono',monospace;text-transform:uppercase;min-width:68px;flex-shrink:0;padding-top:1px;letter-spacing:.04em">${item.slot}</span>
-            <div><span style="font-size:11px;color:var(--text2);font-weight:600">${item.name}</span>${item.desc?`<p style="font-size:10px;color:var(--text3);margin:1px 0 0;line-height:1.45">${item.desc}</p>`:''}</div>
-          </div>`).join('')}
-        </div>
-      </div>` : '';
-
-  const noteHtml = a.note
-    ? `<div style="margin-top:10px;padding:8px 10px;background:var(--bg4);border-left:2px solid ${a.color}66;border-radius:0 4px 4px 0;font-size:11px;color:var(--text3);line-height:1.5;font-style:italic">${a.note}</div>`
-    : '';
-
   return `
-    <div class="army-card" style="border:1px solid var(--border2);border-radius:10px;background:var(--bg2);overflow:hidden">
+    <div class="army-card" onclick="openArmyModal('${a.id}')">
       <div style="height:4px;background:linear-gradient(90deg,${a.color}55,${a.color})"></div>
-      ${imgHtml}
       <div style="padding:14px 16px">
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:6px">
           <h3 style="font-family:'Cinzel',serif;font-size:14px;color:var(--gold2);margin:0">${a.name}</h3>
@@ -4979,13 +5002,77 @@ function armyCard(a, tierColor) {
           </div>
         </div>
         ${unitClassHtml}
-        <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px">${rolesHtml}</div>
-        ${a.desc ? `<p style="font-size:12px;color:var(--text2);line-height:1.65;margin:0">${a.desc}</p>` : ''}
-        ${unitsHtml}
-        ${armorHtml}
-        ${noteHtml}
+        <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px">${armyRolesHtml(a)}</div>
+        ${a.desc ? `<p class="army-desc-excerpt">${a.desc}</p><span class="army-see-more">see more &#8599;</span>` : ''}
       </div>
     </div>`;
+}
+
+function openArmyModal(id) {
+  const a = ARMIES.find(x => x.id === id);
+  if (!a) return;
+
+  document.getElementById('army-modal-strip').style.background = `linear-gradient(90deg,${a.color}44,${a.color})`;
+
+  const unitClassLabel = armyUnitClassLabel(a);
+  const unitClassHtml = unitClassLabel
+    ? `<div class="unit-class-field"><span class="unit-class-label">Unit Class</span><span class="unit-class-value">${unitClassLabel}</span></div>`
+    : '';
+
+  const unitsHtml = a.units && a.units.length
+    ? `<div style="margin-top:14px;border-top:1px solid var(--border2);padding-top:10px">
+        <p class="dl" style="margin-bottom:6px">Unit Composition</p>
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr><th style="font-size:9px;color:var(--text4);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:3px 6px;border-bottom:1px solid var(--border2)">Unit</th></tr></thead>
+          <tbody>${a.units.map((u,i)=>`<tr style="background:${i%2===0?'transparent':'var(--bg3)'}"><td style="font-size:11px;color:var(--text2);padding:4px 6px;border-bottom:1px solid var(--border2)22">${u}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>` : '';
+
+  const armorHtml = a.armor && a.armor.length
+    ? `<div style="margin-top:14px;border-top:1px solid var(--border2);padding-top:10px">
+        <p class="dl" style="margin-bottom:6px">Armour &amp; Equipment</p>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          ${a.armor.map(item=>`<div style="display:flex;gap:8px;align-items:flex-start">
+            <span style="font-size:9px;color:${a.color};font-family:'JetBrains Mono',monospace;text-transform:uppercase;min-width:68px;flex-shrink:0;padding-top:1px;letter-spacing:.04em">${item.slot}</span>
+            <div><span style="font-size:11px;color:var(--text2);font-weight:600">${item.name}</span>${item.desc?`<p style="font-size:10px;color:var(--text3);margin:1px 0 0;line-height:1.45">${item.desc}</p>`:''}</div>
+          </div>`).join('')}
+        </div>
+      </div>` : '';
+
+  const noteHtml = a.note
+    ? `<div style="margin-top:14px;padding:8px 10px;background:var(--bg4);border-left:2px solid ${a.color}66;border-radius:0 4px 4px 0;font-size:11px;color:var(--text3);line-height:1.5;font-style:italic">${a.note}</div>`
+    : '';
+
+  document.getElementById('army-modal-content').innerHTML = `
+    <h2 class="char-modal-name">${a.name}</h2>
+    <p class="char-modal-subtitle">${a.subtitle}</p>
+    ${a.motto ? `<p style="font-size:12px;color:var(--amber3);font-style:italic;margin:-4px 0 10px;line-height:1.4">${a.motto}</p>` : ''}
+    <span style="display:inline-block;font-size:10px;font-family:'JetBrains Mono',monospace;color:${a.color};background:${a.color}15;border:1px solid ${a.color}44;border-radius:4px;padding:2px 8px;margin-bottom:12px">${a.strength}</span>
+    <div style="display:flex;gap:6px;margin-bottom:9px;flex-wrap:wrap">
+      <div style="flex:1;min-width:100px">
+        <p class="dl">Commander</p>
+        <p style="font-size:13px;color:var(--text2)">${a.commander}</p>
+      </div>
+      <div style="flex:1;min-width:80px">
+        <p class="dl">HQ</p>
+        <p style="font-size:13px;color:var(--text2)">${a.hq}</p>
+      </div>
+    </div>
+    ${unitClassHtml}
+    <div style="display:flex;flex-wrap:wrap;gap:4px;margin:9px 0">${armyRolesHtml(a)}</div>
+    ${a.desc ? `<p style="font-size:13px;color:var(--text2);line-height:1.7;margin-top:10px">${a.desc}</p>` : ''}
+    ${unitsHtml}
+    ${armorHtml}
+    ${noteHtml}
+  `;
+
+  document.getElementById('army-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeArmyModal() {
+  document.getElementById('army-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
 }
 
 function atlasRender(filter, btn) {
@@ -5234,7 +5321,7 @@ function closeImgModal() {
   document.body.style.overflow='';
   window.onmousemove=null;window.onmouseup=null;
 }
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeImgModal();closeCharModal();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeImgModal();closeCharModal();closeArmyModal();}});
 
 // ════════════════════════════════════════
 //  MAP VIEWER

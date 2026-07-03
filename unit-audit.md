@@ -1,5 +1,5 @@
 # STARHAVEN Unit Audit
-**Unit IDs currently in file: 292 wiki cards audited · 258 tracked here**
+**Unit IDs currently in file: 305 wiki cards audited · 270 tracked here**
 **Planned future units (not yet in file): 5**
 **Consolidated list total: 256** *(Silver Swan 16 regional cards → 4 types)*
 *Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-07-02*
@@ -503,6 +503,25 @@
 256. Root-Watcher Sylen *(Woodborn Guardians · Primal Vanguard · 340-year western watch)*
 257. Kraag Half-Ear *(Redspire Clan · Highland Coalition)*
 258. Vurd Shatterknee *(Half-Orc Barbarians · Highland Coalition)*
+259. Marika Goldspear *(The Skyspear Valkyries · Warqueen Lola Skyward's Free Company · Company Champion, answers single-combat challenges before the shield wall commits · 19 challenges, 19 wins)*
+260. Fenrik *(Dire Wolf Handler Corps · Primal Vanguard — Thorin Blackroot · exception to the mount/beast out-of-scope rule below: unlike the ~26 generic mount-reference cards in `sec-animals`, Fenrik has his own individually-authored Known Name wiki card with unique lore, same treatment as the other Known Names above · originally bonded to Garruk (Garruk Blackroot, killed in action), refused rebonding to a new handler and attached himself unbidden to Thorin Blackroot instead, now rests beside Grond at councils)*
+
+### Solo Legends — Allied *(new subgroup added 2026-07-03: first non-mercenary, non-Starhaven-owned entries in the "Solo Legends" subgroup of `starhaven-unit-wiki.html`, added directly after Talon & Hex and before the "Known Names" subgroup)*
+261. Zafir *(Allied · Karath Sultanate — Crown Prince, son of Sultan Rashid al-Kavar & Sultana Aria al-Kavar · Sand Golem Conduit — golems mirror his own body movements directly rather than being cast as separate constructs · strongest in deserts/ruins/dry riverbeds/rocky terrain · precision tied entirely to his own focus, stamina, and balance)*
+262. Roland Ashguard *(Allied · Kingdom of Ironmere — King Aldric Vorn's most trusted warrior, former comrade of Rhaegar Thorne from his Ironmere years · Unbroken Shield — champion whose shield has never been pierced in recorded battle · enchanted ancestral ward-plate armor)*
+
+---
+
+## Vanari Clan — High Chieftain Rudra Vanar
+*Ancient beastkin (ape-kin) civilization of the Unknown North — allied to Starhaven not by treaty or conquest but by shared cause against Void corruption; first contact via "The March of the North."*
+
+263. Vanari Warriors *(4,000 · Main assault infantry · spears, axes, curved falchions, stone hammers, round wooden shields)*
+264. Vanari TreeRunners *(2,000 · Langur-blooded skirmishers · twin hunting spears, blowpipes, slings, climbing knives)*
+265. Vanari Shock Infantry *(1,000 · Gorilla-blooded heavy shock · massive iron Gada, almost no armor)*
+266. Vanari Elites *(100 · Rudra's most honored warriors · rune-engraved, Titan-forged Gadas, no two alike)*
+267. Vanari Thunder Riders *(600 · Heavy cavalry mounted on bred Thunderfang Great Cats)*
+268. Baboon Vanari *(500 · Baboon-blooded light shock raiders and elite duelists · faster and more aggressive than the Warriors, better armored than the TreeRunners · favors single combat over formation fighting)*
+269. The Kodandin *(1,500 · Orangutan-blooded bowbearers of the Kodanda · draw weights no human archer corps can match · fewer shots, far harder ones)*
 
 ---
 
@@ -537,4 +556,14 @@
 
 **Void Siege Battery** counted once under Veil Watch. Joint auth with Zareth Kull required.
 
+**Marika Goldspear** (entry 259) and **Fenrik** (entry 260) added 2026-07-03 to the "Known Names" subgroup in `starhaven-unit-wiki.html`, directly after Vurd Shatterknee and before the Rootcaller Shamans subgroup. **Fenrik** is a deliberate exception to this document's usual mount/beast-card scope exclusion (see line 6 and the 2026-07-02 audit note above): he is not a generic breed/mount reference like the ~26 `sec-animals` cards, but an individually-authored Known Name card with his own unique lore (formerly Garruk Blackroot's bonded Dire Wolf, now self-attached to Thorin Blackroot), so he is tracked here the same as the other Known Names. Note: Garruk Blackroot's `pet` field in `starhaven_wiki.html` was updated in the same pass to name this wolf "Fenrik" and describe the handoff — Fenrik is not a new character invention, just a name given to a previously-unnamed pet already in the main wiki's lore.
+
 **Encoding artifact:** Several Silver Swan unit names in source HTML use `â` instead of `—`. Corrected here.
+
+**Karath** (entry 261) and **Ironmere** (entry 262) added 2026-07-03 to the "Solo Legends" subgroup in `starhaven-unit-wiki.html`, directly after Talon & Hex and before the "Known Names" subgroup. Both are `data-src: "ally"` (🤝 Allied) — Karath attached to the Karath Sultanate (Sultan Rashid al-Kavar), Ironmere the champion of the Kingdom of Ironmere (King Aldric Vorn). They are the first non-Mercenary, non-Starhaven-owned entries in this subgroup, which previously contained only Mercenary solo legends (Yami Holloway, Barek Kade, Mirova, Torak, Lyss Anven, Talon & Hex).
+
+**Vanari Clan** (entries 263–268) added 2026-07-03 — a brand-new allied army entry in `starhaven_wiki.html` (id `vanari-clan`, tier `allied`) plus a character entry for **High Chieftain Rudra Vanar** (id `rudravanar`, category Allied). An ancient beastkin (ape-kin) civilization of the Unknown North (Titan Highlands), allied to Starhaven through shared cause against Void corruption rather than treaty or conquest — first contact via "The March of the North." All six units listed in the main wiki's `units` array now have matching wiki cards in `starhaven-unit-wiki.html` (5 Infantry subgroup cards + 1 Beast Cavalry subgroup card, all `data-src: "ally"`, tagged "Vanari Clan · Allied Beastkin Civilization"): Vanari Warriors, Vanari TreeRunners, Vanari Shock Infantry, Vanari Elites, Vanari Thunder Riders, and **Baboon Vanari** (id `vanari-baboon`, entry 268) — the last was upgraded from "planned" to tracked on 2026-07-03 once its wiki card was written.
+
+**The Kodandin** (entry 269) added 2026-07-03 — a seventh Vanari Clan subunit, wiki card `vanari-kodandin` added to the "Vanari Clan · Allied Beastkin Civilization" subgroup at the end of the Ranged section in `starhaven-unit-wiki.html`, and to the `vanari-clan` army's `units` array in `starhaven_wiki.html` (whose `strength` field was bumped from ~8,200 to ~9,700 Warriors to include it). An orangutan-blooded archer corps named for the mythic Kodanda warbow — draw weights no human archer corps can match, fewer shots than a volley corps but each far harder-hitting.
+
+**Stonecast Onager Battery** (entry 270) added 2026-07-04 — wiki card `onager-battery`, `data-src: "own"`, added to the Artillery branch section directly after Ironveil Trebuchet Battery, as part of the existing "Siege & Field Artillery — Starhaven" category (alongside entries 110-122). 24 onager platforms, Siege-Captain Renna Oswick, 96 crew total — a rapid-deployment complement to Ironveil: faster to assemble and reposition (~8 min vs. Ironveil's ~22 min) at the cost of shorter range (180yd vs. 420yd) and lighter payload, with the highest sustained rate of fire in Starhaven's ground siege arsenal. No change needed in `starhaven_wiki.html`'s ARMIES array — Starhaven's siege artillery is represented there as one consolidated "Stonethrow Corps" entry rather than per-unit army cards.

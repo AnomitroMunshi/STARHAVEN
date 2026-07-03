@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Starhaven · The Muster Rolls</title>
+<style>
+  :root {
+    --bg: #07080B;
+    --panel: #0E1016;
+    --panel2: #12151D;
+    --border: #1C2028;
+    --border2: #242830;
+    --parchment: #E4DCC6;
+    --muted: #948C7D;
+    --faint: #56503F;
+    --gold: #C6A03C;
+    --gold-dim: #685218;
+    --gold-bright: #E8C468;
+
+    --c-inf: #C86060;
+    --c-cav: #6090D0;
+    --c-mag: #A060D8;
+    --c-rel: #D0C050;
+    --c-ste: #50C0C0;
+    --c-nav: #40A0C0;
+    --c-und: #8050C0;
+    --c-cmd: #C0A050;
+    --c-spt: #60A878;
+    --c-bst: #D08040;
+    --c-mix: #C07040;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, #14131c 0%, transparent 60%),
+      var(--bg);
+    color: var(--parchment);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 28px 96px;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .eyebrow {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.85;
+  }
+  h1.title {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(34px, 5.2vw, 54px);
+    letter-spacing: 0.015em;
+    text-wrap: balance;
+    margin: 10px 0 6px;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold) 55%, var(--gold-dim));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 14.5px;
+    color: var(--muted);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .rule {
+    width: 100%;
+    max-width: 640px;
+    margin: 30px auto 46px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border2) 20%, var(--gold-dim) 50%, var(--border2) 80%, transparent);
+    position: relative;
+  }
+  .rule::after {
+    content: "❖";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg);
+    color: var(--gold);
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  /* ---------- Grid ---------- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 22px;
+  }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel2), var(--panel));
+    border: 1px solid var(--border2);
+    border-radius: 3px;
+    padding: 22px 24px 20px;
+    position: relative;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--accent, var(--gold));
+  }
+
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .card-title {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 18.5px;
+    color: var(--parchment);
+    letter-spacing: 0.01em;
+  }
+  .card-tag {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent, var(--gold));
+    white-space: nowrap;
+    opacity: 0.9;
+  }
+  .card-kicker {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  ol.ranks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin: 0;
+    padding: 0;
+  }
+  ol.ranks li {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+    align-items: start;
+  }
+  .rk {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--accent, var(--gold));
+    opacity: 0.8;
+    padding-top: 2px;
+  }
+  .unit {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 14.5px;
+    color: var(--parchment);
+    display: block;
+  }
+  .desc {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 1.48;
+    color: var(--muted);
+    display: block;
+    margin-top: 1px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 64px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  @media (max-width: 480px) {
+    .page { padding: 44px 16px 64px; }
+    ol.ranks li { grid-template-columns: 20px 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="eyebrow">Compiled by Order of the Muster · Non-Canonical</div>
+    <h1 class="title">The Muster Rolls</h1>
+    <p class="subtitle">Seventeen superlatives drawn from the standing forces of Starhaven and its allies. Beasts, artillery, siege engines, and Legendary-tier hosts excluded by decree — mortal and undead soldiery only.</p>
+  </div>
+  <div class="rule"></div>
+
+  <div class="grid">
+
+    <div class="card" style="--accent:var(--gold)">
+      <div class="card-head"><span class="card-title">Overall Top 5</span><span class="card-tag">General Muster</span></div>
+      <div class="card-kicker">Weighed on record, renown, and narrative gravity</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Ironmane Lancers</span><span class="desc">Zero losses in operational history. Marcus Ironmane personally breeds every mount.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Black Charge</span><span class="desc">23 of 23 successful charges — the reserved, decisive hammer.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Holy Knights — Saintguard</span><span class="desc">Heaviest plate in the order. 3,600 strong, absorb-everything doctrine.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Null Blades</span><span class="desc">Pre-battle elimination corps bonded to the shadowfang panther Umbra.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Ironwall</span><span class="desc">25,000 strong. Has never yielded ordered ground.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-inf)">
+      <div class="card-head"><span class="card-title">Strongest</span><span class="card-tag">Proven Power</span></div>
+      <div class="card-kicker">Raw, demonstrated combat force</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Ironmane Lancers</span><span class="desc">A flawless record no other unit can claim.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Black Charge</span><span class="desc">Cataphract-grade heavy cavalry, perfect charge history.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">The Requiem Wardens</span><span class="desc">6 deployments, all under 20 minutes — built to end broken battles.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Holy Knights — Saintguard</span><span class="desc">The heaviest armor doctrine fielded by any army.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Fang Order</span><span class="desc">Highest apex-Void-kill count on record, at real cost.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-mag)">
+      <div class="card-head"><span class="card-title">Coolest</span><span class="card-tag">Concept &amp; Flavor</span></div>
+      <div class="card-kicker">The ones you'd draw first</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Greymark</span><span class="desc">Walk disguised through an active battle to kill commanders in 60–90 seconds. Never yet deployed.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Torak</span><span class="desc">Survived "unsurvivable" Void immersion. Void creatures won't attack him.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">The Ashstride Warband</span><span class="desc">Refugee centaurs swinging Embersunder axes at full gallop.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Barek Kade</span><span class="desc">Reads the weather three days out, arrives riding the storm.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Woodborn Guardians</span><span class="desc">A living ironwood shield-wall that roots into the earth and self-heals.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-bst)">
+      <div class="card-head"><span class="card-title">Underdog</span><span class="card-tag">Overlooked</span></div>
+      <div class="card-kicker">Small, scrappy, punching above weight</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Doomcleavers</span><span class="desc">Human-orc "washouts," unstoppable once the greatsword line commits.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Redspire Clan</span><span class="desc">40 years fighting just to be given a flank role that matters.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Void Hounds</span><span class="desc">69 mismatched mercenaries unified by silver-coated blades alone.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Half-Orc Barbarians</span><span class="desc">Only 200 strong — fastest unit in the army by out-hustling, not out-hitting.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">The Ember Company</span><span class="desc">Survivors of an 11-day siege with no relief, now reading the field live.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:#B84848">
+      <div class="card-head"><span class="card-title">Attack</span><span class="card-tag">Offense</span></div>
+      <div class="card-kicker">Built to end an engagement, not hold one</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Black Charge</span><span class="desc">The decisive breakthrough hammer, reserved and unbeaten.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Ironmane Lancers</span><span class="desc">Flawless shock cavalry.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">The Warbreakers</span><span class="desc">No-fallback breach doctrine — the one-directional "Breach Run."</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Stoneclaw Brutes</span><span class="desc">Living-stone berserkers, siege-grade punches. "Forward or down."</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Ninth Sky Corps: Drake Riders</span><span class="desc">Exploit the gaps blown open by the Arcane Artillery salvos.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-cav)">
+      <div class="card-head"><span class="card-title">Defense</span><span class="card-tag">The Wall</span></div>
+      <div class="card-kicker">What doesn't move</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Ironwall</span><span class="desc">25,000 who have never yielded ground.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Stonemark Bulwark</span><span class="desc">Stopped war-elephant charges cold.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Ironveil Spear Corps</span><span class="desc">The braced "Ironveil Lock" — built to kill monsters and elite cavalry.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Woodborn Guardians</span><span class="desc">A shield-wall that heals itself.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Holy Knights — Saintguard</span><span class="desc">Absorb-everything doctrine, heaviest plate fielded.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-cmd)">
+      <div class="card-head"><span class="card-title">Allrounder</span><span class="card-tag">Dual Role</span></div>
+      <div class="card-kicker">No single specialty to exploit</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Jade Crossbow Corps</span><span class="desc">Three bolts a cycle, then a greatsword in under four seconds.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">4th Field Army Halberdiers</span><span class="desc">The Tal Pattern halberd handles cavalry, armor, beasts, and siege troops alike.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Dawnbow Archers</span><span class="desc">One-arrow sniper doctrine, then certified close-combat swordwork.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">1st Field Army Heavy Infantry</span><span class="desc">Held 2:1 odds for three days straight.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Ashen Battle Wardens</span><span class="desc">Advance-line healers who move with the formation, cutting recovery 40%.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-ste)">
+      <div class="card-head"><span class="card-title">Most Elite</span><span class="card-tag">Exclusive</span></div>
+      <div class="card-kicker">Hardest rolls to make</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Koren's Command Guard</span><span class="desc">36 members. Entry requires beating Koren in personal trial combat.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">The Evenmere Guard</span><span class="desc">40 members — the only Silverleaf element that draws steel before the bow.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Vale's Voice</span><span class="desc">Four people, permanently mind-linked for instant command reach.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Brokk Graniteborn Command Guard</span><span class="desc">30 dwarves, longbeard-qualified only. Youngest member is 47.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">The Greymark</span><span class="desc">80 members, purpose-built, never yet deployed.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:#8A3A3A">
+      <div class="card-head"><span class="card-title">Most Terrifying</span><span class="card-tag">To Face</span></div>
+      <div class="card-kicker">What breaks nerve before contact</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Doomcleavers</span><span class="desc">No plan B once the greatswords commit.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Skeleton Infantry</span><span class="desc">20,700+ tireless, fearless — it doesn't matter how many you kill.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Stoneclaw Brutes</span><span class="desc">Living-stone berserkers, siege-level punches.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Torak</span><span class="desc">A lone Void-immersion survivor even monsters won't touch.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Fang Order</span><span class="desc">The highest apex-kill count on this list, at a real cost.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:#D0C050">
+      <div class="card-head"><span class="card-title">Solo Legends</span><span class="card-tag">Individuals</span></div>
+      <div class="card-kicker">Armies of one</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Torak</span><span class="desc">Post-Void aberrant. Unkillable mystique.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Barek Kade</span><span class="desc">Arrives with the weather he reads three days out.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Mirova</span><span class="desc">34 confirmed contracts. No two witnesses agree on her face.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Talon &amp; Hex</span><span class="desc">Sibling duo — one's blades heat up mid-fight, the other never misses the same target twice.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Lyss Anven</span><span class="desc">A confirmed 1,400-yard shot in wind, at age 23.</span></span></li>
+        <li><span class="rk">06</span><span><span class="unit">Karath</span><span class="desc">His sand golems don't obey him — they mirror him, step for step.</span></span></li>
+        <li><span class="rk">07</span><span><span class="unit">Ironmere</span><span class="desc">A shield that has never once been pierced, carrying his ancestors' weight.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-bst)">
+      <div class="card-head"><span class="card-title">Most Unique</span><span class="card-tag">Composition</span></div>
+      <div class="card-kicker">Races and pairings you see nowhere else</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Ashstride Warband</span><span class="desc">Refugee centaurs.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Beastmen Berserkers of the East</span><span class="desc">Boar-bonded hunters whose Ironboars charge on their own.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Red-Skinned Troll Tribe</span><span class="desc">Rare disciplined formation-fighting among trolls.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">The Silver Shields</span><span class="desc">A refugee Black Orc legion with a shield doctrine unique to them.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">The RootFang</span><span class="desc">Wildblood Dwarves bonded to apex beasts, led by Thorin on an ancient Dire Bear.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:#8A6A3A">
+      <div class="card-head"><span class="card-title">Most Tragic</span><span class="card-tag">Backstory</span></div>
+      <div class="card-kicker">The weight they carry into formation</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Ember Company</span><span class="desc">Survivors of an 11-day siege with no relief coming.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">The Doomcleavers</span><span class="desc">"Washouts" nobody else wanted.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">The Reedwalkers</span><span class="desc">Pell Ashcord, 19, reads wetlands by smell for a unit that exists for one terrain only.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">"Twice-Burned" Gareth</span><span class="desc">Survived two building collapses in one week. Still first through the next breach.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">The Ashstride Warband</span><span class="desc">Centaurs still running from an unstoppable "Hunger."</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-nav)">
+      <div class="card-head"><span class="card-title">Best Naval</span><span class="card-tag">Blue Water</span></div>
+      <div class="card-kicker">The fleet that decides the coast</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Dawncliff Ramships</span><span class="desc">Reinforced-prow line-breakers, carrying marines through the hole they punch.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Tidebreaker Corps</span><span class="desc">5,000-strong shore-landing marine strike force.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Stormcaller Bombards</span><span class="desc">Gun-platforms whose paired sea mage extends range via weather control.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Cinderwake Fireships</span><span class="desc">Expendable, drifted burning into a massed enemy fleet.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Dawnfleet</span><span class="desc">240 warships — the backbone everything else supports.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:#A060D8">
+      <div class="card-head"><span class="card-title">Anti-Magic</span><span class="card-tag">Counter-Caster</span></div>
+      <div class="card-kicker">What answers a battlemage</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Null-Hunters</span><span class="desc">Close distance and silence casters before the spell finishes.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">The Runebreakers</span><span class="desc">Amber spell-sight visors, Silence Bolt crossbows.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">The Spell-Enders</span><span class="desc">Null-Stone arrows that break concentration mid-cast.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">The Rune-Shield Guard</span><span class="desc">A defensive Null-Stone wall against area spells.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Ninth Sky Battlemages/Countermages</span><span class="desc">Dual offense/defense mages embedded directly with infantry.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:#C0A050">
+      <div class="card-head"><span class="card-title">Command Guards</span><span class="card-tag">Bodyguards</span></div>
+      <div class="card-kicker">Who stands between the commander and the blade</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">The Evenmere Guard</span><span class="desc">Only Silverleaf unit that draws steel before the bow.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">The Crown Shadows</span><span class="desc">Rayden Cale's undercover bodyguards, disguised as aides.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Ancestor Guard</span><span class="desc">Drogar's personal guard in ancestor-mask helms with runebreaker greataxes.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Arch-Necromancer's Undead Guard</span><span class="desc">A permanent 30ft bodyguard that cannot be bribed, panicked, or reasoned with.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Koren's Command Guard</span><span class="desc">Earned only by beating Koren in single combat.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-und)">
+      <div class="card-head"><span class="card-title">Creepiest Undead</span><span class="card-tag">Sable Conclave</span></div>
+      <div class="card-kicker">What doesn't stop coming</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Arch-Necromancer's Undead Guard</span><span class="desc">Immune to bribery, fear, or negotiation.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Sir Aldren Greyne</span><span class="desc">A conscious revenant ex-Holy Knight, follows orders better dead than alive.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Sable Bone Chariots</span><span class="desc">Scythed-wheel chariots that never break off a charge once committed.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">Preserved Dead Legions</span><span class="desc">15,000 held in reserve for mid-battle reanimation.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Revenant Knights</span><span class="desc">Elite mounted shock cavalry on fearless undead warhorses.</span></span></li>
+      </ol>
+    </div>
+
+    <div class="card" style="--accent:var(--c-spt)">
+      <div class="card-head"><span class="card-title">Best Support</span><span class="card-tag">Healers</span></div>
+      <div class="card-kicker">Unglamorous and load-bearing</div>
+      <ol class="ranks">
+        <li><span class="rk">01</span><span><span class="unit">Mercy Riders</span><span class="desc">Guarantee any fallen soldier is reached within 3 minutes.</span></span></li>
+        <li><span class="rk">02</span><span><span class="unit">Combat Healers</span><span class="desc">Treat every wound as possible Void contamination, on principle.</span></span></li>
+        <li><span class="rk">03</span><span><span class="unit">Ashen Battle Wardens</span><span class="desc">Cut injury-to-recovery time by 40%, moving with the formation.</span></span></li>
+        <li><span class="rk">04</span><span><span class="unit">The Thread-Runners</span><span class="desc">Never lost a Soul Link network segment in combat.</span></span></li>
+        <li><span class="rk">05</span><span><span class="unit">Apothecary Corps</span><span class="desc">Non-magical, embedded across every army.</span></span></li>
+      </ol>
+    </div>
+
+  </div>
+
+  <footer>Starhaven Unit Wiki · Superlatives Companion · Non-Canonical Ranking</footer>
+</div>
+</body>
+</html>
