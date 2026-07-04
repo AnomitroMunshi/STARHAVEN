@@ -1247,7 +1247,7 @@
     }
 
     /* ── MOBILE MODAL FIX ───────────────────────────────────────────── */
-    @media (max-width: 700px) {
+    @media (max-width: 700px), (hover: none) and (pointer: coarse) {
       .card-modal {
         padding: 0;
         align-items: flex-end;
@@ -14020,7 +14020,7 @@
 
         // mobile tap → fullscreen
         zoomImg.addEventListener('click', () => {
-          if (window.matchMedia('(max-width: 700px)').matches) {
+          if (window.matchMedia('(max-width: 700px), (hover: none) and (pointer: coarse)').matches) {
             openImgFullscreen(zoomImg.src, zoomImg.alt);
           }
         });
