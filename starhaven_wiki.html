@@ -2801,6 +2801,26 @@ const CHARACTERS = [
     partner:null,
     achievements:['United every major Vanari clan under a single banner for the first time in living memory — The March of the North','Judged Rayden Cale worthy of alliance in under an hour, without combat or treaty','Planted the ancestral Titan Gada before Starhold as the alliance\'s only binding seal'],
   },
+  {
+    id:'cassiansilverhorn', name:'Cassian Silverhorn',
+    title:'Lord-Marshal of House Silverhorn · The Verdant Crown',
+    category:'Allied', status:'alive',
+    age:'Unknown (appears late 30s)', race:'Human', role:'Ruling Lord / Alliance Commander',
+    image:'unitImages/silverhorn-lord.png', color:'#3A6A3A',
+    commands:['House Silverhorn (all four corps)','The Verdant Crown\'s alliance contribution'],
+    weapons:['Silverhorn Blade (ancestral longsword)','The Verdant Ward (House shield)'], abilities:[
+      {name:'Lead From the Front',  type:'passive', desc:'Commands in person rather than by envoy or from behind the line — a habit several of his own advisors have told him isn\'t required of a Verdant Crown lord, repeatedly, without effect.'},
+      {name:'The House\'s Word',    type:'passive', desc:'Rhegar Thorne noted approvingly that a lord who shows up armed to a peace talk is a lord who intends to honor what he signs. Cassian negotiated the Starhaven alliance in person rather than sending envoys.'},
+      {name:'Silverhorn Blade',    type:'active',  desc:'The House\'s ancestral longsword — plainer than its reputation suggests, no gemstones or runes, just a well-maintained blade that has outlived several lords before him.'},
+      {name:'Delegate to Earn It', type:'ultimate', desc:'Defers tactical command of each corps to the captain who actually built it — Farrow\'s Spearguard, Ashenhammer\'s half of the Blades, Duskwind\'s Rangers, Sunspire\'s Battlemages — rather than commanding all four personally.'},
+    ], quote:'"My own role is simpler than a lord\'s usually is. I am the reason Starhaven can trust any of them, because my name and my House\'s sigil are the thing actually promised."',
+    bio:'Lord-Marshal of House Silverhorn and ruler of the Verdant Crown, a southern realms kingdom whose sigil — a rearing white unicorn on a green field — now flies alongside Starhaven\'s coalition banners. Negotiated the military alliance personally rather than through diplomatic envoys, committing 10,000 troops across four corps despite his own council\'s reluctance to part with the kingdom\'s entire standing arcane defense.',
+    relationships:[{name:'Rayden Cale',type:'ally'},{name:'Isolde Farrow',type:'ally'},{name:'Elowen Sunspire',type:'ally'},{name:'Serai Duskwind',type:'ally'},{name:'Gurn Ashenhammer',type:'ally'},{name:'Ser Aldric Leonhart',type:'ally'}],
+    tags:['Allied','House Silverhorn','The Verdant Crown','Lord-Marshal','Southern Realms'],
+    background:'The Verdant Crown kept its own counsel for generations, a southern kingdom known to Starhaven mostly by trade rumor and an unplaced sigil. Cassian changed that himself, arriving to negotiate the alliance in person — a decision his own court considered unusual for a ruling lord, and one Starhaven\'s diplomatic corps read as a good sign regardless. He carries the House sword and the Verdant Ward everywhere the alliance\'s business takes him, including the negotiating table.',
+    partner:null,
+    achievements:['Negotiated the Starhaven alliance in person rather than through envoys','Committed 10,000 troops across four corps despite council reluctance','Leads the alliance while deferring tactical command to the captain of each corps'],
+  },
 
 ];
 // ════════════════════════════════════════
@@ -3857,6 +3877,23 @@ const ARMIES = [
       'The Kodandin — 1,500 · Orangutan-blooded bowbearers of the mythic Kodanda · draw weights no human archer corps can match · fewer shots, far harder ones',
     ],
     note:'"They were not moving. Nearly eight thousand Vanari warriors were descending from the mountains." — watchers on the northern ridges, the day coalition veterans came to call The March of the North.',
+  },
+  {
+    id:'house-silverhorn', name:'House Silverhorn',
+    subtitle:'Allied · The Verdant Crown, Southern Realms',
+    motto:'"Herd and House, one banner."',
+    tier:'allied', strength:'~10,000 (4 corps)', color:'#3A6A3A',
+    commander:'Lord-Marshal Cassian Silverhorn', hq:'The Verdant Crown (Southern Realms)',
+    image:'',
+    roles:['Southern Kingdom Alliance','Combined Arms','Line Infantry & Ranged','New Alliance — Year 1053'],
+    desc:'A southern realms kingdom, sigil a rearing white unicorn on a green field, that entered a military alliance with Starhaven by Cassian Silverhorn\'s own hand rather than through envoys — a decision his own court considered unusual for a ruling lord. The Verdant Crown\'s council was reluctant to commit its own standing arcane defense to the offer; Court Mage Elowen Sunspire argued the Sunspire Battlemages into the alliance regardless, on the principle that an alliance withheld at the point of greatest need isn\'t an alliance at all. The kingdom\'s contribution runs conventional and disciplined rather than exotic: shield-wall spearmen, heavy sword infantry (with an Ashfell hill-tribe hammer-warband attached), a scout-turned-archer corps, and the realm\'s entire mage corps — 10,000 troops in total, led in the field by six named champions rather than a single commander.',
+    units:[
+      'Verdant Spearguard — 4,000 · Spear & shield line infantry · Overlapping shield wall, braced spear hedge · Isolde Farrow\'s command',
+      'Silverhorn Blades — 2,500 · Heavy sword & shield infantry · Ashfell hill-tribe twin-hammer warband attached under Gurn Ashenhammer',
+      'Duskwind Rangers — 2,500 · Archers · Scouting company before it was an archer corps · Serai Duskwind\'s command',
+      'Sunspire Battlemages — 1,000 · Battle mage · The Verdant Crown\'s entire standing arcane defense · Elowen Sunspire\'s command',
+    ],
+    note:'Cassian Silverhorn on the alliance: "My own role is simpler than a lord\'s usually is. I am the reason Starhaven can trust any of them, because my name and my House\'s sigil are the thing actually promised."',
   },
 
   // ══ RIVAL POWERS ═════════════════════════════════════

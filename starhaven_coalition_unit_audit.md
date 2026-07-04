@@ -619,6 +619,23 @@
 
 ---
 
+## THE VERDANT CROWN — HOUSE SILVERHORN
+**Overall Commander: Lord-Marshal Cassian Silverhorn**
+*Southern realms kingdom, sigil a rearing white unicorn on a green field. New military alliance, Year 1053 — 10,000 troops offered across four corps.*
+
+| Unit | Commander | Subunit of | Active | Reserve | Total |
+|------|-----------|-----------|--------|---------|-------|
+| Verdant Spearguard | Isolde Farrow | House Silverhorn | 3,200 | 800 | **4,000** |
+| Silverhorn Blades | Gurn Ashenhammer (attached) | House Silverhorn | 2,000 | 500 | **2,500** |
+| Duskwind Rangers | Serai Duskwind | House Silverhorn | 2,000 | 500 | **2,500** |
+| Sunspire Battlemages | Elowen Sunspire | House Silverhorn | 800 | 200 | **1,000** |
+
+*Ser Aldric Leonhart (Champion of the Verdant Crown, Lionguard Order) is attached to the Silverhorn Blades as a named single-combat asset, not counted separately in troop totals — same treatment as other Known Name champions in this document.*
+
+**House Silverhorn Total: ~8,000 active · ~2,000 reserve · ~10,000 total**
+
+---
+
 ## SABLE CONCLAVE
 **Commander: Sorvane Nullis**
 *Far western flank — fully independent*
@@ -724,7 +741,8 @@
 | **Sable Conclave** | ~36,402 | ~3,210* | **~39,612*** |
 | **Mercenaries** | ~4,595 | ~923 | **~5,518** |
 | **Vanari Clan** | ~9,700 | — | **~9,700** |
-| **COALITION TOTAL** | **~436,107** | **~107,153** | **~543,260 + 240 hulls*** |
+| **House Silverhorn** | ~8,000 | ~2,000 | **~10,000** |
+| **COALITION TOTAL** | **~444,107** | **~109,153** | **~553,260 + 240 hulls*** |
 
 *Sable Conclave reserve understated — mid-battle reanimation capability not counted*
 *Vanari Clan carries no reserve rotation — a legendary honor-bound host, not a standing conventional army; the full ~9,700 is always the active figure.*
@@ -768,6 +786,9 @@ New unit — created for Vael'Dorum, not deployed at Vael'Dorum. First deploymen
 
 **2026-07-02 Second-Pass Audit:**
 Full cross-reference of all 292 unit cards in `starhaven-unit-wiki.html` against this document. No units were found to have been deleted from the wiki — every previously-tracked unit still has a matching card. Five units existed in the wiki but had never been added here (now added above): The Doomcleavers, Drakekin Pyromancers, Picket Scouts, The Forgepact Battery, and The Requiem Wardens (added same session). A handful of rows already in this document (five Highland Coalition/Holy Knights/Ironmere command guards, Royal Engineers & Siege Corps, Goldgate Adventurer Groups, Orc Warriors, Beast Wardens — Greenveil) do not yet have a matching wiki card — left in place as documented lore pending a future card, not removed, since absence of a card doesn't necessarily mean the unit doesn't exist narratively.
+
+**2026-07-05 New Alliance — House Silverhorn:**
+The Verdant Crown, a southern realms kingdom (sigil: rearing white unicorn on green), entered a military alliance with Starhaven, offering 10,000 troops across four corps (Verdant Spearguard, Silverhorn Blades, Duskwind Rangers, Sunspire Battlemages) plus six named champions led personally by Lord-Marshal Cassian Silverhorn. Added to PART II above and folded into the Grand Coalition Total (Coalition total revised from ~543,260 to ~553,260 + 240 hulls). Cross-referenced against `starhaven-unit-wiki.html` (10 new cards) and `unit-audit.md` (entries 271–280).
 
 ---
 

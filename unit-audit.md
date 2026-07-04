@@ -1,7 +1,7 @@
 # STARHAVEN Unit Audit
-**Unit IDs currently in file: 305 wiki cards audited · 270 tracked here**
+**Unit IDs currently in file: 315 wiki cards audited · 280 tracked here**
 **Planned future units (not yet in file): 5**
-**Consolidated list total: 256** *(Silver Swan 16 regional cards → 4 types)*
+**Consolidated list total: 266** *(Silver Swan 16 regional cards → 4 types)*
 *Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-07-02*
 *Full second-pass audit completed 2026-07-02: 292 wiki cards cross-checked against this list — see "Second-Pass Audit Additions" section for units found in the wiki but previously untracked here. Mount/beast reference cards (personal mounts, war-horse breeds, exotic mounts — ~26 cards in `sec-animals`) are intentionally out of scope for this list, same as always — they're equipment/companion references, not standing units.*
 
@@ -525,6 +525,24 @@
 
 ---
 
+## The Verdant Crown — House Silverhorn
+*Southern realms kingdom, sigil: rearing white unicorn on a green field. New military alliance — 10,000 troops offered across four corps, plus six named champions attached to specific commands rather than fighting solo.*
+
+271. Verdant Spearguard *(4,000 · Spear & shield line infantry · The alliance's largest single contribution · Drilled by Isolde Farrow)*
+272. Silverhorn Blades *(2,500 · Heavy sword & shield infantry · Ashfell hill-tribe hammer-warband attached under Gurn Ashenhammer)*
+273. Duskwind Rangers *(2,500 · Archers · Scouting company before it was an archer corps · Serai Duskwind's personal command)*
+274. Sunspire Battlemages *(1,000 · Battle mage · The Verdant Crown's entire standing arcane defense · Elowen Sunspire's personal command)*
+275. Cassian Silverhorn *(Known Name · Lord-Marshal of House Silverhorn · Leads the alliance in person · Nominal command of all four corps)*
+276. Ser Aldric Leonhart *(Known Name · Champion of the Verdant Crown · Ranking knight of the Lionguard Order · 11 years undefeated in formal challenge)*
+277. Serai Duskwind *(Known Name · Ranger-Captain · Leads the Duskwind Rangers from the forward scout screen, not a command tent)*
+278. Elowen Sunspire *(Known Name · Court Mage of House Silverhorn · Argued the Battlemage contribution through the Verdant Crown's council personally)*
+279. Isolde Farrow *(Known Name · Shieldmaiden Captain · Drills the Verdant Spearguard personally · Oversized tower shield, "The Anchor")*
+280. Gurn Ashenhammer *(Known Name · War-Chief of the Ashfell hill-tribes · Twin-hammer doctrine, attached to the Silverhorn Blades)*
+
+*(Note: entry 270 is reserved for the Stonecast Onager Battery — referenced in the "Notes & Flags" section below as added 2026-07-04, but it was never given its own numbered line in the Starhaven artillery section above. Pre-existing gap, not introduced by this addition; flagging so the numbering doesn't look like a duplicate.)*
+
+---
+
 ## Notes & Flags
 
 **The Eleven Pillars:** Rayden Cale · Kael Varric · Lyria Valen · Velkan Drake · Aurelia Vex · Thorin Blackroot · Nyx Ravel · Seraphine Mire · Cain Drakhar · Elysia Nocturne · Bob Vale
@@ -567,3 +585,5 @@
 **The Kodandin** (entry 269) added 2026-07-03 — a seventh Vanari Clan subunit, wiki card `vanari-kodandin` added to the "Vanari Clan · Allied Beastkin Civilization" subgroup at the end of the Ranged section in `starhaven-unit-wiki.html`, and to the `vanari-clan` army's `units` array in `starhaven_wiki.html` (whose `strength` field was bumped from ~8,200 to ~9,700 Warriors to include it). An orangutan-blooded archer corps named for the mythic Kodanda warbow — draw weights no human archer corps can match, fewer shots than a volley corps but each far harder-hitting.
 
 **Stonecast Onager Battery** (entry 270) added 2026-07-04 — wiki card `onager-battery`, `data-src: "own"`, added to the Artillery branch section directly after Ironveil Trebuchet Battery, as part of the existing "Siege & Field Artillery — Starhaven" category (alongside entries 110-122). 24 onager platforms, Siege-Captain Renna Oswick, 96 crew total — a rapid-deployment complement to Ironveil: faster to assemble and reposition (~8 min vs. Ironveil's ~22 min) at the cost of shorter range (180yd vs. 420yd) and lighter payload, with the highest sustained rate of fire in Starhaven's ground siege arsenal. No change needed in `starhaven_wiki.html`'s ARMIES array — Starhaven's siege artillery is represented there as one consolidated "Stonethrow Corps" entry rather than per-unit army cards.
+
+**House Silverhorn / The Verdant Crown** (entries 271–280) added 2026-07-05 — a brand-new allied kingdom from the southern realms, sigil a rearing white unicorn on a green field, offering a 10,000-troop military alliance across four corps plus six named champions. Cards added to `starhaven-unit-wiki.html`: four unit cards under new "House Silverhorn · Verdant Crown Alliance" subgroups (Verdant Spearguard + Silverhorn Blades in the Infantry branch, Duskwind Rangers in Ranged, Sunspire Battlemages in Magic — all `data-src: "ally"`), and six "Known Name" hero cards (Cassian Silverhorn, Ser Aldric Leonhart, Serai Duskwind, Elowen Sunspire, Isolde Farrow, Gurn Ashenhammer) added to a new "House Silverhorn — Six Champions of the Alliance" subgroup, directly after "Known Names" and before "Rootcaller Shamans." All six heroes are attached to a specific corps rather than fighting solo — consistent with the established Known Name pattern (Gram Stons, Sir Aldren Greyne, etc.), not the Solo Legend pattern (Zafir, Roland Ashguard). Also added to `starhaven_coalition_unit_audit.md` (PART II allied forces table + Grand Coalition Total) and `unit_classifications.html` (Heavy/Medium/Light/None armor tiers, total count bumped 267→277). Portrait art for the six heroes was supplied by the user but not yet saved into `unitImages/` — cards will show the placeholder icon until `silverhorn-lord.png`, `leonhart-champion.png`, `duskwind-ranger.png`, `sunspire-mage.png`, `farrow-shieldmaiden.png`, and `ashenhammer-warchief.png` are added.
