@@ -1290,10 +1290,14 @@
         border-bottom: 1px solid var(--border);
       }
 
-      /* description: not independently scrollable — parent scrolls */
+      /* description: not independently scrollable — parent scrolls.
+         NOTE: overflow-x and overflow-y must both be "visible" here — mixing
+         overflow-x:hidden with overflow-y:visible makes browsers silently
+         resolve the visible axis to "auto" (CSS spec), turning this into a
+         second, competing scroll container nested inside .modal-body and
+         breaking touch scrolling on iOS. */
       .card-modal .modal-body .card-body {
-        overflow-y: visible;
-        overflow-x: hidden;
+        overflow: visible;
         flex: none;
         width: 100%;
         padding: 18px 16px 32px;
@@ -8563,6 +8567,51 @@
                     "slot": "Tower",
                     "name": "Elephant Pike Tower",
                     "desc": "— 4 pike positions. Lower profile than mammoth tower — faster deployment…"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Kuku Gunriders — Stonemark Holds",
+            "cards": [
+              {
+                "id": "kuku-gunriders",
+                "data-br": "Beast Cavalry",
+                "data-src": "ally",
+                "name": "Kuku Gunriders",
+                "branch": "Beast Cavalry",
+                "className": "Dwarven Gun Cavalry · Kuku-Mounted",
+                "subtitle": "· Stonemark Holds · 3,000 Strong · Pistol & Spear",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Stonemark Hold — Highland Approaches",
+                "army": "Stonemark Holds — Brokk Graniteborn · Captain Torvald Redcrest",
+                "total": "3,000",
+                "image": "unitImages/kuku-gunriders.png",
+                "imageAlt": "Kuku Gunriders",
+                "notes": "Stonemark's mounted answer to a problem no dwarven cavalry tradition had ever needed to solve before: horses do not take to the Holds' upper switchback trails, and nothing else in the mountains moved fast enough to matter until the kuku was bred for the saddle. The kuku is not a small bird made large — it never was small. Flightless, red-crested, aggressive by temperament and bred more aggressive still, it covers open ground at a pace that matches a warhorse stride for stride and outperforms one entirely on the broken, stepped terrain the Holds actually fight on.\n\nEach rider carries both a wheel-lock pistol and a shortened cavalry spear, and the doctrine uses both in the same pass rather than choosing between them: the formation closes at range, empties the pistol into the front rank at the last possible distance, and carries the spear through on the same stride the enemy is still absorbing the volley. Reload happens after the charge, not during it — a Kuku Gunrider who is still fumbling with powder when the spear should already be moving has, by Captain Torvald Redcrest's own training standard, done the doctrine backward.\n\nThe kukus themselves require a specific and demanding handling relationship — they are bonded to a single rider from the chick and do not perform reliably for anyone else, which means the corps cannot simply reassign a rider's mount the way cavalry losses are normally absorbed elsewhere. Brokk Graniteborn has called the 3,000-strong corps 'the only cavalry in the coalition that runs out of birds before it runs out of dwarves,' and has resisted every proposal to expand it faster than the breeding program can actually support.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Redcrest Riding Plate",
+                    "desc": "— Lightened dwarven plate, cut short at the hip and thigh for a saddle seat rather than a shieldwall stance. Reinforced across the forearms to absorb pistol recoil at full gallop."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "War-Bred Kuku",
+                    "desc": "— A red-crested flightless war-bird, bred over generations for saddle temperament and sustained speed on broken mountain ground. Matches warhorse pace on open terrain and outperforms one on stepped or switchback trails. Bonds to a single rider from the chick; does not perform reliably for a reassigned handler."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Redcrest Wheel-Lock Pistol",
+                    "desc": "— Single-shot dwarven wheel-lock pistol, fired once at closing range immediately before the spear passage. Reload is a dismounted or post-charge action, never attempted mid-charge."
+                  },
+                  {
+                    "slot": "Secondary",
+                    "name": "Shortened Cavalry Spear",
+                    "desc": "— A cavalry spear cut shorter than standard lance length, balanced for a one-handed thrust from a kuku's gait rather than a couched charge. Carried through the same pass the pistol opens."
                   }
                 ]
               }

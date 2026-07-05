@@ -1,9 +1,9 @@
 # STARHAVEN Unit Audit
-**Unit IDs currently in file: 315 wiki cards audited · 280 tracked here**
+**Unit IDs currently in file: 322 wiki cards audited · 290 tracked here**
 **Planned future units (not yet in file): 5**
-**Consolidated list total: 266** *(Silver Swan 16 regional cards → 4 types)*
+**Consolidated list total: 276** *(Silver Swan 16 regional cards → 4 types)*
 *Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-07-02*
-*Full second-pass audit completed 2026-07-02: 292 wiki cards cross-checked against this list — see "Second-Pass Audit Additions" section for units found in the wiki but previously untracked here. Mount/beast reference cards (personal mounts, war-horse breeds, exotic mounts — ~26 cards in `sec-animals`) are intentionally out of scope for this list, same as always — they're equipment/companion references, not standing units.*
+*Full second-pass audit completed 2026-07-02: 292 wiki cards cross-checked against this list — see "Second-Pass Audit Additions" section for units found in the wiki but previously untracked here. Mount/beast reference cards (personal mounts, war-horse breeds, exotic mounts — 39 cards in `sec-animals`, 38 intentionally out of scope plus Fenrik as the sole tracked exception) are intentionally out of scope for this list, same as always — they're equipment/companion references, not standing units. Third-pass audit (2026-07-05) confirmed 3 genuine gaps found and closed — see "Third-Pass Audit" section.*
 
 ---
 
@@ -72,7 +72,7 @@
 
 ---
 
-## Starhaven Command Reserve — Grand Marshal Rhegar Thorne
+## Starhaven Command Reserve — Grand Marshal Rhaegar Thorne
 
 34. Black Bastions *(Very heavy infantry · Cross-army · 1st & 3rd Field Army primary)*
 35. The Silver Shields *(300 Black Orc veterans · Line anchor)*
@@ -82,7 +82,7 @@
 39. The Reedwalkers *(Wetland Infantry Reserve · Delta/swamp/marsh campaigns only)*
 40. The Ashstride Warband *(Centaur warband · Grand Standing Army mobile reserve)*
 41. Starhaven Chariot Runners *(Grand Standing Army distributed pool · Joint training: Karath)*
-42. The Aethran Colossi *(Rhegar direct command · Aethran Dominion Remnant)*
+42. The Aethran Colossi *(Rhaegar direct command · Aethran Dominion Remnant)*
 43. Jade Crossbow Corps *(Grand Standing Army distributed pool — all Field Armies)*
 44. The Undying Colors *(Sael Vorn · Standard bearer corps · Embedded in ALL armies and Pillar formations)*
 
@@ -543,6 +543,20 @@
 
 ---
 
+## Starhaven Guardians & Hammerguard — Grand Marshal Rhaegar Thorne (Direct Reserve)
+*Two unrelated additions grouped under one header only because both sit in Rhaegar Thorne's Direct Reserve and both require Rayden Cale's personal authorization on top of his. The Guardians are ancient recovered constructs with no chain of command at all; the Hammerguard are living Starhaven special forces with a conventional (if unnamed-individual) command structure.*
+
+281. The Stormreach Guardian *(Ancient Construct · 1 · Spear, storm-rune wrought · Reach doctrine — answers a charge no other ranged asset reaches in time · Custodian: Rhaegar Thorne Direct Reserve · Rayden Cale authorization required · No commander — takes no orders · Considered at Ashfield, never deployed)*
+282. The Stoneward Guardian *(Ancient Construct · 1 · Shield/rune-slab bearer · Anchor doctrine — holds one fixed point, cannot be baited from position · Custodian: Rhaegar Thorne Direct Reserve · Rayden Cale authorization required · No commander — takes no orders · Considered at Ashfield to anchor the Resonance Corps node cluster, never deployed)*
+283. The Frostcleave Guardian *(Ancient Construct · 1 · Axe, frost-rune wrought · Single-target doctrine — commits fully to one target, cannot be recalled once moving · Custodian: Rhaegar Thorne Direct Reserve · Rayden Cale authorization required · No commander — takes no orders · Never yet deployed)*
+284. The Magmafall Guardian *(Ancient Construct · 1 · Hammer + shield, magma-fissured · Last-resort doctrine — answers what has already absorbed everything else, same category as Iron Tide Tanks · Custodian: Rhaegar Thorne Direct Reserve · Rayden Cale authorization required · No commander — takes no orders · Never yet deployed)*
+285. Hammerguard — Shieldline *(800 · Very Heavy Special Forces · Long hammer & shield · Breach-anchor doctrine — holds a single failed point alone until reinforcement arrives · Commander: Rhaegar Thorne, Direct Reserve — no named field officer on record)*
+286. Hammerguard — Cinderhand *(400 · Heavy Special Forces · One-handed hammer, Cain-tempered · Single-target doctrine — committed against one named threat, not a formation · Commander: Rhaegar Thorne, Direct Reserve — no named field officer on record)*
+
+*All four Guardians recovered together from a single SS+ dungeon clearance — The Aerune Depths — and are tracked as one discovery event despite being four separate wiki cards. Unlike The Wrought (entry 25), the Guardians answer to no command channel of any kind; "custodian" above refers to who holds authorization over deployment, not who commands them in the field, because nothing commands them in the field.*
+
+---
+
 ## Notes & Flags
 
 **The Eleven Pillars:** Rayden Cale · Kael Varric · Lyria Valen · Velkan Drake · Aurelia Vex · Thorin Blackroot · Nyx Ravel · Seraphine Mire · Cain Drakhar · Elysia Nocturne · Bob Vale
@@ -587,3 +601,28 @@
 **Stonecast Onager Battery** (entry 270) added 2026-07-04 — wiki card `onager-battery`, `data-src: "own"`, added to the Artillery branch section directly after Ironveil Trebuchet Battery, as part of the existing "Siege & Field Artillery — Starhaven" category (alongside entries 110-122). 24 onager platforms, Siege-Captain Renna Oswick, 96 crew total — a rapid-deployment complement to Ironveil: faster to assemble and reposition (~8 min vs. Ironveil's ~22 min) at the cost of shorter range (180yd vs. 420yd) and lighter payload, with the highest sustained rate of fire in Starhaven's ground siege arsenal. No change needed in `starhaven_wiki.html`'s ARMIES array — Starhaven's siege artillery is represented there as one consolidated "Stonethrow Corps" entry rather than per-unit army cards.
 
 **House Silverhorn / The Verdant Crown** (entries 271–280) added 2026-07-05 — a brand-new allied kingdom from the southern realms, sigil a rearing white unicorn on a green field, offering a 10,000-troop military alliance across four corps plus six named champions. Cards added to `starhaven-unit-wiki.html`: four unit cards under new "House Silverhorn · Verdant Crown Alliance" subgroups (Verdant Spearguard + Silverhorn Blades in the Infantry branch, Willowmere Rangers in Ranged, Sunspire Battlemages in Magic — all `data-src: "ally"`), and six "Known Name" hero cards (Cassian Silverhorn, Ser Corwin Leonhart, Wrenna Willowmere, Elowen Sunspire, Rosalind Thornfield, Gurn Bramblefist) added to a new "House Silverhorn — Six Champions of the Alliance" subgroup, directly after "Known Names" and before "Rootcaller Shamans." All six heroes are attached to a specific corps rather than fighting solo — consistent with the established Known Name pattern (Gram Stons, Sir Aldren Greyne, etc.), not the Solo Legend pattern (Zafir, Roland Ashguard). Also added to `starhaven_coalition_unit_audit.md` (PART II allied forces table + Grand Coalition Total) and `unit_classifications.html` (Heavy/Medium/Light/None armor tiers, total count bumped 267→277). Portrait art for the six heroes was supplied by the user but not yet saved into `unitImages/` — cards will show the placeholder icon until `silverhorn-lord.png`, `leonhart-champion.png`, `willowmere-ranger.png`, `sunspire-mage.png`, `thornfield-shieldmaiden.png`, and `bramblefist-warchief.png` are added. Note: Ser Aldric Leonhart, Isolde Farrow, and Serai Duskwind were renamed to Ser Corwin Leonhart, Rosalind Thornfield, and Wrenna Ashfall (with the Duskwind Rangers renamed to Ashfall Rangers) on 2026-07-05 after a name-collision check — "Aldric" collided with King Aldric Vorn/Sever Aldric/Senn Aldric, "Isolde" with Isolde Cren/Isolde Skyward, "Farrow" with Helna Ironmane (née Farrow), and "Duskwind" with Irae Duskwind of the Windlance Cavalry. A second pass on 2026-07-05 caught that "Ashfall"/"Ashenhammer"/"Ashfell" all collided with the wiki's already heavy "Ash-" naming density (Ashen Guard, Ashenveil, Ashfield, Ashrunners, Ashwalker, Ashguard) — renamed again to Wrenna Willowmere (Willowmere Rangers) and Gurn Bramblefist, with the hill-tribe itself renamed from Ashfell to Thornridge.
+
+**The Starhaven Guardians** (entries 281–284) added 2026-07-05 — four ancient constructs (Stormreach/spear, Stoneward/shield, Frostcleave/axe, Magmafall/hammer) recovered as a matched set from a single SS+ dungeon clearance, The Aerune Depths — the only SS+ clearance in Starhaven's records to return artifacts rather than just a survival report. Cards added to `starhaven-unit-wiki.html` under a new "Starhaven Guardians — SS+ Dungeon Recovery" subgroup in the Infantry branch, `data-src: "own"`, `armorBadge: "Legendary"`, total 1 each (4 total, not a squad). Commander/custodian tagging is deliberately unusual for these four: nothing commands them in the field — "per Zareth Kull's assessment, filed after eighteen months of study: 'It isn't following instructions. It's remembering them.'" — so the tracked authority is custodial rather than a chain of command: Rhaegar Thorne holds them in his Direct Reserve, Rayden Cale's personal authorization is required to deploy any of the four (same structure as The Wrought, entry 25), and each card's notes now include an explicit deployment-doctrine paragraph — Stormreach and Stoneward were both considered for deployment at Ashfield and stood down before authorization completed; Frostcleave and Magmafall have no deployment history at all. Image files needed: `guardian-spear.png` (no source art supplied yet), `guardian-shield.png`, `guardian-axe.png`, `guardian-hammer.png`.
+
+**Hammerguard — Shieldline and Cinderhand** (entries 285–286) added 2026-07-05 — two Starhaven special forces heavy hammer infantry units, both `data-src: "own"`, both under Rhaegar Thorne's Direct Reserve as a conventional command (not custodial like the Guardians above — these are living soldiers with an ordinary, if individually-unnamed, officer structure). Cards added to `starhaven-unit-wiki.html` directly after The Doomcleavers in the Infantry branch, same "Rhaegar's Reserve" neighborhood as Doomcleavers/Requiem Wardens. **Shieldline** (800, Very Heavy): long two-handed hammer + oversized tower shield, breach-anchor doctrine — holds one failed point alone until real reinforcement arrives, the opposite premise from every other heavy line unit's rotation-based design. **Cinderhand** (400, Heavy): one-handed hammer individually forge-tempered under Cain Drakhar's oversight ("cindering"), no shield, single-target doctrine — committed against one named threat rather than a formation, authorized more sparingly than any unit in Rhaegar's reserve short of the Requiem Wardens. Image files needed: `hammerguard-shieldline.png`, `hammerguard-cinderhand.png`.
+
+---
+
+## Third-Pass Audit — Genuine Gaps Found *(2026-07-05 — user asked why only 286 of 321 wiki cards were tracked)*
+
+*Ran a full name-match diff of every card in `starhaven-unit-wiki.html` against this document. Findings: most of the 35-card gap is accounted for by documented, intentional exclusions — but three cards were genuine misses, and the animals-exclusion estimate on line 6 was stale.*
+
+- **16 Silver Swan regional variant cards** (`silver-swan-north/south/east/west` × 4 types) — not a gap. Consolidated into 4 tracked type-entries per this document's original design (see line 4), exactly as intended.
+- **28 of the 39 `sec-animals` cards** — not a gap. Personal mounts, war-horse breeds, and exotic mounts are intentionally out of scope per this document's stated policy (line 6). The other 11 `sec-animals` cards (Zephyros, Grond, Pyrewing, etc.) already appear in this document's prose incidentally, as a Pillar's named mount, which is why they didn't show up as "untracked" in the name-match diff — they were never separately numbered, and don't need to be. **Correction:** line 6 has estimated this exclusion at "~26 cards" since this document's creation; the actual current count is 39 total `sec-animals` cards (38 excluded, plus Fenrik as the one standing exception). The estimate was stale, not wrong in principle — corrected below.
+- **1 false positive:** "Holy Knights — Pyrelight Archers" is already tracked as entry 222, just under the shorter name "Pyrelight Archers" — a naming-format mismatch in the diff, not a real gap.
+- **3 genuine misses**, added below as entries 287–289.
+
+287. Brak Graymaw *(Known Name · Stonemark Bulwark — Captain, son of Dorun Graymaw · Commands the Bulwark phalanx directly · Missed in the original "Known Names" batch alongside Gram Stons, Kraag Half-Ear, and Vurd Shatterknee — all four were added to the wiki in the same pass, but this one was never added here)*
+288. Beastmen Berserkers of the East *(720 · Boar-bonded anti-cavalry hunters, Northern Wilds tribal levy, never ridden · Commander: Starhaven Command — Rhaegar Thorne · Tracked in `starhaven_coalition_unit_audit.md` under "Newly Documented Units" but never carried over to this document)*
+289. The Ironwhirl Squadron *(20 gyrocopters, Mark I Ironwhirl Frame, hand-built, no two identical · Chief Engineer Torka Ironwhirl, Stonemark Aerial Engineering · Commander: Stonemark Holds — Brokk Graniteborn · Torka Ironwhirl flies the lead craft personally · Experimental — no replacements exist if lost · Genuine gap, not tracked in either audit document until now)*
+
+---
+
+**Kuku Gunriders** (entry 290) added 2026-07-06 — Stonemark Holds' dwarven gun cavalry, 3,000 strong, mounted on war-bred kuku (flightless, red-crested war-birds matching a warhorse's pace on open ground and outperforming one on the Holds' broken mountain trails). Each rider carries a wheel-lock pistol and a shortened cavalry spear, firing once at closing range before carrying the spear through the same pass. Card added to `starhaven-unit-wiki.html` under a new "Kuku Gunriders — Stonemark Holds" subgroup in the Beast Cavalry branch, directly after the Mammoth Riders · War Elephants group, `data-src: "ally"`. Commander: Brokk Graniteborn, Captain Torvald Redcrest. Also added to `starhaven_wiki.html`'s `stonemark-holds` army entry (`units` array) and to `starhaven_units_by_branch.md` under Stonemark Holds → Beast Cavalry. Image file needed: `kuku-gunriders.png`.
+
+290. Kuku Gunriders *(3,000 · Dwarven Gun Cavalry · Kuku-mounted, pistol and spear · Commander: Stonemark Holds — Brokk Graniteborn, Captain Torvald Redcrest)*
