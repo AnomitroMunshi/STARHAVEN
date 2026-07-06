@@ -58,6 +58,7 @@
 - **"Twice-Burned" Gareth** — 1 — Commander: Vael Dusken
 - **Root-Watcher Sylen** — 1 — Commander: Primal Vanguard · Thorin Blackroot
 - **Pavise Shield Corps** — 2,000 — Commander: Grael Ironwall
+- **The Unbroken Line** — 140 (130–150 variable roster) — Commander: Elina (Independent Petitioning Company, awaiting full commission)
 
 ### Polearm
 
@@ -106,6 +107,7 @@
 - **The RootFang** — 180 — Commander: Thorin Blackroot
 - **Dire Wolf Handler Corps** — 230 — Commander: Primal Vanguard
 - **Snowtusk Cavalry** — unknown — Commander: Wyld Frostmere
+- **Polar Bear Riders** — 180 — Commander: Wyld Frostmere
 - **Great Elk — Forest Elk Cavalry** — unknown — Commander: Greenveil Defense Forces
 - **Silver Moon Elk Riders** — 188 — Commander: Silent Warden Mounted Wing
 - **War Bear Corps** — 250 handlers / 1,250 bears — Commander: Thorin Blackroot

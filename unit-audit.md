@@ -1,7 +1,7 @@
 # STARHAVEN Unit Audit
-**Unit IDs currently in file: 322 wiki cards audited · 290 tracked here**
+**Unit IDs currently in file: 324 wiki cards audited · 292 tracked here**
 **Planned future units (not yet in file): 5**
-**Consolidated list total: 276** *(Silver Swan 16 regional cards → 4 types)*
+**Consolidated list total: 278** *(Silver Swan 16 regional cards → 4 types)*
 *Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-07-02*
 *Full second-pass audit completed 2026-07-02: 292 wiki cards cross-checked against this list — see "Second-Pass Audit Additions" section for units found in the wiki but previously untracked here. Mount/beast reference cards (personal mounts, war-horse breeds, exotic mounts — 39 cards in `sec-animals`, 38 intentionally out of scope plus Fenrik as the sole tracked exception) are intentionally out of scope for this list, same as always — they're equipment/companion references, not standing units. Third-pass audit (2026-07-05) confirmed 3 genuine gaps found and closed — see "Third-Pass Audit" section.*
 
@@ -626,3 +626,15 @@
 **Kuku Gunriders** (entry 290) added 2026-07-06 — Stonemark Holds' dwarven gun cavalry, 3,000 strong, mounted on war-bred kuku (flightless, red-crested war-birds matching a warhorse's pace on open ground and outperforming one on the Holds' broken mountain trails). Each rider carries a wheel-lock pistol and a shortened cavalry spear, firing once at closing range before carrying the spear through the same pass. Card added to `starhaven-unit-wiki.html` under a new "Kuku Gunriders — Stonemark Holds" subgroup in the Beast Cavalry branch, directly after the Mammoth Riders · War Elephants group, `data-src: "ally"`. Commander: Brokk Graniteborn, Captain Torvald Redcrest. Also added to `starhaven_wiki.html`'s `stonemark-holds` army entry (`units` array) and to `starhaven_units_by_branch.md` under Stonemark Holds → Beast Cavalry. Image file needed: `kuku-gunriders.png`.
 
 290. Kuku Gunriders *(3,000 · Dwarven Gun Cavalry · Kuku-mounted, pistol and spear · Commander: Stonemark Holds — Brokk Graniteborn, Captain Torvald Redcrest)*
+
+---
+
+**Polar Bear Riders** (entry 291) added 2026-07-06 — Frosthold's elite reserve beast cavalry, 180 strong, added alongside entry 138 (Snowtusk Cavalry) in the same "Snow Elk / Forest Elk Cavalry" subgroup of `starhaven-unit-wiki.html`, `data-src: "gar"`. Bonded pairs from cub-hood, same restriction as the Snowtusk elk (won't leave Frosthold, though for bonding reasons rather than an altitude/survival limit) — a small honor-guard/reserve-breaker unit rather than Frosthold's mass cavalry force. Also added to `starhaven_units_by_branch.md` under Frosthold Garrison's Beast Cavalry. Image file needed: `polar-bear-riders.png`.
+
+291. Polar Bear Riders *(180 · Elite Beast Cavalry, bonded pairs · Never leaves Frosthold · Commander: Frosthold Garrison — Wyld Frostmere)*
+
+---
+
+**The Unbroken Line** (entry 292) added 2026-07-06 — a small elven petitioning company, 140 (130–150 variable roster), that settled near Goldgate and formally petitioned Rhaegar Thorne for full Starhaven army commission rather than staying an independent/mercenary company. Petition is under review, not yet approved. Card added to `starhaven-unit-wiki.html` in the Infantry branch directly after Pavise Shield Corps, `data-src: "new"`. Doctrine is center-line holding specifically — locked overlapping shield wall built to anchor the middle of a formation while flanks maneuver, deliberately kept small (Elina turns away volunteers) rather than scaled up. Commander: Elina. Also added to `starhaven_units_by_branch.md` under STARHAVEN (Own Forces) → Infantry. Image file needed: `unbroken-line.png`.
+
+292. The Unbroken Line *(140 · Elven petitioning company, Commander Elina · Center-line holding doctrine · Goldgate-based, awaiting full army commission from Rhaegar Thorne)*
