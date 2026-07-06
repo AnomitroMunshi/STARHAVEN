@@ -208,6 +208,7 @@
 - **The Greymark** — 80 — Commander: Nyx Ravel · Sub-Unit
 - **Ranger Companies** — unknown — Commander: Wyld Frostmere
 - **Picket Scouts** — 150 (50 Three-Scout Cells) (reserved) — Commander: Rhaegar Thorne · Direct Reserve · Captain Iva Renn
+- **Brand Order** — unknown — Commander: Zareth Kull · Order Master: Sorn
 
 ### Animals
 
@@ -245,7 +246,6 @@
 - **Shadowfang Panther — Umbra** — 1 — Commander: Nyx Ravel (Bond Animal)
 - **War Mammoth** — unknown — Commander: Sultan Rashid
 - **War Elephant** — unknown — Commander: Sultan Rashid
-- **Brand Order** — unknown — Commander: Zareth Kull · Order Master: Sorn
 
 ### Artillery
 
