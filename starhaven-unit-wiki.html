@@ -52,6 +52,9 @@
       --c-merc: #C09050;
       --c-merc-bg: #281808;
       --c-merc-b: #4A3018;
+      --c-rival: #E06840;
+      --c-rival-bg: #301008;
+      --c-rival-b: #5A2A10;
       --br-inf: #C86060;
       --br-ran: #60C060;
       --br-cav: #6090D0;
@@ -729,6 +732,12 @@
       background: var(--c-merc-bg);
       border: 1px solid var(--c-merc-b);
       color: var(--c-merc);
+    }
+
+    .sp-rival {
+      background: var(--c-rival-bg);
+      border: 1px solid var(--c-rival-b);
+      color: var(--c-rival);
     }
 
     /* ARMOR BADGE */
@@ -1449,6 +1458,9 @@
         </button>
         <button class="sf" data-sf="merc">
           ⚔️ Mercenary
+        </button>
+        <button class="sf" data-sf="rival">
+          🌋 Rival Power
         </button>
       </div>
       <div class="search-row">
@@ -4601,6 +4613,127 @@
               }
             ]
           }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-forgeguard-legion",
+                "data-br": "Infantry",
+                "data-src": "rival",
+                "name": "Forgeguard Legion",
+                "branch": "Infantry",
+                "className": "Heavy Line Infantry · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 30,000 Strong · Shield & Axe/Sword",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "30,000",
+                "image": "unitImages/irondeep-forgeguard-legion.png",
+                "imageAlt": "Forgeguard Legion",
+                "notes": "The bulk and the backbone of the Irondeep Confederacy's standing strength — thirty thousand dwarves in black-bronze plate who form the main battle line and simply do not stop coming forward. Where Starhaven's heavy infantry doctrine is built around holding a chosen line, the Forgeguard's is built around advancing one, grinding a shieldwall forward a step at a time until whatever is in front of it either breaks or is buried under the weight of the push. No known contact with Starhaven forces to date; Stonemark Hold's own veterans, when shown captured Forgeguard plate, recognize the smithing hand immediately and say nothing further.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Black-Bronze Legion Plate",
+                    "desc": "— Dense, dark-forged plate favoring mass over mobility. Built to survive a prolonged grinding push rather than a single decisive clash."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Forgeguard Tower Shield",
+                    "desc": "— Wide interlocking shield used to build an advancing wall rather than a static one; ranks rotate forward rank by rank as the line presses."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Legion Axe/Sword",
+                    "desc": "— Standard-issue sidearm carried in either configuration by unit tradition; used once the shieldwall has closed to grinding range."
+                  }
+                ]
+              },
+              {
+                "id": "irondeep-anvilbreakers",
+                "data-br": "Infantry",
+                "data-src": "rival",
+                "name": "Anvilbreakers",
+                "branch": "Infantry",
+                "className": "Shock Infantry · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 10,000 Strong · Two-Handed Hammer/Maul",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "10,000",
+                "image": "unitImages/irondeep-anvilbreakers.png",
+                "imageAlt": "Anvilbreakers",
+                "notes": "Purpose-built to break exactly the things the Forgeguard Legion is built to grind against — shieldwalls, gates, heavy infantry blocks, and anything with enough mass that a blade would simply skid off it. Two-handed hammers and mauls, swung by dwarves selected and trained for raw committed force rather than finesse. Doctrine calls for the Anvilbreakers to open a gap and step aside rather than hold it themselves; the Forgeguard Legion is what pours through behind them.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Anvilbreaker Half-Plate",
+                    "desc": "— Cut lighter at the joints than Forgeguard plate to preserve the swing radius a two-handed hammer needs; heavier across the shoulders and forearms that absorb the recoil."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Breaker Hammer/Maul",
+                    "desc": "— A two-handed war-hammer or maul, forge-weighted for maximum impact against shields, gates, and armored bodies rather than clean cutting."
+                  }
+                ]
+              },
+              {
+                "id": "irondeep-forgehold-home-guard",
+                "data-br": "Infantry",
+                "data-src": "rival",
+                "name": "Forgehold Home Guard",
+                "branch": "Infantry",
+                "className": "Reserve Garrison Infantry · Rival Power (reserved)",
+                "subtitle": "· Irondeep Confederacy · 30,000 Strong · Wartime Mobilization Only",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge (Reserve)",
+                "total": "30,000 (reserved)",
+                "image": "unitImages/irondeep-forgehold-home-guard.jpg",
+                "imageAlt": "Forgehold Home Guard",
+                "notes": "Not part of Irondeep's standing 77,000 — the Home Guard is the older-veteran and local-hold garrison force held back for city, fortress, bridge, foundry, and mountain-pass defense, raised only under full wartime mobilization. Reserved strength, not currently fielded.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Garrison Plate",
+                    "desc": "— Older-pattern dwarven plate, serviceable but a generation behind the Forgeguard Legion's current issue. Kept in fortress armories against mobilization."
+                  }
+                ]
+              },
+              {
+                "id": "irondeep-clan-muster-tunnel-levies",
+                "data-br": "Infantry",
+                "data-src": "rival",
+                "name": "Clan Muster & Tunnel Levies",
+                "branch": "Infantry",
+                "className": "Emergency Levy · Rival Power (reserved)",
+                "subtitle": "· Irondeep Confederacy · 18,000 Strong · Wartime Mobilization Only",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge (Reserve)",
+                "total": "18,000 (reserved)",
+                "image": "unitImages/irondeep-clan-muster-tunnel-levies.jpg",
+                "imageAlt": "Clan Muster & Tunnel Levies",
+                "notes": "Miners, forge clans, and tunnel fighters called up as emergency levies under full mobilization — supply guards and local defense bands rather than a standing formation. Reserved strength, not currently fielded.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Levy Kit",
+                    "desc": "— Whatever mining and forge-clan equipment converts fastest to field use; leather and light mail rather than issued plate."
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6078,6 +6211,42 @@
                     "slot": "Body",
                     "name": "Bare Wrap Harness",
                     "desc": "— Minimal wrapping at the shoulders and waist, nothing that would restrict the draw. The Kodandin trust range and elevation over armor."
+                  }
+                ]
+              }
+            ]
+          }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-rune-marksmen",
+                "data-br": "Ranged",
+                "data-src": "rival",
+                "name": "Rune Marksmen",
+                "branch": "Ranged",
+                "className": "Elite Ranged Corps · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 12,000 Strong · Rune Bolt-Rifles",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "12,000",
+                "image": "unitImages/irondeep-rune-marksmen.png",
+                "imageAlt": "Rune Marksmen",
+                "notes": "Irondeep's answer to precision fire — heavy rune-sighted crossbows and bolt-rifles firing armor-piercing quarrels, doctrine built around anti-officer and anti-monster targeting rather than volume suppression. The rune sights are forge-etched rather than cast, each one individually calibrated, which keeps the corps small relative to the Forgeguard Legion but makes every shot fired count for more than a volley from an ordinary crossbow line.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Marksman Half-Plate",
+                    "desc": "— Lightened plate favoring a stable firing stance over mobility; reinforced shoulder mount for sustained rifle brace."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Rune Bolt-Rifle",
+                    "desc": "— Heavy rune-sighted crossbow/bolt-rifle hybrid firing armor-piercing quarrels. Individually forge-etched sights; not interchangeable between weapons."
                   }
                 ]
               }
@@ -8943,6 +9112,47 @@
               }
             ]
           }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-iron-boar-riders",
+                "data-br": "Beast Cavalry",
+                "data-src": "rival",
+                "name": "Iron Boar Riders",
+                "branch": "Beast Cavalry",
+                "className": "Heavy Beast Cavalry · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 5,000 Strong · Armored Volcanic Boars",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "5,000",
+                "image": "unitImages/irondeep-iron-boar-riders.jpg",
+                "imageAlt": "Iron Boar Riders",
+                "notes": "Armored volcanic boars bred for short, brutal charges rather than sustained cavalry work — the Iron Boar Riders exist to break loose infantry and pressure a flank in a single committed pass, not to maneuver. The boars themselves are aggressive by breeding and by nature, plated across the head and shoulders to turn aside spear points on the way in.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Boar-Rider Plate",
+                    "desc": "— Heavy dwarven plate cut for a low, braced riding stance rather than a saddle gallop."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Armored Volcanic Boar",
+                    "desc": "— A large, aggressive war-boar plated across the head and shoulders, bred for a short violent charge rather than distance or endurance."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Boar Lance",
+                    "desc": "— A short, heavy lance built for a single charging pass; not intended for repeated engagement."
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9200,6 +9410,92 @@
                     "slot": "Frame",
                     "name": "Mark I Ironwhirl Frame",
                     "desc": "— Early prototype gyrocopter frame, hand-built over three years per craft with the design still being refined between builds — no two are perfectly identical. Sustains 80–120 feet of altitude only. Loud enough to be heard roughly thirty seconds before arrival, slow turning radius, and grounded by strong mountain crosswinds. No spare frames exist; a Mark II is designed but not yet built."
+                  }
+                ]
+              }
+            ]
+          }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-ironwing-ornithopters",
+                "data-br": "Flying",
+                "data-src": "rival",
+                "name": "Ironwing Ornithopters",
+                "branch": "Flying",
+                "className": "Mechanical Flyer · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 320 Aircraft / 960 Personnel",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "320 aircraft / 960 personnel",
+                "image": "unitImages/irondeep-ironwing-ornithopters.jpg",
+                "imageAlt": "Ironwing Ornithopters",
+                "notes": "Irondeep's main aircraft — mechanical flapping-wing flyers, faster in level flight than Stonemark's gyrocopters, flown for scouting, dive strikes, and light bombing runs. Where Stonemark's Ironwhirl Squadron favors sustained lift and stability, the Ironwing trades some of that stability for raw speed, matching the Confederacy's broader doctrine of pressing an advantage rather than holding a position.",
+                "armor": [
+                  {
+                    "slot": "Frame",
+                    "name": "Ironwing Airframe",
+                    "desc": "— Mechanical flapping-wing construction, light dwarven alloy over a steam-assisted drive. Built for speed over sustained lift capacity."
+                  }
+                ]
+              },
+              {
+                "id": "irondeep-forge-raven-scouts",
+                "data-br": "Flying",
+                "data-src": "rival",
+                "name": "Forge Raven Scouts",
+                "branch": "Flying",
+                "className": "Mechanical Scout Construct · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 2,400 Constructs / 600 Handlers",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "None",
+                "armorClass": "armor-badge a-na",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "2,400 constructs / 600 handlers",
+                "image": "unitImages/irondeep-forge-raven-scouts.jpg",
+                "imageAlt": "Forge Raven Scouts",
+                "notes": "Small mechanical raven constructs used for reconnaissance, message relay, artillery correction, fortress mapping, and night observation. Unarmed and unarmored by design — a Forge Raven's value is in not being noticed, not in surviving contact once it is. Each handler manages a working flight of several ravens rather than a single bird.",
+                "armor": [
+                  {
+                    "slot": "Frame",
+                    "name": "Forge Raven Chassis",
+                    "desc": "— Small unarmored mechanical construct built for silent flight and quick relay, not survivability."
+                  }
+                ]
+              },
+              {
+                "id": "irondeep-steam-gunships",
+                "data-br": "Flying",
+                "data-src": "rival",
+                "name": "Steam Gunships",
+                "branch": "Flying",
+                "className": "Heavy Aerial Support · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 48 Gunships / 960 Crew",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "48 gunships / 960 crew",
+                "image": "unitImages/irondeep-steam-gunships.jpg",
+                "imageAlt": "Steam Gunships",
+                "notes": "Slow, armored flying gunboats — the Confederacy's elite heavy aerial support, carrying bomb racks, side ballistae, and heavy downward fire. Nothing else in Irondeep's arsenal flies with this much armor plating, and nothing else needs it; the Steam Gunships are meant to sit over a contested field and keep firing rather than dart in and out of one.",
+                "armor": [
+                  {
+                    "slot": "Hull",
+                    "name": "Gunship Ironclad Hull",
+                    "desc": "— Heavy plated envelope built to absorb sustained ground fire; the trade-off is speed the Gunships never had in the first place."
+                  },
+                  {
+                    "slot": "Armament",
+                    "name": "Bomb Racks & Side Ballistae",
+                    "desc": "— Downward bomb racks paired with broadside ballistae, built for prolonged suppression of a fixed position rather than a strafing pass."
                   }
                 ]
               }
@@ -10014,6 +10310,37 @@
                     "slot": "Sidearm",
                     "name": "Priest's Mace",
                     "desc": "— Self-defense only. The Warband is not equipped or intended to engage — the mace exists for the moment a cell's position is overrun."
+                  }
+                ]
+              }
+            ]
+          }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-forge-priests",
+                "data-br": "Religious",
+                "data-src": "rival",
+                "name": "Forge Priests",
+                "branch": "Religious",
+                "className": "Battlefield Smith-Priest · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 1,500 Strong",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "1,500",
+                "image": "unitImages/irondeep-forge-priests.jpg",
+                "imageAlt": "Forge Priests",
+                "notes": "Battlefield smith-priests attached across the Confederacy's formations — they repair armor and reinforce weapons mid-engagement, bless shields before a push, stabilize the Anvilborn Engines when a siege walker takes damage in the field, and hold morale in a line that has been grinding forward for hours. Part clergy, part combat engineer; Irondeep does not distinguish sharply between the two roles.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Forge Priest Vestment Plate",
+                    "desc": "— Half-plate worn over ceremonial forge-clergy robes, built to survive proximity to the front line rather than to fight in it directly."
                   }
                 ]
               }
@@ -12158,6 +12485,67 @@
               }
             ]
           }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-ember-cannon-batteries",
+                "data-br": "Engineering",
+                "data-src": "rival",
+                "name": "Ember Cannon Batteries",
+                "branch": "Engineering",
+                "className": "Main Artillery · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 320 Guns / 4,800 Crew",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "None",
+                "armorClass": "armor-badge a-na",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "320 guns / 4,800 crew",
+                "image": "unitImages/irondeep-ember-cannon-batteries.png",
+                "imageAlt": "Ember Cannon Batteries",
+                "notes": "Irondeep's main artillery arm — forge-cannons firing iron shot, explosive shells, and furnace-heated breach rounds. Where Starhaven's arcane-artillery relies on rune-channeled discipline and synchronized battery timing, the Ember Cannons rely on volume and raw furnace heat; a breach round fired hot enough can crack fortifications a cold shell would only dent.",
+                "armor": [
+                  {
+                    "slot": "Crew",
+                    "name": "Battery Crew Kit",
+                    "desc": "— Heat-resistant leather and light mail suited to furnace-side gun crew work, not frontline combat."
+                  },
+                  {
+                    "slot": "Armament",
+                    "name": "Ember Forge-Cannon",
+                    "desc": "— Heavy dwarven forge-cannon capable of iron shot, explosive shells, or furnace-heated breach rounds depending on loadout."
+                  }
+                ]
+              },
+              {
+                "id": "irondeep-anvilborn-engines",
+                "data-br": "Engineering",
+                "data-src": "rival",
+                "name": "Anvilborn Engines",
+                "branch": "Engineering",
+                "className": "Legendary War Construct · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 9 Engines / 450 Engineers & Guard Crew",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "Legendary",
+                "armorClass": "armor-badge a-leg",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "9 engines / 450 engineers & guard crew",
+                "image": "unitImages/irondeep-anvilborn-engines.jpg",
+                "imageAlt": "Anvilborn Engines",
+                "notes": "Legendary-tier dwarven-made war constructs, and deliberately distinct from Starhaven's own legendary-tier war machines on both counts that matter: the Anvilborn Engines are not ancient like the Starhaven Guardians, and they are not soul-aware like The Wrought. They are brutal forge-built siege walkers, engineered rather than discovered or awakened, requiring a dedicated engineer and guard crew to operate, maintain, and — per doctrine — occasionally be repaired mid-battle by Forge Priests. Only nine exist. Irondeep treats each one as a strategic asset, not a battlefield commonplace.",
+                "armor": [
+                  {
+                    "slot": "Hull",
+                    "name": "Anvilborn Siege Frame",
+                    "desc": "— A towering forge-built walker chassis, plated for siege-line survivability rather than mobility. Requires a dedicated engineer and guard crew to field."
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -12904,6 +13292,47 @@
                     "slot": "Weapon",
                     "name": "Stonemark Guard Rune-Axe",
                     "desc": "— A short-hafted rune-etched war axe, Stonemark guard pattern. The rune etching is not magical; it is historical — the pattern records the guard member's lineage in Stonemark script. Every dwarven soldier who has served in the Graniteborn guard has carried this pattern. The oldest version on record is 340 years old and still in use."
+                  }
+                ]
+              }
+            ]
+          }
+        ,
+          {
+            "label": "Irondeep Confederacy — Kadrin Emberforge",
+            "cards": [
+              {
+                "id": "irondeep-kings-anvil-guard",
+                "data-br": "Command",
+                "data-src": "rival",
+                "name": "King's Anvil Guard",
+                "branch": "Command",
+                "className": "Ruler's Personal Guard · Rival Power",
+                "subtitle": "· Irondeep Confederacy · 700 Strong · High Forge-Marshal Kadrin Emberforge",
+                "srcPill": "🌋 Rival",
+                "armorBadge": "V.Heavy",
+                "armorClass": "armor-badge a-vh",
+                "location": "Irondeep Confederacy (Volcanic Highlands, Southern Continent)",
+                "army": "Irondeep Confederacy — High Forge-Marshal Kadrin Emberforge",
+                "total": "700",
+                "image": "unitImages/irondeep-kings-anvil-guard.png",
+                "imageAlt": "King's Anvil Guard",
+                "notes": "High Forge-Marshal Kadrin Emberforge's personal guard — elite dwarven heavy infantry in ornate black-gold plate, carrying tower shields and rune axes. Small in number against the Forgeguard Legion's tens of thousands, but selected from veterans of every other formation in the Confederacy; a posting to the Anvil Guard is Irondeep's highest field honor short of command itself.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Anvil Guard Black-Gold Plate",
+                    "desc": "— Ornate ceremonial-grade heavy plate, black-bronze inlaid with gold, distinguishing the Guard from standard Forgeguard issue at a glance."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Anvil Tower Shield",
+                    "desc": "— A tower shield reserved for the Guard's pattern, bearing the Emberforge Council's mark."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Rune Axe",
+                    "desc": "— A rune-etched dwarven axe, individually forged and gifted upon a soldier's induction into the Guard."
                   }
                 ]
               }
@@ -14331,7 +14760,7 @@
     const BRANCH_HEADER_CLASSES = {
       "inf": "bh-inf", "ran": "bh-ran", "cav": "bh-cav", "pol": "bh-pol", "bst": "bh-bst", "fly": "bh-fly", "mag": "bh-mag", "rel": "bh-rel", "ste": "bh-ste", "eng": "bh-eng", "art": "bh-art", "nav": "bh-nav", "und": "bh-und", "cmd": "bh-cmd", "spt": "bh-spt", "int": "bh-int", "anm": "bh-anm"
     };
-    const SRC_PILL_CLASSES = { own: "sp-own", ally: "sp-ally", new: "sp-new", gar: "sp-gar", merc: "sp-merc" };
+    const SRC_PILL_CLASSES = { own: "sp-own", ally: "sp-ally", new: "sp-new", gar: "sp-gar", merc: "sp-merc", rival: "sp-rival" };
     const BRANCH_COLORS = {
       "Infantry": "#C86060", "Ranged": "#60C060", "Cavalry": "#6090D0", "Polearm": "#C0A050",
       "Beast Cavalry": "#D08040", "Flying": "#8080D8", "Magic": "#A060D8", "Religious": "#D0C050",

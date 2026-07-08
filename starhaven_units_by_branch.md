@@ -530,3 +530,46 @@
 
 - **The Kodandin** — 1,500 — Commander: High Chieftain Rudra Vanar
 
+
+# RIVAL POWERS
+
+*Not allied to Starhaven. Standing rival nations tracked here for reference/matchup purposes only — excluded from any Coalition strength total.*
+
+## Irondeep Confederacy
+
+*Fully dwarven volcanic industrial empire. Standing field strength ~77,000 · Full wartime mobilization ~125,000. Commander (all units): High Forge-Marshal Kadrin Emberforge, answers to the Emberforge Council.*
+
+### Infantry
+
+- **Forgeguard Legion** — 30,000 — Commander: Kadrin Emberforge
+- **Anvilbreakers** — 10,000 — Commander: Kadrin Emberforge
+- **Forgehold Home Guard** — 30,000 (reserved) — Commander: Kadrin Emberforge
+- **Clan Muster & Tunnel Levies** — 18,000 (reserved) — Commander: Kadrin Emberforge
+
+### Ranged
+
+- **Rune Marksmen** — 12,000 — Commander: Kadrin Emberforge
+
+### Beast Cavalry
+
+- **Iron Boar Riders** — 5,000 — Commander: Kadrin Emberforge
+
+### Flying
+
+- **Ironwing Ornithopters** — 320 aircraft / 960 personnel — Commander: Kadrin Emberforge
+- **Forge Raven Scouts** — 2,400 constructs / 600 handlers — Commander: Kadrin Emberforge
+- **Steam Gunships** — 48 gunships / 960 crew — Commander: Kadrin Emberforge
+
+### Engineering
+
+- **Ember Cannon Batteries** — 320 guns / 4,800 crew — Commander: Kadrin Emberforge
+- **Anvilborn Engines** — 9 engines / 450 engineers & guard crew (Legendary) — Commander: Kadrin Emberforge
+
+### Religious
+
+- **Forge Priests** — 1,500 — Commander: Kadrin Emberforge
+
+### Command
+
+- **King's Anvil Guard** — 700 — Commander: Kadrin Emberforge (personal guard)
+

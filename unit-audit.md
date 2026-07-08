@@ -1,5 +1,5 @@
 # STARHAVEN Unit Audit
-**Unit IDs currently in file: 324 wiki cards audited · 292 tracked here**
+**Unit IDs currently in file: 337 wiki cards audited · 305 tracked here**
 **Planned future units (not yet in file): 5**
 **Consolidated list total: 278** *(Silver Swan 16 regional cards → 4 types)*
 *Audited from `starhaven-unit-wiki.html` · Verified against `starhaven_wiki.html` · 2026-07-02*
@@ -638,3 +638,21 @@
 **The Unbroken Line** (entry 292) added 2026-07-06 — a small elven petitioning company, 140 (130–150 variable roster), that settled near Goldgate and formally petitioned Rhaegar Thorne for full Starhaven army commission rather than staying an independent/mercenary company. Petition is under review, not yet approved. Card added to `starhaven-unit-wiki.html` in the Infantry branch directly after Pavise Shield Corps, `data-src: "new"`. Doctrine is center-line holding specifically — locked overlapping shield wall built to anchor the middle of a formation while flanks maneuver, deliberately kept small (Elina turns away volunteers) rather than scaled up. Commander: Elina. Also added to `starhaven_units_by_branch.md` under STARHAVEN (Own Forces) → Infantry. Image file needed: `unbroken-line.png`.
 
 292. The Unbroken Line *(140 · Elven petitioning company, Commander Elina · Center-line holding doctrine · Goldgate-based, awaiting full army commission from Rhaegar Thorne)*
+
+---
+
+**Irondeep Confederacy** (entries 293–305) added 2026-07-08 — a full 13-unit rival-power roster for the Irondeep Confederacy, a fully dwarven volcanic industrial empire (standing field strength ~77,000, full wartime mobilization ~125,000), tagged with a brand-new `data-src: "rival"` sourcing value (🌋 Rival Power pill, distinct CSS/filter support added to `starhaven-unit-wiki.html`) rather than `ally`, since Irondeep has no alliance with Starhaven — per the planned future arc (see memory `planned_story_arcs.md`), Starhaven and Irondeep are headed toward a war, then an eventual alliance, but neither has happened yet; current canonical status is rival/no-contact. Cards added under new "Irondeep Confederacy — Kadrin Emberforge" subgroups across seven branch sections: Infantry (4), Ranged (1), Beast Cavalry (1), Flying (3), Engineering (2), Religious (1), Command (1). Also updated: `starhaven_wiki.html`'s `irondeep-confederacy` ARMIES entry (full unit roster + confirmed strength figures replacing the prior "unconfirmed" placeholder text). Not added to `starhaven_coalition_unit_audit.md` (Coalition totals) since Irondeep is not an ally. Image files needed for all 13 cards (`irondeep-*.png`, none supplied yet).
+
+293. Forgeguard Legion *(30,000 · Heavy line infantry, shield + axe/sword, black-bronze plate · Main battle line · Commander: High Forge-Marshal Kadrin Emberforge)*
+294. Anvilbreakers *(10,000 · Shock infantry, two-handed hammer/maul · Breaks shieldwalls, gates, heavy infantry blocks · Commander: Kadrin Emberforge)*
+295. Rune Marksmen *(12,000 · Elite ranged corps, rune-sighted bolt-rifles, armor-piercing quarrels · Anti-officer/anti-monster fire · Commander: Kadrin Emberforge)*
+296. Iron Boar Riders *(5,000 · Heavy beast cavalry, armored volcanic boars · Short brutal charges, flank pressure · Commander: Kadrin Emberforge)*
+297. Ember Cannon Batteries *(320 guns / 4,800 crew · Main artillery, forge-cannons — iron shot, explosive shells, breach rounds · Commander: Kadrin Emberforge)*
+298. Forge Priests *(1,500 · Battlefield smith-priests — armor/weapon repair, blessings, stabilize Anvilborn Engines, morale · Commander: Kadrin Emberforge)*
+299. Ironwing Ornithopters *(320 aircraft / 960 personnel · Mechanical flapping-wing flyers, faster than Stonemark's gyrocopters · Scouting, dive strikes, light bombing · Commander: Kadrin Emberforge)*
+300. Forge Raven Scouts *(2,400 constructs / 600 handlers · Mechanical scout ravens · Recon, message relay, artillery correction · Commander: Kadrin Emberforge)*
+301. Steam Gunships *(48 gunships / 960 crew · Armored flying gunboats, bomb racks + side ballistae · Heavy aerial support · Commander: Kadrin Emberforge)*
+302. King's Anvil Guard *(700 · Ruler's personal guard, black-gold plate, tower shields, rune axes · Commander: High Forge-Marshal Kadrin Emberforge, personally)*
+303. Anvilborn Engines *(9 engines / 450 engineers & guard crew · Legendary forge-built siege walkers — not ancient like the Starhaven Guardians, not soul-aware like The Wrought · Commander: Kadrin Emberforge)*
+304. Forgehold Home Guard *(30,000, reserved · Wartime mobilization only — city/fortress/pass defense · Commander: Kadrin Emberforge)*
+305. Clan Muster & Tunnel Levies *(18,000, reserved · Wartime mobilization only — miners, forge clans, tunnel fighters · Commander: Kadrin Emberforge)*
