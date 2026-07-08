@@ -466,11 +466,16 @@
       display: flex;
       flex: 1;
       min-height: 0;
-      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
+      overscroll-behavior: contain;
     }
 
     .card-modal .modal-body .unit-card {
       width: 100%;
+      align-self: stretch;
       display: flex;
       gap: 0;
       overflow: hidden;
@@ -485,10 +490,7 @@
 
     .card-modal .modal-body .card-body {
       flex: 1;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      touch-action: pan-y;
-      overscroll-behavior: contain;
+      overflow: visible;
       padding: 24px 26px 32px;
       gap: 12px;
       scrollbar-width: thin;
@@ -14604,12 +14606,14 @@
         if (scale <= 1) return;
         e.preventDefault();
         isDragging = true;
+        img._dragMoved = false;
         startX = e.clientX - tx; startY = e.clientY - ty;
         img.classList.add('panning');
       }, sig);
 
       window.addEventListener('mousemove', e => {
         if (!isDragging) return;
+        img._dragMoved = true;
         tx = e.clientX - startX;
         ty = e.clientY - startY;
         clamp(); apply();
@@ -14697,11 +14701,10 @@
           initZoomPan(container, zoomImg, label);
         });
 
-        // mobile tap → fullscreen
+        // click/tap image → fullscreen (unless the click ends a pan drag)
         zoomImg.addEventListener('click', () => {
-          if (window.matchMedia('(max-width: 700px), (hover: none) and (pointer: coarse)').matches) {
-            openImgFullscreen(zoomImg.src, zoomImg.alt);
-          }
+          if (zoomImg._dragMoved) { zoomImg._dragMoved = false; return; }
+          openImgFullscreen(zoomImg.src, zoomImg.alt);
         });
       }
 
