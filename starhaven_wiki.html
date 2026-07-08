@@ -615,12 +615,12 @@ a.lore-card:hover{transform:translateY(-2px)}
     </div>
     <div class="s-content" style="padding-top:20px">
       <div class="map-viewer-wrap" id="map-viewer">
-        <img id="map-img" class="map-viewer-img" src="Lores/maps/map.png" alt="Starhaven World Map" draggable="false">
+        <img id="map-img" class="map-viewer-img" src="Lores/maps/mapnew.png" alt="Starhaven World Map" draggable="false">
         <div class="map-controls">
           <button class="map-btn" id="map-zoom-in" title="Zoom in">+</button>
           <button class="map-btn" id="map-zoom-out" title="Zoom out">−</button>
           <button class="map-btn" id="map-reset" title="Reset view">⤾</button>
-          <button class="map-btn" onclick="window.open('Lores/maps/map.png','_blank')" title="Open full size">↗</button>
+          <button class="map-btn" onclick="window.open('Lores/maps/mapnew.png','_blank')" title="Open full size">↗</button>
         </div>
       </div>
     </div>
@@ -4529,7 +4529,7 @@ const ARMIES = [
     motto:'"We do not answer to any single name. We answer to the mountain."',
     tier:'allied', strength:'~10,000 Warriors (Full Coalition Estimate)', color:'#6A3A20',
     commander:'No unified commander · Clan sovereigns · Senior: Drogar Stonefang (Stonefang Clan) · Kragh Skullsplitter (Blue Orc Clans)',
-    hq:'Highland Mountains (Northwest) · Distributed Clan Territories',
+    hq:'Greypeak Highlands (Northwest) · Distributed Orc & Goblin Clan Territories, neighboring Stonemark Hold',
     image:'',
     roles:['Highland Assault','Shock Combat','Beast Warfare','Independent Clan Strikes','Highland Defense'],
     desc:'Every highland clan under one alliance flag. The Stonefang Remnant absorbed into the broader Coalition after Drogar Stonefang acknowledged that the highland clans were stronger unified than separately contracted. Each clan still fights under its own commander — the Coalition coordinates objectives, it does not unify command. Drogar Stonefang is not chief of the Coalition. He is the first among equals, and only because he has survived longer than most equals.',
@@ -4609,6 +4609,38 @@ const ARMIES = [
       'Zharak Reach Toll Garrisons',
     ],
     note:'Sultana Aria on Zharak: "Rashid negotiates with people who want something from him. Zahid does not want anything from us. He wants what was already his." Unconfirmed intent — no engagement on record yet.',
+  },
+  {
+    id:'irondeep-confederacy', name:'Irondeep Confederacy',
+    subtitle:'Rival Power · Volcanic Dwarven Industrial Empire',
+    motto:'"The mountain does not ask. It takes, forges, and marches."',
+    tier:'rival', strength:'Unconfirmed — full mobilization capacity unknown, believed to rival Stonemark Hold', color:'#5A2A10',
+    commander:'High Forge-Marshal Kadrin Emberforge · answers to the Emberforge Council rather than ruling alone', hq:'Irondeep Confederacy (Volcanic Highlands, Southern Continent)',
+    image:'',
+    roles:['Offensive Warfare','Steam Technology','Magma-Forged Weapons','Mechanized Siege Engines','Aggressive Assault Doctrine'],
+    desc:'A fully dwarven nation, and by every account of doctrine and temperament the opposite of Stonemark Hold rather than a stranger to it — where Brokk Graniteborn\'s dwarves grew a warrior tradition around holding ground, Irondeep grew one around taking it, and the two holds have not spoken as kin in longer than either keeps a clean count of. A volcanic industrial power built around exactly one export: war. Where Forgehaven builds to Cain Drakhar\'s standard of precision and restraint, Irondeep builds for volume and aggression — magma-forged weapons, steam-driven war machines, mechanized siege engines, and constructs designed to break a line rather than hold one. No treaty with Starhaven, no declared conflict either, not yet. What intelligence exists suggests a nation organized entirely around offense, with no comparable doctrine for defense — which either makes it easy to misjudge or means it has never once needed to learn.',
+    units:[
+      'Magma-Forged Shock Infantry (unconfirmed strength)',
+      'Steam-Driven Siege Constructs',
+      'Mechanized Assault Engines',
+    ],
+    note:'No formal contact on record — yet. Cain Drakhar has requested any recovered Irondeep equipment be routed to Forgehaven directly, calling it only "professional interest." Brokk Graniteborn has never once been asked for his read on Irondeep and has never once volunteered it.',
+  },
+
+  // ══ GREAT ENEMIES ════════════════════════════════════
+  {
+    id:'velnathar', name:'Vel\'Nathar',
+    subtitle:'Great Enemy · Void-Corrupted Empire',
+    motto:'Unknown — no surviving Starhaven contact has recorded one.',
+    tier:'enemy', strength:'Unconfirmed — assessed comparable in scale to the Nullborn Empire', color:'#2A0A3A',
+    commander:'Unconfirmed', hq:'Vel\'Nathar (Far North, beyond the Unknown Lands)',
+    image:'',
+    roles:['Void Corruption','Existential Threat','Unknown Doctrine','Northern Front'],
+    desc:'A second Void-corrupted power, distinct from the Nullborn Empire and separated from it by an ocean\'s width of unclaimed and unmapped territory — whether the two are coordinated, rival, or entirely unaware of each other is not known. Vel\'Nathar sits far to the north beyond the charted Unknown Lands, corrupted the way Nullborn territory is corrupted, and is treated internally as a second front Starhaven is not yet fighting rather than a threat that has been assessed and dismissed. Zareth Kull\'s Void Breakers maintain a standing watch order for any fracture activity originating from the north; as of the current record, none has been confirmed to trace back that far.',
+    units:[
+      'Unconfirmed — no direct engagement on record',
+    ],
+    note:'Classified alongside the Nullborn dossier rather than the Zharak or Irondeep files — Rhegar Thorne\'s office tracks it as a war that has not started yet, not a rivalry that might become one.',
   },
 
   // ══ MERCENARY ════════════════════════════════════════
@@ -5592,7 +5624,7 @@ function armyRender(filter, btn) {
   if (cnt)  cnt.textContent  = list.length;
   if (cnt2) cnt2.textContent = list.length + ' armies';
 
-  const tierOrder  = ['eleven','standing','cavalry','specialized','naval','siege','garrison','allied','merc'];
+  const tierOrder  = ['eleven','standing','cavalry','specialized','naval','siege','garrison','allied','rival','enemy','merc'];
   const tierLabels = {
     eleven:'⚔ Pillar Armies — The Eleven',
     standing:'🛡 Grand Standing Army',
@@ -5602,12 +5634,14 @@ function armyRender(filter, btn) {
     siege:'🏰 Siege & Assault',
     garrison:'🏯 Garrisons & Fortresses',
     allied:'🤝 Provincial & Allied',
+    rival:'⚠ Rival Powers',
+    enemy:'💀 Great Enemies',
     merc:'🗡 Mercenary Contracts',
   };
   const tierColors = {
     eleven:'var(--gold2)', standing:'var(--red2)', cavalry:'var(--amber3)',
     specialized:'var(--blue3)', naval:'var(--teal3)', siege:'var(--amber3)',
-    garrison:'var(--gray2)', allied:'var(--green3)', merc:'var(--text2)',
+    garrison:'var(--gray2)', allied:'var(--green3)', rival:'#C08040', enemy:'#8020C0', merc:'var(--text2)',
   };
 
   const grouped = {};
