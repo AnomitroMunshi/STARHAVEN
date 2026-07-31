@@ -65,7 +65,8 @@
 | Dawncliff Shore Watch | Garrison Infantry · Cliff Patrol | Infantry | Dawncliff Garrison |  |
 | Sea Cannon Crew | Garrison Artillery · Sea-Facing Emplacements | Artillery | Dawncliff Garrison |  |
 | Harbour Chain Guard | Garrison Infantry · Harbour Control | Infantry | Dawncliff Garrison |  |
-| Ashen Shields | Defensive Mercenary Infantry · Civilian Extraction | Infantry | Seraphine Mire Standing Retainer |  |
+| Ashen Shields | Defensive Mercenary Infantry · Civilian Extraction (Sancthaven Garrison) | Infantry | Seraphine Mire Standing Retainer — Petra Allus (Founder/Supreme) | Cova Drell |
+| Petra's Ashen Vanguard | Defensive Mercenary Infantry · Personal Field Detachment | Infantry | Ashen Shields — Petra Allus (Personal Command) |  |
 | The Skyspear Valkyries | Elite Mercenary Spear-Shield Infantry · Female Only ♀ | Infantry | Warqueen Lola Skyward |  |
 | Marika Goldspear | Known Name · The Skyspear Valkyries | Infantry | Warqueen Lola Skyward |  |
 | Woodborn Guardians | Frontline Infantry · Primal Vanguard | Infantry | Thorin Blackroot |  |
@@ -202,6 +203,13 @@
 | Lyss Anven | Solo Legend · Precision Archer | Ranged | Small-Scale Warfare |  |
 | Talon & Hex | Solo Legend · Mercenary Duo | Infantry | Duo Contract |  |
 | Roland Ashguard | Solo Legend · Unbroken Shield | Infantry | Kingdom of Ironmere — King Aldric Vorn (Champion) |  |
+| Caedran Morveil | Solo Legend · The Oathbound Blade | Infantry | Raydan's Personal Guard |  |
+| Tharos Avarakai | Solo Legend · The Black Tempest | Stealth | Raydan's Personal Guard |  |
+| Aruksha | Solo Legend · The First Fang | Infantry | Raydan's Personal Guard |  |
+| Varn Ashclaw | Personal Bodyguard · The Wall's Edge | Infantry | Pillar of Kael Varric |  |
+| Kiyu Otari | Personal Bodyguard · The Unread Page | Stealth | Pillar of Lyria Valen |  |
+| Sylvaine Duskroot | Solo Legend · Personal Bodyguard · The Silent Root | Infantry | Pillar of Thorin Blackroot |  |
+| Mira Halloway | Personal Bodyguard · Anchor of the Bond | Infantry | Pillar of Bob Vale |  |
 | Pell Ashcord | Known Name · The Reedwalkers | Infantry | Rhaegar Thorne Reserve |  |
 | Maren Coldhand | Known Name · Coldmarch Ironline | Infantry | 2nd Field Army |  |
 | "Twice-Burned" Gareth | Known Name · The Ashrunners | Infantry | Vael Dusken |  |

@@ -398,7 +398,7 @@
 
 ## Mercenary / Independent Contracts
 
-197. Ashen Shields *(Cova Drell · Seraphine Mire Standing Retainer)*
+197. Ashen Shields *(Founder & Supreme Commander: Petra Allus · Seraphine Mire Standing Retainer · corrected 2026-07-31 — Petra is not "retired founder," she is the unit's ultimate authority; Cova Drell runs day-to-day operations of the 1,100-strong main body, stationed at Sancthaven, and answers to Petra rather than commanding independently; Petra keeps a personal 150-strong elite detachment always with her rather than delegating them to a sub-commander — no sub-commanders exist under Petra, she leads that detachment directly. One unit, two components: Petra's 150 (field elite, always at her side) + Cova's 1,100 (standing garrison at Sancthaven). In Year 1055 at Redstone, Petra's 150 are with her on the frontier while Cova and the 1,100 remain at Sancthaven. The `starhaven-unit-wiki.html` `ashen-shields-m` card currently only documents the Sancthaven garrison half under Cova and still says Petra "is no longer with the company" — that card needs the same correction, not yet applied)*
 198. Silverchain Mages *(Standing contract · Ward architecture specialists)*
 199. Yami Holloway *(Mercenary · Dawnsteel Attachment)*
 200. Barek Kade *(Mercenary · Shock Infantry Embedded)*
@@ -656,3 +656,21 @@
 303. Anvilborn Engines *(9 engines / 450 engineers & guard crew · Legendary forge-built siege walkers — not ancient like the Starhaven Guardians, not soul-aware like The Wrought · Commander: Kadrin Emberforge)*
 304. Forgehold Home Guard *(30,000, reserved · Wartime mobilization only — city/fortress/pass defense · Commander: Kadrin Emberforge)*
 305. Clan Muster & Tunnel Levies *(18,000, reserved · Wartime mobilization only — miners, forge clans, tunnel fighters · Commander: Kadrin Emberforge)*
+
+---
+
+**Raydan's Solo Legends & the Eleven's Bodyguards** (entries 306–312) added 2026-07-31 — three new solo-legend characters sworn personally to Raydan (added to the "Solo Legends" subgroup of `starhaven-unit-wiki.html`, alongside Barek Kade/Torak/Roland Ashguard etc.), plus four newly-named personal bodyguards for members of The Eleven (added to the "Commander Personal Guards" subgroup, except Sylvaine Duskroot who was placed in "Solo Legends" instead per her own tier). All seven also added to `starhaven_wiki.html` (Characters array, category 'Allied' for Raydan's three / 'Commander' for the four bodyguards) and `starhaven_codex_final.html` (CHARS array, category 'allied' / 'commanders'). Six of the Eleven (Velkan Drake, Seraphine Mire, Nyx Ravel, Aurelia Vex, Elysia Nocturne, Cain Drakhar) still have no named bodyguard. Image files needed for all seven (`caedran-morveil.png`, `tharos-avarakai.png`, `aruksha.png`, `varn-ashclaw.png`, `kiyu-otari.png`, `sylvaine-duskroot.png`, `mira-halloway.png` under `unitImages/`; matching portraits under `starhaven_chars_image/`), none supplied yet.
+
+306. Caedran Morveil *(Solo Legend · Raydan's Personal Guard — The Oathbound Blade, greatsword knight and champion-killer · Gravenshield, oath-forged greatsword built on guardianship/burden/retaliation magic, no elemental or spatial power · protects the space directly beside Raydan while Daven Holt watches the perimeter · cannot command — refuses to leave anyone behind)*
+307. Tharos Avarakai *(Solo Legend · Raydan's Personal Guard — The Black Tempest, Avarakai black-jaguar beastkin, maritime infiltrator and mage-hunter from the Skyward Isles · Tidecleaver (storm-blade) + the Gale-Rope · joined after Raydan freed enslaved Avarakai navigators without demanding payment, territory, or oath in return · cannot command — constant improvisation, despises rigid formations)*
+308. Aruksha *(Solo Legend · Raydan's Personal Guard — The First Fang, ~670-year-old Urshan spear-sage, Last Huntress of the Sarpathi Serpent Clan · Anantashula, the Endless Fang + oath-sibling Kaalahi, a thousand-year-old horned night serpent (not a mount) · pledged her spear to Raydan personally rather than to Starhaven's throne · cannot command — will not lead soldiers she hasn't personally judged)*
+309. Varn Ashclaw *(Personal Bodyguard · Kael Varric — The Wall's Edge, deliberately the offensive counterpart to Kael's pure-defense style · twin curved blades Ruin & Reckoning · selected after clearing a collapsed breach corridor alone, unknowingly auditioning for the post)*
+310. Kiyu Otari *(Personal Bodyguard · Lyria Valen — The Unread Page, Silent Warden · twin daggers Hush + hunting recurve bow · covers Lyria's one true blind spot, directly behind her; communicates only in the hand-signs Lyria personally taught her)*
+311. Sylvaine Duskroot *(Solo Legend · Personal Bodyguard · Thorin Blackroot — The Silent Root, Wood Elf spear-wielder · Stillroot, a living ashwood spear · rides Duskfang, a dire wolf pack-alpha, a silent counterpart to Thorin's own bonded dire bear Grond)*
+312. Mira Halloway *(Personal Bodyguard · Bob Vale — Anchor of the Bond, his girlfriend as well as his guard · longsword & tower shield · protects his physical body specifically while he is exposed and absent from it during Soul Link Anchor techniques)*
+
+---
+
+313. Petra's Ashen Vanguard *(150 · Founder & Supreme Commander Petra Allus's personal field detachment, Ashen Shields · no sub-commanders — Petra leads directly · added 2026-07-31 alongside the Ashen Shields command-structure correction above; card added to `starhaven-unit-wiki.html`'s "Defensive Contract · Mercenary" subgroup, right after the main `ashen-shields-m` card)*
+
+**Note on Cova Drell's codex bio (unresolved):** `starhaven_codex_final.html`'s `covadrell` CHARS entry still says Cova "built the Ashen Shields specifically" herself after a failed evacuation as a city watch captain — this contradicts the corrected canon above (Petra Allus is founder and supreme commander). Not rewritten yet since it's a real characterization conflict, not just a numbers fix — flagged for the user to decide how to reconcile (e.g., Cova co-founded / earned day-to-day command independently / the "she built it" framing is Cova's own reputation rather than literal founding).

@@ -68,7 +68,8 @@
 | **"Twice-Burned" Gareth** | **Vael Dusken** |
 | **Root-Watcher Sylen** | **Primal Vanguard · Thorin Blackroot** |
 | **Pavise Shield Corps** | **Grael Ironwall** |
-| **Ashen Shields** | **Seraphine Mire Standing Retainer · Cova Drell** |
+| **Ashen Shields** | **Petra Allus (Founder & Supreme Commander) · Day-to-Day: Cova Drell** |
+| **Petra's Ashen Vanguard** | **Petra Allus (Personal Command — no sub-commanders)** |
 | **The Skyspear Valkyries** | **Warqueen Lola Skyward** |
 | **Barek Kade** | **Shock Infantry Embedded** |
 | **Talon & Hex** | **Duo Contract** |
@@ -90,6 +91,11 @@
 | **Rosalind Thornfield** | **Verdant Spearguard (Personal Command)** |
 | **Gurn Bramblefist** | **Thornridge Warband (Attached to Silverhorn Blades)** |
 | **Roland Ashguard** | **King Aldric Vorn (Champion)** |
+| **Caedran Morveil** | **Raydan's Personal Guard** |
+| **Aruksha** | **Raydan's Personal Guard** |
+| **Varn Ashclaw** | **Pillar of Kael Varric (Personal Bodyguard)** |
+| **Sylvaine Duskroot** | **Pillar of Thorin Blackroot (Personal Bodyguard)** |
+| **Mira Halloway** | **Pillar of Bob Vale (Personal Bodyguard)** |
 | **Hammerers** | **Brokk Graniteborn · Captain Yorna Cinderhelm** |
 | **Gram Stons** | **Stonemark Holds · Brokk Graniteborn** |
 | **Brak Graymaw** | **Stonemark Holds · Brokk Graniteborn** |
@@ -297,6 +303,8 @@
 | **Brand Order** | **Zareth Kull · Order Master: Sorn** |
 | **Yami Holloway** | **Dawnsteel Attachment** |
 | **Mirova** | **Nyx Ravel Referral** |
+| **Tharos Avarakai** | **Raydan's Personal Guard** |
+| **Kiyu Otari** | **Pillar of Lyria Valen (Personal Bodyguard)** |
 ---
 
 ## Engineering · Artillery
