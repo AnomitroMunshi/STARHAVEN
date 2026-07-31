@@ -5,6 +5,10 @@
 | Ironwall | Very Heavy Infantry | Infantry | Kael Varric |  |
 | Black Bastions | Elite Infantry | Infantry | Rhaegar |  |
 | Stonemark Bulwark | Elite Heavy Infantry · Bulwark Phalanx | Infantry | Brokk Graniteborn | Brak Graymaw |
+| The Stormreach Guardian | Ancient Construct · Starhaven Guardians · Storm-Rune Wrought | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
+| The Stoneward Guardian | Ancient Construct · Starhaven Guardians · Ward-Rune Bearer | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
+| The Frostcleave Guardian | Ancient Construct · Starhaven Guardians · Frost-Rune Wrought | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
+| The Magmafall Guardian | Ancient Construct · Starhaven Guardians · Magma-Touched | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
 | Sentinel Guards | Elite Infantry | Infantry | Greenveil Defense Forces |  |
 | Ironmere Veterans | Elite Infantry | Infantry | King Aldric Vorn |  |
 | Ironmere Shock Heavy Infantry | Shock Heavy Infantry · Ironmere Kingdom | Infantry | General Mira Vorn |  |
@@ -26,6 +30,7 @@
 | Warden Infantry | Light Infantry | Infantry | Dena Veil |  |
 | Hammerers | Light Infantry | Infantry | Brokk Graniteborn | Yorna Cinderhelm |
 | The Reedwalkers | Wetland Infantry · Terrain Specialists | Infantry | Rhaegar Thorne |  |
+| The Unbroken Line | Petitioning Company · Elven Spear & Shield · Center-Line Doctrine · UNDER REVIEW — not yet officially commissioned | Infantry | Commander Elina · Under Review, Grand Marshal Rhaegar Thorne |  |
 | The Warbreakers | Shock Infantry | Infantry | Sever Aldric |  |
 | IceBreakers | Shock Infantry | Infantry | Wyld Frostmere |  |
 | Glaive Formation Corps | Dawnsteel Order · Glaive Formation | Infantry | Koren Ashveil |  |
@@ -35,6 +40,8 @@
 | The Ashrunners | Light Shock Infantry | Infantry | Vael Dusken |  |
 | Grundhammer Forge Team | Great Weapon Infantry · Ironbreaker Mace Corps | Infantry | Torvan Grund |  |
 | The Ironhold Guard | Heavy Infantry · Ironbreaker Mace Corps | Infantry | Torvan Grund |  |
+| Hammerguard — Shieldline | Heavy Special Forces · Long Hammer & Shield · Breach-Anchor Doctrine | Infantry | Rhaegar Thorne |  |
+| Hammerguard — Cinderhand | Heavy Special Forces · One-Handed Hammer · Single-Target Doctrine | Infantry | Rhaegar Thorne |  |
 | Longbeards (Stonemark) | Elite Infantry · Great Weapon | Infantry | Brokk Graniteborn | Molgrim Coalbeard |
 | The Ashveil Reapers | Great Weapon Infantry · Anti-Cavalry Sweep · Void Border Doctrine | Infantry | Grand Standing Army (Kael Varric Doctrine) |  |
 | The Doomcleavers | Heavy Greatsword Infantry · Formation Breaker | Infantry | Fosho Tanachi |  |
@@ -60,6 +67,7 @@
 | Harbour Chain Guard | Garrison Infantry · Harbour Control | Infantry | Dawncliff Garrison |  |
 | Ashen Shields | Defensive Mercenary Infantry · Civilian Extraction | Infantry | Seraphine Mire Standing Retainer |  |
 | The Skyspear Valkyries | Elite Mercenary Spear-Shield Infantry · Female Only ♀ | Infantry | Warqueen Lola Skyward |  |
+| Marika Goldspear | Known Name · The Skyspear Valkyries | Infantry | Warqueen Lola Skyward |  |
 | Woodborn Guardians | Frontline Infantry · Primal Vanguard | Infantry | Thorin Blackroot |  |
 | Stoneclaw Brutes | Stoneborn Shock Troops · Primal Vanguard | Infantry | Thorin Blackroot |  |
 | The Longmark | Ironlock Longrifle Corps · Two-Man Teams · Extreme Range | Ranged | Rhaegar Thorne |  |
@@ -133,8 +141,10 @@
 | Fang Order | Void Breaker · Apex Entity Hunters | Polearm | Zareth Kull |  |
 | Void Hounds | Monster Hunters | Polearm | Standing Contract |  |
 | The RootFang | Elite Beast Cavalry · Primal Vanguard | Beast Cavalry | Thorin Blackroot |  |
+| Fenrik | Known Name · The RootFang | Beast Cavalry | Primal Vanguard — Thorin Blackroot |  |
 | Dire Wolf Handler Corps | Beast Handler Unit | Beast Cavalry | Primal Vanguard |  |
 | Snowtusk Cavalry | Snow Elk Cavalry ⚙️ | Beast Cavalry | Wyld Frostmere |  |
+| Polar Bear Riders | Elite Polar Bear Cavalry ⚙️ | Beast Cavalry | Frosthold Garrison — Wyld Frostmere |  |
 | Great Elk — Forest Elk Cavalry | Forest Elk Cavalry ⚙️ | Beast Cavalry | Greenveil Defense Forces |  |
 | Silver Moon Elk Riders | Mounted Ranger · Moon Elk Cavalry | Beast Cavalry | Silent Warden Mounted Wing |  |
 | War Bear Corps | Beast Handler Unit | Beast Cavalry | Thorin Blackroot |  |
@@ -144,6 +154,7 @@
 | Starhaven Mammoth Corps | War Mammoth · Convoy Herd | Beast Cavalry | Gifted by Karath Sultanate |  |
 | Starhaven War Elephant Corps | War Elephants · Ironmane Fields | Beast Cavalry | Gifted by Karath Sultanate |  |
 | Karath Mammoths | Mammoth Riders | Beast Cavalry | Sultan Rashid |  |
+| Kuku Gunriders | Dwarven Gun Cavalry · Kuku-Mounted | Beast Cavalry | Stonemark Holds — Brokk Graniteborn | Captain Torvald Redcrest |
 | War Elephants (50) | War Elephants | Beast Cavalry | Sultan Rashid |  |
 | The Ashstride Warband | Centaur Shock · Mobile Reserve · Rare Race · Anti-Cavalry | Cavalry | Mobile Reserve (Grand Marshal Rhaegar Thorne) |  |
 | Beastmen Berserkers of the East | Beast Infantry · Boar-Bonded Hunters · Rare Race | Beast Cavalry | Rhaegar |  |
@@ -187,8 +198,10 @@
 | Barek Kade | Solo Legend · Untrained Elemental Conduit | Infantry | Shock Infantry Embedded |  |
 | Mirova | Solo Legend · Erasure Specialist | Stealth | Nyx Ravel Referral |  |
 | Torak | Solo Legend · Post-Void Aberrant | Magic | Zareth Kull Attachment |  |
+| Zafir | Solo Legend · Sand Golem Conduit | Magic | Karath Sultanate — Sultan Rashid al-Kavar (Crown Prince) |  |
 | Lyss Anven | Solo Legend · Precision Archer | Ranged | Small-Scale Warfare |  |
 | Talon & Hex | Solo Legend · Mercenary Duo | Infantry | Duo Contract |  |
+| Roland Ashguard | Solo Legend · Unbroken Shield | Infantry | Kingdom of Ironmere — King Aldric Vorn (Champion) |  |
 | Pell Ashcord | Known Name · The Reedwalkers | Infantry | Rhaegar Thorne Reserve |  |
 | Maren Coldhand | Known Name · Coldmarch Ironline | Infantry | 2nd Field Army |  |
 | "Twice-Burned" Gareth | Known Name · The Ashrunners | Infantry | Vael Dusken |  |
@@ -206,6 +219,7 @@
 | Stonethrow Corps | Trebuchet · Catapult · Ballista | Artillery | Vera Holt |  |
 | Iron Talon Batteries | Mobile Anti-Aerial | Artillery | Dorn Ashvane |  |
 | Skyhunter Lance Battery | Legendary Mobile Anti-Aerial Siege Engine | Artillery | Triple Authorization |  |
+| Stonecast Onager Battery | Siege Artillery · Rapid Field Bombardment | Artillery | Siege-Captain Renna Oswick |  |
 | Skymark Corps | Aerial Target Designation · Guidance Mages | Magic | Skyhunter Lance Battery |  |
 | Mountain Engineers | Engineers | Engineering | Brokk Graniteborn | Ista Oreheart |
 | Iron Road Corps | Logistics Corps | Support | Senn Aldric |  |
@@ -256,3 +270,48 @@
 | The Shadow Court | Court Intelligence ♀ | Intelligence | Serell Vane |  |
 | Veil Hunters | Void Response · Active Entity Hunt | Intelligence | Elysia Nocturne |  |
 | Veil Seers | Psionic Operations · Void Detection Array | Intelligence | Elysia Nocturne |  |
+
+## Vanari Clan
+
+| Unit Name | Class | Branch | Commander | Captain |
+|---|---|---|---|---|
+| Vanari Warriors | Main Assault Infantry · Vanari Clan | Infantry | High Chieftain Rudra Vanar |  |
+| Vanari TreeRunners | Skirmishers · Vanari Clan | Infantry | High Chieftain Rudra Vanar |  |
+| Vanari Shock Infantry | Heavy Shock Infantry · Vanari Clan | Infantry | High Chieftain Rudra Vanar |  |
+| Vanari Elites | Elite Infantry · Vanari Clan | Infantry | High Chieftain Rudra Vanar |  |
+| Baboon Vanari | Light Shock Infantry · Vanari Clan | Infantry | High Chieftain Rudra Vanar |  |
+| Vanari Thunder Riders | Heavy Cavalry · Vanari Clan | Beast Cavalry | High Chieftain Rudra Vanar |  |
+| The Kodandin | Ranged · Vanari Clan | Ranged | High Chieftain Rudra Vanar |  |
+
+## House Silverhorn
+
+| Unit Name | Class | Branch | Commander | Captain |
+|---|---|---|---|---|
+| Verdant Spearguard | Spear & Shield Line Infantry · House Silverhorn | Infantry | Lord-Marshal Cassian Silverhorn |  |
+| Silverhorn Blades | Heavy Sword & Shield Infantry | Infantry | War-Chief Gurn Bramblefist |  |
+| Willowmere Rangers | Archers | Ranged | Ranger-Captain Wrenna Willowmere |  |
+| Sunspire Battlemages | Battle Mage | Magic | Court Mage Elowen Sunspire |  |
+| Cassian Silverhorn | Known Name · Lord-Marshal of House Silverhorn | Command | House Silverhorn |  |
+| Ser Corwin Leonhart | Known Name · Champion of the Verdant Crown | Infantry | The Lionguard Order |  |
+| Wrenna Willowmere | Known Name · Ranger-Captain | Ranged | Willowmere Rangers |  |
+| Elowen Sunspire | Known Name · Court Mage of House Silverhorn | Magic | Sunspire Battlemages |  |
+| Rosalind Thornfield | Known Name · Shieldmaiden Captain | Infantry | Verdant Spearguard |  |
+| Gurn Bramblefist | Known Name · War-Chief of the Thornridge Hill-Tribes | Infantry | Silverhorn Blades (Attached) |  |
+
+## Irondeep Confederacy
+
+| Unit Name | Class | Branch | Commander | Captain |
+|---|---|---|---|---|
+| Forgeguard Legion | Heavy Line Infantry · Rival Power | Infantry | High Forge-Marshal Kadrin Emberforge |  |
+| Anvilbreakers | Shock Infantry · Rival Power | Infantry | High Forge-Marshal Kadrin Emberforge |  |
+| Rune Marksmen | Elite Ranged Corps · Rival Power | Ranged | High Forge-Marshal Kadrin Emberforge |  |
+| Iron Boar Riders | Heavy Beast Cavalry · Rival Power | Beast Cavalry | High Forge-Marshal Kadrin Emberforge |  |
+| Ember Cannon Batteries | Main Artillery · Rival Power | Engineering | High Forge-Marshal Kadrin Emberforge |  |
+| Forge Priests | Battlefield Smith-Priest · Rival Power | Religious | High Forge-Marshal Kadrin Emberforge |  |
+| Ironwing Ornithopters | Mechanical Flyer · Rival Power | Flying | High Forge-Marshal Kadrin Emberforge |  |
+| Forge Raven Scouts | Mechanical Scout Construct · Rival Power | Flying | High Forge-Marshal Kadrin Emberforge |  |
+| Steam Gunships | Heavy Aerial Support · Rival Power | Flying | High Forge-Marshal Kadrin Emberforge |  |
+| King's Anvil Guard | Ruler's Personal Guard · Rival Power | Command | High Forge-Marshal Kadrin Emberforge |  |
+| Anvilborn Engines | Legendary War Construct · Rival Power | Engineering | High Forge-Marshal Kadrin Emberforge |  |
+| Forgehold Home Guard | Reserve Garrison Infantry · Rival Power (reserved) | Infantry | High Forge-Marshal Kadrin Emberforge |  |
+| Clan Muster & Tunnel Levies | Emergency Levy · Rival Power (reserved) | Infantry | High Forge-Marshal Kadrin Emberforge |  |

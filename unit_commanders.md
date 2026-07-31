@@ -42,7 +42,62 @@
 | The Ironhold Guard | Torvan Grund |
 | Longbeards (Stonemark) | Brokk Graniteborn |
 | **The Doomcleavers** | **Commander Fosho Tanachi · Rhaegar Thorne** |
-
+| **Stormreach Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
+| **Stoneward Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
+| **Frostcleave Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
+| **Magmafall Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
+| **Hammerguard — Shieldline** | **Rhaegar Thorne** |
+| **Hammerguard — Cinderhand** | **Rhaegar Thorne** |
+| **The Unbroken Line** | **Elina** |
+| **Forgeguard Legion (Irondeep)** | **High Forge-Marshal Kadrin Emberforge** |
+| **Anvilbreakers (Irondeep)** | **Kadrin Emberforge** |
+| **Forgehold Home Guard (Irondeep, reserve)** | **Kadrin Emberforge** |
+| **Clan Muster & Tunnel Levies (Irondeep, reserve)** | **Kadrin Emberforge** |
+| **IceBreakers** | **Wyld Frostmere** |
+| **The Ashveil Reapers** | **Grand Standing Army (Kael Varric Doctrine)** |
+| **The Gauntlet Army** | **War-Elder Vrakas Stonehide** |
+| **Northern Militia** | **Frosthold Garrison Forces** |
+| **Ironpass Wall Guard** | **Ironpass Garrison** |
+| **Ironpass Gate Guard** | **Ironpass Garrison** |
+| **Dawncliff Shore Watch** | **Dawncliff Garrison** |
+| **Harbour Chain Guard** | **Dawncliff Garrison** |
+| **Woodborn Guardians** | **Thorin Blackroot** |
+| **Stoneclaw Brutes** | **Thorin Blackroot** |
+| **Pell Ashcord** | **Rhaegar Thorne Reserve** |
+| **Maren Coldhand** | **2nd Field Army** |
+| **"Twice-Burned" Gareth** | **Vael Dusken** |
+| **Root-Watcher Sylen** | **Primal Vanguard · Thorin Blackroot** |
+| **Pavise Shield Corps** | **Grael Ironwall** |
+| **Ashen Shields** | **Seraphine Mire Standing Retainer · Cova Drell** |
+| **The Skyspear Valkyries** | **Warqueen Lola Skyward** |
+| **Barek Kade** | **Shock Infantry Embedded** |
+| **Talon & Hex** | **Duo Contract** |
+| **Marika Goldspear** | **Warqueen Lola Skyward** |
+| **Ashpaw Volunteers** | **Brex Ashpaw's People** |
+| **Mountain Berserkers** | **Korga** |
+| **Blackfang Shieldguards** | **Blackfang Clan · Kethra Blackfang** |
+| **Red-Skinned Troll Tribe** | **Red-Skinned Troll Tribe · Kaszrek** |
+| **Avalanche Breakers** | **Drogar Stonefang** |
+| **Ogre Brutes** | **Drokha Bloodtusk · Highland Coalition** |
+| **Half-Orc Barbarians** | **Threska** |
+| **Blue Skinned Orc Clan** | **Kragh Skullsplitter · Highland Coalition** |
+| **Redspire Clan** | **Karsh Redspire · Highland Coalition** |
+| **Kraag Half-Ear** | **Karsh Redspire · Highland Coalition** |
+| **Vurd Shatterknee** | **Highland Coalition · Threska** |
+| **Verdant Spearguard** | **Lord-Marshal Cassian Silverhorn** |
+| **Silverhorn Blades** | **War-Chief Gurn Bramblefist (attached command)** |
+| **Ser Corwin Leonhart** | **The Lionguard Order** |
+| **Rosalind Thornfield** | **Verdant Spearguard (Personal Command)** |
+| **Gurn Bramblefist** | **Thornridge Warband (Attached to Silverhorn Blades)** |
+| **Roland Ashguard** | **King Aldric Vorn (Champion)** |
+| **Hammerers** | **Brokk Graniteborn · Captain Yorna Cinderhelm** |
+| **Gram Stons** | **Stonemark Holds · Brokk Graniteborn** |
+| **Brak Graymaw** | **Stonemark Holds · Brokk Graniteborn** |
+| **Vanari Warriors** | **High Chieftain Rudra Vanar** |
+| **Vanari TreeRunners** | **High Chieftain Rudra Vanar** |
+| **Vanari Shock Infantry** | **High Chieftain Rudra Vanar** |
+| **Vanari Elites** | **High Chieftain Rudra Vanar** |
+| **Baboon Vanari** | **High Chieftain Rudra Vanar** |
 ---
 
 ## Ranged
@@ -69,7 +124,18 @@
 | Hobgoblin Warbow Corps | Grik |
 | Goblin Ambush Crossbows | Grik |
 | The Slingers | Clea Vorn |
-
+| **Dawnbow Archers** | **Koren Ashveil** |
+| **Ironpass Bolt Corps** | **Ironpass Garrison** |
+| **3rd Field Army — Crossbowmen** | **Brek Tane** |
+| **4th Field Army — Heavy Crossbowmen** | **Veyra Tal** |
+| **Jade Crossbow Corps** | **Distributed Pool (All Field Armies · Rhaegar Thorne Allocation)** |
+| **Lyss Anven** | **Small-Scale Warfare** |
+| **Willowmere Rangers** | **Ranger-Captain Wrenna Willowmere** |
+| **Wrenna Willowmere** | **Willowmere Rangers (Personal Command)** |
+| **Quarrelers** | **Brokk Graniteborn · Captain Renna Copperfist** |
+| **Thunderers** | **Brokk Graniteborn · Captain Borg Brassvein** |
+| **The Kodandin** | **High Chieftain Rudra Vanar** |
+| **Rune Marksmen** | **Kadrin Emberforge** |
 ---
 
 ## Cavalry
@@ -89,7 +155,26 @@
 | Red Bone Cavalry | Commander Dusk Ferren |
 | Iron Reavers | Commander Grena Vashk |
 | Silver Swan (all variants) | Reva Stallforth |
-
+| **The Requiem Wardens** | **Rhaegar Thorne · Direct Reserve** |
+| **Silver Swan Cavalry Lance Corps - North** | **Reva Stallforth** |
+| **Silver Swan Cavalry Lance Corps - South** | **Reva Stallforth** |
+| **Silver Swan Cavalry Lance Corps - East** | **Reva Stallforth** |
+| **Silver Swan Cavalry Lance Corps - West** | **Reva Stallforth** |
+| **Silver Swan Mounted Crossbowmen - North** | **Silver Swan Cavalry Corps** |
+| **Silver Swan Mounted Crossbowmen - South** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Mounted Crossbowmen — East** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Mounted Crossbowmen — West** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Pursuit Riders — North** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Pursuit Riders — South** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Pursuit Riders — East** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Pursuit Riders — West** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **1st Field Army — Assault Cavalry** | **Doran Ashe** |
+| **Windlance Cavalry** | **Irae Duskwind** |
+| **Recurve Company of the Third** | **Brek Tane** |
+| **2nd Field Army — Light Cavalry** | **Clea Vorn** |
+| **Hyena Riders** | **Drokha Bloodtusk · Highland Coalition** |
+| **Bull War Riders** | **Drokha Bloodtusk · Highland Coalition** |
+| **Desert Cavalry** | **Karath Sultanate** |
 ---
 
 ## Polearm
@@ -105,7 +190,7 @@
 | Desert Medium Spearmen | Sultan Rashid |
 | Fang Order | Order Master Cray |
 | Void Hounds | — (none named) |
-
+| **Tenn "Wallpost" Ferryn** | **Drel Voss** |
 ---
 
 ## Beast Cavalry
@@ -130,7 +215,12 @@
 | Starhaven Chariot Runners | Rhaegar Thorne |
 | Karath Desert Chariots | Sultan Rashid |
 | The Aethran Colossi | Riva Trid |
-
+| **Polar Bear Riders** | **Wyld Frostmere** |
+| **Fenrik** | **Thorin Blackroot** |
+| **War Elephants (50)** | **Sultan Rashid** |
+| **Kuku Gunriders** | **Brokk Graniteborn · Captain Torvald Redcrest** |
+| **Vanari Thunder Riders** | **High Chieftain Rudra Vanar** |
+| **Iron Boar Riders** | **Kadrin Emberforge** |
 ---
 
 ## Flying
@@ -147,7 +237,10 @@
 | Stormriders | Aurelia Vex |
 | Skyhammer | Aurelia Vex |
 | Feral Hunters | Thorin Blackroot |
-
+| **The Ironwhirl Squadron** | **Brokk Graniteborn · Chief Engineer Torka Ironwhirl** |
+| **Ironwing Ornithopters** | **Kadrin Emberforge** |
+| **Forge Raven Scouts** | **Kadrin Emberforge** |
+| **Steam Gunships** | **Kadrin Emberforge** |
 ---
 
 ## Magic
@@ -169,7 +262,10 @@
 | Silverchain Mages | — (mercenary, none named) |
 | **Drakekin Pyromancers** | **Flamewarden Riasa Tem · Velkan Drake (Patron)** |
 | Hollow Order | Order Master Illen |
-
+| **Torak** | **Zareth Kull Attachment** |
+| **Sunspire Battlemages** | **Court Mage Elowen Sunspire** |
+| **Elowen Sunspire** | **Sunspire Battlemages (Personal Command)** |
+| **Zafir** | **Sultan Rashid al-Kavar (Crown Prince)** |
 ---
 
 ## Religious
@@ -182,7 +278,8 @@
 | Holy Knights — Saintguard | Brynhild Voss |
 | Holy Knights — Pyrelight Archers | Brynhild Voss |
 | Warband of the Dawnplate | Sister-Commander Edda Rensh |
-
+| **Sister-Commander Edda Rensh** | **Brynhild Voss** |
+| **Forge Priests** | **Kadrin Emberforge** |
 ---
 
 ## Stealth
@@ -197,7 +294,9 @@
 | The Ironpack | Sela Ironbone |
 | **Picket Scouts** | **Captain Iva Renn · Rhaegar Thorne** |
 | Rootcaller Shamans | Thorin Blackroot |
-
+| **Brand Order** | **Zareth Kull · Order Master: Sorn** |
+| **Yami Holloway** | **Dawnsteel Attachment** |
+| **Mirova** | **Nyx Ravel Referral** |
 ---
 
 ## Engineering · Artillery
@@ -215,7 +314,24 @@
 | Ironbolt Batteries | Starhaven Siege Command |
 | Ironveil Trebuchet Battery | Aldren Croft |
 | Rampart — Siege Tower Division | Tower-Marshal Brix Holt |
-
+| **Ironpass Siege Crew** | **Ironpass Garrison** |
+| **Sea Cannon Crew** | **Dawncliff Garrison** |
+| **Orvin Slate** | **Field Artillery Division** |
+| **Stonecast Onager Battery** | **Siege-Captain Renna Oswick** |
+| **Bastion Fang Division** | **Sera Drenn** |
+| **Void Siege Battery** | **Zareth Kull · Elysia Nocturne** |
+| **Scorpio Field Batteries** | **Field Artillery Division** |
+| **Carroballista Corps** | **Field Artillery Division** |
+| **Polybolus Repeater Corps** | **Field Artillery Division** |
+| **Arcane Cannon Corps — Vaelmark** | **Vaelmark Athenaeum · Arcane Artillery Division** |
+| **The Wrought** | **Cain Drakhar (Direct Command) · Rayden Authorization Required for Deployment** |
+| **Tunnel-Voice Rusk** | **Veld Ashe** |
+| **Groundbreaker — Tunnel Assault Corps** | **Veld Ashe** |
+| **Redtunnel Corps** | **Veld Ashe · Sub-Unit · Commander Crex** |
+| **Ramhead — Battering Ram Division** | **Sora Keld** |
+| **Shield Wall Engineers Corps** | **Commander Calla Brennick** |
+| **Ember Cannon Batteries** | **Kadrin Emberforge** |
+| **Anvilborn Engines** | **Kadrin Emberforge** |
 ---
 
 ## Naval
@@ -244,7 +360,7 @@
 | Sable Bone Chariots | Sorvane Nullis |
 | Arch-Necromancer's Undead Guard | Sorvane Nullis |
 | Preserved Dead Legions | Sorvane Nullis |
-
+| **Sir Aldren Greyne** | **Sorvane Nullis** |
 ---
 
 ## Command
@@ -258,7 +374,12 @@
 | Veyra Tal — Elite Cavalry Guard | Veyra Tal |
 | Samir al-Dusk Command Guard | Samir al-Dusk |
 | Brokk Graniteborn Command Guard | Brokk Graniteborn |
-
+| **Silver Swan Command & Signal — North** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Command & Signal — South** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Command & Signal — East** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Silver Swan Command & Signal — West** | **Silver Swan Cavalry Corps — Reva Stallforth** |
+| **Cassian Silverhorn** | **Personal Command** |
+| **King's Anvil Guard** | **Kadrin Emberforge (personal guard)** |
 ---
 
 ## Support
@@ -269,7 +390,7 @@
 | Iron Tide | Cain Drakhar |
 | Ironframe Corps | Cain Drakhar |
 | Seal Order | Order Master Wex |
-
+| **Stonefang Shamans** | **Grik · Drogar Stonefang** |
 ---
 
 ## Intelligence

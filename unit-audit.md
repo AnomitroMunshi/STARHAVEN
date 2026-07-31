@@ -14,7 +14,7 @@
 2. The Crown Shadows *(Kira Voss · 60 members · Concealed diplomatic protection in Rayden's retinue)*
 
 ### Pillar of the Wall — Kael Varric
-3. Ironwall *(15,000 Heavy Infantry · Ironpass Citadel)*
+3. Ironwall *(25,000 Very Heavy Infantry · Ironpass Citadel)*
 
 ### Pillar of the Eye — Lyria Valen (Silent Wardens)
 4. Moonveil Wardens *(2,870 · Main corps · Shadow doctrine longbowmen)*
@@ -203,7 +203,7 @@
 
 ## Cavalry — Independent
 
-101. Black Charge *(800 · Vespera Drakewynn · Cataphracts · Night raids · 23/23 breakthrough successes)*
+101. Black Charge *(1,440 · Vespera Drakewynn · Cataphracts · Night raids · 23/23 breakthrough successes)*
 102. Ironmane Lancers *(600 · Captain Dresh Ironmane · Zero cavalry engagements lost)*
 
 ---
