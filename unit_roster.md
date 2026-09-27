@@ -173,6 +173,7 @@
 | Combat Healers | Combat Healer · Void Purifier · Curse-Breaker | Magic | Seraphine Mire |  |
 | Mercy Riders | Healer · Mounted Medic | Magic | Seraphine Mire |  |
 | Ashen Exorcists | Exorcist Knight · Entity Removal · Deep Curse Purification | Magic | Seraphine Mire | Tomás Rael |
+| The Grey Rite | Containment & Mercy Specialists · Joint Directive | Magic | Elysia Nocturne · Seraphine Mire |  |
 | The Thread-Runners | Field Relay · Resonance Corps | Magic | Bob Vale |  |
 | Vale's Voice | Command Link · Resonance Corps | Magic | Bob Vale |  |
 | Projection Crystal Relay Operators | Resonance Corps · Command Broadcast | Magic | Bob Vale |  |
@@ -204,8 +205,11 @@
 | Talon & Hex | Solo Legend · Mercenary Duo | Infantry | Duo Contract |  |
 | Roland Ashguard | Solo Legend · Unbroken Shield | Infantry | Kingdom of Ironmere — King Aldric Vorn (Champion) |  |
 | Caedran Morveil | Solo Legend · The Oathbound Blade | Infantry | Raydan's Personal Guard |  |
-| Tharos Avarakai | Solo Legend · The Black Tempest | Stealth | Raydan's Personal Guard |  |
-| Aruksha | Solo Legend · The First Fang | Infantry | Raydan's Personal Guard |  |
+| Tharos Avarakai | Solo Legend · The Black Tempest | Stealth | Avarakai Reef Clans — Sworn to Raydan, Not Bodyguard |  |
+| Aruksha | Solo Legend · The First Fang | Infantry | Sarpathi Serpent Clan — Answers Only to Raydan, Not Bodyguard |  |
+| Bjorr Runebane | Bearkin Legend · Bruiser · Linebreaker | Infantry | Independent — Answers to Raydan Cale in Battle |  |
+| Elyndra Valeheart | Solo Legend · High Elf Archmage (S+) · Royal Bodyguard | Magic | Starhaven Crown — Directly Attached to Raydan Cale |  |
+| Bramm Calder | Solo Legend · Dwarf Extreme Marksman · Royal Overwatch | Ranged | Starhaven Crown — Independent Royal Overwatch |  |
 | Varn Ashclaw | Personal Bodyguard · The Wall's Edge | Infantry | Pillar of Kael Varric |  |
 | Kiyu Otari | Personal Bodyguard · The Unread Page | Stealth | Pillar of Lyria Valen |  |
 | Sylvaine Duskroot | Solo Legend · Personal Bodyguard · The Silent Root | Infantry | Pillar of Thorin Blackroot |  |
@@ -305,6 +309,17 @@
 | Elowen Sunspire | Known Name · Court Mage of House Silverhorn | Magic | Sunspire Battlemages |  |
 | Rosalind Thornfield | Known Name · Shieldmaiden Captain | Infantry | Verdant Spearguard |  |
 | Gurn Bramblefist | Known Name · War-Chief of the Thornridge Hill-Tribes | Infantry | Silverhorn Blades (Attached) |  |
+
+## House Sanguinar
+
+| Unit Name | Class | Branch | Commander | Captain |
+|---|---|---|---|---|
+| Ilyana Sanguinar | Solo Legend · Vampire Princess | Vampire | House Sanguinar — Karvossa |  |
+| The Ebon Shieldwall | Vampire Heavy Infantry · Disciplined Main Line | Vampire | Princess Ilyana Sanguinar |  |
+| The Nightlance Cohort | Vampire Polearm Infantry · Anti-Cavalry | Vampire | Princess Ilyana Sanguinar |  |
+| The Sanguine Lancers | Vampire Heavy Cavalry · Elite Shock Force | Vampire | Princess Ilyana Sanguinar (Personal Command) |  |
+| Duskbow Corps | Vampire Archers & Crossbowmen · Night Marksmen | Vampire | Princess Ilyana Sanguinar |  |
+| Moonfang Pack | Werewolf Shock Troops · Flankers & Trackers | Vampire | Princess Ilyana Sanguinar |  |
 
 ## Irondeep Confederacy
 

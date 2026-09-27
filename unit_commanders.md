@@ -92,7 +92,8 @@
 | **Gurn Bramblefist** | **Thornridge Warband (Attached to Silverhorn Blades)** |
 | **Roland Ashguard** | **King Aldric Vorn (Champion)** |
 | **Caedran Morveil** | **Raydan's Personal Guard** |
-| **Aruksha** | **Raydan's Personal Guard** |
+| **Aruksha** | **Sarpathi Serpent Clan — Answers Only to Raydan, Not Bodyguard** |
+| **Bjorr Runebane** | **Independent — Answers to Raydan Cale in Battle** |
 | **Varn Ashclaw** | **Pillar of Kael Varric (Personal Bodyguard)** |
 | **Sylvaine Duskroot** | **Pillar of Thorin Blackroot (Personal Bodyguard)** |
 | **Mira Halloway** | **Pillar of Bob Vale (Personal Bodyguard)** |
@@ -142,6 +143,7 @@
 | **Thunderers** | **Brokk Graniteborn · Captain Borg Brassvein** |
 | **The Kodandin** | **High Chieftain Rudra Vanar** |
 | **Rune Marksmen** | **Kadrin Emberforge** |
+| **Bramm Calder** | **Starhaven Crown — Independent Royal Overwatch** |
 ---
 
 ## Cavalry
@@ -272,6 +274,7 @@
 | **Sunspire Battlemages** | **Court Mage Elowen Sunspire** |
 | **Elowen Sunspire** | **Sunspire Battlemages (Personal Command)** |
 | **Zafir** | **Sultan Rashid al-Kavar (Crown Prince)** |
+| **Elyndra Valeheart** | **Starhaven Crown — Directly Attached to Raydan Cale** |
 ---
 
 ## Religious
@@ -303,7 +306,7 @@
 | **Brand Order** | **Zareth Kull · Order Master: Sorn** |
 | **Yami Holloway** | **Dawnsteel Attachment** |
 | **Mirova** | **Nyx Ravel Referral** |
-| **Tharos Avarakai** | **Raydan's Personal Guard** |
+| **Tharos Avarakai** | **Avarakai Reef Clans — Sworn to Raydan, Not Bodyguard** |
 | **Kiyu Otari** | **Pillar of Lyria Valen (Personal Bodyguard)** |
 ---
 
@@ -369,6 +372,18 @@
 | Arch-Necromancer's Undead Guard | Sorvane Nullis |
 | Preserved Dead Legions | Sorvane Nullis |
 | **Sir Aldren Greyne** | **Sorvane Nullis** |
+---
+
+## Vampire
+
+| Unit | Commander / Captain |
+|---|---|
+| **Ilyana Sanguinar** | **House Sanguinar — Karvossa** |
+| **The Ebon Shieldwall** | **Princess Ilyana Sanguinar** |
+| **The Nightlance Cohort** | **Princess Ilyana Sanguinar** |
+| **The Sanguine Lancers** | **Princess Ilyana Sanguinar (Personal Command)** |
+| **Duskbow Corps** | **Princess Ilyana Sanguinar** |
+| **Moonfang Pack** | **Princess Ilyana Sanguinar** |
 ---
 
 ## Command

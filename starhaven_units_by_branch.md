@@ -152,6 +152,7 @@
 - **Combat Healers** — unknown — Commander: Seraphine Mire
 - **Mercy Riders** — 3,750 — Commander: Seraphine Mire · Sub-Unit
 - **Ashen Exorcists** — unknown — Commander: Seraphine Mire · Captain Tomás Rael
+- **The Grey Rite** — ~180 — Commander: Elysia Nocturne · Seraphine Mire
 - **The Thread-Runners** — 100 — Commander: Bob Vale · Resonance Corps
 - **Vale's Voice** — 10 — Commander: Bob Vale · Resonance Corps
 - **Projection Crystal Relay Operators** — 10 — Commander: Bob Vale · Resonance Corps
@@ -529,6 +530,18 @@
 ### Ranged
 
 - **The Kodandin** — 1,500 — Commander: High Chieftain Rudra Vanar
+
+
+## House Sanguinar
+
+### Vampire
+
+- **Ilyana Sanguinar** — 1 — Commander: House Sanguinar — Karvossa
+- **The Ebon Shieldwall** — 800 — Commander: Princess Ilyana Sanguinar
+- **The Nightlance Cohort** — 450 — Commander: Princess Ilyana Sanguinar
+- **The Sanguine Lancers** — 300 — Commander: Princess Ilyana Sanguinar (Personal Command)
+- **Duskbow Corps** — 300 — Commander: Princess Ilyana Sanguinar
+- **Moonfang Pack** — 150 — Commander: Princess Ilyana Sanguinar
 
 
 # RIVAL POWERS

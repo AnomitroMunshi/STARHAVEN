@@ -69,6 +69,7 @@
       --br-art: #C07040;
       --br-nav: #40A0C0;
       --br-und: #8050C0;
+      --br-vam: #C02060;
       --br-cmd: #C0C050;
       --br-log: #60B060;
       --br-int: #9060C0;
@@ -1006,6 +1007,11 @@
       color: var(--br-und);
     }
 
+    .bh-vam {
+      background: #1A0410;
+      color: var(--br-vam);
+    }
+
     .bh-cmd {
       background: #202008;
       color: var(--br-cmd);
@@ -1099,6 +1105,11 @@
     .bt-und {
       background: #0A0618;
       color: var(--br-und);
+    }
+
+    .bt-vam {
+      background: #1A0410;
+      color: var(--br-vam);
     }
 
     .bt-cmd {
@@ -1426,6 +1437,9 @@
         </button>
         <button class="tab" data-br="Undead" style="color:var(--br-und);">
           Undead
+        </button>
+        <button class="tab" data-br="Vampire" style="color:var(--br-vam);">
+          Vampire
         </button>
         <button class="tab" data-br="Command" style="color:var(--br-cmd);">
           Command
@@ -9732,6 +9746,51 @@
                 ]
               },
               {
+                "id": "the-grey-rite",
+                "data-br": "Magic",
+                "data-src": "new",
+                "name": "The Grey Rite",
+                "branch": "Magic",
+                "className": "Containment & Mercy Specialists · Joint Directive",
+                "subtitle": "· ~180 · 36 Vigil Cells of 5 · Joint Authorization · Internal Void Containment",
+                "srcPill": "🆕 New",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "Embedded — 1st–4th Field Armies · Ironpass Citadel · Frosthold Bastion · Ashenveil HQ · Remainder in Rotating Reserve",
+                "army": "Joint Authorization — Elysia Nocturne (Veil Watch, Pillar of the Veil) · Seraphine Mire (Ashen Guard, Pillar of the Heart)",
+                "total": "~180 (36 Vigil Cells of 5) — 7 cells standing at named posts, 29 cells rotating reserve",
+                "image": "unitImages/the-grey-rite.png",
+                "imageAlt": "The Grey Rite",
+                "notes": "The Grey Rite exists because none of Starhaven's Void-response assets are built to watch Starhaven's own side. The Veil Hunters, the Void Breaker Orders, and the Runebreakers all hunt outward — external entities, enemy casters, breached quarantine. None of them are tasked with noticing when one of Starhaven's own soldiers or civilians is turning. The Grey Rite is.\n\nFormed in the aftermath of the Battle of Ashfield, after a Void-infected soldier went undetected inside his own unit for six hours. Command's finding: no Field Army medic could reasonably be asked to make that call alone, and Elysia Nocturne — the only confirmed direct perceiver of Malgrath — cannot personally be everywhere. Jointly stood up and authorized by Elysia Nocturne (Veil Watch) and Seraphine Mire (Ashen Guard) — the only standing corps in Starhaven's roster answering to two Pillars at once.\n\nOrganized into 36 Vigil Cells of five: one Veil-sensitive scout trained to read subtle corruption tells — a delayed shadow, an off reflection — not full Void-sight (Elysia Nocturne remains the only person confirmed able to perceive Malgrath directly); one Ashen Guard purification specialist; three containment escorts. Seven cells hold standing posts — one per Field Army (1st–4th) and one at each of Ironpass Citadel, Frosthold Bastion, and Ashenveil HQ. The remaining twenty-nine rotate through a reserve pool rather than holding fixed ground — Three Breaths work burns cells out fast, and Command doesn't ask the same five people to keep making that call indefinitely.\n\nDoctrine: Three Breaths. From confirmed flag to resolution within three breaths — attempt purification; quarantine if purification fails; mercy-end if quarantine fails. The timeline is not arbitrary: Void corruption is documented to compound exponentially fast, the same reasoning behind the Nullborn registry's 45-second blade-wound purification window.\n\nThe Grey Rite is quietly the most feared unit in the coalition — not for anything they do to the enemy, but because every soldier knows exactly what it means when a Vigil Cell starts watching their own line.",
+                "armor": [
+                  {
+                    "slot": "Cell",
+                    "name": "Vigil Cell Field Kit",
+                    "desc": "— Muted grey field plate worn by all five members of a Vigil Cell, deliberately unbadged — no unit insignia. Medium coverage, built for a job that is as often standing quietly and watching as it is physical containment."
+                  },
+                  {
+                    "slot": "Scout",
+                    "name": "Veil-Sensitive Scout's Kit",
+                    "desc": "— Carried by the cell's one Veil-sensitive member, trained to notice subtle corruption tells rather than full Void-sight. Elysia Nocturne remains the only confirmed direct perceiver of Malgrath; the scout's training is a narrower, teachable skill."
+                  },
+                  {
+                    "slot": "Specialist",
+                    "name": "Ashen Purification Kit (Grey Rite Issue)",
+                    "desc": "— Ashen Guard-derived purification salves and sigil tools, carried by the cell's purification specialist for Breath One of the Three Breaths doctrine."
+                  },
+                  {
+                    "slot": "Escort",
+                    "name": "Containment Restraints & Quarantine Kit",
+                    "desc": "— Carried by the cell's three containment escorts for Breath Two. Physical restraint and short-term quarantine equipment — the doctrine only reaches this stage if purification has already failed."
+                  },
+                  {
+                    "slot": "Doctrine",
+                    "name": "Three Breaths Protocol",
+                    "desc": "— Not equipment: the cell's operating order. From confirmed flag to resolution within three breaths — purify, quarantine, mercy-end. Grounded in the same corruption-compounding timeline behind the Nullborn registry's 45-second wound-purification window."
+                  }
+                ]
+              },
+              {
                 "id": "the-thread-runners",
                 "data-br": "Magic",
                 "data-src": "own",
@@ -11083,6 +11142,226 @@
                     "slot": "Ultimate",
                     "name": "The First Hunt",
                     "desc": "— Summons the overlapping spectral impressions of seven dead Sarpathi spear masters, lending Aruksha their combined timing and perception. Culminates in Fang Before Dawn, a thrust that can pierce fortress gates, dragon-scale plate, and regenerating flesh. Accelerates her ageing — she may need months of rest afterward."
+                  }
+                ]
+              },
+              {
+                "id": "ilyana-sanguinar",
+                "data-br": "Vampire",
+                "data-src": "ally",
+                "name": "Ilyana Sanguinar",
+                "branch": "Vampire",
+                "className": "Solo Legend · Vampire Princess",
+                "subtitle": "· House Sanguinar · Karvossa · Came to Judge a King, Stayed for the Man",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Wherever the Court Rides — Currently Starhold",
+                "army": "House Sanguinar — Karvossa (Independent Vampire Realm)",
+                "total": "1",
+                "image": "unitImages/ilyana-sanguinar.png",
+                "imageAlt": "",
+                "notes": "Heir to Karvossa, a realm of perpetual twilight beyond the western fog banks where House Sanguinar has ruled both vampire bloodlines and the old werewolf clans under one crown for longer than Starhaven has existed — an alliance most outside kingdoms assume is a myth, since vampire and werewolf nobility are supposed to be natural enemies everywhere else. Karvossa's oldest treaty says otherwise, and Ilyana's own honor guard, the Moonfang Pack, is living proof of it.\n\nShe came north herself rather than sending an envoy, because Karvossa's court wanted to know exactly what kind of king was building a kingdom on the Void's doorstep before pledging a single soldier to it — a dying world is a problem for the undead too; there is nothing left to rule, hunt, or protect if the Void finishes what it started. She expected another warlord who'd either want her people as weapons or fear them as monsters. Rayden did neither. He asked what Karvossa needed to still exist in fifty years, listened to the answer without flinching once, and never once asked her to prove she wasn't a threat before he'd hear her out.\n\nShe stayed past the point diplomacy required it. She has not said why, and Starhold's court has stopped pretending not to notice. Whether Raydan feels the same is, as of this writing, nobody's business but his — she has never asked him to answer it, and he has never offered to.\n\nHer personal Crimson Court — 2,000 strong across the Ebon Shieldwall, the Nightlance Cohort, the Sanguine Lancers, Duskbow Corps, and her own Moonfang Pack — came with her as both an honor guard and Karvossa's opening offer of alliance. She rides at the head of the Sanguine Lancers herself when the Court takes the field. Brynhild Voss's Holy Knights have not yet been asked to share a war room with her, and everyone involved would prefer to keep it that way for now.",
+                "armor": [
+                  {
+                    "slot": "Primary",
+                    "name": "Duskthorn",
+                    "desc": "— A slender blood-forged saber, lighter than its reach suggests. Drinks nothing on its own; the blood magic is hers, not the blade's — it channels rather than feeds."
+                  },
+                  {
+                    "slot": "Ability",
+                    "name": "Crimson Veil",
+                    "desc": "— Manipulates blood at range, her own or an open wound already spilled. Can thicken into a blinding mist, harden into a momentary shield, or let her step through it to close distance faster than the eye tracks."
+                  },
+                  {
+                    "slot": "Ultimate",
+                    "name": "The Court's Due",
+                    "desc": "— Floods a battlefield radius with crimson mist drawn from her own vitality: her Crimson Court fights harder and heals faster inside it, while enemies lose their footing and their nerve. Costs her dearly — she is visibly drained for days afterward, and has used it exactly three times in her life."
+                  },
+                  {
+                    "slot": "Limit",
+                    "name": "Sun-Bound",
+                    "desc": "— Direct sunlight weakens her severely and burns on contact. The Crimson Court campaigns by night, twilight, or heavy overcast only — a real tactical constraint, not a formality."
+                  }
+                ]
+              },
+              {
+                "id": "bjorr-runebane",
+                "data-br": "Infantry",
+                "data-src": "ally",
+                "name": "Bjorr Runebane",
+                "branch": "Infantry",
+                "className": "Bearkin Legend · Bruiser · Linebreaker",
+                "subtitle": "· The Runebear · Northern Wilds · Raydan's Heavy Breaker",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "Starhaven — Attached to Raydan Cale's Personal Warband",
+                "army": "Independent — Answers to Raydan Cale in Battle",
+                "total": "1",
+                "image": "unitImages/bjorr-runebane.png",
+                "imageAlt": "Bjorr Runebane",
+                "notes": "Bjorr Runebane is one of the last great warriors of an old Bearkin people scattered across the northern mountain ranges beyond Starhaven's established borders. He is neither a general nor a court warrior and has never shown any interest in becoming either. Bjorr understands war at the distance between himself and whatever is unfortunate enough to be standing in front of him. Where disciplined soldiers see a shieldwall, Bjorr sees something that has not broken yet. Where others see a monster too large to engage directly, he adjusts his grip on Worldsplitter. Despite the reputation his size and temper have earned him, Bjorr is neither stupid nor permanently enraged. Away from battle he is patient, dry-humored, unexpectedly observant, and difficult to provoke. His fury is something deliberately opened rather than something constantly restrained. Raydan learned that distinction before most of Starhaven did. Bjorr joined him without oath, title, land, or payment after witnessing Raydan stand against an enemy he had no reasonable expectation of defeating. When later asked why he followed, Bjorr reportedly answered: 'He knew it could kill him. He walked forward anyway.' He has remained near Raydan's personal warband ever since. On campaign, commanders have learned that Bjorr should not be wasted holding a defensive line. When Raydan points him toward a gate, monster, champion, or formation that absolutely must stop existing, the Runebear goes to work.",
+                "armor": [
+                  {
+                    "slot": "Primary",
+                    "name": "Worldsplitter",
+                    "desc": "— A colossal two-handed greataxe forged around a rune-bound mountain-iron core. Far too heavy for a human warrior to use effectively. Its broad serrated edge is designed to bite through shields, plate, bone, and monster hide rather than fence against another weapon."
+                  },
+                  {
+                    "slot": "Body",
+                    "name": "Runebound Warplate",
+                    "desc": "— Layered black iron plate reinforced across the shoulders, chest, forearms, and legs. Ancient runes carved directly into the metal ignite when Bjorr draws upon his strength."
+                  },
+                  {
+                    "slot": "Mantle",
+                    "name": "Winterhide",
+                    "desc": "— A massive fur mantle worn across his shoulders. More badge of lineage than protection; among his people only warriors who have survived the Long Hunt may wear one."
+                  },
+                  {
+                    "slot": "Ability",
+                    "name": "Runeblood",
+                    "desc": "— Pain awakens the runes carved into Bjorr's armor. The more punishment he takes, the hotter they burn and the harder his body becomes to stop. Heavy impacts that would stagger another warrior instead build momentum behind his next strike. The effect has a limit; the runes reinforce flesh and bone, but they do not make him immortal."
+                  },
+                  {
+                    "slot": "Specialty",
+                    "name": "Breaker",
+                    "desc": "— Bjorr specializes in destroying things meant to hold a battle line together. Shields splinter, spear formations buckle, doors collapse, and heavily armored opponents can be physically thrown from position when Worldsplitter lands cleanly. Raydan uses him when a formation does not need to be outmaneuvered — it simply needs a hole made through it."
+                  },
+                  {
+                    "slot": "Ultimate",
+                    "name": "Wrath of the Runebear",
+                    "desc": "— Bjorr releases every active rune simultaneously. The markings across his armor blaze molten-gold and his physical strength surges for a brief, terrifying interval. He drives Worldsplitter into the ground or directly through the enemy line, releasing the stored force of every blow he has endured as a violent runic shockwave. Shields overturn, cavalry mounts panic, and creatures considerably larger than Bjorr can be knocked from their feet. When the runes extinguish, the accumulated injuries return at once."
+                  },
+                  {
+                    "slot": "Limit",
+                    "name": "The Body Still Bleeds",
+                    "desc": "— Runeblood delays damage; it does not erase it. The more punishment Bjorr converts into strength, the greater the physical cost once his runes cool. Using Wrath of the Runebear after sustaining severe wounds can leave him unable to fight again for days — or kill him outright if he pushes beyond what his body can survive."
+                  }
+                ]
+              },
+              {
+                "id": "elyndra-valeheart",
+                "data-br": "Magic",
+                "data-src": "own",
+                "name": "Elyndra Valeheart",
+                "branch": "Magic",
+                "className": "Solo Legend · High Elf Archmage (S+) · Royal Bodyguard",
+                "subtitle": "· The Verdant Hand · Raydan's Only Mage Bodyguard · 187 Years Old",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Starhold — Wherever Raydan Cale Is",
+                "army": "Starhaven Crown — Directly Attached to Raydan Cale",
+                "total": "1",
+                "image": "unitImages/elyndra-valeheart.png",
+                "imageAlt": "Elyndra Valeheart",
+                "notes": "Elyndra Valeheart is one of the exceedingly small number of living mages recognized at S+ rank by Goldgate's Adventurers Guild — the same classification scale behind the Aerune Depths' SS+ dungeon rating, applied here to a person instead of a dungeon. She was never intended to become Raydan's bodyguard. Their first campaigns placed her beside him because Starhaven desperately needed a mage capable of countering corrupted terrain and keeping soldiers alive against forces ordinary healing could not address. She remained because she noticed a recurring problem: Raydan had an extraordinary habit of personally entering places kings were supposed to send other people into. Eventually she stopped arguing with him about it and simply began following.\n\nShe answers directly and only to Raydan, sitting entirely outside Velkan Drake's Ninth Sky Corps — Starhaven's standard battlemage hierarchy. Raydan has repeatedly argued that an S+ archmage is strategically wasted standing beside one man; Elyndra's response has remained unchanged: keeping that particular man alive is currently one of Starhaven's most strategically important objectives. She is Caedran Morveil's counterpart rather than his replacement — where Caedran is the blade that stands between Raydan and whatever reaches him, Elyndra changes the battlefield so that danger has difficulty reaching him at all. Walls become roots. Open ground becomes forest. Wounds begin closing before the enemy can exploit them.\n\nHer Lifeweave is a druidic tradition distinct from Seraphine Mire's Ashen Guard — Elyndra accelerates a body's own natural recovery using living essence, where the Ashen Guard's combat healers specialize in purification and severing Void corruption specifically. The two disciplines don't overlap so much as sit beside each other; Elyndra has never been recorded treating a Void wound, and no Ashen Guard healer has ever grown a forest.\n\nElegant, composed, and exceptionally difficult to intimidate, with the patience of someone who measures her life in centuries — and little patience for unnecessary ceremony. She speaks softly, watches constantly, and rarely threatens anyone. When someone genuinely threatens Raydan, she becomes frighteningly efficient rather than emotional. Beneath the controlled exterior is a surprisingly playful sense of humor that surfaces almost exclusively around people she trusts.",
+                "armor": [
+                  {
+                    "slot": "Primary",
+                    "name": "Everbloom",
+                    "desc": "— An ancient living staff grown rather than forged, its heart formed around a verdant crystal that has never stopped growing. Amplifies Elyndra's connection to living things, letting her channel enormous amounts of nature magic without immediately exhausting herself."
+                  },
+                  {
+                    "slot": "Body",
+                    "name": "Vestments of the First Grove",
+                    "desc": "— Layered emerald, ivory and gold elven battle-robes reinforced with enchanted leaf-scale around the torso, shoulders and vital points. Built for unrestricted movement and spellcasting rather than absorbing direct blows."
+                  },
+                  {
+                    "slot": "Relic",
+                    "name": "Heartseed",
+                    "desc": "— An emerald crystal worn close to her heart, storing a small reserve of living essence gathered naturally from sunlight, rain and flourishing plant life. Elyndra keeps that reserve exclusively for protecting Raydan."
+                  },
+                  {
+                    "slot": "Ability",
+                    "name": "Verdant Dominion",
+                    "desc": "— Forces dormant plant life into explosive growth across the battlefield. Roots tear through soil and stone, vines seize weapons and limbs, trees bend into barriers, and thorned growth can divide entire formations. Dramatically stronger in forests or fertile terrain."
+                  },
+                  {
+                    "slot": "Ability",
+                    "name": "Lifeweave",
+                    "desc": "— Manipulates living essence to accelerate natural recovery: bleeding slows, damaged muscle begins repairing itself, exhausted allies recover enough strength to continue fighting. Cannot restore the dead or regrow destroyed organs and limbs; severe wounds still require time and conventional treatment. A druidic tradition distinct from the Ashen Guard's Void-purification healing."
+                  },
+                  {
+                    "slot": "Guardian",
+                    "name": "The Green Aegis",
+                    "desc": "— Elyndra's defining bodyguard technique. The instant she senses a lethal attack directed at Raydan, layers of interwoven roots, hardened bark and condensed verdant magic erupt around him. The reaction has become so instinctive she can invoke it before consciously identifying where the attack originated."
+                  },
+                  {
+                    "slot": "Combat",
+                    "name": "Thorn Judgment",
+                    "desc": "— A deliberately violent application of nature magic. Massive roots and hardened thorn-vines erupt beneath a chosen target, striking with enough force to throw armored soldiers aside or restrain creatures many times Elyndra's size. Against heavily armored opponents she attacks joints and exposed gaps rather than attempting to pierce plate directly."
+                  },
+                  {
+                    "slot": "Ultimate",
+                    "name": "The Worldtree Awakens",
+                    "desc": "— Drives Everbloom into the earth and temporarily establishes a vast magical root network beneath the battlefield. Trees and colossal roots erupt across the area while restorative life-energy spreads through allied ranks; wounded allies recover, hostile formations become trapped or separated, projectiles are intercepted by rising vegetation. At its center manifests the spectral silhouette of an immense ancient tree visible for miles. Can turn a collapsing defensive position into a living fortress within moments."
+                  },
+                  {
+                    "slot": "Limit",
+                    "name": "Nothing Grows From Nothing",
+                    "desc": "— Elyndra does not create unlimited life-energy; her strongest magic draws on existing biological vitality and the surrounding environment. Forests, wetlands and fertile valleys make her terrifyingly powerful; barren rock, deep underground structures, corrupted wastelands and Void-scarred ground sharply reduce what she can command. If no viable source remains, she must draw from her own vitality."
+                  }
+                ]
+              },
+              {
+                "id": "bramm-calder",
+                "data-br": "Ranged",
+                "data-src": "own",
+                "name": "Bramm Calder",
+                "branch": "Ranged",
+                "className": "Solo Legend · Dwarf Extreme Marksman · Royal Overwatch",
+                "subtitle": "· The Farshot · Ranged Bodyguard · Former Forgehaven Iron Tide Line Worker",
+                "srcPill": "🏰 Own",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "Starhold — Assigned to Raydan Cale's Personal Protection Detail",
+                "army": "Starhaven Crown — Independent Royal Overwatch",
+                "total": "1",
+                "image": "unitImages/bramm-calder.png",
+                "imageAlt": "Bramm Calder",
+                "notes": "Bramm Calder was never supposed to become a soldier. He worked at Forgehaven, on Cain Drakhar's Iron Tide assembly line, fitting recoil assemblies, checking turret tolerances and crawling through machinery too cramped for human engineers. His older brother served with the Longmark, and to Bramm that had always been enough soldiering for one family. Then his brother died in service. What happened afterward became the beginning of a story Bramm still dislikes telling. He remained at Forgehaven and returned to the production floor rather than enlist.\n\nHis talent surfaced there almost by accident. During weapons calibration he began correcting test shots made by trained operators, first at ordinary ranges and eventually at distances where the factory crews assumed he was getting lucky. He wasn't. Someone reported the results to Rhaegar Thorne. Rhaegar arrived expecting exaggerated workshop gossip and left after watching a factory worker repeatedly strike targets that qualified Longmark candidates struggled to hit. Recruitment into the Longmark would have been the obvious next step. Rhaegar deliberately chose otherwise. Bramm did not need to become his brother.\n\nLater, when Nyx Ravel began reviewing candidates for an additional layer of protection around Raydan Cale, Rhaegar gave her one name. Nyx spent several days observing Bramm without introducing herself. Her final assessment was characteristically short: 'He sees distance differently.' Bramm Calder consequently became something Starhaven had never formally possessed — a royal bodyguard who might never stand within fifty paces of the man he protects.\n\nBramm initially found the idea of guarding a king absurd. Raydan complicated matters by treating him exactly as he had when Bramm was still an Iron Tide line worker — asking about the machines, remembering his name, and never referring to him as a replacement for his brother. Bramm eventually stopped correcting people when they called him the King's marksman.\n\nWhen Raydan enters a battlefield, Bramm is usually somewhere nobody is looking: a tower, ridge, ruined wall, rooftop or distant hillside. Elyndra protects the space immediately around the King. Bramm protects the distance beyond it. Most enemies who discover he is there do so because someone beside them suddenly falls.",
+                "armor": [
+                  {
+                    "slot": "Primary",
+                    "name": "Farline",
+                    "desc": "— A heavily modified Cain-forged longrifle built around the same precision principles used by the Longmark Corps, but reconstructed by Bramm for a single purpose: extreme-range protection. Its elongated reinforced barrel, adjustable mechanical sight, folding firing brace and custom-loaded heavy rounds sacrifice rate of fire for extraordinary stability and penetration. Bramm refuses to call it a Longmark rifle. His brother carried one of those."
+                  },
+                  {
+                    "slot": "Body",
+                    "name": "Cain Workplate",
+                    "desc": "— Bramm still wears a modified version of the reinforced leather and segmented metal workwear once issued to him on the Iron Tide production floor. Rhaegar repeatedly offered him proper marksman armor. Bramm repeatedly refused."
+                  },
+                  {
+                    "slot": "Eyes",
+                    "name": "Far-Eye Optics",
+                    "desc": "— Adjustable dwarven magnification lenses mounted over one eye. Useful for identification and wind reading, but not responsible for Bramm's accuracy. Nyx tested that personally by removing them. He still hit the target."
+                  },
+                  {
+                    "slot": "Ability",
+                    "name": "Natural Line",
+                    "desc": "— Bramm possesses an almost inexplicable instinct for ballistic trajectories. Distance, wind, movement, elevation and target speed seem to resolve in his mind without deliberate calculation. Experienced marksmen spend years learning what Bramm appears to feel automatically. Rhaegar believes it is not magic. Nyx is considerably less certain."
+                  },
+                  {
+                    "slot": "Specialty",
+                    "name": "Cold Bore",
+                    "desc": "— Bramm's first shot after establishing a firing position is usually his most dangerous. Given several uninterrupted seconds to observe a target, he can place a round through tiny weaknesses in armor, exposed joints, weapon mechanisms or narrow openings at distances where ordinary soldiers struggle to identify the target."
+                  },
+                  {
+                    "slot": "Guardian",
+                    "name": "Kingwatch",
+                    "desc": "— When assigned to Raydan, Bramm does not watch the King. He watches everything around him. Windows, rooftops, ridgelines, crowds, tree lines, elevated terrain and anyone whose movement changes when Raydan enters their reach. Rhaegar taught him to recognize battlefield threats. Nyx taught him to recognize people pretending not to be threats. Together, those lessons turned a gifted marksman into a bodyguard."
+                  },
+                  {
+                    "slot": "Ultimate",
+                    "name": "Beyond the Horizon",
+                    "desc": "— Bramm anchors Farline into its firing brace, manually seals the chamber and loads a single oversized Cain penetrator. For several seconds he becomes completely stationary while calculating a firing solution beyond ordinary combat distance. When fired, the round can cross an active battlefield and retain enough force to punch through heavy plate, fortified firing positions or vulnerable sections of large creatures. Bramm gets one reliable shot before the rifle must cool."
+                  },
+                  {
+                    "slot": "Limit",
+                    "name": "One Rifle, One Dwarf",
+                    "desc": "— Bramm is devastating when distance exists between himself and the threat. At close range he is simply a tough young dwarf carrying an extremely inconveniently long rifle. He carries a short hammer and sidearm for emergencies, but if an enemy reaches him in melee, something has already gone badly wrong."
                   }
                 ]
               },
@@ -13263,6 +13542,178 @@
         ]
       },
       {
+        "id": "sec-vampire",
+        "data-sec": "vam",
+        "branch": "🧛 Vampire",
+        "subgroups": [
+          {
+            "label": "House Sanguinar · The Crimson Court — Karvossa",
+            "cards": [
+              {
+                "id": "sanguinar-ebon-shieldwall",
+                "data-br": "Vampire",
+                "data-src": "ally",
+                "name": "The Ebon Shieldwall",
+                "branch": "Vampire",
+                "className": "Vampire Heavy Infantry · Disciplined Main Line",
+                "subtitle": "· House Sanguinar · Karvossa · 800 Strong · Sword & Shield",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "House Sanguinar's Crimson Court — Karvossa",
+                "army": "House Sanguinar — Princess Ilyana Sanguinar",
+                "total": "800",
+                "image": "unitImages/sanguinar-ebon-shieldwall.png",
+                "imageAlt": "The Ebon Shieldwall",
+                "notes": "The main line of the Crimson Court and the only part of it built to simply stand and not move — long, curved black-iron shields locked rank to rank, sword or longsword behind them, night after night if the line demands it. Vampiric stamina means the Shieldwall doesn't tire or thin the way a mortal line does over a long engagement; the same durability that makes Karvossa's nobility dangerous individually makes this formation almost impossible to wear down by attrition alone. Discipline is absolute — centuries of court protocol translate directly onto a battlefield built around unbroken ranks and exact spacing.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Ebon Plate",
+                    "desc": "— Black lacquered banded mail over layered underplate, cut for a held line rather than a march. Bears House Sanguinar's crimson sigil across the chest."
+                  },
+                  {
+                    "slot": "Shield",
+                    "name": "Nightward Shield",
+                    "desc": "— Tall curved black-iron tower shield, locked edge to edge in formation. Built to overlap, not to be carried solo."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Court Longsword",
+                    "desc": "— Standard-issue longsword, silver-free — Karvossa's own smiths know better than to arm their own soldiers with something that would hurt them too."
+                  }
+                ]
+              },
+              {
+                "id": "sanguinar-nightlance-cohort",
+                "data-br": "Vampire",
+                "data-src": "ally",
+                "name": "The Nightlance Cohort",
+                "branch": "Vampire",
+                "className": "Vampire Polearm Infantry · Anti-Cavalry",
+                "subtitle": "· House Sanguinar · Karvossa · 450 Strong · Formation Spearwork",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Medium",
+                "armorClass": "armor-badge a-m",
+                "location": "House Sanguinar's Crimson Court — Karvossa",
+                "army": "House Sanguinar — Princess Ilyana Sanguinar",
+                "total": "450",
+                "image": "unitImages/sanguinar-nightlance-cohort.png",
+                "imageAlt": "The Nightlance Cohort",
+                "notes": "Sits behind and beside the Ebon Shieldwall as the Court's answer to anything mounted or armored enough to survive a first contact with the line. Long, black-shafted spears held in tight hedge formation, reach doctrine over raw strength — the Cohort is trained to never let an enemy inside the spear's arc long enough to matter. Night vision native to their bloodline means the Cohort holds formation in total darkness as precisely as it does in daylight, which is more than can be said for most polearm lines fielded by the living.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Cohort Half-Plate",
+                    "desc": "— Lighter than the Shieldwall's kit, favoring reach and reset speed over raw absorption."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Black Nightlance",
+                    "desc": "— A long, dark-shafted spear built for a held hedge formation rather than a single decisive thrust. Reach over power."
+                  }
+                ]
+              },
+              {
+                "id": "sanguinar-lancers",
+                "data-br": "Vampire",
+                "data-src": "ally",
+                "name": "The Sanguine Lancers",
+                "branch": "Vampire",
+                "className": "Vampire Heavy Cavalry · Elite Shock Force",
+                "subtitle": "· House Sanguinar · Karvossa · 300 Strong · Princess Ilyana's Personal Command",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Heavy",
+                "armorClass": "armor-badge a-h",
+                "location": "House Sanguinar's Crimson Court — Karvossa",
+                "army": "House Sanguinar — Princess Ilyana Sanguinar (Personal Command)",
+                "total": "300",
+                "image": "unitImages/sanguinar-lancers.png",
+                "imageAlt": "The Sanguine Lancers",
+                "notes": "The Crimson Court's shock arm, and the only unit in House Sanguinar's expeditionary force Ilyana commands in the field personally rather than delegating. Mounted on black night-bred coursers bred for silence and endurance rather than speed alone, the Lancers ride in total darkness at a pace that would break a mortal cavalry line's formation discipline. When the Princess rides, she rides at their head — Karvossa's court has stopped asking her to send a proxy instead.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Sanguine Barding",
+                    "desc": "— Dark plate and matching horse barding, cut for a night charge rather than parade."
+                  },
+                  {
+                    "slot": "Weapon",
+                    "name": "Court Lance",
+                    "desc": "— Standard heavy cavalry lance, silver-free — the Court arms itself, it doesn't punish itself."
+                  },
+                  {
+                    "slot": "Mount",
+                    "name": "Night Courser",
+                    "desc": "— Bred over generations for silence and stamina in full darkness rather than raw speed; can hold a charge line at a gallop with no moon and no torches."
+                  }
+                ]
+              },
+              {
+                "id": "sanguinar-duskbow-corps",
+                "data-br": "Vampire",
+                "data-src": "ally",
+                "name": "Duskbow Corps",
+                "branch": "Vampire",
+                "className": "Vampire Archers & Crossbowmen · Night Marksmen",
+                "subtitle": "· House Sanguinar · Karvossa · 300 Strong · Ranged Support",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "House Sanguinar's Crimson Court — Karvossa",
+                "army": "House Sanguinar — Princess Ilyana Sanguinar",
+                "total": "300",
+                "image": "unitImages/sanguinar-duskbow-corps.png",
+                "imageAlt": "Duskbow Corps",
+                "notes": "Fields bows and crossbows with the same confidence in pitch darkness that a mortal archer corps needs daylight for — Karvossa's bloodline sees heat and motion where a living marksman sees nothing at all. Doctrine leans on this directly: the Duskbow Corps opens most engagements from full dark, picking off officers and formation anchors before the enemy line even knows fire is coming from that direction.",
+                "armor": [
+                  {
+                    "slot": "Body",
+                    "name": "Duskleather",
+                    "desc": "— Dark, unreflective leather built for concealment in low light rather than protection."
+                  },
+                  {
+                    "slot": "Primary",
+                    "name": "Duskbow / Night Crossbow",
+                    "desc": "— Standard recurve bow or crossbow depending on individual preference; nothing exotic about the weapon itself. The advantage is the eyes behind it, not the string."
+                  }
+                ]
+              },
+              {
+                "id": "sanguinar-moonfang-pack",
+                "data-br": "Vampire",
+                "data-src": "ally",
+                "name": "Moonfang Pack",
+                "branch": "Vampire",
+                "className": "Werewolf Shock Troops · Flankers & Trackers",
+                "subtitle": "· House Sanguinar · Karvossa · 150 Strong · The Princess's Honor Guard",
+                "srcPill": "🤝 Allied",
+                "armorBadge": "Light",
+                "armorClass": "armor-badge a-l",
+                "location": "House Sanguinar's Crimson Court — Karvossa",
+                "army": "House Sanguinar — Princess Ilyana Sanguinar",
+                "total": "150",
+                "image": "unitImages/sanguinar-moonfang-pack.png",
+                "imageAlt": "Moonfang Pack",
+                "notes": "Living proof of Karvossa's oldest treaty: everywhere else in the world, vampire and werewolf nobility are supposed to be natural enemies. In Karvossa they've shared a crown for longer than anyone alive remembers why the arrangement started, and the Moonfang Pack is what that alliance looks like on a battlefield — no armor to speak of, no formation drilling, just speed, scent, and a bite that doesn't care how thick your line is. They don't hold ground; they go around it, find the gap, the straggler, or the officer who thought the rear was safe. Formally Ilyana's honor guard, though in practice they consider themselves her escort whether she's asked for one or not.",
+                "armor": [
+                  {
+                    "slot": "None",
+                    "name": "Unarmored",
+                    "desc": "— Hide and claw are the armor. Nothing carried would survive the change intact, so nothing is carried."
+                  },
+                  {
+                    "slot": "Ability",
+                    "name": "Scent-Lock",
+                    "desc": "— Once a target is marked by scent, the Pack does not lose them short of running water or a very determined counter-tracker. Used to run down routed formations and isolated commanders."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "sec-command",
         "data-sec": "cmd",
         "branch": "👑 Command",
@@ -15055,17 +15506,17 @@
     ];
     ;
     const BRANCH_TAG_CLASSES = {
-      "Infantry": "bt-inf", "Ranged": "bt-ran", "Cavalry": "bt-cav", "Polearm": "bt-pol", "Beast Cavalry": "bt-bst", "Flying": "bt-fly", "Magic": "bt-mag", "Religious": "bt-rel", "Stealth": "bt-ste", "Engineering": "bt-eng", "Artillery": "bt-art", "Naval": "bt-nav", "Undead": "bt-und", "Command": "bt-cmd", "Support": "bt-spt", "Intelligence": "bt-int", "Animals": "bt-anm"
+      "Infantry": "bt-inf", "Ranged": "bt-ran", "Cavalry": "bt-cav", "Polearm": "bt-pol", "Beast Cavalry": "bt-bst", "Flying": "bt-fly", "Magic": "bt-mag", "Religious": "bt-rel", "Stealth": "bt-ste", "Engineering": "bt-eng", "Artillery": "bt-art", "Naval": "bt-nav", "Undead": "bt-und", "Vampire": "bt-vam", "Command": "bt-cmd", "Support": "bt-spt", "Intelligence": "bt-int", "Animals": "bt-anm"
     };
     const BRANCH_HEADER_CLASSES = {
-      "inf": "bh-inf", "ran": "bh-ran", "cav": "bh-cav", "pol": "bh-pol", "bst": "bh-bst", "fly": "bh-fly", "mag": "bh-mag", "rel": "bh-rel", "ste": "bh-ste", "eng": "bh-eng", "art": "bh-art", "nav": "bh-nav", "und": "bh-und", "cmd": "bh-cmd", "spt": "bh-spt", "int": "bh-int", "anm": "bh-anm"
+      "inf": "bh-inf", "ran": "bh-ran", "cav": "bh-cav", "pol": "bh-pol", "bst": "bh-bst", "fly": "bh-fly", "mag": "bh-mag", "rel": "bh-rel", "ste": "bh-ste", "eng": "bh-eng", "art": "bh-art", "nav": "bh-nav", "und": "bh-und", "vam": "bh-vam", "cmd": "bh-cmd", "spt": "bh-spt", "int": "bh-int", "anm": "bh-anm"
     };
     const SRC_PILL_CLASSES = { own: "sp-own", ally: "sp-ally", new: "sp-new", gar: "sp-gar", merc: "sp-merc", rival: "sp-rival" };
     const BRANCH_COLORS = {
       "Infantry": "#C86060", "Ranged": "#60C060", "Cavalry": "#6090D0", "Polearm": "#C0A050",
       "Beast Cavalry": "#D08040", "Flying": "#8080D8", "Magic": "#A060D8", "Religious": "#D0C050",
       "Stealth": "#50C0C0", "Engineering": "#A0A050", "Artillery": "#C07040", "Naval": "#40A0C0",
-      "Undead": "#8050C0", "Command": "#C0C050", "Support": "#50A0A0", "Intelligence": "#9060C0", "Animals": "#70B840"
+      "Undead": "#8050C0", "Vampire": "#C02060", "Command": "#C0C050", "Support": "#50A0A0", "Intelligence": "#9060C0", "Animals": "#70B840"
     };
 
     function escapeHtml(text) {
