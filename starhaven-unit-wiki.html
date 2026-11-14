@@ -372,6 +372,59 @@
       opacity: .3;
     }
 
+    /* FORCE GROUP — Starhaven Army / Allies / Mercenaries / Rivals */
+    .force-section {
+      margin: 44px 0 0;
+      scroll-margin-top: 110px;
+    }
+
+    .force-section:first-child {
+      margin-top: 20px;
+    }
+
+    .force-header {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      padding: 14px 18px;
+      border: 1px solid currentColor;
+      border-left-width: 4px;
+      border-radius: 6px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, .04), transparent);
+    }
+
+    .force-name {
+      font-family: "Cinzel", serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+
+    .force-note {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .force-count {
+      margin-left: auto;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      opacity: .8;
+    }
+
+    .force-section .branch-section {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .force-name { font-size: 18px; }
+      .force-section .branch-section { margin-left: 0; }
+    }
+
     /* SUB-CLASS GROUP */
     .sub-group {
       margin-bottom: 20px;
@@ -6824,7 +6877,7 @@
               {
                 "id": "red-bone-cavalry",
                 "data-br": "Cavalry",
-                "data-src": "own",
+                "data-src": "merc",
                 "name": "Red Bone Cavalry",
                 "branch": "Cavalry",
                 "className": "Mercenary Cavalry · HQ Reserve",
@@ -6864,7 +6917,7 @@
               {
                 "id": "iron-reavers",
                 "data-br": "Infantry",
-                "data-src": "own",
+                "data-src": "merc",
                 "name": "Iron Reavers",
                 "branch": "Infantry",
                 "className": "Mercenary Infantry · HQ Reserve",
@@ -7088,8 +7141,8 @@
                 "name": "Silver Swan Mounted Crossbowmen - North",
                 "branch": "Cavalry",
                 "className": "Mounted Crossbowmen",
-                "subtitle": "Â· Coldblood Cross Â· Ranged Flank Suppression",
-                "srcPill": "ð New",
+                "subtitle": "· Coldblood Cross · Ranged Flank Suppression",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "North Regional Depot",
@@ -7101,28 +7154,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Half-Plate â North (Crossbow Cut)",
-                    "desc": "â Ice-white plate, insulated underlayer. Draw arm articulated at shoulder â no restriction on crossbow reload arc in cold weather."
+                    "name": "Silver Swan Half-Plate — North (Crossbow Cut)",
+                    "desc": "— Ice-white plate, insulated underlayer. Draw arm articulated at shoulder — no restriction on crossbow reload arc in cold weather."
                   },
                   {
                     "slot": "Helm",
                     "name": "Open-Face Frost Helm",
-                    "desc": "â Open visor for sighting in snow terrain. Frost-resistant finish. Silver swan crest shortened for crossbow clearance."
+                    "desc": "— Open visor for sighting in snow terrain. Frost-resistant finish. Silver swan crest shortened for crossbow clearance."
                   },
                   {
                     "slot": "Horse",
-                    "name": "North Ice Warhorse â Crossbow Trained",
-                    "desc": "â Same Coldblood Draft Cross bloodline as the Lance detachment. Trained to hold lateral position during reload â does not drift on loose snow."
+                    "name": "North Ice Warhorse — Crossbow Trained",
+                    "desc": "— Same Coldblood Draft Cross bloodline as the Lance detachment. Trained to hold lateral position during reload — does not drift on loose snow."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Starhaven Cavalry Crossbow â Cold-Rated",
-                    "desc": "â 120lb draw with ratchet crank for one-handed mounting. Cold-resistant string compound â does not contract in Frosthold temperatures. Iron-tipped bolts, 80yd effective mounted range."
+                    "name": "Starhaven Cavalry Crossbow — Cold-Rated",
+                    "desc": "— 120lb draw with ratchet crank for one-handed mounting. Cold-resistant string compound — does not contract in Frosthold temperatures. Iron-tipped bolts, 80yd effective mounted range."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Frost Sabre",
-                    "desc": "â Identical to Lance detachment secondary. Close-engagement fallback when bolt supply is spent."
+                    "desc": "— Identical to Lance detachment secondary. Close-engagement fallback when bolt supply is spent."
                   }
                 ]
               },
@@ -7134,11 +7187,11 @@
                 "branch": "Cavalry",
                 "className": "Mounted Crossbowmen",
                 "subtitle": "· Purple-Marked · Ranged Flank Suppression",
-                "srcPill": "ð New",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "South Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-crossbow-south.png ",
                 "imageAlt": "",
@@ -7146,28 +7199,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Half-Plate â South (Crossbow Cut)",
-                    "desc": "â Purple-accented plate. Draw arm shoulder articulated for full crossbow extension. Same weight as Lance variant â no reduction for reload mobility at southern terrain pace."
+                    "name": "Silver Swan Half-Plate — South (Crossbow Cut)",
+                    "desc": "— Purple-accented plate. Draw arm shoulder articulated for full crossbow extension. Same weight as Lance variant — no reduction for reload mobility at southern terrain pace."
                   },
                   {
                     "slot": "Helm",
                     "name": "Open-Face Violet Helm",
-                    "desc": "â Open visor. Purple-dyed cheek guards. Silver swan crest retained, shortened rearward to avoid string interference."
+                    "desc": "— Open visor. Purple-dyed cheek guards. Silver swan crest retained, shortened rearward to avoid string interference."
                   },
                   {
                     "slot": "Horse",
-                    "name": "South Royal Warhorse â Crossbow Trained",
-                    "desc": "â Deep bay or black coat, purple-dyed manes. Conditioned to remain square-footed during crossbow discharge â no side-step on trigger pull."
+                    "name": "South Royal Warhorse — Crossbow Trained",
+                    "desc": "— Deep bay or black coat, purple-dyed manes. Conditioned to remain square-footed during crossbow discharge — no side-step on trigger pull."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Starhaven Cavalry Crossbow â Royal Finish",
-                    "desc": "â 120lb ratchet crossbow with purple-and-silver grip wrap. Ornate but fully functional. 80yd effective mounted range. Bolt case holds 20."
+                    "name": "Starhaven Cavalry Crossbow — Royal Finish",
+                    "desc": "— 120lb ratchet crossbow with purple-and-silver grip wrap. Ornate but fully functional. 80yd effective mounted range. Bolt case holds 20."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Royal Sabre",
-                    "desc": "â Identical to Lance detachment secondary. Purple and silver wire grip."
+                    "desc": "— Identical to Lance detachment secondary. Purple and silver wire grip."
                   }
                 ]
               },
@@ -7175,15 +7228,15 @@
                 "id": "silver-swan-crossbow-east",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "Silver Swan Mounted Crossbowmen â East",
+                "name": "Silver Swan Mounted Crossbowmen — East",
                 "branch": "Cavalry",
                 "className": "Mounted Crossbowmen",
-                "subtitle": "Â· Sand-Bred Â· Ranged Flank Suppression",
-                "srcPill": "ð New",
+                "subtitle": "· Sand-Bred · Ranged Flank Suppression",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "East Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-crossbow-east.png",
                 "imageAlt": "",
@@ -7191,28 +7244,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Half-Plate â East (Crossbow Cut)",
-                    "desc": "â Sand-gold plate, ventilated joints. Draw arm shoulder guard removed â heat and dust make full articulation critical for reload speed."
+                    "name": "Silver Swan Half-Plate — East (Crossbow Cut)",
+                    "desc": "— Sand-gold plate, ventilated joints. Draw arm shoulder guard removed — heat and dust make full articulation critical for reload speed."
                   },
                   {
                     "slot": "Helm",
                     "name": "Open-Face Desert Helm",
-                    "desc": "â Wide open visor for heat management during sustained fire. Sand-colored neck guard. No crest â wind drag in open plains reduces sighting stability."
+                    "desc": "— Wide open visor for heat management during sustained fire. Sand-colored neck guard. No crest — wind drag in open plains reduces sighting stability."
                   },
                   {
                     "slot": "Horse",
-                    "name": "East Desert Warhorse â Crossbow Trained",
-                    "desc": "â Light tan or cream coat. Karath bloodline influence on endurance. Trained to stop completely on knee-press for stationary fire â desert engagements favour range over mobility."
+                    "name": "East Desert Warhorse — Crossbow Trained",
+                    "desc": "— Light tan or cream coat. Karath bloodline influence on endurance. Trained to stop completely on knee-press for stationary fire — desert engagements favour range over mobility."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Starhaven Cavalry Crossbow â Sand-Sealed",
-                    "desc": "â 120lb ratchet crossbow with sand-sealed mechanism â no grit intrusion into string track. Aerodynamic bolt profile for long plains range. 90yd effective mounted range â 10yd advantage on flat terrain."
+                    "name": "Starhaven Cavalry Crossbow — Sand-Sealed",
+                    "desc": "— 120lb ratchet crossbow with sand-sealed mechanism — no grit intrusion into string track. Aerodynamic bolt profile for long plains range. 90yd effective mounted range — 10yd advantage on flat terrain."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Desert Scimitar",
-                    "desc": "â Identical to Lance detachment secondary. Lightweight for sustained heat engagement."
+                    "desc": "— Identical to Lance detachment secondary. Lightweight for sustained heat engagement."
                   }
                 ]
               },
@@ -7220,15 +7273,15 @@
                 "id": "silver-swan-crossbow-west",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "Silver Swan Mounted Crossbowmen â West",
+                "name": "Silver Swan Mounted Crossbowmen — West",
                 "branch": "Cavalry",
                 "className": "Mounted Crossbowmen",
-                "subtitle": "Â· Mountain-Bred Â· Ranged Flank Suppression",
-                "srcPill": "ð New",
+                "subtitle": "· Mountain-Bred · Ranged Flank Suppression",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "West Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-crossbow-west.png",
                 "imageAlt": "",
@@ -7236,28 +7289,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Half-Plate â West (Crossbow Cut)",
-                    "desc": "â Gray-green plate, mountain-finish. Draw arm articulated for crossbow use on uneven slope footing â reload arc adjusted for downhill and uphill firing positions."
+                    "name": "Silver Swan Half-Plate — West (Crossbow Cut)",
+                    "desc": "— Gray-green plate, mountain-finish. Draw arm articulated for crossbow use on uneven slope footing — reload arc adjusted for downhill and uphill firing positions."
                   },
                   {
                     "slot": "Helm",
                     "name": "Open-Face Stone Helm",
-                    "desc": "â Stone-gray finish. Open visor for sighting across mountain passes. No crest â rock overhangs require low-clearance profile."
+                    "desc": "— Stone-gray finish. Open visor for sighting across mountain passes. No crest — rock overhangs require low-clearance profile."
                   },
                   {
                     "slot": "Horse",
-                    "name": "West Mountain Warhorse â Crossbow Trained",
-                    "desc": "â Steel-gray or dappled coat. Strong hindquarters for slope-bracing during stationary fire. Trained to hold a hillside position without drift during crossbow discharge."
+                    "name": "West Mountain Warhorse — Crossbow Trained",
+                    "desc": "— Steel-gray or dappled coat. Strong hindquarters for slope-bracing during stationary fire. Trained to hold a hillside position without drift during crossbow discharge."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Starhaven Cavalry Crossbow â Mountain Rated",
-                    "desc": "â 120lb ratchet crossbow, reinforced stock for impact resistance if dropped on rock. 75yd effective mounted range â reduced on slopes, maximised on ridge-top positions."
+                    "name": "Starhaven Cavalry Crossbow — Mountain Rated",
+                    "desc": "— 120lb ratchet crossbow, reinforced stock for impact resistance if dropped on rock. 75yd effective mounted range — reduced on slopes, maximised on ridge-top positions."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Mountain Axe",
-                    "desc": "â Identical to Lance detachment secondary. Single-blade, balanced for one-handed use on peaks."
+                    "desc": "— Identical to Lance detachment secondary. Single-blade, balanced for one-handed use on peaks."
                   }
                 ]
               },
@@ -7265,15 +7318,15 @@
                 "id": "silver-swan-pursuit-north",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "Silver Swan Pursuit Riders â North",
+                "name": "Silver Swan Pursuit Riders — North",
                 "branch": "Cavalry",
                 "className": "Light Cavalry",
-                "subtitle": "Â· Coldblood Cross Â· Pursuit & Encirclement",
-                "srcPill": "ð New",
-                "armorBadge": "LtâMed",
+                "subtitle": "· Coldblood Cross · Pursuit & Encirclement",
+                "srcPill": "🆕 New",
+                "armorBadge": "Lt–Med",
                 "armorClass": "armor-badge a-lm",
                 "location": "North Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-pursuit-north.png",
                 "imageAlt": "",
@@ -7281,28 +7334,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Pursuit Rider Light Plate â North",
-                    "desc": "â Stripped-down ice-white plate. Chest and upper arm only. No leg plate â speed over protection. Insulated underlayer retained for cold endurance at sustained gallop."
+                    "name": "Pursuit Rider Light Plate — North",
+                    "desc": "— Stripped-down ice-white plate. Chest and upper arm only. No leg plate — speed over protection. Insulated underlayer retained for cold endurance at sustained gallop."
                   },
                   {
                     "slot": "Helm",
                     "name": "Frost Speed Helm",
-                    "desc": "â Open-face, minimal â iron browplate and cheek guards only. Pursuit riders need unrestricted sight-line during long chase across snow terrain."
+                    "desc": "— Open-face, minimal — iron browplate and cheek guards only. Pursuit riders need unrestricted sight-line during long chase across snow terrain."
                   },
                   {
                     "slot": "Horse",
-                    "name": "North Ice Warhorse â Unbarded",
-                    "desc": "â Same Coldblood bloodline, no barding. Speed is the defense at pursuit range. Bred for sustained cold-weather gallop beyond the range of lance riders."
+                    "name": "North Ice Warhorse — Unbarded",
+                    "desc": "— Same Coldblood bloodline, no barding. Speed is the defense at pursuit range. Bred for sustained cold-weather gallop beyond the range of lance riders."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Pursuit Lance â Short",
-                    "desc": "â 6ft lance, shortened from standard for single-arm control at full gallop. Used to turn fleeing enemies, not to break formations."
+                    "name": "Pursuit Lance — Short",
+                    "desc": "— 6ft lance, shortened from standard for single-arm control at full gallop. Used to turn fleeing enemies, not to break formations."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Frost Sabre",
-                    "desc": "â Primary close-engagement weapon once pursuit closes to melee distance."
+                    "desc": "— Primary close-engagement weapon once pursuit closes to melee distance."
                   }
                 ]
               },
@@ -7310,15 +7363,15 @@
                 "id": "silver-swan-pursuit-south",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "Silver Swan Pursuit Riders â South",
+                "name": "Silver Swan Pursuit Riders — South",
                 "branch": "Cavalry",
                 "className": "Light Cavalry",
-                "subtitle": "Â· Purple-Marked Â· Pursuit & Encirclement",
-                "srcPill": "ð New",
-                "armorBadge": "LtâMed",
+                "subtitle": "· Purple-Marked · Pursuit & Encirclement",
+                "srcPill": "🆕 New",
+                "armorBadge": "Lt–Med",
                 "armorClass": "armor-badge a-lm",
                 "location": "South Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-pursuit-south.png",
                 "imageAlt": "",
@@ -7326,28 +7379,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Pursuit Rider Light Plate â South",
-                    "desc": "â Purple-accented chest plate only. No pauldrons, no leg plate. The pursuit rider who cannot be outrun has no need of the armor the lance rider carries."
+                    "name": "Pursuit Rider Light Plate — South",
+                    "desc": "— Purple-accented chest plate only. No pauldrons, no leg plate. The pursuit rider who cannot be outrun has no need of the armor the lance rider carries."
                   },
                   {
                     "slot": "Helm",
                     "name": "Violet Speed Helm",
-                    "desc": "â Open-face, iron browplate. Purple cheek guards â unit identifier at distance during a chase."
+                    "desc": "— Open-face, iron browplate. Purple cheek guards — unit identifier at distance during a chase."
                   },
                   {
                     "slot": "Horse",
-                    "name": "South Royal Warhorse â Unbarded",
-                    "desc": "â Deep bay or black coat, no barding. Same bloodline as the lance detachment run at lower weight â meaningfully faster over distance."
+                    "name": "South Royal Warhorse — Unbarded",
+                    "desc": "— Deep bay or black coat, no barding. Same bloodline as the lance detachment run at lower weight — meaningfully faster over distance."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Pursuit Lance â Short",
-                    "desc": "â 6ft, single-arm control. Encirclement tool â used to redirect, not to kill at first contact."
+                    "name": "Pursuit Lance — Short",
+                    "desc": "— 6ft, single-arm control. Encirclement tool — used to redirect, not to kill at first contact."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Royal Sabre",
-                    "desc": "â Close-engagement fallback. Same weapon as lance detachment."
+                    "desc": "— Close-engagement fallback. Same weapon as lance detachment."
                   }
                 ]
               },
@@ -7355,15 +7408,15 @@
                 "id": "silver-swan-pursuit-east",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "Silver Swan Pursuit Riders â East",
+                "name": "Silver Swan Pursuit Riders — East",
                 "branch": "Cavalry",
                 "className": "Light Cavalry",
-                "subtitle": "Â· Sand-Bred Â· Pursuit & Encirclement",
-                "srcPill": "ð New",
-                "armorBadge": "LtâMed",
+                "subtitle": "· Sand-Bred · Pursuit & Encirclement",
+                "srcPill": "🆕 New",
+                "armorBadge": "Lt–Med",
                 "armorClass": "armor-badge a-lm",
                 "location": "East Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-pursuit-east.png",
                 "imageAlt": "",
@@ -7371,28 +7424,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Pursuit Rider Light Plate â East",
-                    "desc": "â Sand-gold chest plate, ventilated. Minimum coverage â in open plains pursuit the rider who stops sweating loses the chase. No leg plate, no pauldrons."
+                    "name": "Pursuit Rider Light Plate — East",
+                    "desc": "— Sand-gold chest plate, ventilated. Minimum coverage — in open plains pursuit the rider who stops sweating loses the chase. No leg plate, no pauldrons."
                   },
                   {
                     "slot": "Helm",
                     "name": "Desert Speed Helm",
-                    "desc": "â Fully open-face. Wide sun-shield brim replaces standard cheek guards â prevents heat blindness during long eastern plain pursuit."
+                    "desc": "— Fully open-face. Wide sun-shield brim replaces standard cheek guards — prevents heat blindness during long eastern plain pursuit."
                   },
                   {
                     "slot": "Horse",
-                    "name": "East Desert Warhorse â Unbarded",
-                    "desc": "â Light tan or cream, no barding. Karath bloodline endurance at pace â the eastern pursuit riders can maintain chase for distances that exhaust standard warhorses."
+                    "name": "East Desert Warhorse — Unbarded",
+                    "desc": "— Light tan or cream, no barding. Karath bloodline endurance at pace — the eastern pursuit riders can maintain chase for distances that exhaust standard warhorses."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Pursuit Lance â Short",
-                    "desc": "â 6ft, aerodynamic profile for reduced drag at plains speed. Encirclement tool."
+                    "name": "Pursuit Lance — Short",
+                    "desc": "— 6ft, aerodynamic profile for reduced drag at plains speed. Encirclement tool."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Desert Scimitar",
-                    "desc": "â Lightweight curved blade. Same weapon as lance detachment."
+                    "desc": "— Lightweight curved blade. Same weapon as lance detachment."
                   }
                 ]
               },
@@ -7400,15 +7453,15 @@
                 "id": "silver-swan-pursuit-west",
                 "data-br": "Cavalry",
                 "data-src": "new",
-                "name": "Silver Swan Pursuit Riders â West",
+                "name": "Silver Swan Pursuit Riders — West",
                 "branch": "Cavalry",
                 "className": "Light Cavalry",
-                "subtitle": "Â· Mountain-Bred Â· Pursuit & Encirclement",
-                "srcPill": "ð New",
-                "armorBadge": "LtâMed",
+                "subtitle": "· Mountain-Bred · Pursuit & Encirclement",
+                "srcPill": "🆕 New",
+                "armorBadge": "Lt–Med",
                 "armorClass": "armor-badge a-lm",
                 "location": "West Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-pursuit-west.png",
                 "imageAlt": "",
@@ -7416,28 +7469,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Pursuit Rider Light Plate â West",
-                    "desc": "â Gray-green chest plate only. Mountain pursuit requires surefootedness over armor mass â a rider who hesitates on a slope does not complete the encirclement."
+                    "name": "Pursuit Rider Light Plate — West",
+                    "desc": "— Gray-green chest plate only. Mountain pursuit requires surefootedness over armor mass — a rider who hesitates on a slope does not complete the encirclement."
                   },
                   {
                     "slot": "Helm",
                     "name": "Stone Speed Helm",
-                    "desc": "â Open-face, low-profile. No crest â mountain overhang clearance matters at speed on ridge-line pursuit routes."
+                    "desc": "— Open-face, low-profile. No crest — mountain overhang clearance matters at speed on ridge-line pursuit routes."
                   },
                   {
                     "slot": "Horse",
-                    "name": "West Mountain Warhorse â Unbarded",
-                    "desc": "â Steel-gray or dappled, no barding. Strong hindquarters carry the rider up pursuit slopes without breaking pace."
+                    "name": "West Mountain Warhorse — Unbarded",
+                    "desc": "— Steel-gray or dappled, no barding. Strong hindquarters carry the rider up pursuit slopes without breaking pace."
                   },
                   {
                     "slot": "Primary",
-                    "name": "Pursuit Lance â Short",
-                    "desc": "â 6ft, reinforced grip for single-arm slope control. Encirclement tool â redirects retreating enemies into the lance formation below."
+                    "name": "Pursuit Lance — Short",
+                    "desc": "— 6ft, reinforced grip for single-arm slope control. Encirclement tool — redirects retreating enemies into the lance formation below."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Mountain Axe",
-                    "desc": "â Same weapon as lance detachment. One-handed, balanced for slope use."
+                    "desc": "— Same weapon as lance detachment. One-handed, balanced for slope use."
                   }
                 ]
               },
@@ -7445,15 +7498,15 @@
                 "id": "silver-swan-command-north",
                 "data-br": "Command",
                 "data-src": "new",
-                "name": "Silver Swan Command & Signal â North",
+                "name": "Silver Swan Command & Signal — North",
                 "branch": "Command",
                 "className": "Command Riders",
-                "subtitle": "Â· Coldblood Cross Â· Order Relay Â· Detachment Coordination",
-                "srcPill": "ð New",
+                "subtitle": "· Coldblood Cross · Order Relay · Detachment Coordination",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "North Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-command-north.png",
                 "imageAlt": "",
@@ -7461,28 +7514,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Command Plate â North",
-                    "desc": "â Ice-white plate, insulated underlayer, silver trim at collar and pauldrons to identify rank at distance. Heavier than Pursuit riders â command riders hold position more than they chase."
+                    "name": "Silver Swan Command Plate — North",
+                    "desc": "— Ice-white plate, insulated underlayer, silver trim at collar and pauldrons to identify rank at distance. Heavier than Pursuit riders — command riders hold position more than they chase."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Command Crest Helm â Frost",
-                    "desc": "â Open-face with full silver swan crest â taller than the standard lance variant for maximum visual identification across formation. Frost-resistant finish."
+                    "name": "Command Crest Helm — Frost",
+                    "desc": "— Open-face with full silver swan crest — taller than the standard lance variant for maximum visual identification across formation. Frost-resistant finish."
                   },
                   {
                     "slot": "Horse",
-                    "name": "North Ice Warhorse â Command Trained",
-                    "desc": "â Coldblood bloodline, barded at chest and neck for command-rider protection. Trained to stand motionless at full gallop halt â signal riders cannot be moving when the flags go up."
+                    "name": "North Ice Warhorse — Command Trained",
+                    "desc": "— Coldblood bloodline, barded at chest and neck for command-rider protection. Trained to stand motionless at full gallop halt — signal riders cannot be moving when the flags go up."
                   },
                   {
                     "slot": "Signal",
-                    "name": "Silver Swan Signal Kit â Cold",
-                    "desc": "â Paired silver-and-white signal flags, cold-weather weighted so wind does not collapse the pattern. Horn with frost-rated mouthpiece for sub-zero temperature use. Mirror heliograph for clear-sky long-range relay."
+                    "name": "Silver Swan Signal Kit — Cold",
+                    "desc": "— Paired silver-and-white signal flags, cold-weather weighted so wind does not collapse the pattern. Horn with frost-rated mouthpiece for sub-zero temperature use. Mirror heliograph for clear-sky long-range relay."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Frost Sabre",
-                    "desc": "â Command riders are not front-line. The sabre is there because the command rider who loses their horse and their horn is still a cavalry soldier."
+                    "desc": "— Command riders are not front-line. The sabre is there because the command rider who loses their horse and their horn is still a cavalry soldier."
                   }
                 ]
               },
@@ -7490,15 +7543,15 @@
                 "id": "silver-swan-command-south",
                 "data-br": "Command",
                 "data-src": "new",
-                "name": "Silver Swan Command & Signal â South",
+                "name": "Silver Swan Command & Signal — South",
                 "branch": "Command",
                 "className": "Command Riders",
-                "subtitle": "Â· Purple-Marked Â· Order Relay Â· Detachment Coordination",
-                "srcPill": "ð New",
+                "subtitle": "· Purple-Marked · Order Relay · Detachment Coordination",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "South Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-command-south.png",
                 "imageAlt": "",
@@ -7506,28 +7559,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Command Plate â South",
-                    "desc": "â Purple-accented command plate, silver at collar and pauldron trim. Most formally decorated variant in the corps â the southern detachment operates near courts where visual authority matters as much as military function."
+                    "name": "Silver Swan Command Plate — South",
+                    "desc": "— Purple-accented command plate, silver at collar and pauldron trim. Most formally decorated variant in the corps — the southern detachment operates near courts where visual authority matters as much as military function."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Command Crest Helm â Violet",
-                    "desc": "â Open-face, full silver swan crest with purple inlay. The tallest crest in any Silver Swan variant. Identifiable at 300 yards in any southern terrain."
+                    "name": "Command Crest Helm — Violet",
+                    "desc": "— Open-face, full silver swan crest with purple inlay. The tallest crest in any Silver Swan variant. Identifiable at 300 yards in any southern terrain."
                   },
                   {
                     "slot": "Horse",
-                    "name": "South Royal Warhorse â Command Trained",
-                    "desc": "â Deep bay or black, purple-dyed mane, barded at chest and neck. Full parade-capable presentation â the southern command rider is often the first Swan unit a foreign court dignitary sees."
+                    "name": "South Royal Warhorse — Command Trained",
+                    "desc": "— Deep bay or black, purple-dyed mane, barded at chest and neck. Full parade-capable presentation — the southern command rider is often the first Swan unit a foreign court dignitary sees."
                   },
                   {
                     "slot": "Signal",
-                    "name": "Silver Swan Signal Kit â Royal",
-                    "desc": "â Purple-and-silver signal flags with weighted hems. Brass horn with royal insignia engraved on bell. Crystal relay mirror for long-range formal coordination."
+                    "name": "Silver Swan Signal Kit — Royal",
+                    "desc": "— Purple-and-silver signal flags with weighted hems. Brass horn with royal insignia engraved on bell. Crystal relay mirror for long-range formal coordination."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Royal Sabre",
-                    "desc": "â Same weapon as lance and pursuit detachments. Purple and silver wire grip."
+                    "desc": "— Same weapon as lance and pursuit detachments. Purple and silver wire grip."
                   }
                 ]
               },
@@ -7535,15 +7588,15 @@
                 "id": "silver-swan-command-east",
                 "data-br": "Command",
                 "data-src": "new",
-                "name": "Silver Swan Command & Signal â East",
+                "name": "Silver Swan Command & Signal — East",
                 "branch": "Command",
                 "className": "Command Riders",
-                "subtitle": "Â· Sand-Bred Â· Order Relay Â· Detachment Coordination",
-                "srcPill": "ð New",
+                "subtitle": "· Sand-Bred · Order Relay · Detachment Coordination",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "East Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-command-east.png",
                 "imageAlt": "",
@@ -7551,28 +7604,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Command Plate â East",
-                    "desc": "â Sand-gold command plate, ventilated joints, silver trim at collar. Lighter than north and south variants â command riders in open plains terrain must keep pace with the pursuit element."
+                    "name": "Silver Swan Command Plate — East",
+                    "desc": "— Sand-gold command plate, ventilated joints, silver trim at collar. Lighter than north and south variants — command riders in open plains terrain must keep pace with the pursuit element."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Command Crest Helm â Desert",
-                    "desc": "â Open-face, full silver swan crest. Sun-shield brim replaces standard cheek guard â command riders relay signals for extended periods in direct sun. Crest angled to cast shadow on the rider's eyes."
+                    "name": "Command Crest Helm — Desert",
+                    "desc": "— Open-face, full silver swan crest. Sun-shield brim replaces standard cheek guard — command riders relay signals for extended periods in direct sun. Crest angled to cast shadow on the rider's eyes."
                   },
                   {
                     "slot": "Horse",
-                    "name": "East Desert Warhorse â Command Trained",
-                    "desc": "â Light tan or cream, barded at chest and neck only. Desert command requires range â this horse can hold communication pace with pursuit riders across plains distances."
+                    "name": "East Desert Warhorse — Command Trained",
+                    "desc": "— Light tan or cream, barded at chest and neck only. Desert command requires range — this horse can hold communication pace with pursuit riders across plains distances."
                   },
                   {
                     "slot": "Signal",
-                    "name": "Silver Swan Signal Kit â Desert",
-                    "desc": "â Sand-gold signal flags, aerodynamic profile for wind-resistance in open plain. Copper-toned horn with wider bell for long-range carry across flat terrain. Polished mirror heliograph â plains sunlight makes this the most effective relay medium in the eastern detachment."
+                    "name": "Silver Swan Signal Kit — Desert",
+                    "desc": "— Sand-gold signal flags, aerodynamic profile for wind-resistance in open plain. Copper-toned horn with wider bell for long-range carry across flat terrain. Polished mirror heliograph — plains sunlight makes this the most effective relay medium in the eastern detachment."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Desert Scimitar",
-                    "desc": "â Lightweight curved blade. Same weapon as lance and pursuit detachments."
+                    "desc": "— Lightweight curved blade. Same weapon as lance and pursuit detachments."
                   }
                 ]
               },
@@ -7580,15 +7633,15 @@
                 "id": "silver-swan-command-west",
                 "data-br": "Command",
                 "data-src": "new",
-                "name": "Silver Swan Command & Signal â West",
+                "name": "Silver Swan Command & Signal — West",
                 "branch": "Command",
                 "className": "Command Riders",
-                "subtitle": "Â· Mountain-Bred Â· Order Relay Â· Detachment Coordination",
-                "srcPill": "ð New",
+                "subtitle": "· Mountain-Bred · Order Relay · Detachment Coordination",
+                "srcPill": "🆕 New",
                 "armorBadge": "Medium",
                 "armorClass": "armor-badge a-m",
                 "location": "West Regional Depot",
-                "army": "Silver Swan Cavalry Corps â Reva Stallforth",
+                "army": "Silver Swan Cavalry Corps — Reva Stallforth",
                 "total": "7,500 (corps total)",
                 "image": "unitImages/silver-swan-command-west.png",
                 "imageAlt": "",
@@ -7596,28 +7649,28 @@
                 "armor": [
                   {
                     "slot": "Body",
-                    "name": "Silver Swan Command Plate â West",
-                    "desc": "â Gray-green command plate, silver at collar and pauldron trim. Mountain-finish for rough terrain durability. Heavier than pursuit variant â command riders on mountain terrain hold ridge-top relay positions, not pursuit lines."
+                    "name": "Silver Swan Command Plate — West",
+                    "desc": "— Gray-green command plate, silver at collar and pauldron trim. Mountain-finish for rough terrain durability. Heavier than pursuit variant — command riders on mountain terrain hold ridge-top relay positions, not pursuit lines."
                   },
                   {
                     "slot": "Helm",
-                    "name": "Command Crest Helm â Stone",
-                    "desc": "â Open-face, silver swan crest shortened compared to south variant â mountain overhang clearance applies to command riders the same as lance riders. Stone-gray finish."
+                    "name": "Command Crest Helm — Stone",
+                    "desc": "— Open-face, silver swan crest shortened compared to south variant — mountain overhang clearance applies to command riders the same as lance riders. Stone-gray finish."
                   },
                   {
                     "slot": "Horse",
-                    "name": "West Mountain Warhorse â Command Trained",
-                    "desc": "â Steel-gray or dappled, barded at chest and neck. Strong hindquarters for ridge-top stationary holding â a command rider who slides off a mountain relay point ends the communication chain."
+                    "name": "West Mountain Warhorse — Command Trained",
+                    "desc": "— Steel-gray or dappled, barded at chest and neck. Strong hindquarters for ridge-top stationary holding — a command rider who slides off a mountain relay point ends the communication chain."
                   },
                   {
                     "slot": "Signal",
-                    "name": "Silver Swan Signal Kit â Mountain",
-                    "desc": "â Gray-green signal flags, weighted for mountain wind. Short-bore horn with wider bell â mountain echo carries the signal further than standard bore at the same volume. Compact heliograph for ridge-to-ridge relay where flag visibility is blocked by rock face."
+                    "name": "Silver Swan Signal Kit — Mountain",
+                    "desc": "— Gray-green signal flags, weighted for mountain wind. Short-bore horn with wider bell — mountain echo carries the signal further than standard bore at the same volume. Compact heliograph for ridge-to-ridge relay where flag visibility is blocked by rock face."
                   },
                   {
                     "slot": "Secondary",
                     "name": "Mountain Axe",
-                    "desc": "â Same weapon as lance and pursuit detachments. One-handed for slope use."
+                    "desc": "— Same weapon as lance and pursuit detachments. One-handed for slope use."
                   }
                 ]
               },
@@ -9425,12 +9478,12 @@
               {
                 "id": "ironwhirl-squadron",
                 "data-br": "Flying",
-                "data-src": "new",
+                "data-src": "ally",
                 "name": "The Ironwhirl Squadron",
                 "branch": "Flying",
                 "className": "Experimental Aerial Bombardment · Mark I Ironwhirl Frame",
                 "subtitle": "· 20 Gyrocopters · Chief Engineer Torka Ironwhirl · Stonemark Aerial Engineering",
-                "srcPill": "🆕 New",
+                "srcPill": "🤝 Allied",
                 "armorBadge": "Light",
                 "armorClass": "armor-badge a-l",
                 "location": "Stonemark Holds — Experimental Aerial Engineering Division",
@@ -15583,23 +15636,59 @@
       </div>`;
     }
 
+    // Top-level grouping: Starhaven's own army first, then allies, mercenaries, rivals.
+    // Inside each force the branch sections (Infantry, Ranged, Cavalry…) and their sub-groups
+    // keep the order they have in UNIT_DATA.
+    const FORCE_GROUPS = [
+      { key: "starhaven", name: "🏰 Starhaven Army", note: "Own forces · newly raised units · fortress garrisons", srcs: ["own", "new", "gar"], color: "var(--c-own)" },
+      { key: "allied", name: "🤝 Allied Forces", note: "Allied nations, tribes and coalitions", srcs: ["ally"], color: "var(--c-ally)" },
+      { key: "merc", name: "⚔ Mercenaries", note: "Companies and solo contracts on retainer", srcs: ["merc"], color: "var(--c-merc)" },
+      { key: "rival", name: "🌋 Rivals", note: "Forces Starhaven may face", srcs: ["rival"], color: "var(--c-rival)" }
+    ];
+
     function renderUnitWiki() {
       const container = document.getElementById('unit-content');
       if (!container) return;
-      container.innerHTML = UNIT_DATA.map(section => {
-        const sectionRows = section.subgroups.map(group => `
+      const known = new Set(FORCE_GROUPS.flatMap(f => f.srcs));
+      const extra = new Set();
+      UNIT_DATA.forEach(s => s.subgroups.forEach(g => g.cards.forEach(c => { if (!known.has(c['data-src'])) extra.add(c['data-src']); })));
+      const forces = extra.size
+        ? FORCE_GROUPS.concat([{ key: "other", name: "Other Forces", note: "", srcs: [...extra], color: "var(--muted)" }])
+        : FORCE_GROUPS;
+
+      container.innerHTML = forces.map(force => {
+        let total = 0;
+        const sections = UNIT_DATA.map(section => {
+          const sectionRows = section.subgroups.map(group => {
+            const cards = group.cards.filter(c => force.srcs.includes(c['data-src']));
+            if (!cards.length) return '';
+            total += cards.length;
+            return `
      <div class="sub-group">
       <div class="sub-label">${escapeHtml(group.label)}</div>
-      <div class="card-grid">${group.cards.map(renderCard).join('')}
+      <div class="card-grid">${cards.map(renderCard).join('')}
       </div>
-     </div>`).join('');
-        return `
-    <div class="branch-section" data-sec="${escapeHtml(section['data-sec'])}" id="${escapeHtml(section.id)}">
+     </div>`;
+          }).join('');
+          if (!sectionRows) return '';
+          const id = force.key === "starhaven" ? section.id : `${force.key}-${section.id}`;
+          return `
+    <div class="branch-section" data-sec="${escapeHtml(section['data-sec'])}" data-key="${escapeHtml(section.id)}" id="${escapeHtml(id)}">
      <div class="branch-header ${BRANCH_HEADER_CLASSES[section['data-sec']] || ''}">
       <span class="branch-name">${escapeHtml(section.branch)}</span>
       <span class="branch-line"></span>
      </div>${sectionRows}
     </div>`;
+        }).join('');
+        if (!sections) return '';
+        return `
+   <div class="force-section" data-force="${force.key}" id="force-${force.key}">
+    <div class="force-header" style="color:${force.color}">
+     <span class="force-name">${force.name}</span>
+     <span class="force-note">${escapeHtml(force.note)}</span>
+     <span class="force-count">${total} units</span>
+    </div>${sections}
+   </div>`;
       }).join('');
     }
 
@@ -15633,6 +15722,14 @@
         sec.style.display = sec.querySelector(".unit-card:not(.hidden)") ? "" : "none";
       });
 
+      // Force groups: hide when empty, show how many of their units are visible
+      document.querySelectorAll(".force-section").forEach(f => {
+        const shown = f.querySelectorAll(".unit-card:not(.hidden)").length;
+        f.style.display = shown ? "" : "none";
+        const cnt = f.querySelector(".force-count");
+        if (cnt) cnt.textContent = shown + " units";
+      });
+
       // Update count display
       const countEl = document.getElementById("searchCount");
       if (countEl) {
@@ -15653,7 +15750,10 @@
         activeBr = t.dataset.br;
         applyFilters();
         if (activeBr !== "all") {
-          const el = document.getElementById("sec-" + activeBr.toLowerCase().replace(" ", "-").replace(" cavalry", ""));
+          // first visible section for this branch (it may appear under several force groups)
+          const key = "sec-" + activeBr.toLowerCase().replace(" ", "-");
+          const el = Array.from(document.querySelectorAll(`.branch-section[data-key="${key}"]`)).find(s => s.style.display !== "none")
+            || document.querySelector(".unit-card:not(.hidden)");
           if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
         }
       });
