@@ -111,8 +111,8 @@
 | Oath-Axes | — | Cross-Army Specialist | 500 | 100 | **600** |
 | Ember Company | — | Cross-Army Specialist | 500 | 100 | **600** |
 | The Reedwalkers | — | Rhegar Thorne Direct — Wetland Reserve | 1,200 | 300 | **1,500** |
-| Beastmen Berserkers of the East *(NEW)* | — | Starhaven Command — Rhaegar | 720 | — | **720** |
-| The Doomcleavers *(NEW)* | Commander Fosho Tanachi | Rhaegar Thorne Direct Reserve | 1,200 | — | **1,200** |
+| Beastmen Berserkers of the East *(NEW)* | — | Starhaven Command — Rhegar | 720 | — | **720** |
+| The Doomcleavers *(NEW)* | Commander Fosho Tanachi | Rhegar Thorne Direct Reserve | 1,200 | — | **1,200** |
 | Ironveil Spear Corps | — | Cross-Army Specialist | 12,000 | 3,000 | **15,000** |
 | Ironveil Halberdiers | — | Cross-Army Specialist | 8,000 | 2,000 | **10,000** |
 | Ashrunners | — | Cross-Army Specialist | 3,000 | 600 | **3,600** |
@@ -229,7 +229,7 @@
 | Runebreakers | Cassia Vayne | Cross-Army Anti-Magic | 3,000 | 600 | **3,600** |
 | Rootcaller Shamans | — | Pillar — Thorin / Primal | 120 | 18 | **138** |
 | Hollow Order | — | Anti-Magic Specialist | See wiki | — | — |
-| Drakekin Pyromancers *(NEW)* | Flamewarden Riasa Tem | Starhaven Command — Rhaegar / Velkan's Patronage | 240 | — | **240** |
+| Drakekin Pyromancers *(NEW)* | Flamewarden Riasa Tem | Starhaven Command — Rhegar / Velkan's Patronage | 240 | — | **240** |
 
 ---
 
@@ -261,7 +261,7 @@
 | Ramhead — Battering Ram Division | Sora Keld | Coalition Siege Engineering | Battering ram | 6 rams | — | **6 rams** |
 | Shield Wall Engineers Corps *(NEW)* | Calla Brennick | Coalition Siege Engineering | Rapid field fortification | 1,000 | — | **1,000** |
 | Skyhunter Lance Battery *(NEW)* | — | High Command Strategic Reserve | Lance launcher | 6 launchers | — | **6 launchers** |
-| The Forgepact Battery *(NEW)* | Col. Dessa Marrow & Brokk Graniteborn | Starhaven Command — Rhaegar / Joint Stonemark Project | Cannon & mortar | 480 | — | **480** |
+| The Forgepact Battery *(NEW)* | Col. Dessa Marrow & Brokk Graniteborn | Starhaven Command — Rhegar / Joint Stonemark Project | Cannon & mortar | 480 | — | **480** |
 
 *Shield Wall Engineers Corps: open-field counterpart to Groundbreaker (tunnels) and Rampart (siege towers) — builds portable stake lines, trench spikes, and modular obstacle walls in the gap between formations under fire, not staged before contact. On call to any Field Army.*
 
@@ -332,7 +332,7 @@
 | Ironpack — handlers | Sela Ironbone | Pillar — Nyx / Field Intel | 600 handlers | 150 handlers | **750 handlers** |
 | Ironpack — hounds | Sela Ironbone | Pillar — Nyx / Field Intel | 3,000 hounds | 750 hounds | **3,750 hounds** |
 | The Greymark *(NEW)* | — | Pillar — Nyx | 80 operators | — | **80** |
-| Picket Scouts *(NEW)* | Captain Iva Renn | Starhaven Command — Rhaegar Thorne Direct Reserve | 150 | — | **150** |
+| Picket Scouts *(NEW)* | Captain Iva Renn | Starhaven Command — Rhegar Thorne Direct Reserve | 150 | — | **150** |
 
 *Greymark: 60 Human operators + 20 Half-Elf operators. Mid-battle command elimination. No reserve — all 80 active or not deployed.*
 *Picket Scouts: 50 three-scout cells, perimeter early-warning, no-engagement doctrine, relayed through the Thread-Runners network. No reserve — all 150 active or not deployed.*
@@ -706,7 +706,7 @@
 | **Picket Scouts** | Captain Iva Renn | — | Perimeter early warning · no-engagement doctrine | **150** |
 | **The Forgepact Battery** | Col. Dessa Marrow & Brokk Graniteborn | Joint Human-Dwarf | Starhaven's first gunpowder corps — mobile cannon & mortar | **480** |
 
-*These five (plus Requiem Wardens and Skyspear Valkyries above) were confirmed present in `starhaven-unit-wiki.html` during the 2026-07-02 second-pass audit but had never been added to this document's tables. All are Rhaegar Thorne's Direct Reserve except Skyspear Valkyries (independent mercenary free company).*
+*These five (plus Requiem Wardens and Skyspear Valkyries above) were confirmed present in `starhaven-unit-wiki.html` during the 2026-07-02 second-pass audit but had never been added to this document's tables. All are Rhegar Thorne's Direct Reserve except Skyspear Valkyries (independent mercenary free company).*
 
 ---
 

@@ -3,18 +3,18 @@
 | Unit Name | Class | Branch | Commander | Captain |
 |---|---|---|---|---|
 | Ironwall | Very Heavy Infantry | Infantry | Kael Varric |  |
-| Black Bastions | Elite Infantry | Infantry | Rhaegar |  |
+| Black Bastions | Elite Infantry | Infantry | Rhegar |  |
 | Stonemark Bulwark | Elite Heavy Infantry · Bulwark Phalanx | Infantry | Brokk Graniteborn | Brak Graymaw |
-| The Stormreach Guardian | Ancient Construct · Starhaven Guardians · Storm-Rune Wrought | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
-| The Stoneward Guardian | Ancient Construct · Starhaven Guardians · Ward-Rune Bearer | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
-| The Frostcleave Guardian | Ancient Construct · Starhaven Guardians · Frost-Rune Wrought | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
-| The Magmafall Guardian | Ancient Construct · Starhaven Guardians · Magma-Touched | Infantry | Starhaven Command Reserve — Rhaegar Thorne |  |
+| The Stormreach Guardian | Ancient Construct · Starhaven Guardians · Storm-Rune Wrought | Infantry | Starhaven Command Reserve — Rhegar Thorne |  |
+| The Stoneward Guardian | Ancient Construct · Starhaven Guardians · Ward-Rune Bearer | Infantry | Starhaven Command Reserve — Rhegar Thorne |  |
+| The Frostcleave Guardian | Ancient Construct · Starhaven Guardians · Frost-Rune Wrought | Infantry | Starhaven Command Reserve — Rhegar Thorne |  |
+| The Magmafall Guardian | Ancient Construct · Starhaven Guardians · Magma-Touched | Infantry | Starhaven Command Reserve — Rhegar Thorne |  |
 | Sentinel Guards | Elite Infantry | Infantry | Greenveil Defense Forces |  |
 | Ironmere Veterans | Elite Infantry | Infantry | King Aldric Vorn |  |
 | Ironmere Shock Heavy Infantry | Shock Heavy Infantry · Ironmere Kingdom | Infantry | General Mira Vorn |  |
 | Ancestor Guard | Elite Infantry | Infantry | Drogar Stonefang |  |
-| The Silver Shields | Elite Infantry · Black Orc Legion | Infantry | Rhaegar |  |
-| The Oath-Axes | Elite Infantry · Oath-Bound Guard | Infantry | Rhaegar |  |
+| The Silver Shields | Elite Infantry · Black Orc Legion | Infantry | Rhegar |  |
+| The Oath-Axes | Elite Infantry · Oath-Bound Guard | Infantry | Rhegar |  |
 | The Dawnguard | Heavy Infantry | Infantry | Rayden Cale |  |
 | 1st Field Army — Heavy Infantry | Heavy Infantry | Infantry | Doran Ashe |  |
 | 3rd Field Army — Heavy Infantry | Heavy Infantry | Infantry | Brek Tane |  |
@@ -22,15 +22,15 @@
 | 2nd Field Army — Medium Infantry | Medium Infantry | Infantry | Clea Vorn |  |
 | 4th Field Army — Medium Infantry | Medium Infantry | Infantry | Veyra Tal |  |
 | Desert Sword & Shield Infantry | Medium Infantry | Infantry | Sultan Rashid |  |
-| The Ember Company | Medium Infantry · Chronicle Company | Infantry | Rhaegar |  |
+| The Ember Company | Medium Infantry · Chronicle Company | Infantry | Rhegar |  |
 | 2nd Field Army — Light Infantry | Light Infantry | Infantry | Clea Vorn |  |
 | Coldmarch Ironline | Close Order Infantry · Line Hold | Infantry | Clea Vorn |  |
 | 4th Field Army — Light Infantry | Light Infantry | Infantry | Veyra Tal |  |
 | Mountain Skirmishers | Light Infantry | Infantry | Wyld Frostmere |  |
 | Warden Infantry | Light Infantry | Infantry | Dena Veil |  |
 | Hammerers | Light Infantry | Infantry | Brokk Graniteborn | Yorna Cinderhelm |
-| The Reedwalkers | Wetland Infantry · Terrain Specialists | Infantry | Rhaegar Thorne |  |
-| The Unbroken Line | Petitioning Company · Elven Spear & Shield · Center-Line Doctrine · UNDER REVIEW — not yet officially commissioned | Infantry | Commander Elina · Under Review, Grand Marshal Rhaegar Thorne |  |
+| The Reedwalkers | Wetland Infantry · Terrain Specialists | Infantry | Rhegar Thorne |  |
+| The Unbroken Line | Petitioning Company · Elven Spear & Shield · Center-Line Doctrine · UNDER REVIEW — not yet officially commissioned | Infantry | Commander Elina · Under Review, Grand Marshal Rhegar Thorne |  |
 | The Warbreakers | Shock Infantry | Infantry | Sever Aldric |  |
 | IceBreakers | Shock Infantry | Infantry | Wyld Frostmere |  |
 | Glaive Formation Corps | Dawnsteel Order · Glaive Formation | Infantry | Koren Ashveil |  |
@@ -40,8 +40,8 @@
 | The Ashrunners | Light Shock Infantry | Infantry | Vael Dusken |  |
 | Grundhammer Forge Team | Great Weapon Infantry · Ironbreaker Mace Corps | Infantry | Torvan Grund |  |
 | The Ironhold Guard | Heavy Infantry · Ironbreaker Mace Corps | Infantry | Torvan Grund |  |
-| Hammerguard — Shieldline | Heavy Special Forces · Long Hammer & Shield · Breach-Anchor Doctrine | Infantry | Rhaegar Thorne |  |
-| Hammerguard — Cinderhand | Heavy Special Forces · One-Handed Hammer · Single-Target Doctrine | Infantry | Rhaegar Thorne |  |
+| Hammerguard — Shieldline | Heavy Special Forces · Long Hammer & Shield · Breach-Anchor Doctrine | Infantry | Rhegar Thorne |  |
+| Hammerguard — Cinderhand | Heavy Special Forces · One-Handed Hammer · Single-Target Doctrine | Infantry | Rhegar Thorne |  |
 | Longbeards (Stonemark) | Elite Infantry · Great Weapon | Infantry | Brokk Graniteborn | Molgrim Coalbeard |
 | The Ashveil Reapers | Great Weapon Infantry · Anti-Cavalry Sweep · Void Border Doctrine | Infantry | Grand Standing Army (Kael Varric Doctrine) |  |
 | The Doomcleavers | Heavy Greatsword Infantry · Formation Breaker | Infantry | Fosho Tanachi |  |
@@ -71,8 +71,8 @@
 | Marika Goldspear | Known Name · The Skyspear Valkyries | Infantry | Warqueen Lola Skyward |  |
 | Woodborn Guardians | Frontline Infantry · Primal Vanguard | Infantry | Thorin Blackroot |  |
 | Stoneclaw Brutes | Stoneborn Shock Troops · Primal Vanguard | Infantry | Thorin Blackroot |  |
-| The Longmark | Ironlock Longrifle Corps · Two-Man Teams · Extreme Range | Ranged | Rhaegar Thorne |  |
-| Bowmen of the Last Hollow | Pure Archer Corps · Velhold Doctrine | Ranged | Rhaegar Thorne | Brennick Stane |
+| The Longmark | Ironlock Longrifle Corps · Two-Man Teams · Extreme Range | Ranged | Rhegar Thorne |  |
+| Bowmen of the Last Hollow | Pure Archer Corps · Velhold Doctrine | Ranged | Rhegar Thorne | Brennick Stane |
 | Moonveil Wardens | Longbowmen · Warden Corps | Ranged | Silent Wardens |  |
 | Starshot Rangers | Elite Sharpshooter · Silent Warden Sub-Unit | Ranged | Silent Wardens Sub-Unit |  |
 | Command Elimination Squadron | Longbowmen · Silverleaf Corps | Ranged | Archbow Sylara Evenmere |  |
@@ -98,8 +98,8 @@
 | Jade Crossbow Corps | Rapid Crossbow · Greatsword Melee · Dual Role | Ranged | Distributed Pool (All Field Armies |  |
 | Thunderers | Thunderbuss Corps | Ranged | Brokk Graniteborn | Borg Brassvein |
 | Feral Hunters | Skirmishers · Primal Vanguard | Ranged | Thorin Blackroot |  |
-| The Requiem Wardens | Heavy Shock Cavalry · Mercy Doctrine | Cavalry | Rhaegar Thorne |  |
-| Black Charge | Cataphracts | Cavalry | Raydan Cale, Vespera Commands it. |  |
+| The Requiem Wardens | Heavy Shock Cavalry · Mercy Doctrine | Cavalry | Rhegar Thorne |  |
+| Black Charge | Cataphracts | Cavalry | Rayden Cale, Vespera Commands it. |  |
 | The Point — First Lance | Heavy Cavalry · Dawnlancers | Cavalry | Aera Coldwind |  |
 | The Wings — Second Lance | Heavy Cavalry · Dawnlancers | Cavalry | Aera Coldwind |  |
 | The Depth — Third Lance | Heavy Cavalry · Dawnlancers | Cavalry | Aera Coldwind |  |
@@ -157,11 +157,11 @@
 | Karath Mammoths | Mammoth Riders | Beast Cavalry | Sultan Rashid |  |
 | Kuku Gunriders | Dwarven Gun Cavalry · Kuku-Mounted | Beast Cavalry | Stonemark Holds — Brokk Graniteborn | Captain Torvald Redcrest |
 | War Elephants (50) | War Elephants | Beast Cavalry | Sultan Rashid |  |
-| The Ashstride Warband | Centaur Shock · Mobile Reserve · Rare Race · Anti-Cavalry | Cavalry | Mobile Reserve (Grand Marshal Rhaegar Thorne) |  |
-| Beastmen Berserkers of the East | Beast Infantry · Boar-Bonded Hunters · Rare Race | Beast Cavalry | Rhaegar |  |
+| The Ashstride Warband | Centaur Shock · Mobile Reserve · Rare Race · Anti-Cavalry | Cavalry | Mobile Reserve (Grand Marshal Rhegar Thorne) |  |
+| Beastmen Berserkers of the East | Beast Infantry · Boar-Bonded Hunters · Rare Race | Beast Cavalry | Rhegar |  |
 | Starhaven Chariot Runners | War Chariot Corps · Open Terrain Strike | Cavalry | Distributed Pool (All Field Armies |  |
 | Karath Desert Chariots | Desert War Chariot · Speed Doctrine | Cavalry | Sultan Rashid |  |
-| The Aethran Colossi | Apex Predator Riders · Irreplaceable · War Refugees | Beast Cavalry | Rhaegar Thorne (Direct Command) |  |
+| The Aethran Colossi | Apex Predator Riders · Irreplaceable · War Refugees | Beast Cavalry | Rhegar Thorne (Direct Command) |  |
 | Ninth Sky Corps: Drake Riders | Dragon Riders · Arcane Drake Cavalry | Flying | Velkan Drake | Sorin Vael |
 | Ninth Sky Battlemages / Countermages | Battle Mage · Counter-Mage | Magic | Dael Ashe |  |
 | Skywarden Corps | Light Flying · Recon | Flying | Ren Dael |  |
@@ -181,7 +181,7 @@
 | The Null-Hunters | Anti-Magic Specialist · Runebreakers | Magic | Cassia Vayne |  |
 | The Rune-Shield Guard | Anti-Magic Specialist · Runebreakers | Magic | Cassia Vayne |  |
 | Silverchain Mages | Enchanter | Magic | Standing Contract |  |
-| Drakekin Pyromancers | Offensive Battle Mage · Innate Pyromancy | Magic | Rhaegar Thorne |  |
+| Drakekin Pyromancers | Offensive Battle Mage · Innate Pyromancy | Magic | Rhegar Thorne |  |
 | Hollow Order | Void Breaker · Observation & Documentation | Magic | Zareth Kull |  |
 | Holy Knights — Dawn Templars | Paladin | Religious | Brynhild Voss |  |
 | Holy Knights — Exorcist Knights | Inquisitor | Religious | Brynhild Voss |  |
@@ -195,7 +195,7 @@
 | The Greymark | Mid-Battle Command Elimination · Null Blades Sub-Unit | Stealth | Nyx Ravel |  |
 | Ranger Companies | Rangers | Stealth | Wyld Frostmere |  |
 | The Ironpack | War Hound Corps | Support | Sela Ironbone |  |
-| Picket Scouts | Perimeter Watch · Early Warning | Stealth | Rhaegar Thorne | Iva Renn |
+| Picket Scouts | Perimeter Watch · Early Warning | Stealth | Rhegar Thorne | Iva Renn |
 | Yami Holloway | Solo Legend · Death-Threshold Rogue | Stealth | Dawnsteel Attachment |  |
 | Barek Kade | Solo Legend · Untrained Elemental Conduit | Infantry | Shock Infantry Embedded |  |
 | Mirova | Solo Legend · Erasure Specialist | Stealth | Nyx Ravel Referral |  |
@@ -204,17 +204,17 @@
 | Lyss Anven | Solo Legend · Precision Archer | Ranged | Small-Scale Warfare |  |
 | Talon & Hex | Solo Legend · Mercenary Duo | Infantry | Duo Contract |  |
 | Roland Ashguard | Solo Legend · Unbroken Shield | Infantry | Kingdom of Ironmere — King Aldric Vorn (Champion) |  |
-| Caedran Morveil | Solo Legend · The Oathbound Blade | Infantry | Raydan's Personal Guard |  |
-| Tharos Avarakai | Solo Legend · The Black Tempest | Stealth | Avarakai Reef Clans — Sworn to Raydan, Not Bodyguard |  |
-| Aruksha | Solo Legend · The First Fang | Infantry | Sarpathi Serpent Clan — Answers Only to Raydan, Not Bodyguard |  |
-| Bjorr Runebane | Bearkin Legend · Bruiser · Linebreaker | Infantry | Independent — Answers to Raydan Cale in Battle |  |
-| Elyndra Valeheart | Solo Legend · High Elf Archmage (S+) · Royal Bodyguard | Magic | Starhaven Crown — Directly Attached to Raydan Cale |  |
+| Caedran Morveil | Solo Legend · The Oathbound Blade | Infantry | Rayden's Personal Guard |  |
+| Tharos Avarakai | Solo Legend · The Black Tempest | Stealth | Avarakai Reef Clans — Sworn to Rayden, Not Bodyguard |  |
+| Aruksha | Solo Legend · The First Fang | Infantry | Sarpathi Serpent Clan — Answers Only to Rayden, Not Bodyguard |  |
+| Bjorr Runebane | Bearkin Legend · Bruiser · Linebreaker | Infantry | Independent — Answers to Rayden Cale in Battle |  |
+| Elyndra Valeheart | Solo Legend · High Elf Archmage (S+) · Royal Bodyguard | Magic | Starhaven Crown — Directly Attached to Rayden Cale |  |
 | Bramm Calder | Solo Legend · Dwarf Extreme Marksman · Royal Overwatch | Ranged | Starhaven Crown — Independent Royal Overwatch |  |
 | Varn Ashclaw | Personal Bodyguard · The Wall's Edge | Infantry | Pillar of Kael Varric |  |
 | Kiyu Otari | Personal Bodyguard · The Unread Page | Stealth | Pillar of Lyria Valen |  |
 | Sylvaine Duskroot | Solo Legend · Personal Bodyguard · The Silent Root | Infantry | Pillar of Thorin Blackroot |  |
 | Mira Halloway | Personal Bodyguard · Anchor of the Bond | Infantry | Pillar of Bob Vale |  |
-| Pell Ashcord | Known Name · The Reedwalkers | Infantry | Rhaegar Thorne Reserve |  |
+| Pell Ashcord | Known Name · The Reedwalkers | Infantry | Rhegar Thorne Reserve |  |
 | Maren Coldhand | Known Name · Coldmarch Ironline | Infantry | 2nd Field Army |  |
 | "Twice-Burned" Gareth | Known Name · The Ashrunners | Infantry | Vael Dusken |  |
 | Orvin Slate | Known Name · Scorpio Field Batteries | Artillery | Field Artillery Division |  |
@@ -236,7 +236,7 @@
 | Mountain Engineers | Engineers | Engineering | Brokk Graniteborn | Ista Oreheart |
 | Iron Road Corps | Logistics Corps | Support | Senn Aldric |  |
 | Ironfort War Wagons | Mobile Fortress · Wagon Combat | Artillery | Brokk Graniteborn | Thrak Flintjaw |
-| The Forgepact Battery | Mobile Cannon & Mortar Corps · Joint Stonemark-Starhaven Engineering | Artillery | Rhaegar Thorne |  |
+| The Forgepact Battery | Mobile Cannon & Mortar Corps · Joint Stonemark-Starhaven Engineering | Artillery | Rhegar Thorne |  |
 | Ironbolt Batteries | Fortress Ballista Network · Fixed Battery | Artillery | Fortress Artillery Division |  |
 | Ironveil Trebuchet Battery | Siege Artillery · Long-Range Bombardment | Artillery | Aldren Croft |  |
 | Rampart — Siege Tower Division | Siege Engineering · Tower Assault | Engineering | Brix Holt |  |

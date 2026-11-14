@@ -3,7 +3,7 @@
 
 **How to read this:**
 - **Commander** is pulled directly from each card's `army` field. Most read cleanly ("Commander: Brokk Graniteborn"); a handful of Known Name / Solo Legend cards list the unit they're personally attached to instead of a battlefield superior (e.g. Zafir shows "Sultan Rashid al-Kavar (Crown Prince)" because that's what the wiki's own `army` field says, not because the Sultan commands him in the field).
-- **(reserved)** is a text-matched flag (looks for "reserve," "authorization required," etc. across the army/location/subtitle fields) — not hand-verified per entry. It correctly catches Rhaegar's Direct Reserve units and joint-authorization assets (Wrought, Void Siege Battery, Skyhunter, the Starhaven Guardians), but may also flag a Field Army whose *doctrine name* happens to contain "Reserve" (e.g. the 3rd Field Army's "Defensive Reserve" doctrine) — which is arguably correct in spirit (it is Starhaven's central reserve army) but is a different kind of "reserved" than a joint-authorization asset. Flag anything that looks wrong and I'll fix it.
+- **(reserved)** is a text-matched flag (looks for "reserve," "authorization required," etc. across the army/location/subtitle fields) — not hand-verified per entry. It correctly catches Rhegar's Direct Reserve units and joint-authorization assets (Wrought, Void Siege Battery, Skyhunter, the Starhaven Guardians), but may also flag a Field Army whose *doctrine name* happens to contain "Reserve" (e.g. the 3rd Field Army's "Defensive Reserve" doctrine) — which is arguably correct in spirit (it is Starhaven's central reserve army) but is a different kind of "reserved" than a joint-authorization asset. Flag anything that looks wrong and I'll fix it.
 - **"unknown"** total means the wiki card itself doesn't specify a troop count (usually garrison/support cards like Ironpass Wall Guard).
 - Mount/beast reference cards are included here under an "Animals" sub-heading per faction/army, unlike `unit-audit.md` which excludes them entirely — different scope, both intentional.
 
@@ -12,26 +12,26 @@
 ### Infantry
 
 - **Ironwall** — 25,000 — Commander: Pillar of Kael Varric
-- **Black Bastions** — 3,600 — Commander: Rhaegar · Cross-Army (1st & 3rd Field Army Primary)
+- **Black Bastions** — 3,600 — Commander: Rhegar · Cross-Army (1st & 3rd Field Army Primary)
 - **Sentinel Guards** — 1,440 — Commander: Greenveil Defense Forces
-- **The Silver Shields** — 600 — Commander: Rhaegar
-- **The Oath-Axes** — 600 — Commander: Rhaegar
-- **The Stormreach Guardian** — 1 (reserved) — Commander: Rhaegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
-- **The Stoneward Guardian** — 1 (reserved) — Commander: Rhaegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
-- **The Frostcleave Guardian** — 1 (reserved) — Commander: Rhaegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
-- **The Magmafall Guardian** — 1 (reserved) — Commander: Rhaegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
+- **The Silver Shields** — 600 — Commander: Rhegar
+- **The Oath-Axes** — 600 — Commander: Rhegar
+- **The Stormreach Guardian** — 1 (reserved) — Commander: Rhegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
+- **The Stoneward Guardian** — 1 (reserved) — Commander: Rhegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
+- **The Frostcleave Guardian** — 1 (reserved) — Commander: Rhegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
+- **The Magmafall Guardian** — 1 (reserved) — Commander: Rhegar Thorne (Direct Reserve) · Rayden Cale Authorization Required for Deployment
 - **The Dawnguard** — 480 — Commander: Pillar of Rayden Cale
 - **1st Field Army — Heavy Infantry** — 23,400 — Commander: Doran Ashe
 - **3rd Field Army — Heavy Infantry** — 26,000 (reserved) — Commander: Brek Tane
 - **2nd Field Army — Medium Infantry** — 15,600 — Commander: Clea Vorn
 - **4th Field Army — Medium Infantry** — 13,000 (reserved) — Commander: Veyra Tal
-- **The Ember Company** — 600 — Commander: Rhaegar
+- **The Ember Company** — 600 — Commander: Rhegar
 - **2nd Field Army — Light Infantry** — 10,400 — Commander: Clea Vorn
 - **Coldmarch Ironline** — 4,375 — Commander: Clea Vorn
 - **4th Field Army — Light Infantry** — 7,800 (reserved) — Commander: Veyra Tal
 - **Mountain Skirmishers** — unknown — Commander: Wyld Frostmere
 - **Warden Infantry** — 2,600 — Commander: Dena Veil
-- **The Reedwalkers** — 1,500 (reserved) — Commander: Rhaegar Thorne · Reserve (Wetland Operations)
+- **The Reedwalkers** — 1,500 (reserved) — Commander: Rhegar Thorne · Reserve (Wetland Operations)
 - **The Warbreakers** — 14,400 (4 Regiments × 3,600 each) — Commander: Sever Aldric
 - **IceBreakers** — unknown — Commander: Wyld Frostmere
 - **Glaive Formation Corps** — 720 — Commander: Koren Ashveil
@@ -41,9 +41,9 @@
 - **Grundhammer Forge Team** — unknown — Commander: Torvan Grund · Ironbreaker Mace Corps
 - **The Ironhold Guard** — unknown — Commander: Torvan Grund · Ironbreaker Mace Corps
 - **The Ashveil Reapers** — 240 — Commander: Grand Standing Army (Kael Varric Doctrine)
-- **The Doomcleavers** — 1,200 (3 Companies × 400) (reserved) — Commander: Rhaegar Thorne · Direct Reserve · Commander Fosho Tanachi
-- **Hammerguard — Shieldline** — 800 (reserved) — Commander: Rhaegar Thorne · Direct Reserve
-- **Hammerguard — Cinderhand** — 400 (reserved) — Commander: Rhaegar Thorne · Direct Reserve
+- **The Doomcleavers** — 1,200 (3 Companies × 400) (reserved) — Commander: Rhegar Thorne · Direct Reserve · Commander Fosho Tanachi
+- **Hammerguard — Shieldline** — 800 (reserved) — Commander: Rhegar Thorne · Direct Reserve
+- **Hammerguard — Cinderhand** — 400 (reserved) — Commander: Rhegar Thorne · Direct Reserve
 - **The Gauntlet Army** — 15,600 — Commander: War-Elder Vrakas Stonehide
 - **Northern Militia** — unknown — Commander: Frosthold Garrison Forces
 - **Ironpass Wall Guard** — unknown — Commander: Ironpass Garrison
@@ -53,7 +53,7 @@
 - **Woodborn Guardians** — 1,000 — Commander: Thorin Blackroot
 - **Stoneclaw Brutes** — 2,500 — Commander: Thorin Blackroot
 - **Iron Reavers** — 1,000 (reserved) — Commander: Mercenary · Commander Grena Vashk
-- **Pell Ashcord** — 1 (reserved) — Commander: Rhaegar Thorne Reserve
+- **Pell Ashcord** — 1 (reserved) — Commander: Rhegar Thorne Reserve
 - **Maren Coldhand** — 1 — Commander: 2nd Field Army
 - **"Twice-Burned" Gareth** — 1 — Commander: Vael Dusken
 - **Root-Watcher Sylen** — 1 — Commander: Primal Vanguard · Thorin Blackroot
@@ -73,15 +73,15 @@
 
 ### Cavalry
 
-- **The Requiem Wardens** — 600 (Full Muster) (reserved) — Commander: Rhaegar Thorne · Direct Reserve
-- **Black Charge** — 1,440 (reserved) — Commander: Raydan Cale, Vespera Commands it.
+- **The Requiem Wardens** — 600 (Full Muster) (reserved) — Commander: Rhegar Thorne · Direct Reserve
+- **Black Charge** — 1,440 (reserved) — Commander: Rayden Cale, Vespera Commands it.
 - **The Point — First Lance** — 1,440 — Commander: Aera Coldwind · Dawnlancers
 - **The Wings — Second Lance** — 1,440 — Commander: Aera Coldwind · Dawnlancers
 - **The Depth — Third Lance** — 1,440 (reserved) — Commander: Aera Coldwind · Dawnlancers
 - **The Dawnrunner Stable** — unknown — Commander: Aera Coldwind · Dawnlancers
 - **Radiant Cavaliers** — 1,440 — Commander: Brynhild Voss
 - **Ironmane Lancers** — 960 — Commander: Dresh Ironmane
-- **The Closing Wings** — 1,920 (reserved) — Commander: Rhaegar · Commander Sael Dorn
+- **The Closing Wings** — 1,920 (reserved) — Commander: Rhegar · Commander Sael Dorn
 - **Red Bone Cavalry** — 1,500 (reserved) — Commander: Mercenary · Commander Dusk Ferren
 - **Silver Swan Cavalry Lance Corps - North** — 7,500 (corps total) — Commander: Reva Stallforth
 - **Silver Swan Cavalry Lance Corps - South** — 7,500 (corps total) — Commander: Reva Stallforth
@@ -99,8 +99,8 @@
 - **Windlance Cavalry** — 1,125 — Commander: Irae Duskwind
 - **Recurve Company of the Third** — 500 — Commander: Brek Tane
 - **2nd Field Army — Light Cavalry** — 2,500 — Commander: Clea Vorn
-- **The Ashstride Warband** — 875 (reserved) — Commander: Mobile Reserve (Grand Marshal Rhaegar Thorne) · No Fixed Assignment
-- **Starhaven Chariot Runners** — 250 chariots — Commander: Distributed Pool (All Field Armies · Rhaegar Thorne Allocation) · Joint Training: Karath Sultanate
+- **The Ashstride Warband** — 875 (reserved) — Commander: Mobile Reserve (Grand Marshal Rhegar Thorne) · No Fixed Assignment
+- **Starhaven Chariot Runners** — 250 chariots — Commander: Distributed Pool (All Field Armies · Rhegar Thorne Allocation) · Joint Training: Karath Sultanate
 
 ### Beast Cavalry
 
@@ -116,16 +116,16 @@
 - **Forest Golems** — 28–29 — Commander: Thorin Blackroot (Greenveil Guardian Force)
 - **Starhaven Mammoth Corps** — 88 — Commander: Gifted by Karath Sultanate · Year 1048
 - **Starhaven War Elephant Corps** — 56 — Commander: Gifted by Karath Sultanate · Year 1048
-- **Beastmen Berserkers of the East** — 720 — Commander: Rhaegar
-- **The Aethran Colossi** — 27 riders / 27 Fangwalkers — Commander: Rhaegar Thorne (Direct Command) · The Aethran Dominion Remnant
+- **Beastmen Berserkers of the East** — 720 — Commander: Rhegar
+- **The Aethran Colossi** — 27 riders / 27 Fangwalkers — Commander: Rhegar Thorne (Direct Command) · The Aethran Dominion Remnant
 - **Fenrik** — 1 — Commander: Thorin Blackroot
 
 ### Ranged
 
 - **Dawnbow Archers** — 375 — Commander: Koren Ashveil
 - **Ironpass Bolt Corps** — unknown — Commander: Ironpass Garrison
-- **The Longmark** — 75 active / 25 reserve (reserved) — Commander: Rhaegar Thorne · Direct Reserve
-- **Bowmen of the Last Hollow** — 1,800 (reserved) — Commander: Rhaegar Thorne · Direct Reserve · Captain Brennick Stane
+- **The Longmark** — 75 active / 25 reserve (reserved) — Commander: Rhegar Thorne · Direct Reserve
+- **Bowmen of the Last Hollow** — 1,800 (reserved) — Commander: Rhegar Thorne · Direct Reserve · Captain Brennick Stane
 - **Moonveil Wardens** — 5,000 — Commander: Silent Wardens · Main Corps
 - **Starshot Rangers** — 52 — Commander: Silent Wardens Sub-Unit
 - **Command Elimination Squadron** — 120 — Commander: Archbow Sylara Evenmere · Silverleaf Corps
@@ -141,7 +141,7 @@
 - **The Slingers** — 2,500 — Commander: Clea Vorn
 - **3rd Field Army — Crossbowmen** — 6,500 — Commander: Brek Tane
 - **4th Field Army — Heavy Crossbowmen** — 4,550 (reserved) — Commander: Veyra Tal
-- **Jade Crossbow Corps** — 6,250 — Commander: Distributed Pool (All Field Armies · Rhaegar Thorne Allocation)
+- **Jade Crossbow Corps** — 6,250 — Commander: Distributed Pool (All Field Armies · Rhegar Thorne Allocation)
 - **Feral Hunters** — 345 — Commander: Thorin Blackroot
 
 ### Magic
@@ -159,7 +159,7 @@
 - **The Runebreakers** — 3,600 — Commander: Cassia Vayne · Runebreakers
 - **The Null-Hunters** — unknown — Commander: Cassia Vayne · Runebreakers
 - **The Rune-Shield Guard** — unknown — Commander: Cassia Vayne · Runebreakers
-- **Drakekin Pyromancers** — 240 (reserved) — Commander: Rhaegar Thorne · Direct Reserve · Flamewarden Riasa Tem · Velkan Drake (Patron)
+- **Drakekin Pyromancers** — 240 (reserved) — Commander: Rhegar Thorne · Direct Reserve · Flamewarden Riasa Tem · Velkan Drake (Patron)
 - **Hollow Order** — unknown — Commander: Zareth Kull · Order Master: Illen
 - **Rootcaller Shamans** — 138 — Commander: Thorin Blackroot
 - **Skymark Corps** — 12–18 (reserved) — Commander: Skyhunter Lance Battery
@@ -210,7 +210,7 @@
 - **The Crown Shadows** — 92 — Commander: Nyx Ravel · Sub-Unit · Commander Kira Voss
 - **The Greymark** — 80 — Commander: Nyx Ravel · Sub-Unit
 - **Ranger Companies** — unknown — Commander: Wyld Frostmere
-- **Picket Scouts** — 150 (50 Three-Scout Cells) (reserved) — Commander: Rhaegar Thorne · Direct Reserve · Captain Iva Renn
+- **Picket Scouts** — 150 (50 Three-Scout Cells) (reserved) — Commander: Rhegar Thorne · Direct Reserve · Captain Iva Renn
 - **Brand Order** — unknown — Commander: Zareth Kull · Order Master: Sorn
 
 ### Animals
@@ -233,7 +233,7 @@
 - **Snowtusk War Elk** — unknown — Commander: Wyld Frostmere
 - **Silver Moon Elk** — unknown — Commander: Silent Warden Mounted Wing
 - **Thornfang Cat** — unknown — Commander: Thorin Blackroot
-- **Aethran Fangwalker** — 27 — Commander: Rhaegar Thorne · The Aethran Colossi
+- **Aethran Fangwalker** — 27 — Commander: Rhegar Thorne · The Aethran Colossi
 - **Sky Drake** — 180 active / 216 total (bond-paired 1:1 with Drake Riders) — Commander: Velkan Drake · Drake Riders · Sorin Vael
 - **Ashwing Eagle** — unknown — Commander: Ren Dael
 - **War Griffin** — unknown — Commander: Pillar Aurelia Vex
@@ -258,7 +258,7 @@
 - **Stonethrow Corps** — 75 crews — Commander: Vera Holt
 - **Iron Talon Batteries** — 150 crew — Commander: Dorn Ashvane · 6 Batteries Embedded per Field Army
 - **Skyhunter Lance Battery** — 6 launchers (reserved) — Commander: Triple Authorization
-- **The Forgepact Battery** — 480 (12 Cannon Crews + 8 Mortar Crews) (reserved) — Commander: Rhaegar Thorne · Direct Reserve · Joint Project — Colonel Dessa Marrow & Brokk Graniteborn (Stonemark)
+- **The Forgepact Battery** — 480 (12 Cannon Crews + 8 Mortar Crews) (reserved) — Commander: Rhegar Thorne · Direct Reserve · Joint Project — Colonel Dessa Marrow & Brokk Graniteborn (Stonemark)
 - **Ironbolt Batteries** — unknown — Commander: Fortress Artillery Division
 - **Ironveil Trebuchet Battery** — 75 crew — Commander: Aldren Croft
 - **Stonecast Onager Battery** — 96 crew — Commander: Siege-Captain Renna Oswick

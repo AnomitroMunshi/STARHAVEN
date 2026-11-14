@@ -9,14 +9,14 @@
 | Unit | Commander / Captain |
 |---|---|
 | Ironwall | Kael Varric |
-| Black Bastions | Rhaegar |
+| Black Bastions | Rhegar |
 | Stonemark Bulwark | Brokk Graniteborn |
 | Sentinel Guards | — (none named) |
 | Ironmere Veterans | King Aldric Vorn |
 | Ironmere Shock Heavy Infantry | General Mira Vorn |
 | Ancestor Guard | Drogar Stonefang |
-| The Silver Shields | Rhaegar |
-| The Oath-Axes | Rhaegar |
+| The Silver Shields | Rhegar |
+| The Oath-Axes | Rhegar |
 | The Dawnguard | Captain Daven Holt · Rayden Cale |
 | 1st Field Army — Heavy Infantry | Doran Ashe |
 | 3rd Field Army — Heavy Infantry | Brek Tane |
@@ -24,14 +24,14 @@
 | 2nd Field Army — Medium Infantry | Clea Vorn |
 | 4th Field Army — Medium Infantry | Veyra Tal |
 | Desert Sword & Shield Infantry | Sultan Rashid |
-| The Ember Company | Rhaegar |
+| The Ember Company | Rhegar |
 | 2nd Field Army — Light Infantry | Clea Vorn |
 | Coldmarch Ironline | Clea Vorn |
 | 4th Field Army — Light Infantry | Veyra Tal |
 | Mountain Skirmishers | Wyld Frostmere |
 | Warden Infantry | Dena Veil |
 | Hammerers (Stonemark) | Brokk Graniteborn |
-| The Reedwalkers | Rhaegar Thorne |
+| The Reedwalkers | Rhegar Thorne |
 | The Warbreakers | Sever Aldric |
 | Icebreakers | Wyld Frostmere |
 | Glaive Formation Corps | Koren Ashveil |
@@ -41,13 +41,13 @@
 | Grundhammer Forge Team | Torvan Grund |
 | The Ironhold Guard | Torvan Grund |
 | Longbeards (Stonemark) | Brokk Graniteborn |
-| **The Doomcleavers** | **Commander Fosho Tanachi · Rhaegar Thorne** |
-| **Stormreach Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
-| **Stoneward Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
-| **Frostcleave Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
-| **Magmafall Guardian** | **Custodian: Rhaegar Thorne · Rayden Cale Authorization Required** |
-| **Hammerguard — Shieldline** | **Rhaegar Thorne** |
-| **Hammerguard — Cinderhand** | **Rhaegar Thorne** |
+| **The Doomcleavers** | **Commander Fosho Tanachi · Rhegar Thorne** |
+| **Stormreach Guardian** | **Custodian: Rhegar Thorne · Rayden Cale Authorization Required** |
+| **Stoneward Guardian** | **Custodian: Rhegar Thorne · Rayden Cale Authorization Required** |
+| **Frostcleave Guardian** | **Custodian: Rhegar Thorne · Rayden Cale Authorization Required** |
+| **Magmafall Guardian** | **Custodian: Rhegar Thorne · Rayden Cale Authorization Required** |
+| **Hammerguard — Shieldline** | **Rhegar Thorne** |
+| **Hammerguard — Cinderhand** | **Rhegar Thorne** |
 | **The Unbroken Line** | **Elina** |
 | **Forgeguard Legion (Irondeep)** | **High Forge-Marshal Kadrin Emberforge** |
 | **Anvilbreakers (Irondeep)** | **Kadrin Emberforge** |
@@ -63,7 +63,7 @@
 | **Harbour Chain Guard** | **Dawncliff Garrison** |
 | **Woodborn Guardians** | **Thorin Blackroot** |
 | **Stoneclaw Brutes** | **Thorin Blackroot** |
-| **Pell Ashcord** | **Rhaegar Thorne Reserve** |
+| **Pell Ashcord** | **Rhegar Thorne Reserve** |
 | **Maren Coldhand** | **2nd Field Army** |
 | **"Twice-Burned" Gareth** | **Vael Dusken** |
 | **Root-Watcher Sylen** | **Primal Vanguard · Thorin Blackroot** |
@@ -91,9 +91,9 @@
 | **Rosalind Thornfield** | **Verdant Spearguard (Personal Command)** |
 | **Gurn Bramblefist** | **Thornridge Warband (Attached to Silverhorn Blades)** |
 | **Roland Ashguard** | **King Aldric Vorn (Champion)** |
-| **Caedran Morveil** | **Raydan's Personal Guard** |
-| **Aruksha** | **Sarpathi Serpent Clan — Answers Only to Raydan, Not Bodyguard** |
-| **Bjorr Runebane** | **Independent — Answers to Raydan Cale in Battle** |
+| **Caedran Morveil** | **Rayden's Personal Guard** |
+| **Aruksha** | **Sarpathi Serpent Clan — Answers Only to Rayden, Not Bodyguard** |
+| **Bjorr Runebane** | **Independent — Answers to Rayden Cale in Battle** |
 | **Varn Ashclaw** | **Pillar of Kael Varric (Personal Bodyguard)** |
 | **Sylvaine Duskroot** | **Pillar of Thorin Blackroot (Personal Bodyguard)** |
 | **Mira Halloway** | **Pillar of Bob Vale (Personal Bodyguard)** |
@@ -111,8 +111,8 @@
 
 | Unit | Commander / Captain |
 |---|---|
-| The Longmark | Rhaegar Thorne |
-| **Bowmen of the Last Hollow** | **Captain Brennick Stane · Rhaegar Thorne** |
+| The Longmark | Rhegar Thorne |
+| **Bowmen of the Last Hollow** | **Captain Brennick Stane · Rhegar Thorne** |
 | Moonveil Wardens | Lyria Valen |
 | Starshot Rangers | Lyria Valen |
 | Command Elimination Squadron | Archbow Sylara Evenmere |
@@ -135,7 +135,7 @@
 | **Ironpass Bolt Corps** | **Ironpass Garrison** |
 | **3rd Field Army — Crossbowmen** | **Brek Tane** |
 | **4th Field Army — Heavy Crossbowmen** | **Veyra Tal** |
-| **Jade Crossbow Corps** | **Distributed Pool (All Field Armies · Rhaegar Thorne Allocation)** |
+| **Jade Crossbow Corps** | **Distributed Pool (All Field Armies · Rhegar Thorne Allocation)** |
 | **Lyss Anven** | **Small-Scale Warfare** |
 | **Willowmere Rangers** | **Ranger-Captain Wrenna Willowmere** |
 | **Wrenna Willowmere** | **Willowmere Rangers (Personal Command)** |
@@ -159,11 +159,11 @@
 | Radiant Cavaliers | Brynhild Voss |
 | Fighting Camelknights | Sultan Rashid |
 | Ironmane Lancers | Dresh Ironmane |
-| The Closing Wings | Rhaegar · Commander Sael Dorn |
+| The Closing Wings | Rhegar · Commander Sael Dorn |
 | Red Bone Cavalry | Commander Dusk Ferren |
 | Iron Reavers | Commander Grena Vashk |
 | Silver Swan (all variants) | Reva Stallforth |
-| **The Requiem Wardens** | **Rhaegar Thorne · Direct Reserve** |
+| **The Requiem Wardens** | **Rhegar Thorne · Direct Reserve** |
 | **Silver Swan Cavalry Lance Corps - North** | **Reva Stallforth** |
 | **Silver Swan Cavalry Lance Corps - South** | **Reva Stallforth** |
 | **Silver Swan Cavalry Lance Corps - East** | **Reva Stallforth** |
@@ -219,8 +219,8 @@
 | Karath Mammoths | Sultan Rashid |
 | War Elephants | Sultan Rashid |
 | The Ashstride Warband | Veth Sunreach |
-| Beastmen Berserkers of the East | Rhaegar |
-| Starhaven Chariot Runners | Rhaegar Thorne |
+| Beastmen Berserkers of the East | Rhegar |
+| Starhaven Chariot Runners | Rhegar Thorne |
 | Karath Desert Chariots | Sultan Rashid |
 | The Aethran Colossi | Riva Trid |
 | **Polar Bear Riders** | **Wyld Frostmere** |
@@ -274,7 +274,7 @@
 | **Sunspire Battlemages** | **Court Mage Elowen Sunspire** |
 | **Elowen Sunspire** | **Sunspire Battlemages (Personal Command)** |
 | **Zafir** | **Sultan Rashid al-Kavar (Crown Prince)** |
-| **Elyndra Valeheart** | **Starhaven Crown — Directly Attached to Raydan Cale** |
+| **Elyndra Valeheart** | **Starhaven Crown — Directly Attached to Rayden Cale** |
 ---
 
 ## Religious
@@ -301,12 +301,12 @@
 | The Greymark | Nyx Ravel |
 | Ranger Companies | Wyld Frostmere |
 | The Ironpack | Sela Ironbone |
-| **Picket Scouts** | **Captain Iva Renn · Rhaegar Thorne** |
+| **Picket Scouts** | **Captain Iva Renn · Rhegar Thorne** |
 | Rootcaller Shamans | Thorin Blackroot |
 | **Brand Order** | **Zareth Kull · Order Master: Sorn** |
 | **Yami Holloway** | **Dawnsteel Attachment** |
 | **Mirova** | **Nyx Ravel Referral** |
-| **Tharos Avarakai** | **Avarakai Reef Clans — Sworn to Raydan, Not Bodyguard** |
+| **Tharos Avarakai** | **Avarakai Reef Clans — Sworn to Rayden, Not Bodyguard** |
 | **Kiyu Otari** | **Pillar of Lyria Valen (Personal Bodyguard)** |
 ---
 
@@ -316,7 +316,7 @@
 |---|---|
 | Stonethrow Corps | Vera Holt |
 | Iron Talon Batteries | Dorn Ashvane |
-| Skyhunter Lance Battery | Rhaegar Thorne · Velkan Drake · Rayden Cale (triple auth) |
+| Skyhunter Lance Battery | Rhegar Thorne · Velkan Drake · Rayden Cale (triple auth) |
 | Skymark Corps | Velkan Drake |
 | Mountain Engineers | Brokk Graniteborn |
 | Iron Road Corps | Senn Aldric |
