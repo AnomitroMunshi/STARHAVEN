@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 14   (finished so far: 135)
+Still to generate: 8   (finished so far: 141)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,44 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## PARTNERS & FAMILY  (14)
+## PARTNERS & FAMILY  (8)
 ########################################################################
-
-=== Wren Dusk ===
-Save as: starhaven_chars_image/partner_wrendusk.jpg
-Group: Partners & Family   Race: Human   Age: 36
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Wren Dusk, Wife of Roan Dusk — civilian beast trainer at Ironmane Fields. A woman, age 36, race: Human. Face: Latin American features, diamond-shaped face, close-set brown eyes, long thin nose, downturned mouth, cleft chin, warm brown skin, bleached-platinum (dark roots showing) hair in loose waves to the shoulders, a small tattoo at the temple. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Wren trains the non-combat animals at Ironmane Fields — riding horses, farm animals, the occasional griffin hatchling that requires early socialization. She and Roan communicate primarily by leaving notes for each other about animals they encountered that day. Setting: the Ironmane Fields paddocks — riding horses, a griffin hatchling at her feet, open grassland.
-
-=== Calder Fael ===
-Save as: starhaven_chars_image/partner_calderfael.jpg
-Group: Partners & Family   Race: Human   Age: 24
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Calder Fael, Partner of Mira Fael — Year 1049. A man, age 24, race: Human. Face: Middle Eastern features, soft triangular face, large, watchful amber eyes, straight narrow nose, crooked half-smile, narrow tapered jaw, light brown skin, two-tone black-and-silver hair short and curly, mutton-chop sideburns, a beauty mark on the cheek. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Calder is an Arcanum student in his final year of the Bond faculty curriculum. Mira and Calder met when she was a faculty guest lecturer at the Arcanum. Setting: the Veilborn Arcanum in Vaelmark — the Bond faculty lecture hall, resonance diagrams on the walls.
-
-=== Arren Drenn ===
-Save as: starhaven_chars_image/partner_arrendrenn.jpg
-Group: Partners & Family   Race: Human   Age: 39
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Arren Drenn, Husband of Sera Drenn — artillery engineer, Ironbolt Division senior technical staff. A man, age 39, race: Human. Face: Mediterranean features, long narrow face, hooded hazel eyes, wide-bridged nose, small tight mouth, pointed chin, olive skin, emerald-green-dyed hair in long locs tied back, long braided beard, a scar through one eyebrow. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Arren designs the bolt-artillery batteries. Sera commands them. Setting: the Ironbolt Division workshop — bolt-artillery components, drafting table, forge glow.
-
-=== Pier Mael ===
-Save as: starhaven_chars_image/partner_piermael.jpg
-Group: Partners & Family   Race: Human   Age: 54
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Pier Mael, Husband of Syra Mael — retired deep-sea navigator. A man, age 54, race: Human. Face: Pacific Islander features, broad square face, large, watchful dark brown eyes, once-broken crooked nose, wide mouth, strong square jaw, warm brown skin, dark brown hair slicked back and long, full beard, pockmarked cheeks. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Pier Mael spent 22 years navigating deep-sea trade and alliance routes before retiring to Saltmere. He now advises the Tideguard regarding long-range currents, storm drift, and Southern Ocean behavior. Setting: the Saltmere harbor at dawn — current charts, a retired navigator's instruments, Tideguard ships at anchor.
-
-=== Linnea Sash ===
-Save as: starhaven_chars_image/partner_linneasash.jpg
-Group: Partners & Family   Race: Human   Age: 56
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Linnea Sash, Wife of Drelin Sash — Arcanum library specialist. A woman, age 56, race: Human. Face: Nordic features, soft triangular face, hooded blue-green eyes, small upturned nose, thin lips, soft jawline, pale skin, salt-and-pepper hair pinned in a severe bun, deep laugh lines. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Linnea manages the Arcanum's restricted materials library — the texts that require clearance to access. She and Drelin have been married 28 years. Setting: the Arcanum's restricted materials library — chained books, locked cases, candlelight.
-
-=== Tamsin Holt ===
-Save as: starhaven_chars_image/partner_tamsinholt.jpg
-Group: Partners & Family   Race: Human   Age: 51
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Tamsin Holt, Wife of Drev Holt — retired adventurer (former B-rank). A woman, age 51, race: Human. Face: South Asian (Indian) features, rectangular weathered face, deep-set near-black eyes, long thin nose, small tight mouth, cleft chin, medium brown skin, dark brown hair in many thin braids, sun-creased skin around the eyes. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Tamsin retired from adventuring three years before Drev did and has been managing the Guild's administrative back office since Year 1044. She handles the paperwork that Drev refuses to read. Setting: the Goldgate Adventurers Guild back office — stacks of contracts and paperwork, a retired adventurer's blade on the wall.
 
 === Odile Aldric ===
 Save as: starhaven_chars_image/partner_odilealdric.jpg
