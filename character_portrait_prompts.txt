@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 4   (finished so far: 145)
+Still to generate: 0   (finished so far: 149)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,31 +11,3 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
-
-########################################################################
-## PARTNERS & FAMILY  (4)
-########################################################################
-
-=== Consort-Minister Aldric Solenne ===
-Save as: starhaven_chars_image/partner_aldricsolenne.jpg
-Group: Partners & Family   Race: Human   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Consort-Minister Aldric Solenne, Husband of Vera Solenne — runs the Eldridge Kingdom's trade ministry. A man, age 58, race: Human. Face: Slavic / Eastern European features, oval face with high cheekbones, wide-set grey eyes, hooked nose, thin lips, narrow tapered jaw, fair skin, thinning grey hair in a buzz cut with a shaved line, heavy stubble, a faded brand on the cheekbone. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Aldric manages Eldridge's trade relationships and maritime supply restoration. Vera makes the policy. Setting: the Eldridge Kingdom trade ministry — ledgers, maritime supply maps, recovering farmland beyond the window.
-
-=== Tobias Voss ===
-Save as: starhaven_chars_image/partner_tobiasvoss.jpg
-Group: Partners & Family   Race: Human   Age: 34
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Tobias Voss, Husband of Ela Voss — civilian physician, Sancthaven hospital. A man, age 34, race: Human. Face: Black African features, broad square face, wide-set near-black eyes, small upturned nose, wide mouth, cleft chin, dark umber skin, black with rose-pink tips hair short and curly, grey-shot beard, heavy brows that nearly meet. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Tobias runs a family medicine practice attached to Sancthaven hospital. Ela saves soldiers on the battlefield. Setting: a family medicine practice beside the Sancthaven hospital — a modest clinic room, herbs and instruments, warm lamplight.
-
-=== Ossa Carrick ===
-Save as: starhaven_chars_image/partner_ossacarrick.jpg
-Group: Partners & Family   Race: Human   Age: 64
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ossa Carrick, Wife of Carrick — retired, Year 1040. A woman, age 64, race: Human. Face: Pacific Islander features, oval face with high cheekbones, heavy-lidded dark brown eyes, aquiline nose, downturned mouth, cleft chin, deep tan skin, deep plum-dyed hair in loose waves to the shoulders, a faded brand on the cheekbone. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Ossa was a C-rank hunter who retired when their daughter was born. She manages the Golden Threshold's kitchen and booking. Setting: the kitchen and booking desk of the Golden Threshold tavern in Goldgate — ledgers, firelight, a retired hunter's bow on the wall.
-
-=== Hesta Ashford ===
-Save as: starhaven_chars_image/partner_hestaashford.jpg
-Group: Partners & Family   Race: Human   Age: 59
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hesta Ashford, Wife of Bram Ashford — Year 1015 onward. A woman, age 59, race: Human. Face: British features, wide face with a heavy jaw, hooded hazel eyes, hooked nose, thin lips, cleft chin, light skin, salt-and-pepper hair pinned in a severe bun, a missing earlobe. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Hesta runs the Summit Tavern. She has summited Greypeak once, in Year 1015, on their wedding day — Bram's suggestion. Setting: the Summit Tavern in Stonemarsh, Greypeak Highlands — warm hearth, mountain view through the window.
