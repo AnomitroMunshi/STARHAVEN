@@ -1980,7 +1980,7 @@ const CHARACTERS = [
     ],
     quote:'"The story they will tell is: he killed the giant. The story that is true is: he climbed it."',
     bio:'Athletic, lean-strong — built for sustained combat since his teenage years. A thin scar on the left cheekbone from before Havenfire. Dark brown eyes of someone always calculating — not cold, not warm, present. No crown, no cape. The king who fights from the ground looks like someone who fights from the ground.',
-    relationships:[{name:'Kael Varric',type:'ally'},{name:'Daven Holt',type:'ally'},{name:'Nyx Ravel',type:'ally'}],
+    relationships:[{name:'Vespera Drakewynn',type:'partner',note:'Captain of the Black Charge, his personal cavalry. When he is locked in melee, she is the one holding the field.'},{name:'Ilyana Sanguinar',type:'partner',note:'Princess of House Sanguinar. Came north to judge what kind of king he was, and stayed.'},{name:'Selene Voss',type:'Late Partner',note:'The Lantern Veil, his first love. They kept promising each other they would still go find the orchard. She died at Asterfall.'},{name:'Kael Varric',type:'ally'},{name:'Daven Holt',type:'ally'},{name:'Nyx Ravel',type:'ally'}],
     tags:['Protagonist','Founder','Pillar of the Dawn'],
   background:'Founded Starhaven at age 21 in Year 1042 after uniting scattered territories. Recruited each of the Ten Stars personally across Years 1042–1046. Spent three years building infrastructure, alliances, and institutions before formally declaring the kingdom. Orphanage fire survivor — his childhood best friend Caleum (Kai) was presumed dead for years.',
     mount:{name:'Warblade',desc:'Armored warhorse — dark brown with heavy barding. Battle-trained from birth alongside the Dawnguard.'},
@@ -2636,9 +2636,9 @@ const CHARACTERS = [
     bio:'Works out of the central gate tower at Renzport. Calls it "the heart." Is correct.',
     relationships:[{name:'Cain Drakhar',type:'ally'},{name:'Cyrus Vexley',type:'ally'}],
     tags:['Court & Scholars','Engineer','Arsenal'],
-  background:'Director of Portal Sciences. Located Renzport at the geometric center of the kingdom by precise calculation before a single rift gate had been built. His hub\'s 6 gates can move a full division between any two cities in under an hour.',
+  background:'Director of Portal Sciences. Located Renzport at the geometric center of the kingdom by precise calculation before a single rift gate had been built. Her hub\'s 6 gates can move a full division between any two cities in under an hour.',
     mount:null,
-    partner:{image:'starhaven_chars_image/partner_emeryfal.jpg',name:'Emery Fal',relation:'Husband (Resonance Mage)',desc:'One of the 400-strong Resonance Corps relay network under Bob Vale. Emery handles the resonance relay; Renzo handles the portal infrastructure. They share an office. Their work is so intertwined that neither remembers who designed which component of the integrated system.'},
+    partner:{image:'starhaven_chars_image/partner_emeryfal.jpg',name:'Emery Fal',relation:'Wife (Resonance Mage)',desc:'One of the 400-strong Resonance Corps relay network under Bob Vale. Emery handles the resonance relay; Renzo handles the portal infrastructure. They share an office. Their work is so intertwined that neither remembers who designed which component of the integrated system.'},
     achievements:['31 rift gates operational — emergency evacuation in 18 minutes',
       'Kira\'s Door — permanent Varathos passage',
       'Renzport Hub — 6 gates, capable of division-level transit in under 1 hour',
@@ -2779,9 +2779,9 @@ const CHARACTERS = [
     ],
     quote:'"What does Karvossa need to still exist in fifty years?" — the only question Rayden asked her.',
     bio:'Heir to Karvossa, a realm of perpetual twilight where House Sanguinar has ruled vampire bloodlines and the old werewolf clans jointly for longer than Starhaven has existed — an alliance most outside kingdoms assume is a myth, since the two are natural enemies everywhere else.',
-    relationships:[{name:'Rayden',type:'Devoted'}],
-    tags:['Mercenaries & Legends','Solo Legend','Vampire Princess','Devoted to Rayden','Unresolved Feelings'],
-    background:'Came north herself rather than sending an envoy, because Karvossa\'s court wanted to know exactly what kind of king was building a kingdom on the Void\'s doorstep before pledging a single soldier to it — a dying world is a problem for the undead too. She expected another warlord who\'d either want her people as weapons or fear them as monsters. Rayden did neither. He asked what Karvossa needed to still exist in fifty years, listened without flinching, and never once asked her to prove she wasn\'t a threat before he\'d hear her out. She stayed past the point diplomacy required it. She has not said why, and Starhold\'s court has stopped pretending not to notice. Whether Rayden feels the same is left unconfirmed — she has never asked him to answer it, and he has never offered to.',
+    relationships:[{name:'Rayden Cale',type:'partner',note:'His partner. She came north to judge what kind of king was building on the Void doorstep; he asked only what Karvossa needed to still exist in fifty years, and never asked her to prove she was not a threat. She stayed.'}],
+    tags:['Mercenaries & Legends','Solo Legend','Vampire Princess','Partner of Rayden'],
+    background:'Came north herself rather than sending an envoy, because Karvossa\'s court wanted to know exactly what kind of king was building a kingdom on the Void\'s doorstep before pledging a single soldier to it — a dying world is a problem for the undead too. She expected another warlord who\'d either want her people as weapons or fear them as monsters. Rayden did neither. He asked what Karvossa needed to still exist in fifty years, listened without flinching, and never once asked her to prove she wasn\'t a threat before he\'d hear her out. She stayed past the point diplomacy required it. She has not said why, and Starhold\'s court has stopped pretending not to notice. She never asked him to answer it; in time he did anyway. She is now his partner, as is Vespera Drakewynn.',
     mount:null,
     partner:null,
     achievements:['Brought House Sanguinar\'s 2,000-strong Crimson Court to Starhaven as an alliance offer',
@@ -3423,7 +3423,7 @@ const CHARACTERS = [
       'Shielded an entire group of trapped refugee civilians from a collapsing fortress wall during the Asterfall outbreak — all of them survived; she did not',
     ],
     relationships:[
-      {name:'Rayden Cale', type:'partner'},
+      {name:'Rayden Cale', type:'Late Partner',note:'Trained beside him on the same brutal contracts that made him the Wall-Climber; Westreach knew them as the Wall-Climber and the Lantern Veil. Their bond began through survival rather than declaration: she stitched his wounds after contracts, he sharpened her blades before hunts.'},
       {name:'Elira Voss', type:'family'},
     ],
     tags:['Early Years','Deceased','Healer','Westreach','Fallen'],
@@ -3484,7 +3484,7 @@ const CHARACTERS = [
     'No recorded instance of Crimson Breakthrough failing to break a target formation',
   ],
   relationships:[
-    {name:'Rayden Cale',     type:'partner'},
+    {name:'Rayden Cale',     type:'partner',note:'His partner. She commands the Black Charge, the King personal cavalry unit, and holds the field for him whenever he is locked in direct melee and cannot coordinate from horseback.'},
     {name:'Marcus Ironmane', type:'ally'},
     {name:'Dresh Ironmane',  type:'ally'},
     {name:'Cain Drakhar',    type:'professional'},
@@ -8592,10 +8592,13 @@ function openCharModal(id) {
 
   // relationships
   // sworn bonds (liege / master) get their own card with the liege's portrait; everything else stays a tag
-  const BOND = /^(liege|master)$/i;
-  const bonds = (c.relationships || []).filter(r => BOND.test(r.type));
-  const otherRels = (c.relationships || []).filter(r => !BOND.test(r.type));
-  const bondsHtml = bonds.map(r => charCompanionHtml('👑', 'Sworn To', {name: r.name, relation: r.type, desc: r.note || ''})).join('');
+  const BOND_CARDS = [[/^(liege|master)$/i, '👑', 'Sworn To'], [/^devoted$/i, '💗', 'Devoted To'], [/^partner$/i, '💞', 'Partner'], [/^late partner$/i, '🕯️', 'Late Partner'], [/^loyalty$/i, '🛡️', 'Loyal To']];
+  const bondOf = r => BOND_CARDS.find(([re]) => re.test(r.type || ''));
+  const partnerName = c.partner && typeof c.partner === 'object' ? c.partner.name : '';
+  const rels = (c.relationships || []).filter(r => !(partnerName && r.name === partnerName));
+  const bonds = rels.filter(r => bondOf(r));
+  const otherRels = rels.filter(r => !bondOf(r));
+  const bondsHtml = bonds.map(r => { const [, icon, label] = bondOf(r); return charCompanionHtml(icon, label, {name: r.name, relation: r.type, desc: r.note || ''}); }).join('');
   const relsHtml = otherRels.length
     ? `<div style="margin-top:14px">
         <p class="dl" style="margin-bottom:6px">Relationships</p>
