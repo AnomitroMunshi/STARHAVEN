@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 8   (finished so far: 141)
+Still to generate: 4   (finished so far: 145)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,32 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## PARTNERS & FAMILY  (8)
+## PARTNERS & FAMILY  (4)
 ########################################################################
-
-=== Odile Aldric ===
-Save as: starhaven_chars_image/partner_odilealdric.jpg
-Group: Partners & Family   Race: Human   Age: 42
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Odile Aldric, Wife of Pen Aldric — The Cracked Core co-owner. A woman, age 42, race: Human. Face: mixed-heritage features, broad square face, wide-set brown eyes, aquiline nose, thin lips, soft jawline, tan skin, auburn hair in a long single braid, mismatched eyes (one lighter than the other). Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Odile runs the kitchen. Pen runs the bar. Setting: the kitchen of The Cracked Core tavern in Goldgate — fire, steam, the glow of the core fragment through the doorway.
-
-=== Kessa Ironbrow ===
-Save as: starhaven_chars_image/partner_kessaironbrow.jpg
-Group: Partners & Family   Race: Dwarf   Age: 60
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Kessa Ironbrow, Wife of Grix Ironbrow — retired soldier, currently The Ruined Plate kitchen manager. A woman, age 60, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Face: oval face with high cheekbones, narrow storm-blue eyes, broad flat nose, crooked half-smile, jutting chin, dark umber skin, salt-and-pepper hair in an undercut bob, heavy brows that nearly meet. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Kessa lost two fingers in Year 1039 and retired from active service. She runs the kitchen now. Setting: the kitchen of The Ruined Plate in Goldgate — names carved into the walls, warm firelight. Depict them as they were in life.
-
-=== Prince Consort Dravan Vayne ===
-Save as: starhaven_chars_image/partner_dravanvayne.jpg
-Group: Partners & Family   Race: Human   Age: 56
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Prince Consort Dravan Vayne, Husband of Sera Vayne — Prince Consort, Aethran Dominion. A man, age 56, race: Human. Face: South Asian (Indian) features, long narrow face, almond-shaped hazel eyes, aquiline nose, thin lips, cleft chin, light brown skin, thinning grey hair in a mullet, goatee, a notched ear. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Dravan was a Starhaven merchant's son before Sera married him 25 years ago. He runs the Aethran Dominion's civilian administration. Setting: the Aethran Dominion administration hall — scrolls, a dragon banner, warm stone and gold.
-
-=== Wren Stormdrift ===
-Save as: starhaven_chars_image/partner_wrenstormdrift.jpg
-Group: Partners & Family   Race: Human (Sea-Nomad)   Age: 58 at his death
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Wren Stormdrift, Husband of Cressia Stormdrift — lost at sea 15 years ago. A man, age 58 at his death, race: Human (Sea-Nomad) (sea-nomad: sun- and salt-weathered skin, braided hair with shell and bone beads). Face: Southeast Asian features, wide face with a heavy jaw, almond-shaped near-black eyes, hooked nose, full lips, strong square jaw, light brown skin, salt-and-pepper hair thick and unkempt, clean-shaven, freckles across the nose. Give this character a distinctive, individual face with its own proportions — not a generic fantasy face, and not resembling any other character in the series. If the character notes describe a physical feature, that detail takes priority. Character notes (use for expression, posture and mood): Wren was the Covenant's navigator before Cressia surpassed him. He taught her everything he knew. Setting: the deck of a Deep Tide Covenant ship at sea, navigation instruments, rolling grey water. Depict them as they were in life.
 
 === Consort-Minister Aldric Solenne ===
 Save as: starhaven_chars_image/partner_aldricsolenne.jpg
