@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 51   (finished so far: 235)
+Still to generate: 46   (finished so far: 240)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -97,38 +97,8 @@ PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Torka Ironwhirl, The Ironwhirl Squadron — Chief Engineer · The Ironwhirl Squadron (20 gyrocopters) · Stonemark Holds. A man, age 43, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 43-year-old Dwarf man — Soot-faced, goggled, a singed ginger beard. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Soot-faced, goggled, a singed ginger beard. Weapons and gear: brass flight goggles, a leather flying coat, sitting in a brass steam gyrocopter. Setting: a Stonemark mountain hold with banners and dwarven troops.
 
 ########################################################################
-## GUILD & CITIZENS  (39)
+## GUILD & CITIZENS  (34)
 ########################################################################
-
-=== Beatrix Lune ===
-Save as: starhaven_chars_image/beatrixlune.jpg
-Group: Guild & Citizens   Race: Human   Age: 68
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Beatrix Lune, The Quiet Lamp — Keeper · The Quiet Lamp inn · Sancthaven. A woman, age 68, race: Human. Look: a 68-year-old Human woman — Small, white-haired, soft-spoken, a plain grey dress and a shawl, kind tired eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Small, white-haired, soft-spoken, a plain grey dress and a shawl, kind tired eyes. Weapons and gear: a plain grey dress with a knitted shawl, holding an oil lamp. Setting: a quiet lamplit inn common room with families resting.
-
-=== Wilma Moor ===
-Save as: starhaven_chars_image/wilmamoor.jpg
-Group: Guild & Citizens   Race: Wood Elf   Age: 120
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Wilma Moor, Moor's Remedies — Apothecary · Moor's Remedies · Sancthaven. A woman, age 120, race: Wood Elf (Wood Elf: pointed ears, sun-browned skin, leaf and bark motifs in clothing). Look: a 120-year-old Wood Elf woman — Tall Wood Elf, sun-browned skin, grey-green hair in a loose braid, dried herbs tucked behind one ear. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall Wood Elf, sun-browned skin, grey-green hair in a loose braid, dried herbs tucked behind one ear. Weapons and gear: a green apothecary's smock with dried herbs in the pockets, a stone mortar and pestle, glass bottles behind her. Setting: an apothecary shop with shelves of glass jars and hanging herbs.
-
-=== Gorm Ashkettle ===
-Save as: starhaven_chars_image/gormashkettle.jpg
-Group: Guild & Citizens   Race: Dwarf   Age: 60
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Gorm Ashkettle, The Slag & Anvil — Landlord · The Slag & Anvil · Forgehaven. A man, age 60, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 60-year-old Dwarf man — Broad, soot-grey beard braided with iron rings, burn-scarred forearms of a former smith. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Broad, soot-grey beard braided with iron rings, burn-scarred forearms of a former smith. Weapons and gear: a heavy leather apron over a sleeveless shirt, burn-scarred forearms, an old forge hammer on the bar. Setting: a smoky pub full of forge workers, furnace glow through the windows.
-
-=== Marisol Tidewell ===
-Save as: starhaven_chars_image/marisoltidewell.jpg
-Group: Guild & Citizens   Race: Human (Sea-Nomad)   Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Marisol Tidewell, The Drowned Bell — Owner · The Drowned Bell tavern · Saltmere waterfront. A woman, age 47, race: Human (Sea-Nomad) (sea-nomad: sun- and salt-weathered skin, braided hair with shell and bone beads). Look: a 47-year-old Human (Sea-Nomad) woman — Sun- and salt-weathered skin, black braids with shell and bone beads, a gold hoop in one ear, a sailor's rolling walk. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Sun- and salt-weathered skin, black braids with shell and bone beads, a gold hoop in one ear, a sailor's rolling walk. Weapons and gear: a loose sailcloth shirt with a leather corset-belt, a gold hoop earring, a salvaged ship's bell hanging above her. Setting: a harbour tavern with nets, lanterns and a salvaged ship's bell, ships through the window.
-
-=== Idris Calloway ===
-Save as: starhaven_chars_image/idriscalloway.jpg
-Group: Guild & Citizens   Race: Human   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Idris Calloway, Salt & Saffron — Chef & Owner · Salt & Saffron · Saltmere. A man, age 52, race: Human. Look: a 52-year-old Human man — Lean, dark-skinned, a shaved head and a silver-shot beard, an easy smile. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean, dark-skinned, a shaved head and a silver-shot beard, an easy smile. Weapons and gear: a white linen chef's shirt with a saffron-yellow sash, a thin filleting knife and a whole silver fish on a board. Setting: an open-air quayside restaurant with fishing boats and gulls.
 
 === Quill Tanwick ===
 Save as: starhaven_chars_image/quilltanwick.jpg

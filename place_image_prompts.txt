@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 333   (finished so far: 0)
+Still to generate: 357   (finished so far: 0)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -103,7 +103,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Starhold Crier — Broadsheet, in the capital Starhold (Central Starhaven). What it is: The kingdom's newspaper. Setting context: The capital of Starhaven — built from the ground up after the founding.
 
 ########################################################################
-## CITY  (68)
+## CITY  (85)
 ########################################################################
 
 === Forgehaven ===
@@ -196,11 +196,23 @@ Group: Goldgate   Kind: Veterinary clinic
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Beast & Burden Clinic — Veterinary clinic, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Patches up adventurers' mounts, pack animals and the occasional injured familiar after a bad dive. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== Goldgate Grand Station ===
+Save as: starhaven_places_image/goldgategrandstation.jpg
+Group: Goldgate   Kind: Railway & rift gates
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Goldgate Grand Station — Railway & rift gates, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The arcane railway station and the city's two rift gates — the busiest in the kingdom. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === Hammer & Hilt ===
 Save as: starhaven_places_image/hammerandhilt.jpg
 Group: Goldgate   Kind: Adventurers' smithy · Loot Row
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Hammer & Hilt — Adventurers' smithy · Loot Row, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Dents beaten out, edges reground and dungeon-cracked armour patched by morning — for a price. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== Irongate ===
+Save as: starhaven_places_image/irongate.jpg
+Group: Goldgate   Kind: Leased fortress
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Irongate — Leased fortress, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The fortress-barracks leased to the Broken Crown Company. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
 === Kettle & Rope Outfitters ===
 Save as: starhaven_places_image/kettleandropeoutfitters.jpg
@@ -226,6 +238,18 @@ Group: Goldgate   Kind: Barber-surgeon · Hearthrow
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Quickshear's — Barber-surgeon · Hearthrow, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: A shave, a haircut and six stitches in under ten minutes. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== Scroll & Sigil ===
+Save as: starhaven_places_image/scrollandsigil.jpg
+Group: Goldgate   Kind: Enchanter's shop
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Scroll & Sigil — Enchanter's shop, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Scrolls, wards and enchantments for adventurers who cannot afford an Arcanum graduate in the party. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Adventurers' Guild Hall ===
+Save as: starhaven_places_image/theadventurersguildhall.jpg
+Group: Goldgate   Kind: Guild hall · Grand Hall District
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Adventurers' Guild Hall — Guild hall · Grand Hall District, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The heart of the city. The entrance arch has a Veil Watch psionic scanner built into it; nobody has ever triggered it. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === The Blind Eye ===
 Save as: starhaven_places_image/theblindeye.jpg
 Group: Goldgate   Kind: Tavern
@@ -244,6 +268,12 @@ Group: Goldgate   Kind: Gourmet restaurant · Loot Row
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Gilded Fork — Gourmet restaurant · Loot Row, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Dungeon-beast tasting menus for adventurers who struck it rich. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== The Gilded Lantern ===
+Save as: starhaven_places_image/thegildedlantern.jpg
+Group: Goldgate   Kind: House · Velvet Row
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Gilded Lantern — House · Velvet Row, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The most discreet licensed house on Velvet Row, run by Lisette Rosier. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === The Gilded Wheel ===
 Save as: starhaven_places_image/thegildedwheel.jpg
 Group: Goldgate   Kind: Gambling hall · Loot Row
@@ -256,17 +286,89 @@ Group: Goldgate   Kind: Tavern district
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Hearthrow — Tavern district, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Fourteen taverns — the best drinking quarter in the known world. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== The High Floor ===
+Save as: starhaven_places_image/thehighfloor.jpg
+Group: Goldgate   Kind: Tavern · Hearthrow
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The High Floor — Tavern · Hearthrow, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: One of the Hearthrow's taverns — the one the higher-ranked parties drink in. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Map House ===
+Save as: starhaven_places_image/themaphouse.jpg
+Group: Goldgate   Kind: Cartographer
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Map House — Cartographer, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Dungeon maps, survey notes and floor plans — bought from parties who came back, sold to parties going in. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Novice Yards ===
+Save as: starhaven_places_image/thenoviceyards.jpg
+Group: Goldgate   Kind: Training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Novice Yards — Training ground, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Where new registrants learn to fight in a party before the Guild lets them take a first contract. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Proving Yard ===
+Save as: starhaven_places_image/theprovingyard.jpg
+Group: Goldgate   Kind: Arena · 6,000 seats
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Proving Yard — Arena · 6,000 seats, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Combat training and exhibition — the arena fighters come to Goldgate for, to be seen or to test themselves. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Quest Board ===
+Save as: starhaven_places_image/thequestboard.jpg
+Group: Goldgate   Kind: Contract board
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Quest Board — Contract board, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Every posted contract in the kingdom, pinned up by rank. Crowds gather before dawn for the new postings. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Rating Chamber ===
+Save as: starhaven_places_image/theratingchamber.jpg
+Group: Goldgate   Kind: Contract assessment
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Rating Chamber — Contract assessment, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Where dungeon contracts are assessed and ranked before they reach the board — the most argued-with room in Goldgate. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Recovery Quarter ===
+Save as: starhaven_places_image/therecoveryquarter.jpg
+Group: Goldgate   Kind: Medical quarter
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Recovery Quarter — Medical quarter, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Isolde Cren's hospital branch and the Ashen Guard curse-breaking service — one of the busiest in the kingdom, for obvious reasons. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Scrapsmaster Workshops ===
+Save as: starhaven_places_image/thescrapsmasterworkshops.jpg
+Group: Goldgate   Kind: Goblin workshops
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Scrapsmaster Workshops — Goblin workshops, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The goblin community of the outer trade district, whose metalwork Ironmere merchants have been buying for years. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === The Steamhall ===
 Save as: starhaven_places_image/thesteamhall.jpg
 Group: Goldgate   Kind: Bathhouse
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Steamhall — Bathhouse, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Hot pools, private rooms and a peace every guild honours. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== The Vault ===
+Save as: starhaven_places_image/thevault.jpg
+Group: Goldgate   Kind: Guild bank
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Vault — Guild bank, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The guild's financial operations — contract escrow, loot deposits, and payouts. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Void Hounds' Kennels ===
+Save as: starhaven_places_image/thevoidhoundskennels.jpg
+Group: Goldgate   Kind: Kennels · Guild charter
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Void Hounds' Kennels — Kennels · Guild charter, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Home of the Void Hounds, who hunt under a Guild charter. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== The Wall of Lost Parties ===
+Save as: starhaven_places_image/thewalloflostparties.jpg
+Group: Goldgate   Kind: Memorial
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Wall of Lost Parties — Memorial, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: A wall inside the Guild Hall carved with the names of parties that went into a dungeon and did not come out. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === The Watchhouse Cells ===
 Save as: starhaven_places_image/thewatchhousecells.jpg
 Group: Goldgate   Kind: City jail
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Watchhouse Cells — City jail, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The City Watch lock-up behind the Watchhouse. Saturday nights after a big dungeon payout, it is full. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== Velvet Row ===
+Save as: starhaven_places_image/velvetrow.jpg
+Group: Goldgate   Kind: Licensed district
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Velvet Row — Licensed district, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Goldgate's pleasure district — licensed and regulated, inspected quarterly under Tiber Oswick's licensing board. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
 === Bark & Bough Craft Market ===
 Save as: starhaven_places_image/barkandboughcraftmarket.jpg
@@ -1569,7 +1671,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Thalassian League Embassy — Embassy, in the district Tidewatch Quarter (Saltmere — Waterfront District). What it is: The League's permanent offices on the Saltmere waterfront. Setting context: The harbor-front district of Saltmere — the working face of the city.
 
 ########################################################################
-## VILLAGE  (35)
+## VILLAGE  (42)
 ########################################################################
 
 === The Great Windmill ===
@@ -1648,7 +1750,7 @@ Photorealistic dark-fantasy environment art, cinematic film still, desaturated m
 Save as: starhaven_places_image/westreach.jpg
 Group: Atlas — Westreach   Kind: Village / town
 PROMPT:
-Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Westreach — Village / town (Western Frontier (pre-Starhaven)). What it is: A frontier guild town of canals and taverns where Rayden and Selene took their first contracts. Its Adventurer Guild smelled of blood, wet leather, old ale and exhaustion; its surrounding frontier existed in permanent negotiation with death. Their first real payment went toward a room above the Rusted Lantern, an upper-floor tavern overlooking the eastern canal district.
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Westreach — Village / town (Western Frontier (pre-Starhaven)). What it is: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts. Its Adventurer Guild smelled of blood, wet leather, old ale and exhaustion; its frontier existed in permanent negotiation with death. Rougher, poorer and older than Goldgate — Goldgate is what an adventurers' town becomes when a kingdom stands behind it. Their first real payment went toward a room above the Rusted Lantern, an upper-floor tavern overlooking the eastern canal district.
 
 === The First Pressing ===
 Save as: starhaven_places_image/thefirstpressing.jpg
@@ -1770,17 +1872,59 @@ Group: Vinehallow   Kind: Festival
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Treading Day — Festival, in the village Vinehallow (Southern hills). Show the festival in full swing at night or dusk: The first day of harvest, when everyone treads grapes — visiting nobles included. Setting context: Terraced vineyards on the only slopes in the kingdom that never frost — the wine Goldgate drinks.
 
+=== Elira's Lodge ===
+Save as: starhaven_places_image/eliraslodge.jpg
+Group: Westreach   Kind: Hunting lodge
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Elira's Lodge — Hunting lodge, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: A fortified hunting lodge outside town where Elira Voss trained Rayden and Selene — and where the Hollowwatch request was first spread across the table. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
+=== Mournhollow Sink ===
+Save as: starhaven_places_image/mournhollowsink.jpg
+Group: Westreach   Kind: Dungeon
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Mournhollow Sink — Dungeon, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: A dungeon beneath collapsed quarry ruins two days north of the town. Selene collapsed outside its entrance from blood loss while rain poured over the quarry. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
+=== The Bounty Boards ===
+Save as: starhaven_places_image/thebountyboards.jpg
+Group: Westreach   Kind: Contract boards
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Bounty Boards — Contract boards, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: The boards inside the Guild Hall, layered with monster bounties, escort jobs and dungeon contracts. Elira taught Rayden to read them before she taught him to read maps. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
+=== The Eastern Canal District ===
+Save as: starhaven_places_image/theeasterncanaldistrict.jpg
+Group: Westreach   Kind: District
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Eastern Canal District — District, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: Canals, bridges and taverns — the lights Selene and Rayden used to watch from the Rusted Lantern's roof. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
+=== The Frontier Lodges ===
+Save as: starhaven_places_image/thefrontierlodges.jpg
+Group: Westreach   Kind: Waystations
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Frontier Lodges — Waystations, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: Rough lodges along the contract roads that froze after midnight in winter. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
+=== The Northern Ridge Roads ===
+Save as: starhaven_places_image/thenorthernridgeroads.jpg
+Group: Westreach   Kind: Road
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Northern Ridge Roads — Road, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: The mining roads where three crews vanished after the winter earthquake — the road to Hollowwatch. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
 === The Rusted Lantern ===
 Save as: starhaven_places_image/therustedlantern.jpg
 Group: Westreach   Kind: Tavern
 PROMPT:
-Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Rusted Lantern — Tavern, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: Upper-floor rooms over the eastern canal district — Rayden and Selene's first home. Setting context: A frontier guild town of canals and taverns where Rayden and Selene took their first contracts.
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Rusted Lantern — Tavern, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: Upper-floor rooms over the eastern canal district, bought with Rayden and Selene's first real payment. From its rooftop you can see the canal lights. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
 
-=== Westreach Guild Hall ===
-Save as: starhaven_places_image/westreachguildhall.jpg
+=== The Undercity Warrens ===
+Save as: starhaven_places_image/theundercitywarrens.jpg
+Group: Westreach   Kind: Dungeon
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Undercity Warrens — Dungeon, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: The first dungeon beneath Westreach — oversized corpse-rats, flooded tunnels, and enough disease to kill careless adventurers slower than monsters would. Every Westreach adventurer starts here. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
+
+=== The Westreach Guild Hall ===
+Save as: starhaven_places_image/thewestreachguildhall.jpg
 Group: Westreach   Kind: Adventurer Guild
 PROMPT:
-Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Westreach Guild Hall — Adventurer Guild, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: Where the Hollowwatch party was recruited. Setting context: A frontier guild town of canals and taverns where Rayden and Selene took their first contracts.
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Westreach Guild Hall — Adventurer Guild, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: A converted stone warehouse near the outer trade roads, where caravans, mercenaries, monster hunters, smugglers, battlemages and desperate men gathered under one roof pretending they were different professions. The Hollowwatch party was recruited here — and it fell silent when they came back six days later. Setting context: The older adventurers' town of the western frontier — a guild town of canals, taverns and bounty boards where Elira Voss trained Rayden and Selene and they took their first contracts.
 
 ########################################################################
 ## OUTPOST  (24)
