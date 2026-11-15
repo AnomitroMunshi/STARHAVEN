@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 38   (finished so far: 251)
+Still to generate: 30   (finished so far: 259)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -77,56 +77,8 @@ PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Torka Ironwhirl, The Ironwhirl Squadron — Chief Engineer · The Ironwhirl Squadron (20 gyrocopters) · Stonemark Holds. A man, age 43, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 43-year-old Dwarf man — Soot-faced, goggled, a singed ginger beard. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Soot-faced, goggled, a singed ginger beard. Weapons and gear: brass flight goggles, a leather flying coat, sitting in a brass steam gyrocopter. Setting: a Stonemark mountain hold with banners and dwarven troops.
 
 ########################################################################
-## GUILD & CITIZENS  (28)
+## GUILD & CITIZENS  (20)
 ########################################################################
-
-=== Nell Furrow ===
-Save as: starhaven_chars_image/nellfurrow.jpg
-Group: Guild & Citizens   Race: Human   Age: 49
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Nell Furrow, The Plough & Pigeon — Innkeeper · The Plough & Pigeon · Rootholm. A woman, age 49, race: Human. Look: a 49-year-old Human woman — Plump and rosy, brown hair under a kerchief, flour on her apron. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Plump and rosy, brown hair under a kerchief, flour on her apron. Weapons and gear: a kerchief and a floury apron over a homespun dress, a rolling pin in hand. Setting: a cosy village inn with a thatched roof and harvest baskets.
-
-=== Cato Brightmantle ===
-Save as: starhaven_chars_image/catobrightmantle.jpg
-Group: Guild & Citizens   Race: Human   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Cato Brightmantle, The Arena-Master — Arena-Master · Iron Star Grand Arena · Starstone Crater, Starhold. A man, age 52, race: Human. Look: a 52-year-old Human man — Barrel-chested and handsome, a theatrical waved moustache, a voice like a temple bell, a crimson-and-gold mantle. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Barrel-chested and handsome, a theatrical waved moustache, a voice like a temple bell, a crimson-and-gold mantle. Weapons and gear: a crimson-and-gold showman's mantle over a fine embroidered coat, a gilded herald's staff raised high. Setting: a vast crater arena packed with a cheering crowd under banners.
-
-=== Amadeo Lark ===
-Save as: starhaven_chars_image/amadeolark.jpg
-Group: Guild & Citizens   Race: Half-Elf   Age: 57
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Amadeo Lark, The Impresario — Impresario · Grand Resonance Opera House · Vaelmark. A man, age 57, race: Half-Elf (half-elf: slightly pointed ears, mixed human and elven features). Look: a 57-year-old Half-Elf man — Silver hair swept back, half-elf ears, a velvet frock coat, an expressive, restless face. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Silver hair swept back, half-elf ears, a velvet frock coat, an expressive, restless face. Weapons and gear: a deep plum velvet frock coat with a silk cravat, an ivory conductor's baton. Setting: a grand opera house with glowing resonance crystals in the gilded balconies.
-
-=== Zaria Moonsworn ===
-Save as: starhaven_chars_image/zariamoonsworn.jpg
-Group: Guild & Citizens   Race: Human (Nightborn)   Age: 41
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Zaria Moonsworn, The Ringmistress — Ringmistress · The Wandering Lantern Circus. A woman, age 41, race: Human (Nightborn) (Nightborn: pale skin, silver ink-like tattoos curling beneath one eye). Look: a 41-year-old Human (Nightborn) woman — Striking, pale with silver ink-like tattoos beneath one eye, black curls under a top hat, a dazzling smile. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Striking, pale with silver ink-like tattoos beneath one eye, black curls under a top hat, a dazzling smile. Weapons and gear: a crimson ringmistress coat with gold frogging and tails, a black top hat, a silver-tipped whip trailing sparks. Setting: a circus big top at night lit by hundreds of paper lanterns.
-
-=== Fennimore Inkley ===
-Save as: starhaven_chars_image/fennimoreinkley.jpg
-Group: Guild & Citizens   Race: Goblin   Age: 50
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Fennimore Inkley, The Starhold Crier — Editor · The Starhold Crier broadsheet · Starhold. A man, age 50, race: Goblin (goblin: small wiry build, large pointed ears, sharp features, weathered skin). Look: a 50-year-old Goblin man — Small, green, ink-stained to the elbows, a green eyeshade, spectacles, a pencil behind each ear. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Small, green, ink-stained to the elbows, a green eyeshade, spectacles, a pencil behind each ear. Weapons and gear: ink-stained shirtsleeves with arm garters, a green eyeshade, a fresh broadsheet in hand, a printing press behind him. Setting: a cramped print shop with a printing press and hanging broadsheets.
-
-=== Lucien Varga ===
-Save as: starhaven_chars_image/lucienvarga.jpg
-Group: Guild & Citizens   Race: Half-Elf   Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Lucien Varga, The Gilded Wheel — Owner · The Gilded Wheel gambling hall · Goldgate. A man, age 47, race: Half-Elf (half-elf: slightly pointed ears, mixed human and elven features). Look: a 47-year-old Half-Elf man — Smooth and handsome, half-elf ears, slicked black hair, a gold ring on every finger, an easy smile that never reaches his eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Smooth and handsome, half-elf ears, slicked black hair, a gold ring on every finger, an easy smile that never reaches his eyes. Weapons and gear: a black velvet waistcoat with gold embroidery, a gold-edged deck of cards fanned in one hand, rings on every finger. Setting: a gilded gambling hall with roulette wheels, card tables and chandeliers.
-
-=== Agatha Thresh ===
-Save as: starhaven_chars_image/agathathresh.jpg
-Group: Guild & Citizens   Race: Human   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Agatha Thresh, Reeve of Rookthorn — Reeve · Rookthorn · Southern Agricultural Corridor. A woman, age 58, race: Human. Look: a 58-year-old Human woman — Weathered and sturdy, iron-grey hair under a straw hat, a farmer's hands, a no-nonsense stare. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Weathered and sturdy, iron-grey hair under a straw hat, a farmer's hands, a no-nonsense stare. Weapons and gear: a straw hat, a homespun work dress with rolled sleeves, a threshing flail over her shoulder. Setting: golden grain fields outside a walled market town.
-
-=== Hob Wheatley ===
-Save as: starhaven_chars_image/hobwheatley.jpg
-Group: Guild & Citizens   Race: Human   Age: 60
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hob Wheatley, Miller of Amberfield — Miller · Amberfield. A man, age 60, race: Human. Look: a 60-year-old Human man — Floury and broad, a white beard, a cheerful red face, a flat cap. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Floury and broad, a white beard, a cheerful red face, a flat cap. Weapons and gear: a flour-covered work shirt and apron, a flat cap, a miller's mallet; a windmill behind him. Setting: a golden wheat field with a great windmill.
 
 === Bryony Applewhite ===
 Save as: starhaven_chars_image/bryonyapplewhite.jpg
