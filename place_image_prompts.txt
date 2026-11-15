@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 206   (finished so far: 0)
+Still to generate: 333   (finished so far: 0)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -9,7 +9,7 @@ HOW TO USE
 - Places whose image already exists are left out of this file automatically.
 
 ########################################################################
-## CAPITAL  (13)
+## CAPITAL  (15)
 ########################################################################
 
 === Starhold ===
@@ -60,6 +60,18 @@ Group: Starhold   Kind: Pub · Lantern Lane
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Crown & Kettle — Pub · Lantern Lane, in the capital Starhold (Central Starhaven). What it is: Where the Dawnguard and the Ironwall drink off duty. Setting context: The capital of Starhaven — built from the ground up after the founding.
 
+=== The Crown Armoury Forge ===
+Save as: starhaven_places_image/thecrownarmouryforge.jpg
+Group: Starhold   Kind: Royal armoury
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Crown Armoury Forge — Royal armoury, in the capital Starhold (Central Starhaven). What it is: The palace forge where the Dawnguard's arms are kept sharp — run by a Master Smiths' journeyman sent from Forgehaven. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
+=== The Crown Cells ===
+Save as: starhaven_places_image/thecrowncells.jpg
+Group: Starhold   Kind: City jail
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Crown Cells — City jail, in the capital Starhold (Central Starhaven). What it is: Holding cells beneath the Crownwarden barracks — overnight drunks, petty thieves, and anyone awaiting the magistrates. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
 === The Crown Veterinary Hall ===
 Save as: starhaven_places_image/thecrownveterinaryhall.jpg
 Group: Starhold   Kind: Veterinary clinic
@@ -91,7 +103,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Starhold Crier — Broadsheet, in the capital Starhold (Central Starhaven). What it is: The kingdom's newspaper. Setting context: The capital of Starhaven — built from the ground up after the founding.
 
 ########################################################################
-## CITY  (48)
+## CITY  (68)
 ########################################################################
 
 === Forgehaven ===
@@ -142,11 +154,23 @@ Group: Forgehaven   Kind: Workers' hall
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Furnace Choir Hall — Workers' hall, in the city Forgehaven (Eastern Industrial Belt). What it is: Where the shift songs started — Forge and Furnace is sung here every night. Setting context: The industrial capital.
 
+=== The Master Smiths' Hall ===
+Save as: starhaven_places_image/themastersmithshall.jpg
+Group: Forgehaven   Kind: Smiths' guild hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Master Smiths' Hall — Smiths' guild hall, in the city Forgehaven (Eastern Industrial Belt). What it is: Home of the Forgehaven Master Smiths — every Ironmane lance, every officer's blade and every royal commission is forged here, and the Eleven's weapons come here for repair. Setting context: The industrial capital.
+
 === The Slag & Anvil ===
 Save as: starhaven_places_image/theslagandanvil.jpg
 Group: Forgehaven   Kind: Forge-workers' pub
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Slag & Anvil — Forge-workers' pub, in the city Forgehaven (Eastern Industrial Belt). What it is: First round poured the moment the furnace whistle blows. Setting context: The industrial capital.
+
+=== The Slag Cells ===
+Save as: starhaven_places_image/theslagcells.jpg
+Group: Forgehaven   Kind: City jail
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Slag Cells — City jail, in the city Forgehaven (Eastern Industrial Belt). What it is: Plain iron cells near the Arsenal gate. Prisoners work off small sentences sorting scrap. Setting context: The industrial capital.
 
 === The Stoneball Grounds ===
 Save as: starhaven_places_image/thestoneballgrounds.jpg
@@ -171,6 +195,12 @@ Save as: starhaven_places_image/beastandburdenclinic.jpg
 Group: Goldgate   Kind: Veterinary clinic
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Beast & Burden Clinic — Veterinary clinic, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Patches up adventurers' mounts, pack animals and the occasional injured familiar after a bad dive. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
+=== Hammer & Hilt ===
+Save as: starhaven_places_image/hammerandhilt.jpg
+Group: Goldgate   Kind: Adventurers' smithy · Loot Row
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Hammer & Hilt — Adventurers' smithy · Loot Row, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Dents beaten out, edges reground and dungeon-cracked armour patched by morning — for a price. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
 === Kettle & Rope Outfitters ===
 Save as: starhaven_places_image/kettleandropeoutfitters.jpg
@@ -232,6 +262,12 @@ Group: Goldgate   Kind: Bathhouse
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Steamhall — Bathhouse, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Hot pools, private rooms and a peace every guild honours. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== The Watchhouse Cells ===
+Save as: starhaven_places_image/thewatchhousecells.jpg
+Group: Goldgate   Kind: City jail
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Watchhouse Cells — City jail, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The City Watch lock-up behind the Watchhouse. Saturday nights after a big dungeon payout, it is full. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === Bark & Bough Craft Market ===
 Save as: starhaven_places_image/barkandboughcraftmarket.jpg
 Group: Greenveil   Kind: Craft market
@@ -262,6 +298,18 @@ Group: Greenveil   Kind: Council chamber
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Heartroot — Council chamber, in the city Greenveil (Western Forest Territory). What it is: A chamber inside Greenveil's oldest tree, where the city's decisions are made — and the tree is consulted. Setting context: The living city.
 
+=== The Ironwood Forge ===
+Save as: starhaven_places_image/theironwoodforge.jpg
+Group: Greenveil   Kind: Smithy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ironwood Forge — Smithy, in the city Greenveil (Western Forest Territory). What it is: A forge built into a living tree where Dagny Blackroot works ironwood without killing it — every Rootguard Harness, Thorin's included, has fittings from here. Setting context: The living city.
+
+=== The Rootcage ===
+Save as: starhaven_places_image/therootcage.jpg
+Group: Greenveil   Kind: Living-wood jail
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Rootcage — Living-wood jail, in the city Greenveil (Western Forest Territory). What it is: Cells grown from living roots. The roots let go when the sentence is served; nobody is sure how they know. Setting context: The living city.
+
 === The Rootcellar ===
 Save as: starhaven_places_image/therootcellar.jpg
 Group: Greenveil   Kind: Tavern
@@ -273,6 +321,12 @@ Save as: starhaven_places_image/therootwoodclinic.jpg
 Group: Greenveil   Kind: Veterinary clinic
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Rootwood Clinic — Veterinary clinic, in the city Greenveil (Western Forest Territory). What it is: Forest-beast medicine for elk, dire wolves and everything Greenveil's handlers bring in. Setting context: The living city.
+
+=== The Timber Forge ===
+Save as: starhaven_places_image/thetimberforge.jpg
+Group: Greenveil   Kind: Smithy · since 1042
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Timber Forge — Smithy · since 1042, in the city Greenveil (Western Forest Territory). What it is: Born from the forge tents of the Year 1042 war, when blacksmiths hammered damaged armour under canvas while wood dwarves carved replacement spear shafts from Greywood timber beside them. It never closed — smiths and wood dwarves still work side by side, iron heads on Greywood shafts. Setting context: The living city.
 
 === Lantern Night ===
 Save as: starhaven_places_image/lanternnight.jpg
@@ -286,6 +340,30 @@ Group: Sancthaven   Kind: Apothecary
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Moor's Remedies — Apothecary, in the city Sancthaven (Southern Heartlands). What it is: Sancthaven's oldest apothecary; half the healing halls buy her tinctures. Setting context: The holy city.
 
+=== Saint Veyne Orphanage ===
+Save as: starhaven_places_image/saintveyneorphanage.jpg
+Group: Sancthaven   Kind: Orphanage
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Saint Veyne Orphanage — Orphanage, in the city Sancthaven (Southern Heartlands). What it is: Named for the Oaksmane orphanage where Rayden and Caelum grew up under Sister Marianne. Every child gets a bed, three meals a day and a schooling, free — and no child who arrives at the door is ever turned away. Setting context: The holy city.
+
+=== The Cathedral Choir School ===
+Save as: starhaven_places_image/thecathedralchoirschool.jpg
+Group: Sancthaven   Kind: Choir school
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cathedral Choir School — Choir school, in the city Sancthaven (Southern Heartlands). What it is: Children's choir of the Grand Cathedral — half the voices come from Saint Veyne. Setting context: The holy city.
+
+=== The Cathedral Fortress ===
+Save as: starhaven_places_image/thecathedralfortress.jpg
+Group: Sancthaven   Kind: Holy Knights fortress
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cathedral Fortress — Holy Knights fortress, in the city Sancthaven (Southern Heartlands). What it is: Seat of the Holy Knights. Civilians cheer when their banners leave the gates. Setting context: The holy city.
+
+=== The Consecrated Forge ===
+Save as: starhaven_places_image/theconsecratedforge.jpg
+Group: Sancthaven   Kind: Holy smithy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Consecrated Forge — Holy smithy, in the city Sancthaven (Southern Heartlands). What it is: The Holy Knights' forge, where Sunfire plate and Relic Warden weapons are forged and blessed before they leave the Cathedral Fortress. Setting context: The holy city.
+
 === The Garden of Last Breaths ===
 Save as: starhaven_places_image/thegardenoflastbreaths.jpg
 Group: Sancthaven   Kind: Hospice garden
@@ -298,11 +376,41 @@ Group: Sancthaven   Kind: Veterinary clinic
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Gentle Hand Clinic — Veterinary clinic, in the city Sancthaven (Southern Heartlands). What it is: A small clinic beside the healing halls where healers and vets share herbs and methods. Setting context: The holy city.
 
+=== The Grand Cathedral ===
+Save as: starhaven_places_image/thegrandcathedral.jpg
+Group: Sancthaven   Kind: Cathedral
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Grand Cathedral — Cathedral, in the city Sancthaven (Southern Heartlands). What it is: Holds forty thousand people. It has been full four times — each time for a decision that was in no written protocol. Setting context: The holy city.
+
+=== The Healing Halls ===
+Save as: starhaven_places_image/thehealinghalls.jpg
+Group: Sancthaven   Kind: Hospital network
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Healing Halls — Hospital network, in the city Sancthaven (Southern Heartlands). What it is: The hospitals of Sancthaven — every healing protocol in the kingdom starts here. Setting context: The holy city.
+
 === The Lantern Veil Memorial ===
 Save as: starhaven_places_image/thelanternveilmemorial.jpg
 Group: Sancthaven   Kind: Statue
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Lantern Veil Memorial — Statue, in the city Sancthaven (Southern Heartlands). What it is: A bronze healer with a raised lantern at the gates of the healing halls, in memory of Selene Voss. Every new healer lights a candle at her feet on their first day. Setting context: The holy city.
+
+=== The Mercy Riders' Stables ===
+Save as: starhaven_places_image/themercyridersstables.jpg
+Group: Sancthaven   Kind: Stables
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Mercy Riders' Stables — Stables, in the city Sancthaven (Southern Heartlands). What it is: Home of the Mercy Riders — two thousand mounted medics and their Mercy Chargers. Setting context: The holy city.
+
+=== The Penitent House ===
+Save as: starhaven_places_image/thepenitenthouse.jpg
+Group: Sancthaven   Kind: Reform jail
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Penitent House — Reform jail, in the city Sancthaven (Southern Heartlands). What it is: A quiet prison where minor offenders are fed, healed and taught a trade before release. Few come back. Setting context: The holy city.
+
+=== The Pilgrim Hostels ===
+Save as: starhaven_places_image/thepilgrimhostels.jpg
+Group: Sancthaven   Kind: Hostels
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Pilgrim Hostels — Hostels, in the city Sancthaven (Southern Heartlands). What it is: Cheap beds for the pilgrims and patients' families who arrive every day. Setting context: The holy city.
 
 === The Pilgrims' Market ===
 Save as: starhaven_places_image/thepilgrimsmarket.jpg
@@ -315,6 +423,18 @@ Save as: starhaven_places_image/thequietlamp.jpg
 Group: Sancthaven   Kind: Inn
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Quiet Lamp — Inn, in the city Sancthaven (Southern Heartlands). What it is: Where the families of hospital patients stay. The lamp has not gone out in eleven years. Setting context: The holy city.
+
+=== The Restricted Quarter ===
+Save as: starhaven_places_image/therestrictedquarter.jpg
+Group: Sancthaven   Kind: Restricted quarter
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Restricted Quarter — Restricted quarter, in the city Sancthaven (Southern Heartlands). What it is: Where the Ashen Exorcists do the work beyond ordinary healing — entity removal and deep curse purification. Setting context: The holy city.
+
+=== The Trauma Wards ===
+Save as: starhaven_places_image/thetraumawards.jpg
+Group: Sancthaven   Kind: Hospital
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Trauma Wards — Hospital, in the city Sancthaven (Southern Heartlands). What it is: For injuries too severe for ordinary healing — run by Jeren Cren. Setting context: The holy city.
 
 === Grand Resonance Opera House ===
 Save as: starhaven_places_image/grandresonanceoperahouse.jpg
@@ -364,6 +484,18 @@ Group: Vaelmark   Kind: Canals
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ley-Lantern Canals — Canals, in the city Vaelmark (Western Arcane District). What it is: Canals lit from below by mana light — the city glows blue at night. Setting context: The arcane capital — a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
 
+=== The Nullstone Cells ===
+Save as: starhaven_places_image/thenullstonecells.jpg
+Group: Vaelmark   Kind: Mage jail
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Nullstone Cells — Mage jail, in the city Vaelmark (Western Arcane District). What it is: Null-stone-lined cells for students and mages who break the Arcanum's laws — or the city's. Setting context: The arcane capital — a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
+
+=== The Rune-Forge ===
+Save as: starhaven_places_image/theruneforge.jpg
+Group: Vaelmark   Kind: Arcane smithy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Rune-Forge — Arcane smithy, in the city Vaelmark (Western Arcane District). What it is: Where blades and armour are forged and runed in the same heat — the Veilborn Arcanum's Enchantment & Runecraft students do their practical year here. Setting context: The arcane capital — a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
+
 === The Silver Arena ===
 Save as: starhaven_places_image/thesilverarena.jpg
 Group: Vaelmark   Kind: Arena · historic
@@ -383,14 +515,38 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Veilborn Arcanum — Magic academy, in the city Vaelmark (Western Arcane District). What it is: The largest magic academy in the known world — seven schools, four thousand students. Setting context: The arcane capital — a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
 
 ########################################################################
-## FORT  (9)
+## FORT  (27)
 ########################################################################
+
+=== Mike's Forge ===
+Save as: starhaven_places_image/mikesforge.jpg
+Group: Ashenveil HQ   Kind: Blacksmith
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Mike's Forge — Blacksmith, in the fortress Ashenveil HQ (Southern Ashenveil Territory). What it is: The Ashenveil forge that stayed when the city was evacuated — now repurposed for the militia's weapons. Setting context: The Veil Watch's command fortress.
 
 === Petra's Memorial Wall ===
 Save as: starhaven_places_image/petrasmemorialwall.jpg
 Group: Ashenveil HQ   Kind: Memorial
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Petra's Memorial Wall — Memorial, in the fortress Ashenveil HQ (Southern Ashenveil Territory). What it is: The wall of twenty-three names Petra Allus keeps in Ashenveil's western district. No names have been added since the exposure rotation protocol. Setting context: The Veil Watch's command fortress.
+
+=== The Quiet Mess ===
+Save as: starhaven_places_image/thequietmess.jpg
+Group: Ashenveil HQ   Kind: Garrison mess hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Quiet Mess — Garrison mess hall, in the fortress Ashenveil HQ (Southern Ashenveil Territory). What it is: The Veil Watch's mess. Nobody talks shop at meals; it is the one rule Elysia enforces personally. Setting context: The Veil Watch's command fortress.
+
+=== The Stabilization Core ===
+Save as: starhaven_places_image/thestabilizationcore.jpg
+Group: Ashenveil HQ   Kind: Fortress core
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Stabilization Core — Fortress core, in the fortress Ashenveil HQ (Southern Ashenveil Territory). What it is: The heart of the fortress that keeps it dimensionally stable — built to the same specification as Veil Watch armour. Setting context: The Veil Watch's command fortress.
+
+=== The Three-Kilometre Line ===
+Save as: starhaven_places_image/thethreekilometreline.jpg
+Group: Ashenveil HQ   Kind: Perimeter markers
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Three-Kilometre Line — Perimeter markers, in the fortress Ashenveil HQ (Southern Ashenveil Territory). What it is: Marker stones three kilometres out — where every other force holds the line during an S+ event. The order has never needed to be given. Setting context: The Veil Watch's command fortress.
 
 === Ashenveil HQ ===
 Save as: starhaven_places_image/ashenveilhq.jpg
@@ -416,11 +572,71 @@ Group: Atlas — Veilhold Keep   Kind: Fortress
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Veilhold Keep — Fortress (Southern Frontier). What it is: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here. The southern approaches to Veilhold have been mapped six times.
 
+=== The Long Stair ===
+Save as: starhaven_places_image/thelongstair.jpg
+Group: Blackstone Gaol   Kind: Entrance
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Long Stair — Entrance, in the fortress Blackstone Gaol (Ironpass Citadel — cut into the mountain beneath the third ring). What it is: The only way in or out — four hundred steps cut down through the mountain, with a gate every fifty. Setting context: The kingdom's great prison, cut into the mountain beneath Ironpass's third ring — every serious offender, war prisoner and dangerous captive in Starhaven ends up here.
+
+=== The Null Wing ===
+Save as: starhaven_places_image/thenullwing.jpg
+Group: Blackstone Gaol   Kind: High-security wing
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Null Wing — High-security wing, in the fortress Blackstone Gaol (Ironpass Citadel — cut into the mountain beneath the third ring). What it is: Cells lined with Runebreaker null-stone. No spell has ever been cast inside it. Setting context: The kingdom's great prison, cut into the mountain beneath Ironpass's third ring — every serious offender, war prisoner and dangerous captive in Starhaven ends up here.
+
+=== The Question Rooms ===
+Save as: starhaven_places_image/thequestionrooms.jpg
+Group: Blackstone Gaol   Kind: Interrogation
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Question Rooms — Interrogation, in the fortress Blackstone Gaol (Ironpass Citadel — cut into the mountain beneath the third ring). What it is: Where Mace Torn's people sit with a prisoner and talk until the truth comes out. Setting context: The kingdom's great prison, cut into the mountain beneath Ironpass's third ring — every serious offender, war prisoner and dangerous captive in Starhaven ends up here.
+
+=== The Yard of Sky ===
+Save as: starhaven_places_image/theyardofsky.jpg
+Group: Blackstone Gaol   Kind: Exercise yard
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Yard of Sky — Exercise yard, in the fortress Blackstone Gaol (Ironpass Citadel — cut into the mountain beneath the third ring). What it is: A single shaft cut up to daylight. Prisoners get an hour of sky a day. Setting context: The kingdom's great prison, cut into the mountain beneath Ironpass's third ring — every serious offender, war prisoner and dangerous captive in Starhaven ends up here.
+
+=== The Avalanche Bell ===
+Save as: starhaven_places_image/theavalanchebell.jpg
+Group: Frosthold Bastion   Kind: Bell tower
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Avalanche Bell — Bell tower, in the fortress Frosthold Bastion (Northern Mountains). What it is: A great bronze bell rung to warn the passes. Its note carries twelve miles on a still day. Setting context: The northern anchor.
+
+=== The Cold Forge ===
+Save as: starhaven_places_image/thecoldforge.jpg
+Group: Frosthold Bastion   Kind: Fortress smithy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cold Forge — Fortress smithy, in the fortress Frosthold Bastion (Northern Mountains). What it is: A forge deep in the mountain that makes the Frost Lances, Icefang sabres and Frosthide plate of the Snowtusk Cavalry. Setting context: The northern anchor.
+
+=== The Frost Chapel ===
+Save as: starhaven_places_image/thefrostchapel.jpg
+Group: Frosthold Bastion   Kind: Chapel
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Frost Chapel — Chapel, in the fortress Frosthold Bastion (Northern Mountains). What it is: The Holy Knights' northern chapel, its windows cut from clear ice that is replaced every winter. Setting context: The northern anchor.
+
+=== The Ice Gate ===
+Save as: starhaven_places_image/theicegate.jpg
+Group: Frosthold Bastion   Kind: Fortress gate
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ice Gate — Fortress gate, in the fortress Frosthold Bastion (Northern Mountains). What it is: The main gate, carved through the mountain itself after the Year 1044 reinforcement. The fortress and the mountain are one structure now. Setting context: The northern anchor.
+
+=== The Last Hearth ===
+Save as: starhaven_places_image/thelasthearth.jpg
+Group: Frosthold Bastion   Kind: Garrison tavern
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Last Hearth — Garrison tavern, in the fortress Frosthold Bastion (Northern Mountains). What it is: A tavern cut into the mountain inside the Bastion walls, its hearth never allowed to go out. Every Coldmarch patrol ends here. Setting context: The northern anchor.
+
 === The Snowline Stables ===
 Save as: starhaven_places_image/thesnowlinestables.jpg
 Group: Frosthold Bastion   Kind: Veterinary clinic
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Snowline Stables — Veterinary clinic, in the fortress Frosthold Bastion (Northern Mountains). What it is: Cold-weather care for Snowtusk War Elk — the only clinic that treats them, since they cannot go below the snowline. Setting context: The northern anchor.
+
+=== Blackstone Gaol ===
+Save as: starhaven_places_image/blackstonegaol.jpg
+Group: Ironpass Citadel   Kind: Kingdom prison
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Blackstone Gaol — Kingdom prison, in the fortress Ironpass Citadel (Eastern Border). What it is: The kingdom's great prison, cut into the mountain beneath the third ring. Setting context: The eastern anchor.
 
 === The Havenfire Stone ===
 Save as: starhaven_places_image/thehavenfirestone.jpg
@@ -434,14 +650,38 @@ Group: Ironpass Citadel   Kind: Soldiers' tavern
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Last Ring — Soldiers' tavern, in the fortress Ironpass Citadel (Eastern Border). What it is: Inside the citadel walls — the only place Kael Varric has been seen to smile. Setting context: The eastern anchor.
 
+=== The Ring Forges ===
+Save as: starhaven_places_image/theringforges.jpg
+Group: Ironpass Citadel   Kind: Fortress forges
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ring Forges — Fortress forges, in the fortress Ironpass Citadel (Eastern Border). What it is: Forges built into each of the three rings, so every ring can repair its own weapons and gates even if cut off from the others. They descend from the old Havenfire forge district, where dwarven smiths worked through every night in Year 1042 arming refugees faster than they arrived. The third-ring forge has never gone cold. Setting context: The eastern anchor.
+
 === The Seventeen Maps ===
 Save as: starhaven_places_image/theseventeenmaps.jpg
 Group: Veilhold Keep   Kind: Cartographers' hut
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Seventeen Maps — Cartographers' hut, in the fortress Veilhold Keep (Southern Frontier). What it is: Beside Zareth Kull's office — mapping ground that will not stay the same. Setting context: The southern border fortress.
 
+=== The Southern Watch Wall ===
+Save as: starhaven_places_image/thesouthernwatchwall.jpg
+Group: Veilhold Keep   Kind: Fortress wall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Southern Watch Wall — Fortress wall, in the fortress Veilhold Keep (Southern Frontier). What it is: The wall facing Ashenveil — the most watched stretch of stone in the kingdom. Setting context: The southern border fortress.
+
+=== The Void Breakers Annex ===
+Save as: starhaven_places_image/thevoidbreakersannex.jpg
+Group: Veilhold Keep   Kind: Command annex
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Void Breakers Annex — Command annex, in the fortress Veilhold Keep (Southern Frontier). What it is: The Void Breakers' Ashenveil annex, beside Zareth Kull's office. Setting context: The southern border fortress.
+
+=== The Void Holding Cells ===
+Save as: starhaven_places_image/thevoidholdingcells.jpg
+Group: Veilhold Keep   Kind: Containment prison
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Void Holding Cells — Containment prison, in the fortress Veilhold Keep (Southern Frontier). What it is: Warded cells beneath the keep for Void-touched prisoners too dangerous for Blackstone Gaol — watched by the Veil Watch and studied from the office of Zareth Kull next door. Setting context: The southern border fortress.
+
 ########################################################################
-## NAVAL  (17)
+## NAVAL  (20)
 ########################################################################
 
 === Dawncliff Sea Fortress ===
@@ -467,6 +707,12 @@ Save as: starhaven_places_image/thechaintowerwalk.jpg
 Group: Dawncliff Sea Fortress   Kind: Fortress walk
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Chain-Tower Walk — Fortress walk, in the naval base Dawncliff Sea Fortress (Eastern Coast). What it is: A public walkway along the harbour chain towers, with views over the Glass Shallows. Setting context: 300-foot sea cliffs provide the primary defense.
+
+=== The Cliff Forge ===
+Save as: starhaven_places_image/thecliffforge.jpg
+Group: Dawncliff Sea Fortress   Kind: Naval smithy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cliff Forge — Naval smithy, in the naval base Dawncliff Sea Fortress (Eastern Coast). What it is: Iron-shod prows for the Dawncliff Ramships and shot for the sea cannons, forged in a forge cut into the cliff face. Setting context: 300-foot sea cliffs provide the primary defense.
 
 === The Clifftop Cannon Salute ===
 Save as: starhaven_places_image/theclifftopcannonsalute.jpg
@@ -510,6 +756,18 @@ Group: Saltmere   Kind: Festival
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Saltmere Harbour Festival — Festival, in the naval base Saltmere (Western Coast — Ashen Sea). Show the festival in full swing at night or dusk: Yearly boat races, a fish market that never closes, and fireworks over the Dawnfleet. Setting context: The western coastal port city and home of the Dawnfleet.
 
+=== The Anchor Forge ===
+Save as: starhaven_places_image/theanchorforge.jpg
+Group: Saltmere   Kind: Shipsmith
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Anchor Forge — Shipsmith, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: Anchors, chain, hull-nails and boarding axes for the Dawnfleet. Setting context: The western coastal port city and home of the Dawnfleet.
+
+=== The Brig ===
+Save as: starhaven_places_image/thebrig.jpg
+Group: Saltmere   Kind: Prison hulk
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Brig — Prison hulk, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: A decommissioned warship moored in the harbour and used as the city jail. Smugglers and drunk sailors serve their time afloat. Setting context: The western coastal port city and home of the Dawnfleet.
+
 === The Dawn Fish Auction ===
 Save as: starhaven_places_image/thedawnfishauction.jpg
 Group: Saltmere   Kind: Market
@@ -547,14 +805,56 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Tidewatch Sailing School — Activity, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: Learn to sail a skiff in the harbour — half the city's children have. Setting context: The western coastal port city and home of the Dawnfleet.
 
 ########################################################################
-## FRONTIER  (11)
+## FRONTIER  (36)
 ########################################################################
+
+=== Ashenfield Fish Quay ===
+Save as: starhaven_places_image/ashenfieldfishquay.jpg
+Group: Ashenfield   Kind: Fish market
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Ashenfield Fish Quay — Fish market, in the frontier territory Ashenfield (Southeastern Coast — below Forgehaven). What it is: Fishing fleets land their catch beside the military transports. Setting context: The coastal support settlement below Forgehaven — where the Tidegate Arsenal's output gets loaded onto barges for the run down to Dawncliff and Saltmere.
+
+=== The Barge Docks ===
+Save as: starhaven_places_image/thebargedocks.jpg
+Group: Ashenfield   Kind: Docks
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Barge Docks — Docks, in the frontier territory Ashenfield (Southeastern Coast — below Forgehaven). What it is: Where the Tidegate Arsenal's output is loaded for Dawncliff and Saltmere. The schedule has not slipped in six years. Setting context: The coastal support settlement below Forgehaven — where the Tidegate Arsenal's output gets loaded onto barges for the run down to Dawncliff and Saltmere.
+
+=== The Unphotographed ===
+Save as: starhaven_places_image/theunphotographed.jpg
+Group: Ashenfield   Kind: Dockworkers' pub
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Unphotographed — Dockworkers' pub, in the frontier territory Ashenfield (Southeastern Coast — below Forgehaven). What it is: Named after Cain Drakhar's line about Ashenfield. The dockworkers are very proud of the name. Setting context: The coastal support settlement below Forgehaven — where the Tidegate Arsenal's output gets loaded onto barges for the run down to Dawncliff and Saltmere.
+
+=== Crater Ridge ===
+Save as: starhaven_places_image/craterridge.jpg
+Group: Ashfield   Kind: Viewpoint
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Crater Ridge — Viewpoint, in the frontier territory Ashfield (Southern Frontier). What it is: A ridge where people come at night to watch the crater glow. Senna Ash calls it the only song that understands why. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
 
 === Crater Watch Camp ===
 Save as: starhaven_places_image/craterwatchcamp.jpg
 Group: Ashfield   Kind: Research camp
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Crater Watch Camp — Research camp, in the frontier territory Ashfield (Southern Frontier). What it is: The Arcanum's three research teams living beside the glowing crater. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
+
+=== The Ashen Passage Memorial ===
+Save as: starhaven_places_image/theashenpassagememorial.jpg
+Group: Ashfield   Kind: Memorial
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ashen Passage Memorial — Memorial, in the frontier territory Ashfield (Southern Frontier). What it is: A stone at the edge of the old battlefield. The answer cost more than expected. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
+
+=== The Iron Reavers' Camp ===
+Save as: starhaven_places_image/theironreaverscamp.jpg
+Group: Ashfield   Kind: Mercenary camp
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Iron Reavers' Camp — Mercenary camp, in the frontier territory Ashfield (Southern Frontier). What it is: The standing camp of the Iron Reavers, on contract to hold the frontier. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
+
+=== The Resettlement Farms ===
+Save as: starhaven_places_image/theresettlementfarms.jpg
+Group: Ashfield   Kind: Farmland
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Resettlement Farms — Farmland, in the frontier territory Ashfield (Southern Frontier). What it is: Fields reclaimed after the Ashen Passage War, worked by thirty thousand people who decided the land was worth it. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
 
 === Ashenfield ===
 Save as: starhaven_places_image/ashenfield.jpg
@@ -604,11 +904,65 @@ Group: Atlas — Thornwall Ruins   Kind: Frontier territory
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Thornwall Ruins — Frontier territory (Central Kingdom — Ancient Heritage Zone). What it is: The ruins of the pre-Starhaven settlement consumed by a Void event in Year 0 — one decade before the kingdom's founding. Preserved under a Veil Watch containment seal that has held for 400 years. Strictly guided scholarly access. The Frozen Market — a street where Void alteration stopped all organic matter mid-motion — is the most documented and least revisited feature. Scholars who study the Frozen Market once rarely request second access.
 
+=== The Caravan Road ===
+Save as: starhaven_places_image/thecaravanroad.jpg
+Group: Greypeak Foothills   Kind: Trade road
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Caravan Road — Trade road, in the frontier territory Greypeak Foothills (Greypeak Highlands — south of the Stormmassif). What it is: The pine road the forest caravans take toward Greenveil. Setting context: Pine-covered foothills where forest caravans move toward Greenveil, crossed by way-markers that have been sounding a two-hundred-and-thirty-year-old alarm.
+
+=== The Parley Ground ===
+Save as: starhaven_places_image/theparleyground.jpg
+Group: Greypeak Foothills   Kind: Neutral ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Parley Ground — Neutral ground, in the frontier territory Greypeak Foothills (Greypeak Highlands — south of the Stormmassif). What it is: A clearing where highland clans and Starhaven meet under truce. Setting context: Pine-covered foothills where forest caravans move toward Greenveil, crossed by way-markers that have been sounding a two-hundred-and-thirty-year-old alarm.
+
+=== The Way-Marker Stones ===
+Save as: starhaven_places_image/thewaymarkerstones.jpg
+Group: Greypeak Foothills   Kind: Ancient markers
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Way-Marker Stones — Ancient markers, in the frontier territory Greypeak Foothills (Greypeak Highlands — south of the Stormmassif). What it is: Stones that have sounded a 230-year-old alarm no unaugmented ear can hear. Setting context: Pine-covered foothills where forest caravans move toward Greenveil, crossed by way-markers that have been sounding a two-hundred-and-thirty-year-old alarm.
+
+=== Kira's Lantern ===
+Save as: starhaven_places_image/kiraslantern.jpg
+Group: Karath Dun   Kind: Monument
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Kira's Lantern — Monument, in the frontier territory Karath Dun (Giant Territories — Varathos). What it is: The lantern Elder Kira held forty feet above the stone for the prisoners below. She left it there. No one has moved it. Setting context: The landmark of the Giant-Starhaven alliance.
+
+=== The Giants' Steps ===
+Save as: starhaven_places_image/thegiantssteps.jpg
+Group: Karath Dun   Kind: Stairway
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Giants' Steps — Stairway, in the frontier territory Karath Dun (Giant Territories — Varathos). What it is: A stairway with steps built for giants, and a narrow human stair cut beside it. Setting context: The landmark of the Giant-Starhaven alliance.
+
+=== The Stonemoot ===
+Save as: starhaven_places_image/thestonemoot.jpg
+Group: Karath Dun   Kind: Council ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Stonemoot — Council ground, in the frontier territory Karath Dun (Giant Territories — Varathos). What it is: Where the giant elders and Starhaven's envoys meet — the humans sit on a raised platform so everyone can see each other. Setting context: The landmark of the Giant-Starhaven alliance.
+
+=== Glow Nights ===
+Save as: starhaven_places_image/glownights.jpg
+Group: Starstone Crater   Kind: Tradition
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Glow Nights — Tradition, in the frontier territory Starstone Crater (Starhold — Central Heritage Zone). What it is: On clear nights the crater glows faintly. Families bring blankets to the rim to watch. Setting context: The original meteor impact site at the heart of Starhold — the crater that gave the kingdom its name and founding mythology.
+
 === Iron Star Grand Arena ===
 Save as: starhaven_places_image/ironstargrandarena.jpg
 Group: Starstone Crater   Kind: Colosseum · 80,000 seats
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Iron Star Grand Arena — Colosseum · 80,000 seats, in the frontier territory Starstone Crater (Starhold — Central Heritage Zone). What it is: The Starhold Trial, exhibition bouts between units and the final of the Proving Yard circuit. Setting context: The original meteor impact site at the heart of Starhold — the crater that gave the kingdom its name and founding mythology.
+
+=== The Founding Stone ===
+Save as: starhaven_places_image/thefoundingstone.jpg
+Group: Starstone Crater   Kind: Monument
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Founding Stone — Monument, in the frontier territory Starstone Crater (Starhold — Central Heritage Zone). What it is: "We saw it fall. We built where it landed." — seven words Senna Ash calls the most important in the kingdom. Setting context: The original meteor impact site at the heart of Starhold — the crater that gave the kingdom its name and founding mythology.
+
+=== The Starfall Path ===
+Save as: starhaven_places_image/thestarfallpath.jpg
+Group: Starstone Crater   Kind: Walking circuit
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Starfall Path — Walking circuit, in the frontier territory Starstone Crater (Starhold — Central Heritage Zone). What it is: A two-mile walk around the crater rim with heritage markers every two hundred yards. Setting context: The original meteor impact site at the heart of Starhold — the crater that gave the kingdom its name and founding mythology.
 
 === Coldmarch Waystation ===
 Save as: starhaven_places_image/coldmarchwaystation.jpg
@@ -616,8 +970,62 @@ Group: The Coldmarch   Kind: Refuge inn
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Coldmarch Waystation — Refuge inn, in the frontier territory The Coldmarch (Northern Frontier). What it is: Open only through the eleven passable weeks. Setting context: The northern frontier — crossed in winter, avoided when possible, controlled when necessary.
 
+=== The Coldmarch Cairn ===
+Save as: starhaven_places_image/thecoldmarchcairn.jpg
+Group: The Coldmarch   Kind: Memorial
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Coldmarch Cairn — Memorial, in the frontier territory The Coldmarch (Northern Frontier). What it is: A cairn at the Coldmarch Crossing for the Year 1044 engagement — one stone for every soldier who never felt warm again. Setting context: The northern frontier — crossed in winter, avoided when possible, controlled when necessary.
+
+=== The Eleven-Week Road ===
+Save as: starhaven_places_image/theelevenweekroad.jpg
+Group: The Coldmarch   Kind: Crossing route
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Eleven-Week Road — Crossing route, in the frontier territory The Coldmarch (Northern Frontier). What it is: The crossing itself — passable for exactly eleven weeks a year, and lethal the rest. Setting context: The northern frontier — crossed in winter, avoided when possible, controlled when necessary.
+
+=== The Thaw Market ===
+Save as: starhaven_places_image/thethawmarket.jpg
+Group: The Coldmarch   Kind: Seasonal market
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Thaw Market — Seasonal market, in the frontier territory The Coldmarch (Northern Frontier). What it is: Traders who only come during the open weeks, selling furs, frost-salt and northern amber off sledges. Setting context: The northern frontier — crossed in winter, avoided when possible, controlled when necessary.
+
+=== The Contamination Line ===
+Save as: starhaven_places_image/thecontaminationline.jpg
+Group: The Stormmassif   Kind: Frontier
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Contamination Line — Frontier, in the frontier territory The Stormmassif (Northern Highlands). What it is: The line Velkan drew on his map — and the reason forty thousand people left. Setting context: The highland orc homeland — deep interior tribes, stone root-channels running for hundreds of miles beneath the mountains, and a contamination line spreading through them.
+
+=== The High Passes ===
+Save as: starhaven_places_image/thehighpasses.jpg
+Group: The Stormmassif   Kind: Mountain passes
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The High Passes — Mountain passes, in the frontier territory The Stormmassif (Northern Highlands). What it is: Where the Greypeak's eastern face drops toward the Stormmassif — and where Drogar Stonefang's army waited. Setting context: The highland orc homeland — deep interior tribes, stone root-channels running for hundreds of miles beneath the mountains, and a contamination line spreading through them.
+
+=== The Stone Root-Channels ===
+Save as: starhaven_places_image/thestonerootchannels.jpg
+Group: The Stormmassif   Kind: Underground channels
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Stone Root-Channels — Underground channels, in the frontier territory The Stormmassif (Northern Highlands). What it is: Stone channels running for hundreds of miles beneath the highlands, humming with something underneath. Setting context: The highland orc homeland — deep interior tribes, stone root-channels running for hundreds of miles beneath the mountains, and a contamination line spreading through them.
+
+=== The Containment Seal ===
+Save as: starhaven_places_image/thecontainmentseal.jpg
+Group: Thornwall Ruins   Kind: Veil Watch seal
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Containment Seal — Veil Watch seal, in the frontier territory Thornwall Ruins (Central Kingdom — Ancient Heritage Zone). What it is: The seal that has held for four hundred years. Elysia says it is not the seal keeping the market preserved. Setting context: The ruins of the pre-Starhaven settlement consumed by a Void event in Year 0 — one decade before the kingdom's founding.
+
+=== The Frozen Market ===
+Save as: starhaven_places_image/thefrozenmarket.jpg
+Group: Thornwall Ruins   Kind: Void-frozen street
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Frozen Market — Void-frozen street, in the frontier territory Thornwall Ruins (Central Kingdom — Ancient Heritage Zone). What it is: A street where everything organic stopped mid-motion in Year 0. Scholars who see it once rarely ask to come back. Setting context: The ruins of the pre-Starhaven settlement consumed by a Void event in Year 0 — one decade before the kingdom's founding.
+
+=== The Scholars' Gate ===
+Save as: starhaven_places_image/thescholarsgate.jpg
+Group: Thornwall Ruins   Kind: Guided entrance
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Scholars' Gate — Guided entrance, in the frontier territory Thornwall Ruins (Central Kingdom — Ancient Heritage Zone). What it is: The only way in — strictly guided, by appointment. Setting context: The ruins of the pre-Starhaven settlement consumed by a Void event in Year 0 — one decade before the kingdom's founding.
+
 ########################################################################
-## DISTRICT  (65)
+## DISTRICT  (90)
 ########################################################################
 
 === Hall of First Light ===
@@ -691,6 +1099,30 @@ Save as: starhaven_places_image/thewardpitch.jpg
 Group: Arcanum Inner Sanctum   Kind: Wardball pitch
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ward Pitch — Wardball pitch, in the district Arcanum Inner Sanctum (Vaelmark — Inner Precinct). What it is: The high stone pitch where Houses play Wardball for the Lantern Cup. Setting context: The inner walled precinct of the Arcanum within Vaelmark — restricted to enrolled mages, faculty, and authorized Pillar visits.
+
+=== Chronicle Hall ===
+Save as: starhaven_places_image/chroniclehall.jpg
+Group: Athenaeum Quarter   Kind: Reading hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Chronicle Hall — Reading hall, in the district Athenaeum Quarter (Starhold — Eastern Academic Ring). What it is: Where Senna Ash's chronicles are read aloud on the first day of each season. Setting context: The scholarly district surrounding the Royal Athenaeum — Starhaven's primary archive, research institution, and Codex collection.
+
+=== Scribes' Row ===
+Save as: starhaven_places_image/scribesrow.jpg
+Group: Athenaeum Quarter   Kind: Street
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Scribes' Row — Street, in the district Athenaeum Quarter (Starhold — Eastern Academic Ring). What it is: Copyists, bookbinders and ink-makers. The quietest street in the quietest district in the capital. Setting context: The scholarly district surrounding the Royal Athenaeum — Starhaven's primary archive, research institution, and Codex collection.
+
+=== The Royal Athenaeum ===
+Save as: starhaven_places_image/theroyalathenaeum.jpg
+Group: Athenaeum Quarter   Kind: Archive
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Royal Athenaeum — Archive, in the district Athenaeum Quarter (Starhold — Eastern Academic Ring). What it is: The kingdom's primary archive, research institution and Codex collection. Setting context: The scholarly district surrounding the Royal Athenaeum — Starhaven's primary archive, research institution, and Codex collection.
+
+=== The Sealed Archive ===
+Save as: starhaven_places_image/thesealedarchive.jpg
+Group: Athenaeum Quarter   Kind: Restricted archive
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Sealed Archive — Restricted archive, in the district Athenaeum Quarter (Starhold — Eastern Academic Ring). What it is: Records that need two signatories to open — including one of the three that mention the Null Ward. Setting context: The scholarly district surrounding the Royal Athenaeum — Starhaven's primary archive, research institution, and Codex collection.
 
 === Arcanum Inner Sanctum ===
 Save as: starhaven_places_image/arcanuminnersanctum.jpg
@@ -896,6 +1328,12 @@ Group: Learnstead University   Kind: College
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Stonebank College — College, in the district Learnstead University (Central Kingdom — Learnstead Town). What it is: Sciences, mathematics and trade. Setting context: Starhaven's primary non-magical university — medicine, engineering, biology, mathematics, natural sciences, architecture, history, law, and trade.
 
+=== The Bridgewater Workshops ===
+Save as: starhaven_places_image/thebridgewaterworkshops.jpg
+Group: Learnstead University   Kind: Engineering forge
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Bridgewater Workshops — Engineering forge, in the district Learnstead University (Central Kingdom — Learnstead Town). What it is: Where Bridgewater College students forge, cast and test every part of the bridges they design. Setting context: Starhaven's primary non-magical university — medicine, engineering, biology, mathematics, natural sciences, architecture, history, law, and trade.
+
 === The Debating Chamber ===
 Save as: starhaven_places_image/thedebatingchamber.jpg
 Group: Learnstead University   Kind: Debating hall
@@ -932,11 +1370,53 @@ Group: Moonglade   Kind: Hidden glade
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Moonglade — Hidden glade (Greenveil — deep forest, location undisclosed). What it is: The Silver Moon Elk herd and its keepers. A hidden glade deep in the Greenveil forest where Lyria Valen breeds the Silver Moon Elk — silver-white, near-silent, faster than any warhorse through dense forest, and ridden only by the Silent Wardens.
 
+=== The Looping Streets ===
+Save as: starhaven_places_image/theloopingstreets.jpg
+Group: Null Ward   Kind: Streets
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Looping Streets — Streets, in the district Null Ward (Starhold — Central (Classified)). What it is: Streets that seem to loop back on themselves to anyone who does not belong there. Setting context: A classified district within Starhold that does not appear on civilian maps.
+
+=== The Unlit Hall ===
+Save as: starhaven_places_image/theunlithall.jpg
+Group: Null Ward   Kind: Training hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Unlit Hall — Training hall, in the district Null Ward (Starhold — Central (Classified)). What it is: Where the Null Blades train in total darkness. Setting context: A classified district within Starhold that does not appear on civilian maps.
+
 === The Dawn Barges ===
 Save as: starhaven_places_image/thedawnbarges.jpg
 Group: Riverbend Market Gardens   Kind: River barges
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Dawn Barges — River barges, in the district Riverbend Market Gardens (Starhold — river lowlands outside the capital). What it is: Barges carrying fresh produce to Starhold every morning before dawn. Setting context: Irrigated market gardens along the river outside Starhold — vegetables, fruit and herbs that reach the capital's markets every morning by barge.
+
+=== The Old Weir ===
+Save as: starhaven_places_image/theoldweir.jpg
+Group: Riverbend Market Gardens   Kind: Irrigation weir
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Old Weir — Irrigation weir, in the district Riverbend Market Gardens (Starhold — river lowlands outside the capital). What it is: The stone weir that waters every garden on the river flats. Children swim below it in summer. Setting context: Irrigated market gardens along the river outside Starhold — vegetables, fruit and herbs that reach the capital's markets every morning by barge.
+
+=== Stormwing Hall ===
+Save as: starhaven_places_image/stormwinghall.jpg
+Group: Skyperch Landing   Kind: Brotherhood hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Stormwing Hall — Brotherhood hall, in the district Skyperch Landing (Starhold — Eastern Cliff Plateau). What it is: The Stormwing Brotherhood's hall and mess. Setting context: The aerial operations district built into a cliff-face plateau east of Starhold — permanent base of the Stormriders and the Stormwing Brotherhood.
+
+=== The Altitude Record Board ===
+Save as: starhaven_places_image/thealtituderecordboard.jpg
+Group: Skyperch Landing   Kind: Record board
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Altitude Record Board — Record board, in the district Skyperch Landing (Starhold — Eastern Cliff Plateau). What it is: Tessa Skarne at 14,000 feet; Aurelia Vex two hundred feet below. Both look at it every morning. Setting context: The aerial operations district built into a cliff-face plateau east of Starhold — permanent base of the Stormriders and the Stormwing Brotherhood.
+
+=== The Dragon Roost Halls ===
+Save as: starhaven_places_image/thedragonroosthalls.jpg
+Group: Skyperch Landing   Kind: Roosts
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Dragon Roost Halls — Roosts, in the district Skyperch Landing (Starhold — Eastern Cliff Plateau). What it is: Roost halls for the Stormriders' dragons on the cliff plateau. Setting context: The aerial operations district built into a cliff-face plateau east of Starhold — permanent base of the Stormriders and the Stormwing Brotherhood.
+
+=== The Griffin Pads ===
+Save as: starhaven_places_image/thegriffinpads.jpg
+Group: Skyperch Landing   Kind: Landing pads
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Griffin Pads — Landing pads, in the district Skyperch Landing (Starhold — Eastern Cliff Plateau). What it is: Landing pads for the Stormwing Brotherhood's 120 griffins. Setting context: The aerial operations district built into a cliff-face plateau east of Starhold — permanent base of the Stormriders and the Stormwing Brotherhood.
 
 === Cloth Row ===
 Save as: starhaven_places_image/clothrow.jpg
@@ -962,6 +1442,12 @@ Group: The Eyrie Crags Rookery   Kind: Rookery
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Eyrie Crags Rookery — Rookery (Western Ranges — below Skyperch). What it is: Griffin and eagle breeding cliffs. Cliff rookeries below Skyperch where war griffins for the Stormriders and the Stormwing Brotherhood, and Ashwing eagles for the Skywarden Corps, are bred and raised.
 
+=== The Hatching Ledges ===
+Save as: starhaven_places_image/thehatchingledges.jpg
+Group: The Eyrie Crags Rookery   Kind: Nesting cliffs
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Hatching Ledges — Nesting cliffs, in the district The Eyrie Crags Rookery (Western Ranges — below Skyperch). What it is: Warm cliff ledges where griffin eggs are kept until they hatch. Visitors are allowed to watch from the far side of the gorge. Setting context: Cliff rookeries below Skyperch where war griffins for the Stormriders and the Stormwing Brotherhood, and Ashwing eagles for the Skywarden Corps, are bred and raised.
+
 === Garruk's Clearing ===
 Save as: starhaven_places_image/garruksclearing.jpg
 Group: The Greywood Bonding Grounds   Kind: Memorial clearing
@@ -973,6 +1459,30 @@ Save as: starhaven_places_image/thegreywoodbondinggrounds.jpg
 Group: The Greywood Bonding Grounds   Kind: Bonding clearings
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Greywood Bonding Grounds — Bonding clearings (Greenveil — the Greywood). What it is: Where wild-born beasts and Primal Vanguard handlers bond. The deep Greywood clearings where Thorin's Primal Vanguard beasts come from.
+
+=== Dren Solm's Corner Table ===
+Save as: starhaven_places_image/drensolmscornertable.jpg
+Group: The Hearthrow   Kind: Tradition
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Dren Solm's Corner Table — Tradition, in the district The Hearthrow (Goldgate — Lower City). What it is: A corner table that is always free when Dren Solm arrives. Nobody reserves it. Nobody can explain it. Setting context: The inn district.
+
+=== The Cracked Core ===
+Save as: starhaven_places_image/thecrackedcore.jpg
+Group: The Hearthrow   Kind: Tavern
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cracked Core — Tavern, in the district The Hearthrow (Goldgate — Lower City). What it is: Dren Solm plays every third week; lines start four hours before opening. Setting context: The inn district.
+
+=== The Golden Threshold ===
+Save as: starhaven_places_image/thegoldenthreshold.jpg
+Group: The Hearthrow   Kind: Adventurers' inn
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Golden Threshold — Adventurers' inn, in the district The Hearthrow (Goldgate — Lower City). What it is: Where adventurers find the right team. Setting context: The inn district.
+
+=== The Ruined Plate ===
+Save as: starhaven_places_image/theruinedplate.jpg
+Group: The Hearthrow   Kind: Veterans' tavern
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ruined Plate — Veterans' tavern, in the district The Hearthrow (Goldgate — Lower City). What it is: The veterans' social hub of Goldgate. Setting context: The inn district.
 
 === The Ice-Cave Dens ===
 Save as: starhaven_places_image/theicecavedens.jpg
@@ -1010,9 +1520,69 @@ Group: The Wildmarch Preserve   Kind: Breeding preserve
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Wildmarch Preserve — Breeding preserve (Greenveil territory — southern forest edge). What it is: Raising grounds of the Starhaven Beast Corps. A vast fenced forest-and-grassland preserve where the Starhaven Beast Corps raises its war tigers, war lions, war gorillas, war boars and war bears — and pairs each with a handler from birth.
 
+=== The 0400 Shift Bell ===
+Save as: starhaven_places_image/the0400shiftbell.jpg
+Group: Tidegate Arsenal   Kind: Tradition
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The 0400 Shift Bell — Tradition, in the district Tidegate Arsenal (Forgehaven — Harbor District). What it is: The shift change the whole city block has adjusted to. The singing starts as the bell stops. Setting context: The manufacturing heart of Starhaven's military capability.
+
+=== The Furnace Floor ===
+Save as: starhaven_places_image/thefurnacefloor.jpg
+Group: Tidegate Arsenal   Kind: Workshop floor
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Furnace Floor — Workshop floor, in the district Tidegate Arsenal (Forgehaven — Harbor District). What it is: Where the Iron Tide tanks are built — the furnaces have not cooled since the first stone was laid. Setting context: The manufacturing heart of Starhaven's military capability.
+
+=== The Inspection Office ===
+Save as: starhaven_places_image/theinspectionoffice.jpg
+Group: Tidegate Arsenal   Kind: Office
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Inspection Office — Office, in the district Tidegate Arsenal (Forgehaven — Harbor District). What it is: Cain Drakhar's monthly inspection log — eleven years without a miss, and one entry of twelve minutes late. Setting context: The manufacturing heart of Starhaven's military capability.
+
+=== The SKYREACH Wing ===
+Save as: starhaven_places_image/theskyreachwing.jpg
+Group: Tidegate Arsenal   Kind: Classified wing
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The SKYREACH Wing — Classified wing, in the district Tidegate Arsenal (Forgehaven — Harbor District). What it is: Where Cyrus Vexley's SKYREACH prototypes were built. No visitors. Setting context: The manufacturing heart of Starhaven's military capability.
+
+=== Chandlers' Row ===
+Save as: starhaven_places_image/chandlersrow.jpg
+Group: Tidewatch Quarter   Kind: Market street
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Chandlers' Row — Market street, in the district Tidewatch Quarter (Saltmere — Waterfront District). What it is: Rope, canvas, lamps, tar and every other thing a ship needs. Setting context: The harbor-front district of Saltmere — the working face of the city.
+
+=== Pren Vane's Chart House ===
+Save as: starhaven_places_image/prenvanescharthouse.jpg
+Group: Tidewatch Quarter   Kind: Chart house
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Pren Vane's Chart House — Chart house, in the district Tidewatch Quarter (Saltmere — Waterfront District). What it is: Where the most accurate sea charts in the known world are drawn — and where Pren annotates them very specifically. Setting context: The harbor-front district of Saltmere — the working face of the city.
+
+=== The Shipwrights' Yards ===
+Save as: starhaven_places_image/theshipwrightsyards.jpg
+Group: Tidewatch Quarter   Kind: Shipyards
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Shipwrights' Yards — Shipyards, in the district Tidewatch Quarter (Saltmere — Waterfront District). What it is: Where the Dawnfleet's ships are built and repaired. Setting context: The harbor-front district of Saltmere — the working face of the city.
+
+=== The Thalassian League Embassy ===
+Save as: starhaven_places_image/thethalassianleagueembassy.jpg
+Group: Tidewatch Quarter   Kind: Embassy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Thalassian League Embassy — Embassy, in the district Tidewatch Quarter (Saltmere — Waterfront District). What it is: The League's permanent offices on the Saltmere waterfront. Setting context: The harbor-front district of Saltmere — the working face of the city.
+
 ########################################################################
-## VILLAGE  (17)
+## VILLAGE  (35)
 ########################################################################
+
+=== The Great Windmill ===
+Save as: starhaven_places_image/thegreatwindmill.jpg
+Group: Amberfield   Kind: Windmill
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Great Windmill — Windmill, in the village Amberfield (Southern Agricultural Corridor — near Rookthorn). What it is: The windmill that grinds flour for half the south. Setting context: A wheat village of golden fields and one great windmill that grinds flour for Rookthorn and half the south.
+
+=== The Harvest Fair ===
+Save as: starhaven_places_image/theharvestfair.jpg
+Group: Amberfield   Kind: Festival
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Harvest Fair — Festival, in the village Amberfield (Southern Agricultural Corridor — near Rookthorn). Show the festival in full swing at night or dusk: Dancing, cider, and a loaf-baking contest Berrit Ovenhall is now banned from. Setting context: A wheat village of golden fields and one great windmill that grinds flour for Rookthorn and half the south.
 
 === Amberfield ===
 Save as: starhaven_places_image/amberfield.jpg
@@ -1080,6 +1650,36 @@ Group: Atlas — Westreach   Kind: Village / town
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Westreach — Village / town (Western Frontier (pre-Starhaven)). What it is: A frontier guild town of canals and taverns where Rayden and Selene took their first contracts. Its Adventurer Guild smelled of blood, wet leather, old ale and exhaustion; its surrounding frontier existed in permanent negotiation with death. Their first real payment went toward a room above the Rusted Lantern, an upper-floor tavern overlooking the eastern canal district.
 
+=== The First Pressing ===
+Save as: starhaven_places_image/thefirstpressing.jpg
+Group: Hollowbrook Orchards   Kind: Festival
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The First Pressing — Festival, in the village Hollowbrook Orchards (Central Kingdom). Show the festival in full swing at night or dusk: The day the first cider barrel is opened — a holiday in the village and a stampede on Hearthrow. Setting context: An orchard village of nine hundred apple trees.
+
+=== The Nine Hundred ===
+Save as: starhaven_places_image/theninehundred.jpg
+Group: Hollowbrook Orchards   Kind: Orchard
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Nine Hundred — Orchard, in the village Hollowbrook Orchards (Central Kingdom). What it is: Nine hundred apple trees, each one known by name. Setting context: An orchard village of nine hundred apple trees.
+
+=== Saint Veyne Orphanage (ruins) ===
+Save as: starhaven_places_image/saintveyneorphanageruins.jpg
+Group: Oaksmane   Kind: Ruin
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Saint Veyne Orphanage (ruins) — Ruin, in the village Oaksmane (Lower Industrial Territories (pre-Starhaven)). What it is: The orphanage by the canal district, behind the old grain warehouse, burned on the Night of Fire in Year 1031. Nobody has rebuilt it here — its name lives on in Sancthaven. Setting context: The factory town where Rayden Cale grew up in a collapsing orphanage.
+
+=== The Execution Square ===
+Save as: starhaven_places_image/theexecutionsquare.jpg
+Group: Oaksmane   Kind: Market square
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Execution Square — Market square, in the village Oaksmane (Lower Industrial Territories (pre-Starhaven)). What it is: The lower market square beside the frozen fountain. Setting context: The factory town where Rayden Cale grew up in a collapsing orphanage.
+
+=== The Frozen Canals ===
+Save as: starhaven_places_image/thefrozencanals.jpg
+Group: Oaksmane   Kind: Canals
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Frozen Canals — Canals, in the village Oaksmane (Lower Industrial Territories (pre-Starhaven)). What it is: Where a boy once cried until no sound came out. Setting context: The factory town where Rayden Cale grew up in a collapsing orphanage.
+
 === Rookthorn Gate ===
 Save as: starhaven_places_image/rookthorngate.jpg
 Group: Rookthorn   Kind: Town gate
@@ -1092,17 +1692,83 @@ Group: Rookthorn   Kind: Grain stores
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Rookthorn Granaries — Grain stores, in the village Rookthorn (Southern Agricultural Corridor). What it is: The granaries that feed the south. Setting context: The grain town of the Southern Agricultural Corridor — rain district, eastern grain district, and fields that feed half the south.
 
+=== The Militia Hall ===
+Save as: starhaven_places_image/themilitiahall.jpg
+Group: Rootholm   Kind: Militia hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Militia Hall — Militia hall, in the village Rootholm (Central Kingdom — Agricultural Belt). What it is: Where Rootholm's militia files its weekly report of zero incidents. Setting context: A small, stable agricultural village in the central kingdom.
+
 === The Plough & Pigeon ===
 Save as: starhaven_places_image/theploughandpigeon.jpg
 Group: Rootholm   Kind: Village inn
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Plough & Pigeon — Village inn, in the village Rootholm (Central Kingdom — Agricultural Belt). What it is: Where nothing ever happens, over a pint. Setting context: A small, stable agricultural village in the central kingdom.
 
+=== The Oyster Beds ===
+Save as: starhaven_places_image/theoysterbeds.jpg
+Group: Saltreed   Kind: Oyster beds
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Oyster Beds — Oyster beds, in the village Saltreed (Coast north of Saltmere). What it is: Worked by six generations of Netwhistles. Setting context: A fishing village of reed boats and oyster beds up the coast from Saltmere.
+
+=== The Reed Boat Yard ===
+Save as: starhaven_places_image/thereedboatyard.jpg
+Group: Saltreed   Kind: Boatyard
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Reed Boat Yard — Boatyard, in the village Saltreed (Coast north of Saltmere). What it is: Where the village's reed boats are woven by hand. Setting context: A fishing village of reed boats and oyster beds up the coast from Saltmere.
+
+=== The Cheese Caves ===
+Save as: starhaven_places_image/thecheesecaves.jpg
+Group: Shepherd's Rest   Kind: Cheese caves
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cheese Caves — Cheese caves, in the village Shepherd's Rest (Greypeak Highlands). What it is: Cool caves where the highland cheese ages. Setting context: A highland village of sheep, wool and cheese on the green slopes below Greypeak.
+
+=== The Sheepdog Trials ===
+Save as: starhaven_places_image/thesheepdogtrials.jpg
+Group: Shepherd's Rest   Kind: Festival
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Sheepdog Trials — Festival, in the village Shepherd's Rest (Greypeak Highlands). Show the festival in full swing at night or dusk: The best sheepdogs in the kingdom compete every autumn — the Ironpack sends scouts. Setting context: A highland village of sheep, wool and cheese on the green slopes below Greypeak.
+
 === The Summit Tavern ===
 Save as: starhaven_places_image/thesummittavern.jpg
 Group: Stonemarsh   Kind: Tavern
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Summit Tavern — Tavern, in the village Stonemarsh (Greypeak Highlands — base village). What it is: Hesta Ashford's tavern at the foot of the climb — where summits are celebrated and failures are toasted anyway. Setting context: The base village for climbers on Greypeak, run by Bram Ashford since Year 1032.
+
+=== The Warden Hut ===
+Save as: starhaven_places_image/thewardenhut.jpg
+Group: Stonemarsh   Kind: Trailhead
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Warden Hut — Trailhead, in the village Stonemarsh (Greypeak Highlands — base village). What it is: The Highland Warden Service hut at the trailhead, where climbers sign out and Bram reads the weather before he lets them go. Setting context: The base village for climbers on Greypeak, run by Bram Ashford since Year 1032.
+
+=== The Burned Gate ===
+Save as: starhaven_places_image/theburnedgate.jpg
+Group: Veynehold   Kind: Ruin
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Burned Gate — Ruin, in the village Veynehold (Northern Frontier (pre-Starhaven)). What it is: All that stands of the fortress-town's gate. Setting context: A fortress-town that smelled of wet ash, blood and fear.
+
+=== The Carved Vault ===
+Save as: starhaven_places_image/thecarvedvault.jpg
+Group: Veynehold   Kind: Ruin
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Carved Vault — Ruin, in the village Veynehold (Northern Frontier (pre-Starhaven)). What it is: A chamber beneath the town covered in carved symbols — the same ones later found elsewhere. Setting context: A fortress-town that smelled of wet ash, blood and fear.
+
+=== The Survivors' Watchpost ===
+Save as: starhaven_places_image/thesurvivorswatchpost.jpg
+Group: Veynehold   Kind: Watchpost
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Survivors' Watchpost — Watchpost, in the village Veynehold (Northern Frontier (pre-Starhaven)). What it is: The abandoned frontier watchpost several miles south where the rescued prisoners and children reached safety at sunrise. Setting context: A fortress-town that smelled of wet ash, blood and fear.
+
+=== The Frostless Terraces ===
+Save as: starhaven_places_image/thefrostlessterraces.jpg
+Group: Vinehallow   Kind: Vineyards
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Frostless Terraces — Vineyards, in the village Vinehallow (Southern hills). What it is: The only slopes in the kingdom that never frost. Setting context: Terraced vineyards on the only slopes in the kingdom that never frost — the wine Goldgate drinks.
+
+=== Treading Day ===
+Save as: starhaven_places_image/treadingday.jpg
+Group: Vinehallow   Kind: Festival
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Treading Day — Festival, in the village Vinehallow (Southern hills). Show the festival in full swing at night or dusk: The first day of harvest, when everyone treads grapes — visiting nobles included. Setting context: Terraced vineyards on the only slopes in the kingdom that never frost — the wine Goldgate drinks.
 
 === The Rusted Lantern ===
 Save as: starhaven_places_image/therustedlantern.jpg
@@ -1117,7 +1783,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Westreach Guild Hall — Adventurer Guild, in the village Westreach (Western Frontier (pre-Starhaven)). What it is: Where the Hollowwatch party was recruited. Setting context: A frontier guild town of canals and taverns where Rayden and Selene took their first contracts.
 
 ########################################################################
-## OUTPOST  (11)
+## OUTPOST  (24)
 ########################################################################
 
 === Ironpass Forward Post ===
@@ -1150,11 +1816,71 @@ Group: Atlas — Veilmarsh Observation Post   Kind: Outpost
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Veilmarsh Observation Post — Outpost (Southern Border — Veilmarsh Edge). What it is: A network of observation posts along the Veilmarsh northern edge — the primary early warning system for the southern mist-border. Coordinates between Veilhold Keep's garrison and Nyx Ravel's intelligence network. Nyx Ravel visited one post unannounced before visiting Veilhold itself.
 
+=== Stonefall's Post ===
+Save as: starhaven_places_image/stonefallspost.jpg
+Group: Ironpass Forward Post   Kind: Forward post
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Stonefall's Post — Forward post, in the outpost Ironpass Forward Post (Eastern Border — Mountain Corridor). What it is: The furthest post up the corridor, where Brek Stonefall rewrote the protocol instead of the walls. Setting context: The network of forward observation and early-warning posts extending beyond the Ironpass Citadel into the mountain corridor — the first eyes on anything moving through the eastern approach.
+
+=== The Beacon Chain ===
+Save as: starhaven_places_image/thebeaconchain.jpg
+Group: Ironpass Forward Post   Kind: Signal relay
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Beacon Chain — Signal relay, in the outpost Ironpass Forward Post (Eastern Border — Mountain Corridor). What it is: A chain of signal beacons from the corridor back to the citadel. Setting context: The network of forward observation and early-warning posts extending beyond the Ironpass Citadel into the mountain corridor — the first eyes on anything moving through the eastern approach.
+
+=== The Screen Camp ===
+Save as: starhaven_places_image/thescreencamp.jpg
+Group: Ironpass Forward Post   Kind: Cavalry camp
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Screen Camp — Cavalry camp, in the outpost Ironpass Forward Post (Eastern Border — Mountain Corridor). What it is: Cavalry screening units camped in the high corridor. Setting context: The network of forward observation and early-warning posts extending beyond the Ironpass Citadel into the mountain corridor — the first eyes on anything moving through the eastern approach.
+
+=== The Relay Spire ===
+Save as: starhaven_places_image/therelayspire.jpg
+Group: Resonance Mage Network   Kind: Command tower
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Relay Spire — Command tower, in the outpost Resonance Mage Network (Kingdom-Wide — All Major Cities). What it is: The Resonance Corps command tower in Starhold, where the Soul Link network is held together. Setting context: The distributed relay station network maintained by Bob Vale's Resonance Corps — the magical communication infrastructure underpinning the Soul Link system and Starhaven's coordinated military capability across any terrain or distance.
+
+=== The Relay Stations ===
+Save as: starhaven_places_image/therelaystations.jpg
+Group: Resonance Mage Network   Kind: Relay network
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Relay Stations — Relay network, in the outpost Resonance Mage Network (Kingdom-Wide — All Major Cities). What it is: Small stations in every major city, each staffed by Resonance mages. Setting context: The distributed relay station network maintained by Bob Vale's Resonance Corps — the magical communication infrastructure underpinning the Soul Link system and Starhaven's coordinated military capability across any terrain or distance.
+
+=== Vale's Voice ===
+Save as: starhaven_places_image/valesvoice.jpg
+Group: Resonance Mage Network   Kind: Command chamber
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Vale's Voice — Command chamber, in the outpost Resonance Mage Network (Kingdom-Wide — All Major Cities). What it is: The chamber where Bob Vale and four officers hold the one-to-one command links. Setting context: The distributed relay station network maintained by Bob Vale's Resonance Corps — the magical communication infrastructure underpinning the Soul Link system and Starhaven's coordinated military capability across any terrain or distance.
+
+=== Cyrus Vexley's Desk ===
+Save as: starhaven_places_image/cyrusvexleysdesk.jpg
+Group: Rift Gate Network   Kind: Office
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Cyrus Vexley's Desk — Office, in the outpost Rift Gate Network (Kingdom-Wide — 31 Installations). What it is: From which all six railway lines and thirty-one gates are run, with four assistants and two unfilled vacancies. Setting context: 31 rift gate installations across the kingdom — reserved for government, military, and emergency use.
+
+=== The Eighteen-Minute Drill ===
+Save as: starhaven_places_image/theeighteenminutedrill.jpg
+Group: Rift Gate Network   Kind: Exercise
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Eighteen-Minute Drill — Exercise, in the outpost Rift Gate Network (Kingdom-Wide — 31 Installations). What it is: The emergency deployment drill — any army, any settlement, eighteen minutes. Setting context: 31 rift gate installations across the kingdom — reserved for government, military, and emergency use.
+
+=== The Starhold Terminus ===
+Save as: starhaven_places_image/thestarholdterminus.jpg
+Group: Rift Gate Network   Kind: Rift gate hub
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Starhold Terminus — Rift gate hub, in the outpost Rift Gate Network (Kingdom-Wide — 31 Installations). What it is: The central gate terminus at the heart of Starhold. Setting context: 31 rift gate installations across the kingdom — reserved for government, military, and emergency use.
+
 === Harrow's Harness Loft ===
 Save as: starhaven_places_image/harrowsharnessloft.jpg
 Group: Skyperch   Kind: Harness-maker
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Harrow's Harness Loft — Harness-maker, in the outpost Skyperch (Mountain Perch — Western Ranges). What it is: Every saddle made to fit a single dragon. Setting context: Built specifically to meet Zephyros's architectural requirements — the landing platforms are sized for an elder dragon several hundred years old, 40+ wingspan.
+
+=== The Dragon-Plate Forge ===
+Save as: starhaven_places_image/thedragonplateforge.jpg
+Group: Skyperch   Kind: Smithy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Dragon-Plate Forge — Smithy, in the outpost Skyperch (Mountain Perch — Western Ranges). What it is: Light dragon barding and flight armour for the Stormriders — every piece fitted with Pip Harrowsaddle's harness. Setting context: Built specifically to meet Zephyros's architectural requirements — the landing platforms are sized for an elder dragon several hundred years old, 40+ wingspan.
 
 === The Forty Stables ===
 Save as: starhaven_places_image/thefortystables.jpg
@@ -1186,9 +1912,45 @@ Group: Skyperch   Kind: Summit platform
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Zephyros's Ledge — Summit platform, in the outpost Skyperch (Mountain Perch — Western Ranges). What it is: The highest platform. Only Zephyros and Aurelia go up. Setting context: Built specifically to meet Zephyros's architectural requirements — the landing platforms are sized for an elder dragon several hundred years old, 40+ wingspan.
 
+=== The 340-Yard Post ===
+Save as: starhaven_places_image/the340yardpost.jpg
+Group: Veilmarsh Observation Post   Kind: Observation post
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The 340-Yard Post — Observation post, in the outpost Veilmarsh Observation Post (Southern Border — Veilmarsh Edge). What it is: The post that detected Nyx Ravel at 340 yards — Veilhold's own record is 200. Setting context: A network of observation posts along the Veilmarsh northern edge — the primary early warning system for the southern mist-border.
+
+=== The Mist-Line Towers ===
+Save as: starhaven_places_image/themistlinetowers.jpg
+Group: Veilmarsh Observation Post   Kind: Watchtowers
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Mist-Line Towers — Watchtowers, in the outpost Veilmarsh Observation Post (Southern Border — Veilmarsh Edge). What it is: Watchtowers along the Veilmarsh edge, staring into the mist border. Setting context: A network of observation posts along the Veilmarsh northern edge — the primary early warning system for the southern mist-border.
+
+=== The Umbra-Hound Kennels ===
+Save as: starhaven_places_image/theumbrahoundkennels.jpg
+Group: Veilmarsh Observation Post   Kind: Kennels
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Umbra-Hound Kennels — Kennels, in the outpost Veilmarsh Observation Post (Southern Border — Veilmarsh Edge). What it is: Kennels for the hound units that patrol the mist line. Setting context: A network of observation posts along the Veilmarsh northern edge — the primary early warning system for the southern mist-border.
+
 ########################################################################
-## HISTORIC  (4)
+## HISTORIC  (7)
 ########################################################################
+
+=== Deepforge ===
+Save as: starhaven_places_image/deepforge.jpg
+Group: Beneath the mountains   Kind: Historic site
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Deepforge — Historic site (Beneath the mountains — the old dwarven frontier). What it is: An ancient dwarven forge-city buried beneath the mountains — forge halls on colossal rune-carved pillars, broken bridges over dark rivers, old magma channels glowing under cracked grates. The dwarves sealed it long before the frontier collapsed. In Year 1041 the founding party went in.
+
+=== The Barricade Chamber ===
+Save as: starhaven_places_image/thebarricadechamber.jpg
+Group: Deepforge   Kind: Forge hall
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Barricade Chamber — Forge hall, in the historic site Deepforge (Beneath the mountains — the old dwarven frontier). What it is: Where hundreds of dwarf skeletons still stand behind their barricades. Setting context: An ancient dwarven forge-city buried beneath the mountains — forge halls on colossal rune-carved pillars, broken bridges over dark rivers, old magma channels glowing under cracked grates.
+
+=== The Magma Channels ===
+Save as: starhaven_places_image/themagmachannels.jpg
+Group: Deepforge   Kind: Ancient works
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Magma Channels — Ancient works, in the historic site Deepforge (Beneath the mountains — the old dwarven frontier). What it is: Old magma channels that still glow faintly beneath the cracked grates. Setting context: An ancient dwarven forge-city buried beneath the mountains — forge halls on colossal rune-carved pillars, broken bridges over dark rivers, old magma channels glowing under cracked grates.
 
 === Moonfall Lake ===
 Save as: starhaven_places_image/moonfalllake.jpg
