@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 84   (finished so far: 175)
+Still to generate: 76   (finished so far: 183)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,56 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## COMMANDER  (21)
+## COMMANDER  (13)
 ########################################################################
-
-=== Wenna Voss ===
-Save as: starhaven_chars_image/wennavoss.jpg
-Group: Commander   Race: Human   Age: 26
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Wenna Voss, Ironwatch — Aerie-Captain · Ironwatch Aerie · Skywarden Corps (4th Field Army). A woman, age 26, race: Human. Look: a 26-year-old Human woman — The youngest aerie-captain in the corps: dark brown skin, an undercut with tight braids on top, and a grin she hides on duty. No relation to the Sancthaven Vosses — a question she answers weekly. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): The youngest aerie-captain in the corps: dark brown skin, an undercut with tight braids on top, and a grin she hides on duty. No relation to the Sancthaven Vosses — a question she answers weekly. Weapons and gear: Skywarden dress uniform: a tailored midnight-blue officer's coat with a silver eagle-wing badge and a blue scarf, the folding crossbow Quickquill on her thigh; her eagle landing behind her. Setting: a grey mountain sky above a moving army column.
-
-=== Corran Ashvane ===
-Save as: starhaven_chars_image/corranashvane.jpg
-Group: Commander   Race: Dwarf   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Corran Ashvane, The Battery-Marshal — Battery-Marshal · Iron Talon Batteries · Anti-aerial ballistae (six per Field Army). A man, age 58, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 58-year-old Dwarf man — Barrel-chested dwarf, grey-black beard braided around brass range-rings, one ear deafened by thirty years of ballista cords. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Barrel-chested dwarf, grey-black beard braided around brass range-rings, one ear deafened by thirty years of ballista cords. Weapons and gear: Iron Talon dress uniform: a heavy iron-grey officer's coat with bronze talon insignia and brass buttons, his braided beard threaded with brass range-rings, a brass range-wheel in hand; a talon ballista behind him. Setting: a muddy mountain battery emplacement with ballistae and bolt crates.
-
-=== Senn Aldric ===
-Save as: starhaven_chars_image/sennaldric.jpg
-Group: Commander   Race: Human   Age: 41
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Senn Aldric, The Quartermaster of the Road — Iron Road Corps · Supply Column Commander · Field Army logistics. A man, age 41, race: Human. Look: a 41-year-old Human man — Mud to the knees, a wagoner's weathered face, close-cropped beard, a headscarf against the road dust. Sever Aldric's older brother. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Mud to the knees, a wagoner's weathered face, close-cropped beard, a headscarf against the road dust. Sever Aldric's older brother. Weapons and gear: an oiled leather road coat over a padded jerkin, a bandolier of ledgers and seal-tubes, the notched iron-shod staff Tallystaff; a covered supply wagon with a compass-rose banner behind him. Setting: a muddy supply road with draft horses and wagons.
-
-=== Sever Aldric ===
-Save as: starhaven_chars_image/severaldric.jpg
-Group: Commander   Race: Human   Age: 38
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Sever Aldric, The Breach-Marshal — Breach-Marshal · The Warbreakers · Shock infantry (9,000). A man, age 38, race: Human. Look: a 38-year-old Human man — Heavy-set and scarred, the left eye lost at Eastern Crossing and covered by an iron eye-patch. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Heavy-set and scarred, the left eye lost at Eastern Crossing and covered by an iron eye-patch. Weapons and gear: Warbreakers dress uniform: a black officer's coat with a red sash and a red breach sigil on the breast, an iron eye-patch over the lost left eye, the bearded war-axe Breachmaw held upright at his side. Setting: a churned, smoking battlefield, Warbreakers advancing behind him.
-
-=== Aera Coldwind ===
-Save as: starhaven_chars_image/aeracoldwind.jpg
-Group: Commander   Race: Half Moon Elf   Age: 34
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Aera Coldwind, The Point of the Dawn Wedge — Lance-Commander · The Dawnlancers · All-female heavy cavalry (1,800). A woman, age 34, race: Half Moon Elf (half Moon Elf: subtly pointed ears, fine elegant features, pale skin with a faint silver undertone). Look: a 34-year-old Half Moon Elf woman — Pale gold hair in a crown braid, half-elf ears, sharp grey eyes, a lancer's shoulders. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Pale gold hair in a crown braid, half-elf ears, sharp grey eyes, a lancer's shoulders. Weapons and gear: Dawnlancer court dress: an ivory officer's coat with gold sunburst embroidery and gold epaulettes, a long white cloak, a gilded lance with a sun pennant; her white stallion behind her. Their mount is beside or behind them: Solace — A white Dawnrunner stallion from the Ironmane programme. Setting: a golden sunrise over a cavalry field, Dawnlancers forming the wedge.
-
-=== Caelen Voss ===
-Save as: starhaven_chars_image/caelenvoss.jpg
-Group: Commander   Race: Human   Age: 45
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Caelen Voss, The Marshal-Rider — Marshal-Rider · Silver Swan Cavalry Corps (4,800 medium cavalry, four detachments). A man, age 45, race: Human. Look: a 45-year-old Human man — Silver hair cut short, weathered olive skin, a trimmed grey beard. Rides more than he walks. No relation to the Sancthaven Vosses. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Silver hair cut short, weathered olive skin, a trimmed grey beard. Rides more than he walks. Weapons and gear: Silver Swan dress uniform: a silver-grey officer's coat with a white swan crest, a blue riding cloak, the swan-hilted sabre Swanneck at his hip; a grey cavalry horse behind him. Setting: a wide grassland with cavalry detachments in the distance.
-
-=== Vrakas Stonehide ===
-Save as: starhaven_chars_image/vrakasstonehide.jpg
-Group: Commander   Race: Bear-kin (Stonehide Beastman)   Age: 67
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Vrakas Stonehide, The War-Elder — War-Elder · The Gauntlet Army (12,000) · Stonehide Clan. A man, age 67, race: Bear-kin (Stonehide Beastman) (bear-kin beastfolk: massive frame, grey fur along the jaw and neck, scarred hands). Look: a 67-year-old Bear-kin (Stonehide Beastman) man — Huge, grey-muzzled bear-kin, scarred chest bare, ritual tattoos faded with age. Still fights in the front line. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Huge, grey-muzzled bear-kin, scarred chest bare, ritual tattoos faded with age. Still fights in the front line. Weapons and gear: bare-chested and heavily scarred, faded ritual tattoos, a fur-and-leather war kilt, massive iron war-gauntlets studded with river stones; a black banner with a clenched fist behind him. Setting: a rocky highland under storm clouds, Gauntlet warriors massed behind.
-
-=== Sael Dorn ===
-Save as: starhaven_chars_image/saeldorn.jpg
-Group: Commander   Race: Human (Ashwalker)   Age: 42
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Sael Dorn, The Closing Wing — Commander · The Closing Wings · Encirclement cavalry (Rhegar's reserve). A woman, age 42, race: Human (Ashwalker) (Ashwalker: sun-darkened skin marked with ash patterns, desert-frontier wraps). Look: a 42-year-old Human (Ashwalker) woman — Sun-darkened, ash-marked Ashwalker skin, close-cropped black hair, a calm that unsettles other commanders. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Sun-darkened, ash-marked Ashwalker skin, close-cropped black hair, a calm that unsettles other commanders. Weapons and gear: Closing Wings dress uniform: a black riding officer's coat with a silver crescent insignia, a dark half-cloak, the black horn horse-bow Nightclasp across her back and a crescent sabre. Setting: a dark open moor under heavy cloud, cavalry riding in a wide arc.
 
 === Cassia Vayne ===
 Save as: starhaven_chars_image/cassiavayne.jpg
