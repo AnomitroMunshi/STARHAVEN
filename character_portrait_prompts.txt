@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 76   (finished so far: 183)
+Still to generate: 70   (finished so far: 189)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,44 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## COMMANDER  (13)
+## COMMANDER  (7)
 ########################################################################
-
-=== Cassia Vayne ===
-Save as: starhaven_chars_image/cassiavayne.jpg
-Group: Commander   Race: Human   Age: 44
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Cassia Vayne, The Rune-Marshal — Rune-Marshal · The Runebreakers · Anti-magic corps (1,800, 450 per Field Army). A woman, age 44, race: Human. Look: a 44-year-old Human woman — Short dark hair streaked grey, a sharp, tired face, amber visor pushed up. No relation to the Aethran Vaynes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Short dark hair streaked grey, a sharp, tired face, amber visor pushed up. No relation to the Aethran Vaynes. Weapons and gear: Runebreaker dress uniform: a charcoal officer's coat with amber rune-thread trim, an amber visor-lens hanging on a chain at her chest, the heavy crossbow Hush slung over one shoulder with grey null-stone bolts. Setting: a smoking battlefield, Runebreakers with glowing amber visors behind her.
-
-=== Torvan Grund ===
-Save as: starhaven_chars_image/torvangrund.jpg
-Group: Commander   Race: Half-Orc   Age: 51
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Torvan Grund, The Warden-Breaker — Warden-Breaker · Ironbreaker Mace Corps · Anti-heavy infantry (3,000). A man, age 51, race: Half-Orc (half-orc: grey-green skin, small lower tusks, human-orc mixed features). Look: a 51-year-old Half-Orc man — Grey-green skin, small lower tusks, a shaved head crossed with old scars, forearms like a smith's. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Grey-green skin, small lower tusks, a shaved head crossed with old scars, forearms like a smith's. Weapons and gear: Ironbreaker dress uniform: a dark green-black officer's coat with iron mace insignia and riveted shoulder plates, the two-handed flanged mace Grundhammer resting on his shoulder. Setting: a burning siege line with wooden scaffolds.
-
-=== Sylara Evenmere ===
-Save as: starhaven_chars_image/sylaraevenmere.jpg
-Group: Commander   Race: Elf (Elderwood)   Age: 340
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Sylara Evenmere, The Archbow — Archbow · Silverleaf Corps · Elven precision longbow (600) · 4th Field Army. A woman, age 340, race: Elf (Elderwood). Look: a 340-year-old (ageless-looking) Elf (Elderwood) woman — Tall, silver-blonde, an ageless face with very old eyes, a white mantle over green. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall, silver-blonde, an ageless face with very old eyes, a white mantle over green. Weapons and gear: green-and-ivory elven ranger robes with a long white mantle, silver leaf embroidery, the white-ash longbow Evenstar; a green banner with a silver leaf behind her. Setting: a mountain meadow with elven archers and white tents.
-
-=== Nerys Ashborne ===
-Save as: starhaven_chars_image/nerysashborne.jpg
-Group: Commander   Race: Moon Elf   Age: 178
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Nerys Ashborne, The Dusk-Marshal — Dusk-Marshal · The Dusk Corps · Night warfare (3,600, one company per Field Army). A woman, age 178, race: Moon Elf (Moon Elf: long pointed ears, pale luminous skin, silver or moon-pale hair, ageless face). Look: a 178-year-old (ageless-looking) Moon Elf woman — Pale silver skin, white hair cropped close, violet-black eyes that seem to gather light. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Pale silver skin, white hair cropped close, violet-black eyes that seem to gather light. Weapons and gear: Dusk Corps court dress: a high-collared black officer's coat that seems to drink the light, faint violet thread at the cuffs, the featureless black Dusk Mask held in one hand, a black-steel blade at her hip. Setting: a moonless night with faint violet light, black-armoured figures behind.
-
-=== Veld Ashe ===
-Save as: starhaven_chars_image/veldashe.jpg
-Group: Commander   Race: Human   Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Veld Ashe, The Tunnel-Captain — Tunnel-Captain · Groundbreaker — Tunnel Assault Corps (800 sappers, 200 engineers). A man, age 47, race: Human. Look: a 47-year-old Human man — Thickset, mud ground into every line of his face, grey stubble, a lamp-helm pushed back. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Thickset, mud ground into every line of his face, grey stubble, a lamp-helm pushed back. Weapons and gear: mud-caked leather sapper armour, a battered lamp-helm, the hammer-backed pick Deepbite on his shoulder; a timber-propped tunnel mouth behind. Setting: a siege trench beside a timber-propped tunnel entrance, a fortress wall above.
-
-=== Fosho Tanachi ===
-Save as: starhaven_chars_image/foshotanachi.jpg
-Group: Commander   Race: Human   Age: 36
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Fosho Tanachi, The Last Chance — Commander · The Doomcleavers · Greatsword formation-breakers (Rhegar's reserve). A man, age 36, race: Human. Look: a 36-year-old Human man — Broad, scarred, black hair in a short tail, a notched greatsword older than most of his soldiers. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Broad, scarred, black hair in a short tail, a notched greatsword older than most of his soldiers. Weapons and gear: Doomcleaver dress: a dark officer's coat with an old torn tabard worn as a sash, the notched two-handed greatsword Last Chance strapped across his back. Setting: a muddy battlefield with tattered banners and smoke.
 
 === Iva Renn ===
 Save as: starhaven_chars_image/ivarenn.jpg
