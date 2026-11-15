@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 30   (finished so far: 259)
+Still to generate: 22   (finished so far: 267)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -77,56 +77,8 @@ PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Torka Ironwhirl, The Ironwhirl Squadron — Chief Engineer · The Ironwhirl Squadron (20 gyrocopters) · Stonemark Holds. A man, age 43, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 43-year-old Dwarf man — Soot-faced, goggled, a singed ginger beard. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Soot-faced, goggled, a singed ginger beard. Weapons and gear: brass flight goggles, a leather flying coat, sitting in a brass steam gyrocopter. Setting: a Stonemark mountain hold with banners and dwarven troops.
 
 ########################################################################
-## GUILD & CITIZENS  (20)
+## GUILD & CITIZENS  (12)
 ########################################################################
-
-=== Bryony Applewhite ===
-Save as: starhaven_chars_image/bryonyapplewhite.jpg
-Group: Guild & Citizens   Race: Wood Dwarf   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Bryony Applewhite, Cider-Maker of Hollowbrook — Cider-maker · Hollowbrook Orchards. A woman, age 52, race: Wood Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 52-year-old Wood Dwarf woman — Short, round and rosy, beardless, chestnut braids tied with ribbon, apple-red cheeks. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Short, round and rosy, beardless, chestnut braids tied with ribbon, apple-red cheeks. Weapons and gear: a green work dress with a leather apron, a basket of red apples, a cider press behind her. Setting: an apple orchard in autumn with barrels and a cider press.
-
-=== Teodoro Ruskin ===
-Save as: starhaven_chars_image/teodororuskin.jpg
-Group: Guild & Citizens   Race: Human   Age: 55
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Teodoro Ruskin, Vintner of Vinehallow — Vintner · Vinehallow. A man, age 55, race: Human. Look: a 55-year-old Human man — Tanned and silver-haired, a neat grey moustache, a wine-red scarf, laughter lines. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tanned and silver-haired, a neat grey moustache, a wine-red scarf, laughter lines. Weapons and gear: a linen shirt and wine-red scarf, a silver tasting cup, grapevines behind him. Setting: terraced vineyards on sunny southern hills.
-
-=== Oona Netwhistle ===
-Save as: starhaven_chars_image/oonanetwhistle.jpg
-Group: Guild & Citizens   Race: Human (Sea-Nomad)   Age: 71
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Oona Netwhistle, Matriarch of Saltreed — Fisher-Matriarch · Saltreed. A woman, age 71, race: Human (Sea-Nomad) (sea-nomad: sun- and salt-weathered skin, braided hair with shell and bone beads). Look: a 71-year-old Human (Sea-Nomad) woman — Small and leathery, white hair in a long braid with shell beads, sharp black eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Small and leathery, white hair in a long braid with shell beads, sharp black eyes. Weapons and gear: an oilskin coat over a wool sweater, a net-needle in hand, fishing nets drying behind her. Setting: a fishing village of reed boats and drying nets on a grey shore.
-
-=== Corrin Woolsey ===
-Save as: starhaven_chars_image/corrinwoolsey.jpg
-Group: Guild & Citizens   Race: Half-Orc   Age: 44
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Corrin Woolsey, Shepherd of Shepherd's Rest — Head Shepherd · Shepherd's Rest · Greypeak Highlands. A man, age 44, race: Half-Orc (half-orc: grey-green skin, small lower tusks, human-orc mixed features). Look: a 44-year-old Half-Orc man — Big, gentle, grey-green skin, small tusks, a wool cloak, a sheepdog always at his heel. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Big, gentle, grey-green skin, small tusks, a wool cloak, a sheepdog always at his heel. Weapons and gear: a heavy undyed wool cloak, a shepherd's crook, a sheepdog beside him. Setting: green highland slopes dotted with sheep under misty peaks.
-
-=== Josefa Reyne ===
-Save as: starhaven_chars_image/josefareyne.jpg
-Group: Guild & Citizens   Race: Human   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Josefa Reyne, The Wreckers' Galley — Owner · The Wreckers' Galley · Saltmere. A woman, age 58, race: Human. Look: a 58-year-old Human woman — Weathered and broad-shouldered, grey hair in a sailor's queue, a tricorn hat, a laugh that carries across a harbour. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Weathered and broad-shouldered, grey hair in a sailor's queue, a tricorn hat, a laugh that carries across a harbour. Weapons and gear: a faded navy captain's coat with tarnished brass buttons over an apron, a tricorn hat, a ladle in one hand. Setting: the gun deck of a beached warship turned into a lantern-lit restaurant.
-
-=== Gideon Fairweather ===
-Save as: starhaven_chars_image/gideonfairweather.jpg
-Group: Guild & Citizens   Race: Human   Age: 50
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Gideon Fairweather, Steward of the Grainlands — Steward · Ironmane Grainlands. A man, age 50, race: Human. Look: a 50-year-old Human man — Sunburnt and steady, sandy hair going grey, a wide-brimmed hat, a farmer's quiet patience. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Sunburnt and steady, sandy hair going grey, a wide-brimmed hat, a farmer's quiet patience. Weapons and gear: a wide-brimmed hat, a linen work shirt and leather vest, a notched surveyor's staff. Setting: endless golden wheat fields under a big sky.
-
-=== Tallis Greymeadow ===
-Save as: starhaven_chars_image/tallisgreymeadow.jpg
-Group: Guild & Citizens   Race: Half-Elf   Age: 41
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Tallis Greymeadow, Herd-Mistress of Highgrass — Herd-Mistress · Highgrass Ranges. A woman, age 41, race: Half-Elf (half-elf: slightly pointed ears, mixed human and elven features). Look: a 41-year-old Half-Elf woman — Lean and weathered, half-elf ears, dark hair in a long plait, a riding coat dusty from the hills. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean and weathered, half-elf ears, dark hair in a long plait, a riding coat dusty from the hills. Weapons and gear: a long dusty riding coat, riding boots, a herding horn on a strap, a long herding whip. Setting: rolling green uplands with herds of horses running.
-
-=== Deven Ashkari ===
-Save as: starhaven_chars_image/devenashkari.jpg
-Group: Guild & Citizens   Race: Human (Karath)   Age: 50
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Deven Ashkari, Tusk-Master — Tusk-Master · The Tusk Grounds · Starhaven Mammoth & War Elephant Corps. A man, age 50, race: Human (Karath). Look: a 50-year-old Human (Karath) man — Lean and sun-dark, a neat grey beard, a Karath headwrap, the calm patience of someone who works with very large animals. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean and sun-dark, a neat grey beard, a Karath headwrap, the calm patience of someone who works with very large animals. Weapons and gear: a Karath headwrap and a long sand-coloured coat, a polished ironwood ankus, a mammoth's great tusk curving behind him. Setting: green water meadows with mammoths and elephants grazing.
 
 === Marit Featherstone ===
 Save as: starhaven_chars_image/maritfeatherstone.jpg
