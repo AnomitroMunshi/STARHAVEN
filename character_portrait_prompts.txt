@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 70   (finished so far: 189)
+Still to generate: 63   (finished so far: 196)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,52 +11,6 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
-
-########################################################################
-## COMMANDER  (7)
-########################################################################
-
-=== Iva Renn ===
-Save as: starhaven_chars_image/ivarenn.jpg
-Group: Commander   Race: Human (Nightborn)   Age: 31
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Iva Renn, The Picket — Captain · Picket Scouts · Perimeter watch (Rhegar's reserve). A woman, age 31, race: Human (Nightborn) (Nightborn: pale skin, silver ink-like tattoos curling beneath one eye). Look: a 31-year-old Human (Nightborn) woman — Pale, with silver ink-like tattoos curling beneath one eye, dark hair cut short, a mottled hooded cloak. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Pale, with silver ink-like tattoos curling beneath one eye, dark hair cut short, a mottled hooded cloak. Weapons and gear: a mottled green-grey hooded cloak over dark leather, the brass spyglass Quietglass in hand, a throat-knife at the shoulder strap. Setting: a dark forest ridge overlooking a distant fortress at dusk.
-
-=== Hollis Oswick ===
-Save as: starhaven_chars_image/hollisoswick.jpg
-Group: Commander   Race: Human   Age: 37
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hollis Oswick, The Siege-Captain — Siege-Captain · Stonecast Onager Battery (24 onagers). A woman, age 37, race: Human. Look: a 37-year-old Human woman — Freckled, auburn hair under a leather cap, ink and grit under her nails. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Freckled, auburn hair under a leather cap, ink and grit under her nails. Weapons and gear: a leather artillery coat with a dark blue tabard, a brass range quadrant on a cord, a leather cap; onagers in the background. Setting: a siege line with onagers loosing at a distant wall.
-
-=== Brix Holt ===
-Save as: starhaven_chars_image/brixholt.jpg
-Group: Commander   Race: Human   Age: 45
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Brix Holt, The Tower-Marshal — Tower-Marshal · Rampart — Siege Tower Division (12 towers). A man, age 45, race: Human. Look: a 45-year-old Human man — Big-handed, sawdust in his beard, a carpenter's pencil behind one ear. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Big-handed, sawdust in his beard, a carpenter's pencil behind one ear. Weapons and gear: a leather and iron engineer's harness over a padded gambeson, the hooked boarding axe Wallhook; a huge wooden siege tower behind. Setting: a siege field in front of a fortress wall, a sixty-foot siege tower rolling forward.
-
-=== Calla Brennick ===
-Save as: starhaven_chars_image/callabrennick.jpg
-Group: Commander   Race: Dwarf   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Calla Brennick, The Wall-Raiser — Commander · Shield Wall Engineers Corps · Field fortifications. A woman, age 52, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 52-year-old Dwarf woman — Short, broad, grey hair in two thick braids, beardless, a face lined by wind and work. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Short, broad, grey hair in two thick braids, beardless, a face lined by wind and work. Weapons and gear: Shield Wall Engineers dress uniform: a dark blue engineer's officer coat with brass buttons and a stake-and-shield badge, the long-hafted maul Stakedriver at her side. Setting: an open battlefield where engineers drive stake walls under fire.
-
-=== Urgran Ashmaw ===
-Save as: starhaven_chars_image/urgranashmaw.jpg
-Group: Commander   Race: Black Orc   Age: 49
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Urgran Ashmaw, The Silver Shield — Shield-Captain · The Silver Shields (300 Black Orc veterans) · Rhegar Thorne's guard. A man, age 49, race: Black Orc (orc: green-grey skin, prominent lower tusks, heavy brow, pointed ears, ritual scars). Look: a 49-year-old Black Orc man — Huge, dark-skinned Black Orc, heavy tusks, a shaved scalp with a single braid, eyes calm as stone. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Huge, dark-skinned Black Orc, heavy tusks, a shaved scalp with a single braid, eyes calm as stone. Weapons and gear: Silver Shields dress uniform: a black officer's coat with silver shield insignia and a single silver-trimmed pauldron, the great round silver-fitted shield Moonplate on his back, a war-spear in hand. Setting: a wet dark field under storm clouds, a wall of silver shields behind him.
-
-=== Odran Vell ===
-Save as: starhaven_chars_image/odranvell.jpg
-Group: Commander   Race: Human   Age: 46
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Odran Vell, The Knight-Captain of the Saintguard — Knight-Captain · Holy Knights — Saintguard · Brynhild Voss's shield. A man, age 46, race: Human. Look: a 46-year-old Human man — Dark-skinned, close-cropped grey hair, a calm deep voice, a sunburst halo crest on his helm. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Dark-skinned, close-cropped grey hair, a calm deep voice, a sunburst halo crest on his helm. Weapons and gear: Saintguard court dress: a white-and-gold knightly surcoat with a gold sunburst cross over a fine mail shirt, a long white mantle, the gilded war-hammer Vigil held head-down before him. Setting: a gothic cathedral fortress under a breaking sky.
-
-=== Branna Holloway ===
-Save as: starhaven_chars_image/brannaholloway.jpg
-Group: Commander   Race: Stoneborn Human   Age: 44
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Branna Holloway, The Gate-Captain — Gate-Captain · Ironpass Gate Guard · Ironpass Citadel. A woman, age 44, race: Stoneborn Human (Stoneborn: mineral-grey, faintly stone-textured skin). Look: a 44-year-old Stoneborn Human woman — Stoneborn: mineral-grey skin, broad and solid, short iron-grey hair, a jaw like a lintel. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Stoneborn: mineral-grey skin, broad and solid, short iron-grey hair, a jaw like a lintel. Weapons and gear: Ironpass dress uniform: a dark iron-grey officer's coat with a castle-sigil badge and a chain of office, the halberd Lastbar held upright. Setting: a torchlit stone gate tunnel with a raised portcullis.
 
 ########################################################################
 ## COURT & SCHOLARS  (10)
