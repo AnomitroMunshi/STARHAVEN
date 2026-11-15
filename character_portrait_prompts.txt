@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 42   (finished so far: 247)
+Still to generate: 38   (finished so far: 251)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,26 +11,6 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
-
-########################################################################
-## COMMANDER  (1)
-########################################################################
-
-=== Ottar Deepbar ===
-Save as: starhaven_chars_image/ottardeepbar.jpg
-Group: Commander   Race: Dwarf   Age: 59
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ottar Deepbar, Resident Warden of Blackstone Gaol — Resident Warden · Blackstone Gaol · Irongate Division · Ironpass. A man, age 59, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 59-year-old Dwarf man — Broad, heavy and calm, a grey-black beard bound with iron bands, deep-set patient eyes, a warder's black coat. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Broad, heavy and calm, a grey-black beard bound with iron bands, deep-set patient eyes, a warder's black coat. Weapons and gear: a black warder's coat with iron buttons over mail, a heavy ring of iron keys at his belt, an iron-shod staff. Setting: a torchlit stone prison corridor cut into a mountain, iron cell doors.
-
-########################################################################
-## COURT & SCHOLARS  (1)
-########################################################################
-
-=== Hrolf Anvilheart ===
-Save as: starhaven_chars_image/hrolfanvilheart.jpg
-Group: Court & Scholars   Race: Dwarf   Age: 68
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hrolf Anvilheart, The Crown Smith — Crown Smith · Master of the Forgehaven Master Smiths · Forgehaven. A man, age 68, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 68-year-old Dwarf man — Broad as an anvil, a soot-black beard braided with copper rings, burn-scarred forearms, eyes that judge metal by its colour. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Broad as an anvil, a soot-black beard braided with copper rings, burn-scarred forearms, eyes that judge metal by its colour. Weapons and gear: a scorched black leather smith's apron over bare, burn-scarred arms, the rune-etched forge hammer Embermother in hand, a glowing blade on the anvil before him. Setting: a great forge hall with roaring furnaces, anvils and racks of blades.
 
 ########################################################################
 ## ALLIED NATIONS  (10)
@@ -97,20 +77,8 @@ PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Torka Ironwhirl, The Ironwhirl Squadron — Chief Engineer · The Ironwhirl Squadron (20 gyrocopters) · Stonemark Holds. A man, age 43, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a 43-year-old Dwarf man — Soot-faced, goggled, a singed ginger beard. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Soot-faced, goggled, a singed ginger beard. Weapons and gear: brass flight goggles, a leather flying coat, sitting in a brass steam gyrocopter. Setting: a Stonemark mountain hold with banners and dwarven troops.
 
 ########################################################################
-## GUILD & CITIZENS  (30)
+## GUILD & CITIZENS  (28)
 ########################################################################
-
-=== Pip Harrowsaddle ===
-Save as: starhaven_chars_image/pipharrowsaddle.jpg
-Group: Guild & Citizens   Race: Goblin   Age: 39
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Pip Harrowsaddle, Harrow's Harness Loft — Harness-maker · Harrow's Harness Loft · Skyperch. A man, age 39, race: Goblin (goblin: small wiry build, large pointed ears, sharp features, weathered skin). Look: a 39-year-old Goblin man — Tiny, wiry, big ears, leather offcuts in his pockets, a measuring cord around his neck. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tiny, wiry, big ears, leather offcuts in his pockets, a measuring cord around his neck. Weapons and gear: a leather saddler's apron with awls and buckles, a measuring cord around his neck, a huge dragon saddle behind him. Setting: a harness workshop full of saddles and straps.
-
-=== Sten Coldhearth ===
-Save as: starhaven_chars_image/stencoldhearth.jpg
-Group: Guild & Citizens   Race: Frostborn Human   Age: 57
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Sten Coldhearth, The Coldmarch Waystation — Innkeeper · Coldmarch Waystation. A man, age 57, race: Frostborn Human (Frostborn: frost-pale skin, ice-blue eyes, white-silver hair touched with rime). Look: a 57-year-old Frostborn Human man — Huge, frost-pale skin, ice-blue eyes, white-silver beard rimed with frost. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Huge, frost-pale skin, ice-blue eyes, white-silver beard rimed with frost. Weapons and gear: heavy furs over a wool tunic, a woodsman's axe, snow on his shoulders. Setting: a snowbound log waystation with a glowing hearth in a mountain blizzard.
 
 === Nell Furrow ===
 Save as: starhaven_chars_image/nellfurrow.jpg
@@ -212,7 +180,7 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 Save as: starhaven_chars_image/maritfeatherstone.jpg
 Group: Guild & Citizens   Race: Human   Age: 46
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Marit Featherstone, Rookmistress — Rookmistress · The Eyrie Crags Rookery. A woman, age 46, race: Human. Look: a 46-year-old Human woman — Wiry and wind-burned, grey-streaked brown hair tied back, scars across both forearms, a quiet voice. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Wiry and wind-burned, grey-streaked brown hair tied back, scars across both forearms, a quiet voice. Weapons and gear: a heavy falconer's gauntlet scored by beaks, a leather rookery coat with feathers caught in it, a young griffin perched on her arm. Setting: windy cliff rookeries with griffin nests and wheeling eagles.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Marit Featherstone, Rookmistress — Rookmistress · The Eyrie Crags Rookery. A woman, age 46, race: Human. Look: a 46-year-old Human woman — Wiry and wind-burned, grey-streaked brown hair tied back, scars across both forearms, a quiet voice. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Wiry and wind-burned, grey-streaked brown hair tied back, scars across both forearms, a quiet voice. Weapons and gear: a heavy falconer's gauntlet scored by beaks, a leather rookery coat with feathers caught in it, a young griffin perched on her gauntleted arm — eagle head and half-grown feathered wings, taloned eagle forelegs gripping the glove, a small lion body and tufted tail. Setting: windy cliff rookeries with griffin nests and wheeling eagles.
 
 === Raul Ketterick ===
 Save as: starhaven_chars_image/raulketterick.jpg
