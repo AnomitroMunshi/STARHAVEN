@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 54   (finished so far: 301)
+Still to generate: 49   (finished so far: 306)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,44 +11,6 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
-
-########################################################################
-## COMMANDER  (3)
-########################################################################
-
-=== Tarik Dunewheel ===
-Save as: starhaven_chars_image/tarikdunewheel.jpg
-Group: Commander   Race: Human   Age: 45
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Tarik Dunewheel, Chariot-Master of Starhaven — Chariot-Master · Starhaven Chariot Runners · Ashfield Chariot Grounds · Karath-instructed. A man, age 45, race: Human. Look: a Human man aged 45 — Wiry, sun-darkened Human, black hair tied back in a short tail, a close-trimmed black beard, narrow dark eyes creased from dust, a cloth wrap at his neck. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Wiry, sun-darkened Human, black hair tied back in a short tail, a close-trimmed black beard, narrow dark eyes creased from dust, a cloth wrap at his neck. Weapons and gear: light lamellar armour over a dust-coloured cloth coat and head-wrap, a recurve bow, two curved short swords; a two-horse war chariot behind him. Setting: a dusty chariot training ground with a long oval track and stables.
-
-=== Odile Marchbank ===
-Save as: starhaven_chars_image/odilemarchbank.jpg
-Group: Commander   Race: Human   Age: 57
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Odile Marchbank, Commandant of the Starhaven War College — Commandant · Starhaven War College · Officer training for every army and corps. A woman, age 57, race: Human. Look: a Human woman aged 57 — Upright, silver-haired Human woman, pale weathered skin, hair in a tight low bun, sharp grey eyes, a long scar from temple to jaw. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Upright, silver-haired Human woman, pale weathered skin, hair in a tight low bun, sharp grey eyes, a long scar from temple to jaw. Weapons and gear: a dark blue officer's dress uniform with silver epaulettes and a high collar, a sheathed sabre, a rolled map in one hand. Setting: a high stone lecture hall with a great sand table and banners of every army.
-
-=== Haldis Stonethrow ===
-Save as: starhaven_chars_image/haldisstonethrow.jpg
-Group: Commander   Race: Dwarf   Age: 118
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Haldis Stonethrow, Siege-Master of Starhaven — Siege-Master · Stonethrow Corps & the Siege Train · The Siege Yards, Forgehaven. A woman, age 118, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a Dwarf woman aged 118 — Stout Dwarf woman, ruddy weathered skin, a thick iron-grey braid wound round her head, a short braided beard, shrewd hazel eyes, soot on her cheek. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Stout Dwarf woman, ruddy weathered skin, a thick iron-grey braid wound round her head, a short braided beard, shrewd hazel eyes, soot on her cheek. Weapons and gear: heavy leather engineer's coat with brass fittings, a brass range-finder at her belt, an engineer's hammer; a great trebuchet behind her. Setting: a vast siege yard with trebuchets, rams and siege towers under construction.
-
-########################################################################
-## MERCENARIES & LEGENDS  (2)
-########################################################################
-
-=== Veth Sunreach ===
-Save as: starhaven_chars_image/vethsunreach.jpg
-Group: Mercenaries & Legends   Race: Centaur   Age: 61
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Veth Sunreach, Chief of the Ashstride Warband — Chief · The Ashstride Warband (Centaur shock cavalry, 500 axe-sworn) · Rhegar Thorne's mobile reserve · Ashstride Camp, Ironpass. A man, age 61, race: Centaur. Look: a centaur man aged 61 — a true centaur, human upper body joined at the waist to a full four-legged horse body — A centaur: weathered bronze human torso, long grey-streaked black hair and beard braided with copper rings, deep-set amber eyes, a chestnut horse body with a pale blaze and scarred flanks. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Show the whole centaur body, full length. Character notes (use for expression, posture and mood): A centaur: weathered bronze human torso, long grey-streaked black hair and beard braided with copper rings, deep-set amber eyes, a chestnut horse body with a pale blaze and scarred flanks. Weapons and gear: heavy engraved iron warplate on his human torso, hardened leather barding with iron strips over his horse body, a long double-bladed war-axe. Setting: a centaur camp of large round hide tents on open grassland outside a great stone fortress.
-
-=== Riva Trid ===
-Save as: starhaven_chars_image/rivatrid.jpg
-Group: Mercenaries & Legends   Race: Aethran Human   Age: 39
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Riva Trid, Commander of the Aethran Colossi — Commander · The Aethran Colossi (27 riders, 27 Aethran Fangwalkers) · Under Rhegar Thorne · The Colossus Pens, Saltmere. A woman, age 39, race: Aethran Human. Look: a Aethran Human woman aged 39 — Lean, hard-faced woman, dark olive skin, close-shaved sides with a long black braid on top, pale grey-green eyes, a burn scar along her neck. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean, hard-faced woman, dark olive skin, close-shaved sides with a long black braid on top, pale grey-green eyes, a burn scar along her neck. Weapons and gear: dark green-grey scaled rider's armour with a high collar, a hooked rider's lance; behind her an Aethran Fangwalker — a forty-foot bipedal apex predator like a great armoured theropod, massive jaw, heavy tail, short powerful forelimbs, plate-like hide, no wings. Setting: a vast walled beast compound beside a grey harbour, deep pools and heavy stone pens.
 
 ########################################################################
 ## GUILD & CITIZENS  (49)
