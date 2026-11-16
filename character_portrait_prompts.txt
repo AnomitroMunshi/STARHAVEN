@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 39   (finished so far: 326)
+Still to generate: 36   (finished so far: 329)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,30 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## COMMANDER  (2)
+## GUILD & CITIZENS  (36)
 ########################################################################
-
-=== Varg Ironfrost ===
-Save as: starhaven_chars_image/vargironfrost.jpg
-Group: Commander   Race: Frostborn   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Varg Ironfrost, Warden of the Wardspan — Warden of the Wardspan · North Gate & Kingdom Gate · Frostrun Gorge. A man, age 58, race: Frostborn (Frostborn: frost-pale skin, ice-blue eyes, white-silver hair touched with rime). Look: a Frostborn man aged 58 — Massive Frostborn, pale blue-tinged skin, a white beard braided with iron, frost-white hair, pale grey eyes, a scar across his nose. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Massive Frostborn, pale blue-tinged skin, a white beard braided with iron, frost-white hair, pale grey eyes, a scar across his nose. Weapons and gear: heavy northern plate under a white bear-fur mantle, a great bearded axe, frost in his beard. Setting: the gatehouse of a colossal fortified stone bridge over a deep snowy gorge.
-
-=== Kazra Tidewall ===
-Save as: starhaven_chars_image/kazratidewall.jpg
-Group: Commander   Race: Half-Orc   Age: 44
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Kazra Tidewall, Warden of the Saltreach Causeway — Warden of the Saltreach Causeway · Strait Gate · faces the Southern Continent. A woman, age 44, race: Half-Orc (half-orc: grey-green skin, small lower tusks, human-orc mixed features). Look: a Half-Orc woman aged 44 — Tall, powerful Half-Orc woman, grey-green skin, small tusks, a shaved head with a black topknot, sea-grey eyes, a salt-scarred face. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall, powerful Half-Orc woman, grey-green skin, small tusks, a shaved head with a black topknot, sea-grey eyes, a salt-scarred face. Weapons and gear: dark sea-green marine armour with brass fittings, a heavy cutlass, a signal horn. Setting: a long fortified stone causeway across a stormy sea strait with sea-gates and towers.
-
-########################################################################
-## GUILD & CITIZENS  (37)
-########################################################################
-
-=== Rosamund Thistledown ===
-Save as: starhaven_chars_image/rosamundthistledown.jpg
-Group: Guild & Citizens   Race: Human   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Rosamund Thistledown, Owner of Thistledown Gardens, Bloomvale — Owner of Thistledown Gardens — the largest of Bloomvale's flower farms · 50 pickers in season. A woman, age 58, race: Human. Look: a Human woman aged 58 — Tall Human woman, fair weathered skin, silver hair braided with a sprig of lavender, soft grey eyes, flower-stained fingers. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall Human woman, fair weathered skin, silver hair braided with a sprig of lavender, soft grey eyes, flower-stained fingers. Weapons and gear: a lavender-coloured work dress with a linen apron, flower shears, an armful of roses and lavender. Setting: long striped fields of purple lavender and red roses in a mountain valley.
 
 === Lian Mistwell ===
 Save as: starhaven_chars_image/lianmistwell.jpg
