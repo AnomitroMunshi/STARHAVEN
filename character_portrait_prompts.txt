@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 36   (finished so far: 329)
+Still to generate: 26   (finished so far: 339)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,68 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## GUILD & CITIZENS  (36)
+## GUILD & CITIZENS  (26)
 ########################################################################
-
-=== Lian Mistwell ===
-Save as: starhaven_chars_image/lianmistwell.jpg
-Group: Guild & Citizens   Race: Human   Age: 44
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Lian Mistwell, Owner of Mistwell Tea Garden, Teaglen — Owner of Mistwell Tea Garden — the largest of Teaglen's tea gardens · 40 pickers. A woman, age 44, race: Human. Look: a Human woman aged 44 — Slender Human woman, warm golden skin, long black hair under a woven hat, calm dark eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Slender Human woman, warm golden skin, long black hair under a woven hat, calm dark eyes. Weapons and gear: a misty-blue work tunic and woven hat, a tea-picker's basket on her back. Setting: green tea terraces on misty hills at dawn.
-
-=== Brom Hopwood ===
-Save as: starhaven_chars_image/bromhopwood.jpg
-Group: Guild & Citizens   Race: Human   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Brom Hopwood, Brewmaster of the Great Brewhouse, Hopsworth — Owner of the Great Brewhouse — the largest of Hopsworth's breweries · 60 brewers. A man, age 52, race: Human. Look: a Human man aged 52 — Big, red-cheeked Human, a bushy ginger beard, twinkling blue eyes, a brewer's belly. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Big, red-cheeked Human, a bushy ginger beard, twinkling blue eyes, a brewer's belly. Weapons and gear: a leather brewer's apron over a linen shirt, a long brewer's paddle, a foaming mug. Setting: tall hop poles and a timber brewhouse with copper vats.
-
-=== Sylvi Silkweaver ===
-Save as: starhaven_chars_image/sylvisilkweaver.jpg
-Group: Guild & Citizens   Race: Moon Elf   Age: about 170 (looks about 40)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Sylvi Silkweaver, Mistress of Silkweaver House, Silkmoor — Owner of Silkweaver House — the largest of Silkmoor's silk houses · 20 looms. A woman, age about 170 (looks about 40), race: Moon Elf (Moon Elf: long pointed ears, pale luminous skin, silver or moon-pale hair, ageless face). Look: a Moon Elf woman aged about 170 (looks about 40) — Tall, pale silver-skinned Moon Elf, long silver hair woven with silk thread, soft violet eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall, pale silver-skinned Moon Elf, long silver hair woven with silk thread, soft violet eyes. Weapons and gear: a flowing silver-grey silk robe, a silver shuttle in her hand, bolts of silk behind her. Setting: mulberry groves and a long timber silk house with looms.
-
-=== Greta Flaxley ===
-Save as: starhaven_chars_image/gretaflaxley.jpg
-Group: Guild & Citizens   Race: Human   Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Greta Flaxley, Owner of Flaxley Linen Mill, Flaxford — Owner of Flaxley Linen Mill — the largest in Flaxford · 50 spinners and weavers. A woman, age 47, race: Human. Look: a Human woman aged 47 — Sturdy Human woman, fair freckled skin, flaxen hair in a crown braid, steady grey eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Sturdy Human woman, fair freckled skin, flaxen hair in a crown braid, steady grey eyes. Weapons and gear: a plain linen dress and apron, a heckling comb, a bolt of white linen. Setting: blue-flowering flax fields by a river, a mill wheel turning.
-
-=== Indra Bluehand ===
-Save as: starhaven_chars_image/indrabluehand.jpg
-Group: Guild & Citizens   Race: Half-Elf   Age: 39
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Indra Bluehand, Owner of Bluehand Dyeworks, Dyers' Reach — Owner of Bluehand Dyeworks — the largest in Dyers' Reach · keeper of the Colour Book. A woman, age 39, race: Half-Elf (half-elf: slightly pointed ears, mixed human and elven features). Look: a Half-Elf woman aged 39 — Half-Elf woman, light brown skin, short dark hair with a streak of blue, slightly pointed ears, bright amber eyes, blue-stained hands. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Half-Elf woman, light brown skin, short dark hair with a streak of blue, slightly pointed ears, bright amber eyes, blue-stained hands. Weapons and gear: a dye-spattered work smock, a long dye-paddle, hands stained deep blue. Setting: a riverside dyeworks with hanging cloth in blue, red and yellow, the river striped with colour.
-
-=== Wynn Whitestone ===
-Save as: starhaven_chars_image/wynnwhitestone.jpg
-Group: Guild & Citizens   Race: Dwarf   Age: 121
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Wynn Whitestone, Owner of Whitestone Quarry, Marblecombe — Owner of Whitestone Quarry — the largest of Marblecombe's quarries · about 40 quarrymen. A woman, age 121, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a Dwarf woman aged 121 — Stout Dwarf woman, pale skin dusted white with marble, a braided ash-blonde beard, keen green eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Stout Dwarf woman, pale skin dusted white with marble, a braided ash-blonde beard, keen green eyes. Weapons and gear: a dusty leather quarry apron, a chisel and hammer, white dust on everything. Setting: a dazzling white marble quarry in a hillside, huge cut blocks.
-
-=== Ned Clayborne ===
-Save as: starhaven_chars_image/nedclayborne.jpg
-Group: Guild & Citizens   Race: Halfling   Age: 57
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ned Clayborne, Owner of Clayborne Pottery, Kilnbury — Owner of Clayborne Pottery — the largest of Kilnbury's potteries · 30 potters. A man, age 57, race: Halfling. Look: a Halfling man aged 57 — Small, round Halfling, clay-reddened skin, curly brown hair and sideburns, kind hazel eyes, clay under his nails. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Small, round Halfling, clay-reddened skin, curly brown hair and sideburns, kind hazel eyes, clay under his nails. Weapons and gear: a clay-smeared smock, sleeves rolled, a pot spinning on a wheel. Setting: a pottery yard with bottle kilns smoking and stacked pots.
-
-=== Emrys Shorewell ===
-Save as: starhaven_chars_image/emrysshorewell.jpg
-Group: Guild & Citizens   Race: Human   Age: 45
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Emrys Shorewell, Owner of Shorewell's Flats, Sandglass Bay — Owner of Shorewell's Flats — the largest sand works on Sandglass Bay · 25 diggers. A man, age 45, race: Human. Look: a Human man aged 45 — Lean, tanned Human, sun-bleached hair, a salt-grey beard, squinting blue eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean, tanned Human, sun-bleached hair, a salt-grey beard, squinting blue eyes. Weapons and gear: a sea-worn linen shirt and canvas trousers, a large sieve, a glassblower's pipe. Setting: dazzling white sand-flats at low tide with a small glassworks on the shore.
-
-=== Quentin Reamer ===
-Save as: starhaven_chars_image/quentinreamer.jpg
-Group: Guild & Citizens   Race: Human   Age: 61
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Quentin Reamer, Owner of Reamer Mill, Millwater — Owner of Reamer Mill — the largest of Millwater's paper mills · 30 papermakers. A man, age 61, race: Human. Look: a Human man aged 61 — Thin, stooped Human, pale skin, wisps of white hair, half-moon spectacles, ink-stained fingers. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Thin, stooped Human, pale skin, wisps of white hair, half-moon spectacles, ink-stained fingers. Weapons and gear: a waistcoat with rolled shirt-sleeves, a paper-making mould dripping water. Setting: a stone paper mill on a rushing stream, sheets drying on racks.
-
-=== Bjorn Axeholt ===
-Save as: starhaven_chars_image/bjornaxeholt.jpg
-Group: Guild & Citizens   Race: Human   Age: 49
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Bjorn Axeholt, Owner of Axeholt Sawmill, Timberfall — Owner of Axeholt Sawmill — the largest of Timberfall's logging outfits · 80 loggers. A man, age 49, race: Human. Look: a Human man aged 49 — Huge, bearded Human, weathered ruddy skin, a braided blond beard, pale blue eyes, a scar on his chin. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Huge, bearded Human, weathered ruddy skin, a braided blond beard, pale blue eyes, a scar on his chin. Weapons and gear: a heavy wool shirt and leather vest, a great felling axe over his shoulder. Setting: a forest logging camp with a water-driven sawmill and stacked logs.
 
 === Odette Saltwhite ===
 Save as: starhaven_chars_image/odettesaltwhite.jpg
