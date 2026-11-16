@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 55   (finished so far: 300)
+Still to generate: 54   (finished so far: 301)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -51,14 +51,8 @@ PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Riva Trid, Commander of the Aethran Colossi — Commander · The Aethran Colossi (27 riders, 27 Aethran Fangwalkers) · Under Rhegar Thorne · The Colossus Pens, Saltmere. A woman, age 39, race: Aethran Human. Look: a Aethran Human woman aged 39 — Lean, hard-faced woman, dark olive skin, close-shaved sides with a long black braid on top, pale grey-green eyes, a burn scar along her neck. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean, hard-faced woman, dark olive skin, close-shaved sides with a long black braid on top, pale grey-green eyes, a burn scar along her neck. Weapons and gear: dark green-grey scaled rider's armour with a high collar, a hooked rider's lance; behind her an Aethran Fangwalker — a forty-foot bipedal apex predator like a great armoured theropod, massive jaw, heavy tail, short powerful forelimbs, plate-like hide, no wings. Setting: a vast walled beast compound beside a grey harbour, deep pools and heavy stone pens.
 
 ########################################################################
-## GUILD & CITIZENS  (50)
+## GUILD & CITIZENS  (49)
 ########################################################################
-
-=== Ardyn Vorrath ===
-Save as: starhaven_chars_image/ardynvorrath.jpg
-Group: Guild & Citizens   Race: Drakari–Wood Elf (mixed blood)   Age: 25
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ardyn Vorrath, Captain of the Oaksmane Watch — Captain of the Oaksmane Town Watch · Security. A man, age 25, race: Drakari–Wood Elf (mixed blood) (mixed Drakari and Wood Elf blood: amber-gold slit-pupil eyes with a green tint, faint bronze scale patterning at the cheekbones and jaw, slightly pointed ears). Look: a 25-year-old man, half Drakari and half Wood Elf — Lean and tall, slit-pupilled amber-green eyes, faint bronze scales along the cheekbones, pointed ears, black hair cropped short; visibly the brother of a broader, older man, sharing his amber slit-pupil eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Lean and tall, slit-pupilled amber-green eyes, faint bronze scales along the cheekbones, pointed ears, black hair cropped short. Weapons and gear: a dark green watch captain's coat over drakescale-reinforced leather armour, the living-wood glaive Ashbriar, a recurve bow on his back. Setting: the walls of a rebuilt canal town at dusk, lanterns lit below.
 
 === Maelis Redbough ===
 Save as: starhaven_chars_image/maelisredbough.jpg
