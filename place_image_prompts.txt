@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 588   (finished so far: 20)
+Still to generate: 632   (finished so far: 20)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -9,7 +9,7 @@ HOW TO USE
 - Places whose image already exists are left out of this file automatically.
 
 ########################################################################
-## CAPITAL  (29)
+## CAPITAL  (34)
 ########################################################################
 
 === Attar & Ember ===
@@ -48,6 +48,12 @@ Group: Starhold   Kind: City watch headquarters
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Starhold City Watch House — City watch headquarters, in the capital Starhold (Central Starhaven). What it is: Headquarters of the Starhold City Watch, a block off the Kingsway — every whistle in the city answers here. Setting context: The capital of Starhaven — built from the ground up after the founding.
 
+=== Starhold Training Grounds ===
+Save as: starhaven_places_image/starholdtraininggrounds.jpg
+Group: Starhold   Kind: Training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Starhold Training Grounds — Training ground, in the capital Starhold (Central Starhaven). What it is: The capital's recruit grounds — weapons, shield-wall and march drill every morning at dawn. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
 === Starstone Jewellers ===
 Save as: starhaven_places_image/starstonejewellers.jpg
 Group: Starhold   Kind: Jeweller
@@ -66,6 +72,12 @@ Group: Starhold   Kind: Toyshop
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Clockwork Gryphon — Toyshop, in the capital Starhold (Central Starhaven). What it is: Wind-up griffins, tin Stormriders and a Zephyros kite that every child in the capital wants. Setting context: The capital of Starhaven — built from the ground up after the founding. Any griffins shown are war griffins drawn as true griffins — eagle head, feathered neck, great feathered wings and taloned eagle forelegs, lion body, lion hind legs and a tufted lion tail; tawny, grey or white plumage; no scales, never a dragon. Zephyros is a long serpentine Asiatic storm dragon, centuries old, with lightning in the clouds around him — the only true dragon in the kingdom.
 
+=== The Crown Cantonment ===
+Save as: starhaven_places_image/thecrowncantonment.jpg
+Group: Starhold   Kind: Barracks
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Crown Cantonment — Barracks, in the capital Starhold (Central Starhaven). What it is: Barracks of the Fourth Field Army's central reserve and the Grand Marshal's reserve units, on the city's western edge. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
 === The Founders' Press ===
 Save as: starhaven_places_image/thefounderspress.jpg
 Group: Starhold   Kind: Bookshop & printer
@@ -83,6 +95,18 @@ Save as: starhaven_places_image/theglassblowersarcade.jpg
 Group: Starhold   Kind: Glassware
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Glassblowers' Arcade — Glassware, in the capital Starhold (Central Starhaven). What it is: Starfall glass — tinted from crater sand — in bowls, lanterns and window panes. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
+=== The Grand Parade Ground ===
+Save as: starhaven_places_image/thegrandparadeground.jpg
+Group: Starhold   Kind: Parade ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Grand Parade Ground — Parade ground, in the capital Starhold (Central Starhaven). What it is: Where the armies march for Founding Day and new regiments receive their colours. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
+=== The Guardian Vault ===
+Save as: starhaven_places_image/theguardianvault.jpg
+Group: Starhold   Kind: Sealed vault
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Guardian Vault — Sealed vault, in the capital Starhold (Central Starhaven). What it is: A sealed vault beneath the War Hall where the four Starhaven Guardians — ancient constructs recovered from SS+ dungeons — stand dormant until the Grand Marshal opens it. Setting context: The capital of Starhaven — built from the ground up after the founding. The Starhaven Guardians are four huge ancient stone-and-metal constructs, humanoid, carved with glowing elemental runes (storm, stone, frost, magma), standing dormant.
 
 === The Hall of the Provinces ===
 Save as: starhaven_places_image/thehalloftheprovinces.jpg
@@ -168,6 +192,12 @@ Group: Starhold   Kind: Central plaza · ceremonies
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Star Square — Central plaza · ceremonies, in the capital Starhold (Central Starhaven). What it is: The great central plaza where the kingdom gathers — royal announcements, honours and prize-givings, festivals and celebrations, all under full arcane light. Projection-crystal arrays on raised posts around the square, calibrated by Cyrus Vexley, carry every ceremony live to every city, town and village. Setting context: The capital of Starhaven — built from the ground up after the founding.
 
+=== The Starhaven War College ===
+Save as: starhaven_places_image/thestarhavenwarcollege.jpg
+Group: Starhold   Kind: Officer academy
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Starhaven War College — Officer academy, in the capital Starhold (Central Starhaven). What it is: The kingdom's officer academy — every Field Army, Dawnsteel and Undying Colors officer passes through its sand-table halls. Setting context: The capital of Starhaven — built from the ground up after the founding.
+
 === The Stone Table Chamber ===
 Save as: starhaven_places_image/thestonetablechamber.jpg
 Group: Starhold   Kind: Council chamber
@@ -187,7 +217,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The War Hall — Command hall, in the capital Starhold (Central Starhaven). What it is: The kingdom's war council hall, where campaigns are planned and the field marshals report. Setting context: The capital of Starhaven — built from the ground up after the founding.
 
 ########################################################################
-## CITY  (140)
+## CITY  (147)
 ########################################################################
 
 === Arsenal Gate Crystal ===
@@ -274,6 +304,12 @@ Group: Forgehaven   Kind: Smiths' guild hall
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Master Smiths' Hall — Smiths' guild hall, in the city Forgehaven (Eastern Industrial Belt). What it is: Home of the Forgehaven Master Smiths — every Ironmane lance, every officer's blade and every royal commission is forged here, and the Eleven's weapons come here for repair. Setting context: The industrial capital.
 
+=== The Siege Yards ===
+Save as: starhaven_places_image/thesiegeyards.jpg
+Group: Forgehaven   Kind: Siege works
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Siege Yards — Siege works, in the city Forgehaven (Eastern Industrial Belt). What it is: Where every trebuchet, onager, ram and siege tower of the Siege Train is built, tested and drilled. Setting context: The industrial capital.
+
 === The Slag & Anvil ===
 Save as: starhaven_places_image/theslagandanvil.jpg
 Group: Forgehaven   Kind: Forge-workers' pub
@@ -291,6 +327,12 @@ Save as: starhaven_places_image/thestoneballgrounds.jpg
 Group: Forgehaven   Kind: Sports ground
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Stoneball Grounds — Sports ground, in the city Forgehaven (Eastern Industrial Belt). What it is: Forgehaven Furnaces against the Stonemark Anvils. Setting context: The industrial capital.
+
+=== The Tank Proving Ground ===
+Save as: starhaven_places_image/thetankprovingground.jpg
+Group: Forgehaven   Kind: Proving ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Tank Proving Ground — Proving ground, in the city Forgehaven (Eastern Industrial Belt). What it is: A cratered test field where every Iron Tide tank is driven, fired and broken before it is trusted. Setting context: The industrial capital.
 
 === The Tinkers' Market ===
 Save as: starhaven_places_image/thetinkersmarket.jpg
@@ -496,6 +538,12 @@ Group: Goldgate   Kind: Bathhouse
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Steamhall — Bathhouse, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: Hot pools, private rooms and a peace every guild honours. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
 
+=== The Unbroken Line Barracks ===
+Save as: starhaven_places_image/theunbrokenlinebarracks.jpg
+Group: Goldgate   Kind: Provisional barracks
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Unbroken Line Barracks — Provisional barracks, in the city Goldgate (Central Kingdom — Trade Corridor). What it is: The temporary barracks of Elina's Unbroken Line while they await full commission. Setting context: Starhaven's primary commercial hub and seat of the Adventurers Guild.
+
 === The Vault ===
 Save as: starhaven_places_image/thevault.jpg
 Group: Goldgate   Kind: Guild bank
@@ -561,6 +609,12 @@ Save as: starhaven_places_image/seedandsapmarket.jpg
 Group: Greenveil   Kind: Herb & seed market
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Seed & Sap Market — Herb & seed market, in the city Greenveil (Western Forest Territory). What it is: Half the kingdom's medicinal herbs pass through here. Setting context: The living city.
+
+=== The Beast Drill Meadows ===
+Save as: starhaven_places_image/thebeastdrillmeadows.jpg
+Group: Greenveil   Kind: Beast training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Beast Drill Meadows — Beast training ground, in the city Greenveil (Western Forest Territory). What it is: Open meadows where the Primal Vanguard drills its wolves, bears, rhinos and great cats with their riders. Setting context: The living city.
 
 === The Canopy Inn ===
 Save as: starhaven_places_image/thecanopyinn.jpg
@@ -645,6 +699,12 @@ Save as: starhaven_places_image/thetreehomewards.jpg
 Group: Greenveil   Kind: Residential quarter
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Treehome Wards — Residential quarter, in the city Greenveil (Western Forest Territory). What it is: Homes grown into and around the great trees. Setting context: The living city.
+
+=== The Warden Ranges ===
+Save as: starhaven_places_image/thewardenranges.jpg
+Group: Greenveil   Kind: Archery range
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Warden Ranges — Archery range, in the city Greenveil (Western Forest Territory). What it is: Forest archery ranges of the Silent Wardens and the Warden Archers — targets hidden among the trees. Setting context: The living city.
 
 === Ashen Hall Steps Crystal ===
 Save as: starhaven_places_image/ashenhallstepscrystal.jpg
@@ -784,6 +844,12 @@ Group: Sancthaven   Kind: Holy Knights fortress
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The White Citadel — Holy Knights fortress, in the city Sancthaven (Southern Heartlands). What it is: Seat of the Holy Knights. Civilians cheer when their banners leave the gates. Setting context: The city of healers.
 
+=== The White Citadel Tiltyard ===
+Save as: starhaven_places_image/thewhitecitadeltiltyard.jpg
+Group: Sancthaven   Kind: Tiltyard
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The White Citadel Tiltyard — Tiltyard, in the city Sancthaven (Southern Heartlands). What it is: The Holy Knights' lists and riding ground — the Radiant Cavaliers practise their charge here. Setting context: The city of healers.
+
 === The White Forge ===
 Save as: starhaven_places_image/thewhiteforge.jpg
 Group: Sancthaven   Kind: Holy Knights' smithy
@@ -831,6 +897,12 @@ Save as: starhaven_places_image/thearcanecannonfoundry.jpg
 Group: Vaelmark   Kind: Arcane artillery works
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Arcane Cannon Foundry — Arcane artillery works, in the city Vaelmark (Western Arcane District). What it is: Where the Arcane Cannon Corps Vaelmark's 700 gunners and their cannons are built and trained — elemental bombardment, synchronised. Setting context: The city of magic and arcane technology — the arcane capital, a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
+
+=== The Arcane Firing Range ===
+Save as: starhaven_places_image/thearcanefiringrange.jpg
+Group: Vaelmark   Kind: Artillery range
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Arcane Firing Range — Artillery range, in the city Vaelmark (Western Arcane District). What it is: A walled range in the hills where the Arcane Artillery Corps and the arcane cannon batteries fire and calibrate. Setting context: The city of magic and arcane technology — the arcane capital, a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
 
 === The Arcane Mint ===
 Save as: starhaven_places_image/thearcanemint.jpg
@@ -1031,7 +1103,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Veilborn Arcanum — Magic academy, in the city Vaelmark (Western Arcane District). What it is: The largest magic academy in the known world — seven schools, four thousand students. Setting context: The city of magic and arcane technology — the arcane capital, a city older than the kingdom, powered by a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033.
 
 ########################################################################
-## FORT  (51)
+## FORT  (58)
 ########################################################################
 
 === Mike's Forge ===
@@ -1081,6 +1153,12 @@ Save as: starhaven_places_image/blackwallridge.jpg
 Group: Atlas — Blackwall Ridge   Kind: Fortress
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Blackwall Ridge — Fortress (Northern Mountains — trade corridors). What it is: Blackwall Ridge Fortress — once the largest stronghold controlling the northern trade corridors, and the siege that nearly broke the allied army. Rune artillery screamed down from the ridge while enemy battlemages lit the night sky crimson; arcane circles miles wide ignited in the clouds.
+
+=== Duskwall Hidden Bastion ===
+Save as: starhaven_places_image/duskwallhiddenbastion.jpg
+Group: Atlas — Duskwall Hidden Bastion   Kind: Fortress
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Duskwall Hidden Bastion — Fortress (Classified). What it is: The hidden headquarters of the Null Blades. It is not on any map, and most of the kingdom believes it does not exist. The Duskwall archive holds the only record that the Greymark exists.
 
 === Frosthold Bastion ===
 Save as: starhaven_places_image/frostholdbastion.jpg
@@ -1148,6 +1226,18 @@ Group: Blackwall Ridge   Kind: Trade post
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Northern Tollgate — Trade post, in the fortress Blackwall Ridge (Northern Mountains — trade corridors). What it is: Where caravans on the northern corridor are checked, taxed and protected. Setting context: Blackwall Ridge Fortress — once the largest stronghold controlling the northern trade corridors, and the siege that nearly broke the allied army.
 
+=== The Duskwall Archive ===
+Save as: starhaven_places_image/theduskwallarchive.jpg
+Group: Duskwall Hidden Bastion   Kind: Sealed archive
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Duskwall Archive — Sealed archive, in the fortress Duskwall Hidden Bastion (Classified). What it is: One copy of everything the Null Blades know — including the only record of the Greymark. Setting context: The hidden headquarters of the Null Blades.
+
+=== The Shadow Yard ===
+Save as: starhaven_places_image/theshadowyard.jpg
+Group: Duskwall Hidden Bastion   Kind: Training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Shadow Yard — Training ground, in the fortress Duskwall Hidden Bastion (Classified). What it is: Where the Null Blades and the Crown Shadows train, in darkness, against each other. Setting context: The hidden headquarters of the Null Blades.
+
 === Bastion Hall Crystal ===
 Save as: starhaven_places_image/bastionhallcrystal.jpg
 Group: Frosthold Bastion   Kind: Projection crystal
@@ -1165,6 +1255,12 @@ Save as: starhaven_places_image/thecoldforge.jpg
 Group: Frosthold Bastion   Kind: Fortress smithy
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Cold Forge — Fortress smithy, in the fortress Frosthold Bastion (Northern Mountains). What it is: A forge deep in the mountain that makes the Frost Lances, Icefang sabres and Frosthide plate of the Snowtusk Cavalry. Setting context: The northern anchor.
+
+=== The Eastwild Lodge ===
+Save as: starhaven_places_image/theeastwildlodge.jpg
+Group: Frosthold Bastion   Kind: Guest lodge
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Eastwild Lodge — Guest lodge, in the fortress Frosthold Bastion (Northern Mountains). What it is: Where the Beastmen Berserkers of the Northern Wilds are quartered when they answer the kingdom's call. Setting context: The northern anchor.
 
 === The Frost Hall ===
 Save as: starhaven_places_image/thefrosthall.jpg
@@ -1190,11 +1286,23 @@ Group: Frosthold Bastion   Kind: Garrison store
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Quartermaster's Store — Garrison store, in the fortress Frosthold Bastion (Northern Mountains). What it is: Furs, boots, lamp-oil and everything else a soldier forgot to bring north. Setting context: The northern anchor.
 
+=== The Snowfield Ranges ===
+Save as: starhaven_places_image/thesnowfieldranges.jpg
+Group: Frosthold Bastion   Kind: Training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Snowfield Ranges — Training ground, in the fortress Frosthold Bastion (Northern Mountains). What it is: Snowfields and cliffs where the IceBreakers, Mountain Skirmishers, Ranger Companies and Snowtusk Cavalry train in winter conditions. Setting context: The northern anchor.
+
 === The Snowline Stables ===
 Save as: starhaven_places_image/thesnowlinestables.jpg
 Group: Frosthold Bastion   Kind: Veterinary clinic
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Snowline Stables — Veterinary clinic, in the fortress Frosthold Bastion (Northern Mountains). What it is: Cold-weather care for Snowtusk War Elk — the only clinic that treats them, since they cannot go below the snowline. Setting context: The northern anchor.
+
+=== Ashstride Camp ===
+Save as: starhaven_places_image/ashstridecamp.jpg
+Group: Ironpass Citadel   Kind: Centaur camp
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Ashstride Camp — Centaur camp, in the fortress Ironpass Citadel (Eastern Border). What it is: Round hide tents and open paddocks outside the outer ring, where the families of the Ashstride centaur warband live and the warband trains. Setting context: The eastern anchor. Any centaurs shown are true centaurs — a human upper body joined at the waist to a full horse body with four legs.
 
 === Blackstone Gaol ===
 Save as: starhaven_places_image/blackstonegaol.jpg
@@ -1231,6 +1339,12 @@ Save as: starhaven_places_image/thelastring.jpg
 Group: Ironpass Citadel   Kind: Soldiers' tavern
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Last Ring — Soldiers' tavern, in the fortress Ironpass Citadel (Eastern Border). What it is: Inside the citadel walls — the only place Kael Varric has been seen to smile. Setting context: The eastern anchor.
+
+=== The Ring Drill Fields ===
+Save as: starhaven_places_image/theringdrillfields.jpg
+Group: Ironpass Citadel   Kind: Training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ring Drill Fields — Training ground, in the fortress Ironpass Citadel (Eastern Border). What it is: Between the outer rings — Ironwall shield drills and First Field Army manoeuvres. Setting context: The eastern anchor.
 
 === The Ring Field Hospital ===
 Save as: starhaven_places_image/theringfieldhospital.jpg
@@ -1341,7 +1455,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Veynehold Rift Gate — Rift gate · under construction, in the fortress Veynehold (Northern Frontier (pre-Starhaven)). What it is: A rift gate being built so bullion never has to travel the roads. Setting context: Once the fortress-town that burned the night Rayden walked into it alone; now rebuilt as the kingdom's Fortified Mint — the most heavily walled strong-room in Starhaven, where bullion is held and coin is struck behind fortress walls.
 
 ########################################################################
-## NAVAL  (35)
+## NAVAL  (37)
 ########################################################################
 
 === Dawncliff Sea Fortress ===
@@ -1470,6 +1584,12 @@ Group: Saltmere   Kind: Prison hulk
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Brig — Prison hulk, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: A decommissioned warship moored in the harbour and used as the city jail. Smugglers and drunk sailors serve their time afloat. Setting context: The western coastal port city and home of the Dawnfleet.
 
+=== The Colossus Pens ===
+Save as: starhaven_places_image/thecolossuspens.jpg
+Group: Saltmere   Kind: Apex beast compound
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Colossus Pens — Apex beast compound, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: A vast walled compound outside the city with deep pools and heavy stone pens for the twenty-seven Aethran Fangwalkers and their riders. Setting context: The western coastal port city and home of the Dawnfleet. Any Aethran Fangwalkers shown are forty-foot bipedal apex predators like great armoured theropods — massive jaws, heavy tail, short powerful forelimbs, plate-like hide — no wings, not dragons; their riders sit in saddles at the shoulders.
+
 === The Dawn Fish Auction ===
 Save as: starhaven_places_image/thedawnfishauction.jpg
 Group: Saltmere   Kind: Market
@@ -1536,6 +1656,12 @@ Group: Saltmere   Kind: Monument · harbour statue
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Tide Colossus — Monument · harbour statue, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: A giant bronze sailor standing astride the harbour mouth with a lantern held high — every ship entering Saltmere sails between its feet. Setting context: The western coastal port city and home of the Dawnfleet.
 
+=== The Tidebreaker Landing Beach ===
+Save as: starhaven_places_image/thetidebreakerlandingbeach.jpg
+Group: Saltmere   Kind: Marine training beach
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Tidebreaker Landing Beach — Marine training beach, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: Where the Tidebreaker Corps practises shore landings and beach defence. Setting context: The western coastal port city and home of the Dawnfleet.
+
 === The Tidewater School ===
 Save as: starhaven_places_image/thetidewaterschool.jpg
 Group: Saltmere   Kind: School
@@ -1555,7 +1681,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Tidewatch Sailing School — Activity, in the naval base Saltmere (Western Coast — Ashen Sea). What it is: Learn to sail a skiff in the harbour — half the city's children have. Setting context: The western coastal port city and home of the Dawnfleet.
 
 ########################################################################
-## FRONTIER  (53)
+## FRONTIER  (60)
 ########################################################################
 
 === Ashenfield Dock Crystal ===
@@ -1642,11 +1768,23 @@ Group: Ashfield   Kind: Memorial
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ashen Passage Memorial — Memorial, in the frontier territory Ashfield (Southern Frontier). What it is: A stone at the edge of the old battlefield. The answer cost more than expected. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
 
+=== The Ashfield Chariot Grounds ===
+Save as: starhaven_places_image/theashfieldchariotgrounds.jpg
+Group: Ashfield   Kind: Chariot training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ashfield Chariot Grounds — Chariot training ground, in the frontier territory Ashfield (Southern Frontier). What it is: Home base of the Starhaven Chariot Runners — stables, a drill field and the great oval, shared with the Karath Desert Chariots. Setting context: The southern frontier territory — the Ashen Passage War was fought here. Chariots are two-wheeled war chariots pulled by two or four horses, with a driver and a fighter standing in the car.
+
 === The Iron Reavers' Camp ===
 Save as: starhaven_places_image/theironreaverscamp.jpg
 Group: Ashfield   Kind: Mercenary camp
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Iron Reavers' Camp — Mercenary camp, in the frontier territory Ashfield (Southern Frontier). What it is: The standing camp of the Iron Reavers, on contract to hold the frontier. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
+
+=== The Iron Road Yards ===
+Save as: starhaven_places_image/theironroadyards.jpg
+Group: Ashfield   Kind: Logistics depot
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Iron Road Yards — Logistics depot, in the frontier territory Ashfield (Southern Frontier). What it is: The main hub of the Iron Road Corps — wagons, field forges and supply trains for every army. Setting context: The southern frontier territory — the Ashen Passage War was fought here.
 
 === The Reclaimed Green ===
 Save as: starhaven_places_image/thereclaimedgreen.jpg
@@ -1713,6 +1851,12 @@ Save as: starhaven_places_image/thornwallruins.jpg
 Group: Atlas — Thornwall Ruins   Kind: Frontier territory
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Thornwall Ruins — Frontier territory (Central Kingdom — Ancient Heritage Zone). What it is: The ruins of the pre-Starhaven settlement consumed by a Void event in Year 0 — one decade before the kingdom's founding. Preserved under a Veil Watch containment seal that has held for 400 years. Strictly guided scholarly access. The Frozen Market — a street where Void alteration stopped all organic matter mid-motion — is the most documented and least revisited feature. Scholars who study the Frozen Market once rarely request second access.
+
+=== Velhold Grasslands ===
+Save as: starhaven_places_image/velholdgrasslands.jpg
+Group: Atlas — Velhold Grasslands   Kind: Frontier territory
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Velhold Grasslands — Frontier territory (Open grasslands — 3rd Field Army country). What it is: Wide open grasslands where the hardy Velhold grassland horse is bred, and where the 3rd Field Army's horse archers and the Bowmen of the Last Hollow train. The Recurve Company of the Third learned its bow-wheel doctrine here, riding in great circles across grass that runs to the horizon.
 
 === The Caravan Road ===
 Save as: starhaven_places_image/thecaravanroad.jpg
@@ -1810,6 +1954,12 @@ Group: The Coldmarch   Kind: Crossing route
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Eleven-Week Road — Crossing route, in the frontier territory The Coldmarch (Northern Frontier). What it is: The crossing itself — passable for exactly eleven weeks a year, and lethal the rest. Setting context: The northern frontier — crossed in winter, avoided when possible, controlled when necessary.
 
+=== The Second Army Winter Camp ===
+Save as: starhaven_places_image/thesecondarmywintercamp.jpg
+Group: The Coldmarch   Kind: Army camp
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Second Army Winter Camp — Army camp, in the frontier territory The Coldmarch (Northern Frontier). What it is: The Second Field Army's winter quarters and drill ground — Ashrunners, Slingers and Dawnlancers train here between deployments. Setting context: The northern frontier — crossed in winter, avoided when possible, controlled when necessary.
+
 === The Thaw Market ===
 Save as: starhaven_places_image/thethawmarket.jpg
 Group: The Coldmarch   Kind: Seasonal market
@@ -1876,8 +2026,26 @@ Group: Thornwall Ruins   Kind: Guided entrance
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Scholars' Gate — Guided entrance, in the frontier territory Thornwall Ruins (Central Kingdom — Ancient Heritage Zone). What it is: The only way in — strictly guided, by appointment. Setting context: The ruins of the pre-Starhaven settlement consumed by a Void event in Year 0 — one decade before the kingdom's founding.
 
+=== The Bow-Wheel Ground ===
+Save as: starhaven_places_image/thebowwheelground.jpg
+Group: Velhold Grasslands   Kind: Horse-archer training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Bow-Wheel Ground — Horse-archer training ground, in the frontier territory Velhold Grasslands (Open grasslands — 3rd Field Army country). What it is: Where the Recurve Company of the Third practises its circling bow-wheel at the gallop. Setting context: Wide open grasslands where the hardy Velhold grassland horse is bred, and where the 3rd Field Army's horse archers and the Bowmen of the Last Hollow train.
+
+=== The Last Hollow Butts ===
+Save as: starhaven_places_image/thelasthollowbutts.jpg
+Group: Velhold Grasslands   Kind: Archery range
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Last Hollow Butts — Archery range, in the frontier territory Velhold Grasslands (Open grasslands — 3rd Field Army country). What it is: Long-range archery butts of the Bowmen of the Last Hollow. Setting context: Wide open grasslands where the hardy Velhold grassland horse is bred, and where the 3rd Field Army's horse archers and the Bowmen of the Last Hollow train.
+
+=== The Velhold Horse Fair ===
+Save as: starhaven_places_image/thevelholdhorsefair.jpg
+Group: Velhold Grasslands   Kind: Horse fair
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Velhold Horse Fair — Horse fair, in the frontier territory Velhold Grasslands (Open grasslands — 3rd Field Army country). What it is: Where the herding families sell their grassland horses to the army every autumn. Setting context: Wide open grasslands where the hardy Velhold grassland horse is bred, and where the 3rd Field Army's horse archers and the Bowmen of the Last Hollow train.
+
 ########################################################################
-## DISTRICT  (105)
+## DISTRICT  (106)
 ########################################################################
 
 === Hall of First Light ===
@@ -2137,6 +2305,12 @@ Save as: starhaven_places_image/thedawnrunnerstable.jpg
 Group: Ironmane Fields   Kind: Breeding stable
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Dawnrunner Stable — Breeding stable, in the district Ironmane Fields (Greenveil — Eastern Approach). What it is: Marcus's eighteen-month purpose-breeding project for the Dawnlancers' three roles. Aera Coldwind considers it the most important place in her command. Setting context: Where Starhaven's cavalry bloodline was built from nothing.
+
+=== The Lance Run ===
+Save as: starhaven_places_image/thelancerun.jpg
+Group: Ironmane Fields   Kind: Cavalry training ground
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Lance Run — Cavalry training ground, in the district Ironmane Fields (Greenveil — Eastern Approach). What it is: A long charging run where the Ironmane Lancers, the Black Charge and the Windlance Cavalry practise. Setting context: Where Starhaven's cavalry bloodline was built from nothing.
 
 === The Rhino Pens ===
 Save as: starhaven_places_image/therhinopens.jpg
@@ -3217,7 +3391,7 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Westreach Primer School — School, in the village Westreach (Western Frontier — now under the Crown). What it is: The town school — and evening letters and sums for adventurers who never had any. Setting context: The older adventurers' town of the western frontier, now part of the kingdom and rebuilt with Crown money into the place every new adventurer starts.
 
 ########################################################################
-## OUTPOST  (39)
+## OUTPOST  (51)
 ########################################################################
 
 === Ironpass Forward Post ===
@@ -3237,6 +3411,30 @@ Save as: starhaven_places_image/riftgatenetwork.jpg
 Group: Atlas — Rift Gate Network   Kind: Outpost
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Rift Gate Network — Outpost (Kingdom-Wide — 31 Installations). What it is: 31 rift gate installations across the kingdom — reserved for government, military, and emergency use. In wartime, field armies can deploy anywhere in the kingdom in 18 minutes. Parallel arcane railway (6 civilian lines) connects every city for public transport. Six arcane railway lines.
+
+=== Silver Swan East Depot ===
+Save as: starhaven_places_image/silverswaneastdepot.jpg
+Group: Atlas — Silver Swan East Depot   Kind: Outpost
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Silver Swan East Depot — Outpost (Eastern Settlement — near Ashfield). What it is: Home depot of the Silver Swan East Detachment — riders on sand-bred horses with Karath blood — near Ashfield and the eastern border. The East Depot shares water and farriers with the Ashfield Chariot Grounds.
+
+=== Silver Swan North Depot ===
+Save as: starhaven_places_image/silverswannorthdepot.jpg
+Group: Atlas — Silver Swan North Depot   Kind: Outpost
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Silver Swan North Depot — Outpost (Northern Approaches — on the Frosthold road). What it is: Home depot of the Silver Swan North Detachment — 1,200 riders on cold-hardy Coldblood Cross horses — with remount stables and winter riding halls. The North Depot keeps its horses in covered riding halls through the winter.
+
+=== Silver Swan South Depot ===
+Save as: starhaven_places_image/silverswansouthdepot.jpg
+Group: Atlas — Silver Swan South Depot   Kind: Outpost
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Silver Swan South Depot — Outpost (Southern Agricultural Corridor — near Rookthorn). What it is: Home depot of the Silver Swan South Detachment — riders on the purple-marked southern line — beside the grain corridor it guards. The South Depot buys its fodder from Rookthorn and Amberfield and guards their harvest roads in return.
+
+=== Silver Swan West Depot ===
+Save as: starhaven_places_image/silverswanwestdepot.jpg
+Group: Atlas — Silver Swan West Depot   Kind: Outpost
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Silver Swan West Depot — Outpost (Western Ranges — between Westreach and Skyperch). What it is: Home depot of the Silver Swan West Detachment — riders on sure-footed mountain-bred horses — on the western range roads. The West Depot's riders train on the mountain tracks below Skyperch.
 
 === Skyperch ===
 Save as: starhaven_places_image/skyperch.jpg
@@ -3339,6 +3537,54 @@ Save as: starhaven_places_image/theveyneholdgate.jpg
 Group: Rift Gate Network   Kind: Rift gate · under construction
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Veynehold Gate — Rift gate · under construction, in the outpost Rift Gate Network (Kingdom-Wide — 31 Installations). What it is: A rift gate for the Fortified Mint, under construction. Setting context: 31 rift gate installations across the kingdom — reserved for government, military, and emergency use.
+
+=== The Dust Run ===
+Save as: starhaven_places_image/thedustrun.jpg
+Group: Silver Swan East Depot   Kind: Cavalry drill field
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Dust Run — Cavalry drill field, in the outpost Silver Swan East Depot (Eastern Settlement — near Ashfield). What it is: A long open drill run for pursuit riding. Setting context: Home depot of the Silver Swan East Detachment — riders on sand-bred horses with Karath blood — near Ashfield and the eastern border.
+
+=== The Sandbred Stables ===
+Save as: starhaven_places_image/thesandbredstables.jpg
+Group: Silver Swan East Depot   Kind: Remount stables
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Sandbred Stables — Remount stables, in the outpost Silver Swan East Depot (Eastern Settlement — near Ashfield). What it is: Stables for the East Detachment's sand-bred horses. Setting context: Home depot of the Silver Swan East Detachment — riders on sand-bred horses with Karath blood — near Ashfield and the eastern border.
+
+=== The Coldblood Stables ===
+Save as: starhaven_places_image/thecoldbloodstables.jpg
+Group: Silver Swan North Depot   Kind: Remount stables
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Coldblood Stables — Remount stables, in the outpost Silver Swan North Depot (Northern Approaches — on the Frosthold road). What it is: Stables and covered riding halls for the North Detachment's Coldblood Cross horses. Setting context: Home depot of the Silver Swan North Detachment — 1,200 riders on cold-hardy Coldblood Cross horses — with remount stables and winter riding halls.
+
+=== The Frost Meadow Drill Field ===
+Save as: starhaven_places_image/thefrostmeadowdrillfield.jpg
+Group: Silver Swan North Depot   Kind: Cavalry drill field
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Frost Meadow Drill Field — Cavalry drill field, in the outpost Silver Swan North Depot (Northern Approaches — on the Frosthold road). What it is: Lance, crossbow and pursuit drills on frozen ground. Setting context: Home depot of the Silver Swan North Detachment — 1,200 riders on cold-hardy Coldblood Cross horses — with remount stables and winter riding halls.
+
+=== The Corridor Lance Field ===
+Save as: starhaven_places_image/thecorridorlancefield.jpg
+Group: Silver Swan South Depot   Kind: Cavalry drill field
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Corridor Lance Field — Cavalry drill field, in the outpost Silver Swan South Depot (Southern Agricultural Corridor — near Rookthorn). What it is: A long flat field for lance charges and mounted crossbow drill. Setting context: Home depot of the Silver Swan South Detachment — riders on the purple-marked southern line — beside the grain corridor it guards.
+
+=== The Purplemark Stables ===
+Save as: starhaven_places_image/thepurplemarkstables.jpg
+Group: Silver Swan South Depot   Kind: Remount stables
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Purplemark Stables — Remount stables, in the outpost Silver Swan South Depot (Southern Agricultural Corridor — near Rookthorn). What it is: Stables and paddocks for the South Detachment's purple-marked horses. Setting context: Home depot of the Silver Swan South Detachment — riders on the purple-marked southern line — beside the grain corridor it guards.
+
+=== The Mountainbred Stables ===
+Save as: starhaven_places_image/themountainbredstables.jpg
+Group: Silver Swan West Depot   Kind: Remount stables
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Mountainbred Stables — Remount stables, in the outpost Silver Swan West Depot (Western Ranges — between Westreach and Skyperch). What it is: Stables for the West Detachment's mountain-bred horses. Setting context: Home depot of the Silver Swan West Detachment — riders on sure-footed mountain-bred horses — on the western range roads.
+
+=== The Switchback Course ===
+Save as: starhaven_places_image/theswitchbackcourse.jpg
+Group: Silver Swan West Depot   Kind: Cavalry drill course
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Switchback Course — Cavalry drill course, in the outpost Silver Swan West Depot (Western Ranges — between Westreach and Skyperch). What it is: A mountain riding course of steep switchbacks and narrow ledges. Setting context: Home depot of the Silver Swan West Detachment — riders on sure-footed mountain-bred horses — on the western range roads.
 
 === Feather & Flint ===
 Save as: starhaven_places_image/featherandflint.jpg
@@ -3507,8 +3753,14 @@ PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: Fort Asterfall — Historic site (Northern Frontier — pine forests). What it is: A frontier fort in the pine forests of the north, reclaimed in the war years. A corruption outbreak began in the lower refugee district outside its southern wall — and Selene Voss died in Rayden's arms while snow fell across its burning ruins.
 
 ########################################################################
-## LANDMARK  (11)
+## LANDMARK  (14)
 ########################################################################
+
+=== The Ashfield Chariot Races ===
+Save as: starhaven_places_image/theashfieldchariotraces.jpg
+Group: Ashfield   Kind: Landmark
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Ashfield Chariot Races — Landmark (Ashfield — the Chariot Grounds). What it is: Chariot racing on the great oval at the Ashfield Chariot Grounds — two- and four-horse teams, Starhaven against Karath, and the Grand Chariot Cup every autumn. Chariots are two-wheeled war chariots pulled by two or four horses, with a driver and a fighter standing in the car.
 
 === The Glass Shallows ===
 Save as: starhaven_places_image/theglassshallows.jpg
@@ -3569,6 +3821,18 @@ Save as: starhaven_places_image/theskyperchskyraces.jpg
 Group: Skyperch   Kind: Landmark
 PROMPT:
 Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Skyperch Sky Races — Landmark (Skyperch — Western Ranges). What it is: Griffin and great-eagle racing around the peaks of Skyperch. The rivalry everyone bets on: Tessa Skarne against Aurelia Vex. Any griffins shown are war griffins drawn as true griffins — eagle head, feathered neck, great feathered wings and taloned eagle forelegs, lion body, lion hind legs and a tufted lion tail; tawny, grey or white plumage; no scales, never a dragon. Any eagles shown are giant war eagles big enough to carry a rider, with a wingspan of thirty feet or more — real eagle anatomy, hooked beak, golden or dark plumage.
+
+=== The Grand Chariot Cup ===
+Save as: starhaven_places_image/thegrandchariotcup.jpg
+Group: The Ashfield Chariot Races   Kind: Festival
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Grand Chariot Cup — Festival, in the landmark The Ashfield Chariot Races (Ashfield — the Chariot Grounds). Show the festival in full swing at night or dusk: The autumn final — Starhaven and Karath teams, four horses abreast, three laps. Setting context: Chariot racing on the great oval at the Ashfield Chariot Grounds — two- and four-horse teams, Starhaven against Karath, and the Grand Chariot Cup every autumn. Chariots are two-wheeled war chariots pulled by two or four horses, with a driver and a fighter standing in the car.
+
+=== The Great Oval ===
+Save as: starhaven_places_image/thegreatoval.jpg
+Group: The Ashfield Chariot Races   Kind: Racetrack
+PROMPT:
+Photorealistic dark-fantasy environment art, cinematic film still, desaturated moody color grade with warm practical light where the place is lived-in (lanterns, hearths, windows), extremely detailed textures on stone, wood, metal and fabric, atmospheric depth. Horizontal 3:2 composition, 1536x1024, wide establishing shot of the place itself — architecture and setting are the subject; any people are small, background figures for scale with no close-up faces. No text, no signage lettering, no watermark, no border, no logo. Subject: The Great Oval — Racetrack, in the landmark The Ashfield Chariot Races (Ashfield — the Chariot Grounds). What it is: A long sand oval with packed grandstands on both sides. Setting context: Chariot racing on the great oval at the Ashfield Chariot Grounds — two- and four-horse teams, Starhaven against Karath, and the Grand Chariot Cup every autumn.
 
 === The Wandering Lantern Circus ===
 Save as: starhaven_places_image/thewanderinglanterncircus.jpg
