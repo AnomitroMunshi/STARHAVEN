@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 30   (finished so far: 279)
+Still to generate: 24   (finished so far: 285)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,50 +11,6 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
-
-########################################################################
-## COMMANDER  (3)
-########################################################################
-
-=== Caspian Wavecrest ===
-Save as: starhaven_chars_image/caspianwavecrest.jpg
-Group: Commander   Race: Human   Age: 51
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Caspian Wavecrest, Commodore of Dawncliff — Commodore · Dawncliff Sea Fortress · Chain-Tower & Eastern Coast command. A man, age 51, race: Human. Look: a Human man aged 51 — Weathered, sun-darkened skin, close-cropped grey-blond hair and a short salt-and-pepper beard, pale grey eyes with deep squint lines, a thin scar through one eyebrow. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Weathered, sun-darkened skin, close-cropped grey-blond hair and a short salt-and-pepper beard, pale grey eyes with deep squint lines, a thin scar through one eyebrow. Weapons and gear: a dark blue naval commodore's coat with brass buttons and salt-stained gold braid, a basket-hilted sabre, a brass long-glass under one arm. Setting: the battlements of a sea fortress on a high cliff, a great harbour chain and grey sea below.
-
-=== Durgan Blackwall ===
-Save as: starhaven_chars_image/durganblackwall.jpg
-Group: Commander   Race: Dwarf   Age: 134
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Durgan Blackwall, Warden-Commander of Blackwall Ridge — Warden-Commander · Northern Corridor Command · Blackwall Ridge Fortress & the Northern Tollgate. A man, age 134, race: Dwarf (dwarf: short and stocky, broad shoulders, heavy braided hair (men also wear thick braided beards with iron rings; women are beardless)). Look: a Dwarf man aged 134 — Broad, grizzled Dwarf, slate-grey beard in two heavy iron-capped braids, a bald scarred head, deep-set dark eyes, a nose broken more than once. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Broad, grizzled Dwarf, slate-grey beard in two heavy iron-capped braids, a bald scarred head, deep-set dark eyes, a nose broken more than once. Weapons and gear: heavy dark iron dwarven plate with a black ridge sigil on the breastplate, a fur mantle, a long-hafted war-pick, a tower shield. Setting: a fortress gate on a black rock ridge above a mountain road, snow on the peaks.
-
-=== Orsk Grimhallow ===
-Save as: starhaven_chars_image/orskgrimhallow.jpg
-Group: Commander   Race: Orc   Age: 44
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Orsk Grimhallow, Watch-Captain of Starhold — Watch-Captain · Starhold City Watch. A man, age 44, race: Orc (orc: green-grey skin, prominent lower tusks, heavy brow, pointed ears, ritual scars). Look: a Orc man aged 44 — Huge Orc, grey-green skin, small lower tusks, a shaved head with a short black topknot, steady amber eyes, a calm face for his size. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Huge Orc, grey-green skin, small lower tusks, a shaved head with a short black topknot, steady amber eyes, a calm face for his size. Weapons and gear: a dark navy city-watch captain's long coat over a steel breastplate with the star badge of Starhold, an iron-shod watch staff. Setting: a lamplit capital street at night, watch lanterns and a stone watch-house behind him.
-
-########################################################################
-## COURT & SCHOLARS  (3)
-########################################################################
-
-=== Ezrion Vorrath ===
-Save as: starhaven_chars_image/ezrionvorrath.jpg
-Group: Court & Scholars   Race: Drakari   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ezrion Vorrath, Principal-Governor of Oaksmane — Principal of Saint Veyne School · Governor of Oaksmane · former Ninth Sky Corps battlemage & drake rider. A man, age 58, race: Drakari (Drakari heritage: amber-gold slit-pupil eyes, faint dragon-scale patterning at temples and neck). Look: a 58-year-old Drakari man — Tall and lean Drakari, amber-gold slit-pupil eyes, faint bronze scale-patterning at the temples and jaw, greying dark hair tied back, a scholar's spectacles and a battlemage's posture. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall and lean Drakari, amber-gold slit-pupil eyes, faint bronze scale-patterning at the temples and jaw, greying dark hair tied back, a scholar's spectacles and a battlemage's posture. Weapons and gear: a dark scholar's coat over light battlemage armour, the scorched ironwood and copper battle-staff Emberwrit, spectacles; his grey-scaled drake Cinderwing behind him (a wyvern — two legs, wings as forelimbs, no fire). Setting: the courtyard of a rebuilt stone school in a canal town, children in the background.
-
-=== Hesper Quillon ===
-Save as: starhaven_chars_image/hesperquillon.jpg
-Group: Court & Scholars   Race: Moon Elf   Age: about 160 (looks about 40)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hesper Quillon, Visa-Mistress of the Dome Gate — Chief of the Open Visa Office · Dome Gate · Ministry of Trade. A woman, age about 160 (looks about 40), race: Moon Elf (Moon Elf: long pointed ears, pale luminous skin, silver or moon-pale hair, ageless face). Look: a Moon Elf woman who looks about 40 (ageless-looking) — Tall, pale silver-skinned Moon Elf, sleek silver-white hair in a low knot, cool violet eyes, a single thin lens on a chain. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall, pale silver-skinned Moon Elf, sleek silver-white hair in a low knot, cool violet eyes, a single thin lens on a chain. Weapons and gear: a fitted midnight-blue official's coat with silver piping, a silver seal-ring, a thin truth-glass lens on a chain. Setting: a high domed arrivals hall of glass and stone, travellers queuing beneath shimmering gate arches.
-
-=== Ilse Varnholt ===
-Save as: starhaven_chars_image/ilsevarnholt.jpg
-Group: Court & Scholars   Race: Human   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ilse Varnholt, Physician-Royal — Physician-Royal · Head of the Royal Infirmary, Starhold · Healing Halls network. A woman, age 52, race: Human. Look: a Human woman aged 52 — Composed Human woman, fair skin, steel-grey hair cut to the jaw, clear grey-green eyes, reading spectacles pushed up on her head. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Composed Human woman, fair skin, steel-grey hair cut to the jaw, clear grey-green eyes, reading spectacles pushed up on her head. Weapons and gear: a crisp dark teal physician's coat over white linen, a silver instrument case, a softly glowing crystal healing-lamp. Setting: a bright vaulted hospital ward with tall windows and white-curtained beds.
 
 ########################################################################
 ## ALLIED NATIONS  (10)
