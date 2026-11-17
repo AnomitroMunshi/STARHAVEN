@@ -20,7 +20,7 @@
 
 | File | Purpose |
 |---|---|
-| `starhaven_wiki.html` | Main interactive wiki — Story, Chronicles, Characters, Army Registry, Atlas, Map, Museum, Ballads |
+| `starhaven_wiki.html` | Main interactive wiki — Story, Chronicles, Characters, Army Registry, Atlas, Map, Ballads |
 | `starhaven-unit-wiki.html` | Interactive unit registry with filter system (branch, source, armor class) |
 | `starhaven_codex_final.html` | Character encyclopedia — visual cards, abilities, relationships, portraits |
 | `starhaven_armies_master.html` | Military force registry — all armies, garrisons, naval, siege engines, mercenaries |
@@ -28,7 +28,6 @@
 | `unit_commanders.md` | Commander reference document |
 | `Lores/chapters/` | 9 HTML story chapters (Starhaven_Chapter1–9.html) |
 | `Lores/Ballads/` | 26 MP3 audio ballads by in-universe bard Dren Solm |
-| `Lores/Mueseum/` | Historical images — army unit art, locations, battle scenes |
 | `Lores/maps/map.png` | World map with pan/zoom |
 | `Lores/weapons/` | Weapon images for all named weapons |
 | `starhaven_chars_image/` | 70+ character portrait PNGs |
@@ -85,8 +84,8 @@ The Eleven are Starhaven's supreme council. Each holds a **Pillar** title repres
 
 | # | Name | Title / Pillar | Army | Key Trait |
 |---|---|---|---|---|
-| 1 | **Rayden Cale** | King · Pillar of the Dawn | Dawnguard (elite 500) | Fights from the ground. No crown, no ceremony. |
-| 2 | **Kael Varric** | Minister of Defense · Pillar of the Wall | Ironwall (15,000) | Never lost a fortress. Immovable. |
+| 1 | **Rayden Cale** | King · Pillar of the Dawn | Dawnguard (elite 480) | Fights from the ground. No crown, no ceremony. |
+| 2 | **Kael Varric** | Minister of Defense · Pillar of the Wall | Ironwall (25,000) | Never lost a fortress. Immovable. |
 | 3 | **Lyria Valen** | Pillar of the Eye | Silent Wardens | 127yo Moon Elf. Intelligence commander. Reads environments as text. |
 | 4 | **Velkan Drake** | Grand Arcanist · Pillar of the Mind | Ninth Sky Corps | Drakari scholar-battlemage. Always thinking 3 steps ahead. Notebook always in hand. |
 | 5 | **Seraphine Mire** | Pillar of the Heart · Saintess | Ashen Guard | Half-Celestial healer-fighter. Warm without performing warmth. |

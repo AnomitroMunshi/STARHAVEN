@@ -27,8 +27,8 @@ Starhaven is governed by eleven individuals. Each commands a personal army. Each
 
 | # | Name | Pillar | Command | Note |
 |---|------|--------|---------|------|
-| 1 | **Rayden Cale** | The Dawn | Dawnguard (500 elite) | King. Wields Dawnpiercer & Kingsbane. Fights on foot. |
-| 2 | **Kael Varric** | The Wall | Ironwall (15,000 heavy inf.) | Never lost a fortress. Rides a rhino named DreadMaw. |
+| 1 | **Rayden Cale** | The Dawn | Dawnguard (480 elite) | King. Wields Dawnpiercer & Kingsbane. Fights on foot. |
+| 2 | **Kael Varric** | The Wall | Ironwall (25,000 very heavy inf.) | Never lost a fortress. Rides a rhino named DreadMaw. |
 | 3 | **Lyria Valen** | The Eye | Silent Wardens | 127-year-old Moon Elf. Reads environments like text. |
 | 4 | **Velkan Drake** | The Mind | Ninth Sky Corps | Scholar-battlemage. Draconic bloodline. Notebook always in hand. |
 | 5 | **Seraphine Mire** | The Heart | Ashen Guard | Half-Celestial. The person who stays when everyone leaves. |
@@ -124,7 +124,6 @@ nullborn_enemy_units.html     — Enemy unit documentation
 Lores/
 ├── chapters/                 — 8 HTML story chapters
 ├── Ballads/                  — 26 original MP3 ballads by "Dren Solm" (in-universe bard)
-├── Mueseum/                  — Historical art: armies, locations, battles
 ├── maps/map.png              — World map (pan/zoom enabled)
 └── weapons/                  — Weapon reference images
 

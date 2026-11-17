@@ -263,14 +263,6 @@ a.lore-card:hover{transform:translateY(-2px)}
 .strip-naval{background:linear-gradient(90deg,#104888,#2878B8)}
 .strip-merc{background:linear-gradient(90deg,#503010,#A07020)}
 
-/* ══ MUSEUM GALLERY ══ */
-.museum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
-.museum-item{background:var(--bg2);border:1px solid var(--border2);border-radius:10px;overflow:hidden;cursor:pointer;transition:border-color .18s,transform .14s;position:relative}
-.museum-item:hover{border-color:var(--border3);transform:translateY(-2px)}
-.museum-thumb{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--bg3)}
-.museum-caption{padding:8px 12px 10px}
-.museum-caption-title{font-family:'Cinzel',serif;font-size:12px;color:var(--gold2);margin:0 0 2px}
-.museum-caption-desc{font-size:11px;color:var(--text3);font-style:italic;margin:0;line-height:1.4}
 
 /* ══ BALLAD LIST ══ */
 .ballad-list{display:flex;flex-direction:column;gap:8px}
@@ -366,7 +358,7 @@ a.lore-card:hover{transform:translateY(-2px)}
   .main{margin-left:0}
   .mobile-nav-btn{display:flex}
   .s-hero,.s-content,.tab-bar,.search-bar{padding-left:20px;padding-right:20px}
-  .lore-grid,.army-grid,.museum-grid,.atlas-grid{grid-template-columns:1fr}
+  .lore-grid,.army-grid,.atlas-grid{grid-template-columns:1fr}
   .ballad-player-bar{left:0}
 }
 
@@ -468,10 +460,6 @@ a.lore-card:hover{transform:translateY(-2px)}
     </div>
 
     <p class="sb-section-label">Culture</p>
-    <div class="sb-link" data-section="museum" onclick="showSection('museum',this)">
-      <span class="sb-link-icon">🖼️</span> Museum
-      <span class="sb-count" id="cnt-museum">0</span>
-    </div>
     <div class="sb-link" data-section="ballads" onclick="showSection('ballads',this)">
       <span class="sb-link-icon">🎵</span> Ballads
       <span class="sb-count" id="cnt-ballads">0</span>
@@ -635,20 +623,6 @@ a.lore-card:hover{transform:translateY(-2px)}
     </div>
   </div>
 
-  <!-- MUSEUM -->
-  <div id="section-museum" class="section">
-    <div class="s-hero">
-      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 80% 50%,rgba(50,100,168,.05) 0%,transparent 70%);pointer-events:none"></div>
-      <p class="s-eyebrow">✦ Starhaven Royal Museum · Historical Image Archive</p>
-      <h1 class="s-title">Museum</h1>
-      <p class="s-subtitle">Battle Scenes · Army Units · Locations · Historical Records</p>
-      <p class="s-desc">The visual archive — paintings, unit illustrations, location renderings, and historical scenes. Click any image to view full size. Subcategories will be added later.</p>
-    </div>
-    <div class="s-content">
-      <div id="museum-grid" class="museum-grid"></div>
-    </div>
-  </div>
-
   <!-- BALLADS -->
   <div id="section-ballads" class="section">
     <div class="s-hero">
@@ -789,7 +763,7 @@ const CHAPTERS = [
     title: 'The War of Starhold',
     subtitle: 'Chapter VI · Main Story',
     summary: "The war that defines Starhaven's southern border. Five kingdoms, one corridor, and the demonstration that changed every calculation about what Starhaven could do when it chose to.",
-    path: 'Lores/chapters/Starhaven_Chapter6_improved.html',
+    path: 'Lores/chapters/Starhaven_Chapter6.html',
     color: '#C84030',
   },
   {
@@ -2311,7 +2285,7 @@ const CHARACTERS = [
     mount:{name:'Dawnguard Warhorse',desc:'Heavy cavalry mount — standard Ironmane-bred, selected by Kael from the Ironmane Fields breeding stock.'},
     partner:[{name:'Vera Holt (née Marsh)',relation:'Wife (married Year 1041, at Havenfire — Brek announced it to the entire courtyard before they could)',desc:'Siege-Captain under Cain Drakhar. She plans the breach. He leads the charge through it. This year — Year 1049 — they had twins: Leo and Liana. Kael Varric is the godfather. He accepted in two words.'},{image:'starhaven_chars_image/partner_leoholt.jpg',name:'Leo Holt',relation:'Son (twin, born Year 1049)',desc:'Liana\'s twin and the louder of the two. Has already climbed the Dawnguard practice wall once, which nobody has been able to explain. Kael Varric is his godfather.'},{image:'starhaven_chars_image/partner_lianaholt.jpg',name:'Liana Holt',relation:'Daughter (twin, born Year 1049)',desc:'Leo\'s twin. Watches everything before she moves — her mother says she plans the breach, and Leo leads the charge through it. Kael Varric is her godfather.'}],
     achievements:['Five years Dawnguard command — zero loss of a protected principal',
-      'Personally certified all 500 Dawnguard members against Kael\'s standard',
+      'Personally certified all 480 Dawnguard members against Kael\'s standard',
       'Capital security for Iron Star Festival — zero disruption to tournament proceedings'],
     },
   {
@@ -10335,45 +10309,6 @@ const CHARACTERS = [
   },
 ];
 // ════════════════════════════════════════
-//  MUSEUM  — 26 images from Lores/Mueseum/
-//  Edit 'caption\' fields to add descriptions.
-// ════════════════════════════════════════
-const MUSEUM = [
-  // ── Army Units ──────────────────────────
-  { id:'first-field-army',   path:'Lores/Mueseum/first-field-army.png',   title:'First Field Army',             caption:'The main spearhead of Starhaven\'s offensive doctrine.' },
-  { id:'FirstArmy',          path:'Lores/Mueseum/FirstArmy.png',          title:'First Army — Formation',       caption:'Standard formation of the First Army — heavy infantry vanguard.' },
-  { id:'SecondArmy',         path:'Lores/Mueseum/SecondArmy.png',         title:'Second Army',                  caption:'Second Field Army under Commander Veyra Tal.' },
-  { id:'ThirdArmy',          path:'Lores/Mueseum/ThirdArmy.png',          title:'Third Army',                   caption:'Third standing army — central defense rotation.' },
-  { id:'FourthArmy',         path:'Lores/Mueseum/FourthArmy.png',         title:'Fourth Army',                  caption:'Fourth reserve army — rapid redeployment force.' },
-  // ── Pillar Armies ────────────────────────
-  { id:'dawnguardInfantry',  path:'Lores/Mueseum/dawnguardInfantry.png',  title:'Dawnguard Infantry',           caption:'Elite 500 — Rayden Cale\'s personal guard. Hand-selected, individually rated.' },
-  { id:'IronWall',           path:'Lores/Mueseum/IronWall.png',           title:'Ironwall — Pillar Army',       caption:"Kael Varric's 15,000-strong heavy infantry. The wall that did not move." },
-  { id:'SilentWardens',      path:'Lores/Mueseum/SilentWardens.png',      title:'Silent Wardens',               caption:"Lyria Valen's intelligence and reconnaissance force." },
-  { id:'NullBlades',         path:'Lores/Mueseum/NullBlades.png',         title:'Null Blades',                  caption:"Nyx Ravel's classified covert unit. Classification: Umbral." },
-  { id:'AshenGuard',         path:'Lores/Mueseum/AshenGuard.png',         title:'Ashen Guard',                  caption:"Seraphine Mire's purification-and-rescue military division." },
-  { id:'PrimalVanguard',     path:'Lores/Mueseum/PrimalVanguard.png',     title:'Primal Vanguard',              caption:"Thorin Blackroot's Greenveil-born warriors — terrain experts." },
-  { id:'ninthSkyCorps',      path:'Lores/Mueseum/ninthSkyCorps.png',      title:'Ninth Sky Corps',              caption:"Aurelia Vex's aerial combat wing — Storm Dragons and riders." },
-  // ── Specialized Units ─────────────────────
-  { id:'IronManeLancers',    path:'Lores/Mueseum/IronManeLancers.png',    title:'Ironmane Lancers',             caption:'Elite cavalry force under Dresh Ironmane — fastest heavy charge on the continent.' },
-  { id:'windlanceCavalry',   path:'Lores/Mueseum/windlanceCavalry.png',   title:'Windlance Cavalry',            caption:'Light cavalry — long-range flanking and pursuit specialists.' },
-  { id:'holyKnights',        path:'Lores/Mueseum/holyKnights.png',        title:'Holy Knights',                 caption:'Order of consecrated knights — sanctioned by the Athenaeum.' },
-  { id:'GreenveileDefenseForce', path:'Lores/Mueseum/GreenveileDefenseForce.png', title:'Greenveil Defense Force', caption:'Regional defense garrison — forest warfare specialists.' },
-  { id:'FrostholdBastionMillitary', path:'Lores/Mueseum/FrostholdBastionMillitary.png', title:'Frosthold Bastion Military', caption:'Northern garrison at the Frosthold Bastion under Brynhild Voss.' },
-  // ── Locations ─────────────────────────────
-  { id:'dawncliff',          path:'Lores/Mueseum/dawncliff.png',          title:'Dawncliff',                    caption:'Coastal cliff settlement — eastern sea-facing fortification.' },
-  { id:'sancthaven',         path:'Lores/Mueseum/sancthaven.png',         title:'Sancthaven',                   caption:'Holy city — seat of the Athenaeum.' },
-  { id:'ironpass',           path:'Lores/Mueseum/ironpass.png',           title:'Iron Pass',                    caption:'Mountain pass — strategic gateway between northern territories.' },
-  { id:'hilltop_fortress',   path:'Lores/Mueseum/hilltop_fortress.png',   title:'Hilltop Fortress',             caption:'Elevated fortification commanding the surrounding valley.' },
-  { id:'forgehaven',         path:'Lores/Mueseum/forgehaven.png',         title:'Forgehaven',                   caption:'Industrial city — Arsenal and Iron Tide manufacturing hub.' },
-  { id:'GreenVeil',          path:'Lores/Mueseum/GreenVeil.png',          title:'The Green Veil',               caption:'Ancient forest territory — Thorin Blackroot\'s seat of power.' },
-  { id:'zephyros',           path:'Lores/Mueseum/zephyros.png',           title:'Zephyros — Storm Dragon',      caption:"Aurelia Vex's mount. Asiatic Elder Storm Dragon, several hundred years old." },
-  // ── Historical ───────────────────────────
-  { id:'kael_vs_orc',        path:'Lores/Mueseum/kael_vs_orc_commander_1042.png', title:'Battle of 1042 — Kael vs Orc Commander', caption:'The engagement at the Ashen Ridge, Year 1042. The blow that scarred the stone.' },
-  { id:'dorun_graymaw',      path:'Lores/Mueseum/Dorun-Graymaw.png',      title:'Statue of Dorun-Graymaw in his Hometown', caption:'Statue of Dorun-Graymaw in his Hometown' },
-  { id:'blackcharge_first_charge', path:'Lores/Mueseum/BlackCharge-first-charge.png',      title:'Vespera — Black Charge Cavalry in Action', caption:'Vespera — Black Charge Cavalry in Action' },
-   { id:'drogar-army', path:'Lores/Mueseum/drogar-army-battle.png',      title:'Battle of 1049 - Greenveil', caption:'1049 -Drogar\'s army charging' },
-];
-// ════════════════════════════════════════
 //  ARMIES
 //  tier: 'eleven'|'standing'|'specialized'|'naval'|'siege'|'garrison'|'allied'|'merc'
 // ════════════════════════════════════════
@@ -10384,9 +10319,8 @@ const ARMIES = [
     id:'dawnguard', name:'The Dawnguard',
     subtitle:'Personal Army of Rayden Cale · Pillar of the Dawn',
     motto:'"We are the Dawn. We are the Wall. We are Starhaven."',
-    tier:'eleven', strength:'300 Elite Soldiers', color:'#C84030',
+    tier:'eleven', strength:'480 Elite Soldiers', color:'#C84030',
     commander:'Captain Daven Holt', hq:'Starhold Capital',
-    image:'Lores/Mueseum/dawnguardInfantry.png',
     roles:['Royal Kingsguard','Breach Response','Anti-Corruption Operations'],
     desc:'Every member individually certified by Daven. Corruption-sealed gear for Void-zone operations. When Dawnguard appears on a battlefield, the engagement is being decided now.',
     note:'',
@@ -10395,9 +10329,8 @@ const ARMIES = [
     id:'ironwall', name:'Ironwall',
     subtitle:'Personal Army of Kael Varric · Pillar of the Wall',
     motto:'"The Line Holds."',
-    tier:'eleven', strength:'15,000 Heavy Infantry', color:'#B09030',
+    tier:'eleven', strength:'25,000 Very Heavy Infantry', color:'#B09030',
     commander:'Kael Varric', hq:'Ironpass Citadel',
-    image:'Lores/Mueseum/IronWall.png',
     roles:['Heavy Infantry','Siege Defense','Fortress Warfare'],
     desc:'The unbreakable shield of Starhaven. Forged in endurance, discipline, and stone-like will. They stand where others would fall. The capital must never see battle.',
     note:'',
@@ -10408,7 +10341,6 @@ const ARMIES = [
     motto:'"The Arrow Arrives First."',
     tier:'eleven', strength:'3,000 Rangers & Scouts', color:'#4A8828',
     commander:'Lyria Valen · Sub: Cass Thorn, Fenris Grey', hq:'Greenveil / Mobile',
-    image:'Lores/Mueseum/SilentWardens.png',
     roles:['Reconnaissance','Precision Archery','Deep Forest Operations','Target Elimination'],
     desc:'Move as wind through leaves — seen only when it is too late. Masters of the longbow, trackers, and shadows. Lyria\'s eyes across the wilderness.',
     units:[
@@ -10424,7 +10356,6 @@ const ARMIES = [
     motto:'"The sky is not our limit. It is our weapon."',
     tier:'eleven', strength:'2,500 · Battlemages & Drake Riders', color:'#4070B0',
     commander:'Velkan Drake · Sub: Sorin Vael (Ops), Dael Ashe (Countermage), Kai (Arcane Artillery)', hq:'Vaelmark Arcane Base',
-    image:'Lores/Mueseum/ninthSkyCorps.png',
     roles:['Arcane Artillery','Battlefield Control','Synchronized Magical Assault'],
     desc:'Rebuilt from 62 losses at the War of Starhold. Every rider since chosen by Sorin personally. Aerial arcane artillery that strikes beyond what the enemy can reach.',
     units:[
@@ -10456,7 +10387,6 @@ const ARMIES = [
     motto:'"The Wild Endures."',
     tier:'eleven', strength:'8,000+ Warriors · 3,000 War Beasts', color:'#407820',
     commander:'Thorin Blackroot · Mount: Grond (alpha dire bear)', hq:'Greenveil · Greywood Sanctuary',
-    image:'Lores/Mueseum/PrimalVanguard.png',
     roles:['War-Beast Command','Terrain Manipulation','Primal Assault','Monster Suppression'],
     desc:'First mixed beast-and-cavalry formation in Starhaven\'s history. The Ironmane horses are not afraid of the war beasts — raised alongside them from birth. What the old world theorized, Starhaven built.',
     note:'War beasts: Dire Wolves, War Bears, Mosshorn Rhinos, Thornfang Cats, Great Elk — each fights as a unit member.',
@@ -10467,7 +10397,6 @@ const ARMIES = [
     motto:'"We Were Never Here."',
     tier:'eleven', strength:'320 (True Number Unknown)', color:'#6838A0',
     commander:'Nyx Ravel · Sub: Handler Vex, Kira Null', hq:'Duskwall Hidden Bastion',
-    image:'Lores/Mueseum/NullBlades.png',
     roles:['Infiltration','Assassination','Sabotage','Intelligence Warfare'],
     desc:'Exist where light does not reach. They do not hold ground — they take it unseen. When the enemy dies not knowing why, the mission is complete.',
     units:[
@@ -10519,7 +10448,6 @@ const ARMIES = [
     motto:'"We are the light that follows the fire."',
     tier:'eleven', strength:'5,000 Combat Healers', color:'#307860',
     commander:'Seraphine Mire · Sub: Lena Crest (Field Ops)', hq:'Sancthaven HQ · All Frontier Deployments',
-    image:'Lores/Mueseum/AshenGuard.png',
     roles:['Combat Healing','Void Purification','Curse-Breaking','Frontline Support'],
     desc:'40% decrease in field mortality credited to their protocols. The purification revenue from outer territories funded Starhaven\'s early construction.',
     units:[
@@ -10592,7 +10520,6 @@ const ARMIES = [
     motto:'"Mass, weight, sustained pressure."',
     tier:'standing', strength:'5,000 Soldiers', color:'#A83018',
     commander:'Field Marshal Doran Ashe', hq:'Ironpass Forward / Campaign Mobile',
-    image:'Lores/Mueseum/first-field-army.png',
     roles:['Heavy Infantry','Concentrated Force','Assault Cavalry','Siege Engineers'],
     desc:'20-year Ironmere veteran. Never broken in 9 years of Starhaven command. Three-day engagement at Eastern Crossing: held 20,000 against 40,000. Does not outmaneuver — hits harder and holds longer.',
     units:[
@@ -10614,7 +10541,6 @@ const ARMIES = [
     motto:'"Move 30% faster than any comparable formation."',
     tier:'standing', strength:'5,000 Soldiers', color:'#709018',
     commander:'Field Marshal Clea Vorn (Half Moon Elf)', hq:'Coldmarch Western Deployment',
-    image:'Lores/Mueseum/SecondArmy.png',
     roles:['Vanguard','Flanking Maneuvers','Multi-Front Warfare','Speed Doctrine','Strategic Reserve'],
     desc:'Lyria trained alongside Clea for 3 months — Warden precision integrated into cavalry maneuver doctrine. Thinks in motion. Plans on horseback.',
     units:[
@@ -10639,7 +10565,6 @@ const ARMIES = [
     motto:'"Twenty years without a fortress. The wall is in the soldiers."',
     tier:'standing', strength:'5,000 Soldiers', color:'#3878B0',
     commander:'Field Marshal Brek Tane (Age 46)', hq:'Distributed Garrisons / Ironpass',
-    image:'Lores/Mueseum/ThirdArmy.png',
     roles:['Defensive Formations','Fortification Support','Garrison Reserve'],
     desc:'Led 400 soldiers for 20 years without a fortress after Ashveil Hold fell to a Void incursion. Found three structural corrections Kael had missed — on day two.',
     units:[
@@ -10709,7 +10634,6 @@ const ARMIES = [
     motto:'"Forward. Unbroken."',
     tier:'cavalry', strength:'600 Elite Heavy Shock Cavalry', color:'#A02818',
     commander:'Captain Dresh Ironmane (Age 22)', hq:'Ironmane Fields, Greenveil',
-    image:'Lores/Mueseum/IronManeLancers.png',
     roles:['Elite Heavy Shock Cavalry Charge','Shock & Breakthrough','Flank Collapse','Pursuit'],
     desc:'Every horse personally bred by Marcus Ironmane. Raised alongside Greenveil\'s war beasts from birth — these horses do not fear dire wolves or war bears.',
     note:'The cavalry that cannot be disrupted by the things that disrupt other cavalry.',
@@ -10720,7 +10644,6 @@ const ARMIES = [
     motto:'"We do not chase. We are already where you are going."',
     tier:'cavalry', strength:'600 Horse Archers', color:'#489020',
     commander:'Lance-General Irae Duskwind (Half Moon Elf, Age 29)', hq:'Ironmane Fields / Field Mobile',
-    image:'Lores/Mueseum/windlanceCavalry.png',
     roles:['Horse Archery','Flanking Mobile Fire','Harassment','Recon'],
     desc:'Born to nomadic plains rider family. Founded Year 1047 from her own concept paper. "The cavalry equivalent of a bow." — Marcus Ironmane.',
     note:'',
@@ -10852,7 +10775,6 @@ const ARMIES = [
     motto:'"She is twenty-five. Nobody mentions this more than once."',
     tier:'cavalry', strength:'800 Elite Cavalry', color:'#6A1010',
     commander:'Captain Vespera Drakewynn', hq:'Ironmane Fields / Field Mobile',
-    image:'Lores/Mueseum/BlackCharge.png',
     roles:['Shock Breakthrough','Night Raids','Line Breaking','Pursuit'],
     desc:'Black-armored, crimson horse, shadowsteel lance — arrival sounds like an oncoming storm. No recorded instance of Crimson Breakthrough failing to break its target. Entire armies have broken formation upon hearing the Black Charge approach through darkness.',
     note:'Ashfang Pistols fired once per charge since command. No missed shot on record.',
@@ -11117,7 +11039,6 @@ const ARMIES = [
     motto:'"Where darkness stands, we ride."',
     tier:'specialized', strength:'7,000 Knights & Paladins', color:'#489020',
     commander:'High Commander Brynhild Voss', hq:'Sancthaven White Citadel',
-    image:'Lores/Mueseum/holyKnights.png',
     roles:['Holy Warfare','Monster Hunting','Demon Suppression','Sacred Protection'],
     desc:'Founded after the First Void Crusade. Where the Ashen Guard preserves life, the Holy Knights destroy the source of suffering. Their banners have never retreated from a kingdom-class corruption event.',
     units:[
@@ -11168,7 +11089,6 @@ const ARMIES = [
     motto:'',
     tier:'garrison', strength:'1,200 Soldiers · Fortress Garrison', color:'#505868',
     commander:'Kael Varric (overall) · Forward commanders', hq:'Ironpass',
-    image:'Lores/Mueseum/ironpass.png',
     roles:['Eastern Border Defense','Three-Ring Fortress System','Armored Forward Base'],
     desc:"Starhaven's eastern anchor. Three concentric defensive rings, each requiring a separate siege to breach. 60 Iron Tide tanks forward-deployed here permanently.",
     units:[
@@ -11185,7 +11105,6 @@ const ARMIES = [
     motto:'',
     tier:'garrison', strength:'1,000 Soldiers · Sea Fortress Garrison', color:'#1A4870',
     commander:'Naval Commander', hq:'Dawncliff',
-    image:'Lores/Mueseum/dawncliff.png',
     roles:['Coastal Defense','Naval Base','Anti-Invasion'],
     desc:'300-foot sea cliffs provide natural defense. Primary Dawnfleet port of operations. No naval force has successfully breached the cliff approaches.',
     units:[
@@ -11201,7 +11120,6 @@ const ARMIES = [
     motto:'',
     tier:'garrison', strength:'800 Soldiers · Northern Garrison', color:'#405878',
     commander:'Commander Wyld Frostmere', hq:'Northern Mountains',
-    image:'Lores/Mueseum/FrostholdBastionMillitary.png',
     roles:['Northern Border Defense','Mountain Garrison','Coldmarch Guard'],
     desc:'The northern anchor of Starhaven\'s defense network. Guards the Coldmarch routes against northern incursions. Brynhild Voss commands the full garrison and the Holy Knights stationed here.',
     units:[
@@ -11219,7 +11137,6 @@ const ARMIES = [
     motto:'"The Forest Stands Watch."',
     tier:'allied', strength:'See provincial registry', color:'#3A6830',
     commander:'Dena Veil', hq:'Greenveil',
-    image:'Lores/Mueseum/GreenveileDefenseForce.png',
     roles:['Provincial Defense','Forest Warfare','Primal Vanguard Reserve Pool'],
     desc:'The defense force of the Greenveil territory — feeds into the Primal Vanguard as its primary reserve and recruitment pool. Forest warfare specialists above all others.',
     units:[
@@ -11240,7 +11157,6 @@ const ARMIES = [
     motto:'"The Sable Conclave remembers who stood beside the dead when the living chose fear."',
     tier:'allied', strength:'Undead Legions (classified)', color:'#3A1A5A',
     commander:'Arch-Necromancer Sorvane Nullis (Age 89)', hq:'Sable Isles',
-    image:'Lores/Mueseum/sableConclave.png',
     roles:['Undead Legion Deployment','Necromantic Support','Sable Isles Naval Access','Arcane Intelligence'],
     desc:'Starhaven\'s first external ally — secured in Year 1042 when Velkan and Seraphine answered Sorvane Nullis\'s distress call that eleven kingdoms ignored. When the Sable Conclave\'s dead went rogue, eight kingdoms never replied and two turned the messenger away. Starhaven came. The Conclave Seal of Debt was invoked — an oath used only once in two hundred years. Sorvane Nullis knelt; every necromancer in the cathedral followed. Not submission. Debt.',
     units:[
@@ -11261,7 +11177,6 @@ const ARMIES = [
     motto:'"He speaks well of you. That is sufficient."',
     tier:'allied', strength:'Full Kingdom Military Force', color:'#506070',
     commander:'King Aldric Vorn (Age 56)', hq:'Ironmere (Northern Continent)',
-    image:'Lores/Mueseum/ironmere.png',
     roles:['Full Kingdom Alliance','Heavy Cavalry Partnership','Veteran Infantry','Strategic Northern Anchor'],
     desc:'Ironmere formalized the alliance in Chapter 7 — three weeks after Rhegar Thorne left their service to become Starhaven\'s Grand Marshal. Aldric Vorn could have treated Rhegar\'s departure as defection. He called it evidence. Queen Mira Vorn drafted the alliance terms, as she has drafted Aldric\'s decisions for thirty-eight years. The alliance did not require negotiation. Rhegar had already done it.',
     units:[
@@ -11299,7 +11214,6 @@ const ARMIES = [
     motto:'"The alliance is not a document."',
     tier:'allied', strength:'~14,600 troops + 52 war beasts gifted', color:'#804010',
     commander:'Sultan Rashid al-Kavar (Age 57) · Sultana Aria al-Kavar (Age 51)', hq:'Karath Sultanate (Southeast Coast)',
-    image:'Lores/Mueseum/karathSultanate.png',
     roles:['Desert Warfare','War Beast Deployment','Camel Corps Logistics','Sand-Terrain Infantry'],
     desc:'Alliance secured in Year 1048 (Chapter 8) when Sultana Aria wrote to Rayden personally — bypassing diplomatic channels, using her own seal — warning of imminent civil war. Rayden and Lyria traveled to Karath alone, no Dawnguard. They defused four faction leaders in one room in two hours and forty minutes. Sultan Rashid walked Rayden to the staging ground afterward and gave him half his war beasts. "These are mine," he said. Not the Sultanate\'s. His.',
     units:[
@@ -11321,7 +11235,6 @@ const ARMIES = [
     motto:'"The kingdom asks for your best. The kingdom will remember what you send."',
     tier:'allied', strength:'Advance contingent + full hold reserves', color:'#6A5030',
     commander:'Commander Brokk Graniteborn · Durak Stonemark (political anchor)', hq:'Stonemark Hold (Greypeak Mountains)',
-    image:'Lores/Mueseum/stonemarkAlliance.png',
     roles:['Mountain Infantry','Siege Engineering','Highland Terrain Warfare','Stone Fortification'],
     desc:'Alliance formalized after Rayden went to Stonemark Hold and visited Hilda Graymaw three levels below the grand hall before any diplomacy — returning five iron rings a dying dwarf named Dorun had pressed into his hands at Hollowwatch thirteen years prior. The stone-tongue oaths were signed in the Grand Hall afterward. In Year 1049, Brokk Graniteborn\'s advance contingent moved through the Greypeak eastern passes in dwarven silence — four hundred years of engineering applied to the problem of heavily armored infantry crossing stone without announcing themselves.',
     units:[
@@ -13995,22 +13908,6 @@ function locToggle(id) {
   el.classList.toggle('open');
   if (btn) btn.textContent = el.classList.contains('open') ? 'Lore ▴' : 'Lore ▾';
 }
-function museumRender() {
-  const grid = document.getElementById('museum-grid');
-  const cnt  = document.getElementById('cnt-museum');
-  if (!grid) return;
-  if (cnt) cnt.textContent = MUSEUM.length;
-
-  grid.innerHTML = MUSEUM.map(item => `
-    <div class="museum-item" onclick="openImgModal('${item.path}','${item.title.replace(/'/g,"&#39;")}')">
-      <img class="museum-thumb" src="${item.path}" alt="${item.title}" loading="lazy"
-           onerror="this.style.background='var(--bg4)';this.style.display='flex';this.alt='Image unavailable'">
-      <div class="museum-caption">
-        <p class="museum-caption-title">${item.title}</p>
-        ${item.caption ? `<p class="museum-caption-desc">${item.caption}</p>` : ''}
-      </div>
-    </div>`).join('');
-}
 function balladsRender() {
   const list = document.getElementById('ballads-list');
   const cnt  = document.getElementById('cnt-ballads');
@@ -14091,7 +13988,6 @@ function renderSection(id) {
   if (id === 'characters') charsRender('all');
   if (id === 'army')       armyRender('all');
   if (id === 'atlas')      atlasRender('all');
-  if (id === 'museum')     museumRender();
   if (id === 'ballads')    balladsRender();
 }
 
