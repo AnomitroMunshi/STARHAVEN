@@ -27,7 +27,7 @@
   // Calm default look: quiet edges, labels only on well-connected nodes.
   network.setOptions({ edges: { font: { size: 10, color: '#bbb', strokeWidth: 0, align: 'middle' } } });
   function resetView() {
-    focused = null;
+    focused = window.shFocus = null;
     nodesDS.update(nodesDS.get().map(n => ({
       id: n.id, opacity: 1,
       font: Object.assign({}, n.font, { size: (DATA.get(n.id).degree || 0) >= LABEL_MIN_DEGREE ? 14 : 0 }),
@@ -38,7 +38,7 @@
   // Focus: keep the node and its neighbours, fade the rest, name the relationships.
   let focused = null;
   function focusOn(id) {
-    focused = id;
+    focused = window.shFocus = id;
     const keep = new Set(network.getConnectedNodes(id)); keep.add(id);
     const edges = new Set(network.getConnectedEdges(id));
     nodesDS.update(nodesDS.get().map(n => ({
@@ -66,7 +66,7 @@
     let html = '';
     if (n.image) html += `<img class="sh-portrait" src="${esc(n.image)}" alt="${esc(n.label)}">`;
     html += `<div class="sh-name">${esc(n.label)}</div>`;
-    html += `<div class="sh-meta">${esc(kindOf(id))} · ${esc(n.community_name || '')}</div>`;
+    html += `<div class="sh-meta">${esc(kindOf(id))}</div>`;  // cluster names are auto-generated, not lore
     if (n.description) html += `<div class="sh-desc">${esc(n.description)}</div>`;
     html += `<div class="field" style="color:var(--text-2);font-size:11px">Connections (${n.degree || 0})</div>`;
     html += `<div id="neighbors-list" style="max-height:none">${rels}</div>`;
