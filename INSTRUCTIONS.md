@@ -22,7 +22,6 @@
 |---|---|
 | `starhaven_wiki.html` | Main interactive wiki — Story, Chronicles, Characters, Army Registry, Atlas, Map, Ballads |
 | `starhaven-unit-wiki.html` | Interactive unit registry with filter system (branch, source, armor class) |
-| `starhaven_codex_final.html` | Character encyclopedia — visual cards, abilities, relationships, portraits |
 | `starhaven_armies_master.html` | Military force registry — all armies, garrisons, naval, siege engines, mercenaries |
 | `more_charchter_bio.txt` | Detailed character descriptions for AI art generation |
 | `unit_commanders.md` | Commander reference document |

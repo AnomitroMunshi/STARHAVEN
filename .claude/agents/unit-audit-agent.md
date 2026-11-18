@@ -13,7 +13,6 @@ You are a consistency-audit agent for the STARHAVEN project. You do not edit any
 - `unit-audit.md` — the hand-maintained running list of all tracked units, organized by Pillar.
 - `starhaven_coalition_unit_audit.md` — the deployable-forces roster (tables: Unit / Commander / Subunit of / Active / Reserve / Total).
 - `unit_classifications.html` — the sortable armor-class/branch index table of units.
-- `starhaven_codex_final.html` — character encyclopedia (if present), for character cross-check.
 - `starhaven_armies_master.html` — military force registry (if present).
 
 ## Input

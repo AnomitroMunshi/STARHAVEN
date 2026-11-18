@@ -1,0 +1,62 @@
+{
+  "Lores/chapters/Starhaven_Chapter1.html": {
+    "mtime": 1794640438.1411302,
+    "seen": 1794982163.4988065,
+    "ast_hash": "e9662ad44020e763a1830e869759fba1",
+    "semantic_hash": "e9662ad44020e763a1830e869759fba1"
+  },
+  "Lores/chapters/Starhaven_Chapter2.html": {
+    "mtime": 1794643754.814103,
+    "seen": 1794982163.4988065,
+    "ast_hash": "00ce10b301c1d9ea01298f1b4c6a8e7f",
+    "semantic_hash": "00ce10b301c1d9ea01298f1b4c6a8e7f"
+  },
+  "Lores/chapters/Starhaven_Chapter3.html": {
+    "mtime": 1794640438.1439476,
+    "seen": 1794982163.4988065,
+    "ast_hash": "1ab3ce2603ca6b906369309143d33120",
+    "semantic_hash": "1ab3ce2603ca6b906369309143d33120"
+  },
+  "Lores/chapters/Starhaven_Chapter4.html": {
+    "mtime": 1794643754.815103,
+    "seen": 1794982163.4988065,
+    "ast_hash": "1fd86568c6eaa0bcd862fde36d0da5ce",
+    "semantic_hash": "1fd86568c6eaa0bcd862fde36d0da5ce"
+  },
+  "Lores/chapters/Starhaven_Chapter5.html": {
+    "mtime": 1794640438.1459486,
+    "seen": 1794982163.4988065,
+    "ast_hash": "6bf28fb21da802fea787a491ec5394fd",
+    "semantic_hash": "6bf28fb21da802fea787a491ec5394fd"
+  },
+  "Lores/chapters/Starhaven_Chapter6.html": {
+    "mtime": 1794640438.146948,
+    "seen": 1794982163.4988065,
+    "ast_hash": "2d3fd5eab267c89f8d6ff4ec1c404db5",
+    "semantic_hash": "2d3fd5eab267c89f8d6ff4ec1c404db5"
+  },
+  "Lores/chapters/Starhaven_Chapter7.html": {
+    "mtime": 1794643754.8171034,
+    "seen": 1794982163.4988065,
+    "ast_hash": "9a489998f5b185c1fa33ae602772d49a",
+    "semantic_hash": "9a489998f5b185c1fa33ae602772d49a"
+  },
+  "Lores/chapters/Starhaven_Chapter8.html": {
+    "mtime": 1794640438.15195,
+    "seen": 1794982163.4988065,
+    "ast_hash": "08f0593f0f8d4fb51998d4b95c8280e4",
+    "semantic_hash": "08f0593f0f8d4fb51998d4b95c8280e4"
+  },
+  "Lores/chapters/Starhaven_Chapter9.html": {
+    "mtime": 1794640438.15395,
+    "seen": 1794982163.4988065,
+    "ast_hash": "b9f361eb5617c3fdaa79b85a9d6948a5",
+    "semantic_hash": "b9f361eb5617c3fdaa79b85a9d6948a5"
+  },
+  "starhaven_wiki.html": {
+    "mtime": 1794939854.3989334,
+    "seen": 1794982163.4988065,
+    "ast_hash": "f5ef833d57d65e17ba0d8b84aee1f1b1",
+    "semantic_hash": "f5ef833d57d65e17ba0d8b84aee1f1b1"
+  }
+}

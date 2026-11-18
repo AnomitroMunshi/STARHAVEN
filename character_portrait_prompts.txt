@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 0   (finished so far: 365)
+Still to generate: 75   (finished so far: 365)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,3 +11,445 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
+
+
+########################################################################
+## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (9)
+########################################################################
+
+=== Corin ===
+Save as: starhaven_chars_image/corin.jpg
+Group: Story Characters   Race: Human   Age: about 20 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Corin, Ironmane farmhand who joined the Deepforge expedition and held the flank beside Kael Varric (Ch3). A man, age about 20, race: Human. Look: a sturdy young Human farmhand, sun-browned skin, short sandy hair, a nervous but set jaw, calloused hands. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): a farm boy who chose to stand in a shield line — scared, steady anyway. Weapons and gear: a patched leather jerkin over farm clothes, a borrowed round shield and spear, mud on his boots. Setting: the dark mouth of the Deepforge mine in grey mountains, torches flickering at the entrance.
+
+=== Gordin ===
+Save as: starhaven_chars_image/gordin.jpg
+Group: Story Characters   Race: Human   Age: about 40 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Gordin, catapult crewman of Havenfire, famous for once putting a boulder through Havenfire's own supply shed (Ch5). A man, age about 40, race: Human. Look: a broad, red-faced Human with a thick brown beard, rope-burned forearms and a slightly sheepish, good-natured grin. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): competent now, still teased about the shed; proud of his machine. Weapons and gear: a leather work apron, heavy gloves tucked in his belt, one hand resting on the catapult's throwing arm. Setting: a timber catapult platform on Havenfire's palisade walls, stacked boulders and a smoky sky.
+
+=== Orren ===
+Save as: starhaven_chars_image/orren.jpg
+Group: Story Characters   Race: Human   Age: about 50 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Orren, foreman of Forgehaven's main forge hall, who watches Cain Drakhar's methods up close (Ch8). A man, age about 50, race: Human. Look: a thick-armed Human foreman, soot-dark skin creased with old burn scars, cropped grey hair, sharp narrowed eyes that miss nothing on the floor. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): a hard practical craftsman, skeptical of newcomers, impressed despite himself. Weapons and gear: a scorched leather apron, long forge tongs, heat-goggles pushed up on his forehead. Setting: a vast industrial forge hall with channels of molten metal, sparks and steam, iron tanks being built in the background.
+
+=== Cyren ===
+Save as: starhaven_chars_image/cyren.jpg
+Group: Story Characters   Race: Human   Age: about 45 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Cyren, master builder from Varenmoor walking west to join Starhaven (Ch6). A man, age about 45, race: Human. Look: a tall, travel-worn Human with ink-stained fingers, a short dark beard going grey and thoughtful, measuring eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): a builder who left a dying kingdom to build something that lasts; tired but hopeful. Weapons and gear: a dusty travel cloak, a satchel stuffed with rolled plans, a brass set-square and plumb line at his belt, a walking staff. Setting: a long western road through autumn hills, Starhold's walls faint on the horizon.
+
+=== Vossa ===
+Save as: starhaven_chars_image/vossa.jpg
+Group: Story Characters   Race: Highland Orc   Age: young (late teens or early 20s)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Vossa, a young Redspire warrior whose corruption cough was healed by the Greywood's ground (Ch9). A woman, young, race: Highland Orc of the Redspire clan (orc: green-grey skin, small tusks, strong build). Look: a lean young orc woman, grey-green skin with faint dark corruption veins fading at her throat, braided black hair, tired but clearing eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): exhausted, wary, quietly surprised to be getting better. Weapons and gear: worn highland furs and leather, a notched axe across her knees. Setting: sitting against a huge ancient tree in the misty Greywood forest, pale light through the canopy.
+
+=== Karsh Redspire ===
+Save as: starhaven_chars_image/karshredspire.jpg
+Group: Story Characters   Race: Highland Orc   Age: about 50 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Karsh Redspire, war-chief of the Redspire clan, Highland infantry and Redspire peak veterans (Ch9). A man, age about 50, race: Highland Orc. Look: a huge battle-scarred orc chief, grey-green skin, heavy tusks, a shaved head with a red war-stripe, a heavy brow and stubborn eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): a commander used to simple orders being obeyed, unsettled by a forest that does not obey. Weapons and gear: iron-studded leather and fur armor with red-dyed clan trophies, a massive two-handed axe. Setting: the misty Greywood interior, his warriors half-visible among the trees behind him.
+
+=== Vey ===
+Save as: starhaven_chars_image/vey.jpg
+Group: Story Characters   Race: Highland Orc   Age: about 35 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Vey, highland orc woman, widow of Skreel and mother of two (Ch9). A woman, age about 35, race: Highland Orc. Look: a strong orc woman, grey-green skin, small tusks, dark hair in thick braids with bone beads, grief-worn but steady eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): grieving her husband, holding herself together for her children; the first moment of relief after the war. Weapons and gear: highland furs and a long knife at her belt, one hand on her small daughter's shoulder. Setting: a refugee camp at the edge of the Greywood on the Greenveil plain, cooking smoke and tents.
+
+=== Drel Voss ===
+Save as: starhaven_chars_image/drelvoss.jpg
+Group: Story Characters   Race: Human   Age: about 55 (not stated — assumed)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Spear-Marshal Drel Voss, commander of the Ironveil Spear Corps (one battalion per Field Army). A man, age about 55, race: Human. Look: a tall, rigidly upright Human officer, close-cropped iron-grey hair, a lined face and cold precise grey eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): inspects every spear line personally and notices everything; a perfectionist who rarely comments. Weapons and gear: polished steel half-plate with the Ironveil crest, a long officer's spear held upright. Setting: a parade ground with ranks of spearmen in perfect formation behind him.
+
+=== Elder Marevon ===
+Save as: starhaven_chars_image/marevon.jpg
+Group: Story Characters   Race: Giant   Age: very old (not stated)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Elder Marevon, a Giant elder of Varathos who began as Dravan's political opponent and became his council partner. A man, very old, race: Giant (12 feet tall, from a nation isolated for 4,000 years). Look: an enormous, ancient Giant, stone-grey weathered skin, a long white braided beard, deep-set patient eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): a stubborn traditionalist who changed his mind and now stands by it. Weapons and gear: heavy layered robes of grey wool and hide, carved stone ornaments, a staff cut from a whole tree. Setting: a ring of standing council stones high in the Varathos mountains, cloud below.
+
+
+########################################################################
+## MOUNTS & BEASTS — UNIT WIKI CARDS  (38)
+########################################################################
+
+MOUNT NOTES: these go in  unitImages/  (not the portrait folder), as .png, 1086 x 1448 (3:4) like the other unit images.
+The unit wiki already points at these exact file names, so each picture appears there as soon as the file exists.
+
+=== Warblade ===
+Save as: unitImages/warblade.png
+Type: Personal Warhorse · Rayden Cale
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Warblade — Personal Warhorse · Rayden Cale. Key traits: Pillar of the Dawn, Dark Brown, Heavy Barding, Battle-Trained from Birth. Rayden Cale's personal warhorse. Armored, dark brown, with heavy barding. Battle-trained from birth alongside the Dawnguard — Warblade did not become a war mount through a training program. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a torchlit Dawnguard courtyard in Starhold at dawn.
+
+=== DreadMaw ===
+Save as: unitImages/dreadmaw.png
+Type: Personal War Rhino · Kael Varric
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: DreadMaw — Personal War Rhino · Kael Varric. Key traits: Pillar of the Wall, Scarred, Enormous, Trained by Kael Personally. Kael Varric's personal mount. Armored War Rhino — scarred, enormous, trained by Kael personally. The only mount that matches his temperament. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the grey stone gates of Ironpass Citadel under a stormy sky.
+
+=== Pyrewing ===
+Save as: unitImages/pyrewing.png
+Type: Epic-Tier Dragon × Wyvern Hybrid · Velkan Drake's Bond Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Pyrewing — Epic-Tier Dragon × Wyvern Hybrid · Velkan Drake's Bond Mount. Key traits: Ninth Sky Corps, 40ft Wingspan, Blue Fire, Centuries Old, Wordless Communication. Velkan Drake's personal mount and bond partner. Epic-tier hybrid of a fire-spitting dragon and a wyvern (drake) — 40-foot wingspan, obsidian-black scales with lava-vein markings that pulse faintly in low light. Centuries old. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: circling low over storm-wrapped mountain ruins, blue fire glowing in its throat.
+
+=== Auriel ===
+Save as: unitImages/auriel.png
+Type: Celestial White Stag · Seraphine Mire's Bond Animal
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Auriel — Celestial White Stag · Seraphine Mire's Bond Animal. Key traits: Pillar of the Heart, Bond Animal, Has Never Been Tethered. Seraphine Mire's bond animal. Celestial White Stag — appeared the night Seraphine chose to stay in the Ashenveil rather than retreat. Has never been tethered. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a corrupted grey wasteland of the Ashenveil, faint holy light around the stag.
+
+=== Grond ===
+Save as: unitImages/grond.png
+Type: Colossal Dire Bear · Thorin Blackroot's Bond Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Grond — Colossal Dire Bear · Thorin Blackroot's Bond Mount. Key traits: Pillar of the Green, Ancient, Scarred, Three Decades, No Other Riders. Thorin Blackroot's bond mount and companion of over three decades. Colossal Dire Bear — ancient, scarred, enormous beyond any normal specimen of the breed. Grond does not allow other riders. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the ancient forest of Greenveil, huge roots and moss.
+
+=== Mournfang ===
+Save as: unitImages/mournfang.png
+Type: Cybernetic War Beast · Cain Drakhar's Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Mournfang — Cybernetic War Beast · Cain Drakhar's Mount. Key traits: Pillar of Iron, 11 Years of Reconstruction, Loyalty Predates Augmentation. Cain Drakhar's personal mount. Cybernetic war beast — partially mechanical, constructed and rebuilt by Cain over eleven years. The original animal is no longer the primary component. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a soot-dark forge hall in Forgehaven, sparks and molten light.
+
+=== White Capuchin — Bob Vale ===
+Save as: unitImages/bob-capuchin.png
+Type: Companion Animal · Pillar of the Bond
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: White Capuchin — Bob Vale — Companion Animal · Pillar of the Bond. Key traits: Bob Vale's Pet, Shoulder-Perch, Not a War Asset. Bob Vale's companion — a rare white Capuchin monkey, typically on his shoulder. Not a war asset, not a bond animal in any tactical sense, not documented in any operational briefing. It is a pet.\n\nThe monkey's presence in Coalition command spaces is not questioned. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: perched on a leather-armored shoulder in a busy Starhold street (show only the shoulder, not the face).
+
+=== Ironmane Charger ===
+Save as: unitImages/ironmane-charger.png
+Type: Legendary Warhorse · Ironmane Bloodline
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ironmane Charger — Legendary Warhorse · Ironmane Bloodline. Key traits: Fearless Under Impact, Formation Charge, Marcus Ironmane. The Ironmane Charger is Marcus Ironmane's legacy — the Starhaven warhorse bloodline developed over decades and now fielded by the Ironmane Lancers as its primary mount. No other institution in the coalition produces warhorses at this specification. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the open green pastures of Ironmane Fields, a lancer formation far behind.
+
+=== Ironmane Endurance Warhorse ===
+Save as: unitImages/ironmane-endurance.png
+Type: Endurance Warhorse · Ironmane Variant
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ironmane Endurance Warhorse — Endurance Warhorse · Ironmane Variant. Key traits: Prolonged Maneuver, Lean Build, Long Campaign. A divergent line from the main Ironmane Charger breed, selected for sustained operational maneuver over multiple days rather than single-engagement charge impact. Lean endurance-bred build — significantly lighter frame than the Ironmane Charger, developed specifically for cavalry operations requiring prolonged movement without resupply. Light leather barding protects the head and chest without sacrificing speed, stamina, or agility. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a long muddy campaign road through rolling hills.
+
+=== Dawnrunner Warhorse ===
+Save as: unitImages/dawnrunner-warhorse.png
+Type: Ironmane Design · Multi-Role Cavalry Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Dawnrunner Warhorse — Ironmane Design · Multi-Role Cavalry Mount. Key traits: Marcus Ironmane, 18-Month Program, Three Roles. Marcus Ironmane's 18-month purpose-breeding project — the Dawnrunner line developed for the three distinct operational roles of the Ironmane Lancers. All three share the Dawnrunner foundation; the selection diverges at specialization stage.\n\nPoint variant: holds full charge speed for 400 yards without breaking stride — highest impact endurance in the lancer line, selected for the most aggressive charge role.\n\nWing variant: bred for lateral agility over straight-line speed. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the Ironmane Fields training grounds at sunrise.
+
+=== Crimsonblood Warhorse ===
+Save as: unitImages/crimsonblood-warhorse.png
+Type: Cataphract Warhorse · Heavy Shock Cavalry
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Crimsonblood Warhorse — Cataphract Warhorse · Heavy Shock Cavalry. Key traits: Elara Dawnborn, Massive Frame, Full-Body Barding. The mount of the Crimsonblood Cataphracts — massive cataphract warhorses selectively bred for strength, endurance, and unwavering discipline. Larger and heavier than the Ironmane Chargers, trained to continue advancing through impact, arrows, and battlefield chaos without breaking formation. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dusty battlefield staging area, full crimson-and-steel cataphract barding.
+
+=== Sunfire Charger ===
+Save as: unitImages/sunfire-charger.png
+Type: Holy Knight Mount · White Warhorse
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Sunfire Charger — Holy Knight Mount · White Warhorse. Key traits: Seraphine Mire, Bred for Holy Knights, Calm Under Pressure. Powerful white warhorses bred exclusively for the Holy Knights under Seraphine Mire. Calm under pressure, highly disciplined, and capable of maintaining formation through repeated shock charges. The white coat is a deliberate breeding preference — the Holy Knights' aesthetic is unified across armor, symbol, and mount, and the Sunfire Charger's coat is as much a part of that identity as the blessed plate. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the white steps of the Grand Cathedral of Sancthaven.
+
+=== Mercy Charger ===
+Save as: unitImages/mercy-charger.png
+Type: Light Warhorse · Medical Dispatch Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Mercy Charger — Light Warhorse · Medical Dispatch Mount. Key traits: Ashen Guard, Speed Over Armour, Signal-Trained. The mount of the Mercy Riders — light warhorses trained for speed, rapid dismount, and field stability during treatment. Trained to hold position during treatment and respond to the emergency signal horn. No barding — speed over armour is the entire doctrine. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a smoky field-hospital line with Ashen Guard tents.
+
+=== Undead War Horse ===
+Save as: unitImages/undead-war-horse.png
+Type: Undead Mount · Sable Conclave
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Undead War Horse — Undead Mount · Sable Conclave. Key traits: Fearless, Tireless, No Feeding Required. Fully barded undead warhorses fielded by the Sable Conclave's Sable Bone Chariots. The operational advantages over living cavalry mounts are absolute: fearless, tireless, requires no feeding, no watering, no rest, no grooming, no veterinary attention. They will advance through fire. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dark, foggy bone-strewn plain, black chariot wheels behind.
+
+=== Windrunner ===
+Save as: unitImages/windrunner-horse.png
+Type: Speed-Optimised Warhorse · Windlance Cavalry Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Windrunner — Speed-Optimised Warhorse · Windlance Cavalry Mount. Key traits: Irae Duskwind, Bait Doctrine, Hindquarter-Unarmored. The mount of the Windlance Cavalry — speed-bred and speed-optimised for the Bait Doctrine. The entire Windlance tactical sequence depends on being faster than whatever is pursuing them: draw the enemy out, break cohesion at range, redirect into prepared positions. A mount that cannot outpace the pursuer collapses the doctrine entirely. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: galloping across open grassland, light tack, unarmored hindquarters.
+
+=== Velhold Grassland Horse ===
+Save as: unitImages/velhold-grassland-horse.png
+Type: Steppe Warhorse · Recurve Company Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Velhold Grassland Horse — Steppe Warhorse · Recurve Company Mount. Key traits: Velhold Riders, Parthian-Capable, Generations of Saddle Tradition. The mount of the Recurve Company of the Third — a Velhold grassland breed that has been a working cavalry horse for generations before Starhaven's standing army existed. Not bred in Starhaven, not trained to Starhaven cavalry doctrine. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the wide golden Velhold grasslands under a big sky.
+
+=== Karath War Camel ===
+Save as: unitImages/karath-war-camel.png
+Type: Exotic Cavalry Mount · Desert-Bred
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Karath War Camel — Exotic Cavalry Mount · Desert-Bred. Key traits: Karath Sultanate, Height Advantage, Battle-Bred. Battle-bred war camels from the Karath Sultanate — taller than standard camels, giving riders a height advantage in melee. Desert-bred and desert-conditioned: resilient to heat, low water requirements, and capable of sustained operation in terrain that would incapacitate a standard cavalry warhorse within hours. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: red desert dunes of the Karath Sultanate in hot hazy light.
+
+=== Snowtusk War Elk ===
+Save as: unitImages/snowtusk-war-elk.png
+Type: Arctic Cavalry Mount · Mountain Elk
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Snowtusk War Elk — Arctic Cavalry Mount · Mountain Elk. Key traits: Frosthold Only, Cannot Survive Below Snowline, Dwarf & Goblin Riders. Massive northern elk bred exclusively for snow, ice, and mountain terrain. Thick hide, immense stamina, and natural cold resistance. The Snowtusk War Elk cannot be transported to lower altitudes — the beasts deteriorate rapidly below the snowline. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a snowbound mountain pass near Frosthold Bastion in a blizzard.
+
+=== Silver Moon Elk ===
+Save as: unitImages/silver-moon-elk.png
+Type: Forest Cavalry Mount · Silent Warden
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Silver Moon Elk — Forest Cavalry Mount · Silent Warden. Key traits: Lyria Valen, Near-Silent Hooves, Faster Than Warhorses in Forest. Rare Greenveil-native elk with silver-white coats and near-silent hooves. Faster than warhorses through dense forest. Bred under Lyria Valen's personal breeding program — the Silver Moon Elk is not found outside Greenveil, and the breeding program exists entirely within Lyria's governance. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a moonlit Greenveil forest, silver light through the trees.
+
+=== War Hyena ===
+Save as: unitImages/war-hyena.png
+Type: Light Cavalry Beast · Highland Coalition
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Hyena — Light Cavalry Beast · Highland Coalition. Key traits: Drokha Bloodtusk, Faster Over Broken Terrain, Fearless Around Corpses. Massive mountain-bred hyenas trained for warfare by the Highland Coalition. Faster than warhorses over broken terrain, fearless around blood and corpses. On the highland slopes and broken ground where warhorses struggle to maintain footing, the War Hyena outperforms any conventional cavalry mount — the instinct to navigate broken terrain at speed is natural to the breed, not trained. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: broken rocky highland terrain, scree and thorn bushes.
+
+=== Ironhorn War Bull ===
+Save as: unitImages/ironhorn-war-bull.png
+Type: Heavy Cavalry Beast · Highland Coalition
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ironhorn War Bull — Heavy Cavalry Beast · Highland Coalition. Key traits: Drokha Bloodtusk, Living Battering Ram, Iron-Capped Horns. Massive mountain war bulls bred for strength rather than speed. Armored head, neck, and chest plates turn them into living battering rams — the Bull War Riders of the Highland Coalition charge these animals into infantry lines the way siege engineers charge battering rams into gates. They do not outmaneuver cavalry. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a highland valley, armored head and chest plates, iron-capped horns.
+
+=== Thornfang Cat ===
+Save as: unitImages/thornfang-cat.png
+Type: Primal Vanguard Beast · Speed Predator
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Thornfang Cat — Primal Vanguard Beast · Speed Predator. Key traits: Thorin Blackroot, Fastest Unit in Primal Vanguard, Rideable. The fastest unit in the Primal Vanguard — and the only beast in the corps fast enough to outpace mounted cavalry. Thornfang Cats are directed by handlers through whistle-signal and wrist-line, 4–5 cats per handler, used for flanking, gap exploitation, and high-speed disruption. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dense thorny forest edge, mid-stride.
+
+=== Aethran Fangwalker ===
+Save as: unitImages/aethran-fangwalker.png
+Type: Apex Predator Mount · Irreplaceable
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Aethran Fangwalker — Apex Predator Mount · Irreplaceable. Key traits: 27 Surviving, Aethran Colossi, Cannot Be Replaced. Forty feet of apex predator, trained from birth in the Aethran Dominion to carry a rider and fight under direction. Massive jaw, heavy tail, forelimbs used for pinning and striking in close engagement. Natural hide is comparable to medium plate at the flank; skull and chest are effectively armored by bone density. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a vast ruined plain with a small rider for scale on its back.
+
+=== Sky Drake ===
+Save as: unitImages/sky-drake.png
+Type: Drake (Wyvern) · Aerial Strike Mount · Bond-Paired
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Sky Drake — Drake (Wyvern) · Aerial Strike Mount · Bond-Paired. Key traits: Ninth Sky Corps, 18–24ft Wingspan, 180 Bond-Pairs. The standard aerial mounts of the Ninth Sky Corps — 18–24ft wingspan drakes (wyverns, basically: two legs, wings for forelimbs, no fire), raised and trained at Vaelmark since long before the kingdom, bond-paired to their riders from selection. Each bond is operationally inseparable. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a cliffside aerie of the Ninth Sky Corps above clouds.
+
+=== Ashwing Eagle ===
+Save as: unitImages/ashwing-eagle.png
+Type: Aerial Scout Mount · Reconnaissance
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ashwing Eagle — Aerial Scout Mount · Reconnaissance. Key traits: Skywarden Corps, Ren Dael, 4 Aeries, No Barding. The aerial reconnaissance mount of Ren Dael's Skywarden Corps — one aerie of Ashwing Eagles embedded per Field Army. Minimal tack, no barding: the bird's speed and vision are the asset, and weight compromises both. They are not fighters. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a high wind-swept aerie, clouds below.
+
+=== War Griffin ===
+Save as: unitImages/war-griffin.png
+Type: Aerial Combat Mount · Storm Elf
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Griffin — Aerial Combat Mount · Storm Elf. Key traits: Stormriders, Bond-Paired, Weight-Shift Response, Lion-Eagle Hybrid. Lion-eagle hybrid bred for aerial combat — the mount of the Stormriders under Aurelia Vex. Each rider's bonded War Griffin responds to rider weight shift at speed, requiring no verbal command mid-dive. The bond-pair dynamic means the Griffin anticipates the rider's maneuver before the command is issued — combat at speed in three dimensions does not accommodate verbal instruction. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a storm-lit cliff above the sea, wings half-spread.
+
+=== Skymark Wyvern-Hybrid ===
+Save as: unitImages/skymark-wyvern-hybrid.png
+Type: Purpose-Bred Speed Drake · Fastest Aerial Asset in the Coalition
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Skymark Wyvern-Hybrid — Purpose-Bred Speed Drake · Fastest Aerial Asset in the Coalition. Key traits: Velkan Drake & Vaelmark, 7-Year Program, Extreme Speed, No Combat Role. The fastest aerial asset in the coalition. Not a standard war drake — a purpose-bred hybrid variant from a seven-year development program by Velkan Drake and the Vaelmark Athenaeum, built entirely around one design requirement: extreme speed.\n\nSmaller frame than a combat drake — 60% of the body mass. That reduction is not a limitation. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a Vaelmark launch platform, streamlined body, arcane runes glowing faintly.
+
+=== Zephyros ===
+Save as: unitImages/zephyros.png
+Type: Legendary Asiatic Storm Dragon · Aurelia Vex's Mount
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Zephyros — Legendary Asiatic Storm Dragon · Aurelia Vex's Mount. Key traits: Centuries Old, 3-Mile Weather Alteration, The Storm Itself. Aurelia Vex's mount. Several centuries old. Legendary Asiatic Storm Dragon — his presence alters weather in a 3-mile radius. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: inside a churning storm front, lightning in the clouds around him.
+
+=== War Boar ===
+Save as: unitImages/war-boar.png
+Type: Shock Beast · Low-Line Charge
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Boar — Shock Beast · Low-Line Charge. Key traits: Highland Coalition, Devastating Tusk Charge, Terrain-Independent. War Boars are mountain-bred shock beasts — lower to the ground than cavalry mounts, which makes them harder to target and gives their charge a different impact geometry than a horse or bull. The tusk charge hits below the center of mass of an infantry formation. A line braced for a cavalry charge is not braced for what a War Boar does to the soldier at knee height.\n\nRemarkably terrain-independent: wet ground, loose rock, steep incline — a War Boar's gait barely changes. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a muddy mountain slope, low to the ground, tusks forward.
+
+=== War Bear ===
+Save as: unitImages/war-bear.png
+Type: Heavy Assault Beast · Close-Range
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Bear — Heavy Assault Beast · Close-Range. Key traits: Highland Coalition, Unmatched Close-Combat Mass, Fear Effect. War Bears are the coalition's heaviest ground beast in active use, and their role is correspondingly direct: close-range assault where mass and natural armoring make them almost impossible to stop with conventional infantry. A trained War Bear in contact with a formed infantry line is not a cavalry engagement — it is a siege event at human scale. The bear does not break through the line. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a highland battlefield edge, heavy leather-and-iron barding.
+
+=== Dire Wolves ===
+Save as: unitImages/dire-wolves.png
+Type: Pack Predator · Fast Flanking Beast
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Dire Wolves — Pack Predator · Fast Flanking Beast. Key traits: Pack Tactics, Flank & Pursuit, Handler Controlled. Dire Wolves are pack predators deployed in groups of 6–12 under handler direction. Larger than standard wolves — shoulder height comparable to a mastiff, with significantly greater mass and bite force. Their tactical role is not the frontal charge; it is the flank and the pursuit. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a pack of three dire wolves in a misty pine forest (group shot).
+
+=== War Tiger ===
+Save as: unitImages/war-tiger.png
+Type: Apex Ambush Beast · Strike & Withdraw
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Tiger — Apex Ambush Beast · Strike & Withdraw. Key traits: Speed, Ambush Doctrine, Individual High-Value Targeting. War Tigers are not massed-formation beasts. Their deployment doctrine is individual high-value targeting — released against specific enemy assets (officers, standard bearers, siege crew, mage positions) rather than against a formed line. The tiger's ambush instinct is operationally useful in a way that more aggressive beasts are not: it waits, assesses, selects a target, and commits once. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: tall grass at dusk, crouched mid-stalk.
+
+=== War Lion ===
+Save as: unitImages/war-lion.png
+Type: Prestige Combat Beast · Shock & Intimidation
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Lion — Prestige Combat Beast · Shock & Intimidation. Key traits: Shock Charge, Fear Effect, Handler-Bonded. War Lions operate differently from War Tigers: where the Tiger is an assassin, the Lion is a shock weapon. Released into a formed line, the War Lion's charge does two things simultaneously — physical disruption of the nearest soldiers and a fear response in the formation that the physical damage alone does not account for. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dusty battlefield, mane full, mid-roar.
+
+=== War Gorilla ===
+Save as: unitImages/war-gorilla.png
+Type: Heavy Melee Beast · Formation Breaker
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Gorilla — Heavy Melee Beast · Formation Breaker. Key traits: Upper-Body Mass, Shields & Formations, Terrain Climber. War Gorillas are the coalition's most effective anti-shield-wall beast. The upper-body mass and arm structure allows them to physically dismantle a shield formation in a way no other beast achieves — a War Gorilla does not charge through the shields; it grabs them and removes them. Infantry holding a shield wall against conventional cavalry continues to hold. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a broken shield wall of splintered shields, rocky ground.
+
+=== Mosshorn Rhino ===
+Save as: unitImages/mosshorn-rhino.png
+Type: Heavy Charge Beast · Living Siege Ram
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Mosshorn Rhino — Heavy Charge Beast · Living Siege Ram. Key traits: Armored Hide, Unstoppable Charge, Anti-Fortification. The Mosshorn Rhino — named for the thick moss growth that accumulates on the natural ridge plates of highland-territory individuals — is the coalition's closest equivalent to a mobile siege weapon that breathes. On an open field, a Mosshorn Rhino charge against a formed infantry line is functionally what a cavalry charge aspires to be: unstoppable forward mass at speed, with natural plating that renders standard infantry anti-cavalry measures ineffective. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a misty highland plateau, moss growing on its ridge plates.
+
+=== Shadowfang Panther — Umbra ===
+Save as: unitImages/shadowfang-panther.png
+Type: Bond Animal · Null Blades · Nyx Ravel
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Shadowfang Panther — Umbra — Bond Animal · Null Blades · Nyx Ravel. Key traits: Nyx Ravel, Pure Black, Light-Absorbing, Not a Trained Mount. Umbra — shadowfang panther, Nyx Ravel's bond animal. Pure black with a light-absorbing quality that goes beyond coloration: Umbra appears to be made of concentrated dark rather than darkness. Not a trained mount in any conventional sense. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dark alley at night; the panther seems to swallow the light around it.
+
+=== War Mammoth ===
+Save as: unitImages/war-mammoth.png
+Type: Megafauna · Tower-Mounted Platform
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Mammoth — Megafauna · Tower-Mounted Platform. Key traits: Gift of Sultan Rashid, Sira's Herd, 52 + Karath Formation. Fifty-two mammoths gifted to Starhaven by Sultan Rashid personally — not the Sultanate's, his own. He walked Rayden to the staging ground after the alliance was signed and said: "These are mine." Then handed them over. Sira — approximately sixty years old — led the convoy. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a staging ground with a wooden war-tower platform on its back.
+
+=== War Elephant ===
+Save as: unitImages/war-elephant.png
+Type: Megafauna · Tower-Mounted Platform
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Elephant — Megafauna · Tower-Mounted Platform. Key traits: 30 Starhaven + 50 Karath, Iron-Banded Tusks, Gift of Sultan Rashid. Thirty war elephants gifted to Starhaven by Sultan Rashid as part of the Year 1048 gift-convoy alongside the 52 mammoths. Smaller than the Karath Mammoths but faster to deploy — lower platform profile means the tower can be raised and configured in less time. Helna Ironmane leads their care and integration program at Ironmane Fields. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dusty plain, iron-banded tusks and a small tower platform.
+
+
+########################################################################
+## PERSONAL MOUNTS & COMPANIONS — MAIN WIKI  (28)
+########################################################################
+
+Same size and folder as above: unitImages/, .png, 1086 x 1448. These show up on the character graph.
+
+=== Kaalahi ===
+Save as: unitImages/kaalahi.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Kaalahi — Aruksha's bonded mount — a thirty-foot horned night serpent, oath-sibling rather than mount. Dark iridescent scales, curved horns, coiled and watchful. Setting: a moonlit jungle river. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Stillfoot ===
+Save as: unitImages/stillfoot.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Stillfoot — Sela Ashbark's mount — a shadowdeer that makes no sound and has never been seen by an enemy first. Slender, dusk-grey coat that fades into shadow, dark calm eyes. Setting: a dim misty forest at twilight. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Mossbark ===
+Save as: unitImages/mossbark.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Mossbark — Sylva Moss's bonded forest elk — broad antlers with hanging moss, bark-brown coat. Setting: a deep green old-growth forest. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Duskfang ===
+Save as: unitImages/duskfang.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Duskfang — Sylvaine Duskroot's mount — a massive grey dire wolf and pack-alpha, scarred muzzle, pale eyes. Setting: a dusky forest ridge with the pack faint behind. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Nymeris ===
+Save as: unitImages/nymeris.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Nymeris — Lyria Valen's companion — a bald eagle raised by Marcus Ironmane and given to her. Proud, sharp-eyed. Setting: perched on a branch above a misty Greenveil forest. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Ashpaw ===
+Save as: unitImages/ashpaw.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ashpaw — Brex Ashpaw's bonded dire wolf of the ancient Grimspine bloodline — ash-grey fur, heavy shoulders, old-blood presence. Setting: a burnt forest edge with drifting ash. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Sela Brine's Coldmarch Draft Horse ===
+Save as: unitImages/coldmarch-draft-horse.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Sela Brine's Coldmarch Draft Horse — Sela Brine's patrol mount — a heavy, shaggy Coldmarch draft horse built for cold patrols, feathered hooves, frost on its mane. Setting: a frozen patrol road. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Vaela Brightleaf's Ancient Grove-Elk ===
+Save as: unitImages/ancient-grove-elk.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Vaela Brightleaf's Ancient Grove-Elk — Vaela Brightleaf's grove-elk, bonded for 200 years — ancient, enormous antlers grown with lichen, silvered muzzle, wise eyes. Setting: a sacred Elderwood grove. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Cinderwing ===
+Save as: unitImages/cinderwing.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Cinderwing — Ezrion Vorrath's drake of fifteen years in the Ninth Sky Corps — grey-scaled wyvern, two legs and wing-arms, no fire, old flight scars. Setting: a grey mountain aerie. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Kestra ===
+Save as: unitImages/kestra.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Kestra — Ren Dael's Ashwing Eagle — the oldest bird in the Skywarden Corps and the only one that flies night patrols. Grizzled feathers, huge wingspan. Setting: a night aerie under stars. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Brightfeather ===
+Save as: unitImages/brightfeather.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Brightfeather — Sola Dren's broad-winged Southern Ashwing eagle, built for long glides over open ground. Setting: gliding over open plains. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Sabertooth ===
+Save as: unitImages/sabertooth.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Sabertooth — Drokha Bloodtusk's enormous sabertooth cat — larger than any horse, faster than anything its size should be. Setting: a rocky highland ridge. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Greyfoot ===
+Save as: unitImages/greyfoot.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Greyfoot — Petra Mael's Veilmarsh-adapted horse — the only breed that does not startle in mist. Shaggy grey coat, calm eyes. Setting: thick marsh fog. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Ashfall ===
+Save as: unitImages/ashfall.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ashfall — Dusk Ferren's bonded duskstrider since Year 1044 — black coat, red-ember eyes; has thrown exactly one rider. Setting: a dusky ember-lit battlefield. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Velthor ===
+Save as: unitImages/velthor.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Velthor — Dara Stenn's storm-grey war griffin. Setting: a storm cliff with lightning behind. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Ironbrow ===
+Save as: unitImages/ironbrow.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ironbrow — Durak Stonemark's mountain-bred war-boar — huge, armored brow plate, iron-capped tusks. Setting: a dwarven mountain hold gate. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Sennet ===
+Save as: unitImages/sennet.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Sennet — Iskar Valanthe's silver-white griffon — the only mount in the realm that keeps pace with Zephyros in a dive. Setting: high in the clouds. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Lev Cray's Gale-Condor ===
+Save as: unitImages/gale-condor.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Lev Cray's Gale-Condor — Lev Cray's bonded storm-capable aerial mount — a giant condor, storm-dark feathers. Setting: riding a storm updraft. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Aurumvex ===
+Save as: unitImages/aurumvex.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Aurumvex — Sera Vayne's ancient gold dragon, personal bond — vast, gleaming gold scales, old and wise. Setting: a mountain peak at sunset. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Ironwing ===
+Save as: unitImages/ironwing.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ironwing — Tessa Skarne's griffin, bonded Year 1046 — iron-grey feathers, strong. Setting: Skyperch Landing aerie. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Granite ===
+Save as: unitImages/granite.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Granite — Brek Tane's armored dwarf-bred warhorse — compact, immovable, heavy plate barding. Setting: a stone mountain fortress. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Brimstone ===
+Save as: unitImages/brimstone.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Brimstone — Aldric Morne's armored Dreadmaw war boar — full plate barding, custom fitted; the only mount in Starhaven's registry that has charged a fortified gate and come through it. Setting: a shattered fortress gate. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Steelbark ===
+Save as: unitImages/steelbark.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Steelbark — Bane Crux's cybernetic mount — part beast, part machine, bark-textured armor plates, iron limbs. Setting: an Iron Legion workshop yard. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Luna ===
+Save as: unitImages/luna.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Luna — Illen's companion — a small nocturnal creature native to the Moon Elf territories, large luminous eyes, silver fur. Setting: a moonlit branch. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Shadow ===
+Save as: unitImages/shadow.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Shadow — Sorn's pack of five trailhounds trained to track Void entities — lean, dark-coated hounds (group shot). Setting: a misty Void-scarred forest. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Somnus ===
+Save as: unitImages/somnus.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Somnus — Elysia Nocturne's astral mount — a creature somewhere between animal and concept, stag-like, translucent, starlight inside its body. Setting: a starfield night sky over the Veil. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Brim ===
+Save as: unitImages/brim.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Brim — Rayden Cale's early warhorse (Ch2) — aggressive, dark-coated military warhorse that belonged to a dead cavalry officer; only Rayden can control him. Setting: a mercenary camp at dusk. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+=== Goldstorm ===
+Save as: unitImages/goldstorm.png
+PROMPT:
+Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Goldstorm — The horse Marcus Ironmane quietly set aside for Dresh (Ch7) — golden coat, young and spirited. Setting: Ironmane Fields. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.

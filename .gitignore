@@ -1,2 +1,6 @@
 unitVideos/
 CHAPTERimages/
+# graphify: machine-specific files and rebuild cache
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/cache/

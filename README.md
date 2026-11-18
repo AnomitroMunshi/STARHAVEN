@@ -116,7 +116,6 @@ Anti-corruption treatment exists for armor. It is not enough.
 
 ```
 starhaven_wiki.html           — Interactive wiki: story, characters, armies, atlas, museum, ballads
-starhaven_codex_final.html    — Character encyclopedia with visual cards and ability details
 starhaven-unit-wiki.html      — Unit registry — weapons, stats, battlefield roles
 starhaven-unit-roster.html    — Full military roster
 nullborn_enemy_units.html     — Enemy unit documentation
@@ -164,7 +163,6 @@ Dark. Deliberate. Built to feel like reading something that was meant to survive
 |---------|--------|
 | Story — Chapters 1–9 | Complete |
 | Interactive Wiki | Live |
-| Character Codex | Live (70+ portraits) |
 | Military Registry | Live |
 | Unit Wiki | Active development |
 | Ballads | 26 tracks complete |
