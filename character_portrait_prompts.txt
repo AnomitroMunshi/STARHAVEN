@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 75   (finished so far: 365)
+Still to generate: 76   (finished so far: 365)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -14,7 +14,7 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 
 ########################################################################
-## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (9)
+## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (10)
 ########################################################################
 
 === Corin ===
@@ -70,6 +70,12 @@ Save as: starhaven_chars_image/marevon.jpg
 Group: Story Characters   Race: Giant   Age: very old (not stated)
 PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Elder Marevon, a Giant elder of Varathos who began as Dravan's political opponent and became his council partner. A man, very old, race: Giant (12 feet tall, from a nation isolated for 4,000 years). Look: an enormous, ancient Giant, stone-grey weathered skin, a long white braided beard, deep-set patient eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): a stubborn traditionalist who changed his mind and now stands by it. Weapons and gear: heavy layered robes of grey wool and hide, carved stone ornaments, a staff cut from a whole tree. Setting: a ring of standing council stones high in the Varathos mountains, cloud below.
+
+=== The Black Silence ===
+Save as: starhaven_chars_image/blacksilence.jpg
+Group: Story Characters   Race: unknown   Age: unknown
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: the Black Silence, a rumoured unseen operative of the shadow routes who kills bandit chiefs, frees slave caravans and exposes corruption cults; nobody knows who he is (Ch4). Look: a lean hooded figure standing in deep shadow, face completely hidden — only the faint line of a jaw and a glint where the eyes should be; no identifiable features. Character notes (use for expression, posture and mood): a ghost story told on the walls — still, patient, watching; more rumour than man. Weapons and gear: a layered black hooded cloak and close-fitting dark leather, a short blade held low and half-hidden, nothing that shines. Setting: a moonless rooftop above a dark highland trade road, a distant broken caravan and lantern light far below.
 
 
 ########################################################################
