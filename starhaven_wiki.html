@@ -13755,10 +13755,13 @@ function atlasRender(filter, btn) {
     return matchType && matchQ;
   });
 
-  if (cnt)  cnt.textContent  = list.length;
-  if (cnt2) cnt2.textContent = list.length + ' locations';
+  // ALL also lists every notable place (skipping landmarks/historic sites, which are locations already)
+  const places = atlasFilter === 'all' ? placesMatching(q).filter(p => p.parent.name !== p.name) : [];
 
-  if (!list.length) {
+  if (cnt)  cnt.textContent  = list.length;
+  if (cnt2) cnt2.textContent = list.length + ' locations' + (atlasFilter === 'all' ? ' · ' + places.length + ' places' : '');
+
+  if (!list.length && !places.length) {
     container.innerHTML = '<div class="s-content"><p style="color:var(--text3);font-style:italic;padding:20px 0">No locations match your search.</p></div>';
     return;
   }
@@ -13786,6 +13789,9 @@ function atlasRender(filter, btn) {
     }
     html += `<div class="atlas-grid">${group.map(loc => locCard(loc)).join('')}</div>`;
   });
+  if (places.length) {
+    html += `<div class="sub-hdr" style="margin-top:48px"><h2 class="sub-hdr-title">Notable Places</h2><span class="sub-hdr-cnt">${places.length}</span></div>` + placesHtml(places);
+  }
   html += '</div>';
   container.innerHTML = html;
 }
@@ -13820,13 +13826,19 @@ function placeCard(p) {
       <p class="place-desc">${p.desc || ''}</p>${keeper}
     </div></div>`;
 }
+function placesMatching(q) {
+  return allPlaces().filter(p => !q || [p.name, p.kind, p.desc, p.keeper, p.parent.name, p.parent.region].join(' ').toLowerCase().includes(q));
+}
 function placesRender(container, cnt2, q) {
-  const list = allPlaces().filter(p => !q || [p.name, p.kind, p.desc, p.keeper, p.parent.name, p.parent.region].join(' ').toLowerCase().includes(q));
+  const list = placesMatching(q);
   if (cnt2) cnt2.textContent = list.length + ' places';
   if (!list.length) { container.innerHTML = '<div class="s-content"><p style="color:var(--text3);font-style:italic;padding:20px 0">No places match your search.</p></div>'; return; }
-  const typeOrder  = ['capital','city','fort','naval','frontier','district','village','outpost','historic','landmark','river','route'];
+  container.innerHTML = '<div class="s-content">' + placesHtml(list) + '</div>';
+}
+function placesHtml(list) {
+  const typeOrder  =['capital','city','fort','naval','frontier','district','village','outpost','historic','landmark','river','route'];
   const typeLabels = { capital:'Capital', city:'Cities', fort:'Fortresses & Citadels', naval:'Naval Bases', frontier:'Frontier Territories', district:'Districts & Estates', village:'Villages & Towns', outpost:'Outposts', historic:'Historic Sites & Battlefields', landmark:'Landmarks, Leisure & Tourism', river:'Rivers, Lakes & Bridges', route:'Trade Routes' };
-  let html = '<div class="s-content">';
+  let html = '';
   typeOrder.forEach(type => {
     const inType = list.filter(p => p.parent.type === type); if (!inType.length) return;
     html += `<div class="sub-hdr" style="margin-top:32px"><h2 class="sub-hdr-title">${typeLabels[type]}</h2><span class="sub-hdr-cnt">${inType.length}</span></div>`;
@@ -13835,7 +13847,7 @@ function placesRender(container, cnt2, q) {
       html += `<p class="place-parent-hdr">${pn}</p><div class="atlas-grid">${inType.filter(p => p.group === pn).map(placeCard).join('')}</div>`;
     });
   });
-  container.innerHTML = html + '</div>';
+  return html;
 }
 
 function locCard(loc) {
