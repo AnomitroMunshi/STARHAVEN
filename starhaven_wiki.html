@@ -637,7 +637,7 @@ a.lore-card:hover{transform:translateY(-2px)}
       <h1 class="s-title">Compendium</h1>
       <p class="s-subtitle">The beasts in the dungeons, the coin in your purse, and the houses that hold the money</p>
     </div>
-    <div class="tab-bar" id="comp-tabs">
+    <div class="tab-bar" id="comp-tabs" style="flex-wrap:wrap">
       <button class="tab-btn active" onclick="compRender('beasts',this)">🐾 Bestiary</button>
       <button class="tab-btn" onclick="compRender('coin',this)">🪙 Coin &amp; Prices</button>
       <button class="tab-btn" onclick="compRender('houses',this)">🏛️ Noble &amp; Merchant Houses</button>
@@ -646,6 +646,20 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn" onclick="compRender('trade',this)">⚖️ Trade</button>
       <button class="tab-btn" onclick="compRender('peoples',this)">🧝 Peoples</button>
       <button class="tab-btn" onclick="compRender('laws',this)">📜 Laws &amp; Customs</button>
+      <button class="tab-btn" onclick="compRender('nations',this)">🌍 Nations of the World</button>
+      <button class="tab-btn" onclick="compRender('sayings',this)">🗣️ Sayings & Superstitions</button>
+      <button class="tab-btn" onclick="compRender('travel',this)">🧭 Travel</button>
+      <button class="tab-btn" onclick="compRender('magic',this)">✨ Magic &amp; Arcana</button>
+      <button class="tab-btn" onclick="compRender('tech',this)">⚙️ Arcane Technology</button>
+      <button class="tab-btn" onclick="compRender('sports',this)">🏆 Sports</button>
+      <button class="tab-btn" onclick="compRender('armoury',this)">⚔️ Armoury of Legends</button>
+      <button class="tab-btn" onclick="compRender('ships',this)">⛵ Ships</button>
+      <button class="tab-btn" onclick="compRender('life',this)">🏡 Daily Life</button>
+      <button class="tab-btn" onclick="compRender('nature',this)">🌿 Nature</button>
+      <button class="tab-btn" onclick="compRender('families',this)">🌳 Families</button>
+      <button class="tab-btn" onclick="compRender('docs',this)">📄 Documents</button>
+      <button class="tab-btn" onclick="compRender('letters',this)">✉️ Letters &amp; Diaries</button>
+      <button class="tab-btn" onclick="compRender('records',this)">🏅 Records</button>
     </div>
     <div class="s-content" id="comp-container"></div>
   </div>
@@ -14961,7 +14975,7 @@ function compRender(tab, btn) {
         items.map(([what, cost]) => `<tr style="border-bottom:1px solid var(--border,#333)"><td style="padding:6px 8px">${compEsc(what)}</td><td style="padding:6px 8px;text-align:right;color:var(--gold,#C8961A);white-space:nowrap">${compEsc(cost)}</td></tr>`).join('') + '</table>';
     });
   } else if (tab !== 'houses') {
-    html = compExtra(tab);
+    html = compExtra(tab) || compMore(tab);
   } else {
     html += `<div class="atlas-grid" style="margin-top:20px">` + HOUSES.map(h => `<div class="place-card"><div class="place-body">
       <p class="place-name">${compEsc(h.name)}</p><p class="place-meta">${compEsc(h.kind)}</p>
@@ -15418,7 +15432,19 @@ const CRIER = {
    "Firing Night (Kilnbury)",
    "The Midwinter Dip (Restwater)"
   ]
- }
+ },
+ "sports": [
+  "STONEBALL — Forgehaven Furnaces 3, Stonemark Anvils 3. Both sides claim a moral victory; the ball claims a broken toe.",
+  "CHARIOTS — The four-time Grand Chariot Cup champion is favourite again. The Gilded Wheel has stopped taking bets on anyone else.",
+  "SKY RACES — Race five at Skyperch abandoned after a griffin landed on the judges’ tower and refused to move.",
+  "WARDBALL — The Arcanum’s flight-mistress called her first foul in three matches. The crowd gasped.",
+  "LONG-OARS — The Starhold Long-Oars are training at dawn for the Ashen race; the river birds have complained.",
+  "IRONMANE DERBY — The favourite threw a shoe in practice; odds have lengthened to 4 to 1.",
+  "EMBER PIT — The masked champion wins a thirty-second bout. Thirty-two and counting.",
+  "STARHOLD TRIAL — Records from this year’s Trial have been sealed, as always. Kael was seen limping. So was everyone he fought.",
+  "REGATTA — Bridgewater College leads the Learnstead eights for a third spring.",
+  "THAW RUN — The Frostbitten Few retain the title. Pip Underbough’s sled reached the halfway cairn before tipping over."
+ ]
 };
 let crierDay = 0;  // 0 = today, -1 = yesterday ...
 function crierRng(seed) { let s = seed % 2147483647; if (s <= 0) s += 2147483646; return () => (s = s * 16807 % 2147483647) / 2147483647; }
@@ -15435,6 +15461,7 @@ function crierRender(step) {
   const lead = CRIER.leads[day % CRIER.leads.length];
   const shorts = crierPick(CRIER.shorts, 5, r), notices = crierPick(CRIER.notices, 3, r), ads = crierPick(CRIER.ads, 4, r);
   const weather = CRIER.weather[season][Math.floor(r() * CRIER.weather[season].length)];
+  const sports = crierPick(CRIER.sports || [], 2, crierRng(day * 31 + 7));
   const e = compEsc;
   const col = (t, inner) => `<div style="border-top:3px double var(--text3,#777);padding-top:8px;margin-bottom:18px"><p style="font-family:Georgia,serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--text3);margin:0 0 6px">${t}</p>${inner}</div>`;
   const market = CRIER.market.map(([n, base, unit]) => { const ch = Math.round((r() - 0.5) * 16); const v = base * (1 + ch / 100);
@@ -15455,11 +15482,181 @@ function crierRender(step) {
     <div>
       ${col('Weather', `<p style="font-family:Georgia,serif;margin:0">${e(weather)}</p>`)}
       ${col('This season', `<p style="margin:0;line-height:1.6">${CRIER.festivals[season].map(e).join(' · ')}</p>`)}
+      ${col('Sports', sports.map(s => `<p style="font-size:13px;margin:0 0 8px">${e(s)}</p>`).join(''))}
       ${col('Market', `<table style="width:100%;font-size:13px;border-collapse:collapse">${market}</table>`)}
       ${col('Classifieds', ads.map(a => `<p style="font-size:13px;margin:0 0 8px;padding-bottom:8px;border-bottom:1px dotted var(--border,#444)">${e(a)}</p>`).join(''))}
     </div></div>`;
   box.innerHTML = html;
 }
+
+const WORLD = {"SAYINGS": [["Saltmere & the coast", [["“By the Colossus’s lantern!”", "Surprise or a solemn oath — sailors only swear it about things they mean."], ["“Saltmere first.”", "Do things in the proper order. From the Admiral’s unwritten rule that every allied fleet checks in at Saltmere."], ["“Ring it twice.”", "Someone has died — from the Drowned Bell, rung twice when a crew comes home short."], ["Superstition", "Toss a coin at the Tide Colossus’s feet as you sail under it, or the harbour will not let you back in."]]], ["The North & the Coldmarch", [["“Cold enough to earn a cairn stone.”", "Dangerously cold — from the Coldmarch Cairn, one stone for every soldier who never felt warm again."], ["“Eleven weeks.”", "A narrow window — do it now or not at all."], ["“Fingers grow back.”", "Said dryly about any small sacrifice. They do not."], ["Superstition", "Never let the hearth go out in a northern lodge; a cold hearth means someone out on the pass will not come home."]]], ["Ashfield & the south", [["“Not on a blue night.”", "A flat refusal — from Zahra Quell’s answer when the crater glowed blue."], ["“Pay, behave, and leave when asked.”", "The rules of any good establishment — from the Cinderguard on the Lantern Mile."], ["“He sits with his back to the crater.”", "He is a fool, or a newcomer."], ["Superstition", "Tip in crater-glass for luck before a crater contract; never keep the first chip you find."]]], ["Goldgate & the guilds", [["“Read the whole contract.”", "Look before you leap — the Quest Board’s unwritten rule."], ["“Underlined.”", "Found after all — from the Wall of Lost Parties, where recovered names are underlined, never removed."], ["“Twice the price.”", "Something you lost and want back — from the Back Room."], ["Superstition", "Adventurers never say “last contract”. Touch the Wall of Lost Parties on the way out to a hard one."]]], ["Sancthaven", [["“Three minutes.”", "Help is coming — from the Mercy Riders’ guarantee."], ["“The lamp is lit.”", "We are waiting for you — from the Quiet Lamp."], ["Superstition", "New healers light a candle at the Lantern Veil Memorial on their first day; skipping it is said to cost you your first patient."]]], ["Greenveil & the forest", [["“Ask the roots.”", "Be patient; the answer will come in its own time — after Thorin asking Greenveil what it needed."], ["“She heals. I stand.”", "Each to their own job — Orsik’s words, now a proverb."], ["Superstition", "Never cut living wood in Greenveil without asking aloud first."]]], ["Everywhere", [["“The barges run on time.”", "All is well — from Bargemouth’s unbroken schedule."], ["“Not yet.”", "A polite, final-for-now refusal — after the Elderwood’s only letter."], ["“Murder or rape.”", "The one line the underworld will not cross — because the Umbral Web will."], ["Superstition", "Sailors touch the Figurehead’s ugly duck before sailing from Dawncliff. Children in every city are told the Black Silence is watching from the rooftops — it used to be true."]]]], "COORDS": {"Starhold": [0, 0], "Goldgate": [60, 40], "Vaelmark": [-180, -40], "Greenveil": [-220, 40], "Saltmere": [-300, 20], "Westreach": [-330, -80], "Forgehaven": [230, 40], "Bargemouth": [270, 110], "Ironpass Citadel": [320, -20], "Dawncliff Sea Fortress": [260, 180], "Sancthaven": [260, 220], "Ashfield": [60, 320], "Veilhold Keep": [-60, 330], "Frosthold Bastion": [0, -300], "The Coldmarch": [0, -360], "Skyperch": [-280, -120], "Rookthorn": [-120, 60]}, "RIVERS": [["Saltmere", "Starhold", "The Ashen River"], ["Sancthaven", "Starhold", "The Selmere and the Ashen"]], "MAGIC": [["The Sundering", "Long before Starhaven, the world broke. What scholars call the Sundered Age began with it; what came before is the pre-Sundering, and its ruins, grids and obelisks still work in ways nobody fully understands. Aldren Hander is one of three living people who read the Valdris court archives before they were lost."], ["The mana-channel grid", "Vaelmark is older than the kingdom and sits on a pre-Sundering mana-channel grid that Velkan Drake restored and extended in Year 1033. It powers homes straight from the grid, lights the canals blue, and at three in the morning on clear nights it hums — new arrivals hear it for about a week, then never again. At its centre stands a black obelisk carved in a script no one has fully read."], ["Resonance crystals", "Mined at Glimmerdeep north of Vaelmark, resonance crystals carry and amplify energy and sound. They feed the Vaelmark Crystal Works, every projection crystal in the broadcast network, the concert halls, and the Resonance Corps’ relay network."], ["The Soul Link", "The bond that ties the Eleven together, anchored by Bob Vale and his 400-strong Resonance Corps. In its quiet form it simply improves outcomes; fully opened, it links every member at once. It ran silently through the eleven days of Saltmere without ever being switched on."], ["Battlemagic", "The Veilborn Arcanum — the largest magic academy in the known world — trains battlemages for the Ninth Sky Corps and the Arcane Artillery Corps: synchronised elemental bombardment, wards, and shiftcasting. Velkan Drake is the first mage in recorded history to invert gravity."], ["Purification and the Void", "The Void corrupts land, beasts and people; purification is the answer. Seraphine Mire cleansed the Ashenveil plains alone, and the Ashen Guard carries purification salve as standard. Deep possession and entity binding go to the Ashen Exorcists. Holy Knights’ Relic Blades, forge-blessed with Seraphine’s compound, glow warm against necromancy."], ["What ordinary people see", "Most Starhaveners never cast a spell. They ride crystal-powered trains, watch the projection crystals in the square, buy glow-sweets and bottled weather on Vaelmark’s canals, and pay a healer when they are sick. Magic is everywhere in the kingdom’s machinery — and rare in its hands."], ["The Arcanum’s houses", "First-years at the Veilborn Arcanum are sorted into houses — Emberlyn (courage and elemental force), Thornwake, Mirrowen and Hearthveil — and on their first evenings they walk Vaelmark lighting the mana lamps with a single word each: the Lamplighters’ Round."]], "TECH": [["The arcane railway", "Six lines, designed by Cyrus Vexley, run on crystal-powered engines that glow faintly blue — no smoke, no steam. Produce trains arrive at Starhold Central before dawn: the egg train from Henhallow, the fruit train from Sunvale, the fish train from Saltreed. A seventh line, the Greenveil–Saltmere coastal route, was in planning."], ["Rift gates", "Thirty-one rift gates link the kingdom; emergency response can reach any settlement in eighteen minutes. A passage costs a Crown. The Kira Expansion — the world’s only giant-scale gate — was designed and built the same day Kira went through a standard gate sideways. One gate stands on a Thalassian sea-state, turning weeks of fleet transit into minutes."], ["Projection crystals", "Every settlement has a crystal in its square, fed by Glimmerdeep resonance. Ceremonies, announcements and festivals are carried live across the kingdom; the shifts at Bargemouth watch between loads."], ["The Iron Tide", "Two hundred and eighty tanks built at Forgehaven under Cain Drakhar — reliable, repeatable, replaceable. Beneath the Arsenal lies the Tidegate Vault and a project Cain has never explained: a soul-core that is not a command receiver but an awareness engine."], ["Prosthetics", "Cyrus Vexley’s kingdom-wide prosthetics programme gives combat veterans arcane-mechanical limbs — some, like the Void Hounds’ commander’s forearm, combat-rated."], ["Crystal power grids", "Beyond Vaelmark’s ancient grid, Cyrus’s crystal grids light cities and power the Arsenal; the Weatherwick bottlers feed lightning crystals into Vaelmark’s supply."], ["Skyships and gyrocopters", "The Stonemark Holds fly the Ironwhirl Squadron’s twenty gyrocopters; skyships appear in the Skyward Isles and in Cain’s pre-Sundering Vrak schematics."], ["Everyday marvels", "Bottled weather on Vaelmark’s Floating Market, glow-moth lanterns from Emberfly Hollow, clockwork toys from Tinkerton, runed coins from the Arcane Mint that cannot be forged."]], "SPORTS": [["Wardball", "Veilborn Arcanum · the Ward Pitch", "An aerial ball game played on racing discs, refereed by a flight-mistress who has not missed a foul in twenty seasons.", "Wardball"], ["Stoneball", "The Stoneball Grounds, Forgehaven · 12,000 seats", "A rough dwarven team sport played with a stone ball. The great rivalry: the Forgehaven Furnaces against the Stonemark Anvils.", "Stoneball"], ["The Grand Chariot Cup", "The Ashfield Chariot Grounds · autumn", "Starhaven and Karath teams, four horses abreast, three laps of the great oval.", "Grand Chariot Cup"], ["The Skyperch Sky Races", "Skyperch · a season of eight races", "Griffin and great-eagle racing around the crags of the Western Ranges.", "Sky Races"], ["The Ironmane Derby", "Ironmane Fields · annual", "The kingdom’s great horse race across the breeding fields.", "Ironmane Derby"], ["The Ashen Long-Oar Race", "Starhold · Founders’ Span to Riverbend", "Long racing boats of twenty oars from every city, down the Ashen River.", "Long-Oar"], ["The Learnstead Regatta", "Learnstead · spring", "The colleges race eights down the river.", "Regatta"], ["The Starhold Trial", "Iron Star Grand Arena · 80,000 seats", "Rotating single combat, non-lethal only, no Soul Link. Records are kept and never published.", "Starhold Trial"], ["The Proving Yard circuit", "Goldgate Proving Yard → Iron Star Grand Arena", "Exhibition combat; the final is fought in the great arena.", "Proving Yard"], ["The Thaw Run", "The Coldmarch · the first open day", "Skis, sleds and dog-teams the length of the pass; the winners get first pick of the season’s contracts.", "Thaw Run"], ["The Ember Pit", "Ashfield", "Salvage disputes to first blood; exhibition bouts on festival nights. The champion has never removed their helmet.", "Ember Pit"], ["The Long Gallop", "Velhold Grasslands · midsummer", "Forty miles of open grass, rider and horse alone.", "Long Gallop"]], "LIFE": [["Customs", [["Births", "A newborn is shown to the hearth and to the window — the house and the world — and given a name and a nickname; most keep the nickname."], ["Coming of age", "At sixteen a young person chooses: apprenticeship, the schools, the army, or the guild. Westreach waives the registration fee for anyone signing on the day they turn sixteen."], ["Weddings", "Marriage is by vow before witnesses, often under a ribbon tree. Many households in Starhaven have more than one spouse; the kingdom records every vow and treats every marriage alike."], ["Funerals and mourning", "The dead are remembered by name on Lantern Night, when the whole kingdom sets lanterns on the water. Soldiers’ names go on the Long Wall of Names; adventurers’ on the Wall of Lost Parties."], ["A guild initiation", "New adventurers sign at a counter, pay a Star, and are given a brass rank token. Their first contract is celebrated with a drink they are not allowed to pay for."], ["Hospitality", "Guests are offered bread and salt; in Karath households, coffee three times — refusing the third is a polite no."]]], ["Clothing", [["Starhold", "Dark wool and good leather, high collars, discreet silver; court dress in Silkmoor silk."], ["Saltmere", "Oilskins, knitted caps and sea-blue scarves; merchants in Thalassian silks and Golden Coast cottons."], ["Greenveil", "Greens, browns and leather; living-wood armour that grows with its wearer."], ["Sancthaven", "Healers in grey-and-white robes and aprons; the city favours pale colours."], ["The North", "Layered furs, frost-rimed leather, snowshoes; a Frostfang cloak if you are rich."], ["Ashfield", "Light leather, scarves against dust, sun-bleached cloth; crater-glass jewellery on anyone with money to show."], ["Guild ranks", "Adventurers wear a brass rank token at the collar: copper for F, brass to B, silver for A, gold for S."]]], ["Music & dance", [["Instruments", "Lutes, fiddles, harps and drums from Lutecombe; war drums from Orik Drum’s siege designs; resonance-amplified halls in Vaelmark."], ["Tavern songs", "Dren Solm’s ballads are sung in every tavern; furnace crews in Forgehaven sing “Forge and Furnace” on long shifts."], ["The Starborn", "Dren Solm’s band — Ryn Vael, Orik Drum, Sera Dusk, Vel Carn and Lyra Ashfen — plays the kingdom’s biggest nights."], ["Dances", "Ring-dances at harvest fairs, the slow lantern-walk on Lantern Night, and Greenveil’s dancing under new branches at Root-Waking."], ["Court music", "The Grand Resonance Opera House in Vaelmark; the children’s choir of Sancthaven sings on Lantern Night."]]]], "NATURE": [["Plants", [["Feverfew, silverleaf and bloodmoss", "The healing herbs of Mendlewood — they stock Moor’s Remedies and the Healing Halls."], ["Ironwood and stonebark", "Greenveil’s living timber, grown into armour and shields by Rootcaller rites."], ["Crimson winter-wine fruit", "Grows only in the cold of Red Orchard Valley; makes the kingdom’s winterwine."], ["Saffron crocus", "Turns the Saffron Terraces purple each autumn; picked by hand at dawn."], ["Mulberry", "Feeds Silkmoor’s silkworms."], ["Lotus and rice", "The paddies of Lotusmere on the river delta."], ["Cherry", "Petalmere’s Ribbon Cherry and Sunvale’s orchards."], ["Crater lichen", "A faintly glowing lichen that grows only on crater-glass. The Arcanum is studying it."]]], ["Animals", [["Ironmane warhorses", "Bred to fear nothing — raised beside Greenveil’s war beasts from birth."], ["Snowtusk elk", "Northern war elk that cannot live below the snowline."], ["Silver Moon Elk", "Silver-white, near-silent forest elk bred under Lyria Valen’s programme."], ["Glow-moths and fireflies", "Emberfly Hollow’s living lanterns; they light Vaelmark’s canals."], ["Houndsford dogs", "Sheepdogs, scent hounds and search dogs for farms, the Watch and the Warden Service."], ["Griffins and great eagles", "Bred at the Eyrie Crags for the sky cavalry and the Sky Races."], ["Karath elephants and mammoths", "The gift herd and its calves at the Tusk Grounds."], ["Ships’ cats and harbour seals", "Saltmere’s Harbour Animal Infirmary treats both — and one seal that refuses to leave."]]], ["Weather & climate", [["The North", "Long brutal winters; the Coldmarch is passable for exactly eleven weeks a year."], ["The Greypeak Highlands", "Thin air, sudden storms, snow on the peaks all year."], ["The West", "Sea mist and Atlantic-grey rain on the coast; green-gold forest light in Greenveil."], ["The Heartland", "Temperate and gentle — four clear seasons."], ["The South", "Hot dry summers; dust storms on the Ashfield frontier and the Singing Dunes beyond."], ["The Veilmarsh", "A permanent mist on the southern border — with things in it."], ["The East", "Furnace haze over Forgehaven; sea wind and fog on the Dawncliff cliffs."]]]], "DOCS": [["Guild Contract · Ember Board", "THE CRATER GUILD HALL — CONTRACT No. 1147\nRank: B · Danger: ✹✹✹ (three embers)\nWork: Escort two Arcanum researchers to the Glasswarrens, third gallery, and back. Duration: two days.\nPay: 60 Crowns on return, held in escrow at the Ashfield Strongroom. Salvage: 10% to the party.\nConditions: Smoked visors required. No descent on a blue night. Lose a client and forfeit all pay.\nSigned for the Guild: O. Redmane"], ["Wanted Poster · Saltmere", "WANTED — by order of the Admiralty\nA SIGNALLER OF THE LAMPLIGHTERS\nTall, dark coat, carries a shuttered lantern, seen on the old cliffs after midnight.\nReward: 25 Crowns for information leading to an arrest.\n[In the margin, in neat handwriting: “Shorter than that. The coat is blue.”]"], ["Menu · The Gilded Ember, Ashfield", "TONIGHT AT THE GILDED EMBER\nCrater-roast lamb, pit-cooked on warm stones — 1 Crown\nCartshell claw, when the Drowned Fort allows — 2 Crowns\nKarath saffron rice — 6 Stars\nVinehallow red, by the bottle — 1 Crown 5 Stars\nRed Orchard winterwine — 1 Crown 10 Stars\nThe Five Embers (do not ask) — 5 Crowns\nTips in crater-glass gratefully received."], ["Letter of Credit · Crown Bank", "THE CROWN BANK OF STARHAVEN\nLetter of Credit — honoured at every branch with the green-and-gold doors\nPay the bearer, Brannoch Teague, the sum of One Hundred Crowns against the account of the Sunless Road.\nIssued: Goldgate branch. Countersigned for the Treasury.\n— By authority of A. Lenn, Minister of Treasury"], ["Rookie Notice · The Rimefang Lodge", "THE RIMEFANG LODGE — NOTICE TO NEW ADVENTURERS\nIf you are below C-rank, you will be fed, warmed, given dry socks and sent back to Westreach.\nThis is not an insult. It is the reason you will be alive to come back.\n— U. Rimefang, Guild Master"], ["Harbour Pass · Saltmere", "PORT OF SALTMERE — HARBOUR PASS\nVessel: (name)  ·  Flag: (nation)  ·  Master: (name)\nChecked in at Saltmere first: YES\nHarbour fee paid: 4 Crowns  ·  Bonded cargo sealed: 6 casks\nStamped at the Customs House under the Tide Colossus."]], "LETTERS": [["Ulla Rimefang to Oskan Redmane", "Oskan — Your crater-glass arrived. It glows. My veterans have stopped sleeping in the common room because of it, which I suspect was the point. I am sending ice-beast teeth. They do not glow. They bite, if you are careless with the box. The Thaw Board reads three weeks. Your frontier is still the easier one. — U."], ["Oskan Redmane to Ulla Rimefang", "Ulla — The teeth bit Mags. She has forgiven you and kept two. The crater went blue for a night; nobody went down, because a wise woman once told me that the cold does not care what rank you are, and I assume heat feels the same way. Your frontier is colder. Mine is harder. We will argue at the council. — O."], ["From the diary of Pip Underbough", "Signed for the Drowned Fort today. Our first C-rank. Madoc said it was a terrible idea and then gave us a map. Tam says Cartshells can snap a spear. I said we will not bring spears. Hroda’s gloves still fit. One day I am going to walk into the Rimefang Lodge and she is going to let me stay."], ["Ottilie Pell to the Umbral Web (unsigned, delivered by hand)", "A man calling himself a sailor has been asking my people for poisons. Not for rats. I have told him we do not sell that kind of thing, and I am telling you because you will want to know what kind of thing he wants it for. The Code stands. Mother V."], ["From Zahra Quell’s crater log", "Day two on the floor. The glass is warm through our boots and the glow is under it, not on it. Something under the glass moved when we stopped talking. We started talking again. We are coming up. Rafi — if you are reading this before I am back, buy the first round anyway."], ["Celestine Valcourt to Faris Sahir", "My dear Faris — I hear your caravans carried Silkmoor silk south last season. How generous of you to help my trade along. Do let me return the favour: I have spoken to the Thalassian League about a sea route to Karath. I am sure you will want to discuss it. Over coffee. Three cups. — C."], ["From Hroda Greycoat’s field journal", "Found the patrol on the fourth day. Two alive. One of them asked if we were real. I told him yes, and that he owed me a finger. He laughed. Then he cried. Then he slept. We carried him back."], ["A note left on the Elderwood Waiting Room table", "[Written in an old, looping hand, on paper made of a single leaf] Thank you for the fire. Not yet. But soon."]], "NATIONS": [["Ironmere Kingdom", "East, across the strait", "King Aldric Vorn & Queen Mira Vorn", "Full ally", "A northern kingdom of soldiers and iron; Rhegar Thorne was once its most celebrated general. Ironmere ships unload iron and timber at Dawncliff and take back rice, wine and medicine."], ["Karath Sultanate", "East — a desert kingdom", "Sultan Rashid al-Kavar & Sultana Aria al-Kavar", "Full ally", "Three hundred thousand soldiers, the gift of mammoths and war elephants, the caravans of House Sahir. Its crown prince Zafir is a Sand Golem conduit."], ["Zharak Emirates", "East, beside Karath", "Emir Zahid al-Morad · Vizier Nessa Korrath", "Rival", "Karath’s old rival. “The sand remembers whose it was first.” Border pressure and trade-route denial."], ["Thalassian League", "Island sea-states, southeast", "Admiral-King Crest Vane & Admiral-Consort Seren Vane", "Full ally", "A great naval power; its gate on a Thalassian sea-state turns weeks of sailing into minutes. Crest’s flagship is the Permanent Tide. Embassy on the Saltmere waterfront."], ["Golden Coast Federation", "Island, southwest", "Fleet-Governor Solen Aure", "Ally (after Saltmere)", "A merchant sea power of 180 ships. It sent the Golden Current against Saltmere in Year 1047 and lost; now it trades cotton, cane sugar, coffee and cacao through the Golden Coast Counting House."], ["Varathos", "Far west, an island of giants", "Elder Dravan · Elder Marevon · Kira (representative)", "Lifetime ally", "Twelve-foot giants isolated for 4,000 years until Kira’s Door opened. Rayden took Voreth’s head in their civil war."], ["Frostspire Dominion", "North, the ice mountains", "Sovereign Eirathra Veyl Frostborne", "Ally", "A frozen realm of arcane researchers. Its embassy in Starhold is kept just above freezing."], ["The Stonemark Holds", "North, under Frostspire’s mountains", "Grand-Marshal Durak Stonemark", "Full ally", "Dwarven holds of hammers, crossbows, gyrocopters and war wagons; House Brassbeard runs the Stonemark trade."], ["The Verdant Crown", "Southern realms", "Lord-Marshal Cassian Silverhorn", "Secret ally", "House Silverhorn pledged ten thousand soldiers in secret; its Greymantle mine supplies Starhaven’s silver. Inside: the patient House Veldrath."], ["Korvash Kingdom", "East of the Verdant Crown", "Unknown", "Hostile to the Verdant Crown", "Its calibrated border incursion drew out and killed Edran Silverhorn."], ["Drakenhold Kingdom", "West of the Verdant Crown, in the mountains", "Unknown", "Cold hostility", "Never at war with the Verdant Crown, never at peace either."], ["Irondeep Confederacy", "Southern volcanic highlands", "The Emberforge Council · High Forge-Marshal", "Rival power", "Thirty thousand dwarves of the Forgeguard Legion, ruled by council rather than a king."], ["Southwatch Marches", "South, below the Verdant Crown", "Unknown", "Unknown", "Little is known in Starhaven — border marches, by the name of them."], ["The Aethran Dominion", "West, across the sea", "High Empress Sera Vayne", "Fallen?", "A realm of dragon riders. Its war-titan corps survives only as Riva Trid’s twenty-seven Fangwalkers at Saltmere. What caused the collapse, she will not say."], ["Karvossa", "Far off, a realm of perpetual twilight", "House Sanguinar · Princess Ilyana (heir)", "Cautious ally", "Vampire bloodlines and old werewolf clans ruled together. Came north to judge Starhaven’s king in person."], ["The Sable Isles", "West, off the coast", "The Sable Conclave (Sorvane Nullis)", "Uneasy partner", "An arch-necromancer’s conclave — and the gold concession that fills the Royal Mint."], ["Eldridge Kingdom", "Southern Ocean", "Chancellor-Queen Vera Solenne", "Ally", "Rebuilt its farms after the Void with grain varieties now growing in its embassy garden in Starhold."], ["Isle-States of Mirren", "Islands", "High-Steward Neris Mirrenvale", "Protectorate", "A small, very polite protectorate of Starhaven."], ["Titan Highlands", "North", "High Chieftain Rudra Vanar (Vanari Clan)", "Ally", "“Here the trees grow wrong.” The Vanari crossed a four-century silence to judge Rayden face to face; their Thunderfang riders are Starhaven’s heavy cavalry of the north."], ["The Northern Wilds", "North", "The Ironpaw Confederation & the Grimspine war-clans", "Tribal allies", "Beastkin clans and trackers; the Beastmen Berserkers answer the kingdom’s call and quarter at Frosthold."], ["Elderwood Sovereignty", "Far northeast", "Elder-Queen Vaela Brightleaf", "Undecided", "An elven realm of very long decisions. Its embassy in Starhold is kept ready, and its only letter said “Not yet.”"], ["The Unknown Lands", "North-east, beyond the mountain veil", "Unknown", "Unknown", "Older than most recorded kingdoms; home of the Sarpathi Serpent Clan, whose history is kept in ritual song."], ["Vel’Nathar", "Far north, beyond the Unknown Lands", "Unconfirmed", "Existential threat", "A second Void-corrupted power, distinct from the Nullborn Empire. Nyx has identified eleven of its agents — the only intelligence success against it."], ["The Nullborn Empire", "Far southeast, across the ocean", "The Void", "Enemy", "The Void made into an empire. See the Nullborn Units page."], ["Vrak Isles", "East, beyond the Thalassian waters", "Unknown", "Reachable through Thalassian waters", "Ocean access was a term of the Thalassian alliance. Cain traces his war-machine designs to pre-Sundering Vrak schematics."], ["Skyward Isles", "Southwest, storm-wrapped and floating", "The Avarakai Reef Clans", "Friendly", "A floating archipelago of beastkin reef clans and skyships; Tharos Avarakai came from here."], ["Jade Coast Principalities", "Far east", "Unknown", "Unknown", "Little is known in Starhaven. Thalassian captains speak of rich harbours and princes who do not share."], ["Windward Reaches", "Far east, north of the Jade Coast", "Unknown", "Unknown", "Little is known in Starhaven."], ["Tidewater Confederacy", "Far east, south of the Jade Coast", "Unknown", "Unknown", "Little is known in Starhaven."], ["Coral Archipelago", "Far southeast", "Unknown", "Unknown", "Little is known in Starhaven, except that its waters are full of coral and wrecks."], ["Tempest Rock", "Southeast, alone at sea", "Unknown", "Unknown", "A storm-battered island; sailors give it a wide berth."], ["Emberwood Forest & the Sundered Shores", "Far southwest", "Unknown", "Unknown", "Little is known in Starhaven. The name of the Sundered Shores suggests the Sundering left its mark there."]]};
+
+function wCards(items) { return `<div class="atlas-grid" style="margin-top:14px">` + items.map(([t, m, d]) => `<div class="place-card"><div class="place-body"><p class="place-name">${compEsc(t)}</p>${m ? `<p class="place-meta">${compEsc(m)}</p>` : ''}<p class="place-desc">${compEsc(d)}</p></div></div>`).join('') + '</div>'; }
+function wHdr(t, n) { return `<div class="sub-hdr" style="margin-top:28px"><h2 class="sub-hdr-title">${compEsc(t)}</h2>${n != null ? `<span class="sub-hdr-cnt">${n}</span>` : ''}</div>`; }
+function wArticle(list) { return list.map(([t, p]) => `${wHdr(t)}<p class="place-desc" style="font-size:15px;line-height:1.7;max-width:820px">${compEsc(p)}</p>`).join(''); }
+function wCharLink(n) { const c = CHARACTERS.find(x => x.name === n); return c ? `<span style="color:var(--gold,#C8961A);cursor:pointer" onclick="openCharModal('${c.id}')">${compEsc(n)}</span>` : compEsc(n); }
+function wTravel(from) {
+  const C = WORLD.COORDS, names = Object.keys(C), f = from || 'Starhold';
+  const loc = n => LOCATIONS.find(l => l.name === n) || {};
+  const gate = n => ((loc(n).transport || {}).riftGates || 0) > 0;
+  const rail = n => !!((loc(n).transport || {}).trainStation) && !/^None|^Classified/.test((loc(n).transport || {}).trainStation);
+  const river = (a, b) => WORLD.RIVERS.find(([x, y]) => (x === a && y === b) || (x === b && y === a));
+  const fmtH = h => h < 1 ? Math.round(h * 60) + ' min' : h < 24 ? (Math.round(h * 2) / 2) + ' h' : (Math.round(h / 12) / 2) + ' days';
+  let html = `<p class="place-desc" style="margin-top:14px">How long it takes to get around, and what it costs. Distances are estimates in miles.</p>
+    <p style="margin:10px 0">From: <select onchange="compRenderTravel(this.value)" style="background:var(--bg2,#222);color:var(--text);border:1px solid var(--border,#444);padding:4px 8px;border-radius:4px">${names.map(n => `<option ${n === f ? 'selected' : ''}>${compEsc(n)}</option>`).join('')}</select></p>`;
+  const rows = names.filter(n => n !== f).map(n => {
+    const [x1, y1] = C[f], [x2, y2] = C[n], mi = Math.round(Math.hypot(x2 - x1, y2 - y1) * 1.25);
+    const r = river(f, n);
+    return [`<b>${compEsc(n)}</b>`, mi + ' mi',
+      gate(f) && gate(n) ? 'minutes · 1 Crown' : '—',
+      rail(f) && rail(n) ? fmtH(mi / 40) + ' · ' + Math.max(6, Math.round(mi / 40)) + ' Bits' : '—',
+      fmtH(mi / 40 * 24 / 10) + ' (40 mi a day)',
+      r ? fmtH(mi / 4) + ' by barge on ' + r[2] : '—',
+      fmtH(mi / 20 * 24 / 10)];
+  }).sort((a, b) => parseInt(a[1]) - parseInt(b[1]));
+  html += compTable(rows, ['To', 'Distance', 'Rift gate', 'Arcane railway', 'On horseback', 'By river', 'On foot']);
+  html += `<p class="place-desc" style="margin-top:10px;color:var(--text3)">Rift gates need a gate at both ends; the railway needs a station at both. Riders cover about 40 miles a day, walkers about 20, river barges about 4 miles an hour.</p>`;
+  return html;
+}
+function compRenderTravel(v) { document.getElementById('comp-container').innerHTML = wTravel(v); }
+function wArmoury() {
+  const generic = /^(a|an|the|two|twin|heavy|light|long|short|personal|standard|none|officer|steel|iron|dual|ritual|healing|sultanate|dominion|elderwood|unknown|nobody|her own|his own|bare|fists|claws|teeth)\b/i;
+  const cats = ['The Eleven', 'Commander', 'Mercenaries & Legends', 'Allied Nations', 'Tribes & Clans', 'Known Enemies', 'Court & Scholars', 'Guild & Citizens', 'Known Names', 'Early Years'];
+  let html = `<p class="place-desc" style="margin-top:14px">The named weapons and relics of the kingdom and who carries them — gathered from every character card.</p>`;
+  cats.forEach(cat => {
+    const rows = [];
+    CHARACTERS.filter(c => c.category === cat).forEach(c => (c.weapons || []).forEach(wp => {
+      const s = String(wp); const name = s.split(' — ')[0];
+      if (s.includes(' — ') || (!generic.test(name) && /^[A-Z]/.test(name) && name.split(' ').length <= 5)) rows.push([compEsc(name), compEsc(s.includes(' — ') ? s.split(' — ').slice(1).join(' — ') : ''), wCharLink(c.name)]);
+    }));
+    if (rows.length) html += wHdr(cat, rows.length) + compTable(rows, ['Weapon or relic', 'What it is', 'Carried by']);
+  });
+  return html;
+}
+function wShips() {
+  const rows = [];
+  CHARACTERS.forEach(c => { const m = c.mount; if (!m) return; const s = typeof m === 'string' ? m : (m.name + ' — ' + (m.desc || ''));
+    if (/ship|flagship|warship|vessel|galleon|frigate/i.test(s)) rows.push([compEsc(typeof m === 'string' ? s.split(' — ')[0].replace(/^.*[\u201c"](.+)[\u201d"].*$/, '$1') : m.name), compEsc(typeof m === 'string' ? s : (m.desc || '')), wCharLink(c.name)]); });
+  const classes = [['Dawncliff Ramships', 'Iron-shod ram warships of the Dawnfleet\u2019s eastern squadrons; their prows are forged in the Cliff Forge.', 'The Dawnfleet'],
+    ['The Dawnfleet', 'Starhaven\u2019s navy — 140 warships, home port Saltmere, eastern base Dawncliff.', 'Admiral Valtor Crane'],
+    ['The Crowsnest Fleet', 'Saltmere\u2019s scouting squadron.', 'Saltmere'],
+    ['The Brig', 'A decommissioned warship moored in Saltmere harbour as the city jail.', 'Saltmere'],
+    ['The Wreckers\u2019 Galley', 'An old warship beached and turned into a restaurant — dine in the gun deck.', 'Saltmere'],
+    ['The Golden Current', 'The Golden Coast Federation fleet that sailed against Saltmere in Year 1047 — 180 ships out of trade service.', 'Fleet-Governor Solen Aure']];
+  return `<p class="place-desc" style="margin-top:14px">Named ships and fleets.</p>` + wHdr('Flagships', rows.length) + compTable(rows, ['Ship', 'Description', 'Commander']) +
+    wHdr('Fleets and famous hulls', classes.length) + compTable(classes.map(([a, b, c]) => [compEsc(a), compEsc(b), wCharLink(c)]), ['Name', 'Description', 'Command']);
+}
+function wFamilies() {
+  const famRe = /spouse|husband|wife|partner|family|son|daughter|mother|father|brother|sister|child|sibling|lover|consort|married/i;
+  const adj = {}; const label = {};
+  const add = (a, b, rel) => { if (!a || !b || a === b) return; (adj[a] = adj[a] || new Set()).add(b); (adj[b] = adj[b] || new Set()).add(a); label[a + '|' + b] = rel; };
+  CHARACTERS.forEach(c => {
+    (c.relationships || []).forEach(r => { if (famRe.test(r.type || '') || famRe.test(r.note || '').valueOf() && /^(family|spouse|lover|partner)/i.test(r.type || '')) add(c.name, r.name, r.type + (r.note ? ' — ' + r.note : '')); });
+    [].concat(c.partner || []).forEach(p => { if (p && p.name) add(c.name, p.name, p.relation || 'partner'); });
+  });
+  const seen = new Set(), groups = [];
+  Object.keys(adj).forEach(s => { if (seen.has(s)) return; const g = []; const st = [s]; seen.add(s);
+    while (st.length) { const x = st.pop(); g.push(x); adj[x].forEach(y => { if (!seen.has(y)) { seen.add(y); st.push(y); } }); }
+    if (g.length >= 2) groups.push(g); });
+  groups.sort((a, b) => b.length - a.length);
+  let html = `<p class="place-desc" style="margin-top:14px">Families and households, drawn from every character\u2019s partners and family ties. Some households have more than one spouse.</p>`;
+  groups.forEach(g => {
+    const head = g.slice().sort((a, b) => adj[b].size - adj[a].size)[0];
+    const lines = [];
+    g.forEach(a => adj[a].forEach(b => { if (a < b || !label[b + '|' + a]) { const l = label[a + '|' + b]; if (l) lines.push([wCharLink(a), compEsc(l.split(' — ')[0]), wCharLink(b)]); } }));
+    const spouses = [...adj[head]].filter(b => /husband|wife|spouse|consort|married/i.test(label[head + '|' + b] || label[b + '|' + head] || ''));
+    html += wHdr('The household of ' + head + (spouses.length > 1 ? ' · ' + spouses.length + ' spouses' : ''), g.length) + compTable(lines, ['', 'Relation', '']);
+  });
+  return html;
+}
+function wRecords() {
+  const num = s => { const m = String(s || '').replace(/,/g, '').match(/\d+(\.\d+)?/); return m ? parseFloat(m[0]) : NaN; };
+  const aged = CHARACTERS.filter(c => !isNaN(num(c.age)) && !/looks|appears/i.test(String(c.age))).sort((a, b) => num(b.age) - num(a.age));
+  const cities = LOCATIONS.filter(l => l.population && !isNaN(num(l.population))).sort((a, b) => num(b.population) - num(a.population));
+  const conn = CHARACTERS.slice().sort((a, b) => (b.relationships || []).length - (a.relationships || []).length);
+  const placesMost = LOCATIONS.slice().sort((a, b) => (b.places || []).length - (a.places || []).length);
+  const champs = CHARACTERS.filter(c => /champion|winner|record/i.test((c.role || '') + ' ' + (c.title || '')));
+  const rows = [
+    ['Oldest living person with a card', wCharLink(aged[0] && aged[0].name), compEsc(aged[0] ? aged[0].age : '')],
+    ['Largest settlement', compEsc(cities[0] && cities[0].name), compEsc(cities[0] ? cities[0].population : '')],
+    ['Most places to visit', compEsc(placesMost[0].name), (placesMost[0].places || []).length + ' places'],
+    ['Most connected person', wCharLink(conn[0].name), (conn[0].relationships || []).length + ' relationships'],
+    ['Most famous S-rank party', 'The Ninth Ember', 'the only party to reach the Crater Floor and return — twice'],
+    ['Fastest war', wCharLink('Rayden Cale'), 'won the War of Five Thrones in 61 days with zero enemy fatalities'],
+    ['Longest defence without a navy', 'Saltmere', 'eleven days against the Golden Current, Year 1047'],
+    ['Longest unbroken schedule', 'The Bargemouth barge docks', 'six years without a single delay — until one minute'],
+    ['Longest-burning lamp', 'The Quiet Lamp, Sancthaven', 'eleven years without going out'],
+    ['Most proposals in one place', 'The Rim Walk, Ashfield', 'two hundred and twelve, one refusal'],
+    ['Fastest Mercy Rider', 'Unnamed, at Sancthaven', 'one minute fifty seconds to a mock casualty'],
+    ['First giant through a rift gate', wCharLink('Kira'), 'sideways — the Kira Expansion was built the same day'],
+    ['Biggest bounty', 'The Stormhalls Thing', '6,000 Crowns for a description and a survivor'],
+  ];
+  let html = `<p class="place-desc" style="margin-top:14px">Firsts, bests and records of the kingdom. The top four update themselves from the wiki.</p>` + compTable(rows, ['Record', 'Holder', 'Detail']);
+  if (champs.length) html += wHdr('Champions', champs.length) + compTable(champs.map(c => [wCharLink(c.name), compEsc(c.role || c.title)]), ['Who', 'Title']);
+  return html;
+}
+function wSports() {
+  return `<p class="place-desc" style="margin-top:14px">What the kingdom cheers for.</p><div class="atlas-grid" style="margin-top:14px">` + WORLD.SPORTS.map(([t, where, d, kw]) => {
+    const who = CHARACTERS.filter(c => JSON.stringify([c.role, c.title, c.abilities]).includes(kw)).slice(0, 3);
+    return `<div class="place-card"><div class="place-body"><p class="place-name">${compEsc(t)}</p><p class="place-meta">${compEsc(where)}</p><p class="place-desc">${compEsc(d)}</p>${who.length ? `<p class="place-desc" style="font-size:12px">Names to know: ${who.map(c => wCharLink(c.name)).join(', ')}</p>` : ''}</div></div>`; }).join('') + '</div>';
+}
+function compMore(tab) {
+  if (tab === 'sayings') return `<p class="place-desc" style="margin-top:14px">How people talk — and what they will not do — around the kingdom.</p>` + WORLD.SAYINGS.map(([reg, items]) => wHdr(reg, items.length) + wCards(items.map(([s, m]) => [s, '', m]))).join('');
+  if (tab === 'travel') return wTravel();
+  if (tab === 'magic') return wArticle(WORLD.MAGIC);
+  if (tab === 'tech') return wArticle(WORLD.TECH);
+  if (tab === 'sports') return wSports();
+  if (tab === 'armoury') return wArmoury();
+  if (tab === 'ships') return wShips();
+  if (tab === 'life') return WORLD.LIFE.map(([g, items]) => wHdr(g, items.length) + wCards(items.map(([t, d]) => [t, '', d]))).join('');
+  if (tab === 'nature') return WORLD.NATURE.map(([g, items]) => wHdr(g, items.length) + wCards(items.map(([t, d]) => [t, '', d]))).join('');
+  if (tab === 'docs') return `<p class="place-desc" style="margin-top:14px">Things you could hold in your hand.</p><div class="atlas-grid" style="margin-top:14px">` + WORLD.DOCS.map(([t, body]) => `<div class="place-card" style="background:#e9dfc8;color:#2a2218"><div class="place-body"><p class="place-meta" style="color:#6a5a40">${compEsc(t)}</p><pre style="white-space:pre-wrap;font-family:Georgia,serif;font-size:13px;line-height:1.55;margin:0;color:#2a2218">${compEsc(body)}</pre></div></div>`).join('') + '</div>';
+  if (tab === 'letters') return `<p class="place-desc" style="margin-top:14px">Letters, notes and diary pages in their own words.</p>` + WORLD.LETTERS.map(([t, body]) => `${wHdr(t)}<p style="font-family:Georgia,serif;font-style:italic;font-size:15px;line-height:1.7;max-width:760px;border-left:3px solid var(--gold,#C8961A);padding-left:14px">${compEsc(body)}</p>`).join('');
+  if (tab === 'families') return wFamilies();
+  if (tab === 'records') return wRecords();
+  if (tab === 'nations') {
+    const order = ['Full ally', 'Lifetime ally', 'Ally', 'Secret ally', 'Ally (after Saltmere)', 'Cautious ally', 'Tribal allies', 'Protectorate', 'Friendly', 'Uneasy partner', 'Undecided', 'Reachable through Thalassian waters', 'Rival', 'Rival power', 'Cold hostility', 'Hostile to the Verdant Crown', 'Fallen?', 'Enemy', 'Existential threat', 'Unknown'];
+    const list = WORLD.NATIONS.slice().sort((a, b) => order.indexOf(a[3]) - order.indexOf(b[3]));
+    return `<p class="place-desc" style="margin-top:14px">The lands beyond Starhaven\u2019s borders, from the world map — who rules them and where they stand with the kingdom.</p><div class="atlas-grid" style="margin-top:14px">` +
+      list.map(([n, where, ruler, rel, d]) => `<div class="place-card"><div class="place-body"><p class="place-name">${compEsc(n)}</p><p class="place-meta">${compEsc(rel)} · ${compEsc(where)}</p><p class="place-desc"><b>Rulers:</b> ${compEsc(ruler)}</p><p class="place-desc">${compEsc(d)}</p></div></div>`).join('') + '</div>';
+  }
+  return '';
+}
+// Seasonal effects: snow / leaves / petals / fireflies, following the real date. Off for reduced-motion users; toggle remembered.
+(function seasonalFx() {
+  let on = true; try { on = localStorage.getItem('sh-season-fx') !== 'off'; } catch (e) {}
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) on = false;
+  const m = new Date().getMonth(), season = m < 2 || m === 11 ? 'winter' : m < 5 ? 'spring' : m < 8 ? 'summer' : 'autumn';
+  const btn = document.createElement('button');
+  btn.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:60;background:rgba(0,0,0,.45);color:#ddd;border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:4px 10px;font-size:12px;cursor:pointer';
+  const icon = { winter: '❄', spring: '🌸', summer: '✦', autumn: '🍂' }[season];
+  const cv = document.createElement('canvas');
+  cv.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:50';
+  let raf = 0, parts = [];
+  function size() { cv.width = innerWidth; cv.height = innerHeight; }
+  function spawn(init) { return { x: Math.random() * cv.width, y: init ? Math.random() * cv.height : -10, r: season === 'summer' ? 1.5 + Math.random() * 1.5 : 2 + Math.random() * 3,
+    vy: season === 'summer' ? (Math.random() - .5) * .3 : .3 + Math.random() * .8, vx: (Math.random() - .5) * .6, a: Math.random() * 6.28, life: Math.random() }; }
+  function frame() {
+    const g = cv.getContext('2d'); g.clearRect(0, 0, cv.width, cv.height);
+    parts.forEach(p => { p.a += .02; p.x += p.vx + Math.sin(p.a) * .3; p.y += p.vy;
+      if (season === 'summer') { p.life += .01; g.fillStyle = `rgba(255,220,120,${.35 + .35 * Math.sin(p.life * 6)})`; }
+      else g.fillStyle = season === 'winter' ? 'rgba(255,255,255,.75)' : season === 'spring' ? 'rgba(255,190,210,.7)' : 'rgba(200,120,50,.7)';
+      g.beginPath(); season === 'autumn' || season === 'spring' ? g.ellipse(p.x, p.y, p.r * 1.6, p.r, p.a, 0, 6.28) : g.arc(p.x, p.y, p.r, 0, 6.28); g.fill();
+      if (p.y > cv.height + 10 || p.x < -20 || p.x > cv.width + 20 || (season === 'summer' && (p.y < -10))) Object.assign(p, spawn(season === 'summer'));
+    });
+    raf = requestAnimationFrame(frame);
+  }
+  function apply() {
+    btn.textContent = icon + ' Seasonal effects: ' + (on ? 'on' : 'off');
+    cancelAnimationFrame(raf);
+    if (on) { if (!cv.parentNode) document.body.appendChild(cv); size(); parts = Array.from({ length: season === 'summer' ? 25 : 45 }, () => spawn(true)); frame(); }
+    else if (cv.parentNode) cv.remove();
+  }
+  btn.onclick = () => { on = !on; try { localStorage.setItem('sh-season-fx', on ? 'on' : 'off'); } catch (e) {} apply(); };
+  addEventListener('resize', size);
+  document.addEventListener('DOMContentLoaded', () => { document.body.appendChild(btn); apply(); });
+  if (document.readyState !== 'loading') { document.body.appendChild(btn); apply(); }
+})();
 
 function showSection(id, linkEl) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
