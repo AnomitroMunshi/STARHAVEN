@@ -115,6 +115,28 @@ for m2 in re.finditer(r'(?m)^( +)"name": "([^"]+)",\n(?:\1"[^\n]*\n)*?\1"army": 
     for p_ in people(who):
         link(find(p_, 'char_'), fac, 'commands')
 chars = wiki[wiki.index('const CHARACTERS = ['):wiki.index('const ARMIES = [')]
+# Wiki characters the chapter extraction never saw become nodes too, in the cluster of their first known relationship
+new_nodes = 0
+for card in re.split(r"\n  \{\n", chars):
+    nm = re.search(r"name:'((?:[^'\\]|\\.)*)'", card)
+    if not nm: continue
+    name = nm.group(1).replace("\\'", "'")
+    if find(name, 'char_') or (('char_' + key(name)) in {n['id'] for n in nodes}): continue
+    rels = re.search(r"relationships:\[(.*?)\],\n", card, re.S)
+    partners = [find(r.replace("\\'", "'"), 'char_') for r in re.findall(r"\{name:'((?:[^'\\]|\\.)*)'", rels.group(1) if rels else '')]
+    anchor = next((p for p in partners if p), None)
+    if not anchor: continue  # nothing to connect it to
+    a = next(n for n in nodes if n['id'] == anchor)
+    role = re.search(r"role:'((?:[^'\\]|\\.)*)'", card); bio = re.search(r"bio:'((?:[^'\\]|\\.)*)'", card)
+    img = images.get(key(name))
+    nodes.append({'id': 'char_' + key(name), 'label': name, 'color': a['color'], 'size': 12, 'font': {'size': 12, 'color': '#ffffff'},
+                  'title': name, 'community': a.get('community'), 'community_name': a.get('community_name'), 'source_file': 'starhaven_wiki.html',
+                  'file_type': 'concept', 'degree': 0,
+                  'description': ' — '.join(x.group(1).replace("\\'", "'") for x in (role, bio) if x),
+                  **({'image': '../' + img} if img else {})})
+    idx[key(name)] = 'char_' + key(name)
+    new_nodes += 1
+print(f'{new_nodes} wiki characters added as new graph nodes')
 for card in re.split(r"\n  \{\n", chars):
     nm = re.search(r"name:'((?:[^'\\]|\\.)*)'", card)
     if not nm: continue
