@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 85   (finished so far: 365)
+Still to generate: 88   (finished so far: 365)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -14,8 +14,26 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 
 ########################################################################
-## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (19)
+## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (20)
 ########################################################################
+
+=== Ottilie Pell ===
+Save as: starhaven_chars_image/ottiliepell.jpg
+Group: Story Characters   Race: Halfling   Age: 68
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ottilie Pell, Guildmistress of the Velvet Ledger · Goldgate's thieves' guild. Look: a tiny, elderly Halfling woman of 68 with silver curls under a lace cap, round spectacles, a velvet shawl and very sharp, kind-looking eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A tiny, grandmotherly halfling in a velvet shawl who runs a respectable bookbinder's shop on Loot Row and remembers every face she has ever seen. Weapons and gear: a velvet shawl, ink-stained fingers, a silver letter-opener. Setting: a cluttered bookbinder's shop lit by one lamp, shelves of leather books behind her.
+
+=== Corran Tarrow ===
+Save as: starhaven_chars_image/corrantarrow.jpg
+Group: Story Characters   Race: Human   Age: 45
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Corran Tarrow, Smuggler · Master of Tarrow's Cut · Bargemouth. Look: a lean, weather-beaten Human man of 45, grey-streaked beard, easy smile, a steel pilot's hook in place of his left hand. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A lean, weather-beaten former barge pilot with a grey-streaked beard, an easy smile and a pilot's hook where his left hand used to be. Weapons and gear: an oilskin coat, a barge-pilot's hook, a short sword. Setting: a hidden coastal inlet at night, a dark ship with no flag behind him.
+
+=== Bezil Sixfinger ===
+Save as: starhaven_chars_image/bezilsixfinger.jpg
+Group: Story Characters   Race: Dwarf   Age: 133
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Bezil Sixfinger, Fence · The Back Room · Loot Row, Goldgate. Look: a stout, elderly Dwarf man with a long forked white beard, a jeweller's loupe in one eye, six fingers on his left hand, shrewd eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A stout old dwarf with a forked white beard, a jeweller's loupe screwed into one eye and six fingers on his left hand. Weapons and gear: a waistcoat over a fine shirt, rings on every finger, a loupe on a chain. Setting: a dim pawnshop back room crowded with treasures, a single lamp on the counter.
 
 === Ivo Castellane ===
 Save as: starhaven_chars_image/ivocastellane.jpg

@@ -1,0 +1,165 @@
+STARHAVEN — BESTIARY IMAGE PROMPTS (for Grok image generation)
+========================================================================
+
+Still to generate: 13
+
+HOW TO USE
+- Size: 1536 x 1024, landscape 3:2.
+- Save each image as JPG into  starhaven_bestiary/  with the exact file name after "Save as".
+  The wiki's Compendium > Bestiary tab already points at these files.
+
+=== Corpse-Rat ===
+Save as: starhaven_bestiary/corpserat.jpg
+Threat: F-rank   Habitat: The Undercity Warrens (Westreach)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Corpse-Rat, a F-rank creature of the kingdom of Starhaven. Appearance: Dog-sized sewer rats bloated on carrion, patchy grey fur, yellow teeth. Behaviour to show: Swarm in the dark, flee light, come back in greater numbers. Carry wasting fever — the real danger.
+Setting: The Undercity Warrens (Westreach) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Vault Skitter ===
+Save as: starhaven_bestiary/vaultskitter.jpg
+Threat: D-rank   Habitat: The Thornwall Vaults
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Vault Skitter, a D-rank creature of the kingdom of Starhaven. Appearance: Pale, hand-sized spiders that nest inside old traps and pressure plates. Behaviour to show: Wait inside a trap until someone springs it, then swarm the hand that did.
+Setting: The Thornwall Vaults — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Lockjaw ===
+Save as: starhaven_bestiary/lockjaw.jpg
+Threat: C-rank   Habitat: The Sunken Exchange (Goldgate)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Lockjaw, a C-rank creature of the kingdom of Starhaven. Appearance: An iron-banded merchant strongbox — until it opens and the lid is full of teeth made of old coins. Behaviour to show: Sits among real strongboxes for years. Bites the hand that reaches for the lock.
+Setting: The Sunken Exchange (Goldgate) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Cartshell ===
+Save as: starhaven_bestiary/cartshell.jpg
+Threat: C-rank   Habitat: The Drowned Fort (Saltmere)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Cartshell, a C-rank creature of the kingdom of Starhaven. Appearance: Crabs the size of a hay cart, barnacled shells, claws that can snap a spear. Behaviour to show: Hide in the flooded halls at high tide; hunt anything still inside when the water comes back.
+Setting: The Drowned Fort (Saltmere) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Seam Crawler ===
+Save as: starhaven_bestiary/seamcrawler.jpg
+Threat: C-rank   Habitat: The Old Seam (the Deepworks)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Seam Crawler, a C-rank creature of the kingdom of Starhaven. Appearance: A blind, segmented burrower as long as a barge, plated in rock and chewing ore. Behaviour to show: Nests in abandoned seams and tunnels toward the sound of picks.
+Setting: The Old Seam (the Deepworks) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Root-Rot Husk ===
+Save as: starhaven_bestiary/rootrothusk.jpg
+Threat: C-rank   Habitat: The Hollow Root (Greenveil)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Root-Rot Husk, a C-rank creature of the kingdom of Starhaven. Appearance: Dead animals stitched together by grey, corrupted roots, moving like puppets. Behaviour to show: Wander out of the rot to bring more bodies back to it.
+Setting: The Hollow Root (Greenveil) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Asterfall Revenant ===
+Save as: starhaven_bestiary/asterfallrevenant.jpg
+Threat: B-rank   Habitat: The Asterfall Undercrypt
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Asterfall Revenant, a B-rank creature of the kingdom of Starhaven. Appearance: The fort’s dead garrison in rusted armour, still standing their posts. Behaviour to show: Challenge anyone who enters, then fight as a unit — they remember their drills.
+Setting: The Asterfall Undercrypt — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Mist Leech ===
+Save as: starhaven_bestiary/mistleech.jpg
+Threat: B-rank   Habitat: The Mistwell (Veilhold Keep)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Mist Leech, a B-rank creature of the kingdom of Starhaven. Appearance: Translucent leeches the length of a forearm, almost invisible in the Veilmarsh mist. Behaviour to show: Drift in the mist and drink warmth rather than blood; victims freeze in summer.
+Setting: The Mistwell (Veilhold Keep) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Rimeheart Ice-Beast ===
+Save as: starhaven_bestiary/rimehearticebeast.jpg
+Threat: A-rank   Habitat: The Rimeheart Caves (beyond the Wardspan)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Rimeheart Ice-Beast, a A-rank creature of the kingdom of Starhaven. Appearance: A huge white-furred predator, bigger than a war bear, with pale blue eyes and claws like ice-picks. Behaviour to show: Hunts the eleven open weeks, sleeps under the ice the rest of the year.
+Setting: The Rimeheart Caves (beyond the Wardspan) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Glassback ===
+Save as: starhaven_bestiary/glassback.jpg
+Threat: A-rank   Habitat: The Glasswarrens (Ashfield)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Glassback, a A-rank creature of the kingdom of Starhaven. Appearance: Lizards the size of horses, their backs crusted with ember-gold crater-glass that throws light. Behaviour to show: Blind attackers with reflected glare, then strike from the side.
+Setting: The Glasswarrens (Ashfield) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Voidmaw ===
+Save as: starhaven_bestiary/voidmaw.jpg
+Threat: A-rank   Habitat: Void incursion sites on the frontiers
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Voidmaw, a A-rank creature of the kingdom of Starhaven. Appearance: An ordinary animal twisted by Void corruption — too many teeth, black veins, a mouth that does not close. Behaviour to show: Hunts living things for no reason but hunger; spreads Void-trace by bite.
+Setting: Void incursion sites on the frontiers — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Ember Wraith ===
+Save as: starhaven_bestiary/emberwraith.jpg
+Threat: S-rank   Habitat: The Crater Floor (Ashfield)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Ember Wraith, a S-rank creature of the kingdom of Starhaven. Appearance: Drifting shapes of ember-gold light that burn without heat. Behaviour to show: Gather around anyone who stays too long. Nobody knows what they want.
+Setting: The Crater Floor (Ashfield) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== The Stormhalls Thing ===
+Save as: starhaven_bestiary/thestormhallsthing.jpg
+Threat: S-rank   Habitat: The Stormhalls (the Stormmassif)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the The Stormhalls Thing, a S-rank creature of the kingdom of Starhaven. Appearance: Unknown. Footprints wider than a cart; scratches on stone at three times a giant’s height. Behaviour to show: Unknown. The Black Orcs fled the halls rather than face it.
+Setting: The Stormhalls (the Stormmassif) — show the creature in that place.
+Lighting: low-key and dramatic — torchlight, lantern light or the light of its habitat.
+Mood: dangerous, believable, awe-inspiring.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
