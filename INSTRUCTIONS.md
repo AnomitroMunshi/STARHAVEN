@@ -10,7 +10,9 @@
 - Year ~1025 — Oaksmane Orphanage massacre. Rayden survives.
 - Year 1032 — Starhaven founded. Starhold proclaimed.
 - Year 1047 — Story present (Chapter 8).
-- Year 1052–1053 — Wiki/Codex reference date (in-universe "current").
+- Year 1049 — Chapter 9, *What the Mountains Sent*.
+- Years 1050 onward — Bridge era. Chronicles can show how the events and institutions of the wiki era came about.
+- At least ten years after Chapter 9 (Year 1059 or later) — Wiki/Codex present, including the character and unit registries. Individual entries can retain earlier dates for the events they record. The exact reference year is open.
 
 **The primary supernatural threat** is the Void / Corruption. Malgrath is the Void's presiding force — perceivable only by Elysia Nocturne. Void entities are catalogued by Zareth Kull's Void Breakers. The Ashenveil region is its primary domain.
 
