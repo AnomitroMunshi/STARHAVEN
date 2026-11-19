@@ -467,6 +467,9 @@ a.lore-card:hover{transform:translateY(-2px)}
       <span class="sb-link-icon">🎵</span> Ballads
       <span class="sb-count" id="cnt-ballads">0</span>
     </div>
+    <div class="sb-link" data-section="crier" onclick="showSection('crier',this)">
+      <span class="sb-link-icon">📰</span> The Starhold Crier
+    </div>
   </div>
 </nav>
 
@@ -645,6 +648,10 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn" onclick="compRender('laws',this)">📜 Laws &amp; Customs</button>
     </div>
     <div class="s-content" id="comp-container"></div>
+  </div>
+
+  <div id="section-crier" class="section">
+    <div class="s-content" id="crier-container" style="max-width:1100px"></div>
   </div>
 
   <div id="section-ballads" class="section">
@@ -2100,7 +2107,7 @@ const CHARACTERS = [
     },
   {
     id:'nyx', name:'Nyx Ravel',
-    title:'Pillar of Secrets · Commander of the Null Blades',
+    title:'Pillar of Secrets · Commander of the Null Blades · "The Black Silence"',
     category:'The Eleven', status:'alive',
     age:'Unknown', race:'Shadekin', role:'Intelligence Chief',
     image:'starhaven_chars_image/nyx.png', color:'#302848',
@@ -2116,8 +2123,8 @@ const CHARACTERS = [
     quote:'"They recognised themselves. Good. That means they know what they are now."',
     bio:"Shadekin — deep grey-charcoal skin, dark-adapted eyes. Features arranged for vanishing. Umbral Weave Armor that absorbs light — no reflection at any angle. Expression: nothing. Not cold, not warm. Simply absent.",
     relationships:[{name:'Ottilie Pell',type:'ally',note:'Mother Velvet keeps Goldgate\'s thieves to a code; Nyx keeps the Watch off her. Neither says so.'},{name:'Lisette Rosier',type:'partner',note:'Dating'},{name:'Rayden Cale',type:'ally'},{name:'Lyria Valen',type:'rival'}],
-    tags:['Founder','Pillar of Secrets','Null Blades'],
-  background:'Shadekin. Origin before Starhaven is classified even from the royal record. Designed the security architecture of Goldgate before a single building was placed. Identified Velcross\'s 23 embedded agents 11 days before their activation — neutralized all simultaneously with zero fatalities. Sent Velcross the complete asset list before she confirmed her own failure. The gap between Velcross\'s realization and Nyx\'s message was 40 seconds.',
+    tags:['The Black Silence','Founder','Pillar of Secrets','Null Blades'],
+  background:'Once known on the shadow routes only as the Black Silence — the unseen hand that killed bandit chiefs, freed slave caravans and exposed corruption cults, rumoured on Havenfire\'s walls long before anyone knew his name. Shadekin. Origin before Starhaven is classified even from the royal record. Designed the security architecture of Goldgate before a single building was placed. Identified Velcross\'s 23 embedded agents 11 days before their activation — neutralized all simultaneously with zero fatalities. Sent Velcross the complete asset list before she confirmed her own failure. The gap between Velcross\'s realization and Nyx\'s message was 40 seconds.',
     mount:{name:'Umbra',desc:'Shadowfang Panther — pure black with a light-absorbing quality. Appears to be made of concentrated dark rather than darkness. Bond animal, not a trained mount in any conventional sense.'},
     pet:null,
     partner:{image:'starhaven_chars_image/partner_lisetterosier.jpg',name:'Lisette Rosier',relation:'Dating — hostess of the Gilded Lantern, Velvet Row',desc:'Runs the Gilded Lantern, the most discreet licensed house on Goldgate\'s Velvet Row. She noticed Nyx watching the street from the same rooftop three nights running and sent up a glass of wine on the fourth. Hears everything said on the Row and has never sold a word of it — the only person in Goldgate Nyx does not need to verify.'},
@@ -10505,22 +10512,6 @@ const CHARACTERS = [
     background:'A Giant elder of Varathos who opposed Dravan before the alliance with Starhaven, and now sits beside him on the council.',
   },
   {
-    id:'blacksilence', name:'The Black Silence',
-    image:'starhaven_chars_image/blacksilence.jpg',
-    title:'The Ghost of the Shadow Routes',
-    category:'Mercenaries & Legends', status:'alive',
-    age:'Unknown', race:'Unknown', role:'Rumoured Operative · Shadow Routes',
-    color:'#3A3A4A',
-    weapons:['Unknown'],
-    abilities:[
-      {name:'Nobody Knows', type:'passive', desc:'Bandit chiefs dead, slave caravans freed overnight, corruption cults exposed before they spread — and no one has seen who did it.'},
-    ],
-    bio:'Unseen. Some say he is a ghost.',
-    relationships:[{name:'Lyria Valen',type:'ally',note:'"Someone is destabilizing corruption networks intelligently. That interests me."'}],
-    tags:['Mercenaries & Legends','Rumour','Shadow Routes'],
-    background:'A rumour told on the walls of Havenfire (Chapter 4). Lyria Valen does not believe in ghosts; she believes someone is taking corruption networks apart on purpose.',
-  },
-  {
     id:'ullarimefang', name:'Ulla Rimefang',
     image:'starhaven_chars_image/ullarimefang.jpg',
     title:'The Old Wolf of the Coldmarch',
@@ -15132,6 +15123,344 @@ function compExtra(tab) {
   return html;
 }
 
+// ════════════════════════════════════════
+//  THE STARHOLD CRIER — a daily in-world paper (same edition for everyone on a given real day)
+// ════════════════════════════════════════
+const CRIER = {
+ "special": [
+  {
+   "title": "SPECIAL EDITION — The Kingdom Has Seventeen Ministers",
+   "body": "For the first time, all seventeen ministers sat at one table in Starhold. New faces include Drev Holt (Adventurers & Guilds), Cain Drakhar (Industry & the Arsenal), Admiral Valtor Crane (Maritime Affairs), Dren Solm (Culture & Arts), Elysia Nocturne (the Void Watch) and Aldren Hander (the Interior). The meeting ran four hours over. Dren Solm is reported to have sung the minutes."
+  }
+ ],
+ "leads": [
+  [
+   "Canal Rats Take Their First C-Rank Contract",
+   "Westreach’s favourite rising party signed for the Drowned Fort this week. Guild Master Madoc Harlow declined to comment, then commented at length. Pip Underbough has promised a Cartshell claw for everyone at the Broken String — which is in Lutecombe, a fact nobody has yet pointed out to him."
+  ],
+  [
+   "Crater Glows Blue for a Night — Arcanum Baffled",
+   "Ashfield woke to a blue sky above the crater. All three Arcanum teams at Crater Watch Camp are taking readings; none will say what they mean. The Ninth Ember were asked to go down at once. Zahra Quell’s reply, in full: “Not on a blue night.”"
+  ],
+  [
+   "Elderwood Waiting Room Fire Found Relit — From Inside",
+   "The caretaker of the Elderwood Waiting Room on Embassy Row arrived at dawn to find the fire already burning and two cups of tea drunk. The doors were locked. The Elderwood Sovereignty has not commented. It rarely does."
+  ],
+  [
+   "Lamplighters Signal in a Colour Nobody Has Seen",
+   "Saltmere’s harbour watch reports a lantern signal from the old cliffs in a colour not used by any of the Nine Lamps. The Admiralty is investigating. Asked whether the Umbral Web knows more, a spokesman for Nyx Ravel said only that he “does not discuss colours.”"
+  ],
+  [
+   "Barge Schedule Slips — By One Minute",
+   "For the first time in six years, an Arsenal barge left the Bargemouth docks late. Dockmaster Hamza Breakwater has opened an inquiry. Witnesses report Corran Tarrow was seen smiling on the quay, which the dockmaster described as “not evidence, but noted.”"
+  ],
+  [
+   "Stormhalls Bounty Raised to 6,000 Crowns",
+   "The Guild has raised its offer for a description of whatever lives in the Stormhalls — and a survivor to give it. Three parties have registered interest. Two have since withdrawn. The third would not give its name."
+  ],
+  [
+   "Gilded Nine Turn Down a Contract — Goldgate Asks Why",
+   "Goldgate’s S-rank party returned a contract to the Rating Chamber unsigned, the first time in twelve years. Ivo Castellane gave no reason. The contract has been re-rated upward and is now pinned at the far end of the Quest Board, where nobody is touching it."
+  ],
+  [
+   "Mother Velvet Hosts Auction for Saint Veyne",
+   "A charity auction at a respectable bookbinder’s on Loot Row raised four hundred Crowns for Saint Veyne Orphanage. Several lots were recognised by their former owners, who were invited to bid on them. The Watch has called the evening “confusing.”"
+  ],
+  [
+   "The Undervault’s Walls Have Moved Again",
+   "The Guild’s yearly survey of the cisterns beneath Starhold found two corridors that were not there last year and one that is now gone. Cisterns are not supposed to do this. The survey team has asked for a raise."
+  ],
+  [
+   "Tide Colossus Lantern Dark for an Hour",
+   "The great bronze sailor’s lantern went out for an hour last night for the first time in living memory. The keepers blame gulls. Three ships waited outside the harbour mouth rather than sail under a dark lantern."
+  ],
+  [
+   "Frostspire Envoy Faints in Starhold “Heat”",
+   "A senior envoy of the Frostspire Dominion collapsed on the Kingsway on what Starholders called a mild spring morning. She was carried back to her embassy, which is kept just above freezing, and recovered at once. Her report home calls the capital “an ordeal.”"
+  ],
+  [
+   "Mercy Riders Beat Their Own Record",
+   "At a drill outside Sancthaven, a Mercy Rider reached a mock casualty in one minute and fifty seconds — well inside the Three-Minute Guarantee. The rider asked not to be named. “It is not a race,” the Ashen Guard said. It is now, a little."
+  ],
+  [
+   "Silverhorn Silver Arrives Under Double Guard",
+   "This season’s shipment from House Silverhorn’s Greymantle mine reached the Royal Mint without incident. Every silver Star you will spend this year started here. Minister Astrya Lenn counted the first chest herself."
+  ],
+  [
+   "Unwritten Archive: Next Level Opens in Spring",
+   "The Ministry of Knowledge confirms that the ward on the Archive’s third level will be unpicked by spring. Scholars who studied the second level’s self-writing books report that one of them has started writing about the reader."
+  ],
+  [
+   "Ember Pit Champion Still Unmasked",
+   "The undefeated champion of Ashfield’s Ember Pit has now won thirty-one bouts without once removing their helmet. Bets on their identity are open at every tavern on the Lantern Mile. Oskan Redmane says he knows, and that he is not telling."
+  ],
+  [
+   "Snowtusk Herd Comes Down a Week Early",
+   "Herders at the Snowtusk Highfolds report the elk calling began a week before first snow. Frosthold Bastion has moved its winter schedule forward. Commander Wyld Frostmere was seen walking past the Wardspan alone, which he says is “normal.”"
+  ],
+  [
+   "A Sunken Exchange Strongbox, Opened at Last",
+   "The Sunless Road cracked a sealed strongbox on the Exchange’s fifth level. It was empty, except for a single fresh footprint inside. Brannoch Teague has updated his maps and declined to say which way the footprint was facing."
+  ],
+  [
+   "Rookie Clears the Undercity Warrens Alone",
+   "A sixteen-year-old halfling cleared the first level of the Warrens without a party and walked into the Mendwell Clinic “only mildly feverish.” The Guild has issued a reminder that adventuring alone is allowed but not admired."
+  ],
+  [
+   "The Royal Mint Strikes Its Millionth Crown",
+   "The millionth gold Crown, struck from Sunvein gold, was presented to the Crown Bank this week and will be displayed behind its green-and-gold doors. Visitors are asked not to bite it."
+  ],
+  [
+   "Wanted Poster Torn Down — By Its Subject",
+   "A wanted notice for a Lamplighters signaller was found in Saltmere this morning, neatly folded, with a correction to the description written in the margin."
+  ]
+ ],
+ "shorts": [
+  "Kilnbury’s Firing Night lit the sky so brightly that Starhold’s lamplighters took the night off.",
+  "Varathos Hall reports a record turnout for Kira’s new-moon court. Most came for the tea.",
+  "A Glassback plate the size of a door sold at the Salvage Auction for 41 Crowns.",
+  "The Thaw Board’s marker reads three weeks; Ulla Rimefang has taken down two contracts.",
+  "The Drowned Bell was rung twice on Tuesday. Saltmere raised a glass.",
+  "A new bench on the Chain-Tower Walk has already been claimed by the same three old sailors.",
+  "Tinkerton’s Clockwork Square acted out a new story at noon. Nobody wound it.",
+  "The Rim Walk recorded its two hundred and twelfth proposal. Accepted.",
+  "Hopsworth’s new ale has been named “Bitter End” by the pub of the same name, to its brewer’s annoyance.",
+  "Emberfly Hollow’s glow-moths swarmed early; Vaelmark’s canals are unusually bright.",
+  "The Wound-Up Inn has run out of clockwork toys for guests. More are being wound.",
+  "Restwater’s Midwinter Dip drew a record crowd and a record number of complaints about the cold.",
+  "The Varathos Hall has ordered a chair in a third size, “for reasons.”",
+  "A Frostfang cloak sold in Goldgate for 18 Crowns — three over the usual price of a horse.",
+  "The Dune Wardens brought a caravan across the Singing Dunes without loss, again.",
+  "Moor’s Remedies reports a run on feverfew; Mendlewood is picking double.",
+  "The Canary Bar’s canary is in good voice. The miners are pleased.",
+  "An Arcanum first-year lit a mana lamp in Vaelmark that refuses to go out. It has been given a name.",
+  "The Rookers’ Bothy reports a griffin chick took its first flight off the Featherfall Ledge — and its second, by accident.",
+  "Gown Day saw a record number of gowns in the river and one graduate who jumped in after his.",
+  "Dawncliff’s dawn salute fired on time. This is not news, the editor insists, but readers ask every week.",
+  "House Valcourt and House Sahir have again disagreed about who carries the luxury trade south.",
+  "The Quiet Lamp’s lamp was refilled at dusk, as it has been every night for eleven years.",
+  "The Ironmane Derby favourite threw a shoe in practice. Odds have lengthened.",
+  "Pearlstrand’s divers found a pearl “the size of a quail’s egg.” The quail was not consulted.",
+  "Sugarbrook’s Sugar Kettle has a queue around the green.",
+  "The Velvet Ledger denies any involvement in anything, in a short and well-bound statement.",
+  "The Elderwood Waiting Room’s caretaker has asked for a second caretaker.",
+  "A Cinderguard patrol returned a lost purse on the Lantern Mile. Its owner fainted.",
+  "The Coldmarch Cairn gained a new stone this season."
+ ],
+ "notices": [
+  [
+   "Ministry of the Void Watch",
+   "Frost-season advisory: report any animal with black veins or a mouth that does not close. Voidmaw bounty stands at 50 Crowns."
+  ],
+  [
+   "The Adventurers’ Guild",
+   "The Rating Chamber is closed for one day for repairs following a disagreement."
+  ],
+  [
+   "The Admiralty",
+   "All allied fleets are reminded to check in at Saltmere first. This is not written down anywhere."
+  ],
+  [
+   "Ministry of Culture & Arts",
+   "Auditions for the Lantern Night children’s choir are open. Saint Veyne children may apply first."
+  ],
+  [
+   "The Rimefang Lodge",
+   "C-rank and above only. Rookies will be fed, warmed and sent back to Westreach."
+  ],
+  [
+   "The Ashen Guard",
+   "Mistwell escorts are booked for the next three weeks. Nobody enters without one. That is the law."
+  ],
+  [
+   "The Iron Road Corps",
+   "Expect a short delay on the southern line near Rookthorn Halt while a herd of cows is persuaded off the track."
+  ],
+  [
+   "The Crown Bank",
+   "Letters of credit from any branch are honoured at all branches. Look for the green-and-gold doors."
+  ],
+  [
+   "Ministry of Knowledge",
+   "Permits for the Crater Floor are suspended on blue nights until further notice."
+  ],
+  [
+   "Ministry of the Interior",
+   "Resettlement grants for Ashfield and the Redspire families are open at every governor’s office."
+  ],
+  [
+   "The Crater Guild Hall",
+   "Salvage disputes will be heard in the Ember Pit this seventh day. First blood only."
+  ],
+  [
+   "Sancthaven Healing Halls",
+   "Healer’s broth is served free at every hospital door, every day. You do not need to be ill."
+  ],
+  [
+   "Ministry of Maritime Affairs",
+   "Harbour fees at Saltmere are unchanged. Minister Crane would like that noted."
+  ],
+  [
+   "The Westreach Guild",
+   "The Beginners’ Board has new sewer contracts. They are exactly as glamorous as you expect."
+  ],
+  [
+   "Ministry of Adventurers & Guilds",
+   "The Guild reminds all parties that adventuring alone is allowed, but not admired."
+  ]
+ ],
+ "ads": [
+  "LOST: one iron-banded strongbox. DO NOT OPEN. Reward. Ask at the Guild Vault.",
+  "Rookie swords from 15 Stars at Tinhammer’s, Westreach. Make B-rank and get your name on the wall.",
+  "FOR SALE: Frostfang cloak, worn once. Owner moving south. Enquire at the Banked Fire.",
+  "WANTED: a reader of old Valdris script. Discretion valued. Enquire at a respectable bookbinder’s, Loot Row.",
+  "The Wound-Up Inn, Tinkerton — every room comes with a clockwork toy. Keep it.",
+  "Spring litters now at the Houndsford Puppy Market. The Watch chooses first; you choose second.",
+  "SEEKING party member. Must tolerate cold. Missing fingers acceptable. — The Frostbitten Few.",
+  "Lessons in not dying: the Westreach Training Yard, every morning, free for registered rookies.",
+  "Emberglass Atelier, Ashfield — crater-glass rings from 2 Crowns. Every piece with its story.",
+  "The Sugar Kettle, Sugarbrook: toffee by the pound. Bring a strong jaw.",
+  "Need a map of anything underground? The Sunless Road sells to the Guild first and to you second.",
+  "Ship-timber, sawn planks, delivered anywhere on the Thornwater — Timberfall.",
+  "Paper lanterns for Lantern Night, made in Candlewick. Order early.",
+  "Glass-bottomed boat rides over the Glass Shallows, Dawncliff — see the coral, keep your hat on.",
+  "Lost something? It may be in the Back Room. You may buy it back. For twice the price."
+ ],
+ "weather": {
+  "spring": [
+   "Showers in the Heartland, sun on the southern hills; the Coldmarch is still closed.",
+   "Mild and bright; blossom on the Petalmere and mist on the Selmere at dawn.",
+   "Rain on the west coast, a fair wind for the Dawnfleet."
+  ],
+  "summer": [
+   "Hot and still in the south; the crater glow is visible from the Rookthorn road.",
+   "The Coldmarch is open — eleven weeks and counting.",
+   "Thunder over Weatherwick; the storm bottlers are delighted."
+  ],
+  "autumn": [
+   "Gold on the fields, wind on the passes; harvest weather everywhere.",
+   "Fog on the Ashen River; barges running slow but running.",
+   "First frost at Frosthold; the Snowtusk herd is coming down."
+  ],
+  "winter": [
+   "Snow in the north, sleet in the Heartland, the Coldmarch closed.",
+   "A hard frost; Restwater’s lake is frozen for the Midwinter Dip.",
+   "Clear and bitter; the Last Hearth reports record soup."
+  ]
+ },
+ "market": [
+  [
+   "Crater-glass, per chip",
+   3.0,
+   "Crowns"
+  ],
+  [
+   "Frostfang pelt",
+   15.0,
+   "Crowns"
+  ],
+  [
+   "Red Orchard winterwine, bottle",
+   1.0,
+   "Crowns"
+  ],
+  [
+   "Saffron, per thread",
+   2.0,
+   "Bits"
+  ],
+  [
+   "Hopsworth ale, pint",
+   1.0,
+   "Bits"
+  ],
+  [
+   "Sable gold, per bar",
+   240.0,
+   "Crowns"
+  ],
+  [
+   "Silverhorn silver, per ingot",
+   18.0,
+   "Crowns"
+  ],
+  [
+   "Glassback plate",
+   30.0,
+   "Crowns"
+  ]
+ ],
+ "festivals": {
+  "spring": [
+   "Founding Day (Starhold)",
+   "Root-Waking (Greenveil)",
+   "Blossom Week (Petalmere)",
+   "The Lotus Festival (Lotusmere)",
+   "The Learnstead Regatta"
+  ],
+  "summer": [
+   "Cherry Week (Sunvale)",
+   "The Bloom Festival (Bloomvale)",
+   "Gown Day (Learnstead)",
+   "The Saltmere Harbour Festival",
+   "The Thaw Run (the Coldmarch)"
+  ],
+  "autumn": [
+   "Treading Day (Vinehallow)",
+   "The Harvest Fair (Amberfield)",
+   "The Hop Fair (Hopsworth)",
+   "The Grand Chariot Cup (Ashfield)",
+   "Lantern Night (Sancthaven)"
+  ],
+  "winter": [
+   "The Ham Fair (Acornholt)",
+   "The Toy Fair (Tinkerton)",
+   "Firing Night (Kilnbury)",
+   "The Midwinter Dip (Restwater)"
+  ]
+ }
+};
+let crierDay = 0;  // 0 = today, -1 = yesterday ...
+function crierRng(seed) { let s = seed % 2147483647; if (s <= 0) s += 2147483646; return () => (s = s * 16807 % 2147483647) / 2147483647; }
+function crierPick(arr, n, r) { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a.slice(0, n); }
+function crierRender(step) {
+  if (step) crierDay = Math.min(0, crierDay + step);
+  const box = document.getElementById('crier-container'); if (!box) return;
+  const day = Math.floor(Date.now() / 864e5) + crierDay;
+  const d = new Date(day * 864e5), m = d.getUTCMonth();
+  const season = m < 2 || m === 11 ? 'winter' : m < 5 ? 'spring' : m < 8 ? 'summer' : 'autumn';
+  const part = ['Early', 'Mid', 'Late'][Math.floor(((m + 1) % 3))];
+  const wd = d.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' });
+  const r = crierRng(day * 7919 + 13);
+  const lead = CRIER.leads[day % CRIER.leads.length];
+  const shorts = crierPick(CRIER.shorts, 5, r), notices = crierPick(CRIER.notices, 3, r), ads = crierPick(CRIER.ads, 4, r);
+  const weather = CRIER.weather[season][Math.floor(r() * CRIER.weather[season].length)];
+  const e = compEsc;
+  const col = (t, inner) => `<div style="border-top:3px double var(--text3,#777);padding-top:8px;margin-bottom:18px"><p style="font-family:Georgia,serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:var(--text3);margin:0 0 6px">${t}</p>${inner}</div>`;
+  const market = CRIER.market.map(([n, base, unit]) => { const ch = Math.round((r() - 0.5) * 16); const v = base * (1 + ch / 100);
+    return `<tr><td style="padding:3px 0">${e(n)}</td><td style="text-align:right;white-space:nowrap">${v >= 10 ? Math.round(v) : v.toFixed(1)} ${unit} <span style="color:${ch > 0 ? '#6a9a5a' : ch < 0 ? '#b05a4a' : 'var(--text3)'}">${ch > 0 ? '▲' : ch < 0 ? '▼' : '•'}${Math.abs(ch)}%</span></td></tr>`; }).join('');
+  let html = `<div style="text-align:center;border-bottom:4px double var(--text3,#777);padding:8px 0 10px;margin:10px 0 16px">
+    <p style="font-family:Georgia,serif;font-size:44px;font-weight:700;letter-spacing:.04em;margin:0;line-height:1.1">The Starhold Crier</p>
+    <p style="font-family:Georgia,serif;font-style:italic;color:var(--text3);margin:4px 0 0">Printed on Millwater paper · Lantern Lane, Starhold · Price: one Bit</p>
+    <p style="font-family:Georgia,serif;margin:8px 0 0;font-size:14px">Issue No. ${(day - 19000).toLocaleString()} · ${wd}, ${part} ${season[0].toUpperCase() + season.slice(1)}, Year 1058</p>
+    <p style="margin:10px 0 0"><button class="tab-btn" onclick="crierRender(-1)">◀ Earlier edition</button> <button class="tab-btn" ${crierDay === 0 ? 'disabled style="opacity:.4"' : ''} onclick="crierRender(1)">Later edition ▶</button></p></div>`;
+  if (crierDay === 0) html += CRIER.special.map(s => `<div style="border:2px solid var(--gold,#C8961A);padding:12px 16px;margin-bottom:18px;border-radius:4px"><p style="font-family:Georgia,serif;font-weight:700;font-size:20px;margin:0 0 6px">${e(s.title)}</p><p class="place-desc" style="margin:0">${e(s.body)}</p></div>`).join('');
+  html += `<div style="display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:28px">
+    <div>
+      <p style="font-family:Georgia,serif;font-size:32px;font-weight:700;line-height:1.15;margin:0 0 10px">${e(lead[0])}</p>
+      <p style="font-family:Georgia,serif;font-size:16px;line-height:1.6;margin:0 0 20px">${e(lead[1])}</p>
+      ${col('In brief', shorts.map(s => `<p style="font-family:Georgia,serif;margin:0 0 8px;line-height:1.5">— ${e(s)}</p>`).join(''))}
+      ${col('Notices', notices.map(([who, t]) => `<p style="margin:0 0 8px;line-height:1.5"><b>${e(who)}.</b> ${e(t)}</p>`).join(''))}
+    </div>
+    <div>
+      ${col('Weather', `<p style="font-family:Georgia,serif;margin:0">${e(weather)}</p>`)}
+      ${col('This season', `<p style="margin:0;line-height:1.6">${CRIER.festivals[season].map(e).join(' · ')}</p>`)}
+      ${col('Market', `<table style="width:100%;font-size:13px;border-collapse:collapse">${market}</table>`)}
+      ${col('Classifieds', ads.map(a => `<p style="font-size:13px;margin:0 0 8px;padding-bottom:8px;border-bottom:1px dotted var(--border,#444)">${e(a)}</p>`).join(''))}
+    </div></div>`;
+  box.innerHTML = html;
+}
+
 function showSection(id, linkEl) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.sb-link').forEach(l => l.classList.remove('active'));
@@ -15150,6 +15479,7 @@ function renderSection(id) {
   if (id === 'atlas')      atlasRender('all');
   if (id === 'ballads')    balladsRender();
   if (id === 'compendium') compRender('beasts');
+  if (id === 'crier')      crierRender();
 }
 
 // ════════════════════════════════════════

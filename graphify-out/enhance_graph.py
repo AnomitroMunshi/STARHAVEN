@@ -32,7 +32,7 @@ for m in re.finditer(r'(?m)^( +)"name": "([^"]+)",\n(?:\1"[^\n]*\n)*?\1"image": 
         units.setdefault(key(m.group(2)), m.group(3))
 
 # Chapter nodes that are the same person as a wiki entry under another name
-SAME_AS = {'char_bram': 'Bram Seawall', 'char_vera': 'Vera Holt','char_brek': 'Brek Stonefall', 'char_ashen_scholar': 'Velkan Drake'}
+SAME_AS = {'char_black_silence': 'Nyx Ravel', 'char_bram': 'Bram Seawall', 'char_vera': 'Vera Holt','char_brek': 'Brek Stonefall', 'char_ashen_scholar': 'Velkan Drake'}
 
 # Mounts: graph node -> unitImages picture (see the MOUNTS sections of character_portrait_prompts.txt)
 MOUNTS = json.loads(Path('graphify-out/mount_images.json').read_text(encoding='utf-8'))
