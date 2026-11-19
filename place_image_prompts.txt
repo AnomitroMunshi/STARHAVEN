@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 717   (finished so far: 131)
+Still to generate: 719   (finished so far: 131)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -13695,6 +13695,44 @@ Environment: the cold north — snow on roofs and ground, dark pine forests, gre
 Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
 Lighting and time of day: evening, warm firelight and lamplight.
 Mood: warm, lively, characterful.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+=== The Sunvein Mine ===
+Save as: starhaven_places_image/thesunveinmine.jpg
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Greypeak Foothills   Kind: Gold mine
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Sunvein Mine — gold mine, in Greypeak Foothills.
+What it is: The kingdom’s own gold mine, high in the Greypeak Highlands above Stonemarsh — a narrow, rich vein worked by dwarven crews. Its ore goes down the mountain under guard to the Royal Mint in Starhold.
+Wider setting — Greypeak Foothills: the high mountain country of the Greypeak Highlands, south of the Stormmassif.
+Composition: A view of the mine mouth on the mountainside, the headframe and ore sheds in the midground, a guarded ore wagon setting off down the track in the foreground.
+Details to include: dwarven miners with lamps and picks coming off shift, ore carts on rails, a weighing shed with scales, armed guards beside an iron-bound ore chest, a glint of gold-bearing quartz in a cart, smoke from a forge, the mountain falling away behind.
+Environment: high grey mountains — bare granite slopes, thin pine, patches of old snow, a cold clear sky, the valley far below.
+Architecture: a real medieval mine — a timber headframe and windlass over the shaft mouth, stone ore sheds, a guarded strongroom, cart tracks and spoil heaps; practical and weathered; one consistent dark-fantasy kingdom.
+Lighting and time of day: a bright, cold morning, crisp light on the granite.
+Mood: hard, guarded, valuable.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+=== The Blackwall Gold Workings ===
+Save as: starhaven_places_image/theblackwallgoldworkings.jpg
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Blackwall Ridge   Kind: Gold mine
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Blackwall Gold Workings — gold mine, in Blackwall Ridge.
+What it is: Gold workings in the rock beneath Blackwall Ridge — the second reason the fortress is garrisoned. Smaller than the Sunvein, but the ore is the purest in the kingdom.
+Wider setting — Blackwall Ridge: a rebuilt fortress controlling the northern trade corridors through the mountains.
+Composition: A view of the mine mouth on the mountainside, the headframe and ore sheds in the midground, a guarded ore wagon setting off down the track in the foreground.
+Details to include: dwarven miners with lamps and picks coming off shift, ore carts on rails, a weighing shed with scales, armed guards beside an iron-bound ore chest, a glint of gold-bearing quartz in a cart, smoke from a forge, the mountain falling away behind.
+Environment: high grey mountains — bare granite slopes, thin pine, patches of old snow, a cold clear sky, the valley far below.
+Architecture: a real medieval mine — a timber headframe and windlass over the shaft mouth, stone ore sheds, a guarded strongroom, cart tracks and spoil heaps; practical and weathered; one consistent dark-fantasy kingdom.
+Lighting and time of day: a bright, cold morning, crisp light on the granite.
+Mood: hard, guarded, valuable.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
