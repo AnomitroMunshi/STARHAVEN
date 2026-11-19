@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 76   (finished so far: 365)
+Still to generate: 85   (finished so far: 365)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -14,8 +14,62 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 
 ########################################################################
-## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (10)
+## CHARACTERS FROM THE CHAPTERS & WIKI REFERENCES  (19)
 ########################################################################
+
+=== Ivo Castellane ===
+Save as: starhaven_chars_image/ivocastellane.jpg
+Group: Story Characters   Race: Human   Age: 41
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ivo Castellane, S-rank Adventurer · Leader of the Gilded Nine · Goldgate. Look: a tall, lean Human man of 41, grey at the temples, short dark beard, a gold-inlaid scar across his chin, calm steady eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): Tall, grey at the temples, a gold-inlaid scar across his chin, plain clothes off duty and a glaive he never lets anyone else carry. Weapons and gear: polished dark half-plate with restrained gold inlay, a long-hafted war-glaive, a gilded buckler. Setting: the Quest Board inside Goldgate's grand guild hall, adventurers crowding behind him.
+
+=== Brannoch Teague ===
+Save as: starhaven_chars_image/brannochteague.jpg
+Group: Story Characters   Race: Dwarf   Age: 49
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Brannoch Teague, A-rank Adventurer · Leader of the Sunless Road · Goldgate. Look: a broad, stocky Dwarf man of 49 with a long braided red-grey beard, soot on his face, sharp eyes under a heavy brow. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A broad, soot-smudged dwarf with a braided red-grey beard, a miner's lamp on his helmet and a satchel of rolled maps. Weapons and gear: a leather miner's helmet with a lamp, a satchel stuffed with rolled maps, a short pick-axe, a coil of silk rope. Setting: the mouth of a dark tunnel lit by his lamp.
+
+=== Zahra Quell ===
+Save as: starhaven_chars_image/zahraquell.jpg
+Group: Story Characters   Race: Half-Elf   Age: 36
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Zahra Quell, S-rank Adventurer · Leader of the Ninth Ember · Ashfield. Look: a lean Half-Elf woman of 36, sun-dark skin, cropped black hair, pointed ears, fine glassy burn scars on her forearms. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A lean half-elf with sun-dark skin, cropped black hair, pointed ears and fine glassy burn scars on her forearms that catch the light. Weapons and gear: light ember-red leather armour, twin curved blackened blades, a lantern of glowing crater-glass on her belt. Setting: the rim of a vast glowing crater at dusk, ember light rising behind her.
+
+=== Rafi al-Sayf ===
+Save as: starhaven_chars_image/rafialsayf.jpg
+Group: Story Characters   Race: Human (Karath)   Age: 44
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Rafi al-Sayf, A-rank Adventurer · Leader of the Dune Wardens · Ashfield. Look: a weathered Human man of 44 from the Karath desert, warm brown skin, trimmed grey-streaked beard, calm crinkled eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A weathered Karath man in layered desert robes and a dark headscarf, a trimmed grey-streaked beard and calm, crinkled eyes. Weapons and gear: layered sand-coloured desert robes over light mail, a dark headscarf, a curved scimitar and a recurve bow. Setting: a caravan of camels on golden dunes at sunset.
+
+=== Hroda Greycoat ===
+Save as: starhaven_chars_image/hrodagreycoat.jpg
+Group: Story Characters   Race: Human (Frostborn)   Age: 52
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hroda Greycoat, A-rank Adventurer · Leader of the Frostbitten Few · The Coldmarch. Look: a big, weather-beaten Human woman of 52 of Frostborn stock, a long grey braid, wind-burned cheeks, pale blue eyes; one hand is missing a finger. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A big, weather-beaten Frostborn woman with a long grey braid, wind-burned cheeks and nine fingers. Weapons and gear: a heavy grey fur coat over mail, a long-handled bearded axe, snowshoes strapped to her back. Setting: a snowstorm in a mountain pass, a rescued soldier wrapped in furs behind her.
+
+=== Pip Underbough ===
+Save as: starhaven_chars_image/pipunderbough.jpg
+Group: Story Characters   Race: Halfling   Age: 19
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Pip Underbough, B-rank Adventurer · Leader of the Canal Rats · Westreach. Look: a grinning, freckled Halfling young man of 19, curly brown hair, bright cheeky eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): A grinning, freckled halfling with curly brown hair, patched leathers and a sword slightly too big for him. Weapons and gear: patched brown leathers, a short sword slightly too big for him, a sling at his belt. Setting: a lantern-lit canal walk in Westreach at dusk.
+
+=== Ulla Rimefang ===
+Save as: starhaven_chars_image/ullarimefang.jpg
+Group: Story Characters   Race: Beastkin (grey wolf lineage)   Age: 54
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ulla Rimefang, Guild Master of the Rimefang Lodge on the Coldmarch, a retired A-rank tracker. A woman, age 54, race: Beastkin of the grey wolf lineage — a wolf-like face and muzzle greying with age, thick grey-and-white fur, tall pointed ears with old notches torn in them, sharp pale-gold eyes, a powerful broad build. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, patient, unimpressed by rank; listens for things nobody else hears; fiercely protective of her veterans. Weapons and gear: layered furs and frost-rimed leather, a bone-hafted hunting spear, twin skinning knives at her belt, a lodge-master's iron key ring. Setting: the porch of a snow-covered black-timber guild lodge at a mountain trailhead, a fortress high on the peak behind, falling snow.
+
+=== Oskan Redmane ===
+Save as: starhaven_chars_image/oskanredmane.jpg
+Group: Story Characters   Race: Half-Orc   Age: 47
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Oskan Redmane, Guild Master of the Crater Guild Hall in Ashfield, a retired A-rank and veteran of the Ashen Passage War. A man, age 47, race: Half-Orc — grey-green skin, small tusks, a heavy jaw, a big muscular build, a red-dyed topknot, old burn scars down the left side of his face and neck. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): laughs easily, pays fairly, deadly serious about bringing people back alive; a survivor. Weapons and gear: worn leather and plate patched from many battles, a broad-bladed war-cleaver on his back, a battered round shield, a guild master's brass seal on a cord. Setting: the gateway of a fortified sun-bleached frontier depot at golden hour, a vast crater glowing faintly on the horizon behind him.
+
+=== Orsik ===
+Save as: starhaven_chars_image/orsik.jpg
+Group: Story Characters   Race: Stoneborn   Age: unknown
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Orsik, Seraphine Mire's sworn personal guard. Race: Stoneborn — a towering, nature-born guardian race, neither human nor elf: about nine feet tall, massive and broad, skin of weathered grey granite seamed with cracks where green moss and tiny ferns grow, faint pale-gold light deep in the cracks where Seraphine's purification still runs. Look: a heavy, calm, patient face like a carved hillside, deep-set amber eyes, no hair — lichen and moss across the brow and shoulders. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, watchful, immovable; a guardian, not a warrior — he stands, he does not boast. Weapons and gear: a huge tower shield of living granite grown onto his left forearm, a stone maul hanging unused at his belt, simple Ashen Guard dark-grey cloth and a silver Ashen emblem on one shoulder. Setting: standing just behind a white-robed healer kneeling at a wounded soldier (she is small and out of focus at the edge of the frame), in the pale white-grey gothic streets of Sancthaven, white-and-gold banners behind.
 
 === Corin ===
 Save as: starhaven_chars_image/corin.jpg

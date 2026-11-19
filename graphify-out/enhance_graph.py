@@ -74,6 +74,9 @@ for n in nodes:
 # Structured links the chapter extraction never saw: army/unit commanders and wiki relationships.
 em = re.search(r'^const RAW_EDGES = (.*);$', html, re.M)
 edges = json.loads(em.group(1))
+# Links extracted from wiki text that has since been corrected (Brynhild Voss is at Sancthaven, not Frosthold)
+STALE = {frozenset(('char_brynhild_voss', 'place_frosthold_bastion')), frozenset(('char_varg_ironfrost', 'char_brynhild_voss'))}
+edges = [e for e in edges if frozenset((e['from'], e['to'])) not in STALE]
 have = {frozenset((e['from'], e['to'])) for e in edges}
 idx = {}
 for n in nodes:
