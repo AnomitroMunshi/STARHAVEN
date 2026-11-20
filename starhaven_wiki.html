@@ -193,6 +193,15 @@ a.lore-card:hover{transform:translateY(-2px)}
 .lore-card-tags{display:flex;flex-wrap:wrap;gap:4px;border-top:1px solid var(--border);padding-top:7px}
 .lore-link{color:var(--gold2,#C8961A);border-bottom:1px dotted currentColor;cursor:pointer}
 .chron-plate{display:block;width:100%;max-width:720px;margin:0 auto 1.4em;border-radius:6px;border:1px solid var(--gold2,#C8961A);box-shadow:0 4px 18px rgba(0,0,0,.4)}
+.tl-year{display:flex;gap:22px;margin:0 0 6px}
+.tl-y{min-width:96px;text-align:right;font-family:'Cinzel',serif;color:var(--gold,#C8961A);font-size:15px;padding-top:8px;flex-shrink:0}
+.tl-list{flex:1;border-left:2px solid var(--border2,#333);padding:2px 0 14px 18px}
+.tl-item{padding:7px 10px;margin:3px 0;border-radius:6px;cursor:pointer;font-size:14px;color:var(--text)}
+.tl-item:hover{background:var(--bg3)}.tl-item small{display:block;color:var(--text3);font-size:11px;margin-top:2px}
+.tl-chapter b{color:var(--gold,#C8961A)}.tl-ch-tag{color:#E0A040;border-color:#E0A040;background:rgba(160,100,20,.10)}
+.tl-mark{color:var(--gold2,#C8961A);font-style:italic;padding:7px 10px;font-size:13px}.tl-note{color:var(--text3);font-size:12px;margin:6px 10px}
+@media(max-width:700px){.tl-year{flex-direction:column;gap:2px}.tl-y{text-align:left;min-width:0}.tl-list{padding-left:12px}}
+.atlas-pick{outline:2px solid var(--gold,#C8961A);box-shadow:0 0 0 6px rgba(200,150,26,.18);transition:box-shadow .3s}
 .chron-archive{margin-top:1.6em!important;padding-top:10px;border-top:1px solid var(--border2,#333);font-family:'Courier New',monospace;font-size:11px!important;letter-spacing:.06em;color:var(--text3,#888)!important;text-indent:0!important;line-height:1.7!important;text-transform:uppercase}
 .lore-link:hover{color:var(--text)}
 #lore-peek{position:fixed;z-index:9999;width:260px;height:164px;object-fit:cover;border-radius:8px;border:1px solid var(--gold2,#C8961A);box-shadow:0 6px 24px rgba(0,0,0,.5);pointer-events:none;display:none}
@@ -477,6 +486,9 @@ a.lore-card:hover{transform:translateY(-2px)}
     <div class="sb-link" data-section="compendium" onclick="showSection('compendium',this)">
       <span class="sb-link-icon">📜</span> Compendium
     </div>
+    <div class="sb-link" data-section="timeline" onclick="showSection('timeline',this)">
+      <span class="sb-link-icon">⏳</span> Timeline
+    </div>
 
     <p class="sb-section-label">Culture</p>
     <div class="sb-link" data-section="ballads" onclick="showSection('ballads',this)">
@@ -623,6 +635,7 @@ a.lore-card:hover{transform:translateY(-2px)}
     <div class="tab-bar" id="atlas-place-tabs" style="margin-top:6px"></div>
     <div class="search-bar">
       <input class="search-input" id="atlas-search" placeholder="Search locations…" oninput="atlasSearch=this.value.toLowerCase();atlasRender(atlasFilter)">
+      <button class="tab-btn" onclick="atlasRandom()" title="Take me somewhere I haven't been">🎲 Random place</button>
       <span class="result-count" id="atlas-count"></span>
     </div>
     <div class="s-content" id="atlas-container"></div>
@@ -683,6 +696,22 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn" onclick="compRender('records',this)">🏅 Records</button>
     </div>
     <div class="s-content" id="comp-container"></div>
+  </div>
+
+  <div id="section-timeline" class="section">
+    <div class="s-hero">
+      <p class="s-eyebrow">✦ The Royal Athenaeum · Year by Year</p>
+      <h1 class="s-title">Timeline</h1>
+      <p class="s-subtitle">Every dated chronicle and founding, in order</p>
+      <p class="s-desc">Built from the years already written in the chapters, the chronicles and the Atlas — nothing here is invented. Click any entry to open it.</p>
+    </div>
+    <div class="tab-bar" id="tl-tabs">
+      <button class="tab-btn active" data-filter="all" onclick="timelineRender('all',this)">All</button>
+      <button class="tab-btn" data-filter="chapters" onclick="timelineRender('chapters',this)">Main Story</button>
+      <button class="tab-btn" data-filter="chron" onclick="timelineRender('chron',this)">Chronicles</button>
+      <button class="tab-btn" data-filter="places" onclick="timelineRender('places',this)">Foundings</button>
+    </div>
+    <div class="s-content" id="timeline-container"></div>
   </div>
 
   <div id="section-crier" class="section">
@@ -8395,14 +8424,14 @@ Filed Year 1051.
     type: 'legend',
     year: "Year 1052",
     tags: ["Rayden Cale", "Caedran Morveil", "Elyndra Valeheart", "Elysia Nocturne", "Velkan Drake", "Vorn Ashcaller", "Rhegar Thorne", "The Stormreach Guardian", "The Stoneward Guardian", "The Frostcleave Guardian", "The Magmafall Guardian"],
-    excerpt: "Every dungeon ever found has a rank. Only one has ever been ranked SS+. Six people went into the Aerune Depths. Six came out — carried by four things that should not have been able to move.",
+    excerpt: "Every dungeon ever found has a rank. Only two have ever been ranked SS+. Six people went into the Aerune Depths. Six came out — carried by four things that should not have been able to move.",
     body: `I. THE DUNGEON WITH NO BOTTOM
 
 Every dungeon in the known world has a rank, from F, for rats in a cellar, to S, for the kind of place that kills whole parties. Above S there is one more rank, which the Adventurers' Guild added only after it was forced to.
 
 SS+.
 
-Only one dungeon has ever been given it. The Aerune Depths.
+Only two dungeons have ever been given it. The first was the fracture cluster at Lumenfield, in 1048. The second was the Aerune Depths.
 
 —
 
@@ -8664,7 +8693,7 @@ Filed Year 1052.
   {
     id: 'ironbreaker-incident',
     title: "The Ironbreaker Incident",
-    subtitle: "The Story of a Man Who Confused Being Undefeated with Being Undefeatable — Year 1049–1050",
+    subtitle: "The Story of a Man Who Confused Being Undefeated with Being Undefeatable — Years 1050–1051",
     type: 'personal',
     year: "Years 1050–1051",
     tags: ["Kael Varric", "Vorn Ashcaller", "Rayden Cale", "Nyx Ravel", "Rhegar Thorne", "Lyria Valen", "Velkan Drake", "Aurelia Vex", "Dren Solm", "Astrya Lenn", "Drev Holt"],
@@ -22958,6 +22987,17 @@ function atlasRender(filter, btn) {
 
 // Notable places: one card per place, image from starhaven_places_image/<slug>.jpg
 function placeSlug(name) { return name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ''); }
+// "Random place" — wander the Atlas: pick any notable place, filter to it and highlight its card
+function atlasRandom() {
+  const all = allPlaces(), p = all[Math.floor(Math.random() * all.length)];
+  loreGoPlace(p.name);
+  setTimeout(() => {
+    const card = [...document.querySelectorAll('#atlas-container .place-card, #atlas-container .loc-card')].find(c => (c.querySelector('.place-name, .loc-name') || {}).textContent === p.name);
+    if (!card) return;
+    card.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    card.classList.add('atlas-pick'); setTimeout(() => card.classList.remove('atlas-pick'), 2200);
+  }, 60);
+}
 function allPlaces() {
   const seen = new Set(); const out = [];
   LOCATIONS.forEach(loc => (loc.places || []).forEach(p => {
@@ -24388,6 +24428,32 @@ function showSection(id, linkEl) {
   window.scrollTo({top:0,behavior:'instant'});
 }
 
+const CHAPTER_EVENTS = [[1031, 1, "The Night of Fire", "Oaksmane orphanage burns; Rayden survives. Sister Marianne dies holding the door."], [1031, 1, "The Execution", "Garrick is executed in the public square. His last word to Rayden: “Live.”"], [1032, 1, "Elira Voss", "Elira finds Rayden half-dead behind the southern tannery and carries him into the storm."], [1034, 1, "Ash and Ember", "After two years of training, Rayden walks into the Westreach Adventurer Guild."], [1036, 1, "Hollowwatch", "Dawnpiercer, the holy ruin. Dorun Graymaw and Korr Vash fall; Rayden carries out the rings."], [1036, 1, "Temporal Frenzy", "At the Temporal Rift, Rayden’s power awakens — and nearly kills him."], [1037, 2, "Lowmere Field and Blackwall Ridge", "The mercenary wars of the borderlands: the Battle of Lowmere Field and the Siege of Blackwall Ridge."], [1038, 2, "The Red Orchard Engagement", "Burning trees and frozen trenches. Rayden tells Selene about a place where nobody needs swords."], [1039, 2, "The Death of Selene Voss", "At Asterfall, Selene shields trapped refugees from a falling wall. All of them live. She does not."], [1039, 2, "Kingsbane and Veynehold", "Rayden takes up Kingsbane; the burning fortress-town of Veynehold falls."], [1040, 3, "The Man Called Kael Varric", "On the eastern roads, Rayden meets Kael. The black-rain ambush; the monastery fire."], [1040, 3, "The Star-Eyed Huntress", "Lyria Valen arrives alone from a dying forest and chooses to stay."], [1041, 3, "Havenfire", "At the Ironmane farm the convoy becomes a settlement: Havenfire, the first people of Starhaven."], [1041, 4, "The Silverfire Trial", "Rayden goes to Vaelmark. Velkan Drake tests him in the Silver Arena."], [1041, 4, "Ash and Silver Fire · The Saint of Ash", "Havenfire is attacked and holds. Seraphine Mire arrives and saves Kael; the Cleansing March begins."], [1042, 5, "The Shadow That Watches", "At Rookthorn, Nyx Ravel tests what Rayden will protect."], [1042, 5, "The Sable Conclave Crisis", "While Rayden is in Rookthorn, Seraphine walks into the Conclave."], [1042, 5, "The Greenveil Catastrophe · Moonfall Lake", "Thorin and Greenveil; Seraphine’s purification at Moonfall Lake."], [1042, 6, "The War of Starhold", "The march on Drevak’s hilltop fortress. Garruk Blackroot falls."], [1042, 6, "The Birth of Starhaven", "Dawn on the hilltop: “Starhaven. Year 1042. The Sundered Age.” The Athenaeum’s first page."], [1043, 7, "The Weight of Building", "Rhegar Thorne arrives; the Athenaeum reaches a hundred members; the Ironmane Fields begin."], [1044, 7, "The Architecture of Balance", "The Null Blades appear in reports; the first rift gate opens; Field Army I forms."], [1045, 7, "The Year the Sky Changed", "A storm dragon lands over Starhold and chooses to stay — Aurelia Vex and Zephyros."], [1046, 7, "What the Sea Carries · The Third Chain", "The Thalassian League’s Admiral-King comes to Starhold; the expedition to the Vrak Isles."], [1047, 8, "Iron and Archive", "Cain Drakhar arrives at Forgehaven."], [1047, 8, "The Western Horizon · Saltmere", "The Golden Coast Federation moves against Saltmere and fails."], [1048, 8, "Karath and the Gift", "The Sultan’s private letter; Karath joins with mammoths and war elephants."], [1048, 8, "The SS+ Dungeon", "The fracture cluster at Lumenfield, classified SS+."], [1048, 8, "The Trial · The Naming", "The Trial of the Eleven, then the Naming, watched from every city at once."], [1049, 9, "The Kingdom in Peacetime", "The railways run; the Dawnfleet’s first review at Saltmere."], [1049, 9, "The Highland War at Greenveil", "The Redspire and the highland clans march on the Greenveil plain; the Greywood answers."], [1049, 9, "What the Mountains Sent", "The Vanari come down from the Titan Highlands — the March of the North."]];
+// Timeline — built only from years already written in CHRONICLES and LOCATIONS
+function tlYears(s) { return (String(s || '').match(/\b1\d{3}\b/g) || []).map(Number); }
+function timelineRender(filter, btn) {
+  document.querySelectorAll('#tl-tabs .tab-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+  const ev = [], undated = [];
+  if (filter === 'all' || filter === 'chapters') CHAPTER_EVENTS.forEach(([y, n, title, note]) => ev.push({ y, ch: { n, title, note } }));
+  if (filter !== 'places' && filter !== 'chapters') CHRONICLES.forEach(c => { const y = tlYears(c.year); y.length ? ev.push({ y: Math.min(...y), c }) : undated.push(c); });
+  if (filter === 'all' || filter === 'places') LOCATIONS.forEach(l => { const y = tlYears(l.founded); if (y.length) ev.push({ y: y[0], l }); });
+  if (filter === 'all') ev.push({ y: 1049, mark: 'Chapter IX ends — the main story so far' }, { y: 1059, mark: 'The present day of this wiki' });
+  const years = [...new Set(ev.map(e => e.y))].sort((a, b) => a - b);
+  const chron = c => { const m = CHRON_TYPE_META[c.type] || { label: c.type, tag: 'lore-t-history' };
+    return `<div class="tl-item" onclick="openChronicle('${c.id}')"><span class="lore-card-tag ${m.tag}">${m.label}</span> <b>${c.title}</b><small>${compEsc(c.year || '')}${c.subtitle ? ' · ' + compEsc(c.subtitle) : ''}</small></div>`; };
+  let html = '';
+  years.forEach(y => {
+    const items = ev.filter(e => e.y === y).sort((a, b) => (b.mark ? 2 : b.ch ? 1 : 0) - (a.mark ? 2 : a.ch ? 1 : 0)).map(e =>
+      e.mark ? `<div class="tl-mark">◆ ${e.mark}</div>`
+      : e.ch ? `<div class="tl-item tl-chapter" onclick="showSection('story', document.querySelector('.sb-link[data-section=&quot;story&quot;]'))"><span class="lore-card-tag tl-ch-tag">Chapter ${e.ch.n}</span> <b>${e.ch.title}</b><small>${e.ch.note}</small></div>`
+      : e.c ? chron(e.c)
+      : `<div class="tl-item" onclick="loreGoPlace(${JSON.stringify(e.l.name).replace(/"/g, '&quot;')})"><span class="lore-card-tag lore-t-history">Founded</span> <b>${e.l.name}</b><small>${compEsc(e.l.region || '')}</small></div>`).join('');
+    html += `<div class="tl-year" id="tl-${y}"><div class="tl-y">Year ${y}</div><div class="tl-list">${items}</div></div>`;
+  });
+  if (undated.length) html += `<div class="tl-year"><div class="tl-y">Undated</div><div class="tl-list"><p class="tl-note">Legends, fables and tales from abroad — told, not dated.</p>${undated.map(chron).join('')}</div></div>`;
+  document.getElementById('timeline-container').innerHTML = html || '<p class="empty-state">Nothing dated yet.</p>';
+}
+
 function renderSection(id) {
   if (id === 'story')      storyRender();
   if (id === 'chronicles') chroniclesRender('all');
@@ -24397,6 +24463,7 @@ function renderSection(id) {
   if (id === 'ballads')    balladsRender();
   if (id === 'compendium') compRender('beasts');
   if (id === 'crier')      crierRender();
+  if (id === 'timeline')   timelineRender('all');
 }
 
 // ════════════════════════════════════════
