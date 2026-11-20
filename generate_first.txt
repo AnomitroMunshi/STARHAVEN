@@ -11,64 +11,64 @@ Already-generated images are left out automatically; re-run the list after a bat
 
 ## 2 · The places that headline each city
 
- 1. The Crater Guild Hall (Ashfield)  ·  place_image_prompts.txt:12508  ·  starhaven_places_image/thecraterguildhall.jpg
- 2. The Rimefang Lodge (the Coldmarch)  ·  place_image_prompts.txt:12442  ·  starhaven_places_image/therimefanglodge.jpg
- 3. The Crown Bank (Starhold)  ·  place_image_prompts.txt:12816  ·  starhaven_places_image/thecrownbank.jpg
+ 1. The Crater Guild Hall (Ashfield)  ·  place_image_prompts.txt:12278  ·  starhaven_places_image/thecraterguildhall.jpg
+ 2. The Rimefang Lodge (the Coldmarch)  ·  place_image_prompts.txt:12212  ·  starhaven_places_image/therimefanglodge.jpg
+ 3. The Crown Bank (Starhold)  ·  place_image_prompts.txt:12586  ·  starhaven_places_image/thecrownbank.jpg
 
 ## 3 · The places the Crier and the stories keep mentioning
 
- 4. The Crater's Edge (Ashfield)  ·  place_image_prompts.txt:12552  ·  starhaven_places_image/thecratersedge.jpg
- 5. The Gilded Ember (Ashfield)  ·  place_image_prompts.txt:12574  ·  starhaven_places_image/thegildedember.jpg
- 6. Emberglass Atelier (Ashfield)  ·  place_image_prompts.txt:12596  ·  starhaven_places_image/emberglassatelier.jpg
- 7. The Lantern Mile (Ashfield)  ·  place_image_prompts.txt:12662  ·  starhaven_places_image/thelanternmile.jpg
- 8. The Salvage Auction (Ashfield)  ·  place_image_prompts.txt:12618  ·  starhaven_places_image/thesalvageauction.jpg
- 9. The Velvet Ledger (Goldgate)  ·  place_image_prompts.txt:13235  ·  starhaven_places_image/thevelvetledger.jpg
-10. The Elderwood Waiting Room (Starhold)  ·  place_image_prompts.txt:13534  ·  starhaven_places_image/theelderwoodwaitingroom.jpg
-11. The Varathos Hall (Starhold)  ·  place_image_prompts.txt:13419  ·  starhaven_places_image/thevarathoshall.jpg
-12. Frostfang Furriers (the Coldmarch)  ·  place_image_prompts.txt:12728  ·  starhaven_places_image/frostfangfurriers.jpg
-13. The Thaw Run (the Coldmarch)  ·  place_image_prompts.txt:12750  ·  starhaven_places_image/thethawrun.jpg
+ 4. The Crater's Edge (Ashfield)  ·  place_image_prompts.txt:12322  ·  starhaven_places_image/thecratersedge.jpg
+ 5. The Gilded Ember (Ashfield)  ·  place_image_prompts.txt:12344  ·  starhaven_places_image/thegildedember.jpg
+ 6. Emberglass Atelier (Ashfield)  ·  place_image_prompts.txt:12366  ·  starhaven_places_image/emberglassatelier.jpg
+ 7. The Lantern Mile (Ashfield)  ·  place_image_prompts.txt:12432  ·  starhaven_places_image/thelanternmile.jpg
+ 8. The Salvage Auction (Ashfield)  ·  place_image_prompts.txt:12388  ·  starhaven_places_image/thesalvageauction.jpg
+ 9. The Velvet Ledger (Goldgate)  ·  place_image_prompts.txt:13005  ·  starhaven_places_image/thevelvetledger.jpg
+10. The Elderwood Waiting Room (Starhold)  ·  place_image_prompts.txt:13304  ·  starhaven_places_image/theelderwoodwaitingroom.jpg
+11. The Varathos Hall (Starhold)  ·  place_image_prompts.txt:13189  ·  starhaven_places_image/thevarathoshall.jpg
+12. Frostfang Furriers (the Coldmarch)  ·  place_image_prompts.txt:12498  ·  starhaven_places_image/frostfangfurriers.jpg
+13. The Thaw Run (the Coldmarch)  ·  place_image_prompts.txt:12520  ·  starhaven_places_image/thethawrun.jpg
 
 ## 4 · Dungeons and their beasts
 
-14. The Crater Floor (Ashfield, S-rank)  ·  place_image_prompts.txt:13058  ·  starhaven_places_image/thecraterfloor.jpg
-15. The Rimeheart Caves (the Coldmarch, A-rank)  ·  place_image_prompts.txt:13014  ·  starhaven_places_image/therimeheartcaves.jpg
-16. The Sunken Exchange (Goldgate, B-rank)  ·  place_image_prompts.txt:12970  ·  starhaven_places_image/thesunkenexchange.jpg
-17. The Unwritten Archive (Vaelmark, A-rank)  ·  place_image_prompts.txt:13080  ·  starhaven_places_image/theunwrittenarchive.jpg
-18. The Drowned Fort (Saltmere, C-rank)  ·  place_image_prompts.txt:13125  ·  starhaven_places_image/thedrownedfort.jpg
+14. The Crater Floor (Ashfield, S-rank)  ·  place_image_prompts.txt:12828  ·  starhaven_places_image/thecraterfloor.jpg
+15. The Rimeheart Caves (the Coldmarch, A-rank)  ·  place_image_prompts.txt:12784  ·  starhaven_places_image/therimeheartcaves.jpg
+16. The Sunken Exchange (Goldgate, B-rank)  ·  place_image_prompts.txt:12740  ·  starhaven_places_image/thesunkenexchange.jpg
+17. The Unwritten Archive (Vaelmark, A-rank)  ·  place_image_prompts.txt:12850  ·  starhaven_places_image/theunwrittenarchive.jpg
+18. The Drowned Fort (Saltmere, C-rank)  ·  place_image_prompts.txt:12895  ·  starhaven_places_image/thedrownedfort.jpg
 
 ## 5 · Guild life and the underworld
 
-19. The Ember Board (Ashfield)  ·  place_image_prompts.txt:12530  ·  starhaven_places_image/theemberboard.jpg
-20. The Banked Fire (the Coldmarch)  ·  place_image_prompts.txt:12486  ·  starhaven_places_image/thebankedfire.jpg
-21. The Thaw Board (the Coldmarch)  ·  place_image_prompts.txt:12464  ·  starhaven_places_image/thethawboard.jpg
-22. The Ember Pit (Ashfield)  ·  place_image_prompts.txt:13557  ·  starhaven_places_image/theemberpit.jpg
-23. The Cinderguard Barracks (Ashfield)  ·  place_image_prompts.txt:12684  ·  starhaven_places_image/thecinderguardbarracks.jpg
-24. The Back Room (Goldgate)  ·  place_image_prompts.txt:13258  ·  starhaven_places_image/thebackroom.jpg
-25. Tarrow's Cut (Bargemouth)  ·  place_image_prompts.txt:13281  ·  starhaven_places_image/tarrowscut.jpg
-26. The Lamplighters (Saltmere)  ·  place_image_prompts.txt:13304  ·  starhaven_places_image/thelamplighters.jpg
-27. The Undercroft Market (Starhold)  ·  place_image_prompts.txt:13327  ·  starhaven_places_image/theundercroftmarket.jpg
-28. The Rim Walk (Ashfield)  ·  place_image_prompts.txt:12640  ·  starhaven_places_image/therimwalk.jpg
+19. The Ember Board (Ashfield)  ·  place_image_prompts.txt:12300  ·  starhaven_places_image/theemberboard.jpg
+20. The Banked Fire (the Coldmarch)  ·  place_image_prompts.txt:12256  ·  starhaven_places_image/thebankedfire.jpg
+21. The Thaw Board (the Coldmarch)  ·  place_image_prompts.txt:12234  ·  starhaven_places_image/thethawboard.jpg
+22. The Ember Pit (Ashfield)  ·  place_image_prompts.txt:13327  ·  starhaven_places_image/theemberpit.jpg
+23. The Cinderguard Barracks (Ashfield)  ·  place_image_prompts.txt:12454  ·  starhaven_places_image/thecinderguardbarracks.jpg
+24. The Back Room (Goldgate)  ·  place_image_prompts.txt:13028  ·  starhaven_places_image/thebackroom.jpg
+25. Tarrow's Cut (Bargemouth)  ·  place_image_prompts.txt:13051  ·  starhaven_places_image/tarrowscut.jpg
+26. The Lamplighters (Saltmere)  ·  place_image_prompts.txt:13074  ·  starhaven_places_image/thelamplighters.jpg
+27. The Undercroft Market (Starhold)  ·  place_image_prompts.txt:13097  ·  starhaven_places_image/theundercroftmarket.jpg
+28. The Rim Walk (Ashfield)  ·  place_image_prompts.txt:12410  ·  starhaven_places_image/therimwalk.jpg
 
 ## 6 · Embassies, banks and arenas
 
-29. The Karath Embassy (Starhold)  ·  place_image_prompts.txt:13350  ·  starhaven_places_image/thekarathembassy.jpg
-30. The Frostspire Embassy (Starhold)  ·  place_image_prompts.txt:13511  ·  starhaven_places_image/thefrostspireembassy.jpg
-31. The Harbour Bank (Saltmere)  ·  place_image_prompts.txt:12838  ·  starhaven_places_image/theharbourbank.jpg
-32. The Iron Ring (Forgehaven)  ·  place_image_prompts.txt:13580  ·  starhaven_places_image/theironring.jpg
+29. The Karath Embassy (Starhold)  ·  place_image_prompts.txt:13120  ·  starhaven_places_image/thekarathembassy.jpg
+30. The Frostspire Embassy (Starhold)  ·  place_image_prompts.txt:13281  ·  starhaven_places_image/thefrostspireembassy.jpg
+31. The Harbour Bank (Saltmere)  ·  place_image_prompts.txt:12608  ·  starhaven_places_image/theharbourbank.jpg
+32. The Iron Ring (Forgehaven)  ·  place_image_prompts.txt:13350  ·  starhaven_places_image/theironring.jpg
 
 ## 7 · More dungeons and beasts
 
-33. The Glasswarrens (Ashfield, A-rank)  ·  place_image_prompts.txt:13036  ·  starhaven_places_image/theglasswarrens.jpg
-34. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:13147  ·  starhaven_places_image/thestormhalls.jpg
-35. The Mistwell (Veilhold Keep, B-rank)  ·  place_image_prompts.txt:13169  ·  starhaven_places_image/themistwell.jpg
+33. The Glasswarrens (Ashfield, A-rank)  ·  place_image_prompts.txt:12806  ·  starhaven_places_image/theglasswarrens.jpg
+34. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:12917  ·  starhaven_places_image/thestormhalls.jpg
+35. The Mistwell (Veilhold Keep, B-rank)  ·  place_image_prompts.txt:12939  ·  starhaven_places_image/themistwell.jpg
 
 ## 8 · Village charm
 
-36. The Rainbow Weir (Dyers' Reach)  ·  place_image_prompts.txt:14247  ·  starhaven_places_image/therainbowweir.jpg
-37. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:14638  ·  starhaven_places_image/theclockworksquare.jpg
-38. The Thousand-Candle Hall (Candlewick)  ·  place_image_prompts.txt:14682  ·  starhaven_places_image/thethousandcandlehall.jpg
-39. The Glow Path (Emberfly Hollow)  ·  place_image_prompts.txt:14728  ·  starhaven_places_image/theglowpath.jpg
-40. Firing Night (Kilnbury)  ·  place_image_prompts.txt:14339  ·  starhaven_places_image/firingnight.jpg
-41. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:15002  ·  starhaven_places_image/themidwinterdip.jpg
+36. The Rainbow Weir (Dyers' Reach)  ·  place_image_prompts.txt:14017  ·  starhaven_places_image/therainbowweir.jpg
+37. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:14408  ·  starhaven_places_image/theclockworksquare.jpg
+38. The Thousand-Candle Hall (Candlewick)  ·  place_image_prompts.txt:14452  ·  starhaven_places_image/thethousandcandlehall.jpg
+39. The Glow Path (Emberfly Hollow)  ·  place_image_prompts.txt:14498  ·  starhaven_places_image/theglowpath.jpg
+40. Firing Night (Kilnbury)  ·  place_image_prompts.txt:14109  ·  starhaven_places_image/firingnight.jpg
+41. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:14772  ·  starhaven_places_image/themidwinterdip.jpg
 
 Total: 41
