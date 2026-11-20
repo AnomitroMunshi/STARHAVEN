@@ -5,6 +5,6 @@ Still to generate: 0
 
 HOW TO USE
 - Size: 1536 x 1024, landscape 3:2.
-- Save each image as JPG into  starhaven_bestiary/  with the exact file name after "Save as".
+- Save each image as PNG into  starhaven_bestiary/  with the exact file name after "Save as".
   The wiki's Compendium > Bestiary tab already points at these files.
 

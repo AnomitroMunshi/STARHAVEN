@@ -4,17 +4,17 @@ STARHAVEN — STORY SCENE IMAGE PROMPTS (for Grok image generation)
 Still to generate: 2
 
 HOW TO USE
-- Save each image as JPG into  starhaven_scenes_image/  with the exact file name after "Save as".
+- Save each image as PNG into  starhaven_scenes_image/  with the exact file name after "Save as".
 - These images appear at the top of their chronicle when it is opened.
 
 === Kael and Petra’s Wedding (light-plate) ===
-Save as: starhaven_scenes_image/kaelpetrawedding.jpg
+Save as: starhaven_scenes_image/kaelpetrawedding.png
 What it is: the wedding of Kael Varric and Petra Allus at Lumenfield, Year 1052, caught on a light-plate at the moment everyone burst out laughing because their son sneezed
 PROMPT:
 STYLE: an antique fantasy light-plate photograph — like a real 19th-century wet-plate photograph on silvered glass: warm sepia-and-silver monochrome, a very faint blue arcane glow at the edges of the plate, soft vignetting, fine scratches and slight blur where people moved, shallow natural focus, a real candid moment, not posed. Landscape 3:2, 1536x1024. No text, no watermark, no border, no logo. SCENE: under a big old ribbon tree hung with ribbons and a long wire strung with small bells over the path. Centre: KAEL VARRIC — a very broad, heavily built man of about 38, short dark-grey hair, short grey beard, hard square jaw, stone-grey eyes — NOT in armour: a plain dark borrowed coat slightly too tight on his shoulders; he is laughing out loud with his eyes closed, the only time anyone has seen him laugh. Beside him, PETRA ALLUS — a lean, weathered woman of about 40, blue-black hair pinned up with a few loose strands, pale grey-blue eyes, freckles, a small nose ring, a sword-and-star tattoo on her upper arm — in a simple dark blue dress-coat, head thrown back laughing, her body half turned towards the gate as if checking it. In front of them their son TARIN, a boy of four with messy black hair and grey eyes, caught mid-sneeze, holding a small carved wooden shield with two rings on it. Behind them, two rows of soldiers of the Shields of Lumenfield holding their shields up as an arch, laughing; guests of many races (humans, dwarves, elves, an orc, beastfolk) sitting and standing on the grass, all laughing; KING RAYDEN CALE, a young dark-haired man in a plain coat, sitting on the grass among them. A rough wooden settlement and a watchtower in the background. Joyful, warm, intimate.
 
 === Rudra Replants the Gada (light-plate) ===
-Save as: starhaven_scenes_image/gadaplate.jpg
+Save as: starhaven_scenes_image/gadaplate.png
 What it is: Rudra Vanar driving his Gada back into the earth before the gates of Starhold after the war of the Thunder Steps, Year 1054
 PROMPT:
 STYLE: an antique fantasy light-plate photograph — like a real 19th-century wet-plate photograph on silvered glass: warm sepia-and-silver monochrome, a very faint blue arcane glow at the edges, soft vignetting, fine scratches, slight motion blur on the swinging weapon. Landscape 3:2, 1536x1024. No text, no watermark, no border, no logo. SCENE: before the great stone gates of Starhold, RUDRA VANAR — an enormous, ancient ape-kin chieftain (Titan-descended, silver-grey fur, heavy brow, deep wise eyes, furs and carved wooden and bone ornaments) — driving a huge ancient iron Gada (a heavy mace with a round head) down into a patch of split earth with both hands. Beside him stands KING RAYDEN CALE, a young dark-haired man in a plain travel-stained coat. Behind them, crowds of Starhold people of many races lining the street in total silence, children on shoulders, soldiers with bowed heads. Solemn, historic, unforgettable.
