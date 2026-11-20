@@ -6,6 +6,8 @@ Each line: what it is · which prompt file and line · the file name to save as.
 Already-generated images are left out automatically; re-run the list after a batch.
 
 
+## 1 · The people everyone meets
+
 
 ## 2 · The places that headline each city
 
