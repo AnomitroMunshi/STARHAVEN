@@ -9017,7 +9017,7 @@ Crowd note: avoid rows of identical hooded robes or cloaks standing still and fa
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
-## THE SAFFRON TERRACES  (6)
+## THE SAFFRON TERRACES  (1)
 ########################################################################
 
 === The Saffron Terraces ===
@@ -9042,6 +9042,10 @@ People: spice growers and pickers of many races, many of them Karath-born in bri
 Who lives here (Compendium → Peoples → Who lives where, “Farm villages”): mostly Humans and halflings; also Dwarves, elves, orcs, beastkin farmhands. The breadbasket (Ironmane, Rootholm, Amberfield and the rest): farmers, carters, market women in sturdy country clothes. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+########################################################################
+## SALTMERE  (12)
+########################################################################
 
 === The Harbour Bank ===
 Save as: starhaven_places_image/theharbourbank.png
