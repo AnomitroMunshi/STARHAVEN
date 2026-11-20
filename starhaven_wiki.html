@@ -772,7 +772,7 @@ a.lore-card:hover{transform:translateY(-2px)}
 </div>
 
 <!-- ══ IMAGE MODAL ══ -->
-<div id="img-modal" class="img-modal" onclick="if(event.target===this)closeImgModal()">
+<div id="img-modal" class="img-modal" onclick="if(event.target.id!=='img-modal-img'&&!this._dragged)closeImgModal();this._dragged=false">
   <div class="img-modal-content">
     <button class="img-modal-close" onclick="closeImgModal()">✕</button>
     <img id="img-modal-img" src="" alt="">
@@ -22922,7 +22922,7 @@ function openCharModal(id) {
         <div style="display:flex;flex-wrap:wrap;gap:5px">${c.weapons.map(w => {
           const img = WEAPON_IMAGES[w];
           return img
-            ? `<span class="rel-tag" style="border-color:${c.color}77;cursor:pointer;padding-right:10px" onclick="openImgModal('${img}','${w.replace(/'/g,"\'")}','')" title="View ${w}">
+            ? `<span class="rel-tag" style="border-color:${c.color}77;cursor:pointer;padding-right:10px" onclick="openImgModal('${img}','${w.replace(/'/g,"\\'")}','')" title="View ${w}">
                 🗡 ${w}
                </span>`
             : `<span class="rel-tag" style="border-color:${c.color}55">${w}</span>`;
@@ -23395,7 +23395,7 @@ function atlasRender(filter, btn) {
 // Notable places: one card per place, image from starhaven_places_image/<slug>.jpg
 function placeSlug(name) { return name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ''); }
 // Place images are .jpg, except these finished ones saved as .png
-const PLACE_PNG = new Set(["blackwallridge", "duskwallhiddenbastion", "frostholdbastion", "ironpasscitadel", "thelongstair", "thenullwing", "thesaltreachcauseway", "thewardspan", "veilholdkeep", "veynehold"]);
+const PLACE_PNG = new Set(["blackwallridge", "blackwallridgefortress", "duskwallhiddenbastion", "frostholdbastion", "ironpasscitadel", "thecorridormemorial", "thelongstair", "thenortherntollgate", "thenullwing", "thequestionrooms", "thesaltreachcauseway", "thewardspan", "theyardofsky", "veilholdkeep", "veynehold"]);
 function placeImg(name) { const s = placeSlug(name); return 'starhaven_places_image/' + s + (PLACE_PNG.has(s) ? '.png' : '.jpg'); }
 // "Random place" — wander the Atlas: pick any notable place, filter to it and highlight its card
 function atlasRandom() {
@@ -23428,7 +23428,7 @@ function placeCard(p) {
   const kc = p.keeper ? CHARACTERS.find(c => c.name === p.keeper) : null;
   const keeper = p.keeper ? `<p class="place-keeper">Keeper: ${kc ? `<span onclick="openCharModal('${kc.id}')">${p.keeper}</span>` : p.keeper}</p>` : '';
   return `<div class="place-card">
-    <img class="place-img" src="${img}" alt="${p.name}" loading="lazy" onclick="openImgModal('${img}','${cap}')"
+    <img class="place-img" src="${img}" alt="${p.name}" data-cap="${cap.replace(/"/g, '&quot;')}" loading="lazy" onclick="openImgModal(this.src,this.dataset.cap)"
          onerror="this.outerHTML='<div class=&quot;place-noimg&quot;>🏛️</div>'">
     <div class="place-body">
       <p class="place-name">${p.name}</p>
@@ -23551,7 +23551,7 @@ function locCard(loc) {
     <div class="loc-card${isCapital?' is-capital':''}">
       <div class="loc-strip strip-${loc.type}"></div>
       <img class="loc-img" src="${placeImg(loc.name)}" alt="${loc.name}" loading="lazy"
-           onclick="openImgModal(this.src,'${loc.name.replace(/'/g,'&#39;')}')" onerror="this.remove()">
+           onclick="openImgModal(this.src,this.alt)" onerror="this.remove()">
       <div class="loc-body">
         <div class="loc-top">
           <h3 class="loc-name">${loc.name}</h3>
@@ -24821,7 +24821,7 @@ function wMounts() {
     const name = typeof b === 'string' ? b.split(/ — |,/)[0] : b.name;
     const desc = typeof b === 'string' ? b : (b.desc || '');
     const img = MOUNT_IMG[norm(name)] || MOUNT_IMG[norm(typeof b === 'string' ? b : b.name)];
-    return `<div class="place-card">${img ? `<img class="place-img" src="${img}" alt="${compEsc(name)}" loading="lazy" onclick="openImgModal('${img}','${compEsc(name).replace(/'/g, '&#39;')}')" onerror="this.outerHTML='<div class=&quot;place-noimg&quot;>${kind === 'Pet' ? '🐾' : '🐴'}</div>'">` : `<div class="place-noimg">${kind === 'Pet' ? '🐾' : '🐴'}</div>`}
+    return `<div class="place-card">${img ? `<img class="place-img" src="${img}" alt="${compEsc(name)}" loading="lazy" data-cap="${compEsc(name)}" onclick="openImgModal(this.src,this.dataset.cap)" onerror="this.outerHTML='<div class=&quot;place-noimg&quot;>${kind === 'Pet' ? '🐾' : '🐴'}</div>'">` : `<div class="place-noimg">${kind === 'Pet' ? '🐾' : '🐴'}</div>`}
       <div class="place-body"><p class="place-name">${compEsc(name)}</p><p class="place-meta">${kind} of ${wCharLink(c.name)}</p>${placeDescHtml({ desc: compEsc(desc) })}</div></div>`;
   };
   const isShip = b => /ship|flagship|warship|vessel/i.test(typeof b === 'string' ? b : (b.name + ' ' + (b.desc || '')));
@@ -24936,7 +24936,7 @@ function openImgModal(src, caption) {
   function upd(){img.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;}
   img.onmousedown=e=>{e.preventDefault();dragging=true;img.classList.add('grabbing');ox=e.clientX;oy=e.clientY;ix=tx;iy=ty;};
   window.onmousemove=e=>{if(!dragging)return;tx=ix+(e.clientX-ox);ty=iy+(e.clientY-oy);upd();};
-  window.onmouseup=()=>{if(dragging){dragging=false;img.classList.remove('grabbing');}};
+  window.onmouseup=e=>{if(dragging){dragging=false;img.classList.remove('grabbing');modal._dragged=Math.abs(e.clientX-ox)+Math.abs(e.clientY-oy)>3;}};
   img.onclick=e=>{if(Math.abs(tx-ix)<3&&Math.abs(ty-iy)<3){scale=scale===1?2.2:1;tx=0;ty=0;upd();img.classList.toggle('zoomed',scale>1);}};
 }
 function closeImgModal() {
