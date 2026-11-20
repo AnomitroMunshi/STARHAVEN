@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 67   (finished so far: 372)
+Still to generate: 59   (finished so far: 380)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,11 +13,8 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## MOUNTS & BEASTS — UNIT WIKI CARDS  (38)
+## NEW CHARACTER CARDS  (8)
 ########################################################################
-
-MOUNT NOTES: these go in  unitImages/  (not the portrait folder), as .png, 1086 x 1448 (3:4) like the other unit images.
-The unit wiki already points at these exact file names, so each picture appears there as soon as the file exists.
 
 === Ironmane Charger ===
 Save as: unitImages/ironmane-charger.jpg
@@ -351,52 +348,3 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 Save as: unitImages/goldstorm.jpg
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Goldstorm — The horse Marcus Ironmane quietly set aside for Dresh (Ch7) — golden coat, young and spirited. Setting: Ironmane Fields. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Hulda Brickhand ===
-Save as: starhaven_chars_image/huldabrickhand.jpg
-Group: New Cards   Race: Dwarf   Age: Old (dwarf)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Hulda Brickhand, Master Mason · Builder of the Great Drain · Keeper of the Standard Brick. Look: a short, very broad old dwarf woman with weathered tanned skin, long grey braids tied back under a mason’s scarf, thick forearms, a square jaw and sharp, stubborn grey eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Short, broad and stubborn, with grey braids tied back in a mason’s scarf and forearms like bridge cables. Still checks the Hall of Standards measures herself once a year, and still finds something to complain about. Weapons and gear: a leather mason’s apron over a heavy wool dress, a brass mason’s level with faintly glowing runes on her belt, one hand resting on a single clay brick stamped with a small star. Setting: the mouth of the great brick drain beneath Starhold, a vaulted tunnel of identical bricks lit by lanterns and a softly glowing rune plate.
-
-=== Marta Greaves ===
-Save as: starhaven_chars_image/martagreaves.jpg
-Group: New Cards   Race: Human   Age: 48
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Marta Greaves, Warden of the Streets · Office of Streets & Waters · Starhold city council. Look: a tall, lean Human woman of 48 with weathered pale skin, short practical dark-brown hair going grey, a long plain face and steady, tired, amused hazel eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Tall, plain-spoken, grey coat with the star-and-broom badge. Starts work at three in the morning and has done for twenty-five years. Throws back the first flower every Rakers’ Day. Weapons and gear: a long grey work coat with a small star-and-broom badge, heavy boots, sleeves rolled up, a long-handled broom over one shoulder like a spear, its bristles faintly glinting with a charm. Setting: a Starhold street just before dawn, wet cobbles, rakers with handcarts behind her, the city’s lamps still lit.
-
-=== Taneo Reefcrown ===
-Save as: starhaven_chars_image/taneoreefcrown.jpg
-Group: New Cards   Race: Reefborn   Age: 34
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Taneo Reefcrown, King of the Reef Thrones of the Coral Archipelago. A man, age 34, race: Reefborn (a sea-people). Look: tall and lean, sea-browned skin marked with soft blue-green patterns like light on the bottom of a pool, thin gill slits along the sides of his neck, long dark hair tied back with strings of small shells, a long healed scar across one shoulder, tired but warm dark eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: a young king who held his people together for two years and nearly gave up hope; quiet dignity, relief. Weapons and gear: bare-chested under a light sleeveless wrap of sea-green cloth, a simple crown of red and white coral, a long trident of black coral and bronze in one hand, wet skin. Setting: standing waist-deep in a clear blue-green lagoon in front of a city grown from glowing living coral, colourful reef visible under the water.
-
-=== Odile Fenn ===
-Save as: starhaven_chars_image/odilefenn.jpg
-Group: New Cards   Race: Human   Age: 41
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Odile Fenn, Light-Catcher · Fenn’s Light-Plate Studio, Goldgate · War light-plates of the Thunder Steps. Look: a small, quick Human woman of 41 with olive skin, a sharp friendly face, dark curly hair pinned up messily with a pencil through it, ink-stained fingers and bright, watchful brown eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Small, quick, ink-stained fingers, a silk scarf always round her neck to wrap plates in an emergency. Laughs easily. Moves the plates of parties who don’t come back to the quiet wall, and lights a lamp under them. Weapons and gear: a practical dark-green work dress with rolled sleeves, a black silk scarf round her neck, standing beside a brass-and-walnut light-catching box on a wooden tripod, its crystal lens glowing very faintly, glass plates in a satchel. Setting: her studio in Goldgate, its walls covered in sepia light-plate pictures of adventuring parties, warm lamplight. Magic is real and everyday in this world; let it show subtly where it fits.
-
-=== Teodor Brisk ===
-Save as: starhaven_chars_image/teodorbrisk.jpg
-Group: New Cards   Race: Half-Elf   Age: 96 (half-elf)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Teodor Brisk, Court Painter · Keeper of the Royal Gallery, Starhold. Look: a tall, thin half-elf who looks about sixty, with long silver hair tied back, slightly pointed ears, a long gentle lined face, a neat silver beard and soft grey eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Tall, thin and slow-moving, with long silver hair tied back, paint on his cuffs and gentle grey eyes. Hums while he works. Has framed exactly one note in his life. Weapons and gear: a paint-stained long smock over a dark waistcoat, a fine sable brush in one hand and a palette in the other, faintly glowing paint on the palette. Setting: a tall gallery hall in Starhold with large framed portraits in the background, a big canvas on an easel showing an empty chair by a window at night. Magic is real and everyday in this world; let it show subtly where it fits.
-
-=== Gorran Mellow ===
-Save as: starhaven_chars_image/gorranmellow.jpg
-Group: New Cards   Race: Orc   Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Gorran Mellow, Voice of the evening broadcast · The Speaking Hall, Starhold. Look: a broad, heavy-set orc man of 52 with grey-green skin, small worn tusks, a shaved head, a kind, crinkled face and warm amber eyes behind small round reading glasses. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Broad, grey-green, small tusks, reading glasses, a voice like warm gravel rolling downhill. Former Ashen ferryman. Keeps a pot of soup on in the Speaking Hall for the relay crews. Weapons and gear: a comfortable dark wool waistcoat over a white shirt with rolled sleeves, a sheaf of news papers in one big hand. Setting: the round, felt-lined broadcast room of the Speaking Hall, leaning towards a tall softly glowing crystal on a brass stand, a red rune lit above the door. Magic is real and everyday in this world; let it show subtly where it fits.
-
-=== Ashk Fernhand ===
-Save as: starhaven_chars_image/ashkfernhand.jpg
-Group: New Cards   Race: Wood Elf   Age: 212 (wood elf)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ashk Fernhand, Master Carver · The Carvers’ Glade, Greenveil · Carver of the memorial names. Look: a lean, weathered wood-elf woman who looks about fifty, with brown skin, long pointed ears, dark brown hair in thick braids full of sawdust and small wooden beads, and calm green eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Lean and weathered, with sawdust in her braids and wood-stained hands. Speaks slowly. Has carved more toy wolves than anyone alive and claims to have enjoyed every one. Weapons and gear: a leather carving apron over green and brown linen, a black carving knife in one hand and a half-finished carved wolf in the other. Setting: an open-air workshop under enormous mossy trees in Greenveil, shavings on the ground, carved doors and memorial boards leaning against the trunks. Magic is real and everyday in this world; let it show subtly where it fits.
-
-=== Pell Asker ===
-Save as: starhaven_chars_image/pellasker.jpg
-Group: New Cards   Race: Half-Orc   Age: 24
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Pell Asker, Relay Operator · Projection Crystal Network · The Speaking Hall, Starhold. Look: a wiry, quick half-orc woman of 24 with grey-green freckled skin, small tusks, short-cropped dark hair under a knitted wool cap, a small scar on her chin and bright, fearless green eyes. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes: Wiry and quick, grey-green freckled skin, small tusks, short-cropped dark hair under a knitted cap, a scar on her chin from a tower ladder. Talks to the crystals while she works. Still gets the first bowl of Gorran’s soup. Weapons and gear: an oilskin coat soaked with rain, a leather climbing harness with iron hooks, a softly glowing relay crystal on a cord round her neck, a pouch of crystal fittings at her belt. Setting: the top of a tall iron-and-stone relay tower above Starhold at night in a storm, rain blowing sideways, a great crystal glowing back to life beside her, city lights far below. Magic is real and everyday in this world; let it show subtly where it fits.
-
