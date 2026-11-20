@@ -65,8 +65,8 @@
 | Dawncliff Shore Watch | Garrison Infantry · Cliff Patrol | Infantry | Dawncliff Garrison |  |
 | Sea Cannon Crew | Garrison Artillery · Sea-Facing Emplacements | Artillery | Dawncliff Garrison |  |
 | Harbour Chain Guard | Garrison Infantry · Harbour Control | Infantry | Dawncliff Garrison |  |
-| Ashen Shields | Defensive Mercenary Infantry · Civilian Extraction (Sancthaven Garrison) | Infantry | Seraphine Mire Standing Retainer — Petra Allus (Founder/Supreme) | Cova Drell |
-| Petra's Ashen Vanguard | Defensive Mercenary Infantry · Personal Field Detachment | Infantry | Ashen Shields — Petra Allus (Personal Command) |  |
+| The Shields of Lumenfield | Defensive Mercenary Infantry · Civilian Extraction (Sancthaven Garrison) | Infantry | Seraphine Mire Standing Retainer — Petra Allus (Founder/Supreme) | Cova Drell |
+| Petra's Ashen Vanguard | Defensive Mercenary Infantry · Personal Field Detachment | Infantry | The Shields of Lumenfield — Petra Allus (Personal Command) |  |
 | The Skyspear Valkyries | Elite Mercenary Spear-Shield Infantry · Female Only ♀ | Infantry | Warqueen Lola Skyward |  |
 | Marika Goldspear | Known Name · The Skyspear Valkyries | Infantry | Warqueen Lola Skyward |  |
 | Woodborn Guardians | Frontline Infantry · Primal Vanguard | Infantry | Thorin Blackroot |  |

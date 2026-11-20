@@ -14,7 +14,7 @@
 - Years 1050 onward — Bridge era. Chronicles can show how the events and institutions of the wiki era came about.
 - At least ten years after Chapter 9 (Year 1059 or later) — Wiki/Codex present, including the character and unit registries. Individual entries can retain earlier dates for the events they record. The exact reference year is open.
 
-**The primary supernatural threat** is the Void / Corruption. Malgrath is the Void's presiding force — perceivable only by Elysia Nocturne. Void entities are catalogued by Zareth Kull's Void Breakers. The Ashenveil region is its primary domain.
+**The primary supernatural threat** is the Void / Corruption. Malgrath is the Void's presiding force — perceivable only by Elysia Nocturne. Void entities are catalogued by Zareth Kull's Void Breakers. The Lumenfield region is its primary domain.
 
 ---
 
@@ -136,7 +136,7 @@ Character portraits are AI-generated. Reference descriptions live in `more_charc
 - Ironpass Citadel — eastern border, 3 concentric rings, 60,000+ garrison. Never breached. Commanded by Brek Stonefall.
 - Frosthold Bastion — northern mountains. Brynhild Voss commands.
 - Dawncliff Sea Fortress — 300ft coastal cliff, 8 battery emplacements. Ela Seawall commands.
-- Ashenveil HQ — Void research region. Zareth Kull's domain.
+- Lumenfield HQ — Void research region. Zareth Kull's domain.
 
 **Infrastructure:** Rift Gate network (4 in Starhold, 3 in Vaelmark, 2 each in Goldgate and others). Railway system built by Cyrus Vexley.
 
@@ -144,7 +144,7 @@ Character portraits are AI-generated. Reference descriptions live in `more_charc
 - **Thalassian League** — naval ally. Admiral-King Crest Vane (59yo). Seren Vane (Admiral-Consort). Embassy in Saltmere.
 - **Varathos** — Giant Nation. Elder Kira (200+, 12ft), Elder Dravan. First giant-human alliance in 4,000 years. The lantern moment at Karath Dun — Kira held light 40ft above stone for trapped prisoners.
 
-**The Void:** Supernatural corruption threat. Ashenveil region. Malgrath is the Void's presiding force. Void entities are taxonomized by Zareth Kull. Anti-corruption treatment exists for armor.
+**The Void:** Supernatural corruption threat. Lumenfield region. Malgrath is the Void's presiding force. Void entities are taxonomized by Zareth Kull. Anti-corruption treatment exists for armor.
 
 ---
 
@@ -169,7 +169,7 @@ Dawnguard · Ironwall · Silent Wardens · Ninth Sky Corps · Ashen Guard · Nul
 
 ### Specialized Units
 - Arcane Artillery Corps (Arch-Battlemage Kai) — synchronized elemental bombardment, opens every major engagement
-- Void Breakers (Zareth Kull) — Void entity hunters, Ashenveil operations
+- Void Breakers (Zareth Kull) — Void entity hunters, Lumenfield operations
 - Ironbolt Division — heavy ranged/ballista
 - Holy Knights of Starhaven (Brynhild Voss) — consecrated heavy knights
 - Crownwardens — palace/capital guard

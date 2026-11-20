@@ -93,7 +93,7 @@ Chapter 9 — What the Mountains Sent
 - **Ironpass Citadel** — Three concentric rings. 60,000+ garrison. Eastern border. *No successful incursion to the second ring since Year 1041.*
 - **Frosthold Bastion** — Northern mountains. Commander: Brynhild Voss.
 - **Dawncliff Sea Fortress** — 300ft sea cliff face. 8 battery emplacements. *"Fire for effect, not for warning."*
-- **Ashenveil HQ** — Void research territory. The edge of what Starhaven can hold.
+- **Lumenfield HQ** — Void research territory. The edge of what Starhaven can hold.
 
 ### Allied Nations
 
@@ -106,7 +106,7 @@ Chapter 9 — What the Mountains Sent
 
 The Void is not a faction. It does not negotiate.
 
-It spreads through environments, corrupts matter, and operates through entities taxonomized by **Zareth Kull's Void Breakers** at Ashenveil HQ. The entity at its center — **Malgrath** — cannot be perceived by conventional means. Only **Elysia Nocturne** can see it directly, and she has never explained what she sees when she does.
+It spreads through environments, corrupts matter, and operates through entities taxonomized by **Zareth Kull's Void Breakers** at Lumenfield HQ. The entity at its center — **Malgrath** — cannot be perceived by conventional means. Only **Elysia Nocturne** can see it directly, and she has never explained what she sees when she does.
 
 Anti-corruption treatment exists for armor. It is not enough.
 

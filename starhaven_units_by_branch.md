@@ -301,7 +301,7 @@
 
 ### Infantry
 
-- **Ashen Shields** — 1,875 — Commander: Seraphine Mire Standing Retainer · Cova Drell
+- **The Shields of Lumenfield** — 1,875 — Commander: Seraphine Mire Standing Retainer · Cova Drell
 - **The Skyspear Valkyries** — 900 — Commander: Warqueen Lola Skyward
 - **Barek Kade** — 1 — Commander: Shock Infantry Embedded
 - **Talon & Hex** — 2 — Commander: Duo Contract

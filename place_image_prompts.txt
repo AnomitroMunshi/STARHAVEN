@@ -14,13 +14,13 @@ HOW TO USE
 === Mike's Forge ===
 Save as: starhaven_places_image/mikesforge.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashenveil HQ   Kind: Blacksmith
+Group: Lumenfield HQ   Kind: Blacksmith
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Mike's Forge — blacksmith, in the fortress Ashenveil HQ (Southern Ashenveil Territory).
-What it is: The Ashenveil forge that stayed when the city was evacuated — now repurposed for the militia's weapons.
-Wider setting — Ashenveil HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil.
+Subject: Mike's Forge — blacksmith, in the fortress Lumenfield HQ (Southern Lumenfield Territory).
+What it is: The Lumenfield forge that stayed when the city was evacuated — now repurposed for the militia's weapons.
+Wider setting — Lumenfield HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield.
 Composition: An interior view of the smithy, the forge fire at its heart.
 Camera angle: a low angle at a child's eye height, looking up at the people at work. (Similar places use different angles — keep to this one.)
 Details to include: exactly what the description says — the smith mid-strike at the anvil with sparks flying, an apprentice at the bellows, tools racked on the walls, finished pieces hanging, a customer waiting at the door, a rune flaring faintly on the metal as the hammer falls. Show the people up close enough to read what they are doing, but still as natural candid figures, not portraits.
@@ -30,20 +30,20 @@ Lighting and time of day: forge glow and daylight from the open door.
 Mood: industrious, practical, the sound of work.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === Petra's Memorial Wall ===
 Save as: starhaven_places_image/petrasmemorialwall.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashenveil HQ   Kind: Memorial
+Group: Lumenfield HQ   Kind: Memorial
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Petra's Memorial Wall — memorial, in the fortress Ashenveil HQ (Southern Ashenveil Territory).
-What it is: The wall of twenty-three names Petra Allus keeps in Ashenveil's western district. No names have been added since the exposure rotation protocol.
-Wider setting — Ashenveil HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil.
+Subject: Petra's Memorial Wall — memorial, in the fortress Lumenfield HQ (Southern Lumenfield Territory).
+What it is: The wall of twenty-three names Petra Allus keeps in Lumenfield's western district. No names have been added since the exposure rotation protocol.
+Wider setting — Lumenfield HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield.
 Composition: A wide establishing view with the landmark as the clear focal point, framed by its surroundings and the sky.
 Camera angle: a low angle from the ground, looking up at the building. (Similar places use different angles — keep to this one.)
 Details to include: paths, lawns or paving leading to it, stone carvings, weathering and age where fitting, small visitors for scale.
@@ -53,20 +53,20 @@ Lighting and time of day: a light drizzle, damp air, people with hoods up.
 Mood: memorable, iconic.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === The Quiet Mess ===
 Save as: starhaven_places_image/thequietmess.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashenveil HQ   Kind: Garrison mess hall
+Group: Lumenfield HQ   Kind: Garrison mess hall
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Quiet Mess — garrison mess hall, in the fortress Ashenveil HQ (Southern Ashenveil Territory).
+Subject: The Quiet Mess — garrison mess hall, in the fortress Lumenfield HQ (Southern Lumenfield Territory).
 What it is: The Veil Watch's mess. Nobody talks shop at meals; it is the one rule Elysia enforces personally.
-Wider setting — Ashenveil HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil.
+Wider setting — Lumenfield HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield.
 Composition: An establishing exterior view of the building on its street or setting, with a glimpse through big lit windows or an open door into the warm interior.
 Camera angle: seen from the doorway, looking into the room, the door frame just visible at the edges. (Similar places use different angles — keep to this one.)
 Details to include: a hanging painted sign with a picture only (no words), timber beams, smoke from the chimney, benches outside, tankards or cups on tables, a cat on a step, lantern brackets. Little moments of life among the crowd: an apprentice dropping a stack of parcels; an old woman feeding birds from a bench.
@@ -76,20 +76,20 @@ Lighting and time of day: evening, warm firelight and lamplight.
 Mood: warm, welcoming, a place people come back to.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === The Stabilization Core ===
 Save as: starhaven_places_image/thestabilizationcore.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashenveil HQ   Kind: Fortress core
+Group: Lumenfield HQ   Kind: Fortress core
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Stabilization Core — fortress core, in the fortress Ashenveil HQ (Southern Ashenveil Territory).
+Subject: The Stabilization Core — fortress core, in the fortress Lumenfield HQ (Southern Lumenfield Territory).
 What it is: The heart of the fortress that keeps it dimensionally stable — built to the same specification as Veil Watch armour.
-Wider setting — Ashenveil HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil.
+Wider setting — Lumenfield HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield.
 Composition: A low, heroic three-quarter angle on the fortifications so they tower over the frame, the surrounding terrain visible on either side.
 Camera angle: from down a narrow side lane, the building framed by the walls on either side. (Similar places use different angles — keep to this one.)
 Details to include: thick walls with arrow slits, battlements, banners and pennants without lettering, sentries as small figures, braziers, stacked supplies, gates and portcullis.
@@ -99,20 +99,20 @@ Lighting and time of day: blue-hour dusk, the first lanterns being lit.
 Mood: grim, strong, watchful.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === The Three-Kilometre Line ===
 Save as: starhaven_places_image/thethreekilometreline.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashenveil HQ   Kind: Perimeter markers
+Group: Lumenfield HQ   Kind: Perimeter markers
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Three-Kilometre Line — perimeter markers, in the fortress Ashenveil HQ (Southern Ashenveil Territory).
+Subject: The Three-Kilometre Line — perimeter markers, in the fortress Lumenfield HQ (Southern Lumenfield Territory).
 What it is: Marker stones three kilometres out — where every other force holds the line during an S+ event. The order has never needed to be given.
-Wider setting — Ashenveil HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil.
+Wider setting — Lumenfield HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield.
 Composition: A wide establishing view with the landmark as the clear focal point, framed by its surroundings and the sky.
 Camera angle: from street level across the road, people passing in the foreground. (Similar places use different angles — keep to this one.)
 Details to include: paths, lawns or paving leading to it, stone carvings, weathering and age where fitting, small visitors for scale. Little moments of life among the crowd: a couple sharing a pie on a doorstep; a cat stalking pigeons.
@@ -122,20 +122,20 @@ Lighting and time of day: a sunny midday with drifting clouds and moving patches
 Mood: memorable, iconic.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === The Void-Ward Infirmary ===
 Save as: starhaven_places_image/thevoidwardinfirmary.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashenveil HQ   Kind: Infirmary
+Group: Lumenfield HQ   Kind: Infirmary
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Void-Ward Infirmary — infirmary, in the fortress Ashenveil HQ (Southern Ashenveil Territory).
+Subject: The Void-Ward Infirmary — infirmary, in the fortress Lumenfield HQ (Southern Lumenfield Territory).
 What it is: Treats void-touch and breach wounds under purification lamps, beside the Stabilization Core.
-Wider setting — Ashenveil HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil.
+Wider setting — Lumenfield HQ: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield.
 Composition: An interior view at eye level of the busy main room, people in the middle of what they do here, with depth through doorways, arches or windows.
 Camera angle: a low angle at a child's eye height, looking up at the people at work. (Similar places use different angles — keep to this one.)
 Details to include: inside the ward — rows of cots with patients, healers in aprons treating a bandaged adventurer, an apprentice grinding herbs, a mother with a child waiting, glass jars of remedies, clean linen, copper basins, soft daylight from tall windows.
@@ -145,20 +145,20 @@ Lighting and time of day: early morning, low golden sun and long shadows, mist l
 Mood: calm, caring, quietly busy.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Inside, people go about it in relaxed, natural groups — talking, working, laughing, absorbed in what they are doing — seen at a modest scale, never posed for the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
-=== Ashenveil HQ ===
-Save as: starhaven_places_image/ashenveilhq.jpg
+=== Lumenfield HQ ===
+Save as: starhaven_places_image/lumenfieldhq.jpg
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Atlas — Ashenveil HQ   Kind: Fortress
+Group: Atlas — Lumenfield HQ   Kind: Fortress
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Ashenveil HQ — fortress (Southern Ashenveil Territory).
-What it is: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Ashenveil. The fortress itself is dimensional-stabilization-rated — built to the same specs as Veil Watch armor.
-More about it: Ashenveil HQ appears on no public map. It appears on Rhegar Thorne's tactical maps with a single notation: HOLD LINE AT 3KM.
+Subject: Lumenfield HQ — fortress (Southern Lumenfield Territory).
+What it is: The Veil Watch's command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield. The fortress itself is dimensional-stabilization-rated — built to the same specs as Veil Watch armor.
+More about it: Lumenfield HQ appears on no public map. It appears on Rhegar Thorne's tactical maps with a single notation: HOLD LINE AT 3KM.
 Composition: A low, heroic three-quarter angle on the fortifications so they tower over the frame, the surrounding terrain visible on either side.
 Camera angle: at a three-quarter angle from a corner, showing two sides of the building. (Similar places use different angles — keep to this one.)
 Details to include: thick walls with arrow slits, battlements, banners and pennants without lettering, sentries as small figures, braziers, stacked supplies, gates and portcullis.
@@ -168,7 +168,7 @@ Lighting and time of day: blue-hour dusk, the first lanterns being lit.
 Mood: grim, strong, watchful.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashenveil”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Ashen Shields with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
+Who lives here (Compendium → Peoples → Who lives where, “Lumenfield”): mostly Humans (settlers); also Dwarves, a few half-elves. Hardy settlers, the Shields of Lumenfield with kite shields, bells and wire. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
@@ -318,7 +318,7 @@ PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: Veilhold Keep — fortress (Southern Frontier).
-What it is: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here.
+What it is: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here.
 More about it: The southern approaches to Veilhold have been mapped six times. Each new map shows small differences from the last.
 Composition: A low, heroic three-quarter angle on the fortifications so they tower over the frame, the surrounding terrain visible on either side.
 Camera angle: from a high window or rooftop opposite, looking down at an angle. (Similar places use different angles — keep to this one.)
@@ -1262,7 +1262,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Keep Infirmary — infirmary, in the fortress Veilhold Keep (Southern Frontier).
 What it is: Treats wall wounds and void-touch, with a direct line to the Sancthaven Restricted Quarter.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: An interior view at eye level of the busy main room, people in the middle of what they do here, with depth through doorways, arches or windows.
 Camera angle: from a raised gallery, stair or loft, looking down into the room. (Similar places use different angles — keep to this one.)
 Details to include: inside the ward — rows of cots with patients, healers in aprons treating a bandaged adventurer, an apprentice grinding herbs, a mother with a child waiting, glass jars of remedies, clean linen, copper basins, soft daylight from tall windows.
@@ -1285,7 +1285,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Seventeen Maps — cartographers' hut, in the fortress Veilhold Keep (Southern Frontier).
 What it is: Beside Zareth Kull's office — mapping ground that will not stay the same.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: A wide establishing view of the place in its setting, the subject clear in the midground.
 Camera angle: from far back, the building small within its wider surroundings. (Similar places use different angles — keep to this one.)
 Details to include: architecture, materials and surroundings in rich detail, a few small figures for scale. Little moments of life among the crowd: a wedding party passing with ribbons and music; friends doubled over laughing at a joke.
@@ -1308,7 +1308,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Southern Lamp — garrison tavern, in the fortress Veilhold Keep (Southern Frontier).
 What it is: The keep's only tavern — thin beer, thick stew and the best void-breach stories in the kingdom.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: An interior view of the busy main room at eye level, looking across the tables toward the hearth or bar, with depth through to a back room or the windows.
 Camera angle: close over the shoulder of the main worker, the rest of the room softly behind. (Similar places use different angles — keep to this one.)
 Details to include: a warm crackling hearth, low smoke-dark timber beams, long worn tables and benches; people chilling and having a good time — drinking from tankards and cups, laughing, arm-wrestling, playing dice and cards, sharing food, telling stories; a bard with a lute in the corner, servers weaving through with trays, a dog asleep by the fire, coats and weapons hung on pegs, lantern and candle light, steam from bowls, rain or daylight at the windows.
@@ -1330,8 +1330,8 @@ PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Southern Watch Wall — fortress wall, in the fortress Veilhold Keep (Southern Frontier).
-What it is: The wall facing Ashenveil — the most watched stretch of stone in the kingdom.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+What it is: The wall facing Lumenfield — the most watched stretch of stone in the kingdom.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: A low, heroic three-quarter angle on the fortifications so they tower over the frame, the surrounding terrain visible on either side.
 Camera angle: from down a narrow side lane, the building framed by the walls on either side. (Similar places use different angles — keep to this one.)
 Details to include: thick walls with arrow slits, battlements, banners and pennants without lettering, sentries as small figures, braziers, stacked supplies, gates and portcullis.
@@ -1353,8 +1353,8 @@ PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Void Breakers Annex — command annex, in the fortress Veilhold Keep (Southern Frontier).
-What it is: The Void Breakers' Ashenveil annex, beside Zareth Kull's office.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+What it is: The Void Breakers' Lumenfield annex, beside Zareth Kull's office.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: A view of a stern stone command building at Veilhold.
 Details to include: exactly what the description says — officers coming and going with reports, a map table seen through a window, Void Breakers in dark armour at the door, rune-wards on the door frame.
 Environment: the warm south — rolling golden fields and vineyards, honey-coloured stone and terracotta roofs, cypress and olive trees, a soft warm haze.
@@ -1376,7 +1376,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Void Holding Cells — containment prison, in the fortress Veilhold Keep (Southern Frontier).
 What it is: Warded cells beneath the keep for Void-touched prisoners too dangerous for Blackstone Gaol — watched by the Veil Watch and studied from the office of Zareth Kull next door.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: A cold, wide view of the structure from outside or down its main corridor, heavy and enclosed.
 Camera angle: from across water or an open square, with its reflection or a wide foreground. (Similar places use different angles — keep to this one.)
 Details to include: iron bars and heavy doors, thick masonry, chains, guard posts, narrow windows, worn stone floors.
@@ -1399,7 +1399,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Wall Forge — fortress smithy, in the fortress Veilhold Keep (Southern Frontier).
 What it is: The best known of Veilhold Keep's fortress smithies. Keeps the Southern Frontier Guard's blades and wall fittings in repair.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites.
 Composition: An interior view of the smithy, the forge fire at its heart.
 Camera angle: from a raised gallery, stair or loft, looking down into the room. (Similar places use different angles — keep to this one.)
 Details to include: exactly what the description says — the smith mid-strike at the anvil with sparks flying, an apprentice at the bellows, tools racked on the walls, finished pieces hanging, a customer waiting at the door, a rune flaring faintly on the metal as the hammer falls. Show the people up close enough to read what they are doing, but still as natural candid figures, not portraits.
@@ -13336,7 +13336,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Mistwell — dungeon · b-rank, in Veilhold Keep.
 What it is: A sinkhole in the Veilmarsh mist with Void-taint at the bottom. An Ashen Guard escort is required by law.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here.
 Composition: A view into the dungeon from just inside its entrance, a small party of adventurers with lanterns in the foreground, the darkness opening ahead.
 Camera angle: framed through an archway, gate or overhanging branches in the foreground. (Similar places use different angles — keep to this one.)
 Details to include: exactly what the description says, made dangerous and atmospheric — ancient stonework or rock, torchlight and lantern light, signs of what lives there, the party's weapons ready.
@@ -15767,7 +15767,7 @@ Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
 Subject: The Ashen Purification Station — purification station, in Veilhold Keep.
 What it is: Where patrols returning from the Veilmarsh are cleansed by the Ashen Guard before they are allowed back inside the walls. The chambers are lit by purification sigils that hum as you walk through them.
-Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Ashenveil territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here.
+Wider setting — Veilhold Keep: The southern border fortress. Built specifically to watch the Lumenfield territory — the highest density of Void-adjacent events outside of classified dungeon sites. Zareth Kull has a permanent office here.
 Composition: An atmospheric establishing view of the place in its setting.
 Camera angle: a low angle from the ground, looking up at the building. (Similar places use different angles — keep to this one.)
 Details to include: exactly what the description says, with the weight and quiet the place deserves.

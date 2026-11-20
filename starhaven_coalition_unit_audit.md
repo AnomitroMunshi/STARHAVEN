@@ -358,7 +358,7 @@
 | └─ Ashen Battle Wardens *(NEW)* | Lena Crest | Ashen Guard / Advance Line | advance line | — | *unknown* |
 | Mercy Riders | — | Pillar — Seraphine | 3,000 | 750 | **3,750** |
 | Apothecary Corps | Isolde Cren | Pillar — Seraphine | 600 | 150 | **750** |
-| Ashen Shields | Cova Drell | Pillar — Seraphine / Mercenary | 1,500 | 375 | **1,875** |
+| The Shields of Lumenfield | Cova Drell | Pillar — Seraphine / Mercenary | 1,500 | 375 | **1,875** |
 | Silverchain Mages | — | Coalition Ward Architecture | 80 | 12 | **92** |
 
 ---
@@ -662,7 +662,7 @@
 | Iron Reavers | Grena Vashk | Mercenary / HQ Reserve | 800 | 200 | **1,000** |
 | Red Bone Cavalry | Dusk Ferren | Mercenary / HQ Reserve | 1,200 | 300 | **1,500** |
 | Goldgate Adventurer Groups | Drev Holt (Guild) | Mercenary / HQ Reserve | 108 (18 groups) | 36 (6 groups) | **144 (24 groups)** |
-| Ashen Shields | Cova Drell | Mercenary / Seraphine | 1,500 | 375 | **1,875** |
+| The Shields of Lumenfield | Cova Drell | Mercenary / Seraphine | 1,500 | 375 | **1,875** |
 | Silverchain Mages | — | Mercenary / Coalition Ward | 80 | 12 | **92** |
 | The Skyspear Valkyries *(NEW)* | Warqueen Isolde Skyward | Free Company — No Standing Contract | 900 | — | **900** |
 

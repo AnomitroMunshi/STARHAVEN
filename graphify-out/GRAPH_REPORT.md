@@ -66,7 +66,7 @@
 - Veyrhold Marches
 - The Web
 - Zharak Emirate
-- Ashenveil SS+ Dungeon
+- Lumenfield SS+ Dungeon
 - Blackwall
 - Dunmere
 - Greypeak Foothills
@@ -119,7 +119,7 @@
 - **The Old House tavern gathering of Havenfire veterans** — char_brek_stonefall, char_daven_holt, char_helna_ironmane, char_kael_varric, char_lyria_valen, char_marcus_ironmane, char_nyx_ravel, char_rayden_cale, char_renzo_fal, char_thorin_blackroot, char_velkan_drake, char_vera_holt [EXTRACTED 1.00]
 - **Ashfield observer-dungeon clearing** — char_caelum_vey, char_lena_crest, char_nyx_ravel, char_rayden_cale, place_ashfield [EXTRACTED 1.00]
 - **Battle of Saltmere** — char_admiral_king_crest_vane, char_bob_vale, char_doran_ashe, char_dresh_ironmane, char_lyria_valen, char_rhegar_thorne, char_seraphine_mire, char_solen_aure, fac_first_field_army, fac_golden_coast_federation, fac_thalassian_league, place_saltmere [EXTRACTED 1.00]
-- **Clearing of the Ashenveil SS+ Dungeon** — char_aurelia_vex, char_bob_vale, char_brynhild_voss, char_cain_drakhar, char_elysia_nocturne, char_kael_varric, char_lena_crest, char_lyria_valen, char_malgrath, char_nyx_ravel, char_rayden_cale, char_seraphine_mire, char_thorin_blackroot, char_velkan_drake, place_ashenveil_ss_dungeon [EXTRACTED 1.00]
+- **Clearing of the Lumenfield SS+ Dungeon** — char_aurelia_vex, char_bob_vale, char_brynhild_voss, char_cain_drakhar, char_elysia_nocturne, char_kael_varric, char_lena_crest, char_lyria_valen, char_malgrath, char_nyx_ravel, char_rayden_cale, char_seraphine_mire, char_thorin_blackroot, char_velkan_drake, place_lumenfield_ss_dungeon [EXTRACTED 1.00]
 - **Trial of the Eleven** — char_aurelia_vex, char_bob_vale, char_cain_drakhar, char_dren_solm, char_elysia_nocturne, char_kael_varric, char_lyria_valen, char_nyx_ravel, char_rayden_cale, char_seraphine_mire, char_thorin_blackroot, char_velkan_drake [EXTRACTED 1.00]
 - **Battle of the Greenveil Plain** — char_brokk_graniteborn, char_dena_veil, char_dresh_ironmane, char_drogar_stonefang, char_drokha_bloodtusk, char_gorvak_doomhide, char_irae_duskwind, char_kethra_blackfang, char_kragh_skullsplitter, char_sira, char_thorin_blackroot, place_greenveil_plain [EXTRACTED 1.00]
 - **Stone Table Council on the Highland Threat** — char_cain_drakhar, char_isolde_cren, char_kael_varric, char_nyx_ravel, char_rayden_cale, char_rhegar_thorne, char_thorin_blackroot, char_velkan_drake, fac_stone_table [EXTRACTED 1.00]

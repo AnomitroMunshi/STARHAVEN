@@ -112,7 +112,7 @@ NORTH FACE — 4-MILE ASSAULT CORRIDOR
 
 **Psionic: ELYSIA NOCTURNE** — Veil Seers (Mira Fael) · Pattern reading · Enemy commander psychological assessment
 
-**Medical: SERAPHINE MIRE** — Ashen Guard · Mercy Riders · Apothecary Corps · Ashen Shields · Follows critical zones
+**Medical: SERAPHINE MIRE** — Ashen Guard · Mercy Riders · Apothecary Corps · The Shields of Lumenfield · Follows critical zones
 
 ## THREE-FRONT STRUCTURE
 

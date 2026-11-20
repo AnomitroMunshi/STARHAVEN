@@ -68,7 +68,7 @@
 | **"Twice-Burned" Gareth** | **Vael Dusken** |
 | **Root-Watcher Sylen** | **Primal Vanguard · Thorin Blackroot** |
 | **Pavise Shield Corps** | **Grael Ironwall** |
-| **Ashen Shields** | **Petra Allus (Founder & Supreme Commander) · Day-to-Day: Cova Drell** |
+| **The Shields of Lumenfield** | **Petra Allus (Founder & Supreme Commander) · Day-to-Day: Cova Drell** |
 | **Petra's Ashen Vanguard** | **Petra Allus (Personal Command — no sub-commanders)** |
 | **The Skyspear Valkyries** | **Warqueen Lola Skyward** |
 | **Barek Kade** | **Shock Infantry Embedded** |
