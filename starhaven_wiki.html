@@ -28578,6 +28578,7 @@ function showSection(id, linkEl) {
   document.getElementById('section-' + id).classList.add('active');
   if (linkEl) linkEl.classList.add('active');
   activeSection = id;
+  try { sessionStorage.setItem('sh-section', id); } catch (e) {}
   if (!sectionRendered[id]) { renderSection(id); sectionRendered[id] = true; }
   window.scrollTo({top:0,behavior:'instant'});
 }
@@ -28763,9 +28764,18 @@ window.addEventListener('scroll',()=>{
 },{passive:true});
 
 // ════════════════════════════════════════
-//  INIT — render the first section
+//  INIT — reopen the section and searches from before a refresh (this tab only)
 // ════════════════════════════════════════
-showSection('story');
+(() => {
+  let sec = 'story', saved = {};
+  try { sec = sessionStorage.getItem('sh-section') || 'story'; saved = JSON.parse(sessionStorage.getItem('sh-searches') || '{}'); } catch (e) {}
+  if (!document.getElementById('section-' + sec)) sec = 'story';
+  showSection(sec, document.querySelector(`.sb-link[data-section="${sec}"]`));
+  document.querySelectorAll('.search-input').forEach(inp => {
+    if (saved[inp.id]) { inp.value = saved[inp.id]; inp.dispatchEvent(new Event('input')); }
+    inp.addEventListener('input', () => { saved[inp.id] = inp.value; try { sessionStorage.setItem('sh-searches', JSON.stringify(saved)); } catch (e) {} });
+  });
+})();
 
 </script>
 </body>
