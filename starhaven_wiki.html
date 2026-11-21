@@ -24409,6 +24409,12 @@ const BALLADS = [
     type:'battle', writtenAt:'Year 1059',
     desc:'A battle anthem to send the army out — steel raised, banners up, every voice together.',
   },
+  {
+    id:'the-orchard-keeps-her', title:"The Orchard Keeps Her",
+    file:'Lores/Ballads/The_Orchard_Keeps_Her.mp3',
+    type:'personal', writtenAt:'Year 1056',
+    desc:'For Selene Voss, the Lantern Veil — the healer who held a falling wall at Asterfall so that every refugee beneath it lived. Written the spring after the King rode to Red Orchard Valley without banners, planted a row of young trees, and knelt a long time by the last one. Dren Solm has never said who asked him to write it.',
+  },
 ];
 BALLADS.sort((a, b) => (+(a.writtenAt.match(/\d+/) || [9999])[0]) - (+(b.writtenAt.match(/\d+/) || [9999])[0])); // oldest first; same-year songs keep their order
 // ════════════════════════════════════════
