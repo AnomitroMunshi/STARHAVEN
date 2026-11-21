@@ -316,7 +316,7 @@
 
 | Unit | Commander | Subunit of | Active | Reserve | Total |
 |------|-----------|-----------|--------|---------|-------|
-| Veil Seers | Mira Fael | Pillar — Elysia | 12 | 2 | **14** |
+| Veil Seers | Ayesha Fael | Pillar — Elysia | 12 | 2 | **14** |
 | Veil Hunters | — | Pillar — Elysia | 120 (20 cells) | 18 | **138** |
 | Void Breakers — all four Orders | Order Masters Cray/Illen/Sorn/Wex | Zareth Kull | 800 | 120 | **920** |
 | Void Hounds | — | Zareth Kull | 60 | 9 | **69** |

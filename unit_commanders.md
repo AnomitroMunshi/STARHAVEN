@@ -63,7 +63,7 @@
 | **Harbour Chain Guard** | **Dawncliff Garrison** |
 | **Woodborn Guardians** | **Thorin Blackroot** |
 | **Stoneclaw Brutes** | **Thorin Blackroot** |
-| **Pell Ashcord** | **Rhegar Thorne Reserve** |
+| **Koa Ashcord** | **Rhegar Thorne Reserve** |
 | **Maren Coldhand** | **2nd Field Army** |
 | **"Twice-Burned" Gareth** | **Vael Dusken** |
 | **Root-Watcher Sylen** | **Primal Vanguard · Thorin Blackroot** |
@@ -243,7 +243,7 @@
 | Dawnwatch Aerie | Aerie-Captain Sola Dren |
 | Veilwatch Aerie | Aerie-Captain Ryn Vael |
 | Stormwatch Aerie | Aerie-Captain Mael Cress |
-| Ironwatch Aerie | Aerie-Captain Sera Voss |
+| Ironwatch Aerie | Aerie-Captain Rania Voss |
 | Stormriders | Aurelia Vex |
 | Skyhammer | Aurelia Vex |
 | Feral Hunters | Thorin Blackroot |
@@ -325,13 +325,13 @@
 | Ironfort War Wagons | Brokk Graniteborn |
 | **The Forgepact Battery** | **Colonel Dessa Marrow · Brokk Graniteborn** |
 | Ironbolt Batteries | Starhaven Siege Command |
-| Ironveil Trebuchet Battery | Aldren Croft |
+| Ironveil Trebuchet Battery | Kwame Croft |
 | Rampart — Siege Tower Division | Tower-Marshal Brix Holt |
 | **Ironpass Siege Crew** | **Ironpass Garrison** |
 | **Sea Cannon Crew** | **Dawncliff Garrison** |
 | **Orvin Slate** | **Field Artillery Division** |
 | **Stonecast Onager Battery** | **Siege-Captain Renna Oswick** |
-| **Bastion Fang Division** | **Sera Drenn** |
+| **Bastion Fang Division** | **Rania Drenn** |
 | **Void Siege Battery** | **Zareth Kull · Elysia Nocturne** |
 | **Scorpio Field Batteries** | **Field Artillery Division** |
 | **Carroballista Corps** | **Field Artillery Division** |
@@ -373,7 +373,7 @@
 | Sable Bone Chariots | Sorvane Nullis |
 | Arch-Necromancer's Undead Guard | Sorvane Nullis |
 | Preserved Dead Legions | Sorvane Nullis |
-| **Sir Aldren Greyne** | **Sorvane Nullis** |
+| **Sir Kwame Greyne** | **Sorvane Nullis** |
 ---
 
 ## Vampire
@@ -425,4 +425,4 @@
 | The Web | Mira Vael |
 | The Shadow Court | Serell Vane |
 | Veil Hunters | Shade Arren |
-| Veil Seers | Mira Fael |
+| Veil Seers | Ayesha Fael |

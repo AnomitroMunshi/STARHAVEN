@@ -54,7 +54,7 @@
 - **Woodborn Guardians** — 1,000 — Commander: Thorin Blackroot
 - **Stoneclaw Brutes** — 2,500 — Commander: Thorin Blackroot
 - **Iron Reavers** — 1,000 (reserved) — Commander: Mercenary · Commander Grena Vashk
-- **Pell Ashcord** — 1 (reserved) — Commander: Rhegar Thorne Reserve
+- **Koa Ashcord** — 1 (reserved) — Commander: Rhegar Thorne Reserve
 - **Maren Coldhand** — 1 — Commander: 2nd Field Army
 - **"Twice-Burned" Gareth** — 1 — Commander: Vael Dusken
 - **Root-Watcher Sylen** — 1 — Commander: Primal Vanguard · Thorin Blackroot
@@ -262,9 +262,9 @@
 - **Skyhunter Lance Battery** — 6 launchers (reserved) — Commander: Triple Authorization
 - **The Forgepact Battery** — 480 (12 Cannon Crews + 8 Mortar Crews) (reserved) — Commander: Rhegar Thorne · Direct Reserve · Joint Project — Colonel Dessa Marrow & Brokk Graniteborn (Stonemark)
 - **Ironbolt Batteries** — unknown — Commander: Fortress Artillery Division
-- **Ironveil Trebuchet Battery** — 75 crew — Commander: Aldren Croft
+- **Ironveil Trebuchet Battery** — 75 crew — Commander: Kwame Croft
 - **Stonecast Onager Battery** — 96 crew — Commander: Siege-Captain Renna Oswick
-- **Bastion Fang Division** — unknown — Commander: Sera Drenn
+- **Bastion Fang Division** — unknown — Commander: Rania Drenn
 - **Void Siege Battery** — 8 platforms — Commander: Zareth Kull · Elysia Nocturne
 - **Scorpio Field Batteries** — 375 crew — Commander: Field Artillery Division
 - **Carroballista Corps** — 250 crew — Commander: Field Artillery Division
@@ -286,7 +286,7 @@
 - **The Web** — unknown — Commander: Mira Vael
 - **The Shadow Court** — unknown — Commander: Serell Vane
 - **Veil Hunters** — 138 — Commander: Elysia Nocturne · Veil Watch · Shade Arren Command
-- **Veil Seers** — 14 — Commander: Elysia Nocturne · Veil Watch · Mira Fael Command
+- **Veil Seers** — 14 — Commander: Elysia Nocturne · Veil Watch · Ayesha Fael Command
 
 ### Religious
 
@@ -458,7 +458,7 @@
 
 ### Undead
 
-- **Sir Aldren Greyne** — 1 — Commander: Sorvane Nullis
+- **Sir Kwame Greyne** — 1 — Commander: Sorvane Nullis
 - **Skeleton Infantry** — 20,700 (main) + 920 (Zone 4 detachment) — Commander: Sorvane Nullis
 - **Revenant Knights** — 2,300 — Commander: Sorvane Nullis
 - **Sable Bone Chariots** — 460 — Commander: Sorvane Nullis

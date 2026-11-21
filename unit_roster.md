@@ -216,14 +216,14 @@
 | Kiyu Otari | Personal Bodyguard · The Unread Page | Stealth | Pillar of Lyria Valen |  |
 | Sylvaine Duskroot | Solo Legend · Personal Bodyguard · The Silent Root | Infantry | Pillar of Thorin Blackroot |  |
 | Mira Halloway | Personal Bodyguard · Anchor of the Bond | Infantry | Pillar of Bob Vale |  |
-| Pell Ashcord | Known Name · The Reedwalkers | Infantry | Rhegar Thorne Reserve |  |
+| Koa Ashcord | Known Name · The Reedwalkers | Infantry | Rhegar Thorne Reserve |  |
 | Maren Coldhand | Known Name · Coldmarch Ironline | Infantry | 2nd Field Army |  |
 | "Twice-Burned" Gareth | Known Name · The Ashrunners | Infantry | Vael Dusken |  |
 | Orvin Slate | Known Name · Scorpio Field Batteries | Artillery | Field Artillery Division |  |
 | Tunnel-Voice Rusk | Known Name · Groundbreaker | Engineering | Veld Ashe |  |
 | Tenn "Wallpost" Ferryn | Known Name · Ironveil Spear Corps | Polearm | Drel Voss |  |
 | Sister-Commander Edda Rensh | Known Name · Dawn Templars | Religious | Brynhild Voss |  |
-| Sir Aldren Greyne | Known Name · Revenant Knights | Undead | Sorvane Nullis |  |
+| Sir Kwame Greyne | Known Name · Revenant Knights | Undead | Sorvane Nullis |  |
 | Gram Stons | Known Name · Stonemark Longbeards | Infantry | Stonemark Holds |  |
 | Brak Graymaw | Known Name · Stonemark Bulwark — Captain | Infantry | Stonemark Holds |  |
 | Root-Watcher Sylen | Known Name · Woodborn Guardians | Infantry | Primal Vanguard |  |
@@ -240,13 +240,13 @@
 | Ironfort War Wagons | Mobile Fortress · Wagon Combat | Artillery | Brokk Graniteborn | Thrak Flintjaw |
 | The Forgepact Battery | Mobile Cannon & Mortar Corps · Joint Stonemark-Starhaven Engineering | Artillery | Rhegar Thorne |  |
 | Ironbolt Batteries | Fortress Ballista Network · Fixed Battery | Artillery | Fortress Artillery Division |  |
-| Ironveil Trebuchet Battery | Siege Artillery · Long-Range Bombardment | Artillery | Aldren Croft |  |
+| Ironveil Trebuchet Battery | Siege Artillery · Long-Range Bombardment | Artillery | Kwame Croft |  |
 | Rampart — Siege Tower Division | Siege Engineering · Tower Assault | Engineering | Brix Holt |  |
 | Groundbreaker — Tunnel Assault Corps | Siege Engineering · Subsurface Assault | Engineering | Veld Ashe |  |
 | Redtunnel Corps | Tunnel Combat · Red Goblin · Groundbreaker Sub-Unit | Engineering | Crex |  |
 | Pavise Shield Corps | Siege Cover Infantry · Orc / Half-Orc · NEW | Infantry | Grael Ironwall |  |
 | Ramhead — Battering Ram Division | Siege Engineering · Gate Breach | Engineering | Sora Keld |  |
-| Bastion Fang Division | Fixed Fortification Artillery · Anti-Siege Defense | Artillery | Sera Drenn |  |
+| Bastion Fang Division | Fixed Fortification Artillery · Anti-Siege Defense | Artillery | Rania Drenn |  |
 | Void Siege Battery | Classified · Void-Class Artillery | Artillery | Zareth Kull |  |
 | Scorpio Field Batteries | Field Artillery · Light Torsion Bolt Thrower | Artillery | Field Artillery Division |  |
 | Carroballista Corps | Field Artillery · Cart-Mounted Mobile Ballista | Artillery | Field Artillery Division |  |

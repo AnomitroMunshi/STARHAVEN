@@ -108,9 +108,9 @@ NORTH FACE — 4-MILE ASSAULT CORRIDOR
 
 **Intelligence: NYX RAVEL** — Assets active inside Vael'Dorum since Year 1050 · Null Blade cells all three fronts · Mirova (HQ proximity) · Lyss Anven (pre-positioned inside fortress)
 
-**Resonance: BOB VALE** — 600 Mage Node Personnel · Thread-Runners (Sara Venn) · Three-front Soul Link — never attempted at this scale · Vale's Voice relay officers: Aldus (Northern) · Cenn (Western) · Mira (Eastern) · Tova (Floating) · Sael (Allied)
+**Resonance: BOB VALE** — 600 Mage Node Personnel · Thread-Runners (Sara Venn) · Three-front Soul Link — never attempted at this scale · Vale's Voice relay officers: Aldus (Northern) · Cenn (Western) · Ayesha (Eastern) · Tova (Floating) · Sael (Allied)
 
-**Psionic: ELYSIA NOCTURNE** — Veil Seers (Mira Fael) · Pattern reading · Enemy commander psychological assessment
+**Psionic: ELYSIA NOCTURNE** — Veil Seers (Ayesha Fael) · Pattern reading · Enemy commander psychological assessment
 
 **Medical: SERAPHINE MIRE** — Ashen Guard · Mercy Riders · Apothecary Corps · The Shields of Lumenfield · Follows critical zones
 

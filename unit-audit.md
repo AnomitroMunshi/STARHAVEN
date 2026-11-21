@@ -55,7 +55,7 @@
 
 ### Pillar of the Veil — Elysia Nocturne (Veil Watch)
 26. Veil Hunters *(Active entity response · Shade Arren command · Cells of 4–6)*
-27. Veil Seers *(Psionic detection array · Mira Fael command)*
+27. Veil Seers *(Psionic detection array · Ayesha Fael command)*
 28. Void Siege Battery *(8 platforms · Joint auth: Elysia + Zareth Kull · S-class classified)*
 
 ### Pillar of the Bond — Bob Vale (Resonance Corps)
@@ -67,7 +67,7 @@
 
 ## Intelligence Organizations
 
-32. The Web *(Mira Vael · 3-ring cell structure · Rayden/Nyx authorized · ~400–600 classified)*
+32. The Web *(Ayesha Vael · 3-ring cell structure · Rayden/Nyx authorized · ~400–600 classified)*
 33. The Shadow Court *(Serell Vane · All-female · Court penetration · Leverage mapping)*
 
 ---
@@ -137,7 +137,7 @@
 70. 4th Field Army — Light Infantry
 71. 4th Field Army — Heavy Crossbowmen
 72. 4th Field Army — Halberdiers
-73. Ironwatch Aerie *(Skywarden Corps embedded · Sera Voss)*
+73. Ironwatch Aerie *(Skywarden Corps embedded · Rania Voss)*
 
 ### Embedded: Dawnsteel Order — Koren Ashveil
 74. Glaive Formation Corps *(500 · 5-man glaive cells · Three Cuts Doctrine)*
@@ -230,12 +230,12 @@
 ## Siege & Field Artillery — Starhaven
 
 110. Ironbolt Batteries *(Fortress Artillery Division)*
-111. Ironveil Trebuchet Battery *(Aldren Croft)*
+111. Ironveil Trebuchet Battery *(Kwame Croft)*
 112. Stonethrow Corps *(Vera Holt · 3 payload types incl. Voidbane compound)*
 113. Rampart — Siege Tower Division *(Brix Holt · 60-ft iron-reinforced towers)*
 114. Groundbreaker — Tunnel Assault Corps *(Veld Ashe)*
 115. Ramhead — Battering Ram Division *(Sora Keld)*
-116. Bastion Fang Division *(Sera Drenn · Fortress Command · Fixed emplacement)*
+116. Bastion Fang Division *(Rania Drenn · Fortress Command · Fixed emplacement)*
 117. Void Siege Battery *(Joint auth: Zareth Kull + Elysia Nocturne · Also listed under Veil Watch)*
 118. Scorpio Field Batteries *(Field Artillery · 2-man crew · 300-yd effective · Anti-personnel precision)*
 119. Carroballista Corps *(Field Artillery · Horse-drawn · Repositions under fire · Anti-cavalry)*
@@ -491,14 +491,14 @@
 246. The Rune-Shield Guard *(400 · Overlapping Null-Stone suppression wall)*
 
 ### Known Names — Individual Operatives *(named characters embedded within existing units, each their own wiki card)*
-247. Pell Ashcord *(Half-Elf · The Reedwalkers · Wetland Navigator, never promoted)*
+247. Koa Ashcord *(Half-Elf · The Reedwalkers · Wetland Navigator, never promoted)*
 248. Maren Coldhand *(Coldmarch Ironline · 2nd Field Army veteran)*
 249. "Twice-Burned" Gareth *(The Ashrunners · Named for surviving two formation collapses)*
 250. Orvin Slate *(Scorpio Field Batteries · Trajectory savant, no instruments)*
 251. Tunnel-Voice Rusk *(Groundbreaker · Sapper with underground sense)*
 252. Tenn "Wallpost" Ferryn *(Ironveil Spear Corps · Western anchor, third rank, 11 years same position)*
 253. Sister-Commander Edda Rensh *(Dawn Templars · One of seven Sister-Commanders — same person who founded #223 Warband of the Dawnplate, tracked here as her Dawn Templars card)*
-254. Sir Aldren Greyne *(Sable Conclave · Revenant Knights · Conscious revenant, former Holy Knight)*
+254. Sir Kwame Greyne *(Sable Conclave · Revenant Knights · Conscious revenant, former Holy Knight)*
 255. Gram Stons *(Stonemark Longbeards · 213 years serving)*
 256. Root-Watcher Sylen *(Woodborn Guardians · Primal Vanguard · 340-year western watch)*
 257. Kraag Half-Ear *(Redspire Clan · Highland Coalition)*
@@ -600,7 +600,7 @@
 
 **Stonecast Onager Battery** (entry 270) added 2026-07-04 — wiki card `onager-battery`, `data-src: "own"`, added to the Artillery branch section directly after Ironveil Trebuchet Battery, as part of the existing "Siege & Field Artillery — Starhaven" category (alongside entries 110-122). 24 onager platforms, Siege-Captain Renna Oswick, 96 crew total — a rapid-deployment complement to Ironveil: faster to assemble and reposition (~8 min vs. Ironveil's ~22 min) at the cost of shorter range (180yd vs. 420yd) and lighter payload, with the highest sustained rate of fire in Starhaven's ground siege arsenal. No change needed in `starhaven_wiki.html`'s ARMIES array — Starhaven's siege artillery is represented there as one consolidated "Stonethrow Corps" entry rather than per-unit army cards.
 
-**House Silverhorn / The Verdant Crown** (entries 271–280) added 2026-07-05 — a brand-new allied kingdom from the southern realms, sigil a rearing white unicorn on a green field, offering a 10,000-troop military alliance across four corps plus six named champions. Cards added to `starhaven-unit-wiki.html`: four unit cards under new "House Silverhorn · Verdant Crown Alliance" subgroups (Verdant Spearguard + Silverhorn Blades in the Infantry branch, Willowmere Rangers in Ranged, Sunspire Battlemages in Magic — all `data-src: "ally"`), and six "Known Name" hero cards (Cassian Silverhorn, Ser Corwin Leonhart, Wrenna Willowmere, Elowen Sunspire, Rosalind Thornfield, Gurn Bramblefist) added to a new "House Silverhorn — Six Champions of the Alliance" subgroup, directly after "Known Names" and before "Rootcaller Shamans." All six heroes are attached to a specific corps rather than fighting solo — consistent with the established Known Name pattern (Gram Stons, Sir Aldren Greyne, etc.), not the Solo Legend pattern (Zafir, Roland Ashguard). Also added to `starhaven_coalition_unit_audit.md` (PART II allied forces table + Grand Coalition Total) and `unit_classifications.html` (Heavy/Medium/Light/None armor tiers, total count bumped 267→277). Portrait art for the six heroes was supplied by the user but not yet saved into `unitImages/` — cards will show the placeholder icon until `silverhorn-lord.png`, `leonhart-champion.png`, `willowmere-ranger.png`, `sunspire-mage.png`, `thornfield-shieldmaiden.png`, and `bramblefist-warchief.png` are added. Note: Ser Aldric Leonhart, Isolde Farrow, and Serai Duskwind were renamed to Ser Corwin Leonhart, Rosalind Thornfield, and Wrenna Ashfall (with the Duskwind Rangers renamed to Ashfall Rangers) on 2026-07-05 after a name-collision check — "Aldric" collided with King Aldric Vorn/Sever Aldric/Senn Aldric, "Isolde" with Isolde Cren/Isolde Skyward, "Farrow" with Helna Ironmane (née Farrow), and "Duskwind" with Irae Duskwind of the Windlance Cavalry. A second pass on 2026-07-05 caught that "Ashfall"/"Ashenhammer"/"Ashfell" all collided with the wiki's already heavy "Ash-" naming density (Ashen Guard, Lumenfield, Ashfield, Ashrunners, Ashwalker, Ashguard) — renamed again to Wrenna Willowmere (Willowmere Rangers) and Gurn Bramblefist, with the hill-tribe itself renamed from Ashfell to Thornridge.
+**House Silverhorn / The Verdant Crown** (entries 271–280) added 2026-07-05 — a brand-new allied kingdom from the southern realms, sigil a rearing white unicorn on a green field, offering a 10,000-troop military alliance across four corps plus six named champions. Cards added to `starhaven-unit-wiki.html`: four unit cards under new "House Silverhorn · Verdant Crown Alliance" subgroups (Verdant Spearguard + Silverhorn Blades in the Infantry branch, Willowmere Rangers in Ranged, Sunspire Battlemages in Magic — all `data-src: "ally"`), and six "Known Name" hero cards (Cassian Silverhorn, Ser Corwin Leonhart, Wrenna Willowmere, Elowen Sunspire, Rosalind Thornfield, Gurn Bramblefist) added to a new "House Silverhorn — Six Champions of the Alliance" subgroup, directly after "Known Names" and before "Rootcaller Shamans." All six heroes are attached to a specific corps rather than fighting solo — consistent with the established Known Name pattern (Gram Stons, Sir Kwame Greyne, etc.), not the Solo Legend pattern (Zafir, Roland Ashguard). Also added to `starhaven_coalition_unit_audit.md` (PART II allied forces table + Grand Coalition Total) and `unit_classifications.html` (Heavy/Medium/Light/None armor tiers, total count bumped 267→277). Portrait art for the six heroes was supplied by the user but not yet saved into `unitImages/` — cards will show the placeholder icon until `silverhorn-lord.png`, `leonhart-champion.png`, `willowmere-ranger.png`, `sunspire-mage.png`, `thornfield-shieldmaiden.png`, and `bramblefist-warchief.png` are added. Note: Ser Aldric Leonhart, Isolde Farrow, and Serai Duskwind were renamed to Ser Corwin Leonhart, Rosalind Thornfield, and Wrenna Ashfall (with the Duskwind Rangers renamed to Ashfall Rangers) on 2026-07-05 after a name-collision check — "Aldric" collided with King Aldric Vorn/Sever Aldric/Senn Aldric, "Isolde" with Isolde Cren/Isolde Skyward, "Farrow" with Helna Ironmane (née Farrow), and "Duskwind" with Irae Duskwind of the Windlance Cavalry. A second pass on 2026-07-05 caught that "Ashfall"/"Ashenhammer"/"Ashfell" all collided with the wiki's already heavy "Ash-" naming density (Ashen Guard, Lumenfield, Ashfield, Ashrunners, Ashwalker, Ashguard) — renamed again to Wrenna Willowmere (Willowmere Rangers) and Gurn Bramblefist, with the hill-tribe itself renamed from Ashfell to Thornridge.
 
 **The Starhaven Guardians** (entries 281–284) added 2026-07-05 — four ancient constructs (Stormreach/spear, Stoneward/shield, Frostcleave/axe, Magmafall/hammer) recovered as a matched set from a single SS+ dungeon clearance, The Aerune Depths — the only SS+ clearance in Starhaven's records to return artifacts rather than just a survival report. Cards added to `starhaven-unit-wiki.html` under a new "Starhaven Guardians — SS+ Dungeon Recovery" subgroup in the Infantry branch, `data-src: "own"`, `armorBadge: "Legendary"`, total 1 each (4 total, not a squad). Commander/custodian tagging is deliberately unusual for these four: nothing commands them in the field — "per Zareth Kull's assessment, filed after eighteen months of study: 'It isn't following instructions. It's remembering them.'" — so the tracked authority is custodial rather than a chain of command: Rhegar Thorne holds them in his Direct Reserve, Rayden Cale's personal authorization is required to deploy any of the four (same structure as The Wrought, entry 25), and each card's notes now include an explicit deployment-doctrine paragraph — Stormreach and Stoneward were both considered for deployment at Ashfield and stood down before authorization completed; Frostcleave and Magmafall have no deployment history at all. Image files needed: `guardian-spear.png` (no source art supplied yet), `guardian-shield.png`, `guardian-axe.png`, `guardian-hammer.png`.
 
@@ -669,7 +669,7 @@
 309. Varn Ashclaw *(Personal Bodyguard · Kael Varric — The Wall's Edge, deliberately the offensive counterpart to Kael's pure-defense style · twin curved blades Ruin & Reckoning · selected after clearing a collapsed breach corridor alone, unknowingly auditioning for the post)*
 310. Kiyu Otari *(Personal Bodyguard · Lyria Valen — The Unread Page, Silent Warden · twin daggers Hush + hunting recurve bow · covers Lyria's one true blind spot, directly behind her; communicates only in the hand-signs Lyria personally taught her)*
 311. Sylvaine Duskroot *(Solo Legend · Personal Bodyguard · Thorin Blackroot — The Silent Root, Wood Elf spear-wielder · Stillroot, a living ashwood spear · rides Duskfang, a dire wolf pack-alpha, a silent counterpart to Thorin's own bonded dire bear Grond)*
-312. Mira Halloway *(Personal Bodyguard · Bob Vale — Anchor of the Bond, his girlfriend as well as his guard · longsword & tower shield · protects his physical body specifically while he is exposed and absent from it during Soul Link Anchor techniques)*
+312. Ayesha Halloway *(Personal Bodyguard · Bob Vale — Anchor of the Bond, his girlfriend as well as his guard · longsword & tower shield · protects his physical body specifically while he is exposed and absent from it during Soul Link Anchor techniques)*
 
 ---
 
