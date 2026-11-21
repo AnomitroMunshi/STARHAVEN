@@ -11,6 +11,7 @@
 
 ### Infantry
 
+- **Frosthold Void Company** — 300 (first company, 1059) — Commander: Wyld Frostmere · trained by Zareth Kull & Elysia Nocturne
 - **Ironwall** — 25,000 — Commander: Pillar of Kael Varric
 - **Black Bastions** — 3,600 — Commander: Rhegar · Cross-Army (1st & 3rd Field Army Primary)
 - **Sentinel Guards** — 1,440 — Commander: Greenveil Defense Forces
@@ -108,6 +109,7 @@
 - **Dire Wolf Handler Corps** — 230 — Commander: Primal Vanguard
 - **Snowtusk Cavalry** — unknown — Commander: Wyld Frostmere
 - **Polar Bear Riders** — 180 — Commander: Wyld Frostmere
+- **Highfold Mercy** — 60 elk · 120 riders — Commander: Ela Voss (Mercy Riders)
 - **Great Elk — Forest Elk Cavalry** — unknown — Commander: Greenveil Defense Forces
 - **Silver Moon Elk Riders** — 188 — Commander: Silent Warden Mounted Wing
 - **War Bear Corps** — 250 handlers / 1,250 bears — Commander: Thorin Blackroot

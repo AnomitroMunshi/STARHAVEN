@@ -146,6 +146,8 @@
 | Dire Wolf Handler Corps | Beast Handler Unit | Beast Cavalry | Primal Vanguard |  |
 | Snowtusk Cavalry | Snow Elk Cavalry ⚙️ | Beast Cavalry | Wyld Frostmere |  |
 | Polar Bear Riders | Elite Polar Bear Cavalry ⚙️ | Beast Cavalry | Frosthold Garrison — Wyld Frostmere |  |
+| Highfold Mercy | Mounted Medic · Snow Elk ⚙️ | Beast Cavalry | Ashen Guard — Ela Voss (Mercy Riders) |  |
+| Frosthold Void Company | Void-Specialist Infantry · Cord-Cutter Doctrine | Infantry | Frosthold Garrison — Wyld Frostmere |  |
 | Great Elk — Forest Elk Cavalry | Forest Elk Cavalry ⚙️ | Beast Cavalry | Greenveil Defense Forces |  |
 | Silver Moon Elk Riders | Mounted Ranger · Moon Elk Cavalry | Beast Cavalry | Silent Warden Mounted Wing |  |
 | War Bear Corps | Beast Handler Unit | Beast Cavalry | Thorin Blackroot |  |

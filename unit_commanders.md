@@ -224,6 +224,8 @@
 | Karath Desert Chariots | Sultan Rashid |
 | The Aethran Colossi | Riva Trid |
 | **Polar Bear Riders** | **Wyld Frostmere** |
+| **Highfold Mercy** | **Ela Voss** |
+| **Frosthold Void Company** | **Zareth Kull & Elysia Nocturne** (training) |
 | **Fenrik** | **Thorin Blackroot** |
 | **War Elephants (50)** | **Sultan Rashid** |
 | **Kuku Gunriders** | **Brokk Graniteborn · Captain Torvald Redcrest** |

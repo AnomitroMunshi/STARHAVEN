@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 59   (finished so far: 380)
+Still to generate: 61   (finished so far: 380)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -202,6 +202,22 @@ Type: Megafauna · Tower-Mounted Platform
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Elephant — Megafauna · Tower-Mounted Platform. Key traits: 30 Starhaven + 50 Karath, Iron-Banded Tusks, Gift of Sultan Rashid. Thirty war elephants gifted to Starhaven by Sultan Rashid as part of the Year 1048 gift-convoy alongside the 52 mammoths. Smaller than the Karath Mammoths but faster to deploy — lower platform profile means the tower can be raised and configured in less time. Helna Ironmane leads their care and integration program at Ironmane Fields. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a dusty plain, iron-banded tusks and a small tower platform.
 
+
+########################################################################
+## NEW UNITS — THE LONG WINTER  (2)
+########################################################################
+
+=== Highfold Mercy ===
+Save as: unitImages/highfold-mercy.png
+Type: Mounted Medic · Snow Elk · Mercy Riders Northern Detachment
+PROMPT:
+Photorealistic dark-fantasy military unit art, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on armor, leather, fur, hide and snow, sharp focus on the main figures, more of the unit softly blurred behind them. Vertical 3:4 composition, 1086x1448, one or two hero figures of the unit in the foreground filling most of the frame, the rest of the unit in the background. Realistic anatomy and scale. Magic is everyday in this world — show it subtly where it fits; never portals or rift gates. No text, no watermark, no border, no logo, no modern objects, no guns. Subject: Highfold Mercy — the northern Mercy Riders, field medics on huge Snowtusk war elk. In the foreground, one massive shaggy grey-brown war elk with wide heavy antlers, frost in its fur, wading chest-deep through snow and still calm; on its back a crew of two: a stocky bearded dwarf elk-handler in front gripping the reins, and behind him a small green-skinned goblin medic leaning down over a wounded soldier who lies strapped flat on a broad padded litter harness across the elk's back. Both wear fur-lined light leather with a silver cross-shaped emblem (a plain equal-armed medic's cross, not a religious symbol) on a dark right pauldron; satchels of salves and bandages at their hips; the goblin's hand glows faintly gold as she presses a sigil-cloth to the soldier's wound. Behind them in the falling snow, more elk with two-rider crews, and a few white horses of ordinary Mercy Riders floundering in the drifts the elk walk through easily. Setting: a snowy battlefield below a grey granite mountain fortress, dark pines, blizzard thinning, cold blue light with warm lantern glow on the elk's harness. Mood: urgent, brave, gentle — rescue in the worst weather.
+
+=== Frosthold Void Company ===
+Save as: unitImages/frosthold-void-company.png
+Type: Void-Specialist Infantry · Cord-Cutter Doctrine · Name Not Yet Chosen
+PROMPT:
+Photorealistic dark-fantasy military unit art, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on armor, leather, fur, hide and snow, sharp focus on the main figures, more of the unit softly blurred behind them. Vertical 3:4 composition, 1086x1448, one or two hero figures of the unit in the foreground filling most of the frame, the rest of the unit in the background. Realistic anatomy and scale. Magic is everyday in this world — show it subtly where it fits; never portals or rift gates. No text, no watermark, no border, no logo, no modern objects, no guns. Subject: Frosthold Void Company — a new northern unit trained to fight the Void and to see it. In the foreground, two soldiers on a snowy fortress wall-walk at night: a broad dwarf woman and a tall grey-skinned half-orc man, in fur-lined medium plate of dark steel with faint pale sealing-runes at every joint, each holding a long glaive with a dark void-iron blade. The half-orc has his visor down: a thin plate of smoky grey crystal across his eyes, softly glowing violet, as he looks out past the battlements; the dwarf has her crystal visor pushed up on her helm and watches his face, ready to pull him back. Out in the dark beyond the wall, very faintly, a thin black thread of shadow rises from a shape in the snow into the sky, the kind of thing only the visor shows. Small flasks of pale dust on their belts. Behind them along the wall, more of the company of mixed races — humans, dwarves, an elf, an orc — in the same armor, no badge or banner, because the unit has no name yet. Setting: the north wall of a mountain fortress in midwinter, snow on the stones, braziers burning, a frozen river gorge far below under a clear starry sky. Mood: watchful, disciplined, quietly uneasy.
 
 ########################################################################
 ## PERSONAL MOUNTS & COMPANIONS — MAIN WIKI  (28)
