@@ -24226,7 +24226,7 @@ const ARMIES = [
   },
 ];
 // ════════════════════════════════════════
-//  BALLADS  — 17 tracks from Lores/Ballads/
+//  BALLADS  — tracks from Lores/Ballads/, shown by year
 //  type: 'anthem\' | 'battle' | 'personal' | 'hymn' | 'instrumental' | 'festival'
 // ════════════════════════════════════════
 const BALLADS = [
@@ -24397,7 +24397,20 @@ const BALLADS = [
     type:'personal', writtenAt:'Year 1059',
     desc:'Dren Solm alone — no band, just his voice and Silverthroat, at the Hearthrow. Written for the companion who travels with him and has never performed: the one the liner notes call "the reason this one worked." The printed copies leave the dedication line blank. He has never sung the name.',
   },
+  {
+    id:'no-soul-behind-me', title:"No Soul Behind Me",
+    file:'Lores/Ballads/No_Soul_Behind_Me.mp3',
+    type:'battle', writtenAt:'Year 1059',
+    desc:'Written by Dren Solm after the Long Winter, around the oath Brynhild Voss swore on the Frosthold wall: "As long as I stand, no soul behind me shall fall." A call-and-response war chant for the minutes before a charge, driven by Orik Drum\'s Ironset siege drums. The whole army shouts the last line.',
+  },
+  {
+    id:'raise-your-steel', title:"Raise Your Steel",
+    file:'Lores/Ballads/Raise_Your_Steel.mp3',
+    type:'battle', writtenAt:'Year 1059',
+    desc:'A battle anthem to send the army out — steel raised, banners up, every voice together.',
+  },
 ];
+BALLADS.sort((a, b) => (+(a.writtenAt.match(/\d+/) || [9999])[0]) - (+(b.writtenAt.match(/\d+/) || [9999])[0])); // oldest first; same-year songs keep their order
 // ════════════════════════════════════════
 //  LOCATIONS
 //  type: 'capital'|'city'|'fort'|'frontier'|'naval'|'district'|'village'|'outpost'
