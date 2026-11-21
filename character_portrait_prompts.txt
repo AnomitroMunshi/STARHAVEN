@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 61   (finished so far: 380)
+Still to generate: 62   (finished so far: 380)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -13,8 +13,14 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## NEW CHARACTER CARDS  (8)
+## NEW CHARACTER CARDS  (9)
 ########################################################################
+
+=== Imra Asherby ===
+Save as: starhaven_chars_image/imraasherby.png
+Group: Court & Scholars   Race: Half-elf   Age: 63
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Imra Asherby, Master of the Institute of Healing Magic · Master-Surgeon. Look: a small, upright half-elf woman of 63 with short grey hair, slightly pointed ears, reading spectacles pushed up on her head, a calm lined face and long, very steady fingers; a plain grey physician's gown with rolled sleeves and a worn leather apron, a roll of steel surgical instruments tied at her belt; a faint soft-gold glow at her fingertips. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, exact, kind and absolutely firm; the whole lecture hall goes silent when she speaks. Setting: a bright teaching theatre with tiered wooden benches behind her, softly blurred.
 
 === Ironmane Charger ===
 Save as: unitImages/ironmane-charger.png

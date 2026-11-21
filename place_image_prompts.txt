@@ -1,131 +1,12 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 648   (finished so far: 297)
+Still to generate: 640   (finished so far: 302)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
 - Save each image as PNG into  starhaven_places_image/  with the exact file name shown after "Save as".
 - Places whose image already exists are left out of this file automatically.
-
-########################################################################
-## ACORNHOLT  (5)
-########################################################################
-
-=== Acornholt ===
-Save as: starhaven_places_image/acornholt.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Atlas — Acornholt   Kind: Village / town
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Acornholt — village / town (Greenveil forest edge).
-What it is: A swineherds' village on the edge of the Greenveil oak woods, where the pigs grow fat on autumn acorns and the smokehouse never goes cold.
-More about it: Thorin Blackroot granted Acornholt the oak-wood grazing rights in exchange for keeping the boars out of Greenveil's fields. It has kept both bargains.
-Composition: A high, wide establishing view over the settlement and its setting, rooftops and streets in the midground, the landscape it sits in stretching to the horizon.
-Camera angle: from a hilltop, looking down over the whole scene. (Similar places use different angles — keep to this one.)
-Details to include: chimney smoke, streets and lanes, a market square, fields or walls at the edge, small figures and carts. Little moments of life among the crowd: a pedlar showing trinkets from his pack; neighbours helping lift a cart with a broken wheel.
-Environment: ancient forest — towering moss-covered trees, ferns and roots, timber and living-wood buildings grown into the trees, green-gold light through the canopy, drifting motes.
-Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: blue-hour dusk, the first lanterns being lit.
-Mood: lived-in, characterful.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Greenveil forest villages”): mostly Wood elves, Wildblood dwarves and humans; also Beastkin, halflings. Woodfolk in greens and browns with bows and hatchets; prosperous timber houses among great trees. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Acornholt Smokehouse ===
-Save as: starhaven_places_image/theacornholtsmokehouse.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Acornholt   Kind: Smokehouse
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Acornholt Smokehouse — smokehouse, in the village Acornholt (Greenveil forest edge).
-What it is: Hams and bacon smoked over oak for six weeks.
-Wider setting — Acornholt: A swineherds' village on the edge of the Greenveil oak woods, where the pigs grow fat on autumn acorns and the smokehouse never goes cold.
-Composition: A wide establishing view of the place in its setting, the subject clear in the midground.
-Camera angle: from a high window or rooftop opposite, looking down at an angle. (Similar places use different angles — keep to this one.)
-Details to include: architecture, materials and surroundings in rich detail, a few small figures for scale. Little moments of life among the crowd: an old woman feeding birds from a bench; an old dwarf telling a story to wide-eyed kids.
-Environment: ancient forest — towering moss-covered trees, ferns and roots, timber and living-wood buildings grown into the trees, green-gold light through the canopy, drifting motes.
-Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: early morning, low golden sun and long shadows, mist lifting.
-Mood: atmospheric, characterful.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Greenveil forest villages”): mostly Wood elves, Wildblood dwarves and humans; also Beastkin, halflings. Woodfolk in greens and browns with bows and hatchets; prosperous timber houses among great trees. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Ham Fair ===
-Save as: starhaven_places_image/thehamfair.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Acornholt   Kind: Festival
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Ham Fair — festival, in the village Acornholt (Greenveil forest edge).
-What it is: The winter fair where the first hams of the year are cut.
-Wider setting — Acornholt: A swineherds' village on the edge of the Greenveil oak woods, where the pigs grow fat on autumn acorns and the smokehouse never goes cold.
-Composition: A wide, elevated view over the event at its peak, crowds as a sea of small figures, the main action in the midground and the setting stretching behind.
-Camera angle: a low angle from the ground, looking up at the building. (Similar places use different angles — keep to this one.)
-Details to include: strings of lanterns and coloured pennants (no lettering), food stalls with steam rising, musicians, children on shoulders, scattered petals and ribbons, banners stirring in the wind. Little moments of life among the crowd: neighbours helping lift a cart with a broken wheel; a boy selling broadsheets (no readable text).
-Environment: ancient forest — towering moss-covered trees, ferns and roots, timber and living-wood buildings grown into the trees, green-gold light through the canopy, drifting motes.
-Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: dusk or early night: lantern glow and torchlight against a deep blue sky, fireworks or sparks if fitting.
-Mood: joyful, loud, crowded, alive.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Greenveil forest villages”): mostly Wood elves, Wildblood dwarves and humans; also Beastkin, halflings. Woodfolk in greens and browns with bows and hatchets; prosperous timber houses among great trees. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Oak Runs ===
-Save as: starhaven_places_image/theoakruns.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Acornholt   Kind: Pig woods
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Oak Runs — pig woods, in the village Acornholt (Greenveil forest edge).
-What it is: Oak woods where the herds forage for acorns every autumn.
-Wider setting — Acornholt: A swineherds' village on the edge of the Greenveil oak woods, where the pigs grow fat on autumn acorns and the smokehouse never goes cold.
-Composition: A broad landscape view, the land and its rows, pens or pools leading the eye from the foreground into the distance, farm buildings in the midground, hills or mountains on the horizon.
-Camera angle: from a hilltop, looking down over the whole scene. (Similar places use different angles — keep to this one.)
-Details to include: the crop, animals or produce in clear detail in the foreground, fences and paths, a farmhouse and barns, workers as small figures, a cart being loaded. Little moments of life among the crowd: a wedding party passing with ribbons and music; an elf and a dwarf arguing amiably over directions.
-Environment: ancient forest — towering moss-covered trees, ferns and roots, timber and living-wood buildings grown into the trees, green-gold light through the canopy, drifting motes.
-Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: a grey, misty morning, soft fog between the buildings, lanterns still lit.
-Mood: abundant, peaceful, rooted in the land.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Greenveil forest villages”): mostly Wood elves, Wildblood dwarves and humans; also Beastkin, halflings. Woodfolk in greens and browns with bows and hatchets; prosperous timber houses among great trees. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== Tuskwell Herd & Smokehouse ===
-Save as: starhaven_places_image/tuskwellherdandsmokehouse.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Acornholt   Kind: Pig farm & smokehouse
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Tuskwell Herd & Smokehouse — pig farm & smokehouse, in the village Acornholt (Greenveil forest edge).
-What it is: The best known of Acornholt's pig farms & smokehouses. The largest herd in Acornholt and the smokehouse beside it — about thirty hands.
-Wider setting — Acornholt: A swineherds' village on the edge of the Greenveil oak woods, where the pigs grow fat on autumn acorns and the smokehouse never goes cold.
-Composition: A broad landscape view, the land and its rows, pens or pools leading the eye from the foreground into the distance, farm buildings in the midground, hills or mountains on the horizon.
-Camera angle: from among the work itself, a person or animal close in the foreground. (Similar places use different angles — keep to this one.)
-Details to include: the crop, animals or produce in clear detail in the foreground, fences and paths, a farmhouse and barns, workers as small figures, a cart being loaded. Little moments of life among the crowd: friends doubled over laughing at a joke; a party of adventurers comparing loot on a barrel top.
-Environment: ancient forest — towering moss-covered trees, ferns and roots, timber and living-wood buildings grown into the trees, green-gold light through the canopy, drifting motes.
-Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: blue-hour dusk, the first lanterns being lit.
-Mood: abundant, peaceful, rooted in the land.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Greenveil forest villages”): mostly Wood elves, Wildblood dwarves and humans; also Beastkin, halflings. Woodfolk in greens and browns with bows and hatchets; prosperous timber houses among great trees. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
 ## AMBERFIELD  (8)
@@ -5646,148 +5527,6 @@ Crowd note: avoid rows of identical hooded robes or cloaks standing still and fa
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
-## KARATH DUN  (6)
-########################################################################
-
-=== Kira's Lantern ===
-Save as: starhaven_places_image/kiraslantern.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Karath Dun   Kind: Monument
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Kira's Lantern — monument, in the frontier territory Karath Dun (Giant Territories — Varathos).
-What it is: The lantern Elder Kira held forty feet above the stone for the prisoners below. She left it there. No one has moved it.
-Wider setting — Karath Dun: The landmark of the Giant-Starhaven alliance. The lantern moment happened here — Elder Kira held a light forty feet above stone for prisoners trapped below.
-Composition: an old iron lantern on top of a tall weathered stone post at the highest terrace of the giants' city, the post forty feet tall, a carved giantess statue beside it.
-Camera angle: from the foot of the post, looking up its full height to the lantern against the sky. (Similar places use different angles — keep to this one.)
-Details to include: the plain iron lantern still hanging where Kira left it, lit; dozens of small lanterns and candles left by children at the foot of the post; a giant elder standing quietly beside it, her head level with its middle; human visitors tiny beside her; the city's sandstone terraces falling away below.
-Environment: desert border country — warm sandstone buildings, domes and arches, palm shade, colourful awnings, dust in the air, a hot hazy sky.
-Architecture: a giants' city of warm desert sandstone — enormous steps, terraces, doorways and halls cut into the cliff at giant scale, with smaller stairs and doors cut into them for normal-sized people; simple, massive, ancient; true to a real medieval stone-cut city. No ornamental domes or palace spires.
-Lighting and time of day: dusk, the sky deep blue, the lantern and the little lanterns at its foot glowing gold.
-Mood: tender, quiet, legendary.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: twelve-foot giants moving slowly among much smaller Starhaven envoys, Karath traders and porters of many races; the size difference is part of the picture. A real, clearly visible mix of races, each easy to tell apart. Never in rows, never posed, never all facing the camera.
-Who lives here (Compendium → Peoples → Who lives where, “Karath Dun”): mostly Humans (Karath); also Giants from Varathos at the Giants' Bazaar; Starhaven traders. Desert dress, silks and turbans; giants towering over stalls. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Giants' Bazaar ===
-Save as: starhaven_places_image/thegiantsbazaar.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Karath Dun   Kind: Market
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Giants' Bazaar — market, in the frontier territory Karath Dun (Giant Territories — Varathos).
-What it is: The best known of Karath Dun's markets. A giant-scale market of stone stalls — Karath salt, hides, carved stone and spices, sold by the cartload.
-Wider setting — Karath Dun: The landmark of the Giant-Starhaven alliance. The lantern moment happened here — Elder Kira held a light forty feet above stone for prisoners trapped below.
-Composition: a market under huge sandstone arches and giant-sized awnings, stone stalls the height of a house, goods sold by the cartload.
-Camera angle: from among the small traders at the foot of a giant's stall, looking up at it. (Similar places use different angles — keep to this one.)
-Details to include: a giant merchant leaning down over a stall as tall as a cottage, selling blocks of salt and carved stone; Karath traders with camel trains loading spice sacks; heaps of hides; a halfling on a ladder to reach the counter; dust in sunbeams under the awnings.
-Environment: desert border country — warm sandstone buildings, domes and arches, palm shade, colourful awnings, dust in the air, a hot hazy sky.
-Architecture: a giants' city of warm desert sandstone — enormous steps, terraces, doorways and halls cut into the cliff at giant scale, with smaller stairs and doors cut into them for normal-sized people; simple, massive, ancient; true to a real medieval stone-cut city. No ornamental domes or palace spires.
-Lighting and time of day: late afternoon, warm golden light through the awnings.
-Mood: busy, funny, huge.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: twelve-foot giants moving slowly among much smaller Starhaven envoys, Karath traders and porters of many races; the size difference is part of the picture. A real, clearly visible mix of races, each easy to tell apart. Never in rows, never posed, never all facing the camera.
-Who lives here (Compendium → Peoples → Who lives where, “Karath Dun”): mostly Humans (Karath); also Giants from Varathos at the Giants' Bazaar; Starhaven traders. Desert dress, silks and turbans; giants towering over stalls. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Giants' Steps ===
-Save as: starhaven_places_image/thegiantssteps.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Karath Dun   Kind: Stairway
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Giants' Steps — stairway, in the frontier territory Karath Dun (Giant Territories — Varathos).
-What it is: A stairway with steps built for giants, and a narrow human stair cut beside it.
-Wider setting — Karath Dun: The landmark of the Giant-Starhaven alliance. The lantern moment happened here — Elder Kira held a light forty feet above stone for prisoners trapped below.
-Composition: a great stairway climbing a cliff, each step as tall as a man, with a narrow human-sized stair cut into its side running alongside.
-Camera angle: from the side of the stairway, so both the giant steps and the small stair are seen in profile climbing away. (Similar places use different angles — keep to this one.)
-Details to include: a giant climbing the big steps with a basket on her back; a line of human and dwarf travellers on the narrow stair beside her, small as ants by comparison; worn hollows in each giant step; desert sky above.
-Environment: desert border country — warm sandstone buildings, domes and arches, palm shade, colourful awnings, dust in the air, a hot hazy sky.
-Architecture: a giants' city of warm desert sandstone — enormous steps, terraces, doorways and halls cut into the cliff at giant scale, with smaller stairs and doors cut into them for normal-sized people; simple, massive, ancient; true to a real medieval stone-cut city. No ornamental domes or palace spires.
-Lighting and time of day: early morning, warm low sun on the sandstone.
-Mood: vast, cheerful, a little absurd.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: twelve-foot giants moving slowly among much smaller Starhaven envoys, Karath traders and porters of many races; the size difference is part of the picture. A real, clearly visible mix of races, each easy to tell apart. Never in rows, never posed, never all facing the camera.
-Who lives here (Compendium → Peoples → Who lives where, “Karath Dun”): mostly Humans (Karath); also Giants from Varathos at the Giants' Bazaar; Starhaven traders. Desert dress, silks and turbans; giants towering over stalls. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Lowland Guesthouse ===
-Save as: starhaven_places_image/thelowlandguesthouse.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Karath Dun   Kind: Guesthouse
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Lowland Guesthouse — guesthouse, in the frontier territory Karath Dun (Giant Territories — Varathos).
-What it is: The best known of Karath Dun's guesthouses. A guesthouse built at human scale for Starhaven envoys and traders, so they do not have to climb into giant beds.
-Wider setting — Karath Dun: The landmark of the Giant-Starhaven alliance. The lantern moment happened here — Elder Kira held a light forty feet above stone for prisoners trapped below.
-Composition: a small, ordinary human-sized guesthouse of sandstone and timber standing at the foot of giant-scale buildings, looking tiny and cosy among them.
-Camera angle: from across the street, with a giant's doorway towering behind the little guesthouse. (Similar places use different angles — keep to this one.)
-Details to include: a painted sign with a picture of a bed (no words), a lamp-lit doorway, a Starhaven envoy and his clerk arriving with luggage, a curious giant child crouching down to peer in through the upper window, potted plants on the step.
-Environment: desert border country — warm sandstone buildings, domes and arches, palm shade, colourful awnings, dust in the air, a hot hazy sky.
-Architecture: a giants' city of warm desert sandstone — enormous steps, terraces, doorways and halls cut into the cliff at giant scale, with smaller stairs and doors cut into them for normal-sized people; simple, massive, ancient; true to a real medieval stone-cut city. No ornamental domes or palace spires.
-Lighting and time of day: early evening, warm lamplight in the windows against the blue dusk.
-Mood: cosy, funny, welcoming.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: twelve-foot giants moving slowly among much smaller Starhaven envoys, Karath traders and porters of many races; the size difference is part of the picture. A real, clearly visible mix of races, each easy to tell apart. Never in rows, never posed, never all facing the camera.
-Who lives here (Compendium → Peoples → Who lives where, “Karath Dun”): mostly Humans (Karath); also Giants from Varathos at the Giants' Bazaar; Starhaven traders. Desert dress, silks and turbans; giants towering over stalls. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Stone-for-Food Wharf ===
-Save as: starhaven_places_image/thestoneforfoodwharf.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Karath Dun   Kind: Ally trade wharf
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Stone-for-Food Wharf — ally trade wharf, in the frontier territory Karath Dun (Giant Territories — Varathos).
-What it is: The Varathos pact's wharf — giant-carved stone and giant-salt out, shiploads of Starhaven grain and rice in. Giants eat a great deal.
-Wider setting — Karath Dun: The landmark of the Giant-Starhaven alliance. The lantern moment happened here — Elder Kira held a light forty feet above stone for prisoners trapped below.
-Composition: a long stone wharf on a desert coast, a Starhaven grain ship moored alongside, giants unloading it by hand.
-Camera angle: from the deck of the ship, looking along the wharf. (Similar places use different angles — keep to this one.)
-Details to include: giants carrying whole sacks of grain and rice on each shoulder; carved stone blocks and great white blocks of giant-salt waiting to be loaded; human sailors and clerks with tally boards; a crane the giants don't need; turquoise water and sandstone cliffs beyond.
-Environment: desert border country — warm sandstone buildings, domes and arches, palm shade, colourful awnings, dust in the air, a hot hazy sky.
-Architecture: a giants' city of warm desert sandstone — enormous steps, terraces, doorways and halls cut into the cliff at giant scale, with smaller stairs and doors cut into them for normal-sized people; simple, massive, ancient; true to a real medieval stone-cut city. No ornamental domes or palace spires.
-Lighting and time of day: bright late morning, strong sun, sharp shadows.
-Mood: busy, friendly, a trade that works.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: twelve-foot giants moving slowly among much smaller Starhaven envoys, Karath traders and porters of many races; the size difference is part of the picture. A real, clearly visible mix of races, each easy to tell apart. Never in rows, never posed, never all facing the camera.
-Who lives here (Compendium → Peoples → Who lives where, “Karath Dun”): mostly Humans (Karath); also Giants from Varathos at the Giants' Bazaar; Starhaven traders. Desert dress, silks and turbans; giants towering over stalls. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Stonemoot ===
-Save as: starhaven_places_image/thestonemoot.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Karath Dun   Kind: Council ground
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Stonemoot — council ground, in the frontier territory Karath Dun (Giant Territories — Varathos).
-What it is: Where the giant elders and Starhaven's envoys meet — the humans sit on a raised platform so everyone can see each other.
-Wider setting — Karath Dun: The landmark of the Giant-Starhaven alliance. The lantern moment happened here — Elder Kira held a light forty feet above stone for prisoners trapped below.
-Composition: a vast round council hall cut into the rock, giant elders seated in a ring on great stone seats, and in the middle a raised wooden platform where the human envoys sit at the giants' eye level.
-Camera angle: from behind one giant elder's seat, looking across the ring to the platform. (Similar places use different angles — keep to this one.)
-Details to include: six ancient giant elders in plain robes; the raised platform with a table and two Starhaven envoys with papers; light falling from an opening high in the roof; carved patterns on the walls; quiet attendants.
-Environment: desert border country — warm sandstone buildings, domes and arches, palm shade, colourful awnings, dust in the air, a hot hazy sky.
-Architecture: a giants' city of warm desert sandstone — enormous steps, terraces, doorways and halls cut into the cliff at giant scale, with smaller stairs and doors cut into them for normal-sized people; simple, massive, ancient; true to a real medieval stone-cut city. No ornamental domes or palace spires.
-Lighting and time of day: a single great shaft of daylight from the roof opening, warm dim light elsewhere.
-Mood: dignified, patient, respectful.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: twelve-foot giants moving slowly among much smaller Starhaven envoys, Karath traders and porters of many races; the size difference is part of the picture. A real, clearly visible mix of races, each easy to tell apart. Never in rows, never posed, never all facing the camera.
-Who lives here (Compendium → Peoples → Who lives where, “Karath Dun”): mostly Humans (Karath); also Giants from Varathos at the Giants' Bazaar; Starhaven traders. Desert dress, silks and turbans; giants towering over stalls. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-########################################################################
 ## KILNBURY  (6)
 ########################################################################
 
@@ -9718,8 +9457,30 @@ Crowd note: avoid rows of identical hooded robes or cloaks standing still and fa
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
-## SANCTHAVEN  (7)
+## SANCTHAVEN  (8)
 ########################################################################
+
+=== The Institute of Healing Magic ===
+Save as: starhaven_places_image/theinstituteofhealingmagic.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Sancthaven   Kind: Healer college
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Institute of Healing Magic — the kingdom's school of medicine, in Sancthaven, the city of healers.
+What it is: A college where healing magic, surgery and apothecary are taught side by side for six years.
+Composition: inside a tall, bright teaching theatre: a curved wooden gallery rising in tiers around a central operating table, students of many races packed on the benches leaning over the rails to watch.
+Camera angle: from the top tier of the gallery, looking down over the students' heads at the table. (Similar places use different angles — keep to this one.)
+Details to include: at the table, a small grey-haired half-elf master-surgeon in a grey gown and leather apron working with a scalpel while a young healer beside her follows the blade with a faint soft-gold glow at her fingertips, sealing as they go; an assistant holding a lamp; a patient asleep under a sheet; trays of bright steel instruments, herb jars and bandages; students taking notes and sketching anatomy on slates (no readable writing); a big anatomy chart of a human figure on the wall (pictures only); tall windows letting in clean daylight; a skeleton on a stand in the corner.
+Environment: the Southern Heartlands on the river Selmere — green farmland, herb fields and orchards beyond the walls, cypress trees, distant blue hills, soft silvery light under a grey, luminous sky.
+Architecture: Sancthaven signature, matching the existing image of the city — the city of healers, 95,000 people: pale white-grey stone in soaring high-gothic style, clusters of slender pinnacled spires and pointed arches, rose windows, arcaded terraces and long colonnaded healing halls, broad stone stairways, plazas and arched bridges, iron lanterns, walled herb gardens; the vast Ashen Hall with its spires at the city's heart and the White Citadel on its rise; tall white-and-gold banners bearing the silver Pegasus of Sancthaven (no crosses or religious symbols). Grand, clean and calm, true to a medieval city; one consistent dark-fantasy kingdom.
+Lighting and time of day: bright morning daylight from tall windows, plus a hanging ring of soft mana lamps over the table.
+Mood: focused, hushed, hopeful — learning to save lives.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: students of many races in plain grey student gowns — pointed-eared elves, short bearded dwarves, a green-skinned orc, a halfling standing on the bench to see, humans and half-elves; young and older; some nervous, some fascinated. Never in rows facing the camera; they lean, whisper and write.
+Who lives here (Compendium → Peoples → Who lives where, “Sancthaven”): mostly Humans; also Elves (healers), half-elves, a few half-celestials; pilgrims of every race. Holy Knights in white and silver, Ashen Guard healers, the sick and their families from everywhere. Calm, clean, white stone. Still a mixed kingdom — several races clearly visible.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === The Mercy Bank ===
 Save as: starhaven_places_image/themercybank.png
@@ -12494,6 +12255,33 @@ Crowd note: avoid rows of identical hooded robes or cloaks standing still and fa
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
+## SULVARRA  (1)
+########################################################################
+
+=== Sulvarra ===
+Save as: starhaven_places_image/sulvarra.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Sulvarra   Kind: Kingdom capital
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: Sulvarra — the capital of a desert kingdom beside the Karath Sultanate.
+What it is: The walled sandstone capital of Sulvarra, freed in Year 1051.
+Wider setting — Sulvarra: A desert kingdom beside the Karath Sultanate, freed in Year 1051 in the Ashen Throne War. Elder Kira held her lantern at its inner wall for the prisoners below.
+Composition: an establishing view of a great walled desert city on a dry river plain, the Sulvar River flowing past it lined with palms, a huge gap broken in its inner wall, a tall stone post with a lantern on it beside the gap.
+Camera angle: from a low rise outside the city, looking across the river and the walls. (Similar places use different angles — keep to this one.)
+Details to include: thick sandstone walls with one enormous breach left open; flat roofs, courtyards and covered markets inside; caravans of camels and carts on the road to the gate; boats on the river; a monument in the main square; children flying kites from the walls.
+Environment: Sulvarra, a desert kingdom — a walled sandstone capital on a dry river plain, palms along the Sulvar River, dust in the air, a hot hazy sky.
+Architecture: a human desert city of warm sandstone — thick city walls, flat roofs, arcades, courtyards and covered markets; old and solid; true to a real medieval desert city. No ornamental onion domes or fairy-tale palace spires.
+Lighting and time of day: late afternoon, warm low sun, long shadows.
+Mood: proud, free, sunlit — a city that remembers it is free.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Who lives here (Compendium → Peoples → Who lives where, “Sulvarra”): mostly Humans (Sulvarra) in desert dress, silks and turbans; also Karath traders from the Sultanate and Starhaven envoys and traders of other races — dwarves, elves, orcs, halflings. No giants. Still a mixed crowd — several races clearly visible.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+########################################################################
 ## SUNVALE ORCHARDS  (5)
 ########################################################################
 
@@ -14004,6 +13792,33 @@ Magic: magic is real and everyday in this world — show it subtly where it fits
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
 Who lives here (Compendium → Peoples → Who lives where, “Vaelmark”): mostly Humans; Drakari and half-Drakari are about a third of the city (their ancient home); also Half-elves, moon and high elves, goblin artificers, dwarves; a few Astralborn. About a third of the crowd should be Drakari or half-Drakari. Drakari look: tall and lean, amber-gold slit-pupil eyes, faint bronze dragon-scale patterning at the temples, jaw and neck. Mages, scholars, students and artificers in varied colours (not all robes); drake riders of the Ninth Sky Corps in flight leathers. Still a mixed kingdom — several races clearly visible.
 Crowd note: the existing Vaelmark images drifted into rows of identical dark hooded robes standing still and facing the same way — avoid that completely. People here wear varied everyday clothes in real colours (wool, linen, leather; scholars’ robes only on a few), are of clearly different races, and are busy doing things — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+########################################################################
+## VARATHOS  (1)
+########################################################################
+
+=== Varathos ===
+Save as: starhaven_places_image/varathos.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Varathos   Kind: Island nation
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: Varathos — the island of the giants, off the far west coast.
+What it is: The giants' island, hidden behind the Varathos Veil for four thousand years until Kira's Door opened.
+Wider setting — Varathos: The island of the giants, off the far west coast, hidden behind the Varathos Veil for four thousand years until the Alliance of Varathos opened Kira's Door.
+Composition: an establishing view of a rugged grey island rising from a cold sea, with giant-scale stone halls, terraces and steps on its headlands and a great harbour below.
+Camera angle: from the sea, from the deck of a small Starhaven trading ship arriving. (Similar places use different angles — keep to this one.)
+Details to include: giant-scale granite halls and steps on the cliffs; a harbour wharf where giants unload a grain ship as easily as crates; a colossal ancient stone statue of a giant on the highest headland; a faint shimmer in the air at the harbour mouth where the Veil was opened; human sailors on the ship's deck staring up.
+Environment: Varathos, the giants' island in the far west — grey granite cliffs and headlands over a cold green sea, wind-bent pines, heather and moss, sea mist, a grey-blue northern sky.
+Architecture: the giants' own stone architecture — enormous plain blocks of grey granite, steps, doorways and halls built at three times human scale, ancient and weathered, with smaller stairs and doors cut into them later for human visitors; simple, massive, no ornament.
+Lighting and time of day: grey morning, sun breaking through sea mist.
+Mood: awe, scale, welcome.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Who lives here (Compendium → Peoples → Who lives where, “Varathos”): Giants, about twelve feet tall, in rough wool, leather and stone jewellery; also Starhaven envoys, traders and sailors of every race, tiny beside them. Show several giants and a clear mix of visiting races.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################

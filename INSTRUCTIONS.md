@@ -142,7 +142,7 @@ Character portraits are AI-generated. Reference descriptions live in `more_charc
 
 **Allied Nations:**
 - **Thalassian League** — naval ally. Admiral-King Crest Vane (59yo). Seren Vane (Admiral-Consort). Embassy in Saltmere.
-- **Varathos** — Giant Nation. Elder Kira (200+, 12ft), Elder Dravan. First giant-human alliance in 4,000 years. The lantern moment at Karath Dun — Kira held light 40ft above stone for trapped prisoners.
+- **Varathos** — Giant Nation. Elder Kira (200+, 12ft), Elder Dravan. First giant-human alliance in 4,000 years. The lantern moment at Sulvarra — Kira held light 40ft above stone for trapped prisoners.
 
 **The Void:** Supernatural corruption threat. Lumenfield region. Malgrath is the Void's presiding force. Void entities are taxonomized by Zareth Kull. Anti-corruption treatment exists for armor.
 
@@ -240,7 +240,7 @@ The unit wiki (`starhaven-unit-wiki.html`) is a filterable registry of every nam
 
 **Competence as character.** The people in this world are very good at what they do. Their competence is not explained — it is demonstrated. Kael Varric doesn't say he never loses a fortress. The text describes what happens when someone tests his fortress.
 
-**Earned emotion.** Nothing is announced. The lantern at Karath Dun — Kira holding light 40ft above stone so trapped prisoners could see — is not called moving. It is described, and left. The reader arrives at the feeling themselves.
+**Earned emotion.** Nothing is announced. The lantern at Sulvarra — Kira holding light 40ft above stone so trapped prisoners could see — is not called moving. It is described, and left. The reader arrives at the feeling themselves.
 
 ---
 
@@ -277,7 +277,7 @@ The unit wiki (`starhaven-unit-wiki.html`) is a filterable registry of every nam
 - **Purple prose.** No "the sky wept" or "darkness consumed all." If the sky matters, describe it factually. If darkness is a threat, name what it does.
 - **Vague military writing.** "A large force" is not a Starhaven sentence. Name the army, give the number, name the commander.
 - **Announced emotions.** Do not write "Rayden felt grief." Write what Rayden does when grief is in the room.
-- **Inflation.** Not everything is the greatest, most powerful, or most feared. Reserve superlatives for things that have genuinely earned them (Kira's Karath Dun moment, Kael's unbroken fortress record, Kai's counter-magic archive).
+- **Inflation.** Not everything is the greatest, most powerful, or most feared. Reserve superlatives for things that have genuinely earned them (Kira's Sulvarra moment, Kael's unbroken fortress record, Kai's counter-magic archive).
 - **Allied nations as props.** The Thalassian League and Varathos have their own perspective. Crest Vane's "the ocean is not the obstacle" is a worldview, not a catchphrase.
 
 ---
