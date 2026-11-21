@@ -78,6 +78,14 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .tab-btn{font-family:'JetBrains Mono',monospace;font-size:10px;padding:11px 16px;border:none;background:none;color:var(--text3);cursor:pointer;text-transform:uppercase;letter-spacing:.08em;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:all .14s}
 .tab-btn:hover{color:var(--text2);background:rgba(255,255,255,.02)}
 .tab-btn.active{color:var(--gold2);border-bottom-color:var(--gold)}
+.tab-btn:focus{outline:none}.tab-btn:focus-visible{outline:1px solid var(--gold);outline-offset:-3px}
+.comp-tabs{display:block;padding:6px 60px 0;overflow:visible}
+.comp-group{display:flex;align-items:center;border-bottom:1px solid var(--border2)}
+.comp-group-btns{display:flex;flex-wrap:wrap;flex:1}
+.comp-tabs .tab-btn{padding:10px 13px}
+.comp-group:last-child{border-bottom:none}
+.comp-group-label{flex:0 0 130px;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);opacity:.75}
+@media(max-width:700px){.comp-tabs{padding:4px 16px 0}.comp-group{flex-direction:column;align-items:stretch}.comp-group-label{flex-basis:auto;padding-top:8px}.comp-tabs .tab-btn{padding:7px 9px}}
 
 /* Search bar below tabs */
 .search-bar{padding:14px 60px 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -668,34 +676,54 @@ a.lore-card:hover{transform:translateY(-2px)}
       <h1 class="s-title">Compendium</h1>
       <p class="s-subtitle">The beasts in the dungeons, the coin in your purse, and the houses that hold the money</p>
     </div>
-    <div class="tab-bar" id="comp-tabs" style="flex-wrap:wrap">
-      <button class="tab-btn" onclick="compRender('lore',this)">📖 Lore of the World</button>
-      <button class="tab-btn active" onclick="compRender('beasts',this)">🐾 Bestiary</button>
-      <button class="tab-btn" onclick="compRender('coin',this)">🪙 Coin &amp; Prices</button>
-      <button class="tab-btn" onclick="compRender('houses',this)">🏛️ Noble &amp; Merchant Houses</button>
-      <button class="tab-btn" onclick="compRender('resources',this)">🌾 Resources by Region</button>
-      <button class="tab-btn" onclick="compRender('food',this)">🍞 Food &amp; Supply</button>
-      <button class="tab-btn" onclick="compRender('trade',this)">⚖️ Trade</button>
-      <button class="tab-btn" onclick="compRender('peoples',this)">🧝 Peoples</button>
-      <button class="tab-btn" onclick="compRender('laws',this)">📜 Laws &amp; Customs</button>
-      <button class="tab-btn" onclick="compRender('nations',this)">🌍 Nations of the World</button>
-      <button class="tab-btn" onclick="compRender('day',this)">🕰️ A Day in Starhaven</button>
-      <button class="tab-btn" onclick="compRender('senses',this)">👃 Senses</button>
-      <button class="tab-btn" onclick="compRender('mounts',this)">🐴 Mounts &amp; Pets</button>
-      <button class="tab-btn" onclick="compRender('sayings',this)">🗣️ Sayings, Oaths & Superstitions</button>
-      <button class="tab-btn" onclick="compRender('travel',this)">🧭 Travel</button>
-      <button class="tab-btn" onclick="compRender('magic',this)">✨ Magic &amp; Arcana</button>
-      <button class="tab-btn" onclick="compRender('tech',this)">⚙️ Arcane Technology</button>
-      <button class="tab-btn" onclick="compRender('sports',this)">🏆 Sports</button>
-      <button class="tab-btn" onclick="compRender('festivals',this)">🎉 Festivals</button>
-      <button class="tab-btn" onclick="compRender('armoury',this)">⚔️ Armoury of Legends</button>
-      <button class="tab-btn" onclick="compRender('ships',this)">⛵ Ships</button>
-      <button class="tab-btn" onclick="compRender('life',this)">🏡 Daily Life</button>
-      <button class="tab-btn" onclick="compRender('nature',this)">🌿 Nature</button>
-      <button class="tab-btn" onclick="compRender('families',this)">🌳 Families</button>
-      <button class="tab-btn" onclick="compRender('docs',this)">📄 Documents</button>
-      <button class="tab-btn" onclick="compRender('letters',this)">✉️ Letters &amp; Diaries</button>
-      <button class="tab-btn" onclick="compRender('records',this)">🏅 Records</button>
+    <div class="tab-bar comp-tabs" id="comp-tabs">
+      <div class="comp-group"><span class="comp-group-label">The World</span>
+        <div class="comp-group-btns">
+        <button class="tab-btn" onclick="compRender('lore',this)">📖 Lore of the World</button>
+        <button class="tab-btn" onclick="compRender('nations',this)">🌍 Nations of the World</button>
+        <button class="tab-btn" onclick="compRender('peoples',this)">🧝 Peoples</button>
+        <button class="tab-btn" onclick="compRender('nature',this)">🌿 Nature</button>
+        <button class="tab-btn" onclick="compRender('magic',this)">✨ Magic &amp; Arcana</button>
+        <button class="tab-btn" onclick="compRender('tech',this)">⚙️ Arcane Technology</button>
+        </div>
+      </div>
+      <div class="comp-group"><span class="comp-group-label">Everyday Life</span>
+        <div class="comp-group-btns">
+        <button class="tab-btn" onclick="compRender('day',this)">🕰️ A Day in Starhaven</button>
+        <button class="tab-btn" onclick="compRender('life',this)">🏡 Daily Life</button>
+        <button class="tab-btn" onclick="compRender('festivals',this)">🎉 Festivals</button>
+        <button class="tab-btn" onclick="compRender('sports',this)">🏆 Sports</button>
+        <button class="tab-btn" onclick="compRender('senses',this)">👃 Senses</button>
+        <button class="tab-btn" onclick="compRender('sayings',this)">🗣️ Sayings, Oaths & Superstitions</button>
+        <button class="tab-btn" onclick="compRender('families',this)">🌳 Families</button>
+        </div>
+      </div>
+      <div class="comp-group"><span class="comp-group-label">Coin &amp; Trade</span>
+        <div class="comp-group-btns">
+        <button class="tab-btn" onclick="compRender('coin',this)">🪙 Coin &amp; Prices</button>
+        <button class="tab-btn" onclick="compRender('trade',this)">⚖️ Trade</button>
+        <button class="tab-btn" onclick="compRender('resources',this)">🌾 Resources by Region</button>
+        <button class="tab-btn" onclick="compRender('food',this)">🍞 Food &amp; Supply</button>
+        <button class="tab-btn" onclick="compRender('houses',this)">🏛️ Noble &amp; Merchant Houses</button>
+        </div>
+      </div>
+      <div class="comp-group"><span class="comp-group-label">Beasts &amp; Arms</span>
+        <div class="comp-group-btns">
+        <button class="tab-btn active" onclick="compRender('beasts',this)">🐾 Bestiary</button>
+        <button class="tab-btn" onclick="compRender('armoury',this)">⚔️ Armoury of Legends</button>
+        <button class="tab-btn" onclick="compRender('mounts',this)">🐴 Mounts &amp; Pets</button>
+        <button class="tab-btn" onclick="compRender('ships',this)">⛵ Ships</button>
+        <button class="tab-btn" onclick="compRender('travel',this)">🧭 Travel</button>
+        </div>
+      </div>
+      <div class="comp-group"><span class="comp-group-label">Law &amp; Records</span>
+        <div class="comp-group-btns">
+        <button class="tab-btn" onclick="compRender('laws',this)">📜 Laws &amp; Customs</button>
+        <button class="tab-btn" onclick="compRender('docs',this)">📄 Documents</button>
+        <button class="tab-btn" onclick="compRender('letters',this)">✉️ Letters &amp; Diaries</button>
+        <button class="tab-btn" onclick="compRender('records',this)">🏅 Records</button>
+        </div>
+      </div>
     </div>
     <div class="s-content" id="comp-container"></div>
   </div>
@@ -14490,6 +14518,150 @@ Classification: Civic Record — Everyday Life.
 Filed Year 1059.
 — Archivist Senna Ash, Starhaven Royal Athenaeum`,
   },
+  {
+    id: 'the-crown-against-ottilie-pell',
+    title: "The Crown against Ottilie Pell",
+    subtitle: "The High Court, the Thieves' Code, and the book nobody has ever seen",
+    type: 'short-story',
+    year: "Year 1059",
+    tags: ["Ottilie Pell", "Mother Velvet", "The Velvet Ledger", "Korvus Drey", "Varek Sond", "Nyx Ravel", "Goldgate", "The High Court", "Thieves' Code", "Crime & Law"],
+    excerpt: "For eleven years Korvus Drey hunted Mother Velvet and never proved a thing. Then she walked into a Goldgate watch-house holding a thief by the ear, handed him over as her own Code demands, and Korvus arrested her too. The case went all the way to the High Court — and put the Crown's own secret on trial.",
+    body: `For eleven years, Korvus Drey hunted Mother Velvet and never proved a thing.
+
+Then, one wet spring morning, she walked into a Goldgate watch-house holding a young thief by the ear, and handed him over herself. And Korvus arrested her too.
+
+—
+
+I. THE CODE
+
+Everyone in Goldgate knows about the Velvet Ledger, and nobody can prove it exists.
+
+It is the city's thieves' guild. Its members pay dues on the first of the month and keep a code with only two rules: no killing, and no stealing from healers. Anyone who breaks either rule is handed to the Watch — by the guild itself.
+
+It is run, everyone says, by Ottilie Pell: a tiny halfling widow of sixty-eight in a velvet shawl, who keeps a respectable bookbinder's shop on Loot Row and remembers every face she has ever seen. When she came to Goldgate, the city's thieves were killing each other over scraps. She gave them a code, dues and a ledger. Murders in Goldgate fell by two-thirds in five years.
+
+Korvus Drey runs the Iron Seal, Goldgate's secret security service. He has hunted her for eleven years. He has never found the Ledger. He has never proved anything at all.
+
+—
+
+II. THE HEALER'S BAG
+
+On a market day in spring, a young man called Dace Merrow cut the strap of a satchel in the medical quarter and ran.
+
+The satchel belonged to a healer: Anwen Tull, trained in Sancthaven, who runs a free clinic for the poor of the Low Wards. Inside it were her instruments and a week of medicine.
+
+By evening, every thief in Goldgate knew. By midnight, Dace had been found.
+
+At eight the next morning, Mother Velvet walked into the watch-house on Loot Row, holding Dace Merrow by the ear, with Anwen Tull's satchel in her other hand. She put the satchel on the desk.
+
+"This young man stole from a healer," she said. "Here he is."
+
+Korvus Drey was standing behind the desk. He had been waiting there, in fact, for about four hours.
+
+"Thank you, Mrs Pell," he said. "And by what authority did you find him?"
+
+"I asked around."
+
+"You asked a thieves' guild. Which you run." He nodded to the sergeant. "Ottilie Pell, I am arresting you for organising theft in the city of Goldgate."
+
+She looked at him for a long moment.
+
+"Eleven years, Commander," said Mother Velvet. "And you had to wait until I did something good."
+
+—
+
+III. THE HIGH COURT
+
+Korvus did not take the case to the Goldgate magistrates. He took it straight to the High Court in Starhold, because it touched something bigger than one thief.
+
+The High Court is Varek Sond's court. Varek is the Minister of Justice, fifty-eight, grey and very still. He is known for one thing above all: he has ruled against the King himself, twice, in public. Both times, Rayden accepted the ruling. That is the most important fact about the law in Starhaven.
+
+The courtroom was full. Half of Goldgate had taken the train. The Crown's advocate, a sharp young woman called Ilse Marrow, set out the case.
+
+The Velvet Ledger was a criminal guild. It collected dues from thieves. Ottilie Pell ran it. She had as good as admitted it by handing over one of its members. Therefore she was guilty of organising every theft its members had ever committed.
+
+"The Crown asks only one thing," said Advocate Marrow. "Produce the Ledger."
+
+Mother Velvet, who was defending herself, stood up. She was so small that the court usher had brought her a box to stand on.
+
+"Which ledger?" she asked.
+
+She opened her shawl and took out a thick, beautifully bound account book. It was the ledger of her bookbinder's shop. Every page was perfectly in order. Two hundred and forty customers paid a small monthly "subscription" for bookbinding services. On the first of every month.
+
+"My customers," said Mother Velvet. "They like their books well bound."
+
+The public gallery laughed. Varek Sond did not.
+
+—
+
+IV. THE QUESTION
+
+Then Mother Velvet called a witness. She called Korvus Drey.
+
+He took the oath. She stood on her box and looked at him almost kindly.
+
+"Commander. You have watched me for eleven years. In that time, has the Crown ever known about this guild you say I run?"
+
+"Yes."
+
+"And has the Crown ever decided to leave it alone?"
+
+The courtroom went very quiet. Everyone in it had heard the rumours. The Umbral Web, Nyx Ravel's network, knows every thief in Goldgate by name, and leaves them alone, as long as nobody is murdered and nobody is hurt. People call it the Underworld Line. It has never been written down anywhere.
+
+Advocate Marrow stood up to object.
+
+"Sit down, Advocate," said Varek Sond. "The Commander is under oath. Commander?"
+
+Korvus Drey could have said he did not know. He could have said it was not his department. He is, by every account, a very honest man, and he had just sworn on the law of a kingdom he helped to build.
+
+"Yes," said Korvus. "The Crown has known for years. It has chosen to watch the guild and not to break it, because since it began, fewer people in Goldgate have died."
+
+He had just lost his own case, and he knew it. He said it anyway.
+
+—
+
+V. THE RULING
+
+Varek Sond gave his ruling the next morning. It was short.
+
+"Dace Merrow stole from a healer. He is guilty. Ottilie Pell is not charged with stealing anything, and nothing she owns has been shown to be stolen. On the charge of organising theft, the Crown has proved that she knows a great many thieves. That is not a crime. Not guilty."
+
+Mother Velvet nodded, once.
+
+"However," said Varek Sond, "this court has learned something it does not like. For eleven years, the Crown has kept a rule about whom it chooses not to arrest, and never written it down. A kingdom may decide to be merciful. It may not do so in secret. Within thirty days, the Crown will write the Underworld Line into law, in public, with the King's name on it, so that every citizen can read exactly where it stands. If it cannot bear to be read, it should not exist."
+
+Thirty days later, the King signed it. Nyx Ravel is said to have read it twice and called it "annoyingly reasonable".
+
+—
+
+VI. THE HEALER
+
+There was one more thing.
+
+Before sentence was passed on Dace Merrow, Anwen Tull asked to speak. She told the court that Dace had stolen her satchel because his little sister had the wasting cough and no money for medicine. He had not known it was a healer's bag. He had only known it looked full.
+
+Varek Sond sentenced Dace Merrow to one year of service, working for Anwen Tull at her clinic in the Low Wards, carrying her bag.
+
+His sister was the clinic's first patient that afternoon.
+
+—
+
+On the steps of the High Court, Korvus Drey and Mother Velvet found themselves side by side in the rain.
+
+"Eleven years, Commander," she said.
+
+"Twelve, next spring."
+
+"You'll lose again."
+
+"Probably," said Korvus. "But now everyone can read why."
+
+She looked up at him for a moment. Then she opened her umbrella, held it over both of them, and walked with him to the station.
+
+Classification: High Court Record — Public Judgment (the Underworld Line Act, 1059).
+Filed Year 1059.
+— Archivist Senna Ash, Starhaven Royal Athenaeum`,
+  },
 
   {
     id: 'two-walls',
@@ -23627,9 +23799,9 @@ const CHARACTERS = [
     ],
     quote:'Everyone steals. I just keep the books honest.',
     bio:'A tiny, grandmotherly halfling in a velvet shawl who runs a respectable bookbinder\'s shop on Loot Row and remembers every face she has ever seen.',
-    relationships:[{name:'Pip Underbough',type:'ally',note:'Paid for the Canal Rats’ first proper armour through a third party. He has no idea.'},{name:'Corran Tarrow',type:'ally',note:'Her Ledger sells through his Cut whenever something has to leave Goldgate quietly.'},{name:'Korvus Drey',type:'enemy',note:'The Iron Seal has hunted her for eleven years and never once proved anything'},{name:'Nyx Ravel',type:'ally',note:'Nyx knows everything the Ledger does and lets it run. The Code\'s one hard rule — no killing — suits them both.'}],
+    relationships:[{name:'Pip Underbough',type:'ally',note:'Paid for the Canal Rats’ first proper armour through a third party. He has no idea.'},{name:'Corran Tarrow',type:'ally',note:'Her Ledger sells through his Cut whenever something has to leave Goldgate quietly.'},{name:'Korvus Drey',type:'enemy',note:'The Iron Seal has hunted her for eleven years and never once proved anything. He arrested her in 1059 and lost — honestly. She shared her umbrella with him on the court steps.'},{name:'Nyx Ravel',type:'ally',note:'Nyx knows everything the Ledger does and lets it run. The Code\'s one hard rule — no killing — suits them both.'}],
     tags:['Guild & Citizens','Underworld','Goldgate','The Velvet Ledger'],
-    background:'Came to Goldgate as a bookbinder\'s widow and found the city\'s thieves killing each other over scraps. She gave them a code, dues and a ledger. Crime in Goldgate went down, and so did murders. The Watch still cannot decide whether to arrest her or thank her.',
+    background:'Came to Goldgate as a bookbinder\'s widow and found the city\'s thieves killing each other over scraps. She gave them a code, dues and a ledger. Crime in Goldgate went down, and so did murders. The Watch still cannot decide whether to arrest her or thank her. In 1059 Korvus Drey finally arrested her — on the morning she handed in a thief who had robbed a healer — and the High Court found her not guilty, then ordered the Crown to write its secret tolerance of her guild into public law.',
   },
   {
     id:'corrantarrow', name:'Corran Tarrow',
@@ -28336,7 +28508,7 @@ const LAWS = [
  ],
  [
   "The Underworld Line",
-  "Theft and smuggling are tolerated and watched; murder or rape brings the Umbral Web down on whoever did it.",
+  "Theft and smuggling are tolerated and watched; murder or rape brings the Umbral Web down on whoever did it. Kept secret for years; written into public law as the Underworld Line Act in 1059, on the High Court's order.",
   "Nyx Ravel"
  ],
  [
@@ -29443,7 +29615,7 @@ function onGlobalSearch(val) {
   CHRONICLES.forEach(c => add('📜', c.title, c.year || '', () => openChronicle(c.id), (c.tags || []).join(' ')));
   ARMIES.forEach(a => add('⚔️', a.name, a.subtitle || '', () => openArmyModal(a.id)));
   BALLADS.forEach(b => add('🎵', b.title, 'Ballad', () => sec('ballads')));
-  BESTIARY.forEach(b => add('🐾', b.name, `Bestiary · ${b.rank}-rank`, () => { sec('compendium'); compRender('beasts', document.querySelector('#comp-tabs .tab-btn')); }));
+  BESTIARY.forEach(b => add('🐾', b.name, `Bestiary · ${b.rank}-rank`, () => { sec('compendium'); compRender('beasts', document.querySelector('#comp-tabs .tab-btn[onclick*="beasts"]')); }));
   _gsHits = hits.sort((a, b) => a.rank - b.rank).slice(0, 40);
   box.innerHTML = _gsHits.length ? _gsHits.map((h, i) => `<div class="gs-hit" onclick="gsGo(${i})"><span>${h.icon}</span><span><b>${compEsc(h.label)}</b><small>${compEsc(h.sub)}</small></span></div>`).join('')
     : '<div class="gs-none">Nothing found.</div>';
