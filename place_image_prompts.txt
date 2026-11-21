@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 530   (finished so far: 364)
+Still to generate: 525   (finished so far: 371)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -1353,145 +1353,29 @@ Who lives here (Compendium → Peoples → Who lives where, “Starhold (capital
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
-## FORT ASTERFALL  (1)
+## FROSTHOLD BASTION  (1)
 ########################################################################
 
-=== The Asterfall Undercrypt ===
-Save as: starhaven_places_image/theasterfallundercrypt.png
+=== The Worldtree Rootline ===
+Save as: starhaven_places_image/theworldtreerootline.png
 Size: 1536 x 1024 px (landscape 3:2)
-Group: Fort Asterfall   Kind: Dungeon · B-rank
+Group: Frosthold Bastion   Kind: Living monument
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
 Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Asterfall Undercrypt — dungeon · b-rank, in Fort Asterfall.
-What it is: Crypts beneath the ruined fort where the dead do not stay down. The Holy Knights' Relic Wardens hire adventurers as guides.
-Wider setting — Fort Asterfall: A frontier fort in the pine forests of the north, reclaimed in the war years. A corruption outbreak began in the lower refugee district outside its southern wall — and Selene Voss died in Rayden's arms while snow fell across its burning ruins.
-Composition: a view down the crypt stairs beneath the ruined fort, a small party with lanterns at the bottom, and rows of stone burial niches running away into the dark.
-Camera angle: from the top of the crypt stairs, looking down past the party. (Similar places use different angles — keep to this one.)
-Details to include: worn stone steps; old burial niches, some empty with the stone lids pushed out from inside; a skeletal hand resting on the edge of one niche; old cracked fortress stonework above, from the wall that fell in 1039; the Relic Warden holding up a lantern with purification runes on it; faint pale shapes moving far down the passage; dust drifting in the lantern beams.
-Environment: beneath the ruins of Fort Asterfall — a broken border fortress of grey stone, overgrown and quiet above, cold and damp below.
-Architecture: rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, wooden fences and cart tracks; weathered, lived-in and practical; one consistent dark-fantasy kingdom.
-Lighting and time of day: darkness broken by lanterns and the healer's soft light.
-Mood: cold, haunted, dangerous.
+Subject: The Worldtree Rootline — living monument, at Frosthold Bastion (Northern Mountains).
+What it is: The slope below Frosthold's Ice Gate where, in the Long Winter, the archmage Elyndra Valeheart drove her staff into the earth and a vast spectral tree rose over the battle. Its roots sank back into the ground — and the next spring young trees grew up exactly along the lines where the roots had run, in the shape of one enormous tree.
+Composition: a wide mountain slope below the fortress gate, covered in lines of young trees that branch and spread down the slope like the roots and boughs of one gigantic tree drawn on the land — a clear trunk-line from the gate, splitting again and again towards the gorge below.
+Camera angle: from high on the north tower of the fortress, looking down the whole slope so the tree-shape reads clearly. (Similar places use different angles — keep to this one.)
+Details to include: young dark-green pines mixed with slim saplings whose leaves are pale gold, a faint green-gold shimmer hanging over the gold leaves; patches of old snow between the lines of trees; a narrow path running along one root-line with two soldiers in furs walking home on it; the giant black Vanari gada standing small in the snow near the Ice Gate at the top of the slope; the deep gorge and frozen river at the bottom; mountains beyond.
+Environment: Frosthold Bastion, the northern fortress built into a mountain — grey granite walls rising out of the cliffs, the Ice Gate tunnel cut through the mountain's shoulder, deep snow, dark pine forest down the Coldmarch below, the Snowtusk Highfolds white above, breath visible in the air.
+Architecture: hard northern fortress stone — massive grey granite blocks, iron-bound doors, snow on every ledge, the fortress and the mountain one structure.
+Lighting and time of day: a still early-summer morning, low sun, mist in the gorge, the gold leaves catching the light.
+Mood: quiet, hopeful, a little holy — the land remembered.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a small party of four adventurers — a human Holy Knight Relic Warden in silver-and-white with a lantern, a dwarf with a shield, a half-orc with a mace, an elf priestess-healer with soft light at her hands (no religious symbols) — seen from behind.
-Who lives here (Compendium → Peoples → Who lives where, “Forts & garrisons”): mostly Humans; also Dwarves (engineers), orcs and half-orcs, beastkin, elves, halflings (cooks and quartermasters). Soldiers of mixed races in the kingdom's armour, on walls and in yards; veterans and young recruits side by side. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-########################################################################
-## THE FOUNDERS' SPAN  (5)
-########################################################################
-
-=== The Founders' Span ===
-Save as: starhaven_places_image/thefoundersspan.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Atlas — The Founders' Span   Kind: river
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Founders' Span — river (Starhold — over the Ashen River).
-What it is: Starhold's great iron cantilever bridge over the Ashen — the largest bridge in the kingdom, built by the Forgehaven engineers, crowded with trams, carts and walkers day and night.
-More about it: A bronze Zephyros coils along the top of the main span, and bronze griffins and great eagles stand on its four towers. Under its landward arches lie the flower market and the river steps where the city comes down to the water at dawn.
-Composition: the Founders' Span crossing the Ashen in the heart of Starhold — a colossal dark iron cantilever bridge on stone piers, its deck crowded with trams, carts and walkers, a long bronze dragon coiled along the top of the main span and bronze griffins and eagles on its four towers.
-Camera angle: from the river bank downstream, low, the whole bridge filling the width of the frame. (Similar places use different angles — keep to this one.)
-Details to include: the great diamond-braced iron cantilever arms; small blue-lit arcane trams and carts crossing along the deck; the bronze Zephyros, a long serpentine storm dragon, green with age along the top girder; bronze griffins and great eagles on the tower tops; barges passing under the central span; the flower market's awnings under the landward arches; Starhold's spires on both banks; lamps lit along the deck.
-Environment: the heart of Starhold, the capital — the broad Ashen river through the city, dark stone quays, grand grey stone buildings and spires on both banks, iron lanterns, temperate light.
-Architecture: the Founders' Span is a huge IRON cantilever bridge — dark riveted iron trusses and girders in great diamond-braced cantilever arms, resting on massive stone piers with cutwaters, four tall stone-and-iron towers; built by Forgehaven engineers. Starhold around it: dark grey stone, slate roofs, spires, wrought-iron lamps. Not a stone-arch bridge.
-Lighting and time of day: dusk after rain, the sky breaking, wet iron shining, lamps coming on.
-Mood: monumental, busy, the heart of the city.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: Starholders of every kind, seen small — humans, dwarves, elves, orcs, halflings, goblins, beastkin, a Karath merchant in silks; moving in every direction.
-Who lives here (Compendium → Peoples → Who lives where, “Starhold (capital)”): mostly Humans; also Dwarves, elves, half-elves, orcs and half-orcs, halflings, goblins, beastkin. Everyone, from everywhere: the most mixed city in the kingdom. Embassy Row brings Karath merchants in desert silks, Thalassian sailors, Frostspire envoys in furs, and now and then a twelve-foot Varathos giant ducking through a gate. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Bronze Zephyros ===
-Save as: starhaven_places_image/thebronzezephyros.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: The Founders' Span   Kind: Monument
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Bronze Zephyros — monument, in The Founders' Span (Starhold — over the Ashen River).
-What it is: A colossal bronze of Zephyros — a long serpentine storm dragon — coiled along the top of the main span.
-Wider setting — The Founders' Span: Starhold's great iron cantilever bridge over the Ashen — the largest bridge in the kingdom, built by the Forgehaven engineers, crowded with trams, carts and walkers day and night.
-Composition: close on the colossal bronze of Zephyros, a long serpentine storm dragon coiled along the top girder of the bridge, its head raised into the sky.
-Camera angle: from the bridge deck below, looking up along the bronze dragon's body to its head. (Similar places use different angles — keep to this one.)
-Details to include: the bronze weathered green with gold where hands have rubbed it; scales, long whiskers and a storm-crest along its spine; rain dripping from its jaws; pigeons along its back; a child on a parent's shoulders reaching up to touch its tail where it hangs low over the walkway; trams and walkers on the deck below; real storm clouds behind it.
-Environment: the heart of Starhold, the capital — the broad Ashen river through the city, dark stone quays, grand grey stone buildings and spires on both banks, iron lanterns, temperate light.
-Architecture: the Founders' Span is a huge IRON cantilever bridge — dark riveted iron trusses and girders in great diamond-braced cantilever arms, resting on massive stone piers with cutwaters, four tall stone-and-iron towers; built by Forgehaven engineers. Starhold around it: dark grey stone, slate roofs, spires, wrought-iron lamps. Not a stone-arch bridge.
-Lighting and time of day: stormy afternoon light, a break in the clouds lighting the bronze.
-Mood: iconic, proud, a little wild.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: Starholders of every kind, seen small — humans, dwarves, elves, orcs, halflings, goblins, beastkin, a Karath merchant in silks; moving in every direction.
-Who lives here (Compendium → Peoples → Who lives where, “Starhold (capital)”): mostly Humans; also Dwarves, elves, half-elves, orcs and half-orcs, halflings, goblins, beastkin. Everyone, from everywhere: the most mixed city in the kingdom. Embassy Row brings Karath merchants in desert silks, Thalassian sailors, Frostspire envoys in furs, and now and then a twelve-foot Varathos giant ducking through a gate. Still a mixed kingdom — several races clearly visible.
-Creature and design notes: Zephyros is a long serpentine Asiatic storm dragon, centuries old, with lightning in the clouds around him — the only true dragon in the kingdom.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The River Steps ===
-Save as: starhaven_places_image/theriversteps.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: The Founders' Span   Kind: River steps
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The River Steps — river steps, in The Founders' Span (Starhold — over the Ashen River).
-What it is: Broad stone steps down to the Ashen where the city bathes, washes and watches the sunrise.
-Wider setting — The Founders' Span: Starhold's great iron cantilever bridge over the Ashen — the largest bridge in the kingdom, built by the Forgehaven engineers, crowded with trams, carts and walkers day and night.
-Composition: broad stone steps running down into the Ashen under the bridge's landward arches, crowded at dawn with people washing, bathing, filling jugs and watching the sun come up.
-Camera angle: from the water's edge at the bottom of the steps, looking up the steps and across the river. (Similar places use different angles — keep to this one.)
-Details to include: the dark iron underside of the Founders' Span overhead; old men in the water to their waists, laughing; washerwomen beating linen on the bottom step; children jumping in; a dwarf filling copper jugs; a healer in grey handing out towels; the sun rising gold through the bridge's girders; mist on the river.
-Environment: the heart of Starhold, the capital — the broad Ashen river through the city, dark stone quays, grand grey stone buildings and spires on both banks, iron lanterns, temperate light.
-Architecture: Starhaven's established look, matching the other images of the kingdom — a dark, grand high-fantasy stone city: weathered grey and charcoal stone, soaring towers and slender spires, pointed and round arches, grand domed halls, clock towers, steep dark slate roofs, wrought-iron lanterns, heavy carved detail, mist between the buildings and mountains on the horizon. Subtle accents from the kingdom's many peoples appear only in details, never taking over: some carved stone balconies and scalloped arches, a few blue-tiled domes, the odd gently upturned roof edge on a market hall, dwarven geometric reliefs and bronze fittings, elven curved woodwork and climbing ivy. It must NOT look Indian, Chinese, Japanese or Persian overall — it is one consistent dark fantasy kingdom. Starhold signature: the capital — a vast grey-stone city ringed by mountains, gothic towers and spires mixed with domed civic halls and clock towers, broad stone plazas and stairways; misty, lantern-lit, grand.
-Lighting and time of day: sunrise, gold light through the iron girders, mist on the water.
-Mood: calm, communal, morning-fresh.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: Starholders of every kind, seen small — humans, dwarves, elves, orcs, halflings, goblins, beastkin, a Karath merchant in silks; moving in every direction.
-Who lives here (Compendium → Peoples → Who lives where, “Starhold (capital)”): mostly Humans; also Dwarves, elves, half-elves, orcs and half-orcs, halflings, goblins, beastkin. Everyone, from everywhere: the most mixed city in the kingdom. Embassy Row brings Karath merchants in desert silks, Thalassian sailors, Frostspire envoys in furs, and now and then a twelve-foot Varathos giant ducking through a gate. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Span Flower Market ===
-Save as: starhaven_places_image/thespanflowermarket.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: The Founders' Span   Kind: Flower market
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Span Flower Market — flower market, in The Founders' Span (Starhold — over the Ashen River).
-What it is: The best known of The Founders' Span's flower markets. A dawn flower market under the landward arches — Bloomvale flowers by the armful.
-Wider setting — The Founders' Span: Starhold's great iron cantilever bridge over the Ashen — the largest bridge in the kingdom, built by the Forgehaven engineers, crowded with trams, carts and walkers day and night.
-Composition: a dawn flower market packed under the great stone arches at the landward end of the bridge, buckets and armfuls of flowers everywhere.
-Camera angle: inside the market under the arches, looking along the stalls. (Similar places use different angles — keep to this one.)
-Details to include: buckets of roses, lilies, jasmine and marigolds from Bloomvale; a halfling flower-seller wrapping a bouquet in paper; an orc carrying a huge armful of sunflowers; carts unloading more from the river; lanterns hanging from the arch; the iron trusses of the bridge visible beyond the arch mouth; petals on the wet cobbles.
-Environment: the heart of Starhold, the capital — the broad Ashen river through the city, dark stone quays, grand grey stone buildings and spires on both banks, iron lanterns, temperate light.
-Architecture: Starhaven's established look, matching the other images of the kingdom — a dark, grand high-fantasy stone city: weathered grey and charcoal stone, soaring towers and slender spires, pointed and round arches, grand domed halls, clock towers, steep dark slate roofs, wrought-iron lanterns, heavy carved detail, mist between the buildings and mountains on the horizon. Subtle accents from the kingdom's many peoples appear only in details, never taking over: some carved stone balconies and scalloped arches, a few blue-tiled domes, the odd gently upturned roof edge on a market hall, dwarven geometric reliefs and bronze fittings, elven curved woodwork and climbing ivy. It must NOT look Indian, Chinese, Japanese or Persian overall — it is one consistent dark fantasy kingdom. Starhold signature: the capital — a vast grey-stone city ringed by mountains, gothic towers and spires mixed with domed civic halls and clock towers, broad stone plazas and stairways; misty, lantern-lit, grand.
-Lighting and time of day: early dawn, lanterns still lit, pale blue light at the arch mouth.
-Mood: fragrant, bright, bustling.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: Starholders of every kind, seen small — humans, dwarves, elves, orcs, halflings, goblins, beastkin, a Karath merchant in silks; moving in every direction.
-Who lives here (Compendium → Peoples → Who lives where, “Starhold (capital)”): mostly Humans; also Dwarves, elves, half-elves, orcs and half-orcs, halflings, goblins, beastkin. Everyone, from everywhere: the most mixed city in the kingdom. Embassy Row brings Karath merchants in desert silks, Thalassian sailors, Frostspire envoys in furs, and now and then a twelve-foot Varathos giant ducking through a gate. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Span Warden's Office ===
-Save as: starhaven_places_image/thespanwardensoffice.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: The Founders' Span   Kind: Bridge office
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Span Warden's Office — bridge office, in The Founders' Span (Starhold — over the Ashen River).
-What it is: Where the bridge is kept, counted and painted.
-Wider setting — The Founders' Span: Starhold's great iron cantilever bridge over the Ashen — the largest bridge in the kingdom, built by the Forgehaven engineers, crowded with trams, carts and walkers day and night.
-Composition: the bridge painters at work: a crew hanging off the giant iron trusses on ropes and cradles, painting the bridge from end to end, and the little Span Warden's office perched in one tower.
-Camera angle: from one painter's cradle, looking along the iron girders to the others. (Similar places use different angles — keep to this one.)
-Details to include: painters in rope harnesses and swinging cradles with pots of dark iron-grey paint and long brushes; a goblin dangling upside down to reach a rivet; a dwarf counting rivets on a slate; the Span Warden leaning out of a small round window in the tower with a speaking trumpet; the river far below; trams crossing above them.
-Environment: the heart of the kingdom — green river country, broad rivers and tree-lined avenues, iron lanterns, well-kept roads, soft temperate light.
-Architecture: Starhaven's established look, matching the other images of the kingdom — a dark, grand high-fantasy stone city: weathered grey and charcoal stone, soaring towers and slender spires, pointed and round arches, grand domed halls, clock towers, steep dark slate roofs, wrought-iron lanterns, heavy carved detail, mist between the buildings and mountains on the horizon. Subtle accents from the kingdom's many peoples appear only in details, never taking over: some carved stone balconies and scalloped arches, a few blue-tiled domes, the odd gently upturned roof edge on a market hall, dwarven geometric reliefs and bronze fittings, elven curved woodwork and climbing ivy. It must NOT look Indian, Chinese, Japanese or Persian overall — it is one consistent dark fantasy kingdom. Starhold signature: the capital — a vast grey-stone city ringed by mountains, gothic towers and spires mixed with domed civic halls and clock towers, broad stone plazas and stairways; misty, lantern-lit, grand.
-Lighting and time of day: bright windy morning, clear light.
-Mood: dizzy, cheerful, endless work.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: the bridge painters and the Span Warden, seen small — dwarves, humans and a goblin in paint-splashed overalls and harnesses.
-Who lives here (Compendium → Peoples → Who lives where, “Starhold (capital)”): mostly Humans; also Dwarves, elves, half-elves, orcs and half-orcs, halflings, goblins, beastkin. Everyone, from everywhere: the most mixed city in the kingdom. Embassy Row brings Karath merchants in desert silks, Thalassian sailors, Frostspire envoys in furs, and now and then a twelve-foot Varathos giant ducking through a gate. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+People: only two soldiers in furs walking a path among the young trees, seen small — a northern human and a dwarf.
+Who lives here (Compendium → Peoples → Who lives where, “Frosthold & Coldmarch”): mostly Northern humans and dwarves; also Beastkin (the Beastmen Berserkers are quartered here), orcs, goblins; Vanari traders at the Barter Ground. Heavy furs, frost on beards, big beastkin warriors; the occasional huge ape-kin Vanari. Still a mixed kingdom — several races clearly visible.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour. Also avoid: a giant glowing spectral tree in the sky (the tree is only drawn by the young trees on the ground); a battle; corpses.
 
 ########################################################################
 ## THE FROSTRUN  (2)

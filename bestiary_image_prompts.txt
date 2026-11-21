@@ -9,7 +9,7 @@ HOW TO USE
   The wiki's Compendium > Bestiary tab already points at these files.
 
 === Cistern Gulper ===
-Save as: starhaven_bestiary/cisterngulper.png
+Save as: starhaven_bestiary/cisterngulper.jpg
 Threat: E-rank   Habitat: The Undervault (Starhold)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -21,7 +21,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === Hedge Gnasher ===
-Save as: starhaven_bestiary/hedgegnasher.png
+Save as: starhaven_bestiary/hedgegnasher.jpg
 Threat: F-rank   Habitat: The farm villages of the breadbasket (Rookthorn, Amberfield, Ironmane)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -33,7 +33,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === Soot Newt ===
-Save as: starhaven_bestiary/sootnewt.png
+Save as: starhaven_bestiary/sootnewt.jpg
 Threat: E-rank   Habitat: The furnaces and chimneys of Forgehaven
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -45,7 +45,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === Bramble Wolf ===
-Save as: starhaven_bestiary/bramblewolf.png
+Save as: starhaven_bestiary/bramblewolf.jpg
 Threat: C-rank   Habitat: The edge of the Greywood and the Greenveil border
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -57,7 +57,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === Sink Eel ===
-Save as: starhaven_bestiary/sinkeel.png
+Save as: starhaven_bestiary/sinkeel.jpg
 Threat: D-rank   Habitat: Mournhollow Sink (north of Westreach)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -69,7 +69,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === Reedstalker ===
-Save as: starhaven_bestiary/reedstalker.png
+Save as: starhaven_bestiary/reedstalker.jpg
 Threat: B-rank   Habitat: The Veilmarsh, south of Veilhold Keep
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -81,7 +81,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === Chime Crawler ===
-Save as: starhaven_bestiary/chimecrawler.png
+Save as: starhaven_bestiary/chimecrawler.jpg
 Threat: C-rank   Habitat: The Glasswarrens (Ashfield)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -93,7 +93,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === The Index ===
-Save as: starhaven_bestiary/theindex.png
+Save as: starhaven_bestiary/theindex.jpg
 Threat: A-rank   Habitat: The Unwritten Archive (Vaelmark)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -105,7 +105,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === The Shallows Shape ===
-Save as: starhaven_bestiary/theshallowsshape.png
+Save as: starhaven_bestiary/theshallowsshape.jpg
 Threat: A-rank   Habitat: The Glass Shallows (unconfirmed)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
@@ -117,7 +117,7 @@ Mood: dangerous, believable, awe-inspiring.
 Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 
 === The Frostrun Walker ===
-Save as: starhaven_bestiary/thefrostrunwalker.png
+Save as: starhaven_bestiary/thefrostrunwalker.jpg
 Threat: S-rank   Habitat: Beyond the Wardspan (tracks only)
 PROMPT:
 Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
