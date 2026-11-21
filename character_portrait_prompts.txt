@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 68   (finished so far: 380)
+Still to generate: 58   (finished so far: 390)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -15,54 +15,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## NEW CHARACTER CARDS  (15)
 ########################################################################
-
-=== Imra Asherby ===
-Save as: starhaven_chars_image/imraasherby.png
-Group: Court & Scholars   Race: Half-elf   Age: 63
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Imra Asherby, Master of the Institute of Healing Magic · Master-Surgeon. Look: a small, upright half-elf woman of 63 with short grey hair, slightly pointed ears, reading spectacles pushed up on her head, a calm lined face and long, very steady fingers; a plain grey physician's gown with rolled sleeves and a worn leather apron, a roll of steel surgical instruments tied at her belt; a faint soft-gold glow at her fingertips. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, exact, kind and absolutely firm; the whole lecture hall goes silent when she speaks. Setting: a bright teaching theatre with tiered wooden benches behind her, softly blurred.
-
-=== Odda Brask ===
-Save as: starhaven_chars_image/oddabrask.png
-Group: Guild & Citizens   Race: Dwarf   Age: 60
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Odda Brask, engine driver of the Sunvale dawn fruit train. Look: a broad dwarf woman of 60 with grey braids tied back under a worn leather cap, forearms like hams, a calm weathered face; a heavy driver's coat of dark wool with brass buttons, leather gauntlets tucked in her belt; one hand on a brass drive lever; her face lit from below by the soft blue-white glow of a great faceted engine crystal. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): steady, unhurried, quietly certain; thirty years on the line. Setting: the cab of an arcane-railway engine at night, the glowing crystal in its brass housing, rain on the window.
-
-=== Finn Ashby ===
-Save as: starhaven_chars_image/finnashby.png
-Group: Guild & Citizens   Race: Half-elf   Age: 17
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Finn Ashby, apprentice engine driver. Look: a lanky half-elf youth of 17, pointed ears, untidy brown hair, a long nose, wide eager eyes; a brand-new dark driver's coat still creased from the shop, a little too big for him; a small battered notebook and a pencil in his hands. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): eager, nervous, trying very hard to look calm. Setting: a station platform before dawn, a crystal-powered engine glowing blue behind him.
-
-=== Nell Arden ===
-Save as: starhaven_chars_image/nellarden.png
-Group: Guild & Citizens   Race: Human   Age: 19
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Nell Arden, Mercy Rider of the Highfold Mercy. Look: a small, quick young woman of 19, dark hair in a tight braid under a fur-lined hood, wind-reddened cheeks, determined eyes; light reinforced leather with a silver Ashen cross on a dark right pauldron; a healer's satchel on each hip, splint boards strapped across her back; a faint soft amber warmth at her fingertips. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): focused, a little scared, refusing to be slow. Setting: a snowy mountain pass with a big white Snowtusk elk behind her.
-
-=== Tobble Frostwick ===
-Save as: starhaven_chars_image/tobblefrostwick.png
-Group: Guild & Citizens   Race: Goblin   Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Tobble Frostwick, goblin crew chief of the Highfold Mercy. Look: a wiry goblin of 47 with grey-green skin, long ears poking out of a fur-lined hood, frost in his eyebrows, a sharp unimpressed face; layered furs over light leather with a silver Ashen cross on the right shoulder; a brass timer strapped over his glove, a coil of rope and an ice axe at his belt; sitting on the saddle of a huge white Snowtusk elk. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): dry, unimpressed, quietly very good at his job. Setting: a windy mountain bend above a frozen stream.
-
-=== Grub Tallow ===
-Save as: starhaven_chars_image/grubtallow.png
-Group: Guild & Citizens   Race: Orc   Age: 15
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Grub Tallow, rookie adventurer. Look: a gangly orc boy of 15, green skin, small new tusks, all elbows and big hands, a hopeful jaw; a patched tunic, boots with holes in them, a rusty short sword in a sheath that does not fit it; a brand-new bronze F-rank token on a string round his neck. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): hungry, hopeful, trying to look tough. Setting: a lantern-lit canal street in Westreach at dusk.
-
-=== Wisp ===
-Save as: starhaven_chars_image/wisp.png
-Group: Guild & Citizens   Race: Goblin   Age: 15
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Wisp, rookie adventurer and healer in training. Look: a small goblin girl of 15, grey-green skin, large dark eyes, long ears, a thin pale scar across one wrist; a patched satchel with a few bandages and herb bundles poking out, a worn cloak; a new bronze F-rank token in her hand. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): shy, watchful, braver than she looks. Setting: the Westreach Guild Hall counter at sunset, golden light from the canal.
-
-=== Ironmane Charger ===
-Save as: unitImages/ironmane-charger.png
-Type: Legendary Warhorse · Ironmane Bloodline
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ironmane Charger — Legendary Warhorse · Ironmane Bloodline. Key traits: Fearless Under Impact, Formation Charge, Marcus Ironmane. The Ironmane Charger is Marcus Ironmane's legacy — the Starhaven warhorse bloodline developed over decades and now fielded by the Ironmane Lancers as its primary mount. No other institution in the coalition produces warhorses at this specification. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: the open green pastures of Ironmane Fields, a lancer formation far behind.
 
 === Ironmane Endurance Warhorse ===
 Save as: unitImages/ironmane-endurance.png
@@ -118,12 +70,6 @@ Type: Exotic Cavalry Mount · Desert-Bred
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Karath War Camel — Exotic Cavalry Mount · Desert-Bred. Key traits: Karath Sultanate, Height Advantage, Battle-Bred. Battle-bred war camels from the Karath Sultanate — taller than standard camels, giving riders a height advantage in melee. Desert-bred and desert-conditioned: resilient to heat, low water requirements, and capable of sustained operation in terrain that would incapacitate a standard cavalry warhorse within hours. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: red desert dunes of the Karath Sultanate in hot hazy light.
 
-=== Snowtusk War Elk ===
-Save as: unitImages/snowtusk-war-elk.png
-Type: Arctic Cavalry Mount · Mountain Elk
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Snowtusk War Elk — Arctic Cavalry Mount · Mountain Elk. Key traits: Frosthold Only, Cannot Survive Below Snowline, Dwarf & Goblin Riders. Massive northern elk bred exclusively for snow, ice, and mountain terrain. Thick hide, immense stamina, and natural cold resistance. The Snowtusk War Elk cannot be transported to lower altitudes — the beasts deteriorate rapidly below the snowline. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a snowbound mountain pass near Frosthold Bastion in a blizzard.
-
 === Silver Moon Elk ===
 Save as: unitImages/silver-moon-elk.png
 Type: Forest Cavalry Mount · Silent Warden
@@ -165,12 +111,6 @@ Save as: unitImages/ashwing-eagle.png
 Type: Aerial Scout Mount · Reconnaissance
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ashwing Eagle — Aerial Scout Mount · Reconnaissance. Key traits: Skywarden Corps, Ren Dael, 4 Aeries, No Barding. The aerial reconnaissance mount of Ren Dael's Skywarden Corps — one aerie of Ashwing Eagles embedded per Field Army. Minimal tack, no barding: the bird's speed and vision are the asset, and weight compromises both. They are not fighters. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a high wind-swept aerie, clouds below.
-
-=== War Griffin ===
-Save as: unitImages/war-griffin.png
-Type: Aerial Combat Mount · Storm Elf
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: War Griffin — Aerial Combat Mount · Storm Elf. Key traits: Stormriders, Bond-Paired, Weight-Shift Response, Lion-Eagle Hybrid. Lion-eagle hybrid bred for aerial combat — the mount of the Stormriders under Aurelia Vex. Each rider's bonded War Griffin responds to rider weight shift at speed, requiring no verbal command mid-dive. The bond-pair dynamic means the Griffin anticipates the rider's maneuver before the command is issued — combat at speed in three dimensions does not accommodate verbal instruction. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal. Setting: a storm-lit cliff above the sea, wings half-spread.
 
 === Skymark Wyvern-Hybrid ===
 Save as: unitImages/skymark-wyvern-hybrid.png
