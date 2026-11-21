@@ -1,0 +1,10 @@
+STARHAVEN — DOCUMENT & POSTER IMAGE PROMPTS (for Grok image generation)
+========================================================================
+
+Still to generate: 0
+
+HOW TO USE
+- Save each image as PNG into  starhaven_docs_image/  with the exact file name after "Save as".
+- The image appears at the top of its card in Compendium → Documents; the full text stays readable under it.
+- If a word comes out misspelled, regenerate — the text is part of the picture.
+
