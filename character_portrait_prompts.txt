@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 56   (finished so far: 402)
+Still to generate: 59   (finished so far: 402)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -15,6 +15,24 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
 ########################################################################
+
+=== Chinonso Ebere ===
+Save as: starhaven_chars_image/chinonsoebere.png
+Group: Guild & Citizens   Race: Human   Age: 40
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Chinonso Ebere, leader of the Saltwind Five, an A-rank sea-cave party. Look: a tall Black woman of 40 with a diver's broad shoulders, close-cropped grey-black hair, a salt-weathered face; a worn oiled-leather diving harness over a dark wool tunic, a diver's knife at her hip; holding a big half-orc's harpoon that is too large for her, upright beside her like a staff. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, steady, grieving and unbroken; her voice never goes up. Setting: the black arch of the Tower at low tide, wet rock and seaweed, the tide going out.
+
+=== Mahlet Desta ===
+Save as: starhaven_chars_image/mahletdesta.png
+Group: Guild & Citizens   Race: Halfling   Age: 52
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Mahlet Desta, innkeeper of the Last Rung in Firstrung. Look: a round, brisk halfling woman of 52 with grey curls under a red headscarf, a sailor's tattoo on one forearm and flour on the other, a big apron over a blue wool dress, a lit lamp in one hand. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): warm, sharp, practical; never sits down. Setting: the inside of a long low inn at night, lamps in every window, a long table down the middle.
+
+=== Aigerim Bekova ===
+Save as: starhaven_chars_image/aigerimbekova.png
+Group: Commander   Race: Human   Age: 31
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Aigerim Bekova, lead mage of the Skymark Corps. Look: a lean, sharp-eyed woman of 31 with a long black braid and a wind-burned face, a flier's fitted leather coat and goggles pushed up, a gauntlet on one hand faintly glowing pale blue with a resonance mark; leaning on a cane after a fall, but standing straight. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): precise, fearless, dry humour. Setting: a windy cliff-top aerie with a sleek wyvern-hybrid mount behind her, built for speed.
 
 === Ironmane Endurance Warhorse ===
 Save as: unitImages/ironmane-endurance.png
