@@ -318,6 +318,23 @@ a.lore-card:hover{transform:translateY(-2px)}
 .ballad-close-btn:hover{color:var(--text)}
 
 /* ══ MAP SECTION ══ */
+.map-mode-bar{display:flex;gap:6px;margin-bottom:10px}
+.map-mode-bar .map-btn.active{border-color:var(--gold);color:var(--gold2);background:var(--bg2)}
+#mp-svg{display:block;width:100%;height:100%;cursor:grab;user-select:none}
+#mp-svg.grabbing{cursor:grabbing}
+#mp-svg text{font-family:inherit;paint-order:stroke;stroke:var(--bg3);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.mp-legend{position:absolute;left:12px;top:12px;z-index:10;background:rgba(5,6,10,.82);border:1px solid var(--border3);border-radius:8px;padding:8px 10px;font-size:12px;max-height:calc(100% - 70px);overflow:auto;backdrop-filter:blur(4px)}
+.mp-legend label{display:flex;align-items:center;gap:7px;cursor:pointer;padding:2px 0;color:var(--text2);white-space:nowrap}
+.mp-legend .mp-sw{width:10px;height:10px;border-radius:50%;flex:none}
+.mp-legend.folded label{display:none}
+.mp-legend.folded b{margin:0}
+.mp-legend b{display:block;color:var(--gold2);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.mp-info{position:absolute;right:12px;bottom:12px;z-index:10;width:300px;max-width:calc(100% - 24px);max-height:60%;overflow:auto;background:rgba(5,6,10,.9);border:1px solid var(--border3);border-radius:8px;padding:12px 14px;font-size:13px;line-height:1.5;color:var(--text2);display:none;backdrop-filter:blur(4px)}
+.mp-info h3{margin:0 0 2px;color:var(--gold2);font-size:16px}
+.mp-info .mp-k{color:var(--text3);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.mp-info button{margin-top:8px}
+.mp-search{padding:5px 8px;background:rgba(5,6,10,.7);color:var(--text);border:1px solid var(--border3);border-radius:6px;font-size:13px;width:170px}
+@media (max-width:700px){.mp-legend{font-size:11px;max-height:40%}.mp-search{width:110px}}
 .map-viewer-wrap{position:relative;height:calc(100vh - 200px);min-height:400px;background:var(--bg3);border:1px solid var(--border2);border-radius:10px;overflow:hidden;touch-action:none}
 .map-viewer-img{transform-origin:0 0;will-change:transform;cursor:grab;user-select:none;display:block;max-width:none;max-height:none}
 .map-viewer-img.grabbing{cursor:grabbing}
@@ -654,9 +671,16 @@ a.lore-card:hover{transform:translateY(-2px)}
     <div class="s-hero">
       <p class="s-eyebrow">✦ Starhaven Cartography Office</p>
       <h1 class="s-title">World Map</h1>
-      <p class="s-subtitle">Scroll to zoom · Drag to pan · Use buttons to reset</p>
+      <p class="s-subtitle">Scroll to zoom · Drag to pan · Switch to the Kingdom plan to see where every city, fort and village lies</p>
     </div>
     <div class="s-content" style="padding-top:20px">
+      <div class="map-mode-bar"><button class="map-btn active" onclick="mapMode('img',this)">Painted map</button><button class="map-btn" onclick="mapMode('plan',this)">Kingdom plan — every city, fort and village</button></div>
+      <div class="map-viewer-wrap" id="map-plan" style="display:none">
+        <svg id="mp-svg"></svg>
+        <div class="mp-legend" id="mp-legend"></div>
+        <div class="map-controls"><input class="mp-search" id="mp-search" list="mp-names" placeholder="Find a place…"><datalist id="mp-names"></datalist><button class="map-btn" onclick="mpZoom(1.4)" title="Zoom in">+</button><button class="map-btn" onclick="mpZoom(1/1.4)" title="Zoom out">−</button><button class="map-btn" onclick="mpFit()" title="Reset view">⤾</button></div>
+        <div class="mp-info" id="mp-info"></div>
+      </div>
       <div class="map-viewer-wrap" id="map-viewer">
         <img id="map-img" class="map-viewer-img" src="Lores/maps/mapnew.png" alt="Starhaven World Map" draggable="false">
         <div class="map-controls">
@@ -32540,6 +32564,223 @@ function closeImgModal() {
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeImgModal();closeCharModal();closeArmyModal();}
   if((e.key==='ArrowLeft'||e.key==='ArrowRight')&&document.getElementById('char-modal-overlay').classList.contains('open')&&!document.getElementById('img-modal').classList.contains('open')){
     e.preventDefault();charModalStep(e.key==='ArrowRight'?1:-1);}});
+
+// ════════════════════════════════════════
+//  KINGDOM PLAN (drawn from WORLD.COORDS)
+// ════════════════════════════════════════
+const MP_T = {
+  capital: {l:'The capital', c:'#F2CF5B', r:9, s:'ring', lv:0},
+  city: {l:'Cities', c:'#D9A441', r:7, s:'o', lv:0},
+  naval: {l:'Naval city & sea fortress', c:'#4FA3D9', r:7, s:'o', lv:0},
+  fort: {l:'Forts & castles', c:'#E0563F', r:6, s:'sq', lv:0},
+  frontier: {l:'Frontier towns & lands', c:'#D08A3A', r:5, s:'sq', lv:1},
+  village: {l:'Villages', c:'#6DBF6A', r:4.5, s:'o', lv:1},
+  outpost: {l:'Outposts & depots', c:'#C46AA0', r:4, s:'sq', lv:1},
+  historic: {l:'Ruins & old places', c:'#A39684', r:4.5, s:'di', lv:1},
+  river: {l:'Rivers, lakes & bridges', c:'#5AB0EA', r:4, s:'ring', lv:1},
+  landmark: {l:'Landmarks', c:'#A98AE0', r:3.5, s:'di', lv:2},
+  district: {l:'Districts, estates & grounds', c:'#8FA0B6', r:3, s:'o', lv:2},
+};
+// hand-drawn geography for the plan, in WORLD.COORDS units (y grows south); rivers follow the courses the Atlas describes
+const MP_GEO = {
+  border: [[-330,-215],[-250,-285],[-150,-300],[-70,-330],[-45,-400],[45,-412],[80,-335],[160,-290],[250,-185],[345,-95],[372,-15],[335,55],[300,105],[292,165],[288,230],[300,300],[262,365],[175,395],[60,392],[-40,392],[-115,438],[-185,412],[-205,340],[-262,262],[-292,170],[-345,112],[-362,45],[-352,-55],[-358,-130]],
+  rivers: [
+    {n:'The Ashen River', w:3.2, lab:[1,4], p:[[-192,-172],[-172,-125],[-125,-78],[-65,-42],[-25,-14],[0,1],[10,12],[-15,16],[-50,12],[-100,13],[-150,10],[-205,24],[-255,26],[-300,22],[-345,26]]},
+    {n:'The Thornwater', w:2, lab:[0,4], p:[[-228,48],[-182,26],[-140,2],[-100,-8],[-62,-22],[-33,-22]]},
+    {n:'The Selmere', w:2.4, lab:[1,5], p:[[350,150],[300,195],[260,214],[205,192],[150,180],[85,162],[22,146],[-20,140],[-80,128],[-150,106],[-205,80],[-242,52],[-262,28]]},
+    {n:'The Frostrun', w:2, lab:[3,7], p:[[6,-430],[0,-392],[-9,-342],[7,-300],[10,-252],[16,-234],[26,-190],[34,-140]]},
+  ],
+  lakes: [['Lake Starmere',32,-2,16,8],['The Mirror Lakes',-185,-172,11,6],['Lake Stillmere',55,-87,10,6],['Moonfall Lake',-246,18,7,5]],
+  mountains: [[-200,-232,46],[-205,-198,30],[-300,-152,30],[-280,-118,18],[0,-322,58],[60,-262,30],[-330,-172,20],[326,-26,40],[262,2,26],[100,-512,40]],
+  forests: [[-228,42,40],[-190,62,26],[-100,-196,30],[22,128,16]],
+  names: [['THE ASHEN SEA',-470,140,15],['TITAN HIGHLANDS',110,-470,12],['FROSTSPIRE DOMINION',-170,-430,12],['KARATH SULTANATE',330,420,12],['ACROSS THE STRAIT',470,40,11],['THE SOUTHERN SEA',-40,470,12],['STARHAVEN',-120,-250,22]],
+};
+function mpSmooth(pts) {
+  // Catmull-Rom through the points, as cubic Bézier segments
+  let d = `M${pts[0][0]},${pts[0][1]}`;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+    d += ` C${p1[0] + (p2[0] - p0[0]) / 6},${p1[1] + (p2[1] - p0[1]) / 6} ${p2[0] - (p3[0] - p1[0]) / 6},${p2[1] - (p3[1] - p1[1]) / 6} ${p2[0]},${p2[1]}`;
+  }
+  return d;
+}
+const MP = {k:1, cx:0, cy:0, off:{}, links:true, sel:null, hov:null, items:null, sup:null};
+function mapMode(m, btn) {
+  document.querySelectorAll('.map-mode-bar .map-btn').forEach(b => b.classList.toggle('active', b === btn));
+  document.getElementById('map-viewer').style.display = m === 'img' ? '' : 'none';
+  document.getElementById('map-plan').style.display = m === 'plan' ? '' : 'none';
+  if (m === 'plan') { if (!MP.items) mpInit(); else mpDraw(); }
+}
+function mpInit() {
+  const C = WORLD.COORDS;
+  // kingdom-wide, travelling and classified entries have no real spot on the map
+  MP.items = LOCATIONS.filter(l => C[l.name] && MP_T[l.type] && !/^(Kingdom-Wide|Kingdom-wide|Travelling|Classified)/.test(l.region || ''))
+    .map(l => ({l, x: C[l.name][0], y: C[l.name][1], t: MP_T[l.type]}));
+  const byName = Object.fromEntries(MP.items.map(i => [i.l.name, i]));
+  MP.sup = [];
+  MP.items.forEach(i => {
+    const s = i.l.supplies; if (!s || i.l.type !== 'village') return;
+    MP.items.forEach(j => { if (j !== i && (s.includes(j.l.name) || (j.l.type === 'capital' && /the capital/.test(s)))) MP.sup.push([i, j]); });
+  });
+  document.getElementById('mp-names').innerHTML = MP.items.map(i => `<option value="${compEsc(i.l.name).replace(/"/g, '&quot;')}">`).join('');
+  const srch = document.getElementById('mp-search');
+  srch.addEventListener('change', () => { const i = byName[srch.value]; if (i) { MP.off[i.l.type] = false; mpLegend(); mpSelect(i, true); } });
+  mpLegend();
+  const svg = document.getElementById('mp-svg');
+  let drag = null;
+  svg.addEventListener('pointerdown', e => { drag = {x: e.clientX, y: e.clientY, cx: MP.cx, cy: MP.cy, moved: false}; svg.setPointerCapture(e.pointerId); svg.classList.add('grabbing'); });
+  svg.addEventListener('pointermove', e => {
+    if (drag) {
+      const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+      if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
+      MP.cx = drag.cx - dx / MP.k; MP.cy = drag.cy - dy / MP.k; mpDraw(); return;
+    }
+    const h = mpHit(e); if (h !== MP.hov) { MP.hov = h; mpDraw(); }
+  });
+  svg.addEventListener('pointerup', e => {
+    svg.classList.remove('grabbing');
+    if (drag && !drag.moved) { const h = mpHit(e); mpSelect(h, false); }
+    drag = null;
+  });
+  svg.addEventListener('pointerleave', () => { if (MP.hov) { MP.hov = null; mpDraw(); } });
+  svg.addEventListener('wheel', e => {
+    e.preventDefault();
+    const r = svg.getBoundingClientRect(), f = e.deltaY < 0 ? 1.2 : 1 / 1.2;
+    const wx = MP.cx + (e.clientX - r.left - r.width / 2) / MP.k, wy = MP.cy + (e.clientY - r.top - r.height / 2) / MP.k;
+    const k = Math.min(40, Math.max(0.15, MP.k * f));
+    MP.cx = wx - (e.clientX - r.left - r.width / 2) / k; MP.cy = wy - (e.clientY - r.top - r.height / 2) / k; MP.k = k; mpDraw();
+  }, {passive: false});
+  window.addEventListener('resize', () => { if (document.getElementById('map-plan').style.display !== 'none') mpDraw(); });
+  mpFit();
+}
+function mpFit() {
+  // the kingdom itself; far places (Varathos, Nhamo, the Thunder Steps, Sulvarra) are a zoom-out away
+  const svg = document.getElementById('mp-svg'), w = svg.clientWidth || 900, h = svg.clientHeight || 600;
+  MP.cx = -60; MP.cy = 10; MP.k = Math.min(w / 860, h / 880); mpDraw();
+}
+function mpZoom(f) { MP.k = Math.min(40, Math.max(0.15, MP.k * f)); mpDraw(); }
+function mpVis(i) { return !MP.off[i.l.type]; }
+function mpHit(e) {
+  const svg = document.getElementById('mp-svg'), r = svg.getBoundingClientRect(), w = r.width, h = r.height;
+  let best = null, bd = 12;
+  MP.items.forEach(i => {
+    if (!mpVis(i)) return;
+    const d = Math.hypot((i.x - MP.cx) * MP.k + w / 2 - (e.clientX - r.left), (i.y - MP.cy) * MP.k + h / 2 - (e.clientY - r.top));
+    if (d < bd) { bd = d; best = i; }
+  });
+  return best;
+}
+function mpSelect(i, center) {
+  MP.sel = i;
+  const box = document.getElementById('mp-info');
+  if (!i) { box.style.display = 'none'; mpDraw(); return; }
+  if (center) { MP.cx = i.x; MP.cy = i.y; MP.k = Math.max(MP.k, 3); }
+  const l = i.l, mi = n => Math.round(Math.hypot(i.x - n.x, i.y - n.y) * 1.25);
+  const star = MP.items.find(x => x.l.type === 'capital');
+  const near = MP.items.filter(x => x !== i && ['capital', 'city', 'naval'].includes(x.l.type)).sort((a, b) => mi(a) - mi(b))[0];
+  const fedBy = MP.sup.filter(([a, b]) => b === i).map(([a]) => a.l.name);
+  const feeds = MP.sup.filter(([a, b]) => a === i).map(([a, b]) => b.l.name);
+  const row = (k, v) => v ? `<div><span class="mp-k">${k}</span><br>${compEsc(v)}</div>` : '';
+  box.innerHTML = `<h3>${compEsc(l.name)}</h3><div class="mp-k" style="color:${i.t.c}">${compEsc(i.t.l)} · ${compEsc(l.region || '')}</div>
+    <p style="margin:8px 0">${compEsc(l.desc || '')}</p>
+    ${row('Population', l.population)}${row('Produces', l.produces)}${row('Sends to', l.supplies)}
+    ${fedBy.length ? row('Villages that supply it', fedBy.join(' · ')) : ''}
+    <div><span class="mp-k">Distance</span><br>${i === star ? 'The capital' : `~${mi(star)} miles from Starhold`}${near && near !== star ? ` · ~${mi(near)} miles from ${compEsc(near.l.name)}` : ''}</div>
+    <button class="map-btn" onclick="loreGoPlace(${JSON.stringify(l.name).replace(/"/g, '&quot;')})">Open in the Atlas ›</button>
+    <button class="map-btn" onclick="mpSelect(null)">Close</button>`;
+  box.style.display = 'block';
+  mpDraw();
+}
+function mpLegend() {
+  const n = {}; MP.items.forEach(i => n[i.l.type] = (n[i.l.type] || 0) + 1);
+  const lg = document.getElementById('mp-legend'); if (MP.fold === undefined) MP.fold = window.innerWidth < 700;
+  lg.classList.toggle('folded', MP.fold);
+  lg.innerHTML = '<b onclick="MP.fold=!MP.fold;mpLegend()" style="cursor:pointer">Show ' + (MP.fold ? '▸' : '▾') + '</b>' + Object.entries(MP_T).filter(([k]) => n[k]).map(([k, v]) =>
+    `<label><input type="checkbox" ${MP.off[k] ? '' : 'checked'} onchange="MP.off['${k}']=!this.checked;mpDraw()"><span class="mp-sw" style="background:${v.c};border-radius:${v.s === 'sq' ? '2px' : v.s === 'di' ? '1px;transform:rotate(45deg)' : '50%'}"></span>${v.l} (${n[k]})</label>`).join('')
+    + `<label style="margin-top:4px"><input type="checkbox" ${MP.links ? 'checked' : ''} onchange="MP.links=this.checked;mpDraw()"><span class="mp-sw" style="background:none;border-top:2px dashed #6DBF6A;border-radius:0;height:0"></span>Supply lines (village → buyer)</label>`;
+}
+function mpDraw() {
+  const svg = document.getElementById('mp-svg'); if (!svg || !MP.items) return;
+  const w = svg.clientWidth, h = svg.clientHeight, k = MP.k;
+  const P = (x, y) => [(x - MP.cx) * k + w / 2, (y - MP.cy) * k + h / 2];
+  let o = '';
+  const sc = Math.min(1.8, Math.max(0.6, Math.sqrt(k)));
+  const pp = pts => mpSmooth(pts.map(([x, y]) => P(x, y)));
+  o += `<defs>
+    <radialGradient id="mp-sea" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#0f1a24"/><stop offset="1" stop-color="#070b11"/></radialGradient>
+    <linearGradient id="mp-land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1b17"/><stop offset=".55" stop-color="#1a1813"/><stop offset="1" stop-color="#1f1a12"/></linearGradient>
+    <radialGradient id="mp-vig" cx="50%" cy="50%" r="70%"><stop offset=".65" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+  </defs><rect width="${w}" height="${h}" fill="url(#mp-sea)"/>`;
+  // faint sea swells
+  for (let s = 0; s < 3; s++) o += `<path d="${pp(MP_GEO.border.map(([x, y]) => [x * (1.06 + s * .07), y * (1.06 + s * .07)]).concat([[MP_GEO.border[0][0] * (1.06 + s * .07), MP_GEO.border[0][1] * (1.06 + s * .07)]]))}" fill="none" stroke="#3c6a8a" stroke-opacity="${.12 - s * .03}" stroke-width="1"/>`;
+  // grid: one square = 100 miles
+  const g = 80 * k, gx = ((w / 2 - MP.cx * k) % g + g) % g, gy = ((h / 2 - MP.cy * k) % g + g) % g;
+  for (let x = gx; x < w; x += g) o += `<line x1="${x}" y1="0" x2="${x}" y2="${h}" stroke="rgba(212,168,50,.045)"/>`;
+  for (let y = gy; y < h; y += g) o += `<line x1="0" y1="${y}" x2="${w}" y2="${y}" stroke="rgba(212,168,50,.045)"/>`;
+  // the kingdom: land, soft glow, then the border itself
+  const bd = pp(MP_GEO.border.concat([MP_GEO.border[0]])) + 'Z';
+  o += `<path d="${bd}" fill="url(#mp-land)"/><path d="${bd}" fill="none" stroke="#D4A832" stroke-opacity=".12" stroke-width="${10 * sc}"/>
+    <path d="${bd}" fill="none" stroke="#D4A832" stroke-opacity=".75" stroke-width="${1.4 * sc}" stroke-dasharray="${9 * sc} ${4 * sc} ${2 * sc} ${4 * sc}"/>`;
+  // forests and mountains
+  MP_GEO.forests.forEach(([fx, fy, rr]) => { for (let a = 0; a < rr * 0.9; a++) {
+    const ang = a * 2.399, d = Math.sqrt(a / (rr * 0.9)) * rr, [x, y] = P(fx + Math.cos(ang) * d, fy + Math.sin(ang) * d * .7);
+    o += `<circle cx="${x}" cy="${y}" r="${2.2 * sc}" fill="#3f6b3a" fill-opacity=".45"/>`; } });
+  MP_GEO.mountains.forEach(([mx, my, rr]) => { for (let a = 0; a < rr / 3; a++) {
+    const ang = a * 2.399, d = Math.sqrt(a / (rr / 3)) * rr * .8, [x, y] = P(mx + Math.cos(ang) * d * 1.3, my + Math.sin(ang) * d * .6), s = (5 + (a % 3) * 1.6) * sc;
+    o += `<path d="M${x - s},${y + s * .55} L${x},${y - s * .75} L${x + s},${y + s * .55}" fill="#2a2620" stroke="#8c7b62" stroke-opacity=".7" stroke-width="1"/><path d="M${x - s * .28},${y - s * .35} L${x},${y - s * .75} L${x + s * .28},${y - s * .35}" fill="#d8d2c4" fill-opacity=".55"/>`; } });
+  // lakes and rivers, names written along the water
+  MP_GEO.lakes.forEach(([n, lx, ly, rx, ry]) => { const [x, y] = P(lx, ly); o += `<ellipse cx="${x}" cy="${y}" rx="${rx * k}" ry="${ry * k}" fill="#2f6f9a" fill-opacity=".55" stroke="#6ab4e6" stroke-opacity=".6"/>`; });
+  MP_GEO.rivers.forEach((r, ri) => {
+    const d = pp(r.p), rw = Math.min(1.25, sc);
+    // label along a stretch that reads left to right, so the name is never upside down
+    let seg = r.p.slice(r.lab[0], r.lab[1] + 1); if (seg[seg.length - 1][0] < seg[0][0]) seg = seg.slice().reverse();
+    o += `<path d="${d}" fill="none" stroke="#6ab4e6" stroke-opacity=".18" stroke-width="${(r.w + 4) * rw}" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#4f9fd8" stroke-width="${r.w * rw}" stroke-linecap="round" stroke-linejoin="round"/>`;
+    o += `<path id="mp-rl${ri}" d="${pp(seg)}" fill="none"/>`;
+    if (k > .45) o += `<text font-size="${11 * Math.min(1.3, sc)}" fill="#8cc8f0" font-style="italic" dy="-6" text-anchor="middle" style="letter-spacing:.06em"><textPath href="#mp-rl${ri}" startOffset="50%">${r.n}</textPath></text>`;
+  });
+  // names of the sea and the lands beyond the border
+  MP_GEO.names.forEach(([n, nx, ny, fs]) => { const [x, y] = P(nx, ny);
+    o += `<text x="${x}" y="${y}" font-size="${fs * Math.min(1.4, sc)}" fill="${n === 'STARHAVEN' ? '#D4A832' : n.includes('SEA') ? '#5f8fb0' : '#8c7b62'}" fill-opacity="${n === 'STARHAVEN' ? .35 : .7}" text-anchor="middle" style="letter-spacing:.35em" font-style="${n.includes('SEA') ? 'italic' : 'normal'}">${n}</text>`; });
+  // supply lines
+  const focus = MP.sel || MP.hov;
+  MP.sup.forEach(([a, b]) => {
+    if (!mpVis(a) || !mpVis(b)) return;
+    const hi = focus && (a === focus || b === focus);
+    if (!hi && !MP.links) return;
+    const [x1, y1] = P(a.x, a.y), [x2, y2] = P(b.x, b.y);
+    o += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${hi ? '#9BE08F' : '#6DBF6A'}" stroke-opacity="${hi ? .9 : focus ? .06 : .16}" stroke-width="${hi ? 1.6 : 1}" stroke-dasharray="4 4"/>`;
+  });
+  // markers, biggest last so cities sit on top
+  const vis = MP.items.filter(mpVis).sort((a, b) => b.t.lv - a.t.lv || a.t.r - b.t.r);
+  const sz = i => i.t.r * Math.min(1.6, Math.max(0.75, Math.sqrt(k)));
+  vis.forEach(i => {
+    const [x, y] = P(i.x, i.y); if (x < -20 || y < -20 || x > w + 20 || y > h + 20) return;
+    const r = sz(i), c = i.t.c, st = i === focus ? '#FFF0C0' : 'rgba(5,6,10,.9)';
+    if (i.t.s === 'sq') o += `<rect x="${x - r}" y="${y - r}" width="${2 * r}" height="${2 * r}" rx="1.5" fill="${c}" stroke="${st}" stroke-width="1.5"/>`;
+    else if (i.t.s === 'di') o += `<rect x="${x - r * .8}" y="${y - r * .8}" width="${1.6 * r}" height="${1.6 * r}" fill="${c}" stroke="${st}" stroke-width="1.2" transform="rotate(45 ${x} ${y})"/>`;
+    else if (i.t.s === 'ring') o += `<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${c}" stroke-width="2.5"/><circle cx="${x}" cy="${y}" r="${r * .4}" fill="${c}"/>`;
+    else o += `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}" stroke="${st}" stroke-width="1.5"/>`;
+    if (i === focus) o += `<circle cx="${x}" cy="${y}" r="${r + 6}" fill="none" stroke="#FFF0C0" stroke-opacity=".7"/>`;
+  });
+  // labels: most important first; skip any that would overlap one already placed
+  const placed = [], minLv = k >= 2.6 ? 2 : k >= 0.7 ? 1 : 0;
+  const order = vis.slice().sort((a, b) => (b === focus) - (a === focus) || a.t.lv - b.t.lv || b.t.r - a.t.r);
+  order.forEach(i => {
+    if (i.t.lv > minLv && i !== focus) return;
+    if (i !== focus && MP_GEO.rivers.some(r => r.n === i.l.name)) return; // named along the water instead
+    const [x, y] = P(i.x, i.y); if (x < 0 || y < 0 || x > w || y > h) return;
+    const fs = i.t.lv === 0 ? 13 : i.t.lv === 1 ? 11.5 : 10.5, tw = i.l.name.length * fs * .55, r = sz(i);
+    const box = [x + r + 4, y - fs * .7, x + r + 4 + tw, y + fs * .5];
+    if (i !== focus && placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) return;
+    placed.push(box);
+    o += `<text x="${box[0]}" y="${y + fs * .35}" font-size="${fs}" fill="${i.t.lv === 0 ? '#F0E4C0' : i.t.c}" font-weight="${i.t.lv === 0 ? 700 : 400}" ${i.l.type === 'river' ? 'font-style="italic"' : ''}>${compEsc(i.l.name)}</text>`;
+  });
+  o += `<rect width="${w}" height="${h}" fill="url(#mp-vig)" pointer-events="none"/>`;
+  // compass and scale
+  o += `<g transform="translate(${w - 46},${h - 84})" opacity=".9"><circle r="22" fill="rgba(5,6,10,.5)" stroke="#D4A832" stroke-opacity=".5"/><path d="M0,-20 L5,0 L0,20 L-5,0 Z" fill="#D4A832"/><path d="M0,-20 L5,0 L0,0 Z" fill="#FAE090"/><path d="M-20,0 L0,4 L20,0 L0,-4 Z" fill="#8c7b62"/><text x="0" y="-26" font-size="12" fill="#EEC854" text-anchor="middle" font-weight="700">N</text></g>`;
+  const sb = 80 * k; o += `<g transform="translate(${w - 24 - sb},${h - 22})"><line x1="0" y1="0" x2="${sb}" y2="0" stroke="#C8B880" stroke-width="2"/><line x1="0" y1="-4" x2="0" y2="4" stroke="#C8B880"/><line x1="${sb}" y1="-4" x2="${sb}" y2="4" stroke="#C8B880"/><text x="${sb / 2}" y="-6" font-size="11" fill="#C8B880" text-anchor="middle">100 miles</text></g>`;
+  svg.innerHTML = o;
+}
 
 // ════════════════════════════════════════
 //  MAP VIEWER
