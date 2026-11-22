@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 442   (finished so far: 457)
+Still to generate: 437   (finished so far: 462)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -9,119 +9,8 @@ HOW TO USE
 - Places whose image already exists are left out of this file automatically.
 
 ########################################################################
-## ASHFIELD  (14)
+## ASHFIELD  (8)
 ########################################################################
-
-=== The Cinderguard Barracks ===
-Save as: starhaven_places_image/thecinderguardbarracks.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashfield   Kind: Guild company barracks
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Cinderguard Barracks — guild company barracks, in the frontier territory Ashfield (Southern Frontier).
-What it is: Home of the Cinderguard — the Crater Guild's own chartered company of six hundred adventurers on permanent retainer. They guard expeditions, salvage yards and the guild's caravans, and keep the peace on the Lantern Mile.
-Wider setting — Ashfield: The southern frontier territory — the Ashen Passage War was fought here. The crater from the Year 1042 engagement still glows at night.
-Composition: A view of the barracks yard inside the old war depot, the company drilling in the midground.
-Details to include: adventurers of mixed races in matching ember-red sashes over their own mismatched armour drilling with spears and shields, an armoury rack, an expedition being kitted out with lanterns and rope, the depot's thick walls and watchtower, the crater on the horizon.
-Environment: the southern frontier — dry golden grassland and reclaimed farmland, old battlefield scars and broken war-era walls, a wide hot sky, and on the horizon the great crater with a faint glow rising from it.
-Architecture: a fortified war-era stone-and-timber depot turned guild hall — thick sun-bleached walls, a watchtower, wide gates, canvas awnings and later timber additions; rough, busy and prosperous.
-Lighting and time of day: early morning, low golden sun and long shadows.
-Mood: tough, disciplined, ready.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashfield”): mostly Humans; also Half-elves, half-orcs, halflings, dwarves; Karath caravan traders. Frontier folk in sun-faded clothes and wide hats, crater-guild adventurers, Karath merchants with camels at the Caravanserai. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Ashfield Strongroom ===
-Save as: starhaven_places_image/theashfieldstrongroom.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashfield   Kind: Bank
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Ashfield Strongroom — bank, in the frontier territory Ashfield (Southern Frontier).
-What it is: Crown Bank branch and salvage escrow — crater finds are valued, held and paid out here, behind the old war depot's thickest walls.
-Wider setting — Ashfield: The southern frontier territory — the Ashen Passage War was fought here. The crater from the Year 1042 engagement still glows at night.
-Composition: An interior view of the strongroom's counting hall, a heavy vault door open at the back.
-Details to include: clerks at tall desks weighing coin and valuing salvage, an adventurer handing over a glowing chunk of crater-glass, a massive iron-banded vault door, guards with crossbows, ledgers and scales.
-Environment: the southern frontier — dry golden grassland and reclaimed farmland, old battlefield scars and broken war-era walls, a wide hot sky, and on the horizon the great crater with a faint glow rising from it.
-Architecture: a fortified war-era stone-and-timber depot turned guild hall — thick sun-bleached walls, a watchtower, wide gates, canvas awnings and later timber additions; rough, busy and prosperous.
-Lighting and time of day: lamplight indoors, a shaft of daylight from a high barred window.
-Mood: guarded, serious, rich.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashfield”): mostly Humans; also Half-elves, half-orcs, halflings, dwarves; Karath caravan traders. Frontier folk in sun-faded clothes and wide hats, crater-guild adventurers, Karath merchants with camels at the Caravanserai. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Glasswarrens ===
-Save as: starhaven_places_image/theglasswarrens.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashfield   Kind: Dungeon · A-rank
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Glasswarrens — dungeon · a-rank, in Ashfield.
-What it is: Tunnels of fused crater-glass around the rim — beautiful, sharp-edged and full of things the blast changed.
-Wider setting — Ashfield: The southern frontier territory — the Ashen Passage War was fought here. The crater from the Year 1042 engagement still glows at night. Senna Ash calls it the only song that understands why.
-Composition: inside a tunnel of fused crater-glass: smooth, curving walls of dark ember-gold glass, sharp-edged ridges and spikes, the tunnel winding away into glowing gloom.
-Camera angle: from just behind a small adventuring party, looking past them down the tunnel. (Similar places use different angles — keep to this one.)
-Details to include: a party of mixed races with lanterns, weapons ready; the glass walls reflecting the lantern light a hundred times; strange things frozen half-inside the glass — a bird, a sword, a shape that might have been a person; something pale moving far ahead.
-Environment: the southern frontier — dry golden grassland and reclaimed farmland, old battlefield scars and broken war-era walls, a wide hot sky, and on the horizon the great crater with a faint glow rising from it.
-Architecture: mostly the natural landscape; any buildings that appear are few and small, rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: lantern light multiplied by glass reflections, warm ember glow from deep within the walls.
-Mood: tense, thrilling, dangerous.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashfield”): mostly Humans; also Half-elves, half-orcs, halflings, dwarves; Karath caravan traders. Frontier folk in sun-faded clothes and wide hats, crater-guild adventurers, Karath merchants with camels at the Caravanserai. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Crater Floor ===
-Save as: starhaven_places_image/thecraterfloor.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashfield   Kind: Dungeon · S-rank
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Crater Floor — dungeon · s-rank, in Ashfield.
-What it is: The bottom of the glowing crater. Only the Ninth Ember have reached it and come back — twice. Arcanum permit required.
-Wider setting — Ashfield: The southern frontier territory — the Ashen Passage War was fought here. The crater from the Year 1042 engagement still glows at night. Senna Ash calls it the only song that understands why.
-Composition: the floor of the vast glowing crater from the bottom of a rope-and-ladder descent, the crater walls rising on every side, light welling up from cracks in the glassy ground.
-Camera angle: from the foot of the ladder, at a low angle across the crater floor. (Similar places use different angles — keep to this one.)
-Details to include: a small elite adventuring party (the Ninth Ember) of mixed races roped together, lanterns unnecessary in the glow; cracked black glass underfoot with ember-gold light pouring up through the cracks; heat shimmer; huge fused shapes of old war machines half-sunk in the floor; an Arcanum instrument on a tripod.
-Environment: the southern frontier — dry golden grassland and reclaimed farmland, old battlefield scars and broken war-era walls, a wide hot sky, and on the horizon the great crater with a faint glow rising from it.
-Architecture: mostly the natural landscape; any buildings that appear are few and small, rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
-Lighting and time of day: ember-gold light from below, the sky a small dark circle far above.
-Mood: awe-struck, dangerous, silent.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashfield”): mostly Humans; also Half-elves, half-orcs, halflings, dwarves; Karath caravan traders. Frontier folk in sun-faded clothes and wide hats, crater-guild adventurers, Karath merchants with camels at the Caravanserai. Still a mixed kingdom — several races clearly visible.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
-
-=== The Ember Pit ===
-Save as: starhaven_places_image/theemberpit.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashfield   Kind: Arena
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Ember Pit — arena, in Ashfield.
-What it is: A sunken arena where salvage-rights disputes are settled by duel, and exhibition bouts fill the nights between expeditions.
-Wider setting — Ashfield: The southern frontier territory — the Ashen Passage War was fought here. The crater from the Year 1042 engagement still glows at night. Senna Ash calls it the only song that understands why.
-Composition: a sunken stone arena dug into the ground, tiered earth-and-stone benches all around, a sandy floor at the bottom where two fighters duel.
-Camera angle: from the top row of benches, looking down into the pit. (Similar places use different angles — keep to this one.)
-Details to include: two adventurers duelling over salvage rights, a judge with a staff, crowds of every race leaning over the rails shouting and betting, torches and braziers around the rim, a stretcher team waiting, coins changing hands.
-Environment: the southern frontier — dry golden grassland and reclaimed farmland, old battlefield scars and broken war-era walls, a wide hot sky, and on the horizon the great crater with a faint glow rising from it.
-Architecture: a sun-baked frontier town grown up inside and around old war-era fortifications — thick pale stone walls patched with newer timber, flat-roofed and tiled stone houses, canvas awnings against the sun, broken battle walls reused as house walls, Karath-style brick vaults near the caravan road; true to a real medieval frontier town. One consistent dark-fantasy kingdom; no ornamental domes or palace spires.
-Lighting and time of day: night, torches and braziers around the sunken arena.
-Mood: characterful, lived-in.
-Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Who lives here (Compendium → Peoples → Who lives where, “Ashfield”): mostly Humans; also Half-elves, half-orcs, halflings, dwarves; Karath caravan traders. Frontier folk in sun-faded clothes and wide hats, crater-guild adventurers, Karath merchants with camels at the Caravanserai. Still a mixed kingdom — several races clearly visible.
-Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
-Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 === The Glass Flats ===
 Save as: starhaven_places_image/theglassflats.png
