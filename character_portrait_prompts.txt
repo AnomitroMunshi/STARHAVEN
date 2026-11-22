@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 57   (finished so far: 405)
+Still to generate: 56   (finished so far: 406)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -15,12 +15,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
 ########################################################################
-
-=== Bayarmaa Tsend ===
-Save as: starhaven_chars_image/bayarmaatsend.png
-Group: Guild & Citizens   Race: Human   Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Bayarmaa Tsend, head porter of the Adventurers' Guild's Carriers' Hall in Goldgate. Look: a broad, weathered Mongolian woman of 58 with a long grey plait, a carrier's strong back and shoulders, a leather headband for the tump-line; a quilted brown jacket with a plain iron token at the collar, a heavy wooden carrying frame loaded with casks and rope on her back, a hooded lamp at her hip, a worn long knife and a row of throwing knives on her belt. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): tough, warm, talkative, quietly grieving for the ones who did not come back. Setting: a dungeon porter camp in a dim tunnel, a small hooded fire and a row of empty bowls.
 
 === Ironmane Endurance Warhorse ===
 Save as: unitImages/ironmane-endurance.png
