@@ -29297,6 +29297,7 @@ const COIN = {
   }
  ],
  "also": [
+  "Starmarks — the Treasury’s counting unit for big sums (the kingdom’s income, festival takings, summit deposits). One Starmark is one Crown; nobody has ever seen a Starmark coin.",
   "Crown Bank letters of credit — honoured in every city with the green-and-gold doors",
   "Karath dinars and Golden Coast shells are taken at Saltmere, Ashfield and Goldgate at the posted rate",
   "In Ashfield, chips of crater-glass change hands like coin — the Strongroom will value them",
@@ -29427,20 +29428,40 @@ const COIN = {
      "1 Star"
     ],
     [
+     "Dockworker, Bargemouth, per day",
+     "1 Star 4 Bits"
+    ],
+    [
      "Skilled craftsman, per month",
      "2 Crowns"
     ],
     [
      "Field Army soldier, per month",
-     "2 Crowns, board and kit included"
+     "4 Crowns, board and kit included"
     ],
     [
      "Ashen Guard healer, per month",
-     "3 Crowns"
+     "4 Crowns, board included — the same as a soldier, by the King's order"
     ],
     [
-     "Dockworker, Bargemouth, per day",
-     "1 Star 4 Bits"
+     "Mercy Rider, per month",
+     "4 Crowns, board, kit and horse included"
+    ],
+    [
+     "Army or Arsenal engineer, per month",
+     "5 Crowns"
+    ],
+    [
+     "Sergeant, or senior healer, per month",
+     "6 Crowns"
+    ],
+    [
+     "Captain, master surgeon or master engineer, per month",
+     "10 Crowns"
+    ],
+    [
+     "Frontier and northern posts",
+     "+1 Crown a month — Frosthold, the Wardspan, Veilhold, Ironpass"
     ]
    ]
   ],
@@ -29469,7 +29490,87 @@ const COIN = {
     ]
    ]
   ]
- ]
+ ],
+ "income": {
+  "intro": "The Treasury counts the kingdom's whole yearly income at about 214 million Starmarks (one Starmark is one Crown) — the largest economy in the known world, grown from 4.2 million in Year 1. Minister of Treasury Astrya Lenn keeps the books; Minister of Trade Tiber Oswick finds the money. Roughly where it comes from:",
+  "sources": [
+   [
+    "Trade and exports",
+    "34%",
+    "Tiber Oswick's trade empire: the Sea Trade Exchange at Saltmere, the Karath caravan road through Ashfield, the barge route up the Ashen, and the ally trade halls (Stonemark, the Golden Coast, the Southern Realms). Saltmere sends out wine, winterwine, leather, pearls and salt; Starhold sends perfume, jewellery, court silk and books."
+   ],
+   [
+    "Farming and food",
+    "18%",
+    "The breadbasket — the Ashen basin (Rookthorn, Amberfield, the Ironmane Grainlands), Sunvale's fruit, Vinehallow's wine, Lotusmere's rice, Saltreed's fish. It feeds the kingdom first; the surplus goes down the barge route to Saltmere for export."
+   ],
+   [
+    "Mining and the mints",
+    "12%",
+    "Gold from the Sable Gold Concession (by Sorvane Nullis's grant, shipped monthly to the Fortified Mint at Veynehold), the Sunvein Mine and the Blackwall gold workings; iron, copper and coal from the Deepworks under Forgehaven. Silver is mostly bought from House Silverhorn."
+   ],
+   [
+    "Industry and the Arsenal",
+    "10%",
+    "Forgehaven and the Iron Exchange: steel, tools and machine parts sold to the Golden Coast, Eldridge and the allies; siege engines and armour for allied armies; golems licensed and hired out."
+   ],
+   [
+    "Arcane goods and crystals",
+    "7%",
+    "Vaelmark's Crystal Exchange: resonance crystals, wands and broadcast crystals — projection crystals now sit in the Karath palace and on every Thalassian flagship. Military crystals are sold to allies only."
+   ],
+   [
+    "Dungeons and the Guild",
+    "6%",
+    "The Loot Exchange in Goldgate auctions dungeon goods, relics and enchanted gear to buyers from every allied kingdom; the Guild takes its cut of every contract and salvage claim, and Ashfield's crater-glass sells nowhere else."
+   ],
+   [
+    "Travel, festivals and tourism",
+    "6%",
+    "Railway and rift-gate fares, harbour fees, coastal resorts, and the great festivals — the Iron Star Festival alone brought in 3.8 million Starmarks in two months. Visitors come for the Siege Games, Lantern Night and the crater."
+   ],
+   [
+    "Healing, purification and learning",
+    "5%",
+    "Starhaven is the only kingdom that can reliably cleanse the Void, and it never charges anyone to be saved. But allied kingdoms pay the Ministry of Healing and Purification to train their own healers and to license its Purification Charters — the methods, written down — and the Remedies Exchange sells purification salve and medicines abroad; Sancthaven-trained healers serve in six allied kingdoms. Foreign students pay to study at Learnstead and the Veilborn Arcanum, and Open Visa newcomers work and pay their way from their first month."
+   ],
+   [
+    "Allies and agreements",
+    "2%",
+    "Payments under treaty — the Golden Coast's debt-ally contributions after Saltmere, the Westreach Accord, and the Crown's share of concessions and leases such as the Broken Crown Company's lease at Goldgate. The biggest payment of all is not on this list: every kingdom Starhaven has cleansed for free — Eldridge first among them — has become a friend, and friends trade."
+   ]
+  ],
+  "crown": [
+   [
+    "Customs",
+    "A tithe on goods crossing the border — collected at Saltmere's Customs House, Dawncliff and the Dome Gate."
+   ],
+   [
+    "Harbour and road fees",
+    "Harbour fees (4 Crowns a ship at Saltmere), rift-gate and railway fares, and tolls on the great bridges and lock houses."
+   ],
+   [
+    "Crown lands",
+    "Rent from Crown lands and concessions — the Sable gold, the lake district, the royal farms."
+   ],
+   [
+    "The mint",
+    "The difference between what a coin costs to strike and what it is worth."
+   ],
+   [
+    "The Guild’s share",
+    "A part of every licence fee, dungeon permit and loot auction."
+   ],
+   [
+    "What it never charges for",
+    "Cleansing the Void. Seraphine Mire's rule since the Cleansing March: nobody pays to be saved — not a village, not a city, not a kingdom across the ocean. Healer's broth is free at every hospital door for the same reason."
+   ],
+   [
+    "What it pays for",
+    "The armies, the hospitals (healer's broth is free at every hospital door), the schools, the railways and the roads — and, the Treasury reports every year, almost nothing on palaces."
+   ]
+  ]
+ }
 };
 const HOUSES = [
  {
@@ -29565,6 +29666,13 @@ function compRender(tab, btn) {
       html += `<div class="sub-hdr" style="margin-top:24px"><h2 class="sub-hdr-title">${compEsc(group)}</h2></div><table style="width:100%;border-collapse:collapse;font-size:14px">` +
         items.map(([what, cost]) => `<tr style="border-bottom:1px solid var(--border,#333)"><td style="padding:6px 8px">${compEsc(what)}</td><td style="padding:6px 8px;text-align:right;color:var(--gold,#C8961A);white-space:nowrap">${compEsc(cost)}</td></tr>`).join('') + '</table>';
     });
+    if (COIN.income) {
+      const inc = COIN.income;
+      html += `<div class="sub-hdr" style="margin-top:34px"><h2 class="sub-hdr-title">Where the kingdom's money comes from</h2></div><p class="place-desc">${compEsc(inc.intro)}</p><table style="width:100%;border-collapse:collapse;font-size:14px">` +
+        inc.sources.map(([what, share, d]) => `<tr style="border-bottom:1px solid var(--border,#333)"><td style="padding:8px;vertical-align:top;width:28%"><b>${compEsc(what)}</b></td><td style="padding:8px;vertical-align:top;text-align:right;color:var(--gold,#C8961A);white-space:nowrap;width:60px">${share}</td><td style="padding:8px;vertical-align:top;color:var(--text2)">${compEsc(d)}</td></tr>`).join('') + '</table>';
+      html += `<div class="sub-hdr" style="margin-top:28px"><h2 class="sub-hdr-title">How the Crown takes its share</h2></div><table style="width:100%;border-collapse:collapse;font-size:14px">` +
+        inc.crown.map(([what, d]) => `<tr style="border-bottom:1px solid var(--border,#333)"><td style="padding:8px;vertical-align:top;width:28%"><b>${compEsc(what)}</b></td><td style="padding:8px;vertical-align:top;color:var(--text2)">${compEsc(d)}</td></tr>`).join('') + '</table>';
+    }
   } else if (tab !== 'houses') {
     html = compExtra(tab) || compMore(tab);
   } else {
@@ -30527,7 +30635,7 @@ function wRecords() {
     ['Most proposals in one place', 'The Rim Walk, Ashfield', 'two hundred and twelve, one refusal'],
     ['Fastest Mercy Rider', 'Unnamed, at Sancthaven', 'one minute fifty seconds to a mock casualty'],
     ['First giant through a rift gate', wCharLink('Kira'), 'sideways — the Kira Expansion was built the same day'],
-    ['Biggest bounty', 'The Stormhalls Thing', '6,000 Crowns for a description and a survivor'],
+    ['Biggest bounty', 'The Stormhalls Thing', '5,000 Crowns for a description and a survivor'],
   ];
   let html = `<p class="place-desc" style="margin-top:14px">Firsts, bests and records of the kingdom. The top four update themselves from the wiki.</p>` + compTable(rows, ['Record', 'Holder', 'Detail']);
   if (champs.length) html += wHdr('Champions', champs.length) + compTable(champs.map(c => [wCharLink(c.name), compEsc(c.role || c.title)]), ['Who', 'Title']);
