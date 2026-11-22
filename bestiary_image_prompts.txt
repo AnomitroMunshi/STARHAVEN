@@ -1,81 +1,10 @@
 STARHAVEN — BESTIARY IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 6
+Still to generate: 0
 
 HOW TO USE
 - Size: 1536 x 1024, landscape 3:2.
 - Save each image as JPG into  starhaven_bestiary/  with the exact file name after "Save as".
   The wiki's Compendium > Bestiary tab already points at these files.
 
-=== Tidegut ===
-Save as: starhaven_bestiary/tidegut.jpg
-Threat: A-rank   Habitat: The Tower of Twenty, Nhamo — the drowned third floor
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Tidegut, an A-rank creature of the kingdom of Starhaven. Appearance: A blind, pale eel the length of a ship and as thick as a barrel, no eyes, no scales, glistening grey-white skin, a round mouth lined with rows of hooked teeth going down its throat. Behaviour to show: Bursting up out of a black, perfectly still lake in a round drowned stone hall, mouth wide, at an adventurer on the narrow stone path at the edge; another adventurer raising a lantern.
-Setting: a round drowned hall of black stone crusted with white salt, inside the Tower.
-Lighting: lantern light only, deep darkness beyond.
-Mood: dangerous, believable, awe-inspiring.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
-
-=== Stairwight ===
-Save as: starhaven_bestiary/stairwight.jpg
-Threat: A-rank   Habitat: The stairwells of the Tower of Twenty, Nhamo
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Stairwight, an A-rank creature of the kingdom of Starhaven. Appearance: A thin, grey, long-limbed thing the exact colour and texture of the Tower's black-grey stone, with too many joints in its long arms and a smooth blank place where a face should be. Behaviour to show: Half-emerged from the solid stone wall of a narrow spiral stair, like a swimmer coming up out of water, long fingers reaching for the shoulder of a climber roped to his party.
-Setting: a narrow spiral stair of seamless black stone inside the Tower.
-Lighting: a single lantern on the stair, the creature barely lit.
-Mood: dangerous, believable, awe-inspiring.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
-
-=== The Counted ===
-Save as: starhaven_bestiary/thecounted.jpg
-Threat: A-rank   Habitat: The ninth floor of the Tower of Twenty, Nhamo
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Counted, an A-rank creature of the kingdom of Starhaven. Appearance: Three figures that look like real adventurers — a big half-orc harpooner, a slim elf mage, a small halfling with a lamp — but made of white salt, bone and grey stone, cracks showing in their faces, their eyes empty, smiling warmly. Behaviour to show: Standing together in the middle of a bare grey room, greeting the viewer like old friends; the half-orc grinning with a harpoon over his shoulder.
-Setting: a bare grey stone room inside the Tower.
-Lighting: cold lantern light, deep shadows; eerie and sad rather than gory.
-Mood: dangerous, believable, awe-inspiring.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
-
-=== Inkwyrm ===
-Save as: starhaven_bestiary/inkwyrm.jpg
-Threat: S-rank   Habitat: The library on the sixteenth floor of the Tower of Twenty, Nhamo
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Inkwyrm, an S-rank creature of the kingdom of Starhaven. Appearance: A huge serpent as long as a street and as thick as a horse, made of black shining wet ink, with pale unreadable script crawling and shifting across its body. Behaviour to show: Pouring out of thousands of names carved into towering black library walls and coiling around a robed figure, its ink leaving glowing marks on his hands.
-Setting: an enormous dark library-hall whose walls are carved floor to ceiling with unreadable lines of names, rising into darkness.
-Lighting: faint lantern light and the dull shine of the ink.
-Mood: dangerous, believable, awe-inspiring.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
-
-=== Gravefeather ===
-Save as: starhaven_bestiary/gravefeather.jpg
-Threat: S-rank   Habitat: The roost on the eighteenth floor of the Tower of Twenty, Nhamo
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Gravefeather, an S-rank creature of the kingdom of Starhaven. Appearance: Featherless grey birds the size of hunting dogs, with long thin heron-like heads and wings made of overlapping thin grey blades instead of feathers. Behaviour to show: Hundreds of them perched on the stone beams of an open, wall-less floor high in the Tower, and dozens diving at once like a storm of knives at a stone-skinned warrior who stands in front of his party.
-Setting: an open floor near the top of the Tower with no walls, stone beams, the grey sea far below and wind howling through.
-Lighting: harsh grey daylight from the open sides.
-Mood: dangerous, believable, awe-inspiring.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
-
-=== The Keeper of Twenty ===
-Save as: starhaven_bestiary/thekeeperoftwenty.jpg
-Threat: SS+-rank   Habitat: The roof of the Tower of Twenty, Nhamo (destroyed, 1059)
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Keeper of Twenty, an SS+-rank creature of the kingdom of Starhaven. Appearance: As big as a warship: a winged creature built from the dead — giants' white ribs, a whale's jawbone, the black keel of an old ship for a spine, ancient torn grey sails stretched over bones for wings, and thousands of rusted helmets, shields and rank tokens worn like scales. No face; a crown of black standing stones. Behaviour to show: Crouched on the open round black roof of the Tower with wings spread wider than the roof, a long blacksteel lance driven through its chest pinning it to the stone, fire on its wings, a tiny figure climbing its ribs.
-Setting: the open roof of the Tower high above a vast grey sea, a frigate tiny far below, a black drake circling.
-Lighting: late golden light, fire and smoke.
-Mood: dangerous, believable, awe-inspiring.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.

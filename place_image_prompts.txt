@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 430   (finished so far: 478)
+Still to generate: 431   (finished so far: 478)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -2723,7 +2723,7 @@ Crowd note: avoid rows of identical hooded robes or cloaks standing still and fa
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
-## NHAMO  (9)
+## NHAMO  (10)
 ########################################################################
 
 === Nhamo ===
@@ -2789,6 +2789,29 @@ Environment: a bare island of black volcanic rock and grey shingle beaches in a 
 Architecture: a new, rough frontier beach town built in one year — grey island stone and pale mainland timber, steep slate and tarred-plank roofs, timber jetties, rope and net everywhere, lamps in the windows; practical and weather-beaten, true to a real medieval harbour settlement. The Tower itself is utterly different: smooth seamless black stone, no windows, no joins, older than anything in the world. One consistent dark-fantasy kingdom.
 Lighting and time of day: grey dawn at low tide, a lantern by the ledger.
 Mood: tense, solemn, the moment before going in.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Who lives here (Compendium → Peoples → Who lives where, “Nhamo (Firstrung)”): mostly Humans; also Dwarves, elves, half-orcs, halflings, beastkin; foreign adventurers from Karath, Thalassia and the Golden Coast. A rough beach town of adventurers in worn armour, Guild clerks, smiths and healers. Still a mixed kingdom — several races clearly visible.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+=== Mele's ===
+Save as: starhaven_places_image/meles.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Nhamo   Kind: Supply storeroom
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: Mele's — supply storeroom, on the fifth floor inside the Tower of Twenty, on the island of Nhamo (Western Ashen Sea).
+What it is: A stone storeroom the Guild built on the Tower's fifth floor, beside the stair where the harpooner Mele Fifita died holding off the Stairwights. Licensed porters called rungers carry food, water and lamp oil up to it twice a week; parties going higher take what they need.
+Wider setting — Nhamo: a black rock of an island in the far Western Ashen Sea, and on it the Tower of Twenty — a perfectly round, windowless black tower taller than anything on the coast, open to the sky at the top. Thin sea mist at the horizon, where the giants' Veil once hid it.
+Composition: An interior view of a small vaulted storeroom built into the Tower's seamless black stone, shelves and casks inside, its doorway opening onto the dark spiral stair.
+Camera angle: from the stair outside, looking in through the open doorway. (Similar places use different angles — keep to this one.)
+Details to include: shelves of wax-sealed cheeses, sacks of biscuit, water casks and lamp-oil jars; a harpoon painted in white over the door; a long rope coiled on a hook; three porters of mixed races, roped together, unloading packs while an armoured adventurer stands guard on the stair; a slate of chalk tally marks by the door (no text). Little moments of life: a porter drinking from a tin cup.
+Environment: deep inside the Tower of Twenty — seamless black stone streaked with salt, a narrow spiral stair, no windows, no daylight.
+Architecture: a new, rough frontier beach town built in one year — grey island stone and pale mainland timber, steep slate and tarred-plank roofs, timber jetties, rope and net everywhere, lamps in the windows; practical and weather-beaten, true to a real medieval harbour settlement. The Tower itself is utterly different: smooth seamless black stone, no windows, no joins, older than anything in the world. One consistent dark-fantasy kingdom.
+Lighting and time of day: warm lantern light inside, cold darkness on the stair outside.
+Mood: small, brave, human — a warm room inside something cold.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
 Who lives here (Compendium → Peoples → Who lives where, “Nhamo (Firstrung)”): mostly Humans; also Dwarves, elves, half-orcs, halflings, beastkin; foreign adventurers from Karath, Thalassia and the Golden Coast. A rough beach town of adventurers in worn armour, Guild clerks, smiths and healers. Still a mixed kingdom — several races clearly visible.
