@@ -243,7 +243,7 @@
 | Dawnwatch Aerie | Aerie-Captain Sola Dren |
 | Veilwatch Aerie | Aerie-Captain Ryn Vael |
 | Stormwatch Aerie | Aerie-Captain Mael Cress |
-| Ironwatch Aerie | Aerie-Captain Rania Voss |
+| Ironwatch Aerie | Aerie-Captain Sera Voss |
 | Stormriders | Aurelia Vex |
 | Skyhammer | Aurelia Vex |
 | Feral Hunters | Thorin Blackroot |
@@ -373,7 +373,7 @@
 | Sable Bone Chariots | Sorvane Nullis |
 | Arch-Necromancer's Undead Guard | Sorvane Nullis |
 | Preserved Dead Legions | Sorvane Nullis |
-| **Sir Kwame Greyne** | **Sorvane Nullis** |
+| **Sir Obinna Greyne** | **Sorvane Nullis** |
 ---
 
 ## Vampire

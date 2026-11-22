@@ -458,7 +458,7 @@
 
 ### Undead
 
-- **Sir Kwame Greyne** — 1 — Commander: Sorvane Nullis
+- **Sir Obinna Greyne** — 1 — Commander: Sorvane Nullis
 - **Skeleton Infantry** — 20,700 (main) + 920 (Zone 4 detachment) — Commander: Sorvane Nullis
 - **Revenant Knights** — 2,300 — Commander: Sorvane Nullis
 - **Sable Bone Chariots** — 460 — Commander: Sorvane Nullis

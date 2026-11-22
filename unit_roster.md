@@ -223,7 +223,7 @@
 | Tunnel-Voice Rusk | Known Name · Groundbreaker | Engineering | Veld Ashe |  |
 | Tenn "Wallpost" Ferryn | Known Name · Ironveil Spear Corps | Polearm | Drel Voss |  |
 | Sister-Commander Edda Rensh | Known Name · Dawn Templars | Religious | Brynhild Voss |  |
-| Sir Kwame Greyne | Known Name · Revenant Knights | Undead | Sorvane Nullis |  |
+| Sir Obinna Greyne | Known Name · Revenant Knights | Undead | Sorvane Nullis |  |
 | Gram Stons | Known Name · Stonemark Longbeards | Infantry | Stonemark Holds |  |
 | Brak Graymaw | Known Name · Stonemark Bulwark — Captain | Infantry | Stonemark Holds |  |
 | Root-Watcher Sylen | Known Name · Woodborn Guardians | Infantry | Primal Vanguard |  |
