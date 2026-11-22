@@ -11,34 +11,34 @@ Already-generated images are left out automatically; re-run the list after a bat
 
 ## 2 · The places that headline each city
 
- 1. The Crown Bank (Starhold)  ·  place_image_prompts.txt:5580  ·  starhaven_places_image/thecrownbank.png
+ 1. The Crown Bank (Starhold)  ·  place_image_prompts.txt:5593  ·  starhaven_places_image/thecrownbank.png
 
 ## 3 · The places the Crier and the stories keep mentioning
 
- 2. The Elderwood Waiting Room (Starhold)  ·  place_image_prompts.txt:5831  ·  starhaven_places_image/theelderwoodwaitingroom.png
- 3. The Varathos Hall (Starhold)  ·  place_image_prompts.txt:5716  ·  starhaven_places_image/thevarathoshall.png
+ 2. The Elderwood Waiting Room (Starhold)  ·  place_image_prompts.txt:5844  ·  starhaven_places_image/theelderwoodwaitingroom.png
+ 3. The Varathos Hall (Starhold)  ·  place_image_prompts.txt:5729  ·  starhaven_places_image/thevarathoshall.png
 
 ## 4 · Dungeons and their beasts
 
- 4. The Unwritten Archive (Vaelmark, A-rank)  ·  place_image_prompts.txt:8213  ·  starhaven_places_image/theunwrittenarchive.png
+ 4. The Unwritten Archive (Vaelmark, A-rank)  ·  place_image_prompts.txt:8226  ·  starhaven_places_image/theunwrittenarchive.png
 
 ## 5 · Guild life and the underworld
 
- 5. The Undercroft Market (Starhold)  ·  place_image_prompts.txt:5624  ·  starhaven_places_image/theundercroftmarket.png
+ 5. The Undercroft Market (Starhold)  ·  place_image_prompts.txt:5637  ·  starhaven_places_image/theundercroftmarket.png
 
 ## 6 · Embassies, banks and arenas
 
- 6. The Karath Embassy (Starhold)  ·  place_image_prompts.txt:5647  ·  starhaven_places_image/thekarathembassy.png
- 7. The Frostspire Embassy (Starhold)  ·  place_image_prompts.txt:5808  ·  starhaven_places_image/thefrostspireembassy.png
+ 6. The Karath Embassy (Starhold)  ·  place_image_prompts.txt:5660  ·  starhaven_places_image/thekarathembassy.png
+ 7. The Frostspire Embassy (Starhold)  ·  place_image_prompts.txt:5821  ·  starhaven_places_image/thefrostspireembassy.png
 
 ## 7 · More dungeons and beasts
 
- 8. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:6647  ·  starhaven_places_image/thestormhalls.png
- 9. The Mistwell (Veilhold Keep, B-rank)  ·  place_image_prompts.txt:8450  ·  starhaven_places_image/themistwell.png
+ 8. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:6660  ·  starhaven_places_image/thestormhalls.png
+ 9. The Mistwell (Veilhold Keep, B-rank)  ·  place_image_prompts.txt:8463  ·  starhaven_places_image/themistwell.png
 
 ## 8 · Village charm
 
-10. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:7902  ·  starhaven_places_image/theclockworksquare.png
+10. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:7915  ·  starhaven_places_image/theclockworksquare.png
 11. Firing Night (Kilnbury)  ·  place_image_prompts.txt:1846  ·  starhaven_places_image/firingnight.png
 12. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:3966  ·  starhaven_places_image/themidwinterdip.png
 
