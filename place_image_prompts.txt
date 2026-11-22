@@ -1,12 +1,39 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 431   (finished so far: 478)
+Still to generate: 433   (finished so far: 478)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
 - Save each image as PNG into  starhaven_places_image/  with the exact file name shown after "Save as".
 - Places whose image already exists are left out of this file automatically.
+
+########################################################################
+## ASHFIELD  (1)
+########################################################################
+
+=== The Glasswarrens Porter Line ===
+Save as: starhaven_places_image/theglasswarrensporterline.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Ashfield   Kind: Porter camp · dungeon
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Glasswarrens Porter Line — porter camp · dungeon, in Ashfield.
+What it is: The first safe gallery inside the Glasswarrens — tunnels of fused crater-glass — where Guild porters set up the supply cache and wait, armed, while their parties go deeper.
+Wider setting — Ashfield: The southern frontier territory — the Ashen Passage War was fought here. The crater from the Year 1042 engagement still glows at night. Senna Ash calls it the only song that understands why.
+Composition: A view of a small camp in a cave gallery whose walls are ringing, ember-gold fused glass, a narrow tunnel leading on into the dark.
+Camera angle: from the mouth of the deeper tunnel, looking back into the camp. (Similar places use different angles — keep to this one.)
+Details to include: a small hooded cook-fire, stacked packs, water casks and rope, bowls laid out in a row ready to be filled; three porters with smoked visors pushed up and plain iron tokens at their collars, long knives and a sling at their belts, one standing at the tunnel mouth listening with a loaded hand crossbow; hooded lamps so the glass does not throw reflections; faint warm reflections in the glass walls. Little moments of life: a porter counting bowls; another mending a strap.
+Environment: inside the Glasswarrens under Ashfield — tunnels of fused black-and-gold crater-glass blown through the rock, sharp edged, ringing faintly when air moves; no daylight.
+Architecture: mostly the natural landscape; any buildings that appear are few and small, rural Starhaven, true to a real medieval countryside — modest timber-framed and stone cottages, barns and workshops, thatched or slate roofs, a stone well, a watermill or windmill where fitting, dry-stone walls, wooden fences and muddy cart tracks; buildings of one or two storeys, made from the local stone and timber the environment above describes. Weathered, lived-in and practical, never grand: no towers, spires, domes or palace-like halls. Small touches from the kingdom's peoples are fine (dwarven stonework, elven carved wood) but it stays one consistent dark-fantasy kingdom.
+Lighting and time of day: dim hooded lamplight and the ember glow of the glass.
+Mood: patient, tense, loyal.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Who lives here (Compendium → Peoples → Who lives where, “Ashfield”): mostly Humans; also Half-elves, half-orcs, halflings, dwarves; Karath caravan traders. Frontier folk in sun-faded clothes and wide hats, crater-guild adventurers, Karath merchants with camels at the Caravanserai. Still a mixed kingdom — several races clearly visible.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
 ## BLOOMVALE  (5)
@@ -234,6 +261,32 @@ Magic: magic is real and everyday in this world — show it subtly where it fits
 People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
 Who lives here (Compendium → Peoples → Who lives where, “Farm villages”): mostly Humans and halflings; also Dwarves, elves, orcs, beastkin farmhands. The breadbasket (Ironmane, Rootholm, Amberfield and the rest): farmers, carters, market women in sturdy country clothes. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+########################################################################
+## GOLDGATE  (1)
+########################################################################
+
+=== The Carriers' Hall ===
+Save as: starhaven_places_image/thecarriershall.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Goldgate   Kind: Guild porters' hall
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Carriers' Hall — guild porters' hall, in Goldgate.
+What it is: Where the Adventurers' Guild's porters sign on, are given plain iron tokens and are hired out to parties going deep. Porters are not ranked adventurers, but every one carries a small weapon and knows how to use it. They wait for work on a long bench by the door; a wall of small lamps inside remembers porters whose parties came back smaller.
+Wider setting — Goldgate: Starhaven's primary commercial hub and seat of the Adventurers Guild. The wealthiest city outside the capital — a labyrinthine metropolis of guild halls, licensed contractors, 14 legendary taverns, a medical quarter, combat training grounds, and the most active rift gate network in the kingdom. Every significant adventurer who has passed through Starhaven has left a mark here.
+Composition: An interior view of a long, plain timber-and-stone hall with a hiring counter, carrying frames racked along one wall and a long waiting bench by the open door.
+Camera angle: from the end of the waiting bench, low, looking along the hall to the counter. (Similar places use different angles — keep to this one.)
+Details to include: porters of many races — a broad grey-plaited human woman, a dwarf, a half-orc, a beastkin — in quilted jackets with plain iron tokens at the collar, long knives and hatchets at their belts, one with a bandolier of throwing knives across his chest, another with a small hand crossbow; carrying frames, tump-lines, rope coils, water casks and hooded lamps; an adventurer party haggling at the counter with the head porter; a wall of small lit lamps at the back; through the back door, a small squat hauling golem being loaded in the yard. Little moments of life: a young porter practising a knot; two old porters sharing tea; one sharpening a knife.
+Environment: the heart of the kingdom — green river country, broad rivers and tree-lined avenues, iron lanterns, well-kept roads, soft temperate light.
+Architecture: Starhaven's established look, matching the other images of the kingdom — a dark, grand high-fantasy stone city: weathered grey and charcoal stone, soaring towers and slender spires, pointed and round arches, grand domed halls, clock towers, steep dark slate roofs, wrought-iron lanterns, heavy carved detail, mist between the buildings and mountains on the horizon. Subtle accents from the kingdom's many peoples appear only in details, never taking over: some carved stone balconies and scalloped arches, a few blue-tiled domes, the odd gently upturned roof edge on a market hall, dwarven geometric reliefs and bronze fittings, elven curved woodwork and climbing ivy. It must NOT look Indian, Chinese, Japanese or Persian overall — it is one consistent dark fantasy kingdom. Goldgate signature: dense, dark and rich — ornate charcoal-stone guild halls with gold sun emblems, crimson and violet banners, crowded market lanes with canvas awnings, high aqueduct arches, and a violet-glowing rift gate.
+Lighting and time of day: late afternoon, warm lamplight and dust in the light from the door.
+Mood: hardworking, tough, proud, quietly moving.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: Goldgate folk, seen small — humans, dwarves, half-orcs, half-elves, goblins, beastkin, elves and halflings; adventurers in worn armour among townsfolk.
+Who lives here (Compendium → Peoples → Who lives where, “Goldgate”): mostly Humans; also Dwarves, half-orcs, half-elves, goblins, beastkin, elves, halflings. The adventurers' city: armed parties of every race, worn armour, rank tokens, swords, axes, bows and staves. Rowdy, rich and loud. Still a mixed kingdom — several races clearly visible.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 
 ########################################################################
