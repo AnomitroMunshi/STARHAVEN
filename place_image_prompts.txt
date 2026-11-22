@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 443   (finished so far: 456)
+Still to generate: 442   (finished so far: 457)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -11,26 +11,6 @@ HOW TO USE
 ########################################################################
 ## ASHFIELD  (14)
 ########################################################################
-
-=== Silver Swan East Depot (redo) ===
-Save as: starhaven_places_image/silverswaneastdepot.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Ashfield   Kind: Cavalry depot
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: Silver Swan East Depot — the home depot of the Silver Swan Cavalry's East Detachment, on the edge of the frontier territory Ashfield (Southern Frontier), near the eastern border.
-What it is: About 1,600 riders, grooms and remounts. The East Detachment rides sand-bred horses with Karath blood that can run all day in heat that would stop a northern horse in an hour. The depot shares water and farriers with the Ashfield Chariot Grounds next door. Its riders are light and fast: minimum armour, no barding, wide sun-shield brims instead of cheek guards.
-Wider setting — Ashfield: The southern frontier territory where the Ashen Passage War was fought. The crater from the Year 1042 battle still glows at night.
-Composition: A wide establishing view across the Dust Run drill field towards the depot, a troop of pursuit riders galloping across the foreground in a long plume of golden dust, the depot walls and stables in the midground, the glowing crater low on the horizon behind.
-Details to include: sun-bleached adobe-and-stone stable blocks with vaulted brick roofs and deep shaded arcades in the Karath style; striped canvas awnings over the horse lines; slim, fine-boned desert horses — bay, dun, grey and chestnut — with silver-grey saddle cloths marked with a small white swan; riders in light half-plate with wide sun-shield brimmed helmets and pale scarves over their mouths; a stone water tank and a tiled well where grooms water the horses; farriers' forges under awnings; a Karath horse trader with two camels at the gate; a few chariots of the Chariot Grounds visible beyond a low wall; a tall watchtower flying the silver swan banner; old war scars — a broken wall section and a half-buried shield — left from the Ashen Passage War.
-Environment: the southern frontier — dry golden grassland and reclaimed pulse fields, cracked dusty tracks, low broken war-era walls, a few hardy acacia-like trees, a huge hot pale sky, and on the horizon the great crater with a faint glow rising from it.
-Architecture: a frontier cavalry depot built for heat, not cold — thick sun-bleached walls, small high windows, vaulted brick roofs, shaded arcades, flat roof terraces, canvas awnings, practical and well kept. No northern timber halls, no green pastures, no stone castles.
-Lighting and time of day: late afternoon golden hour, low warm side light through the dust, long shadows, the crater glow just beginning to show.
-Mood: fast, hot, proud and disciplined — the kingdom's quickest riders at home on the frontier.
-Magic: magic is real and everyday in this world — show it subtly where it fits: a farrier's rune-lit forge, softly glowing mana lamps under the arcades, a cooling rune glowing faintly on the water tank, a horse-healer with faint light at their hands. Never portals or rift gates.
-People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
-Races here: mostly humans, with half-elves, half-orcs, halflings and dwarves among the grooms and riders, and Karath traders in desert robes at the gate. Frontier folk in sun-faded clothes and wide hats.
 
 === The Cinderguard Barracks ===
 Save as: starhaven_places_image/thecinderguardbarracks.png
