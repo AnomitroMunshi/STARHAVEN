@@ -36037,18 +36037,111 @@ const MP_T = {
 };
 // hand-drawn geography for the plan, in WORLD.COORDS units (y grows south); rivers follow the courses the Atlas describes
 const MP_GEO = {
-  border: [[-330,-215],[-250,-285],[-150,-300],[-70,-330],[-45,-400],[45,-412],[80,-335],[160,-290],[250,-185],[345,-95],[372,-15],[335,55],[300,105],[292,165],[288,230],[300,300],[262,365],[175,395],[60,392],[-40,392],[-115,438],[-185,412],[-205,340],[-262,262],[-292,170],[-345,112],[-362,45],[-352,-55],[-358,-130]],
+  // each point owns the stretch of border to the next point: a neighbour's name, or nothing for the sea
+  border: [[-330,-215,'The Stonemark Holds'],[-250,-285,'Frostspire Dominion'],[-150,-300,'Frostspire Dominion'],[-70,-330,'The Northern Wilds'],[-45,-400,'The Northern Wilds'],[45,-412,'Titan Highlands'],[80,-335,'Titan Highlands'],[160,-290,'Velmora'],[250,-185,'Velmora'],[345,-95,'!void'],[365,-40],[300,15],[262,45],[290,95],[285,170],[282,230],[300,300,'Karath Sultanate'],[262,365],[175,395],[60,392],[-40,392],[-115,438],[-185,412,'The Kessrin Horselords'],[-205,340,'The Kessrin Horselords'],[-262,262,'The Kessrin Horselords'],[-292,170],[-305,135],[-318,100],[-338,60],[-332,30],[-322,0],[-338,-40],[-350,-95],[-358,-130,'The Stonemark Holds']],
   rivers: [
     {n:'The Ashen River', w:3.2, lab:[1,4], p:[[-192,-172],[-172,-125],[-125,-78],[-65,-42],[-25,-14],[0,1],[10,12],[-15,16],[-50,12],[-100,13],[-150,10],[-205,24],[-255,26],[-300,22],[-345,26]]},
     {n:'The Thornwater', w:2, lab:[0,4], p:[[-228,48],[-182,26],[-140,2],[-100,-8],[-62,-22],[-33,-22]]},
-    {n:'The Selmere', w:2.4, lab:[1,5], p:[[350,150],[300,195],[260,214],[205,192],[150,180],[85,162],[22,146],[-20,140],[-80,128],[-150,106],[-205,80],[-242,52],[-262,28]]},
+    {n:'The Selmere', w:2.4, lab:[1,5], p:[[268,138],[262,178],[250,212],[205,192],[150,180],[85,162],[22,146],[-20,140],[-80,128],[-150,106],[-205,80],[-242,52],[-262,28]]},
     {n:'The Frostrun', w:2, lab:[3,7], p:[[6,-430],[0,-392],[-9,-342],[7,-300],[10,-252],[16,-234],[26,-190],[34,-140]]},
   ],
   lakes: [['Lake Starmere',32,-2,16,8],['The Mirror Lakes',-185,-172,11,6],['Lake Stillmere',55,-87,10,6],['Moonfall Lake',-246,18,7,5]],
   mountains: [[-200,-232,46],[-205,-198,30],[-300,-152,30],[-280,-118,18],[0,-322,58],[60,-262,30],[-330,-172,20],[326,-26,40],[262,2,26],[100,-512,40]],
   forests: [[-228,42,40],[-190,62,26],[-100,-196,30],[22,128,16]],
-  names: [['THE ASHEN SEA',-470,140,15],['TITAN HIGHLANDS',110,-470,12],['FROSTSPIRE DOMINION',-170,-430,12],['KARATH SULTANATE',330,420,12],['ACROSS THE STRAIT',470,40,11],['THE SOUTHERN SEA',-40,470,12],['STARHAVEN',-120,-250,22]],
+  names: [['THE ASHEN SEA',-470,140,15],['THE SALTREACH STRAIT',-20,462,10],['THE SOUTHERN SEA',600,830,12],['STARHAVEN',-120,-250,22]],
 };
+// Where each WORLD.NATIONS entry sits around the kingdom, from its direction text; land: shares a border (tints that stretch of the frontier)
+const MP_NAT = {
+  'Frostspire Dominion':[-200,-440,1], 'The Stonemark Holds':[-340,-330,1], 'The Northern Wilds':[-50,-480,1], 'Titan Highlands':[120,-470,1],
+  'Velmora':[350,-235,1], 'Elderwood Sovereignty':[625,-365], 'The Unknown Lands':[385,-440], 'Vel’Nathar':[380,-665],
+  'Ironmere Kingdom':[702,62], 'Karath Sultanate':[490,480,1], 'Zharak Emirates':[650,520], 'Thalassian League':[725,330], 'Vrak Isles':[880,370],
+  'Tempest Rock':[450,720], 'Coral Archipelago':[820,560], 'The Nullborn Empire':[840,730],
+  'The Verdant Crown':[15,565], 'Korvash Kingdom':[205,575], 'Drakenhold Kingdom':[-215,585], 'Southwatch Marches':[40,690], 'Irondeep Confederacy':[-110,755],
+  'Eldridge Kingdom':[280,840], 'Isle-States of Mirren':[330,760], 'The Kessrin Horselords':[-340,330,1], 'Corthane':[-460,690], 'Golden Coast Federation':[-590,300],
+  'Emberwood Forest & the Sundered Shores':[-640,580], 'The Sable Isles':[-470,-35], 'The Aethran Dominion':[-720,100], 'Ardenhal':[-790,430], 'Karvossa':[-620,-380],
+  'Varathos':[-700,-145], 'Skyward Isles':[-560,425],
+  'Jade Coast Principalities':[960,0], 'Windward Reaches':[960,-195], 'Tidewater Confederacy':[960,195],
+};
+// Karath and Zharak share the desert; Starhaven reaches Karath only by a narrow strip of the Singing Dunes (the Karath Caravan Road)
+const MP_REALM = {
+  'Karath Sultanate': {pts:[[395,425],[430,345],[505,322],[590,335],[600,380],[592,420],[562,500],[545,580],[470,612],[398,592],[368,530],[380,470]]},
+  'Zharak Emirates': {pts:[[592,420],[665,408],[725,448],[742,520],[705,592],[615,616],[545,580],[562,500]]},
+  // Ironmere, across the strait to the east; Sulvarra (a place on the map) lies just south of it, beside Karath
+  'Ironmere Kingdom': {pts:[[612,30],[672,-22],[752,-12],[792,58],[768,130],[692,152],[628,112]]},
+  // the north-east: the Unknown Lands beyond the mountain veil, sharing a border with the Elderwood; Vel'Nathar lies beyond them
+  'The Unknown Lands': {pts:[[240,-430],[330,-500],[430,-520],[520,-470],[545,-380],[500,-300],[420,-232],[370,-274]]},
+  'Elderwood Sovereignty': {pts:[[520,-470],[600,-505],[690,-455],[705,-360],[650,-290],[560,-280],[500,-300],[545,-380]]},
+  // the Kessrin steppe: Starhaven's only land border in the south-west
+  'The Kessrin Horselords': {pts:[[-292,170],[-262,262],[-205,340],[-185,412],[-238,452],[-330,438],[-410,372],[-440,280],[-418,200],[-360,165]]},
+  // the Southern Continent, across the Saltreach Strait
+  'Drakenhold Kingdom': {pts:[[-330,525],[-200,498],[-110,508],[-90,560],[-120,640],[-230,662],[-335,620]]},
+  'The Verdant Crown': {pts:[[-110,508],[0,492],[120,502],[140,560],[110,620],[-20,640],[-120,640],[-90,560]]},
+  'Korvash Kingdom': {pts:[[120,502],[230,508],[305,542],[292,612],[200,642],[110,620],[140,560]]},
+  'Southwatch Marches': {pts:[[-120,640],[-20,640],[110,620],[200,642],[172,712],[40,738],[-100,722]]},
+  'Irondeep Confederacy': {pts:[[-230,662],[-120,640],[-100,722],[40,738],[22,812],[-120,832],[-242,772]]},
+};
+// map-only lands (not nations): the Nullborn host's foothold beyond Ironpass, and Sulvarra, the river kingdom beside Karath
+const MP_EXTRA = [
+  {n:'THE VOID FRONT', sub:'the Nullborn host · beyond Ironpass', c:'#E05A4A', ter:'void', tip:'Where the Nullborn host camps and tests the eastern wall. Every attack on Ironpass comes out of here.',
+   pts:[[345,-95],[485,-133],[540,-82],[548,-12],[470,10],[402,-18],[365,-40]], at:[455,-55]},
+  {n:'SULVARRA', sub:'the river kingdom beside Karath', river:[[578,72],[566,128],[540,180],[505,214],[470,236],[452,244]], c:'#8c8c8c', ter:'grass', tip:'Sulvarra — 140,000 soldiers; fought Karath in the Ashen Throne War. Karath traders and Starhaven envoys.',
+   pts:[[470,92],[545,58],[602,92],[612,190],[605,300],[590,335],[505,322],[430,345],[455,250],[482,150]], at:[540,262]},
+];
+// the story layer: where the great wars and legends happened (click to read), live threats on the borders, sea lanes and rift links
+const MP_STORY = {
+  battles: [ // [x, y, kind, chronicle id, title, year, one line]
+    [320,-20,'war','ironpass-design','The Siege of Havenfire','1041','The frontier town that held the eastern roads, rebuilt as Ironpass.'],
+    [-700,-100,'legend','giants-of-varathos','The Giants of Varathos','1050','Kira’s Door opened on an island alone for four thousand years.'],
+    [-280,330,'war','five-thrones-war','The Five Thrones War','1050–51','Five kingdoms declared war on one morning. Nyx had known for fourteen months.'],
+    [520,120,'war','ashen-throne-war','The Ashen Throne War','1051','Kira walked to the wall of Sulvarra alone and held up a lantern.'],
+    [60,320,'war','second-ashen-passage-war','The Second Ashen Passage War','1052','The First Field Army and the Ashrunners at Ashfield.'],
+    [-150,430,'war','forty-sails','Forty Sails','1053','Forty ships against the Saltreach Causeway.'],
+    [120,-470,'war','the-kneeling-titan','The Kneeling Titan','1054','The Vanari crossed a four-century silence to judge Rayden face to face.'],
+    [140,690,'war','siege-of-vaeldorum','The Siege of Vael’Dorum','1055','Thirty-five days, three rings, 180,000 defenders across the Southern Ocean.'],
+    [820,560,'war','the-king-under-the-reef','The King Under the Reef','1056–57','The Great Reef taken back from the Nullborn.'],
+    [-575,-345,'war','the-twilight-war','The Twilight War','1057','A false sun over the realm of twilight. Ilyana sent one word north: Come.'],
+    [0,-395,'war','war-at-the-wardspan','The War at the Wardspan','1057','Two seals to bring the bridge down, and nine refugees still on it.'],
+    [0,-300,'war','the-long-winter','The Long Winter','1057–58','Frosthold, and Elyndra’s Heartseed.'],
+    [170,-10,'war','the-long-gallop-war','The War of the Long Gallop','1058','The Velhold Grasslands and the Unbroken Line.'],
+    [-470,30,'legend','the-tower-of-twenty','The Tower of Twenty','1059','Twenty floors on Nhamo. The Saltwind Five lost three.'],
+    [-560,470,'legend','the-eleventh-letter','The Eleventh Letter','1059','Low Reef fell flat onto the sea.'],
+    [260,220,'legend','the-crowns-shadow','The Crown’s Shadow','1059','Lantern Night: King’s End closed a ring round the king on the Lantern Bridge.'],
+    [20,-35,'legend','the-shadow-court','The Shadow Court','1059','The Dome Gate burned, and was shut for twenty days.'],
+  ],
+  threats: [ // [from, to, colour, short label, tooltip]
+    [[470,-60],[350,-28],'#E05A4A','the Nullborn test the eastern wall','Out of the Void Front the Nullborn host tests Ironpass, mostly at night.'],
+    [[330,-250],[225,-205],'#E0A040','war-mages on the hills','Forty Velmoran war-mages on the border hills, hands glowing stormglass blue. Thirty blocks of Skyward stormglass went over those hills.'],
+    [[660,415],[425,418],'#E0A040','Zharak riders','Three hundred Zharak riders sat on the hills above the Karath caravan road, told only to be seen.'],
+    [[-400,300],[-265,280],'#E05A4A','a rider on the hill','Every spring one Kessrin rider watches the border road for a day. In the emergency of 1059 there were forty.'],
+    [[360,-640],[30,-420],'#E05A4A','Vel’Nathar never sleeps','The second Void power, far to the north. The Wardspan is the only crossing wide enough for an army.'],
+  ],
+  lanes: [ // sea lanes, drawn under the land
+    [[-345,25],[-450,120],[-590,290]], [[-345,15],[-520,-10],[-690,-90]], [[290,175],[480,260],[700,320]], [[290,165],[470,110],[620,70]],
+    [[290,190],[520,420],[800,550]],
+  ],
+  rifts: [[20,-35],[[725,330],[490,480],[-200,-440],[-700,-100]]], // the Dome Gate's Foreign Arches: Thalassia, Karath, Frostspire, Kira's Door
+  ghost: [345,245,'Ossian — last seen','The Huntmaster went over the parapet of the Lantern Bridge and out to sea in fog. Blood on the water as far as the delta, then none.'],
+};
+const MP_DUNES = [[296,300],[335,345],[380,395],[402,428],[383,478],[360,462],[318,410],[272,362]];
+function mpStance(s) {
+  return /enemy|existential|hostile/i.test(s) ? ['#E05A4A','Hostile'] : /rival|cold/i.test(s) ? ['#E0A040','Rival'] : /uneasy|cautious|fallen/i.test(s) ? ['#D8C060','Uneasy'] : /ally|friendly|protectorate|partner/i.test(s) ? ['#7FD08A','Friendly'] : ['#8c8c8c','Unknown'];
+}
+const mpH = s => [...String(s)].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
+// a hand-drawn coastline between two points: midpoint displacement, the same whichever way it is walked, so neighbours share one edge
+const MP_RC = {};
+function mpRoughSeg(a, b) {
+  const ka = a[0] + ',' + a[1], kb = b[0] + ',' + b[1];
+  if (ka > kb) return mpRoughSeg(b, a).slice().reverse();
+  const key = ka + '|' + kb; if (MP_RC[key]) return MP_RC[key];
+  let pts = [a, b], hv = mpH(key), A = Math.hypot(b[0] - a[0], b[1] - a[1]) * .14;
+  const rnd = () => ((hv = (Math.imul(hv, 1103515245) + 12345) >>> 0) % 10000) / 10000 - .5;
+  for (let lv = 0; lv < 4; lv++, A *= .5) { const nx = [pts[0]];
+    for (let i = 0; i < pts.length - 1; i++) { const p = pts[i], q = pts[i + 1], dx = q[0] - p[0], dy = q[1] - p[1], l = Math.hypot(dx, dy) || 1, off = rnd() * A;
+      nx.push([(p[0] + q[0]) / 2 - dy / l * off, (p[1] + q[1]) / 2 + dx / l * off], q); }
+    pts = nx; }
+  return MP_RC[key] = pts;
+}
+function mpRough(poly) { const out = []; poly.forEach((p, i) => out.push(...mpRoughSeg(p, poly[(i + 1) % poly.length]).slice(0, -1))); return out; }
 function mpSmooth(pts) {
   // Catmull-Rom through the points, as cubic Bézier segments
   let d = `M${pts[0][0]},${pts[0][1]}`;
@@ -36093,7 +36186,7 @@ function mpInit() {
   });
   svg.addEventListener('pointerup', e => {
     svg.classList.remove('grabbing');
-    if (drag && !drag.moved) { const h = mpHit(e); mpSelect(h, false); }
+    if (drag && !drag.moved) { const pin = e.target.closest && e.target.closest('[data-chron]'); if (pin) openChronicle(pin.dataset.chron); else { const h = mpHit(e); mpSelect(h, false); } }
     drag = null;
   });
   svg.addEventListener('pointerleave', () => { if (MP.hov) { MP.hov = null; mpDraw(); } });
@@ -36151,7 +36244,9 @@ function mpLegend() {
   lg.classList.toggle('folded', MP.fold);
   lg.innerHTML = '<b onclick="MP.fold=!MP.fold;mpLegend()" style="cursor:pointer">Show ' + (MP.fold ? '▸' : '▾') + '</b>' + Object.entries(MP_T).filter(([k]) => n[k]).map(([k, v]) =>
     `<label><input type="checkbox" ${MP.off[k] ? '' : 'checked'} onchange="MP.off['${k}']=!this.checked;mpDraw()"><span class="mp-sw" style="background:${v.c};border-radius:${v.s === 'sq' ? '2px' : v.s === 'di' ? '1px;transform:rotate(45deg)' : '50%'}"></span>${v.l} (${n[k]})</label>`).join('')
-    + `<label style="margin-top:4px"><input type="checkbox" ${MP.links ? 'checked' : ''} onchange="MP.links=this.checked;mpDraw()"><span class="mp-sw" style="background:none;border-top:2px dashed #6DBF6A;border-radius:0;height:0"></span>Supply lines (village → buyer)</label>`;
+    + `<label style="margin-top:4px"><input type="checkbox" ${MP.links ? 'checked' : ''} onchange="MP.links=this.checked;mpDraw()"><span class="mp-sw" style="background:none;border-top:2px dashed #6DBF6A;border-radius:0;height:0"></span>Supply lines (village → buyer)</label>`
+    + `<label><input type="checkbox" ${MP.nat !== false ? 'checked' : ''} onchange="MP.nat=this.checked;mpDraw()"><span class="mp-sw" style="background:linear-gradient(90deg,#7FD08A 33%,#E0A040 33% 66%,#E05A4A 66%)"></span>Nations &amp; borders (hover for details)</label>`
+    + `<label><input type="checkbox" ${MP.story !== false ? 'checked' : ''} onchange="MP.story=this.checked;mpDraw()"><span class="mp-sw" style="background:none;color:#E8C468;font-size:11px;line-height:10px;text-align:center">⚔</span>Wars, legends &amp; threats (click a pin to read)</label>`;
 }
 function mpDraw() {
   const svg = document.getElementById('mp-svg'); if (!svg || !MP.items) return;
@@ -36161,40 +36256,148 @@ function mpDraw() {
   const sc = Math.min(1.8, Math.max(0.6, Math.sqrt(k)));
   const pp = pts => mpSmooth(pts.map(([x, y]) => P(x, y)));
   o += `<defs>
-    <radialGradient id="mp-sea" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#0f1a24"/><stop offset="1" stop-color="#070b11"/></radialGradient>
-    <linearGradient id="mp-land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1b17"/><stop offset=".55" stop-color="#1a1813"/><stop offset="1" stop-color="#1f1a12"/></linearGradient>
+    <radialGradient id="mp-sea" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#102030"/><stop offset="1" stop-color="#060a10"/></radialGradient>
+    <linearGradient id="mp-land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#23211b"/><stop offset=".55" stop-color="#1e1c16"/><stop offset="1" stop-color="#241e14"/></linearGradient>
     <radialGradient id="mp-vig" cx="50%" cy="50%" r="70%"><stop offset=".65" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
   </defs><rect width="${w}" height="${h}" fill="url(#mp-sea)"/>`;
-  // faint sea swells
-  for (let s = 0; s < 3; s++) o += `<path d="${pp(MP_GEO.border.map(([x, y]) => [x * (1.06 + s * .07), y * (1.06 + s * .07)]).concat([[MP_GEO.border[0][0] * (1.06 + s * .07), MP_GEO.border[0][1] * (1.06 + s * .07)]]))}" fill="none" stroke="#3c6a8a" stroke-opacity="${.12 - s * .03}" stroke-width="1"/>`;
+  // sea texture: little wave marks on a grid fixed to the world, so they stay put while panning
+  { let st = 45; while (st * k < 55) st *= 2;
+    const x0 = Math.floor((MP.cx - w / 2 / k) / st) * st, y0 = Math.floor((MP.cy - h / 2 / k) / st) * st;
+    for (let wx = x0; wx < MP.cx + w / 2 / k + st; wx += st) for (let wy = y0; wy < MP.cy + h / 2 / k + st; wy += st) {
+      const j = mpH(wx + ',' + wy); if (j % 3) continue;
+      const [x, y] = P(wx + (j % 17) / 17 * st, wy + (j % 23) / 23 * st), s = 4 * sc;
+      o += `<path d="M${x - s},${y} q${s / 2},${-s * .5} ${s},0 t${s},0" fill="none" stroke="#6a9cc0" stroke-opacity=".16" stroke-width=".8"/>`; } }
   // grid: one square = 100 miles
   const g = 80 * k, gx = ((w / 2 - MP.cx * k) % g + g) % g, gy = ((h / 2 - MP.cy * k) % g + g) % g;
-  for (let x = gx; x < w; x += g) o += `<line x1="${x}" y1="0" x2="${x}" y2="${h}" stroke="rgba(212,168,50,.045)"/>`;
-  for (let y = gy; y < h; y += g) o += `<line x1="0" y1="${y}" x2="${w}" y2="${y}" stroke="rgba(212,168,50,.045)"/>`;
-  // the kingdom: land, soft glow, then the border itself
-  const bd = pp(MP_GEO.border.concat([MP_GEO.border[0]])) + 'Z';
-  o += `<path d="${bd}" fill="url(#mp-land)"/><path d="${bd}" fill="none" stroke="#D4A832" stroke-opacity=".12" stroke-width="${10 * sc}"/>
-    <path d="${bd}" fill="none" stroke="#D4A832" stroke-opacity=".75" stroke-width="${1.4 * sc}" stroke-dasharray="${9 * sc} ${4 * sc} ${2 * sc} ${4 * sc}"/>`;
-  // forests and mountains
+  for (let x = gx; x < w; x += g) o += `<line x1="${x}" y1="0" x2="${x}" y2="${h}" stroke="rgba(212,168,50,.04)"/>`;
+  for (let y = gy; y < h; y += g) o += `<line x1="0" y1="${y}" x2="${w}" y2="${y}" stroke="rgba(212,168,50,.04)"/>`;
+  // every coastline gets shallow water round it; collected here and slipped in under all the land
+  o += '%%HALO%%'; let halo = '';
+  const rp = pts => 'M' + mpRough(pts).map(([x, y]) => P(x, y).map(v => v.toFixed(1)).join(',')).join('L') + 'Z';
+  const coast = d => { halo += `<path d="${d}" fill="none" stroke="#3a7aa6" stroke-linejoin="round" stroke-opacity=".05" stroke-width="${34 * sc}"/><path d="${d}" fill="none" stroke="#3a7aa6" stroke-linejoin="round" stroke-opacity=".08" stroke-width="${16 * sc}"/><path d="${d}" fill="none" stroke="#6ab0e0" stroke-linejoin="round" stroke-opacity=".16" stroke-width="${5 * sc}"/>`; };
+  // map glyphs: shaded mountains (lit from the west) and round-crowned trees
+  const mtn = (x, y, s, ter) => `<path d="M${x - s},${y + s * .6} L${x - s * .1},${y - s * .8} L${x + s},${y + s * .6}Z" fill="#26221c"/><path d="M${x - s},${y + s * .6} L${x - s * .1},${y - s * .8} L${x + s * .05},${y + s * .6}Z" fill="${ter === 'vol' ? '#5a3226' : ter === 'ice' ? '#5e6670' : '#5c5244'}"/><path d="M${x - s},${y + s * .6} L${x - s * .1},${y - s * .8} L${x + s},${y + s * .6}" fill="none" stroke="#a8977a" stroke-opacity=".5" stroke-width=".7"/>`
+    + (ter === 'vol' ? `<circle cx="${x - s * .1}" cy="${y - s * .8}" r="${s * .22}" fill="#f08040" fill-opacity=".85"/>` : `<path d="M${x - s * .45},${y - s * .2} L${x - s * .1},${y - s * .8} L${x + s * .28},${y - s * .2} L${x + s * .02},${y - s * .34}Z" fill="#ece6d8" fill-opacity="${ter === 'ice' ? .9 : .6}"/>`);
+  const tree = (x, y, s) => `<circle cx="${x + s * .3}" cy="${y + s * .25}" r="${s}" fill="#081008" fill-opacity=".55"/><circle cx="${x}" cy="${y}" r="${s}" fill="#2c552c"/><circle cx="${x - s * .3}" cy="${y - s * .3}" r="${s * .45}" fill="#5a9450" fill-opacity=".7"/>`;
+  if (MP.story !== false) {
+    // sea lanes with a ship on each, the storm wall round the Skyward Isles, the Varathos Veil, and something in the deep
+    MP_STORY.lanes.forEach(ln => { const d = pp(ln); halo += `<path d="${d}" fill="none" stroke="#c8b880" stroke-opacity=".22" stroke-width="${1 * sc}" stroke-dasharray="${5 * sc} ${5 * sc}"/>`;
+      const [x, y] = P(...ln[1]), s = 4 * sc; halo += `<path d="M${x - s * 1.4},${y} L${x + s * 1.4},${y} L${x + s},${y + s * .7} L${x - s},${y + s * .7}Z" fill="#6a5a40"/><path d="M${x},${y} L${x},${y - s * 2} L${x + s * 1.1},${y - s * .4}Z" fill="#d8ccb0" fill-opacity=".8"/>`; });
+    { const [x, y] = P(-560, 462); for (let i = 0; i < 3; i++) halo += `<ellipse cx="${x}" cy="${y}" rx="${(120 + i * 16) * k}" ry="${(80 + i * 12) * k}" fill="none" stroke="#8aa0c0" stroke-opacity="${.16 - i * .04}" stroke-width="${(5 - i) * sc}" stroke-dasharray="${14 * sc} ${6 * sc}"><title>The storm wall round the Skyward Isles</title></ellipse>`; }
+    { const [x, y] = P(-700, -108); halo += `<ellipse cx="${x}" cy="${y}" rx="${165 * k}" ry="${105 * k}" fill="#c8d0e0" fill-opacity=".035" stroke="#c8d0e0" stroke-opacity=".12" stroke-dasharray="${2 * sc} ${6 * sc}"><title>The Varathos Veil</title></ellipse>`; }
+    { const [x, y] = P(-130, 940), s = 7 * sc; halo += `<g opacity=".35"><title>Here the charts stop.</title><path d="M${x - s * 6},${y} q${s},${-s * 1.6} ${s * 2},0 t${s * 2},0 t${s * 2},0" fill="none" stroke="#6a9cc0" stroke-width="${2 * sc}" stroke-linecap="round"/><circle cx="${x + s * .2}" cy="${y - s * .5}" r="${s * .5}" fill="#6a9cc0"/></g>`; }
+  }
+  const BB = MP_GEO.border.map(p => [p[0], p[1]]), bd = rp(BB); coast(bd);
+  o += `<path d="${bd}" fill="url(#mp-land)"/><path d="${bd}" fill="none" stroke="#D4A832" stroke-opacity=".10" stroke-width="${10 * sc}"/>`;
+  // forests and mountain ranges, back to front so nearer peaks overlap farther ones
+  const gl = [];
   MP_GEO.forests.forEach(([fx, fy, rr]) => { for (let a = 0; a < rr * 0.9; a++) {
     const ang = a * 2.399, d = Math.sqrt(a / (rr * 0.9)) * rr, [x, y] = P(fx + Math.cos(ang) * d, fy + Math.sin(ang) * d * .7);
-    o += `<circle cx="${x}" cy="${y}" r="${2.2 * sc}" fill="#3f6b3a" fill-opacity=".45"/>`; } });
+    gl.push([y, tree(x, y, 2.6 * sc)]); } });
   MP_GEO.mountains.forEach(([mx, my, rr]) => { for (let a = 0; a < rr / 3; a++) {
-    const ang = a * 2.399, d = Math.sqrt(a / (rr / 3)) * rr * .8, [x, y] = P(mx + Math.cos(ang) * d * 1.3, my + Math.sin(ang) * d * .6), s = (5 + (a % 3) * 1.6) * sc;
-    o += `<path d="M${x - s},${y + s * .55} L${x},${y - s * .75} L${x + s},${y + s * .55}" fill="#2a2620" stroke="#8c7b62" stroke-opacity=".7" stroke-width="1"/><path d="M${x - s * .28},${y - s * .35} L${x},${y - s * .75} L${x + s * .28},${y - s * .35}" fill="#d8d2c4" fill-opacity=".55"/>`; } });
+    const ang = a * 2.399, d = Math.sqrt(a / (rr / 3)) * rr * .8, [x, y] = P(mx + Math.cos(ang) * d * 1.3, my + Math.sin(ang) * d * .6);
+    gl.push([y, mtn(x, y, (5.5 + (a % 3) * 1.8) * sc)]); } });
+  gl.sort((a, b) => a[0] - b[0]).forEach(g2 => o += g2[1]);
   // lakes and rivers, names written along the water
-  MP_GEO.lakes.forEach(([n, lx, ly, rx, ry]) => { const [x, y] = P(lx, ly); o += `<ellipse cx="${x}" cy="${y}" rx="${rx * k}" ry="${ry * k}" fill="#2f6f9a" fill-opacity=".55" stroke="#6ab4e6" stroke-opacity=".6"/>`; });
+  MP_GEO.lakes.forEach(([n, lx, ly, rx, ry]) => { const [x, y] = P(lx, ly); o += `<ellipse cx="${x}" cy="${y}" rx="${rx * k + 2}" ry="${ry * k + 2}" fill="none" stroke="#6ab0e0" stroke-opacity=".18" stroke-width="${4 * sc}"/><ellipse cx="${x}" cy="${y}" rx="${rx * k}" ry="${ry * k}" fill="#2f6f9a" fill-opacity=".7" stroke="#6ab4e6" stroke-opacity=".6"/>`; });
   MP_GEO.rivers.forEach((r, ri) => {
     const d = pp(r.p), rw = Math.min(1.25, sc);
     // label along a stretch that reads left to right, so the name is never upside down
     let seg = r.p.slice(r.lab[0], r.lab[1] + 1); if (seg[seg.length - 1][0] < seg[0][0]) seg = seg.slice().reverse();
     o += `<path d="${d}" fill="none" stroke="#6ab4e6" stroke-opacity=".18" stroke-width="${(r.w + 4) * rw}" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#4f9fd8" stroke-width="${r.w * rw}" stroke-linecap="round" stroke-linejoin="round"/>`;
     o += `<path id="mp-rl${ri}" d="${pp(seg)}" fill="none"/>`;
-    if (k > .45) o += `<text font-size="${11 * Math.min(1.3, sc)}" fill="#8cc8f0" font-style="italic" dy="-6" text-anchor="middle" style="letter-spacing:.06em"><textPath href="#mp-rl${ri}" startOffset="50%">${r.n}</textPath></text>`;
+    if (k > .45) o += `<text font-size="${11 * Math.min(1.3, sc)}" fill="#8cc8f0" font-style="italic" dy="-6" text-anchor="middle" style="letter-spacing:.06em;font-family:Georgia,serif"><textPath href="#mp-rl${ri}" startOffset="50%">${r.n}</textPath></text>`;
   });
-  // names of the sea and the lands beyond the border
-  MP_GEO.names.forEach(([n, nx, ny, fs]) => { const [x, y] = P(nx, ny);
-    o += `<text x="${x}" y="${y}" font-size="${fs * Math.min(1.4, sc)}" fill="${n === 'STARHAVEN' ? '#D4A832' : n.includes('SEA') ? '#5f8fb0' : '#8c7b62'}" fill-opacity="${n === 'STARHAVEN' ? .35 : .7}" text-anchor="middle" style="letter-spacing:.35em" font-style="${n.includes('SEA') ? 'italic' : 'normal'}">${n}</text>`; });
+  // names of the seas and the kingdom
+  MP_GEO.names.forEach(([n, nx, ny, fs]) => { const [x, y] = P(nx, ny), sea = /SEA|STRAIT/.test(n);
+    o += `<text x="${x}" y="${y}" font-size="${fs * Math.min(1.4, sc)}" fill="${n === 'STARHAVEN' ? '#D4A832' : sea ? '#6f9fc0' : '#8c7b62'}" fill-opacity="${n === 'STARHAVEN' ? .4 : .75}" text-anchor="middle" style="letter-spacing:.35em;font-family:Georgia,serif" font-style="${sea ? 'italic' : 'normal'}">${n}</text>`; });
+  // neighbouring nations, coloured by how they stand with Starhaven; the stretch of border facing a land neighbour takes its colour
+  if (MP.nat !== false) {
+    const nats = WORLD.NATIONS.filter(n => MP_NAT[n[0]]).map(n => ({n, xy: MP_NAT[n[0]], c: mpStance(n[3])[0]}));
+    const land = nats.filter(n => n.xy[2]), B = MP_GEO.border;
+    const natBy = Object.fromEntries(nats.map(n => [n.n[0], n])), VOIDN = {n:['The Void Front','','','Hostile'], c:'#E05A4A'};
+    const own = B.map(p => p[2] === '!void' ? VOIDN : (p[2] && natBy[p[2]]) || null);
+    // shortcut: foreign borders are drawn, not canon — the lore only gives each nation's direction from Starhaven
+    const hsh = mpH, wob = (s, i) => ((hsh(s + i) % 1000) / 1000 - .5);
+    const TER = {ice:/frostspire|vel’nathar/i, mtn:/stonemark|titan|unknown lands|drakenhold|varathos|aethran|ironmere/i, vol:/irondeep/i, tree:/wilds|elderwood|verdant|emberwood|golden coast|karvossa/i, dune:/karath|zharak/i};
+    const inside = (pts, x, y) => { let c = false; for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) { const [xi, yi] = pts[i], [xj, yj] = pts[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
+    const region = (n, pts) => {
+      const d = rp(pts), ter = n.ter || Object.keys(TER).find(k => TER[k].test(n.n[0])) || 'grass';
+      coast(d);
+      o += `<path d="${d}" fill="${ter === 'void' ? '#170d12' : ter === 'dune' ? '#221c12' : ter === 'ice' ? '#191c20' : ter === 'vol' ? '#1d1410' : '#191813'}"/>
+        <path d="${d}" fill="none" stroke="${n.c}" stroke-opacity=".08" stroke-width="${8 * sc}"/>`;
+      // terrain on a jittered grid inside the coastline, drawn back to front
+      const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]), st = Math.max(24, 16 / k), tg = []; // fewer marks when zoomed out
+      for (let gx = Math.min(...xs); gx < Math.max(...xs); gx += st) for (let gy = Math.min(...ys); gy < Math.max(...ys); gy += st) {
+        const wx = gx + wob(n.n[0] + gx, gy) * st * .8, wy = gy + wob(n.n[0] + gy, gx) * st * .8;
+        if (!inside(pts, wx, wy) || hsh(n.n[0] + wx + wy) % 4 === 0) continue;
+        const [x, y] = P(wx, wy), s = (ter === 'tree' || ter === 'grass' ? 2.4 : 5) * sc;
+        if (ter === 'mtn' || ter === 'ice' || ter === 'vol') tg.push([y, mtn(x, y, s * (1 + (hsh(wx + n.n[0]) % 3) * .2), ter)]);
+        else if (ter === 'void') tg.push([y, `<circle cx="${x}" cy="${y}" r="${1.8 * sc}" fill="#b050d0" fill-opacity=".4"/><path d="M${x - s * .7},${y + s * .4} L${x - s * .1},${y - s * .6} L${x + s * .2},${y} L${x + s * .7},${y + s * .4}" fill="none" stroke="#6a3a52" stroke-opacity=".7" stroke-width=".8"/>`]);
+        else if (ter === 'tree') { tg.push([y, tree(x, y, s)]); tg.push([y + s, tree(x + s * 1.6, y + s * .9, s * .85)]); }
+        else if (ter === 'dune') tg.push([y, `<path d="M${x - s * 1.4},${y} q${s * 1.4},${-s * 1.1} ${s * 2.8},0" fill="none" stroke="#c9a060" stroke-opacity=".45" stroke-width="1"/><path d="M${x - s * .4},${y - s * .35} q${s * .6},${-s * .5} ${s * 1.3},${s * .1}" fill="none" stroke="#c9a060" stroke-opacity=".25" stroke-width=".8"/>`]);
+        else tg.push([y, `<path d="M${x - s},${y} l${s * .4},${-s} M${x},${y} l0,${-s * 1.2} M${x + s},${y} l${-s * .4},${-s}" stroke="#8a9a58" stroke-opacity=".32" stroke-width=".8"/>`]);
+      }
+      tg.sort((a, b) => a[0] - b[0]).forEach(t2 => o += t2[1]);
+      o += `<path d="${d}" fill="none" stroke="${n.c}" stroke-opacity=".5" stroke-width="${1.1 * sc}" stroke-dasharray="${7 * sc} ${3 * sc} ${1.5 * sc} ${3 * sc}"><title>${n.n[0]} — ${n.n[3]}</title></path>`;
+    };
+    // the Singing Dunes: Starhaven's only land road to Karath
+    { const d2 = rp(MP_DUNES); coast(d2); o += `<path d="${d2}" fill="#241d11" stroke="#b08a50" stroke-opacity=".35" stroke-width="${1 * sc}"/>`;
+      for (let i = 0; i < 14; i++) { const f = i / 13, [x, y] = P(290 + f * 100 + wob('dune', i) * 14, 330 + f * 115 + wob('dun', i) * 14), s = 3 * sc;
+        o += `<path d="M${x - s},${y} q${s},${-s * .7} ${2 * s},0" fill="none" stroke="#c9a060" stroke-opacity=".5" stroke-width="1"/>`; }
+      if (k > .3) { const [x1, y1] = P(300, 318), [x2, y2] = P(410, 445); o += `<path id="mp-dunes" d="M${x1},${y1} L${x2},${y2}" fill="none"/><text font-size="${8.5 * Math.min(1.4, sc)}" fill="#c9a060" fill-opacity=".8" font-style="italic" dy="-5" style="letter-spacing:.12em;font-family:Georgia,serif"><textPath href="#mp-dunes" startOffset="8%">the Singing Dunes</textPath></text>`; } }
+    nats.filter(n => MP_REALM[n.n[0]]).forEach(n => region(n, MP_REALM[n.n[0]].pts));
+    MP_EXTRA.forEach(e => { region({n:[e.n, '', '', e.sub], c:e.c, ter:e.ter}, e.pts);
+      if (e.river) { const d = pp(e.river), rw = Math.min(1.25, sc); o += `<path d="${d}" fill="none" stroke="#6ab4e6" stroke-opacity=".18" stroke-width="${6 * rw}" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#4f9fd8" stroke-width="${2.2 * rw}" stroke-linecap="round"/>`; } });
+    // the Saltreach Causeway: a stone sea-bridge to the chain of island forts facing the Southern Continent
+    { const [x1, y1] = P(-150, 422), [x2, y2] = P(-150, 466); o += `<path d="M${x1},${y1} L${x2},${y2}" stroke="#a39684" stroke-width="${2.2 * sc}" stroke-dasharray="${3 * sc} ${1.5 * sc}"><title>The Saltreach Causeway — four miles across the strait</title></path>`;
+      [[-172,470],[-150,468],[-128,472]].forEach(([ix, iy]) => { const [x, y] = P(ix, iy); o += `<ellipse cx="${x}" cy="${y}" rx="${5 * sc}" ry="${3 * sc}" fill="#2a2620" stroke="#a39684" stroke-opacity=".7"/><rect x="${x - 1.5 * sc}" y="${y - 4 * sc}" width="${3 * sc}" height="${3 * sc}" fill="#E0563F"/>`; }); }
+    // land neighbours: the stretch of Starhaven's border they face, pushed outward into a territory
+    land.forEach(n => { if (MP_REALM[n.n[0]]) return; const idx = []; own.forEach((o2, i) => { if (o2 === n) idx.push(i); }); if (!idx.length) return;
+      let s = 0; while (s < idx.length && own[(idx[s] - 1 + B.length) % B.length] === n) s++; // start at the beginning of a run
+      const run = idx.slice(s).concat(idx.slice(0, s)), vi = run.concat([(run[run.length - 1] + 1) % B.length]), inner = vi.map(i => [B[i][0], B[i][1]]);
+      // depth depends on the border vertex, so two neighbours meeting at a vertex share the same dividing line
+      const outer = vi.map(i => { const [x, y] = B[i], r = Math.hypot(x, y), d = 150 + wob('border', i) * 60; return [x + x / r * d, y + y / r * d]; }).reverse();
+      region(n, inner.concat(outer)); });
+    // everyone else: an island or a far realm, a rough coastline round its name
+    nats.filter(n => !n.xy[2] && !MP_REALM[n.n[0]]).forEach(n => { const R = /isle|island|archipelago|rock|varathos|skyward/i.test(n.n[0] + n.n[1]) ? 55 : 90;
+      region(n, Array.from({length: 18}, (_, i) => { const a = i / 18 * Math.PI * 2, r = R * (1 + wob(n.n[0], i) * .75); return [n.xy[0] + Math.cos(a) * r * 1.3, n.xy[1] - 8 + Math.sin(a) * r * .8]; })); });
+    B.forEach((a, bi) => { const best = own[bi], b = B[(bi + 1) % B.length];
+      if (best) o += `<path d="M${mpRoughSeg([a[0], a[1]], [b[0], b[1]]).map(([x, y]) => P(x, y).join(',')).join('L')}" fill="none" stroke="${best.c}" stroke-opacity=".55" stroke-width="${3.2 * sc}" stroke-linecap="round" stroke-linejoin="round"><title>Border with ${best.n[0]} — ${best.n[3]}</title></path>`; });
+    // names last, so no terrain sits on top of them
+    MP_EXTRA.forEach(e => { const [x, y] = P(e.at[0], e.at[1]), fs = 10 * Math.min(1.4, sc);
+      o += `<g style="cursor:help"><title>${e.tip}</title><text x="${x}" y="${y}" font-size="${fs}" fill="${e.c}" fill-opacity=".9" text-anchor="middle" stroke="#0a0c10" stroke-width="3" stroke-opacity=".75" paint-order="stroke" style="letter-spacing:.18em;font-family:Georgia,serif">${e.n}</text><text x="${x}" y="${y + fs * 1.25}" font-size="${fs * .78}" fill="#b0a490" text-anchor="middle" font-style="italic" stroke="#0a0c10" stroke-width="2.5" stroke-opacity=".7" paint-order="stroke">${e.sub}</text></g>`; });
+    nats.forEach(({n, xy, c}) => { const [x, y] = P(xy[0], xy[1]), fs = (xy[2] ? 11 : 9.5) * Math.min(1.4, sc);
+      if (x < -200 || y < -40 || x > w + 200 || y > h + 40) return;
+      o += `<g style="cursor:help"><title>${n[0]} — ${n[1]}
+${n[2]}
+${n[3]}: ${n[4]}</title><circle cx="${x}" cy="${y - fs * 1.6}" r="${3.2 * Math.min(1.4, sc)}" fill="${c}" stroke="#0a0c10" stroke-width="1"/><text x="${x}" y="${y}" font-size="${fs}" fill="${c}" fill-opacity=".95" text-anchor="middle" stroke="#0a0c10" stroke-width="3" stroke-opacity=".75" paint-order="stroke" style="letter-spacing:.18em;font-family:Georgia,serif">${n[0].toUpperCase()}</text><text x="${x}" y="${y + fs * 1.25}" font-size="${fs * .78}" fill="#b0a490" fill-opacity=".85" text-anchor="middle" font-style="italic" stroke="#0a0c10" stroke-width="2.5" stroke-opacity=".7" paint-order="stroke">${n[3]}</text></g>`; });
+  }
+  // the kingdom's own border, on top of everything around it
+  o += `<path d="${bd}" fill="none" stroke="#D4A832" stroke-opacity=".8" stroke-width="${1.4 * sc}" stroke-linejoin="round" stroke-dasharray="${9 * sc} ${4 * sc} ${2 * sc} ${4 * sc}"/>`;
+  // the story layer
+  if (MP.story !== false) {
+    const lab = (x, y, s, c, it) => `<text x="${x}" y="${y}" font-size="${s}" fill="${c}" text-anchor="middle" font-style="${it ? 'italic' : 'normal'}" stroke="#0a0c10" stroke-width="2.5" stroke-opacity=".75" paint-order="stroke" style="font-family:Georgia,serif;pointer-events:none">`;
+    // the Dome Gate's rift links: faint violet threads to the allied capitals
+    { const [x0, y0] = P(...MP_STORY.rifts[0]); MP_STORY.rifts[1].forEach(([tx, ty]) => { const [x1, y1] = P(tx, ty), mx = (x0 + x1) / 2, my = (y0 + y1) / 2 - Math.hypot(x1 - x0, y1 - y0) * .18;
+      o += `<path d="M${x0},${y0} Q${mx},${my} ${x1},${y1}" fill="none" stroke="#b08ae0" stroke-opacity=".22" stroke-width="${1.2 * sc}" stroke-dasharray="1 ${5 * sc}" stroke-linecap="round"><title>A rift link from the Dome Gate's Foreign Arches</title></path>`; }); }
+    // threats: arrows pressing on the borders
+    MP_STORY.threats.forEach(([f, to, c, l, tip]) => { const [x0, y0] = P(...f), [x1, y1] = P(...to), mx = (x0 + x1) / 2 + (y1 - y0) * .15, my = (y0 + y1) / 2 - (x1 - x0) * .15;
+      const ang = Math.atan2(y1 - my, x1 - mx), a = 9 * sc;
+      o += `<g style="cursor:help"><title>${tip}</title><path d="M${x0},${y0} Q${mx},${my} ${x1},${y1}" fill="none" stroke="${c}" stroke-opacity=".18" stroke-width="${7 * sc}" stroke-linecap="round"/><path d="M${x0},${y0} Q${mx},${my} ${x1},${y1}" fill="none" stroke="${c}" stroke-opacity=".85" stroke-width="${1.8 * sc}" stroke-dasharray="${8 * sc} ${4 * sc}"><animate attributeName="stroke-dashoffset" from="${24 * sc}" to="0" dur="1.6s" repeatCount="indefinite"/></path><path d="M${x1},${y1} L${x1 - a * Math.cos(ang - .45)},${y1 - a * Math.sin(ang - .45)} L${x1 - a * Math.cos(ang + .45)},${y1 - a * Math.sin(ang + .45)}Z" fill="${c}"/>`
+        + (k > .35 ? lab(mx, my - 6, 9 * Math.min(1.3, sc), c, 1) + `${l}</text>` : '') + `</g>`; });
+    // the Huntmaster's last sighting
+    { const [gx2, gy2, gl2, gt] = MP_STORY.ghost, [x, y] = P(gx2, gy2), r = 5 * sc;
+      o += `<g style="cursor:help"><title>${gt}</title><circle cx="${x}" cy="${y}" r="${r * 2.2}" fill="#E05A4A" fill-opacity=".08"/><path d="M${x - r},${y - r} L${x + r},${y + r} M${x + r},${y - r} L${x - r},${y + r}" stroke="#E05A4A" stroke-opacity=".8" stroke-width="1.4"/>` + (k > .6 ? lab(x, y + r * 2.6, 8.5 * Math.min(1.3, sc), '#e08a7a', 1) + `${gl2}</text>` : '') + `</g>`; }
+    // battles and legends: a pin above the spot; click to read the chronicle
+    MP_STORY.battles.forEach(([bx, by, kind, id, title, yr, line]) => { const [x, y0] = P(bx, by), y = y0 - 15 * Math.min(1.3, sc), s = 5.5 * Math.min(1.3, sc);
+      if (x < -30 || y < -30 || x > w + 30 || y > h + 30) return;
+      const c = kind === 'war' ? '#E8C468' : '#C9A8F0';
+      o += `<g data-chron="${id}" style="cursor:pointer"><title>${title} (${yr}) — ${line}  Click to read.</title><line x1="${x}" y1="${y0}" x2="${x}" y2="${y + s}" stroke="${c}" stroke-opacity=".5"/><circle cx="${x}" cy="${y}" r="${s * 1.55}" fill="#0a0c10" fill-opacity=".85" stroke="${c}" stroke-opacity=".8"/>`
+        + (kind === 'war' ? `<path d="M${x - s},${y - s} L${x + s},${y + s} M${x + s},${y - s} L${x - s},${y + s} M${x - s * .9},${y + s * .35} L${x - s * .35},${y + s * .9} M${x + s * .9},${y + s * .35} L${x + s * .35},${y + s * .9}" stroke="${c}" stroke-width="1.4" stroke-linecap="round"/>`
+          : `<path d="M${x},${y - s} L${x + s * .3},${y - s * .3} L${x + s},${y} L${x + s * .3},${y + s * .3} L${x},${y + s} L${x - s * .3},${y + s * .3} L${x - s},${y} L${x - s * .3},${y - s * .3}Z" fill="${c}"/>`)
+        + (k > .9 ? lab(x, y - s * 2, 8.5 * Math.min(1.3, sc), c, 0) + `${title} · ${yr}</text>` : '') + `</g>`; });
+  }
   // supply lines
   const focus = MP.sel || MP.hov;
   MP.sup.forEach(([a, b]) => {
@@ -36227,13 +36430,13 @@ function mpDraw() {
     const box = [x + r + 4, y - fs * .7, x + r + 4 + tw, y + fs * .5];
     if (i !== focus && placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) return;
     placed.push(box);
-    o += `<text x="${box[0]}" y="${y + fs * .35}" font-size="${fs}" fill="${i.t.lv === 0 ? '#F0E4C0' : i.t.c}" font-weight="${i.t.lv === 0 ? 700 : 400}" ${i.l.type === 'river' ? 'font-style="italic"' : ''}>${compEsc(i.l.name)}</text>`;
+    o += `<text x="${box[0]}" y="${y + fs * .35}" font-size="${fs}" fill="${i.t.lv === 0 ? '#F0E4C0' : i.t.c}" font-weight="${i.t.lv === 0 ? 700 : 400}" stroke="#0a0c10" stroke-width="3" stroke-opacity=".7" paint-order="stroke" style="font-family:Georgia,serif" ${i.l.type === 'river' ? 'font-style="italic"' : ''}>${compEsc(i.l.name)}</text>`;
   });
   o += `<rect width="${w}" height="${h}" fill="url(#mp-vig)" pointer-events="none"/>`;
   // compass and scale
   o += `<g transform="translate(${w - 46},${h - 84})" opacity=".9"><circle r="22" fill="rgba(5,6,10,.5)" stroke="#D4A832" stroke-opacity=".5"/><path d="M0,-20 L5,0 L0,20 L-5,0 Z" fill="#D4A832"/><path d="M0,-20 L5,0 L0,0 Z" fill="#FAE090"/><path d="M-20,0 L0,4 L20,0 L0,-4 Z" fill="#8c7b62"/><text x="0" y="-26" font-size="12" fill="#EEC854" text-anchor="middle" font-weight="700">N</text></g>`;
   const sb = 80 * k; o += `<g transform="translate(${w - 24 - sb},${h - 22})"><line x1="0" y1="0" x2="${sb}" y2="0" stroke="#C8B880" stroke-width="2"/><line x1="0" y1="-4" x2="0" y2="4" stroke="#C8B880"/><line x1="${sb}" y1="-4" x2="${sb}" y2="4" stroke="#C8B880"/><text x="${sb / 2}" y="-6" font-size="11" fill="#C8B880" text-anchor="middle">100 miles</text></g>`;
-  svg.innerHTML = o;
+  svg.innerHTML = o.replace('%%HALO%%', halo);
 }
 
 // ════════════════════════════════════════

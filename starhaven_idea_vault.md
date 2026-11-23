@@ -14,11 +14,23 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | 3 | When the Thread Breaks (Resonance Corps) | Velmora's stormglass (from *The Eleventh Letter*) helps black out the crystals | Selka Rennet |
 | 4 | The Rout She Walked Out Of (Edda Rensh) | — | — |
 | 5 | Take It Alive (loose inside Sancthaven) | It escapes through the cisterns and drains | Dunmar Underlow |
-| 6 | The Elderwood Arrives | **The flying fortress rematch** — it comes to suppress the Void in the southern forests and cannot tell friend from Void; Aurelia and Zephyros again (its primary array repaired and wise to Zephyros's cascade); Cain's Vrak notation and "it's remembering us". Set in Starhaven/the Elderwood, not the Vrak Isles. | Saoirse Yarrow |
+| 6 | The Elderwood Arrives | **The flying fortress rematch** — it comes to suppress the Void in the southern forests and cannot tell friend from Void; Aurelia and Zephyros again (its primary array repaired and wise to Zephyros's cascade); Cain's Vrak notation and "it's remembering us". Set in Starhaven/the Elderwood, not the Vrak Isles. **Project SKYREACH debuts here** (see §0b). | Saoirse Yarrow |
 | 7 | Zharak Crossing + siege of Ironpass (night) | Sorvane lends undead that need no light; help Starhaven does not trust | Corvane; Zafir fights |
 | 8 | The Winter Council — last of 1059 | **Every** weak point, round the table (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders, night, Frostspire, Sorvane's gold, the single Ashen river route, silver from one mine, succession…) — not silver only | Tolliver Quarrow walks in at the end with news of refugees |
 | 9 | The Silver Isle War (1060) | §1, then #7 Silver cold war with Silverhorn | Dante; the Architect later |
 | 10 | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; Chapter 10 | — |
+
+### §0b. Project SKYREACH in The Elderwood Arrives (agreed 2026-11-23)
+
+What the wiki already has: begun 1052 (Naval Expansion Doctrine — Cain: "You want to move soldiers over water without giving the water permission." Cyrus: "Yes."); classified ocean-crossing military aircraft; lead architect Cyrus Vexley, co-designer Cain Drakhar; 7 prototypes built in the SKYREACH Wing of the Tidegate Arsenal, Forgehaven; a structural emergency once at the SKYREACH-III site; never flown in any chronicle. Cain traces his war-machine designs to pre-Sundering Vrak schematics (Vrak Isles nation entry).
+
+Plan:
+1. **Debut** — Cyrus flies one of the seven untested prototypes into the flying-fortress rematch beside Aurelia and Zephyros (he "stays beside it while it runs"). Nobody outside the Arsenal knew it existed.
+2. **Twist** — the fortress stops firing at everything else and turns on SKYREACH: it recognises the Vrak-derived engines. Pays off "it's remembering us" and Cain's Vrak notation.
+3. **Cost** — a prototype goes down (Cyrus a near miss or a real loss — decide when writing); the enemy stays as strong as Starhaven.
+4. **Open thread** — can the Vrak track anything built from their schematics? Goes to the Winter Council (Cain's designs as a weak point) and feeds the 1060 Silver Isle War.
+Set over Starhaven/the Elderwood, never in the Vrak Isles.
+
 
 **Recurring villains [agreed 2026-11-23]** — fewer new villains, more who come back; each gets a card at their debut; some arcs end with a real loss for Starhaven; the Huntmaster, the Vizier and the Prince survive their first story.
 
