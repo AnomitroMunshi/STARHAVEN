@@ -1,10 +1,202 @@
 STARHAVEN — BESTIARY IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 0
+Still to generate: 16
 
 HOW TO USE
 - Size: 1536 x 1024, landscape 3:2.
 - Save each image as JPG into  starhaven_bestiary/  with the exact file name after "Save as".
   The wiki's Compendium > Bestiary tab already points at these files.
+
+=== Damwight ===
+Save as: starhaven_bestiary/damwight.jpg
+Threat: C-rank   Habitat: Vareth's Drowned Dam (Sulvarra)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Damwight, a C-rank creature of the world around Starhaven. Appearance: Drowned overseers in rotting work-tunics, grey and swollen, keys and whistles still on their belts. Behaviour to show: Drowned overseers in rotting tunics wading through a half-flooded stone sluice hall, keys on their belts; a Starhaven adventurer with a torch backing up a stair.
+Setting: the flooded pump galleries of a broken desert dam, sandstone and rusted iron gates.
+Lighting: greenish water-light and one torch.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Well-Asp ===
+Save as: starhaven_bestiary/wellasp.jpg
+Threat: B-rank   Habitat: The Wells Beneath (the Emir's City)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Well-Asp, a B-rank creature of the world around Starhaven. Appearance: Pale sand-coloured serpents as long as a rope ladder, with no eyes and very large ears. Behaviour to show: A pale eyeless serpent rising from a dry cistern floor toward the sound of an adventurer's canteen; the adventurer frozen mid-sip.
+Setting: ancient sandstone cistern-tombs under a desert city, dry wells and carved niches.
+Lighting: a single shaft of daylight from far above.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== The Keyless ===
+Save as: starhaven_bestiary/thekeyless.jpg
+Threat: A-rank   Habitat: The Ashveil Undercroft (inside the Void Front)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Keyless, an A-rank creature of the world around Starhaven. Appearance: Void-touched remains of Ashveil Hold's last defenders, still in the old garrison's rusted plate, each with a hand worn to the bone. Behaviour to show: Void-touched armoured dead in rusted plate pressing at a heavy iron-bound door from the inside, one bony hand worn to the bone on the handle.
+Setting: a dark fortress undercroft, black stone, ash on the floor, faint violet light in the cracks.
+Lighting: cold violet glow and darkness.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Barrow Moth ===
+Save as: starhaven_bestiary/barrowmoth.jpg
+Threat: D-rank   Habitat: The Giants' Barrows (Varathos)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Barrow Moth, a D-rank creature of the world around Starhaven. Appearance: Moths with wings as wide as a cloak, grey and soft as old grave-cloth. Behaviour to show: A cloud of huge soft grey moths around a giant's burial niche, one settling on a small adventurer's covered lantern.
+Setting: an enormous stone barrow built for twelve-foot giants, rows of vast burial niches with old linen.
+Lighting: dim, dusty, lantern-lit.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Keelwyrm ===
+Save as: starhaven_bestiary/keelwyrm.jpg
+Threat: C-rank   Habitat: The Keel Graveyard (the Skyward Isles)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Keelwyrm, a C-rank creature of the world around Starhaven. Appearance: Long, flat, ribbed serpents that cling inside wrecked hulls like extra keels, with mouths like boat-hooks. Behaviour to show: A long ribbed serpent uncoiling from inside an upside-down wrecked skyship hull, striking at an adventurer hanging on a rope.
+Setting: dozens of wrecked skyships hanging upside down in chains under a floating island, storm clouds below.
+Lighting: stormy grey light and lightning far below.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Lantern-Eater ===
+Save as: starhaven_bestiary/lanterneater.jpg
+Threat: B-rank   Habitat: The Old Shafts (the Sable gold concession)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Lantern-Eater, a B-rank creature of the world around Starhaven. Appearance: A thin, many-jointed thing like a long hand made of shadow, with a mouth in the palm. Behaviour to show: A thin many-jointed shadow like a long hand reaching from a mine wall toward a miner's lantern, the light bending into its palm.
+Setting: an old abandoned gold mine shaft with rotten timber props.
+Lighting: one lantern going dim, deep darkness around.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Galvanite ===
+Save as: starhaven_bestiary/galvanite.jpg
+Threat: C-rank   Habitat: The Storm Galleries (the Thunder Steps)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Galvanite, a C-rank creature of the world around Starhaven. Appearance: Crystal-backed lizards as long as a dog, their spines full of trapped lightning. Behaviour to show: Crystal-backed lizards basking on a glowing crystal floor, one discharging a bolt of lightning at an adventurer's spear.
+Setting: a cave hall of crackling crystals with lightning flickering inside the walls.
+Lighting: flickering blue-white electric light.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Fogjaw ===
+Save as: starhaven_bestiary/fogjaw.jpg
+Threat: B-rank   Habitat: The Hulk in the Fog (the Grey Reach)
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Fogjaw, a B-rank creature of the world around Starhaven. Appearance: A grey eel as thick as a man, with a face like a drowned dog and teeth that point backwards. Behaviour to show: A huge grey eel with a drowned-dog face rising out of fog water beside a small boat, a sailor raising a lantern at it.
+Setting: grey fog over black water around a wrecked old ship.
+Lighting: thick fog, one bright lantern.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Spire Owl ===
+Save as: starhaven_bestiary/spireowl.jpg
+Threat: E-rank   Habitat: The ice towers of the Frostspire Dominion
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Spire Owl, an E-rank creature of the world around Starhaven. Appearance: Snow-white owls the size of a child, with mirror-bright eyes. Behaviour to show: A huge snow-white owl taking off from an icy tower balcony with a brass astrolabe in its talons, a robed researcher reaching after it.
+Setting: tall ice-blue research towers in frozen mountains.
+Lighting: bright cold morning sun on ice.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Slag Drake ===
+Save as: starhaven_bestiary/slagdrake.jpg
+Threat: A-rank   Habitat: The forge-calderas of the Irondeep Confederacy
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Slag Drake, an A-rank creature of the world around Starhaven. Appearance: Wingless drakes the size of a wagon, their hides crusted in cooling slag that glows through the cracks. Behaviour to show: A wingless wagon-sized drake wading out of a molten slag pool, glowing cracks in its crusted hide, a dwarf drover with a long goad beside it.
+Setting: a volcanic forge-caldera with lava channels, iron gantries and smoke.
+Lighting: red molten glow and smoke.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Galeboar ===
+Save as: starhaven_bestiary/galeboar.jpg
+Threat: C-rank   Habitat: The north-eastern hills of Velmora
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Galeboar, a C-rank creature of the world around Starhaven. Appearance: Shaggy hill boars with tusks like sickles and a blue static crackle in their bristles. Behaviour to show: A shaggy boar with sickle tusks charging through rain on a hillside, blue static crackling in its bristles.
+Setting: wet heather hills under a thunderstorm.
+Lighting: dark storm light, rain, lightning.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Gloam Stalker ===
+Save as: starhaven_bestiary/gloamstalker.jpg
+Threat: A-rank   Habitat: The twilight forests of Karvossa
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Gloam Stalker, an A-rank creature of the world around Starhaven. Appearance: A long, low cat the colour of dusk, with eyes that do not reflect light. Behaviour to show: A long low dusk-coloured cat crouched at the edge of lamplight outside a manor door, eyes not reflecting the light.
+Setting: a twilight forest of black trees, a lit manor doorway.
+Lighting: deep violet twilight, one warm lamp.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Hush Moth ===
+Save as: starhaven_bestiary/hushmoth.jpg
+Threat: D-rank   Habitat: The deep woods of the Elderwood Sovereignty
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Hush Moth, a D-rank creature of the world around Starhaven. Appearance: Small grey moths that gather in clouds and drink sound. Behaviour to show: A cloud of small grey moths settling over an elven forest path, a bird in a branch with its beak open and no sound, an elf ranger smiling.
+Setting: an ancient deep forest of huge trees, soft green light.
+Lighting: soft green-gold forest light.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Grass Wolf ===
+Save as: starhaven_bestiary/grasswolf.jpg
+Threat: C-rank   Habitat: The Kessrin steppe and the Kessrin Marches
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Grass Wolf, a C-rank creature of the world around Starhaven. Appearance: Long-legged tawny wolves that run in packs of twenty and vanish in tall grass. Behaviour to show: A pack of tawny long-legged wolves half-hidden in tall grass, watching a cavalry column pass on a road.
+Setting: endless tall pale grassland under a big sky.
+Lighting: golden late afternoon, long shadows.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== Glow-tide Drifter ===
+Save as: starhaven_bestiary/glowtidedrifter.jpg
+Threat: F-rank   Habitat: Sandglass Bay, at the end of summer
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Glow-tide Drifter, an F-rank creature of the world around Starhaven. Appearance: Jelly-like drifters the size of a thumbnail, by the million, glowing blue-green when touched. Behaviour to show: Millions of tiny glowing drifters lighting up a calm bay blue-green, children wading and laughing as the water glows around their legs.
+Setting: a sandy bay at night with a sandbar and a fishing village.
+Lighting: night, blue-green glow from the water, stars.
+Mood: gentle, magical, joyful.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
+
+=== The Edge Serpent ===
+Save as: starhaven_bestiary/theedgeserpent.jpg
+Threat: SS+-rank   Habitat: The Drowned Edge, past the Last Buoy
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
+Subject: the Edge Serpent, an SS+-rank creature of the world around Starhaven. Appearance: Unknown. A long dark back breaking the surface very far off, longer than a fleet. Behaviour to show: Very far off on a flat dark sea, a long dark back breaking the surface, longer than a fleet; in the foreground the rail of a ship and a great iron buoy with a bell.
+Setting: the open deep ocean at the edge of the world.
+Lighting: night, strange stars, faint silver on the water.
+Mood: dangerous, strange, believable.
+Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
 

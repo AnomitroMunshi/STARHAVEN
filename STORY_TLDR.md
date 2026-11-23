@@ -126,4 +126,5 @@ Chronicle ids are in `CHRONICLES` in `starhaven_wiki.html`.
 - **The flying fortress(es)** — "remembering us"; possibly more than one.
 - **Succession** — Rayden has no heir; the Winter Council will start with it.
 - **Nessa Korrath** — Nyx's rival; knows a shapeshifter exists; at least nine of the Hundred and Kaan Torul still loose.
+- **Map & frontier hooks (Atlas, late 1059)** — Ashveil Hold (Brek Tane's lost fort) is the Nullborn forward base inside the Void Front beyond Ironpass; the Grey Reach (fog off the east coast) is the rumoured King's End lair — a fresh tally mark on Tally Rock; the Glass Road: the stormglass came ashore at Gullwreck Cove and crossed Starhaven in "ice carts" to Velmora — who drove them is unknown; Saddlestone Keep faces the Kessrin (no commander yet); the Kessrin wait for a harvest with the armies away (Khulan's tale); the Drowned Edge in the Southern Sea, where the charts stop ("something under the water that was built"). Geography: memory `world-map-geography`.
 - **Malgrath** — the Void's king; only Elysia can see him.
