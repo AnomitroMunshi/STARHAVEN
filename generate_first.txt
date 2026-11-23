@@ -26,12 +26,11 @@ Already-generated images are left out automatically; re-run the list after a bat
 
 ## 7 · More dungeons and beasts
 
- 1. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:138  ·  starhaven_places_image/thestormhalls.png
 
 ## 8 · Village charm
 
- 2. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:3418  ·  starhaven_places_image/theclockworksquare.png
- 3. Firing Night (Kilnbury)  ·  place_image_prompts.txt:2552  ·  starhaven_places_image/firingnight.png
- 4. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:2339  ·  starhaven_places_image/themidwinterdip.png
+ 1. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:3091  ·  starhaven_places_image/theclockworksquare.png
+ 2. Firing Night (Kilnbury)  ·  place_image_prompts.txt:2106  ·  starhaven_places_image/firingnight.png
+ 3. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:1893  ·  starhaven_places_image/themidwinterdip.png
 
-Total: 4
+Total: 3
