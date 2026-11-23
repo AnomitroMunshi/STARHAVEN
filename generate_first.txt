@@ -17,7 +17,7 @@ Already-generated images are left out automatically; re-run the list after a bat
 
 ## 4 · Dungeons and their beasts
 
- 1. The Unwritten Archive (Vaelmark, A-rank)  ·  place_image_prompts.txt:110  ·  starhaven_places_image/theunwrittenarchive.png
+ 1. The Unwritten Archive (Vaelmark, A-rank)  ·  place_image_prompts.txt:37  ·  starhaven_places_image/theunwrittenarchive.png
 
 ## 5 · Guild life and the underworld
 
@@ -27,13 +27,13 @@ Already-generated images are left out automatically; re-run the list after a bat
 
 ## 7 · More dungeons and beasts
 
- 2. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:690  ·  starhaven_places_image/thestormhalls.png
- 3. The Mistwell (Veilhold Keep, B-rank)  ·  place_image_prompts.txt:372  ·  starhaven_places_image/themistwell.png
+ 2. The Stormhalls (the Stormmassif, S-rank)  ·  place_image_prompts.txt:713  ·  starhaven_places_image/thestormhalls.png
+ 3. The Mistwell (Veilhold Keep, B-rank)  ·  place_image_prompts.txt:395  ·  starhaven_places_image/themistwell.png
 
 ## 8 · Village charm
 
- 4. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:3856  ·  starhaven_places_image/theclockworksquare.png
- 5. Firing Night (Kilnbury)  ·  place_image_prompts.txt:2871  ·  starhaven_places_image/firingnight.png
- 6. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:2658  ·  starhaven_places_image/themidwinterdip.png
+ 4. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:3993  ·  starhaven_places_image/theclockworksquare.png
+ 5. Firing Night (Kilnbury)  ·  place_image_prompts.txt:3127  ·  starhaven_places_image/firingnight.png
+ 6. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:2914  ·  starhaven_places_image/themidwinterdip.png
 
 Total: 6
