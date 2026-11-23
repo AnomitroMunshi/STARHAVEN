@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 56   (finished so far: 420)
+Still to generate: 45   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -189,65 +189,10 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 ## NEW UNITS — THE LONG WINTER  (2)
 ########################################################################
 
-=== Kaalahi ===
-Save as: unitImages/kaalahi.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Kaalahi — Aruksha's bonded mount — a thirty-foot horned night serpent, oath-sibling rather than mount. Dark iridescent scales, curved horns, coiled and watchful. Setting: a moonlit jungle river. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Stillfoot ===
-Save as: unitImages/stillfoot.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Stillfoot — Sela Ashbark's mount — a shadowdeer that makes no sound and has never been seen by an enemy first. Slender, dusk-grey coat that fades into shadow, dark calm eyes. Setting: a dim misty forest at twilight. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Mossbark ===
-Save as: unitImages/mossbark.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Mossbark — Sylva Moss's bonded forest elk — broad antlers with hanging moss, bark-brown coat. Setting: a deep green old-growth forest. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Duskfang ===
-Save as: unitImages/duskfang.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Duskfang — Sylvaine Duskroot's mount — a massive grey dire wolf and pack-alpha, scarred muzzle, pale eyes. Setting: a dusky forest ridge with the pack faint behind. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Nymeris ===
-Save as: unitImages/nymeris.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Nymeris — Lyria Valen's companion — a bald eagle raised by Marcus Ironmane and given to her. Proud, sharp-eyed. Setting: perched on a branch above a misty Greenveil forest. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Ashpaw ===
-Save as: unitImages/ashpaw.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Ashpaw — Brex Ashpaw's bonded dire wolf of the ancient Grimspine bloodline — ash-grey fur, heavy shoulders, old-blood presence. Setting: a burnt forest edge with drifting ash. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
 === Folake Brine's Coldmarch Draft Horse ===
 Save as: unitImages/coldmarch-draft-horse.png
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Folake Brine's Coldmarch Draft Horse — Folake Brine's patrol mount — a heavy, shaggy Coldmarch draft horse built for cold patrols, feathered hooves, frost on its mane. Setting: a frozen patrol road. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Vaela Brightleaf's Ancient Grove-Elk ===
-Save as: unitImages/ancient-grove-elk.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Vaela Brightleaf's Ancient Grove-Elk — Vaela Brightleaf's grove-elk, bonded for 200 years — ancient, enormous antlers grown with lichen, silvered muzzle, wise eyes. Setting: a sacred Elderwood grove. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Cinderwing ===
-Save as: unitImages/cinderwing.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Cinderwing — Ezrion Vorrath's drake of fifteen years in the Ninth Sky Corps — grey-scaled wyvern, two legs and wing-arms, no fire, old flight scars. Setting: a grey mountain aerie. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Kestra ===
-Save as: unitImages/kestra.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Kestra — Ren Dael's Ashwing Eagle — the oldest bird in the Skywarden Corps and the only one that flies night patrols. Grizzled feathers, huge wingspan. Setting: a night aerie under stars. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Brightfeather ===
-Save as: unitImages/brightfeather.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Brightfeather — Sola Dren's broad-winged Southern Ashwing eagle, built for long glides over open ground. Setting: gliding over open plains. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
-
-=== Sabertooth ===
-Save as: unitImages/sabertooth.png
-PROMPT:
-Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Sabertooth — Drokha Bloodtusk's enormous sabertooth cat — larger than any horse, faster than anything its size should be. Setting: a rocky highland ridge. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
 
 === Greyfoot ===
 Save as: unitImages/greyfoot.png
@@ -328,3 +273,8 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 Save as: unitImages/goldstorm.png
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Goldstorm — The horse Marcus Ironmane quietly set aside for Dresh (Ch7) — golden coat, young and spirited. Setting: Ironmane Fields. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
+
+########################################################################
+## THE SHADOW COURT  (5)
+########################################################################
+

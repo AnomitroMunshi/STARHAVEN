@@ -667,6 +667,7 @@ a.lore-card:hover{transform:translateY(-2px)}
     <div class="tab-bar" id="atlas-place-tabs" style="margin-top:6px"></div>
     <div class="search-bar">
       <select class="search-input" id="atlas-loc" style="max-width:240px;cursor:pointer" onchange="atlasLoc=this.value;atlasRender(atlasFilter==='places'?'all':atlasFilter)" title="Show one location only — the city, its own districts and all their places"><option value="">📍 All locations</option></select>
+      <input class="search-input" id="atlas-loc-find" list="atlas-loc-list" placeholder="🔎 Find a location…" style="max-width:200px" onchange="atlasLocPick(this)"><datalist id="atlas-loc-list"></datalist>
       <input class="search-input" id="atlas-search" placeholder="Search locations…" oninput="atlasSearch=this.value.toLowerCase();atlasRender(atlasFilter)">
       <button class="tab-btn" onclick="atlasRandom()" title="Take me somewhere I haven't been">🎲 Random place</button>
       <span class="result-count" id="atlas-count"></span>
@@ -19297,6 +19298,704 @@ Classification: Attempt on the Crown — Sealed Record, partially released (comp
 Filed Year 1059.
 — Archivist Senna Ash, Starhaven Royal Athenaeum`,
   },
+  {
+    id: 'the-shadow-court',
+    title: "The Shadow Court",
+    subtitle: "Winter 1059 · the Hundred · twenty days with the door shut",
+    type: 'legend',
+    year: "Year 1059",
+    tags: ["Vizier Nessa Korrath", "Zharak Emirate", "Emir Zahid al-Morad", "The Hundred", "Kaan Torul", "Marwan Qadir", "Nyx Ravel", "The Greymark", "Faceless", "Serell Vane", "The Shadow Court", "Kaveri", "Tariq Sefan", "Bolorma", "Tunde Oyelaran", "Hesper Quillon", "Anjali Bhatt", "Dome Gate", "Open Visa", "Night of Open Doors", "Korvus Drey", "Tiber Oswick", "Rayden Cale", "Lyria Valen", "Kael Varric", "Vespera Drakewynn", "Zafir", "Goldgate", "Starhold", "Bargemouth", "Learnstead", "Winter Council"],
+    excerpt: "On the Night of Open Doors, the Dome Gate burned and someone painted a line on its arch: WE CAME IN THROUGH YOUR DOOR. The honest spy Nyx Ravel had been reading for a year was only a lamp. Ninety-nine others had walked in behind him.",
+    body: `This is the story of the winter Starhaven almost closed its door.
+
+It began with a letter, the way most of Vizier Nessa Korrath's work begins. It ended with a woman kneeling in a square in the Emir's city at dawn, and a man who was not who he seemed standing three steps away, watching, and not allowed to look away.
+
+In between, for twenty days, the kingdom's front door was shut for the first time since it was built.
+
+—
+
+I. THE FIRST SNOW
+
+The first snow came to Starhold three weeks after the king woke up.
+
+The city was still raw from Lantern Night. The Lantern Bridge had new planks. The king had a new scar. People had been saying for a month that what Starhaven needed was a quiet winter, and the first snow felt like a promise of one. It fell soft and thick all afternoon, and by five o'clock the streets were white, and the doors began to open.
+
+The Night of Open Doors is the newest of Starhaven's festivals and, some say, the best. On the night of the first snow, every family that came into the kingdom through the Dome Gate cooks the food of the country they left, and leaves the front door open, and the whole street walks from house to house eating. Nobody eats at home. Nobody is allowed to.
+
+On a narrow street behind the spice market, Tariq Sefan opened his door for the second time in his life.
+
+He was a different man from the one who had arrived in the spring. He had a better coat, a clerk's job he was good at, and a landlady who still told him off for forgetting to eat. He knew now that his seven letters to the Vizier of Zharak had been read, every one, by a man called Nyx Ravel before they ever left the city. He knew because Nyx had told him so, in person, in the autumn, and had then asked him whether the flat bread was really as spicy as people said.
+
+So this year he made twice as much.
+
+Bolorma came first, as she had last year: the orc woman from across the street, six feet tall, a blacksmith's arms and a grandmother's shawl. She took a piece, chewed, nodded and said, "Hotter than last year. Good. You've stopped being polite."
+
+By nine o'clock the street was full. A Karath grandmother argued with a Thalassian sailor about dates. Two dwarf children ran from door to door with their mouths open to cool them. Someone was playing a desert flute badly and nobody minded.
+
+Tariq stood in his doorway with flour on his sleeves and thought: I am home.
+
+At eleven minutes past midnight, sixty miles away, the Dome Gate began to burn.
+
+—
+
+The Left-Luggage Hall is the quietest room at the Dome Gate. It is where trunks and parcels wait when they come through the Foreign Arches before their owners do. Some of them have waited for years. One shelf holds an entire classroom's worth of slates and satchels, sent ahead by a teacher whose family never arrived; the staff keep her class register open on a desk by the door, and former pupils come and write their addresses in its margins.
+
+The fire started in four places at once, behind four different shelves, and it was not an ordinary fire. It burned white and it burned fast, and water made it worse.
+
+Visa-Mistress Hesper Quillon was asleep in her rooms above the Open Visa Hall. She is a moon elf, about a hundred and sixty years old, and in all that time she had never once run. She ran that night: down three flights of stairs in her nightdress with her silver seal-ring on her finger, into smoke so thick she found the doors by memory.
+
+The night clerk, Anjali Bhatt, had already gone in. She was twenty-four. She had worked at the Dome Gate for two years and had a habit of reading the old luggage labels aloud on slow nights, as if the trunks might want to hear where they came from. She went in for the night porter, who was asleep at the back, and she got him as far as the door, and the roof of the hall came down.
+
+Hesper pulled the porter out by his collar. She could not reach Anjali. Two more of the night staff died trying, and a traveller who had been sleeping on a bench, waiting for a morning train, whose name nobody knew until his sister came looking for him a week later.
+
+By dawn the Left-Luggage Hall was a black hole in the side of the dome. The teacher's register was ash.
+
+And on the great arch above the Foreign Arches, where every arrival looks up as they step into Starhaven, someone had painted a line in tall red letters, in the flowing script of the Zharak Emirate. Hesper Quillon reads eleven languages. She read it aloud to the fire crews in a voice that did not shake until the last word.
+
+WE CAME IN THROUGH YOUR DOOR.
+
+—
+
+II. THE LETTER
+
+Nyx Ravel received the letter at seven in the morning.
+
+It was waiting on his desk in the Umbral Web's rooms beneath Starhold, which should not have been possible. There was no seal on it. The paper was good Zharak paper. The ink was very black.
+
+It was written in his own style. Short lines. No greeting.
+
+"Known since the Dome Gate," it began, and Nyx, who had written those exact words at the bottom of Tariq Sefan's last report, felt the room go cold.
+
+"Known since the Dome Gate. Every report read before it was sent. Every one sent on, unchanged, because every word was true. Yes. I know. That was the point.
+
+"You are the best reader in the world, Commander. So I sent you something to read.
+
+"One honest man, writing honest letters. I chose him because he was honest. I knew you would find him in a week. I knew you would read him for a year. I knew you would like him. Everyone does.
+
+"While you were reading him, ninety-nine others walked through your door.
+
+"They are not honest. They do not write letters. And they have read his reports too. Every weakness he found, they will now show you.
+
+"I will not try to break your kingdom. I am not a fool. I will only make it close its doors. Then it will be like every other kingdom in the world, and I will have nothing left to fear from it.
+
+"Tell the landlady he still forgets to eat. — N.K."
+
+Nyx read it twice. Then he did something that the people who work for him had never seen him do. He put the letter down, very gently, and sat with both hands flat on the desk for a full minute, not moving at all.
+
+His left shoulder still ached in the cold. The Tower of Twenty had put a dead man's hand through it in the autumn, and Lena's healing had closed the wound but not the memory. He noticed the ache now, the way you notice small things when a large thing has just happened.
+
+"She used him," he said at last, to nobody. "She used him as a lamp. And I stared at it."
+
+—
+
+He went to Tariq's street himself.
+
+Tariq was sweeping snow off his doorstep. When he saw who it was, he smiled, and then he saw Nyx's face, and stopped.
+
+Nyx gave him the letter. Tariq read it standing in the snow, with the broom still in his other hand. Bolorma watched from across the street with her arms folded.
+
+When Tariq looked up, he was grey.
+
+"I did not know," he said. "I swear on my mother. I did not know there were others."
+
+"I know you didn't," said Nyx. "That's why she chose you."
+
+"Four people died last night."
+
+"Yes."
+
+Tariq looked at the letter again. At the last line. "She knows about my landlady," he said quietly. "She knows I forget to eat. She has been reading your note about me. She has been reading you."
+
+"Yes," said Nyx. "She has."
+
+Across the street, Bolorma unfolded her arms and walked over, through the snow, and put a hand like a shovel on Tariq's shoulder.
+
+"Whatever it is," she said, "you're not on your own with it."
+
+Tariq did not answer. He was thinking, he said later, of the training house in the Emir's city, the one with the blue shutters, where he had spent four months learning to be a spy. He had thought he was the only student. There had been other wings in that house, with doors that were always closed.
+
+He had heard them, sometimes, at night. Many voices. He had thought it was a school for scribes.
+
+—
+
+III. SEVEN NIGHTS
+
+The Hundred did exactly what the letter said they would. They took Tariq's reports and went through them, one weakness at a time.
+
+On the second night, the river steps.
+
+Tariq had written that the king sat on the bottom step of the river stairs under the great iron bridge at dawn, with his boots off, talking to an old dwarf about copper jugs. On the second morning after the fire, the old dwarf came down to the steps as he had done every morning for nine years, with his jug, and found a curved Zharak dagger driven into the stone of the bottom step, exactly where the king always sat. The jug that hung from its handle was full of sand.
+
+Rayden Cale was not there. His healers had not let him out yet. When he heard, he got up anyway, and went down to the river at dawn the next morning with the Dawnguard trying very hard not to look as if they were surrounding him, and pulled the dagger out of the stone himself, and sat down where it had been, and took his boots off.
+
+The old dwarf sat down next to him. Neither of them talked about copper jugs. After a while the dwarf said, "Your feet will freeze."
+
+"Probably," said the king.
+
+It was a brave thing to do, and the whole city heard about it by noon. But the Dawnguard doubled the watch on the river stairs that day, and they have never been halved again, and that was a small door closing too.
+
+On the third night, Goldgate.
+
+Tariq had written that Goldgate publishes its own blind spots: the Underworld Line, the law that says the Umbral Web will leave thieves alone as long as nobody is murdered. On the third night a well-known fence named Coll Barrow was found dead in his shop on the canal, murdered, with an Iron Seal badge pressed into his hand.
+
+By morning every thief in Goldgate believed the Crown had broken its own Line. By the afternoon, the city's merchants were asking a different question. If foreign agents could walk through Goldgate killing people, why was the Iron Seal still forbidden to watch foreigners?
+
+Commander Korvus Drey was summoned before the Goldgate council and asked to watch them. All of them. Every tourist, every pleasure-seeker, every family on holiday. It would take only a stroke of a pen.
+
+Korvus Drey is a quiet man who carries his authority the way other men carry a sidearm: never shown, always there. He listened to them for an hour. Then he said, "The Founding Line says we watch threats, not travellers. It has not moved in nine years. If I move it now, then the people who killed Coll Barrow have done in one night what nobody has managed in nine years. I won't give them that."
+
+"And if they kill again?"
+
+"Then I'll find them," said Korvus, "with the net I've got. The net catches what it's designed to catch. That's the point of designing it."
+
+He held the line. It cost him. Two of Goldgate's great trading houses moved their winter business to Sea Lanes ports that week, and the papers in Starhold called him stubborn. He did not answer them.
+
+On the fourth night, the railway.
+
+Tariq had written that the railway was the thing to fear, because it never stopped. On the fourth night, a night train from Learnstead to Starhold, nine carriages full of students going home for the winter break, crossed the high bridge over the Selmere at full speed, and its crystal engine began to sing.
+
+Every engineer in the kingdom knows that sound. A crystal engine sings when its core is about to crack. Somebody had fed something into the core at Learnstead station, something that should not have been there, and the engine was eating it.
+
+The driver was a half-orc called Wendt who had driven that line for sixteen years. He did not stop the train on the bridge, because a cracked core on a bridge brings the bridge down. He opened the throttle instead, all the way, and ran for the far bank with the core screaming, and on the third carriage a second-year student from the Veilborn Arcanum, a girl from the Frostspire Dominion who had come through the Dome Gate eighteen months before, climbed forward along the roof of a moving train in the snow and put both her hands on the engine housing and froze the core solid from outside.
+
+It should not have worked. She told the inquiry afterwards that she did not know it should not have worked, which was why she tried it. Her hands were burned to the bone with cold. The train came off the bridge, and stopped, and nobody died.
+
+The next morning, eleven families from the Frostspire Dominion wrote to Learnstead to bring their children home. The girl who had saved the train was one of the students they meant. She refused to go. Three of the others went.
+
+That was what the Hundred wanted. Not dead students. Frightened ones.
+
+On the fifth night, chalk.
+
+Overnight, in Starhold and Bargemouth and Vaelmark and Saltmere, someone drew a single Zharak letter in white chalk on the front door of every house that had been open on the Night of Open Doors. Hundreds of doors. Nobody saw it being done. Nobody could explain how it was done in one night in four cities. In the morning the letters were simply there, on the doors of families from Karath and Thalassa and the Golden Coast and Frostspire and a dozen other places, and a few from Zharak itself.
+
+It was not a threat. It did not say anything. It was a mark, so that everyone in the street could see which doors belonged to the people who had come from outside.
+
+On the sixth day, for the first time, some of those doors stayed shut.
+
+Not many. Starhaven held, the way it had held on Lantern Night. Neighbours came out with buckets and scrubbed the chalk off each other's doors. In Bargemouth, an old fisherman painted the same Zharak letter on his own door, in blue, very large, and then on his neighbour's, and by noon half the street had copied him, and the mark meant nothing because everyone had it.
+
+But in the Speaking Hall broadcast that night, a weaver from Vaelmark asked a question on the open crystal, and it was a fair question, and it was the question Nessa Korrath had built the whole winter to make someone ask.
+
+"I've got nothing against anyone," the weaver said. "My wife came through the Dome Gate. But we don't ask them why they've come. Not one question. Shouldn't we start?"
+
+—
+
+IV. THE COUNCIL
+
+The king's council met on the seventh morning in the long room above the throne hall, with the snow coming down outside the tall windows and every person at the table knowing what was going to be asked.
+
+Rayden sat at the head of the table, the new scar pale down the side of his face. He had been on his feet for two weeks. He looked well, and he looked tired, and he did not look like a man who wanted to make the decision in front of him.
+
+Hesper Quillon spoke first, because the Dome Gate was hers.
+
+"Four of my people are dead," she said. "The Left-Luggage Hall is gone. Every arrival since the fire has walked past a black hole in my dome. And I will say this once, so nobody can say I didn't. The Open Visa is the sixth founding policy. In twelve years, sixty thousand people a year have come through my door, and I have never once asked any of them why. I am not going to start because someone painted on my wall."
+
+"With respect, Hesper," said Tiber Oswick, the Minister of Trade, who was her own minister and had stamped her own first appointment, "nobody is asking you to start. We're asking whether the door should be shut for a while, so that the Commander can find the ones already inside."
+
+Everyone looked at Nyx.
+
+Nyx had brought the letter. He put it in the middle of the table and let them read it, one by one, passing it round. He did not defend himself. It was, Lyria Valen said later, the bravest thing she ever saw him do.
+
+"She's right," Nyx said, when it came back to him. "I found the man she wanted me to find. I liked him. I wrote a note. She read the note. She's been inside my head for a year and I didn't know it." He looked at Rayden. "Ninety-nine people. Trained in one house, for months, by the best spymaster in the east. They came through the Dome Gate over a year, a few at a time, with real papers and real jobs. They're not in one city. They're not in one trade. They don't send letters. I can find them. I need time, and I need them not to be able to leave."
+
+"Or more of them not to arrive," said Oswick.
+
+"There won't be more," said Nyx. "She's spent her hundred. She doesn't need more. She needs us to do the next part ourselves."
+
+"And what's the next part?" said the king.
+
+"This," said Nyx. "This meeting."
+
+Nobody said anything for a while.
+
+Lyria Valen, who counts things, had brought numbers. Arrivals at the Dome Gate since the fire: down by two thirds. Applications from Zharak: none. Applications from Karath, whose people look and sound enough like Zharak to be mistaken in a frightened street: down by four fifths. Foreign students withdrawn from Learnstead and the Arcanum: forty-one. Foreign traders who had not renewed their papers: more every day.
+
+"She doesn't need us to close the door," Lyria said. "People are already closing it from the other side. They're just not coming."
+
+Korvus Drey spoke for the Founding Line. Serell Vane, the Court-Mistress, who rarely speaks at council at all and had come because Nyx asked her to, said nothing. She sat with her black lace fan closed on the table in front of her and watched Tiber Oswick.
+
+Kael Varric, who speaks for the kingdom on the Speaking Hall crystals when it needs a calm voice, said that if the gate closed he would explain why on the broadcast that night, and he would explain it honestly, and he did not know yet what honestly would sound like.
+
+Vespera Drakewynn said nothing at all until the very end, and then she said, quite pleasantly, that it was a four-hour flight to the Emir's city for a dragon in a hurry, and that she would be back for lunch.
+
+"No," said Rayden.
+
+"I know," said Vespera. "I wanted someone at this table to say it, so you could say no to it."
+
+Rayden thanked her. He meant it.
+
+Then he made the decision, and it was the decision Nessa Korrath wanted, and everyone at the table knew it.
+
+"The Dome Gate closes at noon," he said. "Twenty days. Not thirty. Not until further notice. Twenty days, with a date on it, written on the arch where they painted their line, so that everyone who looks up can see when it opens again." He looked at Nyx. "You have twenty days."
+
+"And after that?" said Oswick.
+
+"After that it opens," said the king. "Whatever he's found."
+
+Hesper Quillon stood up, and bowed to the king, very correctly, and walked out without speaking. She went back to the Dome Gate and at noon she personally turned the great crystal key that dims the Foreign Arches, one after another, eleven of them, and when the last one went dark she sat down on the floor of the empty hall with her back against the wall and stayed there until night.
+
+It was the first time the Dome Gate had been closed since the year it was built.
+
+—
+
+In Zharak, in a tower above the Emir's city, a messenger brought Vizier Nessa Korrath the news at sunset. She read it and set it down.
+
+The Emir, they say, wanted to pour wine again. She stopped him.
+
+"Not yet," she said. "Twenty days is a door that will open. I want one that stays shut. Wait."
+
+In Velmora, the Battlemage Prince ordered a copy of the notice on the Dome Gate arch, and had it framed.
+
+—
+
+V. THE GREY
+
+Nyx had not waited for the council. On the afternoon the letter came, six days before the gate closed, he had gone down to a room under Duskwall where the Null Blades keep the people they do not talk about.
+
+The Greymark are the quietest of the Null Blades. Their whole art is the minute and a half after an enemy commander makes a decision, when his attention is forward and nobody is watching the people standing next to him. They walk through battles looking like the enemy's own soldiers. They answer to nobody but Nyx.
+
+And among the Greymark there is one who does not need to look like anybody's soldier, because he can become one.
+
+He has no name. He has never had one that anyone knows. In the Greymark's records he is a blank line with a small grey mark at the start of it, and the operators who have worked with him call him the Grey, or Faceless, or nothing at all. He is male; that much he has always said, in every face he has ever worn. Nobody knows what race he was born. Nobody knows what he looks like when he is not looking like anyone, because nobody has seen it. Not even Nyx.
+
+It is not an illusion. That is the thing people never understand until they see it. A glamour sits on top of a body. Faceless changes the body. Bone, skin, teeth, the colour of the eyes, the length of the fingers, the voice. He needs three days of watching a person to learn how they move, and a drop of their blood to learn what they are made of, and then he needs about an hour, alone, in a locked room, and it hurts him in a way he has never described to anyone.
+
+The Greymark who guard the door during those hours say they do not hear screaming. They hear something worse: bones settling, slowly, like an old house at night.
+
+When Nyx came in, the man sitting at the table looked like a forgettable Starhaven clerk of about forty, with ink on his fingers.
+
+"I read the letter," said Faceless. "The whole Web's read the letter. She's good."
+
+"She's better than me," said Nyx. "This year."
+
+"What do you need?"
+
+"Her list," said Nyx. "She won't have written it down. She's too careful. It'll be in two heads, maybe three. Hers. The Emir's, perhaps. And her spymaster's. The man who ran the house with the blue shutters."
+
+"Marwan Qadir," said Faceless, who had read the files too.
+
+"I need you to be Marwan Qadir," said Nyx. "For as long as it takes. In her tower. Beside her."
+
+Faceless considered it.
+
+"I'd need three days on him," he said. "Close. And blood. You can't get me close to the Vizier's own spymaster in her own city. Not in three days. Not in thirty."
+
+"I can't," said Nyx. "Someone else can."
+
+He turned. Serell Vane was standing in the doorway with her fan in her hand. Nobody had heard her come down the stairs.
+
+—
+
+VI. THE TRANSLATOR
+
+The Shadow Court has three rings, and nobody outside it knows how many women are in any of them.
+
+The outer ring are the Weavers: ladies-in-waiting, musicians, healers, translators, who live in foreign courts and simply listen. The middle ring are the Needles: trained agents with court covers, who carry a slim blade under the sleeve and know how to use it. The inner ring is the Court itself, twelve women, each of whom holds a country in her head.
+
+In the Emir's palace, among the Weavers, there was a translator called Yusra.
+
+She was not called Yusra. Her real name was Kaveri. She was a moon elf from the hills above Lumenfield, and she had gone to the Emir's court thirty-eight years before as a young translator, and she still looked young, because elves do. She had translated for the old Emir and now for his son. She knew four of the desert languages and the court speech and the speech of the tents. The Emir trusted her more than he trusted his own brothers, and with good reason: in thirty-eight years she had never once told a lie in translation.
+
+She had only listened.
+
+Serell Vane had recruited her when they were both young, before the Shadow Court had a name. Serell said, at the Winter Council later, that Kaveri was the first woman she ever asked, and the only one she never had to ask twice.
+
+Kaveri knew Marwan Qadir. Everyone in the palace did. He was a careful, heavy man of fifty, who had run the Vizier's spies for eleven years and who went, every fifth evening, to the old bathhouse below the palace walls, because his back hurt and the steam helped.
+
+The bathhouse had a woman who brought the towels.
+
+For three days, Faceless brought the towels.
+
+He went into the Emir's city as a Karath carpet trader, with real carpets, through a caravan gate that Kaveri had paid. Kaveri made him a bathhouse woman in the space of a night, with a real name and a real grumbling employer and a real cousin who vouched for her. For three evenings he folded towels and handed them to Marwan Qadir and watched how the spymaster walked, and sat, and coughed, and rubbed his bad back, and how he spoke to the attendants, and how he did not speak to the attendants. On the third evening he cut the spymaster's thumb, very slightly, with the edge of a towel ring, and apologised in a soft desert accent, and kept the cloth.
+
+On the fourth evening, when Marwan Qadir went into the steam room, four Greymark were already in it.
+
+They did not kill him. Nyx had been clear. A dead spymaster is a hole in the world that everyone notices. A missing one can be explained for a while. They took him out through the drains in a laundry sack, alive and furious and drugged, and carried him two days into the desert to a dry cistern, where he spent the next month eating well, being treated politely, and not being told anything.
+
+And Marwan Qadir walked out of the bathhouse that night, with his bad back, and went home to his wife.
+
+—
+
+VII. TARIQ'S CHOICE
+
+In Starhaven, the Greymark had a problem, and the twenty days only made it sharper.
+
+They had the Founding Line, which says ordinary travellers are never watched. They had sixty thousand arrivals a year, most of them ordinary. They had ninety-nine trained spies hidden among them who did not send letters, did not meet each other, and did not need to. And they had a gate that was closed, which meant the spies could not leave, but also meant the spies knew they were being hunted.
+
+They had nothing else. Until Tariq Sefan walked into the Umbral Web's rooms on the second day without an appointment and asked to see Nyx.
+
+"I can't give you names," he said. "I never knew them. But I lived in that house for four months. I know how they were taught. I know what they were taught to say."
+
+"Say," said Nyx.
+
+"In the house with the blue shutters," said Tariq, "there was a word for when you met one of your own and you weren't sure. You asked about the bread. You said, 'Is the bread hot?' If they were one of us, they answered, 'As hot as the sand.' Anyone else would just say yes, or no, or look at you strangely. I never used it. I never met anyone to use it on. But they'll have been taught the same. Nessa never teaches two things where one will do."
+
+Nyx looked at him for a long time.
+
+"You understand what you're offering," he said. "If you do this, you're not the spy who stayed any more. You're the spy who turned. She'll know by the end of the week. And she doesn't forgive."
+
+"Four people died at the Dome Gate," said Tariq. "Because she used my letters. Because I wrote down that this was a good place." He was very quiet. "I wrote down that you don't ask strangers why they've come. That was my line. They used my line. I would like to use theirs."
+
+So for eleven days Tariq Sefan walked through the markets of Starhold, and Bargemouth, and the Dome Gate's empty concourse, and the student taverns of Learnstead, and the night kitchens of Goldgate, with a basket of his own flat bread on his arm. He sold it, a copper a piece. And to every face he did not know, every face that might have come from the east, he said, cheerfully, in the desert speech, "Is the bread hot?"
+
+Most people said yes. Some said no, it was cold, and could they have a fresh one. Two Karath students said it was not as good as their grandmother's.
+
+On the first day, a woman selling lamp oil on the Goldgate canal looked up at him and said, without thinking, "As hot as the sand." And then her face changed, because she had heard herself.
+
+He bought a flask of oil from her, paid, said thank you, and walked on. Thirty seconds later, two people who had been standing at the next stall, looking like a bored husband and wife, were no longer there. Neither was she.
+
+In eleven days he found eleven of them.
+
+On the twelfth night, they came for him.
+
+—
+
+There were three of them, and they came at two in the morning, when the street behind the spice market was dark and the snow was falling again. They did not knock. They came through the door and the window at once, the way they had been taught in the house with the blue shutters, and they had the curved knives of the Emir's household, and they did not say anything at all.
+
+There was one Greymark in the house, because Nyx had insisted on it. He was a broad, slow-talking man from the Golden Coast called Tunde Oyelaran, who had been with the Greymark for nine years and liked Tariq's bread very much. He was asleep in a chair by the stove, or seemed to be. He killed the first one through the window before the man's feet touched the floor.
+
+The second one killed him.
+
+It was very quick. Tunde turned to the door, and the second man was already inside his guard, and the knife went in under the ribs and up, the way it does when someone has been taught by people who mean it. Tunde Oyelaran sat down heavily on the floor of Tariq's kitchen with his back against the stove and did not get up again.
+
+Tariq had never fought anyone in his life. He was standing by the table in his nightshirt, holding the long knife he used for the bread, because it was the nearest thing. The second man came round the table. Tariq backed away. He remembered, afterwards, thinking very clearly: this is how the Vizier ends things. Quietly, in kitchens.
+
+Then the front door, which was already broken, came the rest of the way off its hinges, and Bolorma came through it in her nightgown with a cast-iron skillet the size of a cartwheel.
+
+She hit the third man first, because he was nearer. He went across the room and through the wall into the pantry and did not come out. The second man turned to her, and in the half-second when his back was to the table, Tariq Sefan, clerk, put the bread knife into him.
+
+He did it badly. He did not know how. He had to do it twice. The man made a sound Tariq still hears, and fell on him, and they went down together on the kitchen floor, and Tariq held on to him, because he did not know what else to do, until he stopped moving.
+
+Bolorma pulled the dead man off him. Tariq lay on the floor of his kitchen, in his blood-soaked nightshirt, beside Tunde Oyelaran, who had liked his bread, and looked at the ceiling.
+
+"Breathe," said Bolorma. "Just breathe. Don't do anything else yet."
+
+He breathed.
+
+When the Greymark came, ten minutes later, she was sitting on the floor with Tariq's head in her lap and the skillet within reach, and she had closed Tunde's eyes.
+
+Nyx came himself, an hour later. He knelt beside the Greymark operator for a while without speaking. Then he looked at Tariq.
+
+"I told you she doesn't forgive," he said.
+
+"Yes," said Tariq. His hands were shaking so badly he had put them under his arms. "I would do it again."
+
+"I know," said Nyx. "That's why I'm sorry."
+
+—
+
+VIII. THE VIZIER'S MAN
+
+In the Emir's city, the man who was not Marwan Qadir had been the Vizier's spymaster for nine days, and he was more afraid than he had ever been in his life.
+
+Nessa Korrath is not a frightening woman to look at. She is small and grey-haired, in plain dark robes, with reading spectacles she pushes up into her hair and forgets. She speaks softly. She pours her own tea. She asks after people's children and remembers the answers. In the palace, the servants like her. The Emir is a little afraid of her, and the people who know her best are very afraid of her, and she knows exactly which is which.
+
+She talked to her spymaster every evening in her tower, over tea, about the Hundred. Faceless had learned in the bathhouse how Marwan Qadir walked and coughed and rubbed his back. He had not learned how Marwan Qadir thought. So he said very little, and agreed often, and let her talk.
+
+She liked to talk. Marwan had always let her.
+
+"Do you know why I chose a hundred?" she said, on the third evening. "Not fifty, not a thousand?"
+
+"Tell me, Vizier."
+
+"Because a hundred is the number a frightened man can imagine. Fifty, he thinks he can catch. A thousand, he doesn't believe. A hundred, he lies awake counting." She smiled. "Their Commander Ravel is lying awake counting. I'd stake my tower on it."
+
+"Will they close the door for good?"
+
+"Not this winter," said Nessa. "Their king is too stubborn, and his visa-woman is too proud. But they've closed it once. Now they know they can. Next time it'll be easier. And the time after that, someone will say, 'Why do we ever open it?' And nobody will remember the answer." She sipped her tea. "I don't need to beat them, Marwan. I don't have the army to beat them, and neither does anyone else. I need them to become like us. Afraid of the people at the gate. Then they're just a kingdom, and kingdoms I understand."
+
+On the fifth evening she gave him the list.
+
+Not on paper. She never wrote it. She said it, slowly, name by name, city by city, cover by cover, all ninety-nine, and watched him repeat them back, because Marwan Qadir had always kept the list in his head and she liked to check it was still there. Faceless had a trained memory. He repeated every name. He got two wrong, on purpose, the way a tired man would, and she corrected him, and smiled, and poured him more tea.
+
+That night he gave the list to the woman who brought the towels at the bathhouse, who gave it to Kaveri the translator, who folded it into a letter about the price of indigo to a cousin in Karath who did not exist.
+
+Three nights later, in six cities, the Greymark took thirty-eight of the Hundred.
+
+—
+
+Faceless did one more thing as Marwan Qadir, which nobody asked him to do and which he has never fully explained.
+
+He went home every night. Marwan had a wife. Her name was Shirin, she was forty-six, and she had been married to the spymaster for twenty-two years, and she was not a fool.
+
+On the second night, she watched him take off his boots and said, "Your back is better."
+
+"The baths," he said.
+
+On the fifth night, she said, "You haven't shouted at the cook."
+
+On the ninth night, lying beside him in the dark, she said, very quietly, "You don't snore any more."
+
+He did not answer. He lay very still.
+
+After a long time, she said, "Whoever you are. Is he alive?"
+
+He could have lied. He was very good at it. He said, "Yes."
+
+She turned over, away from him. In the morning she made him breakfast, and called him by her husband's name, and never asked again.
+
+He has said only one thing about her since, to Nyx, in his report. He said that in thirty years of being other people, it was the first time anyone had known, and kept the secret for him, and he did not know why she did it, and he thought perhaps it was the first kind fortnight she had had in twenty-two years.
+
+—
+
+IX. THE NET
+
+The night the Greymark struck, it was snowing in four cities.
+
+They had all ninety-nine names that Faceless had sent, and the eleven Tariq had found. But names are not people. In a year, covers change, jobs change, lodgings change. When Nyx's people had finished checking, there were forty-four of the Hundred they could put a hand on that night, in six cities, and forty-four teams, and one rule. Nobody else gets hurt. Not a landlady, not a neighbour, not a child in the next room. If a target cannot be taken without that, the team stops and lets him go.
+
+Most of the takes were silent. A lamp-oil seller in Goldgate, a translator at the Learnstead library, two dock clerks in Saltmere, a cook in a Vaelmark inn, a pair of Starhold street-sweepers who had swept the Dome Gate road every morning for nine months. The Greymark came in quietly, at the hour when people sleep deepest, and the Hundred woke with hands on their mouths and their knives already gone.
+
+Some were not silent. The Hundred had been trained in the house with the blue shutters by the best teachers in the east, and some of them were better fighters than the Greymark who came for them.
+
+In Bargemouth, a ferry-hand who had been one of them for a year heard the boards creak on his stairs and went out of the window into the freezing river, and swam it in the dark, and was gone. In Vaelmark, a woman in a dyer's workshop killed one Greymark operator with a vat hook and wounded another before they took her. In a boarding house in Starhold, three of them were living together as brothers, and it took eight Greymark and most of the boarding house's furniture.
+
+And at the Dome Gate, in the empty hall, the one Nyx wanted most was waiting for them.
+
+His name was Kaan Torul. In Nessa's list he was the first name, not the last: the man who had run the Hundred inside Starhaven, who had lit the four fires in the Left-Luggage Hall himself, who had painted the line on the arch. For a year he had worked at the Dome Gate as a night porter. It was Kaan Torul whom Anjali Bhatt had gone back into the smoke to find, asleep at the back of the burning hall. He had not been asleep. He had let her carry him to the door.
+
+Hesper Quillon had pulled him out by the collar. She had sat with him afterwards, wrapped in the same blanket, and thanked him for surviving.
+
+Six Greymark went in for him at three in the morning. He was standing in the middle of the Open Visa Hall, under the dome, in the dark, as if he had known exactly when they would come, and he had. He had heard about the thirty-eight an hour before; somewhere in the Hundred, one of them had sent a signal Nyx's people had missed.
+
+He was not one man fighting six. He was one man who had studied the Greymark, the way the Greymark study everyone else. He knew how they moved, where they stood, the minute and a half they wait for. He did not give it to them. He fought them in the dark under the dome for less than a minute, with two knives and a lamp chain, and when it was over, two Greymark were badly hurt, one had a broken arm, and Kaan Torul was running for the Foreign Arches.
+
+They were dark. The gate was closed. He ran at them anyway.
+
+What happened next has never been fully explained. The eleventh arch, the one linked to the Thalassian League, flickered, very briefly, as he reached it, as if someone on the other side had pushed something through. There was a smell of salt. Then it was dark again, and Kaan Torul was gone.
+
+Hesper Quillon came down from her rooms with a lamp and stood looking at the eleventh arch for a long time.
+
+"He sat with me," she said. "Under my blanket. He drank my tea. I thanked him."
+
+Then she went upstairs and wrote his name in the margin of a new class register, the one the teacher's former pupils had started again after the fire. Not as a pupil. In red, at the bottom of the page, with a line underneath, the way you write a debt.
+
+—
+
+X. THE TRANSLATOR
+
+In Zharak, Nessa Korrath heard about the thirty-eight at dawn.
+
+She did not shout. She did not break anything. She sat in her tower with the report on her lap and her spectacles in her hair and her tea going cold, and she thought.
+
+Faceless, standing in the doorway as Marwan Qadir, waiting to be called in, watched her think, and he says it was the most frightening thing he has ever seen.
+
+"Thirty-eight," she said at last. "In one night. In six cities. That isn't a hunt. That's a list."
+
+"Yes, Vizier."
+
+"My list. It was never written. Three people have heard it said aloud in the last year. Me. You. And the Emir, once, when I explained it to him in the council room." She turned her head and looked at him, and Faceless kept Marwan's face perfectly still. "Not you. You've been mine for eleven years. And not the Emir. He doesn't remember lists. He was bored."
+
+She was quiet a while longer.
+
+"When I told the Emir," she said, "who else was in the room?"
+
+Faceless knew the answer. So did she. She had only wanted to hear someone else say it.
+
+"His translator," he said.
+
+—
+
+They took Kaveri that afternoon, on the sixteenth day of the closed gate. She was in the Emir's library translating a letter from the Thalassian League about fishing rights, and she put down her pen when they came in, and capped the ink, and went with them without a word.
+
+She knew. She had known since dawn, when the news came, that the Vizier would follow the list back to the council room, because Kaveri had been listening to Nessa Korrath for eleven years too.
+
+She had had all morning to run. There was a caravan gate she could have paid, as she had paid it for a Karath carpet seller a month before. She did not run, because if she ran, the Vizier would keep looking, and the next person she looked at would be standing in her tower, holding her teacups, wearing someone else's face.
+
+So she let herself be found. And when they asked her how she had got the list, she told them. She had read it on the Vizier's lips across the council table, she said, on the day the Vizier explained it to the Emir; she had been reading lips for thirty-eight years. She had sent it out in a letter about indigo. She had acted alone. There was nobody else.
+
+They asked her for three days whether there was anybody else.
+
+What was done in those three days is not written down here, and will not be. Serell Vane has the account of it, from the palace women who were made to clean the room afterwards, and she has never let anyone else read it, and never will. It is enough to say that Nessa Korrath was in the room for some of it, and asked her questions softly, and poured her tea, and that Kaveri gave the same answer every time.
+
+There was nobody else. She had acted alone.
+
+On the fourth morning, the twentieth day of the closed gate, they brought her out into the square below the palace at dawn.
+
+It is the custom in the Emir's city that the court attends. The Emir sat on a balcony under an awning. The council stood in a line beneath him. Nessa Korrath stood at the end of the line in her plain dark robes, and on her right hand, where he had stood every day for eleven years, stood her spymaster, Marwan Qadir, with his bad back, and his heavy face, and his hands folded in front of him so that nobody could see them shake.
+
+Faceless had asked Nyx, through the bathhouse, the night before, whether he should go. Whether there was anything he could do. Nyx's answer had come back in four words, and they were the hardest four words Nyx has ever written.
+
+Stay. Stand. Watch. Live.
+
+Kaveri walked out into the square on her own feet. She was very thin. She was still beautiful, in the way elves are, which made it worse. She did not look at the Emir, whom she had served for thirty-eight years. She did not look at the Vizier.
+
+She looked once, along the line of the council, and her eyes stopped on Marwan Qadir.
+
+Then she said something. Not loudly. Not in the desert speech, or the court speech, or any of the languages anyone in that square could follow. It was the old speech of the moon elves of the Lumenfield hills, and there were perhaps two people in the whole of the Emirate who could have understood it.
+
+One of them was about to die. The other was standing on the Vizier's right hand.
+
+It was the farewell the women of the Shadow Court give each other, the one Serell Vane taught them, and it means, near enough: You were never here. I never saw you. Go home.
+
+Then she knelt down.
+
+The Emir's sword-bearer was very good at his work. It was quick. That is the only mercy in this story that came from the Emir's city, and it is not much of one.
+
+Faceless did not move. He did not look away. He stood beside Nessa Korrath, wearing a stranger's face, and watched a woman who had died to protect him, because she had asked him to, and because Nyx had told him to, and because if he did anything else her three days would have been for nothing.
+
+When it was over, Nessa Korrath turned to him and said, quietly, "Thirty-eight years. In my own court. I never once looked at her."
+
+"No, Vizier," said Faceless.
+
+"Nobody ever looks at them," said Nessa. "That's what makes them so good." She pushed her spectacles back up into her hair. "I want every woman who serves in this palace questioned. Every one. Begin with the bathhouse."
+
+—
+
+XI. THE RIDE OUT
+
+He left that afternoon.
+
+He told the Vizier he would ride to the border himself to see which of the Hundred were coming home, and question them, and find out how the Starhaven hunters had worked. It was exactly what Marwan Qadir would have done. She agreed at once. She gave him an escort of twenty Sand Cavalry, the Emir's desert riders, on their tall pale horses.
+
+At the stable door, as he mounted, she came down herself to see him off, which she had never done before.
+
+"Marwan," she said.
+
+He looked down at her.
+
+"In eleven years," she said, "you have never once called me by my first name. Not once. You have always said Vizier. Even in bed with a fever. Even at your son's wedding." She tilted her head. "These two weeks, you've called me Nessa nine times."
+
+The whole stable was very quiet. Twenty riders sat their horses and waited.
+
+Faceless smiled with Marwan Qadir's face. "I've been tired, Vizier," he said.
+
+"Yes," said Nessa Korrath. "I expect you have." She stepped back. "Ride safely. Give my regards to the border."
+
+He rode. And he did not know, then or ever, whether she had already known, and let him go so that he would carry her message home. He still does not know. Nyx thinks she did. Serell thinks she did not. Faceless says it does not matter, because either way she won the conversation.
+
+Two days out, at a well in the deep desert, the Sand Cavalry captain received a message by hawk, and read it, and looked at his spymaster across the fire with a very different face.
+
+By then the spymaster was not there. He had gone to relieve himself behind the dunes, an hour before, and not come back. A Karath water-seller walked into a caravan camp ten miles to the west that night, leading a borrowed camel, with sand in his beard and a bad cough. Four Greymark were waiting for him. Two hundred Sand Cavalry were searching the desert behind him by dawn, and they came close, twice: once near enough that the Greymark heard the riders' bridles in the dark below the ridge where they lay, and once in a dry riverbed at noon, where the riders passed so close that one of them stopped to water his horse thirty feet from the hole where Faceless was lying under a sheet of sand-coloured cloth, wearing nobody's face at all.
+
+The Greymark who were with him have never described that face. They say only that he asked them not to look, and they didn't, and that the bones took a long time to settle.
+
+On the sixth day they crossed into Karath, where Crown Prince Zafir, home now from his vigil over the sleeping king, had a hundred riders waiting at the border who had not been told who they were waiting for and had been told not to ask.
+
+On the seventh day, the Greymark left the real Marwan Qadir at a well on the Zharak side of the border, with water, food, a camel, and a letter for his Vizier. He was thinner. He was unhurt. He had been treated better than anyone in Nessa Korrath's tower would have treated him.
+
+The letter was not long.
+
+"Your spymaster. Unharmed, as you can see. He was never part of this. Neither was his wife. She is the kindest person in your city, and you should know it.
+
+"You took one of ours. I am not sending you anything for her. There is nothing that would be enough.
+
+"You were right. We closed the door. Twenty days. We opened it again at noon on the morning you killed her. Count them. — N."
+
+—
+
+XII. THE DOOR
+
+The Dome Gate opened on the twentieth day at noon, as the arch had promised.
+
+Hesper Quillon had been up since four. She had polished the brass rails herself. The black hole where the Left-Luggage Hall had been was still there, covered by a great sheet of Starhold sailcloth, and on the sailcloth, overnight, someone had painted, very large, in about thirty different languages, the same word over and over again. Hesper found out later that it was the teacher's former pupils, the ones who had written their addresses in her register. They had come back from all over the kingdom in the night with brushes and ladders.
+
+The word was: Welcome.
+
+At noon she turned the crystal key and the eleven Foreign Arches lit, one after another, and the first people came through: a Thalassian fisherman's family with a goat; two dwarf scholars for Learnstead; a very old woman from Karath, walking with a stick, who had been told by her grandson that Starhaven had shut its doors and had come to see for herself.
+
+She walked into the Open Visa Hall and stopped, because there was a queue, and at the front of it, behind Hesper Quillon's own desk, wearing a clerk's grey coat with a long scar down the side of his face, the King of Starhaven was stamping papers.
+
+He did it all day. Hesper stood behind him and corrected him when he got the seal crooked, which was often. He did not ask anybody why they had come. He said, "Welcome, then," to every one of them, the way Hesper had taught him, and called the next family forward.
+
+The old woman from Karath, when she reached the front of the queue, looked at him for a long time over the top of the desk.
+
+"My grandson says your door was shut," she said.
+
+"It was," said Rayden. "For twenty days. I'm sorry. It won't happen again if I can help it."
+
+"Can you?"
+
+He thought about that. He did not lie to her. "Not always," he said. "But I can always open it again."
+
+She considered this, and then nodded, and held out her papers.
+
+—
+
+There were changes. Nobody pretended there were not.
+
+The Open Visa Hall still asks no questions. Hesper Quillon made sure of that, and the king backed her, and it is written into the policy now in her hand, in blue pencil, twice. But the Hundred's names, every one that Faceless brought home and Tariq found, are on a list at every desk. And in the long queue under the dome, where arrivals wait for hours with their children and their trunks, there are now women who walk up and down with trays of tea and bread for the people waiting. They are polite and patient and very easy not to notice. They have been there since the twentieth day. They answer to Serell Vane.
+
+Commander Korvus Drey's Founding Line did not move. Nyx asked him, in front of the council, whether he had been tempted, and Korvus said yes, every day, and that was what a line was for.
+
+Kael Varric went on the Speaking Hall crystals the night the gate opened and answered the weaver from Vaelmark who had asked whether Starhaven should start asking strangers why they came. He said: "We had a stranger in the kingdom this winter who answered that question honestly in every letter he wrote, for a year. He came to hurt us. He stayed to cook for us. And when they came to kill him for it, the woman across the street came through his door with a frying pan. I don't think we should ask strangers why they've come. I think we should keep giving them better reasons to stay."
+
+The students came back to Learnstead, most of them. The girl from Frostspire who froze the engine on the Selmere bridge has new hands, grown back by the healers of the Veilborn Arcanum over six weeks, and she says they are better than the old ones and colder. Wendt, the driver, has a medal he keeps in a drawer.
+
+In Goldgate, the thieves worked out on their own that the Crown had not killed Coll Barrow, and the guild sent Korvus Drey a crate of very good wine, anonymously, which he returned, with a polite note, also anonymously.
+
+—
+
+XIII. THE COUNT
+
+Vizier Nessa Korrath sent ninety-nine people through the Dome Gate, and one honest man to be looked at.
+
+Thirty-eight were taken in one night. Six more in the weeks that followed. Two died fighting the Greymark rather than be taken, and three were killed in Tariq Sefan's kitchen. All the rest, nearly fifty of them, slipped out over the next year: by the Sea Lanes, through the mountain roads, back through the Dome Gate itself, with real papers, under names nobody had. Some are still in Starhaven. Nyx believes there are at least nine. He does not know their names. He knows that he does not know, and that is the thing that keeps him up.
+
+Kaan Torul, who burned the Left-Luggage Hall, and let a twenty-four-year-old clerk carry him out of it, has not been seen again. His name is on every desk at the Dome Gate. Hesper Quillon checks the arrivals list against it every morning herself.
+
+Starhaven lost four people at the Dome Gate on the first night: Anjali Bhatt, the night clerk, two of the night staff who went in after her, and a traveller asleep on a bench whose name was Emeric Vass and whose sister came looking for him a week later. It lost Tunde Oyelaran of the Greymark in a kitchen behind the spice market, and a second Greymark operator, a woman whose name the Null Blades do not release, in a dyer's workshop in Vaelmark.
+
+And it lost Kaveri.
+
+Zharak lost its spymaster's confidence, which matters more in Zharak than anything, and the Vizier's best translator, and nearly forty trained agents it had taken a year to place. Marwan Qadir went home to his wife. He still serves the Vizier. He is said to be quieter than he was, and never shouts at the cook.
+
+In the Emir's city, every woman who served in the palace was questioned. Seven of them were the Shadow Court's. Six got out, through the caravan gates, in the first two days, because Kaveri's three days had bought them the time. The seventh was an old harpist who refused to leave, and is still there, and is still playing, and nobody has ever looked at her twice.
+
+Nessa Korrath did not get what she wanted. The door is open. But she got twenty days of it closed, and she got a king to stand at a desk in a clerk's coat to prove a point, which is a thing a king only does when he is afraid the point is not proven. She got Starhaven to put women with tea trays in its queue and a list of names at every desk. She got Nyx Ravel to lie awake counting. And she learned, from the way her spymaster called her by her first name, that somewhere in Starhaven there is a man who can wear any face he likes.
+
+She wrote to Nyx one more time, in the spring. The letter was on his desk in the Umbral Web's rooms when he came in, as before. The ink was very black.
+
+"You took a month of my spymaster. I took one of your sister's women and twenty days of your door. You know her name. I know you know it; I watched him not look away.
+
+"Ask yourself which of us can count what we lost, Commander. I can. I have counted every one. Can you?
+
+"Next time, I will not send you anything to read. — N.K."
+
+Nyx keeps that letter in the drawer with the first one. He has not answered it. Serell Vane says he takes it out sometimes, late at night, and reads it, and puts it back.
+
+—
+
+Tariq Sefan did not go home, and now he never can.
+
+He has a scar across the palm of his left hand from the bread knife, which he held wrong. He has a new front door, which Bolorma made for him in her forge, out of iron, with a very good lock and a large knocker in the shape of a frying pan. On the Night of Open Doors, the year after, he opened it anyway. He made three times as much bread.
+
+At the funeral of Tunde Oyelaran, on the cliffs above Saltmere, Tariq stood at the back with Bolorma until Nyx came and brought him to the front. The Greymark do not speak at funerals. They stood in two lines in their grey coats and said nothing at all. Tariq had brought bread. He set it down on the stone beside the grave, a whole flat round, hot, wrapped in a cloth, because Tunde had liked it, and because he did not know what else to do.
+
+One of the Greymark, at the end of the line, a forgettable man with ink on his fingers, broke off a piece, and ate it, and nodded.
+
+—
+
+The last part of this record belongs to Serell Vane.
+
+The Shadow Court does not keep a list of its women. That is Serell's first rule, and the first thing she teaches anyone she asks to join it: The day someone can count us is the day we have failed. No register. No pay-roll. No memorial. When a woman of the Court dies in service, nobody outside the Court is ever told, because to tell would be to count.
+
+On the night the news came from the Emir's city, Serell came to the Royal Athenaeum after dark with a single sheet of paper, and asked the archivist on duty for a place in the records where nothing else was written.
+
+Then she broke her own rule. She wrote down one name, in her own hand, in the old speech of the moon elves of the Lumenfield hills.
+
+Kaveri. Thirty-eight years in the court of the Emir. Never lied in translation. Never once looked at. Acted alone.
+
+Underneath, she wrote: They may count this one.
+
+She has not written another name, before or since.
+
+At the end of that winter, when the king called the Winter Council to weigh every weak point the year had shown the kingdom, he asked each of his commanders to bring one question they wanted answered. Most of them brought something about walls, or soldiers, or silver.
+
+Serell Vane brought her black lace fan, which she laid on the council table, closed, in front of the king. It had belonged to Kaveri; it had come back from the Emir's city with the six women who got out.
+
+Then she asked her question, and it is still written on the first page of the Winter Council's agenda, in her hand, waiting for its answer:
+
+"Is the open door worth one of my women?"
+
+The king has said he will answer it at the Council. He has not answered it yet. He was at the Dome Gate on the morning of the twentieth day, stamping papers. He did not know, until that night, that at the same hour, in a square below the Emir's palace, Kaveri had knelt down. He knows what Serell is asking. He also knows that the answer the kingdom gave that day, at noon, with the arches lit and an old woman from Karath standing at the desk, was yes.
+
+He does not know if that is the same answer.
+
+Classification: Counter-Intelligence — Sealed Record, partially released (compiled from the reports of Nyx Ravel and the Greymark, the testimony of Hesper Quillon, Tariq Sefan and Bolorma of the spice-market street, the inquiry into the Selmere bridge train, the Speaking Hall broadcast log, and one account held by Court-Mistress Serell Vane, not released). The name of the Greymark operator called Faceless does not appear in this record because he does not have one.
+Filed Year 1060.
+— Archivist Senna Ash, Starhaven Royal Athenaeum`,
+  },
 
   {
     id: 'two-walls',
@@ -19703,7 +20402,7 @@ const CHARACTERS = [
     bio:"Shadekin — deep grey-charcoal skin, dark-adapted eyes. Features arranged for vanishing. Umbral Weave Armor that absorbs light — no reflection at any angle. Expression: nothing. Not cold, not warm. Simply absent.",
     relationships:[{name:'Ottilie Pell',type:'ally',note:'Mother Velvet keeps Goldgate\'s thieves to a code; Nyx keeps the Watch off her. Neither says so.'},{name:'Lisette Rosier',type:'partner',note:'Dating'},{name:'Rayden Cale',type:'ally'},{name:'Lyria Valen',type:'rival'}],
     tags:['The Black Silence','Founder','Pillar of Secrets','Null Blades'],
-  background:'Once known on the shadow routes only as the Black Silence — the unseen hand that killed bandit chiefs, freed slave caravans and exposed corruption cults, rumoured on Havenfire\'s walls long before anyone knew his name. Shadekin. Origin before Starhaven is classified even from the royal record. Designed the security architecture of Goldgate before a single building was placed. Identified Velcross\'s 23 embedded agents 11 days before their activation — neutralized all simultaneously with zero fatalities. Sent Velcross the complete asset list before she confirmed her own failure. The gap between Velcross\'s realization and Nyx\'s message was 40 seconds.',
+  background:'Once known on the shadow routes only as the Black Silence — the unseen hand that killed bandit chiefs, freed slave caravans and exposed corruption cults, rumoured on Havenfire\'s walls long before anyone knew his name. Shadekin. Origin before Starhaven is classified even from the royal record. Designed the security architecture of Goldgate before a single building was placed. Identified Velcross\'s 23 embedded agents 11 days before their activation — neutralized all simultaneously with zero fatalities. Sent Velcross the complete asset list before she confirmed her own failure. The gap between Velcross\'s realization and Nyx\'s message was 40 seconds. In the winter of 1059 Vizier Nessa Korrath showed him that Tariq Sefan, the honest spy he had read for a year, had been a lamp: ninety-nine agents came in behind him. Nyx asked the council for time, sent Faceless into the Vizier\'s own tower, and took forty-four of the Hundred. Two of her letters are in his drawer. He believes at least nine are still inside the kingdom.',
     mount:{name:'Umbra',desc:'Shadowfang Panther — pure black with a light-absorbing quality. Appears to be made of concentrated dark rather than darkness. Bond animal, not a trained mount in any conventional sense.'},
     pet:null,
     partner:{image:'starhaven_chars_image/partner_lisetterosier.jpg',name:'Lisette Rosier',relation:'Dating — hostess of the Gilded Lantern, Velvet Row',desc:'Runs the Gilded Lantern, the most discreet licensed house on Goldgate\'s Velvet Row. She noticed Nyx watching the street from the same rooftop three nights running and sent up a glass of wine on the fourth. Hears everything said on the Row and has never sold a word of it — the only person in Goldgate Nyx does not need to verify.'},
@@ -24008,7 +24707,7 @@ const CHARACTERS = [
     bio:'Gives no impression of authority on first encounter. This is deliberate. His officers describe him as the most consistently correct person they have ever worked under — not inspiring, not charismatic, simply and always correct. Loyalty: The charter condition is not a restriction. It is the definition of what makes the work legitimate. He has said this once, to a new officer, in Year 1045. He has not said it again. It was enough.',
     relationships:[{name:'Ottilie Pell',type:'enemy',note:'Eleven years of trying to prove anything at all.'},{name:'Nyx Ravel',type:'ally',note:'Co-designed Goldgate\'s security architecture. They do not socialize. They work in parallel and their assessments consistently agree. Nyx considers this the highest form of professional relationship.'},{name:'Rayden Cale',type:'service',note:'Reports to Rayden on Goldgate security status quarterly. The reports are three pages. Rayden reads all three.'},{name:'Isolde Cren',type:'professional',note:'Coordinates on Velvet Row quarterly inspections. Isolde handles medical. Korvus handles compliance. Neither has needed the other\'s jurisdiction twice.'}],
     tags:['Commander','Starhaven Royal & Military','Iron Seal'],
-    background:'Former military intelligence officer. Moved to civilian security architecture when Nyx Ravel approached him in Year 1043 to design Goldgate\'s security framework before the city was built. The first thing he said to Nyx: "What are the rules we won\'t break?" Nyx told him. He accepted the commission. Rank: Iron Seal Commander · Goldgate Security Division (200 officers) · Direct Rayden authority.',
+    background:'Former military intelligence officer. Moved to civilian security architecture when Nyx Ravel approached him in Year 1043 to design Goldgate\'s security framework before the city was built. The first thing he said to Nyx: "What are the rules we won\'t break?" Nyx told him. He accepted the commission. Rank: Iron Seal Commander · Goldgate Security Division (200 officers) · Direct Rayden authority. In the winter of 1059 the Hundred murdered the fence Coll Barrow with an Iron Seal badge in his hand, and the Goldgate council asked him to watch every foreigner. He refused. The Founding Line did not move.',
     achievements:['Co-designed Goldgate security architecture — nine years, founding charter line unbroken','200 undercover officers maintaining complete intelligence picture of 280,000-person city','Velvet Row compliance record: zero second offenses in all licensed establishments','Average foreign agent identification: 8 days. Removal: 12 days. Zero public incidents.'],
   },
   {
@@ -24490,7 +25189,7 @@ const CHARACTERS = [
     bio:'Silver-streaked dark hair pinned high, a diplomat\'s patient smile, and the stillness of someone following three conversations at once.',
     relationships:[{name:'Nyx Ravel',type:'ally',note:'Shares what the Umbral Web cannot reach'}],
     tags:['Commander','The Shadow Court','Intelligence','Half-Elf'],
-    background:'A former diplomatic envoy who spent twenty years watching powerful men talk freely in front of the women serving them. She built the Shadow Court on that blind spot — ladies-in-waiting, translators and attendants placed across noble courts, mapping leverage rather than stealing secrets. Nobody outside the Court knows its true number.',
+    background:'A former diplomatic envoy who spent twenty years watching powerful men talk freely in front of the women serving them. She built the Shadow Court on that blind spot — ladies-in-waiting, translators and attendants placed across noble courts, mapping leverage rather than stealing secrets. Nobody outside the Court knows its true number. In the winter of 1059 her translator Kaveri, thirty-eight years in the Emir of Zharak\'s court, got Faceless beside the Vizier\'s spymaster and died to keep him hidden. Serell broke her first rule and wrote one name in the Royal Athenaeum. She took Kaveri\'s fan to the Winter Council with one question: "Is the open door worth one of my women?" Since the twentieth day her women carry tea up and down the Dome Gate queue.',
   },
   {
     id:'rendael', name:'Ren Dael',
@@ -25251,6 +25950,96 @@ const CHARACTERS = [
     relationships:[{name:'Rayden Cale',type:'enemy',note:'Put the Unmending into his side on the Lantern Bridge, 1059'},{name:'Vespera Drakewynn',type:'enemy',note:'Shot him in the shoulder as he went over the parapet; has asked to be told first when he is seen again'},{name:'The Nullborn host',type:'liege',note:'Hunts for whoever commands it'}],
     tags:['Known Enemies','King\'s End','Nullborn','The Crown\'s Shadow','Recurring'],
     background:'Leader of King\'s End, the fifty hunters of the Nullborn host who ignore armies and hunt Pillars. On Lantern Night 1059 he led fourteen hunters onto the Lantern Bridge in Sancthaven, closed a ring of rescue-denial spikes round the king, and waited in the river under the bridge for the minute he had bought. Stabbed Rayden Cale with the Unmending when the king stepped between the blade and a ten-year-old boy. Rayden, on Berserker Rage, broke his second blade, took two fingers from his right hand and opened his face; he went over the parapet with a pistol ball in his shoulder and a cut from collarbone to collarbone, and escaped by sea in fog. A month earlier he had killed the broker Udo Ferrand and the Lindqvist family of four to use their river house. On the night the king woke he reached the captured hunter inside the Crown Cells and left one tally mark in blood. Not found.',
+  },
+  {
+    id:'faceless', name:'Faceless',
+    image:'starhaven_chars_image/faceless.png',
+    title:'The Grey',
+    category:'Commander', status:'alive',
+    age:'Unknown', race:'Unknown', role:'Greymark operator · The Null Blades · answers only to Nyx Ravel',
+    color:'#6A6A6A',
+    weapons:['A clerk\'s ink-stained fingers','Whatever the face he is wearing would carry'],
+    abilities:[
+      {name:'True Mimic', type:'active', desc:'Not an illusion. After three days of watching a person and a drop of their blood, he spends an hour alone in a locked room and becomes them: bone, skin, teeth, eyes, voice. It hurts in a way he has never described.'},
+      {name:'Nobody\'s Face', type:'passive', desc:'No name, no known race, no known face of his own. In the Greymark records he is a blank line with a small grey mark at the start of it.'},
+    ],
+    quote:'"Either way, she won the conversation."',
+    bio:'Usually a forgettable man of about forty with ink on his fingers. That is a face too.',
+    relationships:[{name:'Nyx Ravel',type:'liege',note:'The only person he reports to; has never seen his real face either'},{name:'Kaveri',type:'ally',note:'Died to keep his cover; he was ordered to watch, and did'},{name:'Vizier Nessa Korrath',type:'enemy',note:'Served her for two weeks as her own spymaster'},{name:'Marwan Qadir',type:'enemy',note:'Wore his face'}],
+    tags:['Commander','The Greymark','Null Blades','Shapeshifter','The Shadow Court (chronicle)'],
+    background:'The strangest of the Greymark. In the winter of 1059, with Serell Vane\'s translator Kaveri opening the door, he took the place of Marwan Qadir, the Vizier of Zharak\'s spymaster, and stood at Nessa Korrath\'s right hand for two weeks. He learned the names of the Hundred, sent them home, and watched Kaveri die in the square without breaking cover. On the ride out the Vizier told him he had called her by her first name nine times. He still does not know whether she let him go.',
+  },
+  {
+    id:'nessakorrath', name:'Vizier Nessa Korrath',
+    image:'starhaven_chars_image/nessakorrath.png',
+    title:'The Vizier of Zharak',
+    category:'Known Enemies', status:'alive',
+    age:'About 60', race:'Human (Zharak)', role:'Vizier of the Zharak Emirate · Foreign Affairs · runs the Emir\'s spies',
+    color:'#3A2410',
+    weapons:['Letters in very black ink','The Hundred','Tea, poured herself'],
+    abilities:[
+      {name:'The Lamp', type:'active', desc:'Shows her enemy something honest and harmless to watch, and sends everything else in behind it.'},
+      {name:'Never Written', type:'passive', desc:'Her lists live in two or three heads, never on paper. Her people are taught one thing where one will do.'},
+      {name:'Make Them Like Us', type:'passive', desc:'Does not try to beat Starhaven. Tries to make it afraid of the people at its gate, so it becomes a kingdom she understands.'},
+    ],
+    quote:'"Next time, I will not send you anything to read."',
+    bio:'A small grey-haired woman in plain dark robes, with reading spectacles pushed up into her hair. Asks after your children and remembers the answers.',
+    relationships:[{name:'Nyx Ravel',type:'rival',note:'Inside his head for a year; two letters in his drawer'},{name:'Emir Zahid al-Morad',type:'liege',note:'Her Emir; a little afraid of her'},{name:'Tariq Sefan',type:'enemy',note:'Her honest lamp; turned, and she sent knives to his kitchen'},{name:'Kaveri',type:'enemy',note:'Thirty-eight years in her court; she never once looked at her'},{name:'Marwan Qadir',type:'ally',note:'Her spymaster of eleven years'}],
+    tags:['Known Enemies','Zharak Emirate','Spymaster','The Shadow Court (chronicle)','Recurring'],
+    background:'Runs the Zharak Emirate\'s foreign affairs and its spies. In 1059 she sent one honest man, Tariq Sefan, through the Dome Gate for Nyx Ravel to find and read, and ninety-nine trained agents in behind him. On the Night of Open Doors they burned the Left-Luggage Hall and painted WE CAME IN THROUGH YOUR DOOR on the arch, then struck each weakness Tariq had written down. Starhaven closed the Dome Gate for twenty days, the first time ever. She lost forty-four agents and her spymaster for two weeks to a shapeshifter, found and executed the Shadow Court\'s translator Kaveri, and wrote to Nyx that she, at least, could count what she had lost.',
+  },
+  {
+    id:'kaantorul', name:'Kaan Torul',
+    image:'starhaven_chars_image/kaantorul.png',
+    title:'The First Name',
+    category:'Known Enemies', status:'alive',
+    age:'36', race:'Human (Zharak)', role:'Leader of the Hundred inside Starhaven · once a Dome Gate night porter',
+    color:'#7A2A1A',
+    weapons:['Two curved knives of the Emir\'s household','A lamp chain'],
+    abilities:[
+      {name:'Studied the Hunters', type:'passive', desc:'Trained on the Greymark the way the Greymark train on everyone else. Does not give them their minute and a half.'},
+      {name:'Let Them Carry You', type:'passive', desc:'Played a sleeping porter in the burning hall and let the night clerk carry him out.'},
+    ],
+    quote:'"Is the bread hot?"',
+    bio:'A quiet, pleasant man in a porter\'s coat who drinks your tea and thanks you for it.',
+    relationships:[{name:'Vizier Nessa Korrath',type:'liege',note:'First name on her list'},{name:'Hesper Quillon',type:'enemy',note:'She pulled him out of the fire and thanked him; his name is in red at the bottom of her register'},{name:'Anjali Bhatt',type:'enemy',note:'Died carrying him out of the fire he set'}],
+    tags:['Known Enemies','Zharak Emirate','The Hundred','The Shadow Court (chronicle)','Recurring'],
+    background:'Worked a year as a night porter at the Dome Gate. Lit the four fires in the Left-Luggage Hall on the Night of Open Doors, 1059, painted the line on the arch, and let the clerk Anjali Bhatt carry him to the door before the roof fell on her. When six Greymark came for him under the dome he hurt three of them in less than a minute and ran for the dark Foreign Arches; the Thalassian arch flickered and he was gone. Not found. His name is on every desk at the Dome Gate.',
+  },
+  {
+    id:'kaveri', name:'Kaveri',
+    image:'starhaven_chars_image/kaveri.png',
+    title:'The Translator',
+    category:'Court & Scholars', status:'deceased',
+    age:'(served 38 years; looked young)', race:'Moon Elf', role:'Weaver of the Shadow Court · translator to the Emir of Zharak, as "Yusra"',
+    color:'#4A3A6A',
+    weapons:['A black lace fan','Four desert languages and the court speech'],
+    abilities:[
+      {name:'Never Lied in Translation', type:'passive', desc:'In thirty-eight years she only ever listened.'},
+      {name:'Acted Alone', type:'passive', desc:'Three days of questions; the same answer every time.'},
+    ],
+    quote:'"You were never here. I never saw you. Go home."',
+    bio:'A slender moon elf in court robes, very still, the kind of woman nobody in a council room ever looks at.',
+    relationships:[{name:'Serell Vane',type:'mentor',note:'The first woman Serell ever asked to join; the only one she never had to ask twice'},{name:'Faceless',type:'ally',note:'Died to keep his cover'},{name:'Vizier Nessa Korrath',type:'enemy',note:'Questioned her for three days'},{name:'Emir Zahid al-Morad',type:'liege',note:'Translated for him and his father for thirty-eight years'}],
+    tags:['Court & Scholars','The Shadow Court','Zharak Emirate','Memorial'],
+    background:'A moon elf from the hills above Lumenfield who went to the Emir of Zharak\'s court as a young translator and stayed thirty-eight years under the name Yusra. In the winter of 1059 she got the Greymark shapeshifter Faceless close to the Vizier\'s spymaster and passed the list of the Hundred home in a letter about indigo. When Nessa Korrath traced the leak to the council room she did not run, so that nobody would look further. She confessed to everything and to nothing else, and was executed in the square below the palace on the twentieth day of the closed gate, the same hour the Dome Gate reopened. Her farewell was in the old speech of her hills. Serell Vane wrote her name in the Royal Athenaeum: the only woman of the Shadow Court ever counted.',
+  },
+  {
+    id:'bolorma', name:'Bolorma',
+    image:'starhaven_chars_image/bolorma.png',
+    title:'The Woman Across the Street',
+    category:'Guild & Citizens', status:'alive',
+    age:'58', race:'Orc', role:'Blacksmith · the street behind the spice market, Starhold',
+    color:'#5A4030',
+    weapons:['A cast-iron skillet the size of a cartwheel','A blacksmith\'s hammer'],
+    abilities:[
+      {name:'Through the Door', type:'active', desc:'Comes through a broken door in her nightgown, and the nearest man goes through the pantry wall.'},
+    ],
+    quote:'"Then make it spicy."',
+    bio:'Six feet tall, a blacksmith\'s arms and a grandmother\'s shawl.',
+    relationships:[{name:'Tariq Sefan',type:'ally',note:'Her neighbour; she made his new iron door'},{name:'Tunde Oyelaran',type:'ally',note:'Closed his eyes'}],
+    tags:['Guild & Citizens','Starhold','Night of Open Doors','The Shadow Court (chronicle)'],
+    background:'The orc woman who told Tariq Sefan to make his bread spicy on his first Night of Open Doors. When three of the Hundred came for him in the winter of 1059 she came through his door with a skillet and saved his life. She forged him a new iron front door with a knocker shaped like a frying pan. He opened it anyway the next year.',
   },
   {
     id:'lolaskyward', name:'Lola Skyward',
@@ -27146,9 +27935,9 @@ const CHARACTERS = [
     ],
     quote:'"I think you can only make them close their doors, and I do not want to be the man who does it."',
     bio:'A lean, quiet man with dark curls, a trimmed beard and a better coat than he arrived in.',
-    relationships:[{name:'Nyx Ravel',type:'ally',note:'"Harmless. Honest. Let him stay."'},{name:'Vizier Nessa Korrath',type:'ally',note:'His former employer'}],
+    relationships:[{name:'Nyx Ravel',type:'ally',note:'"Harmless. Honest. Let him stay."'},{name:'Bolorma',type:'ally',note:'The woman across the street; the skillet'},{name:'Vizier Nessa Korrath',type:'ally',note:'His former employer'}],
     tags:['Guild & Citizens','Zharak Emirate','Open Visa','Starhold'],
-    background:'Sent into Starhaven through the Dome Gate in 1059 to find its weaknesses for the Zharak Emirate. On the Night of Open Doors he cooked his mother\'s flat bread and admitted where he was from. His last report said he would not be coming home. Nyx Ravel had read every one of them.',
+    background:'Sent into Starhaven through the Dome Gate in 1059 to find its weaknesses for the Zharak Emirate. On the Night of Open Doors he cooked his mother\'s flat bread and admitted where he was from. His last report said he would not be coming home. Nyx Ravel had read every one of them. In the winter he learned he had been the Vizier\'s lamp for ninety-nine others. He chose a side: for eleven days he sold bread in the markets asking "Is the bread hot?", the Hundred\'s recognition sign, and found eleven of them. Three came to his kitchen; the Greymark Tunde Oyelaran died there, and Tariq killed a man with his bread knife. He can never go home now. Bolorma made him an iron door.',
   },
   {
     id:'larkpennywhistle', name:'Lark Pennywhistle',
@@ -27461,7 +28250,7 @@ const CHARACTERS = [
     bio:'Tall, pale silver-skinned Moon Elf, sleek silver-white hair in a low knot, cool violet eyes, a single thin lens on a chain.',
     relationships:[{name:'Tiber Oswick',type:'liege',note:'Ministry of Trade'},{name:'Nyx Ravel',type:'ally',note:'Gets a copy of every visa list'}],
     tags:['Court & Scholars','Dome Gate','Ministry of Trade','Moon Elf'],
-    background:'A Moon Elf diplomat who came to Starhaven with a Thalassian League embassy and stayed. She runs the Open Visa Office at the Dome Gate, where foreign students for Learnstead and the Veilborn Arcanum, merchants and envoys arrive. She works closely with the Ministry of Trade and quietly with Nyx Ravel.',
+    background:'A Moon Elf diplomat who came to Starhaven with a Thalassian League embassy and stayed. She runs the Open Visa Office at the Dome Gate, where foreign students for Learnstead and the Veilborn Arcanum, merchants and envoys arrive. She works closely with the Ministry of Trade and quietly with Nyx Ravel. On the Night of Open Doors, 1059, the Left-Luggage Hall burned; she lost the night clerk Anjali Bhatt and three others and pulled out the porter who turned out to have lit it. She turned the key that closed the Dome Gate for twenty days, and on the twentieth stood behind the king while he stamped visas at her desk. The Open Visa still asks no questions; it says so in her hand, in blue pencil, twice.',
   },
   {
     id:'nelavestrin', name:'Paloma Vestrin',
@@ -32891,6 +33680,15 @@ function atlasLocInit() {
     return locs.length ? `<optgroup label="${label}">${locs.map(l => `<option value="${l.name.replace(/"/g, '&quot;')}">${l.name}</option>`).join('')}</optgroup>` : '';
   }).join('');
   sel.value = atlasLoc;
+  document.getElementById('atlas-loc-list').innerHTML = [...sel.querySelectorAll('option[value]:not([value=""])')].map(o => `<option value="${o.value}">`).join('');
+}
+// Type-to-search for the location picker: picking a name selects it
+function atlasLocPick(inp) {
+  const sel = document.getElementById('atlas-loc');
+  const opt = [...sel.options].find(o => o.value && o.value.toLowerCase() === inp.value.trim().toLowerCase());
+  if (!opt) return;
+  sel.value = atlasLoc = opt.value; inp.value = ''; inp.blur();
+  atlasRender(atlasFilter === 'places' ? 'all' : atlasFilter);
 }
 // One location only: its card, the districts that belong to it (region starts with its name), and all their places
 function atlasLocRender(container, cnt, cnt2, q) {

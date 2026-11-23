@@ -116,8 +116,8 @@ Chronicle ids are in `CHRONICLES` in `starhaven_wiki.html`.
 - **1051 — The Five Thrones War** (won in 61 days, zero enemy fatalities); Tharos Avarakai frees the eleven navigators (`the-stormstep`).
 - **1053 — Forty Sails** (siege of the Saltreach Causeway); The Unicorn in the Dark (House Silverhorn's secret compact).
 - **1055 — The Siege of Vael'Dorum.** **1057 — The Twilight War** (Karvossa; Ilyana Sanguinar). **1057–58 — The Long Winter** (Frosthold; Elyndra breaks her Heartseed). **1058 — The War of the Long Gallop.**
-- **1059:** The Silent Games; **The Tower of Twenty** (Nhamo, SS+; Saltwind Five lose three); **The Eleventh Letter** (Tharos and the Skyward Isles; Velmora bought stormglass); **The Crown's Shadow** (Lantern Night: King's End and the Huntmaster Ossian nearly kill Rayden; nine days without the king; traitor Vice-Minister Pieter Vandermeer awaits trial).
-- Planned next, in order: The Shadow Court → When the Thread Breaks → The Rout She Walked Out Of → Take It Alive → The Elderwood Arrives → Zharak Crossing / Ironpass → **The Winter Council** (end of 1059) → The Silver Isle War (1060). See `starhaven_idea_vault.md` §0.
+- **1059:** The Silent Games; **The Tower of Twenty** (Nhamo, SS+; Saltwind Five lose three); **The Eleventh Letter** (Tharos and the Skyward Isles; Velmora bought stormglass); **The Crown's Shadow** (Lantern Night: King's End and the Huntmaster Ossian nearly kill Rayden; nine days without the king; traitor Vice-Minister Pieter Vandermeer awaits trial); **The Shadow Court** (`the-shadow-court`, winter 1059: Vizier Nessa Korrath of Zharak used honest spy Tariq Sefan as a lamp while 99 agents, "the Hundred" led by Kaan Torul, came in on Open Visas; the Dome Gate's Left-Luggage Hall burned on the Night of Open Doors; Dome Gate shut 20 days, first time ever; Greymark shapeshifter **Faceless** posed as her spymaster Marwan Qadir; 44 taken, ~50 got out, Kaan Torul escaped; Shadow Court translator **Kaveri †** executed in Zharak; Tariq turned and killed a man; Serell's Winter Council question: "Is the open door worth one of my women?").
+- Planned next, in order: When the Thread Breaks → The Rout She Walked Out Of → Take It Alive → The Elderwood Arrives → Zharak Crossing / Ironpass → **The Winter Council** (end of 1059) → The Silver Isle War (1060). See `starhaven_idea_vault.md` §0.
 
 ## Open threads to remember
 - **Drevak** — killed in Ch6; the registry reports he returned; unconfirmed in Starhaven.
@@ -125,4 +125,5 @@ Chronicle ids are in `CHRONICLES` in `starhaven_wiki.html`.
 - **Velmora** — the Battlemage Prince bought 30 blocks of Skyward Isles stormglass.
 - **The flying fortress(es)** — "remembering us"; possibly more than one.
 - **Succession** — Rayden has no heir; the Winter Council will start with it.
+- **Nessa Korrath** — Nyx's rival; knows a shapeshifter exists; at least nine of the Hundred and Kaan Torul still loose.
 - **Malgrath** — the Void's king; only Elysia can see him.

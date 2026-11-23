@@ -10,7 +10,7 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 |---|---|---|---|
 | 0 | Canon fixes (§7) | — | — |
 | 1 | The Crown's Shadow — attempt on Rayden | #1 Traitor in the Web: the betrayal comes from inside — a **new vice-minister** close to Rayden | — |
-| 2 | The Shadow Court (Greymark vs Open Visa spies) | — | Faceless |
+| 2 | ✅ DONE — The Shadow Court (Greymark vs Open Visa spies; chronicle `the-shadow-court`) | — | Faceless |
 | 3 | When the Thread Breaks (Resonance Corps) | Velmora's stormglass (from *The Eleventh Letter*) helps black out the crystals | Selka Rennet |
 | 4 | The Rout She Walked Out Of (Edda Rensh) | — | — |
 | 5 | Take It Alive (loose inside Sancthaven) | It escapes through the cisterns and drains | Dunmar Underlow |
