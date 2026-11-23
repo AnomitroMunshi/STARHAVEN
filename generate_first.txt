@@ -29,8 +29,8 @@ Already-generated images are left out automatically; re-run the list after a bat
 
 ## 8 · Village charm
 
- 1. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:2977  ·  starhaven_places_image/theclockworksquare.png
- 2. Firing Night (Kilnbury)  ·  place_image_prompts.txt:2106  ·  starhaven_places_image/firingnight.png
- 3. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:1893  ·  starhaven_places_image/themidwinterdip.png
+ 1. The Clockwork Square (Tinkerton)  ·  place_image_prompts.txt:3391  ·  starhaven_places_image/theclockworksquare.png
+ 2. Firing Night (Kilnbury)  ·  place_image_prompts.txt:2378  ·  starhaven_places_image/firingnight.png
+ 3. The Midwinter Dip (Restwater)  ·  place_image_prompts.txt:2165  ·  starhaven_places_image/themidwinterdip.png
 
 Total: 3

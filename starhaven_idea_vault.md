@@ -20,6 +20,14 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | 9 | The Silver Isle War (1060) | §1, then #7 Silver cold war with Silverhorn | Dante; the Architect later |
 | 10 | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; Chapter 10 | — |
 
+### §0c. The south-west frontier (added 2026-11-23)
+
+New in the Atlas: **Saddlestone Keep** (new fort, outer ring finished autumn 1059, second ring still scaffolding, no commander yet — Iva Renn acting warden; "Khulan's Rule": garrison doubles when the field armies march, never below full strength at harvest), **the Kessrin Marches** (empty grass kept for a battle; the Border Road, the Watching Hill, the Night Cairn, the Long Grass, the Harvest Beacons and Beacon Night), **Bridlewick** (horse village; Kessrin-looking horses at the spring fair; the Two Saddles inn).
+
+The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 22 years for her enemy's army to march away at harvest, then burned the harvest. Behind the Marches lies the Southern Agricultural Corridor, most of Starhaven's bread. The lone rider only ever comes in spring, never at harvest.
+- **Commander (recommended):** Edda Rensh, named at the end of *The Rout She Walked Out Of* — the commander who walks a broken line out intact is the one you want on a border where the enemy fights from the saddle. Until then the chair stays empty.
+- **Payoff:** the 1060 Silver Isle War sends the armies over the sea at harvest time → the Kessrin finally ride (Khulan's raid), and the Harvest Beacons and the Long Grass get used. Raise it at the Winter Council first as a weak point ("the south-west has one unfinished fort").
+
 ### §0b. Project SKYREACH in The Elderwood Arrives (agreed 2026-11-23)
 
 What the wiki already has: begun 1052 (Naval Expansion Doctrine — Cain: "You want to move soldiers over water without giving the water permission." Cyrus: "Yes."); classified ocean-crossing military aircraft; lead architect Cyrus Vexley, co-designer Cain Drakhar; 7 prototypes built in the SKYREACH Wing of the Tidegate Arsenal, Forgehaven; a structural emergency once at the SKYREACH-III site; never flown in any chronicle. Cain traces his war-machine designs to pre-Sundering Vrak schematics (Vrak Isles nation entry).
