@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 64   (finished so far: 412)
+Still to generate: 56   (finished so far: 420)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -15,54 +15,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
 ########################################################################
-
-=== Pieter Vandermeer ===
-Save as: starhaven_chars_image/pietervandermeer.png
-Group: Court & Scholars   Race: Human   Age: 46
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Pieter Vandermeer, former Vice-Minister of the Interior. Look: a thin, tidy Dutch-featured man of 46, neatly combed light-brown hair going grey, clean-shaven, tired eyes, a plain grey official's coat buttoned to the neck, ink on one finger, iron manacles on his wrists. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, guilty, frightened, still certain he saw the problem. Setting: a bare stone room with a desk, two folded lists on it, one candle.
-
-=== Ossian ===
-Save as: starhaven_chars_image/ossian.png
-Group: Known Enemies   Race: Human (Void-touched)   Age: looks 50
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ossian, the Huntmaster of King's End. Look: a tall, thin, very pale man with long grey hair tied back, a narrow expressionless face, one eye scraped milky white, close-fitting black clothes soaked with river water, a long narrow single-edged grey blade in his hand, a small bone censer on his belt. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): patient, cold, utterly calm, never hurried. Setting: under a dark stone bridge at night, standing waist-deep in black water among small floating lanterns.
-
-=== Halla Sandvik ===
-Save as: starhaven_chars_image/hallasandvik.png
-Group: Known Names   Race: Human   Age: 22
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Halla Sandvik, a young Dawnguard soldier. Look: a tall, fair Scandinavian young woman of 22 with cropped blonde hair, a steady face, layered black Dawnguard plate etched with runes, a crimson oath-cloak, a kite shield and a blacksteel longsword. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): brave, steady, young, proud of the cloak. Setting: an old stone bridge at dusk with candle niches in its parapet and lanterns on the river below.
-
-=== Mele Fifita ===
-Save as: starhaven_chars_image/melefifita.png
-Group: Guild & Citizens   Race: Half-Orc   Age: adult
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Mele Fifita, harpooner of the Saltwind Five. Look: a big, broad Pacific-islander half-orc with green-brown skin, small tusks, a wide laughing face, tattooed arms, a sea-worn leather harness, holding a long iron harpoon. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): joyful, fearless, loyal, laughing. Setting: a wet sea-cave mouth at low tide, lamplight on black rock.
-
-=== Ishaan Rao ===
-Save as: starhaven_chars_image/ishaanrao.png
-Group: Guild & Citizens   Race: Elf   Age: adult
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ishaan Rao, mage of the Saltwind Five. Look: a slim, quiet South-Asian-featured elf man with sea-darkened brown skin, pale salt-bleached hair tied back, pointed ears, a diver's close-fitting oilskin, a soft white light glowing in his open palm. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): calm, gentle, steady, brave. Setting: underwater-lit sea cave, his light the only light.
-
-=== Nuno Barros ===
-Save as: starhaven_chars_image/nunobarros.png
-Group: Guild & Citizens   Race: Halfling   Age: young adult
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Nuno Barros, the youngest of the Saltwind Five. Look: a small, cheerful Portuguese-featured halfling with curly brown hair and freckles, a coil of rope over one shoulder and a lamp in each hand, a patched oilskin coat. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): cheerful, cheeky, eager, always talking. Setting: the Saltmere harbour quay at dawn, boats and nets behind him.
-
-=== Edran Silverhorn ===
-Save as: starhaven_chars_image/edransilverhorn.png
-Group: Allied Nations   Race: Human   Age: 61
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Edran Silverhorn, the old Lord-Marshal of the Verdant Crown. Look: a broad, grey-bearded lord of sixty-one in old green-and-silver plate armour with a unicorn crest, a heavy ancestral longsword, a worn folded map tucked in his belt. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): proud, stern, old-fashioned, carrying a kingdom alone. Setting: a windswept river crossing at dusk with cavalry banners behind him.
-
-=== Marta Fenn ===
-Save as: starhaven_chars_image/martafenn.png
-Group: Guild & Citizens   Race: Human   Age: 71
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Marta Fenn, defender of Havenfire's north wall. Look: a small, wiry old woman of seventy-one with a long white braid, lined weathered face, strong archer's forearms, a plain wool dress with a leather bracer, a hunting bow and a half-empty quiver. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): fierce, stubborn, calm, unafraid. Setting: a rough timber-and-stone palisade wall at dawn, smoke rising beyond it.
 
 === Ironmane Endurance Warhorse ===
 Save as: unitImages/ironmane-endurance.png

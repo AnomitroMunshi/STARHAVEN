@@ -1,5 +1,7 @@
 # STARHAVEN — Project Instructions
 
+> **Story summary:** read `STORY_TLDR.md` for what happens in Chapters 1–9 (and the big wiki arcs after them) before opening the chapter files.
+
 ## What This Project Is
 
 **The Starhaven Chronicles: Sundered Age** is an original high-fantasy universe — a full novel-length story (9 chapters), an interactive HTML wiki, a character encyclopedia, a military unit registry, a world atlas, and 26 original in-universe ballads. It is a personal creative project, not a game or published work.

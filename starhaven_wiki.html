@@ -317,6 +317,13 @@ a.lore-card:hover{transform:translateY(-2px)}
 .ballad-close-btn{background:none;border:none;color:var(--text3);font-size:18px;cursor:pointer;padding:4px;line-height:1;transition:color .14s}
 .ballad-close-btn:hover{color:var(--text)}
 
+.ch-tldr{margin:10px 0 4px;border:1px solid var(--border2);border-radius:6px;background:var(--bg3);padding:6px 10px}
+.ch-tldr summary{cursor:pointer;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;list-style:none}
+.ch-tldr summary::-webkit-details-marker{display:none}
+.ch-tldr summary::before{content:'▸ ';}
+.ch-tldr[open] summary::before{content:'▾ ';}
+.ch-tldr ul{margin:8px 0 2px;padding-left:18px;color:var(--text2);font-size:13.5px;line-height:1.55}
+.ch-tldr li{margin-bottom:5px}
 /* ══ MAP SECTION ══ */
 .map-mode-bar{display:flex;gap:6px;margin-bottom:10px}
 .map-mode-bar .map-btn.active{border-color:var(--gold);color:var(--gold2);background:var(--bg2)}
@@ -866,7 +873,8 @@ const CHAPTERS = [
     number: 1,
     title: 'The Boy Who Ran Through Fire',
     subtitle: 'Chapter I · Main Story',
-    summary: 'A boy flees burning ruins, carrying nothing but a name no one has yet given weight to. The origin of Rayden Cale — before the crown, before the Eleven, before Starhaven existed as anything but an idea.',
+    summary: "Years 1031–1036. The orphan who survived the Night of Fire, found a relic sword, and learned a power that nearly killed him.",
+    tldr: ["Oaksmane, 1031: eleven-year-old Rayden lives in a poor orphanage run by Marianne Vale, quietly protected by the soldier Garrick Cale, with his best friend Caelum.", "Lord Halbrecht Veyne, “the Lantern of Oaksmane”, is a monster behind his charity. On the Night of Fire his men burn the orphanage: twenty-three children and Marianne die.", "Garrick carries Rayden out of the fire, then is publicly executed for standing up to Halbrecht. Rayden learns to hate.", "Starving and sick, Rayden is found by the hard old adventurer Elira Voss, who trains him beside her daughter Selene.", "At the Westreach Adventurers' Guild the two become known as the Wall-Climber and the Lantern Veil.", "In the ruins of Hollowwatch (1036) Rayden wins the ancient relic sword Dawnpiercer.", "He awakens Temporal Frenzy — moving while the world slows — and it nearly kills him. War is coming to the frontier."],
     path: 'Lores/chapters/Starhaven_Chapter1.html',
     color: '#C84030',
   },
@@ -875,7 +883,8 @@ const CHAPTERS = [
     number: 2,
     title: 'Ashes Before Kingdoms',
     subtitle: 'Chapter II · Main Story',
-    summary: 'From the ashes of the old world, the first alliances form. The people who will become the Eleven begin converging — not yet knowing what they are building toward.',
+    summary: "Years 1037–1039. The mercenary years: Lowmere, Blackwall, the death of Selene Voss, Kingsbane, and the fall of Veynehold.",
+    tldr: ["War swallows the frontier. Dungeon work dries up, and Rayden and Selene become mercenaries.", "The Battle of Lowmere Field: mud, rain and slaughter. Rayden earns his war-names, and meets Darian Wolfe, who turns up on the other side.", "At the Siege of Blackwall Ridge he first sees Velkan Drake, the Ashen Scholar, on his drake Pyrewing.", "At the Red Orchard, Rayden turns a burning convoy into a trap and destroys an enemy cavalry force. Corruption begins to spread south.", "Fort Asterfall, 1039: Selene Voss dies holding up a falling wall so the refugees under it live. Rayden arrives a few steps too late.", "In the dead kingdom of Veyr Kharos he takes Kingsbane, the black execution greatsword. Elira slaps him for what he is becoming.", "Rayden destroys Veynehold, Halbrecht's prison and slave town, and frees its captives — the first stone of what will become Starhaven.", "Epilogue: Velkan studies the corruption and finds it is not spreading at random. It is searching."],
     path: 'Lores/chapters/Starhaven_Chapter2.html',
     color: '#A07020',
   },
@@ -884,7 +893,8 @@ const CHAPTERS = [
     number: 3,
     title: 'The Wandering Legends',
     subtitle: 'Chapter III · Main Story',
-    summary: 'Legends from across the world follow a rumor of something worth following. The Eleven take shape as extraordinary people choose an extraordinary direction.',
+    summary: "Years 1039–1041. The road east: Kael, Lyria, the Ironmane farm, and the founding of Havenfire.",
+    tldr: ["Rayden walks east alone, following the corruption and protecting refugees on dying roads.", "He meets Kael Varric, a soldier holding a ruined checkpoint so civilians can escape. They become partners.", "After the Black Rain ambush, by a monastery fire, Rayden finally reads Selene's journal and grieves.", "Lyria Valen, the star-eyed elven huntress, joins them. The Hollow Frontier fills with refugees of every race.", "Carved warnings from the Ashen Scholar: the corruption is searching, and could fracture the continent within twenty years.", "They save the Ironmane farm. Marcus, Helna and young Dresh join with their warhorses — and five chickens.", "The convoy takes an old fortress and names it Havenfire, the first safe place. Rayden decides to find the Ashen Scholar."],
     path: 'Lores/chapters/Starhaven_Chapter3.html',
     color: '#3A60A8',
   },
@@ -893,7 +903,8 @@ const CHAPTERS = [
     number: 4,
     title: 'The Gathering Storm',
     subtitle: 'Chapter IV · Main Story',
-    summary: 'The kingdoms that ignored Starhaven stop ignoring it. Threats converge from multiple directions as the young kingdom prepares for the war it was always going to have to fight.',
+    summary: "Year 1041. Vaelmark and Velkan, the siege of Havenfire, Kael's fall, and the coming of the Saint of Ash.",
+    tldr: ["Havenfire grows. Rayden travels north to Vaelmark, the arcane city, and meets Velkan Drake.", "Velkan's corruption maps show the truth: it is studying how civilizations survive.", "During the Silverfire Trial, news arrives — Havenfire is under full assault by corrupted creatures and Siegeborn Titans.", "Kael holds the wall and is struck by corruption. He is dying.", "Rayden and Lyria ride for help; Seraphine Mire, the Saint of Ash, reaches Havenfire and purifies Kael.", "Velkan and Seraphine stay. The protectors launch the Cleansing March, their first counter-attack together — not followers, but protectors."],
     path: 'Lores/chapters/Starhaven_Chapter4.html',
     color: '#5A2888',
   },
@@ -902,7 +913,8 @@ const CHAPTERS = [
     number: 5,
     title: 'The Birth of Starhold',
     subtitle: 'Chapter V · Main Story',
-    summary: 'The hilltop fortress becomes a city. Starhold is built — not just in stone, but in law, in culture, in the specific character of a people who chose to build rather than conquer.',
+    summary: "Year 1042. Havenfire outgrows itself; Nyx, Thorin, the Sable Conclave and Dren Solm join; the coalition marches on Drevak's fortress.",
+    tldr: ["Havenfire swells past ten thousand people. Kael says the walls are wrong: they need a real city — the hilltop fortress held by Warlord Drevak.", "In Rookthorn, an unseen killer wipes out cult leaders and tests what Rayden will protect. It is Nyx Ravel. He joins on his own terms.", "Velkan and Seraphine answer the Sable Conclave's plea; Sorvane Nullis's necromancers become Havenfire's first outside ally.", "Dren Solm arrives, the man who writes everything down.", "Greenveil is dying. At Moonfall Lake they find Thorin Blackroot and his bear Grond grieving, and fight beside him. Greenveil and Vaelmark join.", "Three armies march on the hilltop fortress. Drevak watches them come — and laughs. Nyx clears his scouts in the dark."],
     path: 'Lores/chapters/Starhaven_Chapter5.html',
     color: '#208038',
   },
@@ -911,7 +923,8 @@ const CHAPTERS = [
     number: 6,
     title: 'The War of Starhold',
     subtitle: 'Chapter VI · Main Story',
-    summary: "The war that defines Starhaven's southern border. Five kingdoms, one corridor, and the demonstration that changed every calculation about what Starhaven could do when it chose to.",
+    summary: "Year 1042. The siege of the hilltop fortress, the corrupted falling star beneath it, Drevak's death, and the birth of Starhaven.",
+    tldr: ["The coalition musters at Greenveil. Nyx's intelligence is grim: fifty thousand soldiers, anti-drake ballistae, kill corridors and cult tunnels.", "The assault on the outer walls costs thousands. At nightfall, eight corrupted Titans walk out of the fortress.", "Thorin loses his brother Garruk and fights on in beast form; the Ninth Sky Corps and Sorvane's undead join the battle.", "Seraphine goes down into the tunnels, to the corrupted meteor — the falling star — beneath the hill.", "Rayden kills Drevak in close combat. The dead and the living win a war together.", "The fortress becomes Starhold. The people choose Rayden as their king, and the kingdom is named Starhaven — Year 1042.", "Far across the sea, a commander named Rhegar Thorne opens a letter from Starhold."],
     path: 'Lores/chapters/Starhaven_Chapter6.html',
     color: '#C84030',
   },
@@ -920,7 +933,8 @@ const CHAPTERS = [
     number: 7,
     title: 'A New Beginning',
     subtitle: 'Chapter VII · Main Story',
-    summary: 'In the aftermath of war, Starhaven turns outward. New alliances are forged, old wounds begin to close, and the kingdom takes its first steps toward something larger than survival.',
+    summary: "Years 1043–1046. Building a kingdom: armies, schools, rift gates, the Seven Days of Starhaven, and the voyage to the Vrak Isles.",
+    tldr: ["Starhold grows to thirty thousand people under the Open Visa. Rhegar Thorne's Ironmere veterans build the First Field Army, and Starhaven grows its own commanders.", "A wrong thing at Ashfield shows that the Void has been watching Starhaven since before it had a name.", "Learnstead and the schools spread; Renzo Fal's fourth rift gate attempt finally works.", "The Year the Sky Changed: Aurelia Vex and the storm dragon Zephyros arrive over Starhold.", "The Seven Days of Starhaven: the ministers are named, the units are introduced, and the old companions drink together in the Old House.", "The Thalassian League and the Vrak Isles: the expedition meets the flying fortress, which stops firing when Aurelia cuts its conduit — and follows the fleet, “remembering” them.", "They come home with a weapon that waited three years for its owner, and a name for the thing they are fighting."],
     path: 'Lores/chapters/Starhaven_Chapter7.html',
     color: '#1A8080',
   },
@@ -929,7 +943,8 @@ const CHAPTERS = [
     number: 8,
     title: 'The Eleven Stars',
     subtitle: 'Chapter VIII · Main Story',
-    summary: 'The latest chapter. Edit the summary field in the CHAPTERS array to add your description here.',
+    summary: "Years 1047–1048. Forgehaven and Saltmere, the Soul Link, Karath's gift, the SS+ dungeon, the Trial of the Eleven and the Naming.",
+    tldr: ["Forgehaven: Cain Drakhar and Cyrus Vexley take on new work in iron and archive.", "The Golden Coast Federation sends its fleet for Starhold and lands at Saltmere. After eleven days the Federation becomes a debt-ally.", "Bob Vale's Soul Link — the bond that was already there — turns out to make every army in Starhaven far more effective.", "Sultana Aria of Karath writes to Rayden personally; her gift reaches Greenveil.", "Lumenfield: Zareth Kull's Void Breakers, Petra Allus and the quiet frontier; the SS+ dungeon that had already beaten forty-one adventurers.", "The Trial of the Eleven: the Pillars fight each other to know what they really are.", "The Naming: before the whole known world, the Eleven are named as the Pillars of Starhaven, and Dren Solm plays what he cannot write."],
     path: 'Lores/chapters/Starhaven_Chapter8.html',
     color: '#D4A832',
   },
@@ -938,7 +953,8 @@ const CHAPTERS = [
     number: 9,
     title: 'What the Mountains Sent',
     subtitle: 'Chapter IX · Main Story',
-    summary: 'The latest chapter. Edit the summary field in the CHAPTERS array to add your description here.',
+    summary: "Year 1049. Peace is working — until the Void drives the highland tribes out of the mountains and onto Greenveil.",
+    tldr: ["The kingdom in peacetime: railways, rift gates and the Dawnfleet all running. But animals, goblins and orcs are fleeing the Stormmassif.", "Thorin feels the Greypeak foothills dying: the Void is eating the highlands, and forty thousand people have lost their homes.", "Gorvak Doomhide's Highland Horde marches on Greenveil.", "The Greenveil Defense Force holds the plain on the first day, while the Greywood itself traps the horde in paths that will not stay still.", "Drogar Stonefang turns his rebuilt clan against Gorvak and kills him in single combat on the fourth day. Eleven clans kneel to him.", "On the seventh day Rayden rides out himself. The mountains sent war, then grief — and underneath both, something that might become a kind of family."],
     path: 'Lores/chapters/Starhaven_Chapter9.html',
     color: '#208038',
   },
@@ -32097,22 +32113,23 @@ function storyRender() {
       <h2 class="sub-hdr-title">Main Story Chapters</h2>
       <span class="sub-hdr-cnt">${CHAPTERS.length} chapters</span>
     </div>
-    <p class="sub-hdr-desc">Click any chapter card to open and read it. Each chapter is a full standalone page.</p>
+    <p class="sub-hdr-desc">Open a chapter TL;DR for the short version, or click its title to read the whole chapter. Each chapter is a full standalone page.</p>
     <div class="lore-grid">
       ${CHAPTERS.map(ch => `
-        <a class="lore-card" href="${ch.path}" target="_blank" rel="noopener noreferrer">
+        <div class="lore-card">
           <div class="lore-strip" style="background:linear-gradient(90deg,${ch.color}88,${ch.color})"></div>
           <div class="lore-body">
             <div class="lore-card-top">
-              <h3 class="lore-card-title">Chapter ${ch.number}: ${ch.title}</h3>
+              <h3 class="lore-card-title"><a href="${ch.path}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">Chapter ${ch.number}: ${ch.title}</a></h3>
             </div>
             <p class="lore-card-meta">${ch.subtitle}</p>
             <p class="lore-card-excerpt">${ch.summary}</p>
+            ${(ch.tldr || []).length ? `<details class="ch-tldr"><summary>TL;DR — what happens</summary><ul>${ch.tldr.map(x => `<li>${x}</li>`).join('')}</ul></details>` : ''}
             <div class="lore-footer">
-              <span class="lore-toggle">Read Chapter ›</span>
+              <a class="lore-toggle" href="${ch.path}" target="_blank" rel="noopener noreferrer" style="text-decoration:none">Read Chapter ›</a>
             </div>
           </div>
-        </a>`).join('')}
+        </div>`).join('')}
     </div>`;
 }
 

@@ -1,21 +1,10 @@
 STARHAVEN — BESTIARY IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 1
+Still to generate: 0
 
 HOW TO USE
 - Size: 1536 x 1024, landscape 3:2.
 - Save each image as JPG into  starhaven_bestiary/  with the exact file name after "Save as".
   The wiki's Compendium > Bestiary tab already points at these files.
 
-=== Driftback ===
-Save as: starhaven_bestiary/driftback.jpg
-Threat: B-rank   Habitat: The hanging floors of the Tower of Twenty, Nhamo
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy creature art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade, extremely detailed textures on hide, fur, scale, bone and stone; natural lens; the creature clearly the subject, in its habitat, with a small adventurer or two for scale where it fits.
-Subject: the Driftback, a B-rank creature of the kingdom of Starhaven. Appearance: A flat, grey, eyeless creature the size of a cartwheel, like a giant barnacle or limpet, a ring of hooked jointed legs underneath and a round toothed mouth in the middle like a drain. Behaviour to show: Dozens of them clinging to the walls, floor and ceiling of a tilted black stone room; one dropping through the air onto a roped adventurer; a huge stone-grey man standing braced like a post in the middle of the room holding the rope taut.
-Setting: a black stone room inside the Tower that is turning over, furniture and old packs stuck to what should be the ceiling.
-Lighting: swinging lantern light, deep shadows.
-Mood: dangerous, disorienting, believable.
-Avoid: any text, letters, numbers or labels; logos, watermarks, borders, frames, UI; cartoon, cute or painterly look; oversaturated colour; modern objects; gore beyond what the scene needs.
