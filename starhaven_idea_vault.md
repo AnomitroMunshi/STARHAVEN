@@ -4,6 +4,26 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 
 ---
 
+## 0. Integrated arc order [agreed 2026-11-23]
+
+| # | Arc | Vault idea carried | Debut |
+|---|---|---|---|
+| 0 | Canon fixes (§7) | — | — |
+| 1 | The Crown's Shadow — attempt on Rayden | #1 Traitor in the Web: the betrayal comes from inside — a **new vice-minister** close to Rayden | — |
+| 2 | The Shadow Court (Greymark vs Open Visa spies) | — | Faceless |
+| 3 | When the Thread Breaks (Resonance Corps) | Velmora's stormglass (from *The Eleventh Letter*) helps black out the crystals | Selka Rennet |
+| 4 | The Rout She Walked Out Of (Edda Rensh) | — | — |
+| 5 | Take It Alive (loose inside Sancthaven) | It escapes through the cisterns and drains | Dunmar Underlow |
+| 6 | The Elderwood Arrives | **The flying fortress rematch** — it comes to suppress the Void in the southern forests and cannot tell friend from Void; Aurelia and Zephyros again (its primary array repaired and wise to Zephyros's cascade); Cain's Vrak notation and "it's remembering us". Set in Starhaven/the Elderwood, not the Vrak Isles. | Saoirse Yarrow |
+| 7 | Zharak Crossing + siege of Ironpass (night) | Sorvane lends undead that need no light; help Starhaven does not trust | Corvane; Zafir fights |
+| 8 | The Winter Council — last of 1059 | **Every** weak point, round the table (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders, night, Frostspire, Sorvane's gold, the single Ashen river route, silver from one mine, succession…) — not silver only | Tolliver Quarrow walks in at the end with news of refugees |
+| 9 | The Silver Isle War (1060) | §1, then #7 Silver cold war with Silverhorn | Dante; the Architect later |
+| 10 | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; Chapter 10 | — |
+
+Severim: only in the Nullborn registry (3 mentions, no chronicles or chapters). Architect link — discuss later.
+
+---
+
 ## 1. Arc: The Silver Isle War (working title) — set after Year 1059
 
 **Premise [Ano]:** A land/island with a huge silver mine. Starhaven's spymaster finds it. Another (new) kingdom wants it too, got there first, and is killing the natives or enslaving them. Starhaven fights for the silver, makes a deal with the natives, frees them from slavery, and the island comes under Starhaven's protection.
@@ -49,7 +69,7 @@ Four of the seven characters we designed in August are kept. Full builds are in 
 | Character | Role | Notes |
 |---|---|---|
 | **Faceless** | Biological mimic, Greymark operative, Null Blades (Nyx) | Male. Genuine shapeshifting, not illusion. Greymark is already in the wiki. |
-| **Martha** | Ancient Wood Elf field sustainer, Greenveil / Primal Vanguard | Rides a Giant Forest Tortoise, Mosswall. No wiki clash. |<---nca change it if required , ash it'll be very slow on tortoise? hse is a magichealer baiscally with lifestaff>
+| **Saoirse Yarrow** (was "Martha" — renamed: look-alike of Marta Greaves / Marta Fenn) | Ancient Wood Elf field sustainer, magic healer with a lifestaff, Greenveil / Primal Vanguard | Keeps the Giant Forest Tortoise, Mosswall: slow on purpose — a moving field hospital and rally point behind the line, where the wounded crawl to. Name-checked clean 2026-11-23. Debuts in The Elderwood Arrives. |
 | **Corvane** | "The Debt Collector," Sable Conclave commander under Sorvane Nullis | Age 34, Veilmarked human. Sword *Graveclaim*. Gains strength from every death within range. Abilities: Harvest Step, The Living Edge, Deathweight (ultimate), Conclave Resonance. Only living commander who can direct Sorvane's undead in real time. |
 | **Dante** | Four-armed debilitator marksman, Solo Legend | Fills the "weaken, don't kill" gap. Born on the Silver Isle (section 1). Four arms are explained by his people. |
 

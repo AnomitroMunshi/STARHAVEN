@@ -20474,6 +20474,24 @@ const CHARACTERS = [
     partner:null,
     achievements:['Negotiated the Starhaven alliance in person rather than through envoys','Committed 10,000 troops across four corps despite council reluctance','Leads the alliance while deferring tactical command to the captain of each corps'],
   },
+  {
+    id:'edransilverhorn', name:'Edran Silverhorn',
+    image:'starhaven_chars_image/edransilverhorn.png',
+    title:'The Old Lord-Marshal',
+    category:'Allied Nations', status:'deceased',
+    age:'61 (at death)', race:'Human', role:'Lord-Marshal of House Silverhorn · The Verdant Crown (before Cassian)',
+    color:'#4E6A3A',
+    weapons:['The Silverhorn Blade (now Cassian\'s)','His map'],
+    abilities:[
+      {name:'The Old Tradition', type:'passive', desc:'A warrior lord who rode at the head of his own cavalry and managed the Verdant Crown\'s great houses by patronage and the weight of his person.'},
+      {name:'Alone', type:'passive', desc:'Always refused outside alliances, choosing to carry the Verdant Crown\'s pressures himself rather than invite a cure worse than the disease.'},
+    ],
+    quote:'"A border is held by the man who rides to it."',
+    bio:'A broad, grey-bearded lord of sixty-one in old green-and-silver plate, who fought like a man of forty.',
+    relationships:[{name:'Cassian Silverhorn',type:'family',note:'His son and heir, who inherited his sword, his map, and a kingdom rotting underneath'},{name:'Korvash Kingdom',type:'enemy',note:'Its calibrated incursion drew him out and killed him'}],
+    tags:['Allied Nations','House Silverhorn','The Verdant Crown','Memorial'],
+    background:'Lord-Marshal of the Verdant Crown before his son. Rode out to the Ashveld Crossing at the head of the Verdant Crown\'s finest cavalry against a Korvash border incursion that had been calibrated to draw him out, and took a lance through the gap between pauldron and gorget in the final push, about Year 1047. His reputation died with him. His old map, worn soft and covered in his handwriting, is what led Cassian to the secret compact with Starhaven in 1053.',
+  },
 
   // ── ADDED FROM CODEX & STORY CHAPTERS ─────────────────
   {
@@ -20667,7 +20685,7 @@ const CHARACTERS = [
     id:'drevak', name:'Drevak',
     image:'starhaven_chars_image/drevak.jpg',
     title:'The General of the Corruption',
-    category:'Known Enemies', status:'deceased',
+    category:'Known Enemies', status:'alive',
     age:'Unknown', race:'Human (Void-corrupted)', role:'Corrupted Warlord · Commander of the Starhold Hill Host',
     color:'#7A3A5A',
     commands:['Corrupted infantry','Mercenary companies','Cult battalions','Raider and siege crews'],
@@ -20678,8 +20696,8 @@ const CHARACTERS = [
     quote:'His last words told the Starhold council the next threat would be larger. Velkan built the case for Starhaven on them.',
     bio:'Barely human by the end. Void-grown armor fitted to his body. He saw the Starhold hill as the perfect war fortress. Kael saw the perfect kingdom fortress.',
     relationships:[{name:'Rayden Cale',type:'enemy'},{name:'Kael Varric',type:'enemy'},{name:'Thorin Blackroot',type:'enemy'}],
-    tags:['Known Enemy','Void','War of Starhold'],
-    background:'The commander behind the corruption around Greywood and the Starhold hill after the falling star. Fortified the hill while Havenfire starved through its last winter. Killed by Rayden Cale in close combat at the end of the War of Starhold: Ruinfall-charged blows through the joint gaps in his corruption plating, then a neck break. His burns are still on Rayden\'s arms.',
+    tags:['Known Enemy','Void','War of Starhold','Returned From Death','Nullborn'],
+    background:'The commander behind the corruption around Greywood and the Starhold hill after the falling star. Fortified the hill while Havenfire starved through its last winter. Killed by Rayden Cale in close combat at the end of the War of Starhold: Ruinfall-charged blows through the joint gaps in his corruption plating, then a neck break. His burns are still on Rayden\'s arms. He returned. The Void does not lose its instruments permanently: larger than he was, the corruption more complete, the glaive heavier and carried as if it were lighter. He now commands the Nullborn host as its Warlord — see the Nullborn registry.',
     achievements:['Organized the Void corruption into an army','Held the Starhold hill until the War of Starhold'],
   },
   {
@@ -25667,6 +25685,60 @@ const CHARACTERS = [
     background:'Led the Saltwind Five — the Admiralty\'s first call for sea caves, 133 contracts — into the Tower of Nhamo in the spring of 1059. Five went in; she and Grizel Marrock came out. Guided the Wall-Climbers to the fifth floor that summer and waited at the arch every low tide until all six came down. Rebuilt the Saltwind Five the next spring and brought all five out. In the autumn of 1059 she and Grizel took Tharos Avarakai\'s contract to the Skyward Isles and brought forty-one debt-workers out of the drowning galleries under Low Reef in the dark, counting. She paid for the new Saltwind Five with her share.',
   },
   {
+    id:'melefifita', name:'Mele Fifita',
+    image:'starhaven_chars_image/melefifita.png',
+    title:'The Stair Holder',
+    category:'Guild & Citizens', status:'deceased',
+    age:'—', race:'Half-Orc', role:'Harpooner · The Saltwind Five (A-rank) · Harbour Guild Office, Saltmere',
+    color:'#3E7A6E',
+    weapons:['A harpoon that never missed a throw (now carried by Chinonso Ebere)'],
+    abilities:[
+      {name:'Never Missed', type:'passive', desc:'The Saltwind Five\'s harpooner, who had never missed a throw.'},
+      {name:'The Fifth Stair', type:'active', desc:'When the Stairwights came out of the walls on the Tower\'s fifth floor, he planted his feet and his harpoon in the first one\'s chest and roared at the others to run.'},
+    ],
+    quote:'"Run. I\'ve got this one."',
+    bio:'A big, laughing half-orc from the islands off Saltmere, who laughed at everything — including, at the very end, the Tower.',
+    relationships:[{name:'Chinonso Ebere',type:'Leader',note:'The last thing she saw of him, he was laughing'},{name:'Grizel Marrock',type:'crew',note:'Got out because he held the stair'},{name:'Vorn Ashcaller',type:'ally',note:'Took the harpoon the thing wearing his shape threw on the ninth floor, on his stone arm'}],
+    tags:['Guild & Citizens','The Saltwind Five','Saltmere','The Tower of Twenty','Nhamo','Memorial'],
+    background:'Harpooner of the Saltwind Five. Died on the fifth floor of the Tower of Twenty in the spring of 1059, holding the stair against the Stairwights so that Chinonso Ebere and Grizel Marrock could escape. The Tower kept his shape and his voice, and the Wall-Climbers met it on the ninth floor. A harpoon is painted over the door of Mele\'s, the supply storeroom built beside his stair; his name is the third on the Count Board stone.',
+  },
+  {
+    id:'ishaanrao', name:'Ishaan Rao',
+    image:'starhaven_chars_image/ishaanrao.png',
+    title:'The Light Under the Stone',
+    category:'Guild & Citizens', status:'deceased',
+    age:'—', race:'Elf', role:'Mage · The Saltwind Five (A-rank) · Harbour Guild Office, Saltmere',
+    color:'#6E8EB8',
+    weapons:['A mage\'s light that worked underwater'],
+    abilities:[
+      {name:'Nine Minutes', type:'passive', desc:'Could hold his breath for nine minutes and light the dark underwater — the reason the Saltwind Five could map sea-caves nobody else could.'},
+      {name:'Light to Run By', type:'active', desc:'When the ceiling of the Tower\'s fourth floor came down, he stood in the middle of the room casting light for the others to run by, and kept casting it until the end.'},
+    ],
+    quote:'"Go. I can see the way."',
+    bio:'A slim, quiet elf with sea-darkened skin and pale salt-bleached hair, who always walked in the middle of the party so that his light reached everyone.',
+    relationships:[{name:'Chinonso Ebere',type:'Leader',note:'Saw his light go out under the stone'},{name:'Nuno Barros',type:'crew',note:'Carried the lamps; Ishaan carried the light'}],
+    tags:['Guild & Citizens','The Saltwind Five','Saltmere','The Tower of Twenty','Nhamo','Memorial'],
+    background:'Mage of the Saltwind Five. Died on the fourth floor of the Tower of Twenty in the spring of 1059 when the ceiling came down; he kept the light burning until it covered him. When the Wall-Climbers came to the same room, Vorn Ashcaller held the same ceiling up. Rayden Cale gave his share of the Tower\'s gold to Ishaan\'s family.',
+  },
+  {
+    id:'nunobarros', name:'Nuno Barros',
+    image:'starhaven_chars_image/nunobarros.png',
+    title:'Rope, Lamps and Jokes',
+    category:'Guild & Citizens', status:'deceased',
+    age:'—', race:'Halfling', role:'Rope and lamps · The Saltwind Five (A-rank) · Harbour Guild Office, Saltmere',
+    color:'#C49A4E',
+    weapons:['The party\'s rope','The party\'s lamps','The party\'s jokes'],
+    abilities:[
+      {name:'The Youngest', type:'passive', desc:'The youngest of the Saltwind Five, who carried the rope and the lamps and the jokes.'},
+      {name:'First Voice', type:'passive', desc:'The Tower spoke first in his voice, at the black arch, before it had taken him.'},
+    ],
+    quote:'"Two of you? Easy."',
+    bio:'A small, cheerful halfling with curly brown hair, a coil of rope over one shoulder and a lamp in each hand, always talking.',
+    relationships:[{name:'Chinonso Ebere',type:'Leader',note:'"He\'d want me to say it took two of you."'},{name:'Ishaan Rao',type:'crew',note:'Carried the lamps for his light'}],
+    tags:['Guild & Citizens','The Saltwind Five','Saltmere','The Tower of Twenty','Nhamo','Memorial'],
+    background:'The youngest of the Saltwind Five. The first to die in the Tower of Twenty, in the spring of 1059: on the third floor, the black water opened and a Tidegut took him, lamp and rope and all. His name is the first on the Count Board stone, written in Inkwyrm ink that cannot fade.',
+  },
+  {
     id:'mahletdesta', name:'Mahlet Desta',
     image:'starhaven_chars_image/mahletdesta.png',
     title:'The Lamp in Every Window',
@@ -25841,6 +25913,24 @@ const CHARACTERS = [
     relationships:[{name:'Helna Ironmane',type:'ally',note:'Held her as a baby on the night she was born — "You screamed the whole night."'},{name:'Kael Varric',type:'ally',note:'Used to answer for her grandmother'},{name:'Brek Stonefall',type:'commander'}],
     tags:['Guild & Citizens','Ironpass Citadel','Havenfire'],
     background:'Born at Havenfire in a room above the granary, three months after the siege of 1041. Her grandmother Marta, aged seventy-one, fired a hunting bow from the north wall and died on the second day. At the Havenfire Roll of 1059, when Marta\'s name was read and nobody answered, Tamsin shouted "Held!" before Kael could. Brek Stonefall wrote her into the book.',
+  },
+  {
+    id:'martafenn', name:'Marta Fenn',
+    image:'starhaven_chars_image/martafenn.png',
+    title:'The North Wall',
+    category:'Guild & Citizens', status:'deceased',
+    age:'71 (at death)', race:'Human', role:'Defender of Havenfire\'s north wall · Siege of 1041',
+    color:'#8A7A62',
+    weapons:['A hunting bow'],
+    abilities:[
+      {name:'A Day and a Half', type:'active', desc:'At seventy-one, fired a hunting bow from Havenfire\'s north wall for a day and a half during the siege of 1041.'},
+      {name:'Held', type:'passive', desc:'Her name is read every year at the Havenfire Roll. Her granddaughter answers for her: "Held!"'},
+    ],
+    quote:'"I can still pull a bow. Give me the wall."',
+    bio:'A small, wiry old woman with a white braid and an archer\'s forearms, who went up onto the north wall with the old women and did not come down.',
+    relationships:[{name:'Tamsin Fenn',type:'family',note:'Her granddaughter, born above the granary three months after the siege; answers for her at the Roll'}],
+    tags:['Guild & Citizens','Havenfire','The Havenfire Roll','Memorial'],
+    background:'One of the old women on Havenfire\'s north wall in the siege of 1041. She was seventy-one. She fired a hunting bow for a day and a half, and on the second day she did not come down. Her name is in the Havenfire Roll; at the Roll of 1059, when it was read and nobody answered, her granddaughter Tamsin shouted "Held!" before Kael could, and Brek Stonefall wrote her into the book.',
   },
   {
     id:'harisalnadim', name:'Haris al-Nadim',
@@ -31149,9 +31239,10 @@ function charsRender(filter, btn) {
     if (!grouped[c.category]) grouped[c.category] = [];
     grouped[c.category].push(c);
   });
-  // most important first in every group except the Eleven (who keep their Pillar order)
+  // most important first in every group except the Eleven (who keep their Pillar order); the dead last
   const imp = charImportance();
-  Object.keys(grouped).forEach(g => { if (g !== 'The Eleven') grouped[g].sort((x, y) => (imp[y.id] || 0) - (imp[x.id] || 0)); });
+  const gone = c => c.status === 'deceased' ? 1 : 0; // the dead always come last in their group
+  Object.keys(grouped).forEach(g => grouped[g].sort((x, y) => gone(x) - gone(y) || (g === 'The Eleven' ? 0 : (imp[y.id] || 0) - (imp[x.id] || 0))));
 
   const groupIcons  = {'The Eleven':'⚔',Commander:'🛡','Court & Scholars':'📚','Allied Nations':'🤝','Tribes & Clans':'🐺','Mercenaries & Legends':'🗡','Guild & Citizens':'🍺','Known Names':'🎖','Early Years':'🕯','Known Enemies':'☠'};
   const groupLabels = {'The Eleven':'The Eleven',Commander:'Commanders','Court & Scholars':'Court & Scholars','Allied Nations':'Allied Nations','Tribes & Clans':'Tribes & Clans','Mercenaries & Legends':'Mercenaries & Legends','Guild & Citizens':'Guild & Citizens','Known Names':'Known Names','Early Years':'Early Years','Known Enemies':'Known Enemies'};
