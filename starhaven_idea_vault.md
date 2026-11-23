@@ -20,6 +20,22 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | 9 | The Silver Isle War (1060) | §1, then #7 Silver cold war with Silverhorn | Dante; the Architect later |
 | 10 | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; Chapter 10 | — |
 
+**Recurring villains [agreed 2026-11-23]** — fewer new villains, more who come back; each gets a card at their debut; some arcs end with a real loss for Starhaven; the Huntmaster, the Vizier and the Prince survive their first story.
+
+| Villain | Kind | Arcs |
+|---|---|---|
+| The Huntmaster of King's End (new) | Pillar-hunter | Crown's Shadow (escapes) → later |
+| Vizier Nessa Korrath (Zharak) | Spymaster, Nyx's mirror | Shadow Court → Zharak Crossing |
+| The Battlemage Prince of Velmora | Cold-war rival, stormglass buyer | Thread Breaks → Winter Council → beyond |
+| Grath'Uel the Unbound (registry: "He will return") | Nullborn eastern commander | Night assault on Ironpass |
+| Keth'maur the Flayed / Sera Nullborn | Nullborn commanders | The Void push in The Elderwood Arrives |
+| Drevak, returned | The Warlord | Seen once, then The Pale General's Document / Malgrath |
+| Vel'Nathar | Second Void power | Offstage; one sighting, much later |
+
+**Aruksha** (and Kaalahi, who tracks by tasting residual magic) hunts the thing loose under Sancthaven in **Take It Alive**, alongside Dunmar Underlow.
+
+**Crown's Shadow decisions:** traitor = a new Vice-Minister of the Interior (motive: the kingdom dies with Rayden — wanted a "near miss" to force succession; sold the king's routine through a broker to King's End without knowing it); goes to trial. Kael holds the borders but signs nothing that belongs to the crown. The Huntmaster escapes.
+
 Severim: only in the Nullborn registry (3 mentions, no chronicles or chapters). Architect link — discuss later.
 
 ---
@@ -104,8 +120,8 @@ All three were name-checked clean on 2026-11-23.
 
 ## 4. Other candidates (ranked after wiki checks)
 
-From the earlier 12 pitched: **Thea** (mark detonator, Greymark), **Velm** (probability), **Orin Vale** (cursemark duelist; clashes with Orin Dael and Bob Vale), **Soel** (echo mage), **Tessara Flint** (engineer-artillerist), **Vorn Ashe** (needs rename: clashes with Vorn Ashcaller and the no-"Ash" rule).
-Dropped for overlap: Drevok (Yvaine Coldbrook's runes), Kessa Vayne (Thessaly Vorn), Rael Dunns (Cain Drakhar, Bane Crux).
+From the earlier 12 pitched: **Thea** (mark detonator, Greymark), **Velm** (probability), **Orin Vale** (cursemark duelist; clashes with Orin Dael and Bob Vale), **Soel** (echo mage), **Tessara Flint** (engineer-artillerist), **Torvin Ashe** (needs rename: clashes with Vorn Ashcaller and the no-"Ash" rule).
+Dropped for overlap: Drevok (Yvaine Coldbrook's runes), Kessa Vayne (Thessaly Arkwright), Rael Dunns (Cain Drakhar, Bane Crux).
 Also suggested: **Jorgen** (Dawnguard berserker vice captain), **Galhad** (gravity Solo Legend; must differ from Velkan Drake, the only gravity user), **Lira Crest** (memory summoner; overlaps Aruksha's summon, surname overlaps Lena Crest).
 
 **Other gap ideas, not queued:** Pillar bodyguard-hunter, low-ground anti-armor treadwarden (vs Rivet-Serpents), node-chain breaker (vs Signal Keepers / the Braid), convoy-master, farmland agronomist, bridge-war specialist (Wardspan, Saltreach Causeway), harbor-intelligence master (Saltmere).

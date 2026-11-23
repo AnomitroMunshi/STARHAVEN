@@ -84,7 +84,7 @@
 41. Starhaven Chariot Runners *(Grand Standing Army distributed pool · Joint training: Karath)*
 42. The Aethran Colossi *(Rhegar direct command · Aethran Dominion Remnant)*
 43. Jade Crossbow Corps *(Grand Standing Army distributed pool — all Field Armies)*
-44. The Undying Colors *(Sael Vorn · Standard bearer corps · Embedded in ALL armies and Pillar formations)*
+44. The Undying Colors *(Sael Okoye · Standard bearer corps · Embedded in ALL armies and Pillar formations)*
 
 ---
 
@@ -98,7 +98,7 @@
 
 ---
 
-## 2nd Field Army — Field Marshal Clea Vorn *(Speed Doctrine)*
+## 2nd Field Army — Field Marshal Clea Halvorsen *(Speed Doctrine)*
 
 50. 2nd Field Army — Medium Infantry
 51. 2nd Field Army — Light Infantry
@@ -248,7 +248,7 @@
 ## Naval — Starhaven
 
 123. Dawnfleet *(240 warships · Dawncliff Sea Fortress)*
-124. Tidebreaker Corps *(Caela Vorn · Shore defense · 3,500 Dawncliff · 1,500 Saltmere)*
+124. Tidebreaker Corps *(Caela Moreau · Shore defense · 3,500 Dawncliff · 1,500 Saltmere)*
 125. Arcanum Tidewatch *(Arcanum Secondment · Sea mages · Weather control + hull warding · Saltmere)*
 
 ---
@@ -414,7 +414,7 @@
 205. The Dusk Corps *(Vera Ashborne · Night warfare · 1 company per Field Army · Voidite-trace plate)*
 206. The Crown Shadows *(Kira Voss · 60 members · Diplomatic protection · Rayden's retinue)*
 207. The Ironpack *(Sela Ironbone · Handler-hound pairs · 100 per Field Army)*
-208. Tidebreaker Corps *(Caela Vorn · Shore defense · 3,500 Dawncliff + 1,500 Saltmere)*
+208. Tidebreaker Corps *(Caela Moreau · Shore defense · 3,500 Dawncliff + 1,500 Saltmere)*
 209. Arcanum Tidewatch *(Arcanum Secondment · Sea mages · Weather control · Saltmere)*
 
 ---
@@ -476,7 +476,7 @@
 
 ### Field Army & Allied Command Guards — additional cards
 237. Doran Ashe — Elite Cavalry Guard *(80 · 1st Field Army)*
-238. Clea Vorn — Elite Cavalry Guard *(80 · 2nd Field Army)*
+238. Clea Halvorsen — Elite Cavalry Guard *(80 · 2nd Field Army)*
 239. Brek Tane — Elite Infantry Guard *(80 · 3rd Field Army)*
 240. Veyra Tal — Elite Cavalry Guard *(80 · 4th Field Army)*
 241. Samir al-Dusk Command Guard *(40 · Karath Sultanate)*

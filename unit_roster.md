@@ -19,12 +19,12 @@
 | 1st Field Army — Heavy Infantry | Heavy Infantry | Infantry | Doran Ashe |  |
 | 3rd Field Army — Heavy Infantry | Heavy Infantry | Infantry | Brek Tane |  |
 | Ironbreakers (Stonemark) | Heavy Infantry · Shieldwall Formation | Infantry | Brokk Graniteborn | Ulfrid Hammergrip |
-| 2nd Field Army — Medium Infantry | Medium Infantry | Infantry | Clea Vorn |  |
+| 2nd Field Army — Medium Infantry | Medium Infantry | Infantry | Clea Halvorsen |  |
 | 4th Field Army — Medium Infantry | Medium Infantry | Infantry | Veyra Tal |  |
 | Desert Sword & Shield Infantry | Medium Infantry | Infantry | Sultan Rashid |  |
 | The Ember Company | Medium Infantry · Chronicle Company | Infantry | Rhegar |  |
-| 2nd Field Army — Light Infantry | Light Infantry | Infantry | Clea Vorn |  |
-| Coldmarch Ironline | Close Order Infantry · Line Hold | Infantry | Clea Vorn |  |
+| 2nd Field Army — Light Infantry | Light Infantry | Infantry | Clea Halvorsen |  |
+| Coldmarch Ironline | Close Order Infantry · Line Hold | Infantry | Clea Halvorsen |  |
 | 4th Field Army — Light Infantry | Light Infantry | Infantry | Veyra Tal |  |
 | Mountain Skirmishers | Light Infantry | Infantry | Wyld Frostmere |  |
 | Warden Infantry | Light Infantry | Infantry | Dena Veil |  |
@@ -82,7 +82,7 @@
 | The Far-Walkers | Scout Archers · Silverleaf Corps | Ranged | Archbow Sylara Evenmere |  |
 | The Evenmere Guard | Personal Guard · Silverleaf Corps | Ranged | Archbow Sylara Evenmere |  |
 | 1st Field Army — Heavy Archers | Heavy Archers | Ranged | Doran Ashe |  |
-| 2nd Field Army — Archers | Archers | Ranged | Clea Vorn |  |
+| 2nd Field Army — Archers | Archers | Ranged | Clea Halvorsen |  |
 | Desert Archers | Archers | Ranged | Sultan Rashid |  |
 | Royal Archers | Archers | Ranged | Kingdom of Ironmere |  |
 | Ashbow Archers | Archers · Volume Fire | Ranged | Brek Tane |  |
@@ -90,7 +90,7 @@
 | Goblin Skirmishers & Archers | Light Archers · Highland Harrassment | Ranged | Grik |  |
 | Hobgoblin Warbow Corps | Precision Archers · Command Hunters | Ranged | Grik |  |
 | Goblin Ambush Crossbows | Light Crossbow · Ambush Specialists | Ranged | Grik |  |
-| The Slingers | Slingers · First Strike Corps | Ranged | Clea Vorn |  |
+| The Slingers | Slingers · First Strike Corps | Ranged | Clea Halvorsen |  |
 | Stonefang Shamans | Orc-Goblin Shamans · Ancestral War Ritualists | Support | Grik |  |
 | 3rd Field Army — Crossbowmen | Crossbowmen | Ranged | Brek Tane |  |
 | Quarrelers | Crossbowmen | Ranged | Brokk Graniteborn | Renna Copperfist |
@@ -131,7 +131,7 @@
 | Desert Cavalry | Medium Cavalry | Cavalry | Karath Sultanate |  |
 | Windlance Cavalry | Mounted Archers | Cavalry | Irae Duskwind |  |
 | Recurve Company of the Third | Medium Horse Archers · Velhold Grassland Riders | Cavalry | Brek Tane |  |
-| 2nd Field Army — Light Cavalry | Light Cavalry | Cavalry | Clea Vorn |  |
+| 2nd Field Army — Light Cavalry | Light Cavalry | Cavalry | Clea Halvorsen |  |
 | 1st Field Army — Heavy Spearmen | Heavy Spearmen | Polearm | Doran Ashe |  |
 | 3rd Field Army — Heavy Spearmen | Heavy Spearmen | Polearm | Brek Tane |  |
 | Ironveil Spear Corps | Heavy Spearmen | Polearm | Drel Voss |  |
@@ -255,7 +255,7 @@
 | Shield Wall Engineers Corps | Field Fortification Corps | Engineering | Calla Brennick |  |
 | The Wrought | Iron Construct · Forgehaven Origin · Classified | Artillery | Cain Drakhar (Direct Command) |  |
 | Dawnfleet | Warship Fleet | Naval | Starhaven Naval Registry |  |
-| Tidebreaker Corps | Marines · Shore Defense | Naval | Caela Vorn |  |
+| Tidebreaker Corps | Marines · Shore Defense | Naval | Caela Moreau |  |
 | Arcanum Tidewatch | Sea Mages | Naval | Arcanum Secondment |  |
 | Thalassian First Fleet | Warship Fleet | Naval | Thalassian League |  |
 | Marine Boarding Corps | Marines | Naval | Thalassian League |  |
@@ -269,9 +269,9 @@
 | Sable Bone Chariots | Skeleton Chariot Formation · Impact Wave | Undead | Sorvane Nullis |  |
 | Arch-Necromancer's Undead Guard | Personal Guard · Permanent Escort · Sable Conclave | Undead | Sorvane Nullis (Personal) |  |
 | Preserved Dead Legions | Strategic Reserve · Reanimation Pool · Sable Conclave | Undead | Sorvane Nullis |  |
-| The Undying Colors | Standard Bearers | Command | Sael Vorn |  |
+| The Undying Colors | Standard Bearers | Command | Sael Okoye |  |
 | Doran Ashe — Elite Cavalry Guard | Commander Guard · 1st Field Army | Command | Doran Ashe |  |
-| Clea Vorn — Elite Cavalry Guard | Commander Guard · 2nd Field Army | Command | Clea Vorn |  |
+| Clea Halvorsen — Elite Cavalry Guard | Commander Guard · 2nd Field Army | Command | Clea Halvorsen |  |
 | Brek Tane — Elite Infantry Guard | Commander Guard · 3rd Field Army | Command | Brek Tane |  |
 | Veyra Tal — Elite Cavalry Guard | Commander Guard · 4th Field Army | Command | Veyra Tal |  |
 | Samir al-Dusk Command Guard | Commander Guard · Karath Sultanate | Command | Samir al-Dusk |  |

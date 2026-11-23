@@ -157,7 +157,7 @@ Dawnguard · Ironwall · Silent Wardens · Ninth Sky Corps · Ashen Guard · Nul
 
 ### Grand Standing Army (Grand Marshal Rhegar Thorne, 80,000)
 - 1st Field Army — Doran Ashe — heavy infantry vanguard
-- 2nd Field Army — Clea Vorn — cavalry/scout
+- 2nd Field Army — Clea Halvorsen — cavalry/scout
 - 3rd Field Army — Brek Tane — central defense rotation
 - 4th Field Army — Veyra Tal — reserve/rapid redeployment
 - Starfall Legion — elite standing reserve

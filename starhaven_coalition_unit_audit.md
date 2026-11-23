@@ -65,16 +65,16 @@
 | 1st Field Army — Assault Cavalry | Doran Ashe | 1st Field Army | 2,400 | 600 | **3,000** |
 | Doran Ashe — Elite Cavalry Guard | — | Doran Ashe | 80 | 16 | **96** |
 
-### 2nd Field Army — Commander: Clea Vorn
+### 2nd Field Army — Commander: Clea Halvorsen
 
 | Unit | Commander | Subunit of | Active | Reserve | Total |
 |------|-----------|-----------|--------|---------|-------|
-| 2nd Field Army — Light Infantry | Clea Vorn | 2nd Field Army | 8,000 | 2,400 | **10,400** |
-| 2nd Field Army — Medium Infantry | Clea Vorn | 2nd Field Army | 12,000 | 3,600 | **15,600** |
-| 2nd Field Army — Archers | Clea Vorn | 2nd Field Army | 4,000 | 1,200 | **5,200** |
-| 2nd Field Army — Light Cavalry | Clea Vorn | 2nd Field Army | 2,000 | 500 | **2,500** |
-| 2nd Field Army — Coldmarch Ironline | Clea Vorn | 2nd Field Army | 3,500 | 875 | **4,375** |
-| Clea Vorn — Elite Cavalry Guard | — | Clea Vorn | 80 | 16 | **96** |
+| 2nd Field Army — Light Infantry | Clea Halvorsen | 2nd Field Army | 8,000 | 2,400 | **10,400** |
+| 2nd Field Army — Medium Infantry | Clea Halvorsen | 2nd Field Army | 12,000 | 3,600 | **15,600** |
+| 2nd Field Army — Archers | Clea Halvorsen | 2nd Field Army | 4,000 | 1,200 | **5,200** |
+| 2nd Field Army — Light Cavalry | Clea Halvorsen | 2nd Field Army | 2,000 | 500 | **2,500** |
+| 2nd Field Army — Coldmarch Ironline | Clea Halvorsen | 2nd Field Army | 3,500 | 875 | **4,375** |
+| Clea Halvorsen — Elite Cavalry Guard | — | Clea Halvorsen | 80 | 16 | **96** |
 
 ### 3rd Field Army — Commander: Brek Tane
 
@@ -121,7 +121,7 @@
 | Slingers | — | Cross-Army Specialist | 2,000 | 500 | **2,500** |
 | Chariot Runners | — | Cross-Army Specialist | 200 chariots | 50 chariots | **250 chariots** |
 | Runebreakers | Cassia Vayne | Cross-Army Anti-Magic | 3,000 | 600 | **3,600** |
-| Undying Colors | Sael Vorn | Cross-Army Support | 200 | 30 | **230** |
+| Undying Colors | Sael Okoye | Cross-Army Support | 200 | 30 | **230** |
 
 ---
 
@@ -383,7 +383,7 @@
 | Cinderwake Fireships *(NEW)* | — | Dawnfleet Auxiliary | 30 | Expendable, oil/pitch rigged, single-use vs. concentrated enemy fleets |
 | Stormcaller Bombards *(NEW)* | — | Dawnfleet / Arcanum Tidewatch Paired | 50 | Vaelmark-mounted cannon, stand-off; one Tidewatch mage per hull |
 | Tideborn Transports *(NEW)* | — | Dawnfleet Auxiliary | 60 | Unarmed troop/landing craft; always escorted |
-| Tidebreaker Corps | Caela Vorn | New Unit | 5,000 (3,500 Dawncliff / 1,500 Saltmere) | Marines — shore defense + ship-to-ship boarding; embark on Dawncliff Ramships, not the sailors who crew them |
+| Tidebreaker Corps | Caela Moreau | New Unit | 5,000 (3,500 Dawncliff / 1,500 Saltmere) | Marines — shore defense + ship-to-ship boarding; embark on Dawncliff Ramships, not the sailors who crew them |
 | Arcanum Tidewatch | — | Arcanum Secondment | unknown | Sea mages, Saltmere — weather control / hull warding; pairs with Stormcaller Bombards |
 | Thalassian First Fleet | Admiral-King Crest Vane | Thalassian League (Allied) | unknown | Offensive role complementing Dawnfleet's defensive posture |
 | Marine Boarding Corps | — | Thalassian League (Allied) | unknown | Ship-to-ship boarding specialists |

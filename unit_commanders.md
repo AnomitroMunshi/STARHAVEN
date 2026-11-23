@@ -21,12 +21,12 @@
 | 1st Field Army — Heavy Infantry | Doran Ashe |
 | 3rd Field Army — Heavy Infantry | Brek Tane |
 | Ironbreakers (Stonemark) | Brokk Graniteborn |
-| 2nd Field Army — Medium Infantry | Clea Vorn |
+| 2nd Field Army — Medium Infantry | Clea Halvorsen |
 | 4th Field Army — Medium Infantry | Veyra Tal |
 | Desert Sword & Shield Infantry | Sultan Rashid |
 | The Ember Company | Rhegar |
-| 2nd Field Army — Light Infantry | Clea Vorn |
-| Coldmarch Ironline | Clea Vorn |
+| 2nd Field Army — Light Infantry | Clea Halvorsen |
+| Coldmarch Ironline | Clea Halvorsen |
 | 4th Field Army — Light Infantry | Veyra Tal |
 | Mountain Skirmishers | Wyld Frostmere |
 | Warden Infantry | Dena Veil |
@@ -122,7 +122,7 @@
 | The Far-Walkers | Archbow Sylara Evenmere |
 | The Evenmere Guard | Sylara Evenmere |
 | 1st Field Army — Heavy Archers | Doran Ashe |
-| 2nd Field Army — Archers | Clea Vorn |
+| 2nd Field Army — Archers | Clea Halvorsen |
 | Desert Archers | Sultan Rashid |
 | Royal Archers | — (none named) |
 | Ashbow Archers | Brek Tane |
@@ -130,7 +130,7 @@
 | Goblin Skirmishers & Archers | Grik |
 | Hobgoblin Warbow Corps | Grik |
 | Goblin Ambush Crossbows | Grik |
-| The Slingers | Clea Vorn |
+| The Slingers | Clea Halvorsen |
 | **Dawnbow Archers** | **Koren Ashveil** |
 | **Ironpass Bolt Corps** | **Ironpass Garrison** |
 | **3rd Field Army — Crossbowmen** | **Brek Tane** |
@@ -179,7 +179,7 @@
 | **1st Field Army — Assault Cavalry** | **Doran Ashe** |
 | **Windlance Cavalry** | **Irae Duskwind** |
 | **Recurve Company of the Third** | **Brek Tane** |
-| **2nd Field Army — Light Cavalry** | **Clea Vorn** |
+| **2nd Field Army — Light Cavalry** | **Clea Halvorsen** |
 | **Hyena Riders** | **Drokha Bloodtusk · Highland Coalition** |
 | **Bull War Riders** | **Drokha Bloodtusk · Highland Coalition** |
 | **Desert Cavalry** | **Karath Sultanate** |
@@ -352,7 +352,7 @@
 | Unit | Commander / Captain |
 |---|---|
 | Dawnfleet | — (none named) |
-| Tidebreaker Corps | Caela Vorn |
+| Tidebreaker Corps | Caela Moreau |
 | Arcanum Tidewatch | — (Arcanum Secondment) |
 | Thalassian First Fleet | Admiral-King Crest Vane |
 | Marine Boarding Corps | — (Thalassian League) |
@@ -392,9 +392,9 @@
 
 | Unit | Commander / Captain |
 |---|---|
-| The Undying Colors | Sael Vorn |
+| The Undying Colors | Sael Okoye |
 | Doran Ashe — Elite Cavalry Guard | Doran Ashe |
-| Clea Vorn — Elite Cavalry Guard | Clea Vorn |
+| Clea Halvorsen — Elite Cavalry Guard | Clea Halvorsen |
 | Brek Tane — Elite Infantry Guard | Brek Tane |
 | Veyra Tal — Elite Cavalry Guard | Veyra Tal |
 | Samir al-Dusk Command Guard | Samir al-Dusk |

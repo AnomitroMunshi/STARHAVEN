@@ -24,11 +24,11 @@
 - **The Dawnguard** — 480 — Commander: Pillar of Rayden Cale
 - **1st Field Army — Heavy Infantry** — 23,400 — Commander: Doran Ashe
 - **3rd Field Army — Heavy Infantry** — 26,000 (reserved) — Commander: Brek Tane
-- **2nd Field Army — Medium Infantry** — 15,600 — Commander: Clea Vorn
+- **2nd Field Army — Medium Infantry** — 15,600 — Commander: Clea Halvorsen
 - **4th Field Army — Medium Infantry** — 13,000 (reserved) — Commander: Veyra Tal
 - **The Ember Company** — 600 — Commander: Rhegar
-- **2nd Field Army — Light Infantry** — 10,400 — Commander: Clea Vorn
-- **Coldmarch Ironline** — 4,375 — Commander: Clea Vorn
+- **2nd Field Army — Light Infantry** — 10,400 — Commander: Clea Halvorsen
+- **Coldmarch Ironline** — 4,375 — Commander: Clea Halvorsen
 - **4th Field Army — Light Infantry** — 7,800 (reserved) — Commander: Veyra Tal
 - **Mountain Skirmishers** — unknown — Commander: Wyld Frostmere
 - **Warden Infantry** — 2,600 — Commander: Dena Veil
@@ -99,7 +99,7 @@
 - **1st Field Army — Assault Cavalry** — 3,000 — Commander: Doran Ashe
 - **Windlance Cavalry** — 1,125 — Commander: Irae Duskwind
 - **Recurve Company of the Third** — 500 — Commander: Brek Tane
-- **2nd Field Army — Light Cavalry** — 2,500 — Commander: Clea Vorn
+- **2nd Field Army — Light Cavalry** — 2,500 — Commander: Clea Halvorsen
 - **The Ashstride Warband** — 875 (reserved) — Commander: Mobile Reserve (Grand Marshal Rhegar Thorne) · No Fixed Assignment
 - **Starhaven Chariot Runners** — 250 chariots — Commander: Distributed Pool (All Field Armies · Rhegar Thorne Allocation) · Joint Training: Karath Sultanate
 
@@ -137,10 +137,10 @@
 - **The Far-Walkers** — 80 — Commander: Archbow Sylara Evenmere · Silverleaf Corps
 - **The Evenmere Guard** — unknown — Commander: Archbow Sylara Evenmere · Silverleaf Corps
 - **1st Field Army — Heavy Archers** — 6,500 — Commander: Doran Ashe
-- **2nd Field Army — Archers** — 5,200 — Commander: Clea Vorn
+- **2nd Field Army — Archers** — 5,200 — Commander: Clea Halvorsen
 - **Ashbow Archers** — 5,200 — Commander: Brek Tane
 - **Warden Archers** — 1,950 — Commander: Greenveil Defense Forces
-- **The Slingers** — 2,500 — Commander: Clea Vorn
+- **The Slingers** — 2,500 — Commander: Clea Halvorsen
 - **3rd Field Army — Crossbowmen** — 6,500 — Commander: Brek Tane
 - **4th Field Army — Heavy Crossbowmen** — 4,550 (reserved) — Commander: Veyra Tal
 - **Jade Crossbow Corps** — 6,250 — Commander: Distributed Pool (All Field Armies · Rhegar Thorne Allocation)
@@ -176,7 +176,7 @@
 ### Naval
 
 - **Dawnfleet** — unknown — Commander: Starhaven Naval Registry
-- **Tidebreaker Corps** — unknown — Commander: Caela Vorn
+- **Tidebreaker Corps** — unknown — Commander: Caela Moreau
 - **Arcanum Tidewatch** — unknown — Commander: Arcanum Secondment
 - **Swiftwake Scouts** — 40 hulls — Commander: Dawnfleet Auxiliary
 - **Dawncliff Ramships** — 60 hulls — Commander: Tidebreaker Corps Embarked
@@ -190,9 +190,9 @@
 - **Silver Swan Command & Signal — South** — 7,500 (corps total) — Commander: Silver Swan Cavalry Corps — Reva Stallforth
 - **Silver Swan Command & Signal — East** — 7,500 (corps total) — Commander: Silver Swan Cavalry Corps — Reva Stallforth
 - **Silver Swan Command & Signal — West** — 7,500 (corps total) — Commander: Silver Swan Cavalry Corps — Reva Stallforth
-- **The Undying Colors** — 230 — Commander: Sael Vorn
+- **The Undying Colors** — 230 — Commander: Sael Okoye
 - **Doran Ashe — Elite Cavalry Guard** — 96 — Commander: Commander Doran Ashe
-- **Clea Vorn — Elite Cavalry Guard** — 96 — Commander: Commander Clea Vorn
+- **Clea Halvorsen — Elite Cavalry Guard** — 96 — Commander: Commander Clea Halvorsen
 - **Brek Tane — Elite Infantry Guard** — 96 — Commander: Commander Brek Tane
 - **Veyra Tal — Elite Cavalry Guard** — 96 — Commander: Commander Veyra Tal
 

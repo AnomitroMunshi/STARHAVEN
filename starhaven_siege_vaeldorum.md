@@ -120,7 +120,7 @@ NORTH FACE — 4-MILE ASSAULT CORRIDOR
 WESTERN FRONT          NORTHERN FRONT         EASTERN FRONT
 (River Assault)        (Primary Assault)      (Highland Assault)
 
-CLEA VORN              DORAN ASHE             BREK TANE
+CLEA HALVORSEN              DORAN ASHE             BREK TANE
 2nd Field Army         1st Field Army         3rd Field Army
 + Sable Conclave       + Kael Varric          + Stonemark Holds
 + Thorin Primal        + Karath Sultanate     + Ironmere Kingdom
@@ -247,7 +247,7 @@ Rhegar Thorne does not deploy psychological assets randomly. He sequences them.
 
 **DORAN ASHE** — Day 15, breach gap. 80 feet of broken wall and fire. Column stalled. Doran rides into the gap under direct wall fire. Looks at the stalled column. Four words: *"The wall is open."* Column moves.
 
-**CLEA VORN** — Day 21, western breach. Cavalry is supposed to be containment. Infantry goes through breaches first. Clea reads a gap and drives her advance units through before the infantry arrives. Not the plan. She holds and pushes 400 yards past the breach before anyone stops her. *"Tell Rhegar." "He already knows." "Of course he does."*
+**CLEA HALVORSEN** — Day 21, western breach. Cavalry is supposed to be containment. Infantry goes through breaches first. Clea reads a gap and drives her advance units through before the infantry arrives. Not the plan. She holds and pushes 400 yards past the breach before anyone stops her. *"Tell Rhegar." "He already knows." "Of course he does."*
 
 **BREK TANE** — Four days of uphill ridge fighting that everyone says costs too much. He explains once: *"The artillery needs the angle. The angle requires the ridge."* The ridge falls Day 9. The elevated artillery position makes the eastern Killing Ground the least costly crossing of the three. Everything Brek paid for the ridge, the Killing Ground returns.
 
@@ -392,7 +392,7 @@ Nobody assigned him. He assessed the underwater obstacle problem — Compact eng
 
 Three nights in the Durath River. Cold water. Current. Compact underwater stakes every twelve feet. He removes them one by one, working by feel in zero visibility.
 
-*Mountain Engineers' report to Clea Vorn, Day 4: "The riverbed approach at crossing point alpha is clear." "When did we clear it?" "We didn't." A pause. "Torak." "He's not assigned to the western engineering element." Another pause. "Is he still in the river?" They check. He is not in the river. He is on the western bank, drying his equipment, apparently finished some time ago.*
+*Mountain Engineers' report to Clea Halvorsen, Day 4: "The riverbed approach at crossing point alpha is clear." "When did we clear it?" "We didn't." A pause. "Torak." "He's not assigned to the western engineering element." Another pause. "Is he still in the river?" They check. He is not in the river. He is on the western bank, drying his equipment, apparently finished some time ago.*
 
 ---
 
@@ -802,7 +802,7 @@ Tower 19 falls inward. The wall sections on either side — 45 feet each — fol
 
 Sorvane sits on the riverbank for eleven minutes. The Preserved Dead Legions begin moving on his left. 15,000 pre-positioned dead, still for 21 days, moving now because the breach is open and that is what they are for.
 
-Clea Vorn goes through the breach at 0534. Before the infantry consolidates it. She reads a gap in the garrison's response — they are forming against undead infantry, not 2nd Field Army light cavalry — and drives through. Holds and pushes 400 yards inside Ring 1's western outer ward before anyone processes what she has done.
+Clea Halvorsen goes through the breach at 0534. Before the infantry consolidates it. She reads a gap in the garrison's response — they are forming against undead infantry, not 2nd Field Army light cavalry — and drives through. Holds and pushes 400 yards inside Ring 1's western outer ward before anyone processes what she has done.
 
 Rhegar, looking at the western outer ward marker: *"She's created an opportunity. Use the reserve to make it worth what she spent on it." He moves Veyra Tal's advance cavalry to reinforce her position.*
 
@@ -887,7 +887,7 @@ Western parapet: 101 pieces. Northern: 46. Eastern: 51.
 
 The 2nd Field Army's medium infantry takes 1,800 casualties in a four-hour window on Day 24 morning. Highest coalition loss rate of any unit in any four-hour period of the campaign.
 
-*Clea Vorn: "She's concentrated west. She's right to. The undead don't care and the living do." She contacts Veyra Tal. "I need the Ashstride on the western approach seam for the next six hours." "They're on the northern seam." "I know where they are. Now."*
+*Clea Halvorsen: "She's concentrated west. She's right to. The undead don't care and the living do." She contacts Veyra Tal. "I need the Ashstride on the western approach seam for the next six hours." "They're on the northern seam." "I know where they are. Now."*
 
 The Ashstride redirect in eight minutes. Their lateral movement along Ring 2's base is invisible to Dunvel's parapet crews. When they arrive at the western seam point, they force Dunvel's western targeting coordinator to track two simultaneous approach pressures 200 yards apart. He holds fire on the main crossing and watches the Ashstride move and hopes it is the correct decision. It is the least-bad decision available. That is a different category.
 
@@ -1098,9 +1098,9 @@ Three Fangwalkers through the 140-foot breach at 0700. The remaining 24 distribu
 
 He does not tell Nyx. Ring 2's western gate mechanism — the locking counterweight system — has a mechanical resonance that a sustained resonance working can disrupt over two to three days without visual access. The gate mechanism jams at 0620 on Day 31.
 
-*Clea Vorn, reading the engineering report three days later: "Micro-vibration stress over two to three days." She sets the report down. "Send Sorvane my regards." "Shall I include a message?" "No. He'll know what it means."*
+*Clea Halvorsen, reading the engineering report three days later: "Micro-vibration stress over two to three days." She sets the report down. "Send Sorvane my regards." "Shall I include a message?" "No. He'll know what it means."*
 
-The Sable Conclave's Revenant Knights apply direct force to the jammed western gate at 0640. It opens. Clea Vorn's 2nd Field Army enters Ring 2's western interior at 0641.
+The Sable Conclave's Revenant Knights apply direct force to the jammed western gate at 0640. It opens. Clea Halvorsen's 2nd Field Army enters Ring 2's western interior at 0641.
 
 **Day 31 — Eastern postern.** Brek Tane uses Ring 2's eastern postern — proven functional by Gorath Vel's Day 28 diversion. 10 feet wide. Not designed for a major assault. The Stonemark Ironbreakers use it anyway because available beats optimal.
 

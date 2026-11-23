@@ -1,7 +1,7 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 406   (finished so far: 511)
+Still to generate: 407   (finished so far: 511)
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
@@ -4563,6 +4563,32 @@ Mood: warm, colourful, quietly proud.
 Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
 People: spice growers and pickers of many races, many of them Karath-born in bright head-scarves and light cotton, with local humans, halflings, dwarves and half-elves; sleeves rolled, baskets on hips. Never in rows, never posed, never all facing the camera.
 Who lives here (Compendium → Peoples → Who lives where, “Farm villages”): mostly Humans and halflings; also Dwarves, elves, orcs, beastkin farmhands. The breadbasket (Ironmane, Rootholm, Amberfield and the rest): farmers, carters, market women in sturdy country clothes. Still a mixed kingdom — several races clearly visible.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
+
+########################################################################
+## SANCTHAVEN  (1)
+########################################################################
+
+=== The Lantern Watch ===
+Save as: starhaven_places_image/thelanternwatch.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Sancthaven   Kind: City watch & fire house
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Lantern Watch — city watch & fire house, in Sancthaven.
+What it is: Sancthaven’s watch and fire house at the top of the river road — pump wagons, bucket lines and two water-mages who can pull the river up out of its bed.
+Composition: A tall white-stone watch and fire house with a bell tower at the top of a river road, its great doors open and a pump wagon rolling out.
+Camera angle: from down the river road, looking up at the fire house. (Similar places use different angles — keep to this one.)
+Details to include: a slender white bell tower with a bronze fire bell, wide arched doors open on a hall of pump wagons with leather hoses and racks of buckets; firefighters of many races in soot-streaked oilskin coats and leather helmets hauling a pump wagon out by hand; a broad grey-skinned half-orc fire-captain shouting orders; two water-mages in dark coats on the river wall below, hands raised, pulling a curving rope of river water up into the air with faint blue light at their fingers; the Lantern Bridge and the river in the distance. Little moments of life: a child carrying a bucket nearly as big as herself; an old firefighter polishing the bell.
+Environment: a broad, slow, silvery river winding through green lowland countryside in the south-east of the kingdom — willows, reed beds, water meadows and rice paddies toward its delta, the pale white spires of Sancthaven on the bank.
+Architecture: Starhaven's established look, matching the other images of the kingdom — a dark, grand high-fantasy stone city: weathered grey and charcoal stone, soaring towers and slender spires, pointed and round arches, grand domed halls, clock towers, steep dark slate roofs, wrought-iron lanterns, heavy carved detail, mist between the buildings and mountains on the horizon. Subtle accents from the kingdom's many peoples appear only in details, never taking over: some carved stone balconies and scalloped arches, a few blue-tiled domes, the odd gently upturned roof edge on a market hall, dwarven geometric reliefs and bronze fittings, elven curved woodwork and climbing ivy. It must NOT look Indian, Chinese, Japanese or Persian overall — it is one consistent dark fantasy kingdom. Sancthaven signature: a pale white-grey stone city of many slender spires and arcaded terraces, white-and-gold banners (no religious symbols), calm and luminous under grey skies.
+Lighting and time of day: dusk, the first lamps lit, a faint orange glow of fire somewhere beyond the rooftops.
+Mood: brave, urgent, steady.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lit doors and seals, softly glowing mana lamps, enchanted objects, a mage at work with faint light at their hands. Never portals or rift gates.
+People: a natural, varied, sparse-to-moderate crowd seen small — mixed clothes and colours, different ages and a real, clearly visible mix of races — at least half of them obviously not human: pointed-eared elves, short stocky bearded dwarves, green- and grey-skinned tusked orcs, big hulking grey-hided trolls, horned and furred beastmen, little halflings — side by side with humans, each race easy to tell apart at a glance — this is a fantasy adventurers' world, so a few adventurers in worn armour with swords, axes, bows and staves mingle with townsfolk; walking, talking, carrying things and browsing in every direction, in loose groups and gaps. Never in rows, never uniform cloaks, never all facing the camera. Clothing true to the medieval era — wool, linen, leather and fur; tunics, hoods, cloaks, aprons and boots — never modern dress.
+Who lives here (Compendium → Peoples → Who lives where, “Roads, rivers & travel”): mostly Every race; also Traders, carters, bargefolk, soldiers, pilgrims, adventurers. A moving, mixed crowd of travellers; Karath caravans on the southern roads. Still a mixed kingdom — several races clearly visible.
 Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
 Avoid: a cast of only humans; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera, army-like formations (unless the place is a military parade or drill); modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that reads as fully Indian, Chinese, Japanese or Persian; cartoon or painterly look; oversaturated colour.
 

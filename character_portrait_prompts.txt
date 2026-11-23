@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 61   (finished so far: 412)
+Still to generate: 64   (finished so far: 412)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -15,6 +15,24 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
 ########################################################################
+
+=== Pieter Vandermeer ===
+Save as: starhaven_chars_image/pietervandermeer.png
+Group: Court & Scholars   Race: Human   Age: 46
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Pieter Vandermeer, former Vice-Minister of the Interior. Look: a thin, tidy Dutch-featured man of 46, neatly combed light-brown hair going grey, clean-shaven, tired eyes, a plain grey official's coat buttoned to the neck, ink on one finger, iron manacles on his wrists. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): quiet, guilty, frightened, still certain he saw the problem. Setting: a bare stone room with a desk, two folded lists on it, one candle.
+
+=== Ossian ===
+Save as: starhaven_chars_image/ossian.png
+Group: Known Enemies   Race: Human (Void-touched)   Age: looks 50
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Ossian, the Huntmaster of King's End. Look: a tall, thin, very pale man with long grey hair tied back, a narrow expressionless face, one eye scraped milky white, close-fitting black clothes soaked with river water, a long narrow single-edged grey blade in his hand, a small bone censer on his belt. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): patient, cold, utterly calm, never hurried. Setting: under a dark stone bridge at night, standing waist-deep in black water among small floating lanterns.
+
+=== Halla Sandvik ===
+Save as: starhaven_chars_image/hallasandvik.png
+Group: Known Names   Race: Human   Age: 22
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Halla Sandvik, a young Dawnguard soldier. Look: a tall, fair Scandinavian young woman of 22 with cropped blonde hair, a steady face, layered black Dawnguard plate etched with runes, a crimson oath-cloak, a kite shield and a blacksteel longsword. Give this character a distinctive, individual face — not a generic fantasy face, and not resembling any other character in the series. Character notes (use for expression, posture and mood): brave, steady, young, proud of the cloak. Setting: an old stone bridge at dusk with candle niches in its parapet and lanterns on the river below.
 
 === Mele Fifita ===
 Save as: starhaven_chars_image/melefifita.png
