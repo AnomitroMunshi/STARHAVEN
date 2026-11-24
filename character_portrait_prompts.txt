@@ -5,8 +5,8 @@ Still to generate: 130   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
-- Save each image as PNG into  starhaven_chars_image/  with the exact file name shown after "Save as" (.png).
-  The wiki already points at these file names, so the portrait appears as soon as the file exists.
+- Save each image into  starhaven_chars_image/  using the filename shown after "Save as"; if saving as JPG, change only .png to .jpg.
+  PNG and JPG are both accepted; the character page tries the alternate extension if needed.
 - Every prompt already includes the shared house style below. If Grok drifts, paste the style line again.
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
