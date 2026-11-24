@@ -13,404 +13,398 @@ HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlack
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
 
 ########################################################################
-## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (66)
+## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (65)
 ########################################################################
 
 === Orevessa Vhalcenne ===
 Save as: starhaven_chars_image/dummy-legend-orevessa-vhalcenne.png
 Kingdom: Karvossa | Role: Political Lord | Race: Human | Age: 46
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, cloth and metal, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Orevessa Vhalcenne, a 46-year-old human woman in a black and burgundy court coat with an embossed collar and silver signet chain. Setting: a candlelit Karvossan hall; composed, authoritative pose, no crown.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Orevessa Vhalcenne, a 46-year-old human woman in a black and burgundy court coat with an embossed collar and silver signet chain. Setting: a candlelit Karvossan hall; composed, authoritative pose, no crown. She brokered a truce among rival cavalry houses by staking her own estate on the treaty. Show her resting two fingers on a parchment hung with mismatched wax seals. Her silver signet chain is visibly worn at the thumb, and rival house envoys wait on opposite sides of the hall.
 
 === Thyrandel Qorvashi ===
 Save as: starhaven_chars_image/dummy-legend-thyrandel-qorvashi.png
 Kingdom: Karvossa | Role: Military Commander | Race: Human | Age: 37
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, cloth and armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thyrandel Qorvashi, a 37-year-old human cavalry commander in dark maroon lamellar armor, carrying a hooked lance. Setting: a mounted guard assembling on a misty Karvossan plain.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Thyrandel Qorvashi, a 37-year-old human cavalry commander in dark maroon lamellar armor, carrying a hooked lance. Setting: a mounted guard assembling on a misty Karvossan plain. At the flooded ford he brought the rear guard home with its standards intact. Frame him at the head of the returning riders, rain streaks dried into his maroon plates. His hooked lance, Fordhook, bears a brass collar salvaged from the standard he carried across.
 
 === Qalvior Dalverin ===
 Save as: starhaven_chars_image/dummy-legend-qalvior-dalverin.png
 Kingdom: Karvossa | Role: Solo Legend · Mounted Javelin Skirmisher | Race: Human | Age: 34
 PROMPT:
-A 34-year-old human Karvossan mounted skirmisher in weathered maroon lamellar, holding a throwing javelin as a lean warhorse wheels across a dusty plain; curved saber sheathed, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 34-year-old human Karvossan mounted skirmisher in weathered maroon lamellar, holding a throwing javelin as a lean warhorse wheels across a dusty plain; curved saber sheathed, no magic. Known for carrying warnings between isolated border posts while the roads were cut. Show a battered dispatch case tied to the saddle and a line of beacon towers receding into dust. His lead javelin, Red Mile, has oxblood bindings and a nicked iron head.
 
 === Brondrith Thrennox ===
 Save as: starhaven_chars_image/dummy-legend-brondrith-thrennox.png
 Kingdom: Stonemark Holds | Role: Political Lord | Race: Dwarf | Age: 151
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, beard, woven cloth and metal, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Brondrith Thrennox, a 151-year-old dwarf lord in charcoal formal mail, bronze clasps and a heavy woven mantle. Setting: a carved Stonemark mountain hall.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Brondrith Thrennox, a 151-year-old dwarf lord in charcoal formal mail, bronze clasps and a heavy woven mantle. Setting: a carved Stonemark mountain hall. He kept three competing holds supplied through a winter cave-in. The bronze clasps on his mantle each bear a different quarry mark. One broad hand rests on a chipped stone relief of the reopened mountain road, with lanterns burning in tiers behind him.
 
 === Velskar Keldrane ===
 Save as: starhaven_chars_image/dummy-legend-velskar-keldrane.png
 Kingdom: Stonemark Holds | Role: Military Commander | Race: Dwarf | Age: 96
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, beard, leather and iron, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Velskar Keldrane, a 96-year-old dwarf sapper commander in practical iron scale armor, carrying a compact war hammer and rolled siege plans. Setting: a Stonemark field workshop.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Velskar Keldrane, a 96-year-old dwarf sapper commander in practical iron scale armor, carrying a compact war hammer and rolled siege plans. Setting: a Stonemark field workshop. He reopened a collapsed siege road long enough to bring an entire stranded company home. Show a split beard bead, chalk on his gloves, and a snapped bracket weighting down the plans. The workshop entrance frames muddy boots drying in rows.
 
 === Edrithal Ulnovar ===
 Save as: starhaven_chars_image/dummy-legend-edrithal-ulnovar.png
 Kingdom: Stonemark Holds | Role: Solo Legend · Siege Crossbow Marksman | Race: Dwarf | Age: 118
 PROMPT:
-A 118-year-old dwarf siege-crossbow specialist in battered plate, bracing a heavy windlass crossbow behind a compact pavise in a carved Stonemark stone range; focused, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 118-year-old dwarf siege-crossbow specialist in battered plate, bracing a heavy windlass crossbow behind a compact pavise in a carved Stonemark stone range; focused, no magic. He ended a long siege with the shot that dropped a gate's counterweight. His crossbow, Last Argument, has a blackened stock, a tarnished bronze cheek plate and a single pale repair seam. Frame it across his chest with the battered gate iron propped in the blurred stone range behind him.
 
 === Hurnevik Sythalen ===
 Save as: starhaven_chars_image/dummy-legend-hurnevik-sythalen.png
 Kingdom: Frostspire Dominion | Role: Political Lord | Race: Human | Age: 54
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, fur and cloth, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Hurnevik Sythalen, a 54-year-old human lord in a charcoal winter mantle over dignified northern court clothes. Setting: a stone hall in Frostspire; no magical effects.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Hurnevik Sythalen, a 54-year-old human lord in a charcoal winter mantle over dignified northern court clothes. Setting: a stone hall in Frostspire; no magical effects. The villages of the upper valley remember the winter he opened the fortress granaries to them. Give him frost-roughened cheeks and a plain ring of iron storehouse keys at his belt. In the hall behind him, snow-dusted sled drivers warm their hands beside half-empty sacks.
 
 === Drazmera Mavroth ===
 Save as: starhaven_chars_image/dummy-legend-drazmera-mavroth.png
 Kingdom: Frostspire Dominion | Role: Military Commander | Race: Human | Age: 39
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, fur, wool and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Drazmera Mavroth, a 39-year-old human commander in layered mountain campaign armor, fur-lined mantle and practical helmet. Setting: a snowy Frostspire pass with infantry behind; no ice magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Drazmera Mavroth, a 39-year-old human commander in layered mountain campaign armor, fur-lined mantle and practical helmet. Setting: a snowy Frostspire pass with infantry behind; no ice magic. She led a trapped column off the ridge through a whiteout. Show ice caught in old stitch holes at her mantle, with her helmet tucked under one arm and the knotted guide rope from that march looped over a gauntlet. The last pair of infantry emerge through the snow behind her.
 
 === Osveth Edravane ===
 Save as: starhaven_chars_image/dummy-legend-osveth-edravane.png
 Kingdom: Frostspire Dominion | Role: Solo Legend · Alpine Trapper | Race: Half-Orc | Age: 32
 PROMPT:
-A 32-year-old half-orc alpine trapper in rugged climbing leathers and northern furs, carrying a compact hunting bow and coils of iron snare wire on a snowbound mountain pass; no ice magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 32-year-old half-orc alpine trapper in rugged climbing leathers and northern furs, carrying a compact hunting bow and coils of iron snare wire on a snowbound mountain pass; no ice magic. He found a missing caravan buried above the timberline and led its survivors down by lantern light. A split tusk and frost-pale fingertips catch the dawn. A dented caravan bell hangs from his pack, with a half-buried wagon wheel blurred up the slope.
 
 === Elarune Qalmaris ===
 Save as: starhaven_chars_image/dummy-legend-elarune-qalmaris.png
 Kingdom: Elderwood Sovereignty | Role: Political Lord | Race: Moon Elf | Age: 226
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, silver hair, woven cloth and jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Elarune Qalmaris, a 226-year-old moon elf ruler in layered deep-green robes, silverwood jewelry and a leaf-patterned mantle. Setting: an ancient Elderwood court beneath towering trees.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Elarune Qalmaris, a 226-year-old moon elf ruler in layered deep-green robes, silverwood jewelry and a leaf-patterned mantle. Setting: an ancient Elderwood court beneath towering trees. She settled a generations-long boundary quarrel by returning a sacred grove to common stewardship. Show her pressing a weathered boundary stone into the roots beside a young sapling. Three different patterns of silverwood leaves are pinned at her shoulder, one from each signatory.
 
 === Vessari Veydrith ===
 Save as: starhaven_chars_image/dummy-legend-vessari-veydrith.png
 Kingdom: Elderwood Sovereignty | Role: Military Commander | Race: Wood Elf | Age: 91
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leaf-toned mail and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Vessari Veydrith, a 91-year-old wood elf commander in muted green field armor, carrying a long spear before an orderly forest infantry formation. Setting: an Elderwood muster ground.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Vessari Veydrith, a 91-year-old wood elf commander in muted green field armor, carrying a long spear before an orderly forest infantry formation. Setting: an Elderwood muster ground. She kept the forest road open until the last civilian wagon passed. Her spear, Rootwatch, has a long dark ash shaft and a leaf-shaped blade mottled with old forge scale. Show wagon ruts passing beneath her boots and patched company pennants among the trees.
 
 === Othlira Thalovar ===
 Save as: starhaven_chars_image/dummy-legend-othlira-thalovar.png
 Kingdom: Elderwood Sovereignty | Role: Solo Legend · Glaive-Dancer | Race: Wood Elf | Age: 134
 PROMPT:
-A 134-year-old wood elf glaive-dancer in light bark-toned armor, moving into a precise sweeping stance among old forest roots; elegant close-combat specialist, no spell effects.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 134-year-old wood elf glaive-dancer in light bark-toned armor, moving into a precise sweeping stance among old forest roots; elegant close-combat specialist, no spell effects. Remembered for holding a footbridge while the grove's children crossed, she carries Reedwake, a narrow crescent glaive with a copper-bound haft. Show a repaired shoulder guard and a child's braid of rushes tied beneath the blade. The footbridge is soft in the distance.
 
 === Maezira Dalmecor ===
 Save as: starhaven_chars_image/dummy-legend-maezira-dalmecor.png
 Kingdom: Velmora | Role: Political Lord | Race: Human | Age: 48
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, velvet and bronze embroidery, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Maezira Dalmecor, a 48-year-old human ruler in plum velvet court dress, bronze embroidery and a high collar. Setting: a candlelit Velmoran principality hall.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Maezira Dalmecor, a 48-year-old human ruler in plum velvet court dress, bronze embroidery and a high collar. Setting: a candlelit Velmoran principality hall. She settled the feud that had shut Velmora's market gates for a season. At the centre of the portrait, she holds an iron gate key on a plain ribbon. The bronze embroidery at her cuffs echoes the city's arches, and an open gate admits dawn behind the candlelit hall.
 
 === Qorveth Zandryll ===
 Save as: starhaven_chars_image/dummy-legend-qorveth-zandryll.png
 Kingdom: Velmora | Role: Military Commander | Race: Human | Age: 36
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, cloth and steel armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qorveth Zandryll, a 36-year-old human commander in charcoal-and-blue infantry armor, directing a disciplined pike formation. Setting: a rain-dark Velmoran city street.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Qorveth Zandryll, a 36-year-old human commander in charcoal-and-blue infantry armor, directing a disciplined pike formation. Setting: a rain-dark Velmoran city street. He held the lower market through a night of flooding so the ferries could reach stranded families. Give his armor a pale silt line and his pike pennant a hand-stitched repair. Ferry lanterns reflect in the cobbles behind the formation.
 
 === Halderyn Iverath ===
 Save as: starhaven_chars_image/dummy-legend-halderyn-iverath.png
 Kingdom: Velmora | Role: Solo Legend · Mirror Illusionist | Race: Half-Elf | Age: 42
 PROMPT:
-A 42-year-old half-elf combat illusionist in fitted charcoal leather and violet cloth, holding a small mirrored prism focus as faint distorted reflections shimmer around them in a narrow Velmoran alley; subtle magic, no duplicate figures.
-
-=== Brenovar Khorvessa ===
-Save as: starhaven_chars_image/dummy-legend-brenovar-khorvessa.png
-Kingdom: Ironmere | Role: Political Lord | Race: Human | Age: 59
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, iron-blue cloth and gold trim, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Brenovar Khorvessa, a 59-year-old human lord in a dark iron-blue coat with restrained gold trim. Setting: a river-facing Ironmere fortress chamber.
-
-=== Ysmerai Ashquorin ===
-Save as: starhaven_chars_image/dummy-legend-ysmerai-ashquorin.png
-Kingdom: Ironmere | Role: Military Commander | Race: Dwarf | Age: 88
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, beard, soot-dark armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Ysmerai Ashquorin, an 88-year-old dwarf commander in heavy armor, carrying a broad-headed axe before a miners militia. Setting: an Ironmere foundry muster yard.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 42-year-old half-elf combat illusionist in fitted charcoal leather and violet cloth, holding a small mirrored prism focus as faint distorted reflections shimmer around them in a narrow Velmoran alley; subtle magic, no duplicate figures. They guided the survivors of a city fire by bending lamplight through smoke. Give them singed cuffs and a silver scar above one eyebrow. The prism catches three thin, uneven reflections of the alley lamps across wet stone.
 
 === Vantelor Veldrath ===
 Save as: starhaven_chars_image/dummy-legend-vantelor-veld-rath.png
-Kingdom: Ironmere | Role: Solo Legend · Chain-Harpoon Specialist | Race: Human | Age: 34
+Kingdom: Ironmere | Role: Solo Legend · Wizard | Race: Human | Age: 34
 PROMPT:
-A 34-year-old human river fighter in practical Ironmere campaign armor, operating a compact chain-harpoon launcher with its hooked bolt stretched over a misty bridge; mechanical weapon, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 34-year-old human Ironmere wizard with tousled dark hair, layered charcoal-blue robes and a rough scarf. He carries a crooked staff with a softly glowing orb, and a small brown tabby perches on his shoulder beside a misty river and stone bridge.
+
+=== Veyrka Haldrane ===
+Save as: starhaven_chars_image/dummy-legend-veyrka-haldrane.png
+Kingdom: Ironmere | Role: Solo Legend · Rivergate Swordswoman | Race: Human | Age: 41
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536. Veyrka Haldrane, a 41-year-old human rivergate swordswoman from Ironmere, stands on the frost-crusted stones of the Old Sluice. Frame her full figure and sword at a three-quarter angle. Her windburned olive skin, split eyebrow and dark braids are visible beneath the muzzle and ears of a white wolf-pelt hood. The heavy ivory mantle sweeps off one shoulder, with damp tips framing tarnished iron-blue brigandine, black wool and oxblood wraps. A blunt copper miners’ tally hangs from her belt. She rests the point of Siltwake, her straight dark-steel greatsword with an iron crossguard and red leather grip, on the stone. Distant miners’ lamps shine through river mist, recalling the winter flood when she held the sluice until the last miners crossed. Soft overcast light, sharp face and tactile materials, muted slate, ivory and oxblood. No lettering, border or watermark.
 
 === Mardovan Dathorin ===
 Save as: starhaven_chars_image/dummy-legend-mardovan-dathorin.png
 Kingdom: Golden Coast Federation | Role: Political Lord | Race: Human | Age: 56
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, sand-colored cloth and gold jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Mardovan Dathorin, a 56-year-old human port lord in a sand-colored coat, restrained gold sashes and weathered sea boots. Setting: a Golden Coast harbor chamber.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Mardovan Dathorin, a 56-year-old human port lord in a sand-colored coat, restrained gold sashes and weathered sea boots. Setting: a Golden Coast harbor chamber. He persuaded rival ports to share grain through a blockade. Give him sun-creased eyes and an old merchant's balance weight hanging from the gold sash. Harbor workers roll grain barrels past the chamber's open arches.
 
 === Teshara Zynthera ===
 Save as: starhaven_chars_image/dummy-legend-teshara-zynthera.png
 Kingdom: Golden Coast Federation | Role: Military Commander | Race: Human | Age: 41
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, navy cloth and rust-red armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Teshara Zynthera, a 41-year-old human cohort commander in field armor, holding a short saber before ranks of pikes. Setting: a Golden Coast training square.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Teshara Zynthera, a 41-year-old human cohort commander in field armor, holding a short saber before ranks of pikes. Setting: a Golden Coast training square. Her cohort stood over the quay stairs until the last rescue boat cast off. Give her saber, Quaywatch, a blunted brass pommel and a stain-dark blue grip. The recruits behind her carry freshly stitched cloth pennants in the faded colors of that cohort.
 
 === Qoradin Orelvane ===
 Save as: starhaven_chars_image/dummy-legend-qoradin-orel-vane.png
 Kingdom: Golden Coast Federation | Role: Solo Legend · Arena Axe Champion | Race: Human | Age: 30
 PROMPT:
-A 30-year-old human Golden Coast arena champion in layered leather and bronze guards, gripping a broad single-headed axe and round buckler in a sand-floored ring; battle-ready, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 30-year-old human Golden Coast arena champion in layered leather and bronze guards, gripping a broad single-headed axe and round buckler in a sand-floored ring; battle-ready, no magic. He won the bronze circuit and spent the purse buying the remaining season off his contracted opponents. Show him at the end of the bout, with one knee dusted in sand and a plain victor's wreath left on the buckler. His axe, Belldent, has a flattened bronze end cap and a broad iron blade.
 
 === Dalmorin Vaskorin ===
 Save as: starhaven_chars_image/dummy-legend-dalmorin-vaskorin.png
 Kingdom: Kessrin Horselords | Role: Political Lord | Race: Human | Age: 54
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, embroidered riding cloth and fur, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Dalmorin Vaskorin, a 54-year-old human steppe lord in a dark embroidered riding coat, fur-edged shoulders and practical boots. Setting: open Kessrin grasslands beneath a broad sky.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Dalmorin Vaskorin, a 54-year-old human steppe lord in a dark embroidered riding coat, fur-edged shoulders and practical boots. Setting: open Kessrin grasslands beneath a broad sky. He reunited three herds after a season of grass fires and reopened the common winter pasture. Show a weather-cracked bridle in his hand and blankets of three clan patterns behind his saddle. Burnt grass gives way to green shoots at his feet.
 
 === Uthvera Maerthal ===
 Save as: starhaven_chars_image/dummy-legend-uthvera-maerthal.png
 Kingdom: Kessrin Horselords | Role: Military Commander | Race: Human | Age: 39
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather lamellar and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Uthvera Maerthal, a 39-year-old human mounted commander in layered lamellar, holding a lance beside steppe cavalry. Setting: the Kessrin training grasslands.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Uthvera Maerthal, a 39-year-old human mounted commander in layered lamellar, holding a lance beside steppe cavalry. Setting: the Kessrin training grasslands. She brought the scattered riders back together during the smoke of the grass fires. Her training lance carries a frayed horsehair pennant split into several clan colors. Show remounts gathering behind her as she stands beside a visibly exhausted horse.
 
 === Brelthar Qendriss ===
 Save as: starhaven_chars_image/dummy-legend-brelthar-qendriss.png
 Kingdom: Kessrin Horselords | Role: Solo Legend · Mounted Bow Skirmisher | Race: Human | Age: 28
 PROMPT:
-A 28-year-old human Kessrin horse-archer in layered leather lamellar, turning in the saddle to draw a compact recurve bow across open grassland; quiver visible, no lance, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 28-year-old human Kessrin horse-archer in layered leather lamellar, turning in the saddle to draw a compact recurve bow across open grassland; quiver visible, no lance, no magic. He outran the flash floods carrying a warning to the camps downriver. His ash-and-horn recurve, Windturn, has pale horn tips and a green grip gone dark with use. Rain lifts off the horse's flank as distant camp wagons climb to high ground.
 
 === Eshvara Ulthavar ===
 Save as: starhaven_chars_image/dummy-legend-eshvara-ulthavar.png
 Kingdom: Varathos | Role: Political Lord | Race: Giant | Age: 376
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic giant skin, hair, carved stone details and heavy cloth, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Eshvara Ulthavar, a 376-year-old giant ruler in dignified slate robes over carved stone-scale armor. Setting: a monumental Varathos sea-cliff hall, with a human-sized doorway for scale.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Eshvara Ulthavar, a 376-year-old giant ruler in dignified slate robes over carved stone-scale armor. Setting: a monumental Varathos sea-cliff hall, with a human-sized doorway for scale. She reopened the cliff hall to coastal families after the sea wall failed. A cracked section of the old harbor bell serves as her cloak clasp. At the human-sized doorway, a line of small wet boots and a warm lantern establish the scale.
 
 === Thamorin Rethvane ===
 Save as: starhaven_chars_image/dummy-legend-thamorin-rethvane.png
 Kingdom: Varathos | Role: Military Commander | Race: Giant | Age: 211
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic giant skin, hair, hide and iron plates, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thamorin Rethvane, a 211-year-old giant commander carrying a long battlefield polearm before giant infantry ranks. Setting: a Varathos coastal muster field, human soldiers small in the distance.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Thamorin Rethvane, a 211-year-old giant commander carrying a long battlefield polearm before giant infantry ranks. Setting: a Varathos coastal muster field, human soldiers small in the distance. He marshaled the coast guard through the storm that stripped the old quay. His polearm, Breakwater, has a wide iron head with a stripe of rust at an old repair. Show a salvaged mooring ring worn as a badge at his shoulder and human sailors passing below his knees.
 
 === Keldrissa Khorveth ===
 Save as: starhaven_chars_image/dummy-legend-keldrissa-khorveth.png
 Kingdom: Varathos | Role: Solo Legend · Giant-Slayer Bolt-Thrower | Race: Human | Age: 35
 PROMPT:
-A 35-year-old human Varathos giant-hunter in reinforced leather, bracing a shoulder-fired heavy bolt-thrower with a winch-drawn oversized bolt; distant giant silhouette gives scale, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 35-year-old human Varathos giant-hunter in reinforced leather, bracing a shoulder-fired heavy bolt-thrower with a winch-drawn oversized bolt; distant giant silhouette gives scale, no magic. She made her name getting the quarry families out during the giant's attack. Her bolt-thrower, High Reckoning, has a scarred dark stock and pale quarry-dust lodged in the metal. Show empty workers' carts on the road behind her and a giant-shaped silhouette softened by coastal haze.
 
 === Aurveth Velyssar ===
 Save as: starhaven_chars_image/dummy-legend-aurveth-velyssar.png
 Kingdom: Ardenhal | Role: Political Lord | Race: Human | Age: 62
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, grey hair, formal wool and iron insignia, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Aurveth Velyssar, a 62-year-old human lord in a severe grey formal coat with modest steel insignia. Setting: a weathered Ardenhal fortress chamber.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Aurveth Velyssar, a 62-year-old human lord in a severe grey formal coat with modest steel insignia. Setting: a weathered Ardenhal fortress chamber. He kept the old northern fortress inhabited through a season when the road vanished under snow. Show him beside a relief map with the reopened supply road marked by plain iron pegs. Worn cuffs and a chipped soldier's cup make his austerity tangible.
 
 === Kysendra Taldren ===
 Save as: starhaven_chars_image/dummy-legend-kysendra-taldren.png
 Kingdom: Ardenhal | Role: Military Commander | Race: Human | Age: 38
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, iron plate and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Kysendra Taldren, a 38-year-old human infantry commander in dark plate, holding a pollaxe before a heavy infantry line. Setting: an Ardenhal fortress yard.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Kysendra Taldren, a 38-year-old human infantry commander in dark plate, holding a pollaxe before a heavy infantry line. Setting: an Ardenhal fortress yard. Her infantry got the wounded back through the fortress breach before the gate came down. She carries the pollaxe Gateward, with a square hammer face and a worn black haft. Fresh lime in the repaired arch behind her picks up the same cold light as her armor.
 
 === Rholan Othvara ===
 Save as: starhaven_chars_image/dummy-legend-rholan-othvara.png
 Kingdom: Ardenhal | Role: Solo Legend · Drawbridge Duelist | Race: Dwarf | Age: 47
 PROMPT:
-A 47-year-old dwarf bridge defender in chain and leather, holding a short sword and hooked bridge tool in a guarded stance on a raised stone drawbridge; iron-grey Ardenhal fortress, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 47-year-old dwarf bridge defender in chain and leather, holding a short sword and hooked bridge tool in a guarded stance on the raised approach of a stone drawbridge; iron-grey Ardenhal fortress, no magic. He held the bridge until the fortress families cleared the far span. A deep nick catches the light on his short sword, Hinge Tooth. Show old winch oil on his hooked bridge tool and a child's abandoned wool cap hanging on the far rail.
 
 === Velmira Xandrel ===
 Save as: starhaven_chars_image/dummy-legend-velmira-xandrel.png
 Kingdom: Skyward Isles | Role: Political Lord | Race: Frigatebird Beastkin | Age: 47
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic feathering, skin, sailcloth and bronze, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Velmira Xandrel, a 47-year-old frigatebird beastkin ruler with a dark feathered crest and keen eyes, wearing sea-green formal sailcloth and bronze ornaments. Setting: a high island harbor.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Velmira Xandrel, a 47-year-old frigatebird beastkin ruler with a dark feathered crest and keen eyes, wearing sea-green formal sailcloth and bronze ornaments. Setting: a high island harbor. She opened the island moorings to every stranded crew during the gale. Give her black, faintly iridescent shoulder feathers and a cloak clasp cast from a recovered mooring token. In the harbor below, mismatched rescue pennants hang from a crowded bank of moored vessels.
 
 === Jorveth Braveth ===
 Save as: starhaven_chars_image/dummy-legend-jorveth-braveth.png
 Kingdom: Skyward Isles | Role: Military Commander | Race: Osprey Beastkin | Age: 40
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic feathers, skin, flight leathers and metal, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Jorveth Braveth, a 40-year-old osprey beastkin commander with broad wings, light flight armor and a long spear. Setting: skyship rigging above the Skyward Isles.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Jorveth Braveth, a 40-year-old osprey beastkin commander with broad wings, light flight armor and a long spear. Setting: skyship rigging above the Skyward Isles. He brought a damaged skyship back through the island fog. Show cream-and-brown wings with one uneven row of regrowing flight feathers, a loop of blue rescue cord at the shoulder and a weathered spar lashed behind him. His spear has a plain, well-used iron head.
 
 === Otharil Jhalorin ===
 Save as: starhaven_chars_image/dummy-legend-otharil-jhalorin.png
 Kingdom: Skyward Isles | Role: Solo Legend · Skyship Grapnel Raider | Race: Sea-Otter Beastkin | Age: 29
 PROMPT:
-A 29-year-old sea-otter beastkin in compact Skyward Isles boarding leathers, firing a tethered grapnel from a wrist launcher amid wind-tossed skyship rigging; climbing harness, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 29-year-old sea-otter beastkin in compact Skyward Isles boarding leathers, firing a tethered grapnel from a wrist launcher amid wind-tossed skyship rigging; climbing harness, no magic. He crossed the gap to a drifting deck and brought back its trapped crew. Show dense dark fur, pale whiskers catching spray and brass harness rings dulled by salt. The wrist grapnel, Spare Hand, has a sea-green housing and a deeply scuffed leather cuff.
 
 === Calvora Qasverin ===
 Save as: starhaven_chars_image/dummy-legend-calvora-qasverin.png
 Kingdom: Corthane | Role: Political Lord | Race: Human | Age: 50
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, navy wool and silver trim, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Calvora Qasverin, a 50-year-old human sea-lord in a deep navy coat with muted wine trim and a silver wave clasp. Setting: a Corthane harbor overlook with warships beyond.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Calvora Qasverin, a 50-year-old human sea-lord in a deep navy coat with muted wine trim and a silver wave clasp. Setting: a Corthane harbor overlook with warships beyond. She brought the merchant fleet into the naval harbor ahead of a storm surge. Show silver threads at the temples and a harbor chain link used to weigh down the sea chart. Distinct merchant and warship silhouettes crowd the same anchorage below.
 
 === Nyrakil Drometh ===
 Save as: starhaven_chars_image/dummy-legend-nyrakil-drometh.png
 Kingdom: Corthane | Role: Military Commander | Race: Human | Age: 42
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, dark boarding armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nyrakil Drometh, a 42-year-old human marine commander with a cutlass and reinforced boarding coat. Setting: a Corthane ship-to-shore assault landing.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Nyrakil Drometh, a 42-year-old human marine commander with a cutlass and reinforced boarding coat. Setting: a Corthane ship-to-shore assault landing. He made his name taking the outer quay intact and opening it to relief boats. His cutlass, Low Water, has a squared brass guard and a dark grip polished by use. Set him among wet pilings with a rolled aid flag tucked into his reinforced coat.
 
 === Merenza Varnalis ===
 Save as: starhaven_chars_image/dummy-legend-merenza-varnalis.png
 Kingdom: Corthane | Role: Solo Legend · Unarmed Grappler | Race: Half-Elf | Age: 33
 PROMPT:
-A 33-year-old half-elf close-combat grappler in reinforced wraps and light armor, hands raised to seize and unbalance an opponent on a rain-slick Corthane deck; no blades, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 33-year-old half-elf close-combat grappler in reinforced wraps and light armor, hands raised to seize and unbalance an opponent on a rain-slick Corthane deck; no blades, no magic. Renowned for ending the champion's undefeated run in a deckside wrestling bout. Give her worn knuckle wraps, a healed brow split and closely cropped hair plastered by rain. Use the bent ring rail and a few out-of-focus sailors to frame her empty hands.
 
 === Velqara Marqessa ===
 Save as: starhaven_chars_image/dummy-legend-velqara-marqessa.png
 Kingdom: Verdant Crown | Role: Political Lord | Race: Human | Age: 57
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, green cloth and gold embroidery, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Velqara Marqessa, a 57-year-old human ruler in deep-green and muted-gold court clothes, leaf embroidery and a small orchard-blossom pin. Setting: a prosperous Verdant Crown estate.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Velqara Marqessa, a 57-year-old human ruler in deep-green and muted-gold court clothes, leaf embroidery and a small orchard-blossom pin. Setting: a prosperous Verdant Crown estate. She restored the common orchards after the blight. Show her holding a living graft above rows of freshly scarred trunks among older, still-blooming boughs. A dusting of pollen on the deep-green cuff ties the court clothes to the work.
 
 === Athrelis Thyravell ===
 Save as: starhaven_chars_image/dummy-legend-athrelis-thyravell.png
 Kingdom: Verdant Crown | Role: Military Commander | Race: Wood Elf | Age: 79
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, fitted field armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Athrelis Thyravell, a 79-year-old wood elf commander with a spear and command baton, wearing green-grey armor. Setting: a Verdant Crown field regiment muster.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Athrelis Thyravell, a 79-year-old wood elf commander with a spear and command baton, wearing green-grey armor. Setting: a Verdant Crown field regiment muster. His field regiment became known for how it brought civilians out of a flooded valley. One hand holds the command baton with a chalk-marked waterline. In the distance, rows of soldiers share the muster field with recovered orchard carts.
 
 === Thornak Oskiran ===
 Save as: starhaven_chars_image/dummy-legend-thornak-oskiran.png
 Kingdom: Verdant Crown | Role: Solo Legend · War-Beast Rider | Race: Orc | Age: 40
 PROMPT:
-A 40-year-old orc Verdant Crown war-beast rider in light forest armor, gripping a long boar spear atop an armored forest boar at a dense green battlefield edge; no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 40-year-old orc Verdant Crown war-beast rider in light forest armor, gripping a long boar spear atop an armored forest boar at a dense green battlefield edge; no magic. He and his boar brought a broken field standard back out of the briars. The armored boar has a chipped left tusk and mud ground into its plates. Thornak's spear, Briarspike, has a long darkwood shaft and a bright scar across the guard, with the torn standard rolled at the saddle.
 
 === Drelvian Qorandel ===
 Save as: starhaven_chars_image/dummy-legend-drelvian-qorandel.png
 Kingdom: Irondeep Confederacy | Role: Political Lord | Race: Dwarf | Age: 193
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, beard, dark bronze and volcanic-glass ornaments, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Drelvian Qorandel, a 193-year-old dwarf representative in dark bronze formal armor with a volcanic-glass clasp. Setting: a highland forge hall in the Irondeep Confederacy.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Drelvian Qorandel, a 193-year-old dwarf representative in dark bronze formal armor with a volcanic-glass clasp. Setting: a highland forge hall in the Irondeep Confederacy. He kept the forge towns from breaking their confederacy when the deep seams failed. Show a table of mismatched mine seals and a patch of volcanic glass set in his armor clasp. His long beard is tied back in the same coarse cord used on the nearest miners' seal.
 
 === Nothessa Vessalon ===
 Save as: starhaven_chars_image/dummy-legend-nothessa-vessalon.png
 Kingdom: Irondeep Confederacy | Role: Military Commander | Race: Dwarf | Age: 106
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, hair, plate and miner equipment, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nothessa Vessalon, a 106-year-old dwarf tunnel commander in practical plate, carrying a hooded miner lamp and short spear. Setting: a fortified Irondeep tunnel entrance.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Nothessa Vessalon, a 106-year-old dwarf tunnel commander in practical plate, carrying a hooded miner lamp and short spear. Setting: a fortified Irondeep tunnel entrance. She brought workers home after a fall cut them off from the main shaft. Her hooded lamp is blackened on one side, and her plate still holds old white dust at the rivets. Behind her, rows of small recovered helmets line the tunnel wall.
 
 === Othmarin Thamvyr ===
 Save as: starhaven_chars_image/dummy-legend-othmarin-thamvyr.png
 Kingdom: Irondeep Confederacy | Role: Solo Legend · Rune-Bombardier | Race: Dwarf | Age: 143
 PROMPT:
-A 143-year-old dwarf Irondeep bombardier in soot-dark forge leathers and iron guards, loading rune-marked blasting charges into a compact hand mortar on a smoky forge floor; no spellcasting.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 143-year-old dwarf Irondeep bombardier in soot-dark forge leathers and iron guards, standing with a compact hand mortar and rune-marked blasting charges on a smoky forge floor; no spellcasting. He cleared the collapsed under-road that had split Irondeep through an entire winter. Pose him with the soot-stained hand mortar, Faultbell, lowered beside his leg. Its battered bronze casing catches the forge light while the sealed rune-marked charges sit dim in a shallow iron tray.
 
 === Zalvetha Neldorin ===
 Save as: starhaven_chars_image/dummy-legend-zalvetha-neldorin.png
 Kingdom: Isle-States of Mirren | Role: Political Lord | Race: Human | Age: 52
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, blue sea-silk and shell jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Zalvetha Neldorin, a 52-year-old human island ruler in layered blue sea-silk, a shell clasp and slate-grey mantle. Setting: a Mirren island harbor.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Zalvetha Neldorin, a 52-year-old human island ruler in layered blue sea-silk, a shell clasp and slate-grey mantle. Setting: a Mirren island harbor. She negotiated common refuge rights for the island ports after ships began vanishing in winter squalls. Show her clasping a scuffed wooden pilot's token. Below the blue sea-silk and grey mantle, soaked ropes and lanterns at a packed landing show the pact in use.
 
 === Keryndal Korvessa ===
 Save as: starhaven_chars_image/dummy-legend-keryndal-korvessa.png
 Kingdom: Isle-States of Mirren | Role: Military Commander | Race: Sea Elf | Age: 119
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic sea-elf skin, hair, weathered coastal armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Keryndal Korvessa, a 119-year-old sea elf commander carrying a long spear at the head of island defenders. Setting: a fortified Mirren shoreline.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Keryndal Korvessa, a 119-year-old sea elf commander carrying a long spear at the head of island defenders. Setting: a fortified Mirren shoreline. They held the tidal causeway until the last island residents reached the wall. The long spear, Tidepost, has a greened bronze socket and a worn red tide cord knotted beneath the head. Show salt drying on weathered armor while causeway stones disappear under the incoming tide.
 
 === Thalorin Selthorin ===
 Save as: starhaven_chars_image/dummy-legend-thalorin-selthorin.png
 Kingdom: Isle-States of Mirren | Role: Solo Legend · Tidecaller Combat Caster | Race: Reefborn | Age: 37
 PROMPT:
-A 37-year-old reefborn combat caster with subtle gill markings and weathered sea gear, shaping a forceful arc of water pressure over a rain-dark Mirren ship deck; focused expression, no weapon.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 37-year-old reefborn combat caster with subtle gill markings and weathered sea gear, shaping a forceful arc of water pressure over a rain-dark Mirren ship deck; focused expression, no weapon. They turned a breaking wave aside long enough for an overloaded ferry to clear a harbor mouth. Shape the water into a low, dense arc with translucent edges and natural spray. A cracked ferry lantern hangs from a deck post behind the caster.
 
 === Evaris Ovarith ===
 Save as: starhaven_chars_image/dummy-legend-evaris-ovarith.png
 Kingdom: Eldridge Kingdom | Role: Political Lord | Race: Human | Age: 63
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, grey hair, olive cloth and gold details, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Evaris Ovarith, a 63-year-old human lord in olive-and-gold formal robes, wearing a signet ring. Setting: a sunlit stone court in the Eldridge Kingdom.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Evaris Ovarith, a 63-year-old human lord in olive-and-gold formal robes, wearing a signet ring. Setting: a sunlit stone court in the Eldridge Kingdom. He settled an old land dispute by having the court hear testimony from the tenant farmers first. Show hands creased with age, one thumb resting on a small open box of field boundary tokens. Worn boots and olive cloth contrast with the polished court floor.
 
 === Nymora Dralvessa ===
 Save as: starhaven_chars_image/dummy-legend-nymora-dralvessa.png
 Kingdom: Eldridge Kingdom | Role: Military Commander | Race: Half-Elf | Age: 45
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic half-elf skin, hair, uniform and field armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nymora Dralvessa, a 45-year-old half-elf commander holding a regiment standard beside an orderly infantry line. Setting: an Eldridge training field.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Nymora Dralvessa, a 45-year-old half-elf commander holding a regiment standard beside an orderly infantry line. Setting: an Eldridge training field. She reassembled a regiment after its colors were lost in the flood. Her hand rests high on a replacement standard made from surviving company cloth. Rows of soldiers behind her wear different faded sleeve colors under matching field armor.
 
 === Qasthorin Ysmarin ===
 Save as: starhaven_chars_image/dummy-legend-qasthorin-ysmarin.png
 Kingdom: Eldridge Kingdom | Role: Solo Legend · Warding Arcanist | Race: Human | Age: 32
 PROMPT:
-A 32-year-old human Eldridge warding arcanist in close-fitted armor, holding a round shield etched with protective sigils as a translucent ward catches incoming blows in a stone courtyard; no sword.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 32-year-old human Eldridge warding arcanist in close-fitted armor, holding a round shield etched with protective sigils as a translucent ward catches incoming blows in a stone courtyard; no sword. He held a ward over the injured until the courtyard could be cleared. His shield, Hearthglass, has a buckled rim and old sigil grooves visible through a clear, faintly rippled barrier. Keep the ward close enough to the shield that his face and braced stance remain readable.
 
 === Ulvaris Qadoreth ===
 Save as: starhaven_chars_image/dummy-legend-ulvaris-qadoreth.png
 Kingdom: Thalassian League | Role: Political Lord | Race: Human | Age: 58
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, deep-blue cloth and silver embroidery, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Ulvaris Qadoreth, a 58-year-old human league ruler in maritime court robes with subtle silver wave embroidery. Setting: a Thalassian harbor council chamber.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Ulvaris Qadoreth, a 58-year-old human league ruler in maritime court robes with subtle silver wave embroidery. Setting: a Thalassian harbor council chamber. He persuaded the ports to keep the lighthouse beacons burning under shared stewardship. Show a ring of brass lamp keys on the chamber table and a distant beacon through the windows. Silver wave embroidery should catch just the same muted light as his weathered hands.
 
 === Zenethra Kethrane ===
 Save as: starhaven_chars_image/dummy-legend-zenethra-kethrane.png
 Kingdom: Thalassian League | Role: Military Commander | Race: Sea Elf | Age: 111
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic sea-elf skin, hair, amphibious scale armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Zenethra Kethrane, a 111-year-old sea elf commander holding a long spear at the head of amphibious marines. Setting: a Thalassian shore landing.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Zenethra Kethrane, a 111-year-old sea elf commander holding a long spear at the head of amphibious marines. Setting: a Thalassian shore landing. She ferried a stranded garrison back across the reef through heavy surf. Her spear, Ebbward, has a tarnished silver socket over dark driftwood. Show surf draining from her scale armor as the rescued soldiers climb a blurred stair from the landing.
 
 === Halvessa Jorvellan ===
 Save as: starhaven_chars_image/dummy-legend-halvessa-jorvellan.png
 Kingdom: Thalassian League | Role: Solo Legend · Harpoon Marksman | Race: Human | Age: 34
 PROMPT:
-A 34-year-old human Thalassian harpoon marksman in salt-worn leather and bronze guards, aiming a compact deck harpoon launcher from a warship rail toward open water; weighted line coiled at her belt.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 34-year-old human Thalassian harpoon marksman in salt-worn leather and bronze guards, holding a compact deck harpoon launcher at a warship rail; weighted line coiled at her belt. She is remembered for sending a rescue line through heavy seas to a sinking tender. Her launcher, White Sound, has a dull bronze cheek plate and a pale ivory-colored sight bead. Wind drives spray across her salt-stiffened sleeves, with the tender's lantern far out over the water.
 
 === Vokthar Varnethis ===
 Save as: starhaven_chars_image/dummy-legend-vokthar-varnethis.png
 Kingdom: Karath Sultanate | Role: Political Lord | Race: Human | Age: 61
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, sandstone robes and bronze details, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Vokthar Varnethis, a 61-year-old human sultanate lord in sandstone robes, bronze lamellar accents and a dark wrapped headcloth. Setting: an arched Karath court.
+Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 61-year-old human Karath lord with a close white beard, standing beside a carved sandstone arch in layered sand-colored robes, a charcoal headwrap and bronze lamellar shoulders. He rests one hand on a brass seal, with a burgundy sash and sun motifs catching the warm lattice light.
 
 === Nesvarin Edramar ===
 Save as: starhaven_chars_image/dummy-legend-nesvarin-edramar.png
-Kingdom: Karath Sultanate | Role: Military Commander | Race: Human | Age: 43
+Kingdom: Karath Sultanate | Role: Military Commander | Race: Human | Age: 40
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, red-brown lamellar and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nesvarin Edramar, a 43-year-old human desert cavalry commander carrying a lance beside mounted patrols. Setting: a sunlit Karath desert road.
+Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 40-year-old human woman commanding Karath cavalry, raising a curved saber from the saddle of a bay warhorse. She wears blackened bronze lamellar over burgundy sleeves and a dark teal riding coat. Sun emblems mark the horse’s bronze face armor and the standards in the dusty pass.
 
 === Qiraya Morqalen ===
 Save as: starhaven_chars_image/dummy-legend-qiraya-morqalen.png
-Kingdom: Karath Sultanate | Role: Solo Legend · Desert Alchemical Bombardier | Race: Human | Age: 30
+Kingdom: Karath Sultanate | Role: Solo Legend · Desert Alchemical Bombardier | Race: Goblin | Age: 28
 PROMPT:
-A 30-year-old human Karath alchemical bombardier in light desert armor, holding a clay firepot and several smoke vials against red dunes; practical field kit, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 28-year-old goblin alchemical bombardier with olive-green skin, long pointed ears and brass goggles pushed up over a charcoal headwrap. She holds a sealed red clay firepot and wears a teal work coat with vials and ceramic canisters on leather straps in a lantern-lit Karath caravanserai.
 
 === Morthane Kenzovar ===
 Save as: starhaven_chars_image/dummy-legend-morthane-kenzovar.png
 Kingdom: Zharak Emirates | Role: Political Lord | Race: Human | Age: 56
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, indigo robes and bronze jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Morthane Kenzovar, a 56-year-old human emir in indigo and sand-colored formal robes with a layered veil and bronze clasp. Setting: an oasis courtyard in Zharak.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Morthane Kenzovar, a 56-year-old human emir in indigo and sand-colored formal robes with a layered veil and bronze clasp. Setting: an oasis courtyard in Zharak. He brought the oasis houses to terms over a shrinking water supply. Show him standing where their channels meet, holding a weather-worn bronze seal from the agreement. Mineral rings on the cistern wall and several water jars ground the wealth of the setting.
 
 === Kharveth Aelvarin ===
 Save as: starhaven_chars_image/dummy-legend-kharveth-aelvarin.png
 Kingdom: Zharak Emirates | Role: Military Commander | Race: Human | Age: 45
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, green-bronze armor and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Kharveth Aelvarin, a 45-year-old human commander leading a guarded line of pack animals in caravan armor. Setting: a rocky Zharak desert road.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Kharveth Aelvarin, a 45-year-old human commander leading a guarded line of pack animals in caravan armor. Setting: a rocky Zharak desert road. He brought the caravan over the broken road after a rockslide cut off the pass. His bronze shoulder guards are scratched pale from the rock, and the lead pack animal wears a cracked bell tied back on with cloth. Other animals follow through the dusty cleft.
 
 === Sorellin Zharveth ===
 Save as: starhaven_chars_image/dummy-legend-sorellin-zharveth.png
 Kingdom: Zharak Emirates | Role: Solo Legend · Venom-Dart Assassin | Race: Human | Age: 32
 PROMPT:
-A 32-year-old human Zharak covert fighter in indigo leather and bronze guards, sighting along a compact blowpipe with sealed dart vials at a shadowed caravan camp; living human, no undead traits or magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 32-year-old human Zharak covert fighter in indigo leather and bronze guards, carrying a compact blowpipe and sealed dart vials at a shadowed caravan camp; living human, no undead traits or magic. The caravan guards still tell of the night an entire camp's claim seals went missing. Give Sorellin a level expression and an indigo hood faded nearly grey at the edges. The short blowpipe, Mothreed, is dark polished wood with a plain silver band, held down by the hip beside sealed vials.
 
 === Delqara Tyravess ===
 Save as: starhaven_chars_image/dummy-legend-delqara-tyravess.png
 Kingdom: Coral Archipelago | Role: Political Lord | Race: Reefborn | Age: 47
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, subtle gill markings, coral-patterned cloth and shell jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Delqara Tyravess, a 47-year-old reefborn island ruler in formal scale cloth and shell ornaments. Setting: a Coral Archipelago council terrace above a turquoise reef.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Delqara Tyravess, a 47-year-old reefborn island ruler in formal scale cloth and shell ornaments. Setting: a Coral Archipelago council terrace above a turquoise reef. She won agreement to close a damaged spawning reef until it recovered. Her shell ornaments are worn and mismatched, gifts from the island crews. Below the council terrace, a line of mooring floats marks bright shallows empty of boats.
 
 === Zenveth Kharvess ===
 Save as: starhaven_chars_image/dummy-legend-zenveth-kharvess.png
 Kingdom: Coral Archipelago | Role: Military Commander | Race: Reefborn | Age: 39
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, scale armor, leather and bronze, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Zenveth Kharvess, a 39-year-old reefborn coastal commander with a signal drum and teal scale armor. Setting: island defenders and outrigger ships at the Coral Archipelago shore.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Zenveth Kharvess, a 39-year-old reefborn coastal commander with a signal drum and teal scale armor. Setting: island defenders and outrigger ships at the Coral Archipelago shore. Their drum rallied scattered outrigger crews during a squall. The drum hide bears a water stain beside a carefully sewn seam, and the teal armor is streaked with salt. Show crews drawing their boats shoulder to shoulder in the blurred shore behind.
 
 === Qenthari Morthalis ===
 Save as: starhaven_chars_image/dummy-legend-qenthari-morthalis.png
 Kingdom: Coral Archipelago | Role: Solo Legend · Coral Shaper | Race: Reefborn | Age: 28
 PROMPT:
-A 28-year-old reefborn Coral Archipelago combat adept in flexible sea-leathers, raising jagged living coral ridges from a wet path to block an advance; subtle gill markings, mineral growth, no weapons.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 28-year-old reefborn Coral Archipelago combat adept in flexible sea-leathers, raising jagged living coral ridges from a wet path to block an advance; subtle gill markings, mineral growth, no weapons. They raised a coral barrier across the flooded lane and gave the islanders time to reach the terraces. Show wet coral with uneven cream and rust branches displacing standing seawater around their boots. Keep both empty hands and the strain in their face visible.
 
 === Qelvara Ashmoren ===
 Save as: starhaven_chars_image/dummy-legend-qelvara-ashmoren.png
 Kingdom: Sable Isles | Role: Political Lord | Race: Human | Age: 53
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic human skin, dark hair, slate maritime cloth and silver jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qelvara Ashmoren, a 53-year-old living human island ruler in dark slate finery, a black wool mantle and silver sea-knot clasp. Setting: a Sable Isles harbor; no undead features.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Qelvara Ashmoren, a 53-year-old living human island ruler in dark slate finery, a black wool mantle and silver sea-knot clasp. Setting: a Sable Isles harbor; no undead features. She restored winter ferry service to the outlying islands. The plain silver clasp holds a salt-bleached cloak with the edge patched by hand. Shore lanterns come alive one by one beyond her as a small ferry noses through fog.
 
 === Heshvara Tormedil ===
 Save as: starhaven_chars_image/dummy-legend-heshvara-tormedil.png
 Kingdom: Sable Isles | Role: Military Commander | Race: Human | Age: 46
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic human skin, dark hair, black-blue marine armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Heshvara Tormedil, a 46-year-old living human anti-raider commander with a cutlass and reinforced coat. Setting: a foggy Sable Isles quay; no undead features.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Heshvara Tormedil, a 46-year-old living human anti-raider commander with a cutlass and reinforced coat. Setting: a foggy Sable Isles quay; no undead features. Her shore companies held the fogbound quay while the fishing crews came in. Her cutlass, Lantern Watch, has a nicked steel blade and a sea-blackened basket guard. Place a ring of fishermen's lanterns behind her coat, catching the salt on its seams.
 
 === Ivranel Saqorin ===
 Save as: starhaven_chars_image/dummy-legend-ivranel-saqorin.png
 Kingdom: Sable Isles | Role: Solo Legend · Counter-Duelist | Race: Half-Elf | Age: 30
 PROMPT:
-A 30-year-old living half-elf Sable Isles counter-duelist in weathered dark leathers, holding paired parrying blades in a measured defensive stance on a foggy quay; no undead features or magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 30-year-old living half-elf Sable Isles counter-duelist in weathered dark leathers, holding paired parrying blades in a measured defensive stance on a foggy quay; no undead features or magic. They defended the quay champion's title with a wrist already wrapped from the previous round. Show a torn sleeve over fresh linen and the paired blades, Ebb and Return, with visibly different guards, one hooked and one smooth. Give the fog a low silver edge behind the dueling boards.
 
 === Khaldrin Marnovar ===
 Save as: starhaven_chars_image/dummy-legend-khaldrin-marnovar.png
 Kingdom: Highland Coalition | Role: Political Lord | Race: Orc | Age: 52
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic orc skin, tusks, fur and carved bone, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Khaldrin Marnovar, a 52-year-old orc clan lord in a weathered fur mantle and carved bone clan badges. Setting: a highland coalition meeting ground.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Khaldrin Marnovar, a 52-year-old orc clan lord in a weathered fur mantle and carved bone clan badges. Setting: a highland coalition meeting ground. He ended a blood feud by giving both clans a place at the same winter hearth. Show a weathered hand resting on a broken oath staff that has been bound together again. His fur mantle bears a carved bone badge from each family.
 
 === Avenor Qethvane ===
 Save as: starhaven_chars_image/dummy-legend-avenor-qethvane.png
 Kingdom: Highland Coalition | Role: Military Commander | Race: Goblin | Age: 39
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic goblin skin, sharp features, layered highland armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Avenor Qethvane, a 39-year-old goblin mountain commander carrying a short spear before a mixed infantry patrol. Setting: a rocky Highland Coalition pass.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Avenor Qethvane, a 39-year-old goblin mountain commander carrying a short spear before a mixed infantry patrol. Setting: a rocky Highland Coalition pass. He brought a mixed patrol safely down after a landslide swallowed the marked pass. A bright nick in one ear and cold-reddened knuckles give his face and hands character. Show his short spear at rest as dwarves, goblins and orcs emerge behind him under patched highland colors.
 
 === Rhyvessa Luraveth ===
 Save as: starhaven_chars_image/dummy-legend-rhyvessa-luraveth.png
 Kingdom: Highland Coalition | Role: Solo Legend · Mountain Sling Specialist | Race: Half-Orc | Age: 29
 PROMPT:
-A 29-year-old half-orc Highland Coalition slinger in rugged mountain leathers, whirling a leather sling loaded with a heavy stone on a windswept ridge; rugged field kit, no magic.
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 29-year-old half-orc Highland Coalition slinger in rugged mountain leathers, whirling a leather sling loaded with a heavy stone on a windswept ridge; rugged field kit, no magic. She won the ridge games with a mountain sling and carried the victor's banner home through a blizzard. Her sling, Cairnwhistle, has a dark leather cradle and one faded ochre cord. A weather-beaten strip of the banner clings to her shoulder as snow and grass bend across the ridge.
 
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
