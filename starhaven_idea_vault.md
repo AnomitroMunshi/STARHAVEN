@@ -28,6 +28,27 @@ The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 
 - **Commander (recommended):** Edda Rensh, named at the end of *The Rout She Walked Out Of* — the commander who walks a broken line out intact is the one you want on a border where the enemy fights from the saddle. Until then the chair stays empty.
 - **Payoff:** the 1060 Silver Isle War sends the armies over the sea at harvest time → the Kessrin finally ride (Khulan's raid), and the Harvest Beacons and the Long Grass get used. Raise it at the Winter Council first as a weak point ("the south-west has one unfinished fort").
 
+### §0d. Every unit gets its moment (agreed 2026-11-24)
+
+Least-used Starhaven units in the chronicles (by name count; some zeros are name mismatches, e.g. "Holy Knights" vs "Holy Knights of Starhaven"). Each planned arc spotlights 3–6 of them — a real scene with a real ability from the unit wiki, not a name-drop.
+
+| Arc | Where (map) | Spotlight units — each based where the unit wiki puts it |
+|---|---|---|
+| When the Thread Breaks | Greypeak frontier, north-west (near Stonemark) | The Gauntlet Army (HQ Greypeak Highland Approaches), Highland Coalition (Greypeak), The Undying Colors (embedded; banners as signals with Selka Rennet), Skywarden Corps (signal relay when the crystals die), The Runebreakers |
+| The Rout She Walked Out Of | a field army in retreat | The Dawnlancers (mobile with the 2nd), Ironveil Spear Corps, Apothecary Corps, Iron Road Corps |
+| Take It Alive | Sancthaven | Holy Knights (HQ the White Citadel, Sancthaven), Starhaven Beast Corps (Helna Ironmane), Void Hounds, The Web (Mira Vael) |
+| The Elderwood Arrives | the southern forests (flying fortress overhead) | Iron Talon Batteries (anti-aerial — against the fortress), Arcane Artillery Corps (Kai, Vaelmark), Silverleaf Corps (mobile with the 4th), Greenveil Defense Forces |
+| Zharak Crossing + Ironpass (night) | Karath / the dunes, and Ironpass in the east | The Dusk Corps, Windlance Cavalry (horse archers), The Ashrunners, The Warbreakers, Ironbreaker Mace Corps (HQ Forgehaven, next door to Ironpass), The Ironpack, Iron Reavers + Cinderguard (both Ashfield, on the dunes road) |
+| The Wedding | Starhold | **The Black Charge as honour guard** (Vespera's own riders), the Dawnguard, The Crown Shadows |
+| 1060 — Silver Isle War / Khulan's raid on the harvest | the Kessrin Marches (south-west) and the sea | **Ironmane Lancers (HQ Ironmane Fields, Greenveil — the nearest heavy cavalry to the Marches): their big moment, heavy lances against horse archers in the Long Grass**, Silver Swan Cavalry Corps (south depot), Tidebreaker Corps, Dawncliff garrison |
+
+Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
+
+### §0e. The Winter Council's lighter side, and the Wedding (agreed 2026-11-24)
+
+- **Winter Council, comic beat:** when the table reaches the king's own weak point (succession), ministers start telling Rayden — politely, then less politely — to have children. In the Black Charge, a rider tells Vespera; Vespera goes red to the ears and bonks the rider on the head. Ilyana is delighted, winks at Rayden across the table and makes a small private sign only the two of them understand (keep it implied, never spelled out).
+- **New arc after the Winter Council: the Wedding** — Rayden marries Vespera and Ilyana together in one grand event (early 1060, before the Silver Isle War). Polygamy is allowed in Starhaven. **Done the Indian way, grand:** days of it — a haldi morning, a mehndi night, a sangeet with dancing, then the baraat: Rayden rides in on his warhorse Warblade through Starhold with dhol drummers, dancing friends and the whole city in the street (the Eleven dancing badly is mandatory), and the Black Charge as Vespera's honour guard. Marigolds everywhere (they already mean something since Lantern Night). Allies, giants, the Vanari, Karath and House Sanguinar's twilight court all come — the ceremony is at dusk so Ilyana can stand in it. A security nightmare for Daven and the Crown Shadows. Joy first; the open threads (the Huntmaster's count, the Hundred, the Kessrin) watch from the edges. For image prompts: costumes, music and rituals Indian-style; buildings stay Starhaven's own dark-fantasy look.
+
 ### §0b. Project SKYREACH in The Elderwood Arrives (agreed 2026-11-23)
 
 What the wiki already has: begun 1052 (Naval Expansion Doctrine — Cain: "You want to move soldiers over water without giving the water permission." Cyrus: "Yes."); classified ocean-crossing military aircraft; lead architect Cyrus Vexley, co-designer Cain Drakhar; 7 prototypes built in the SKYREACH Wing of the Tidegate Arsenal, Forgehaven; a structural emergency once at the SKYREACH-III site; never flown in any chronicle. Cain traces his war-machine designs to pre-Sundering Vrak schematics (Vrak Isles nation entry).
