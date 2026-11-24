@@ -1,9 +1,9 @@
 # Unit coverage — every unit card, where it has appeared, and where it gets its moment
 
-Audited 2026-11-24 against all 360 unit cards in the unit wiki (13 rival cards left out) and every chronicle. A unit counts as "appeared" if its name (or its name without "The", or the part after "—") is in a chronicle body or its tags.
+Audited 2026-11-24 against all 376 unit cards in the unit wiki (13 rival cards left out) and every chronicle. A unit counts as "appeared" if its name (or its name without "The", or the part after "—") is in a chronicle body or its tags.
 
 - Appeared at least once: **127**
-- Never appeared: **220** — of these, 44 are generic army sub-units (field-army line troops, Silver Swan regional detachments, commanders' guards) that appear with their army, not by name.
+- Never appeared: **236** — of these, 44 are generic army sub-units (field-army line troops, Silver Swan regional detachments, commanders' guards) that appear with their army, not by name.
 
 ## 1. Never appeared — the arc that gives each its moment
 
@@ -17,7 +17,7 @@ Glaive Formation Corps, Longblade Strike Corps, Dawnbow Archers, The Point — F
 Ashen Exorcists, Seal Order, Holy Knights — Relic Wardens, Holy Knights — Pyrelight Archers, Mercy Charger, Auriel, Void Hounds, The Web, War Tiger, War Lion, War Gorilla
 
 **The Elderwood Arrives (the southern forests; the flying fortress)**  
-Sentinel Guards, Warden Infantry, Warden Archers, Woodborn Guardians, Stoneclaw Brutes, Feral Hunters, The RootFang, Dire Wolf Handler Corps, Great Elk — Forest Elk Cavalry, Silver Moon Elk Riders, Silver Moon Elk, War Bear Corps, Mosshorn Rhino Corps, Mosshorn Rhino, Thornfang Cat Corps, Thornfang Cat, Dire Wolves, Rootcaller Shamans, Root-Watcher Sylen, Starshot Rangers, Frosthold Void Company, Ninth Sky Corps: Drake Riders, Ninth Sky Battlemages / Countermages, Sky Drake, War Griffin, Ashwing Eagle, Skymark Wyvern-Hybrid, Silverchain Mages, Iron Talon Batteries, Arcane Artillery Corps
+Sentinel Guards, Warden Infantry, Warden Archers, Woodborn Guardians, Stoneclaw Brutes, Feral Hunters, The RootFang, Dire Wolf Handler Corps, Great Elk — Forest Elk Cavalry, Silver Moon Elk Riders, Silver Moon Elk, War Bear Corps, Mosshorn Rhino Corps, Mosshorn Rhino, Thornfang Cat Corps, Thornfang Cat, Dire Wolves, Rootcaller Shamans, Root-Watcher Sylen, Starshot Rangers, Frosthold Void Company, Ninth Sky Corps: Drake Riders, Ninth Sky Battlemages / Countermages, Sky Drake, War Griffin, Ashwing Eagle, Skymark Wyvern-Hybrid, Silverchain Mages, Iron Talon Batteries, Arcane Artillery Corps, Frostspire Winter Guard, Frostspire Ice-Mages, The Frostborn Wardens, The Glacierwalkers, Rimeguard Axe-Bows, Frostlock Gunners, Aurora Lancers, Rime-Mortar War-Sleds, Whitecoat Stalkers, Marshal Oskari Talvela, Archmage Saga Rimvald, Old Hoarfrost, The Icecrown Guard, The Hoarbacks, Snowwing Riders, Vesna Kallio, the Frostcaller
 
 **Zharak Crossing + the night siege of Ironpass**  
 Fighting Camelknights, Karath Mammoths, War Elephants (50), Karath Desert Chariots, Karath War Camel, Sunfire Charger, Skeleton Infantry, Sable Bone Chariots, Preserved Dead Legions, Arch-Necromancer's Undead Guard, Undead War Horse, Sir Obinna Greyne, Ironpass Wall Guard, Ironpass Bolt Corps, Ironpass Gate Guard, Ironpass Siege Crew, Ironbolt Batteries, Varn Ashclaw, The Ironhold Guard, Grundhammer Forge Team, Ironframe Corps, Mournfang, The Ashveil Reapers, Petra's Ashen Vanguard, Red Bone Cavalry, Marika Goldspear, The Skyspear Valkyries, Windlance Cavalry, Varathos Giant Warriors, Varathos Stone-Throwers
@@ -45,6 +45,7 @@ Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — 
 | Beastmen Berserkers of the East | never | When the Thread Breaks (they quarter at Frosthold) |
 | Kuku Gunriders | never | When the Thread Breaks — Stonemark's strangest cavalry |
 | Forest Golems | once | The Elderwood Arrives |
+| The Glacierwalkers (Frostspire ice constructs) | never (new) | The Elderwood Arrives — lent for the first time, beside Eirathra's ice walls |
 | The Wrought + Iron Tide | twice / 8× | The night siege of Ironpass — iron that does not need light |
 | Skyhammer + The Ironwhirl Squadron | once each | The Elderwood Arrives — against the flying fortress, beside SKYREACH |
 | The Requiem Wardens | never | The Kessrin raid — Rhegar's heavy shock cavalry |
