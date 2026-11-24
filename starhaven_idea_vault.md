@@ -16,7 +16,7 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | 5 | Take It Alive (loose inside Sancthaven) | It escapes through the cisterns and drains | Dunmar Underlow |
 | 6 | The Elderwood Arrives | **The flying fortress rematch** — it comes to suppress the Void in the southern forests and cannot tell friend from Void; Aurelia and Zephyros again (its primary array repaired and wise to Zephyros's cascade); Cain's Vrak notation and "it's remembering us". Set in Starhaven/the Elderwood, not the Vrak Isles. **Project SKYREACH debuts here** (see §0b). | Saoirse Yarrow |
 | 7 | Zharak Crossing + siege of Ironpass (night) | Sorvane lends undead that need no light; help Starhaven does not trust | Corvane; Zafir fights |
-| 8 | The Winter Council — last of 1059 | **Every** weak point, round the table (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders, night, Frostspire, Sorvane's gold, the single Ashen river route, silver from one mine, succession…) — not silver only | Tolliver Quarrow walks in at the end with news of refugees |
+| 8 | The Winter Council — last of 1059 | **Every** weak point, round the table (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders, night, Frostspire, Sorvane's gold, the single Ashen river route, unmapped groundwater and water-source resilience, silver from one mine, succession…) — not silver only | Tolliver Quarrow walks in at the end with news of refugees |
 | 9 | The Silver Isle War (1060) | §1, then #7 Silver cold war with Silverhorn | Dante; the Architect later |
 | 10 | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; Chapter 10 | — |
 
@@ -27,6 +27,25 @@ New in the Atlas: **Saddlestone Keep** (new fort, outer ring finished autumn 105
 The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 22 years for her enemy's army to march away at harvest, then burned the harvest. Behind the Marches lies the Southern Agricultural Corridor, most of Starhaven's bread. The lone rider only ever comes in spring, never at harvest.
 - **Commander (recommended):** Edda Rensh, named at the end of *The Rout She Walked Out Of* — the commander who walks a broken line out intact is the one you want on a border where the enemy fights from the saddle. Until then the chair stays empty.
 - **Payoff:** the 1060 Silver Isle War sends the armies over the sea at harvest time → the Kessrin finally ride (Khulan's raid), and the Harvest Beacons and the Long Grass get used. Raise it at the Winter Council first as a weak point ("the south-west has one unfinished fort").
+
+### Suggested city (1060 onward): Goldwake
+
+**Site:** The first red-circled area, between Saddlestone Keep and Veilhold Keep, near the Saffron Terraces and the Ashfield road. This spot can connect the farm villages to the frontier keeps and the southern road. Leave the second marked area open for a different future settlement.
+
+**Origin:** In 1060, a Crown survey crew begins laying an all-weather route between the frontier posts. A cut into a low ridge opens a sealed gate and reveals the upper streets of a city buried centuries ago. Its old aqueduct failed after an earthquake shifted the underground watercourse; the city was abandoned, not Void-corrupted. Surveyors then find a modest but rich gold-bearing seam beneath its old mint district.
+
+**Why rebuild it:** Goldwake gives Starhaven a second domestic gold source after the Winter Council identifies its reliance on the Sable Gold Concession. The find is valuable enough to support a city, but not so large that it replaces Sorvane's concession or turns the kingdom into a gold rush. The old stone roads, cisterns and sheltered foundations make rebuilding practical; nearby orchards, vineyards and saffron farms can feed a growing market town.
+
+**How it forms:** 1060 begins as a guarded survey camp and a careful archaeological dig, not a city built overnight. A public charter reserves the old quarter and aqueduct for restoration, permits staged mining under the Worker Rights Compact, and directs a share of the gold revenue to the road, clinic, granary and schools. Miners, masons, merchants and farm families settle around the recovered gate. Over the next several years, the camp grows into a chartered city with a market square above the old mint and new homes built around—not on top of—the exposed ruins.
+
+**Story hook:** Mining deeper threatens the aqueduct that keeps the surrounding farms alive. The city must decide whether to chase the richest vein or preserve its water and the old city's remaining districts. Working name **Goldwake**; alternatives: **Gildhollow** or **Aurelfall**.
+
+### Water resilience: Winter Council → Goldwake [agreed direction, planning only]
+
+- Treat water security as a separate weakness from the single Ashen river route, which is a transport vulnerability. The Council commissions a survey to map groundwater and identify how much Starhaven relies on a few known river sources.
+- An Arcanum water mage with a water-finding ability joins the survey. The ability points to promising sources; engineers still test safety, quality and replenishment before anyone relies on a well.
+- The Crown recruits a male field archaeologist from outside Starhaven, who willingly accepts a permanent research post and chooses to settle in the kingdom. His remit extends beyond ruins: investigate hidden underground structures, sealed spaces, buried routes and relics, and document physical evidence connected to Void history. He works closely with Velkan, bringing field evidence and material context to Velkan's arcane research; he is not himself a mage. The preservation charter and funded investigations make Starhaven an attractive home for his work. His name and homeland remain open.
+- Goldwake is the survey's first major field project in 1060. The water-finder helps locate the buried watercourse; the archaeologist leads the careful excavation after the road crew opens the sealed gate. The restored aqueduct and farm supply must be protected from the gold mine. This is the start of his wider work investigating underground and Void-related discoveries across Starhaven.
 
 ### §0d. Every unit gets its moment (agreed 2026-11-24)
 
