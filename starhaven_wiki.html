@@ -92,6 +92,9 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .search-input{background:var(--bg3);border:1px solid var(--border3);border-radius:8px;padding:7px 12px;font-size:12px;color:var(--text);font-family:'Crimson Pro',serif;outline:none;width:260px;transition:border-color .15s}
 .search-input:focus{border-color:var(--gold)}
 .search-input::placeholder{color:var(--text4)}
+.char-alliance-select{background:var(--bg3);border:1px solid var(--border3);border-radius:8px;padding:7px 12px;font-size:12px;color:var(--text);font-family:'Crimson Pro',serif;outline:none;min-width:190px;transition:border-color .15s;cursor:pointer}
+.char-alliance-select:focus{border-color:var(--gold)}
+.char-alliance-select[hidden]{display:none}
 .result-count{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3)}
 
 /* Content padding */
@@ -599,6 +602,9 @@ a.lore-card:hover{transform:translateY(-2px)}
     </div>
     <div class="search-bar">
       <input class="search-input" id="char-search" placeholder="Search characters…" oninput="charSearch=this.value.toLowerCase();charsRender(charFilter)">
+      <select class="char-alliance-select" id="char-group-filter" aria-label="Filter characters by alliance or enemy faction" onchange="if(charFilter==='Allied Nations')charAllianceFilter=this.value;else charEnemyFilter=this.value;charsRender(charFilter)" hidden>
+        <option value="all">All alliances</option>
+      </select>
       <span class="result-count" id="char-count"></span>
     </div>
     <div id="char-roster" class="char-roster"></div>
@@ -33691,13 +33697,55 @@ function chroniclesRender(filter, btn) {
 }
 
 // stubs — replaced in later steps
-let charFilter='all', charSearch='';
+let charFilter='all', charSearch='', charAllianceFilter='all', charEnemyFilter='all';
 let armyFilter='all', armySearch='';
 let atlasFilter='all', atlasSearch='', atlasLoc='';
 
 // ════════════════════════════════════════
 //  CHARACTERS
 // ════════════════════════════════════════
+const CHAR_ALLIANCE_TAGS = new Map([
+  ['Thalassian League','Thalassian League'],
+  ['Karath Sultanate','Karath Sultanate'],
+  ['Ironmere','Ironmere'],
+  ['Kingdom of Ironmere','Ironmere'],
+  ['Stonemark','Stonemark Holds'],
+  ['Stonemark Holds','Stonemark Holds'],
+  ['House Silverhorn','Verdant Crown'],
+  ['The Verdant Crown','Verdant Crown'],
+  ['Giants of Varathos','Varathos'],
+  ['Varathos','Varathos'],
+  ['Golden Coast Federation','Golden Coast Federation'],
+  ['Coral Archipelago','Coral Archipelago'],
+  ['Sable Conclave','Sable Conclave']
+]);
+function charAlliance(c) {
+  for (const tag of c.tags || []) {
+    if (tag.startsWith('Frostspire Dominion')) return 'Frostspire Dominion';
+    if (tag.startsWith('Allied Kingdoms')) return 'Allied Kingdoms';
+    const alliance = CHAR_ALLIANCE_TAGS.get(tag);
+    if (alliance) return alliance;
+  }
+  return 'Other / Unspecified';
+}
+const CHAR_ENEMY_FACTION_TAGS = new Map([
+  ['Lisseran','Lisseran'],
+  ['Velmora','Velmora'],
+  ['Highland Horde','Highland Horde'],
+  ['Oaksmane','Oaksmane'],
+  ['Nullborn','Nullborn'],
+  ['Golden Coast Federation','Golden Coast Federation'],
+  ['Irondeep Confederacy','Irondeep Confederacy'],
+  ['Zharak Emirate','Zharak Emirate']
+]);
+function charEnemyFaction(c) {
+  for (const tag of c.tags || []) {
+    const faction = CHAR_ENEMY_FACTION_TAGS.get(tag);
+    if (faction) return faction;
+  }
+  return 'Other / Unspecified';
+}
+
 // importance = how much of the story a character carries: chronicles they appear in, cards that name them, their own ties and deeds
 let _charImp = null;
 function charImportance() {
@@ -33713,11 +33761,37 @@ function charImportance() {
   return _charImp;
 }
 function charsRender(filter, btn) {
-  if (filter !== undefined) charFilter = filter;
+  if (filter !== undefined) {
+    charFilter = filter;
+    if (charFilter !== 'Allied Nations' && charFilter !== 'Known Enemies') {
+      charAllianceFilter = 'all';
+      charEnemyFilter = 'all';
+    }
+  }
   const roster = document.getElementById('char-roster');
   const cnt    = document.getElementById('cnt-chars');
   const cnt2   = document.getElementById('char-count');
+  const groupSelect = document.getElementById('char-group-filter');
   if (!roster) return;
+
+  const groupFilterConfig = charFilter === 'Allied Nations'
+    ? { category: 'Allied Nations', label: 'All alliances', value: charAllianceFilter, getGroup: charAlliance }
+    : charFilter === 'Known Enemies'
+      ? { category: 'Known Enemies', label: 'All enemy factions / rivals', value: charEnemyFilter, getGroup: charEnemyFaction }
+      : null;
+  if (groupSelect) {
+    const groups = groupFilterConfig
+      ? [...new Set(CHARACTERS.filter(c => c.category === groupFilterConfig.category).map(groupFilterConfig.getGroup))]
+          .sort((a, b) => a.localeCompare(b))
+      : [];
+    while (groupSelect.options.length) groupSelect.remove(0);
+    if (groupFilterConfig) {
+      groupSelect.add(new Option(groupFilterConfig.label, 'all'));
+      groups.forEach(group => groupSelect.add(new Option(group, group)));
+    }
+    groupSelect.hidden = !groupFilterConfig;
+    if (groupFilterConfig) groupSelect.value = groupFilterConfig.value;
+  }
 
   if (btn) {
     document.querySelectorAll('#char-tabs .tab-btn').forEach(b => b.classList.remove('active'));
@@ -33727,11 +33801,13 @@ function charsRender(filter, btn) {
   const q = charSearch.trim().toLowerCase();
   const list = CHARACTERS.filter(c => {
     const matchCat = charFilter === 'all' || c.category === charFilter;
+    const matchGroup = !groupFilterConfig || groupFilterConfig.value === 'all' ||
+      groupFilterConfig.getGroup(c) === groupFilterConfig.value;
     const matchQ   = !q ||
       c.name.toLowerCase().includes(q) ||
       c.title.toLowerCase().includes(q) ||
       (c.tags||[]).some(t => t.toLowerCase().includes(q));
-    return matchCat && matchQ;
+    return matchCat && matchGroup && matchQ;
   });
 
   if (cnt)  cnt.textContent  = list.length;
