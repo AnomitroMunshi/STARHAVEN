@@ -28,7 +28,7 @@ The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 
 - **Commander (recommended):** Edda Rensh, named at the end of *The Rout She Walked Out Of* — the commander who walks a broken line out intact is the one you want on a border where the enemy fights from the saddle. Until then the chair stays empty.
 - **Payoff:** the 1060 Silver Isle War sends the armies over the sea at harvest time → the Kessrin finally ride (Khulan's raid), and the Harvest Beacons and the Long Grass get used. Raise it at the Winter Council first as a weak point ("the south-west has one unfinished fort").
 
-### Suggested city (1060 onward): Goldwake
+### Suggested city (1060 onward): Goldwake(open to chaneg name) 
 
 **Site:** The first red-circled area, between Saddlestone Keep and Veilhold Keep, near the Saffron Terraces and the Ashfield road. This spot can connect the farm villages to the frontier keeps and the southern road. Leave the second marked area open for a different future settlement.
 
@@ -40,12 +40,21 @@ The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 
 
 **Story hook:** Mining deeper threatens the aqueduct that keeps the surrounding farms alive. The city must decide whether to chase the richest vein or preserve its water and the old city's remaining districts. Working name **Goldwake**; alternatives: **Gildhollow** or **Aurelfall**.
 
-### Water resilience: Winter Council → Goldwake [agreed direction, planning only]
+### Wider regional strength and expertise [agreed direction, planning only]
+
+- Starhaven should not be the world's only source of exceptional people or institutions. Each major region should have its own notable strengths and influential figures, including experts beyond rulers, Lords and Solo Legends: scholars, archaeologists, mages, engineers, navigators, healers, historians, scouts and artisans.
+- Scope the balance pass across every named realm, island and people, alongside Starhaven's seven mapped macro-regions. Treat cities, forts, districts and individual map sites as part of their wider region, not as separate power centers.
+- Existing external figures include Eirathra Veyl Frostborne of Frostspire, Sorvane Nullis of the Sable Isles, Aldric Vorn of Ironmere, Crest Vane and Hesper Quillon of the Thalassian League, Rashid al-Kavar, Aria al-Kavar and Zafir of Karath, Brokk Graniteborn of Stonemark, Drogar Stonefang and Kragh Skullsplitter of the Highland Coalition, Rudra Vanar of the Vanari, Cassian Silverhorn and Elowen Sunspire of the Verdant Crown, Zahid al-Morad and Nessa Korrath of Zharak, Kadrin Emberforge of Irondeep, Tharos Avarakai of the Reef Clans, Ilyana Sanguinar of Karvossa, and Elder Dravan and Kira of Varathos. Hesper is already a foreign-born civilian official, not a Lord or Solo Legend. This list is a starting inventory, not exhaustive.
+- Keep those people rooted in their own regions, with independent goals, expertise and loyalties. Cooperation with Starhaven should not automatically mean joining it; exceptional ability should be specialized, not universal.
+- **Suggested non-combat specialist:** Ronan Haldvik, a field archaeologist from Frostspire, is a world-level researcher with an ongoing role rather than a character created for one arc. He chooses a permanent Starhaven appointment, works closely with Velkan, and retains his Frostspire ties.
+- Check both first and last names against the main and unit wikis before adding any new character. Ronan Haldvik has no first-name or surname collision in either roster; the matches in this file are this proposed entry.
+
+### Water resilience: Winter Council → Goldwake(open to chaneg name) [agreed direction, planning only]
 
 - Treat water security as a separate weakness from the single Ashen river route, which is a transport vulnerability. The Council commissions a survey to map groundwater and identify how much Starhaven relies on a few known river sources.
 - An Arcanum water mage with a water-finding ability joins the survey. The ability points to promising sources; engineers still test safety, quality and replenishment before anyone relies on a well.
-- The Crown recruits a male field archaeologist from outside Starhaven, who willingly accepts a permanent research post and chooses to settle in the kingdom. His remit extends beyond ruins: investigate hidden underground structures, sealed spaces, buried routes and relics, and document physical evidence connected to Void history. He works closely with Velkan, bringing field evidence and material context to Velkan's arcane research; he is not himself a mage. The preservation charter and funded investigations make Starhaven an attractive home for his work. His name and homeland remain open.
-- Goldwake is the survey's first major field project in 1060. The water-finder helps locate the buried watercourse; the archaeologist leads the careful excavation after the road crew opens the sealed gate. The restored aqueduct and farm supply must be protected from the gold mine. This is the start of his wider work investigating underground and Void-related discoveries across Starhaven.
+- The Crown recruits the proposed male field archaeologist Ronan Haldvik from the Frostspire Dominion for a permanent research post. He has mapped ice-sealed archive passages and buried underworks; his remit covers hidden underground structures, sealed spaces, buried routes, relics and physical evidence connected to Void history. He works closely with Velkan, bringing field evidence and material context to Velkan's arcane research; he is not himself a mage. A joint scholarly appointment and Starhaven's preservation charter give him reason to make the move. His work is not limited to this survey or one arc.
+- Goldwake can be one early field project in 1060, not the reason for creating or recruiting him. The water-finder helps locate the buried watercourse; Ronan leads the careful excavation after the road crew opens the sealed gate. The restored aqueduct and farm supply must be protected from the gold mine. His wider work continues across underground and Void-related discoveries in multiple regions.
 
 ### §0d. Every unit gets its moment (agreed 2026-11-24)
 
