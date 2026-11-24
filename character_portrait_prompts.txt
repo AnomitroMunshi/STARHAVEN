@@ -30,9 +30,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Qalvior Dalverin ===
 Save as: starhaven_chars_image/dummy-legend-qalvior-dalverin.png
-Kingdom: Karvossa | Role: Solo Legend — Melee Fighter | Race: Human | Age: 34
+Kingdom: Karvossa | Role: Solo Legend · Mounted Javelin Skirmisher | Race: Human | Age: 34
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qalvior Dalverin, a 34-year-old human fighter in a weathered cavalry coat, holding a curved saber and hooked side blade. Setting: a torchlit Karvossan stable yard at dusk.
+A 34-year-old human Karvossan mounted skirmisher in weathered maroon lamellar, holding a throwing javelin as a lean warhorse wheels across a dusty plain; curved saber sheathed, no magic.
 
 === Brondrith Thrennox ===
 Save as: starhaven_chars_image/dummy-legend-brondrith-thrennox.png
@@ -48,9 +48,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Edrithal Ulnovar ===
 Save as: starhaven_chars_image/dummy-legend-edrithal-ulnovar.png
-Kingdom: Stonemark Holds | Role: Solo Legend — Melee Fighter | Race: Dwarf | Age: 118
+Kingdom: Stonemark Holds | Role: Solo Legend · Siege Crossbow Marksman | Race: Dwarf | Age: 118
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and plate, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Edrithal Ulnovar, a 118-year-old dwarf fighter in battered plate, gripping a steel war-pick with a compact balanced stance. Setting: a stone training yard in the Stonemark Holds.
+A 118-year-old dwarf siege-crossbow specialist in battered plate, bracing a heavy windlass crossbow behind a compact pavise in a carved Stonemark stone range; focused, no magic.
 
 === Hurnevik Sythalen ===
 Save as: starhaven_chars_image/dummy-legend-hurnevik-sythalen.png
@@ -66,9 +66,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Osveth Edravane ===
 Save as: starhaven_chars_image/dummy-legend-osveth-edravane.png
-Kingdom: Frostspire Dominion | Role: Solo Legend — Melee Fighter | Race: Half-Orc | Age: 32
+Kingdom: Frostspire Dominion | Role: Solo Legend · Alpine Trapper | Race: Half-Orc | Age: 32
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, fur, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Osveth Edravane, a 32-year-old half-orc fighter in rugged climbing leathers and northern furs, wielding twin hooked axes. Setting: a rocky Frostspire trail; no magical effects.
+A 32-year-old half-orc alpine trapper in rugged climbing leathers and northern furs, carrying a compact hunting bow and coils of iron snare wire on a snowbound mountain pass; no ice magic.
 
 === Elarune Qalmaris ===
 Save as: starhaven_chars_image/dummy-legend-elarune-qalmaris.png
@@ -84,9 +84,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Othlira Thalovar ===
 Save as: starhaven_chars_image/dummy-legend-othlira-thalovar.png
-Kingdom: Elderwood Sovereignty | Role: Solo Legend — Melee Fighter | Race: Wood Elf | Age: 134
+Kingdom: Elderwood Sovereignty | Role: Solo Legend · Glaive-Dancer | Race: Wood Elf | Age: 134
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, bark-toned armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Othlira Thalovar, a 134-year-old wood elf fighter in light bark-toned armor, holding a long glaive in a precise countering stance. Setting: an old forest path.
+A 134-year-old wood elf glaive-dancer in light bark-toned armor, moving into a precise sweeping stance among old forest roots; elegant close-combat specialist, no spell effects.
 
 === Maezira Dalmecor ===
 Save as: starhaven_chars_image/dummy-legend-maezira-dalmecor.png
@@ -102,9 +102,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Halderyn Iverath ===
 Save as: starhaven_chars_image/dummy-legend-halderyn-iverath.png
-Kingdom: Velmora | Role: Solo Legend — Melee Fighter | Race: Half-Elf | Age: 42
+Kingdom: Velmora | Role: Solo Legend · Mirror Illusionist | Race: Half-Elf | Age: 42
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, fitted leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Halderyn Iverath, a 42-year-old half-elf duelist in charcoal leather and violet cloth, holding two slim sabres in a poised stance. Setting: a narrow Velmoran alley.
+A 42-year-old half-elf combat illusionist in fitted charcoal leather and violet cloth, holding a small mirrored prism focus as faint distorted reflections shimmer around them in a narrow Velmoran alley; subtle magic, no duplicate figures.
 
 === Brenovar Khorvessa ===
 Save as: starhaven_chars_image/dummy-legend-brenovar-khorvessa.png
@@ -120,9 +120,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Vantelor Veldrath ===
 Save as: starhaven_chars_image/dummy-legend-vantelor-veld-rath.png
-Kingdom: Ironmere | Role: Solo Legend — Melee Fighter | Race: Human | Age: 34
+Kingdom: Ironmere | Role: Solo Legend · Chain-Harpoon Specialist | Race: Human | Age: 34
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Vantelor Veldrath, a 34-year-old human fighter in river-campaign armor, wielding a long polearm with a distinctive hooked head. Setting: an Ironmere bridgehead.
+A 34-year-old human river fighter in practical Ironmere campaign armor, operating a compact chain-harpoon launcher with its hooked bolt stretched over a misty bridge; mechanical weapon, no magic.
 
 === Mardovan Dathorin ===
 Save as: starhaven_chars_image/dummy-legend-mardovan-dathorin.png
@@ -138,9 +138,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Qoradin Orelvane ===
 Save as: starhaven_chars_image/dummy-legend-qoradin-orel-vane.png
-Kingdom: Golden Coast Federation | Role: Solo Legend — Melee Fighter | Race: Human | Age: 30
+Kingdom: Golden Coast Federation | Role: Solo Legend · Arena Axe Champion | Race: Human | Age: 30
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and bronze guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qoradin Orelvane, a 30-year-old human arena fighter holding two compact axes in a ring-ready stance. Setting: a sand-floored Golden Coast arena.
+A 30-year-old human Golden Coast arena champion in layered leather and bronze guards, gripping a broad single-headed axe and round buckler in a sand-floored ring; battle-ready, no magic.
 
 === Dalmorin Vaskorin ===
 Save as: starhaven_chars_image/dummy-legend-dalmorin-vaskorin.png
@@ -156,9 +156,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Brelthar Qendriss ===
 Save as: starhaven_chars_image/dummy-legend-brelthar-qendriss.png
-Kingdom: Kessrin Horselords | Role: Solo Legend — Melee Fighter | Race: Human | Age: 28
+Kingdom: Kessrin Horselords | Role: Solo Legend · Mounted Bow Skirmisher | Race: Human | Age: 28
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Brelthar Qendriss, a 28-year-old human steppe fighter on foot with a long lance and braced leather armor. Setting: grassland with a mounted opponent approaching in the distance.
+A 28-year-old human Kessrin horse-archer in layered leather lamellar, turning in the saddle to draw a compact recurve bow across open grassland; quiver visible, no lance, no magic.
 
 === Eshvara Ulthavar ===
 Save as: starhaven_chars_image/dummy-legend-eshvara-ulthavar.png
@@ -174,9 +174,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Keldrissa Khorveth ===
 Save as: starhaven_chars_image/dummy-legend-keldrissa-khorveth.png
-Kingdom: Varathos | Role: Solo Legend — Melee Fighter | Race: Human | Age: 35
+Kingdom: Varathos | Role: Solo Legend · Giant-Slayer Bolt-Thrower | Race: Human | Age: 35
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, reinforced leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Keldrissa Khorveth, a 35-year-old human giant-hunter wielding a long leverage spear with a hooked crosspiece. Setting: a stony Varathos approach, a giant silhouette giving scale.
+A 35-year-old human Varathos giant-hunter in reinforced leather, bracing a shoulder-fired heavy bolt-thrower with a winch-drawn oversized bolt; distant giant silhouette gives scale, no magic.
 
 === Aurveth Velyssar ===
 Save as: starhaven_chars_image/dummy-legend-aurveth-velyssar.png
@@ -192,9 +192,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Rholan Othvara ===
 Save as: starhaven_chars_image/dummy-legend-rholan-othvara.png
-Kingdom: Ardenhal | Role: Solo Legend — Melee Fighter | Race: Dwarf | Age: 47
+Kingdom: Ardenhal | Role: Solo Legend · Drawbridge Duelist | Race: Dwarf | Age: 47
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, beard, chain and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Rholan Othvara, a 47-year-old dwarf fighter holding a short sword and hooked bridge tool on a raised stone drawbridge. Setting: an iron-grey Ardenhal fortress crossing.
+A 47-year-old dwarf bridge defender in chain and leather, holding a short sword and hooked bridge tool in a guarded stance on a raised stone drawbridge; iron-grey Ardenhal fortress, no magic.
 
 === Velmira Xandrel ===
 Save as: starhaven_chars_image/dummy-legend-velmira-xandrel.png
@@ -210,9 +210,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Otharil Jhalorin ===
 Save as: starhaven_chars_image/dummy-legend-otharil-jhalorin.png
-Kingdom: Skyward Isles | Role: Solo Legend — Melee Fighter | Race: Sea-Otter Beastkin | Age: 29
+Kingdom: Skyward Isles | Role: Solo Legend · Skyship Grapnel Raider | Race: Sea-Otter Beastkin | Age: 29
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic fur, skin, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Otharil Jhalorin, a 29-year-old sea-otter beastkin fighter in compact boarding leathers, carrying a tethered spear and climbing harness. Setting: a wind-battered skyship deck.
+A 29-year-old sea-otter beastkin in compact Skyward Isles boarding leathers, firing a tethered grapnel from a wrist launcher amid wind-tossed skyship rigging; climbing harness, no magic.
 
 === Calvora Qasverin ===
 Save as: starhaven_chars_image/dummy-legend-calvora-qasverin.png
@@ -228,9 +228,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Merenza Varnalis ===
 Save as: starhaven_chars_image/dummy-legend-merenza-varnalis.png
-Kingdom: Corthane | Role: Solo Legend — Melee Fighter | Race: Half-Elf | Age: 33
+Kingdom: Corthane | Role: Solo Legend · Unarmed Grappler | Race: Half-Elf | Age: 33
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, reinforced wraps and light armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Merenza Varnalis, a 33-year-old half-elf close-combat fighter in a grappling stance, hands wrapped and boots braced. Setting: a rain-slick Corthane deck.
+A 33-year-old half-elf close-combat grappler in reinforced wraps and light armor, hands raised to seize and unbalance an opponent on a rain-slick Corthane deck; no blades, no magic.
 
 === Velqara Marqessa ===
 Save as: starhaven_chars_image/dummy-legend-velqara-marqessa.png
@@ -246,9 +246,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Thornak Oskiran ===
 Save as: starhaven_chars_image/dummy-legend-thornak-oskiran.png
-Kingdom: Verdant Crown | Role: Solo Legend — Melee Fighter | Race: Orc | Age: 40
+Kingdom: Verdant Crown | Role: Solo Legend · War-Beast Rider | Race: Orc | Age: 40
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic orc skin, tusks, leather, green cloth and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thornak Oskiran, a 40-year-old orc fighter in light forest armor, wielding a hooked polearm. Setting: a dense green battlefield edge.
+A 40-year-old orc Verdant Crown war-beast rider in light forest armor, gripping a long boar spear atop an armored forest boar at a dense green battlefield edge; no magic.
 
 === Drelvian Qorandel ===
 Save as: starhaven_chars_image/dummy-legend-drelvian-qorandel.png
@@ -264,9 +264,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Othmarin Thamvyr ===
 Save as: starhaven_chars_image/dummy-legend-othmarin-thamvyr.png
-Kingdom: Irondeep Confederacy | Role: Solo Legend — Melee Fighter | Race: Dwarf | Age: 143
+Kingdom: Irondeep Confederacy | Role: Solo Legend · Rune-Bombardier | Race: Dwarf | Age: 143
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, beard, soot-dark leather and iron guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Othmarin Thamvyr, a 143-year-old dwarf fighter gripping a compact chain-hammer in a ready stance. Setting: an Irondeep forge floor.
+A 143-year-old dwarf Irondeep bombardier in soot-dark forge leathers and iron guards, loading rune-marked blasting charges into a compact hand mortar on a smoky forge floor; no spellcasting.
 
 === Zalvetha Neldorin ===
 Save as: starhaven_chars_image/dummy-legend-zalvetha-neldorin.png
@@ -282,9 +282,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Thalorin Selthorin ===
 Save as: starhaven_chars_image/dummy-legend-thalorin-selthorin.png
-Kingdom: Isle-States of Mirren | Role: Solo Legend — Melee Fighter | Race: Reefborn | Age: 37
+Kingdom: Isle-States of Mirren | Role: Solo Legend · Tidecaller Combat Caster | Race: Reefborn | Age: 37
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, subtle gill markings, deck leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thalorin Selthorin, a 37-year-old reefborn fighter holding paired short blades on a ship deck. Setting: a rain-dark Mirren harbor.
+A 37-year-old reefborn combat caster with subtle gill markings and weathered sea gear, shaping a forceful arc of water pressure over a rain-dark Mirren ship deck; focused expression, no weapon.
 
 === Evaris Ovarith ===
 Save as: starhaven_chars_image/dummy-legend-evaris-ovarith.png
@@ -300,9 +300,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Qasthorin Ysmarin ===
 Save as: starhaven_chars_image/dummy-legend-qasthorin-ysmarin.png
-Kingdom: Eldridge Kingdom | Role: Solo Legend — Melee Fighter | Race: Human | Age: 32
+Kingdom: Eldridge Kingdom | Role: Solo Legend · Warding Arcanist | Race: Human | Age: 32
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, close-fitted armor and polished steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qasthorin Ysmarin, a 32-year-old human duelist holding a narrow thrusting sword, armor designed for speed. Setting: an Eldridge stone courtyard.
+A 32-year-old human Eldridge warding arcanist in close-fitted armor, holding a round shield etched with protective sigils as a translucent ward catches incoming blows in a stone courtyard; no sword.
 
 === Ulvaris Qadoreth ===
 Save as: starhaven_chars_image/dummy-legend-ulvaris-qadoreth.png
@@ -318,9 +318,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Halvessa Jorvellan ===
 Save as: starhaven_chars_image/dummy-legend-halvessa-jorvellan.png
-Kingdom: Thalassian League | Role: Solo Legend — Melee Fighter | Race: Human | Age: 34
+Kingdom: Thalassian League | Role: Solo Legend · Harpoon Marksman | Race: Human | Age: 34
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, salt-worn leather and bronze guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Halvessa Jorvellan, a 34-year-old human deck fighter wielding a trident and weighted net. Setting: a Thalassian warship deck.
+A 34-year-old human Thalassian harpoon marksman in salt-worn leather and bronze guards, aiming a compact deck harpoon launcher from a warship rail toward open water; weighted line coiled at her belt.
 
 === Vokthar Varnethis ===
 Save as: starhaven_chars_image/dummy-legend-vokthar-varnethis.png
@@ -336,9 +336,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Qiraya Morqalen ===
 Save as: starhaven_chars_image/dummy-legend-qiraya-morqalen.png
-Kingdom: Karath Sultanate | Role: Solo Legend — Melee Fighter | Race: Human | Age: 30
+Kingdom: Karath Sultanate | Role: Solo Legend · Desert Alchemical Bombardier | Race: Human | Age: 30
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, light desert armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qiraya Morqalen, a 30-year-old human mounted fighter raising a curved saber while riding a lean battle horse. Setting: red Karath dunes.
+A 30-year-old human Karath alchemical bombardier in light desert armor, holding a clay firepot and several smoke vials against red dunes; practical field kit, no magic.
 
 === Morthane Kenzovar ===
 Save as: starhaven_chars_image/dummy-legend-morthane-kenzovar.png
@@ -354,9 +354,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Sorellin Zharveth ===
 Save as: starhaven_chars_image/dummy-legend-sorellin-zharveth.png
-Kingdom: Zharak Emirates | Role: Solo Legend — Melee Fighter | Race: Human | Age: 32
+Kingdom: Zharak Emirates | Role: Solo Legend · Venom-Dart Assassin | Race: Human | Age: 32
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, indigo leather and bronze guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Sorellin Zharveth, a 32-year-old human caravan fighter holding a long-handled cleaver in a protective stance. Setting: a Zharak trade convoy at dusk.
+A 32-year-old human Zharak covert fighter in indigo leather and bronze guards, sighting along a compact blowpipe with sealed dart vials at a shadowed caravan camp; living human, no undead traits or magic.
 
 === Delqara Tyravess ===
 Save as: starhaven_chars_image/dummy-legend-delqara-tyravess.png
@@ -372,9 +372,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Qenthari Morthalis ===
 Save as: starhaven_chars_image/dummy-legend-qenthari-morthalis.png
-Kingdom: Coral Archipelago | Role: Solo Legend — Melee Fighter | Race: Reefborn | Age: 28
+Kingdom: Coral Archipelago | Role: Solo Legend · Coral Shaper | Race: Reefborn | Age: 28
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, sea-leathers and curved steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qenthari Morthalis, a 28-year-old reefborn fighter wielding two curved hook-swords on a wet coral path. Setting: a rocky Coral Archipelago shore.
+A 28-year-old reefborn Coral Archipelago combat adept in flexible sea-leathers, raising jagged living coral ridges from a wet path to block an advance; subtle gill markings, mineral growth, no weapons.
 
 === Qelvara Ashmoren ===
 Save as: starhaven_chars_image/dummy-legend-qelvara-ashmoren.png
@@ -390,9 +390,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Ivranel Saqorin ===
 Save as: starhaven_chars_image/dummy-legend-ivranel-saqorin.png
-Kingdom: Sable Isles | Role: Solo Legend — Melee Fighter | Race: Half-Elf | Age: 30
+Kingdom: Sable Isles | Role: Solo Legend · Counter-Duelist | Race: Half-Elf | Age: 30
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic half-elf skin, hair, weathered dark leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Ivranel Saqorin, a 30-year-old living half-elf swordbreaker holding paired parrying blades. Setting: a Sable Isles sea wall; no undead features or magic.
+A 30-year-old living half-elf Sable Isles counter-duelist in weathered dark leathers, holding paired parrying blades in a measured defensive stance on a foggy quay; no undead features or magic.
 
 === Khaldrin Marnovar ===
 Save as: starhaven_chars_image/dummy-legend-khaldrin-marnovar.png
@@ -408,9 +408,9 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 
 === Rhyvessa Luraveth ===
 Save as: starhaven_chars_image/dummy-legend-rhyvessa-luraveth.png
-Kingdom: Highland Coalition | Role: Solo Legend — Melee Fighter | Race: Half-Orc | Age: 29
+Kingdom: Highland Coalition | Role: Solo Legend · Mountain Sling Specialist | Race: Half-Orc | Age: 29
 PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic half-orc skin, hair, rugged leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Rhyvessa Luraveth, a 29-year-old half-orc fighter wielding a hooked polearm in a low grappling stance. Setting: a rocky Highland Coalition training ground.
+A 29-year-old half-orc Highland Coalition slinger in rugged mountain leathers, whirling a leather sling loaded with a heavy stone on a windswept ridge; rugged field kit, no magic.
 
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
