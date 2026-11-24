@@ -1,10 +1,20 @@
 STARHAVEN — DOCUMENT & POSTER IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 0
+Still to generate: 1
 
 HOW TO USE
 - Save each image as PNG into  starhaven_docs_image/  with the exact file name after "Save as".
 - The image appears at the top of its card in Compendium → Documents; the full text stays readable under it.
 - If a word comes out misspelled, regenerate — the text is part of the picture.
+
+=== Nine Drawings · Saint Veyne Orphanage ===
+Save as: starhaven_docs_image/ninedrawingssaintveyneorphanage.jpg
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy still life, like a cinematic film still from a high-budget fantasy epic; desaturated, moody colour grade with warm candlelight; extremely detailed textures on paper, wax, wood and stone.
+Subject: nine children's crayon-and-charcoal drawings pinned in a row to a pale stone wall above the head of a sickbed, in a quiet healing-hall room at night. The drawings are on rough cheap paper, slightly curled, held with small iron pins, clearly drawn by children aged about six to twelve, in bright simple colours. From left to right: a stick-figure king with a huge sword; the king with a sword and a red dragon; a bridge with little lanterns floating under it; the king asleep under a blanket covered in stars; a man in a long black coat holding a needle; a big wobbly cake; a row of small figures holding hands with a tall figure in the middle; a big yellow sun; and the last one — a man lying down with a very large number of tiny figures standing all round him holding hands.
+Details: the edge of a bed with white linen and a dark blanket in the foreground; a candle on a small table; a few loose marigold petals on the table; the drawings lit warmly by the candle, everything else in soft shadow. The children's drawings may have simple scribbled shapes but no readable words, letters or numbers.
+Mood: tender, hopeful, a little heartbreaking.
+Avoid: any readable text, letters or numbers; logos, watermarks, borders, frames, UI; people's faces; modern objects; cartoon look for the room itself (only the drawings are childlike); oversaturated colour.
 

@@ -121,7 +121,7 @@ Chronicle ids are in `CHRONICLES` in `starhaven_wiki.html`.
 
 ## Open threads to remember
 - **Drevak** — killed in Ch6; the registry reports he returned; unconfirmed in Starhaven.
-- **The Huntmaster (Ossian)** — escaped wounded (1059), left a tally mark in blood: "he's started again".
+- **The Huntmaster (Ossian)** — lost his right hand to Rayden on the Lantern Bridge and escaped by sea (1059); left a tally mark in blood: "he's started again".
 - **Velmora** — the Battlemage Prince bought 30 blocks of Skyward Isles stormglass.
 - **The flying fortress(es)** — "remembering us"; possibly more than one.
 - **Succession** — Rayden has no heir; the Winter Council will start with it.
