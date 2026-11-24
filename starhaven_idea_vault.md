@@ -37,7 +37,7 @@ Least-used Starhaven units in the chronicles (by name count; some zeros are name
 | Arc | Where (map) | Spotlight units — each based where the unit wiki puts it |
 |---|---|---|
 | When the Thread Breaks | Greypeak frontier, north-west (near Stonemark) | The Gauntlet Army (HQ Greypeak Highland Approaches), Highland Coalition (Greypeak), The Undying Colors (embedded; banners as signals with Selka Rennet), Skywarden Corps (signal relay when the crystals die), The Runebreakers |
-| The Rout She Walked Out Of | a field army in retreat | The Dawnlancers (mobile with the 2nd), Ironveil Spear Corps, Apothecary Corps, Iron Road Corps |
+| The Rout She Walked Out Of | a northern field army retreat route toward Frosthold | The Dawnlancers (mobile with the 2nd), Ironveil Spear Corps, Apothecary Corps, Iron Road Corps; Bjorr Runebane and Bearkin arrive as unexpected allies |
 | Take It Alive | Sancthaven | Holy Knights (HQ the White Citadel, Sancthaven), Starhaven Beast Corps (Helna Ironmane), Void Hounds, The Web (Mira Vael) |
 | The Elderwood Arrives | the southern forests (flying fortress overhead) | Iron Talon Batteries (anti-aerial — against the fortress), Arcane Artillery Corps (Kai, Vaelmark), Silverleaf Corps (mobile with the 4th), Greenveil Defense Forces |
 | Zharak Crossing + Ironpass (night) | Karath / the dunes, and Ironpass in the east | The Dusk Corps, Windlance Cavalry (horse archers), The Ashrunners, The Warbreakers, Ironbreaker Mace Corps (HQ Forgehaven, next door to Ironpass), The Ironpack, Iron Reavers + Cinderguard (both Ashfield, on the dunes road) |
@@ -45,6 +45,8 @@ Least-used Starhaven units in the chronicles (by name count; some zeros are name
 | 1060 — Silver Isle War / Khulan's raid on the harvest | the Kessrin Marches (south-west) and the sea | **Ironmane Lancers (HQ Ironmane Fields, Greenveil — the nearest heavy cavalry to the Marches): their big moment, heavy lances against horse archers in the Long Grass**, Silver Swan Cavalry Corps (south depot), Tidebreaker Corps, Dawncliff garrison |
 
 Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
+
+**Bjorr Runebane's return [direction set 2026-11-24]:** *Worldsplitter* (1049) ends with Rayden and Bjorr parting; Bjorr's destination is not recorded. In *The Rout She Walked Out Of*, Bjorr and the Bearkin he has found across the continents arrive without warning when the northern field army's retreat is in danger of collapsing. They choose to fight beside Starhaven as independent allies, opening the way for the survivors to escape; Rayden did not summon them and had no prior knowledge they were coming. After the arc, Bjorr and the Bearkin settle in a new settlement in Frosthold's northern lands. Do not place Bjorr in *The Long Winter*.
 
 **Giant warriors of Varathos** (Varathos: 40,000 warriors under the Alliance of Varathos; twelve feet tall; only Starhaven has ever fought beside them — in the Varathos civil war). Nobody else in the world has seen a giant in battle, so their first fight on Starhaven's side should make the enemy lose its nerve:
 - **Zharak Crossing** — a giant warband walks out of the dunes at the Zharak Sand Cavalry; desert horses and camels have never seen anything twelve feet tall moving. Side by side with Zafir's sand-golems.

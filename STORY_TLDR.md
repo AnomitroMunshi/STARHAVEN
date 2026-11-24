@@ -4,7 +4,7 @@ Read this instead of the 9 chapter files (`Lores/chapters/Starhaven_Chapter1–9
 
 ## Ground rules
 
-- **Timeline.** Chapters run **Year 1031 → 1049** (Sundered Age). The wiki and its chronicles are set later, around **Year 1059**. Things only in the wiki are not "lore gaps"; they happened after the chapters.
+- **Timeline.** Chapters run **Year 1031 → 1049** (Sundered Age). The wiki and most chronicles are set later, around **Year 1059**; a few standalone legend records are set during the chapter years. Things only in the wiki are not automatically "lore gaps."
 - **Never rename a name that appears in a chapter** (exception made once by the user: Clea Vorn → Clea Halvorsen, Chapter 7).
 - **Names.** Vorn Ashcaller is the only person called Vorn; Aldric and Mira Vorn (Ironmere's king and queen) keep the surname. New names come from cultures worldwide, and no two people share a first name.
 - **Pronouns.** Check the card. Nyx Ravel is he/him. Renzo Fal is she/her. Wyld Frostmere is he/him. Senna Ash is female.
@@ -109,6 +109,8 @@ Read this instead of the 9 chapter files (`Lores/chapters/Starhaven_Chapter1–9
 5. **Drogar Stonefang** turns his rebuilt Stonefang Clan against Gorvak and **kills him in single combat on Day 4**; Kethra Blackfang and eleven clans kneel to Drogar.
 6. Day 7: Rayden rides out himself; the **Highland Coalition** becomes Starhaven's ally — "something that might one day become a kind of family."
 
+**Parallel 1049 chronicle — "Worldsplitter":** Bjorr Runebane meets Rayden on a snowbound Coldmarch pass, where Rayden stands between forty refugee families and a pack of frost-wolves. Bjorr helps drive the wolves off, but does not join Rayden. They bid farewell; the chronicle does not record where Bjorr goes. Filed as a Solo Legend Record in the wiki Chronicles; this meeting is not a scene in Chapter 9.
+
 ---
 
 ## After the chapters (wiki chronicles, Years 1050–1059) — the big ones
@@ -117,7 +119,7 @@ Chronicle ids are in `CHRONICLES` in `starhaven_wiki.html`.
 - **1053 — Forty Sails** (siege of the Saltreach Causeway); The Unicorn in the Dark (House Silverhorn's secret compact).
 - **1055 — The Siege of Vael'Dorum.** **1057 — The Twilight War** (Karvossa; Ilyana Sanguinar). **1057–58 — The Long Winter** (Frosthold; Elyndra breaks her Heartseed). **1058 — The War of the Long Gallop.**
 - **1059:** The Silent Games; **The Tower of Twenty** (Nhamo, SS+; Saltwind Five lose three); **The Eleventh Letter** (Tharos and the Skyward Isles; Velmora bought stormglass); **The Crown's Shadow** (Lantern Night: King's End and the Huntmaster Ossian nearly kill Rayden; nine days without the king; traitor Vice-Minister Pieter Vandermeer awaits trial); **The Rookie Season** (`the-rookie-season`, autumn 1059 short story: after the Tower, Rayden makes his field officers clear a dungeon as F-rank rookies under Guild rules — Doran Ashe, Clea Halvorsen, Brek Tane, Sever Aldric and Iva Renn follow Pip Underbough of the Canal Rats and Chinonso Ebere into the Drowned Fort; storm surge two hours early; Brek holds a corridor against a Cartshell; porter Hob Fennick holds the porter line with Iva's knife; "Ten in. Ten out."; Rayden later queues as a rookie himself); **The Shadow Court** (`the-shadow-court`, winter 1059: Vizier Nessa Korrath of Zharak used honest spy Tariq Sefan as a lamp while 99 agents, "the Hundred" led by Kaan Torul, came in on Open Visas; the Dome Gate's Left-Luggage Hall burned on the Night of Open Doors; Dome Gate shut 20 days, first time ever; Greymark shapeshifter **Faceless** posed as her spymaster Marwan Qadir; 44 taken, ~50 got out, Kaan Torul escaped; Shadow Court translator **Kaveri †** executed in Zharak; Tariq turned and killed a man; Serell's Winter Council question: "Is the open door worth one of my women?").
-- Planned next, in order: When the Thread Breaks → The Rout She Walked Out Of → Take It Alive → The Elderwood Arrives → Zharak Crossing / Ironpass → **The Winter Council** (end of 1059) → The Silver Isle War (1060). See `starhaven_idea_vault.md` §0.
+- Planned next, in order: When the Thread Breaks → **The Rout She Walked Out Of** (Bjorr returns with Bearkin gathered across the continents and finally fights beside Rayden; after the arc, they settle in Frosthold) → Take It Alive → The Elderwood Arrives → Zharak Crossing / Ironpass → **The Winter Council** (end of 1059) → The Silver Isle War (1060). See `starhaven_idea_vault.md` §0.
 
 ## Open threads to remember
 - **Drevak** — killed in Ch6; the registry reports he returned; unconfirmed in Starhaven.
