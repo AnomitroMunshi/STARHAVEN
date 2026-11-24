@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 64   (finished so far: 436)
+Still to generate: 130   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -11,6 +11,406 @@ HOW TO USE
 
 HOUSE STYLE (matches existing portraits such as kael.png, veyra.png, kethraBlackfang.png)
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo.
+
+########################################################################
+## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (66)
+########################################################################
+
+=== Orevessa Vhalcenne ===
+Save as: starhaven_chars_image/dummy-legend-orevessa-vhalcenne.png
+Kingdom: Karvossa | Role: Political Lord | Race: Human | Age: 46
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, cloth and metal, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Orevessa Vhalcenne, a 46-year-old human woman in a black and burgundy court coat with an embossed collar and silver signet chain. Setting: a candlelit Karvossan hall; composed, authoritative pose, no crown.
+
+=== Thyrandel Qorvashi ===
+Save as: starhaven_chars_image/dummy-legend-thyrandel-qorvashi.png
+Kingdom: Karvossa | Role: Military Commander | Race: Human | Age: 37
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, cloth and armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thyrandel Qorvashi, a 37-year-old human cavalry commander in dark maroon lamellar armor, carrying a hooked lance. Setting: a mounted guard assembling on a misty Karvossan plain.
+
+=== Qalvior Dalverin ===
+Save as: starhaven_chars_image/dummy-legend-qalvior-dalverin.png
+Kingdom: Karvossa | Role: Solo Legend — Melee Fighter | Race: Human | Age: 34
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qalvior Dalverin, a 34-year-old human fighter in a weathered cavalry coat, holding a curved saber and hooked side blade. Setting: a torchlit Karvossan stable yard at dusk.
+
+=== Brondrith Thrennox ===
+Save as: starhaven_chars_image/dummy-legend-brondrith-thrennox.png
+Kingdom: Stonemark Holds | Role: Political Lord | Race: Dwarf | Age: 151
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, beard, woven cloth and metal, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Brondrith Thrennox, a 151-year-old dwarf lord in charcoal formal mail, bronze clasps and a heavy woven mantle. Setting: a carved Stonemark mountain hall.
+
+=== Velskar Keldrane ===
+Save as: starhaven_chars_image/dummy-legend-velskar-keldrane.png
+Kingdom: Stonemark Holds | Role: Military Commander | Race: Dwarf | Age: 96
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, beard, leather and iron, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Velskar Keldrane, a 96-year-old dwarf sapper commander in practical iron scale armor, carrying a compact war hammer and rolled siege plans. Setting: a Stonemark field workshop.
+
+=== Edrithal Ulnovar ===
+Save as: starhaven_chars_image/dummy-legend-edrithal-ulnovar.png
+Kingdom: Stonemark Holds | Role: Solo Legend — Melee Fighter | Race: Dwarf | Age: 118
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and plate, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Edrithal Ulnovar, a 118-year-old dwarf fighter in battered plate, gripping a steel war-pick with a compact balanced stance. Setting: a stone training yard in the Stonemark Holds.
+
+=== Hurnevik Sythalen ===
+Save as: starhaven_chars_image/dummy-legend-hurnevik-sythalen.png
+Kingdom: Frostspire Dominion | Role: Political Lord | Race: Human | Age: 54
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, fur and cloth, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Hurnevik Sythalen, a 54-year-old human lord in a charcoal winter mantle over dignified northern court clothes. Setting: a stone hall in Frostspire; no magical effects.
+
+=== Drazmera Mavroth ===
+Save as: starhaven_chars_image/dummy-legend-drazmera-mavroth.png
+Kingdom: Frostspire Dominion | Role: Military Commander | Race: Human | Age: 39
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, fur, wool and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Drazmera Mavroth, a 39-year-old human commander in layered mountain campaign armor, fur-lined mantle and practical helmet. Setting: a snowy Frostspire pass with infantry behind; no ice magic.
+
+=== Osveth Edravane ===
+Save as: starhaven_chars_image/dummy-legend-osveth-edravane.png
+Kingdom: Frostspire Dominion | Role: Solo Legend — Melee Fighter | Race: Half-Orc | Age: 32
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, fur, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Osveth Edravane, a 32-year-old half-orc fighter in rugged climbing leathers and northern furs, wielding twin hooked axes. Setting: a rocky Frostspire trail; no magical effects.
+
+=== Elarune Qalmaris ===
+Save as: starhaven_chars_image/dummy-legend-elarune-qalmaris.png
+Kingdom: Elderwood Sovereignty | Role: Political Lord | Race: Moon Elf | Age: 226
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, silver hair, woven cloth and jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Elarune Qalmaris, a 226-year-old moon elf ruler in layered deep-green robes, silverwood jewelry and a leaf-patterned mantle. Setting: an ancient Elderwood court beneath towering trees.
+
+=== Vessari Veydrith ===
+Save as: starhaven_chars_image/dummy-legend-vessari-veydrith.png
+Kingdom: Elderwood Sovereignty | Role: Military Commander | Race: Wood Elf | Age: 91
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leaf-toned mail and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Vessari Veydrith, a 91-year-old wood elf commander in muted green field armor, carrying a long spear before an orderly forest infantry formation. Setting: an Elderwood muster ground.
+
+=== Othlira Thalovar ===
+Save as: starhaven_chars_image/dummy-legend-othlira-thalovar.png
+Kingdom: Elderwood Sovereignty | Role: Solo Legend — Melee Fighter | Race: Wood Elf | Age: 134
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, bark-toned armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Othlira Thalovar, a 134-year-old wood elf fighter in light bark-toned armor, holding a long glaive in a precise countering stance. Setting: an old forest path.
+
+=== Maezira Dalmecor ===
+Save as: starhaven_chars_image/dummy-legend-maezira-dalmecor.png
+Kingdom: Velmora | Role: Political Lord | Race: Human | Age: 48
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, velvet and bronze embroidery, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Maezira Dalmecor, a 48-year-old human ruler in plum velvet court dress, bronze embroidery and a high collar. Setting: a candlelit Velmoran principality hall.
+
+=== Qorveth Zandryll ===
+Save as: starhaven_chars_image/dummy-legend-qorveth-zandryll.png
+Kingdom: Velmora | Role: Military Commander | Race: Human | Age: 36
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, cloth and steel armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qorveth Zandryll, a 36-year-old human commander in charcoal-and-blue infantry armor, directing a disciplined pike formation. Setting: a rain-dark Velmoran city street.
+
+=== Halderyn Iverath ===
+Save as: starhaven_chars_image/dummy-legend-halderyn-iverath.png
+Kingdom: Velmora | Role: Solo Legend — Melee Fighter | Race: Half-Elf | Age: 42
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, fitted leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Halderyn Iverath, a 42-year-old half-elf duelist in charcoal leather and violet cloth, holding two slim sabres in a poised stance. Setting: a narrow Velmoran alley.
+
+=== Brenovar Khorvessa ===
+Save as: starhaven_chars_image/dummy-legend-brenovar-khorvessa.png
+Kingdom: Ironmere | Role: Political Lord | Race: Human | Age: 59
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, iron-blue cloth and gold trim, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Brenovar Khorvessa, a 59-year-old human lord in a dark iron-blue coat with restrained gold trim. Setting: a river-facing Ironmere fortress chamber.
+
+=== Ysmerai Ashquorin ===
+Save as: starhaven_chars_image/dummy-legend-ysmerai-ashquorin.png
+Kingdom: Ironmere | Role: Military Commander | Race: Dwarf | Age: 88
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, beard, soot-dark armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Ysmerai Ashquorin, an 88-year-old dwarf commander in heavy armor, carrying a broad-headed axe before a miners militia. Setting: an Ironmere foundry muster yard.
+
+=== Vantelor Veldrath ===
+Save as: starhaven_chars_image/dummy-legend-vantelor-veld-rath.png
+Kingdom: Ironmere | Role: Solo Legend — Melee Fighter | Race: Human | Age: 34
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Vantelor Veldrath, a 34-year-old human fighter in river-campaign armor, wielding a long polearm with a distinctive hooked head. Setting: an Ironmere bridgehead.
+
+=== Mardovan Dathorin ===
+Save as: starhaven_chars_image/dummy-legend-mardovan-dathorin.png
+Kingdom: Golden Coast Federation | Role: Political Lord | Race: Human | Age: 56
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, sand-colored cloth and gold jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Mardovan Dathorin, a 56-year-old human port lord in a sand-colored coat, restrained gold sashes and weathered sea boots. Setting: a Golden Coast harbor chamber.
+
+=== Teshara Zynthera ===
+Save as: starhaven_chars_image/dummy-legend-teshara-zynthera.png
+Kingdom: Golden Coast Federation | Role: Military Commander | Race: Human | Age: 41
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, navy cloth and rust-red armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Teshara Zynthera, a 41-year-old human cohort commander in field armor, holding a short saber before ranks of pikes. Setting: a Golden Coast training square.
+
+=== Qoradin Orelvane ===
+Save as: starhaven_chars_image/dummy-legend-qoradin-orel-vane.png
+Kingdom: Golden Coast Federation | Role: Solo Legend — Melee Fighter | Race: Human | Age: 30
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and bronze guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qoradin Orelvane, a 30-year-old human arena fighter holding two compact axes in a ring-ready stance. Setting: a sand-floored Golden Coast arena.
+
+=== Dalmorin Vaskorin ===
+Save as: starhaven_chars_image/dummy-legend-dalmorin-vaskorin.png
+Kingdom: Kessrin Horselords | Role: Political Lord | Race: Human | Age: 54
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, embroidered riding cloth and fur, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Dalmorin Vaskorin, a 54-year-old human steppe lord in a dark embroidered riding coat, fur-edged shoulders and practical boots. Setting: open Kessrin grasslands beneath a broad sky.
+
+=== Uthvera Maerthal ===
+Save as: starhaven_chars_image/dummy-legend-uthvera-maerthal.png
+Kingdom: Kessrin Horselords | Role: Military Commander | Race: Human | Age: 39
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather lamellar and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Uthvera Maerthal, a 39-year-old human mounted commander in layered lamellar, holding a lance beside steppe cavalry. Setting: the Kessrin training grasslands.
+
+=== Brelthar Qendriss ===
+Save as: starhaven_chars_image/dummy-legend-brelthar-qendriss.png
+Kingdom: Kessrin Horselords | Role: Solo Legend — Melee Fighter | Race: Human | Age: 28
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Brelthar Qendriss, a 28-year-old human steppe fighter on foot with a long lance and braced leather armor. Setting: grassland with a mounted opponent approaching in the distance.
+
+=== Eshvara Ulthavar ===
+Save as: starhaven_chars_image/dummy-legend-eshvara-ulthavar.png
+Kingdom: Varathos | Role: Political Lord | Race: Giant | Age: 376
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic giant skin, hair, carved stone details and heavy cloth, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Eshvara Ulthavar, a 376-year-old giant ruler in dignified slate robes over carved stone-scale armor. Setting: a monumental Varathos sea-cliff hall, with a human-sized doorway for scale.
+
+=== Thamorin Rethvane ===
+Save as: starhaven_chars_image/dummy-legend-thamorin-rethvane.png
+Kingdom: Varathos | Role: Military Commander | Race: Giant | Age: 211
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic giant skin, hair, hide and iron plates, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thamorin Rethvane, a 211-year-old giant commander carrying a long battlefield polearm before giant infantry ranks. Setting: a Varathos coastal muster field, human soldiers small in the distance.
+
+=== Keldrissa Khorveth ===
+Save as: starhaven_chars_image/dummy-legend-keldrissa-khorveth.png
+Kingdom: Varathos | Role: Solo Legend — Melee Fighter | Race: Human | Age: 35
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, reinforced leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Keldrissa Khorveth, a 35-year-old human giant-hunter wielding a long leverage spear with a hooked crosspiece. Setting: a stony Varathos approach, a giant silhouette giving scale.
+
+=== Aurveth Velyssar ===
+Save as: starhaven_chars_image/dummy-legend-aurveth-velyssar.png
+Kingdom: Ardenhal | Role: Political Lord | Race: Human | Age: 62
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, grey hair, formal wool and iron insignia, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Aurveth Velyssar, a 62-year-old human lord in a severe grey formal coat with modest steel insignia. Setting: a weathered Ardenhal fortress chamber.
+
+=== Kysendra Taldren ===
+Save as: starhaven_chars_image/dummy-legend-kysendra-taldren.png
+Kingdom: Ardenhal | Role: Military Commander | Race: Human | Age: 38
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, iron plate and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Kysendra Taldren, a 38-year-old human infantry commander in dark plate, holding a pollaxe before a heavy infantry line. Setting: an Ardenhal fortress yard.
+
+=== Rholan Othvara ===
+Save as: starhaven_chars_image/dummy-legend-rholan-othvara.png
+Kingdom: Ardenhal | Role: Solo Legend — Melee Fighter | Race: Dwarf | Age: 47
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, beard, chain and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Rholan Othvara, a 47-year-old dwarf fighter holding a short sword and hooked bridge tool on a raised stone drawbridge. Setting: an iron-grey Ardenhal fortress crossing.
+
+=== Velmira Xandrel ===
+Save as: starhaven_chars_image/dummy-legend-velmira-xandrel.png
+Kingdom: Skyward Isles | Role: Political Lord | Race: Frigatebird Beastkin | Age: 47
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic feathering, skin, sailcloth and bronze, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Velmira Xandrel, a 47-year-old frigatebird beastkin ruler with a dark feathered crest and keen eyes, wearing sea-green formal sailcloth and bronze ornaments. Setting: a high island harbor.
+
+=== Jorveth Braveth ===
+Save as: starhaven_chars_image/dummy-legend-jorveth-braveth.png
+Kingdom: Skyward Isles | Role: Military Commander | Race: Osprey Beastkin | Age: 40
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic feathers, skin, flight leathers and metal, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Jorveth Braveth, a 40-year-old osprey beastkin commander with broad wings, light flight armor and a long spear. Setting: skyship rigging above the Skyward Isles.
+
+=== Otharil Jhalorin ===
+Save as: starhaven_chars_image/dummy-legend-otharil-jhalorin.png
+Kingdom: Skyward Isles | Role: Solo Legend — Melee Fighter | Race: Sea-Otter Beastkin | Age: 29
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic fur, skin, leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Otharil Jhalorin, a 29-year-old sea-otter beastkin fighter in compact boarding leathers, carrying a tethered spear and climbing harness. Setting: a wind-battered skyship deck.
+
+=== Calvora Qasverin ===
+Save as: starhaven_chars_image/dummy-legend-calvora-qasverin.png
+Kingdom: Corthane | Role: Political Lord | Race: Human | Age: 50
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, navy wool and silver trim, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Calvora Qasverin, a 50-year-old human sea-lord in a deep navy coat with muted wine trim and a silver wave clasp. Setting: a Corthane harbor overlook with warships beyond.
+
+=== Nyrakil Drometh ===
+Save as: starhaven_chars_image/dummy-legend-nyrakil-drometh.png
+Kingdom: Corthane | Role: Military Commander | Race: Human | Age: 42
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, dark boarding armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nyrakil Drometh, a 42-year-old human marine commander with a cutlass and reinforced boarding coat. Setting: a Corthane ship-to-shore assault landing.
+
+=== Merenza Varnalis ===
+Save as: starhaven_chars_image/dummy-legend-merenza-varnalis.png
+Kingdom: Corthane | Role: Solo Legend — Melee Fighter | Race: Half-Elf | Age: 33
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, reinforced wraps and light armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Merenza Varnalis, a 33-year-old half-elf close-combat fighter in a grappling stance, hands wrapped and boots braced. Setting: a rain-slick Corthane deck.
+
+=== Velqara Marqessa ===
+Save as: starhaven_chars_image/dummy-legend-velqara-marqessa.png
+Kingdom: Verdant Crown | Role: Political Lord | Race: Human | Age: 57
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, green cloth and gold embroidery, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Velqara Marqessa, a 57-year-old human ruler in deep-green and muted-gold court clothes, leaf embroidery and a small orchard-blossom pin. Setting: a prosperous Verdant Crown estate.
+
+=== Athrelis Thyravell ===
+Save as: starhaven_chars_image/dummy-legend-athrelis-thyravell.png
+Kingdom: Verdant Crown | Role: Military Commander | Race: Wood Elf | Age: 79
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, fitted field armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Athrelis Thyravell, a 79-year-old wood elf commander with a spear and command baton, wearing green-grey armor. Setting: a Verdant Crown field regiment muster.
+
+=== Thornak Oskiran ===
+Save as: starhaven_chars_image/dummy-legend-thornak-oskiran.png
+Kingdom: Verdant Crown | Role: Solo Legend — Melee Fighter | Race: Orc | Age: 40
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic orc skin, tusks, leather, green cloth and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thornak Oskiran, a 40-year-old orc fighter in light forest armor, wielding a hooked polearm. Setting: a dense green battlefield edge.
+
+=== Drelvian Qorandel ===
+Save as: starhaven_chars_image/dummy-legend-drelvian-qorandel.png
+Kingdom: Irondeep Confederacy | Role: Political Lord | Race: Dwarf | Age: 193
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, beard, dark bronze and volcanic-glass ornaments, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Drelvian Qorandel, a 193-year-old dwarf representative in dark bronze formal armor with a volcanic-glass clasp. Setting: a highland forge hall in the Irondeep Confederacy.
+
+=== Nothessa Vessalon ===
+Save as: starhaven_chars_image/dummy-legend-nothessa-vessalon.png
+Kingdom: Irondeep Confederacy | Role: Military Commander | Race: Dwarf | Age: 106
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, hair, plate and miner equipment, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nothessa Vessalon, a 106-year-old dwarf tunnel commander in practical plate, carrying a hooded miner lamp and short spear. Setting: a fortified Irondeep tunnel entrance.
+
+=== Othmarin Thamvyr ===
+Save as: starhaven_chars_image/dummy-legend-othmarin-thamvyr.png
+Kingdom: Irondeep Confederacy | Role: Solo Legend — Melee Fighter | Race: Dwarf | Age: 143
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic dwarf skin, beard, soot-dark leather and iron guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Othmarin Thamvyr, a 143-year-old dwarf fighter gripping a compact chain-hammer in a ready stance. Setting: an Irondeep forge floor.
+
+=== Zalvetha Neldorin ===
+Save as: starhaven_chars_image/dummy-legend-zalvetha-neldorin.png
+Kingdom: Isle-States of Mirren | Role: Political Lord | Race: Human | Age: 52
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, blue sea-silk and shell jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Zalvetha Neldorin, a 52-year-old human island ruler in layered blue sea-silk, a shell clasp and slate-grey mantle. Setting: a Mirren island harbor.
+
+=== Keryndal Korvessa ===
+Save as: starhaven_chars_image/dummy-legend-keryndal-korvessa.png
+Kingdom: Isle-States of Mirren | Role: Military Commander | Race: Sea Elf | Age: 119
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic sea-elf skin, hair, weathered coastal armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Keryndal Korvessa, a 119-year-old sea elf commander carrying a long spear at the head of island defenders. Setting: a fortified Mirren shoreline.
+
+=== Thalorin Selthorin ===
+Save as: starhaven_chars_image/dummy-legend-thalorin-selthorin.png
+Kingdom: Isle-States of Mirren | Role: Solo Legend — Melee Fighter | Race: Reefborn | Age: 37
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, subtle gill markings, deck leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Thalorin Selthorin, a 37-year-old reefborn fighter holding paired short blades on a ship deck. Setting: a rain-dark Mirren harbor.
+
+=== Evaris Ovarith ===
+Save as: starhaven_chars_image/dummy-legend-evaris-ovarith.png
+Kingdom: Eldridge Kingdom | Role: Political Lord | Race: Human | Age: 63
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, grey hair, olive cloth and gold details, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Evaris Ovarith, a 63-year-old human lord in olive-and-gold formal robes, wearing a signet ring. Setting: a sunlit stone court in the Eldridge Kingdom.
+
+=== Nymora Dralvessa ===
+Save as: starhaven_chars_image/dummy-legend-nymora-dralvessa.png
+Kingdom: Eldridge Kingdom | Role: Military Commander | Race: Half-Elf | Age: 45
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic half-elf skin, hair, uniform and field armor, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nymora Dralvessa, a 45-year-old half-elf commander holding a regiment standard beside an orderly infantry line. Setting: an Eldridge training field.
+
+=== Qasthorin Ysmarin ===
+Save as: starhaven_chars_image/dummy-legend-qasthorin-ysmarin.png
+Kingdom: Eldridge Kingdom | Role: Solo Legend — Melee Fighter | Race: Human | Age: 32
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, close-fitted armor and polished steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qasthorin Ysmarin, a 32-year-old human duelist holding a narrow thrusting sword, armor designed for speed. Setting: an Eldridge stone courtyard.
+
+=== Ulvaris Qadoreth ===
+Save as: starhaven_chars_image/dummy-legend-ulvaris-qadoreth.png
+Kingdom: Thalassian League | Role: Political Lord | Race: Human | Age: 58
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, deep-blue cloth and silver embroidery, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Ulvaris Qadoreth, a 58-year-old human league ruler in maritime court robes with subtle silver wave embroidery. Setting: a Thalassian harbor council chamber.
+
+=== Zenethra Kethrane ===
+Save as: starhaven_chars_image/dummy-legend-zenethra-kethrane.png
+Kingdom: Thalassian League | Role: Military Commander | Race: Sea Elf | Age: 111
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic sea-elf skin, hair, amphibious scale armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Zenethra Kethrane, a 111-year-old sea elf commander holding a long spear at the head of amphibious marines. Setting: a Thalassian shore landing.
+
+=== Halvessa Jorvellan ===
+Save as: starhaven_chars_image/dummy-legend-halvessa-jorvellan.png
+Kingdom: Thalassian League | Role: Solo Legend — Melee Fighter | Race: Human | Age: 34
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, salt-worn leather and bronze guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Halvessa Jorvellan, a 34-year-old human deck fighter wielding a trident and weighted net. Setting: a Thalassian warship deck.
+
+=== Vokthar Varnethis ===
+Save as: starhaven_chars_image/dummy-legend-vokthar-varnethis.png
+Kingdom: Karath Sultanate | Role: Political Lord | Race: Human | Age: 61
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, sandstone robes and bronze details, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Vokthar Varnethis, a 61-year-old human sultanate lord in sandstone robes, bronze lamellar accents and a dark wrapped headcloth. Setting: an arched Karath court.
+
+=== Nesvarin Edramar ===
+Save as: starhaven_chars_image/dummy-legend-nesvarin-edramar.png
+Kingdom: Karath Sultanate | Role: Military Commander | Race: Human | Age: 43
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, red-brown lamellar and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Nesvarin Edramar, a 43-year-old human desert cavalry commander carrying a lance beside mounted patrols. Setting: a sunlit Karath desert road.
+
+=== Qiraya Morqalen ===
+Save as: starhaven_chars_image/dummy-legend-qiraya-morqalen.png
+Kingdom: Karath Sultanate | Role: Solo Legend — Melee Fighter | Race: Human | Age: 30
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, light desert armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qiraya Morqalen, a 30-year-old human mounted fighter raising a curved saber while riding a lean battle horse. Setting: red Karath dunes.
+
+=== Morthane Kenzovar ===
+Save as: starhaven_chars_image/dummy-legend-morthane-kenzovar.png
+Kingdom: Zharak Emirates | Role: Political Lord | Race: Human | Age: 56
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, dark hair, indigo robes and bronze jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Morthane Kenzovar, a 56-year-old human emir in indigo and sand-colored formal robes with a layered veil and bronze clasp. Setting: an oasis courtyard in Zharak.
+
+=== Kharveth Aelvarin ===
+Save as: starhaven_chars_image/dummy-legend-kharveth-aelvarin.png
+Kingdom: Zharak Emirates | Role: Military Commander | Race: Human | Age: 45
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, green-bronze armor and leather, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Kharveth Aelvarin, a 45-year-old human commander leading a guarded line of pack animals in caravan armor. Setting: a rocky Zharak desert road.
+
+=== Sorellin Zharveth ===
+Save as: starhaven_chars_image/dummy-legend-sorellin-zharveth.png
+Kingdom: Zharak Emirates | Role: Solo Legend — Melee Fighter | Race: Human | Age: 32
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic skin, hair, indigo leather and bronze guards, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Sorellin Zharveth, a 32-year-old human caravan fighter holding a long-handled cleaver in a protective stance. Setting: a Zharak trade convoy at dusk.
+
+=== Delqara Tyravess ===
+Save as: starhaven_chars_image/dummy-legend-delqara-tyravess.png
+Kingdom: Coral Archipelago | Role: Political Lord | Race: Reefborn | Age: 47
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, subtle gill markings, coral-patterned cloth and shell jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Delqara Tyravess, a 47-year-old reefborn island ruler in formal scale cloth and shell ornaments. Setting: a Coral Archipelago council terrace above a turquoise reef.
+
+=== Zenveth Kharvess ===
+Save as: starhaven_chars_image/dummy-legend-zenveth-kharvess.png
+Kingdom: Coral Archipelago | Role: Military Commander | Race: Reefborn | Age: 39
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, scale armor, leather and bronze, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Zenveth Kharvess, a 39-year-old reefborn coastal commander with a signal drum and teal scale armor. Setting: island defenders and outrigger ships at the Coral Archipelago shore.
+
+=== Qenthari Morthalis ===
+Save as: starhaven_chars_image/dummy-legend-qenthari-morthalis.png
+Kingdom: Coral Archipelago | Role: Solo Legend — Melee Fighter | Race: Reefborn | Age: 28
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic reefborn skin, sea-leathers and curved steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qenthari Morthalis, a 28-year-old reefborn fighter wielding two curved hook-swords on a wet coral path. Setting: a rocky Coral Archipelago shore.
+
+=== Qelvara Ashmoren ===
+Save as: starhaven_chars_image/dummy-legend-qelvara-ashmoren.png
+Kingdom: Sable Isles | Role: Political Lord | Race: Human | Age: 53
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic human skin, dark hair, slate maritime cloth and silver jewelry, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Qelvara Ashmoren, a 53-year-old living human island ruler in dark slate finery, a black wool mantle and silver sea-knot clasp. Setting: a Sable Isles harbor; no undead features.
+
+=== Heshvara Tormedil ===
+Save as: starhaven_chars_image/dummy-legend-heshvara-tormedil.png
+Kingdom: Sable Isles | Role: Military Commander | Race: Human | Age: 46
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic human skin, dark hair, black-blue marine armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Heshvara Tormedil, a 46-year-old living human anti-raider commander with a cutlass and reinforced coat. Setting: a foggy Sable Isles quay; no undead features.
+
+=== Ivranel Saqorin ===
+Save as: starhaven_chars_image/dummy-legend-ivranel-saqorin.png
+Kingdom: Sable Isles | Role: Solo Legend — Melee Fighter | Race: Half-Elf | Age: 30
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic half-elf skin, hair, weathered dark leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Ivranel Saqorin, a 30-year-old living half-elf swordbreaker holding paired parrying blades. Setting: a Sable Isles sea wall; no undead features or magic.
+
+=== Khaldrin Marnovar ===
+Save as: starhaven_chars_image/dummy-legend-khaldrin-marnovar.png
+Kingdom: Highland Coalition | Role: Political Lord | Race: Orc | Age: 52
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic orc skin, tusks, fur and carved bone, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Khaldrin Marnovar, a 52-year-old orc clan lord in a weathered fur mantle and carved bone clan badges. Setting: a highland coalition meeting ground.
+
+=== Avenor Qethvane ===
+Save as: starhaven_chars_image/dummy-legend-avenor-qethvane.png
+Kingdom: Highland Coalition | Role: Military Commander | Race: Goblin | Age: 39
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic goblin skin, sharp features, layered highland armor and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Avenor Qethvane, a 39-year-old goblin mountain commander carrying a short spear before a mixed infantry patrol. Setting: a rocky Highland Coalition pass.
+
+=== Rhyvessa Luraveth ===
+Save as: starhaven_chars_image/dummy-legend-rhyvessa-luraveth.png
+Kingdom: Highland Coalition | Role: Solo Legend — Melee Fighter | Race: Half-Orc | Age: 29
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, low-key dramatic lighting, detailed realistic half-orc skin, hair, rugged leather and steel, sharp focus, softly blurred background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body, centered. No text, watermark, border or logo. Subject: Rhyvessa Luraveth, a 29-year-old half-orc fighter wielding a hooked polearm in a low grappling stance. Setting: a rocky Highland Coalition training ground.
 
 ########################################################################
 ## NEW CHARACTER CARDS  (25)
