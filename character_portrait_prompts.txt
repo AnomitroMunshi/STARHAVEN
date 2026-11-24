@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 45   (finished so far: 436)
+Still to generate: 48   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -278,3 +278,24 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 ## THE SHADOW COURT  (5)
 ########################################################################
 
+########################################################################
+## GIANTS OF VARATHOS  (3)
+########################################################################
+
+=== Varathos Giant Warriors ===
+Save as: unitImages/varathos-giant-warriors.png
+Type: Giant Line Infantry · Alliance of Varathos
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a twelve-foot giant warrior of Varathos — weathered grey-brown skin, long braided dark hair, a calm heavy face — in a coat of carved stone scales sewn onto thick hide, holding a huge basalt maul on an oak haft and a timber door-shield banded in iron. Ordinary human soldiers stand small beside him for scale, looking up. Setting: a grey sea-cliff headland with a misty island coast behind. Mood: immense, calm, unstoppable.
+
+=== Varathos Stone-Throwers ===
+Save as: unitImages/varathos-stone-throwers.png
+Type: Living Artillery · Alliance of Varathos
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a twelve-foot giant in a hide harness mid-throw, hurling a rounded basalt stone the size of a calf, a rope net of more stones on her back, two more giants behind reloading from a cart. Setting: a hillside above a battlefield in haze. Mood: raw power, motion.
+
+=== Kira's Household ===
+Save as: unitImages/varathos-household-giants.png
+Type: Embassy Guard · The Varathos Hall, Starhold
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a twelve-foot giant of Kira's household in long island-grey court robes over stone plates, holding a carved ceremonial maul, walking out of a twenty-foot doorway onto a busy stone street in Starhold while a crowd of townsfolk of many races and wide-eyed tourists watch and point. Setting: the dark gothic capital, lanterns, spires. Mood: wonder, dignity, a little funny.

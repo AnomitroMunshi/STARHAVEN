@@ -30,6 +30,8 @@ The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 
 
 ### §0d. Every unit gets its moment (agreed 2026-11-24)
 
+**Full audit of all 360 unit cards — where each has appeared, and the arc for every unit that never has: `UNIT_COVERAGE.md`.** The table below is the headline spotlight per arc.
+
 Least-used Starhaven units in the chronicles (by name count; some zeros are name mismatches, e.g. "Holy Knights" vs "Holy Knights of Starhaven"). Each planned arc spotlights 3–6 of them — a real scene with a real ability from the unit wiki, not a name-drop.
 
 | Arc | Where (map) | Spotlight units — each based where the unit wiki puts it |
@@ -44,10 +46,56 @@ Least-used Starhaven units in the chronicles (by name count; some zeros are name
 
 Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
 
+**Giant warriors of Varathos** (Varathos: 40,000 warriors under the Alliance of Varathos; twelve feet tall; only Starhaven has ever fought beside them — in the Varathos civil war). Nobody else in the world has seen a giant in battle, so their first fight on Starhaven's side should make the enemy lose its nerve:
+- **Zharak Crossing** — a giant warband walks out of the dunes at the Zharak Sand Cavalry; desert horses and camels have never seen anything twelve feet tall moving. Side by side with Zafir's sand-golems.
+- **1060 — Khulan's raid on the harvest** — Kessrin horse archers ride into the Long Grass and meet giants standing up out of it. Steppe horses refuse to close. The Kessrin legend of Khulan has no answer for this.
+- **The Wedding** — giants at the baraat: dancing to the dhol, lifting children (and one surprised dwarf) onto their shoulders.
+- Unit wiki: **Varathos · The Giant Nation (Allied)** — Varathos Giant Warriors (600), Varathos Stone-Throwers (120), Kira's Household (12). Added 2026-11-24.
+
 ### §0e. The Winter Council's lighter side, and the Wedding (agreed 2026-11-24)
 
 - **Winter Council, comic beat:** when the table reaches the king's own weak point (succession), ministers start telling Rayden — politely, then less politely — to have children. In the Black Charge, a rider tells Vespera; Vespera goes red to the ears and bonks the rider on the head. Ilyana is delighted, winks at Rayden across the table and makes a small private sign only the two of them understand (keep it implied, never spelled out).
 - **New arc after the Winter Council: the Wedding** — Rayden marries Vespera and Ilyana together in one grand event (early 1060, before the Silver Isle War). Polygamy is allowed in Starhaven. **Done the Indian way, grand:** days of it — a haldi morning, a mehndi night, a sangeet with dancing, then the baraat: Rayden rides in on his warhorse Warblade through Starhold with dhol drummers, dancing friends and the whole city in the street (the Eleven dancing badly is mandatory), and the Black Charge as Vespera's honour guard. Marigolds everywhere (they already mean something since Lantern Night). Allies, giants, the Vanari, Karath and House Sanguinar's twilight court all come — the ceremony is at dusk so Ilyana can stand in it. A security nightmare for Daven and the Crown Shadows. Joy first; the open threads (the Huntmaster's count, the Hundred, the Kessrin) watch from the edges. For image prompts: costumes, music and rituals Indian-style; buildings stay Starhaven's own dark-fantasy look.
+
+### §0f. Chronicle ideas waiting (agreed 2026-11-24)
+
+**From the past — things the wiki mentions but never tells**
+1. **The Golden Current (1047)** — the Golden Coast's 180 ships against Saltmere; the Thalassians answer through the rift gate in minutes. Calvan Eres, the one minister who warned. Naval thriller; why "Saltmere first" exists.
+2. **Eastern Crossing** — Doran Ashe holds 40,000 with 20,000 for three days; Sever Aldric loses his eye; Clea Halvorsen's all-female left-flank sub-commanders hold two hours without orders and invent the Dawn Wedge — the birth of the Dawnlancers.
+3. **The Fall of Ashveil Hold** (before the kingdom) — the night the Void took it; a young Brek Tane walks 400 survivors out and keeps them together twenty years without walls; why he still carries the key. Sets up the Ironpass night siege.
+4. **The Lost Verses (the Coldmarch Crossing, 1044)** — the battle behind the two verses of Dren Solm's ballad lost when the paper got wet; framed by Dren in 1059 trying to remember them.
+5. **The First Open Morning** — year one: Rayden opens the doors, nobody comes for three months, then a cleaning woman walks in about the drains.
+6. **Saint Veyne** — Rayden founds the orphanage with his first king's wages, named for the one he grew up in; the first child through the door, and where that child is now.
+7. **The Founding Line** — Nyx and Korvus Drey design Goldgate's security before its first stone, and argue for a week about one sentence: tourists are never watched.
+
+**Now and after (1059–1060)**
+8. **Beacon Night** — the first unannounced test; the Kettlebys see riders in the grass — Kessrin or scouts? — and light the first fire.
+9. **The Ice Carts** — an Umbral Web investigation back along the Glass Road; debut of Tolliver Quarrow before the Winter Council.
+10. **The Harpist** — the last Shadow Court woman in the Emir's palace tells Kaveri's thirty-eight years (abroad).
+11. **The Grey Line** — Tunde Oyelaran's life told at the Greymark funeral where nobody speaks.
+12. **The Meadow** — a one-armed veteran and the Ironmane charger that carried him at Eastern Crossing, retired together in the Old Beasts' Meadow. Gives the Ironmane Lancers a moment before 1060.
+13. **Hob Fennick, Porter** — the first porter trained as a frontier scout; her first watch at Saddlestone Keep the night the second white braid appears.
+14. **First sight of the giants** — the Varathos warband's first battle on Starhaven's side (Zharak Crossing or the 1060 Kessrin raid): enemies who have never seen a giant.
+(Skipped: *Kira's Door* — The Giants of Varathos (1050) likely covers it; only from the giants' side if wanted.)
+
+### §0g. Characters discussed — card status (checked 2026-11-24)
+
+| Name | Who | Where they come from | Card |
+|---|---|---|---|
+| Selka Rennet | dead-line signal officer (Resonance Corps) | When the Thread Breaks | **no card yet** |
+| Tolliver Quarrow | prospector-spymaster, Treasury + Umbral Web | The Ice Carts → Winter Council | **no card yet** |
+| Dunmar Underlow | deep-warden of cisterns and tunnels | Take It Alive | **no card yet** |
+| Saoirse Yarrow | ancient Wood Elf field healer, tortoise Mosswall | The Elderwood Arrives | **no card yet** |
+| Hob Fennick | Guild porter, 19 — kept Iva Renn's knife; first porter-scout | The Rookie Season → Saddlestone Keep | **no card yet** |
+| Morna | half-orc rookie, 17, pitchfork; led the king's F-rank party | The Rookie Season | **no card yet** |
+| Corwen | Canal Rat, carries the rope | The Rookie Season | **no card yet** |
+| Wendt | half-orc train driver, the King's Lantern | The Shadow Court | **no card yet** |
+| Grusha Venk | old half-orc fire-captain of the Lantern Watch | The Crown's Shadow | **no card yet** |
+| Saule Tamm | reeve of Bridlewick | Atlas | **no card yet** |
+| Marwan Qadir | the Vizier's spymaster (Faceless wore his face) | The Shadow Court | **no card yet** |
+| Shirin | Marwan's wife, who knew and kept the secret | The Shadow Court | **no card yet** |
+| Mother Kettleby | the farm that stayed in the Kessrin Marches | Atlas | **no card yet** |
+| Calvan Eres | the Golden Coast minister who warned about the rift gate | The Golden Current (idea) | yes |
 
 ### §0b. Project SKYREACH in The Elderwood Arrives (agreed 2026-11-23)
 
