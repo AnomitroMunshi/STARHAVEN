@@ -30518,11 +30518,93 @@ const DUMMY_LEGENDS = [
   {id:'dummy-drelvian-qorandel',name:'Drelvian Qorandel',title:'Political Lord · Irondeep Confederacy',category:'Dummy Legends',status:'unknown',age:'193',race:'Dwarf',role:'Political Lord',image:'starhaven_chars_image/dummy-legend-drelvian-qorandel.png',imagePrompt:'A 193-year-old dwarf representative in dark bronze formal armor and a volcanic-glass clasp, inside a highland forge hall.',color:'#66574A',tags:['Dummy Legends','Irondeep Confederacy','Lord']},
   {id:'dummy-nothessa-vessalon',name:'Nothessa Vessalon',title:'Military Commander · Irondeep Confederacy',category:'Dummy Legends',status:'unknown',age:'106',race:'Dwarf',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-nothessa-vessalon.png',imagePrompt:'A 106-year-old dwarf tunnel commander in practical plate with a hooded miner lamp, short spear and breach crew behind.',color:'#75644E',tags:['Dummy Legends','Irondeep Confederacy','Commander']},
   {id:'dummy-othmarin-thamvyr',name:'Othmarin Thamvyr',title:'Solo Legend · Irondeep Confederacy',category:'Dummy Legends',status:'unknown',age:'143',race:'Dwarf',role:'Solo Legend · Rune-Bombardier',image:'starhaven_chars_image/dummy-legend-othmarin-thamvyr.png',imagePrompt:'A 143-year-old dwarf Irondeep bombardier in soot-dark forge leathers and iron guards, loading rune-marked blasting charges into a compact hand mortar on a smoky forge floor; no spellcasting.',color:'#8B634A',tags:['Dummy Legends','Irondeep Confederacy','Solo Legend']},
-  {id:'dummy-zalvetha-neldorin',name:'Zalvetha Neldorin',title:'Political Lord · Isle-States of Mirren',category:'Dummy Legends',status:'unknown',age:'52',race:'Human',role:'Political Lord',image:'starhaven_chars_image/dummy-legend-zalvetha-neldorin.png',imagePrompt:'A 52-year-old human island ruler in layered blue sea-silk, shell clasp and a slate-grey mantle, with island harbors behind.',color:'#517E89',tags:['Dummy Legends','Isle-States of Mirren','Lord']},
-  {id:'dummy-keryndal-korvessa',name:'Keryndal Korvessa',title:'Military Commander · Isle-States of Mirren',category:'Dummy Legends',status:'unknown',age:'119',race:'Sea Elf',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-keryndal-korvessa.png',imagePrompt:'A 119-year-old sea elf commander in weathered coastal armor, carrying a long spear at the head of island defenders.',color:'#4B7990',tags:['Dummy Legends','Isle-States of Mirren','Commander']},
-  {id:'dummy-thalorin-selthorin',name:'Thalorin Selthorin',title:'Solo Legend · Isle-States of Mirren',category:'Dummy Legends',status:'unknown',age:'37',race:'Reefborn',role:'Solo Legend · Tidecaller Combat Caster',image:'starhaven_chars_image/dummy-legend-thalorin-selthorin.png',imagePrompt:'A 37-year-old reefborn combat caster with subtle gill markings and weathered sea gear, shaping a forceful arc of water pressure over a rain-dark Mirren ship deck; focused expression, no weapon.',color:'#2E8290',tags:['Dummy Legends','Isle-States of Mirren','Solo Legend']},
+  {
+    id:'dummy-keryndal-korvessa', name:'Keryndal Korvessa',
+    title:'Commander of the Island Muster · Isle-States of Mirren',
+    category:'Dummy Legends', status:'unknown', age:'119', race:'Sea Elf', role:'Military Commander',
+    image:'starhaven_chars_image/dummy-legend-keryndal-korvessa.png',
+    color:'#4B7990', tags:['Dummy Legends','Isle-States of Mirren','Commander'],
+    bio:'Keryndal commands the 18,000 soldiers of the three Isle-States. When High-Steward Neris Mirrenvale calls the Island Muster, Keryndal leads the combined force in the field.',
+    commands:['Island Muster (18,000 soldiers)'],
+    weapons:['Tidepost — a long spear with a weathered bronze socket and a red tide cord'],
+    achievements:['Held the tidal causeway until the last residents reached the shelter of the wall'],
+  },
   {id:'dummy-evaris-ovarith',name:'Evaris Ovarith',title:'Political Lord · Eldridge Kingdom',category:'Dummy Legends',status:'unknown',age:'63',race:'Human',role:'Political Lord',image:'starhaven_chars_image/dummy-legend-evaris-ovarith.png',imagePrompt:'A 63-year-old human lord in olive and gold formal robes, a signet ring and composed expression in a sunlit stone court.',color:'#759056',tags:['Dummy Legends','Eldridge Kingdom','Lord']},
-  {id:'dummy-nymora-dralvessa',name:'Nymora Dralvessa',title:'Military Commander · Eldridge Kingdom',category:'Dummy Legends',status:'unknown',age:'45',race:'Half-Elf',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-nymora-dralvessa.png',imagePrompt:'A 45-year-old half-elf commander in green-grey uniform and field armor, holding a regiment standard beside an orderly infantry line.',color:'#6B8C67',tags:['Dummy Legends','Eldridge Kingdom','Commander']},
+  {id:'dummy-nymora-dralvessa',name:'Nymora Dralvessa',title:'Commander of the Eldridge Infantry · Eldridge Kingdom',category:'Dummy Legends',status:'unknown',age:'45',race:'Half-Elf',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-nymora-dralvessa.png',imagePrompt:'A 45-year-old half-elf commander in green-grey uniform and field armor, holding a regiment standard beside an orderly infantry line.',color:'#6B8C67',tags:['Dummy Legends','Eldridge Kingdom','Commander'],commands:['Eldridge Infantry (36,000 soldiers)'],bio:'Leads the kingdom’s line infantry and border garrisons. After a flood took her regiment’s colors, she rallied the companies under a replacement standard made from cloth they had salvaged.'},
+  {
+    "id": "dummy-vestren-rowanshield",
+    "name": "Vestren Rowanshield",
+    "title": "Marshal of the Eldridge Army · Eldridge Kingdom",
+    "category": "Dummy Legends",
+    "status": "unknown",
+    "age": "57",
+    "race": "Human",
+    "role": "Military Commander",
+    "image": "starhaven_chars_image/dummy-legend-vestren-rowanshield.png",
+    "color": "#6B8C67",
+    "tags": [
+      "Dummy Legends",
+      "Eldridge Kingdom",
+      "Commander"
+    ],
+    "commands": [
+      "Eldridge Army (64,000 active soldiers)",
+      "Eldridge Reserve (90,000 reservists)"
+    ],
+    "bio": "Answers to Chancellor-Queen Vera Solenne for the standing army and oversees the reserve rolls. During the Southern Iron Compact crisis, he kept the border garrisons supplied as grain shipments dwindled.",
+    "weapons": [
+      "Boundary Oath, a straight sword with a plain brass guard"
+    ]
+  },
+  {
+    "id": "dummy-osmerek-brackenmere",
+    "name": "Osmerek Brackenmere",
+    "title": "Commander of the Eldridge Cavalry · Eldridge Kingdom",
+    "category": "Dummy Legends",
+    "status": "unknown",
+    "age": "41",
+    "race": "Human",
+    "role": "Military Commander",
+    "image": "starhaven_chars_image/dummy-legend-osmerek-brackenmere.png",
+    "color": "#6B8C67",
+    "tags": [
+      "Dummy Legends",
+      "Eldridge Kingdom",
+      "Commander"
+    ],
+    "commands": [
+      "Eldridge Cavalry (16,000 riders)"
+    ],
+    "bio": "Leads the heavy lancers and light horse. He grew up riding mail routes between grain towns and still rides every route before judging it fit for a column.",
+    "weapons": [
+      "Furrowpoint, a long ash lance"
+    ],
+    "mount": "Rook, a dark bay warhorse"
+  },
+  {
+    "id": "dummy-tavessa-keldwyck",
+    "name": "Tavessa Keldwyck",
+    "title": "Commander of the Eldridge Rangers · Eldridge Kingdom",
+    "category": "Dummy Legends",
+    "status": "unknown",
+    "age": "38",
+    "race": "Human",
+    "role": "Military Commander",
+    "image": "starhaven_chars_image/dummy-legend-tavessa-keldwyck.png",
+    "color": "#6B8C67",
+    "tags": [
+      "Dummy Legends",
+      "Eldridge Kingdom",
+      "Commander"
+    ],
+    "commands": [
+      "Eldridge Rangers (12,000 rangers)"
+    ],
+    "bio": "Leads Eldridge’s reconnaissance and border patrols. During the Void crisis, her scouts kept a record of which river crossings were still safe for families leaving the eastern farms.",
+    "weapons": [
+      "Reedmark, a yew longbow with a linen-wrapped grip"
+    ]
+  },
   {id:'dummy-qasthorin-ysmarin',name:'Qasthorin Ysmarin',title:'Solo Legend · Eldridge Kingdom',category:'Dummy Legends',status:'unknown',age:'32',race:'Human',role:'Solo Legend · Warding Arcanist',image:'starhaven_chars_image/dummy-legend-qasthorin-ysmarin.png',imagePrompt:'A 32-year-old human Eldridge warding arcanist in close-fitted armor, holding a round shield etched with protective sigils as a translucent ward catches incoming blows in a stone courtyard; no sword.',color:'#717D55',tags:['Dummy Legends','Eldridge Kingdom','Solo Legend']},
   {id:'dummy-ulvaris-qadoreth',name:'Ulvaris Qadoreth',title:'Political Lord · Thalassian League',category:'Dummy Legends',status:'unknown',age:'58',race:'Human',role:'Political Lord',image:'starhaven_chars_image/dummy-legend-ulvaris-qadoreth.png',imagePrompt:'A 58-year-old human league ruler in deep-blue maritime court robes, silver wave embroidery and a calm seafarer bearing.',color:'#437F9A',tags:['Dummy Legends','Thalassian League','Lord']},
   {id:'dummy-zenethra-kethrane',name:'Zenethra Kethrane',title:'Military Commander · Thalassian League',category:'Dummy Legends',status:'unknown',age:'111',race:'Sea Elf',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-zenethra-kethrane.png',imagePrompt:'A 111-year-old sea elf commander in amphibious scale armor, holding a long spear at a shore landing with marines behind.',color:'#37738B',tags:['Dummy Legends','Thalassian League','Commander']},

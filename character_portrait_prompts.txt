@@ -16,60 +16,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (62)
 ########################################################################
 
-=== Drelvian Qorandel ===
-Save as: starhaven_chars_image/dummy-legend-drelvian-qorandel.png
-Kingdom: Irondeep Confederacy | Role: Political Lord | Race: Dwarf | Age: 193
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Drelvian Qorandel, a 193-year-old dwarf representative in dark bronze formal armor with a volcanic-glass clasp. Setting: a highland forge hall in the Irondeep Confederacy. He kept the forge towns from breaking their confederacy when the deep seams failed. Show a table of mismatched mine seals and a patch of volcanic glass set in his armor clasp. His long beard is tied back in the same coarse cord used on the nearest miners' seal.
-
-=== Nothessa Vessalon ===
-Save as: starhaven_chars_image/dummy-legend-nothessa-vessalon.png
-Kingdom: Irondeep Confederacy | Role: Military Commander | Race: Dwarf | Age: 106
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Nothessa Vessalon, a 106-year-old dwarf tunnel commander in practical plate, carrying a hooded miner lamp and short spear. Setting: a fortified Irondeep tunnel entrance. She brought workers home after a fall cut them off from the main shaft. Her hooded lamp is blackened on one side, and her plate still holds old white dust at the rivets. Behind her, rows of small recovered helmets line the tunnel wall.
-
-=== Othmarin Thamvyr ===
-Save as: starhaven_chars_image/dummy-legend-othmarin-thamvyr.png
-Kingdom: Irondeep Confederacy | Role: Solo Legend · Rune-Bombardier | Race: Dwarf | Age: 143
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 143-year-old dwarf Irondeep bombardier in soot-dark forge leathers and iron guards, standing with a compact hand mortar and rune-marked blasting charges on a smoky forge floor; no spellcasting. He cleared the collapsed under-road that had split Irondeep through an entire winter. Pose him with the soot-stained hand mortar, Faultbell, lowered beside his leg. Its battered bronze casing catches the forge light while the sealed rune-marked charges sit dim in a shallow iron tray.
-
-=== Zalvetha Neldorin ===
-Save as: starhaven_chars_image/dummy-legend-zalvetha-neldorin.png
-Kingdom: Isle-States of Mirren | Role: Political Lord | Race: Human | Age: 52
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Zalvetha Neldorin, a 52-year-old human island ruler in layered blue sea-silk, a shell clasp and slate-grey mantle. Setting: a Mirren island harbor. She negotiated common refuge rights for the island ports after ships began vanishing in winter squalls. Show her clasping a scuffed wooden pilot's token. Below the blue sea-silk and grey mantle, soaked ropes and lanterns at a packed landing show the pact in use.
-
-=== Keryndal Korvessa ===
-Save as: starhaven_chars_image/dummy-legend-keryndal-korvessa.png
-Kingdom: Isle-States of Mirren | Role: Military Commander | Race: Sea Elf | Age: 119
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Keryndal Korvessa, a 119-year-old sea elf commander carrying a long spear at the head of island defenders. Setting: a fortified Mirren shoreline. They held the tidal causeway until the last island residents reached the wall. The long spear, Tidepost, has a greened bronze socket and a worn red tide cord knotted beneath the head. Show salt drying on weathered armor while causeway stones disappear under the incoming tide.
-
-=== Thalorin Selthorin ===
-Save as: starhaven_chars_image/dummy-legend-thalorin-selthorin.png
-Kingdom: Isle-States of Mirren | Role: Solo Legend · Tidecaller Combat Caster | Race: Reefborn | Age: 37
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 37-year-old reefborn combat caster with subtle gill markings and weathered sea gear, shaping a forceful arc of water pressure over a rain-dark Mirren ship deck; focused expression, no weapon. They turned a breaking wave aside long enough for an overloaded ferry to clear a harbor mouth. Shape the water into a low, dense arc with translucent edges and natural spray. A cracked ferry lantern hangs from a deck post behind the caster.
-
-=== Evaris Ovarith ===
-Save as: starhaven_chars_image/dummy-legend-evaris-ovarith.png
-Kingdom: Eldridge Kingdom | Role: Political Lord | Race: Human | Age: 63
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Evaris Ovarith, a 63-year-old human lord in olive-and-gold formal robes, wearing a signet ring. Setting: a sunlit stone court in the Eldridge Kingdom. He settled an old land dispute by having the court hear testimony from the tenant farmers first. Show hands creased with age, one thumb resting on a small open box of field boundary tokens. Worn boots and olive cloth contrast with the polished court floor.
-
-=== Nymora Dralvessa ===
-Save as: starhaven_chars_image/dummy-legend-nymora-dralvessa.png
-Kingdom: Eldridge Kingdom | Role: Military Commander | Race: Half-Elf | Age: 45
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Nymora Dralvessa, a 45-year-old half-elf commander holding a regiment standard beside an orderly infantry line. Setting: an Eldridge training field. She reassembled a regiment after its colors were lost in the flood. Her hand rests high on a replacement standard made from surviving company cloth. Rows of soldiers behind her wear different faded sleeve colors under matching field armor.
-
-=== Qasthorin Ysmarin ===
-Save as: starhaven_chars_image/dummy-legend-qasthorin-ysmarin.png
-Kingdom: Eldridge Kingdom | Role: Solo Legend · Warding Arcanist | Race: Human | Age: 32
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 32-year-old human Eldridge warding arcanist in close-fitted armor, holding a round shield etched with protective sigils as a translucent ward catches incoming blows in a stone courtyard; no sword. He held a ward over the injured until the courtyard could be cleared. His shield, Hearthglass, has a buckled rim and old sigil grooves visible through a clear, faintly rippled barrier. Keep the ward close enough to the shield that his face and braced stance remain readable.
-
 === Ulvaris Qadoreth ===
 Save as: starhaven_chars_image/dummy-legend-ulvaris-qadoreth.png
 Kingdom: Thalassian League | Role: Political Lord | Race: Human | Age: 58
