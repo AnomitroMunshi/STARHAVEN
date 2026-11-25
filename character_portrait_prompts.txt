@@ -15,23 +15,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (62)
 ########################################################################
-=== Calvora Qasverin ===
-Save as: starhaven_chars_image/dummy-legend-calvora-qasverin.png
-Kingdom: Corthane | Role: Political Lord | Race: Human | Age: 50
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Calvora Qasverin, a 50-year-old human sea-lord in a deep navy coat with muted wine trim and a silver wave clasp. Setting: a Corthane harbor overlook with warships beyond. She brought the merchant fleet into the naval harbor ahead of a storm surge. Show silver threads at the temples and a harbor chain link used to weigh down the sea chart. Distinct merchant and warship silhouettes crowd the same anchorage below.
-
-=== Nyrakil Drometh ===
-Save as: starhaven_chars_image/dummy-legend-nyrakil-drometh.png
-Kingdom: Corthane | Role: Military Commander | Race: Human | Age: 42
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Nyrakil Drometh, a 42-year-old human marine commander with a cutlass and reinforced boarding coat. Setting: a Corthane ship-to-shore assault landing. He made his name taking the outer quay intact and opening it to relief boats. His cutlass, Low Water, has a squared brass guard and a dark grip polished by use. Set him among wet pilings with a rolled aid flag tucked into his reinforced coat.
-
-=== Merenza Varnalis ===
-Save as: starhaven_chars_image/dummy-legend-merenza-varnalis.png
-Kingdom: Corthane | Role: Solo Legend · Unarmed Grappler | Race: Half-Elf | Age: 33
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 33-year-old half-elf close-combat grappler in reinforced wraps and light armor, hands raised to seize and unbalance an opponent on a rain-slick Corthane deck; no blades, no magic. Renowned for ending the champion's undefeated run in a deckside wrestling bout. Give her worn knuckle wraps, a healed brow split and closely cropped hair plastered by rain. Use the bent ring rail and a few out-of-focus sailors to frame her empty hands.
 
 === Velqara Marqessa ===
 Save as: starhaven_chars_image/dummy-legend-velqara-marqessa.png
