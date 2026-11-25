@@ -16,24 +16,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (62)
 ########################################################################
 
-=== Velqara Marqessa ===
-Save as: starhaven_chars_image/dummy-legend-velqara-marqessa.png
-Kingdom: Verdant Crown | Role: Political Lord | Race: Human | Age: 57
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Velqara Marqessa, a 57-year-old human ruler in deep-green and muted-gold court clothes, leaf embroidery and a small orchard-blossom pin. Setting: a prosperous Verdant Crown estate. She restored the common orchards after the blight. Show her holding a living graft above rows of freshly scarred trunks among older, still-blooming boughs. A dusting of pollen on the deep-green cuff ties the court clothes to the work.
-
-=== Athrelis Thyravell ===
-Save as: starhaven_chars_image/dummy-legend-athrelis-thyravell.png
-Kingdom: Verdant Crown | Role: Military Commander | Race: Wood Elf | Age: 79
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Athrelis Thyravell, a 79-year-old wood elf commander with a spear and command baton, wearing green-grey armor. Setting: a Verdant Crown field regiment muster. His field regiment became known for how it brought civilians out of a flooded valley. One hand holds the command baton with a chalk-marked waterline. In the distance, rows of soldiers share the muster field with recovered orchard carts.
-
-=== Thornak Oskiran ===
-Save as: starhaven_chars_image/dummy-legend-thornak-oskiran.png
-Kingdom: Verdant Crown | Role: Solo Legend · War-Beast Rider | Race: Orc | Age: 40
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 40-year-old orc Verdant Crown war-beast rider in light forest armor, gripping a long boar spear atop an armored forest boar at a dense green battlefield edge; no magic. He and his boar brought a broken field standard back out of the briars. The armored boar has a chipped left tusk and mud ground into its plates. Thornak's spear, Briarspike, has a long darkwood shaft and a bright scar across the guard, with the torn standard rolled at the saddle.
-
 === Drelvian Qorandel ===
 Save as: starhaven_chars_image/dummy-legend-drelvian-qorandel.png
 Kingdom: Irondeep Confederacy | Role: Political Lord | Race: Dwarf | Age: 193
