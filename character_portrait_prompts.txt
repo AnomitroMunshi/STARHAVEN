@@ -16,42 +16,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (62)
 ########################################################################
 
-=== Ulvaris Qadoreth ===
-Save as: starhaven_chars_image/dummy-legend-ulvaris-qadoreth.png
-Kingdom: Thalassian League | Role: Political Lord | Race: Human | Age: 58
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Ulvaris Qadoreth, a 58-year-old human league ruler in maritime court robes with subtle silver wave embroidery. Setting: a Thalassian harbor council chamber. He persuaded the ports to keep the lighthouse beacons burning under shared stewardship. Show a ring of brass lamp keys on the chamber table and a distant beacon through the windows. Silver wave embroidery should catch just the same muted light as his weathered hands.
-
-=== Zenethra Kethrane ===
-Save as: starhaven_chars_image/dummy-legend-zenethra-kethrane.png
-Kingdom: Thalassian League | Role: Military Commander | Race: Sea Elf | Age: 111
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Zenethra Kethrane, a 111-year-old sea elf commander holding a long spear at the head of amphibious marines. Setting: a Thalassian shore landing. She ferried a stranded garrison back across the reef through heavy surf. Her spear, Ebbward, has a tarnished silver socket over dark driftwood. Show surf draining from her scale armor as the rescued soldiers climb a blurred stair from the landing.
-
-=== Halvessa Jorvellan ===
-Save as: starhaven_chars_image/dummy-legend-halvessa-jorvellan.png
-Kingdom: Thalassian League | Role: Solo Legend · Harpoon Marksman | Race: Human | Age: 34
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 34-year-old human Thalassian harpoon marksman in salt-worn leather and bronze guards, holding a compact deck harpoon launcher at a warship rail; weighted line coiled at her belt. She is remembered for sending a rescue line through heavy seas to a sinking tender. Her launcher, White Sound, has a dull bronze cheek plate and a pale ivory-colored sight bead. Wind drives spray across her salt-stiffened sleeves, with the tender's lantern far out over the water.
-
-=== Vokthar Varnethis ===
-Save as: starhaven_chars_image/dummy-legend-vokthar-varnethis.png
-Kingdom: Karath Sultanate | Role: Political Lord | Race: Human | Age: 61
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 61-year-old human Karath lord with a close white beard, standing beside a carved sandstone arch in layered sand-colored robes, a charcoal headwrap and bronze lamellar shoulders. He rests one hand on a brass seal, with a burgundy sash and sun motifs catching the warm lattice light.
-
-=== Nesvarin Edramar ===
-Save as: starhaven_chars_image/dummy-legend-nesvarin-edramar.png
-Kingdom: Karath Sultanate | Role: Military Commander | Race: Human | Age: 40
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 40-year-old human woman commanding Karath cavalry, raising a curved saber from the saddle of a bay warhorse. She wears blackened bronze lamellar over burgundy sleeves and a dark teal riding coat. Sun emblems mark the horse’s bronze face armor and the standards in the dusty pass.
-
-=== Qiraya Morqalen ===
-Save as: starhaven_chars_image/dummy-legend-qiraya-morqalen.png
-Kingdom: Karath Sultanate | Role: Solo Legend · Desert Alchemical Bombardier | Race: Goblin | Age: 28
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, vertical 2:3, 1024x1536, sharp focus on the character, softly blurred background. No lettering, border or watermark. A 28-year-old goblin alchemical bombardier with olive-green skin, long pointed ears and brass goggles pushed up over a charcoal headwrap. She holds a sealed red clay firepot and wears a teal work coat with vials and ceramic canisters on leather straps in a lantern-lit Karath caravanserai.
-
 === Morthane Kenzovar ===
 Save as: starhaven_chars_image/dummy-legend-morthane-kenzovar.png
 Kingdom: Zharak Emirates | Role: Political Lord | Race: Human | Age: 56
@@ -69,6 +33,24 @@ Save as: starhaven_chars_image/dummy-legend-sorellin-zharveth.png
 Kingdom: Zharak Emirates | Role: Solo Legend · Venom-Dart Assassin | Race: Human | Age: 32
 PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 32-year-old human Zharak covert fighter in indigo leather and bronze guards, carrying a compact blowpipe and sealed dart vials at a shadowed caravan camp; living human, no undead traits or magic. The caravan guards still tell of the night an entire camp's claim seals went missing. Give Sorellin a level expression and an indigo hood faded nearly grey at the edges. The short blowpipe, Mothreed, is dark polished wood with a plain silver band, held down by the hip beside sealed vials.
+
+=== Serevath Mazqiren ===
+Save as: starhaven_chars_image/dummy-legend-serevath-mazqiren.png
+Kingdom: Zharak Emirates | Role: Solo Legend / Mercenary Captain and Duelist | Race: Desert Elf | Age: 112
+PROMPT:
+Original photorealistic Starhaven dark fantasy. Vertical 2:3, 1024x1536, full body head to feet. A veteran Desert Elf woman with amber eyes and short white braids, midnight crimson coat, worn chased bronze armor and lowered curved sword, standing in a shaded countinghouse courtyard. Restrained amber eye glow, brushed bronze, wind-worn fine cloth, deep natural shadows. No lettering, borders, or watermarks.
+
+=== Ilhavri Tessamar ===
+Save as: starhaven_chars_image/dummy-legend-ilhavri-tessamar.png
+Kingdom: Zharak Emirates | Role: Solo Legend / Mercenary Longbow Archer | Race: Desert Elf | Age: 78
+PROMPT:
+Original photorealistic Starhaven dark fantasy. Vertical 2:3, 1024x1536, full body head to feet. A lean Desert Elf man with amber eyes, wind-darkened skin and a sand-colored hood pulled back from his face, carrying a red-bound horn longbow on a windswept dune at dusk. Restrained amber eye glow, brushed bronze, wind-worn fine cloth, deep natural shadows. No lettering, borders, or watermarks.
+
+=== Orveshet Qiravoss ===
+Save as: starhaven_chars_image/dummy-legend-orveshet-qiravoss.png
+Kingdom: Zharak Emirates | Role: Solo Legend / Mercenary Sun Warden | Race: Desert Elf | Age: 137
+PROMPT:
+Original photorealistic Starhaven dark fantasy. Vertical 2:3, 1024x1536, full body head to feet. An older Desert Elf with amber eyes, swept silver hair and a narrow angular face, wearing layered wine-red robes and tarnished bronze jewelry, holding a solar-disc staff beside an abandoned desert shrine. Restrained amber eye glow, brushed bronze, wind-worn fine cloth, deep natural shadows. No lettering, borders, or watermarks.
 
 === Delqara Tyravess ===
 Save as: starhaven_chars_image/dummy-legend-delqara-tyravess.png

@@ -1,6 +1,6 @@
 ﻿# Starhaven character cards and portraits handoff
 
-The Dummy Legends roster has 93 cards with local portrait files and 18 awaiting portraits as of November 25, 2026. The most recent batch added all six Eldridge Kingdom portraits. The next faction in the portrait queue is Irondeep Confederacy.
+The Dummy Legends roster has 128 cards with local portrait files and 9 awaiting portraits as of November 25, 2026. All 21 Zharak Emirates Dummy Legends have portraits, including the three officers of the Gilded Standard Company. The next faction in the portrait queue is Irondeep Confederacy.
 
 ## Where to work
 
@@ -29,8 +29,12 @@ The Dummy Legends roster has 93 cards with local portrait files and 18 awaiting 
 | Karath Sultanate | 3 |
 | Isle-States of Mirren | 1 |
 | Eldridge Kingdom | 6 |
+| Thalassian League | 3 |
+| Coral Archipelago | 5 |
+| Zharak Emirates | 21 |
+| Kethravai Isles | 6 |
 
-Six factions have three pending portraits each. In queue order they are Irondeep Confederacy, Thalassian League, Zharak Emirates, Coral Archipelago, Sable Isles, and Highland Coalition. Irondeep’s entries are Drelvian Qorandel, Nothessa Vessalon, and Othmarin Thamvyr.
+Three factions have three pending portraits each. In queue order they are Irondeep Confederacy, Sable Isles, and Highland Coalition. Irondeep’s entries are Drelvian Qorandel, Nothessa Vessalon, and Othmarin Thamvyr.
 
 ## Decisions worth preserving
 
