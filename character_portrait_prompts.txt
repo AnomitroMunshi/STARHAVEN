@@ -15,43 +15,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (62)
 ########################################################################
-
-=== Eshvara Ulthavar ===
-Save as: starhaven_chars_image/dummy-legend-eshvara-ulthavar.png
-Kingdom: Varathos | Role: Political Lord | Race: Giant | Age: 376
-PROMPT:
-Photorealistic dark-fantasy cinematic portrait, vertical 2:3, 1024x1536. Varathos coastal stone, slate scales, aged bronze and rough hide. No text or watermark. A 376-year-old giant political lord, an older woman with swept-back black-and-silver hair and a broad, composed face. Slate robes and charcoal woven mantle over carved stone scales, pale bronze spiral clasp. Standing beside a monolithic seat in a sea-cliff council hall, a human-height guest doorway and two distant human envoys at the lower edge establish her twelve-foot scale. Grey coastal daylight through open pillars, restrained amber braziers.
-
-=== Thamorin Rethvane ===
-Save as: starhaven_chars_image/dummy-legend-thamorin-rethvane.png
-Kingdom: Varathos | Role: Military Commander · Giant Infantry | Race: Giant | Age: 211
-PROMPT:
-Photorealistic dark-fantasy cinematic portrait, vertical 2:3, 1024x1536. Varathos coastal stone, slate scales, aged bronze and rough hide. No text or watermark. A 211-year-old giant infantry commander with a dark green-patinated closed bronze helm, perforated faceplate and heavy asymmetrical shoulder guards over layered hide and slate-grey scales. He strides forward with a vast broad sword held low across his body. His greatsword, Breakwater, has a dark steel blade and engraved sea-channel lines. On a wet sea-cliff causeway with towering giant infantry behind and a human-sized stair and sentry for scale.
-
-=== Keldrissa Khorveth ===
-Save as: starhaven_chars_image/dummy-legend-keldrissa-khorveth.png
-Kingdom: Varathos | Role: Solo Legend · Cliffroad Guardian | Race: Giant | Age: Unknown
-PROMPT:
-Photorealistic dark-fantasy cinematic portrait, vertical 2:3, 1024x1536. Varathos coastal stone, slate scales, aged bronze and rough hide. No text or watermark. A visibly twelve-foot-tall mature giant woman with a strong weathered face, long white hair loosely braided across the chest, and a turquoise pendant. A calm, imposing figure carrying a large ochre ceramic jar in one hand, rough hide and slate cloth with fur cuffs and a bronze belt with turquoise settings, fully clothed. She walks among much smaller human villagers on a cliffside street. Slate-roofed cottages, ocean air and a carved stone fortress high behind her. Full figure, low angle, human bystanders reach only to her knees or waist depending on perspective.
-
-=== Aurveth Velyssar ===
-Save as: starhaven_chars_image/dummy-legend-aurveth-velyssar.png
-Kingdom: Ardenhal | Role: Political Lord | Race: Human | Age: 62
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Aurveth Velyssar, a 62-year-old human lord in a severe grey formal coat with modest steel insignia. Setting: a weathered Ardenhal fortress chamber. He kept the old northern fortress inhabited through a season when the road vanished under snow. Show him beside a relief map with the reopened supply road marked by plain iron pegs. Worn cuffs and a chipped soldier's cup make his austerity tangible.
-
-=== Kysendra Taldren ===
-Save as: starhaven_chars_image/dummy-legend-kysendra-taldren.png
-Kingdom: Ardenhal | Role: Military Commander | Race: Human | Age: 38
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Kysendra Taldren, a 38-year-old human infantry commander in dark plate, holding a pollaxe before a heavy infantry line. Setting: an Ardenhal fortress yard. Her infantry got the wounded back through the fortress breach before the gate came down. She carries the pollaxe Gateward, with a square hammer face and a worn black haft. Fresh lime in the repaired arch behind her picks up the same cold light as her armor.
-
-=== Rholan Othvara ===
-Save as: starhaven_chars_image/dummy-legend-rholan-othvara.png
-Kingdom: Ardenhal | Role: Solo Legend · Drawbridge Duelist | Race: Dwarf | Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 47-year-old dwarf bridge defender in chain and leather, holding a short sword and hooked bridge tool in a guarded stance on the raised approach of a stone drawbridge; iron-grey Ardenhal fortress, no magic. He held the bridge until the fortress families cleared the far span. A deep nick catches the light on his short sword, Hinge Tooth. Show old winch oil on his hooked bridge tool and a child's abandoned wool cap hanging on the far rail.
-
 === Velmira Xandrel ===
 Save as: starhaven_chars_image/dummy-legend-velmira-xandrel.png
 Kingdom: Skyward Isles | Role: Political Lord | Race: Frigatebird Beastkin | Age: 47
