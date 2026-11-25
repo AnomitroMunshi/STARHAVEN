@@ -15,24 +15,6 @@ Photorealistic dark-fantasy character portrait, cinematic film still, desaturate
 ########################################################################
 ## DUMMY LEGENDS — PORTRAIT PLACEHOLDERS  (62)
 ########################################################################
-=== Velmira Xandrel ===
-Save as: starhaven_chars_image/dummy-legend-velmira-xandrel.png
-Kingdom: Skyward Isles | Role: Political Lord | Race: Frigatebird Beastkin | Age: 47
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Velmira Xandrel, a 47-year-old frigatebird beastkin ruler with a dark feathered crest and keen eyes, wearing sea-green formal sailcloth and bronze ornaments. Setting: a high island harbor. She opened the island moorings to every stranded crew during the gale. Give her black, faintly iridescent shoulder feathers and a cloak clasp cast from a recovered mooring token. In the harbor below, mismatched rescue pennants hang from a crowded bank of moored vessels.
-
-=== Jorveth Braveth ===
-Save as: starhaven_chars_image/dummy-legend-jorveth-braveth.png
-Kingdom: Skyward Isles | Role: Military Commander | Race: Osprey Beastkin | Age: 40
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. Portrait of Jorveth Braveth, a 40-year-old osprey beastkin commander with broad wings, light flight armor and a long spear. Setting: skyship rigging above the Skyward Isles. He brought a damaged skyship back through the island fog. Show cream-and-brown wings with one uneven row of regrowing flight feathers, a loop of blue rescue cord at the shoulder and a weathered spar lashed behind him. His spear has a plain, well-used iron head.
-
-=== Otharil Jhalorin ===
-Save as: starhaven_chars_image/dummy-legend-otharil-jhalorin.png
-Kingdom: Skyward Isles | Role: Solo Legend · Skyship Grapnel Raider | Race: Sea-Otter Beastkin | Age: 29
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, dramatic naturalistic lighting, detailed material textures, sharp focus on the character and a softly blurred background. Vertical 2:3, 1024x1536, centered three-quarter to full-body framing. No text, watermark, border or logo. A 29-year-old sea-otter beastkin in compact Skyward Isles boarding leathers, firing a tethered grapnel from a wrist launcher amid wind-tossed skyship rigging; climbing harness, no magic. He crossed the gap to a drifting deck and brought back its trapped crew. Show dense dark fur, pale whiskers catching spray and brass harness rings dulled by salt. The wrist grapnel, Spare Hand, has a sea-green housing and a deeply scuffed leather cuff.
-
 === Calvora Qasverin ===
 Save as: starhaven_chars_image/dummy-legend-calvora-qasverin.png
 Kingdom: Corthane | Role: Political Lord | Race: Human | Age: 50
