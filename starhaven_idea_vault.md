@@ -62,6 +62,10 @@ The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 
 
 **Full audit of all 360 unit cards — where each has appeared, and the arc for every unit that never has: `UNIT_COVERAGE.md`.** The table below is the headline spotlight per arc.
 
+**Bodyguards of the Eleven.** All eleven Pillars have bodyguards listed in `starhaven-unit-wiki.html`. Give each Pillar's bodyguards at least one meaningful scene across the chronicles. Use the unit wiki to check who they protect and how they operate, then show that doctrine through what they do in the scene.
+
+**Mercenary companies and Solo Legends.** Give the Skyspear Valkyries, Red Bone Cavalry, Iron Reavers, Silverchain Mages, and the Last Fare meaningful roles in upcoming chronicles. Check both wikis for other mercenary companies and Solo Legends who fit each arc. Give each a decision or contribution that changes what happens in the scene, drawing on their established abilities, doctrine, and reasons for taking the job. The Last Fare's proposed Saddlestone Keep escort is one place to bring the new company in.
+
 Least-used Starhaven units in the chronicles (by name count; some zeros are name mismatches, e.g. "Holy Knights" vs "Holy Knights of Starhaven"). Each planned arc spotlights 3–6 of them — a real scene with a real ability from the unit wiki, not a name-drop.
 
 | Arc | Where (map) | Spotlight units — each based where the unit wiki puts it |
@@ -115,6 +119,18 @@ Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
 13. **Hob Fennick, Porter** — the first porter trained as a frontier scout; her first watch at Saddlestone Keep the night the second white braid appears.
 14. **First sight of the giants** — the Varathos warband's first battle on Starhaven's side (Zharak Crossing or the 1060 Kessrin raid): enemies who have never seen a giant.
 (Skipped: *Kira's Door* — The Giants of Varathos (1050) likely covers it; only from the giants' side if wanted.)
+
+### The Last Fare — all-women mercenary company
+
+Five provisional Dummy Legend cards are grouped under **The Last Fare** in the main wiki. This independent company grew out of a caravan escort crew. They take contracts to bring people home, list each passenger by name, and collect half the fee when the last person arrives.
+
+- **Mireya Valcobre, the Fare Captain** — bronze-armored swordswoman. On stone she can drive the force of a parried blow into the ground and use it to hold a crossing until the last wagon is through. Her fox's little bell tells people in hiding that she's come back for them.
+- **Zurra Keldruk, the Doorbreaker** — white-haired hobgoblin hunter who learned to break open homes buried by snow. She earned her mammoth-tusk war hammer, **Cairnwake**, in the **Hanging Vault**, an A-rank dungeon, when she stayed behind to free a pinned delver. **Stilled Blow** stores up to three strikes against one object and releases them together when she taps it again.
+- **Nerilda Tavrel, the Lamplighter** — former mine surveyor whose crescent staff, **Noonwick**, banks sunlight. **Sun Under Stone** lights a dark cavern or hall as brightly as midday for thirty minutes. She can also brace a failing arch or spend a full charge splitting a stone obstruction along an existing fracture.
+- **Iscara Moltren, the Waymarker** — forest archer in a horned skull helm. Arrows from **Wayback Yew** can leave trails visible only to the people she chooses. She doubles back to collect the arrows and erase the route.
+- **Ruzena Kestovar, the Last Seat** — Wolf-Kin rear guard with a tall shield and flail. **Three Minutes of Fang** turns her into a great wolf with overwhelming strength for three minutes. The passenger she once held a seat for over three days is now the company's quartermaster.
+
+**Possible first appearance:** On the road to Saddlestone Keep before harvest, a village pays the company to escort one wagon out. Mireya writes down nineteen names, counts twelve seats, and asks the reeve which seven people he meant to leave behind.
 
 ### §0g. Characters discussed — card status (checked 2026-11-24)
 
