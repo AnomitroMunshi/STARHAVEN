@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 165   (finished so far: 436)
+Still to generate: 168   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -277,3 +277,20 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 
 
 
+
+
+########################################################################
+## WHEN THE THREAD BREAKS — LONG NIGHT ADDITIONS  (3)
+########################################################################
+
+=== Nnenna ===
+Save as: unitImages/known-nnenna.png
+Role: Known Name · The Longmark · pavise bearer (first team)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Nnenna, a pavise bearer of the Longmark, Starhaven's elite long-rifle company. A dark-skinned human woman in her late thirties, broad-shouldered and steady, frost caught in her eyebrows and on the edge of her grey wool hood. She wears a grey Longmark field coat over medium plate that is heavier at the front, and carries a full-body iron pavise on her right arm, with a forged notch in its upper rim for a rifle barrel to rest in. Her left hand is wrapped in a fresh, blood-soaked bandage across the back, the fingers stiff. A small brass spotting glass hangs on a cord at her chest. Calm, patient, unimpressed eyes: the face of someone who has just said "Next." Setting: a narrow snowy rock ledge above a dark mountain valley at night, scattered coloured lanterns glowing green over white far below, pale moonlight through low cloud.
+
+=== Tevita ===
+Save as: unitImages/known-tevita.png
+Role: Known Name · The Longmark · gunner (first team)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Tevita, a gunner of the Longmark, Starhaven's elite long-rifle company. A thin, silent human man in his forties with brown skin, a long narrow face, close-cropped black hair going grey at the temples, and very still hands. He wears a grey Longmark field coat over medium plate weighted at the front, a leather cartridge bandolier of paper powder charges across his chest. He holds an Ironlock Longrifle: a long rifled steel barrel with an iron-fitted wooden stock, and a small firing chamber etched with faint glowing Vaelmark runes instead of a powder pan. A dusting of snow on his shoulders, a smear of black powder at the corner of his mouth. Quiet, focused, breathing out. Setting: kneeling behind an iron pavise on a snowy cliff ledge at night, a dark valley and distant firelight far below.
