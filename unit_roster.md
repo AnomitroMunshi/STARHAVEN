@@ -108,7 +108,7 @@
 | Radiant Cavaliers | Heavy Cavalry | Cavalry | Brynhild Voss |  |
 | Fighting Camelknights | Shock Cavalry | Cavalry | Sultan Rashid |  |
 | Ironmane Lancers | Elite Shock Cavalry | Cavalry | Dresh Ironmane |  |
-| The Closing Wings | Encirclement Cavalry · Flanking Wing | Cavalry | Sael Dorn |  |
+| The Closing Wings | Encirclement Cavalry · Flanking Wing | Cavalry | Ravza Dorn |  |
 | Red Bone Cavalry | Mercenary Cavalry · HQ Reserve | Cavalry | Dusk Ferren |  |
 | Iron Reavers | Mercenary Infantry · HQ Reserve | Infantry | Grena Vashk |  |
 | Silver Swan Cavalry Lance Corps - North | Medium Cavalry | Cavalry | Reva Stallforth |  |
@@ -215,7 +215,7 @@
 | Varn Ashclaw | Personal Bodyguard · The Wall's Edge | Infantry | Pillar of Kael Varric |  |
 | Kiyu Otari | Personal Bodyguard · The Unread Page | Stealth | Pillar of Lyria Valen |  |
 | Sylvaine Duskroot | Solo Legend · Personal Bodyguard · The Silent Root | Infantry | Pillar of Thorin Blackroot |  |
-| Mira Halloway | Personal Bodyguard · Anchor of the Bond | Infantry | Pillar of Bob Vale |  |
+| Rhoswen Halloway | Personal Bodyguard · Anchor of the Bond | Infantry | Pillar of Bob Vale |  |
 | Koa Ashcord | Known Name · The Reedwalkers | Infantry | Rhegar Thorne Reserve |  |
 | Maren Coldhand | Known Name · Coldmarch Ironline | Infantry | 2nd Field Army |  |
 | "Twice-Burned" Gareth | Known Name · The Ashrunners | Infantry | Vael Dusken |  |
@@ -280,7 +280,7 @@
 | Iron Tide | Mechanized Tank Division ⚙️ | Support | Cain Drakhar |  |
 | Ironframe Corps | Ironframe Corps · Iron Legion ⚙️ | Support | Cain Drakhar |  |
 | Seal Order | Void Breaker · Containment & Capture | Support | Zareth Kull |  |
-| The Web | Intelligence Network | Intelligence | Mira Vael |  |
+| The Web | Intelligence Network | Intelligence | Sunniva Vael |  |
 | The Shadow Court | Court Intelligence ♀ | Intelligence | Serell Vane |  |
 | Veil Hunters | Void Response · Active Entity Hunt | Intelligence | Elysia Nocturne |  |
 | Veil Seers | Psionic Operations · Void Detection Array | Intelligence | Elysia Nocturne |  |

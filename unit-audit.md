@@ -67,7 +67,7 @@
 
 ## Intelligence Organizations
 
-32. The Web *(Mira Vael · 3-ring cell structure · Rayden/Nyx authorized · ~400–600 classified)*
+32. The Web *(Sunniva Vael · 3-ring cell structure · Rayden/Nyx authorized · ~400–600 classified)*
 33. The Shadow Court *(Serell Vane · All-female · Court penetration · Leverage mapping)*
 
 ---
@@ -78,7 +78,7 @@
 35. The Silver Shields *(300 Black Orc veterans · Line anchor)*
 36. The Oath-Axes *(300 oath-bound axemen · Any race · Sworn to the Throne)*
 37. The Ember Company *(300 veterans · Cross-army gap-fillers)*
-38. The Closing Wings *(1,200 cavalry · Sael Dorn · Encirclement doctrine)*
+38. The Closing Wings *(1,200 cavalry · Ravza Dorn · Encirclement doctrine)*
 39. The Reedwalkers *(Wetland Infantry Reserve · Delta/swamp/marsh campaigns only)*
 40. The Ashstride Warband *(Centaur warband · Grand Standing Army mobile reserve)*
 41. Starhaven Chariot Runners *(Grand Standing Army distributed pool · Joint training: Karath)*
@@ -669,7 +669,7 @@
 309. Varn Ashclaw *(Personal Bodyguard · Kael Varric — The Wall's Edge, deliberately the offensive counterpart to Kael's pure-defense style · twin curved blades Ruin & Reckoning · selected after clearing a collapsed breach corridor alone, unknowingly auditioning for the post)*
 310. Kiyu Otari *(Personal Bodyguard · Lyria Valen — The Unread Page, Silent Warden · twin daggers Hush + hunting recurve bow · covers Lyria's one true blind spot, directly behind her; communicates only in the hand-signs Lyria personally taught her)*
 311. Sylvaine Duskroot *(Solo Legend · Personal Bodyguard · Thorin Blackroot — The Silent Root, Wood Elf spear-wielder · Stillroot, a living ashwood spear · rides Duskfang, a dire wolf pack-alpha, a silent counterpart to Thorin's own bonded dire bear Grond)*
-312. Mira Halloway *(Personal Bodyguard · Bob Vale — Anchor of the Bond, his girlfriend as well as his guard · longsword & tower shield · protects his physical body specifically while he is exposed and absent from it during Soul Link Anchor techniques)*
+312. Rhoswen Halloway *(Personal Bodyguard · Bob Vale — Anchor of the Bond, his girlfriend as well as his guard · longsword & tower shield · protects his physical body specifically while he is exposed and absent from it during Soul Link Anchor techniques)*
 
 ---
 

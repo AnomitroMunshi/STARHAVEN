@@ -82,7 +82,7 @@
 - **The Dawnrunner Stable** — unknown — Commander: Aera Coldwind · Dawnlancers
 - **Radiant Cavaliers** — 1,440 — Commander: Brynhild Voss
 - **Ironmane Lancers** — 960 — Commander: Dresh Ironmane
-- **The Closing Wings** — 1,920 (reserved) — Commander: Rhegar · Commander Sael Dorn
+- **The Closing Wings** — 1,920 (reserved) — Commander: Rhegar · Commander Ravza Dorn
 - **Red Bone Cavalry** — 1,500 (reserved) — Commander: Mercenary · Commander Dusk Ferren
 - **Silver Swan Cavalry Lance Corps - North** — 7,500 (corps total) — Commander: Reva Stallforth
 - **Silver Swan Cavalry Lance Corps - South** — 7,500 (corps total) — Commander: Reva Stallforth
@@ -283,7 +283,7 @@
 
 ### Intelligence
 
-- **The Web** — unknown — Commander: Mira Vael
+- **The Web** — unknown — Commander: Sunniva Vael
 - **The Shadow Court** — unknown — Commander: Serell Vane
 - **Veil Hunters** — 138 — Commander: Elysia Nocturne · Veil Watch · Shade Arren Command
 - **Veil Seers** — 14 — Commander: Elysia Nocturne · Veil Watch · Ayesha Fael Command

@@ -16,7 +16,7 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | ✅ 1 | Late autumn 1059 | **When the Thread Breaks** — DONE (`when-the-thread-breaks`; Velmora stormglass via a Karvossan-passed crystal; foreign crystals cut 40 days; Undying Colors origin told; Borrak Stonecrown and a Void Titan killed) | Velmora's stormglass blacks out the crystals; told from the Resonance Corps' side (*The Silent Games* already did the army without crystals) | Selka Rennet; the Battlemage Prince |
 | 2 | 1059 | **Take It Alive** | Loose inside Sancthaven; escapes through the cisterns | Dunmar Underlow; Aruksha & Kaalahi hunt |
 | — | before #3 | *The Fall of Ashveil Hold* (§0f #3, set before the kingdom) | Brek Tane's key | — |
-| 3 | Autumn 1059 | **Zharak Crossing + night siege of Ironpass** | Sorvane's undead that need no light; first sight of the giants (§0f #14) | Corvane; Zafir fights; Grath'Uel returns |
+| 3 | Autumn 1059 | **Zharak Crossing + night siege of Ironpass** | Sorvane's undead that need no light; first sight of the giants (§0f #14); **the Nullborn win real ground here (see §0i)** | Corvane; Zafir fights; Grath'Uel returns |
 | 4 | Winter 1059 | **The Winter Council** — last of 1059 | **Every** weak point (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders — only Frosthold has its own Void unit, night, Frostspire, Sorvane's gold, the single Ashen river route, water sources, silver from one mine, one unfinished fort in the south-west, Cain's Vrak designs, succession) | Tolliver Quarrow walks in at the end with news of refugees |
 | 5 | Spring 1060 | **The Elderwood Arrives** | The Elderwood has just joined; its southern seal breaks — the first test of the Council's "bare Void borders". Flying-fortress rematch; SKYREACH debuts and Cyrus falls (§0b) | Saoirse Yarrow; Keth'maur / Sera Nullborn; Cyrus's student |
 | 6 | Early summer 1060 | **Karvossan War for the Sable Isles, Act 1** | Launched from **Skerrow** (§0h): the Lanthorn Squadron is first in | Orevessa Vhalcenne; Thyrandel Qorvashi; the second opposing Lord |
@@ -31,7 +31,21 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | 15 | 1062 on | *(offstage / wiki-era results)* | Saddlestone Citadel, the north-east city, Goldwake, the silver cold war with Silverhorn | — |
 | — | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; contacting the Vrak; **Chapter 10** (1050–51 is already mostly told by chronicles, so it stitches them together) | — |
 
-**Free-standing chronicles** (§0f #1, 2, 4, 5, 6, 7, 10, 11) go between arcs whenever a break from war is wanted.
+**Free-standing chronicles** (§0f #1, 2, 4, 5, 6, 7, 10, 11, 15, 16) go between arcs whenever a break from war is wanted.
+
+### §0i. The Nullborn must win something — Ironpass night siege (agreed 2026-11-27)
+
+So far the Nullborn have lost every fight on the page (First Ashen Passage War 1048, The Long Winter 1057–58, When the Thread Breaks 1059) — high cost each time, but always a Starhaven win. The registry makes them frightening; the stories must too. Canon already sets this up: Nyx's note that Ashfield was only a *vanguard*, and that the Nullborn "introduce units we have no doctrine for, and watch how long it takes us to make one."
+
+In **Zharak Crossing + the night siege of Ironpass**:
+- **Nyx's Coordinator decapitation fails for the first time** — the **Signal Keepers** (registry: "didn't exist at Ashfield, which is why that decapitation worked") cut the four-second window to staggered two-second seizures.
+- **Ashfangs** hunt the Ironpack by its whistle frequencies (registry: the Ironpack switched channels; use that tension).
+- **Grath'Uel returns** (registry: "He will return") — larger, and remembering Rayden.
+- Never-before-used units: **Void Burrowers** under the walls, **Hollow Crawlers** through the drains, **Rift Blades** hunting commanders, a **Walking Bastion** at night.
+- **Ironpass's outer works fall in the dark.** Ironpass itself holds — only just.
+- **A named Starhaven commander dies.** A real loss, not a near miss.
+- Hold back the **Malgrath-Touched Titan** and **Drevak** ("larger than he was") — glimpsed, not used.
+- End on the Nullborn having *learned* something Starhaven has not yet answered — feeds the Winter Council ("bare Void borders", "night").
 
 ### §0c. The south-west frontier (added 2026-11-23)
 
@@ -94,7 +108,7 @@ Least-used Starhaven units in the chronicles (by name count; some zeros are name
 |---|---|---|
 | When the Thread Breaks | Greypeak frontier, north-west (near Stonemark) | The Gauntlet Army (HQ Greypeak Highland Approaches), Highland Coalition (Greypeak), The Undying Colors (embedded; banners as signals with Selka Rennet), Skywarden Corps (signal relay when the crystals die), The Runebreakers |
 | The Rout She Walked Out Of | a northern field army retreat route toward Frosthold | The Dawnlancers (mobile with the 2nd), Ironveil Spear Corps, Apothecary Corps, Iron Road Corps; Bjorr Runebane and Bearkin arrive as unexpected allies |
-| Take It Alive | Sancthaven | Holy Knights (HQ the White Citadel, Sancthaven), Starhaven Beast Corps (Helna Ironmane), Void Hounds, The Web (Mira Vael) |
+| Take It Alive | Sancthaven | Holy Knights (HQ the White Citadel, Sancthaven), Starhaven Beast Corps (Helna Ironmane), Void Hounds, The Web (Sunniva Vael) |
 | The Elderwood Arrives | the southern forests (flying fortress overhead) | Iron Talon Batteries (anti-aerial — against the fortress), Arcane Artillery Corps (Kai, Vaelmark), Silverleaf Corps (mobile with the 4th), Greenveil Defense Forces |
 | Zharak Crossing + Ironpass (night) | Karath / the dunes, and Ironpass in the east | The Dusk Corps, Windlance Cavalry (horse archers), The Ashrunners, The Warbreakers, Ironbreaker Mace Corps (HQ Forgehaven, next door to Ironpass), The Ironpack, Iron Reavers + Cinderguard (both Ashfield, on the dunes road) |
 | The Wedding | Starhold | **The Black Charge as honour guard** (Vespera's own riders), the Dawnguard, The Crown Shadows |
@@ -133,6 +147,8 @@ Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
 5. **The First Open Morning** — year one: Rayden opens the doors, nobody comes for three months, then a cleaning woman walks in about the drains.
 6. **Saint Veyne** — Rayden founds the orphanage with his first king's wages, named for the one he grew up in; the first child through the door, and where that child is now.
 7. **The Founding Line** — Nyx and Korvus Drey design Goldgate's security before its first stone, and argue for a week about one sentence: tourists are never watched.
+15. ✅ DONE 2026-11-27 (`first-ashen-passage-war`, autumn 1048; Ashfield's Atlas crater date corrected 1042 → 1048) — **The First Ashen Passage War (c. 1048)** [added 2026-11-27] — the war the 1052 chronicle is the *second* of; referenced across the wiki but never told. Already-canon beats to use: Ashfield contested for six years before it settled the question; the night the Ashfield crater was made (a veteran "walked out of the crater the night it was made"); the third choke point of the Ashen Passage; Cain losing an Iron Tide tank to a parabolic arcane round (he redesigned the armour after); the siege-tower "Ashen Passage delay" that made Brix Holt redesign Rampart's drop-bridges; Ashfield families hiding in the Underground Refuge; the Ashen Passage Memorial; a Mercy Rider who left the field afterwards to run Saint Veyne. Check STORY_TLDR and the Ashfield Atlas entry for dates before writing.
+16. **Varn Ashclaw — The Audition (short story, later)** [added 2026-11-27] — how Kael Varric's bodyguard joined. From his unit card: Kael watched him clear a collapsed breach corridor alone in under a minute, and never told him it was an audition. He is the offensive half of Kael's protection: Kael holds, Varn hunts, with twin curved blades Ruin & Reckoning and deliberately light Ashclaw half-plate. Restless where Kael is still; trusts Kael's patience while finding it maddening; never lets a fight beside Kael run past its second minute. He has no character card yet — make one when the story is written. He was left out of The First Ashen Passage War on purpose, so his date of joining is still free (after 1048 fits best).
 
 **Now and after (1059–1060)**
 8. **Beacon Night** — the first unannounced test; the Kettlebys see riders in the grass — Kessrin or scouts? — and light the first fire.
@@ -148,13 +164,13 @@ Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
 
 Five provisional Dummy Legend cards are grouped under **The Last Fare** in the main wiki. This independent company grew out of a caravan escort crew. They take contracts to bring people home, list each passenger by name, and collect half the fee when the last person arrives.
 
-- **Mireya Valcobre, the Fare Captain** — bronze-armored swordswoman. On stone she can drive the force of a parried blow into the ground and use it to hold a crossing until the last wagon is through. Her fox's little bell tells people in hiding that she's come back for them.
+- **Catalina Valcobre, the Fare Captain** — bronze-armored swordswoman. On stone she can drive the force of a parried blow into the ground and use it to hold a crossing until the last wagon is through. Her fox's little bell tells people in hiding that she's come back for them.
 - **Zurra Keldruk, the Doorbreaker** — white-haired hobgoblin hunter who learned to break open homes buried by snow. She earned her mammoth-tusk war hammer, **Cairnwake**, in the **Hanging Vault**, an A-rank dungeon, when she stayed behind to free a pinned delver. **Stilled Blow** stores up to three strikes against one object and releases them together when she taps it again.
 - **Nerilda Tavrel, the Lamplighter** — former mine surveyor whose crescent staff, **Noonwick**, banks sunlight. **Sun Under Stone** lights a dark cavern or hall as brightly as midday for thirty minutes. **Sunwash** uses that stored sunlight to cleanse Void corruption from people and surfaces. She can also brace a failing arch or spend a full charge splitting a stone obstruction along an existing fracture.
 - **Iscara Moltren, the Waymarker** — forest archer in a horned skull helm. With **Last Span**, she can shoot an arrow from **Wayback Yew** into a solid anchor and raise a bridge up to sixty feet long for one minute. The bridge can carry six adults at once. She crosses last and pulls the arrow to drop the span behind her.
 - **Ruzena Kestovar, the Last Seat** — Wolf-Kin rear guard with a tall shield and flail. **Three Minutes of Fang** turns her into a great wolf with overwhelming strength for three minutes. The passenger she once held a seat for over three days is now the company's quartermaster.
 
-**Possible first appearance:** On the road to Saddlestone Keep before harvest, a village pays the company to escort one wagon out. Mireya writes down nineteen names, counts twelve seats, and asks the reeve which seven people he meant to leave behind.
+**Possible first appearance:** On the road to Saddlestone Keep before harvest, a village pays the company to escort one wagon out. Catalina writes down nineteen names, counts twelve seats, and asks the reeve which seven people he meant to leave behind.
 
 ### §0g. Characters discussed — card status (checked 2026-11-24)
 

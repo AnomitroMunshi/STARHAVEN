@@ -152,7 +152,7 @@
 
 *Silver Swan now organized into four regional detachments (North · South · East · West), each with Lance, Mounted Crossbow, Pursuit Rider, and Command & Signal sub-units. Total unchanged.*
 
-| Closing Wings | Sael Dorn | Flanking Screen | 1,600 | 320 | **1,920** |
+| Closing Wings | Ravza Dorn | Flanking Screen | 1,600 | 320 | **1,920** |
 | Windlance Cavalry | Irae Duskwind | Northern / Western Fronts | 900 | 225 | **1,125** |
 | Recurve Company of the Third | — | 3rd Field Army | 400 | 100 | **500** |
 | Ashstride Warband | Mirra Duststep | Mobile Reserve | 700 | 175 | **875** |

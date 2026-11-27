@@ -96,7 +96,7 @@
 | **Bjorr Runebane** | **Independent — Answers to Rayden Cale in Battle** |
 | **Varn Ashclaw** | **Pillar of Kael Varric (Personal Bodyguard)** |
 | **Sylvaine Duskroot** | **Pillar of Thorin Blackroot (Personal Bodyguard)** |
-| **Mira Halloway** | **Pillar of Bob Vale (Personal Bodyguard)** |
+| **Rhoswen Halloway** | **Pillar of Bob Vale (Personal Bodyguard)** |
 | **Hammerers** | **Brokk Graniteborn · Captain Yorna Cinderhelm** |
 | **Gram Stons** | **Stonemark Holds · Brokk Graniteborn** |
 | **Brak Graymaw** | **Stonemark Holds · Brokk Graniteborn** |
@@ -159,7 +159,7 @@
 | Radiant Cavaliers | Brynhild Voss |
 | Fighting Camelknights | Sultan Rashid |
 | Ironmane Lancers | Dresh Ironmane |
-| The Closing Wings | Rhegar · Commander Sael Dorn |
+| The Closing Wings | Rhegar · Commander Ravza Dorn |
 | Red Bone Cavalry | Commander Dusk Ferren |
 | Iron Reavers | Commander Grena Vashk |
 | Silver Swan (all variants) | Reva Stallforth |
@@ -422,7 +422,7 @@
 
 | Unit | Commander / Captain |
 |---|---|
-| The Web | Mira Vael |
+| The Web | Sunniva Vael |
 | The Shadow Court | Serell Vane |
 | Veil Hunters | Shade Arren |
 | Veil Seers | Ayesha Fael |
