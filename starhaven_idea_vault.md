@@ -9,7 +9,7 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | # | Arc | Vault idea carried | Debut |
 |---|---|---|---|
 | 0 | Canon fixes (§7) | — | — |
-| 1 | The Crown's Shadow — attempt on Rayden | #1 Traitor in the Web: the betrayal comes from inside — a **new vice-minister** close to Rayden | — |
+| 1 | ✅ DONE — The Crown's Shadow — attempt on Rayden (chronicle `the-crowns-shadow`, Lantern Night 1059) | #1 Traitor in the Web: the betrayal comes from inside — a **new vice-minister** close to Rayden | — |
 | 2 | ✅ DONE — The Shadow Court (Greymark vs Open Visa spies; chronicle `the-shadow-court`) | — | Faceless |
 | 3 | When the Thread Breaks (Resonance Corps) | Velmora's stormglass (from *The Eleventh Letter*) helps black out the crystals | Selka Rennet |
 | 4 | The Rout She Walked Out Of (Edda Rensh) | — | — |
@@ -139,7 +139,7 @@ Five provisional Dummy Legend cards are grouped under **The Last Fare** in the m
 | Selka Rennet | dead-line signal officer (Resonance Corps) | When the Thread Breaks | **no card yet** |
 | Tolliver Quarrow | prospector-spymaster, Treasury + Umbral Web | The Ice Carts → Winter Council | **no card yet** |
 | Dunmar Underlow | deep-warden of cisterns and tunnels | Take It Alive | **no card yet** |
-| Saoirse Yarrow | ancient Wood Elf field healer, tortoise Mosswall | The Elderwood Arrives | **no card yet** |
+| Saoirse Yarrow | ancient Wood Elf field healer, tortoise Mosswall | The Elderwood Arrives | yes (2026-11-27; image to make) |
 | Hob Fennick | Guild porter, 19 — kept Iva Renn's knife; first porter-scout | The Rookie Season → Saddlestone Keep | **no card yet** |
 | Morna | half-orc rookie, 17, pitchfork; led the king's F-rank party | The Rookie Season | **no card yet** |
 | Corwen | Canal Rat, carries the rope | The Rookie Season | **no card yet** |
@@ -229,8 +229,8 @@ Four of the seven characters we designed in August are kept. Full builds are in 
 |---|---|---|
 | **Faceless** | Biological mimic, Greymark operative, Null Blades (Nyx) | Male. Genuine shapeshifting, not illusion. Greymark is already in the wiki. |
 | **Saoirse Yarrow** (was "Martha" — renamed: look-alike of Marta Greaves / Marta Fenn) | Ancient Wood Elf field sustainer, magic healer with a lifestaff, Greenveil / Primal Vanguard | Keeps the Giant Forest Tortoise, Mosswall: slow on purpose — a moving field hospital and rally point behind the line, where the wounded crawl to. Name-checked clean 2026-11-23. Debuts in The Elderwood Arrives. |
-| **Corvane** | "The Debt Collector," Sable Conclave commander under Sorvane Nullis | Age 34, Veilmarked human. Sword *Graveclaim*. Gains strength from every death within range. Abilities: Harvest Step, The Living Edge, Deathweight (ultimate), Conclave Resonance. Only living commander who can direct Sorvane's undead in real time. |
-| **Dante** | Four-armed debilitator marksman, Solo Legend | Fills the "weaken, don't kill" gap. Born on the Silver Isle (section 1). Four arms are explained by his people. |
+| **Corvane** | "The Debt Collector," Sable Conclave commander under Sorvane Nullis | Age 34, Veilmarked human. **Graveclaim** takes the weight of nearby deaths. **Harvest Step** lets him vanish between fresh bodies, and **Conclave Resonance** lets him see through one of Sorvane's dead and direct whole ranks in silence. **Deathweight** can drop a rank to its knees or crack a fortress gate, then leaves his sword arm numb and the dead carrying out his last order. |
+| **Dante** | Four-armed debilitator javelineer (javelins, not crossbows), Solo Legend | Fills the "weaken, don't kill" gap. Born on the Silver Isle (section 1). Four arms are explained by his people. |
 
 **Dropped [Ano/agreed]:**
 - **Dorian** — too many wolf-folk already (Wolf-Kin, Beastkin, werewolf clans under House Sanguinar in Karvossa). Can be changed later if needed.
@@ -300,5 +300,6 @@ Found by counting how thinly the wiki covers each topic. Top picks: **#2 and #7*
 ## 7. Canon to fix (found 2026-11-23)
 
 - ✅ Fixed (checked 2026-11-27): Drevak's card is now status "unknown"; the Ashen Shields clash is gone (renamed The Shields of Lumenfield); Kira "Scorchmark" Vey is now Ilka 'Scorchmark' Dane with a full entry; Crest Vane's ship is "Permanent Tide" everywhere.
-- Not yet in the wiki: Saoirse Yarrow, Corvane and Dante (Faceless has a card now) and the 7 Dawnless Days units (Starstone Guard, Thornwall Remnant, Greenveil Skin-Wardens, Coldmarch Survivalists, Ashveil Border Watch, Saltmere Lance, Ashfield Survivors).
+- ✅ All 4 kept characters now have cards (Saoirse Yarrow, Corvane and Dante added 2026-11-27; images still to make).
+- Not yet in the wiki: the 7 Dawnless Days units (Starstone Guard, Thornwall Remnant, Greenveil Skin-Wardens, Coldmarch Survivalists, Ashveil Border Watch, Saltmere Lance, Ashfield Survivors).
 - Chapter 10 (Year 1050–1051 timeskip) still unwritten, though chronicles run to Year 1059.
