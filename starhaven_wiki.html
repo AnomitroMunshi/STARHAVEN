@@ -594,7 +594,8 @@ a.lore-card:hover{transform:translateY(-2px)}
       <button class="tab-btn" data-filter="Court &amp; Scholars" onclick="charsRender('Court & Scholars',this)">Court &amp; Scholars</button>
       <button class="tab-btn" data-filter="Allied Nations" onclick="charsRender('Allied Nations',this)">Allied Nations</button>
       <button class="tab-btn" data-filter="Tribes &amp; Clans" onclick="charsRender('Tribes & Clans',this)">Tribes &amp; Clans</button>
-      <button class="tab-btn" data-filter="Mercenaries &amp; Legends" onclick="charsRender('Mercenaries & Legends',this)">Mercenaries &amp; Legends</button>
+      <button class="tab-btn" data-filter="Mercenaries &amp; Legends" onclick="charsRender('Mercenaries & Legends',this)">Mercenaries</button>
+      <button class="tab-btn" data-filter="Solo Legends" onclick="charsRender('Solo Legends',this)">Solo Legends</button>
       <button class="tab-btn" data-filter="Guild &amp; Citizens" onclick="charsRender('Guild & Citizens',this)">Guild &amp; Citizens</button>
       <button class="tab-btn" data-filter="Known Names" onclick="charsRender('Known Names',this)">Known Names</button>
       <button class="tab-btn" data-filter="Dummy Legends" onclick="charsRender('Dummy Legends',this)">Dummy Legends</button>
@@ -603,8 +604,8 @@ a.lore-card:hover{transform:translateY(-2px)}
     </div>
     <div class="search-bar">
       <input class="search-input" id="char-search" placeholder="Search characters…" oninput="charSearch=this.value.toLowerCase();charsRender(charFilter)">
-      <select class="char-alliance-select" id="char-group-filter" aria-label="Filter characters by alliance, kingdom, or enemy faction" onchange="if(charFilter==='Allied Nations')charAllianceFilter=this.value;else if(charFilter==='Known Enemies')charEnemyFilter=this.value;else charDummyKingdomFilter=this.value;charsRender(charFilter)" hidden>
-        <option value="all">All alliances</option>
+      <select class="char-alliance-select" id="char-group-filter" aria-label="Filter characters by alliance, kingdom, or enemy faction" onchange="if(charFilter==='Allied Nations')charAllianceFilter=this.value;else if(charFilter==='Known Enemies')charEnemyFilter=this.value;else if(charFilter==='Mercenaries & Legends')charMercFilter=this.value;else if(charFilter==='Solo Legends')charSoloFilter=this.value;else charDummyKingdomFilter=this.value;charsRender(charFilter)" hidden>
+        <option value="all">All allied kingdoms</option>
       </select>
       <span class="result-count" id="char-count"></span>
     </div>
@@ -24884,6 +24885,26 @@ const CHARACTERS = [
     background:'Before the kingdom she carried water for a coalition army in the Coldmarch hills. She saw half a line hear the order to fall back and half not hear it. She built the Undying Colors so that would never happen again, and everyone said a flag is not a weapon. At Greypeak in 1059, with every crystal dark, four hundred standards lit by Selka Rennet\'s lanterns held ten thousand soldiers together.',
   },
   {
+    id:'dessamarrow', name:'Dessa Marrow',
+    image:'starhaven_chars_image/dessamarrow.png',
+    imagePrompt:"A human woman in her late forties, Colonel of Starhaven artillery engineers, stocky and square-shouldered, with soot-darkened brown skin, close-cropped iron-grey hair and burn-scarred forearms. She wears a heavy leather engineer's coat over a steel breastplate, brass range-finding lenses pushed up on her forehead, and holds a slate covered in chalk trajectory sums. Behind her, dwarven and human crews load a squat bronze mortar and a long cannon together. Magic: Vaelmark range-runes glow pale blue along the cannon's barrel. Setting: a snowy mountain gun-terrace cut into rock, smoke drifting.",
+    title:'The Forgepact Colonel',
+    category:'Commander', status:'alive',
+    age:'Late 40s (Year 1054)', race:'Human', role:'Colonel · Commander of the Forgepact Battery · Joint Stonemark-Starhaven Engineering',
+    color:'#7A5A3A',
+    weapons:['A slate of trajectory sums','A short engineer\'s sword she has drawn twice','Twelve cannons and eight mortars, when she is allowed'],
+    abilities:[
+      {name:'The Charter', type:'passive', desc:'Co-signed the joint engineering charter with Brokk Graniteborn after the Ironbreaker incident. Dwarven powder and barrels, Vaelmark range-runes: neither side could have built the Battery alone.'},
+      {name:'Arcing Fire', type:'active', desc:'Mortars that drop shot over walls and ridges onto ground nobody can see from the guns. She does the sums on a slate, in chalk, faster than a Vaelmark rune-table.'},
+      {name:'Mountain Gun-Terrace', type:'active', desc:'Cuts a firing terrace into a rock face in a day with dwarven engineers, and gets guns onto it that should not fit.'},
+    ],
+    quote:'"Brokk builds for close. I build for far. Between us there is nowhere to stand."',
+    bio:'A Starhaven artillery engineer who spent the Ironbreaker incident watching dwarves die for want of guns, and then sat down with Brokk Graniteborn and wrote a charter instead of a complaint. The Forgepact Battery\'s first real campaign was the Tied Moot of 1054, under the mountain she had helped arm.',
+    relationships:[{name:'Brokk Graniteborn',type:'ally',note:'Co-signed the Forgepact charter'},{name:'Rhegar Thorne',type:'ally',note:'The Battery sits in his direct reserve'},{name:'Borg Brassvein',type:'rival',note:'The Thunderers think range is cowardice. She thinks it is arithmetic.'}],
+    tags:['Commander','The Forgepact Battery','Artillery','Engineer','The Tied Moot'],
+    background:'Commander of the Forgepact Battery: twelve cannon crews and eight mortar crews, dwarven powder and barrels, Vaelmark range calibration. Born of the Ironbreaker incident, first tested in the Tied Moot of 1054, when Starhaven came north to stand with Durak Stonemark.',
+  },
+  {
     id:'corenveld', name:'Coren Veld',
     image:'starhaven_chars_image/corenveld.jpg',
     title:'The Quiet Mile',
@@ -25623,7 +25644,7 @@ const CHARACTERS = [
     quote:'"I stopped needing to." — on why he declines all 17 subsequent duel challenges',
     bio:'"I stopped needing to." — when asked why he declines all 17 subsequent duel challenges. Loyalty: Joined Starhaven\'s orbit through defeat and generosity in sequence.',
     relationships:[{name:'Kael Varric',type:'ally',note:'Lost the duel. 41 minutes. Respects him now.'},{name:'Rayden Cale',type:'ally',note:'Offered him work instead of punishment — the right thing at the right time'}],
-    tags:['Mercenaries & Legends','Starhaven — Independent Contractor','Independent'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Starhaven — Independent Contractor','Independent'],
     background:'Three solo S-rank dungeon clears. Challenged Kael in Goldgate Arena. Lost in 41 minutes. Spent 600,000 SM on an army to take Goldgate. Stopped at Ashfield mile 7, zero deaths. Rayden offered him the three unclearable frontier dungeons. He accepted. Has declined 17 duels since. Rank: Independent S-Rank Contractor · Void Breakers associated · Goldgate / mobile.',
     achievements:['3 solo S-rank dungeon clears — unprecedented','Arena duel with Kael — 41 minutes, lost without Kael stepping back once','34,000-man army stopped at Ashfield mile 7 — zero deaths','17 duel challenges declined'],
   },
@@ -25844,7 +25865,7 @@ const CHARACTERS = [
     quote:'"No dragon chose us. The sky did not care. Neither did we."',
     bio:'14,000 feet on griffin-back. The altitude record. She holds it. Aurelia\'s reaction to this: respect. Loyalty: Starhaven gave the Brotherhood permanent basing rights. The cliff-top eastern landing ground is home.',
     relationships:[{name:'Aurelia Vex',type:'ally',note:'Respects her more than most Stormriders — they compete for altitude records'},{name:'Zephyros',type:'ally',note:'The dragon who didn\'t choose her. She finds him "professionally interesting."'}],
-    tags:['Mercenaries & Legends','Mercenary','Wing-Commander'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Mercenary','Wing-Commander'],
     background:'Aurelia\'s Stormrider washout. Founded Stormwing Brotherhood. 14,000-foot altitude record on griffin-back. Rank: Wing-Commander · Stormwing Brotherhood (800 fighters, 120 griffins, 60 wind-mage fliers) · Skyperch stationed.',
     mount:'Ironwing — griffin, bonded Year 1046',
     achievements:['Founded Stormwing Brotherhood — from washout to Wing-Commander','14,000-foot altitude record on griffin-back','120 griffin breeding program in partnership with Marcus Ironmane'],
@@ -25924,7 +25945,7 @@ const CHARACTERS = [
     quote:'"The horse you own fights different from the horse you borrowed. We own ours."',
     bio:'Easy before the ride. Completely calm during it. The calm does not mean comfort — it means she has already decided how it ends. Loyalty: Coldmarch Plains open grazing charter. She\'d burn a better contract before she lost that land.',
     relationships:[{name:'Redbone Cavalry',type:'commander',note:'900 riders. 900 mounts. Each pair trained as a single unit. She inspects every bond personally before a contract.'},{name:'Coldmarch Plains',type:'territory',note:'Open grazing charter. The plains are their home. She renewed the charter before she renewed anything else.'}],
-    tags:['Mercenaries & Legends','Mercenary','Ride-Captain'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Mercenary','Ride-Captain'],
     background:'Raised on the Coldmarch. Never left it willingly. Built the Redbone Cavalry from the plains\' own riders — people who already owned their horses and already knew how to use them. Rank: Ride-Captain · Redbone Cavalry (900 riders / 900 mounts) · Coldmarch Plains stationed.',
     mount:'Ashfall — bonded duskstrider, Year 1044. Black coat, red-ember eyes. Has thrown exactly one rider. It was not Dusk.',
     achievements:['4-hour mobilization — fastest mercenary cavalry response in registry','14 bonded duskstriders integrated into active cavalry roster','Zero mount losses to non-combat causes on campaign — every animal returns'],
@@ -25944,7 +25965,7 @@ const CHARACTERS = [
     quote:'"The forest saw you coming. I saw you three days before the forest did."',
     bio:'Patient in a way that humans mistake for stillness. She is not still. She is waiting. There is a difference she stopped explaining a century ago. Loyalty: The Greywood outer canopy. She was there before the contract. She will be there after.',
     relationships:[{name:'Thorin Blackroot',type:'ally',note:'Gentleman\'s arrangement. He said less than five words each meeting. She considers this a deep professional relationship.'},{name:'Greywood Wardens',type:'commander',note:'620 wardens. Most have served for decades. She does not rush recruitment.'}],
-    tags:['Mercenaries & Legends','Mercenary','Warden-Prime'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Mercenary','Warden-Prime'],
     background:'128 years in the Greywood. Was a warden before it was a company. Formalized the arrangement when the contracts started arriving faster than she could handle alone. Rank: Warden-Prime · Greywood Wardens (620 wardens) · Greenveil Outer Canopy · Wilderness mobile.',
     mount:'Stillfoot — a shadowdeer. Does not make sound. Has never been seen by an enemy first.',
     achievements:['200+ monster suppression contracts — zero civilian casualties','Gentleman\'s arrangement with Thorin Blackroot — holds without writing','Oldest active mercenary commander in Starhaven\'s registry'],
@@ -25964,7 +25985,7 @@ const CHARACTERS = [
     quote:'"We hold until you\'re out. We have always held until you\'re out."',
     bio:'Calm that is not absence — it is structure. She has already thought through the scenario you are panicking about. She solved it two days ago. She is now waiting for you to catch up. Loyalty: Sancthaven Quarter rotating garrison contract. She chose Sancthaven. She could have based anywhere.',
     relationships:[{name:'Seraphine Mire',type:'contracted',note:'Standing retainer for field hospital protection. Cova has never missed a rotation. Seraphine has never had to ask twice.'},{name:'The Shields of Lumenfield',type:'commander',note:'1,100 soldiers. Every one knows the extraction corridors before the enemy knows the contract exists.'}],
-    tags:['Mercenaries & Legends','Mercenary','Shield-Warden'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Mercenary','Shield-Warden'],
     background:'Former city watch captain. Left the watch after a siege where the evacuation failed. Built the Shields of Lumenfield specifically so that would never happen again under her command. Rank: Shield-Warden · The Shields of Lumenfield (1,100 fighters) · Sancthaven Quarter stationed · Deployment mobile.',
     mount:'None. "You cannot hold a line from horseback."',
     achievements:['Zero protected-party losses in eleven years of defensive contracts','Clause never invoked — the only mercenary company in the registry with this record','Seraphine Mire standing retainer — field hospital protection, zero incidents'],
@@ -25984,7 +26005,7 @@ const CHARACTERS = [
     quote:'"They took the jaw. I kept the teeth. Send me the gate coordinates."',
     bio:'The iron jaw does not hide the smile — it frames it. Aldric Morne is not a grim man. He is a man who has been to the worst places warfare produces and found, each time, that he was still there on the other side. This produces a specific kind of ease that younger soldiers mistake for recklessness and experienced commanders recognise immediately as the opposite. He laughs at siege briefings. The laughter is not nervousness. It is familiarity. Loyalty: Permanent retainer to Starhaven. 4,000 Starmarks monthly. Immediate response time. He was loyal to Rayden before the retainer was signed and will be after it ends. The coin is not the reason.',
     relationships:[{name:'Rayden Cale',type:'loyalty',note:'Rayden pulled him from a collapsing siege tower at personal risk, Year 1035 — the same engagement that took his jaw. Aldric\'s loyalty to the King is not contractual. It is personal, total, and not discussed. He is on permanent retainer. He would be here without the coin.'},{name:'Cain Drakhar',type:'debt',note:'Cain Drakhar of the Iron Legion fabricated the iron jaw. Aldric considers this a debt of a specific kind — not financial, not contractual, but the kind that means he has never once raised BlackJaw in a direction Cain was standing. He has told Cain this directly. Cain said nothing. Aldric considered that an acknowledgment.'},{name:'The Broken Crown Company',type:'commander',note:'12,000 soldiers. Founded Year 1028. The oldest active mercenary company in the registry. He has buried soldiers, promoted children of soldiers, and once promoted a grandchild of an original founding member. He knows every name on the casualty list going back to Year 1028. He reads it once a year. Alone.'},{name:'Kael Varric',type:'professional',note:'Two siege commanders with two different doctrines. They have never formally disagreed because they have never been assigned opposing objectives. Kael reviewed a Broken Crown breach report once. He made one correction. Aldric had already noted the same error in the margin in different ink.'}],
-    tags:['Mercenaries & Legends','Mercenary','Captain-General'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Mercenary','Captain-General'],
     background:'Aldric Morne founded the Broken Crown Company in Year 1028 at the age of 36, after the fall of a minor kingdom he had served as a field officer — gathering the survivors, naming the company after what they had all just lost, and taking the first contract three months later. In Year 1035, a siege crossbow bolt took his lower jaw during the Battle of the Ashgate Crossing. Cain Drakhar fabricated the replacement. Rayden pulled him from the collapsing tower the same day. By the time the field surgeon finished, Aldric had already asked what the next contract was. He has fought in 14 wars across 6 kingdoms since. In 24 years of operation, the Broken Crown Company has never broken a contract, never failed a breach, and never lost a Captain-General. There has only ever been one. Rank: Captain-General · The Broken Crown Company (12,000 soldiers) · Permanent Starhaven Retainer · Immediate Response · Founded Year 1028.',
     mount:'Brimstone — Armored Dreadmaw War Boar. Full plate barding, custom fitted. The only mount in Starhaven\'s registry that has charged a fortified gate and come through it.',
     achievements:['14 wars across 6 kingdoms — longest active warfare record in Starhaven\'s mercenary registry','Founded the Broken Crown Company Year 1028 — the oldest active mercenary company in the registry','Survived iron jaw replacement, Year 1035 — Cain Drakhar fabrication, returned to field same engagement','24 years of siege contracts — zero phase-three failures, zero broken contracts','Permanent Starhaven retainer — the only mercenary company with immediate response classification','Rayden Cale personal loyalty — predates the retainer, will outlast it'],
@@ -27734,7 +27755,7 @@ const CHARACTERS = [
     quote:'"You can still walk home. Slowly."',
     bio:'A four-armed javelin thrower who fights for pay, and for nothing when the fight is on his own island. He throws to stop people, not to kill them, and keeps a count of the times he had no choice.',
     relationships:[{name:'Rayden Cale',type:'ally',note:'Fought beside him on the Silver Isle and asked him to join Starhaven'}],
-    tags:['Mercenaries & Legends','Solo Legend','Javelineer','Silver Isle'],
+    tags:['Loyal to the Silver Isle', 'Mercenaries & Legends','Solo Legend','Javelineer','Silver Isle'],
     background:'His people\'s first island sank. The survivors settled the Silver Isle, and their king, the one they call the Architect, has never been found. Dante was born there and left to sell his aim abroad. Captains pay more for him than for a killer, because an army that is beaten but alive surrenders faster.',
   },
   {
@@ -27881,7 +27902,7 @@ const CHARACTERS = [
     quote:'"We are not asking to be noticed. We are asking to be used."',
     bio:'Long blonde hair, white-and-gold armour, a long white cloak.',
     relationships:[{name:'Rhegar Thorne',type:'ally',note:'Reviewing her commission'}],
-    tags:['Mercenaries & Legends','The Unbroken Line','Elf'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','The Unbroken Line','Elf'],
     background:'Commands an independent petitioning company of elven spear and shield based in Goldgate, under review for full commission by Grand Marshal Rhegar Thorne.',
   },
   {
@@ -30196,7 +30217,7 @@ const CHARACTERS = [
     quote:'"We walked two years to find a place to stand. Now we stand."',
     bio:'A centaur: weathered bronze human torso, long grey-streaked black hair and beard braided with copper rings, deep-set amber eyes, a chestnut horse body with a pale blaze and scarred flanks.',
     relationships:[{name:'Rhegar Thorne',type:'liege',note:'Grand Marshal — deploys the warband at his discretion'},{name:'Kael Varric',type:'ally',note:'Gave the families land outside Ironpass'}],
-    tags:['Mercenaries & Legends','Ashstride Warband','Rare Race','Ironpass','Centaur'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Ashstride Warband','Rare Race','Ironpass','Centaur'],
     background:'Chief of the Ashstride, the centaurs of the Sunreach Steppes who crossed the far south-eastern grasslands to reach Starhaven. Their families live at Ashstride Camp outside Ironpass; the warband fights as Rhegar Thorne\'s mobile reserve, deployed at need.',
   },
   {
@@ -30214,7 +30235,7 @@ const CHARACTERS = [
     quote:'"Shelter and supply for my riders and their mounts. In return, you have us."',
     bio:'Lean, hard-faced woman, dark olive skin, close-shaved sides with a long black braid on top, pale grey-green eyes, a burn scar along her neck.',
     relationships:[{name:'Rhegar Thorne',type:'liege',note:'Deploys the Colossi at his discretion'}],
-    tags:['Mercenaries & Legends','Aethran Colossi','Apex Beast Riders','Saltmere'],
+    tags:['Loyal to Starhaven', 'Mercenaries & Legends','Aethran Colossi','Apex Beast Riders','Saltmere'],
     background:'Commander of the last war titan corps of the Aethran Dominion. When the Dominion collapsed she brought twenty-seven riders and twenty-seven Fangwalkers across the ocean in cargo holds, walked down the gangplank at Saltmere unarmed, and offered their service for shelter and supply. She has never explained the Collapse, and nobody in command has pressed her.',
   },
   {
@@ -31909,7 +31930,14 @@ const DUMMY_LEGENDS = [
   {id:'dummy-thyrandel-qorvashi',name:'Thyrandel Qorvashi',title:'Military Commander · Karvossa',category:'Dummy Legends',status:'unknown',age:'Unknown',race:'Vampire',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-thyrandel-qorvashi.png',imagePrompt:"A vampire cavalry commander with swept black hair, a pale face and garnet-red eyes, wearing blackened Karvossan scale armor with pointed pauldrons, a white cravat and a high crimson-lined cloak. He holds the hooked lance Fordhook at rest in a vaulted Gothic muster hall, where bats cross thin shafts of moonlight.",weapons:['Fordhook'],color:'#854347',tags:['Dummy Legends','Karvossa','Commander']},
   {id:'dummy-qalvior-dalverin',name:'Qalvior Dalverin',title:'Solo Legend · Karvossa',category:'Dummy Legends',status:'unknown',age:'Unknown',race:'Vampire',role:'Solo Legend · Mounted Javelin Skirmisher',image:'starhaven_chars_image/dummy-legend-qalvior-dalverin.png',imagePrompt:"A vampire skirmisher riding a massive white-maned lion with a low-profile black-iron breast harness. He wears blackened Karvossan lamellar with worn brass edges, an open-faced helmet and streaming crimson ties. He holds one light throwing javelin and carries two spares in a saddle case. Show rider and lion together in windblown tawny grass under a stormy twilight.",mount:'White-maned lion',color:'#9E4B3F',tags:['Dummy Legends','Karvossa','Solo Legend']},
   {"id": "dummy-vaelric-morvayne", "name": "Vaelric Morvayne", "title": "Solo Legend · Karvossa", "category": "Dummy Legends", "status": "unknown", "age": "Unknown", "race": "Vampire", "role": "Solo Legend · Moonfang Pack Commander", "image": "starhaven_chars_image/dummy-legend-vaelric-morvayne.png", "imagePrompt": "A vampire commander of the Moonfang Pack, with pale skin, ash-white hair, red eyes and visible vampire fangs. Give him a fierce, imposing silhouette with a white wolf-fur mantle, fitted blackened armor with claw-scored gauntlets, and a crimson split sash. His face is recognizably humanoid vampire. Two towering grey werewolves in black iron and tattered crimson stand behind him under a moonlit Karvossan gate, clearly distinct from their commander.", "commands": ["Moonfang Pack"], "color": "#765158", "tags": ["Dummy Legends", "Karvossa", "Solo Legend"]},
-  {id:'dummy-brondrith-thrennox',name:'Brondrith Thrennox',title:'Political Lord · Stonemark Holds',category:'Dummy Legends',status:'unknown',age:'151',race:'Dwarf',role:'Political Lord',image:'starhaven_chars_image/dummy-legend-brondrith-thrennox.png',imagePrompt:"A 151-year-old dwarf lord with a square face and a long silver beard in three bronze-bound braids. He stands at an angular stone council table in a carved mountain hall, wearing formal charcoal mail under a heavy slate woven mantle with geometric old-bronze clasps. Warm brazier light edges his mantle and distant cold window light reveals tall stone pillars.",color:'#75624B',tags:['Dummy Legends','Stonemark Holds','Lord']},
+  {"id":"dummy-brondrith-thrennox","name":"Brondrith Thrennox","title":"Lord of Highcairn · Stonemark Holds","category":"Dummy Legends","status":"unknown","age":"151","race":"Dwarf","role":"Political Lord · Hold-Lord of Highcairn, the oldest hold","image":"starhaven_chars_image/dummy-legend-brondrith-thrennox.png","imagePrompt":"A 151-year-old dwarf lord with a square face and a long silver beard in three bronze-bound braids. He stands at an angular stone council table in a carved mountain hall, wearing formal charcoal mail under a heavy slate woven mantle with geometric old-bronze clasps. Warm brazier light edges his mantle and distant cold window light reveals tall stone pillars.","color":"#75624B","tags":["Dummy Legends","Stonemark Holds","Lord","Hold-Lord","The Tied Moot"],"weapons":["Oathcleaver — the ancestral rune-axe of Highcairn, carried into every war the hold has fought","Charcoal mail under his council mantle; he has never once come to a moot unarmed"],"bio":"Lord of Highcairn, the oldest of the six holds, where the Senka law was first made. A warrior before he was a lord: he held Highcairn's lower gate for three days in his youth and still wears the scars. He believes the mountain has outlived every kingdom that ever wanted something from it, and will outlive Starhaven too. In 1054 he cast Highcairn's vote against Durak Stonemark, and when the moot tied three to three, he was the one who said the old words: then the mountain decides.","relationships":[{"name":"Durak Stonemark","type":"rival","note":"Shield-brothers for a century; on opposite sides of the Tied Moot"},{"name":"Yaroslava Coldhollow","type":"ally","note":"Rebel hold"},{"name":"Nnamdi Brightseam","type":"ally","note":"Rebel hold"},{"name":"Korrun Ashvein","type":"ally","note":"Highcairn's champion"}]},
+  {"id":"dummy-tsegaye-deepwell","name":"Tsegaye Deepwell","title":"Hold-Lord of Deepwell · Stonemark Holds","category":"Dummy Legends","status":"unknown","age":"132","race":"Dwarf","role":"Hold-Lord of Deepwell · Keeper of the Deep Cisterns · Rune-Hammer","image":"starhaven_chars_image/dummy-legend-tsegaye-deepwell-v2.png","imagePrompt":"A 132-year-old dwarf warrior hold-lord, a broad powerful woman with dark brown skin, close-cropped grey hair, copper earrings and no facial hair. She wears heavy dark-blue enamelled plate over mail, a heavy ring of iron cistern-keys at her belt, and grips a great two-handed rune-hammer with a head shaped like a stone basin. Magic: blue water-runes glow along the hammer and ripple across a great underground cistern behind her. Setting: a vaulted dwarven water-hall deep under a mountain, pillars rising out of still black water. Battle-ready stance, scarred armour.","color":"#3E6A7A","tags":["Dummy Legends","Stonemark Holds","Lord","Hold-Lord","The Tied Moot"],"weapons":["Wellbreaker — a two-handed rune-hammer, its head carved like a stone basin","Heavy enamelled plate, blue as deep water","The iron keys to every well under the Holds"],"bio":"Lord of Deepwell, the hold that keeps the water. Every cistern, spring and frozen well under the six holds runs through Deepwell's runes, which makes her the one lord no other hold can afford to fight — and she fights anyway, at the front, with a rune-hammer older than her hold's oldest map. Durak's oldest friend. In the Tied Moot she voted with him, and then she did the bravest thing in the war: she kept the water running to the rebel holds.","relationships":[{"name":"Durak Stonemark","type":"ally","note":"Oldest friend"},{"name":"Brondrith Thrennox","type":"rival","note":"She still sends his hold water"},{"name":"Amaru Lanternhold","type":"ally","note":"Loyal hold"}]},
+  {"id":"dummy-amaru-lanternhold","name":"Amaru Lanternhold","title":"Hold-Lord of Lanternhold · Stonemark Holds","category":"Dummy Legends","status":"unknown","age":"88","race":"Dwarf","role":"Hold-Lord of Lanternhold · Master of the Deep-Road Lamps · Axe-and-Lamp","image":"starhaven_chars_image/dummy-legend-amaru-lanternhold.png","imagePrompt":"An 88-year-old dwarf warrior hold-lord, young for a lord, compact and quick, with warm bronze skin, black hair in a war-knot and a short black beard threaded with small brass lamp-charms. He wears battered red-brown plate over mail, a rune-axe in one hand and a hooded mana lamp on an iron chain in the other. Magic: dozens of rune-etched mana lamps glow warm gold along a dwarven deep road behind him, each lit without flame, and the axe-head carries a glowing lamp-rune. Setting: a long carved tunnel road under the mountain, lamps receding into the dark. Fierce grin, battle stance.","color":"#B0802E","tags":["Dummy Legends","Stonemark Holds","Lord","Hold-Lord","The Tied Moot"],"weapons":["Lampcleaver — a rune-axe with a light-rune burning in the blade","A hooded mana lamp on an iron chain, swung like a flail when needed"],"bio":"The youngest of the six Hold-Lords, and the loudest. Lanternhold makes the rune-lamps that light every deep road in the Holds, and since the alliance it has sold them in every market in Starhaven. Amaru loves the railway, the trade and the noise of the human world, and said so at the moot, loudly, which did not help. He fights the way he talks: first through the door, axe in one hand and a lamp in the other, because a mountain kept in the dark is a mountain going cold.","relationships":[{"name":"Durak Stonemark","type":"ally","note":"Voted with him at the Tied Moot"},{"name":"Tsegaye Deepwell","type":"ally","note":"Loyal hold"},{"name":"Nnamdi Brightseam","type":"rival","note":"They argued trade at every moot for thirty years"}]},
+  {"id":"dummy-yaroslava-coldhollow","name":"Yaroslava Coldhollow","title":"Hold-Lady of Coldhollow · Stonemark Holds","category":"Dummy Legends","status":"unknown","age":"119","race":"Dwarf","role":"Hold-Lady of Coldhollow · Ice-Sapper · Gatekeeper of the Glacier Road","image":"starhaven_chars_image/dummy-legend-yaroslava-coldhollow-v2.png","imagePrompt":"A 119-year-old dwarf warrior hold-lady, pale and hard-faced, with ice-white hair in two thick scalp braids bound with silver rings, frost on her brows and no facial hair. She wears heavy white-furred grey plate and carries a long ice-pick war-axe across her shoulders. Magic: frost spreads in rune-patterns from her boots across the stone, and the axe-head steams with cold. Setting: the frozen upper gate of a dwarven hold high on a glacier, Frostspire peaks behind her in blue dusk.","color":"#9DB4C4","tags":["Dummy Legends","Stonemark Holds","Lord","Hold-Lord","The Tied Moot"],"weapons":["Rimebite — a long ice-pick war-axe that cuts glacier ice like stone","Ice-sapper's rune-charges that freeze a tunnel shut"],"bio":"Lady of Coldhollow, the highest and coldest of the six holds, whose upper gates open onto the glaciers of Frostspire. Coldhollow's dwarves are ice-sappers: they fight in glacier caves and frozen passes where nobody else can stand. Her hold has traded with the Frostspire lords for three hundred years, and she trusts the cold more than she trusts the south. In the Tied Moot she voted against Durak. Then she opened her upper gates to Hurnevik Sythalen's soldiers, and made it a war that was no longer only the mountain's.","relationships":[{"name":"Brondrith Thrennox","type":"ally","note":"Rebel hold"},{"name":"Hurnevik Sythalen","type":"ally","note":"Opened her gates to his soldiers"},{"name":"Durak Stonemark","type":"rival","note":"The Tied Moot"}]},
+  {"id":"dummy-nnamdi-brightseam","name":"Nnamdi Brightseam","title":"Hold-Lord of Brightseam · Stonemark Holds","category":"Dummy Legends","status":"unknown","age":"104","race":"Dwarf","role":"Hold-Lord of Brightseam · Master of the Richest Seams · Gold-Thane","image":"starhaven_chars_image/dummy-legend-nnamdi-brightseam.png","imagePrompt":"A 104-year-old dwarf warrior hold-lord with deep brown skin, a shaved head and a full black beard shot with grey, braided with heavy gold rings. He wears gilded heavy plate over mail, a rich dark green cloak, and leans on a great gold-runed two-handed axe. Magic: veins of gold in the rock wall behind him glow faintly where seam-runes have been cut beside them, and the same runes burn on his axe. Setting: a gilded counting-hall carved into a mine face, lamplight on gold. Proud, battle-scarred.","color":"#8A6A1E","tags":["Dummy Legends","Stonemark Holds","Lord","Hold-Lord","The Tied Moot"],"weapons":["Seamsplitter — a great two-handed axe with gold seam-runes along the blade","Gilded heavy plate","A treasury deep enough to hire an army"],"bio":"Lord of Brightseam, the hold with the richest gold and mithril seams in the north. A miner's son who fought his way to the lord's seat in the deep-war against the tunnel beasts, and still leads from the front in gilded plate. Nnamdi does not hate Starhaven. He has done the sums: rails and open trade will make Stonemark rich, and every other hold richer than Brightseam. In the Tied Moot he voted against Durak, and when it came to war, he paid for it.","relationships":[{"name":"Brondrith Thrennox","type":"ally","note":"Rebel hold"},{"name":"Amaru Lanternhold","type":"rival","note":"Thirty years of trade arguments"},{"name":"Tenzin Brassbeard","type":"family","note":"Cousin; on the other side"}]},
+  {"id":"dummy-sindri-hammerseal","name":"Sindri Hammerseal","title":"Runemaster of the Old Forge · Stonemark Holds","category":"Dummy Legends","status":"unknown","age":"212","race":"Dwarf","role":"Runemaster · The Old Forge Runewrights (Highcairn)","image":"starhaven_chars_image/dummy-legend-sindri-hammerseal.png","imagePrompt":"A 212-year-old dwarf runemaster, broad and bent with age but still massively strong, with a long white beard braided with iron rune-rings and deep-set burning eyes. He wears heavy rune-covered plate and carries a rune-hammer in one hand and a small anvil strapped to his back. Magic: the runes on his armour and on a great iron gate behind him glow molten orange where he has just struck them. Setting: the Old Forge under the mountain, a vast smoky hall with a cold ancient anvil at its centre.","color":"#A8502A","tags":["Dummy Legends","Stonemark Holds","The Tied Moot"],"weapons":["Gatestriker — the rune-hammer of the Old Forge","A portable runic anvil"],"bio":"Runemaster of the Old Forge under Highcairn and the oldest runesmith in the Holds. He does not cast spells; he strikes runes, and the runes do the rest. In the Tied Moot of 1054 he sided with Brondrith because the old law said the mountain should decide, and sealed half the deep roads with binding-runes that only Highcairn blood could open. He is the reason the war lasted a winter, and, at the end, the one who unsealed them.","relationships":[{"name":"Brondrith Thrennox","type":"ally","note":"His lord"},{"name":"Korrun Ashvein","type":"ally","note":"Struck the runes on the Flamming Hammer of Rhuin"},{"name":"Cassia Vayne","type":"rival","note":"She could not break his runes. She learned how they were made instead."}]},
+  {"id":"dummy-bakhyt-ironjaw","name":"Bakhyt Ironjaw","title":"Chief of the Ironjaw Clan · Northern Stormmassif","category":"Dummy Legends","status":"unknown","age":"47","race":"Orc","role":"Clan Chief · Ironjaw Clan (orcs and goblins, outside the Highland Coalition)","image":"starhaven_chars_image/dummy-legend-bakhyt-ironjaw.png","imagePrompt":"A 47-year-old orc clan chief, huge and scarred, grey-green skin, a lower jaw capped in riveted iron from an old wound, long black hair in war-braids. He wears layered hide armour with iron shoulder plates and a belt hung with iron-capped jawbones, and carries a heavy curved cleaver. Goblin raiders crouch on the rocks behind him. Magic: a clan totem of bone and iron behind him glows faint red in the mountain dusk. Setting: a narrow snowy Stormmassif pass, cliffs on both sides.","color":"#5A6A4A","tags":["Dummy Legends","Highland Clans","Ironjaw Clan","The Tied Moot"],"weapons":["Jaw-Cleaver — a heavy curved cleaver","An iron-capped jaw of his own, from the Redspire war"],"bio":"Chief of the Ironjaw, the clan that fought the Redspire for forty years over the Stormmassif passes until Gorvak ended the war before anyone won it. Bakhyt never forgave that, never joined the Highland Coalition, and never stopped wanting the ending. In 1054 Brightseam's gold bought the Ironjaw for the rebel holds, and the Redspire came for him on Durak's side. He got his ending.","relationships":[{"name":"Karsh Redspire","type":"rival","note":"Forty years of war, and one more winter"},{"name":"Nnamdi Brightseam","type":"ally","note":"Paid the Ironjaw"}]},
+  {"id":"dummy-itzel-quiroga","name":"Itzel Quiroga","title":"Captain of the Black Tithe · Free Company","category":"Dummy Legends","status":"unknown","age":"41","race":"Human","role":"Mercenary Captain · The Black Tithe","image":"starhaven_chars_image/dummy-legend-itzel-quiroga.png","imagePrompt":"A 41-year-old human mercenary captain, lean and weathered, with warm brown skin, black hair in a long single braid and a thin scar across both lips. She wears black-dyed brigandine with rows of small white tally-marks painted on the breast, a crossbow slung on her back and a short sword at her hip, and holds a rolled contract sealed in black wax. Behind her, a tight square of pikes and crossbows. Magic: the contract's black seal glows with a faint binding-rune. Setting: the torch-lit lower gallery of a dwarven gold mine.","color":"#2A2A2A","tags":["Dummy Legends","Mercenaries","The Black Tithe","The Tied Moot"],"weapons":["A short sword","A heavy crossbow","The contract, which she treats as a weapon"],"bio":"Captain of the Black Tithe, a free company that takes, by contract, a tenth of everything in any place it holds. She has never broken a contract and never taken less than the tenth. Hired by Nnamdi Brightseam in 1054, she held Brightseam's lower galleries for the rebel holds until the contract ended, then marched out with exactly a tenth of the gold and a polite note.","relationships":[{"name":"Nnamdi Brightseam","type":"ally","note":"Her employer in 1054"},{"name":"Lola Skyward","type":"rival","note":"Two free companies on the same side; neither enjoyed it"}]},
   {id:'dummy-velskar-keldrane',name:'Velskar Keldrane',title:'Military Commander · Stonemark Holds',category:'Dummy Legends',status:'unknown',age:'96',race:'Dwarf',role:'Military Commander',image:'starhaven_chars_image/dummy-legend-velskar-keldrane.png',imagePrompt:"A 96-year-old dwarf sapper commander riding a massive shaggy mountain ram with sweeping curled horns and a fitted dark iron faceplate. He wears bronze-edged black iron scale with broad segmented shoulders and an open-faced helmet over a braided brown beard. He carries a square-headed war hammer and has a rolled siege plan strapped beside the saddle. Frame ram and rider together on a rough approach to a mountain fortress with gravel kicked up under the hooves.",mount:'Mountain ram',color:'#8C7353',tags:['Dummy Legends','Stonemark Holds','Commander']},
   {id:'dummy-edrithal-ulnovar',name:'Edrithal Ulnovar',title:'Solo Legend · Stonemark Holds',category:'Dummy Legends',status:'unknown',age:'118',race:'Dwarf',role:'Solo Legend · Siege Crossbow Marksman',image:'starhaven_chars_image/dummy-legend-edrithal-ulnovar.png',imagePrompt:'A 118-year-old dwarf siege-crossbow specialist in battered plate, bracing a heavy windlass crossbow behind a compact pavise in a carved Stonemark stone range; focused, no magic.',color:'#A08050',tags:['Dummy Legends','Stonemark Holds','Solo Legend']},
   {"id": "dummy-korrun-ashvein", "name": "Korrun Ashvein", "title": "Solo Legend · Stonemark Holds", "category": "Dummy Legends", "status": "unknown", "age": "Unknown", "race": "Dwarf", "role": "Solo Legend · Melee Spellcaster", "image": "starhaven_chars_image/dummy-legend-korrun-ashvein.png", "imagePrompt": "A broad, stocky adult dwarf melee spellcaster with a crest of copper hair and a thick braided ginger beard. He grips the Flamming Hammer of Rhuin, a massive two-handed volcanic war hammer with a ruined black-basalt head, a chipped striking face and orange fire shining from deep rune-cut fissures. Worn charcoal plate with aged bronze geometric edging, a layered leather skirt, broad bracers and heavy boots. A swirling bank of dark smoke and a low sweep of flame frame him in a basalt forge cavern, with embers and hot reflections while the face and hammer remain crisp.", "weapons": ["Flamming Hammer of Rhuin"], "abilities": [{"name": "Smoke Storm", "type": "active", "desc": "Calls up a swirling bank of volcanic smoke that obscures the melee."}, {"name": "Flame Storm", "type": "active", "desc": "Sweeps a storm of fire around him, scorching nearby foes."}, {"name": "Hell Hammer", "type": "ultimate", "desc": "Drives the hammer into the ground and sends an eruption of flame through the impact point."}], "color": "#9F5C38", "tags": ["Dummy Legends", "Stonemark Holds", "Solo Legend"]},
@@ -36005,7 +36033,7 @@ function chroniclesRender(filter, btn) {
 }
 
 // stubs — replaced in later steps
-let charFilter='all', charSearch='', charAllianceFilter='all', charEnemyFilter='all', charDummyKingdomFilter='all';
+let charFilter='all', charSearch='', charAllianceFilter='all', charEnemyFilter='all', charDummyKingdomFilter='all', charMercFilter='all', charSoloFilter='all';
 let armyFilter='all', armySearch='';
 let atlasFilter='all', atlasSearch='', atlasLoc='';
 
@@ -36020,23 +36048,43 @@ const CHAR_ALLIANCE_TAGS = new Map([
   ['Stonemark','Stonemark Holds'],
   ['Stonemark Holds','Stonemark Holds'],
   ['House Silverhorn','Verdant Crown'],
+  ['Verdant Crown','Verdant Crown'],
   ['The Verdant Crown','Verdant Crown'],
   ['Giants of Varathos','Varathos'],
   ['Varathos','Varathos'],
   ['Golden Coast Federation','Golden Coast Federation'],
   ['Coral Archipelago','Coral Archipelago'],
-  ['Sable Conclave','Sable Conclave']
+  ['Sable Conclave','Sable Isles'],
+  ['Sable Isles','Sable Isles'],
+  ['Eldridge Kingdom','Eldridge Kingdom'],
+  ['Elderwood Sovereignty','Elderwood Sovereignty'],
+  ['Isle-States of Mirren','Isle-States of Mirren'],
+  ['Highland Coalition','Highland Coalition'],
+  ['Skyward Isles','Skyward Isles'],
+  ['Karvossa','Karvossa']
+]);
+const CHAR_ALLIANCE_OVERRIDES = new Map([
+  ['serapheusval','Aethran Dominion'], ['queenvera','Eldridge Kingdom'],
+  ['elderqueenvaela','Elderwood Sovereignty'], ['grandiron','Stonemark Holds'],
+  ['crest_golden','Golden Coast Federation'], ['govmirren','Isle-States of Mirren'],
+  ['ilyana','Karvossa'], ['drogarstonefang','Highland Coalition'],
+  // leaders of allied units on the unit cards: listed here too, they keep their own tab
+  ['korga','Highland Coalition'], ['kraghskullsplitter','Highland Coalition'], ['karshredspire','Highland Coalition'],
+  ['drokhabloodtusk','Highland Coalition'], ['threska','Highland Coalition'], ['kethrab','Highland Coalition'],
+  ['kaszrek','Highland Coalition'], ['gurnbramblefist','Verdant Crown'], ['rudravanar','Vanari Clan'],
+  ['zafir','Karath Sultanate'], ['rolandashguard','Ironmere']
 ]);
 function charAlliance(c) {
+  if (CHAR_ALLIANCE_OVERRIDES.has(c.id)) return CHAR_ALLIANCE_OVERRIDES.get(c.id);
   for (const tag of c.tags || []) {
     if (tag.startsWith('Frostspire Dominion')) return 'Frostspire Dominion';
-    if (tag.startsWith('Allied Kingdoms')) return 'Allied Kingdoms';
     const alliance = CHAR_ALLIANCE_TAGS.get(tag);
     if (alliance) return alliance;
   }
   return 'Other / Unspecified';
 }
 const CHAR_ENEMY_FACTION_TAGS = new Map([
+  ["King's End","King's End"],
   ['Lisseran','Lisseran'],
   ['Velmora','Velmora'],
   ['Highland Horde','Highland Horde'],
@@ -36044,14 +36092,67 @@ const CHAR_ENEMY_FACTION_TAGS = new Map([
   ['Nullborn','Nullborn'],
   ['Golden Coast Federation','Golden Coast Federation'],
   ['Irondeep Confederacy','Irondeep Confederacy'],
-  ['Zharak Emirate','Zharak Emirate']
+  ['Zharak Emirate','Zharak Emirate'],
+  ['Zharak Emirates','Zharak Emirate'],
+  ['Ardenhal','Ardenhal'],
+  ['Corthane','Corthane'],
+  ['Kessirn Horselords','Kessrin Horselords'],
+  ['House Veldrath','Verdant Crown']
+]);
+const CHAR_RIVAL_OVERRIDES = new Map([
+  ['dummy-hurnevik-sythalen','Frostspire Dominion'],
+  ['dummy-orevessa-vhalcenne','Karvossa'],
+  ['dummy-bakhyt-ironjaw','Ironjaw Clan'],
+  ['dummy-itzel-quiroga','The Black Tithe']
 ]);
 function charEnemyFaction(c) {
+  if (CHAR_RIVAL_OVERRIDES.has(c.id)) return CHAR_RIVAL_OVERRIDES.get(c.id);
+  if ((c.tags || []).includes("King's End")) return "King's End";
   for (const tag of c.tags || []) {
     const faction = CHAR_ENEMY_FACTION_TAGS.get(tag);
     if (faction) return faction;
   }
   return 'Other / Unspecified';
+}
+// Mercenaries tab: companies first, then solo mercenaries. Every other Mercenaries & Legends card is a Solo Legend.
+const CHAR_MERC_COMPANY = new Map([
+  ['crenvoss','The Void Hounds'], ['tessakarne','Stormwing Brotherhood'], ['sovablacktide','Blackshore Corsairs'],
+  ['grenavashk','The Iron Reavers'], ['thessalyarkwright','Silverchain Mages'], ['maelsorn','Silverchain Mages'],
+  ['duskferren','Redbone Cavalry'], ['selaashbark','Greywood Wardens'], ['covadrell','The Shields of Lumenfield'],
+  ['aldricmorne','The Broken Crown Company'], ['lolaskyward','Skyspear Valkyries'], ['ingridskyward','Skyspear Valkyries'],
+  ['marikagoldspear','Skyspear Valkyries'], ['elina','The Unbroken Line'], ['vethsunreach','Ashstride Warband'],
+  ['rivatrid','Aethran Colossi']
+]);
+const CHAR_SOLO_MERCS = new Set(['garektyrant','yamiholloway','barekkade','mirovatheunwritten','toraktheskinless','lyssanven','talorandhex','dante','vorn']);
+const CHAR_SOLO_KINGDOM = new Map([['ilyana','Karvossa'], ['zafir','Karath Sultanate'], ['rolandashguard','Ironmere']]);
+const charIsMerc = c => CHAR_MERC_COMPANY.has(c.id) || CHAR_SOLO_MERCS.has(c.id);
+const charMercGroup = c => CHAR_MERC_COMPANY.get(c.id) || 'Solo Mercenaries';
+const charIsSoloLegend = c => !charIsMerc(c) && (c.category === 'Mercenaries & Legends' ||
+  (c.tags || []).includes('Solo Legend') || /^Solo Legend/.test(c.role || ''));
+const charSoloKingdom = c => CHAR_SOLO_KINGDOM.get(c.id) || (c.category === 'Dummy Legends' && c.kingdom) || 'Starhaven';
+function charInView(c, filter) {
+  if (filter === 'Mercenaries & Legends') return charIsMerc(c);
+  if (filter === 'Solo Legends') return charIsSoloLegend(c);
+  if (c.category === 'Dummy Legends' && filter === 'Dummy Legends') {
+    return charRosterCategory(c) === 'Dummy Legends';
+  }
+  if (filter === 'all' || c.category === filter) return true;
+  if (filter === 'Known Enemies') {
+    return c.category === 'Dummy Legends' && charEnemyFaction(c) !== 'Other / Unspecified';
+  }
+  if (filter === 'Allied Nations') {
+    return CHAR_ALLIANCE_OVERRIDES.has(c.id) || (c.category === 'Dummy Legends' &&
+      !charInView(c, 'Known Enemies') && !['Verdant Crown','Karvossa'].includes(c.kingdom) &&
+      charAlliance(c) !== 'Other / Unspecified');
+  }
+  return false;
+}
+function charRosterCategory(c) {
+  if (c.category === 'Mercenaries & Legends') return charIsMerc(c) ? c.category : 'Solo Legends';
+  if (c.category !== 'Dummy Legends') return c.category;
+  if (charInView(c, 'Known Enemies')) return 'Known Enemies';
+  if (charInView(c, 'Allied Nations')) return 'Allied Nations';
+  return c.category;
 }
 
 // importance = how much of the story a character carries: chronicles they appear in, cards that name them, their own ties and deeds
@@ -36071,10 +36172,12 @@ function charImportance() {
 function charsRender(filter, btn) {
   if (filter !== undefined) {
     charFilter = filter;
-    if (charFilter !== 'Allied Nations' && charFilter !== 'Known Enemies' && charFilter !== 'Dummy Legends') {
+    if (!['Allied Nations','Known Enemies','Dummy Legends','Mercenaries & Legends','Solo Legends'].includes(charFilter)) {
       charAllianceFilter = 'all';
       charEnemyFilter = 'all';
       charDummyKingdomFilter = 'all';
+      charMercFilter = 'all';
+      charSoloFilter = 'all';
     }
   }
   const roster = document.getElementById('char-roster');
@@ -36084,16 +36187,23 @@ function charsRender(filter, btn) {
   if (!roster) return;
 
   const groupFilterConfig = charFilter === 'Allied Nations'
-    ? { category: 'Allied Nations', label: 'All alliances', value: charAllianceFilter, getGroup: charAlliance }
+    ? { label: 'All allied kingdoms', value: charAllianceFilter, getGroup: charAlliance }
     : charFilter === 'Known Enemies'
-      ? { category: 'Known Enemies', label: 'All enemy factions / rivals', value: charEnemyFilter, getGroup: charEnemyFaction }
+      ? { label: 'All enemy kingdoms / factions', value: charEnemyFilter, getGroup: charEnemyFaction }
       : charFilter === 'Dummy Legends'
-        ? { category: 'Dummy Legends', label: 'All kingdoms', value: charDummyKingdomFilter, getGroup: c => c.kingdom || 'Other / Unspecified' }
-        : null;
+        ? { label: 'All kingdoms', value: charDummyKingdomFilter, getGroup: c => c.kingdom || 'Other / Unspecified' }
+        : charFilter === 'Mercenaries & Legends'
+          ? { label: 'All mercenaries', value: charMercFilter, getGroup: charMercGroup }
+          : charFilter === 'Solo Legends'
+            ? { label: 'All kingdoms', value: charSoloFilter, getGroup: charSoloKingdom }
+            : null;
+  const byKingdom = charFilter === 'Allied Nations' || charFilter === 'Known Enemies' || charFilter === 'Solo Legends';
+  const byMerc = charFilter === 'Mercenaries & Legends';
+  const rosterCards = CHARACTERS.filter(c => charInView(c, charFilter));
   if (groupSelect) {
     const groups = groupFilterConfig
-      ? [...new Set(CHARACTERS.filter(c => c.category === groupFilterConfig.category).map(groupFilterConfig.getGroup))]
-          .sort((a, b) => a.localeCompare(b))
+      ? [...new Set(rosterCards.map(groupFilterConfig.getGroup))]
+          .sort((a, b) => (a === 'Solo Mercenaries') - (b === 'Solo Mercenaries') || a.localeCompare(b))
       : [];
     while (groupSelect.options.length) groupSelect.remove(0);
     if (groupFilterConfig) {
@@ -36110,40 +36220,45 @@ function charsRender(filter, btn) {
   }
 
   const q = charSearch.trim().toLowerCase();
-  const list = CHARACTERS.filter(c => {
-    const matchCat = charFilter === 'all' || c.category === charFilter;
+  const list = rosterCards.filter(c => {
     const matchGroup = !groupFilterConfig || groupFilterConfig.value === 'all' ||
       groupFilterConfig.getGroup(c) === groupFilterConfig.value;
     const matchQ   = !q ||
       c.name.toLowerCase().includes(q) ||
       c.title.toLowerCase().includes(q) ||
-      (c.tags||[]).some(t => t.toLowerCase().includes(q));
-    return matchCat && matchGroup && matchQ;
+      (c.tags||[]).some(t => t.toLowerCase().includes(q)) ||
+      (groupFilterConfig && groupFilterConfig.getGroup(c).toLowerCase().includes(q));
+    return matchGroup && matchQ;
   });
 
   if (cnt)  cnt.textContent  = list.length;
   if (cnt2) cnt2.textContent = list.length + ' characters';
 
-  const order = ['The Eleven','Commander','Court & Scholars','Allied Nations','Tribes & Clans','Mercenaries & Legends','Guild & Citizens','Known Names','Dummy Legends','Early Years','Known Enemies'];
-  const grouped = {};
-  order.forEach(g => { grouped[g] = []; });
+  const categories = ['The Eleven','Commander','Court & Scholars','Allied Nations','Tribes & Clans','Mercenaries & Legends','Solo Legends','Guild & Citizens','Known Names','Dummy Legends','Early Years','Known Enemies'];
+  const grouped = Object.create(null);
   list.forEach(c => {
-    if (!grouped[c.category]) grouped[c.category] = [];
-    grouped[c.category].push(c);
+    const group = byKingdom ? groupFilterConfig.getGroup(c)
+      : byMerc ? charMercGroup(c)
+      : charRosterCategory(c);
+    (grouped[group] ||= []).push(c);
   });
+  // one header per company (A–Z), solo mercenaries last
+  const order = byKingdom ? Object.keys(grouped).sort((a, b) => a.localeCompare(b))
+    : byMerc ? Object.keys(grouped).sort((a, b) => (a === 'Solo Mercenaries') - (b === 'Solo Mercenaries') || a.localeCompare(b))
+    : categories;
   // most important first in every group except the Eleven (who keep their Pillar order); the dead last
   const imp = charImportance();
   const gone = c => c.status === 'deceased' ? 1 : 0; // the dead always come last in their group
   Object.keys(grouped).forEach(g => grouped[g].sort((x, y) => gone(x) - gone(y) || (g === 'The Eleven' ? 0 : (imp[y.id] || 0) - (imp[x.id] || 0))));
 
-  const groupIcons  = {'The Eleven':'⚔',Commander:'🛡','Court & Scholars':'📚','Allied Nations':'🤝','Tribes & Clans':'🐺','Mercenaries & Legends':'🗡','Guild & Citizens':'🍺','Known Names':'🎖','Dummy Legends':'⚔','Early Years':'🕯','Known Enemies':'☠'};
-  const groupLabels = {'The Eleven':'The Eleven',Commander:'Commanders','Court & Scholars':'Court & Scholars','Allied Nations':'Allied Nations','Tribes & Clans':'Tribes & Clans','Mercenaries & Legends':'Mercenaries & Legends','Guild & Citizens':'Guild & Citizens','Known Names':'Known Names','Dummy Legends':'Dummy Legends','Early Years':'Early Years','Known Enemies':'Known Enemies'};
+  const groupIcons  = {'The Eleven':'⚔',Commander:'🛡','Court & Scholars':'📚','Allied Nations':'🤝','Tribes & Clans':'🐺','Mercenaries & Legends':'🗡','Mercenary Companies':'🗡','Solo Mercenaries':'🗡','Solo Legends':'🌟','Guild & Citizens':'🍺','Known Names':'🎖','Dummy Legends':'⚔','Early Years':'🕯','Known Enemies':'☠'};
+  const groupLabels = {'The Eleven':'The Eleven',Commander:'Commanders','Court & Scholars':'Court & Scholars','Allied Nations':'Allied Nations','Tribes & Clans':'Tribes & Clans','Mercenaries & Legends':'Mercenaries','Solo Legends':'Solo Legends','Guild & Citizens':'Guild & Citizens','Known Names':'Known Names','Dummy Legends':'Dummy Legends','Early Years':'Early Years','Known Enemies':'Known Enemies'};
 
   let html = '';
   order.forEach(grp => {
     if (!grouped[grp] || !grouped[grp].length) return;
     html += `<div class="char-group-hdr">
-      <span class="char-group-hdr-icon">${groupIcons[grp]||'•'}</span>
+      <span class="char-group-hdr-icon">${groupIcons[byKingdom || byMerc ? charFilter : grp]||'•'}</span>
       <span class="char-group-hdr-title">${groupLabels[grp]||grp}</span>
       <span class="char-group-hdr-cnt">${grouped[grp].length}</span>
     </div>`;

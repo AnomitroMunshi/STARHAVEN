@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 137   (finished so far: 436)
+Still to generate: 155   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -277,3 +277,127 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 
 
 
+
+
+########################################################################
+## THE TIED MOOT (1054) — STONEMARK HOLD-LORDS  (4)
+## Dwarves are warriors first: heavy rune-forged armour, battle-ready, scarred.
+########################################################################
+
+=== Tsegaye Deepwell ===
+Save as: starhaven_chars_image/dummy-legend-tsegaye-deepwell-v2.png
+Type: Hold-Lord of Deepwell · Stonemark Holds · loyal to Durak
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 132-year-old dwarf warrior hold-lord, a broad powerful woman with dark brown skin, close-cropped grey hair, copper earrings and no facial hair. She wears heavy dark-blue enamelled plate over mail, a heavy ring of iron cistern-keys at her belt, and grips a great two-handed rune-hammer with a head shaped like a stone basin. Magic: blue water-runes glow along the hammer and ripple across a great underground cistern behind her. Setting: a vaulted dwarven water-hall deep under a mountain, pillars rising out of still black water. Battle-ready stance, scarred armour.
+
+=== Amaru Lanternhold ===
+Save as: starhaven_chars_image/dummy-legend-amaru-lanternhold.png
+Type: Hold-Lord of Lanternhold · Stonemark Holds · loyal to Durak
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: An 88-year-old dwarf warrior hold-lord, young for a lord, compact and quick, with warm bronze skin, black hair in a war-knot and a short black beard threaded with small brass lamp-charms. He wears battered red-brown plate over mail, a rune-axe in one hand and a hooded mana lamp on an iron chain in the other. Magic: dozens of rune-etched mana lamps glow warm gold along a dwarven deep road behind him, each lit without flame, and the axe-head carries a glowing lamp-rune. Setting: a long carved tunnel road under the mountain, lamps receding into the dark. Fierce grin, battle stance.
+
+=== Yaroslava Coldhollow ===
+Save as: starhaven_chars_image/dummy-legend-yaroslava-coldhollow-v2.png
+Type: Hold-Lady of Coldhollow · Stonemark Holds · rebel hold
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 119-year-old dwarf warrior hold-lady, pale and hard-faced, with ice-white hair in two thick scalp braids bound with silver rings, frost on her brows and no facial hair. She wears heavy white-furred grey plate and carries a long ice-pick war-axe across her shoulders. Magic: frost spreads in rune-patterns from her boots across the stone, and the axe-head steams with cold. Setting: the frozen upper gate of a dwarven hold high on a glacier, Frostspire peaks behind her in blue dusk.
+
+=== Nnamdi Brightseam ===
+Save as: starhaven_chars_image/dummy-legend-nnamdi-brightseam.png
+Type: Hold-Lord of Brightseam · Stonemark Holds · rebel hold
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 104-year-old dwarf warrior hold-lord with deep brown skin, a shaved head and a full black beard shot with grey, braided with heavy gold rings. He wears gilded heavy plate over mail, a rich dark green cloak, and leans on a great gold-runed two-handed axe. Magic: veins of gold in the rock wall behind him glow faintly where seam-runes have been cut beside them, and the same runes burn on his axe. Setting: a gilded counting-hall carved into a mine face, lamplight on gold. Proud, battle-scarred.
+
+
+########################################################################
+## THE TIED MOOT (1054) — NEW COMMANDERS  (4)
+########################################################################
+
+=== Dessa Marrow ===
+Save as: starhaven_chars_image/dessamarrow.png
+Type: The Forgepact Colonel · Starhaven
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A human woman in her late forties, Colonel of Starhaven artillery engineers, stocky and square-shouldered, with soot-darkened brown skin, close-cropped iron-grey hair and burn-scarred forearms. She wears a heavy leather engineer's coat over a steel breastplate, brass range-finding lenses pushed up on her forehead, and holds a slate covered in chalk trajectory sums. Behind her, dwarven and human crews load a squat bronze mortar and a long cannon together. Magic: Vaelmark range-runes glow pale blue along the cannon's barrel. Setting: a snowy mountain gun-terrace cut into rock, smoke drifting.
+
+=== Sindri Hammerseal ===
+Save as: starhaven_chars_image/dummy-legend-sindri-hammerseal.png
+Type: Runemaster of the Old Forge · Stonemark Holds
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 212-year-old dwarf runemaster, broad and bent with age but still massively strong, with a long white beard braided with iron rune-rings and deep-set burning eyes. He wears heavy rune-covered plate and carries a rune-hammer in one hand and a small anvil strapped to his back. Magic: the runes on his armour and on a great iron gate behind him glow molten orange where he has just struck them. Setting: the Old Forge under the mountain, a vast smoky hall with a cold ancient anvil at its centre.
+
+=== Bakhyt Ironjaw ===
+Save as: starhaven_chars_image/dummy-legend-bakhyt-ironjaw.png
+Type: Chief of the Ironjaw Clan · Northern Stormmassif
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 47-year-old orc clan chief, huge and scarred, grey-green skin, a lower jaw capped in riveted iron from an old wound, long black hair in war-braids. He wears layered hide armour with iron shoulder plates and a belt hung with iron-capped jawbones, and carries a heavy curved cleaver. Goblin raiders crouch on the rocks behind him. Magic: a clan totem of bone and iron behind him glows faint red in the mountain dusk. Setting: a narrow snowy Stormmassif pass, cliffs on both sides.
+
+=== Itzel Quiroga ===
+Save as: starhaven_chars_image/dummy-legend-itzel-quiroga.png
+Type: Captain of the Black Tithe · Free Company
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 41-year-old human mercenary captain, lean and weathered, with warm brown skin, black hair in a long single braid and a thin scar across both lips. She wears black-dyed brigandine with rows of small white tally-marks painted on the breast, a crossbow slung on her back and a short sword at her hip, and holds a rolled contract sealed in black wax. Behind her, a tight square of pikes and crossbows. Magic: the contract's black seal glows with a faint binding-rune. Setting: the torch-lit lower gallery of a dwarven gold mine.
+
+
+########################################################################
+## THE TIED MOOT (1054) — NEW UNITS  (10)
+########################################################################
+
+=== Deepwell Wellwardens ===
+Save as: unitImages/deepwell-wellwardens.png
+Type: Heavy Rune-Hammer Infantry · Deepwell Hold (loyal)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a dwarf Wellwarden in blue-enamelled heavy plate sealed at the joints, holding a two-handed rune-hammer with a wide flat head, standing waist-deep in black underground water at a stone sluice-gate, a single iron key on a chain at the neck. Magic: blue water-runes glow on the hammer and ripple across the water. Setting: a vaulted dwarven cistern hall, pillars rising out of still water.
+
+=== Lanternhold Lamp-Guard ===
+Save as: unitImages/lanternhold-lamp-guard.png
+Type: Axe-and-Lamp Shock Infantry · Lanternhold (loyal)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a fierce dwarf Lamp-Guard in medium mail under a scorched leather lamp-maker's apron, charging with a rune-axe in one hand and a hooded mana lamp on a short chain in the other, the hood thrown open in a blinding gold-white flash. Magic: a light-rune burns in the axe blade. Setting: a dark dwarven tunnel, enemies in shadow recoiling from the light.
+
+=== Highcairn Oathguard ===
+Save as: unitImages/highcairn-oathguard.png
+Type: Very Heavy Infantry · Highcairn, the oldest hold (rebel)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a massive dwarf Oathguard in ancient ancestral rune-plate, dark iron worn smooth by centuries, carved with the faces and runes of earlier wearers, holding a huge two-handed great axe planted head-down, feet set as if rooted to the stone. Magic: the old runes on the plate glow faint bronze. Setting: the great carved gate-hall of the oldest dwarven hold, torches and ancestor statues behind.
+
+=== Coldhollow Ice-Sappers ===
+Save as: unitImages/coldhollow-ice-sappers.png
+Type: Glacier Sappers · Coldhollow (rebel)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a dwarf ice-sapper in grey scale under white fur, frost in the beard, climbing a blue glacier wall with a long-spiked ice-pick axe, a rune-charge in the other hand. Magic: the rune-charge glows icy blue and frost spreads in patterns across the ice. Setting: inside a glacier cave high on a mountain, blue light through the ice.
+
+=== Brightseam Deep-Miners ===
+Save as: unitImages/brightseam-deep-miners.png
+Type: Tunnel Assault · Brightseam Hold (rebel)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a heavily armoured dwarf deep-miner with a lamp-mounted helm and a war-pick, bursting up through a broken tunnel floor amid flying rock and dust, a shield on the other arm. Magic: gold seam-runes glow along a fault line in the rock. Setting: a dwarven mine tunnel with a blasted floor, gold veins in the walls.
+
+=== The Old Forge Runewrights ===
+Save as: unitImages/old-forge-runewrights.png
+Type: Runesmiths · the Old Forge of Highcairn (rebel)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a dwarf runesmith in heavy plate covered in hand-struck runes, bringing a rune-hammer down on the face of a great iron gate, a small anvil strapped on the back. Magic: each struck rune flares molten orange and spreads glowing lines across the iron. Setting: a vast smoky forge-hall under the mountain, an ancient cold anvil in the background.
+
+=== The Shamesworn ===
+Save as: unitImages/the-shamesworn.png
+Type: Death-Oath Warriors · rebel holds
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a scarred dwarf warrior with a beard cut short to the chin, bare-armed and bare-chested, no armour, clan tattoos across the shoulders, a short axe in each hand, roaring as they charge alone into a smoky tunnel full of enemies. Grim, tragic, fearless. Setting: a burning dwarven gallery, sparks and smoke.
+
+=== Sythalen Rimecloaks ===
+Save as: unitImages/sythalen-rimecloaks.png
+Type: Household Glacier Halberdiers · House Sythalen, Frostspire (rival)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a Frostspire human household halberdier in a grey-and-white rimecloak over quilted scale, strap-on ice-spikes on the boots, holding a long halberd on a windswept glacier, a silver snowflake house badge on the cloak. Magic: faint frost-runes on the halberd blade glow pale blue. Setting: a white ice field between jagged peaks at dusk, other halberdiers in line behind.
+
+=== Ironjaw Clan ===
+Save as: unitImages/ironjaw-clan.png
+Type: Orc and Goblin Mountain Raiders (rival)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: an orc raider of the Ironjaw clan in layered hide with iron plates riveted over the shoulders, a heavy curved cleaver in hand and an iron-capped jawbone hanging from the belt, crouched on a rock above a mountain pass, two goblins with slings and short spears beside. Setting: a narrow snowy Stormmassif pass at dawn, a supply road below.
+
+=== The Black Tithe ===
+Save as: unitImages/the-black-tithe.png
+Type: Mercenary Pike and Crossbow Company (rival)
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a human mercenary of the Black Tithe in black-dyed brigandine with rows of small white tally-marks painted on the breast, a pike held upright, crossbows and a tight pike square behind, a mixed company of humans, half-orcs and hobgoblins. Magic: a contract nailed to a timber post bears a faintly glowing black wax seal. Setting: the torch-lit lower gallery of a dwarven gold mine.
