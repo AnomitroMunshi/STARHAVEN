@@ -1,4 +1,4 @@
-# Starhaven — Idea Vault (as of 2026-11-23)
+# Starhaven — Idea Vault (as of 2026-11-27)
 
 Planning notes only. Nothing here is canon until built and added to the wiki. Marked **[Ano]** = your decision, **[Suggested]** = Claude's suggestion, awaiting your OK.
 
@@ -6,21 +6,31 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 
 ## 0. Integrated arc order [agreed 2026-11-23]
 
-| # | Arc | Vault idea carried | Debut |
-|---|---|---|---|
-| 0 | Canon fixes (§7) | — | — |
-| 1 | ✅ DONE — The Crown's Shadow — attempt on Rayden (chronicle `the-crowns-shadow`, Lantern Night 1059) | #1 Traitor in the Web: the betrayal comes from inside — a **new vice-minister** close to Rayden | — |
-| 2 | ✅ DONE — The Shadow Court (Greymark vs Open Visa spies; chronicle `the-shadow-court`) | — | Faceless |
-| 3 | When the Thread Breaks (Resonance Corps) | Velmora's stormglass (from *The Eleventh Letter*) helps black out the crystals | Selka Rennet |
-| 4 | The Rout She Walked Out Of (Edda Rensh) | — | — |
-| 5 | Take It Alive (loose inside Sancthaven) | It escapes through the cisterns and drains | Dunmar Underlow |
-| 6 | The Elderwood Arrives | **The flying fortress rematch** — it comes to suppress the Void in the southern forests and cannot tell friend from Void; Aurelia and Zephyros again (its primary array repaired and wise to Zephyros's cascade); Cain's Vrak notation and "it's remembering us". Set in Starhaven/the Elderwood, not the Vrak Isles. **Project SKYREACH debuts here** (see §0b). | Saoirse Yarrow |
-| 7 | Zharak Crossing + siege of Ironpass (night) | Sorvane lends undead that need no light; help Starhaven does not trust | Corvane; Zafir fights |
-| 8 | The Winter Council — last of 1059 | **Every** weak point, round the table (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders, night, Frostspire, Sorvane's gold, the single Ashen river route, unmapped groundwater and water-source resilience, silver from one mine, succession…) — not silver only | Tolliver Quarrow walks in at the end with news of refugees |
-| 9 | Karvossan War for the Sable Isles (1060; two acts around the Wedding) | Karvossa's anti-alliance faction tries to overtake the Sable Isles and cut Starhaven's financial support; the fighting takes place in the Sable Isles | Orevessa Vhalcenne; Thyrandel Qorvashi |
-| 10 | The Wedding (1060; between the war's two acts) | Rayden marries Vespera and Ilyana; the conflict resumes after the celebration | — |
-| 11 | The Silver Isle War (1060) | §1, then #7 Silver cold war with Silverhorn | Dante; the Architect later |
-| 12 | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; Chapter 10 | — |
+**Revised 2026-11-27** — spread over three years so 1059 is not overloaded. The Starhaven year starts in spring (Royal Almanac), so "winter of 1059" is the **end** of 1059: the acorn (*The Elderwood Says Yes*), *The Shadow Court* and the Winter Council all fall there, and the Elderwood joins the alliance in **spring 1060**. 1059 keeps only the arcs that hand the Council a weak point. Chronicles from §0f are woven in where an arc needs them.
+
+| # | When | Story | Carries | Debut |
+|---|---|---|---|---|
+| ✅ | 1059 | The Crown's Shadow (`the-crowns-shadow`, Lantern Night) | Traitor in the Web — Vice-Minister Pieter Vandermeer | Ossian, the Huntmaster |
+| ✅ | Winter 1059 | The Shadow Court (`the-shadow-court`) | Open Visa spies | Faceless |
+| ✅ 1 | Late autumn 1059 | **When the Thread Breaks** — DONE (`when-the-thread-breaks`; Velmora stormglass via a Karvossan-passed crystal; foreign crystals cut 40 days; Undying Colors origin told; Borrak Stonecrown and a Void Titan killed) | Velmora's stormglass blacks out the crystals; told from the Resonance Corps' side (*The Silent Games* already did the army without crystals) | Selka Rennet; the Battlemage Prince |
+| 2 | 1059 | **Take It Alive** | Loose inside Sancthaven; escapes through the cisterns | Dunmar Underlow; Aruksha & Kaalahi hunt |
+| — | before #3 | *The Fall of Ashveil Hold* (§0f #3, set before the kingdom) | Brek Tane's key | — |
+| 3 | Autumn 1059 | **Zharak Crossing + night siege of Ironpass** | Sorvane's undead that need no light; first sight of the giants (§0f #14) | Corvane; Zafir fights; Grath'Uel returns |
+| 4 | Winter 1059 | **The Winter Council** — last of 1059 | **Every** weak point (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders — only Frosthold has its own Void unit, night, Frostspire, Sorvane's gold, the single Ashen river route, water sources, silver from one mine, one unfinished fort in the south-west, Cain's Vrak designs, succession) | Tolliver Quarrow walks in at the end with news of refugees |
+| 5 | Spring 1060 | **The Elderwood Arrives** | The Elderwood has just joined; its southern seal breaks — the first test of the Council's "bare Void borders". Flying-fortress rematch; SKYREACH debuts and Cyrus falls (§0b) | Saoirse Yarrow; Keth'maur / Sera Nullborn; Cyrus's student |
+| 6 | Early summer 1060 | **Karvossan War for the Sable Isles, Act 1** | Launched from **Skerrow** (§0h): the Lanthorn Squadron is first in | Orevessa Vhalcenne; Thyrandel Qorvashi; the second opposing Lord |
+| 7 | Midsummer 1060 | **The Wedding** | Between the war's two acts | — |
+| 8 | Late summer 1060 | **Karvossan War, Act 2** | Saltmere's fleet comes up to join | — |
+| 9 | Late summer 1060 | *The Last Fare* (chronicle, with §0f #13 Hob Fennick merged in) | The company escorts a wagon to Saddlestone and stays on a Crown contract | The Last Fare in story |
+| 10 | Autumn 1060 | *The Ice Carts* (§0f #9) | Tolliver's first field story; follows the refugees toward the Silver Isle | — |
+| 11 | Spring 1061 | **The Rout She Walked Out Of** | Bjorr and the Bearkin; ends with Edda Rensh named for Saddlestone | — |
+| 12 | Spring 1061 | *The Meadow* (§0f #12), *Beacon Night* (§0f #8) | Ironmane Lancers' quiet moment; the first beacon test | — |
+| 13 | Harvest 1061 | **The Silver Isle War** | §1; the armies go overseas | Dante; the Architect hinted |
+| 14 | Harvest 1061 | **Khulan's Raid** | The Kessrin ride while the armies are away; the Last Fare bring the farms home; giants rise out of the Long Grass; the keep holds; Edda commands | — |
+| 15 | 1062 on | *(offstage / wiki-era results)* | Saddlestone Citadel, the north-east city, Goldwake, the silver cold war with Silverhorn | — |
+| — | Later | #2 Malgrath / The Pale General's Document; The Lantern Siege; #4 next generation; contacting the Vrak; **Chapter 10** (1050–51 is already mostly told by chronicles, so it stitches them together) | — |
+
+**Free-standing chronicles** (§0f #1, 2, 4, 5, 6, 7, 10, 11) go between arcs whenever a break from war is wanted.
 
 ### §0c. The south-west frontier (added 2026-11-23)
 
@@ -28,7 +38,18 @@ New in the Atlas: **Saddlestone Keep** (new fort, outer ring finished autumn 105
 
 The hook: the Kessrin tale *The Rider Who Would Not Dismount* — Khulan waited 22 years for her enemy's army to march away at harvest, then burned the harvest. Behind the Marches lies the Southern Agricultural Corridor, most of Starhaven's bread. The lone rider only ever comes in spring, never at harvest.
 - **Commander (recommended):** Edda Rensh, named at the end of *The Rout She Walked Out Of* — the commander who walks a broken line out intact is the one you want on a border where the enemy fights from the saddle. Until then the chair stays empty.
-- **Payoff:** the 1060 Silver Isle War sends the armies over the sea at harvest time → the Kessrin finally ride (Khulan's raid), and the Harvest Beacons and the Long Grass get used. Raise it at the Winter Council first as a weak point ("the south-west has one unfinished fort").
+- **Payoff:** the 1061 Silver Isle War sends the armies over the sea at harvest time → the Kessrin finally ride (Khulan's raid), and the Harvest Beacons and the Long Grass get used. Raise it at the Winter Council first as a weak point ("the south-west has one unfinished fort").
+
+### §0h. Frontier build-out (agreed 2026-11-27; checked against the Kingdom plan and WORLD.COORDS)
+
+**Skerrow** (renamed from Tidemantle; −351, −116) — naval city in Starhaven's north-west corner where the Stonemark border meets the Ashen Sea. ~50 mi from Westreach, ~170 mi from Saltmere, ~110 mi from the Sable Gold Concession, ~180 mi from the Sable Isles, ~470 mi from Karvossa (Starhaven's nearest port to it). ~540 mi from the Kessrin, so it plays no part in the south-west.
+- Forces (in the unit wiki): **Lanthorn Squadron** (8 frigates, Dawnfleet Western Squadron — gold-convoy escort and north-west picket) and **Sealstone Harbor Watch** (800, seawall guns, rune-iron harbor chain between the Lanthorns). Saltmere stays the naval capital; the gold still lands at Saltmere.
+- Story job: the Karvossan War for the Sable Isles (1060) — the nearest Starhaven fleet to Karvossa's approach, first to engage.
+
+**Saddlestone Keep → Saddlestone Citadel** (−200, 290, on the Kessrin border; ~90 mi from Bridlewick).
+- 1059: outer ring only, Iva Renn acting warden. 1060: the Last Fare arrive (summer), sign a standing Crown contract and base there — they are the extra numbers under Khulan's Rule. 1061 harvest: Khulan's Raid — the Last Fare bring the Marches farms and Bridlewick families inside; the half-built keep holds. After: the Crown funds the full citadel, Edda Rensh commands, the Last Fare keep their own hall (a wall of passengers' names). By the wiki era it is the south-west's Ironpass. Last Fare cards stay provisional until their chronicle is written.
+
+**North-east fortified city** (map circle, about 145, −166) — the only gap on the Velmora border: nothing between Veynehold (~140 mi) and Ironpass (~285 mi); ~115 mi from the Velmora border and the war-mages' hills; ~275 mi from Starhold. Answers "bare Void borders" and Velmora at the Winter Council; founded 1062 or later. Name, size and date open — no Atlas entry yet.
 
 ### Suggested city (1060 onward): Goldwake(open to chaneg name) 
 
@@ -76,7 +97,9 @@ Least-used Starhaven units in the chronicles (by name count; some zeros are name
 | The Elderwood Arrives | the southern forests (flying fortress overhead) | Iron Talon Batteries (anti-aerial — against the fortress), Arcane Artillery Corps (Kai, Vaelmark), Silverleaf Corps (mobile with the 4th), Greenveil Defense Forces |
 | Zharak Crossing + Ironpass (night) | Karath / the dunes, and Ironpass in the east | The Dusk Corps, Windlance Cavalry (horse archers), The Ashrunners, The Warbreakers, Ironbreaker Mace Corps (HQ Forgehaven, next door to Ironpass), The Ironpack, Iron Reavers + Cinderguard (both Ashfield, on the dunes road) |
 | The Wedding | Starhold | **The Black Charge as honour guard** (Vespera's own riders), the Dawnguard, The Crown Shadows |
-| 1060 — Silver Isle War / Khulan's raid on the harvest | the Kessrin Marches (south-west) and the sea | **Ironmane Lancers (HQ Ironmane Fields, Greenveil — the nearest heavy cavalry to the Marches): their big moment, heavy lances against horse archers in the Long Grass**, Silver Swan Cavalry Corps (south depot), Tidebreaker Corps, Dawncliff garrison |
+| Karvossan War for the Sable Isles (1060) | the Sable Isles, from Skerrow and Saltmere (west coast) | Lanthorn Squadron, Sealstone Harbor Watch, Tidebreaker Corps (Saltmere 1,500), Swiftwake Scouts (Saltmere) |
+| 1061 — Khulan's raid on the harvest | the Kessrin Marches (south-west) | **Ironmane Lancers (HQ Ironmane Fields, Greenveil — the nearest heavy cavalry, but ~400 mi / ~10 days' ride: they must be posted south before harvest): their big moment, heavy lances against horse archers in the Long Grass**, Silver Swan Cavalry Corps (south depot), the Last Fare |
+| 1061 — Silver Isle War | overseas (location open) | Fleet depends on the island: west → Saltmere fleet + Lanthorn Squadron; east → Dawnfleet + Dawncliff Ramships. Tidebreaker Corps for the landing. (Dawncliff is ~590 mi from Saddlestone, so it takes no part in the raid.) |
 
 Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
 
@@ -91,7 +114,7 @@ Checked against the unit wiki's HQ field and the Kingdom plan map (2026-11-24).
 ### §0e. The Winter Council's lighter side, and the Wedding (agreed 2026-11-24)
 
 - **Winter Council, comic beat:** when the table reaches the king's own weak point (succession), ministers start telling Rayden — politely, then less politely — to have children. In the Black Charge, a rider tells Vespera; Vespera goes red to the ears and bonks the rider on the head. Ilyana is delighted, winks at Rayden across the table and makes a small private sign only the two of them understand (keep it implied, never spelled out).
-- **The Wedding** — Rayden marries Vespera and Ilyana together in one grand event (early 1060, before the Silver Isle War). Polygamy is allowed in Starhaven. The Karvossan faction-war arc begins before the wedding, pauses for it, and continues afterward; the wedding is a joyful midpoint, not the war's resolution. **Done the Indian way, grand:** days of it — a haldi morning, a mehndi night, a sangeet with dancing, then the baraat: Rayden rides in on his warhorse Warblade through Starhold with dhol drummers, dancing friends and the whole city in the street (the Eleven dancing badly is mandatory), and the Black Charge as Vespera's honour guard. Marigolds everywhere (they already mean something since Lantern Night). Allies, giants, the Vanari, Karath and House Sanguinar's twilight court all come — the ceremony is at dusk so Ilyana can stand in it. A security nightmare for Daven and the Crown Shadows. Joy first; the open threads (the Huntmaster's count, the Hundred, the Kessrin) watch from the edges. For image prompts: costumes, music and rituals Indian-style; buildings stay Starhaven's own dark-fantasy look.
+- **The Wedding** — Rayden marries Vespera and Ilyana together in one grand event (midsummer 1060, after the Elderwood Arrives and before the Silver Isle War). Polygamy is allowed in Starhaven. The Karvossan faction-war arc begins before the wedding, pauses for it, and continues afterward; the wedding is a joyful midpoint, not the war's resolution. **Done the Indian way, grand:** days of it — a haldi morning, a mehndi night, a sangeet with dancing, then the baraat: Rayden rides in on his warhorse Warblade through Starhold with dhol drummers, dancing friends and the whole city in the street (the Eleven dancing badly is mandatory), and the Black Charge as Vespera's honour guard. Marigolds everywhere (they already mean something since Lantern Night). Allies, giants, the Vanari, Karath and House Sanguinar's twilight court all come — the ceremony is at dusk so Ilyana can stand in it. A security nightmare for Daven and the Crown Shadows. Joy first; the open threads (the Huntmaster's count, the Hundred, the Kessrin) watch from the edges. For image prompts: costumes, music and rituals Indian-style; buildings stay Starhaven's own dark-fantasy look.
 
 **Karvossan War for the Sable Isles (working title; 1060, planned):** The Twilight Oath and the alliance with Starhaven do not unite every Karvossan power. Of the five Lords, three support the alliance and two oppose it. The anti-alliance faction tries to overtake the Sable Isles to cut Starhaven's financial support. Existing Dummy Legend **Orevessa Vhalcenne**, Karvossa's Political Lord, is one of the dissenters; create the second opposing Lord while drafting the story. The existing Dummy Legend **Thyrandel Qorvashi**, Karvossan Military Commander, is a candidate to lead or join the hostile force. Keep their cards' placeholder status until the story is written.
 
@@ -136,8 +159,8 @@ Five provisional Dummy Legend cards are grouped under **The Last Fare** in the m
 
 | Name | Who | Where they come from | Card |
 |---|---|---|---|
-| Selka Rennet | dead-line signal officer (Resonance Corps) | When the Thread Breaks | **no card yet** |
-| Tolliver Quarrow | prospector-spymaster, Treasury + Umbral Web | The Ice Carts → Winter Council | **no card yet** |
+| Selka Rennet | dead-line signal officer (Resonance Corps) | When the Thread Breaks | yes (2026-11-27; image to make) — also new: Sael Okoye |
+| Tolliver Quarrow | prospector-spymaster, Treasury + Umbral Web | Winter Council (walks in at the end) → The Ice Carts | **no card yet** |
 | Dunmar Underlow | deep-warden of cisterns and tunnels | Take It Alive | **no card yet** |
 | Saoirse Yarrow | ancient Wood Elf field healer, tortoise Mosswall | The Elderwood Arrives | yes (2026-11-27; image to make) |
 | Hob Fennick | Guild porter, 19 — kept Iva Renn's knife; first porter-scout | The Rookie Season → Saddlestone Keep | **no card yet** |
@@ -158,7 +181,7 @@ What the wiki already has: begun 1052 (Naval Expansion Doctrine — Cain: "You w
 Plan:
 1. **Debut** — Cyrus flies one of the seven untested prototypes into the flying-fortress rematch beside Aurelia and Zephyros (he "stays beside it while it runs"). Nobody outside the Arsenal knew it existed.
 2. **Twist** — the fortress stops firing at everything else and turns on SKYREACH: it recognises the Vrak-derived engines. Pays off "it's remembering us" and Cain's Vrak notation.
-3. **Cost** — a prototype goes down (Cyrus a near miss or a real loss — decide when writing); the enemy stays as strong as Starhaven.
+3. **Cost [decided 2026-11-27]** — Cyrus stays with the prototype ("stays beside it while it runs") to pull the fortress off Aurelia and Zephyros, and it comes down in the forest. **He falls into a coma** (death later, at a moment still to choose). Saoirse's Root and Hold keeps him alive but cannot heal him — her debut is tied to the emotional centre. Told with flashbacks: the 1052 Naval Expansion argument with Cain, the Kira Expansion built in a day, Lynet's red ink, the veterans' prosthetics. Ends with Lynet at his bedside and **his student** — a new character, one of Lynet's Learnstead students — opening his desk and finding why his two vacancies were never filled: he was waiting for her. She takes over SKYREACH (not the whole ministry). Card at debut, names checked.
 4. **Open thread** — can the Vrak track anything built from their schematics? Goes to the Winter Council (Cain's designs as a weak point) and feeds the 1060 Silver Isle War.
 Set over Starhaven/the Elderwood, never in the Vrak Isles.
 
@@ -209,7 +232,7 @@ Severim: only in the Nullborn registry (3 mentions, no chronicles or chapters). 
 - **Dante** — merc, native son, later joins Starhaven (section 2).
 - **Rayden Cale** — meets Dante in the field.
 - **The Architect** — the unknown four-armed king, found later.
-- **[Suggested]** Veyra Tal / Fourth Field Army for the treaty; Dawnfleet for the sea landing.
+- **[Suggested]** Veyra Tal / Fourth Field Army for the treaty. The landing fleet depends on where the island is: Saltmere's fleet and the Lanthorn Squadron (Skerrow) if it lies west across the Ashen Sea; the Dawnfleet if east.
 
 **Open questions:**
 - Island name (no "Ash"; check the wiki).
@@ -302,4 +325,5 @@ Found by counting how thinly the wiki covers each topic. Top picks: **#2 and #7*
 - ✅ Fixed (checked 2026-11-27): Drevak's card is now status "unknown"; the Ashen Shields clash is gone (renamed The Shields of Lumenfield); Kira "Scorchmark" Vey is now Ilka 'Scorchmark' Dane with a full entry; Crest Vane's ship is "Permanent Tide" everywhere.
 - ✅ All 4 kept characters now have cards (Saoirse Yarrow, Corvane and Dante added 2026-11-27; images still to make).
 - Not yet in the wiki: the 7 Dawnless Days units (Starstone Guard, Thornwall Remnant, Greenveil Skin-Wardens, Coldmarch Survivalists, Ashveil Border Watch, Saltmere Lance, Ashfield Survivors).
-- Chapter 10 (Year 1050–1051 timeskip) still unwritten, though chronicles run to Year 1059.
+- Chapter 10 (Year 1050–1051 timeskip) still unwritten, though chronicles run to Year 1059. Moved to "Later" in §0: most of 1050–51 is already told by chronicles (Five Thrones War, Giants of Varathos, Ashen Throne War, The Lantern at the Wall, The Stormstep, The Crossing That Changed the Map and others).
+- Corwen (Canal Rat, no card yet) is a look-alike of Corvane — rename Corwen before giving him a card.

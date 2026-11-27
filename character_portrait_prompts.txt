@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 132   (finished so far: 436)
+Still to generate: 137   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -277,19 +277,3 @@ Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated
 
 
 
-
-########################################################################
-## NEW UNITS — TIDEMANTLE  (2)
-########################################################################
-
-=== Lanthorn Squadron ===
-Save as: unitImages/lanthorn-squadron.png
-Type: Escort Frigates · Western Squadron · Tidemantle
-PROMPT:
-Photorealistic dark-fantasy naval scene, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on wood, sailcloth, rope, iron and water, sharp focus on the lead ship, softly blurred detailed background. Vertical 2:3 composition, 1024x1536. No text, no watermark, no border, no logo. Subject: a fast three-masted frigate with two gun decks and dark weathered hull, sailing out at dusk between two tall limestone beacon towers at a harbor mouth, the towers' lights burning. A warm rune-lamp glows on its stern, its light matching the towers'. Behind it, in a line, more frigates and a heavy, low-riding merchant ship carrying gold under escort. Setting: a grey Ashen Sea with a rising swell, limestone terraces of a fortified naval city climbing to a ridge keep behind.
-
-=== Sealstone Harbor Watch ===
-Save as: unitImages/sealstone-harbor-watch.png
-Type: Harbor Garrison · Seawall Gunners · Tidemantle
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a weathered harbor watch soldier from a fishing family, salt-cracked hands, wearing a riveted brigandine under dark salt-proofed oilcloth and an open-face steel helm, holding a long pike with a side hook. Behind him, gunners load a bronze cannon set in an arched opening in a limestone seawall, and a massive iron harbor chain with faintly glowing rune-etched links rises dripping from the sea between two beacon towers. Setting: wet harbor stone, sea spray, grey Ashen Sea.

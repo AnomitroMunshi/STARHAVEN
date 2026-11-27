@@ -7,8 +7,8 @@ Audited 2026-11-24 against all 376 unit cards in the unit wiki (13 rival cards l
 
 ## 1. Never appeared — the arc that gives each its moment
 
-**When the Thread Breaks (Greypeak, north-west)**  
-Blackfang Shieldguards, Red-Skinned Troll Tribe, Avalanche Breakers, Ogre Brutes, Hyena Riders, Bull War Riders, Half-Orc Barbarians, Blue Skinned Orc Clan, Redspire Clan, Ancestor Guard, Mountain Berserkers, Ashpaw Volunteers, Goblin Skirmishers & Archers, Hobgoblin Warbow Corps, Goblin Ambush Crossbows, Stonefang Shamans, Kraag Half-Ear, Vurd Shatterknee, Hammerers, Longbeards (Stonemark), Quarrelers, Thunderers, Kuku Gunriders, Mountain Engineers, Ironfort War Wagons, Gram Stons, Vanari Elites, Beastmen Berserkers of the East, The Thread-Runners, Vale's Voice, Projection Crystal Relay Operators, Mira Halloway, War Hyena, Ironhorn War Bull, War Boar, War Bear, The Gauntlet Army, Snowtusk War Elk
+**When the Thread Breaks (Greypeak, north-west)** — ✅ written 2026-11-27 (`when-the-thread-breaks`). All below now appear except the four marked ⏭ (they do not fit Greypeak; move them to a later arc).  
+Blackfang Shieldguards, Red-Skinned Troll Tribe, Avalanche Breakers, Ogre Brutes, Hyena Riders, Bull War Riders, Half-Orc Barbarians, Blue Skinned Orc Clan, Redspire Clan, Ancestor Guard, Mountain Berserkers, Ashpaw Volunteers, Goblin Skirmishers & Archers, Hobgoblin Warbow Corps, Goblin Ambush Crossbows, Stonefang Shamans, Kraag Half-Ear, Vurd Shatterknee, Hammerers, Longbeards (Stonemark), Quarrelers, Thunderers, Kuku Gunriders, Mountain Engineers, Ironfort War Wagons, Gram Stons, ⏭ Vanari Elites, ⏭ Beastmen Berserkers of the East, The Thread-Runners, Vale's Voice, Projection Crystal Relay Operators, Mira Halloway, War Hyena, Ironhorn War Bull, War Boar, ⏭ War Bear, The Gauntlet Army, ⏭ Snowtusk War Elk
 
 **The Rout She Walked Out Of (a field army in retreat — 2nd/4th Army)**  
 Glaive Formation Corps, Longblade Strike Corps, Dawnbow Archers, The Point — First Lance, The Wings — Second Lance, The Depth — Third Lance, The Dawnrunner Stable, Dawnrunner Warhorse, Crimsonblood Warhorse, Command Elimination Squadron, The Fang-Stalkers, The Spell-Enders, The Scatter-Shot, The Far-Walkers, The Evenmere Guard, Kiyu Otari, Warband of the Dawnplate, Sister-Commander Edda Rensh, Shield Wall Engineers Corps, Jade Crossbow Corps, Starhaven Chariot Runners, Ironveil Spear Corps, The Null-Hunters, The Rune-Shield Guard, Ironveil Spear Corps — Halberdiers, Scorpio Field Batteries, Carroballista Corps, Orvin Slate
@@ -42,8 +42,8 @@ Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — 
 | The Aethran Colossi / Aethran Fangwalkers | once | The Silver Isle War — titans wading ashore from the Saltmere fleet |
 | Varathos Giant Warriors · Stone-Throwers · Kira's Household | never (new) | Zharak Crossing, the Kessrin raid, the Wedding |
 | The Ashstride Warband | once | The Kessrin raid — rare-race riders against the steppe |
-| Beastmen Berserkers of the East | never | When the Thread Breaks (they quarter at Frosthold) |
-| Kuku Gunriders | never | When the Thread Breaks — Stonemark's strangest cavalry |
+| Beastmen Berserkers of the East | never | Not used in When the Thread Breaks (Northern Wilds / Frosthold, too far) — The Rout She Walked Out Of, on the Frosthold road |
+| Kuku Gunriders | once | When the Thread Breaks ✅ |
 | Forest Golems | once | The Elderwood Arrives |
 | The Glacierwalkers (Frostspire ice constructs) | never (new) | The Elderwood Arrives — lent for the first time, beside Eirathra's ice walls |
 | The Wrought + Iron Tide | twice / 8× | The night siege of Ironpass — iron that does not need light |
@@ -52,7 +52,7 @@ Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — 
 | Bowmen of the Last Hollow | never | The Kessrin raid — the only unit Kael exempted from melee |
 | The Grey Rite | twice | Take It Alive |
 | The Unbroken Line | once | The Kessrin raid — the Long Gallop veterans on open grass again |
-| The Longmark | once | When the Thread Breaks |
+| The Longmark | twice | When the Thread Breaks ✅ (blinded the Bonecage Cyclops) |
 | Warband of the Dawnplate | never | Founded in The Rout She Walked Out Of |
 | Drakekin Pyromancers | never | The Kessrin raid — fire in the Long Grass |
 | The Skyspear Valkyries | never | Zharak Crossing — the free company at the highest bid |
@@ -113,7 +113,7 @@ Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — 
 | Iron Reavers | 2 | The Second Ashen Passage War; The Ashen Throne War |
 | Highfold Mercy | 2 | The Long Winter; Three Minutes on the Thaw Run |
 | The Grey Rite | 2 | The Long Winter; Forty Sails |
-| The Runebreakers | 2 | The Second Ashen Passage War; The Five Thrones War |
+| The Runebreakers | 3 | The Second Ashen Passage War; The Five Thrones War; When the Thread Breaks |
 | Holy Knights — Dawn Templars | 2 | The Long Winter; The Crown's Shadow |
 | Yami Holloway | 2 | The Twice-Returned; The Siege of Vael'Dorum |
 | Mirova | 2 | The Smell of Ash; The Siege of Vael'Dorum |
@@ -127,7 +127,7 @@ Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — 
 | Swiftwake Scouts | 2 | Forty Sails; The Tower of Twenty |
 | The Ebon Shieldwall | 2 | The Twilight War; Starborn's World Tour |
 | The Sanguine Lancers | 2 | The Twilight War; Starborn's World Tour |
-| The Undying Colors | 2 | Lowmere, Again; The Siege of Vael'Dorum |
+| The Undying Colors | 3 | Lowmere, Again; The Siege of Vael'Dorum; When the Thread Breaks (origin told) |
 | Apothecary Corps | 2 | The Unicorn in the Dark; Lowmere, Again |
 | Stonemark Bulwark | 1 | The Silent Games |
 | The Oath-Axes | 1 | Lowmere, Again |
@@ -159,7 +159,7 @@ Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — 
 | The Ashstride Warband | 1 | The Siege of Vael'Dorum |
 | The Aethran Colossi | 1 | The Siege of Vael'Dorum |
 | Vanari Thunder Riders | 1 | The Kneeling Titan |
-| Skywarden Corps | 1 | The Silent Games |
+| Skywarden Corps | 2 | The Silent Games; When the Thread Breaks |
 | Skyhammer | 1 | The Siege of Vael'Dorum |
 | The Ironwhirl Squadron | 1 | The Silent Games |
 | Ashen Battle Wardens | 1 | The Long Winter |
