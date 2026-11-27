@@ -299,9 +299,6 @@ Found by counting how thinly the wiki covers each topic. Top picks: **#2 and #7*
 
 ## 7. Canon to fix (found 2026-11-23)
 
-- Drevak: listed deceased in the character list, but the Nullborn registry has him returned.
-- Ashen Shields name clash: Cova Drell's mercenary unit vs Petra Allus's planned unit.
-- Kira "Scorchmark" Vey's entry is broken/truncated.
-- Crest Vane's ship: "Horizon's Edge" vs "Permanent Tide."
-- Not yet in the wiki: the 4 kept characters above and the 7 Dawnless Days units (Starstone Guard, Thornwall Remnant, Greenveil Skin-Wardens, Coldmarch Survivalists, Ashveil Border Watch, Saltmere Lance, Ashfield Survivors).
+- ✅ Fixed (checked 2026-11-27): Drevak's card is now status "unknown"; the Ashen Shields clash is gone (renamed The Shields of Lumenfield); Kira "Scorchmark" Vey is now Ilka 'Scorchmark' Dane with a full entry; Crest Vane's ship is "Permanent Tide" everywhere.
+- Not yet in the wiki: Saoirse Yarrow, Corvane and Dante (Faceless has a card now) and the 7 Dawnless Days units (Starstone Guard, Thornwall Remnant, Greenveil Skin-Wardens, Coldmarch Survivalists, Ashveil Border Watch, Saltmere Lance, Ashfield Survivors).
 - Chapter 10 (Year 1050–1051 timeskip) still unwritten, though chronicles run to Year 1059.
