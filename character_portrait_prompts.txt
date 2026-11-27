@@ -1,7 +1,7 @@
 STARHAVEN — CHARACTER PORTRAIT PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 155   (finished so far: 436)
+Still to generate: 157   (finished so far: 436)
 
 HOW TO USE
 - Size: 1024 x 1536 pixels, vertical 2:3 (same as the existing portraits). In Grok pick the portrait / 2:3 aspect.
@@ -401,3 +401,20 @@ Save as: unitImages/the-black-tithe.png
 Type: Mercenary Pike and Crossbow Company (rival)
 PROMPT:
 Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: a human mercenary of the Black Tithe in black-dyed brigandine with rows of small white tally-marks painted on the breast, a pike held upright, crossbows and a tight pike square behind, a mixed company of humans, half-orcs and hobgoblins. Magic: a contract nailed to a timber post bears a faintly glowing black wax seal. Setting: the torch-lit lower gallery of a dwarven gold mine.
+
+
+########################################################################
+## THE TIED MOOT (1054) — KNOWN NAMES  (2)
+########################################################################
+
+=== Orrik Graymaw ===
+Save as: starhaven_chars_image/orrik-graymaw.png
+Type: Standard-Bearer of the Highcairn Oathguard
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 24-year-old dwarf standard-bearer, broad and grinning, with a short red-brown beard in two iron-ringed braids and a fresh scar across one cheek. He wears ancestral Highcairn rune-plate, dark iron carved with the faces of earlier wearers, and holds the bronze Highcairn standard upright on an iron-footed pole, a bronze shield on his other arm carved with old faces. Magic: the old runes on his plate glow faint bronze. Setting: a great carved stair inside a dwarven mountain hold, torchlight, another standard leaning against his.
+
+=== Teemu Rautio ===
+Save as: starhaven_chars_image/teemu-rautio.png
+Type: Household Champion of House Sythalen
+PROMPT:
+Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: A 38-year-old Frostborn human champion, tall and rangy, pale with ice-blue eyes, a close-cropped pale beard and an old frostbite scar on one ear. He wears grey quilted scale under a white wolf-pelt cloak with a silver snowflake clasp, and holds a great glacier halberd with a blade like a cleaver and a spiked butt. Magic: frost-runes along the halberd blade glow pale blue. Setting: the top of a great carved stair inside a dwarven hold, a line of grey-cloaked halberdiers behind him, torchlight and cold breath.

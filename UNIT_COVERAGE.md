@@ -34,6 +34,8 @@ Thalassian First Fleet, Tideborn Transports, Ironmere Veterans, Ironmere Shock H
 **New idea — Retaking Ashveil Hold (Starhaven on the attack; Brek Tane's key)**  
 Ironveil Trebuchet Battery, Rampart — Siege Tower Division, Groundbreaker — Tunnel Assault Corps, Ramhead — Battering Ram Division, Tunnel-Voice Rusk, Tenn
 
+**The Tied Moot (1054, Stonemark civil war)** — ✅ written 2026-11-27 (`the-tied-moot`): Ironbreakers (Stonemark), Stonemark Bulwark, Longbeards (Stonemark), Gram Stons, Brak Graymaw, Thunderers, Kuku Gunriders, Mountain Engineers, The Ironwhirl Squadron (first flight), The Forgepact Battery (first war), Groundbreaker — Tunnel Assault Corps, Redtunnel Corps, Tunnel-Voice Rusk, Runebreakers, Redspire Clan, Kraag Half-Ear, The Skyspear Valkyries (walked the contract), and the ten new Tied Moot units.  
+
 ## 2. Unique units — the ones nobody else in the world has
 
 | Unit | Appeared | Its limelight |

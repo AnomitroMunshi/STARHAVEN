@@ -12,6 +12,7 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 |---|---|---|---|---|
 | ✅ | 1059 | The Crown's Shadow (`the-crowns-shadow`, Lantern Night) | Traitor in the Web — Vice-Minister Pieter Vandermeer | Ossian, the Huntmaster |
 | ✅ | Winter 1059 | The Shadow Court (`the-shadow-court`) | Open Visa spies | Faceless |
+| ✅ past | 1054 | **The Tied Moot** — DONE (`the-tied-moot`; Stonemark civil war, 3–3 moot; Hurnevik Sythalen's Frostspire household; new Hold-Lords and ten units; Dummy Legends moved to Allied Nations / Known Enemies / Tribes & Clans) | Stonemark arc requested 2026-11-27 | Tsegaye Deepwell, Amaru Lanternhold, Yaroslava Coldhollow †, Nnamdi Brightseam, Sindri Hammerseal, Bakhyt Ironjaw †, Itzel Quiroga, Dessa Marrow |
 | ✅ 1 | Late autumn 1059 | **When the Thread Breaks** — DONE (`when-the-thread-breaks`; Velmora stormglass via a Karvossan-passed crystal; foreign crystals cut 40 days; Undying Colors origin told; Borrak Stonecrown and a Void Titan killed) | Velmora's stormglass blacks out the crystals; told from the Resonance Corps' side (*The Silent Games* already did the army without crystals) | Selka Rennet; the Battlemage Prince |
 | 2 | 1059 | **Take It Alive** | Loose inside Sancthaven; escapes through the cisterns | Dunmar Underlow; Aruksha & Kaalahi hunt |
 | — | before #3 | *The Fall of Ashveil Hold* (§0f #3, set before the kingdom) | Brek Tane's key | — |
