@@ -656,3 +656,8 @@ Names that appear only inside chronicles (no card). Add new ones here by hand; t
 | Ravil Okun | Take It Alive — Brand Order tracker, missing at Ironpass |
 | Duke, Ghost, Patience | Take It Alive — War Lion (†), War Tiger, War Gorilla |
 | Thistle | Take It Alive — Pania Varo's grey Mercy Charger mare (The Standing Mare statue) |
+| Tahira Brightwell | The Fall of Ashveil Hold — human healer, Brek Tane's first love (†1024) |
+| Odvar | The Fall of Ashveil Hold — Ashveil quartermaster, Brenna's father |
+| Oyvind Ironmoor | The Fall of Ashveil Hold — Marshal of Ashveil (†1024) |
+| Vakhtang "Old Vakh" Ironvein | The Fall of Ashveil Hold — Ashveil gate-master, taught Brek (†1024, corrupted) |
+| Gerd | The Fall of Ashveil Hold — Ashveil shield-sergeant |
