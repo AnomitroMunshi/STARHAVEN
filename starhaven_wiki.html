@@ -230,6 +230,19 @@ a.lore-card:hover{transform:translateY(-2px)}
 .lore-expand-body{font-size:13px;color:var(--text2);line-height:2;white-space:pre-wrap;font-family:'Crimson Pro',serif}
 .lore-expand-body p{margin-bottom:12px;text-indent:1.5em}
 .lore-expand-body p:first-child{text-indent:0}
+/* an opened chronicle reads as an old manuscript leaf: parchment, ink, drop cap, archive seal */
+.lore-card.expanded{grid-column:1/-1;transform:none}
+.lore-expand.open{max-height:80vh;padding:22px;background:#2a2116}
+.lore-expand-body{max-width:760px;margin:0 auto;padding:44px 52px;color:#3b2a18;font-size:16px;line-height:1.9;background:radial-gradient(ellipse at center,#f1e2bf 55%,#e2c993 85%,#c9a86a);border-radius:3px;box-shadow:inset 0 0 70px rgba(110,70,25,.45),0 8px 28px rgba(0,0,0,.6)}
+.lore-expand-body>p:first-of-type{text-indent:0}
+.lore-expand-body>p:first-of-type::first-letter{float:left;font-family:'Cinzel Decorative',serif;font-size:3.6em;line-height:.9;padding:4px 8px 0 0;color:#8b1e12}
+.lore-expand-body .lore-link{color:#7a2a12}
+.lore-expand-body .lore-link:hover{color:#3b2a18}
+.lore-expand-body .chron-archive{border-top:1px solid rgba(90,55,20,.45);color:#6b4a2a!important;text-align:center}
+.chron-signoff{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:14px}
+.chron-signature{width:auto;max-width:60%;height:40px}
+.chron-seal{flex:none;width:46px;height:46px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.4))}
+@media(max-width:700px){.lore-expand-body{padding:26px 20px;font-size:15px}}
 
 /* Lore type color strips */
 .lore-strip-war{background:linear-gradient(90deg,#882020,#C84030)}
@@ -14449,7 +14462,7 @@ The Nullborn did not attack the Causeway first. They attacked the ships.
 
 On the first morning, before the dreadnoughts were even in range, the water around the Stormcaller anchorage began to move in a way water does not move. A long, slow swell, from nowhere, under a flat calm sky.
 
-"Leviathan," said Aruksha, standing on the Causeway wall with her spear. Kaalahi, coiled at her feet, had lifted his great horned head and was tasting the air with a black tongue. "There. And there. Three of them."
+"Leviathan," said Aruksha, standing on the Causeway wall with her spear. Kaalahi, coiled at her feet, had lifted her great horned head and was tasting the air with a black tongue. "There. And there. Three of them."
 
 The registry said the Abyss Leviathans attack escorts and rescue boats first, to cause panic below the waterline before the dreadnoughts arrive. The registry was right. The first one came up under a Stormcaller's longboat that was carrying powder out to the ships, and the longboat simply went into the sea, and so did the eleven sailors in it.
 
@@ -14459,13 +14472,13 @@ It was the size of a whale and the shape of something that had been a whale once
 
 Kaalahi was already in the water.
 
-Nobody saw the serpent go off the wall. One moment he was there, the next there was a long black shape crossing the water faster than any boat, and then he hit the leviathan's throat and wrapped it, three times, and pulled.
+Nobody saw the serpent go off the wall. One moment she was there, the next there was a long black shape crossing the water faster than any boat, and then she hit the leviathan's throat and wrapped it, three times, and pulled.
 
 The thing rolled. The sea boiled white. And Aruksha came down the Causeway steps, ran out along the launch's oars, and leapt.
 
 The Sarpathi call it Leaping Fang: a thrust that crosses a distance no one should be able to jump. The Endless Fang went into the leviathan's blind eye to half its length.
 
-Kaalahi held on while the great body thrashed itself still. Then he let go, and the leviathan sank.
+Kaalahi held on while the great body thrashed itself still. Then she let go, and the leviathan sank.
 
 On the Causeway wall, nine hundred soldiers had watched every second of it. When Aruksha surfaced beside the launch, pulling herself up onto its side with the spear still in one hand, the cheer that went up could be heard in Lotusmere. Pell Corran, the young Tidebreaker, was so excited he dropped his helmet into the sea.
 
@@ -14827,7 +14840,7 @@ The First Hunt. Around her, on the reef, in the spray, seven figures shimmered i
 
 When the mist cleared, there was only Aruksha on the reef, leaning on her spear, breathing hard, and older, by a little, than she had been that morning. The First Hunt costs her years. She has never said how many.
 
-Kaalahi came up beside her and wrapped himself round her shoulders, gently, the way he does.
+Kaalahi came up beside her and wrapped herself round Aruksha's shoulders, gently, the way she does.
 
 —
 
@@ -22466,6 +22479,1009 @@ Filed Year 1060.
 — Archivist Senna Ash, Starhaven Royal Athenaeum`,
   },
   {
+    id: 'take-it-alive',
+    title: "Take It Alive",
+    subtitle: "Last nights of autumn, 1059 · the passenger from Ashfield · Sancthaven",
+    type: 'legend',
+    year: "Year 1059",
+    tags: ["Dilnoza Vantreth","Mosi","Zawadi Brightwater","Saint Veyne Orphanage","The Grey Rite","Tanvir Sollen","Veil Seers","The Unmeasured","Wex","Seal Order","Lockjaw","Tomás Rael","Ashen Exorcists","Seraphine Mire","Orsik","Auriel","Elysia Nocturne","Zareth Kull","Brynhild Voss","Holy Knights","Holy Knights — Pyrelight Archers","Holy Knights — Relic Wardens","Holy Knights — Saintguard","Abebe Sunward","Cova Drell","The Shields of Lumenfield","Lena Crest","Combat Healers","Mercy Riders","Mercy Charger","Pania Varo","Rayden Cale","Aruksha","Kaalahi","Dunmar Underlow","The Clean Water House","The Mother Cistern","Void Hounds","Joaquin Two-Coins","Bheki Ostrowe","Starhaven Beast Corps","Helna Ironmane","Wiremu Fernhollow","War Tiger","War Gorilla","War Lion","Duke","Hollow Crawlers","The Lantern Watch","The Lantern Bridge","The Trauma Wards","The Healing Halls","The Restricted Quarter","Sancthaven","The Web","Sunniva Vael","Ravil Okun","Brand Order","Ironpass","Winter Council"],
+    excerpt: "For eleven years, something from the mouth of the Ashen Passage lived quietly inside a woman of the Seal Order, and counted everything she saw. When the exorcists tried to take it out, it ate twelve minutes from everyone in the room and went down into the water under Sancthaven. The Order had one night to bring them both back alive.",
+    body: `This is the story of a woman who carried the Void inside her for eleven years without knowing it, and of the night Sancthaven had to bring her home alive.
+
+It happened in the last nights of autumn, 1059, nine days after every crystal in the kingdom went dark over Greypeak. Sancthaven is the city of healers: white stone on the Selmere river, ninety-five thousand people, the Healing Halls, the Ashen Hall, the White Citadel of the Holy Knights. Everything the kingdom knows about mending people is taught there. Everything the kingdom has caught from the Void and could not kill is kept there, behind the doors of the Restricted Quarter.
+
+That was the problem. Nobody had thought of it as a problem until that night.
+
+—
+
+I. THE KNOT
+
+Every rest-week, Dilnoza Vantreth went to the orphanage.
+
+She was forty-one, a senior containment specialist of the Seal Order, the part of Zareth Kull's Void Breakers whose job is to catch the things of the Void alive, so that they can be studied instead of only killed. She had greying black hair tied back hard, a burn on one cheek from a binding net that had caught fire in 1051, and the patient hands of somebody who has spent her life tying knots that must not slip.
+
+The Saint Veyne Orphanage stands below the Ashen Hall. The king named it after the orphanage he grew up in. It runs on one rule, Sister Marianne's: nobody is turned away.
+
+Dilnoza had a favourite there, though she would never have said so. His name was Mosi. He was eight. He had come from a river village in the south after a flood, and he did not speak for his first month at Saint Veyne. He was afraid of three things: deep water, the dark, and the well in the orphanage yard, which was both.
+
+She taught him knots.
+
+"This one," she said, that afternoon, on the bench by the kitchen door, with a length of grey cord between them, "is the Seal Order knot. We call it the Holdfast. Over, under, back through itself, and pull. The harder something pulls against it, the tighter it gets."
+
+Mosi did it. It came apart in his hand.
+
+"Again," she said.
+
+He did it again. It came apart again.
+
+"Again."
+
+On the fifth try it held. He pulled on it with both hands, and then put his foot on the bench and pulled with his whole body, and it held, and his face did something it had not done in the six months he had been there. Zawadi Brightwater, who runs the orphanage, was standing in the kitchen doorway with flour to her elbows, and she had to go back inside for a moment.
+
+"It holds what doesn't want to be held," Dilnoza said. "That's what it's for."
+
+"Can it hold a monster?"
+
+"It has."
+
+"Can I see one? A real one?"
+
+"No," said Dilnoza. "But next week I'll bring you a seal rod. A real one. You can hold it, and I'll show you how we drive it into the ground."
+
+"Promise?"
+
+She tied the Holdfast round his wrist, loosely, so he could slip it off.
+
+"That's a promise," she said. "Seal Order knot. Can't break it."
+
+Then she went up the hill to the Restricted Quarter with twelve new containment vessels on a handcart, because the Quarter had asked for them that month, and she had been the one to make them.
+
+—
+
+II. THE GREY RITE
+
+The Grey Rite exists to watch Starhaven's own side.
+
+Every other Void unit in the kingdom looks outward. The Veil Hunters hunt what comes out of the tears. The Void Breakers catalogue and kill it. The Runebreakers break enemy mages. The Grey Rite is small, about a hundred and eighty people in cells of five, and its job is the one nobody wants: to notice when one of our own has started to change. It answers to two Pillars at once, Elysia Nocturne of the Veil and Seraphine Mire of the Heart, and nothing it does to a Starhaven soldier can happen without both of their signatures.
+
+Vigil-Warden Tanvir Sollen led the cell posted at the Lumenfield headquarters. He was a careful, round-faced man of fifty who knitted during briefings and had once taken nine months to decide that a cook was not, in fact, corrupted, only very bad at soup.
+
+He had not been looking for Dilnoza. He had been looking at a puzzle.
+
+For eleven years, the Seal Order had caught things alive and brought them back. And for eleven years, about one capture in nine had gone wrong in the same small way. The thing in the frame would be fighting, screaming, pulling at the bindings, and then, for no reason anybody could find, it would go quiet. Completely calm. As if it had been told something.
+
+Tanvir laid out the capture logs on the floor of his office, one sheet for every quiet capture, and looked at the names of the specialists present.
+
+There was one name on every sheet.
+
+Then he went back further, to the oldest file in the Void Breakers' archive. The First Ashen Passage War, 1048, the ninth night. Four Seal Order specialists, walking the edge of the Passage after dark, had come back to the fire at midnight with twelve minutes missing out of each of them. The same twelve. No wounds. No memory. Zareth Kull's note in his book: We do not know what these are. We do not know why they did not harm them. The last unknown is the alarming one.
+
+The Nullborn registry has a name for those twelve minutes. It calls them the Unmeasured, which is a way of saying nobody knows.
+
+Dilnoza Vantreth was one of the four.
+
+Tanvir sat on the floor among his papers for a long time. Then he put down his knitting and asked the Veil Seers for eleven years of their readings on her. The Veil Seers are fourteen psions, the finest in the kingdom, and their arrays read Void-touch in a person the way a healer reads a fever.
+
+Dilnoza's readings were perfect. Clean, every week, for eleven years.
+
+That was the thing that frightened him. Nobody who works with the Void every day reads clean every week. Everybody carries a little. A Seal Order specialist should glow on the arrays like a lamp.
+
+Dilnoza did not glow at all. She read like an empty room.
+
+As if something inside her was very carefully cleaning up after itself.
+
+—
+
+He took it to both Pillars, the same night, by crystal. Elysia was at the Veil Watch station in Lumenfield, and she listened without moving, the way she does, and at the end she said only: "Bring her to Tomás. I want to be told the moment it speaks."
+
+"You think it will speak?" said Tanvir.
+
+"I think it has been listening for eleven years," said Elysia. "Things that listen that long have something to say."
+
+Seraphine was in Sancthaven, two streets from the Restricted Quarter, and she signed.
+
+Then they sent for Wex.
+
+—
+
+Wex, Order Master of the Seal Order, arrived at the Restricted Quarter at dawn with her containment frame on her back. She has carried that frame, Lockjaw, for fifteen years. It is rated below every job she has ever used it for. It has never failed. She cleans it whatever else is happening.
+
+She read Tanvir's papers standing up. Then she sat down, which nobody had ever seen her do in a briefing.
+
+"I trained her," she said. "I trained half the Order with her. She designed the inner wards of this building."
+
+"I know," said Tanvir.
+
+"If something is in her," said Wex, "it knows everything we know."
+
+"Yes."
+
+Wex looked at the frame on the floor beside her for a while.
+
+"We take it alive," she said. "It's the first time in eleven years one of them has stood still long enough to be caught. We take it alive, and we take her alive, and we find out what it is."
+
+"And if we can't have both?"
+
+"Then I'll decide that when I'm there," said Wex. "Not before."
+
+—
+
+They did not have to arrest her.
+
+Tanvir went to find her in the Quarter's workshop, where she was checking seals on her twelve new vessels, and he sat down across the bench from her and told her everything, the quiet captures, the empty readings, the twelve minutes. He had thought about how to do it for a whole night. In the end he just told her.
+
+She listened with her hands flat on the bench.
+
+At the end she was quiet for a while.
+
+"Sometimes I wake up," she said, "and the candle is shorter than it should be."
+
+Tanvir said nothing.
+
+"I thought I was tired," she said. "Everyone in the Order is tired." She looked at her hands. "Eleven years. I've been in every containment since Ashfield. I've been in rooms with the king."
+
+"Yes."
+
+"Then take it out," she said. "Do it today. Take it out alive. I want to see it." She stood up. "And somebody needs to tell a boy at Saint Veyne that I'll be late next week. His name is Mosi. Tell him I haven't forgotten the seal rod."
+
+She walked into the exorcism room on her own feet.
+
+—
+
+III. THE RITE
+
+The Ashen Exorcists are the people the Ashen Guard sends for when healing is no longer enough. Combat Healers clear Void-trace and ordinary curses. When the corruption has gone past that, into possession, into something living inside a person, the Exorcists come, in medium plate with binding-sigils cut into the chest, and sealed helms with anti-possession runes round the temples.
+
+Their captain is Tomás Rael. He has spoken the words of exorcism for twenty years, and Void-touched spirits flinch from his voice before the rite is even finished. He believes in every word. Seraphine says that is why the words work.
+
+The room was round and white, with a circle of silver set into the floor and old runes round the walls, and a drain in the centre, because exorcisms are messy. Dilnoza lay down in the circle without being asked. Four Exorcists took the four points. Wex stood by the wall with Lockjaw open at her feet, its sealing lamps burning a steady blue. Tanvir stood by the door. Orsik stood in the doorway behind Seraphine, because Seraphine had come to watch, and where Seraphine goes Orsik goes, one step behind her, always.
+
+"Whatever you hear," Tomás said to Dilnoza, "it is not you. Hold on to that."
+
+"I know the protocol," she said. "I wrote some of it."
+
+"Then you know I am going to hurt you."
+
+"Yes," she said. "Go on."
+
+He began.
+
+It took a long time. The first words did nothing. The second set made the runes on the wall glow. At the third, Dilnoza's back arched off the floor and her eyes went white, and the silver circle began to hum like a struck bell, and Tomás's voice dropped into the old language, low and steady, and did not stop.
+
+Something answered him.
+
+It did not come out of her mouth. It came out of the room: out of the walls, the floor, the drain. A voice made of a lot of quiet voices, very calm, very interested.
+
+"Ah," it said. "The voice. We wondered when."
+
+The Exorcist at the north point took a step back. Tomás did not stop.
+
+"Eleven years," said the voice, pleasantly. "We have had such a good view. The Seal Order's knots. The Restricted Quarter's wards. Who sleeps where in the White Citadel. Which wells feed the Healing Halls. We were never here to fight you. We were here to measure you. And now you want to measure us. Fair."
+
+"Name yourself," said Tomás, in the old language, which is the part of the rite that hurts.
+
+"No," said the voice. "But we will tell you what we are for. We are for counting. And we have finished counting this city."
+
+The twelve new containment vessels were stacked by the wall, where Dilnoza had put them that morning. Every one of them cracked at once, from the inside, along a line she had cut into the glaze with her own hands, on some night she did not remember.
+
+The silver circle went dark.
+
+—
+
+Wex woke up on the floor.
+
+She did not know how she had got there. The last thing she remembered was the vessels cracking. Then nothing, and then the floor, cold against her cheek, and a terrible ringing.
+
+The candle on the wall was shorter. A lot shorter.
+
+Tomás Rael was sitting against the far wall with his right hand in his lap at an angle that hands do not go. There were black marks round his throat, like fingers. When he tried to speak, nothing came out but a dry sound. Two of the Exorcists were down and not moving. Seraphine was on her knees beside one of them, already healing, her face grey. Orsik was standing over her with the Greywood Slab raised and a long fresh scar cut across the granite of his arm, and he was looking round the room the way a man looks round a room he does not remember walking into.
+
+The silver circle was empty.
+
+The drain in the centre of the floor had been torn out, iron grate and all, and thrown against the wall.
+
+"How long?" said Wex.
+
+Tanvir was looking at the sand-glass by the door. "Twelve minutes," he said. "It's taken twelve minutes. From all of us."
+
+On the white wall beside the drain, somebody had written in chalk. The Seal Order carries creature-marking chalk on every harness. The handwriting was large and shaky and it went downhill, as if the person writing it had been fighting her own arm the whole time.
+
+TAKE ME ALIVE
+I AM STILL IN HERE
+— D
+
+Wex read it twice. Then she picked up Lockjaw, closed it, and put it on her back.
+
+"Well," she said. "She asked."
+
+—
+
+IV. THE CITY THAT FORGOT
+
+By the second bell after noon, the city was forgetting things.
+
+It began in the streets round the Restricted Quarter. A baker in the Bell Streets found that he had made the same batch of bread twice and could not remember making the first. Two Watch officers on the river road came to themselves standing in the middle of the street, facing each other, with their swords drawn, and neither of them knew why. A woman at the Green Market was found sitting on the ground, crying, because she had lost twelve minutes, and her little girl was gone, and it took the Watch an hour to find the girl asleep in a fruit barrow two streets away, with no idea how she had got there either.
+
+It moved underground. It came up sometimes, through a well-head or a drain, and wherever it came up, everybody near it lost the minutes before and after.
+
+Seraphine stood at the window of the Ministry of Healing and Purification with a map of the city spread under her hands, and her healers, her knights and her captains round the table.
+
+"It eats memory," she said. "Anyone who sees it forgets seeing it. Anyone who follows it forgets following it. That is how the Unmeasured got through Ashfield. That is how it has lived in the Seal Order for eleven years without anyone noticing. How do you hunt a thing you can't remember?"
+
+Nobody answered.
+
+Brynhild Voss, Commander of the Holy Knights, had come straight from the White Citadel in her armour. "I can shut the city," she said. "Every gate, every bridge, every boat on the Selmere. My knights on every corner by dark."
+
+"Do it," said Seraphine.
+
+Cova Drell had come from the Healing Halls. Cova commands the Shields of Lumenfield, eleven hundred mercenaries whose contract is one line long: We hold until you're out, or we don't charge. They have never had to waive the fee. "If it's under the city," she said, "and it can come up anywhere, then I need to know where the hospitals' water comes from. That's where I put my shields."
+
+"Then you need Dunmar," said Seraphine.
+
+"Who's Dunmar?"
+
+"The man who keeps the water," said Seraphine. "He's been sending us letters for a year."
+
+—
+
+And one more message went out from Sancthaven that afternoon, by crystal, to Starhold.
+
+The king read it standing up. Then he went down to the stables where a horned serpent as long as a river barge was asleep in the sun in the old tiltyard, coiled round a woman of about seven feet tall who was sharpening a ten-foot spear.
+
+"There's something loose in Sancthaven," said Rayden. "It eats memory. Nobody can follow it, because nobody can remember following it."
+
+Aruksha, the First Fang, the last huntress of the Sarpathi Serpent Clan, did not look up from her spear.
+
+"Kaalahi does not track with memory," she said. "Kaalahi tracks with her tongue. A taste is not a memory. A taste is a fact."
+
+"It's inside one of ours," said Rayden. "A woman of the Seal Order. They want her back alive. And they want the thing alive, too."
+
+Now Aruksha looked up.
+
+"Both?"
+
+"Both."
+
+She stood. She is almost seven feet tall, and six hundred and seventy years old, and she has hunted primordial monsters since before Starhaven was a word.
+
+"That is harder," she said, and she sounded pleased.
+
+—
+
+There are two rift gates in Sancthaven. There is a rule about rift gates, which is that nothing longer than a hay-wagon goes through them, because the gate has to hold its shape round whatever passes, and long things make it wobble.
+
+Kaalahi is thirty feet long and a thousand years old, and nobody has ever successfully told her a rule.
+
+The gate-keepers at Healers Cross watched the gate open, and a ten-foot spear come through, and a seven-foot woman, and then a horned black head the size of a cart, and then serpent, and more serpent, and more, while the gate rang like a bell and the floor shook and one of the gate-mages sat down on the ground and put his hands over his ears.
+
+"Is that all of him?" the chief gate-keeper asked, at last.
+
+"No," said Aruksha.
+
+It went on for a while longer.
+—
+
+V. THE MAN WHO KEEPS THE WATER
+
+The Clean Water House is a low grey building on the hill above the river, where Sancthaven's healers test the water from every well and fountain in the region and close any that turn foul. Its basement goes down further than its upstairs goes up.
+
+That was where they found Dunmar Underlow.
+
+He was a dwarf of about sixty, broad and bald, with a beard tucked into his belt so it would not get wet, a lantern on a hook on his chest, and a ring of more than three hundred iron keys on a chain round his waist, which clanked when he walked. He had been born in Deepwell Hold in the Stonemark mountains, where the Wellwardens hold the water, and he had come down to Sancthaven twelve years ago because, he said, a city with that many hospitals and nobody who understood its pipes was going to kill somebody.
+
+Nobody in Sancthaven really knew what lay under it. Dunmar did. The city stands on top of something older: a web of stone cisterns and water-tunnels left behind by whoever lived on this hill before the Sundering, forty miles of it, wells and channels and great pillared tanks, all still full, all still running. The Healing Halls drink from it. The Trauma Wards drink from it. The orphanage well drinks from it. Most people in Sancthaven did not know there was anything down there except water.
+
+Dunmar knew every inch. He had walked it, mapped it, kept it, and blessed it: once a month he went round every drain in the city with a sack of sacred ash from the Ashen Hall, because the old Stonemark rule is that you put the ash in before you need it.
+
+"A year," he said, when Seraphine came down the steps with Cova, Brynhild and Wex behind her. "I've been writing to your Ministry for a year."
+
+"I know," said Seraphine. "I'm sorry."
+
+"Dead rats in the Lanternside channels. Every one of them with the throat bitten out by something with needles for teeth. Ash in my drains scraped away, from the inside. Three wells gone foul. I closed them. I wrote. Your clerks wrote back that rats die."
+
+"Rats do die," said Brynhild, a little defensively.
+
+"Not upside down in a row with their tails cut off, they don't," said Dunmar.
+
+He unrolled a map on his work-bench. It was drawn on hide, very old, and on top of it, in his small neat hand, were twelve years of notes.
+
+"Hollow Crawlers," he said, and put his thick finger on the river tunnels under the Lantern Bridge. "That's my guess. Pale things. Cartilage bodies. Needle teeth. The Nullborn send them into cities through wells and drains. One's a nuisance. A thousand inside a city in the hour before dawn is a massacre in the sleeping streets. They've been coming up the Selmere into my tunnels a few at a time for a year, and something has been keeping them still. Something told them to wait."
+
+"How many?" said Cova.
+
+"In the river tunnels?" Dunmar looked at the map. "Thousands. Four. Maybe five."
+
+Nobody said anything for a moment.
+
+"And this," said Dunmar, and moved his finger up the hill, to a great round shape drawn under the Ashen Hall itself. "The Mother Cistern. Every channel in the city meets here. Every well, every fountain, every hospital tap. If I wanted to send something into every house in Sancthaven at once, this is where I'd go."
+
+"Why hasn't it gone there already?" said Wex.
+
+"Because I locked it," said Dunmar, and shook his three hundred keys. "Six iron doors. Stonemark rune-locks. It'll have to break them, and they'll tell me when it does." He looked round at them. "I'll take you down. I don't care how many knights you bring. Nobody goes in my tunnels without me."
+
+—
+
+Cova Drell left first. She had a hospital to empty.
+
+"The Trauma Wards," she told her captains, on the stairs, at a walk that was nearly a run. "Then the Healing Halls, the Institute, the orphanage, the Garden of Last Breaths. Everyone who can walk goes up the hill to the Ashen Hall, away from the wells. Everyone who can't walk, we carry. Corridors marked by dark. Shields at every drain."
+
+"That's eleven thousand people," said her second.
+
+"Then we'd better start," said Cova.
+
+—
+
+VI. THE HUNTING PARTY
+
+The hunting party met at the Clean Water House at dusk.
+
+Aruksha came first, with Kaalahi coiled behind her down the whole length of the street, her horns scraping the gutters of the second floors, and every window in the street full of faces.
+
+Then came Wex and twelve specialists of the Seal Order, in grey containment plate with sealed helms, carrying binding nets and bundles of seal rods, and Lockjaw on Wex's back.
+
+Then came the Void Hounds.
+
+The Void Hounds are mercenaries, sixty-nine of them across the whole kingdom, monster hunters on a standing Guild contract. No two of them dress alike, because they buy their own kit, but every one carries a silver-edged blade, because every one of them has learned the same lesson: ordinary steel is not enough. Eleven of them had been in Sancthaven that week, drinking in the Quiet Lamp after a contract, and their captain, a lean, sun-browned man called Joaquin Two-Coins, had walked up to the Ministry's door and offered their services before anyone asked.
+
+He had then spent a quarter of an hour negotiating the fee with Seraphine Mire.
+
+"Forty Stars a head," he said.
+
+"Twenty," said Seraphine.
+
+"Thirty-five, and you heal anything that happens to us free."
+
+"I heal everyone free."
+
+Joaquin thought about this. "Thirty-five, and the broth."
+
+"Every Hound gets the broth anyway," said Seraphine. "It's given free at every hospital door."
+
+"Then I'm not getting anything extra, am I," said Joaquin.
+
+"You're getting to tell everyone in the Quiet Lamp for the rest of your life that you hunted the Unmeasured," said Seraphine.
+
+He took twenty. He also took the broth.
+
+—
+
+Last came the beasts.
+
+Nine days before, the Starhaven Beast Corps had fought at Greypeak. Their wounded had been sent south to the Gentle Hand Clinic in Sancthaven, the best animal hospital in the kingdom, and Helna Ironmane, the kingdom's chief veterinarian, had come with them, because she does not let anybody else put stitches in her animals.
+
+Three of them were fit to go down.
+
+A War Tiger called Ghost, grey-striped and silent, whose job in a battle is to find one important enemy in the dark and take it. A War Gorilla called Patience, who is not patient, with iron pauldrons and a skull plate and arms that can pull a shield wall apart one shield at a time, which she had done at Greypeak and was now very proud of. And their handler, Wiremu Fernhollow, a soft-voiced Beast Corps sergeant with a split lip from Greypeak who talked to both of them all the time as if they were his sisters.
+
+The fourth was not fit to go down, and Helna said so.
+
+He was a War Lion called Duke. He was old, sixteen, grey round the muzzle, the first lion the Beast Corps ever trained. At Greypeak a Void creature's claw had opened his flank from shoulder to hip, and Helna had put in a hundred and forty stitches, and he was lying in the straw of the Gentle Hand Clinic, breathing slowly. The clinic stands next door to the Saint Veyne Orphanage, and the children had been coming over the wall all week to see him.
+
+"He stays," said Helna.
+
+Duke opened one eye and watched them go.
+
+—
+
+Aruksha looked the hunting party over: the Seal Order, the Hounds, the beasts, the dwarf, and the line of Holy Knights behind them who would hold the well-heads.
+
+"Listen," she said. She did not raise her voice. She did not need to.
+
+"Down there, you will forget. You will forget what you saw, and where you were going, and why. You will come to yourselves in the dark with a weapon in your hand and no idea who you were about to use it on." She held up a lump of the Void Hounds' creature-marking chalk. "So write on yourselves. On your arm. Who you are hunting. Which way is out. What you must not do."
+
+"What must we not do?" said one of the Seal Order specialists.
+
+"Kill her," said Wex.
+
+Aruksha nodded. "When you lose the minutes, read your arm. And then look at Kaalahi. Wherever her head is pointing, that is where it went. She does not forget. She is a thousand years old. She forgets nothing."
+
+Kaalahi lowered her great horned head, and slid her tongue out, black and forked and as long as a man's arm, and tasted the air of the Clean Water House steps.
+
+Then he turned his head, slowly, toward the river.
+
+Joaquin Two-Coins licked his chalk and wrote on his forearm, in big letters: DON'T KILL THE LADY. FOLLOW THE SNAKE.
+
+Under that, after a moment's thought, he wrote: YOU ARE OWED TWENTY STARS.
+
+—
+
+VII. UNDER THE CITY
+
+They went down through Dunmar's door at the second bell of the night.
+
+The tunnels under Sancthaven are beautiful, which nobody had told them. The stone is pale and old and fitted so well that you could not put a knife between the blocks, and every hundred yards there is a round chamber with pillars, carved with plants that nobody living can name, and the water runs through all of it black and clear and very cold. Dunmar's lantern lit them one at a time as they passed. Mana lamps hung from iron hooks where he had put them, each one waking to a soft blue glow as he went by and fading again behind them.
+
+Kaalahi went first, filling the tunnel from wall to wall, her scales whispering on the stone. Aruksha walked beside her head with one hand on her horn. Ghost the tiger padded ahead of everyone, low, in the dark beyond the lanterns where nobody could see him. Patience knuckled along behind with Wiremu, stopping now and then to rattle an iron grate in its frame and look offended when it held.
+
+For an hour nothing happened, except that the cold got into everyone's bones.
+
+Then they came to themselves.
+
+—
+
+Joaquin Two-Coins was standing in water up to his knees in a chamber he did not recognise, with his silver blade drawn and his heart going like a drum.
+
+He did not know where he was. He did not know how long he had been there.
+
+He looked at his arm.
+
+DON'T KILL THE LADY. FOLLOW THE SNAKE. YOU ARE OWED TWENTY STARS.
+
+Below that there was a fourth line, in his own writing, that he did not remember writing at all. It was smeared, as if he had written it fast in the dark.
+
+SHE KNOWS OUR KNOTS
+
+He looked up. The chamber was full of his own people and the Seal Order and the beasts, every one of them doing the same thing, standing very still in the water and reading their arms. One of his Hounds, a big quiet man called Bheki Ostrowe, was missing. His lantern was floating on the water by the far pillar, still lit, turning slowly.
+
+Kaalahi's head was pointing down a side-tunnel, and her tongue was flickering very fast.
+
+"Twelve minutes," said Dunmar, looking at his sand-glass. His voice was not steady. "Again."
+
+—
+
+They found Bheki round the next bend.
+
+He was alive. He was wrapped from neck to ankle in a Seal Order binding net, tied off with the Holdfast knot, the harder he pulled the tighter it got, and he was hanging from an iron ring in the ceiling with his feet off the water, swinging gently, and very, very angry.
+
+"Grey woman," he said, when they cut him down. "Came out of the water. Moved like you lot." He nodded at the Seal Order. "Threw the net before I'd got my sword up. Never seen anyone throw a net like that."
+
+"I have," said Wex quietly. "I taught her."
+
+Kaalahi was already moving again.
+
+—
+
+They lost twelve minutes four more times in the next two hours.
+
+Each time they came back to themselves somewhere new, wet, cold, reading their arms. Each time someone was hurt. A Seal Order specialist came to with her own seal rod through her foot, pinning it to the floor, driven in exactly the way the manual says to anchor a Void entity to the ground. Two Hounds came to tied back to back round a pillar. Wiremu came to with his split lip open again and no idea who had hit him, and Patience standing over him, huffing, with something's blood on her knuckles that was black and smelled of nothing.
+
+Each time, they looked at Kaalahi.
+
+Each time, Kaalahi's head was pointing.
+
+"It's not trying to kill us," said Wex, the fourth time, binding the foot of the specialist with the rod through it. "It could have. It's slowing us down."
+
+"Slowing us down for what?" said Joaquin.
+
+Dunmar had stopped. He had his ear against the tunnel wall, flat, his eyes shut, the way the Wellwardens of Deepwell listen to the mountain.
+
+"Doors," he said. "Somebody's breaking my doors."
+
+He listened again.
+
+"Iron door one. That's the first door to the Mother Cistern." His eyes opened. "Iron door two."
+
+—
+
+The fifth time they lost twelve minutes, Wex came to on her back in the black water, with the weight of something on her chest.
+
+It was Dilnoza.
+
+She was kneeling on Wex's chest, with one of her own seal rods held up in both hands like a stake, and her face was Dilnoza's face, and her eyes were all the way white, and she was smiling a smile that was not hers.
+
+"Order Master," said the voice of many quiet voices, through Dilnoza's mouth this time. "You taught her well. Every knot. Every rod. Every ward. We have enjoyed it so much."
+
+The seal rod came down.
+
+Wex got her arm in the way. The rod went through the containment plate of her forearm and broke both bones, and she heard them go, and she did not scream, because she was too busy getting her other hand round Dilnoza's wrist.
+
+"Dilnoza," she said, into the white eyes. "Holdfast. Over, under, back through. You're the knot. Hold."
+
+For half a heartbeat the face changed. Something came into the eyes that was frightened and tired and very human.
+
+"Wex," said Dilnoza, in her own voice. "It's going for the water. All of it. Don't let me—"
+
+And then she was gone, off Wex's chest and into the dark, faster than a woman can move, and the twelve minutes came down on everyone again like a door shutting.
+
+—
+
+When they came back the sixth time, Ghost the tiger was gone, too.
+
+But there was a trail.
+
+All down the tunnel wall, at the height of a tiger's shoulder, were long scrapes in the old stone, where a big cat had run along it at full speed in the dark, chasing something, and every thirty yards there was a splash of blood on the floor, black, that smelled of nothing. Ghost does not forget either. A tiger hunts by nose, and a smell is a fact, the same as a taste.
+
+"Good girl," said Wiremu, with his voice shaking. "Oh, good girl. Go on, go on."
+
+Kaalahi and the tiger's trail pointed the same way. Up. Toward the Ashen Hall.
+
+"Iron door four," said Dunmar, with his ear on the stone.
+
+Wex had her arm strapped to her chest by now, and her face was the colour of the tunnel walls. She stood up anyway.
+
+"How long until it reaches the Mother Cistern?" she said.
+
+Dunmar listened.
+
+"Before dawn," he said.
+—
+
+VIII. THE HOUR BEFORE THE GATES
+
+At the fourth bell of the night, every well in Sancthaven began to knock.
+
+It started at the Lanternside wells, down by the river: a soft tapping from far below, like fingernails on stone. Then the fountains in the Bell Streets. Then the drains. Then the old well in the yard of the Saint Veyne Orphanage, which had been covered with a wooden lid and three sacks of sand since noon, because Zawadi Brightwater had sat on it herself until a Holy Knight came to take her place.
+
+Then the knocking stopped.
+
+Then the Hollow Crawlers came up.
+
+—
+
+They are not big. That is the first thing everybody who saw them that night says. They are the size of a cat, or a small dog: pale, wet, all bent cartilage, with long fingers and round mouths full of needle teeth, and no eyes at all. They do not walk. They pour. They came out of the wells and the drains and the cracks round the cellar doors like milk boiling over, hundreds at a time, and they went straight for warmth: for sleeping people, for hospital beds, for kitchens where the fires had been banked.
+
+They had not expected the streets to be full of knights.
+
+—
+
+The Holy Knights of Sancthaven had been on the corners since dusk.
+
+In the Bell Streets, the Pyrelight Archers were waiting at the well-heads. They are the Holy Knights' only ranged order, six hundred of them, in light half-plate, with crossbows whose bolts are dipped in Seraphine Mire's purification compound. They do not shoot at what comes out of a well. They shoot down into it.
+
+"Shafts!" called their captain, and forty crossbows tipped down into forty wells, and fired, and fired again, and the bolts went down into the dark glowing faint gold, and the screaming that came back up out of the earth was a sound that the Bell Streets would talk about for years.
+
+At the drains along the river road, the Relic Wardens knelt in pairs. Their gauntlets carry purification compound in the inner palm, made for breaking the bindings that hold undead together; that night they found it breaks the nests of Hollow Crawlers just as well. A Relic Warden would put her hand flat on a grate with a hundred of the things boiling up beneath it, and the compound would flare white, and the grate would go quiet, and she would move to the next one. Their Relic Blades glowed warm in the dark, and that was how people found them, all night, by those small lights along the river.
+
+And at the doors of the Healing Halls stood the Saintguard, the heaviest plate in the Holy Knights, tower shields set edge to edge, with the patients being carried out behind them. A Hollow Crawler can get through a crack the width of a finger. It cannot get through a Saintguard bulwark.
+
+—
+
+The worst of it was at the Trauma Wards.
+
+The Trauma Wards are for the injuries too bad for ordinary healing. They are in the low part of the city, close to the river, and their cellars are very old. When the Crawlers came up through those cellars, there were still four hundred patients inside, and most of them could not walk.
+
+Cova Drell's Shields of Lumenfield were already there.
+
+She had been building the defence since noon. Her people had marked the corridors with whitewash, every turn and every stair, so a stretcher team in the dark could not take a wrong one. They had nailed shut every door below the ground floor. They had put a shield at the bottom of every stair. And when the cellar doors gave way and the Crawlers came pouring up the stairs, they found at the top of each stair a wall of overlapping shields and Cova's voice, which carries two hundred yards in a fight.
+
+"Lanes! Hold your lanes! Stretchers moving, east corridor! Nobody turns round! We hold until they're out!"
+
+They held. Behind them, an endless line of stretchers went out of the east door and up the hill, and the healers of the Trauma Wards worked as they walked, holding drips, holding pressure on wounds, holding hands.
+
+At the top of the main stair, Cova stood in the middle of the line with Ashwall, her tower shield, which has never once dropped in eleven years of contracts. The Crawlers came up at her in a tide. She put the shield's edge down on them and leaned on it, and her shortsword, which she rarely draws, went in and out under the rim.
+
+One of them got over the top of the shield. It went for her face. She took it on her forearm instead, and its needle teeth went through the leather and into the bone, and she shook it off against the wall and killed it and did not step back.
+
+"Stretchers?" she called.
+
+"Two hundred out!"
+
+"Then two hundred to go!"
+
+—
+
+Lena Crest's Combat Healers were working on the hill.
+
+The Ashen Guard does not wait for people to fall and then heal them. That is Lena's doctrine: you keep them standing. That night she rode up and down the river road on her black horse Constant, laying healing fields over every knot of fighting she passed, and behind her came the Mercy Riders. The Mercy Riders' promise is that any fallen soldier on a held field is reached within three minutes. That night the field was a city, and they kept the promise anyway. Their horses, Mercy Chargers, light and quick and trained to stand perfectly still while a rider works on the ground, went down the river road at full gallop with the riders leaning out of the saddle to scoop the wounded up across their knees.
+
+A Mercy Rider called Pania Varo, nineteen, rode her charger straight into the middle of a swarm in the Green Market to reach a watchman who was down and covered in them. The charger stood. The Crawlers were climbing its legs, biting, and it stood, because it had been trained to stand, while Pania scraped them off the man with her bare hands and got him over the saddle. Then they rode out together, the horse bleeding from thirty places, and the market crowd watching from the upstairs windows started to cheer, and did not stop for a long time.
+
+—
+
+At the river, the Lantern Watch's two water-mages stood on the Lantern Bridge where Lantern Night begins and pulled the Selmere up out of its bed in two great grey walls, and dropped it back down the open river-tunnels under the bridge, again and again, flushing the Crawlers back out into the current faster than they could climb.
+
+On the bridge behind them, people from Lanternside who had been told to go up the hill had come down instead with buckets, because that is what Lanternside does when there is a fire. It turned out that a bucket of river water thrown down a drain at the right moment is a useful thing. An old woman in a nightdress killed nine Crawlers with a coal shovel at her own front door and then went back to bed, she said, because she had a long day tomorrow.
+
+—
+
+At the Saint Veyne Orphanage, the well lid moved.
+
+Sixty-two children were asleep in the long dormitory upstairs. Or they had been asleep; by then they were all awake, in their nightshirts, sitting on the beds holding each other, because the noise from the city was very loud. Zawadi had them all in one room, away from the stairs, with the door shut, and she was sitting against the door with a lantern in her lap and a ladle in her hand, which was the nearest thing to a weapon she owned.
+
+The Holy Knight on the well was a young Saintguard called Abebe Sunward. He had been sitting on the lid since noon. When it began to lift under him, he stood up on it, and when it kept lifting, he planted his tower shield across it and put all his weight on the shield.
+
+It lifted anyway. The Crawlers were coming up the shaft packed solid, and there were more of them than one man's weight.
+
+They came out round the edges of his shield.
+
+He fought them in the orphanage yard alone for as long as one man can. It was longer than anyone would have thought. When the other knights reached the yard afterwards, they found him in front of the orphanage door, still standing, still facing the well, with his shield up and his warhammer in his hand, and they had to tell him it was over before he would put them down. He lost his left hand that night, and most of his left ear, and he would not let anybody carry him until they had shown him the children were all right.
+
+But before that, there was a moment when there were too many, and they got past him.
+
+They got to the kitchen door. They got into the kitchen. They got to the bottom of the stairs.
+
+—
+
+Next door, in the straw of the Gentle Hand Clinic, Duke the War Lion lifted his head.
+
+Helna Ironmane was in the stall with him. She had heard the screaming from the orphanage. She had a veterinary kit and a butcher's cleaver in the clinic, and she had already picked up the cleaver.
+
+Duke stood up.
+
+"No," said Helna. "No, my darling, no. You're open. You'll tear everything."
+
+The lion looked at her. He was sixteen years old. He had been the first lion the Beast Corps ever trained, and he had stood in the front of every charge the Corps had ever made, and over the wall, sixty-two children who had been climbing that wall all week to bring him bits of their supper were screaming.
+
+Helna put down the cleaver, and opened the stall door.
+
+He went over the wall in one jump. Every stitch she had put in at Greypeak went at once.
+
+—
+
+The children say the roar shook the windows.
+
+The Beast Corps manual says that a War Lion's charge does two things to a line of enemies: it breaks them, and it frightens them in a way the damage alone cannot explain. Nobody knew if it would frighten the Hollow Crawlers. They have no eyes, and the Nullborn do not breed them to be afraid.
+
+It frightened them.
+
+Duke came through the kitchen door with the doorframe round his shoulders and went into the swarm at the bottom of the stairs like a falling wall. He did not use his claws much. He used his weight, and his jaws, and the roar, over and over, and the Crawlers that heard it broke and ran back toward the well, climbing over each other to get away from it.
+
+Some of them did not run. Some of them went into the cellar instead, under the floor.
+
+At the top of the stairs, Zawadi had opened the dormitory door a crack to see, and the children were behind her. And one of them, a small boy from a river village in the south who was afraid of the dark and of deep water and of that well, saw the cellar trapdoor at the foot of the stairs, in the corner of the kitchen. He saw it lifting.
+
+The trapdoor had an iron ring. Next to it, on the kitchen wall, there was an iron hook, where Zawadi hung the soup kettle.
+
+Mosi ran down the stairs.
+
+Zawadi shouted his name. He did not stop. He had a length of grey cord round his wrist, tied loosely, so he could slip it off, and he slipped it off, and put it through the iron ring of the trapdoor and round the kettle hook on the wall. Over, under, back through itself, and pull.
+
+On the first try it came apart in his hands.
+
+The trapdoor lifted an inch. Something pale and wet came through the crack, all fingers.
+
+"Again," said Mosi, to himself, out loud, in the voice she had used.
+
+On the second try it held.
+
+The trapdoor heaved. The cord went tight as a bowstring. And the harder the things underneath pulled, the tighter it got, because that is what it's for. It holds what doesn't want to be held.
+
+The trapdoor did not open again.
+
+—
+
+Duke killed Crawlers in the orphanage kitchen until the Holy Knights came over the wall with Relic Blades glowing, and the sacred ash came down the well, and it was over.
+
+Then he lay down at the foot of the stairs, across the bottom step, where nothing could get past him to the children. Helna came in through the kitchen door and knelt beside him in the blood and put his head in her lap.
+
+She did not try to save him. She knew, the moment she saw him. She just held his head, and talked to him, the way she had talked to him when he was a cub, and told him he was a good lion, the best lion, the first one, and that she was so proud of him.
+
+Mosi came and sat on the step above them, and after a while he put his hand on Duke's mane, very carefully, and Duke breathed out once, long and slow, and did not breathe in again.
+
+—
+
+IX. THE MOTHER CISTERN
+
+Under the Ashen Hall, the hunting party reached iron door six at the last bell before dawn.
+
+It was open. It had not been unlocked. It had been taken off its hinges, and the hinges had been taken out of the stone, and the whole door was lying in the water ten yards further in.
+
+Beyond it was the Mother Cistern.
+
+It was the size of a cathedral. A forest of stone pillars went up into the dark, each one as thick as a tower, carved from top to bottom with leaves, and the water lay across the floor between them perfectly black and perfectly still, waist deep, and from somewhere in the dark came the sound of every channel in the city running down into it at once, like a great slow breath.
+
+In the middle, on the round stone island where the channels met, was Dilnoza.
+
+She was kneeling. She had her hands flat on the stone. She had been driving seal rods into it in a ring, the way the Seal Order anchors a containment, only backwards: not to hold something in, but to hold a door open. Black cracks ran out from the ring into the water in every direction, and the water above them was starting to move.
+
+Under the water, all down every channel in the city, the Hollow Crawlers that were left were turning toward this place.
+
+Ghost the tiger was lying at the edge of the island with three seal rods in her and her flanks going up and down too fast. She had got there first. She had held it as long as she could.
+
+Wiremu made a sound and started forward. Wex caught his arm with her good hand.
+
+"Wait," she said. "Wait. It'll take the minutes again. We'll all go down. Somebody has to be standing who doesn't need them."
+
+She looked at Aruksha.
+
+Aruksha had already walked out into the water.
+
+—
+
+The First Fang does not hurry. She waded out between the great pillars with Anantashula, the Endless Fang, held low in both hands, ten feet of black heartwood tipped with sky-metal, and Kaalahi slid into the black water beside her without a ripple, and the two of them came to the edge of the island together.
+
+Dilnoza looked up. White eyes. The smile that was not hers.
+
+"The huntress," said the voice of many quiet voices. "We have heard of you. You are very old."
+
+"Yes," said Aruksha.
+
+"Then you know about forgetting."
+
+And the twelve minutes came down.
+
+—
+
+Everyone at the door went to their knees in the water: Wex, Dunmar, the Hounds, the Seal Order, Wiremu and Patience. Their eyes went blank. Their minutes went out of them like breath.
+
+Aruksha forgot, too.
+
+She forgot where she was, and why, and who the woman on the island was. She was standing in black water in a stone forest with a spear in her hands and no idea how she had got there.
+
+But she was not alone in her own head. She never is. The Sarpathi carry their dead hunters with them: not in books but in memory, passed down hunter to hunter in a trance of song, generation after generation, until a huntress carries the memories of every spear master of her clan who went before her. It is called Ancestral Recall. It is dangerous. Linger too long in it, and you lose track of which memories are yours.
+
+That night, it was the only thing in the Mother Cistern the Unmeasured could not reach.
+
+The thing could eat Aruksha's last twelve minutes. It could not eat the memories of seven women who had been dead for four hundred years, because those memories had never belonged to her at all.
+
+So she let them in.
+
+And the oldest of them, a great-grandmother of her clan who had hunted a thing in a cave in the Unknown Lands that also ate memory, said, in a voice like dry leaves, inside her head:
+
+Look at your serpent, child.
+
+Kaalahi's head was pointing at the island. She did not need to remember. She could taste Dilnoza.
+
+Aruksha did not remember why she was fighting. She knew where. That was enough to start.
+
+—
+
+It was not a fair fight, and it was not meant to be. Aruksha could not kill. The thing in Dilnoza could.
+
+The possessed woman came off the island at her with a Seal Order binding net in one hand and a seal rod in the other, moving with a containment specialist's speed, which is the speed of somebody whose life has depended for twenty years on getting a net over something before it notices her. The net came out flat and wide and perfect. Aruksha went through it, not round it: Shedding Form, the Sarpathi escape, a twist of the body so fast it leaves an image of itself behind, and the net closed on the image and caught nothing but cistern water.
+
+The seal rod came at her throat. She turned it on the shaft of Anantashula, River Coil, the spear bending its line round the blow the way water bends round a rock, and the rod scraped off sky-metal in a shower of sparks.
+
+Dilnoza dropped low and threw three more rods, one after another, at the water round Aruksha's feet, to anchor her there the way you pin a Void entity to the ground. Kaalahi came up out of the black water between the rods and Aruksha, and all three of them hit her scales and stuck, and she hissed so loudly the pillars rang.
+
+The twelve minutes came down again.
+
+Aruksha forgot again. She listened to her dead. She looked at her serpent. She fought on.
+
+—
+
+Back at the door, the others came to themselves, and read their arms, and looked up, and saw a seven-foot woman and a thirty-foot serpent fighting a grey figure in the middle of the Mother Cistern, among the pillars, in water up to their waists.
+
+None of them remembered how it had started. All of them understood at once what was happening.
+
+"Don't kill her," whispered Joaquin Two-Coins, reading his arm out loud. "Oh, please, don't kill the lady."
+
+Aruksha did not kill her.
+
+She could have, a dozen times. Everyone who was there says so. Leaping Fang, the thrust that closes thirty feet in a blink, stopped every time a finger's width from Dilnoza's heart and turned aside. Mountain Constriction, the sweep that crushes, swept the legs out from under her and did not crush. And every time Aruksha held back, the thing in Dilnoza hit her, because it was not holding back at all.
+
+A seal rod went into her side, under the ribs. She pulled it out and threw it away. A binding net caught her spear arm and the Holdfast knot pulled tight round her elbow, tighter the more she pulled, until something in the elbow cracked. She changed hands.
+
+Her grey hair was coming loose. There was blood running down into the water from her side, dark against the black.
+
+"You can't win this," said the voice through Dilnoza's mouth, almost kindly. "You won't hurt her. We will. That is the whole difference between us."
+
+"Yes," said Aruksha. "That is the whole difference."
+
+Then she drove the butt of Anantashula down into the floor of the cistern, under the water, and called up her dead.
+
+—
+
+The Seal Order has a word for what they saw next, and the word is not in any manual.
+
+The First Hunt is the last thing a Sarpathi huntress can do. Out of her memory she calls up the impressions of seven dead spear masters of her clan, and for a little while they are almost real: grey shapes of light, tall women with spears, standing round her in the water.
+
+They came up out of the Mother Cistern in a ring round the island, seven of them, and the black water lit up silver round their feet. They were not ghosts, exactly. Dunmar said afterwards they looked like the memory of a song.
+
+And the Unmeasured, which had eaten so many minutes out of so many people, turned Dilnoza's head and looked at them, and for the first time that night it sounded afraid.
+
+"We cannot take those," it said. "Those are not yours."
+
+"No," said Aruksha. "They are not."
+
+The seven came in from seven sides at once, and the thing inside Dilnoza could not watch seven memories at the same time, and could not eat any of them. They did not strike to kill. They struck the seal rods out of the stone, one by one, all round the ring, until the black cracks in the water began to close. They struck the nets out of her hands. They pinned Dilnoza down to the island without ever drawing her blood: seven spear-shafts crossed over her, holding her the way you hold a frightened animal you do not mean to hurt.
+
+The First Hunt has a cost. Every time a Sarpathi huntress uses it, it takes years off the end of her life, and you can see them go. The people at the door watched a white streak run back through Aruksha's grey hair from her forehead to her neck as she stood there, like frost spreading on a window.
+
+She did not seem to notice.
+
+"Order Master," she called over the water. "Bring your frame."
+
+—
+
+X. DAWN
+
+Wex waded out with Lockjaw on her back, one arm strapped to her chest, Dunmar beside her holding the lantern high, and set the frame down on the edge of the island, and opened it one-handed, and its sealing lamps came on blue.
+
+"It won't go in," she said. "Not while it's got her to hide in. We have to make it want to leave."
+
+"How?" said Dunmar.
+
+Wex looked up at the great dark dome of the Mother Cistern, at the channels running down into it from every well and fountain and hospital tap in Sancthaven.
+
+"Tell me the time," she said.
+
+Dunmar looked at his sand-glass.
+
+"Dawn," he said.
+
+—
+
+At dawn, on the Lantern Bridge, Seraphine Mire walked down into the Selmere.
+
+She had been up all night, healing on the hill. She had healed so many people that her hands were shaking. Orsik walked into the river beside her, one step behind, as he always does, the Greywood Slab raised against anything that might come out of the water. And Auriel, her white stag, who appeared the night she chose to stay in the Lumenfield and has never been tethered, walked down the riverbank after them, and stood at the water's edge with his head up, watching.
+
+The river intake for the whole of the old cistern web is under the Lantern Bridge. Dunmar had told her that at dusk. Every drop of water in Sancthaven's wells and fountains and hospitals begins there.
+
+She stood in the river up to her waist, and put both her hands into it, and closed her eyes.
+
+Purgation Wave is the thing Seraphine Mire is famous for: the rolling silver pulse that cleans Void corruption out of the ground. She has cleansed whole plains with it. She cleansed the Lumenfield alone, for six months, before there was a city there at all.
+
+She had never put it into water. Nobody knew if water would carry it.
+
+Water carried it.
+
+—
+
+People all over Sancthaven saw it happen. They talk about it still.
+
+The Selmere under the Lantern Bridge turned silver. Then the silver went down into the intake and into the old tunnels under the city. Then it came up again. It came up in the fountains in the Bell Streets, which all at once were running with light. It came up in the drinking troughs at the Green Market. It came up in the wells of Lanternside. It came up in the hospital taps of the Healing Halls, and the patients sitting on the hillside wrapped in blankets saw every window of the hospital they had been carried out of light up, floor by floor, with silver.
+
+It came up in the well of the Saint Veyne Orphanage, where the last of the Hollow Crawlers were hiding in the shaft, and they died there, all at once, with a sound like a long sigh. All over the city, in every drain and channel and well, the Crawlers died like that, all at the same moment.
+
+The city cheered. It started in Lanternside, with the people with buckets on the Lantern Bridge, and it went up the hill street by street, until the whole of Sancthaven was cheering at its own fountains in the grey morning, and the Holy Knights on the corners were cheering too, and nobody could hear themselves think.
+
+On the bridge, Seraphine's knees gave way. Orsik caught her before she touched the water. He carried her up out of the river the way a cliff holds a cave. She was unconscious before he reached the bank. She would sleep for two days.
+
+Auriel lowered his head and touched her hair, once, and then stood over them both on the riverbank until the healers came.
+
+—
+
+And down in the Mother Cistern, the silver came in from every channel at once.
+
+It poured down into the great dark tank like dawn coming down into a valley, and the black water turned to light from the edges inward, and rose round the pillars, and rose round the island where Dilnoza lay pinned under seven spears of memory.
+
+The thing inside her screamed.
+
+It screamed with all its quiet voices at once, and the twelve minutes came down on everyone in the cistern one last time, and Wex fell to her knees in the shining water, and Dunmar dropped his lantern, and Aruksha's seven dead flickered like candles in a wind.
+
+But the silver was everywhere now. In the water, in the stone, in Dilnoza's soaked clothes and hair and skin. There was nowhere in her left for it to hide.
+
+It came out of her mouth like a breath on a cold morning.
+
+Grey. Small. A twist of something like fog, with too many edges, which hurt to look at.
+
+It went for the dark.
+
+There was no dark. The whole cistern was silver.
+
+There was only one dark place left in the Mother Cistern, one place the light was not, and that was the open blue mouth of a containment frame rated below every job it had ever been used for, sitting on the edge of an island with its lamps burning.
+
+It went in.
+
+Wex had come to herself a breath before it did. She did not remember why she was kneeling in the light. She did not need to. She had been closing that frame for fifteen years. Her good hand was already on the lid.
+
+Lockjaw shut.
+
+The sealing lamps went from blue to white and stayed there.
+
+For a long moment, nobody in the Mother Cistern said anything.
+
+Then Wex, still on her knees, took a rag out of her belt with her one good hand, and began to clean the frame.
+
+—
+
+Tomás Rael came down the stairs into the Mother Cistern an hour later, with his hand in a splint and his throat bandaged, because the rite is not finished until the words are said over the one who was possessed, and he would not let anybody else say them.
+
+He could not speak above a whisper. The thing had nearly crushed his voice when it broke out of the circle. The healers say it may come back, in time, or it may not.
+
+He knelt beside Dilnoza on the island anyway, and whispered the rite over her, the whole of it, in the old language, very quietly.
+
+It turned out that was enough. The Exorcists say it always is, if you mean every word.
+
+Dilnoza opened her eyes. They were brown again. She looked up at the great pillars, and the light, and Wex's face, and Tomás's, and the seven grey spear-women fading slowly into the silver one after another, like a song ending.
+
+"Did we get it?" she said. "Alive?"
+
+"Alive," said Wex.
+
+Dilnoza shut her eyes again. Then she opened them.
+
+"Mosi," she said. "Is there a boy called Mosi? Is he all right?"
+—
+
+XI. WHAT IS IN THE FRAME
+
+Lockjaw is in the Restricted Quarter now, in a room of its own, behind three doors that Dunmar Underlow made with his own hands, with Stonemark rune-locks that only he and Wex can open. Its sealing lamps have burned white every hour since that morning.
+
+If you look into the frame, you will see nothing. The glass looks empty. And if you go on looking, after a little while, you will notice that the candle on the wall is shorter than it was, and you will not remember the last few seconds. The Exorcists who guard it work in pairs and look at each other, never at the frame. They keep a slate by the door, and every time one of them loses a few seconds, they mark it.
+
+Zareth Kull came from Lumenfield by rift gate the next day and stood in that room for three hours with his book open, and in the end he wrote one line in it, under the entry he had made eleven years before at the mouth of the Ashen Passage. It is the first thing anyone has ever been able to write about the Unmeasured that is not a question.
+
+It is afraid of light, and it does not like to be counted.
+
+Elysia Nocturne came the day after. She is the only person in the world who can see the Void as it really is, and she stood in front of the frame and looked straight into it with her dark, distant eyes for longer than anyone else has been able to, and she did not lose a single second.
+
+When she came out, the Exorcists asked her what it looked like.
+
+She thought about it.
+
+"Like a question," she said, "that knows the answer."
+
+She would not say anything else. She went back to Lumenfield that night, and the Veil Watch says she has not slept much since.
+
+—
+
+Seventeen people died in Sancthaven that night. Fourteen of them were asleep in the low streets by the river when the Crawlers came up, before the knights could reach them. Two were Holy Knights. One was a Watch officer on the river road. Their names are read every Lantern Night now, on the Lantern Bridge, with the others.
+
+Duke, the first War Lion of the Starhaven Beast Corps, is buried in the yard of the Saint Veyne Orphanage, next to the well that he kept the children from. The children chose the place. There is a stone with his name on it, and under his name the children wrote, and the mason cut exactly as written, because Zawadi made him: HE CAME OVER THE WALL.
+
+Ghost the tiger lived. She has three new scars and walks a little stiffly, and Wiremu Fernhollow has not left her side, and Patience the gorilla sleeps across the door of their stall at night now and will not let anybody in except Helna.
+
+Wex's arm was set by Seraphine herself, when Seraphine woke. It will never be quite straight again. Wex says it is now rated below the jobs she uses it for, like everything else she owns, and it has not failed yet.
+
+Tomás Rael still speaks in a whisper. He conducts the rite in a whisper now. The Exorcists say the spirits flinch from it more than they ever did from his full voice. Nobody knows why. Tomás says he does: you lean in to hear a whisper.
+
+Cova Drell has a new scar on her forearm in the shape of a round mouth full of needles, and Ashwall has a long crack across its face, the first in its life, from the top of the Trauma Wards' main stair. Four hundred patients went out of the Trauma Wards that night. All four hundred came back. Cova did not invoke the clause.
+
+Abebe Sunward of the Saintguard has an iron hand now, made at the Golem Foundry, with sacred sigils at the knuckles. The children of Saint Veyne call him Sir Lid.
+
+Aruksha's white streak has not grown out. It will not. The Sarpathi say the First Hunt takes years from the end of your life, and does not give them back. When Rayden asked her if it had been worth it, she looked at him as if he were very young, which, to her, he is.
+
+"What must survive," she said, "even if your clan does not?"
+
+He had asked her that question himself, the night they met. He did not have an answer for it then. He did not need one now.
+
+Kaalahi had three seal rods pulled out of her scales by Helna Ironmane, who climbed onto her back with a pair of iron tongs to do it, and talked to her the whole time in exactly the voice she uses for horses. Kaalahi let her. Nobody else has ever been allowed to do that. Aruksha says Kaalahi liked her.
+
+Joaquin Two-Coins lost two fingers of his left hand in the Mother Cistern, and does not remember how. The Ministry of Healing and Purification paid the Void Hounds twenty Stars a head, as agreed. Then, a week later, a second purse arrived at the Quiet Lamp, with another twenty Stars a head in it and a note in Seraphine's handwriting that said only: For Bheki's net. Joaquin has the note framed behind the bar.
+
+He still has the writing on his arm, too. The chalk washed off, so he had it tattooed. DON'T KILL THE LADY. FOLLOW THE SNAKE. He did not have the third line done. He says he was paid in the end, so it was not true any more.
+
+—
+
+Dunmar Underlow sat with Seraphine Mire in the Ministry the week after, with his map spread out on the table, and all twelve years of his notes on it.
+
+"One river," he said. "One intake. One great tank under one great hall. Every hospital you have. Every healer you train. Every Void thing you've ever caught, locked up in one quarter of one city. And all of it drinks from one hole in the riverbed under one bridge." He tapped the Lantern Bridge on the map. "I've been saying it for twelve years. Nobody listens to a man who keeps pipes."
+
+"I'm listening now," said Seraphine.
+
+She wrote it into the Winter Council's agenda that evening, under the king's own item, under Serell Vane's question and Bob Vale's line about the crystals. Her line is shorter than either.
+
+Everything we have against the Void sleeps in one city, and drinks from one river.
+
+And under it, in a different hand, small and neat, because Dunmar asked to be allowed to write it himself:
+
+Also the wells.
+
+—
+
+XII. THE OTHER THREE
+
+There were four Seal Order specialists at the mouth of the Ashen Passage on the ninth night of the war in 1048, who came back to the fire with twelve minutes missing out of each of them.
+
+Dilnoza Vantreth was one.
+
+The Web found the others within a week. The Web is the kingdom's intelligence network, run by Director Sunniva Vael from cells in every city, and it is very good at finding people. It is less good at finding answers.
+
+The second of the four had left the Order in 1054 and gone home to keep bees in Bloomvale. The Grey Rite tested him three times. He was clean. He was also, he said, very glad to have left.
+
+The third had died at sea in 1053, in the Forty Sails, off the Saltreach Causeway. Her body was never found.
+
+The fourth was a man called Ravil Okun. He had moved from the Seal Order to the Brand Order, the trackers, years ago, because he had a gift for following Void trails that nobody else could see. He was very good at it. Better than anyone. His commanders had always wondered why.
+
+That winter, he was posted to Ironpass, on the eastern wall, where the Nullborn test the kingdom's defences at night.
+
+The Web sent a crystal message to Ironpass the day after the Mother Cistern, marked with the Grey Rite's seal. Ironpass sent back a short, ordinary reply. Tracker Okun was out on the night patrol beyond the wall. He was expected back at dawn. He would be held and tested the moment he walked through the gate.
+
+He did not come back at dawn.
+
+—
+
+On the eighth day after that night, Dilnoza Vantreth walked down the hill from the Healing Halls to the Saint Veyne Orphanage, slowly, because she was still weak, with something long wrapped in grey cloth under her arm.
+
+Mosi was sitting on the bench by the kitchen door. He saw her come through the gate, and he did not run to her, because he did not run to people yet. He stood up, and waited, and held on to the edge of the bench.
+
+She sat down beside him and unwrapped the cloth. It was a seal rod. A real one, iron, as long as he was, with the Seal Order's mark on the head.
+
+"I said I'd bring it," she said. "I'm sorry I'm late. Something kept me."
+
+He held it. It was heavy, and he held it in both hands, and looked at it for a long time.
+
+"Zawadi says I'm not allowed to tell you about the trapdoor," he said at last. "Because you'll cry."
+
+"I already know about the trapdoor," said Dilnoza. "Everybody in the city knows about the trapdoor."
+
+He looked at her face. "You're crying."
+
+"Yes," she said.
+
+He thought about that. Then he took the grey cord from his pocket, the same cord, a little frayed now, and held out his hand for her wrist. She gave it to him. He tied the knot round it, loosely, so she could slip it off. Over, under, back through itself, and pull.
+
+It held the first time.
+
+"Seal Order knot," said Mosi. "Can't break it."
+
+Classification: Restricted Record — Containment Report, partially sealed (compiled from the reports of Order Master Wex and Vigil-Warden Tanvir Sollen, the notes of Exorcist-Captain Tomás Rael, the field log of Shield-Warden Cova Drell, the testimony of Aruksha of the Sarpathi, Dunmar Underlow, Helna Ironmane, Joaquin Two-Coins and Zawadi Brightwater, the Clean Water House survey, the casualty roll of the Holy Knights, and the account of a boy of eight).
+Filed Year 1060.
+— Archivist Senna Ash, Starhaven Royal Athenaeum`,
+  },
+  {
     id: 'the-tied-moot',
     title: "The Tied Moot",
     subtitle: "1054 · six holds, one vote, and the year the mountain decided",
@@ -24989,10 +26005,11 @@ const CHARACTERS = [
       {name:'Saint of the Final Bastion',  type:'ultimate', desc:'During catastrophic battles, golden wings of light manifest behind Brynhild. Every strike from Solbrand heals nearby allies while devastating enemy ranks with holy fire. The ground around her glows. The sky above her clears of darkness. Used twice in a live engagement — Year 1051, the last day of the Five Thrones War, and Winter 1058, the last day of the Long Winter at Frosthold.'},
       {name:'Sanctuary of Valor', type:'active',  desc:'Plants her shield into the ground and invokes an ancient paladin oath. Creates a large radiant zone — allies inside gain accelerated healing and increased endurance. Fear, poison, Void, and dark curses weakened. Fallen allies can briefly continue fighting before collapsing. Brynhild herself becomes extremely resistant to damage while active.'},
       {name:'Oath of the Shield', type:'passive', desc:'Holy Knights near her fight with steadier hands and do not retreat while her Aegis of the Last Dawn faces forward.'},
+{name:"Dawnflail Solbrand", type:'active', desc:"Attack — the radiant flail, swung from behind the Aegis. Burns what the Void has touched."},
     ], quote:'"As long as I stand, no soul behind me shall fall."',
     relationships:[{name:'Orsik',type:'ally',note:'Both owe Seraphine their lives. They do not discuss it.'},{name:'Kael Varric',type:'ally'},{name:'Rhegar Thorne',type:'ally'},{name:'Rufus',type:'family'},{name:'Roen',type:'family'}],
     tags:['Commander','Holy Knights','Sancthaven'],
-    background:'Frontier warrior. Co-trained by Kael and Seraphine — the only person in the kingdom trained simultaneously by both. Watched Seraphine heal her from a wound she should have died from and decided what she was going to do about still being alive. Founded the Holy Knights from that decision. On Lantern Night 1059 she reached the Lantern Bridge first, planted Sanctuary of Valor at the bridgehead for the crushed and the burned, and broke Solbrand against King\'s End\'s grey air three times before turning to hold the river road; when the ring died her knights caught the two hundred inside.',
+    background:'Frontier warrior. Co-trained by Kael and Seraphine — the only person in the kingdom trained simultaneously by both. Watched Seraphine heal her from a wound she should have died from and decided what she was going to do about still being alive. Founded the Holy Knights from that decision. On Lantern Night 1059 she reached the Lantern Bridge first, planted Sanctuary of Valor at the bridgehead for the crushed and the burned, and broke Solbrand against King\'s End\'s grey air three times before turning to hold the river road; when the ring died her knights caught the two hundred inside. On the night of the Hollow Crawlers in 1059 she shut every gate and bridge in Sancthaven and put her knights on every corner by dark: Pyrelight Archers shooting down the wells, Relic Wardens on the drains, the Saintguard at the hospital doors.',
     mount:{name:'Aureate',desc:'White warhorse, celestially bonded — appeared the day the Holy Knights were formally established. Brynhild did not name it. It answered to the name before she decided.'},
     partner:[{name:'Rufus',relation:'Husband (engineer)',desc:'Works under Cain Drakhar in the Arsenal engineering division. Brynhild has not explained how they met in detail. Rufus says he asked and she told him. He says \'I believe her.\''},{name:'Roen',relation:'Son (born Year 1047)',desc:'Thirteen months old at the Holy Knights announcement, carried on Brynhild\'s left hip, looking at thirty thousand people as if they were interesting. Started walking before the Holy Knights were a year old. Nobody in the house has slept a full night since.'}],
     achievements:['Founded the Holy Knights of Starhaven',
@@ -25381,6 +26398,7 @@ const CHARACTERS = [
     abilities:[
       {name:'Ancestral Recall',type:'passive',desc:'Ritual trance access to fragments of memory carried by generations of Sarpathi hunters. Overlapping and contradictory — lingering too long risks losing track of which memories are hers.'},
       {name:'Spear Forms',type:'active',desc:'Leaping Fang, River Coil, Mountain Constriction, Buried Serpent, and Shedding Form span explosive-distance thrusts, angle-bending strikes, crushing sweeps, ground-sensing, and afterimage escapes.'},
+{name:'Shedding Form', type:'active', desc:'Defense — twists out of a blow or a net so fast she leaves an image of herself behind for it to catch.'},
       {name:'Kaalahi, the Horned Night Serpent',type:'passive',desc:'Her oath-sibling, not a mount — a thirty-foot, thousand-year-old serpent who tracks by tasting residual magic and can wrap around her as living armor.'},
       {name:'The First Hunt',type:'ultimate',desc:'Summons the spectral impressions of seven dead Sarpathi spear masters, culminating in Fang Before Dawn — a thrust that can pierce fortress gates and dragon-scale plate. Accelerates her ageing.'},
     ],
@@ -25388,7 +26406,7 @@ const CHARACTERS = [
     bio:'A seven-foot Urshan spear-sage of the Sarpathi Serpent Clan, from the Unknown Lands beyond the eastern mountain veil — a civilisation older than most recorded kingdoms, its history kept through ritual song and living memory rather than books.',
     relationships:[{name:'Rayden Cale', type:'Liege', note:'Pledged her spear to Rayden personally, not to the throne of Starhaven, the morning after he sat on the ground and listened to the history of her people until sunrise.'},{name:'Kaalahi',type:'Oath-Sibling'}],
     tags:['Mercenaries & Legends','Solo Legend','Answers Only to Rayden','Not a Bodyguard','Cannot Command'],
-    background:'Refuses to command soldiers whose character she has not personally tested. When she and Rayden first met, he refused the ceremonial seat offered to visiting rulers and sat on the ground beside Kaalahi instead, listening to her people\'s history from sunset until sunrise. He asked her only what must survive even if her clan does not — she pledged her spear to him personally that morning, not to Starhaven\'s throne.',
+    background:'Refuses to command soldiers whose character she has not personally tested. When she and Rayden first met, he refused the ceremonial seat offered to visiting rulers and sat on the ground beside Kaalahi instead, listening to her people\'s history from sunset until sunrise. He asked her only what must survive even if her clan does not — she pledged her spear to him personally that morning, not to Starhaven\'s throne. In the last nights of autumn 1059 she hunted the Unmeasured under Sancthaven. It ate her memory again and again; Kaalahi, who tracks by taste, did not forget, and the dead hunters of her Ancestral Recall could not be eaten. She fought the possessed Dilnoza Vantreth all night without drawing her blood, and called up The First Hunt to pin her. It left a white streak in her hair that will not grow out.',
     mount:{name:'Kaalahi',desc:'Thirty-foot horned night serpent, oath-sibling rather than mount.'},
     partner:null,
     achievements:['Sole surviving huntress of the Sarpathi Serpent Clan',
@@ -25590,10 +26608,12 @@ const CHARACTERS = [
     abilities:[
       {name:'Field Triage Command', type:'passive', desc:'Commands the Ashen Guard\'s field operations — moving with the advance line rather than behind it. Her innovation: the Ashen Guard doesn\'t wait for soldiers to fall and then heal them. It maintains a healing field around advancing formations. Injury-to-recovery time decreased 40% under her system.'},
       {name:'Kindness Strike', type:'active', desc:'A healer\'s mace blow with a ward behind it — she knocks an attacker down and shields the wounded soldier behind him in the same movement.'},
+{name:"Ward of Kindness", type:'active', desc:"Defense — raises the warden shield as a casting focus and throws a ward over everyone in reach."},
+{name:"The Moving Field", type:'ultimate', desc:"Lays a healing field over every knot of fighting she rides past, at a gallop, until there is nothing left in her."},
     ],
     quote:'"Don\'t wait for them to fall. Keep them standing." — her field doctrine principle',
     bio:'Trained directly by Seraphine, who saw that the healing instinct was already there. Has internalized the principle that healing in motion is more valuable than healing after the fact. Her unit moves with the Ironwall\'s advance — Kael approved this personally, after watching a single engagement.',
-    background:'Created the mobile healing field doctrine — the innovation that changed how the Ashen Guard operates, replacing post-injury treatment with continuous in-motion battlefield healing. Kael Varric approved the formation integration after watching it work once. The doctrine cut injury-to-recovery time by 40% and let the Ashen Guard sustain a 61-day front line during the Five Thrones War. Healer of the Wall-Climbers in the Tower of Twenty (1059): held Vorn Ashcaller together for an hour on the eighteenth floor, then on the roof healed Velkan\'s lung, Nyx\'s shoulder and Vorn again with nothing left, went past the place Seraphine warned her of, and slept fourteen hours. The Tower counted six because she would not let it count five. On Lantern Night 1059 she climbed onto a cart on the Sancthaven river road during the crush and turned it into a field hospital in ten minutes; forty-one people lived who should not have, and she knows the names of the nine who did not.',
+    background:'Created the mobile healing field doctrine — the innovation that changed how the Ashen Guard operates, replacing post-injury treatment with continuous in-motion battlefield healing. Kael Varric approved the formation integration after watching it work once. The doctrine cut injury-to-recovery time by 40% and let the Ashen Guard sustain a 61-day front line during the Five Thrones War. Healer of the Wall-Climbers in the Tower of Twenty (1059): held Vorn Ashcaller together for an hour on the eighteenth floor, then on the roof healed Velkan\'s lung, Nyx\'s shoulder and Vorn again with nothing left, went past the place Seraphine warned her of, and slept fourteen hours. The Tower counted six because she would not let it count five. On Lantern Night 1059 she climbed onto a cart on the Sancthaven river road during the crush and turned it into a field hospital in ten minutes; forty-one people lived who should not have, and she knows the names of the nine who did not. On the night of the Hollow Crawlers in 1059 she rode Constant up and down the Sancthaven river road laying healing fields, with the Mercy Riders behind her keeping the three-minute promise across a whole city.',
     mount:{name:'Constant', desc:'Her Black warhorse — named for the doctrine she built her career on.'},
     partner:{image:'starhaven_chars_image/partner_edriccrest.jpg',name:'Edric Crest', relation:'Husband — retired soldier, Sancthaven hospital administrator', desc:'Edric was injured in Year 1047 and recovered under Lena\'s care. He says she healed him better than the injury required. She says she just did her job. He now runs Sancthaven hospital\'s administrative coordination, and says his wife taught him the difference between doing a job and doing it well.'},
     achievements:[
@@ -25930,10 +26950,13 @@ const CHARACTERS = [
     abilities:[
     {name:'Seal Doctrine', type:'active', desc:'Containment specialist ability to capture rather than kill Void entities or any living creatures,when capture produces more value than termination.'},    
     {name:'Equipment Discipline', type:'passive', desc:'Carried a containment frame for seventy-two consecutive hours on the chance it would matter — and was right. Cleans it regardless of what else is happening. Her flat statement that they were not killing the relay entity carried more weight on day three than any argument Zareth could have made. Would later become Order Master "Seal" when Zareth founded the Void Breakers.'},
+{name:"Lockjaw Shut", type:'ultimate', desc:"Closes the frame on whatever comes out of hiding — one-handed, without needing to remember why. Took the Unmeasured alive in the Mother Cistern in 1059."},
+{name:"Frame Bash", type:'active', desc:"Attack — swings the iron containment frame off her back like a shield-edge. Rated below the job. Has not failed."},
+{name:"Arm in the Way", type:'active', desc:"Defense — takes the blow on her forearm so her other hand is free. Did exactly this against a seal rod in 1059; the arm will never be quite straight again."},
     ],
     quote:'"We are not killing it. I have been carrying this containment frame for seventy-two hours." — settling a three-day argument in one sentence',
     bio:'Makes equipment compromises look like decisions.',
-    background:'Engineer and containment specialist on Zareth Kull\'s Lumenfield documentation team — a founding member of what would, years later, become the Void Breakers. Spent eighteen months running live-capture operations on equipment never rated for the work, and kept it functional anyway.',
+    background:'Engineer and containment specialist on Zareth Kull\'s Lumenfield documentation team — a founding member of what would, years later, become the Void Breakers. Spent eighteen months running live-capture operations on equipment never rated for the work, and kept it functional anyway. In the last nights of autumn 1059 she led the Seal Order under Sancthaven to bring back Dilnoza Vantreth, her own student, and the Unmeasured inside her, both alive. A seal rod broke both bones of her forearm. She shut Lockjaw on the thing at dawn, one-handed, and then cleaned the frame.',
     achievements:[
         'Eighteen months of field containment on chronically under-rated equipment — zero catastrophic failures',
         'Ended the team\'s three-day kill-or-contain debate with a single factual sentence',
@@ -27164,12 +28187,15 @@ const CHARACTERS = [
     abilities:[
       {name:'Full Exorcism', type:'active', desc:'Performs complete spiritual cleansing of Void corruption, dark curse attachment, and spiritual parasites on affected individuals. Where Seraphine\'s Purgation Wave is broad-area, Tomás\'s exorcism is surgical — individual, thorough, and permanent. Used on the two Velcross scouts who came back "speaking a language that didn\'t exist."'},
       {name:'Twenty Years of Rite', type:'passive', desc:'Two decades of exorcism give his words weight. Void-touched spirits recoil from his voice before the rite is complete.'},
+{name:"The Final Word", type:'active', desc:"Attack — the sacred flail, used only when the thing being cast out comes at the circle itself."},
+{name:"Hold the Circle", type:'active', desc:"Defense — keeps the silver rite-circle lit round the possessed while the entity tries to break it from inside."},
+{name:"The Whispered Rite", type:'ultimate', desc:"The whole rite in the old language, spoken in a whisper. Since 1059 it is the only way he can speak it — and spirits flinch from it more than from his full voice."},
     ],
     quote:'"The Void offers nothing. It only takes. I give back what it steals."',
     bio:'Quiet in the way of someone who has spoken the words of exorcism for 20 years and knows exactly what power language carries. Believes in every ceremony he conducts. His spiritual conviction is not performative. Seraphine finds this deeply reassuring. Loyalty: The Void corrupts. His purpose is ensuring that corruption doesn\'t last.',
     relationships:[{name:'Seraphine Mire',type:'ally',note:'Her Exorcist-Captain — his spiritual conviction is "the complement of my healing instinct"'},{name:'Lena Crest',type:'ally',note:'His Battle-Warden counterpart — physical and spiritual complement'}],
     tags:['Commander','Starhaven Royal & Military','Exorcist-Captain'],
-    background:'Former monastery-trained exorcist who joined the military when Void incursions began corrupting soldiers rather than just terrain. Seraphine found him in Year 1044 performing an exorcism in the field that she had been about to perform herself. She stepped back and let him finish. He joined the same day. Rank: Exorcist-Captain · Ashen Guard · Sancthaven based.',
+    background:'Former monastery-trained exorcist who joined the military when Void incursions began corrupting soldiers rather than just terrain. Seraphine found him in Year 1044 performing an exorcism in the field that she had been about to perform herself. She stepped back and let him finish. He joined the same day. Rank: Exorcist-Captain · Ashen Guard · Sancthaven based. In 1059 the Unmeasured broke out of his rite in the Restricted Quarter, broke his wrist and nearly crushed his throat. He came down into the Mother Cistern an hour after the capture and whispered the whole rite over Dilnoza Vantreth anyway. He has spoken in a whisper since.',
     mount:'White cavalry horse — "Justice"',
     achievements:['Exorcised the two Velcross scouts who came back speaking Void-language','Developed Void-corruption spiritual response protocol — now Ashen Guard standard','Combined exorcism + Purgation Wave — field-tested technique that Seraphine now uses'],
   },
@@ -27411,6 +28437,46 @@ const CHARACTERS = [
     relationships:[{name:'Bob Vale',type:'ally',note:'Came to Greypeak because of her sand-glass'},{name:'Orin Dael',type:'ally',note:'Her Link-Captain'},{name:'Sael Okoye',type:'ally',note:'Built the dead-line signals with her'},{name:'Vrakas Stonehide',type:'ally',note:'Asked to learn all forty-one calls the morning after'},{name:'Kragh Skullsplitter',type:'ally',note:'Wanted the lunch call first'}],
     tags:['Commander','Resonance Corps','Signals','When the Thread Breaks (chronicle)'],
     background:'A Resonance Corps field officer on the Greypeak frontier who spent two years building what nobody asked for: a way to fight when the Link dies. In late autumn 1059 the Void came down out of the Stormmassif and the stormglass in Velmora drank every crystal in the kingdom dark. For nine hours her lanterns and her drummer Wim were the army\'s only voice.',
+  },
+  {
+    id:'dilnozavantreth', name:'Dilnoza Vantreth',
+    image:'starhaven_chars_image/dilnozavantreth.png',
+    imagePrompt:"A 41-year-old human woman, senior containment specialist of the Seal Order, greying black hair tied back hard, an old burn scar on one cheek, tired steady brown eyes, in grey Void-rated containment plate with a sealed helm under one arm. A coiled binding net and a bundle of iron seal rods on her back, creature-marking chalk on her harness, a frayed grey cord tied loosely round one wrist. Magic: faint blue sealing runes glow along the seal rods. Setting: a pale stone cistern under a city of healers, black water, carved pillars, a single mana lamp.",
+    title:'The Knot That Held',
+    category:'Commander', status:'alive',
+    age:'41', race:'Human', role:'Senior Containment Specialist · Seal Order · Void Breakers',
+    color:'#5A7A99',
+    weapons:['Binding net — Seal Order issue, tied off with the Holdfast','Iron seal rods for anchoring entities to the ground','Creature-marking chalk'],
+    abilities:[
+      {name:"Seal Rod", type:'active', desc:"Attack — drives an iron seal rod through a target and into the ground beneath it, pinning it in place the way the manual pins a Void entity."},
+      {name:"Net First", type:'active', desc:"Defense — throws a binding net flat and wide before the enemy has its weapon up. The harder it pulls, the tighter the Holdfast gets."},
+      {name:"The Holdfast", type:'passive', desc:"Ties the Seal Order knot faster than anyone living. She designed half the inner wards of the Restricted Quarter."},
+      {name:"Ring of Rods", type:'ultimate', desc:"Sets a full containment ring of seal rods in seconds, holding an entity — or a door — in place. In 1059 the Unmeasured used it through her to hold a door open."},
+    ],
+    quote:'"It holds what doesn\'t want to be held. That\'s what it\'s for."',
+    bio:'Greying black hair tied back hard, a burn on one cheek from a binding net that caught fire in 1051, and the patient hands of someone who has spent her life tying knots that must not slip.',
+    relationships:[{name:'Wex',type:'mentor',note:'Trained her; they trained half the Order together'},{name:'Mosi',type:'ally',note:'An orphan of Saint Veyne. She taught him the Holdfast. It held.'},{name:'Tanvir Sollen',type:'ally',note:'The Grey Rite warden who found her'},{name:'Tomás Rael',type:'ally',note:'Whispered the rite over her in the Mother Cistern'},{name:'Aruksha',type:'ally',note:'Fought her for a whole night without drawing her blood'}],
+    tags:['Commander','Seal Order','Void Breakers','Take It Alive (chronicle)'],
+    background:'One of the four Seal Order specialists who came back from the edge of the Ashen Passage in 1048 with twelve minutes missing. For eleven years something the registry calls the Unmeasured lived inside her and counted everything she saw, while she read perfectly clean on every Veil Seer array. In the last nights of autumn 1059 the Grey Rite found it, and she walked into the exorcism room on her own feet. It woke, broke out of the rite and took her down into the water under Sancthaven. She wrote TAKE ME ALIVE on the wall with her own fighting hand. The Seal Order did. She is back on duty, and visits Saint Veyne every rest-week.',
+  },
+  {
+    id:'dunmarunderlow', name:'Dunmar Underlow',
+    image:'starhaven_chars_image/dunmarunderlow.png',
+    imagePrompt:"A broad, bald dwarf of about sixty, beard tucked into his belt to keep it dry, a lantern hanging on a hook on his chest, a great ring of three hundred iron keys on a chain round his waist, a sack of grey sacred ash over one shoulder and a short Deepwell pick-hammer at his hip, in oiled leather and waders. He is listening with one ear pressed flat to a pale carved stone pillar. Magic: a row of mana lamps on iron hooks wakes to soft blue as he passes. Setting: a vast pillared cistern under a white city, black still water, carved stone leaves.",
+    title:'The Man Who Keeps the Water',
+    category:'Guild & Citizens', status:'alive',
+    age:'~60', race:'Dwarf', role:'Deep-Warden · Cisterns, Wells and Tunnels · the Clean Water House, Sancthaven',
+    color:'#4E6F7A',
+    weapons:['A ring of three hundred iron keys','A sack of sacred ash','A short Deepwell pick-hammer'],
+    abilities:[
+      {name:'Listen to the Stone', type:'passive', desc:'Ear flat on the wall, the Wellwarden way: hears a door break three tunnels away, and knows which door.'},
+      {name:'Ash Before You Need It', type:'active', desc:'Blesses every drain in the city with sacred ash once a month, and locks what matters behind Stonemark rune-locks only he and Wex can open.'},
+    ],
+    quote:'"Nobody listens to a man who keeps pipes."',
+    bio:'Broad and bald, beard tucked into his belt so it will not get wet, a lantern on his chest and three hundred keys that clank when he walks.',
+    relationships:[{name:'Seraphine Mire',type:'ally',note:'Wrote to her Ministry for a year. She listens now.'},{name:'Tsegaye Deepwell',type:'ally',note:'His old Hold; he learned the water from the Wellwardens'},{name:'Wex',type:'ally',note:'The only other key to the frame room'},{name:'Aruksha',type:'ally',note:'Led her through forty miles of tunnel'}],
+    tags:['Guild & Citizens','Sancthaven','Clean Water House','Take It Alive (chronicle)'],
+    background:'Born in Deepwell Hold in the Stonemark mountains, where the Wellwardens hold the water. Came down to Sancthaven twelve years ago because a city with that many hospitals and nobody who understood its pipes was going to kill somebody. Keeps forty miles of pre-Sundering cisterns under the city, with the Mother Cistern under the Ashen Hall at their heart. Warned the Ministry for a year about dead rats and scraped ash in his drains; in 1059 he led the hunt for the Unmeasured to the Mother Cistern, and he wrote one line on the Winter Council agenda himself: Also the wells.',
   },
   {
     id:'saelokoye', name:'Sael Okoye',
@@ -28535,12 +29601,15 @@ const CHARACTERS = [
     abilities:[
       {name:'The Clause', type:'passive', desc:'The contract of the Shields of Lumenfield reads: "We hold until you\'re out, or we don\'t charge." They have never invoked the clause. In eleven years of defensive contracts, no protected party has been lost on Cova\'s watch. Seraphine Mire keeps the Shields of Lumenfield on standing retainer for field hospital protection. Cova has never missed a rotation.'},
       {name:'Last Stand Architecture', type:'active', desc:'Cova\'s defensive doctrine: position before engagement, overlapping shield lanes, designated extraction corridors marked before the enemy arrives. Her 1,100 soldiers know their posts before the briefing ends. She does not improvise the defence. She builds it in advance, then holds it.'},
+{name:"Under the Rim", type:'active', desc:"Attack — the shortsword she rarely draws, working in and out beneath the edge of Ashwall."},
+{name:"Ashwall", type:'active', desc:"Defense — sets the tower shield's edge on the stair and leans. Cracked for the first time at the Trauma Wards in 1059. Did not drop."},
+{name:"Hold Until They're Out", type:'ultimate', desc:"Every lane marked, every stair shielded, and her voice carrying two hundred yards: the whole of the Shields of Lumenfield holds as one wall until the last stretcher is through."},
     ],
     quote:'"We hold until you\'re out. We have always held until you\'re out."',
     bio:'Calm that is not absence — it is structure. She has already thought through the scenario you are panicking about. She solved it two days ago. She is now waiting for you to catch up. Loyalty: Sancthaven Quarter rotating garrison contract. She chose Sancthaven. She could have based anywhere.',
     relationships:[{name:'Seraphine Mire',type:'contracted',note:'Standing retainer for field hospital protection. Cova has never missed a rotation. Seraphine has never had to ask twice.'},{name:'The Shields of Lumenfield',type:'commander',note:'1,100 soldiers. Every one knows the extraction corridors before the enemy knows the contract exists.'}],
     tags:['Loyal to Starhaven', 'Mercenaries & Legends','Mercenary','Shield-Warden'],
-    background:'Former city watch captain. Left the watch after a siege where the evacuation failed. Built the Shields of Lumenfield specifically so that would never happen again under her command. Rank: Shield-Warden · The Shields of Lumenfield (1,100 fighters) · Sancthaven Quarter stationed · Deployment mobile.',
+    background:'Former city watch captain. Left the watch after a siege where the evacuation failed. Built the Shields of Lumenfield specifically so that would never happen again under her command. Rank: Shield-Warden · The Shields of Lumenfield (1,100 fighters) · Sancthaven Quarter stationed · Deployment mobile. On the night of the Hollow Crawlers in 1059 she held the stairs of the Trauma Wards while four hundred patients were carried out. All four hundred came back. Ashwall cracked; the clause was not invoked.',
     mount:'None. "You cannot hold a line from horseback."',
     achievements:['Zero protected-party losses in eleven years of defensive contracts','Clause never invoked — the only mercenary company in the registry with this record','Seraphine Mire standing retainer — field hospital protection, zero incidents'],
   },
@@ -36853,7 +37922,7 @@ const LOCATIONS = [
     military:'Veil Watch Command · Void Breakers Central Command',
     desc:'The Veil Watch\'s command fortress. When an S+ dungeon event occurs, all other forces hold the perimeter line outside Lumenfield. The fortress itself is dimensional-stabilization-rated — built to the same specs as Veil Watch armor.',
     lore:'Lumenfield HQ appears on no public map. It appears on Rhegar Thorne\'s tactical maps with a single notation: HOLD LINE AT 3KM. The notation has never needed to be actioned. That is exactly the point.',
-    places:[{name:'Petra\'s Memorial Wall',kind:'Memorial',desc:'The wall of twenty-three names Petra Allus keeps in Lumenfield\'s western district. No names have been added since the exposure rotation protocol.',keeper:'Petra Allus'},{name:'The Stabilization Core',kind:'Fortress core',desc:'The heart of the fortress that keeps it dimensionally stable — built to the same specification as Veil Watch armour.'},{name:'The Three-Kilometre Line',kind:'Perimeter markers',desc:'Marker stones three kilometres out — where every other force holds the line during an S+ event. The order has never needed to be given.'},{name:'The Quiet Mess',kind:'Garrison mess hall',desc:'The Veil Watch\'s mess. Nobody talks shop at meals; it is the one rule Elysia enforces personally.'},{name:'Mike\'s Forge',kind:'Blacksmith',desc:'The Lumenfield forge that stayed when the city was evacuated — now repurposed for the militia\'s weapons.',keeper:'Mike'},{name:'The Void-Ward Infirmary',kind:'Infirmary',desc:'Treats void-touch and breach wounds under purification lamps, beside the Stabilization Core.'}],
+    places:[{name:'The Seal House',kind:'Void containment & research hall',desc:'The Void Breakers\' study hall on a dry rise of the Lumenfield plain, ten miles outside the HQ\'s hold line — no town, no river, no well within a day. The Seal Order keeps what it catches alive here, and works out what it is.',keeper:'Wex, Order Master of the Seal Order',more:'Built in 1060 on the Winter Council\'s order, after the Unmeasured got loose in Sancthaven\'s water: the captures were moved out of the Restricted Quarter in sealed wagons under Holy Knight escort, at night, one frame at a time. Inside, rows of containment frames behind rune-locked iron doors, each with its sealing lamps burning blue, and a long scriptorium where Hollow Order observers write down everything they see. One room has three doors of its own, made by Dunmar Underlow, who also dug the dry cistern under it and refused to put any water in. Inside is Lockjaw, its lamps burning white. The guards work in pairs, look at each other and never at the frame, and mark the seconds they lose on a slate by the door.'},{name:'Petra\'s Memorial Wall',kind:'Memorial',desc:'The wall of twenty-three names Petra Allus keeps in Lumenfield\'s western district. No names have been added since the exposure rotation protocol.',keeper:'Petra Allus'},{name:'The Stabilization Core',kind:'Fortress core',desc:'The heart of the fortress that keeps it dimensionally stable — built to the same specification as Veil Watch armour.'},{name:'The Three-Kilometre Line',kind:'Perimeter markers',desc:'Marker stones three kilometres out — where every other force holds the line during an S+ event. The order has never needed to be given.'},{name:'The Quiet Mess',kind:'Garrison mess hall',desc:'The Veil Watch\'s mess. Nobody talks shop at meals; it is the one rule Elysia enforces personally.'},{name:'Mike\'s Forge',kind:'Blacksmith',desc:'The Lumenfield forge that stayed when the city was evacuated — now repurposed for the militia\'s weapons.',keeper:'Mike'},{name:'The Void-Ward Infirmary',kind:'Infirmary',desc:'Treats void-touch and breach wounds under purification lamps, beside the Stabilization Core.'}],
     tags:['Veil Watch','S+ Classified','Elysia Nocturne','Void Monitoring'],
   transport:{riftGates:2,trainStation:'Lumenfield Command Halt'},
   },
@@ -38516,7 +39585,9 @@ function chroniclesGetFiltered() {
       (e.year || '').toLowerCase().includes(q)
     );
   }
-  return list;
+  // newest first by start year (same rule as the timeline); undated go last
+  const start = e => { const y = tlYears(e.year); return y.length ? Math.min(...y) : -Infinity; };
+  return [...list].sort((a, b) => start(b) - start(a));
 }
 
 function chronicleCard(entry) {
@@ -38539,7 +39610,7 @@ function chronicleCard(entry) {
       </div>
     </div>
     <div class="lore-expand" id="cexp-${entry.id}">
-      <div class="lore-expand-body">${entry.image ? `<img class="chron-plate" src="${entry.image}" alt="" loading="lazy" onerror="this.remove()">` : ''}${loreLinkBody(entry)}</div>
+      <div class="lore-expand-body">${entry.image ? `<img class="chron-plate" src="${entry.image}" alt="" loading="lazy" onerror="this.remove()">` : ''}${loreLinkBody(entry)}<div class="chron-signoff"><img class="chron-signature" src="starhaven_docs_image/senna-ash-signature.png" alt="Senna Ash"><img class="chron-seal" src="starhaven_docs_image/wax-seal.png" alt=""></div></div>
     </div>
   </div>`;
 }
@@ -42075,6 +43146,7 @@ const MP_STORY = {
     [20,-35,'legend','the-shadow-court','The Shadow Court','1059','The Dome Gate burned, and was shut for twenty days.'],
     [62,-92,'legend','the-silent-games','The Silent Games','1059','A siege on Siegeholm with no crystals: only drums, flags and runners.'],
     [-200,-160,'war','when-the-thread-breaks','When the Thread Breaks','1059','Every crystal in the kingdom went dark, and the Void came down out of the Stormmassif onto Greypeak.'],
+    [262,214,'legend','take-it-alive','Take It Alive','1059','Something from Ashfield woke in the Seal Order and went down into the water under Sancthaven.'],
   ],
   threats: [ // [from, to, colour, short label, tooltip]
     [[470,-60],[350,-28],'#E05A4A','the Nullborn test the eastern wall','Out of the Void Front the Nullborn host tests Ironpass, mostly at night.'],

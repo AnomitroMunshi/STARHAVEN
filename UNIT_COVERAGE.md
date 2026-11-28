@@ -13,7 +13,7 @@ Blackfang Shieldguards, Red-Skinned Troll Tribe, Avalanche Breakers, Ogre Brutes
 **The Rout She Walked Out Of (a field army in retreat — 2nd/4th Army)**  
 Glaive Formation Corps, Longblade Strike Corps, Dawnbow Archers, The Point — First Lance, The Wings — Second Lance, The Depth — Third Lance, The Dawnrunner Stable, Dawnrunner Warhorse, Crimsonblood Warhorse, Command Elimination Squadron, The Fang-Stalkers, The Spell-Enders, The Scatter-Shot, The Far-Walkers, The Evenmere Guard, Kiyu Otari, Warband of the Dawnplate, Sister-Commander Edda Rensh, Shield Wall Engineers Corps, Jade Crossbow Corps, Starhaven Chariot Runners, Ironveil Spear Corps, The Null-Hunters, The Rune-Shield Guard, Ironveil Spear Corps — Halberdiers, Scorpio Field Batteries, Carroballista Corps, Orvin Slate
 
-**Take It Alive (Sancthaven)**  
+**Take It Alive (Sancthaven)** — ✅ written 2026-11-28 (`take-it-alive`). All below now appear (The Web only in the aftermath).  
 Ashen Exorcists, Seal Order, Holy Knights — Relic Wardens, Holy Knights — Pyrelight Archers, Mercy Charger, Auriel, Void Hounds, The Web, War Tiger, War Lion, War Gorilla
 
 **The Elderwood Arrives (the southern forests; the flying fortress)**  

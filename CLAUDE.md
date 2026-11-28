@@ -1,0 +1,4 @@
+- Don't guess names, units, abilities, places or dates; check the wikis first. Same for APIs, flags and package names: check the code or docs.
+- Never read big files whole (`starhaven_wiki.html` 3.7MB, `starhaven-unit-wiki.html` 1.2MB, chapters 150-500KB, `graphify-out/`). Grep for the entry, then Read with offset/limit.
+- New names: check `NAMES_USED.md` first (refresh with `node tools/names_used.js`; add chronicle-only names to its last section by hand).
+- Story: read `STORY_TLDR.md`, not the chapters. Project overview and file map: `INSTRUCTIONS.md`, open only when needed.

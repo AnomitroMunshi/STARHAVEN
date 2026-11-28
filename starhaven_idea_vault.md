@@ -14,11 +14,12 @@ Planning notes only. Nothing here is canon until built and added to the wiki. Ma
 | ✅ | Winter 1059 | The Shadow Court (`the-shadow-court`) | Open Visa spies | Faceless |
 | ✅ past | 1054 | **The Tied Moot** — DONE (`the-tied-moot`; Stonemark civil war, 3–3 moot; Hurnevik Sythalen's Frostspire household; new Hold-Lords and ten units; Dummy Legends moved to Allied Nations / Known Enemies / Tribes & Clans) | Stonemark arc requested 2026-11-27 | Tsegaye Deepwell, Amaru Lanternhold, Yaroslava Coldhollow †, Nnamdi Brightseam, Sindri Hammerseal, Bakhyt Ironjaw †, Itzel Quiroga, Dessa Marrow |
 | ✅ 1 | Late autumn 1059 | **When the Thread Breaks** — DONE (`when-the-thread-breaks`; Velmora stormglass via a Karvossan-passed crystal; foreign crystals cut 40 days; Undying Colors origin told; Borrak Stonecrown and a Void Titan killed) | Velmora's stormglass blacks out the crystals; told from the Resonance Corps' side (*The Silent Games* already did the army without crystals) | Selka Rennet; the Battlemage Prince |
-| 2 | 1059 | **Take It Alive** | Loose inside Sancthaven; escapes through the cisterns | Dunmar Underlow; Aruksha & Kaalahi hunt |
+| ✅ 2 | Last nights of autumn 1059 | **Take It Alive** — DONE (`take-it-alive`; the Unmeasured inside Dilnoza Vantreth since Ashfield; Hollow Crawlers; taken alive in the Mother Cistern; Duke the War Lion dies; Ravil Okun missing at Ironpass → hook for #3) | Loose inside Sancthaven; escapes through the cisterns | Dunmar Underlow; Aruksha & Kaalahi hunt |
 | — | before #3 | *The Fall of Ashveil Hold* (§0f #3, set before the kingdom) | Brek Tane's key | — |
-| 3 | Autumn 1059 | **Zharak Crossing + night siege of Ironpass** | Sorvane's undead that need no light; first sight of the giants (§0f #14); **the Nullborn win real ground here (see §0i)** | Corvane; Zafir fights; Grath'Uel returns |
-| 4 | Winter 1059 | **The Winter Council** — last of 1059 | **Every** weak point (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders — only Frosthold has its own Void unit, night, Frostspire, Sorvane's gold, the single Ashen river route, water sources, silver from one mine, one unfinished fort in the south-west, Cain's Vrak designs, succession) | Tolliver Quarrow walks in at the end with news of refugees |
+| 3 | Autumn 1059 | **Zharak Crossing + night siege of Ironpass** | Sorvane's undead that need no light; first sight of the giants (§0f #14); **the Nullborn win real ground here (see §0i)**; show the healer gap: wounded at Ironpass die because the nearest healers are a day away — the Winter Council's evidence | Corvane; Zafir fights; Grath'Uel returns |
+| 4 | Winter 1059 | **The Winter Council** — last of 1059 | **Every** weak point (Sancthaven, the Resonance Corps, too much on a few people, Open Visa, bare Void borders — only Frosthold has its own Void unit, healers only in Sancthaven and with the field armies — no fort but Frosthold (Highfold Mercy) has its own, while Sancthaven healers serve in six allied kingdoms; fix = mage-healer per major fort + non-mage garrison medics + argue a partial recall (Seraphine vs Treasury/Trade), move the Void captures out of Sancthaven to **the Seal House** (built 1060, a dry rise of the Lumenfield plain 10 mi outside Lumenfield HQ, ~100 mi from Sancthaven; no town, river or well near), night, Frostspire, Sorvane's gold, the single Ashen river route, water sources, silver from one mine, one unfinished fort in the south-west, Cain's Vrak designs, succession) | Tolliver Quarrow walks in at the end with news of refugees; the Council also orders **The Long Remembering** ("we do not know what we are fighting") |
 | 5 | Spring 1060 | **The Elderwood Arrives** | The Elderwood has just joined; its southern seal breaks — the first test of the Council's "bare Void borders". Flying-fortress rematch; SKYREACH debuts and Cyrus falls (§0b) | Saoirse Yarrow; Keth'maur / Sera Nullborn; Cyrus's student |
+| 5b | Spring 1060, after the Elderwood joins | **The Long Remembering** — write AFTER the Winter Council (see §0j) | The memory-holders meet at the Humming Spire, Vaelmark, to piece together the Sundering | Tharel Ethen returns (chapter canon); first proof the old songs are true |
 | 6 | Early summer 1060 | **Karvossan War for the Sable Isles, Act 1** | Launched from **Skerrow** (§0h): the Lanthorn Squadron is first in | Orevessa Vhalcenne; Thyrandel Qorvashi; the second opposing Lord |
 | 7 | Midsummer 1060 | **The Wedding** | Between the war's two acts | — |
 | 8 | Late summer 1060 | **Karvossan War, Act 2** | Saltmere's fleet comes up to join | — |
@@ -46,6 +47,33 @@ In **Zharak Crossing + the night siege of Ironpass**:
 - **A named Starhaven commander dies.** A real loss, not a near miss.
 - Hold back the **Malgrath-Touched Titan** and **Drevak** ("larger than he was") — glimpsed, not used.
 - End on the Nullborn having *learned* something Starhaven has not yet answered — feeds the Winter Council ("bare Void borders", "night").
+
+### §0j. The Long Remembering (agreed 2026-11-28; write after the Winter Council)
+
+Ordered by the Winter Council. Held in **spring 1060** at the **Humming Spire, Vaelmark**, because the Grey Scholar is bound there and cannot leave. Velkan chairs; Senna Ash records. Every seat holds a different piece; nobody has the whole story.
+
+| Seat | Their piece |
+|---|---|
+| The Grey Scholar | Pre-Sundering archmage, alive at the Sundering. Answers one question per person; Soltherion interprets |
+| Soltherion Vael (400+) | Elf line from before the Sundering; the only one the Grey Scholar talks to at length |
+| Aruksha + Kaalahi | The 4,000-year Song of the Sarpathi (11 volumes in the Athenaeum since 1052, in the old tongue) — the only view from the east |
+| Aelindra (620) | The Veilsinger elves' songs |
+| Dravan (420) | The giants' Four Millennia of Observation |
+| Matahina | Reef Clans' sea memory |
+| Oren | Grimwall way-markers and their old calibrations |
+| Tharel Ethen | Chapter-canon pre-Sundered rune reader; Hollowwatch (1036), "a fortress built to hold something" |
+| Durak Stonemark / Gram Stons | 500 years of dwarven war-machine doctrine; the black obelisks |
+| Elysia Nocturne | The Void's side of it |
+| Cain Drakhar | Vrak machines and the flying fortress |
+
+Left out on purpose (too many seats): Eirathra, Saoirse, Zephyros and others; a line or two at most.
+
+Beats:
+- **Wow:** Aruksha sings a Sarpathi verse; Aelindra answers with the same verse in elven — two peoples who never met. First proof the old songs are true.
+- **Intrigue:** pieces that do not fit — the giants remember something the Grey Scholar flatly denies, and he will not say why (hint: he was involved).
+- **Partial answers only:** the flying fortresses were built to hunt the Void (matches the registry sensor array that "targets Void corruption, not people"); the Severim are older than the Sundering; Hollowwatch was one of many prisons; the memory-eater that killed Aruksha's clan was of the Unmeasured's kind (ties to *Take It Alive* and Ravil Okun).
+- **Keep the mystery:** what the Sundering actually was stays unanswered.
+- **Cost:** Aruksha goes too deep into Ancestral Recall and for a while believes she is her own great-grandmother; Kaalahi (she) brings her back. Rayden holds the 1052 promise: the song first, before the spear.
 
 ### §0c. The south-west frontier (added 2026-11-23)
 
@@ -178,7 +206,7 @@ Five provisional Dummy Legend cards are grouped under **The Last Fare** in the m
 |---|---|---|---|
 | Selka Rennet | dead-line signal officer (Resonance Corps) | When the Thread Breaks | yes (2026-11-27; image to make) — also new: Sael Okoye |
 | Tolliver Quarrow | prospector-spymaster, Treasury + Umbral Web | Winter Council (walks in at the end) → The Ice Carts | **no card yet** |
-| Dunmar Underlow | deep-warden of cisterns and tunnels | Take It Alive | **no card yet** |
+| Dunmar Underlow | deep-warden of cisterns and tunnels | Take It Alive | yes (2026-11-28; image to make) — also new: Dilnoza Vantreth |
 | Saoirse Yarrow | ancient Wood Elf field healer, tortoise Mosswall | The Elderwood Arrives | yes (2026-11-27; image to make) |
 | Hob Fennick | Guild porter, 19 — kept Iva Renn's knife; first porter-scout | The Rookie Season → Saddlestone Keep | **no card yet** |
 | Morna | half-orc rookie, 17, pitchfork; led the king's F-rank party | The Rookie Season | **no card yet** |
