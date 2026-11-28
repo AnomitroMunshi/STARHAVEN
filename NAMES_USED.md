@@ -5,7 +5,7 @@ Before naming anyone new: check the first name here AND grep it as a whole word 
 
 Rules: names from cultures all over the world · no shared first names · no look-alike starts (Lyra/Lyria, Maeve/Mael, Teo/Teodor) · Vorn Ashcaller is the only Vorn; only Mira Vorn and Mira Voss are Miras · never rename chapter names.
 
-737 names. ⚠ marks a first name used by more than one person (mostly canon families — leave them).
+738 names. ⚠ marks a first name used by more than one person (mostly canon families — leave them).
 
 | Name | Where |
 |---|---|
@@ -193,6 +193,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Eluned Brightfacet | card: Guild & Citizens, Atlas keeper |
 | Elyndra Valeheart | card: Mercenaries & Legends |
 | Elysia Nocturne | card: The Eleven, Atlas keeper, unit commander |
+| Emeka Fenhallow | card: Known Names |
 | Emir Zahid al-Morad | card: Known Enemies |
 | Emrys Shorewell | card: Guild & Citizens, Atlas keeper |
 | Engineer Torka Ironwhirl | unit commander |
@@ -409,7 +410,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Mirova | card: Mercenaries & Legends |
 | Mirren | card: Guild & Citizens, Atlas keeper |
 | Molgrim Coalbeard | card: Allied Nations |
-| Morthane Kenzovar | card: Dummy Legends |
+| Morthane Kenzovar | card: Dummy Legends, Atlas keeper |
 | Morwen Ashlock | card: Court & Scholars |
 | Moss Thicket | card: Commander, Atlas keeper |
 | Nadia Ferrow | card: Guild & Citizens, Atlas keeper |
@@ -506,7 +507,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Rangi Tawhiri | card: Known Names |
 | Rania Drenn | card: Commander, unit commander |
 | Rashid | unit commander ⚠ shared first name |
-| Rashid al-Kavar | card: Allied Nations, unit commander ⚠ shared first name |
+| Rashid al-Kavar | card: Allied Nations, Atlas keeper, unit commander ⚠ shared first name |
 | Raul Ketterick | card: Guild & Citizens, Atlas keeper |
 | Ravza Dorn | card: Commander, unit commander |
 | Rayden Authorization Required for Deployment | unit commander ⚠ shared first name |
@@ -771,3 +772,5 @@ Names that appear only inside chronicles (no card). Add new ones here by hand; t
 | Gerd | The Fall of Ashveil Hold — Ashveil shield-sergeant |
 | Inaya | Zharak Crossing — the well-keeper's daughter, 9, "Well Captain" |
 | Tumelo Stonewake | Zharak Crossing — Varathos giant, blinded at the Seven Wells |
+| Ruslan Brightmoor | The Night Ironpass Lost Its Walls — Wall Guard sergeant who locked the gate on Brek |
+| Halvi | The Night Ironpass Lost Its Walls — Ashveil Reaper (†1059) |
