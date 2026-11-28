@@ -5,7 +5,7 @@ Before naming anyone new: check the first name here AND grep it as a whole word 
 
 Rules: names from cultures all over the world · no shared first names · no look-alike starts (Lyra/Lyria, Maeve/Mael, Teo/Teodor) · Vorn Ashcaller is the only Vorn; only Mira Vorn and Mira Voss are Miras · never rename chapter names.
 
-629 names. ⚠ marks a first name used by more than one person (mostly canon families — leave them).
+737 names. ⚠ marks a first name used by more than one person (mostly canon families — leave them).
 
 | Name | Where |
 |---|---|
@@ -18,9 +18,11 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Aldren Hander | card: Court & Scholars, Atlas keeper |
 | Aldric Morne | card: Mercenaries & Legends, Atlas keeper ⚠ shared first name |
 | Aldric Vorn | card: Allied Nations, unit commander ⚠ shared first name |
+| Altan Batu | card: Dummy Legends |
 | Althea Sorn | card: Court & Scholars, Atlas keeper |
 | Amadeo Lark | card: Guild & Citizens, Atlas keeper |
 | Amara Sunvale | card: Guild & Citizens, Atlas keeper |
+| Amaru Lanternhold | card: Allied Nations |
 | Ambrose Tilly | card: Guild & Citizens, Atlas keeper |
 | Anwen Tull | card: Guild & Citizens |
 | Arcane Artillery Division | unit commander |
@@ -28,24 +30,30 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Ardyn Vorrath | card: Guild & Citizens, Atlas keeper |
 | Aria al-Kavar | card: Allied Nations |
 | Arjun Ashby | card: Guild & Citizens, Atlas keeper |
+| Arslan the Night-Runner | card: Dummy Legends |
 | Aruksha | card: Mercenaries & Legends |
 | Asha Rennick | card: Guild & Citizens, Atlas keeper |
 | Ashi Thorncall | card: Court & Scholars, Atlas keeper |
 | Ashk Fernhand | card: Guild & Citizens, Atlas keeper |
 | Astrid Coldwater | card: Guild & Citizens, Atlas keeper |
 | Astrya Lenn | card: Court & Scholars, Atlas keeper |
+| Athrelis Thyravelland | card: Dummy Legends |
 | Augustin | card: Guild & Citizens ⚠ shared first name |
 | Augustin "Gus" Fellwind | Atlas keeper ⚠ shared first name |
 | Aurelia Vex | card: The Eleven, Atlas keeper, unit commander |
 | Aurelio Bassano | card: Known Enemies |
 | Aurveth Velyssar | card: Dummy Legends |
 | Avarakai Reef Clans — Sworn to Rayden | unit commander |
+| Avenor Qethvane | card: Tribes & Clans |
 | Ayesha Fael | card: Commander, unit commander |
+| Bakhyt Ironjaw | card: Known Enemies |
 | Bane Crux | card: Commander |
 | Bao Harrowsaddle | card: Guild & Citizens, Atlas keeper |
 | Barek Kade | card: Mercenaries & Legends |
 | Barnaby Thistlewick | card: Court & Scholars, Atlas keeper |
 | Bastian Orrel | card: Court & Scholars |
+| Batu the Banner-Bearer | card: Dummy Legends |
+| Bavresh Durkavan | card: Allied Nations |
 | Bayarmaa Tsend | card: Guild & Citizens, Atlas keeper |
 | Beatrix Lune | card: Guild & Citizens, Atlas keeper |
 | Benedek Sorrel | card: Guild & Citizens, Atlas keeper |
@@ -61,6 +69,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Bolorma | card: Guild & Citizens |
 | Bora Ironshield | card: Tribes & Clans |
 | Borg Brassvein | card: Allied Nations, unit commander |
+| Börte the Swift | card: Dummy Legends |
 | Brak Graymaw | card: Allied Nations |
 | Bram Ashford | card: Guild & Citizens, Atlas keeper ⚠ shared first name |
 | Bram Seawall | card: Commander ⚠ shared first name |
@@ -71,6 +80,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Brek Stonefall | card: Commander, Atlas keeper ⚠ shared first name |
 | Brek Tane | card: Commander, unit commander ⚠ shared first name |
 | Bren Oakshield | card: Commander |
+| Brennan Greymantle | card: Dummy Legends |
 | Brennick Stane | unit commander |
 | Brenovar Khorvessa | card: Dummy Legends |
 | Brex Ashpaw | card: Tribes & Clans ⚠ shared first name |
@@ -78,11 +88,14 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Brix Holt | card: Commander, unit commander |
 | Brokk Graniteborn | card: Allied Nations, unit commander |
 | Brom Hopwood | card: Guild & Citizens, Atlas keeper |
+| Brondrith Thrennox | card: Allied Nations |
 | Brynhild Voss | card: Commander, Atlas keeper, unit commander |
 | Bryony Applewhite | card: Guild & Citizens, Atlas keeper |
 | Caedran Morveil | card: Mercenaries & Legends |
 | Caela Moreau | unit commander |
 | Caelen Voss | card: Commander, Atlas keeper |
+| Caelith Veydran | card: Dummy Legends |
+| Caelthir Fernward | card: Dummy Legends |
 | Cain Drakhar | card: The Eleven, Atlas keeper, unit commander |
 | Calla Brennick | card: Commander, unit commander |
 | Calvan Eres | card: Allied Nations, Atlas keeper |
@@ -91,6 +104,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Cass Thorn | card: Commander, Atlas keeper |
 | Cassia Vayne | card: Commander, unit commander |
 | Cassian Silverhorn | card: Allied Nations, unit commander |
+| Catalina Valcobre | card: Dummy Legends |
 | Cato Brightmantle | card: Guild & Citizens, Atlas keeper |
 | Celestine Valcourt | card: Guild & Citizens, Atlas keeper |
 | Chinonso Ebere | card: Guild & Citizens |
@@ -98,14 +112,17 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Clea Halvorsen | card: Commander, Atlas keeper, unit commander |
 | Clementine Sweetwater | card: Guild & Citizens, Atlas keeper |
 | Colonel Dessa Marrow | unit commander |
+| Conan Greymantle | card: Dummy Legends |
 | Coran Hale | card: Commander |
 | Coren Veld | card: Commander |
 | Corin | card: Early Years |
 | Corisande Hale | card: Court & Scholars, Atlas keeper |
 | Corran Tarrow | card: Guild & Citizens, Atlas keeper |
 | Corrin Woolsey | card: Guild & Citizens, Atlas keeper |
+| Corth the Tide-Breaker | card: Dummy Legends |
 | Corvan Lisk | card: Court & Scholars |
 | Corvane | card: Allied Nations |
+| Corvin Langford | card: Dummy Legends |
 | Corwin Leonhart | card: Allied Nations |
 | Court Mage Elowen Sunspire | unit commander |
 | Cova Drell | card: Mercenaries & Legends |
@@ -122,6 +139,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Dante | card: Mercenaries & Legends |
 | Dara Stenn | card: Commander |
 | Darian Wolfe | card: Early Years |
+| Darmek Zulqadin | card: Dummy Legends |
 | Darvin | card: Guild & Citizens |
 | Daven Holt | card: Commander, unit commander |
 | Dawncliff Garrison | unit commander |
@@ -161,6 +179,8 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Dusk Ferren | card: Mercenaries & Legends |
 | Edda Rensh | card: Commander, unit commander |
 | Edran Silverhorn | card: Allied Nations |
+| Edric Vargan | card: Dummy Legends |
+| Edrithal Ulnovar | card: Allied Nations |
 | Eirathra Veyl Frostborne | card: Allied Nations |
 | Ela Seawall | card: Commander ⚠ shared first name |
 | Ela Voss | card: Commander, Atlas keeper, unit commander ⚠ shared first name |
@@ -173,6 +193,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Eluned Brightfacet | card: Guild & Citizens, Atlas keeper |
 | Elyndra Valeheart | card: Mercenaries & Legends |
 | Elysia Nocturne | card: The Eleven, Atlas keeper, unit commander |
+| Emir Zahid al-Morad | card: Known Enemies |
 | Emrys Shorewell | card: Guild & Citizens, Atlas keeper |
 | Engineer Torka Ironwhirl | unit commander |
 | Eshvara Ulthavar | card: Dummy Legends |
@@ -180,6 +201,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Ezrin Quell | card: Guild & Citizens |
 | Ezrion Vorrath | card: Court & Scholars, Atlas keeper |
 | Faceless | card: Commander |
+| Faisal Qaddah | card: Known Enemies |
 | Faris Sahir | card: Guild & Citizens, Atlas keeper |
 | Femi Hartfield | card: Guild & Citizens, Atlas keeper |
 | Fenna Stoutkeg | card: Allied Nations |
@@ -190,6 +212,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Field Artillery Division | unit commander |
 | Finn Ashby | card: Guild & Citizens |
 | Finnian Brookes | card: Guild & Citizens, Atlas keeper |
+| Fiora Greymantle | card: Dummy Legends |
 | Fizzwick Cogsworth | card: Guild & Citizens, Atlas keeper |
 | Flamewarden Riasa Tem | unit commander |
 | Folake Brine | card: Commander |
@@ -220,7 +243,8 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Gunnar Tuskwell | card: Guild & Citizens, Atlas keeper |
 | Gurn Bramblefist | card: Tribes & Clans, unit commander |
 | Halbrecht Veyne | card: Known Enemies |
-| Halden Quist | card: Court & Scholars |
+| Halden Langford | card: Dummy Legends ⚠ shared first name |
+| Halden Quist | card: Court & Scholars ⚠ shared first name |
 | Halderyn Iverath | card: Dummy Legends |
 | Haldis Stonethrow | card: Commander, Atlas keeper |
 | Halla Sandvik | card: Known Names |
@@ -249,7 +273,10 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Hrolf Anvilheart | card: Court & Scholars, Atlas keeper |
 | Hugo Barkwell | card: Guild & Citizens, Atlas keeper |
 | Hulda Brickhand | card: Guild & Citizens |
+| Hulgar | card: Known Enemies |
+| Hurnevik Sythalen | card: Known Enemies |
 | Idris Calloway | card: Guild & Citizens, Atlas keeper |
+| Ilhavri Tessamar | card: Dummy Legends |
 | Ilka \ | card: Guild & Citizens |
 | Illen | card: Commander, unit commander |
 | Ilsa Garrow | card: Court & Scholars |
@@ -262,20 +289,28 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Ingrid Skyward | card: Mercenaries & Legends |
 | Ione Brasswick | Atlas keeper ⚠ shared first name |
 | Ione Gale | card: Court & Scholars, Atlas keeper ⚠ shared first name |
+| Iorven Cindervale | card: Dummy Legends |
 | Irae Duskwind | card: Commander, unit commander |
 | Ironpass Garrison | unit commander |
 | Isaura Delvane | card: Guild & Citizens, Atlas keeper |
+| Iscara Moltren | card: Dummy Legends |
 | Isembard Nettlecombe | card: Guild & Citizens, Atlas keeper |
 | Ishaan Rao | card: Guild & Citizens |
+| Ishvaya Rathesin | card: Allied Nations |
 | Iskar Valanthe | card: Mercenaries & Legends |
 | Isolde Cren | card: Court & Scholars, Atlas keeper, unit commander |
 | Ista Oreheart | card: Allied Nations |
 | Ithiel Sarn | card: Guild & Citizens |
+| Ithrava Seamorrow | card: Dummy Legends |
+| Itzel Quiroga | card: Known Enemies |
 | Iva Renn | card: Commander, Atlas keeper, unit commander |
+| Ivar Greymantle | card: Dummy Legends |
 | Iven Dusken | card: Commander |
 | Ivo Castellane | card: Guild & Citizens, Atlas keeper |
 | Ivranel Saqorin | card: Dummy Legends |
 | Ivrine Helm | card: Guild & Citizens |
+| Jebe the Arrow | card: Dummy Legends ⚠ shared first name |
+| Jebe the Sky-Piercer | card: Dummy Legends ⚠ shared first name |
 | Jeren Cren | card: Court & Scholars, Atlas keeper |
 | Jorveth Braveth | card: Dummy Legends |
 | Jory Swiftoar | card: Guild & Citizens, Atlas keeper |
@@ -287,6 +322,8 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Kai | card: Commander, Atlas keeper, unit commander |
 | Kaida Ironbone | card: Commander |
 | Kalea | card: Tribes & Clans |
+| Kane Langford | card: Dummy Legends |
+| Kara the Stallion-Tamer | card: Dummy Legends |
 | Karas Flamecrest | card: Tribes & Clans |
 | Karath Sultanate | unit commander |
 | Karsh Redspire | card: Tribes & Clans, unit commander |
@@ -295,16 +332,21 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Kazra Tidewall | card: Commander, Atlas keeper |
 | Keldrissa Khorveth | card: Dummy Legends |
 | Keryndal Korvessa | card: Dummy Legends |
+| Kessir the Unifier | card: Dummy Legends |
 | Kestrel Ashby | card: Guild & Citizens |
 | Kethra Blackfang | card: Tribes & Clans, unit commander |
-| Kharveth Aelvarin | card: Dummy Legends |
+| Khadan the Howler | card: Dummy Legends |
+| Khaldrin Marnovar | card: Tribes & Clans |
+| Kharveth Aelvarin | card: Known Enemies |
 | Kira | card: Allied Nations, Atlas keeper ⚠ shared first name |
 | Kira Null | card: Commander ⚠ shared first name |
+| Kiyu Otari | card: Mercenaries & Legends |
 | Koa Ashcord | card: Known Names |
 | Kofi Tapp | card: Guild & Citizens |
 | Koren Ashveil | card: Commander, unit commander |
 | Korga | card: Tribes & Clans, unit commander |
 | Korr Vash | card: Early Years |
+| Korrun Ashvein | card: Allied Nations |
 | Korvus Drey | card: Commander |
 | Kraag Half-Ear | card: Known Names |
 | Kragh Skullsplitter | card: Tribes & Clans, unit commander |
@@ -316,6 +358,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Lev Cray | card: Commander |
 | Leyla al-Amar | card: Guild & Citizens, Atlas keeper |
 | Lian Mistwell | card: Guild & Citizens, Atlas keeper |
+| Lila Thorn | card: Dummy Legends |
 | Linden Ashgrove | card: Guild & Citizens, Atlas keeper |
 | Liora Drake | card: Court & Scholars |
 | Lola Skyward | card: Mercenaries & Legends |
@@ -334,9 +377,11 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Madoc Harlow | card: Guild & Citizens, Atlas keeper |
 | Mael Cress | unit commander ⚠ shared first name |
 | Mael Sorn | card: Mercenaries & Legends ⚠ shared first name |
-| Maelis Redbough | card: Guild & Citizens, Atlas keeper |
+| Maelis Redbough | card: Guild & Citizens, Atlas keeper ⚠ shared first name |
+| Maelis Thorn | card: Dummy Legends ⚠ shared first name |
 | Maezira Dalmecor | card: Dummy Legends |
 | Mags Bargewell | card: Guild & Citizens, Atlas keeper |
+| Mahesvri Oshvani | card: Allied Nations |
 | Mahlet Desta | card: Guild & Citizens, Atlas keeper |
 | Marcus Ironmane | card: Court & Scholars, Atlas keeper |
 | Mardovan Dathorin | card: Dummy Legends |
@@ -355,6 +400,8 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Mateo Dunewheel | card: Commander, Atlas keeper |
 | Mei Lotusreach | card: Guild & Citizens, Atlas keeper |
 | Mele Fifita | card: Guild & Citizens |
+| Merithae Coralweft | card: Dummy Legends |
+| Michael Nom | card: Dummy Legends |
 | Mike | card: Guild & Citizens, Atlas keeper |
 | Mira Vorn | card: Allied Nations, unit commander ⚠ shared first name |
 | Mira Voss | card: Commander ⚠ shared first name |
@@ -368,19 +415,24 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Nadia Ferrow | card: Guild & Citizens, Atlas keeper |
 | Nalani Duskwalk | card: Tribes & Clans |
 | Navid Saffrani | card: Guild & Citizens, Atlas keeper |
+| Navresh Kodalvi | card: Allied Nations |
 | Ned Clayborne | card: Guild & Citizens, Atlas keeper |
 | Nela | card: Guild & Citizens |
 | Nell Furrow | card: Guild & Citizens, Atlas keeper |
+| Nerilda Tavrel | card: Dummy Legends |
 | Neris Mirrenvale | card: Allied Nations |
 | Nerys Ashborne | card: Commander |
+| Neshareth Vossamir | card: Dummy Legends |
 | Nesvarin Edramar | card: Dummy Legends |
 | Ngozi Penhallow | card: Court & Scholars |
 | Nib Quickshear | card: Guild & Citizens, Atlas keeper |
 | Nkem Saltvane | card: Guild & Citizens, Atlas keeper |
 | Nkiru Gearhart | card: Guild & Citizens, Atlas keeper |
+| Nnamdi Brightseam | card: Allied Nations |
 | Noor Halvaren | card: Guild & Citizens |
 | Not Bodyguard | unit commander |
 | Nothessa Vessalon | card: Dummy Legends |
+| Noyan Tolui | card: Dummy Legends |
 | Nuno Barros | card: Guild & Citizens |
 | Nymora Dralvessa | card: Dummy Legends |
 | Nyssa Veil | card: Early Years |
@@ -394,6 +446,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Odile Fenn | card: Guild & Citizens, Atlas keeper |
 | Odo Mossgrove | card: Guild & Citizens, Atlas keeper |
 | Odran Vell | card: Commander |
+| Ögedei Kessir | card: Dummy Legends |
 | Oksana Ashanvil | card: Guild & Citizens |
 | Old Ada Brine | Atlas keeper |
 | Olla Marsh | card: Commander |
@@ -407,13 +460,17 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Orin Dael | card: Commander |
 | Orren | card: Guild & Citizens |
 | Orreth Vayne | card: Known Enemies |
+| Orrik Graymaw | card: Known Names |
 | Orsik | card: Mercenaries & Legends |
 | Orsk Grimhallow | card: Commander, Atlas keeper |
 | Orsolya Fenn | card: Guild & Citizens, Atlas keeper |
+| Orveshet Qiravoss | card: Dummy Legends |
 | Orvin Slate | card: Known Names |
 | Oskan Redmane | card: Guild & Citizens, Atlas keeper |
+| Osmerek Brackenmere | card: Dummy Legends |
 | Osric Hackett | card: Guild & Citizens, Atlas keeper |
 | Ossian | card: Known Enemies |
+| Osveth Edravane | card: Allied Nations |
 | Otharil Jhalorin | card: Dummy Legends |
 | Othlira Thalovar | card: Dummy Legends |
 | Othmarin Thamvyr | card: Dummy Legends |
@@ -421,6 +478,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Ottilie Pell | card: Guild & Citizens, Atlas keeper |
 | Ottoline Brack | card: Court & Scholars |
 | Paloma Vestrin | card: Guild & Citizens |
+| Pasko Marangoni | card: Known Names |
 | Pell Asker | card: Guild & Citizens |
 | Pen Aldric | card: Guild & Citizens, Atlas keeper |
 | Personal Command | unit commander |
@@ -434,13 +492,16 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Primal Vanguard | unit commander |
 | Priya Arden | card: Guild & Citizens |
 | Qalvior Dalverin | card: Dummy Legends |
+| Qara the Berserker | card: Dummy Legends |
 | Qasthorin Ysmarin | card: Dummy Legends |
 | Qelvara Ashmoren | card: Dummy Legends |
 | Qenthari Morthalis | card: Dummy Legends |
 | Qiraya Morqalen | card: Dummy Legends |
 | Qoradin Orelvane | card: Dummy Legends |
+| Qorveth Zandryll | card: Known Enemies |
 | Quentin Reamer | card: Guild & Citizens, Atlas keeper |
 | Quill Tanwick | card: Guild & Citizens, Atlas keeper |
+| Qutlugh the Iron | card: Dummy Legends |
 | Rafi al-Sayf | card: Guild & Citizens, Atlas keeper |
 | Rangi Tawhiri | card: Known Names |
 | Rania Drenn | card: Commander, unit commander |
@@ -456,6 +517,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Renna Copperfist | card: Allied Nations, unit commander ⚠ shared first name |
 | Renna Oswick | unit commander ⚠ shared first name |
 | Renzo Fal | card: Court & Scholars |
+| Reshmara Tulqesh | card: Dummy Legends |
 | Reva Duskwalk | card: Tribes & Clans ⚠ shared first name |
 | Reva Stallforth | unit commander ⚠ shared first name |
 | Rhegar | unit commander ⚠ shared first name |
@@ -463,26 +525,36 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Rhegar Thorne Allocation) | unit commander ⚠ shared first name |
 | Rhegar Thorne Reserve | unit commander ⚠ shared first name |
 | Rholan Othvara | card: Dummy Legends |
+| Rhoswen Halloway | card: Mercenaries & Legends |
 | Rhovan Vorrath | card: Guild & Citizens, Atlas keeper |
+| Rhyvessa Luraveth | card: Tribes & Clans |
 | Riva Trid | card: Mercenaries & Legends, Atlas keeper, unit commander |
+| Riven Foss | card: Dummy Legends |
 | Roan Dusk | card: Commander, Atlas keeper |
+| Roderic Langford | card: Dummy Legends |
 | Roen | card: Guild & Citizens |
 | Roland Ashguard | card: Mercenaries & Legends |
 | Rook Ropewalker | card: Guild & Citizens, Atlas keeper |
 | Rosalind Thornfield | card: Allied Nations |
 | Rosamund Thistledown | card: Guild & Citizens, Atlas keeper |
+| Roven Greymantle | card: Dummy Legends |
+| Rovert Pea | card: Dummy Legends |
 | Rua | card: Tribes & Clans |
 | Rudra Vanar | card: Tribes & Clans |
 | Rufus | card: Guild & Citizens |
 | Ruka Stonebrew | card: Guild & Citizens, Atlas keeper |
 | Rurik Stonedelve | card: Guild & Citizens, Atlas keeper |
 | Rusk | card: Known Names |
+| Ruzena Kestovar | card: Dummy Legends |
 | Ryn Vael | card: Guild & Citizens, unit commander |
 | Sael Okoye | card: Commander, unit commander |
 | Saffi Redhollow | card: Guild & Citizens, Atlas keeper |
+| Sahreti Dazmurel | card: Dummy Legends |
 | Samir al-Dusk | card: Allied Nations, unit commander |
 | Saoirse Yarrow | card: Commander |
 | Sara Venn | card: Commander, unit commander |
+| Saran Jebe | card: Dummy Legends ⚠ shared first name |
+| Saran the Oath-Keeper | card: Dummy Legends ⚠ shared first name |
 | Sarpathi Serpent Clan — Answers Only to Rayden | unit commander |
 | Saska Quickrein | card: Guild & Citizens, Atlas keeper |
 | Saskia Updale | card: Court & Scholars, Atlas keeper |
@@ -499,22 +571,27 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Sera Vayne | card: Allied Nations ⚠ shared first name |
 | Sera Voss | unit commander ⚠ shared first name |
 | Seraphine Mire | card: The Eleven, Atlas keeper, unit commander |
+| Serath Ahmd | card: Dummy Legends |
 | Serell Vane | card: Commander, unit commander |
 | Seren Vane | card: Allied Nations |
+| Serevath Mazqiren | card: Dummy Legends |
+| Seris Corth | card: Dummy Legends |
 | Sever Aldric | card: Commander, unit commander |
 | Shade Arren | card: Commander, unit commander |
 | Shock Infantry Embedded | unit commander |
 | Sigrid Chiselmere | card: Court & Scholars, Atlas keeper |
 | Silver Swan Cavalry Corps | unit commander ⚠ shared first name |
 | Silver Swan Cavalry Corps — Reva Stallforth | unit commander ⚠ shared first name |
+| Sindri Hammerseal | card: Allied Nations |
 | Sira | card: Guild & Citizens, Atlas keeper |
+| Sivren Huurveld | card: Dummy Legends |
 | Skreel | card: Tribes & Clans |
 | Snik Frostwhisker | card: Guild & Citizens, Atlas keeper |
 | Sola Dren | card: Commander, unit commander |
 | Solen Aure | card: Allied Nations |
 | Soltherion Vael | card: Court & Scholars |
 | Sora Keld | unit commander |
-| Sorellin Zharveth | card: Dummy Legends |
+| Sorellin Zharveth | card: Known Enemies |
 | Sorin Vael | card: Commander, Atlas keeper, unit commander |
 | Sorn | card: Commander |
 | Sorvane Nullis | card: Allied Nations, Atlas keeper, unit commander |
@@ -525,8 +602,10 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Sten Coldhearth | card: Guild & Citizens, Atlas keeper |
 | Stonemark Holds | unit commander |
 | Sub-Unit | unit commander |
+| Sube the Silent | card: Dummy Legends |
 | Sunniva Vael | unit commander |
 | Sunspire Battlemages | unit commander |
+| Suvrani Velkadir | card: Allied Nations |
 | Sylara Evenmere | card: Commander, unit commander |
 | Sylen | card: Known Names |
 | Sylva Moss | card: Commander |
@@ -538,12 +617,19 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Talia Merrow | card: Court & Scholars |
 | Tallis Greymeadow | card: Guild & Citizens, Atlas keeper |
 | Talon & Hex | card: Mercenaries & Legends |
-| Tamsin Fenn | card: Guild & Citizens |
+| Talqorin Merudesh | card: Allied Nations |
+| Tamsin Fenn | card: Guild & Citizens ⚠ shared first name |
+| Tamsin Vale | card: Dummy Legends ⚠ shared first name |
 | Taneo Reefcrown | card: Allied Nations |
 | Tano Rindwell | card: Guild & Citizens, Atlas keeper |
 | Tariq Sefan | card: Guild & Citizens |
 | Tarven al-Soran | card: Allied Nations |
+| Tavessa Keldwyck | card: Dummy Legends |
 | Tavish Morrow | card: Court & Scholars |
+| Tavrika Huurveld | card: Dummy Legends |
+| Teemu Rautio | card: Known Enemies |
+| Temur Kara | card: Dummy Legends ⚠ shared first name |
+| Temur Spearward | card: Dummy Legends ⚠ shared first name |
 | Tenn | card: Known Names |
 | Tenzin Brassbeard | card: Guild & Citizens, Atlas keeper |
 | Teodor Brisk | card: Court & Scholars, Atlas keeper |
@@ -551,25 +637,33 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Teshara Zynthera | card: Dummy Legends |
 | Tessa Skarne | card: Mercenaries & Legends, Atlas keeper |
 | Thamorin Rethvane | card: Dummy Legends |
+| Thane Langford | card: Dummy Legends |
 | Tharel Ethen | card: Early Years |
 | Tharos Avarakai | card: Mercenaries & Legends |
 | Thessaly Arkwright | card: Mercenaries & Legends |
 | Thorin Blackroot | card: The Eleven, unit commander |
+| Thornak Oskiran | card: Dummy Legends |
 | Thornridge Warband | unit commander |
 | Thrain Mosslight | card: Guild & Citizens, Atlas keeper |
 | Thrak Flintjaw | card: Allied Nations |
 | Threska | card: Tribes & Clans, unit commander |
 | Thyrandel Qorvashi | card: Dummy Legends |
 | Tiber Oswick | card: Court & Scholars, Atlas keeper |
+| Tilde Mbatha | card: Known Names |
 | Tobble Oakhart | card: Guild & Citizens, Atlas keeper |
 | Tobin Cress | card: Commander |
+| Tolui of the Red Arrow | card: Dummy Legends ⚠ shared first name |
+| Tolui the Moon-Wolf | card: Dummy Legends ⚠ shared first name |
 | Tomás Rael | card: Commander, Atlas keeper, unit commander |
+| Tony Lee | card: Dummy Legends |
 | Torak | card: Mercenaries & Legends |
 | Torbin Skyforge | card: Guild & Citizens, Atlas keeper |
 | Torka Ironwhirl | card: Allied Nations |
 | Torvald Redcrest | unit commander |
 | Torvan Grund | card: Commander, unit commander |
+| Tova | card: Known Names |
 | Troll Tribe | unit commander |
+| Tsegaye Deepwell | card: Allied Nations |
 | Ulfrid Hammergrip | card: Allied Nations |
 | Ulla Rimefang | card: Guild & Citizens, Atlas keeper |
 | Ulvaris Qadoreth | card: Dummy Legends |
@@ -578,15 +672,21 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Vael Dusken | unit commander ⚠ shared first name |
 | Vaela Brightleaf | card: Allied Nations |
 | Vaelmark Athenaeum | unit commander |
+| Vaelric Duskryn | card: Dummy Legends ⚠ shared first name |
+| Vaelric Morvayne | card: Dummy Legends ⚠ shared first name |
+| Valdran Ironholt | card: Dummy Legends |
 | Valtor Crane | card: Commander, Atlas keeper |
 | Vantelor Veldrath | card: Dummy Legends |
 | Varek Sond | card: Court & Scholars, Atlas keeper |
 | Varg Ironfrost | card: Commander, Atlas keeper |
 | Varik Stonevein | card: Early Years |
+| Varn Ashclaw | card: Mercenaries & Legends |
 | Vel Carn | card: Guild & Citizens |
 | Veld Ashe | card: Commander, unit commander |
 | Velkan Drake | card: The Eleven, Atlas keeper, unit commander |
 | Velmira Xandrel | card: Dummy Legends |
+| Velqara Marqessa | card: Dummy Legends |
+| Velskar Keldrane | card: Allied Nations |
 | Vera Ashborne | unit commander ⚠ shared first name |
 | Vera Holt | card: Commander, unit commander ⚠ shared first name |
 | Vera Solenne | card: Allied Nations ⚠ shared first name |
@@ -595,14 +695,18 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Vespera Drakewynn | card: Commander, unit commander |
 | Vessa Glimmerforge | card: Guild & Citizens, Atlas keeper |
 | Vessari Veydrith | card: Dummy Legends |
+| Vestren Rowanshield | card: Dummy Legends |
 | Veth Sunreach | card: Mercenaries & Legends, Atlas keeper, unit commander |
 | Vey | card: Tribes & Clans |
+| Veylan Corth | card: Dummy Legends |
 | Veyra Tal | card: Court & Scholars, Atlas keeper, unit commander |
+| Veyrka Haldrane | card: Dummy Legends |
 | Vint Gresham | card: Guild & Citizens, Atlas keeper |
 | Virel Ashmark | card: Commander |
 | Vizier Nessa Korrath | card: Known Enemies, Atlas keeper |
 | Vokthar Varnethis | card: Dummy Legends |
 | Vorn Ashcaller | card: Mercenaries & Legends |
+| Vorzadin Khessamar | card: Dummy Legends |
 | Vossa | card: Tribes & Clans |
 | Vrakas Stonehide | card: Commander, unit commander |
 | Vrennach | card: Tribes & Clans |
@@ -610,9 +714,10 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Warfare | unit commander |
 | Warqueen Lola Skyward | unit commander |
 | Wenna Voss | card: Commander |
-| Wex | card: Commander, unit commander |
+| Wex | card: Commander, Atlas keeper, unit commander |
 | Willowmere Rangers | unit commander |
 | Wilma Moor | card: Guild & Citizens, Atlas keeper |
+| Wim | card: Known Names |
 | Wisp | card: Guild & Citizens |
 | Wrenna Willowmere | card: Allied Nations, unit commander |
 | Wyld Frostmere | card: Commander, Atlas keeper, unit commander |
@@ -621,6 +726,7 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Yami Holloway | card: Mercenaries & Legends |
 | Yara Mossenwild | card: Guild & Citizens, Atlas keeper |
 | Yaretzi Marchbank | card: Commander, Atlas keeper |
+| Yaroslava Coldhollow | card: Allied Nations |
 | Yorna Cinderhelm | card: Allied Nations, unit commander |
 | Ysmay Kettlewing | card: Guild & Citizens, Atlas keeper |
 | Ysmerai Ashquorin | card: Dummy Legends |
@@ -636,8 +742,10 @@ Rules: names from cultures all over the world · no shared first names · no loo
 | Zawadi Brightwater | card: Guild & Citizens, Atlas keeper |
 | Zenethra Kethrane | card: Dummy Legends |
 | Zenveth Kharvess | card: Dummy Legends |
+| Zevrani Qostavel | card: Dummy Legends |
 | Zix | card: Tribes & Clans |
 | Zubeida Pepperwell | card: Guild & Citizens, Atlas keeper |
+| Zurra Keldruk | card: Dummy Legends |
 
 ## Story-only names
 
@@ -661,3 +769,5 @@ Names that appear only inside chronicles (no card). Add new ones here by hand; t
 | Oyvind Ironmoor | The Fall of Ashveil Hold — Marshal of Ashveil (†1024) |
 | Vakhtang "Old Vakh" Ironvein | The Fall of Ashveil Hold — Ashveil gate-master, taught Brek (†1024, corrupted) |
 | Gerd | The Fall of Ashveil Hold — Ashveil shield-sergeant |
+| Inaya | Zharak Crossing — the well-keeper's daughter, 9, "Well Captain" |
+| Tumelo Stonewake | Zharak Crossing — Varathos giant, blinded at the Seven Wells |

@@ -1,10 +1,238 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 3
+Still to generate: 10
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
 - Save each image as PNG into  starhaven_places_image/  with the exact file name shown after "Save as".
 - Places whose image already exists are left out of this file automatically.
+
+########################################################################
+## KARATH SULTANATE  (5)
+########################################################################
+
+=== Karath Sultanate ===
+Save as: starhaven_places_image/karathsultanate.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Karath Sultanate   Kind: Desert kingdom
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: Karath Sultanate — an establishing view of the desert kingdom: a great walled sandstone city round the Sultan's palace, seen across the dunes.
+What it is: Starhaven's oldest ally in the east, a desert kingdom of caravans, wells and war beasts.
+Wider setting — Karath Sultanate: a desert kingdom of caravan roads, deep wells and war beasts beyond the southern edge of the Singing Dunes; sand-coloured land, red dunes, palm oases, hot hazy light.
+Composition: a wide view over rolling red dunes to a walled city of sandstone and white plaster on a low rise, its domed palace in the centre, palm groves and a long caravan of camels winding toward its gate.
+Camera angle: from the crest of a high dune at the edge of the Singing Dunes, looking down across the sand to the city. (Similar places use different angles — keep to this one.)
+Details to include: a camel caravan with bright bales; a line of armoured war elephants and two towering war mammoths with archer towers grazing in a walled pasture outside the walls; palm gardens and irrigation channels round the city; banners of saffron and red on the palace towers; dust in the air.
+Environment: red and gold dunes, palm groves, a heat-hazy sky with a few high clouds.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: late afternoon, warm low sun, long shadows over the dunes.
+Mood: warm, proud, welcoming, ancient.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lamps beginning to glow on the city walls, a faint shimmer of a cooling ward over the palace gardens, Never portals or rift gates.
+People: mostly Karathi — desert humans with brown skin in light layered robes, head-wraps and sashes of saffron, indigo and red — with a visible mix of traders and travellers of other races: a stocky bearded dwarf merchant, a tusked half-orc caravan guard, a pointed-eared elf envoy, an orc camel-driver.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Sultan's Palace ===
+Save as: starhaven_places_image/thesultanspalace.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Karath Sultanate   Kind: Palace
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Sultan's Palace — the great audience hall of the Sultan of Karath.
+What it is: The palace where the Sultan of Karath gives audience; its great hall holds the kingdom's projection crystal.
+Wider setting — Karath Sultanate: a desert kingdom of caravan roads, deep wells and war beasts beyond the southern edge of the Singing Dunes; sand-coloured land, red dunes, palm oases, hot hazy light.
+Composition: a vast, cool hall of sandstone pillars and carved arches, light falling in shafts through high carved screens, a low dais at the far end piled with rich cushions, and on a bronze stand beside it a tall crystal glowing softly.
+Camera angle: from the hall floor between the pillars, looking toward the dais. (Similar places use different angles — keep to this one.)
+Details to include: courtiers and envoys at the sides; brass trays of dates and coffee; tiled floor patterned in saffron and blue; guards of the Fighting Camelknights in desert plate at the doors; a small fountain in the floor.
+Environment: indoors, cool shade, a courtyard garden glimpsed through the far arches.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: bright midday light falling in patterned shafts through the carved screens.
+Mood: stately, cool, quietly powerful.
+Magic: magic is real and everyday in this world — show it subtly where it fits: the great projection crystal glowing softly on its bronze stand, rune-lamps in brass cages along the pillars, Never portals or rift gates.
+People: mostly Karathi — desert humans with brown skin in light layered robes, head-wraps and sashes of saffron, indigo and red — with a visible mix of traders and travellers of other races: a stocky bearded dwarf merchant, a tusked half-orc caravan guard, a pointed-eared elf envoy, an orc camel-driver.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Seven Wells ===
+Save as: starhaven_places_image/thesevenwells.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Karath Sultanate   Kind: Oasis · wells
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Seven Wells — seven deep stone well-heads where the caravan road crosses a dry riverbed, ringed by young date palms.
+What it is: The oasis on the Zharak Reach that controls the road from the coast to Starhaven; fought over in 1059.
+Wider setting — Karath Sultanate: a desert kingdom of caravan roads, deep wells and war beasts beyond the southern edge of the Singing Dunes; sand-coloured land, red dunes, palm oases, hot hazy light.
+Composition: seven round stone well-heads with wooden winding frames and leather buckets in a rough ring on the bank of a broad dry riverbed, a small well-keepers' village of flat-roofed houses beside them, a ring of young, newly planted date palms among the stumps of old dead ones.
+Camera angle: from the dry riverbed at ground level, looking up the bank toward the wells. (Similar places use different angles — keep to this one.)
+Details to include: a girl of about nine carrying a leather bucket nearly as big as she is; camels drinking at a stone trough; the caravan road crossing the riverbed; distant bare hills on the far side; old scorch marks on the ground near the wells.
+Environment: deep fine sand, a dry riverbed, bare brown hills, a hot pale sky.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: early morning, cool gold light, long shadows.
+Mood: peaceful, precious, a place that has been fought over.
+Magic: magic is real and everyday in this world — show it subtly where it fits: a rune of purity carved on each well-head glowing faintly blue to show the water is clean, Never portals or rift gates.
+People: mostly Karathi — desert humans with brown skin in light layered robes, head-wraps and sashes of saffron, indigo and red — with a visible mix of traders and travellers of other races: a stocky bearded dwarf merchant, a tusked half-orc caravan guard, a pointed-eared elf envoy, an orc camel-driver.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Chariot Grounds ===
+Save as: starhaven_places_image/thechariotgrounds.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Karath Sultanate   Kind: Training ground
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Chariot Grounds — the long sand courses where Karath's chariot corps drills.
+What it is: The training grounds of the oldest chariot corps in the world.
+Wider setting — Karath Sultanate: a desert kingdom of caravan roads, deep wells and war beasts beyond the southern edge of the Singing Dunes; sand-coloured land, red dunes, palm oases, hot hazy light.
+Composition: a long, flat sand course marked by painted wooden posts, two-horse war chariots with scythe-blades on the wheel hubs racing in a staggered line, dust rising behind them, viewing stands of sandstone and awnings along one side.
+Camera angle: low beside the course as the chariots thunder past, slightly side-on. (Similar places use different angles — keep to this one.)
+Details to include: drivers and lancers in light desert armour; scythe-wheels catching the sun; marker posts painted with distance bands; a few Starhaven horse archers in grey lamellar watching from their horses; grooms with water skins.
+Environment: flat packed sand, dust, distant dunes and palm trees.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: hot bright afternoon, harsh sun, dust haze.
+Mood: fast, proud, thunderous.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-marks on the chariot axles glowing faintly as they spin, Never portals or rift gates.
+People: mostly Karathi — desert humans with brown skin in light layered robes, head-wraps and sashes of saffron, indigo and red — with a visible mix of traders and travellers of other races: a stocky bearded dwarf merchant, a tusked half-orc caravan guard, a pointed-eared elf envoy, an orc camel-driver.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Karathi Harbour ===
+Save as: starhaven_places_image/thekarathiharbour.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Karath Sultanate   Kind: Harbour
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Karathi Harbour — Karath's port on the southern coast.
+What it is: Karath's port, where grain ships and supply barges put out and Kethravai's island boats land without a fee.
+Wider setting — Karath Sultanate: a desert kingdom of caravan roads, deep wells and war beasts beyond the southern edge of the Singing Dunes; sand-coloured land, red dunes, palm oases, hot hazy light.
+Composition: a busy stone harbour of sandstone quays and warehouses, lateen-sailed grain ships and long supply barges moored, a lighthouse tower at the end of the mole, and far out on the sea four dark low basalt islands each with a white lamp.
+Camera angle: from a warehouse rooftop above the quay, looking out to sea. (Similar places use different angles — keep to this one.)
+Details to include: dockworkers rolling barrels and carrying grain sacks; a small island fishing boat with a bronze-rimmed shield on its prow tied up among the big ships; a bronze ship-fitting hanging over a doorway; nets drying; gulls.
+Environment: a calm blue-green sea, sandy shore, palms along the waterfront.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: dusk, the lighthouse and the distant island lamps just lit.
+Mood: busy, salty, friendly.
+Magic: magic is real and everyday in this world — show it subtly where it fits: the lighthouse lamp a steady rune-light, mana lamps along the quay, Never portals or rift gates.
+People: mostly Karathi — desert humans with brown skin in light layered robes, head-wraps and sashes of saffron, indigo and red — with a visible mix of traders and travellers of other races: a stocky bearded dwarf merchant, a tusked half-orc caravan guard, a pointed-eared elf envoy, an orc camel-driver.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+########################################################################
+## ZHARAK EMIRATES  (5)
+########################################################################
+
+=== Zharak Emirates ===
+Save as: starhaven_places_image/zharakemirates.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Zharak Emirates   Kind: Desert emirate
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: Zharak Emirates — an establishing view of the desert emirate and its capital, the Emir's City, a walled city of bronze-roofed towers.
+What it is: Karath's rich, proud rival and Starhaven's other neighbour across the Singing Dunes.
+Wider setting — Zharak Emirates: a wealthy desert emirate of bronze-roofed towers, caravan tolls, silks, bronze and cut stones beyond the northern edge of the Singing Dunes; brown hills, dry riverbeds, oases.
+Composition: a wide view across brown hills and a dry valley to a walled desert city crowded with tall towers whose roofs are plated in bronze, one tall slender tower standing above the rest, green oasis gardens round its walls.
+Camera angle: from a hilltop on the caravan road, looking across the valley to the city. (Similar places use different angles — keep to this one.)
+Details to include: bronze roofs catching the light; a column of the Emir's Bronze Guard marching on the road; Zharak light-horse riders on a ridge; caravans of silk bales; terraced oasis gardens below the walls.
+Environment: brown hills, dry valleys, oasis green round the city, hazy sky.
+Architecture: a fantasy desert style of its own — tall towers of pale stone with domed and pointed roofs plated in bronze, deep shaded mosaic courtyards, fountains, carved screens; rich and showy. Not a copy of any one real-world country.
+Lighting and time of day: golden early morning, the bronze roofs blazing.
+Mood: rich, proud, watchful, a little threatening.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-lamps on the walls fading with the dawn, a faint ward-shimmer round the tallest tower, Never portals or rift gates.
+People: mostly Zharaki — desert humans with brown skin in indigo, sand and green robes, bronze jewellery, head-wraps — with a visible mix of traders of other races: a bearded dwarf bronzesmith, a tusked half-orc porter, a pointed-eared elf silk merchant.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Zharak Reach ===
+Save as: starhaven_places_image/thezharakreach.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Zharak Emirates   Kind: Disputed corridor
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Zharak Reach — the long dry riverbed and caravan road between two desert kingdoms.
+What it is: The disputed corridor that runs from the edge of the Singing Dunes down to the sea, Karath on one side and Zharak on the other.
+Wider setting — Zharak Emirates: a wealthy desert emirate of bronze-roofed towers, caravan tolls, silks, bronze and cut stones beyond the northern edge of the Singing Dunes; brown hills, dry riverbeds, oases.
+Composition: a broad, winding dry riverbed of deep pale sand between low brown hills, the caravan road running along it, a small cluster of palm trees far down the valley marking the Seven Wells, the sea a thin bright line on the horizon.
+Camera angle: from high on the eastern hills, looking down the length of the riverbed toward the sea. (Similar places use different angles — keep to this one.)
+Details to include: a single caravan moving down the road, tiny with distance; old rusted spearheads and a broken bronze shield half-buried in the sand in the foreground; border cairns on the hilltops on both sides.
+Environment: deep fine barren sand, bare hills, heat haze.
+Architecture: none to speak of — border cairns of piled stone, a ruined watchtower on one hill.
+Lighting and time of day: hard midday sun, bleached colours, heat shimmer.
+Mood: empty, harsh, contested.
+Magic: magic is real and everyday in this world — show it subtly where it fits: a border cairn in the foreground with a faintly glowing rune-stone set in it, Never portals or rift gates.
+People: only a few tiny travellers with the caravan: desert humans in robes and a half-orc guard.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Riders' Hills ===
+Save as: starhaven_places_image/theridershills.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Zharak Emirates   Kind: Border hills
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Riders' Hills — bare brown hills on Zharak's side of the border, with Zharak riders watching from the crest.
+What it is: Where Zharak's riders sat for a year above the Karath caravan road, told only to be seen.
+Wider setting — Zharak Emirates: a wealthy desert emirate of bronze-roofed towers, caravan tolls, silks, bronze and cut stones beyond the northern edge of the Singing Dunes; brown hills, dry riverbeds, oases.
+Composition: a line of Zharak light-horse riders sitting still on their horses along the crest of a bare brown ridge, silhouetted, looking down on a caravan road that winds across the edge of a sea of dunes below.
+Camera angle: from below on the caravan road, looking up at the riders on the ridge. (Similar places use different angles — keep to this one.)
+Details to include: short bows across their saddles, curved swords, green sashes, sand-coloured head-wraps; their horses lean and restless; a Starhaven patrol of two riders in grey on the road below, one raising a hand to wave.
+Environment: bare rocky hills, thorn bushes, the start of the red dunes below.
+Architecture: none — open hills, one small stone sentry shelter.
+Lighting and time of day: late afternoon, long shadows, dust in the air.
+Mood: tense, quiet, watchful.
+Magic: magic is real and everyday in this world — show it subtly where it fits: a signal rune-lamp on a pole beside the riders, unlit, waiting, Never portals or rift gates.
+People: Zharak riders — desert humans — and the two Starhaven scouts (a human and a half-orc).
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Kenzovar Oasis ===
+Save as: starhaven_places_image/thekenzovaroasis.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Zharak Emirates   Kind: Oasis province
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Kenzovar Oasis — a green oasis province of date gardens, reed pools and walled orchards in the Zharak desert.
+What it is: The province of the oasis lord Morthane Kenzovar, one of the few places in Zharak where water stands open on the ground.
+Wider setting — Zharak Emirates: a wealthy desert emirate of bronze-roofed towers, caravan tolls, silks, bronze and cut stones beyond the northern edge of the Singing Dunes; brown hills, dry riverbeds, oases.
+Composition: a lush green oasis in a desert basin: clear reed-fringed pools, tall date palms, walled orchards of pomegranate and citrus, a lord's house with a shaded arcade beside the largest pool, and the bare desert all round the edges.
+Camera angle: from a terrace of the lord's house, looking out over the pools and gardens to the desert beyond. (Similar places use different angles — keep to this one.)
+Details to include: gardeners working the irrigation channels; children swimming in a pool; a flock of birds over the water; a small levy of spearmen drilling lazily in a courtyard; date harvest baskets.
+Environment: green and blue water against golden sand, palm shade.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: soft early evening light, reflections on the pools.
+Mood: lush, calm, rich, a little secretive.
+Magic: magic is real and everyday in this world — show it subtly where it fits: rune-stones at the pool edges glowing faintly to keep the water clear, a mage-gardener coaxing a palm with a lit hand, Never portals or rift gates.
+People: mostly Zharaki — desert humans with brown skin in indigo, sand and green robes, bronze jewellery, head-wraps — with a visible mix of traders of other races: a bearded dwarf bronzesmith, a tusked half-orc porter, a pointed-eared elf silk merchant.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
+
+=== The Bronze Yards ===
+Save as: starhaven_places_image/thebronzeyards.png
+Size: 1536 x 1024 px (landscape 3:2)
+Group: Atlas — Zharak Emirates   Kind: Foundries · armourers
+PROMPT:
+Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
+Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
+Subject: The Bronze Yards — the foundry and armourers' quarter of the Emir's City.
+What it is: Where Zharak's bronze is cast and worked — roof-plates, temple doors and the scale armour of the Emir's Bronze Guard.
+Wider setting — Zharak Emirates: a wealthy desert emirate of bronze-roofed towers, caravan tolls, silks, bronze and cut stones beyond the northern edge of the Singing Dunes; brown hills, dry riverbeds, oases.
+Composition: a crowded courtyard of open-sided foundry sheds, glowing crucibles pouring molten bronze into sand moulds, racks of bronze scale armour and tall oval shields drying, smoke rising into a sunlit sky between towers with bronze roofs.
+Camera angle: from a gallery above the courtyard, looking down into the foundry yard. (Similar places use different angles — keep to this one.)
+Details to include: smiths and apprentices in leather aprons; a dwarf master armourer fitting a bronze scale coat on a young spearman; a cart of finished shields; sparks and steam; water troughs for quenching.
+Environment: hot, smoky, bright, the city's towers all round.
+Architecture: a fantasy desert style of its own — sun-baked sandstone and white lime plaster, thick walls, flat roofs and shaded courtyards, deep arched doorways, carved wooden screens, coloured awnings, bronze fittings; ancient and lived-in. Not a copy of any one real-world country.
+Lighting and time of day: bright afternoon sun mixed with the orange glow of the crucibles.
+Mood: busy, hot, proud of its work.
+Magic: magic is real and everyday in this world — show it subtly where it fits: small runes glowing as they are stamped inside the shield rims, a fire-mage steadying a crucible with a lit hand, Never portals or rift gates.
+People: mostly Zharaki — desert humans with brown skin in indigo, sand and green robes, bronze jewellery, head-wraps — with a visible mix of traders of other races: a bearded dwarf bronzesmith, a tusked half-orc porter, a pointed-eared elf silk merchant.
+Crowd note: avoid rows of identical hooded robes or cloaks standing still and facing the same way. People wear varied everyday clothes in real colours, are of clearly different races, and are busy — walking, talking, carrying, working, laughing — in loose groups facing every direction.
+Avoid: a cast of only one race in the busy scenes; people posing together like a group portrait; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces or posed characters (people are small background figures for scale only); crowds standing in rows or grids, identical or uniformly cloaked figures, figures all facing the camera; modern objects (cars, power lines, plastic, neon, guns, steam locomotives); churches, crosses, altars, shrines or religious symbols; architecture that is a straight copy of any one real-world country or city; cartoon or painterly look; oversaturated colour.
 

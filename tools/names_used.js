@@ -17,6 +17,8 @@ const add = (n, src) => {
 
 // character cards (CHARACTERS and DUMMY_LEGENDS): a name followed closely by a title
 for (const m of wiki.matchAll(/id:\s*'([^']+)',\s*name:\s*['"]([^'"]+)['"][\s\S]{0,3000}?category:\s*'([^']+)'/g)) add(m[2], 'card: ' + m[3]);
+// JSON-style cards (moved Dummy Legends and the Dummy Legends themselves)
+for (const m of wiki.matchAll(/"id":\s*"([^"]+)",\s*"name":\s*"([^"]+)",[\s\S]{0,400}?"category":\s*"([^"]+)"/g)) add(m[2], 'card: ' + m[3]);
 // Atlas place keepers: "Name, role"
 for (const m of wiki.matchAll(/keeper:'([^',]+)/g)) add(m[1], 'Atlas keeper');
 // unit commanders without cards
