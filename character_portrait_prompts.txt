@@ -275,22 +275,3 @@ Save as: unitImages/goldstorm.png
 PROMPT:
 Photorealistic dark-fantasy creature portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on fur, feathers, scales, hide, armor and tack, sharp focus on the animal, softly blurred detailed background. Vertical 3:4 composition, 1086x1448, the whole animal in three-quarter view, centered and filling most of the frame, no rider unless stated. Realistic animal anatomy and scale. No text, no watermark, no border, no logo. Subject: Goldstorm — The horse Marcus Ironmane quietly set aside for Dresh (Ch7) — golden coat, young and spirited. Setting: Ironmane Fields. Make this animal individual and recognisable — distinctive markings, scars or build — not a generic stock animal.
 
-
-
-
-
-########################################################################
-## WHEN THE THREAD BREAKS — LONG NIGHT ADDITIONS  (3)
-########################################################################
-
-=== Dilnoza Vantreth ===
-Save as: starhaven_chars_image/dilnozavantreth.png
-Role: Senior Containment Specialist · Seal Order (Take It Alive)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Dilnoza Vantreth, a 41-year-old Central Asian human woman, senior containment specialist of the Seal Order. Greying black hair tied back hard, an old burn scar on one cheek, tired steady brown eyes. Grey Void-rated containment plate, sealed helm held under one arm, a coiled binding net and a bundle of iron seal rods on her back, creature-marking chalk on her harness, a frayed grey cord tied loosely round one wrist. Magic: faint blue sealing runes glow along the seal rods. Setting: a vast pale-stone cistern under a city of healers, black still water, carved pillars, a single blue mana lamp.
-
-=== Dunmar Underlow ===
-Save as: starhaven_chars_image/dunmarunderlow.png
-Role: Deep-Warden of the cisterns · Clean Water House, Sancthaven (Take It Alive)
-PROMPT:
-Photorealistic dark-fantasy character portrait, cinematic film still, desaturated moody color grade, overcast or low-key dramatic lighting, extremely detailed textures on skin, metal, leather and fabric, sharp focus on the character, softly blurred detailed background. Vertical 2:3 composition, 1024x1536, three-quarter to full-body view, character centered and filling most of the frame. No text, no watermark, no border, no logo. Subject: Dunmar Underlow, a broad bald dwarf of about sixty, beard tucked into his belt to keep it dry, a lantern hanging on a hook on his chest, a great ring of three hundred iron keys on a chain round his waist, a sack of grey sacred ash over one shoulder and a short pick-hammer at his hip, oiled leather and waders. He listens with one ear pressed flat to a carved stone pillar, eyes shut. Magic: a row of mana lamps on iron hooks glows soft blue along the tunnel behind him. Setting: a pillared pre-Sundering cistern, black water to the knee, carved stone leaves.

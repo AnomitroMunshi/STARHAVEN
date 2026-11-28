@@ -655,3 +655,4 @@ Names that appear only inside chronicles (no card). Add new ones here by hand; t
 | Abebe Sunward | Take It Alive — Saintguard ("Sir Lid") |
 | Ravil Okun | Take It Alive — Brand Order tracker, missing at Ironpass |
 | Duke, Ghost, Patience | Take It Alive — War Lion (†), War Tiger, War Gorilla |
+| Thistle | Take It Alive — Pania Varo's grey Mercy Charger mare (The Standing Mare statue) |

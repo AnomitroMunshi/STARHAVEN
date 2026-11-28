@@ -1,35 +1,10 @@
 STARHAVEN — NOTABLE PLACES IMAGE PROMPTS (for Grok image generation)
 ========================================================================
 
-Still to generate: 1
+Still to generate: 3
 
 HOW TO USE
 - Size: 1536 x 1024 pixels, horizontal 3:2 (landscape). In Grok pick the landscape / 3:2 aspect.
 - Save each image as PNG into  starhaven_places_image/  with the exact file name shown after "Save as".
 - Places whose image already exists are left out of this file automatically.
 
-########################################################################
-## LUMENFIELD HQ  (1)
-########################################################################
-
-=== The Seal House ===
-Save as: starhaven_places_image/thesealhouse.png
-Size: 1536 x 1024 px (landscape 3:2)
-Group: Atlas — Lumenfield HQ   Kind: Void containment & research hall
-PROMPT:
-Image size: 1536 x 1024 pixels, landscape orientation, 3:2 aspect ratio.
-Style: photorealistic dark-fantasy environment art, like a cinematic film still from a high-budget fantasy epic. Desaturated, moody colour grade with warm practical light wherever the place is lived-in (lanterns, hearths, lit windows). Extremely detailed textures on stone, timber, iron, glass, cloth and foliage; atmospheric depth with haze between foreground, midground and background; natural lens, no fisheye, no tilt-shift.
-Subject: The Seal House — the Void Breakers' containment and study hall, standing alone on a dry rise of the Lumenfield plain, ten miles outside the Veil Watch fortress.
-What it is: Where the Seal Order keeps the Void creatures it catches alive, and the Void Breakers study them — built far from any town, river or well on purpose.
-Wider setting — Lumenfield: wide, flat, once-corrupted plains cleansed by purification years ago; pale grass, few trees, big skies, the Veil Watch fortress a dark shape on the far horizon.
-Composition: an establishing view of a long, low, windowless hall of heavy white stone bound with iron bands, half sunk into the crown of a bare grassy rise. A single great iron door stands open at one end, cold blue light spilling out. A ring of tall standing marker stones encircles the rise at a distance, each carved with runes. A road of pale stone leads up to the door.
-Camera angle: from the road at the foot of the rise, looking up toward the open door, slightly low. (Similar places use different angles — keep to this one.)
-Details to include: blue sealing runes glowing faintly along the iron bands of the walls; a covered wagon with an iron-banded crate on it being unloaded at the door by grey-armoured specialists; Holy Knights on white horses as escort, waiting on the road; a watchtower with a signal lantern beside the hall; no well, no stream, no water anywhere in sight; dry stone channels round the base of the hall filled with grey ash.
-Environment: open dry plain in late autumn, pale grass bending in the wind, a few bare thorn bushes, the ground cracked and dusty.
-Architecture: stern, heavy, defensive — thick white stone like the healers' city of Sancthaven, made grim with riveted iron doors, iron bands and almost no windows.
-Lighting and time of day: dusk; a cold grey sky with a last band of amber on the horizon, blue light from the open door, warm lantern light only on the watchtower and the escort.
-Mood: isolated, guarded, uneasy — a place built so that if something gets out, nothing is near it.
-Magic: magic is real and everyday in this world — glowing sealing runes on the walls and the standing stones, a faint shimmering ward-line in the grass between the stones, a mage-specialist's hand lit with soft light as she checks the crate's seals. Never portals or rift gates.
-People: only a few small figures, busy and seen from a distance — Seal Order specialists in grey Void-rated plate with sealed helms unloading the crate, Holy Knights in white and silver on horseback, a scholar with a ledger at the door. A real mix of races: a pointed-eared elf scholar, a stocky bearded dwarf engineer, a tusked half-orc specialist, humans.
-Who lives here: nobody lives here — only the Seal Order's specialists, the Hollow Order's scholars and their guards, on rotation from the Veil Watch fortress.
-Avoid: clearly visible monsters or creature faces; a cast of only humans; people posing; portals, rift gates or glowing gateways; any text, letters, numbers or readable signage; logos, watermarks, borders, frames, UI; close-up faces; modern objects (electric lights, fences of wire, steel buildings, plastic); churches, crosses, altars or religious symbols; cartoon or painterly look; oversaturated colour.
